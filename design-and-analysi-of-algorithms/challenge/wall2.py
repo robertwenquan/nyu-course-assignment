@@ -123,9 +123,64 @@ def build_wall(WALL, nbricks):
   start_pos, end_pos = 0, len(WALL)-1
   return build_wall_merge(WALL, start_pos, end_pos, nbricks, 0)
 
-WALL=[1]
-WALL=[1,2,5,2,3,4]
-WALL=[1,4,2,5,3,6]
-WALL=[1,3]
-print build_wall(WALL, 6)
+
+def test_it(test_data):
+
+  for data in test_data:
+    walls = data[0]
+    bricks = data[1]
+    expected = data[2]
+    result = build_wall(walls, bricks)
+
+    if (result != expected):
+      print("Buggy!!! with result ", result, " Expected result is ", expected)
+    else:
+      print(result)
+
+
+test_data = []
+
+WALL =  [4, 2, 3, 1, 5, 2]
+N = 4
+expected = 3
+test_data.append([WALL, N, expected])
+
+WALL = [3, 2, 1]
+N = 1
+expected = 2
+test_data.append([WALL, N, expected])
+
+WALL = [1]
+N = 100
+expected = 101
+test_data.append([WALL, N, expected])
+
+WALL = [3, 2, 1]
+N = 0
+expected = 1
+test_data.append([WALL, N, expected])
+
+WALL =  [1, 4, 2, 5, 3, 6]
+N = 5
+expected = 3
+test_data.append([WALL, N, expected])
+
+WALL = []
+N = 100
+expected = 100
+test_data.append([WALL, N, expected])
+
+WALL = [3, 2, 1]
+N = 0
+expected = 1
+test_data.append([WALL, N, expected])
+
+WALL =  [1, 4, 2, 5, 3, 6]
+N = 5
+expected = 3
+test_data.append([WALL, N, expected])
+
+test_it(test_data)
+
+test_it(test_data)
 
