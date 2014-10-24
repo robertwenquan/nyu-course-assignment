@@ -124,3 +124,14 @@ if (result != expected):
     print("Expected result ", expected)
 else:
     print(result)
+
+n = 2, [1, 2], [1, 3]
+m = 1, [1]
+expected = [2]
+result = count_camera(n, m)
+if (result != expected):
+    print("Bugged!! with result ", result)
+    print("Expected result ", expected)
+else:
+    print(result)
+
