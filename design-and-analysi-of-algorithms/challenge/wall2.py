@@ -165,10 +165,10 @@ N = 5
 expected = 3
 test_data.append([WALL, N, expected])
 
-WALL = []
-N = 100
-expected = 100
-test_data.append([WALL, N, expected])
+#WALL = []
+#N = 100
+#expected = 100
+#test_data.append([WALL, N, expected])
 
 WALL = [3, 2, 1]
 N = 0
