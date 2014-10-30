@@ -27,6 +27,11 @@ def cool_sort(AA, low, high):
 
 AA = [3, 4, 1, 2]
 print(AA)
-cool_sort(AA, 0, 3)
+cool_sort(AA, 0, len(AA)-1)
+print(AA)
+
+AA = [3, 4, 1, 2, 5, 7, 9, 6, 8, 10, 23, 32, 43, 52, 467, 65]
+print(AA)
+cool_sort(AA, 0, len(AA)-1)
 print(AA)
 
