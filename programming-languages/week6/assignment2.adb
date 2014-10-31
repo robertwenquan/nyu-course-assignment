@@ -1,23 +1,27 @@
-with Ada.Text_IO;                         use  Ada.Text_IO;
+with Ada.Text_IO;                         use Ada.Text_IO;
 with Ada.Strings.Equal_Case_Insensitive;
-with Ada.Strings.Unbounded;
+with Ada.Strings.Unbounded;               use Ada.Strings.Unbounded;
 with Ada.Strings.Unbounded.Text_IO;
 with Ada.Characters.Handling;             use Ada.Characters.Handling;
 with Ada.Strings;                         use Ada.Strings;
 with Ada.Strings.Fixed;                   use Ada.Strings.Fixed;
 with Ada.Integer_Text_IO;                 use Ada.Integer_Text_IO;
+with Ada.Task_Identification;             use Ada.Task_Identification;
 
-procedure stdio is
+
+procedure assignment2 is
 
   package SU renames Ada.Strings.Unbounded;
 
-  Str : SU.Unbounded_String;
-  Cmd : SU.Unbounded_String;
-  Arg : SU.Unbounded_String;
+  LineBuf   : SU.Unbounded_String;
+  Str       : SU.Unbounded_String;
+  Cmd       : SU.Unbounded_String;
+  Arg       : SU.Unbounded_String;
   SPACE_LOC : Integer;
+  DELIM_LOC : Integer;
 
   -- Function return value
-  Ret : Integer;
+  Ret : Integer := 0;
 
   NUM_OF_NODES : Integer;
 
@@ -190,18 +194,102 @@ procedure stdio is
   end CMD_LINKS;
 
 
+  Function Check_List_Item(Line : in SU.Unbounded_String) return Boolean is
+    i : Integer := 1;
+    n : Integer := 0;
+    next : SU.Unbounded_String;
+  begin
+
+    return True;
+
+  end Check_List_Item;
+
+
+  Procedure ParseLineInput(Line : in SU.Unbounded_String; 
+                           Key  : in out SU.Unbounded_String;
+                           Value: in out SU.Unbounded_String;
+                           Next : in out SU.Unbounded_String;
+                           Ret  : in out Integer) is
+    Buf : SU.Unbounded_String;
+  begin
+
+    -- Validate input line
+    --  The following cases will be bad:
+    --   - Not seperate by two semicolons ";"
+    --   - Space in the 1st and 3rd field
+    --   - Not legitimate character sets in 1st and 3rd set
+    if (Check_List_Item(Line) = False) then
+      Ret := -1;
+      return;
+    end if;
+
+    -- Check the 1st ";"
+    DELIM_LOC := SU.Index(Line, ";");
+    if (DELIM_LOC <= 0) then
+      Ret := -1;
+      return;
+    end if;
+
+    Key := SU.To_Unbounded_String(SU.Slice(Line, 1, DELIM_LOC-1));
+    Buf := SU.To_Unbounded_String(SU.Slice(Line, DELIM_LOC+1, Length(Line)));
+
+    -- Check the 1st ";"
+    DELIM_LOC := SU.Index(Buf, ";");
+    if (DELIM_LOC <= 0) then
+      Ret := -1;
+      return;
+    end if;
+
+    Value := SU.To_Unbounded_String(SU.Slice(Buf, 1, DELIM_LOC-1));
+    Next  := SU.To_Unbounded_String(SU.Slice(Buf, DELIM_LOC+1, Length(Buf)));
+
+    Ret := 0;
+    return;
+  end ParseLineInput;
+
+-- Variable Declaration
+  DataIdx : Integer := 0;
+
+  Input_Key   : SU.Unbounded_String;
+  Input_Value : SU.Unbounded_String;
+  Input_Next  : SU.Unbounded_String;
+
 begin
 
   --
   -- Phase 1, get the input
+  --   Exit Condition is an empty line
   --
+  loop
+    SU.Text_IO.Get_Line(LineBuf);
 
-  DataList(1) := (SU.To_Unbounded_String("1"), SU.To_Unbounded_String("100"), SU.To_Unbounded_String("2"));
-  DataList(2) := (SU.To_Unbounded_String("2"), SU.To_Unbounded_String("200"), SU.To_Unbounded_String("3"));
-  DataList(3) := (SU.To_Unbounded_String("3"), SU.To_Unbounded_String("300"), SU.To_Unbounded_String("4"));
-  DataList(4) := (SU.To_Unbounded_String("4"), SU.To_Unbounded_String("400"), SU.To_Unbounded_String(""));
+    -- EMPTY line indicates the end of phase 1
+    -- Exit the loop and proceed to phase 2
+    if (SU.To_String(LineBuf) = "") then
+      exit;
+    end if;
 
-  NUM_OF_NODES := 4;
+    DataIdx := DataIdx + 1;
+
+    -- Get Input
+    ParseLineInput(LineBuf, DataList(DataIdx).Key, DataList(DataIdx).Value, DataList(DataIdx).Next, Ret);
+
+    if (Ret = -1) then
+      Put_Line("BAD");
+      Abort_Task (Current_Task);
+    end if;
+
+    --DataList(DataIdx).Key   := SU.To_Unbounded_String("1");
+    --DataList(DataIdx).Value := SU.To_Unbounded_String("100");
+    --DataList(DataIdx).Next  := SU.To_Unbounded_String("2");
+
+    Put_Line(SU.To_String(DataList(DataIdx).Key));
+
+  end loop;
+
+  NUM_OF_NODES := DataIdx;
+
+  Put_Line("END of DATA!!");
 
   --
   -- Phase 2, processing the command
@@ -264,5 +352,5 @@ begin
 
   end loop;
 
-end stdio; 
+end assignment2; 
 
