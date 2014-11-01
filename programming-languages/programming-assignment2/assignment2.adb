@@ -1,3 +1,12 @@
+------------------------------------------------------------------------
+-- Programming Language Class Fall 2014 Semester
+--   Programming Assignment 2
+--
+--   Quan Wen (robert.wen@nyu.edu) | netid: qw476
+--
+--   Last modified on 10/1/2014
+------------------------------------------------------------------------
+
 with Ada.Text_IO;                         use Ada.Text_IO;
 with Ada.Strings.Equal_Case_Insensitive;
 with Ada.Strings.Unbounded;               use Ada.Strings.Unbounded;
@@ -32,7 +41,7 @@ procedure assignment2 is
   end record;
 
   --type LinkList is array (Integer range <>) of LinkNode;
-  type LinkList is array (1..12243) of LinkNode;
+  type LinkList is array (1..20000) of LinkNode;
 
   --DataList : LinkList := ((1, SU.To_Unbounded_String("200"), 2), (2, SU.To_Unbounded_String("300"), 3), (3, SU.To_Unbounded_String("300"), 4));
   DataList : LinkList;
@@ -102,7 +111,7 @@ procedure assignment2 is
     i : Integer := 1;
     n : Integer := 0;
     sum : Integer := 0;
-    sum_str : String := "";
+    sum_str : SU.Unbounded_String;
     next : SU.Unbounded_String;
   begin
 
@@ -129,7 +138,8 @@ procedure assignment2 is
     if IsString = False then
       sum := sum + Integer'Value(SU.To_String(List(i).Value));
     else
-      sum_str := "xx";
+      -- FIXME
+      sum_str := SU.To_Unbounded_String("xx");
     end if;
 
     next := List(i).Next;
@@ -145,7 +155,8 @@ procedure assignment2 is
         if IsString = False then
           sum := sum + Integer'Value(SU.To_String(List(i).Value));
         else
-          sum_str := "xx xx";
+          -- FIXME
+          sum_str := SU.To_Unbounded_String("xx");
         end if;
 
         next := List(i).Next;
@@ -158,7 +169,7 @@ procedure assignment2 is
     if IsString = False then
       Put_Line(Trim(Source => Integer'Image(sum), Side => Both));
     else
-      Put_Line(sum_str);
+      Put_Line(SU.To_String(sum_str));
     end if;
 
   end CMD_SUM;
@@ -194,15 +205,27 @@ procedure assignment2 is
   end CMD_LINKS;
 
 
-  Function Check_List_Item(Line : in SU.Unbounded_String) return Boolean is
+  --
+  -- Validate the key if it is alphanumeric
+  --
+  Function Validate_AlphaNumeric(KeyStr : in SU.Unbounded_String) return Boolean is
     i : Integer := 1;
     n : Integer := 0;
     next : SU.Unbounded_String;
   begin
 
+    n := Length(KeyStr);
+
+    KEY_LOOP:
+    for i in 1..n loop
+      if (Is_Alphanumeric(Element(KeyStr, i)) = False) then
+        return False;
+      end if;
+    end loop KEY_LOOP;
+
     return True;
 
-  end Check_List_Item;
+  end Validate_AlphaNumeric;
 
 
   Procedure ParseLineInput(Line : in SU.Unbounded_String; 
@@ -218,10 +241,6 @@ procedure assignment2 is
     --   - Not seperate by two semicolons ";"
     --   - Space in the 1st and 3rd field
     --   - Not legitimate character sets in 1st and 3rd set
-    if (Check_List_Item(Line) = False) then
-      Ret := -1;
-      return;
-    end if;
 
     -- Check the 1st ";"
     DELIM_LOC := SU.Index(Line, ";");
@@ -233,7 +252,13 @@ procedure assignment2 is
     Key := SU.To_Unbounded_String(SU.Slice(Line, 1, DELIM_LOC-1));
     Buf := SU.To_Unbounded_String(SU.Slice(Line, DELIM_LOC+1, Length(Line)));
 
-    -- Check the 1st ";"
+    -- Validate the key
+    if (Validate_AlphaNumeric(Key) = False) then
+      Ret := -1;
+      return;
+    end if;
+
+    -- Check the 2nd ";"
     DELIM_LOC := SU.Index(Buf, ";");
     if (DELIM_LOC <= 0) then
       Ret := -1;
@@ -242,6 +267,19 @@ procedure assignment2 is
 
     Value := SU.To_Unbounded_String(SU.Slice(Buf, 1, DELIM_LOC-1));
     Next  := SU.To_Unbounded_String(SU.Slice(Buf, DELIM_LOC+1, Length(Buf)));
+
+    -- Check the 3nd ";"
+    DELIM_LOC := SU.Index(Next, ";");
+    if (DELIM_LOC > 0) then
+      Ret := -1;
+      return;
+    end if;
+
+    -- Validate the pointer name to the next
+    if (Validate_AlphaNumeric(Key) = False) then
+      Ret := -1;
+      return;
+    end if;
 
     Ret := 0;
     return;
