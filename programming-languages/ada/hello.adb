@@ -1,7 +1,9 @@
-with ada.text_io;   -- Tell compiler to use i/o library
-use  ada.text_io;   -- Use library routines w/o fully qualified names
+with Ada.Text_IO;   -- Tell compiler to use i/o library
+use  Ada.Text_IO;   -- Use library routines w/o fully qualified names
+
 procedure hello is
 begin
-    put("Hello World!");
+    --put("Hello World!\n");
+    Ada.Text_IO.Put_Line ("Hello world in Ada!");
 end hello; 
 
