@@ -22,8 +22,6 @@ def merge(A, start, mid, end):
     idx2 = 0
     len2 = len(B2)
 
-#    print (B1, len1, B2, len2)
-
     for idx in range(start, end+1):
         if (idx1 == len1 and idx2 < len2):
             A[idx] = B2[idx2]
@@ -35,7 +33,6 @@ def merge(A, start, mid, end):
             idx1 += 1
             continue
 
-#        print (idx1, idx2)
         if (B1[idx1] < B2[idx2]):
             A[idx] = B1[idx1]
             idx1 += 1

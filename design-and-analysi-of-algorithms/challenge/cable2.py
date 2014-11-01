@@ -5,6 +5,19 @@ import pprint
 
 __author__ = 'Quan Wen (robert.wen@nyu.edu)'
 
+def calc_cnt(AA, small, large):
+    step = 0
+
+    return 1
+
+    for idx in range(small+1, large):
+      if (AA[large] < AA[idx]):
+        step += 1
+      if (AA[small] > AA[idx]):
+        step += 1
+
+    return step
+
 def partition(AA, start, end):
 
     cnt = 0
@@ -27,7 +40,7 @@ def partition(AA, start, end):
         if (pointB == pivot):
             break
         AA[pivot], AA[pointB] = AA[pointB], AA[pivot]
-        cnt += 1
+        cnt += calc_cnt(AA, pivot, pointB)
         pivot = pointB
         pointB -= 1
 
@@ -36,7 +49,7 @@ def partition(AA, start, end):
         if (pointA == pivot):
             break
         AA[pivot], AA[pointA] = AA[pointA], AA[pivot]
-        cnt += 1
+        cnt += calc_cnt(AA, pointA, pivot)
         pivot = pointA
         pointA += 1
 
@@ -89,11 +102,12 @@ def bubble_sort(AA):
     return cnt
 
 def count_intersection(cables):
-    # doesn't work
-    #return quick_sort(cables, 0, len(cables)-1)
 
     # work, but it's O(n*n)
     return bubble_sort(cables)
+
+    # doesn't work
+    # return quick_sort(cables, 0, len(cables)-1)
 
     # doesn't work
     #return selection_sort(cables)
