@@ -100,7 +100,7 @@ procedure assignment2 is
   -- Function return value
   Ret : Integer := 0;
 
-  NUM_OF_NODES : Integer;
+  NUM_OF_NODES : Integer := -1;
 
   type LinkNode is record
     Key     : SU.Unbounded_String;
@@ -748,7 +748,9 @@ begin
 
 exception
   when Error: END_ERROR =>
-    null;
+    if (NUM_OF_NODES = -1 and DataList(1).Key = "") then
+      Put_Line("BAD");
+    end if;
 
   when Error: CONSTRAINT_ERROR =>
     Put_Line("ERR");
