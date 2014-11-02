@@ -673,5 +673,8 @@ exception
   when Error: END_ERROR =>
     null;
 
+  when Error: CONSTRAINT_ERROR =>
+    Put_Line("ERR");
+
 end assignment2; 
 
