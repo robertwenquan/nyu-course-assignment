@@ -60,7 +60,7 @@ procedure assignment2 is
 
     LOOP_FIND_START_NODE:
     while SU.To_String(List(i).Key) /= "" loop
-      if SU.To_String(List(i).Key) = SU.To_String(Key) then
+      if (eq(SU.To_String(List(i).Key), SU.To_String(Key))) then
         return i;
       end if;
       i := i + 1;
@@ -86,7 +86,7 @@ procedure assignment2 is
 
     LOOP_FIND_START_NODE:
     while SU.To_String(List(i).Key) /= "" loop
-      if SU.To_String(List(i).Key) = SU.To_String(Key) then
+      if (eq(SU.To_String(List(i).Key), SU.To_String(Key))) then
         return True;
       end if;
       i := i + 1;
@@ -107,7 +107,7 @@ procedure assignment2 is
 
     LOOP_FIND_START_NODE:
     while SU.To_String(List(i).Key) /= "" loop
-      if SU.To_String(List(i).Key) = SU.To_String(Key) then
+      if (eq(SU.To_String(List(i).Key), SU.To_String(Key))) then
         Found := True;
         exit;
       end if;
@@ -171,7 +171,7 @@ procedure assignment2 is
     LOOP_COUNT_NODES:
     while SU.To_String(List(i).Key) /= "" loop
 
-      if SU.To_String(List(i).Key) = SU.To_String(next) then
+      if (eq(SU.To_String(List(i).Key), SU.To_String(next))) then
         n := n + 1;
         next := List(i).Next;
 
