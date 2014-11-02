@@ -7,6 +7,74 @@
 --   $Id$
 ------------------------------------------------------------------------
 
+-- Resolved concerns from Professor Viega:
+--
+-- Oct 29
+--
+-- >>> Q: QUIT with argument
+--   > A: No ERR, just quit
+-- >>> Q: EOF on phase1
+--   > A: Silently exit the program
+-- >>> Q: Name conflict on phase 1
+--   > A: Ignore and proceed to phase 2
+--   > A: When any operation happens on the duplicated node, throw ERR
+--   > A: Any syntax error should be thrown IMMEDIATELY at phase 1 with BAD
+-- >>> Q: Could the list items be out of order?
+--   > A: YES
+-- >>> Q: Definition of inconsistent node
+--   > A: If you would need to look at a node that doesn’t exist, then you should give a runtime error
+-- >>> Q: Looped link?
+--   > A: YES
+-- >>> Q: Multiple nodes pointing to one?
+--   > A: YES
+-- >>> Q: Multiple lists allowed?
+--   > A: YES
+-- >>> Q: Mixed with loop, N-to-1, and multiple list?
+--   > A: YES
+-- >>> Q: LINKS for directly linking or indirectly linking?
+--   > A: DIRECTLY linking
+-- >>> Q: + and - sign allowed for the integers?
+--   > A: YES
+--   > A: Decimal notation, no scientific notation
+--
+-- Nov 1
+--
+-- >>> Q: command on looped list, throw err or detect loop and report correct answer?
+--   > A: detect the loop
+-- >>> Q: Only report ERR when we work on that item?
+--   > A: YES
+--   > A: Do not report ERR when that item is there but not worked
+--
+-- TODO: Unresolved concerns from Professor Viega:
+--
+-- Nov 2
+--
+-- >>> Q: Links with loop, 0 or 1?
+--   > A:
+-- >>> Q: Links with multiple lists, should we check dup for them?
+--   > A:
+-- >>> Q: typo on case2?
+--   > A:
+-- >>> Q: echo -n "" | ./assignment2
+--   > A:
+-- >>> Q: node with empty name
+--   > A:
+-- >>> Q: UNUSED, check dup for those unused or not?
+--   > A:
+-- >>> Q: C O U N T 1 works?
+--   > A:
+-- >>> Q: Integer range
+--   > A:
+-- >>> Q: Integer out-of-range handling
+--   > A:
+-- >>> Q: Integer overflow at sum: 2147483648
+--   > A:
+-- >>> Q: SUM with number and empty value mixture
+--   > A:
+-- >>> Q: empty value acceptance in phase 1? 2? or nothing?
+--   > A:
+
+
 with Ada.Text_IO;                         use Ada.Text_IO;
 with Ada.Strings.Equal_Case_Insensitive;
 with Ada.Strings.Unbounded;               use Ada.Strings.Unbounded;
