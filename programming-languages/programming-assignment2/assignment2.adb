@@ -209,6 +209,11 @@ procedure assignment2 is
           exit;
         end if;
 
+        -- Detect Loop Here
+        if SU.To_String(next) = SU.To_String(StartKey) then
+          exit;
+        end if;
+
         -- Validate next node when it exists
         Valid := Validate_Node(List, next);
         if Valid = False then
@@ -244,26 +249,29 @@ procedure assignment2 is
     sum : Integer := 0;
     sum_str : SU.Unbounded_String;
     next : SU.Unbounded_String;
+    Dupli : Boolean;
+    Valid : Boolean;
   begin
 
-    -- Find the start node
-    i := 1;
-    LOOP_FIND_START_NODE:
-    while SU.To_String(List(i).Key) /= "" loop
-      if SU.To_String(List(i).Key) = SU.To_String(StartKey) then
-        exit LOOP_FIND_START_NODE;
-      end if;
-      i := i + 1;
-    end loop LOOP_FIND_START_NODE;
+    -- DONT replace with Validate_Node() because we need the index to proceed
+    -- Check Availability of the start node
+    -- If found, i will be the index of the start node to traverse
+    i := Locate_Key(List, StartKey);
+    if i = -1 then
+      Put_Line("ERR");
+      return;
+    end if;
 
-    -- For starting node Not Found
-    if SU.To_String(List(i).Key) = "" then
+    -- Check Duplicity of the start node
+    Dupli := Detect_Dup_With_First(List, StartKey, i);
+    if Dupli = True then
       Put_Line("ERR");
       return;
     end if;
 
     -- Count the items
     n := 1;
+
     --sum_str := "";
 
     if IsString = False then
@@ -274,6 +282,18 @@ procedure assignment2 is
     end if;
 
     next := List(i).Next;
+
+    -- If it's the end of the link, end the count procedure
+    if SU.To_String(next) = "" then
+      goto End_of_Sum;
+    end if;
+
+    -- Validate next node when it exists
+    Valid := Validate_Node(List, next);
+    if Valid = False then
+      Put_Line("ERR");
+      return;
+    end if;
 
     i := 1;
 
@@ -291,11 +311,31 @@ procedure assignment2 is
         end if;
 
         next := List(i).Next;
+
+        -- If it's the end of the link, end the count procedure
+        if SU.To_String(next) = "" then
+          exit;
+        end if;
+
+        -- Detect Loop Here
+        if SU.To_String(next) = SU.To_String(StartKey) then
+          exit;
+        end if;
+
+        -- Validate next node when it exists
+        Valid := Validate_Node(List, next);
+        if Valid = False then
+          Put_Line("ERR");
+          return;
+        end if;
+
         i := 1;
       else
         i := i + 1;
       end if;
     end loop LOOP_COUNT_NODES;
+
+    <<End_of_Sum>>
 
     if IsString = False then
       Put_Line(Trim(Source => Integer'Image(sum), Side => Both));
@@ -553,6 +593,13 @@ begin
       goto Continue;
     end if;
     
+    -- FIXME: add global check
+    -- Validate the argument as a node name
+    --if (Validate_Node(Arg) = False) then
+    --  Put_Line("ERR");
+    --  goto Continue;
+    --end if;
+
     -- At this point, there should be with only one argument
     -- and the argument is with valid range(alphanumeric)
 
