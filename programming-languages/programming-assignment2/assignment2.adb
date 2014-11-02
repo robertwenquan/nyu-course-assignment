@@ -186,6 +186,11 @@ procedure assignment2 is
       goto End_of_Count;
     end if;
 
+    -- Detect Loop Here
+    if SU.To_String(next) = SU.To_String(StartKey) then
+      goto End_of_Count;
+    end if;
+
     -- Validate next node when it exists
     Valid := Validate_Node(List, next);
     if Valid = False then
@@ -285,6 +290,11 @@ procedure assignment2 is
 
     -- If it's the end of the link, end the count procedure
     if SU.To_String(next) = "" then
+      goto End_of_Sum;
+    end if;
+
+    -- Detect Loop Here
+    if SU.To_String(next) = SU.To_String(StartKey) then
       goto End_of_Sum;
     end if;
 
