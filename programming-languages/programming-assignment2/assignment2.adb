@@ -593,15 +593,15 @@ begin
       goto Continue;
     end if;
     
-    -- FIXME: add global check
-    -- Validate the argument as a node name
-    --if (Validate_Node(Arg) = False) then
-    --  Put_Line("ERR");
-    --  goto Continue;
-    --end if;
+    -- add global check : Validate the argument as a node name
+    if (Validate_Node(DataList, Arg) = False) then
+      Put_Line("ERR");
+      goto Continue;
+    end if;
 
     -- At this point, there should be with only one argument
     -- and the argument is with valid range(alphanumeric)
+    -- and it should also be a existing and non-dup node
 
     if (eq(SU.To_String(Cmd), "COUNT")) then
       Ret := CMD_COUNT(DataList, Arg, True);
