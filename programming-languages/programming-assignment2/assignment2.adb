@@ -123,19 +123,42 @@ procedure assignment2 is
   end Detect_Dup;
 
 
+  Function Validate_Node(List : in LinkList; Key : in SU.Unbounded_String) return Boolean is
+    i : Integer := 1;
+    Dupli : Boolean;
+  begin
+
+    -- Check Availability of the start node
+    -- If found, i will be the index of the start node to traverse
+    i := Locate_Key(List, Key);
+    if i = -1 then
+      return False;
+    end if;
+
+    -- Check Duplicity of the start node
+    Dupli := Detect_Dup_With_First(List, Key, i);
+    if Dupli = True then
+      return False;
+    end if;
+
+    return True;
+
+  end Validate_Node;
+
   --
   -- COMMAND -- COUNT
   --
   Function CMD_COUNT(List : in LinkList; StartKey : in SU.Unbounded_String; PrintFlag : Boolean) return Integer is
     i : Integer := 1;
     n : Integer := 0;
+    Valid : Boolean;
     Dupli : Boolean;
     next : SU.Unbounded_String;
   begin
 
+    -- DONT replace with Validate_Node() because we need the index to proceed
     -- Check Availability of the start node
     -- If found, i will be the index of the start node to traverse
-    -- NOTE duplicitity has not been checked yet
     i := Locate_Key(List, StartKey);
     if i = -1 then
       if PrintFlag = True then
@@ -157,9 +180,15 @@ procedure assignment2 is
     n := 1;
 
     next := List(i).Next;
-    Dupli := Detect_Dup(List, next);
 
-    if Dupli = True then
+    -- If it's the end of the link, end the count procedure
+    if SU.To_String(next) = "" then
+      goto End_of_Count;
+    end if;
+
+    -- Validate next node when it exists
+    Valid := Validate_Node(List, next);
+    if Valid = False then
       if PrintFlag = True then
         Put_Line("ERR");
       end if;
@@ -170,13 +199,19 @@ procedure assignment2 is
 
     LOOP_COUNT_NODES:
     while SU.To_String(List(i).Key) /= "" loop
-
       if (eq(SU.To_String(List(i).Key), SU.To_String(next))) then
         n := n + 1;
+
         next := List(i).Next;
 
-        Dupli := Detect_Dup(List, next);
-        if Dupli = True then
+        -- If it's the end of the link, end the count procedure
+        if SU.To_String(next) = "" then
+          exit;
+        end if;
+
+        -- Validate next node when it exists
+        Valid := Validate_Node(List, next);
+        if Valid = False then
           if PrintFlag = True then
             Put_Line("ERR");
           end if;
@@ -188,6 +223,8 @@ procedure assignment2 is
         i := i + 1;
       end if;
     end loop LOOP_COUNT_NODES;
+
+    <<End_of_Count>>
 
     if PrintFlag = True then
       Put_Line(Trim(Source => Integer'Image(n), Side => Both));
@@ -296,22 +333,13 @@ procedure assignment2 is
   Procedure CMD_LINKS(List : in LinkList; StartKey : in SU.Unbounded_String) is
     i : Integer := 1;
     n : Integer := 0;
-    Dupli : Boolean;
+    Valid : Boolean;
     next : SU.Unbounded_String;
   begin
 
     -- Check Availability of the start node
-    -- If found, i will be the index of the start node to traverse
-    -- NOTE duplicitity has not been checked yet
-    i := Locate_Key(List, StartKey);
-    if i = -1 then
-      Put_Line("ERR");
-      return;
-    end if;
-
-    -- Check Duplicity of the start node
-    Dupli := Detect_Dup_With_First(List, StartKey, i);
-    if Dupli = True then
+    Valid := Validate_Node(List, StartKey);
+    if Valid = False then
       Put_Line("ERR");
       return;
     end if;
@@ -322,8 +350,8 @@ procedure assignment2 is
 
     LOOP_COUNT_LINKS:
     while SU.To_String(List(i).Key) /= "" loop
-      Dupli := Detect_Dup(List, List(i).Key);
-      if Dupli = True then
+      Valid := Validate_Node(List, List(i).Key);
+      if Valid = False then
         Put_Line("ERR");
         return;
       end if;
@@ -434,6 +462,12 @@ begin
   --   Exit Condition is an empty line
   --
   loop
+
+    -- Handle EOF, exit the program when met
+    --if End_Of_File then
+    --  goto ExitProgram;
+    --end if;
+
     SU.Text_IO.Get_Line(LineBuf);
 
     -- EMPTY line indicates the end of phase 1
@@ -459,9 +493,25 @@ begin
   --
   -- Phase 2, processing the command
   --
+
+  -- Handle EOF, exit the loop when met
   loop
+  --Put_Line("aaaa");
+  --while (not End_Of_File) loop
+
+    -- Handle EOF, exit the program when met
     SU.Text_IO.Get_Line(Str);
     Str := SU.To_Unbounded_String(Trim(Source => SU.To_String(Str), Side => Both));
+
+    -- If it's empty string, print ERR without further processing
+    if SU.To_String(Str) = "" then
+      Put_Line("ERR");
+      goto Continue;
+    end if;
+
+    --if End_Of_File then
+    --  goto ExitProgram;
+    --end if;
 
     -- Get the first space after the command
     SPACE_LOC := SU.Index(Str, " ");
@@ -474,7 +524,7 @@ begin
 
     --SU.Text_IO.Put_Line(Cmd);
 
-    --FIXME: if here is with argument, how to handle it??
+    -- if here is with argument, dont care about the extra arguments
     if (eq(SU.To_String(Cmd), "QUIT")) then
       exit;
     end if;
@@ -497,9 +547,15 @@ begin
       goto Continue;
     end if;
 
-    -- At this point, there should be with only one argument
-    -- FIXME: still need numeric check
+    -- Argument alphanumeric check
+    if (Validate_AlphaNumeric(Arg) = False) then
+      Put_Line("ERR");
+      goto Continue;
+    end if;
     
+    -- At this point, there should be with only one argument
+    -- and the argument is with valid range(alphanumeric)
+
     if (eq(SU.To_String(Cmd), "COUNT")) then
       Ret := CMD_COUNT(DataList, Arg, True);
     elsif (eq(SU.To_String(Cmd), "SUM")) then
@@ -519,6 +575,10 @@ begin
 
   <<ExitProgram>>
   null;
+
+exception
+  when Error: END_ERROR =>
+    null;
 
 end assignment2; 
 
