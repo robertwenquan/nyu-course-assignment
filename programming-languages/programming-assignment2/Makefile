@@ -7,3 +7,6 @@ clean:
 test:	
 	@echo "Testing"
 	./verify-case.sh
+
+remote:	
+	scp -r *.zip *.sh testcases qw476@kimota.net:~/
