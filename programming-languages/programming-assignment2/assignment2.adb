@@ -11,68 +11,67 @@
 --
 -- Oct 29
 --
--- >>> Q: QUIT with argument
+-- >>> Q1: QUIT with argument
 --   > A: No ERR, just quit
--- >>> Q: EOF on phase1
+-- >>> Q2: EOF on phase1
 --   > A: Silently exit the program
--- >>> Q: Name conflict on phase 1
+-- >>> Q3: Name conflict on phase 1
 --   > A: Ignore and proceed to phase 2
 --   > A: When any operation happens on the duplicated node, throw ERR
 --   > A: Any syntax error should be thrown IMMEDIATELY at phase 1 with BAD
--- >>> Q: Could the list items be out of order?
+-- >>> Q4: Could the list items be out of order?
 --   > A: YES
--- >>> Q: Definition of inconsistent node
+-- >>> Q5: Definition of inconsistent node
 --   > A: If you would need to look at a node that doesn’t exist, then you should give a runtime error
--- >>> Q: Looped link?
+-- >>> Q6: Looped link?
 --   > A: YES
--- >>> Q: Multiple nodes pointing to one?
+-- >>> Q7: Multiple nodes pointing to one?
 --   > A: YES
--- >>> Q: Multiple lists allowed?
+-- >>> Q8: Multiple lists allowed?
 --   > A: YES
--- >>> Q: Mixed with loop, N-to-1, and multiple list?
+-- >>> Q9: Mixed with loop, N-to-1, and multiple list?
 --   > A: YES
--- >>> Q: LINKS for directly linking or indirectly linking?
+-- >>> Q10: LINKS for directly linking or indirectly linking?
 --   > A: DIRECTLY linking
--- >>> Q: + and - sign allowed for the integers?
+-- >>> Q11: + and - sign allowed for the integers?
 --   > A: YES
 --   > A: Decimal notation, no scientific notation
 --
 -- Nov 1
 --
--- >>> Q: command on looped list, throw err or detect loop and report correct answer?
+-- >>> Q12: command on looped list, throw err or detect loop and report correct answer?
 --   > A: detect the loop
--- >>> Q: Only report ERR when we work on that item?
+-- >>> Q13: Only report ERR when we work on that item?
 --   > A: YES
 --   > A: Do not report ERR when that item is there but not worked
 --
--- TODO: Unresolved concerns from Professor Viega:
---
 -- Nov 2
 --
--- >>> Q: Links with loop, 0 or 1?
---   > A:
--- >>> Q: Links with multiple lists, should we check dup for them?
---   > A:
--- >>> Q: typo on case2?
---   > A:
--- >>> Q: echo -n "" | ./assignment2
---   > A:
--- >>> Q: node with empty name
---   > A:
--- >>> Q: UNUSED, check dup for those unused or not?
---   > A:
--- >>> Q: C O U N T 1 works?
---   > A:
--- >>> Q: Integer range
---   > A:
--- >>> Q: Integer out-of-range handling
---   > A:
--- >>> Q: Integer overflow at sum: 2147483648
---   > A:
--- >>> Q: SUM with number and empty value mixture
---   > A:
--- >>> Q: empty value acceptance in phase 1? 2? or nothing?
---   > A:
+-- >>> Q14: Links with loop, 0 or 1?
+--   > A: 1
+-- >>> Q15: Links with multiple lists, should we check dup for them?
+--   > A: TODO:
+-- >>> Q16: typo on case2?
+--   > A: YES
+-- >>> Q17: echo -n "" | ./assignment2
+--   > A: BAD
+-- >>> Q18: node with empty name
+--   > A: BAD
+-- >>> Q19: UNUSED, check dup for those unused or not?
+--   > A: TODO:
+-- >>> Q20: C O U N T 1 works?
+--   > A: ERR
+-- >>> Q21: Integer range
+--   > A: -2147483648 -- +2146473647
+-- >>> Q22: Integer out-of-range handling
+--   > A: ERR
+-- >>> Q23: Integer overflow at sum: 2147483648
+--   > A: TODO: ERR
+-- >>> Q24: SUM with number and empty value mixture
+--   > A: treat as string
+-- >>> Q25: empty value acceptance in phase 1? 2? or nothing?
+--   > A: phase1 accept
+--   > A: phase2 treat as string type
 
 
 with Ada.Text_IO;                         use Ada.Text_IO;
@@ -701,11 +700,6 @@ begin
   --
   loop
 
-    -- Handle EOF, exit the program when met
-    --if End_Of_File then
-    --  goto ExitProgram;
-    --end if;
-
     SU.Text_IO.Get_Line(LineBuf);
 
     -- EMPTY line indicates the end of phase 1
@@ -734,8 +728,6 @@ begin
 
   -- Handle EOF, exit the loop when met
   loop
-  --Put_Line("aaaa");
-  --while (not End_Of_File) loop
 
     -- Handle EOF, exit the program when met
     SU.Text_IO.Get_Line(Str);
@@ -747,20 +739,13 @@ begin
       goto Continue;
     end if;
 
-    --if End_Of_File then
-    --  goto ExitProgram;
-    --end if;
-
     -- Get the first space after the command
     SPACE_LOC := SU.Index(Str, " ");
     if (SPACE_LOC > 0) then
       Cmd := SU.To_Unbounded_String(SU.Slice(Str, 1, SPACE_LOC-1));
-      --SU.Text_IO.Put_Line(Cmd);
     else
       Cmd := Str;
     end if;
-
-    --SU.Text_IO.Put_Line(Cmd);
 
     -- if here is with argument, dont care about the extra arguments
     if (eq(SU.To_String(Cmd), "QUIT")) then
@@ -829,13 +814,22 @@ begin
   null;
 
 exception
+
+  -- Handle EOF error
+  --  If the EOF comes at the very first beginning, print BAD
+  --  In phase1, with a complete input, receiving EOF doesn't trigger BAD
+  --  In phase2, EOF doesn't trigger ERR, with silent quit
   when Error: END_ERROR =>
     if (NUM_OF_NODES = -1 and DataList(1).Key = "") then
       Put_Line("BAD");
     end if;
 
+  -- Handle out of range error
+  -- When converting a numeric string to Integer (-2147483648..2146473647)
   when Error: CONSTRAINT_ERROR =>
     Put_Line("ERR");
+
+  -- FIXME: How to handle Overflow error in addition?
 
 end assignment2; 
 
