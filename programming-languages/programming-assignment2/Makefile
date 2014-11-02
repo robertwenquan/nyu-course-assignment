@@ -6,3 +6,4 @@ clean:
 
 test:	
 	@echo "Testing"
+	./verify-case.sh

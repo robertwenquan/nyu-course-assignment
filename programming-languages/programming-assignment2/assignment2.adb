@@ -17,6 +17,8 @@ with Ada.Strings.Fixed;                   use Ada.Strings.Fixed;
 with Ada.Integer_Text_IO;                 use Ada.Integer_Text_IO;
 with Ada.Task_Identification;             use Ada.Task_Identification;
 
+-- TODO: check avail for every succ node
+-- TODO: check dup for every access
 
 procedure assignment2 is
 
@@ -50,27 +52,101 @@ procedure assignment2 is
   Function eq(Left, Right : String) return Boolean
     renames Ada.Strings.Equal_Case_Insensitive;
 
+
+  Function Locate_Key(List : in LinkList; Key : in SU.Unbounded_String) return Integer is
+    i : Integer := 1;
+    n : Integer := 0;
+  begin
+
+    LOOP_FIND_START_NODE:
+    while SU.To_String(List(i).Key) /= "" loop
+      if SU.To_String(List(i).Key) = SU.To_String(Key) then
+        return i;
+      end if;
+      i := i + 1;
+    end loop LOOP_FIND_START_NODE;
+
+    -- Not Found, return FALSE
+    return -1;
+
+  end Locate_Key;
+
+
+  --
+  -- Detect duplicate in the list
+  --
+  -- Assumption: The node exist at least once
+  --
+  Function Detect_Dup_With_First(List : in LinkList; Key : in SU.Unbounded_String; StartSearchIndex : Integer) return Boolean is
+    i : Integer := 1;
+    n : Integer := 0;
+  begin
+
+    i := StartSearchIndex + 1;
+
+    LOOP_FIND_START_NODE:
+    while SU.To_String(List(i).Key) /= "" loop
+      if SU.To_String(List(i).Key) = SU.To_String(Key) then
+        return True;
+      end if;
+      i := i + 1;
+    end loop LOOP_FIND_START_NODE;
+
+    -- Not Found, Good News, return False for not dup!
+    return False;
+
+  end Detect_Dup_With_First;
+
+
+  Function Detect_Dup(List : in LinkList; Key : in SU.Unbounded_String) return Boolean is
+    i : Integer := 1;
+    n : Integer := 0;
+    Found : Boolean := False;
+    Dup   : Boolean := False;
+  begin
+
+    LOOP_FIND_START_NODE:
+    while SU.To_String(List(i).Key) /= "" loop
+      if SU.To_String(List(i).Key) = SU.To_String(Key) then
+        Found := True;
+        exit;
+      end if;
+      i := i + 1;
+    end loop LOOP_FIND_START_NODE;
+
+    if Found = True then
+      return Detect_Dup_With_First(List, Key, i);
+    else
+      return False;
+    end if;
+
+  end Detect_Dup;
+
+
   --
   -- COUNT
   --
   Function CMD_COUNT(List : in LinkList; StartKey : in SU.Unbounded_String; PrintFlag : Boolean) return Integer is
     i : Integer := 1;
     n : Integer := 0;
+    Dupli : Boolean;
     next : SU.Unbounded_String;
   begin
 
-    -- Find the start node
-    i := 1;
-    LOOP_FIND_START_NODE:
-    while SU.To_String(List(i).Key) /= "" loop
-      if SU.To_String(List(i).Key) = SU.To_String(StartKey) then
-        exit LOOP_FIND_START_NODE;
+    -- Check Availability of the start node
+    -- If found, i will be the index of the start node to traverse
+    -- NOTE duplicitity has not been checked yet
+    i := Locate_Key(List, StartKey);
+    if i = -1 then
+      if PrintFlag = True then
+        Put_Line("ERR");
       end if;
-      i := i + 1;
-    end loop LOOP_FIND_START_NODE;
+      return -1;
+    end if;
 
-    -- For starting node Not Found
-    if SU.To_String(List(i).Key) = "" then
+    -- Check Duplicity of the start node
+    Dupli := Detect_Dup_With_First(List, StartKey, i);
+    if Dupli = True then
       if PrintFlag = True then
         Put_Line("ERR");
       end if;
@@ -81,6 +157,14 @@ procedure assignment2 is
     n := 1;
 
     next := List(i).Next;
+    Dupli := Detect_Dup(List, next);
+
+    if Dupli = True then
+      if PrintFlag = True then
+        Put_Line("ERR");
+      end if;
+      return -1;
+    end if;
 
     i := 1;
 
@@ -90,6 +174,15 @@ procedure assignment2 is
       if SU.To_String(List(i).Key) = SU.To_String(next) then
         n := n + 1;
         next := List(i).Next;
+
+        Dupli := Detect_Dup(List, next);
+        if Dupli = True then
+          if PrintFlag = True then
+            Put_Line("ERR");
+          end if;
+          return -1;
+        end if;
+
         i := 1;
       else
         i := i + 1;
@@ -314,20 +407,12 @@ begin
 
     if (Ret = -1) then
       Put_Line("BAD");
-      Abort_Task (Current_Task);
+      goto ExitProgram;
     end if;
-
-    --DataList(DataIdx).Key   := SU.To_Unbounded_String("1");
-    --DataList(DataIdx).Value := SU.To_Unbounded_String("100");
-    --DataList(DataIdx).Next  := SU.To_Unbounded_String("2");
-
-    Put_Line(SU.To_String(DataList(DataIdx).Key));
 
   end loop;
 
   NUM_OF_NODES := DataIdx;
-
-  Put_Line("END of DATA!!");
 
   --
   -- Phase 2, processing the command
@@ -389,6 +474,9 @@ begin
     null;
 
   end loop;
+
+  <<ExitProgram>>
+  null;
 
 end assignment2; 
 
