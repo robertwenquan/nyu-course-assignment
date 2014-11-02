@@ -210,6 +210,118 @@ procedure assignment2 is
 
   end Validate_Node;
 
+
+  Function Is_String(ValueStr : in SU.Unbounded_String) return Boolean is
+    i : Integer := 1;
+    n : Integer := 0;
+  begin
+
+    -- Empty String is String
+    if (SU.To_String(ValueStr) = "") then
+      return True;
+    end if;
+
+    -- First check the sign bit
+    if (Is_Digit(Element(ValueStr, 1)) = False and Element(ValueStr, 1) /= '+' and Element(ValueStr, 1) /= '-') then
+      return True;
+    end if;
+
+    -- Next check the other digit bit
+    -- If there are numbers, should be all numbers
+    n := Length(ValueStr);
+
+    VALUE_CHECK_LOOP:
+    for i in 2..n loop
+      if (Is_Digit(Element(ValueStr, i)) = False) then
+        return True;
+      end if;
+    end loop VALUE_CHECK_LOOP;
+
+    return False;
+
+  end Is_String;
+
+
+  Function Check_Sum_String_Flag(List : in LinkList; StartKey : in SU.Unbounded_String) return Integer is
+    i : Integer := 1;
+    n : Integer := 0;
+    Valid : Boolean;
+    IsStr : Integer := 0;
+    next : SU.Unbounded_String;
+  begin
+
+    -- DONT replace with Validate_Node() because we need the index to proceed
+    -- Check Availability of the start node
+    -- If found, i will be the index of the start node to traverse
+    i := Locate_Key(List, StartKey);
+
+    -- String check for the first node
+    if (Is_String(List(i).Value) = True) then
+      IsStr := 1;
+      goto End_of_String_Check;
+    end if;
+
+    next := List(i).Next;
+
+    -- If it's the end of the link, end the count procedure
+    if SU.To_String(next) = "" then
+      goto End_of_String_Check;
+    end if;
+
+    -- Detect Loop Here
+    if SU.To_String(next) = SU.To_String(StartKey) then
+      goto End_of_String_Check;
+    end if;
+
+    -- Validate next node when it exists
+    Valid := Validate_Node(List, next);
+    if Valid = False then
+      return -1;
+    end if;
+
+    i := 1;
+
+    LOOP_COUNT_NODES:
+    while SU.To_String(List(i).Key) /= "" loop
+      if (eq(SU.To_String(List(i).Key), SU.To_String(next))) then
+
+        -- String check for the found next node
+        if (Is_String(List(i).Value) = True) then
+          IsStr := 1;
+          goto End_of_String_Check;
+        end if;
+
+        next := List(i).Next;
+
+        -- If it's the end of the link, end the count procedure
+        if SU.To_String(next) = "" then
+          exit;
+        end if;
+
+        -- Detect Loop Here
+        if SU.To_String(next) = SU.To_String(StartKey) then
+          exit;
+        end if;
+
+        -- Validate next node when it exists
+        Valid := Validate_Node(List, next);
+        if Valid = False then
+          return -1;
+        end if;
+
+        i := 1;
+      else
+        i := i + 1;
+      end if;
+    end loop LOOP_COUNT_NODES;
+
+    <<End_of_String_Check>>
+
+    return IsStr;
+
+  end Check_Sum_String_Flag;
+
+
   --
   -- COMMAND -- COUNT
   --
@@ -481,37 +593,6 @@ procedure assignment2 is
   end CMD_LINKS;
 
 
-  Function Is_String(ValueStr : in SU.Unbounded_String) return Boolean is
-    i : Integer := 1;
-    n : Integer := 0;
-  begin
-
-    -- Empty String is String
-    if (SU.To_String(ValueStr) = "") then
-      return True;
-    end if;
-
-    -- First check the sign bit
-    if (Is_Digit(Element(ValueStr, 1)) = False and Element(ValueStr, 1) /= '+' and Element(ValueStr, 1) /= '-') then
-      return True;
-    end if;
-
-    -- Next check the other digit bit
-    -- If there are numbers, should be all numbers
-    n := Length(ValueStr);
-
-    VALUE_CHECK_LOOP:
-    for i in 2..n loop
-      if (Is_Digit(Element(ValueStr, i)) = False) then
-        return True;
-      end if;
-    end loop VALUE_CHECK_LOOP;
-
-    return False;
-
-  end Is_String;
-
-
   --
   -- Validate the key if it is alphanumeric
   --
@@ -539,8 +620,7 @@ procedure assignment2 is
                            Key  : in out SU.Unbounded_String;
                            Value: in out SU.Unbounded_String;
                            Next : in out SU.Unbounded_String;
-                           Ret  : in out Integer;
-                           IsStr: in out Boolean) is
+                           Ret  : in out Integer) is
     Buf : SU.Unbounded_String;
   begin
 
@@ -585,11 +665,6 @@ procedure assignment2 is
       Value := SU.To_Unbounded_String(SU.Slice(Buf, 1, DELIM_LOC-1));
     end if;
 
-    -- Check whether value is string or integer
-    if (IsStr = False) then
-      IsStr := Is_String(Value);
-    end if;
-    
     Next  := SU.To_Unbounded_String(SU.Slice(Buf, DELIM_LOC+1, Length(Buf)));
 
     -- Check the 3nd ";"
@@ -616,7 +691,7 @@ procedure assignment2 is
   Input_Value : SU.Unbounded_String;
   Input_Next  : SU.Unbounded_String;
 
-  String_Flag : Boolean := False;
+  String_Flag : Integer;
 
 begin
 
@@ -642,7 +717,7 @@ begin
     DataIdx := DataIdx + 1;
 
     -- Get Input
-    ParseLineInput(LineBuf, DataList(DataIdx).Key, DataList(DataIdx).Value, DataList(DataIdx).Next, Ret, String_Flag);
+    ParseLineInput(LineBuf, DataList(DataIdx).Key, DataList(DataIdx).Value, DataList(DataIdx).Next, Ret);
 
     if (Ret = -1) then
       Put_Line("BAD");
@@ -729,7 +804,14 @@ begin
     if (eq(SU.To_String(Cmd), "COUNT")) then
       Ret := CMD_COUNT(DataList, Arg, True);
     elsif (eq(SU.To_String(Cmd), "SUM")) then
-      CMD_SUM(DataList, Arg, String_Flag);
+      String_Flag := Check_Sum_String_Flag(DataList, Arg);
+      if String_Flag = 1 then
+        CMD_SUM(DataList, Arg, True);
+      elsif String_Flag = 0 then
+        CMD_SUM(DataList, Arg, False);
+      else
+        Put_Line("ERR");
+      end if;
     elsif (eq(SU.To_String(Cmd), "UNUSED")) then
       CMD_UNUSED(DataList, Arg);
     elsif (eq(SU.To_String(Cmd), "LINKS")) then
