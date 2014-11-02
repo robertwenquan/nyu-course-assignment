@@ -249,7 +249,7 @@ procedure assignment2 is
     i : Integer := 1;
     n : Integer := 0;
     sum : Integer := 0;
-    sum_str : SU.Unbounded_String;
+    sum_str : SU.Unbounded_String := SU.To_Unbounded_String("");
     next : SU.Unbounded_String;
     Dupli : Boolean;
     Valid : Boolean;
@@ -279,8 +279,7 @@ procedure assignment2 is
     if IsString = False then
       sum := sum + Integer'Value(SU.To_String(List(i).Value));
     else
-      -- FIXME
-      sum_str := SU.To_Unbounded_String("xx");
+      Append(sum_str, List(i).Value);
     end if;
 
     next := List(i).Next;
@@ -313,8 +312,7 @@ procedure assignment2 is
         if IsString = False then
           sum := sum + Integer'Value(SU.To_String(List(i).Value));
         else
-          -- FIXME
-          sum_str := SU.To_Unbounded_String("xx");
+          Append(sum_str, List(i).Value);
         end if;
 
         next := List(i).Next;
@@ -415,6 +413,32 @@ procedure assignment2 is
   end CMD_LINKS;
 
 
+  Function Is_String(ValueStr : in SU.Unbounded_String) return Boolean is
+    i : Integer := 1;
+    n : Integer := 0;
+  begin
+
+    -- First check the sign bit
+    if (Is_Digit(Element(ValueStr, 1)) = False and Element(ValueStr, 1) /= '+' and Element(ValueStr, 1) /= '-') then
+      return True;
+    end if;
+
+    -- Next check the other digit bit
+    -- If there are numbers, should be all numbers
+    n := Length(ValueStr);
+
+    VALUE_CHECK_LOOP:
+    for i in 2..n loop
+      if (Is_Digit(Element(ValueStr, i)) = False) then
+        return True;
+      end if;
+    end loop VALUE_CHECK_LOOP;
+
+    return False;
+
+  end Is_String;
+
+
   --
   -- Validate the key if it is alphanumeric
   --
@@ -442,7 +466,8 @@ procedure assignment2 is
                            Key  : in out SU.Unbounded_String;
                            Value: in out SU.Unbounded_String;
                            Next : in out SU.Unbounded_String;
-                           Ret  : in out Integer) is
+                           Ret  : in out Integer;
+                           IsStr: in out Boolean) is
     Buf : SU.Unbounded_String;
   begin
 
@@ -482,6 +507,12 @@ procedure assignment2 is
     end if;
 
     Value := SU.To_Unbounded_String(SU.Slice(Buf, 1, DELIM_LOC-1));
+
+    -- Check whether value is string or integer
+    if (IsStr = False) then
+      IsStr := Is_String(Value);
+    end if;
+    
     Next  := SU.To_Unbounded_String(SU.Slice(Buf, DELIM_LOC+1, Length(Buf)));
 
     -- Check the 3nd ";"
@@ -508,6 +539,8 @@ procedure assignment2 is
   Input_Value : SU.Unbounded_String;
   Input_Next  : SU.Unbounded_String;
 
+  String_Flag : Boolean := False;
+
 begin
 
   --
@@ -532,7 +565,7 @@ begin
     DataIdx := DataIdx + 1;
 
     -- Get Input
-    ParseLineInput(LineBuf, DataList(DataIdx).Key, DataList(DataIdx).Value, DataList(DataIdx).Next, Ret);
+    ParseLineInput(LineBuf, DataList(DataIdx).Key, DataList(DataIdx).Value, DataList(DataIdx).Next, Ret, String_Flag);
 
     if (Ret = -1) then
       Put_Line("BAD");
@@ -619,7 +652,7 @@ begin
     if (eq(SU.To_String(Cmd), "COUNT")) then
       Ret := CMD_COUNT(DataList, Arg, True);
     elsif (eq(SU.To_String(Cmd), "SUM")) then
-      CMD_SUM(DataList, Arg, False);
+      CMD_SUM(DataList, Arg, String_Flag);
     elsif (eq(SU.To_String(Cmd), "UNUSED")) then
       CMD_UNUSED(DataList, Arg);
     elsif (eq(SU.To_String(Cmd), "LINKS")) then
