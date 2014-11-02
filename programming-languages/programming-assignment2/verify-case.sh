@@ -15,7 +15,7 @@ do
   output="${basename}.output"
   if [ -e "${output}" ]
   then
-    $BIN < $case | diff -u ${output} -
+    $BIN 2>&1 < $case | diff -u ${output} -
     if [ $? -eq 0 ]
     then
       succ=$((succ+1))
