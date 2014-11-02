@@ -316,6 +316,27 @@ procedure assignment2 is
       return;
     end if;
 
+    -- Count the links
+    i := 1;
+    n := 0;
+
+    LOOP_COUNT_LINKS:
+    while SU.To_String(List(i).Key) /= "" loop
+      Dupli := Detect_Dup(List, List(i).Key);
+      if Dupli = True then
+        Put_Line("ERR");
+        return;
+      end if;
+
+      if (eq(SU.To_String(List(i).Next), SU.To_String(StartKey))) then
+        n := n + 1;
+      end if;
+
+      i := i + 1;
+    end loop LOOP_COUNT_LINKS;
+    
+    Put_Line(Trim(Source => Integer'Image(n), Side => Both));
+
   end CMD_LINKS;
 
 
