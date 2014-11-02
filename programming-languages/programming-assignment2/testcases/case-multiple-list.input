@@ -1,0 +1,14 @@
+1;100;2
+2;200;3
+3;300;
+a;aaa;b
+b;bbb;c
+c;ccc;
+apple;APPLE;pear
+pear;PEAR;mango
+mango;MANGO;
+
+count 1
+count B
+count mango
+QUIT

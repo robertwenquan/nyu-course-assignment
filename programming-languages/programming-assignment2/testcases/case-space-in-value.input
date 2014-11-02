@@ -1,0 +1,14 @@
+aa;a aa;bb
+bb;bb   b;cc
+cc;cc cc;
+
+count a
+count aa
+count bb
+count cc
+links cc
+links bb
+links aa
+unused aa
+unused bb
+unused cc

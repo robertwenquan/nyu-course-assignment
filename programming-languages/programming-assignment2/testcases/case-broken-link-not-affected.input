@@ -1,0 +1,19 @@
+1;100;2
+2;200;3
+3;300;4
+a;aaa;b
+b;bbb;c
+e;eee;c
+f;eee;c
+c;ccc;
+
+links c
+links f
+links b
+links a
+count a
+count b
+count c
+count d
+count e
+count f
