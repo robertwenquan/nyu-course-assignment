@@ -1,0 +1,16 @@
+a;aaa;b
+B;bbb;C
+c;ccc;D
+d;ddd;
+
+count a
+count A
+count b
+count B
+count c
+count C
+count d
+count D
+count e
+count E
+QUIT
