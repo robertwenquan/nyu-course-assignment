@@ -1,0 +1,14 @@
+1;100;2
+2;200;3
+3;300;
+a;aaa;b
+b;bbb;c
+c;ccc;
+AA;hello;BB
+BB;;CC
+CC; ;DD
+DD;world!;
+
+sum 1
+sum a
+sum aa

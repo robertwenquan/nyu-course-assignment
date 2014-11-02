@@ -1,0 +1,28 @@
+a;h;b
+b;e;c
+c;l;d
+d;l;e
+e;o;f
+f; ;h
+h;world!;g
+g;;x
+x;;y
+y;;
+
+count a
+count g
+links a
+links b
+links c
+links d
+links e
+links f
+links g
+links h
+unused a
+unused b
+unused c
+unused d
+unused e
+unused f
+unused g
