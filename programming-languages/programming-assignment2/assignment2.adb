@@ -124,7 +124,7 @@ procedure assignment2 is
 
 
   --
-  -- COUNT
+  -- COMMAND -- COUNT
   --
   Function CMD_COUNT(List : in LinkList; StartKey : in SU.Unbounded_String; PrintFlag : Boolean) return Integer is
     i : Integer := 1;
@@ -197,8 +197,9 @@ procedure assignment2 is
 
   end CMD_COUNT;
 
+
   --
-  -- SUM
+  -- COMMAND -- SUM
   --
   Procedure CMD_SUM(List : in LinkList; StartKey : in SU.Unbounded_String; IsString : Boolean) is
     i : Integer := 1;
@@ -269,7 +270,7 @@ procedure assignment2 is
 
 
   --
-  -- UNUSED
+  -- COMMAND -- UNUSED
   --
   Procedure CMD_UNUSED(List : in LinkList; StartKey : in SU.Unbounded_String) is
     n_unused : Integer;
@@ -290,11 +291,31 @@ procedure assignment2 is
 
 
   --
-  -- LINKS
+  -- COMMAND -- LINKS
   --
   Procedure CMD_LINKS(List : in LinkList; StartKey : in SU.Unbounded_String) is
+    i : Integer := 1;
+    n : Integer := 0;
+    Dupli : Boolean;
+    next : SU.Unbounded_String;
   begin
-    Put_Line("LINKS!!!");
+
+    -- Check Availability of the start node
+    -- If found, i will be the index of the start node to traverse
+    -- NOTE duplicitity has not been checked yet
+    i := Locate_Key(List, StartKey);
+    if i = -1 then
+      Put_Line("ERR");
+      return;
+    end if;
+
+    -- Check Duplicity of the start node
+    Dupli := Detect_Dup_With_First(List, StartKey, i);
+    if Dupli = True then
+      Put_Line("ERR");
+      return;
+    end if;
+
   end CMD_LINKS;
 
 
@@ -369,7 +390,7 @@ procedure assignment2 is
     end if;
 
     -- Validate the pointer name to the next
-    if (Validate_AlphaNumeric(Key) = False) then
+    if (Validate_AlphaNumeric(Next) = False) then
       Ret := -1;
       return;
     end if;
