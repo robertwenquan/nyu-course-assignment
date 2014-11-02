@@ -17,8 +17,6 @@ with Ada.Strings.Fixed;                   use Ada.Strings.Fixed;
 with Ada.Integer_Text_IO;                 use Ada.Integer_Text_IO;
 with Ada.Task_Identification;             use Ada.Task_Identification;
 
--- TODO: check avail for every succ node
--- TODO: check dup for every access
 
 procedure assignment2 is
 
@@ -45,7 +43,6 @@ procedure assignment2 is
   --type LinkList is array (Integer range <>) of LinkNode;
   type LinkList is array (1..20000) of LinkNode;
 
-  --DataList : LinkList := ((1, SU.To_Unbounded_String("200"), 2), (2, SU.To_Unbounded_String("300"), 3), (3, SU.To_Unbounded_String("300"), 4));
   DataList : LinkList;
 
   use Ada.Text_IO;
@@ -464,6 +461,12 @@ procedure assignment2 is
 
     Key := SU.To_Unbounded_String(SU.Slice(Line, 1, DELIM_LOC-1));
     Buf := SU.To_Unbounded_String(SU.Slice(Line, DELIM_LOC+1, Length(Line)));
+
+    -- Check Empty key
+    if (SU.To_String(Key) = "") then
+      Ret := -1;
+      return;
+    end if;
 
     -- Validate the key
     if (Validate_AlphaNumeric(Key) = False) then
