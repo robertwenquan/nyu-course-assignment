@@ -486,6 +486,11 @@ procedure assignment2 is
     n : Integer := 0;
   begin
 
+    -- Empty String is String
+    if (SU.To_String(ValueStr) = "") then
+      return True;
+    end if;
+
     -- First check the sign bit
     if (Is_Digit(Element(ValueStr, 1)) = False and Element(ValueStr, 1) /= '+' and Element(ValueStr, 1) /= '-') then
       return True;
@@ -574,7 +579,11 @@ procedure assignment2 is
       return;
     end if;
 
-    Value := SU.To_Unbounded_String(SU.Slice(Buf, 1, DELIM_LOC-1));
+    if (DELIM_LOC = 1) then
+      Value := SU.To_Unbounded_String("");
+    else
+      Value := SU.To_Unbounded_String(SU.Slice(Buf, 1, DELIM_LOC-1));
+    end if;
 
     -- Check whether value is string or integer
     if (IsStr = False) then
