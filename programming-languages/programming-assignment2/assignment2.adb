@@ -74,6 +74,9 @@
 --   > A: phase2 treat as string type
 
 
+pragma Unsuppress (Overflow_Check);
+
+
 with Ada.Text_IO;                         use Ada.Text_IO;
 with Ada.Strings.Equal_Case_Insensitive;
 with Ada.Strings.Unbounded;               use Ada.Strings.Unbounded;
@@ -860,10 +863,15 @@ exception
 
   -- Handle out of range error
   -- When converting a numeric string to Integer (-2147483648..2146473647)
+  --
+  -- raised CONSTRAINT_ERROR : bad input for 'Value: "-2147483649"
   when Error: CONSTRAINT_ERROR =>
     Put_Line("ERR");
 
   -- FIXME: How to handle Overflow error in addition?
+  --
+  -- raised CONSTRAINT_ERROR : assignment2.adb:519 overflow check failed
+  -- How to distinguish range error and overflow???
 
 end assignment2; 
 
