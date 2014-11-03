@@ -50,7 +50,7 @@
 -- >>> Q14: Links with loop, 0 or 1?
 --   > A: 1
 -- >>> Q15: Links with multiple lists, should we check dup for them?
---   > A: TODO:
+--   > A: Only check proceeding node for dup
 -- >>> Q16: typo on case2?
 --   > A: YES
 -- >>> Q17: echo -n "" | ./assignment2
@@ -58,7 +58,7 @@
 -- >>> Q18: node with empty name
 --   > A: BAD
 -- >>> Q19: UNUSED, check dup for those unused or not?
---   > A: TODO:
+--   > A: Check all of them
 -- >>> Q20: C O U N T 1 works?
 --   > A: ERR
 -- >>> Q21: Integer range
@@ -66,7 +66,7 @@
 -- >>> Q22: Integer out-of-range handling
 --   > A: ERR
 -- >>> Q23: Integer overflow at sum: 2147483648
---   > A: TODO: ERR
+--   > A: ERR
 -- >>> Q24: SUM with number and empty value mixture
 --   > A: treat as string
 -- >>> Q25: empty value acceptance in phase 1? 2? or nothing?
@@ -74,6 +74,7 @@
 --   > A: phase2 treat as string type
 
 
+-- By default overflow in addition does not throw CONSTRAINT_ERROR exception
 pragma Unsuppress (Overflow_Check);
 
 
@@ -99,9 +100,7 @@ procedure assignment2 is
   SPACE_LOC : Integer;
   DELIM_LOC : Integer;
 
-  -- Function return value
   Ret : Integer := 0;
-
   NUM_OF_NODES : Integer := -1;
 
   type LinkNode is record
@@ -110,7 +109,6 @@ procedure assignment2 is
     Next    : SU.Unbounded_String;
   end record;
 
-  --type LinkList is array (Integer range <>) of LinkNode;
   type LinkList is array (1..28000) of LinkNode;
 
   DataList : LinkList;
@@ -480,10 +478,16 @@ procedure assignment2 is
     -- Count the items
     n := 1;
 
-    --sum_str := "";
-
     if IsString = False then
-      sum := sum + Integer'Value(SU.To_String(List(i).Value));
+      begin
+        sum := sum + Integer'Value(SU.To_String(List(i).Value));
+      exception
+        -- raised CONSTRAINT_ERROR : bad input for 'Value: "-2147483649"
+        -- raised CONSTRAINT_ERROR : assignment2.adb:519 overflow check failed
+        when Error: CONSTRAINT_ERROR =>
+          Put_Line("ERR");
+          return;
+      end;
     else
       Append(sum_str, List(i).Value);
     end if;
@@ -516,7 +520,13 @@ procedure assignment2 is
         n := n + 1;
 
         if IsString = False then
-          sum := sum + Integer'Value(SU.To_String(List(i).Value));
+          begin
+            sum := sum + Integer'Value(SU.To_String(List(i).Value));
+          exception
+            when Error: CONSTRAINT_ERROR =>
+              Put_Line("ERR");
+              return;
+          end;
         else
           Append(sum_str, List(i).Value);
         end if;
@@ -860,18 +870,6 @@ exception
     if (NUM_OF_NODES = -1 and DataList(1).Key = "") then
       Put_Line("BAD");
     end if;
-
-  -- Handle out of range error
-  -- When converting a numeric string to Integer (-2147483648..2146473647)
-  --
-  -- raised CONSTRAINT_ERROR : bad input for 'Value: "-2147483649"
-  when Error: CONSTRAINT_ERROR =>
-    Put_Line("ERR");
-
-  -- FIXME: How to handle Overflow error in addition?
-  --
-  -- raised CONSTRAINT_ERROR : assignment2.adb:519 overflow check failed
-  -- How to distinguish range error and overflow???
 
 end assignment2; 
 
