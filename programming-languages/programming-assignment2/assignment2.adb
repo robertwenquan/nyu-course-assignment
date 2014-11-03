@@ -322,6 +322,30 @@ procedure assignment2 is
 
 
   --
+  -- Check whether there is any duplicate items in the whole list
+  --
+  -- Return Value:
+  --   True - there is at least one duplicate item
+  --   False - there is no duplicate item
+  --
+  Function Check_Duplicate_Item(List : in LinkList) return Boolean is
+    i : Integer := 1;
+    n : Integer := 0;
+  begin
+
+    LOOP_CHECK_DUPLICATE:
+    while SU.To_String(List(i).Key) /= "" loop
+      if (Detect_Dup(List, List(i).Key) = True) then
+        return True;
+      end if;
+      i := i + 1;
+    end loop LOOP_CHECK_DUPLICATE;
+
+    return False;
+
+  end Check_Duplicate_Item;
+
+  --
   -- COMMAND -- COUNT
   --
   Function CMD_COUNT(List : in LinkList; StartKey : in SU.Unbounded_String; PrintFlag : Boolean) return Integer is
@@ -536,7 +560,15 @@ procedure assignment2 is
   Procedure CMD_UNUSED(List : in LinkList; StartKey : in SU.Unbounded_String) is
     n_unused : Integer;
     n_count  : Integer;
+
+    Dup : Boolean;
   begin
+
+    Dup := Check_Duplicate_Item(List);
+    if (Dup = True) then
+      Put_Line("ERR");
+      return;
+    end if;
 
     n_count  := CMD_COUNT(DataList, StartKey, False);
 
