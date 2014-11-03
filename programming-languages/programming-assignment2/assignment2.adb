@@ -108,7 +108,7 @@ procedure assignment2 is
   end record;
 
   --type LinkList is array (Integer range <>) of LinkNode;
-  type LinkList is array (1..20000) of LinkNode;
+  type LinkList is array (1..28000) of LinkNode;
 
   DataList : LinkList;
 
@@ -574,13 +574,15 @@ procedure assignment2 is
 
     LOOP_COUNT_LINKS:
     while SU.To_String(List(i).Key) /= "" loop
-      Valid := Validate_Node(List, List(i).Key);
-      if Valid = False then
-        Put_Line("ERR");
-        return;
-      end if;
 
       if (eq(SU.To_String(List(i).Next), SU.To_String(StartKey))) then
+
+        Valid := Validate_Node(List, List(i).Key);
+        if Valid = False then
+          Put_Line("ERR");
+          return;
+        end if;
+
         n := n + 1;
       end if;
 
