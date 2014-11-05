@@ -5,8 +5,8 @@ clean:
 	rm -f *.o *.ali *.zip assignment2
 
 test:	
-	@echo "Testing"
-	./verify-case.sh
+	@echo "Testing programming assignment 2 ..."
+	@./verify-case.sh
 
 remote:	
 	scp -r *.zip *.sh testcases qw476@kimota.net:~/
