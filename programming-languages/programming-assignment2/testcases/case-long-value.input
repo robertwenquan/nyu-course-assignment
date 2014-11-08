@@ -1,0 +1,11 @@
+1;1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111;2
+2;End_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reachedEnd_Error, raised by Get, Skip_Line, etc., if end-of-file already reached;3
+3;;
+
+count 1
+count 2
+count 3
+sum 3
+sum 2
+sum 1
+quit

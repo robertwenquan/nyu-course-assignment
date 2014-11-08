@@ -1,6 +1,7 @@
 a;hello ;b
-b;world!;
+b;world;
 
 sum a
 sum b
 sum c
+Quit
