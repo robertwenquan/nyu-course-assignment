@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BIN="./assignment3"
+BIN="./qw476"
 
 red='\e[0;31m'
 green='\e[0;32m'

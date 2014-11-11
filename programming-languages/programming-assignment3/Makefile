@@ -1,8 +1,8 @@
-all:	assignment3.hs
-	ghc *.hs -o assignment3 && zip -T qw476.zip *.hs
+all:	qw476.hs
+	ghc qw476.hs
 
 clean:	
-	rm -f *.o *.hi *.zip assignment3
+	rm -f *.o *.hi *.zip qw476
 
 test:	
 	@echo "Testing programming assignment 3 ..."
