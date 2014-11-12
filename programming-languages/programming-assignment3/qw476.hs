@@ -7,6 +7,11 @@
 ----   $Id$
 ------------------------------------------------------------------------
 
+import Control.Monad
+import Control.Arrow
+import System.Exit
+import Data.List
+ 
 
 --
 -- Define the f function
@@ -57,19 +62,16 @@ upper_bound n = get_upper 0
 main = do
 
 -------- Input and Output Examples --------
---  putStrLn("wwwwww")
---  name <- getLine
---  putStrLn("Hello, World " ++ name ++ "!")
--------------------------------------------
-
-  let x = 7
-  let y = f 4
-  let z1 = sumf 4
-  let z2 = lower_bound 16
-  let z3 = upper_bound 16
-
-  print y
-  print z1
-  print z2
-  print z3
+  name <- getLine
+  if name == "QUIT" then
+    exitWith (ExitFailure 1)
+  else if name == "NTH 9" then
+    print (f 9)
+  else if name == "SUM 4" then
+    print (sumf 4)
+  else if name == "BOUNDS 12" then
+    print (lower_bound 12)
+    --print (upper_bound 12)
+  else
+    exitWith (ExitFailure 2)
 
