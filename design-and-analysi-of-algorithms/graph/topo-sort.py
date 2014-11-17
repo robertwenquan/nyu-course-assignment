@@ -1,32 +1,5 @@
 #!/usr/bin/python
 
-class bcolors:
-
-  TREE = '\033[92m'
-  FORWARD = '\033[94m'
-  BACK = '\033[91m'
-  CROSS = '\033[93m'
-  ENDC = '\033[0m'
-
-timestamp = 0
-
-G = { 'm' : { 'adj' : ['q', 'r', 'x'] },
-      'n' : { 'adj' : ['o', 'q', 'u'] },
-      'o' : { 'adj' : ['r', 's', 'v'] },
-      'p' : { 'adj' : ['o', 's', 'z'] },
-      'q' : { 'adj' : ['t'] },
-      'r' : { 'adj' : ['u'] },
-      's' : { 'adj' : ['r'] },
-      't' : { 'adj' : [] },
-      'u' : { 'adj' : ['t'] },
-      'v' : { 'adj' : ['w', 'x'] },
-      'w' : { 'adj' : ['z'] },
-      'x' : { 'adj' : [] },
-      'y' : { 'adj' : ['v'] },
-      'z' : { 'adj' : [] },
-    }
-      
-      
 def DFS(graph):
 
   for node in graph:
@@ -62,11 +35,34 @@ def DFS_VISIT(node):
   LIST.insert(0, node['id'])
 
 
+G = { 'm' : { 'adj' : ['q', 'r', 'x'] },
+      'n' : { 'adj' : ['o', 'q', 'u'] },
+      'o' : { 'adj' : ['r', 's', 'v'] },
+      'p' : { 'adj' : ['o', 's', 'z'] },
+      'q' : { 'adj' : ['t'] },
+      'r' : { 'adj' : ['u', 'y'] },
+      's' : { 'adj' : ['r'] },
+      't' : { 'adj' : [] },
+      'u' : { 'adj' : ['t'] },
+      'v' : { 'adj' : ['w', 'x'] },
+      'w' : { 'adj' : ['z'] },
+      'x' : { 'adj' : [] },
+      'y' : { 'adj' : ['v'] },
+      'z' : { 'adj' : [] },
+    }
+      
+timestamp = 0
 LIST=[]
 
 # DFS walk the graph
 DFS(G)
 
+print "Discovery N Finish Time per vertex: "
+for node in sorted(G.keys()):
+  print str(node) , "[" + str(G[node]['time_discov']) + "," + str(G[node]['time_finish']) + "]"
+
+print
+print "Topology sort order: "
 import sys
 for i in LIST:
   sys.stdout.write(i + ", ")
