@@ -12,6 +12,8 @@ import Control.Arrow
 import System.Exit
 import Data.List
 import Text.Printf
+import Data.IORef
+import Data.String
  
 
 --
@@ -64,14 +66,15 @@ main = do
 
 -------- Input and Output Examples --------
   name <- getLine
-  if name == "QUIT" then
+
+  if (head (words name)) == "QUIT" then
     exitWith (ExitFailure 1)
-  else if name == "NTH 9" then
-    print (f 9)
-  else if name == "SUM 4" then
-    print (sumf 4)
-  else if name == "BOUNDS 12" then
-    printf "%d\n%d\n" (lower_bound 12) (upper_bound 12)
+  else if (head (words name)) == "NTH" then
+    print (f (read (head (tail (words name))) :: Integer))
+  else if (head (words name)) == "SUM" then
+    print (sumf (read (head (tail (words name))) :: Integer))
+  else if (head (words name)) == "BOUNDS" then
+    printf "%d\n%d\n" (lower_bound (read (head (tail (words name))) :: Integer)) (upper_bound (read (head (tail (words name))) :: Integer))
   else
-    exitWith (ExitFailure 2)
+    printf "ERR\n"
 
