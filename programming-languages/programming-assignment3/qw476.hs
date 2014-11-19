@@ -11,6 +11,7 @@ import Control.Monad
 import Control.Arrow
 import System.Exit
 import Data.List
+import Text.Printf
  
 
 --
@@ -70,8 +71,7 @@ main = do
   else if name == "SUM 4" then
     print (sumf 4)
   else if name == "BOUNDS 12" then
-    print (lower_bound 12)
-    --print (upper_bound 12)
+    printf "%d\n%d\n" (lower_bound 12) (upper_bound 12)
   else
     exitWith (ExitFailure 2)
 
