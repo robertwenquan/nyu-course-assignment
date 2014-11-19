@@ -7,7 +7,15 @@ def F(n):
   if(n==0 or n==1 or n==2 or n==3):
     return 1
 
-  result = int((F(n-1)+F(n-2))*F(n-3)/F(n-4))
+  NTH = dict()
+
+  for i in range(0,4):
+    NTH[i] = 1
+
+  for i in range(4,n):
+    NTH[i] = int((NTH[i-1]+NTH[i-2])*NTH[i-3]/NTH[i-4])
+
+  result = int((NTH[n-1]+NTH[n-2])*NTH[n-3]/NTH[n-4])
   return result
 
 
