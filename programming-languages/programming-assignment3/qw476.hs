@@ -14,6 +14,7 @@ import Data.List
 import Text.Printf
 import Data.IORef
 import Data.String
+import System.IO
  
 
 --
@@ -65,16 +66,31 @@ upper_bound n = get_upper 0
 main = do
 
 -------- Input and Output Examples --------
+  end_of_file <- isEOF
+  if end_of_file then
+    exitSuccess
+  else do
+
   name <- getLine
 
-  if (head (words name)) == "QUIT" then
+  let cmd = (head (words name))
+  let num = (read (head (tail (words name))) :: Integer)
+
+  if cmd == "QUIT" then
     exitSuccess
-  else if (head (words name)) == "NTH" then
-    print (f (read (head (tail (words name))) :: Integer))
-  else if (head (words name)) == "SUM" then
-    print (sumf (read (head (tail (words name))) :: Integer))
-  else if (head (words name)) == "BOUNDS" then
-    printf "%d\n%d\n" (lower_bound (read (head (tail (words name))) :: Integer)) (upper_bound (read (head (tail (words name))) :: Integer))
+  else do
+
+  if num < 0 then do
+    printf "ERR\n"
+    exitWith (ExitFailure 1)
+  else do
+
+  if cmd == "NTH" then do
+    print (f num)
+  else if cmd == "SUM" then do
+    print (sumf num)
+  else if cmd == "BOUNDS" then do
+    printf "%d\n%d\n" (lower_bound num) (upper_bound num)
   else do
     printf "ERR\n"
     exitWith (ExitFailure 1)
