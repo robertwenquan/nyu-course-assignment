@@ -35,8 +35,13 @@ def get_sum(n):
 
 
 def get_bounds(n):
-  print lower_bound(n)
-  print upper_bound(n)
+  low = lower_bound(n)
+  high = upper_bound(n)
+  if (low == n or high == n):
+    print "ERR"
+  else:
+    print low
+    print high
 
 
 def upper_bound(n):
@@ -79,6 +84,9 @@ while True:
     break
 
   ARG = int(cmd_arr[1])
+  if (not ARG):
+    print "ERR"
+    break
 
   if (CMD == "NTH"):
     get_num(ARG)

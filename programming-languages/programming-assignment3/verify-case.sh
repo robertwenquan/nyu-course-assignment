@@ -1,5 +1,6 @@
 #!/bin/bash
 
+BIN="./assignment3.py"
 BIN="./qw476"
 
 ulimit -t 3
