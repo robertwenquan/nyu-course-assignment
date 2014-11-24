@@ -3,7 +3,7 @@
 BIN="./assignment3.py"
 BIN="./qw476"
 
-ulimit -t 3
+ulimit -t 1
 
 red='\e[0;31m'
 green='\e[0;32m'
