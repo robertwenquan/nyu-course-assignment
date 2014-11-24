@@ -73,14 +73,22 @@ main = do
     exitSuccess
   else do
 
+  -- read one line from STDIN
   name <- getLine
 
+  -- parse the command from readline
+  let cmd_list = ["QUIT", "NTH", "SUM", "BOUNDS"]
   let cmd = (head (words name))
-  let num = (read (head (tail (words name))) :: Integer)
 
-  if cmd == "QUIT" then
+  -- check invalid command
+  if (cmd `elem` cmd_list) == False then do
+    printf "ERR\n"
+    exitWith (ExitFailure 1)
+  else if cmd == "QUIT" then
     exitSuccess
   else do
+
+  let num = (read (head (tail (words name))) :: Integer)
 
   if num < 0 then do
     printf "ERR\n"
@@ -98,6 +106,7 @@ main = do
     else
       printf "%d\n%d\n" (lower_bound num) (upper_bound num)
   else do
+    -- never comes here!!
     printf "ERR\n"
     exitWith (ExitFailure 1)
 
