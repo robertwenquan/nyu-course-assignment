@@ -2,6 +2,8 @@
 
 BIN="./qw476"
 
+ulimit -t 3
+
 red='\e[0;31m'
 green='\e[0;32m'
 NC='\e[0m' # No Color
