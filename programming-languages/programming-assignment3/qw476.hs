@@ -68,13 +68,16 @@ main = do
   name <- getLine
 
   if (head (words name)) == "QUIT" then
-    exitWith (ExitFailure 1)
+    exitSuccess
   else if (head (words name)) == "NTH" then
     print (f (read (head (tail (words name))) :: Integer))
   else if (head (words name)) == "SUM" then
     print (sumf (read (head (tail (words name))) :: Integer))
   else if (head (words name)) == "BOUNDS" then
     printf "%d\n%d\n" (lower_bound (read (head (tail (words name))) :: Integer)) (upper_bound (read (head (tail (words name))) :: Integer))
-  else
+  else do
     printf "ERR\n"
+    exitWith (ExitFailure 1)
+
+  main
 
