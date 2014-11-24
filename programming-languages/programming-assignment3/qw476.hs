@@ -66,6 +66,8 @@ upper_bound n = get_upper 0
 main = do
 
 -------- Input and Output Examples --------
+
+  -- detect EOF and exit silently
   end_of_file <- isEOF
   if end_of_file then
     exitSuccess
@@ -90,7 +92,11 @@ main = do
   else if cmd == "SUM" then do
     print (sumf num)
   else if cmd == "BOUNDS" then do
-    printf "%d\n%d\n" (lower_bound num) (upper_bound num)
+    if num == 1 then do
+      printf "ERR\n"
+      exitWith (ExitFailure 1)
+    else
+      printf "%d\n%d\n" (lower_bound num) (upper_bound num)
   else do
     printf "ERR\n"
     exitWith (ExitFailure 1)
