@@ -9,12 +9,11 @@
 
 import Control.Monad
 import Control.Arrow
+import Text.Printf
 import System.Exit
 import System.IO
-import Data.List
-import Text.Printf
-import Data.IORef
 import Data.String
+import Data.IORef
 import Data.Char
 import Data.List
  
@@ -154,6 +153,28 @@ main = do
   -- BOUNDS COMMAND
   --
   else if cmd == "BOUNDS" then do
+
+    -- "+" and "-" and "." are not allowed as preceeding
+    if "+" `isPrefixOf` numstr || "-" `isPrefixOf` numstr || "." `isPrefixOf` numstr then do
+      printf "ERR\n"
+      exitWith (ExitFailure 9)
+    else do
+
+    -- apart from ".", only digits are allowed
+    let digits = snd (partition (`elem` ['.']) numstr)
+    if all isNumber digits /= True then do
+      printf "ERR\n"
+      exitWith (ExitFailure 9)
+    else do
+
+    -- only one "." is allowed
+    let dot_cnt = length ('.' `elemIndices` numstr)
+    if dot_cnt > 1 then do
+      printf "ERR\n"
+      exitWith (ExitFailure 9)
+    else do
+
+    -- convert the input number to a float number
     let num = (read numstr :: Float)
 
     if num <= 1 then do
