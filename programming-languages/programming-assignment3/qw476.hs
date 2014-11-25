@@ -10,11 +10,13 @@
 import Control.Monad
 import Control.Arrow
 import System.Exit
+import System.IO
 import Data.List
 import Text.Printf
 import Data.IORef
 import Data.String
-import System.IO
+import Data.Char
+import Data.List
  
 
 --
@@ -39,11 +41,11 @@ sumf n = f (n) + sumf (n-1)
 --
 -- Define the lower bound function
 --
-lower_bound :: Integer -> Integer
+lower_bound :: Float -> Integer
 lower_bound n = get_lower 0
   where
   get_lower :: Integer -> Integer
-  get_lower x = if f (x+1) >= n
+  get_lower x = if (fromIntegral (f (x+1))) >= n
                 then
                   f x
                 else
@@ -52,11 +54,11 @@ lower_bound n = get_lower 0
 --
 -- Define the higher bound function
 --
-upper_bound :: Integer -> Integer
+upper_bound :: Float -> Integer
 upper_bound n = get_upper 0
   where
   get_upper :: Integer -> Integer
-  get_upper x = if n < f x
+  get_upper x = if n < (fromIntegral (f x))
                 then
                   f x
                 else
@@ -95,6 +97,13 @@ main = do
     exitSuccess
   else do
 
+  -- only one space is allowed between command and argument
+  let space_cnt = length (' ' `elemIndices` name)
+  if space_cnt > 1 then do
+    printf "ERR\n"
+    exitWith (ExitFailure 1)
+  else do
+
   -- hanele non-QUIT commands with 0 arg or 1+ arg
   -- like BOUNDS
   -- or   BOUNDS 1 2
@@ -103,27 +112,62 @@ main = do
     exitWith (ExitFailure 1)
   else do
     
-  let num = (read (head (tail (words name))) :: Integer)
+  let numstr = head (tail (words name))
 
-  if num < 0 then do
-    printf "ERR\n"
-    exitWith (ExitFailure 1)
-  else do
-
+  --
+  -- NTH COMMAND
+  --
   if cmd == "NTH" then do
-    print (f num)
-  else if cmd == "SUM" then do
-    print (sumf num)
-  else if cmd == "BOUNDS" then do
-    if num == 1 then do
+    if all isNumber numstr /= True then do
       printf "ERR\n"
       exitWith (ExitFailure 1)
-    else
-      printf "%d\n%d\n" (lower_bound num) (upper_bound num)
+    else do
+
+    let num = (read numstr :: Integer)
+
+    if num < 0 then do
+      printf "ERR\n"
+      exitWith (ExitFailure 1)
+    else do
+
+    print (f num)
+
+  --
+  -- SUM COMMAND
+  --
+  else if cmd == "SUM" then do
+    if all isNumber numstr /= True then do
+      printf "ERR\n"
+      exitWith (ExitFailure 1)
+    else do
+
+    let num = (read numstr :: Integer)
+
+    if num < 0 then do
+      printf "ERR\n"
+      exitWith (ExitFailure 1)
+    else do
+
+    print (sumf num)
+
+  --
+  -- BOUNDS COMMAND
+  --
+  else if cmd == "BOUNDS" then do
+    let num = (read numstr :: Float)
+
+    if num <= 1 then do
+      printf "ERR\n"
+      exitWith (ExitFailure 1)
+    else do
+
+    printf "%d\n%d\n" (lower_bound num) (upper_bound num)
+
   else do
     -- never comes here!!
     printf "ERR\n"
     exitWith (ExitFailure 1)
 
+  -- loop back
   main
 
