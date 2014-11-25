@@ -21,12 +21,24 @@ import Data.List
 --
 -- Define the f function
 --
+
+-- This is Naive recursive declaration which runs very slowly
+
+--f :: Integer -> Integer
+--f 0 = 1
+--f 1 = 1
+--f 2 = 1
+--f 3 = 1
+--f n = do 
+--  let results = [1,1,1,1]
+--  (f (n-1) + f (n-2)) * f (n-3) `div` f (n-4)
+
 f :: Integer -> Integer
-f 0 = 1
-f 1 = 1
-f 2 = 1
-f 3 = 1
-f n = (f (n-1) + f (n-2)) * f (n-3) `div` f (n-4)
+f n = f_inf!!fromIntegral(n)
+
+f_inf = 1 : 1 : 1 : 1 : next f_inf
+  where
+    next (a : t@(b:c:d:_)) = ((d + c) * b `div` a) : next t
 
 
 --
