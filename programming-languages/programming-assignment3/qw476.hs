@@ -89,7 +89,7 @@ main = do
   -- check invalid command
   if (cmd `elem` cmd_list) == False then do
     printf "ERR\n"
-    exitWith (ExitFailure 1)
+    exitWith (ExitFailure 2)
   else do
     
   -- handle QUIT
@@ -101,7 +101,7 @@ main = do
   let space_cnt = length (' ' `elemIndices` name)
   if space_cnt > 1 then do
     printf "ERR\n"
-    exitWith (ExitFailure 1)
+    exitWith (ExitFailure 3)
   else do
 
   -- hanele non-QUIT commands with 0 arg or 1+ arg
@@ -109,7 +109,7 @@ main = do
   -- or   BOUNDS 1 2
   if (length (words name)) /= 2 then do
     printf "ERR\n"
-    exitWith (ExitFailure 1)
+    exitWith (ExitFailure 4)
   else do
     
   let numstr = head (tail (words name))
@@ -120,14 +120,14 @@ main = do
   if cmd == "NTH" then do
     if all isNumber numstr /= True then do
       printf "ERR\n"
-      exitWith (ExitFailure 1)
+      exitWith (ExitFailure 5)
     else do
 
     let num = (read numstr :: Integer)
 
     if num < 0 then do
       printf "ERR\n"
-      exitWith (ExitFailure 1)
+      exitWith (ExitFailure 6)
     else do
 
     print (f num)
@@ -138,14 +138,14 @@ main = do
   else if cmd == "SUM" then do
     if all isNumber numstr /= True then do
       printf "ERR\n"
-      exitWith (ExitFailure 1)
+      exitWith (ExitFailure 7)
     else do
 
     let num = (read numstr :: Integer)
 
     if num < 0 then do
       printf "ERR\n"
-      exitWith (ExitFailure 1)
+      exitWith (ExitFailure 8)
     else do
 
     print (sumf num)
@@ -158,7 +158,7 @@ main = do
 
     if num <= 1 then do
       printf "ERR\n"
-      exitWith (ExitFailure 1)
+      exitWith (ExitFailure 9)
     else do
 
     printf "%d\n%d\n" (lower_bound num) (upper_bound num)
@@ -166,7 +166,7 @@ main = do
   else do
     -- never comes here!!
     printf "ERR\n"
-    exitWith (ExitFailure 1)
+    exitWith (ExitFailure 10)
 
   -- loop back
   main
