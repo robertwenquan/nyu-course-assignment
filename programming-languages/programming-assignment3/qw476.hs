@@ -75,6 +75,10 @@ main = do
 
   -- read one line from STDIN
   name <- getLine
+  if name == "" then do
+    printf "ERR\n"
+    exitWith (ExitFailure 1)
+  else do
 
   -- parse the command from readline
   let cmd_list = ["QUIT", "NTH", "SUM", "BOUNDS"]
@@ -84,10 +88,21 @@ main = do
   if (cmd `elem` cmd_list) == False then do
     printf "ERR\n"
     exitWith (ExitFailure 1)
-  else if cmd == "QUIT" then
+  else do
+    
+  -- handle QUIT
+  if cmd == "QUIT" then
     exitSuccess
   else do
 
+  -- hanele non-QUIT commands with 0 arg or 1+ arg
+  -- like BOUNDS
+  -- or   BOUNDS 1 2
+  if (length (words name)) /= 2 then do
+    printf "ERR\n"
+    exitWith (ExitFailure 1)
+  else do
+    
   let num = (read (head (tail (words name))) :: Integer)
 
   if num < 0 then do
