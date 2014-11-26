@@ -82,13 +82,13 @@ main = do
 
   -- detect EOF and exit silently
   end_of_file <- isEOF
-  if end_of_file then
+  if end_of_file == True then
     exitSuccess
   else do
 
   -- read one line from STDIN
   name <- getLine
-  if name == "" then do
+  if name == "" || all isSpace name == True then do
     printf "ERR\n"
     exitWith (ExitFailure 1)
   else do
