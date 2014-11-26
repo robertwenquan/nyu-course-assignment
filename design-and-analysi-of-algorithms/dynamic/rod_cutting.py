@@ -51,6 +51,7 @@ def memo_rod_cutting(n, PRICE):
 
 
 def memo_rod_cutting_aux(n, PRICE, CACHE):
+
   if (CACHE[n] != -1):
     return CACHE[n]
 
@@ -66,6 +67,9 @@ def memo_rod_cutting_aux(n, PRICE, CACHE):
 
   CACHE[n] = result
   return result
+
+
+# bottom-up method
 
 
 n = 5
