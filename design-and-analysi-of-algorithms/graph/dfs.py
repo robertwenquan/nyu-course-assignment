@@ -5,75 +5,29 @@ class bcolors:
   TREE = '\033[92m'
   FORWARD = '\033[94m'
   BACK = '\033[91m'
-  CROSS = '\033[93m'
+  CROSS = '\033[95m'
   ENDC = '\033[0m'
 
 timestamp = 0
 
-G = { 'q' : {
-            'id' : 'q',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['s', 't', 'w']
-            },
-      'r' : {
-            'id' : 'r',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['u', 'y']
-            },
-      's' : {
-            'id' : 's',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['v']
-            },
-      't' : {
-            'id' : 't',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['x', 'y']
-            },
-      'u' : {
-            'id' : 'u',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['y']
-            },
-      'v' : {
-            'id' : 'v',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['w']
-            },
-      'w' : {
-            'id' : 'w',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['s']
-            },
-      'x' : {
-            'id' : 'x',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['z']
-            },
-      'y' : {
-            'id' : 'y',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['q']
-            },
-      'z' : {
-            'id' : 'z',
-            'color' : 'white', 
-            'time_discov' : -1, 'time_finish' : -1, 
-            'adj' : ['x']
-            },
-    }
-      
+G = { 'q' : { 'adj' : ['s', 't', 'w'] },
+      'r' : { 'adj' : ['u', 'y'] },
+      's' : { 'adj' : ['v'] },
+      't' : { 'adj' : ['x', 'y'] },
+      'u' : { 'adj' : ['y'] },
+      'v' : { 'adj' : ['w'] },
+      'w' : { 'adj' : ['s'] },
+      'x' : { 'adj' : ['z'] },
+      'y' : { 'adj' : ['q'] },
+      'z' : { 'adj' : ['x'] } }
       
 def DFS(graph):
+
+  for node in graph:
+    graph[node]['id'] = node
+    graph[node]['color'] = 'white'
+    graph[node]['time_discov'] = -1
+    graph[node]['time_finish'] = -1
 
   for node in sorted(graph.keys()):
     if graph[node]['color'] == 'white':
