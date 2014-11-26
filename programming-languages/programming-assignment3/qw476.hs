@@ -52,7 +52,7 @@ sumf n = f (n) + sumf (n-1)
 --
 -- Define the lower bound function
 --
-lower_bound :: Float -> Integer
+lower_bound :: Double -> Integer
 lower_bound n = get_lower 0
   where
   get_lower :: Integer -> Integer
@@ -65,7 +65,7 @@ lower_bound n = get_lower 0
 --
 -- Define the higher bound function
 --
-upper_bound :: Float -> Integer
+upper_bound :: Double -> Integer
 upper_bound n = get_upper 0
   where
   get_upper :: Integer -> Integer
@@ -187,7 +187,7 @@ main = do
     else do
 
     -- convert the input number to a float number
-    let num = (read numstr :: Float)
+    let num = (read numstr :: Double)
 
     if num <= 1 then do
       printf "ERR\n"
