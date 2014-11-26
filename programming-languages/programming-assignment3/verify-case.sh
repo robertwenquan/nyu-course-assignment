@@ -3,7 +3,7 @@
 BIN="./assignment3.py"
 BIN="./qw476"
 
-ulimit -t 1
+ulimit -t 2
 
 red='\e[0;31m'
 green='\e[0;32m'
@@ -15,19 +15,17 @@ function time_diff()
   END=$2
 
   START_SEC=$(echo $START | cut -d- -f1)
-  START_USEC=$(echo $START | cut -d- -f2)
-  START_USEC=${START_USEC##*0}
+  START_USEC=$(echo $START | cut -d- -f2 | sed 's/^[0]*//g')
 
   END_SEC=$(echo $END | cut -d- -f1)
-  END_USEC=$(echo $END | cut -d- -f2)
-  END_USEC=${END_USEC##*0}
+  END_USEC=$(echo $END | cut -d- -f2 | sed 's/^[0]*//g')
 
   SEC_DIFF=$((END_SEC - START_SEC))
   USEC_DIFF=$((END_USEC - START_USEC))
 
   if [ $USEC_DIFF -lt 0 ]
   then
-    USEC_DIFF=$((DIFF+1000000000))
+    USEC_DIFF=$((USEC_DIFF+1000000000))
     SEC_DIFF=$((SEC_DIFF-1))
   fi
 
