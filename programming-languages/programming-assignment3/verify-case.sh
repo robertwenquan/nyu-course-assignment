@@ -2,6 +2,8 @@
 
 BIN="./assignment3.py"
 BIN="./qw476"
+#BIN="./bz669"
+#BIN="./hg1068"
 
 ulimit -t 2
 
