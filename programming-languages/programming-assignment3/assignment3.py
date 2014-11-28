@@ -12,10 +12,10 @@ def F(n):
   for i in range(0,4):
     NTH[i] = 1
 
-  for i in range(4,n):
+  for i in range(4,n+1):
     NTH[i] = int((NTH[i-1]+NTH[i-2])*NTH[i-3]/NTH[i-4])
 
-  result = int((NTH[n-1]+NTH[n-2])*NTH[n-3]/NTH[n-4])
+  result = NTH[n]
   return result
 
 
