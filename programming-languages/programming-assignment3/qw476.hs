@@ -105,6 +105,20 @@ main = do
     
   -- handle QUIT
   if cmd == "QUIT" then
+
+    -- For QUIT, no argument should be specified
+    if (length (words name)) /= 1 then do
+      printf "ERR\n"
+      exitWith (ExitFailure 4)
+    else do
+
+    -- No leading or trailing space is allowed
+    let space_cnt = length (' ' `elemIndices` name)
+    if space_cnt > 0 then do
+      printf "ERR\n"
+      exitWith (ExitFailure 3)
+    else do
+    
     exitSuccess
   else do
 
