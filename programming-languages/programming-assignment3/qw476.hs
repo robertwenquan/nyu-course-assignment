@@ -1,6 +1,7 @@
 ------------------------------------------------------------------------
 ---- Programming Language Class Fall 2014 Semester
 ----   Programming Assignment 3
+----   Due Date: Nov 28 2014 11:55 PM
 ----
 ----   Quan Wen (robert.wen@nyu.edu) | netid: qw476
 ----
