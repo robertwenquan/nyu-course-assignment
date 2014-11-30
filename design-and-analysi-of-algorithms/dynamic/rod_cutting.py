@@ -2,8 +2,6 @@
 
 import timeit
 
-# straight-forward implementation
-
 def generate_price(n):
   price_list = dict()
 
@@ -26,6 +24,8 @@ def generate_price2(n):
 
   return price_list
 
+
+# naive recursive way
 def rod_cutting0(n, PRICE):
 
   if n == 0:
@@ -40,8 +40,23 @@ def rod_cutting0(n, PRICE):
 
   return result
 
-# top-down memorization method
 
+# naive recursive way
+def rod_cutting1(n, PRICE):
+
+  if n == 0:
+    return 0
+
+  pricelist=[]
+
+  for i in range(1,n+1):
+    current = PRICE[i] + rod_cutting1(n-i, PRICE)
+    pricelist.append(current)
+
+  return max(pricelist)
+
+
+# top-down memorization method
 def memo_rod_cutting(n, PRICE):
   CACHE = dict()
   for i in range(0,n+1):
@@ -50,6 +65,7 @@ def memo_rod_cutting(n, PRICE):
   return memo_rod_cutting_aux(n, PRICE, CACHE)
 
 
+# memo way
 def memo_rod_cutting_aux(n, PRICE, CACHE):
 
   if (CACHE[n] != -1):
@@ -61,7 +77,7 @@ def memo_rod_cutting_aux(n, PRICE, CACHE):
 
   result = PRICE[1] + memo_rod_cutting_aux(n-1, PRICE, CACHE)
   for i in range(2,n+1):
-    current = PRICE[i] + rod_cutting0(n-i, PRICE)
+    current = PRICE[i] + memo_rod_cutting_aux(n-i, PRICE, CACHE)
     if (current > result):
       result = current
 
@@ -70,12 +86,30 @@ def memo_rod_cutting_aux(n, PRICE, CACHE):
 
 
 # bottom-up method
+def rod_cutting_bottom_up(n, PRICE):
+  RESULT = dict()
+  RESULT[0] = 0
+
+  for i in range(1,n+1):
+    list = []
+    for j in range(1,i+1):
+      price = PRICE[j] + RESULT[i-j]
+      list.append(price)
+
+    RESULT[i] = max(list)
+
+  return RESULT[n]
 
 
-n = 5
-ROD_PRICE = generate_price2(n)
-#timeit.timeit(rod_cutting0(n, ROD_PRICE), number=1)
-#timeit.timeit(memo_rod_cutting(n, ROD_PRICE), number=1)
+n = 20
+ROD_PRICE = generate_price(n)
+print rod_cutting0(n, ROD_PRICE)
+print rod_cutting1(n, ROD_PRICE)
 print memo_rod_cutting(n, ROD_PRICE)
+print rod_cutting_bottom_up(n, ROD_PRICE)
 
+print timeit.timeit(stmt="rod_cutting0(n, ROD_PRICE)", setup="from __main__ import rod_cutting0, n, ROD_PRICE", number=1)
+print timeit.timeit(stmt="rod_cutting1(n, ROD_PRICE)", setup="from __main__ import rod_cutting1, n, ROD_PRICE", number=1)
+print timeit.timeit(stmt="memo_rod_cutting(n, ROD_PRICE)", setup="from __main__ import memo_rod_cutting, n, ROD_PRICE", number=1)
+print timeit.timeit(stmt="rod_cutting_bottom_up(n, ROD_PRICE)", setup="from __main__ import rod_cutting_bottom_up, n, ROD_PRICE", number=1)
 
