@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 
-
 def max_value(SACK, MAX_W):
 
   value_list = [0]
@@ -46,7 +45,17 @@ def init_sack(WEIGHT, VALUE):
     SACK[idx] = (WEIGHT[idx-1], VALUE[idx-1])
   return SACK
 
-def max_value_memo(SACK, MAX_WEIGHT):
+def concat(left, right):
+  return (left[0] + right[0], left[1] + right[1])
+
+def get_max(lists):
+  if not lists:
+    return (0,[])
+
+  lists = sorted(lists, key=lambda aaa: aaa[0], reverse=True)
+  return lists[0]
+
+def max_value_memo_with_lists(SACK, MAX_WEIGHT):
   CACHE = dict()
   return max_value_memo_aux(SACK, MAX_WEIGHT, CACHE)
 
@@ -56,27 +65,26 @@ def max_value_memo_aux(SACK, MAX_WEIGHT, CACHE):
   if (W_ID_LIST, MAX_WEIGHT) in CACHE:
     return CACHE[(W_ID_LIST, MAX_WEIGHT)]
 
-  value_list = [0]
+  value_list = []
   for id in SACK:
     (weight, val) = SACK[id]
     
     if weight <= MAX_WEIGHT:
       NEW_SACK = SACK.copy()
       del NEW_SACK[id]
-      value = val + max_value_memo_aux(NEW_SACK, MAX_WEIGHT - weight, CACHE)
-      value_list.append(value)
+      (value,lists) = concat((val,[id]), max_value_memo_aux(NEW_SACK, MAX_WEIGHT - weight, CACHE))
+      value_list.append((value,lists))
 
-  max_value = max(value_list)
-  CACHE[(W_ID_LIST, MAX_WEIGHT)] = max_value
-  return max_value
+  (max_value,max_list) = get_max(value_list)
+  CACHE[(W_ID_LIST, MAX_WEIGHT)] = (max_value, max_list)
+  return (max_value, max_list)
 
 WEIGHT = [  3,  5,  7,   9,  4,  10,  3,  2, 6, 1]
 VALUE  = [100, 58, 88, 158, 33, 234, 23, 32, 1, 5]
 SACK = init_sack(WEIGHT, VALUE)
 
-MAX_WEIGHT = 165
-print max_value_memo(SACK, MAX_WEIGHT)
+MAX_WEIGHT = 25
+print max_value_memo_with_lists(SACK, MAX_WEIGHT)
 
-
-print max_value(SACK, MAX_WEIGHT)
+#print max_value(SACK, MAX_WEIGHT)
 #print max_value_bottom_up(SACK, MAX_WEIGHT)

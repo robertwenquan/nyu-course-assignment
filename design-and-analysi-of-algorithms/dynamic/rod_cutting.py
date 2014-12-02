@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 import timeit
+import random
+
 
 def generate_price(n):
   price_list = dict()
@@ -12,17 +14,14 @@ def generate_price(n):
 
   return price_list
 
-def generate_price2(n):
-  price_list = dict()
 
-  price_list[0] = 0
-  price_list[1] = 1
-  price_list[2] = 5
-  price_list[3] = 8
-  price_list[4] = 10
-  price_list[5] = 13
+def generate_cutting_cost(n):
+  cutting_cost_list = dict()
 
-  return price_list
+  for i in range(1,n+1):
+    cutting_cost_list[i] = random.randint(3,8)
+
+  return cutting_cost_list
 
 
 # naive recursive way
@@ -101,15 +100,15 @@ def rod_cutting_bottom_up(n, PRICE):
   return RESULT[n]
 
 
-n = 20
+n = 500
 ROD_PRICE = generate_price(n)
-print rod_cutting0(n, ROD_PRICE)
-print rod_cutting1(n, ROD_PRICE)
+#print rod_cutting0(n, ROD_PRICE)
+#print rod_cutting1(n, ROD_PRICE)
 print memo_rod_cutting(n, ROD_PRICE)
 print rod_cutting_bottom_up(n, ROD_PRICE)
 
-print timeit.timeit(stmt="rod_cutting0(n, ROD_PRICE)", setup="from __main__ import rod_cutting0, n, ROD_PRICE", number=1)
-print timeit.timeit(stmt="rod_cutting1(n, ROD_PRICE)", setup="from __main__ import rod_cutting1, n, ROD_PRICE", number=1)
+#print timeit.timeit(stmt="rod_cutting0(n, ROD_PRICE)", setup="from __main__ import rod_cutting0, n, ROD_PRICE", number=1)
+#print timeit.timeit(stmt="rod_cutting1(n, ROD_PRICE)", setup="from __main__ import rod_cutting1, n, ROD_PRICE", number=1)
 print timeit.timeit(stmt="memo_rod_cutting(n, ROD_PRICE)", setup="from __main__ import memo_rod_cutting, n, ROD_PRICE", number=1)
 print timeit.timeit(stmt="rod_cutting_bottom_up(n, ROD_PRICE)", setup="from __main__ import rod_cutting_bottom_up, n, ROD_PRICE", number=1)
 
