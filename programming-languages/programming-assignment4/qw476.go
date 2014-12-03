@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+    "bufio"
+    "fmt"
+    "os"
+)
+
 
 func main() {
-  fmt.Println("Hello, Go programmer!")
+
+  reader := bufio.NewReader(os.Stdin)
+
+  for {
+    line_buf,_ := reader.ReadString('\n')
+    fmt.Print(line_buf)
+  }
+
 }

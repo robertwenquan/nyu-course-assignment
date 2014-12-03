@@ -2,7 +2,7 @@
 
 BIN="$GOPATH/bin/unify"
 
-ulimit -t 2
+ulimit -t 1
 
 red='\e[0;31m'
 green='\e[0;32m'
