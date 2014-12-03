@@ -4,6 +4,7 @@ import (
     "bufio"
     "fmt"
     "os"
+    "strings"
 )
 
 
@@ -13,7 +14,15 @@ func main() {
 
   for {
     line_buf,_ := reader.ReadString('\n')
-    fmt.Print(line_buf)
+    line_buf = strings.TrimRight(line_buf, "\n")
+
+    // QUIT
+    if line_buf == "QUIT" {
+      os.Exit(0)
+    }
+
+    fmt.Println(line_buf)
+
   }
 
 }
