@@ -4,6 +4,7 @@ import (
     "bufio"
     "fmt"
     "os"
+    "io"
     "strings"
 )
 
@@ -13,15 +14,24 @@ func main() {
   reader := bufio.NewReader(os.Stdin)
 
   for {
-    line_buf,_ := reader.ReadString('\n')
-    line_buf = strings.TrimRight(line_buf, "\n")
-
-    // QUIT
-    if line_buf == "QUIT" {
+    line_buf,err := reader.ReadString('\n')
+    if err == io.EOF {
+      fmt.Println("ERR")
       os.Exit(0)
     }
 
-    fmt.Println(line_buf)
+    line_buf = strings.TrimRight(line_buf, "\n")
+    line_buf = strings.Trim(line_buf, " ")
+
+    if strings.Contains(line_buf, "&") {
+      fmt.Println(line_buf)
+    } else if line_buf == "QUIT" {
+      // QUIT
+      os.Exit(0)
+    } else {
+      fmt.Println("ERR")
+      os.Exit(1)
+    }
 
   }
 
