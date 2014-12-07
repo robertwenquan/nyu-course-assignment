@@ -92,3 +92,4 @@ for id in TOPO_LIST:
   SINGLE_NODE_DFS(G.copy(), id)
 
 print_transitive_closure_matrix(TRANSITIVE_CLOSURE)
+

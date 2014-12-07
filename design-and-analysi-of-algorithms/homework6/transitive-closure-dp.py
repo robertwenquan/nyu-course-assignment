@@ -13,24 +13,11 @@ def DFS(graph):
 
   for node in sorted(graph.keys()):
     if graph[node]['color'] == 'white':
-      DFS_VISIT(graph[node], node)
+      DFS_VISIT(graph[node])
 
   return graph
 
-def SINGLE_NODE_DFS(graph, nodeid):
-
-  for node in graph:
-    graph[node]['id'] = node
-    graph[node]['color'] = 'white'
-    graph[node]['time_discov'] = -1
-    graph[node]['time_finish'] = -1
-
-  DFS_VISIT(graph[nodeid], nodeid)
-
-  return graph
-
-
-def DFS_VISIT(node, rootid):
+def DFS_VISIT(node):
   
   global TRANSITIVE_CLOSURE
   global timestamp
@@ -43,8 +30,7 @@ def DFS_VISIT(node, rootid):
 
   for node_id in node['adj']:
     if G[node_id]['color'] == 'white':
-      TRANSITIVE_CLOSURE[rootid][node_id] = 1
-      DFS_VISIT(G[node_id], rootid)
+      DFS_VISIT(G[node_id])
 
   node['color'] = 'black'
 
@@ -77,25 +63,27 @@ def print_transitive_closure_matrix(graph_matrix):
     print aa
 
 
-G = { 'a' : { 'adj' : ['b'] },
-      'b' : { 'adj' : ['a', 'c'] },
-      'c' : { 'adj' : ['b', 'd'] },
+G = { 'a' : { 'adj' : ['b', 'c'] },
+      'b' : { 'adj' : ['d'] },
+      'c' : { 'adj' : ['d'] },
       'd' : { 'adj' : [] },
     }
       
 timestamp = 0
 TRANSITIVE_CLOSURE = init_data(G.copy())
 
+print_transitive_closure_matrix(TRANSITIVE_CLOSURE)
+
 # DFS walk the graph
 TOPO_GRAPH = DFS(G.copy())
-TOPO_LIST = [item[0] for item in sorted(TOPO_GRAPH.items(), key = lambda xxx: (-xxx[1]['time_finish']))]
+TOPO_LIST = [item[0] for item in sorted(TOPO_GRAPH.items(), key = lambda xxx: (xxx[1]['time_finish']))]
 
+print TOPO_LIST
 for i in range(1,len(TOPO_LIST)):
-  for j in range(0,i):
+  for j in range(0, i):
     if TRANSITIVE_CLOSURE[TOPO_LIST[i]][TOPO_LIST[j]] == 1:
-      for k in range(0,i):
-        TRANSITIVE_CLOSURE[TOPO_LIST[i]][TOPO_LIST[k]] = \
-          TRANSITIVE_CLOSURE[TOPO_LIST[i]][TOPO_LIST[k]] | TRANSITIVE_CLOSURE[TOPO_LIST[j]][TOPO_LIST[k]]
+      for k in range(0, i):
+        TRANSITIVE_CLOSURE[TOPO_LIST[i]][TOPO_LIST[k]] = TRANSITIVE_CLOSURE[TOPO_LIST[i]][TOPO_LIST[j]] | TRANSITIVE_CLOSURE[TOPO_LIST[j]][TOPO_LIST[k]]
 
 print_transitive_closure_matrix(TRANSITIVE_CLOSURE)
 
