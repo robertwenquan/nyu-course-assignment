@@ -137,13 +137,36 @@ func main() {
 
 		scanner.Split(my_split)
 
-		for scanner.Scan() {
-			if err := scanner.Err(); err != nil {
-				fmt.Println("ERR")
-				os.Exit(3)
-			}
+		channel := make(chan string)
 
-			fmt.Printf("%s\n", scanner.Text())
+		/*
+		 * One go routine for accepting STDIN and generate tokens
+		 */
+		generate_token := func() {
+			for scanner.Scan() {
+				if err := scanner.Err(); err != nil {
+					fmt.Println("ERR")
+					os.Exit(3)
+				}
+
+				buf_str := scanner.Text()
+				channel <- buf_str
+			}
 		}
+
+		/*
+		 * Another go routine for parsing the tokens and generate the parse tree
+		 */
+		generate_parse_tree := func() {
+			v := ""
+			for true {
+				v = <-channel
+				fmt.Printf("Receiving %s\n", v)
+			}
+		}
+
+		go generate_token()
+		go generate_parse_tree()
+
 	}
 }
