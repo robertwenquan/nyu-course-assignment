@@ -21,6 +21,124 @@ const (
 	LISTTYPE
 )
 
+func is_primitive_type(token string) bool {
+	if token == "int" || token == "float" || token == "long" || token == "string" {
+		return true
+	}
+
+	return false
+}
+
+func parse_oneline(ch chan string) bool {
+
+	ret, _ := parse_type(ch)
+	if ret != true {
+		fmt.Println("1111")
+		return false
+	}
+
+	ret = parse_ampersand(ch)
+	if ret != true {
+		fmt.Println("2222")
+		return false
+	}
+
+	ret, _ = parse_type(ch)
+	if ret != true {
+		fmt.Println("3333")
+		return false
+	}
+
+	return true
+}
+
+func parse_type(ch chan string) (bool, string) {
+
+	token := <-ch
+
+	if is_primitive_type(token) == true {
+		fmt.Println("parse primitive")
+		return true, token
+	}
+
+	if strings.HasPrefix(token, "`") == true {
+		fmt.Println("parse type")
+		return true, token
+	}
+
+	if token == "(" {
+		fmt.Println("parse function")
+		return parse_function(ch), token
+	}
+
+	if token == "[" {
+		fmt.Println("parse list")
+		return parse_list(ch), token
+	}
+
+	return false, token
+}
+
+func parse_ampersand(ch chan string) bool {
+	token := <-ch
+	if token == "&" {
+		return true
+	}
+	return false
+}
+
+func parse_function(ch chan string) bool {
+
+	ret := parse_arg_list(ch)
+	if ret == false {
+		return false
+	}
+
+	token := <-ch
+	if token != "->" {
+		return false
+	}
+
+	ret, _ = parse_type(ch)
+	return ret
+}
+
+func parse_list(ch chan string) bool {
+
+	ret, _ := parse_type(ch)
+	if ret == false {
+		return false
+	}
+
+	token := <-ch
+	if token != "]" {
+		return false
+	}
+
+	return true
+}
+
+func parse_arg_list(ch chan string) bool {
+	ret, token := parse_type(ch)
+	if ret == false {
+		if token == ")" {
+			return true
+		} else {
+			return false
+		}
+	}
+
+	token = <-ch
+	if token == ")" {
+		return true
+	}
+	if token != "," {
+		return false
+	}
+
+	return parse_arg_list(ch)
+}
+
 func main() {
 
 	reader := bufio.NewReader(os.Stdin)
@@ -54,13 +172,6 @@ func main() {
 			advance_byte, token_byte, err := bufio.ScanBytes(data, atEOF)
 
 			offset := 0
-			/*
-				for string(token_byte) == " " {
-					offset += 1
-					_, token_byte, err = bufio.ScanBytes(data[offset:], atEOF)
-					advance_byte += 1
-				}
-			*/
 
 			token_str := string(token_byte)
 			if token_str == "[" || token_str == "]" || token_str == "{" || token_str == "}" || token_str == "," || token_str == "(" || token_str == ")" || token_str == "&" {
@@ -158,10 +269,13 @@ func main() {
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
 		generate_parse_tree := func() {
-			v := ""
+
 			for true {
-				v = <-channel
-				fmt.Printf("Receiving %s\n", v)
+				ret := parse_oneline(channel)
+				if ret != true {
+					fmt.Println("ERR")
+					os.Exit(4)
+				}
 			}
 		}
 
