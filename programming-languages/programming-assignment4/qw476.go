@@ -25,7 +25,6 @@ func is_primitive_type(token string) bool {
 	if token == "int" || token == "float" || token == "long" || token == "string" {
 		return true
 	}
-
 	return false
 }
 
@@ -49,7 +48,7 @@ func parse_oneline(ch chan string) bool {
 		return false
 	}
 
-	return true
+	return parse_lineend(ch)
 }
 
 func parse_type(ch chan string) (bool, string) {
@@ -82,6 +81,14 @@ func parse_type(ch chan string) (bool, string) {
 func parse_ampersand(ch chan string) bool {
 	token := <-ch
 	if token == "&" {
+		return true
+	}
+	return false
+}
+
+func parse_lineend(ch chan string) bool {
+	token := <-ch
+	if token == "\n" {
 		return true
 	}
 	return false
