@@ -7,6 +7,7 @@ import (
 	"os"
 	"regexp"
 	"strings"
+	"time"
 )
 
 const (
@@ -35,7 +36,8 @@ func parse_oneline(ch chan string, chn_tx chan string) bool {
 		return false
 	}
 
-	return parse_lineend(ch)
+	chn_tx <- "END_OF_TYPE"
+	return parse_lineend(ch, chn_tx)
 }
 
 func parse_type(ch chan string, chn_tx chan string) (bool, string) {
@@ -43,25 +45,21 @@ func parse_type(ch chan string, chn_tx chan string) (bool, string) {
 	token := <-ch
 
 	if is_primitive_type(token) == true {
-		fmt.Println("parse primitive")
 		chn_tx <- token
 		return true, token
 	}
 
 	if strings.HasPrefix(token, "`") == true {
-		fmt.Println("parse type")
 		chn_tx <- token
 		return true, token
 	}
 
 	if token == "(" {
-		fmt.Println("parse function")
 		chn_tx <- token
 		return parse_function(ch, chn_tx), token
 	}
 
 	if token == "[" {
-		fmt.Println("parse list")
 		chn_tx <- token
 		return parse_list(ch, chn_tx), token
 	}
@@ -69,7 +67,7 @@ func parse_type(ch chan string, chn_tx chan string) (bool, string) {
 	return false, token
 }
 
-func parse_lineend(ch chan string) bool {
+func parse_lineend(ch chan string, chn_tx chan string) bool {
 	token := <-ch
 	if token == "\n" {
 		return true
@@ -164,21 +162,26 @@ func is_unifiable(token_l string, token_r string) bool {
 	type_l := what_type(token_l)
 	type_r := what_type(token_r)
 
+	/* type variable could be unifiable with any type */
 	if type_l == TYPEVAR {
 		return true
 	}
+	/* primitive type could only be unifiable with the same primitive type */
+	/* such as int with int, not int with float */
 	if type_l == PRIMITIVE_TYPE {
 		if type_r == TYPEVAR {
 			return true
 		}
 		return false
 	}
+	/* func type could only be unifiable with func type and type variable */
 	if type_l == FUNCTYPE {
 		if type_r == TYPEVAR || type_r == FUNCTYPE {
 			return true
 		}
 		return false
 	}
+	/* list type could only be unifiable with list type and type variable */
 	if type_l == LISTTYPE {
 		if type_r == TYPEVAR || type_r == LISTTYPE {
 			return true
@@ -378,14 +381,40 @@ func main() {
 				token_l = <-channel_tx_left
 				token_r = <-channel_tx_right
 
+				if token_l == "END_OF_TYPE" || token_r == "END_OF_TYPE" {
+					break
+				}
+
 				if is_unifiable(token_l, token_r) == false {
-					fmt.Println("ERRx")
+					fmt.Println("BOTTOM")
 					os.Exit(5)
 				}
 
+				if what_type(token_l) == TYPEVAR {
+					if what_type(token_r) == PRIMITIVE_TYPE {
+						token_l = token_r
+					}
+					if what_type(token_r) == FUNCTYPE {
+					}
+					if what_type(token_r) == LISTTYPE {
+					}
+				}
+
+				if what_type(token_r) == TYPEVAR {
+					if what_type(token_l) == FUNCTYPE {
+					}
+					if what_type(token_l) == LISTTYPE {
+					}
+				}
+
 				newList = append(newList, token_l)
-				fmt.Println(len(newList))
 			}
+
+			/* print the unified result */
+			for i := 0; i < len(newList); i++ {
+				fmt.Printf("%s", newList[i])
+			}
+			fmt.Printf("\n")
 		}
 
 		/*
@@ -396,5 +425,9 @@ func main() {
 		go parse_type_left()
 		go parse_type_right()
 		go run_unification()
+
+		// FIXME: sync up the threads before going to next loop
+		time.Sleep(10000000)
+
 	}
 }
