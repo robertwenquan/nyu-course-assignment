@@ -12,13 +12,13 @@ import (
 const (
 	ILLEGAL = 1
 
-	TYPE
-	PRIMITIVE_TYPE
-	TYPEVAR
-	VARNAME
-	FUNCTYPE
-	ARGLIST
-	LISTTYPE
+	TYPE           = 2
+	PRIMITIVE_TYPE = 3
+	TYPEVAR        = 4
+	VARNAME        = 5
+	FUNCTYPE       = 6
+	ARGLIST        = 7
+	LISTTYPE       = 8
 )
 
 func is_primitive_type(token string) bool {
@@ -28,62 +28,45 @@ func is_primitive_type(token string) bool {
 	return false
 }
 
-func parse_oneline(ch chan string) bool {
+func parse_oneline(ch chan string, chn_tx chan string) bool {
 
-	ret, _ := parse_type(ch)
-	if ret != true {
-		fmt.Println("1111")
-		return false
-	}
-
-	ret = parse_ampersand(ch)
-	if ret != true {
-		fmt.Println("2222")
-		return false
-	}
-
-	ret, _ = parse_type(ch)
-	if ret != true {
-		fmt.Println("3333")
+	ret, _ := parse_type(ch, chn_tx)
+	if ret == false {
 		return false
 	}
 
 	return parse_lineend(ch)
 }
 
-func parse_type(ch chan string) (bool, string) {
+func parse_type(ch chan string, chn_tx chan string) (bool, string) {
 
 	token := <-ch
 
 	if is_primitive_type(token) == true {
 		fmt.Println("parse primitive")
+		chn_tx <- token
 		return true, token
 	}
 
 	if strings.HasPrefix(token, "`") == true {
 		fmt.Println("parse type")
+		chn_tx <- token
 		return true, token
 	}
 
 	if token == "(" {
 		fmt.Println("parse function")
-		return parse_function(ch), token
+		chn_tx <- token
+		return parse_function(ch, chn_tx), token
 	}
 
 	if token == "[" {
 		fmt.Println("parse list")
-		return parse_list(ch), token
+		chn_tx <- token
+		return parse_list(ch, chn_tx), token
 	}
 
 	return false, token
-}
-
-func parse_ampersand(ch chan string) bool {
-	token := <-ch
-	if token == "&" {
-		return true
-	}
-	return false
 }
 
 func parse_lineend(ch chan string) bool {
@@ -94,9 +77,9 @@ func parse_lineend(ch chan string) bool {
 	return false
 }
 
-func parse_function(ch chan string) bool {
+func parse_function(ch chan string, chn_tx chan string) bool {
 
-	ret := parse_arg_list(ch)
+	ret := parse_arg_list(ch, chn_tx)
 	if ret == false {
 		return false
 	}
@@ -105,14 +88,15 @@ func parse_function(ch chan string) bool {
 	if token != "->" {
 		return false
 	}
+	chn_tx <- token
 
-	ret, _ = parse_type(ch)
+	ret, _ = parse_type(ch, chn_tx)
 	return ret
 }
 
-func parse_list(ch chan string) bool {
+func parse_list(ch chan string, chn_tx chan string) bool {
 
-	ret, _ := parse_type(ch)
+	ret, _ := parse_type(ch, chn_tx)
 	if ret == false {
 		return false
 	}
@@ -122,13 +106,15 @@ func parse_list(ch chan string) bool {
 		return false
 	}
 
+	chn_tx <- token
 	return true
 }
 
-func parse_arg_list(ch chan string) bool {
-	ret, token := parse_type(ch)
+func parse_arg_list(ch chan string, chn_tx chan string) bool {
+	ret, token := parse_type(ch, chn_tx)
 	if ret == false {
 		if token == ")" {
+			chn_tx <- token
 			return true
 		} else {
 			return false
@@ -137,13 +123,70 @@ func parse_arg_list(ch chan string) bool {
 
 	token = <-ch
 	if token == ")" {
+		chn_tx <- token
 		return true
 	}
 	if token != "," {
 		return false
 	}
 
-	return parse_arg_list(ch)
+	chn_tx <- token
+	return parse_arg_list(ch, chn_tx)
+}
+
+func what_type(token string) int {
+
+	if token == "int" || token == "float" || token == "long" || token == "string" {
+		return PRIMITIVE_TYPE
+	}
+
+	if strings.HasPrefix(token, "`") == true {
+		return TYPEVAR
+	}
+
+	if token == "[" {
+		return LISTTYPE
+	}
+
+	if token == "(" {
+		return FUNCTYPE
+	}
+
+	return ILLEGAL
+}
+
+func is_unifiable(token_l string, token_r string) bool {
+
+	if token_l == token_r {
+		return true
+	}
+
+	type_l := what_type(token_l)
+	type_r := what_type(token_r)
+
+	if type_l == TYPEVAR {
+		return true
+	}
+	if type_l == PRIMITIVE_TYPE {
+		if type_r == TYPEVAR {
+			return true
+		}
+		return false
+	}
+	if type_l == FUNCTYPE {
+		if type_r == TYPEVAR || type_r == FUNCTYPE {
+			return true
+		}
+		return false
+	}
+	if type_l == LISTTYPE {
+		if type_r == TYPEVAR || type_r == LISTTYPE {
+			return true
+		}
+		return false
+	}
+
+	return false
 }
 
 func main() {
@@ -172,13 +215,13 @@ func main() {
 			os.Exit(1)
 		}
 
-		scanner := bufio.NewScanner(strings.NewReader(line_buf))
+		// split the line buffer into left and right part with "&"
+		line_buf_l := type_list[0]
+		line_buf_r := type_list[1]
 
 		// customized splitter for our unification rules
 		my_split := func(data []byte, atEOF bool) (advance int, token []byte, err error) {
 			advance_byte, token_byte, err := bufio.ScanBytes(data, atEOF)
-
-			offset := 0
 
 			token_str := string(token_byte)
 			if token_str == "[" || token_str == "]" || token_str == "{" || token_str == "}" || token_str == "," || token_str == "(" || token_str == ")" || token_str == "&" {
@@ -188,7 +231,7 @@ func main() {
 			// int
 			if token_str == "i" {
 				primitive_type := "int"
-				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
+				if strings.HasPrefix(string(data), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return advance_byte, token_byte, io.EOF
@@ -199,7 +242,7 @@ func main() {
 			// float
 			if token_str == "f" {
 				primitive_type := "float"
-				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
+				if strings.HasPrefix(string(data), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.ErrNoProgress
@@ -210,7 +253,7 @@ func main() {
 			// long
 			if token_str == "l" {
 				primitive_type := "long"
-				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
+				if strings.HasPrefix(string(data), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.ErrNoProgress
@@ -221,7 +264,7 @@ func main() {
 			// string
 			if token_str == "s" {
 				primitive_type := "string"
-				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
+				if strings.HasPrefix(string(data), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.EOF
@@ -232,7 +275,7 @@ func main() {
 			// ->
 			if token_str == "-" {
 				function_ret_type := "->"
-				if strings.HasPrefix(string(data[offset:]), function_ret_type) == false {
+				if strings.HasPrefix(string(data), function_ret_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.ErrNoProgress
@@ -243,7 +286,7 @@ func main() {
 			// `<TYPE>
 			if token_str == "`" {
 				re := regexp.MustCompile("^`[a-zA-Z][a-zA-Z0-9]*")
-				type_str := re.FindString(string(data[offset:]))
+				type_str := re.FindString(string(data))
 				return advance_byte + len(type_str) - 1, []byte(type_str), err
 			}
 
@@ -253,32 +296,54 @@ func main() {
 			return advance_byte, token_byte, err
 		}
 
-		scanner.Split(my_split)
+		scanner_l := bufio.NewScanner(strings.NewReader(line_buf_l))
+		scanner_l.Split(my_split)
 
-		channel := make(chan string)
+		scanner_r := bufio.NewScanner(strings.NewReader(line_buf_r))
+		scanner_r.Split(my_split)
+
+		channel_l := make(chan string)
+		channel_r := make(chan string)
 
 		/*
-		 * One go routine for accepting STDIN and generate tokens
+		 * One go routine for generating left type tokens
 		 */
-		generate_token := func() {
-			for scanner.Scan() {
-				if err := scanner.Err(); err != nil {
+		generate_token_l := func() {
+			for scanner_l.Scan() {
+				if err := scanner_l.Err(); err != nil {
 					fmt.Println("ERR")
 					os.Exit(3)
 				}
 
-				buf_str := scanner.Text()
-				channel <- buf_str
+				buf_str := scanner_l.Text()
+				channel_l <- buf_str
 			}
 		}
 
 		/*
+		 * One go routine for generating right type tokens
+		 */
+		generate_token_r := func() {
+			for scanner_r.Scan() {
+				if err := scanner_r.Err(); err != nil {
+					fmt.Println("ERR")
+					os.Exit(3)
+				}
+
+				buf_str := scanner_r.Text()
+				channel_r <- buf_str
+			}
+		}
+
+		channel_tx_left := make(chan string)
+		channel_tx_right := make(chan string)
+
+		/*
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
-		generate_parse_tree := func() {
-
+		parse_type_left := func() {
 			for true {
-				ret := parse_oneline(channel)
+				ret := parse_oneline(channel_l, channel_tx_left)
 				if ret != true {
 					fmt.Println("ERR")
 					os.Exit(4)
@@ -286,8 +351,50 @@ func main() {
 			}
 		}
 
-		go generate_token()
-		go generate_parse_tree()
+		/*
+		 * Another go routine for parsing the tokens and generate the parse tree
+		 */
+		parse_type_right := func() {
+			for true {
+				ret := parse_oneline(channel_r, channel_tx_right)
+				if ret != true {
+					fmt.Println("ERR")
+					os.Exit(4)
+				}
+			}
+		}
 
+		/*
+		 * Another go routine for type unification
+		 */
+		run_unification := func() {
+
+			token_l := ""
+			token_r := ""
+
+			var newList []string
+
+			for true {
+				token_l = <-channel_tx_left
+				token_r = <-channel_tx_right
+
+				if is_unifiable(token_l, token_r) == false {
+					fmt.Println("ERRx")
+					os.Exit(5)
+				}
+
+				newList = append(newList, token_l)
+				fmt.Println(len(newList))
+			}
+		}
+
+		/*
+		 * Launch all go routines
+		 */
+		go generate_token_l()
+		go generate_token_r()
+		go parse_type_left()
+		go parse_type_right()
+		go run_unification()
 	}
 }
