@@ -408,14 +408,14 @@ func main() {
 						unification_dict[token_l] = token_r
 						token_l = token_r
 					}
-					if what_type(token_r) == FUNCTYPE {
-					}
 					if what_type(token_r) == LISTTYPE {
 					}
 				}
 
 				if what_type(token_r) == TYPEVAR {
-					if what_type(token_l) == FUNCTYPE {
+					if what_type(token_l) == PRIMITIVE_TYPE {
+						unification_dict[token_r] = token_l
+						token_r = token_l
 					}
 					if what_type(token_l) == LISTTYPE {
 					}
