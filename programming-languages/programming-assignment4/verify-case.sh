@@ -71,10 +71,12 @@ do
   cnt=$((cnt+1))
 
   output="${basename}.output"
+  output_tmp="/tmp/test.output"
   if [ -e "${output}" ]
   then
+    sed 's/ //g' ${output} > ${output_tmp}
     EXEC_START=$(date +%s-%N)
-    $BIN 2>&1 < $case | diff -u ${output} -
+    $BIN 2>&1 < $case | diff -u ${output_tmp} - > /tmp/diff.result
     if [ $? -eq 0 ]
     then
       EXEC_END=$(date +%s-%N)
@@ -83,7 +85,12 @@ do
       echo -e "\t${green}Pass${NC} in $TIME_STR ms"
       succ=$((succ+1))
     else
-      echo -e "${red}Fail${NC}"
+      printf "%-60s" $basename
+      echo -e "\t${red}Fail${NC} in $TIME_STR ms"
+      if [ -r /tmp/diff.result ]
+      then
+        cat /tmp/diff.result
+      fi
       fail=$((fail+1))
     fi
   else
