@@ -196,6 +196,10 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 
+	/* global directory for the unification */
+	var unification_dict map[string]string
+	unification_dict = make(map[string]string)
+
 	for {
 		line_buf, err := reader.ReadString('\n')
 		if err == io.EOF {
@@ -385,6 +389,15 @@ func main() {
 					break
 				}
 
+				token_l_query_dict, ok := unification_dict[token_l]
+				if ok == true {
+					token_l = token_l_query_dict
+				}
+				token_r_query_dict, ok := unification_dict[token_r]
+				if ok == true {
+					token_r = token_r_query_dict
+				}
+
 				if is_unifiable(token_l, token_r) == false {
 					fmt.Println("BOTTOM")
 					os.Exit(5)
@@ -392,6 +405,7 @@ func main() {
 
 				if what_type(token_l) == TYPEVAR {
 					if what_type(token_r) == PRIMITIVE_TYPE {
+						unification_dict[token_l] = token_r
 						token_l = token_r
 					}
 					if what_type(token_r) == FUNCTYPE {
