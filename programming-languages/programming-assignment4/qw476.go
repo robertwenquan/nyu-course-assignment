@@ -22,6 +22,11 @@ const (
 	LISTTYPE       = 8
 )
 
+const (
+	CHECK_GRAMMAR = 11
+	SPLIT_TOKEN   = 22
+)
+
 func is_primitive_type(token string) bool {
 	if token == "int" || token == "float" || token == "long" || token == "string" {
 		return true
@@ -29,45 +34,73 @@ func is_primitive_type(token string) bool {
 	return false
 }
 
-func parse_oneline(ch chan string, chn_tx chan string) bool {
+func parse_oneline(ch chan string, chn_tx chan string, flag int) (bool, []string) {
 
-	ret, _ := parse_type(ch, chn_tx)
+	var line_list []string
+
+	ret, _, type_list := parse_type(ch, chn_tx, flag)
 	if ret == false {
-		return false
+		return false, line_list
 	}
 
-	chn_tx <- "END_OF_TYPE"
-	return parse_lineend(ch, chn_tx)
+	line_list = append(line_list, type_list...)
+
+	line_list = append(line_list, "END_OF_TYPE")
+	if flag == SPLIT_TOKEN {
+		chn_tx <- "END_OF_TYPE"
+	}
+
+	return parse_lineend(ch, chn_tx, flag), line_list
 }
 
-func parse_type(ch chan string, chn_tx chan string) (bool, string) {
+func parse_type(ch chan string, chn_tx chan string, flag int) (bool, string, []string) {
+
+	var type_list []string
 
 	token := <-ch
 
 	if is_primitive_type(token) == true {
-		chn_tx <- token
-		return true, token
+		type_list = append(type_list, token)
+		if flag == SPLIT_TOKEN {
+			chn_tx <- token
+		}
+		return true, token, type_list
 	}
 
 	if strings.HasPrefix(token, "`") == true {
-		chn_tx <- token
-		return true, token
+		type_list = append(type_list, token)
+		if flag == SPLIT_TOKEN {
+			chn_tx <- token
+		}
+		return true, token, type_list
 	}
 
 	if token == "(" {
-		chn_tx <- token
-		return parse_function(ch, chn_tx), token
+		type_list = append(type_list, token)
+		if flag == SPLIT_TOKEN {
+			chn_tx <- token
+		}
+
+		ret, func_list := parse_function(ch, chn_tx, flag)
+		type_list = append(type_list, func_list...)
+		return ret, token, type_list
 	}
 
 	if token == "[" {
-		chn_tx <- token
-		return parse_list(ch, chn_tx), token
+		type_list = append(type_list, token)
+		if flag == SPLIT_TOKEN {
+			chn_tx <- token
+		}
+
+		ret, list_list := parse_list(ch, chn_tx, flag)
+		type_list = append(type_list, list_list...)
+		return ret, token, type_list
 	}
 
-	return false, token
+	return false, token, type_list
 }
 
-func parse_lineend(ch chan string, chn_tx chan string) bool {
+func parse_lineend(ch chan string, chn_tx chan string, flag int) bool {
 	token := <-ch
 	if token == "\n" {
 		return true
@@ -75,61 +108,99 @@ func parse_lineend(ch chan string, chn_tx chan string) bool {
 	return false
 }
 
-func parse_function(ch chan string, chn_tx chan string) bool {
+func parse_function(ch chan string, chn_tx chan string, flag int) (bool, []string) {
 
-	ret := parse_arg_list(ch, chn_tx)
+	var type_list []string
+
+	ret, arg_list := parse_arg_list(ch, chn_tx, flag)
 	if ret == false {
-		return false
+		return false, type_list
 	}
+	type_list = append(type_list, arg_list...)
 
 	token := <-ch
 	if token != "->" {
-		return false
+		return false, type_list
 	}
-	chn_tx <- token
+	type_list = append(type_list, token)
+	if flag == SPLIT_TOKEN {
+		chn_tx <- token
+	}
 
-	ret, _ = parse_type(ch, chn_tx)
-	return ret
+	ret, _, func_list := parse_type(ch, chn_tx, flag)
+	type_list = append(type_list, func_list...)
+
+	return ret, type_list
 }
 
-func parse_list(ch chan string, chn_tx chan string) bool {
+func parse_list(ch chan string, chn_tx chan string, flag int) (bool, []string) {
 
-	ret, _ := parse_type(ch, chn_tx)
+	var type_list []string
+
+	ret, _, type2 := parse_type(ch, chn_tx, flag)
 	if ret == false {
-		return false
+		return false, type_list
 	}
+
+	type_list = append(type_list, type2...)
 
 	token := <-ch
 	if token != "]" {
-		return false
+		return false, type_list
 	}
 
-	chn_tx <- token
-	return true
+	type_list = append(type_list, token)
+	if flag == SPLIT_TOKEN {
+		chn_tx <- token
+	}
+	return true, type_list
 }
 
-func parse_arg_list(ch chan string, chn_tx chan string) bool {
-	ret, token := parse_type(ch, chn_tx)
+func parse_arg_list(ch chan string, chn_tx chan string, flag int) (bool, []string) {
+
+	var type_list []string
+
+	ret, token, list1 := parse_type(ch, chn_tx, flag)
 	if ret == false {
 		if token == ")" {
-			chn_tx <- token
-			return true
+			type_list = append(type_list, token)
+			if flag == SPLIT_TOKEN {
+				chn_tx <- token
+			}
+			return true, type_list
 		} else {
-			return false
+			return false, type_list
 		}
 	}
+	type_list = append(type_list, list1...)
 
 	token = <-ch
 	if token == ")" {
-		chn_tx <- token
-		return true
+		type_list = append(type_list, token)
+		if flag == SPLIT_TOKEN {
+			chn_tx <- token
+		}
+		return true, type_list
 	}
 	if token != "," {
-		return false
+		return false, type_list
 	}
 
-	chn_tx <- token
-	return parse_arg_list(ch, chn_tx)
+	type_list = append(type_list, token)
+	if flag == SPLIT_TOKEN {
+		chn_tx <- token
+	}
+
+	ret, list2 := parse_arg_list(ch, chn_tx, flag)
+	type_list = append(type_list, list2...)
+
+	return ret, type_list
+}
+
+func spit_token_to_channel(chn_tx chan string, list []string) {
+	for i := 0; i < len(list); i++ {
+		chn_tx <- list[i]
+	}
 }
 
 func what_type(token string) int {
@@ -505,6 +576,7 @@ func main() {
 				buf_str := scanner_l.Text()
 				channel_l <- buf_str
 			}
+			channel_l <- "\n"
 		}
 
 		/*
@@ -520,6 +592,7 @@ func main() {
 				buf_str := scanner_r.Text()
 				channel_r <- buf_str
 			}
+			channel_r <- "\n"
 		}
 
 		channel_tx_left := make(chan string)
@@ -530,11 +603,13 @@ func main() {
 		 */
 		beijing_on_dec25 := func() {
 			for true {
-				ret := parse_oneline(channel_l, channel_tx_left)
+				ret, list := parse_oneline(channel_l, channel_tx_left, CHECK_GRAMMAR)
 				if ret != true {
 					fmt.Println("ERR")
 					os.Exit(4)
 				}
+
+				spit_token_to_channel(channel_tx_left, list)
 			}
 		}
 
@@ -543,11 +618,13 @@ func main() {
 		 */
 		hong_kong_on_dec30 := func() {
 			for true {
-				ret := parse_oneline(channel_r, channel_tx_right)
+				ret, list := parse_oneline(channel_r, channel_tx_right, CHECK_GRAMMAR)
 				if ret != true {
 					fmt.Println("ERR")
 					os.Exit(4)
 				}
+
+				spit_token_to_channel(channel_tx_right, list)
 			}
 		}
 
