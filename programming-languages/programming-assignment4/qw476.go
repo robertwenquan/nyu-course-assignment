@@ -438,7 +438,6 @@ func main() {
 
 		line_buf = strings.TrimRight(line_buf, "\n")
 		line_buf = strings.Trim(line_buf, " ")
-		line_buf = strings.Replace(line_buf, " ", "", -1)
 
 		// Handle QUIT
 		if line_buf == "QUIT" {
@@ -457,12 +456,19 @@ func main() {
 		}
 
 		// split the line buffer into left and right part with "&"
-		line_buf_l := type_list[0]
-		line_buf_r := type_list[1]
+		line_buf_l := strings.Trim(type_list[0], " ")
+		line_buf_r := strings.Trim(type_list[1], " ")
 
 		// customized splitter for our unification rules
 		my_split := func(data []byte, atEOF bool) (advance int, token []byte, err error) {
 			advance_byte, token_byte, err := bufio.ScanBytes(data, atEOF)
+
+			offset := 0
+			for string(token_byte) == " " {
+				offset += 1
+				_, token_byte, err = bufio.ScanBytes(data[offset:], atEOF)
+				advance_byte += 1
+			}
 
 			token_str := string(token_byte)
 			if token_str == "[" || token_str == "]" || token_str == "{" || token_str == "}" || token_str == "," || token_str == "(" || token_str == ")" || token_str == "&" {
@@ -472,7 +478,7 @@ func main() {
 			// int
 			if token_str == "i" {
 				primitive_type := "int"
-				if strings.HasPrefix(string(data), primitive_type) == false {
+				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return advance_byte, token_byte, io.EOF
@@ -483,7 +489,7 @@ func main() {
 			// float
 			if token_str == "f" {
 				primitive_type := "float"
-				if strings.HasPrefix(string(data), primitive_type) == false {
+				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.ErrNoProgress
@@ -494,7 +500,7 @@ func main() {
 			// long
 			if token_str == "l" {
 				primitive_type := "long"
-				if strings.HasPrefix(string(data), primitive_type) == false {
+				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.ErrNoProgress
@@ -505,7 +511,7 @@ func main() {
 			// string
 			if token_str == "s" {
 				primitive_type := "string"
-				if strings.HasPrefix(string(data), primitive_type) == false {
+				if strings.HasPrefix(string(data[offset:]), primitive_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.EOF
@@ -516,7 +522,7 @@ func main() {
 			// ->
 			if token_str == "-" {
 				function_ret_type := "->"
-				if strings.HasPrefix(string(data), function_ret_type) == false {
+				if strings.HasPrefix(string(data[offset:]), function_ret_type) == false {
 					fmt.Printf("ERR\n")
 					os.Exit(3)
 					return 0, nil, io.ErrNoProgress
@@ -527,7 +533,7 @@ func main() {
 			// `<TYPE>
 			if token_str == "`" {
 				re := regexp.MustCompile("^`[a-zA-Z][a-zA-Z0-9]*")
-				type_str := re.FindString(string(data))
+				type_str := re.FindString(string(data[offset:]))
 				return advance_byte + len(type_str) - 1, []byte(type_str), err
 			}
 
@@ -692,7 +698,6 @@ func main() {
 							unification_dict[token_l_query_dict[0]] = token_r_query_dict
 						}
 					}
-
 				}
 
 				if what_type(token_r_query_dict[0]) == TYPEVAR {
