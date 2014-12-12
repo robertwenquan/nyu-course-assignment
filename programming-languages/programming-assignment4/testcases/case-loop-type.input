@@ -1,4 +1,5 @@
 `a & `b
 `b & `c
 `c & `a
+`c & `b
 QUIT
