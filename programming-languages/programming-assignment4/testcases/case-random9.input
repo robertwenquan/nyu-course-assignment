@@ -1,0 +1,7 @@
+`a & [[[int]]]
+`b & `a
+`zz & `xx
+`xx & `a
+`a & `xxx
+`abc & [[`zz]]
+QUIT

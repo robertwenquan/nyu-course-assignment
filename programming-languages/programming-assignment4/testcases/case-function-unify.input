@@ -1,0 +1,3 @@
+`a & `b
+`b & (int)->int
+`a & (int,int)->int
