@@ -1,0 +1,6 @@
+  `a & int
+  `b & [   float ]
+  `c&[[string   ]]
+  `d&[[  [           long]] ]
+  `e    &  [   [[  [        int   ]   ]     ]     ]
+  QUIT  
