@@ -228,6 +228,10 @@ func is_unifiable(token_l []string, token_r []string) bool {
 	return false
 }
 
+func get_list_token_offline(type_list []string) []string {
+	return type_list
+}
+
 func get_list_type(chn chan string) ([]string, int) {
 
 	var list_str []string
@@ -323,13 +327,6 @@ func get_func_token(chn chan string) []string {
 	} else {
 
 		list_str = append(list_str, arglist_str)
-
-		token := <-chn
-		if token != ")" {
-			fmt.Println("ERR")
-			os.Exit(8)
-		}
-		list_str = append(list_str, token)
 	}
 
 	token := <-chn
@@ -384,14 +381,17 @@ func print_unified_result(strlist []string, newline int, unification_dict map[st
 	}
 }
 
-func query_unification_dict(unification_dict map[string][]string, token string) []string {
+func query_unification_dict(unification_dict map[string][]string, token string) ([]string, bool) {
 
 	token_query_dict, ok := unification_dict[token]
-	if ok != true {
+	status := true
+
+	if ok == false {
 		token_query_dict = append(token_query_dict, token)
+		status = false
 	}
 
-	return token_query_dict
+	return token_query_dict, status
 }
 
 func print_unified_dict(unification_dict map[string][]string) {
@@ -617,8 +617,8 @@ func main() {
 				}
 
 				/* check dictionary, if it exists, replace the type variable */
-				token_l_query_dict := query_unification_dict(unification_dict, token_l)
-				token_r_query_dict := query_unification_dict(unification_dict, token_r)
+				token_l_query_dict, is_cached_l := query_unification_dict(unification_dict, token_l)
+				token_r_query_dict, is_cached_r := query_unification_dict(unification_dict, token_r)
 
 				if is_unifiable(token_l_query_dict, token_r_query_dict) == false {
 					fmt.Println("BOTTOM")
@@ -629,24 +629,42 @@ func main() {
 
 					// `abc & int
 					if what_type(token_r_query_dict[0]) == PRIMITIVE_TYPE {
-						unification_dict[token_l] = append(unification_dict[token_l], token_r_query_dict[0])
-						newList = append(newList, token_r_query_dict[0])
+						val, is_cached := query_unification_dict(unification_dict, token_l)
+						if is_cached == false {
+							unification_dict[token_l] = token_r_query_dict
+							newList = append(newList, token_r_query_dict[0])
+						} else {
+							unification_dict[token_l] = token_r_query_dict
+							unification_dict[val[0]] = token_r_query_dict
+							newList = append(newList, token_r_query_dict[0])
+						}
 						continue
 					}
 
 					// `abc & []
 					if what_type(token_r_query_dict[0]) == LISTTYPE {
-						token_list_r := get_list_token(channel_tx_right)
-						unification_dict[token_l] = token_list_r
-						newList = append(newList, token_list_r...)
+						if is_cached_r == false {
+							token_list_r := get_list_token(channel_tx_right)
+							unification_dict[token_l] = token_list_r
+							newList = append(newList, token_list_r...)
+						} else {
+							token_list_r := get_list_token_offline(token_r_query_dict)
+							unification_dict[token_l] = token_list_r
+							newList = append(newList, token_list_r...)
+						}
 						continue
 					}
 
 					// `abc & ()
 					if what_type(token_r_query_dict[0]) == FUNCTYPE {
-						token_func_r := get_func_token(channel_tx_right)
-						unification_dict[token_l] = token_func_r
-						newList = append(newList, token_func_r...)
+						if is_cached_r == false {
+							token_func_r := get_func_token(channel_tx_right)
+							unification_dict[token_l] = token_func_r
+							newList = append(newList, token_func_r...)
+						} else {
+							unification_dict[token_l] = token_r_query_dict
+							newList = append(newList, token_r_query_dict...)
+						}
 						continue
 					}
 
@@ -668,17 +686,28 @@ func main() {
 
 					// [] & `abc
 					if what_type(token_l_query_dict[0]) == LISTTYPE {
-						token_list_l := get_list_token(channel_tx_left)
-						unification_dict[token_r] = token_list_l
-						newList = append(newList, token_list_l...)
+						if is_cached_l == false {
+							token_list_l := get_list_token(channel_tx_left)
+							unification_dict[token_r] = token_list_l
+							newList = append(newList, token_list_l...)
+						} else {
+							token_list_l := get_list_token_offline(token_l_query_dict)
+							unification_dict[token_r] = token_list_l
+							newList = append(newList, token_list_l...)
+						}
 						continue
 					}
 
 					// () & `abc
 					if what_type(token_l_query_dict[0]) == FUNCTYPE {
-						token_func_l := get_func_token(channel_tx_left)
-						unification_dict[token_r] = token_func_l
-						newList = append(newList, token_func_l...)
+						if is_cached_l == false {
+							token_func_l := get_func_token(channel_tx_left)
+							unification_dict[token_r] = token_func_l
+							newList = append(newList, token_func_l...)
+						} else {
+							unification_dict[token_r] = token_l_query_dict
+							newList = append(newList, token_l_query_dict...)
+						}
 						continue
 					}
 
