@@ -22,11 +22,6 @@ const (
 	LISTTYPE       = 8
 )
 
-const (
-	CHECK_GRAMMAR = 11
-	SPLIT_TOKEN   = 22
-)
-
 func is_primitive_type(token string) bool {
 	if token == "int" || token == "float" || token == "long" || token == "string" {
 		return true
@@ -34,11 +29,11 @@ func is_primitive_type(token string) bool {
 	return false
 }
 
-func parse_oneline(ch chan string, chn_tx chan string, flag int) (bool, []string) {
+func parse_oneline(ch chan string, chn_tx chan string) (bool, []string) {
 
 	var line_list []string
 
-	ret, _, type_list := parse_type(ch, chn_tx, flag)
+	ret, _, type_list := parse_type(ch, chn_tx)
 	if ret == false {
 		return false, line_list
 	}
@@ -46,14 +41,11 @@ func parse_oneline(ch chan string, chn_tx chan string, flag int) (bool, []string
 	line_list = append(line_list, type_list...)
 
 	line_list = append(line_list, "END_OF_TYPE")
-	if flag == SPLIT_TOKEN {
-		chn_tx <- "END_OF_TYPE"
-	}
 
-	return parse_lineend(ch, chn_tx, flag), line_list
+	return parse_lineend(ch, chn_tx), line_list
 }
 
-func parse_type(ch chan string, chn_tx chan string, flag int) (bool, string, []string) {
+func parse_type(ch chan string, chn_tx chan string) (bool, string, []string) {
 
 	var type_list []string
 
@@ -61,38 +53,26 @@ func parse_type(ch chan string, chn_tx chan string, flag int) (bool, string, []s
 
 	if is_primitive_type(token) == true {
 		type_list = append(type_list, token)
-		if flag == SPLIT_TOKEN {
-			chn_tx <- token
-		}
 		return true, token, type_list
 	}
 
 	if strings.HasPrefix(token, "`") == true {
 		type_list = append(type_list, token)
-		if flag == SPLIT_TOKEN {
-			chn_tx <- token
-		}
 		return true, token, type_list
 	}
 
 	if token == "(" {
 		type_list = append(type_list, token)
-		if flag == SPLIT_TOKEN {
-			chn_tx <- token
-		}
 
-		ret, func_list := parse_function(ch, chn_tx, flag)
+		ret, func_list := parse_function(ch, chn_tx)
 		type_list = append(type_list, func_list...)
 		return ret, token, type_list
 	}
 
 	if token == "[" {
 		type_list = append(type_list, token)
-		if flag == SPLIT_TOKEN {
-			chn_tx <- token
-		}
 
-		ret, list_list := parse_list(ch, chn_tx, flag)
+		ret, list_list := parse_list(ch, chn_tx)
 		type_list = append(type_list, list_list...)
 		return ret, token, type_list
 	}
@@ -100,7 +80,7 @@ func parse_type(ch chan string, chn_tx chan string, flag int) (bool, string, []s
 	return false, token, type_list
 }
 
-func parse_lineend(ch chan string, chn_tx chan string, flag int) bool {
+func parse_lineend(ch chan string, chn_tx chan string) bool {
 	token := <-ch
 	if token == "\n" {
 		return true
@@ -108,11 +88,11 @@ func parse_lineend(ch chan string, chn_tx chan string, flag int) bool {
 	return false
 }
 
-func parse_function(ch chan string, chn_tx chan string, flag int) (bool, []string) {
+func parse_function(ch chan string, chn_tx chan string) (bool, []string) {
 
 	var type_list []string
 
-	ret, arg_list := parse_arg_list(ch, chn_tx, flag)
+	ret, arg_list := parse_arg_list(ch, chn_tx)
 	if ret == false {
 		return false, type_list
 	}
@@ -123,21 +103,18 @@ func parse_function(ch chan string, chn_tx chan string, flag int) (bool, []strin
 		return false, type_list
 	}
 	type_list = append(type_list, token)
-	if flag == SPLIT_TOKEN {
-		chn_tx <- token
-	}
 
-	ret, _, func_list := parse_type(ch, chn_tx, flag)
+	ret, _, func_list := parse_type(ch, chn_tx)
 	type_list = append(type_list, func_list...)
 
 	return ret, type_list
 }
 
-func parse_list(ch chan string, chn_tx chan string, flag int) (bool, []string) {
+func parse_list(ch chan string, chn_tx chan string) (bool, []string) {
 
 	var type_list []string
 
-	ret, _, type2 := parse_type(ch, chn_tx, flag)
+	ret, _, type2 := parse_type(ch, chn_tx)
 	if ret == false {
 		return false, type_list
 	}
@@ -150,23 +127,17 @@ func parse_list(ch chan string, chn_tx chan string, flag int) (bool, []string) {
 	}
 
 	type_list = append(type_list, token)
-	if flag == SPLIT_TOKEN {
-		chn_tx <- token
-	}
 	return true, type_list
 }
 
-func parse_arg_list(ch chan string, chn_tx chan string, flag int) (bool, []string) {
+func parse_arg_list(ch chan string, chn_tx chan string) (bool, []string) {
 
 	var type_list []string
 
-	ret, token, list1 := parse_type(ch, chn_tx, flag)
+	ret, token, list1 := parse_type(ch, chn_tx)
 	if ret == false {
 		if token == ")" {
 			type_list = append(type_list, token)
-			if flag == SPLIT_TOKEN {
-				chn_tx <- token
-			}
 			return true, type_list
 		} else {
 			return false, type_list
@@ -177,9 +148,6 @@ func parse_arg_list(ch chan string, chn_tx chan string, flag int) (bool, []strin
 	token = <-ch
 	if token == ")" {
 		type_list = append(type_list, token)
-		if flag == SPLIT_TOKEN {
-			chn_tx <- token
-		}
 		return true, type_list
 	}
 	if token != "," {
@@ -187,11 +155,8 @@ func parse_arg_list(ch chan string, chn_tx chan string, flag int) (bool, []strin
 	}
 
 	type_list = append(type_list, token)
-	if flag == SPLIT_TOKEN {
-		chn_tx <- token
-	}
 
-	ret, list2 := parse_arg_list(ch, chn_tx, flag)
+	ret, list2 := parse_arg_list(ch, chn_tx)
 	type_list = append(type_list, list2...)
 
 	return ret, type_list
@@ -603,7 +568,7 @@ func main() {
 		 */
 		beijing_on_dec25 := func() {
 			for true {
-				ret, list := parse_oneline(channel_l, channel_tx_left, CHECK_GRAMMAR)
+				ret, list := parse_oneline(channel_l, channel_tx_left)
 				if ret != true {
 					fmt.Println("ERR")
 					os.Exit(4)
@@ -618,7 +583,7 @@ func main() {
 		 */
 		hong_kong_on_dec30 := func() {
 			for true {
-				ret, list := parse_oneline(channel_r, channel_tx_right, CHECK_GRAMMAR)
+				ret, list := parse_oneline(channel_r, channel_tx_right)
 				if ret != true {
 					fmt.Println("ERR")
 					os.Exit(4)
