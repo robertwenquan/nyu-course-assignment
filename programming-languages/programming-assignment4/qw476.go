@@ -389,6 +389,24 @@ func query_unification_dict(unification_dict map[string][]string, token string) 
 	if ok == false {
 		token_query_dict = append(token_query_dict, token)
 		status = false
+	} else {
+		for {
+			val := string_list_to_string(token_query_dict)
+			if what_type(val) != TYPEVAR {
+				break
+			}
+
+			/* exit at loop */
+			if val == token {
+				break
+			}
+
+			token_query_dict, ok = unification_dict[val]
+			if ok == false {
+				token_query_dict = append(token_query_dict, val)
+				break
+			}
+		}
 	}
 
 	return token_query_dict, status
@@ -531,7 +549,7 @@ func main() {
 		/*
 		 * One go routine for generating left type tokens
 		 */
-		san_francisco_on_dec18 := func() {
+		read_left_tokens := func() {
 			for scanner_l.Scan() {
 				if err := scanner_l.Err(); err != nil {
 					fmt.Println("ERR")
@@ -547,7 +565,7 @@ func main() {
 		/*
 		 * One go routine for generating right type tokens
 		 */
-		los_angeles_on_dec21 := func() {
+		read_right_tokens := func() {
 			for scanner_r.Scan() {
 				if err := scanner_r.Err(); err != nil {
 					fmt.Println("ERR")
@@ -566,7 +584,7 @@ func main() {
 		/*
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
-		beijing_on_dec25 := func() {
+		parse_left_type := func() {
 			for true {
 				ret, list := parse_oneline(channel_l, channel_tx_left)
 				if ret != true {
@@ -581,7 +599,7 @@ func main() {
 		/*
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
-		hong_kong_on_dec30 := func() {
+		parse_right_type := func() {
 			for true {
 				ret, list := parse_oneline(channel_r, channel_tx_right)
 				if ret != true {
@@ -596,7 +614,7 @@ func main() {
 		/*
 		 * Another go routine for type unification
 		 */
-		back_to_new_york_on_jan23 := func() {
+		type_unification := func() {
 
 			token_l := ""
 			token_r := ""
@@ -670,7 +688,9 @@ func main() {
 
 					// `abc & `bbc
 					if what_type(token_r_query_dict[0]) == TYPEVAR {
-						unification_dict[token_l_query_dict[0]] = token_r_query_dict
+						if string_list_to_string(token_l_query_dict) != string_list_to_string(token_r_query_dict) {
+							unification_dict[token_l_query_dict[0]] = token_r_query_dict
+						}
 					}
 
 				}
@@ -723,11 +743,11 @@ func main() {
 		/*
 		 * Launch go routines
 		 */
-		go san_francisco_on_dec18()
-		go los_angeles_on_dec21()
-		go beijing_on_dec25()
-		go hong_kong_on_dec30()
-		go back_to_new_york_on_jan23()
+		go read_left_tokens()
+		go read_right_tokens()
+		go parse_left_type()
+		go parse_right_type()
+		go type_unification()
 
 		// FIXME: sync up the threads before going to next loop
 		//        don't have the fucking time to fix this. leave it??
