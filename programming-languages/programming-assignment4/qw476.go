@@ -153,14 +153,14 @@ func what_type(token string) int {
 	return ILLEGAL
 }
 
-func is_unifiable(token_l string, token_r string) bool {
+func is_unifiable(token_l []string, token_r []string) bool {
 
-	if token_l == token_r {
+	if token_l[0] == token_r[0] {
 		return true
 	}
 
-	type_l := what_type(token_l)
-	type_r := what_type(token_r)
+	type_l := what_type(token_l[0])
+	type_r := what_type(token_r[0])
 
 	/* type variable could be unifiable with any type */
 	if type_l == TYPEVAR {
@@ -192,13 +192,188 @@ func is_unifiable(token_l string, token_r string) bool {
 	return false
 }
 
+func get_list_type(chn chan string) ([]string, int) {
+
+	var list_str []string
+
+	token := <-chn
+
+	if is_primitive_type(token) == true {
+		list_str = append(list_str, token)
+		return list_str, 0
+	}
+
+	if strings.HasPrefix(token, "`") == true {
+		list_str = append(list_str, token)
+		return list_str, 0
+	}
+
+	if token == "(" {
+		list_str = get_func_token(chn)
+		return list_str, 0
+	}
+
+	if token == "[" {
+		list_str = get_list_token(chn)
+		return list_str, 0
+	}
+
+	if token == ")" {
+		return list_str, 5
+	}
+
+	return list_str, 1
+}
+
+func get_list_token(chn chan string) []string {
+
+	var list_str []string
+
+	list_str = append(list_str, "[")
+	list_type, _ := get_list_type(chn)
+	for i := 0; i < len(list_type); i++ {
+		list_str = append(list_str, list_type[i])
+	}
+
+	token := <-chn
+	if token != "]" {
+		fmt.Println("ERR")
+		os.Exit(8)
+	}
+	list_str = append(list_str, token)
+
+	return list_str
+}
+
+func get_list_arglist(chn chan string) []string {
+
+	var list_str []string
+
+	list_type, ret := get_list_type(chn)
+	if ret == 5 {
+		return list_str
+	}
+
+	typestr := string_list_to_string(list_type)
+	list_str = append(list_str, typestr)
+
+	token := <-chn
+	if token == ")" {
+		list_str = append(list_str, token)
+		return list_str
+	}
+
+	if token != "," {
+		fmt.Println("ERR")
+		os.Exit(8)
+	}
+	list_str = append(list_str, token)
+
+	arglist_str := string_list_to_string(get_list_arglist(chn))
+	list_str = append(list_str, arglist_str)
+
+	return list_str
+
+}
+
+func get_func_token(chn chan string) []string {
+
+	var list_str []string
+
+	list_str = append(list_str, "(")
+	arglist_str := string_list_to_string(get_list_arglist(chn))
+	if arglist_str == "" {
+		list_str = append(list_str, ")")
+	} else {
+
+		list_str = append(list_str, arglist_str)
+
+		token := <-chn
+		if token != ")" {
+			fmt.Println("ERR")
+			os.Exit(8)
+		}
+		list_str = append(list_str, token)
+	}
+
+	token := <-chn
+	if token != "->" {
+		fmt.Println("ERR")
+		os.Exit(8)
+	}
+	list_str = append(list_str, token)
+
+	list_type, _ := get_list_type(chn)
+	type_str := string_list_to_string(list_type)
+	list_str = append(list_str, type_str)
+
+	return list_str
+}
+
+func string_list_to_string(strlist []string) string {
+
+	str := ""
+	for i := 0; i < len(strlist); i++ {
+		str = str + strlist[i]
+	}
+
+	return str
+}
+
+func print_unified_result(strlist []string, newline int, unification_dict map[string][]string) {
+
+	for i := 0; i < len(strlist); i++ {
+
+		/* not typed var */
+		if what_type(strlist[i]) != TYPEVAR {
+			fmt.Printf("%s", strlist[i])
+			continue
+		}
+
+		key := strlist[i]
+
+		/* not found in the cache */
+		val, ok := unification_dict[key]
+		if ok != true {
+			fmt.Printf("%s", strlist[i])
+			continue
+		}
+
+		print_unified_result(val, 0, unification_dict)
+
+	}
+
+	if newline == 1 {
+		fmt.Printf("\n")
+	}
+}
+
+func query_unification_dict(unification_dict map[string][]string, token string) []string {
+
+	token_query_dict, ok := unification_dict[token]
+	if ok != true {
+		token_query_dict = append(token_query_dict, token)
+	}
+
+	return token_query_dict
+}
+
+func print_unified_dict(unification_dict map[string][]string) {
+	fmt.Println("------------------------------")
+	for key := range unification_dict {
+		str := string_list_to_string(unification_dict[key])
+		fmt.Printf("%s -> %s\n", key, str)
+	}
+	fmt.Println("------------------------------")
+}
+
 func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 
 	/* global directory for the unification */
-	var unification_dict map[string]string
-	unification_dict = make(map[string]string)
+	var unification_dict map[string][]string
+	unification_dict = make(map[string][]string)
 
 	for {
 		line_buf, err := reader.ReadString('\n')
@@ -214,6 +389,11 @@ func main() {
 		// Handle QUIT
 		if line_buf == "QUIT" {
 			os.Exit(0)
+		}
+
+		if line_buf == "$$DEBUG$$" {
+			print_unified_dict(unification_dict)
+			continue
 		}
 
 		type_list := strings.Split(line_buf, "&")
@@ -315,7 +495,7 @@ func main() {
 		/*
 		 * One go routine for generating left type tokens
 		 */
-		generate_token_l := func() {
+		san_francisco_on_dec18 := func() {
 			for scanner_l.Scan() {
 				if err := scanner_l.Err(); err != nil {
 					fmt.Println("ERR")
@@ -330,7 +510,7 @@ func main() {
 		/*
 		 * One go routine for generating right type tokens
 		 */
-		generate_token_r := func() {
+		los_angeles_on_dec21 := func() {
 			for scanner_r.Scan() {
 				if err := scanner_r.Err(); err != nil {
 					fmt.Println("ERR")
@@ -348,7 +528,7 @@ func main() {
 		/*
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
-		parse_type_left := func() {
+		beijing_on_dec25 := func() {
 			for true {
 				ret := parse_oneline(channel_l, channel_tx_left)
 				if ret != true {
@@ -361,7 +541,7 @@ func main() {
 		/*
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
-		parse_type_right := func() {
+		hong_kong_on_dec30 := func() {
 			for true {
 				ret := parse_oneline(channel_r, channel_tx_right)
 				if ret != true {
@@ -374,7 +554,7 @@ func main() {
 		/*
 		 * Another go routine for type unification
 		 */
-		run_unification := func() {
+		back_to_new_york_on_jan23 := func() {
 
 			token_l := ""
 			token_r := ""
@@ -385,63 +565,101 @@ func main() {
 				token_l = <-channel_tx_left
 				token_r = <-channel_tx_right
 
-				if token_l == "END_OF_TYPE" || token_r == "END_OF_TYPE" {
+				if token_l == "END_OF_TYPE" && token_r == "END_OF_TYPE" {
 					break
 				}
 
-				token_l_query_dict, ok := unification_dict[token_l]
-				if ok == true {
-					token_l = token_l_query_dict
-				}
-				token_r_query_dict, ok := unification_dict[token_r]
-				if ok == true {
-					token_r = token_r_query_dict
-				}
-
-				if is_unifiable(token_l, token_r) == false {
+				if token_l == "END_OF_TYPE" || token_r == "END_OF_TYPE" {
 					fmt.Println("BOTTOM")
 					os.Exit(5)
 				}
 
-				if what_type(token_l) == TYPEVAR {
-					if what_type(token_r) == PRIMITIVE_TYPE {
-						unification_dict[token_l] = token_r
-						token_l = token_r
-					}
-					if what_type(token_r) == LISTTYPE {
-					}
+				/* check dictionary, if it exists, replace the type variable */
+				token_l_query_dict := query_unification_dict(unification_dict, token_l)
+				token_r_query_dict := query_unification_dict(unification_dict, token_r)
+
+				if is_unifiable(token_l_query_dict, token_r_query_dict) == false {
+					fmt.Println("BOTTOM")
+					os.Exit(5)
 				}
 
-				if what_type(token_r) == TYPEVAR {
-					if what_type(token_l) == PRIMITIVE_TYPE {
-						unification_dict[token_r] = token_l
-						token_r = token_l
+				if what_type(token_l_query_dict[0]) == TYPEVAR {
+
+					// `abc & int
+					if what_type(token_r_query_dict[0]) == PRIMITIVE_TYPE {
+						unification_dict[token_l] = append(unification_dict[token_l], token_r_query_dict[0])
+						newList = append(newList, token_r_query_dict[0])
+						continue
 					}
-					if what_type(token_l) == LISTTYPE {
+
+					// `abc & []
+					if what_type(token_r_query_dict[0]) == LISTTYPE {
+						token_list_r := get_list_token(channel_tx_right)
+						unification_dict[token_l] = token_list_r
+						newList = append(newList, token_list_r...)
+						continue
 					}
+
+					// `abc & ()
+					if what_type(token_r_query_dict[0]) == FUNCTYPE {
+						token_func_r := get_func_token(channel_tx_right)
+						unification_dict[token_l] = token_func_r
+						newList = append(newList, token_func_r...)
+						continue
+					}
+
+					// `abc & `bbc
+					if what_type(token_r_query_dict[0]) == TYPEVAR {
+						unification_dict[token_l_query_dict[0]] = token_r_query_dict
+					}
+
 				}
 
-				newList = append(newList, token_l)
+				if what_type(token_r_query_dict[0]) == TYPEVAR {
+
+					// int & `abc
+					if what_type(token_l_query_dict[0]) == PRIMITIVE_TYPE {
+						unification_dict[token_r] = append(unification_dict[token_r], token_l_query_dict[0])
+						newList = append(newList, token_l_query_dict[0])
+						continue
+					}
+
+					// [] & `abc
+					if what_type(token_l_query_dict[0]) == LISTTYPE {
+						token_list_l := get_list_token(channel_tx_left)
+						unification_dict[token_r] = token_list_l
+						newList = append(newList, token_list_l...)
+						continue
+					}
+
+					// () & `abc
+					if what_type(token_l_query_dict[0]) == FUNCTYPE {
+						token_func_l := get_func_token(channel_tx_left)
+						unification_dict[token_r] = token_func_l
+						newList = append(newList, token_func_l...)
+						continue
+					}
+
+				}
+
+				newList = append(newList, token_r_query_dict[0])
 			}
 
 			/* print the unified result */
-			for i := 0; i < len(newList); i++ {
-				fmt.Printf("%s", newList[i])
-			}
-			fmt.Printf("\n")
+			print_unified_result(newList, 1, unification_dict)
 		}
 
 		/*
-		 * Launch all go routines
+		 * Launch go routines
 		 */
-		go generate_token_l()
-		go generate_token_r()
-		go parse_type_left()
-		go parse_type_right()
-		go run_unification()
+		go san_francisco_on_dec18()
+		go los_angeles_on_dec21()
+		go beijing_on_dec25()
+		go hong_kong_on_dec30()
+		go back_to_new_york_on_jan23()
 
 		// FIXME: sync up the threads before going to next loop
+		//        don't have the fucking time to fix this. leave it??
 		time.Sleep(10000000)
-
 	}
 }
