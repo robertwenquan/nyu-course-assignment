@@ -1,0 +1,3 @@
+(int, int) -> int & (`a, `cc) -> `b
+(`a, `cc) -> `b & (int, int ) -> int
+QUIT

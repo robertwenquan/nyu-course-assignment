@@ -1,0 +1,5 @@
+int &   int
+float & float
+string & string
+long & long
+QUIT

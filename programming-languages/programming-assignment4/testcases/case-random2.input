@@ -1,0 +1,5 @@
+int & `b
+`a & int
+(int, `a, `b) -> string & (`xx, `yy, `zz) -> `cvvvv
+(`cccc, `xxxx, `bbbb) ->`oooo & (int, `a, `b) -> string
+QUIT
