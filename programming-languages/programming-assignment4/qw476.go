@@ -366,19 +366,44 @@ func print_unified_result(strlist []string, newline int, unification_dict map[st
 		key := strlist[i]
 
 		/* not found in the cache */
-		val, ok := unification_dict[key]
-		if ok != true {
+		query_dict, is_cached := query_unification_dict(unification_dict, key)
+		if is_cached == false {
 			fmt.Printf("%s", strlist[i])
 			continue
 		}
 
-		print_unified_result(val, 0, unification_dict)
+		print_unified_result(query_dict, 0, unification_dict)
 
 	}
 
 	if newline == 1 {
 		fmt.Printf("\n")
 	}
+}
+
+func check_recursive_type(strlist []string, unification_dict map[string][]string) bool {
+
+	for i := 0; i < len(strlist); i++ {
+
+		if what_type(strlist[i]) != TYPEVAR {
+			continue
+		}
+
+		key := strlist[i]
+
+		query_dict, is_cached := query_unification_dict(unification_dict, key)
+		if is_cached == false {
+			continue
+		}
+
+		for j := 0; j < len(query_dict); j++ {
+			if key == query_dict[j] {
+				return true
+			}
+		}
+	}
+
+	return false
 }
 
 func query_unification_dict(unification_dict map[string][]string, token string) ([]string, bool) {
@@ -739,6 +764,12 @@ func main() {
 				}
 
 				newList = append(newList, token_r_query_dict[0])
+			}
+
+			ret := check_recursive_type(newList, unification_dict)
+			if ret == true {
+				fmt.Println("BOTTOM")
+				os.Exit(5)
 			}
 
 			/* print the unified result */
