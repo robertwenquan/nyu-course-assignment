@@ -696,7 +696,7 @@ func main() {
 		/*
 		 * Another go routine for type unification
 		 */
-		to_hell_type_unification := func() {
+		start_unification := func() {
 
 			token_l := ""
 			token_r := ""
@@ -884,7 +884,7 @@ func main() {
 		go read_right_tokens()
 		go parse_left_type()
 		go parse_right_type()
-		go to_hell_type_unification()
+		go start_unification()
 
 		// FIXME: sync up the threads before going to next loop
 		//        don't have the fucking time to fix this. leave it??
