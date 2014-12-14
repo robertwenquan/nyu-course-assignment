@@ -778,6 +778,26 @@ func main() {
 
 				}
 
+				if is_cached_l == true && what_type(token_r_query_dict[0]) == LISTTYPE {
+					if is_cached_r == false {
+						_ = get_list_token(channel_tx_right)
+						newList = append(newList, token_l_query_dict...)
+					} else {
+						newList = append(newList, token_l_query_dict...)
+					}
+					continue
+				}
+
+				if is_cached_l == true && what_type(token_r_query_dict[0]) == FUNCTYPE {
+					if is_cached_r == false {
+						_ = get_func_token(channel_tx_right)
+						newList = append(newList, token_l_query_dict...)
+					} else {
+						newList = append(newList, token_l_query_dict...)
+					}
+					continue
+				}
+
 				newList = append(newList, token_r_query_dict[0])
 			}
 
