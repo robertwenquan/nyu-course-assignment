@@ -381,7 +381,7 @@ func print_unified_result(strlist []string, newline int, unification_dict map[st
 	}
 }
 
-func check_recursive_type(strlist []string, unification_dict map[string][]string) bool {
+func check_recursive_type_list(strlist []string, unification_dict map[string][]string) bool {
 
 	for i := 0; i < len(strlist); i++ {
 
@@ -389,15 +389,30 @@ func check_recursive_type(strlist []string, unification_dict map[string][]string
 			continue
 		}
 
-		key := strlist[i]
+		ret := check_recursive_type(strlist[i], strlist[i], unification_dict)
+		if ret == true {
+			return true
+		}
+	}
 
-		query_dict, is_cached := query_unification_dict(unification_dict, key)
-		if is_cached == false {
-			continue
+	return false
+}
+
+func check_recursive_type(origin string, token string, unification_dict map[string][]string) bool {
+
+	query_dict, is_cached := query_unification_dict(unification_dict, token)
+	if is_cached == false {
+		return false
+	}
+
+	for i := 0; i < len(query_dict); i++ {
+		if origin == query_dict[i] {
+			return true
 		}
 
-		for j := 0; j < len(query_dict); j++ {
-			if key == query_dict[j] {
+		if what_type(query_dict[i]) == TYPEVAR {
+			ret := check_recursive_type(origin, query_dict[i], unification_dict)
+			if ret == true {
 				return true
 			}
 		}
@@ -438,12 +453,12 @@ func query_unification_dict(unification_dict map[string][]string, token string) 
 }
 
 func print_unified_dict(unification_dict map[string][]string) {
-	fmt.Println("------------------------------")
+	fmt.Println("-------unification dictionary-------")
 	for key := range unification_dict {
 		str := string_list_to_string(unification_dict[key])
 		fmt.Printf("%s -> %s\n", key, str)
 	}
-	fmt.Println("------------------------------")
+	fmt.Println("------------------------------------")
 }
 
 func main() {
@@ -766,7 +781,7 @@ func main() {
 				newList = append(newList, token_r_query_dict[0])
 			}
 
-			ret := check_recursive_type(newList, unification_dict)
+			ret := check_recursive_type_list(newList, unification_dict)
 			if ret == true {
 				fmt.Println("BOTTOM")
 				os.Exit(5)
@@ -777,7 +792,7 @@ func main() {
 		}
 
 		/*
-		 * Launch go routines
+		 * Launch a few go routines to work out the type unification
 		 */
 		go read_left_tokens()
 		go read_right_tokens()
