@@ -13,12 +13,9 @@ import (
 const (
 	ILLEGAL = 1
 
-	TYPE           = 2
 	PRIMITIVE_TYPE = 3
 	TYPEVAR        = 4
-	VARNAME        = 5
 	FUNCTYPE       = 6
-	ARGLIST        = 7
 	LISTTYPE       = 8
 )
 
@@ -226,6 +223,10 @@ func is_initial_unifiable(token_l []string, token_r []string) bool {
 	}
 
 	return false
+}
+
+func is_further_unifiable(token_l []string, token_r []string) bool {
+	return true
 }
 
 func get_list_token_offline(type_list []string) []string {
@@ -781,42 +782,50 @@ func main() {
 				/* list with list */
 				if is_cached_l == true && what_type(token_r_query_dict[0]) == LISTTYPE {
 					if is_cached_r == false {
-						_ = get_list_token(channel_tx_right)
-						newList = append(newList, token_l_query_dict...)
-					} else {
-						newList = append(newList, token_l_query_dict...)
+						token_r_query_dict = get_list_token(channel_tx_right)
+						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+							fmt.Println("BOTTOM")
+							os.Exit(5)
+						}
 					}
+					newList = append(newList, token_l_query_dict...)
 					continue
 				}
 
 				if is_cached_r == true && what_type(token_l_query_dict[0]) == LISTTYPE {
 					if is_cached_l == false {
-						_ = get_list_token(channel_tx_left)
-						newList = append(newList, token_r_query_dict...)
-					} else {
-						newList = append(newList, token_r_query_dict...)
+						token_l_query_dict = get_list_token(channel_tx_left)
+						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+							fmt.Println("BOTTOM")
+							os.Exit(5)
+						}
 					}
+					newList = append(newList, token_r_query_dict...)
 					continue
 				}
 
 				/* func with func */
 				if is_cached_l == true && what_type(token_r_query_dict[0]) == FUNCTYPE {
 					if is_cached_r == false {
-						_ = get_func_token(channel_tx_right)
-						newList = append(newList, token_l_query_dict...)
-					} else {
-						newList = append(newList, token_l_query_dict...)
+						token_r_query_dict = get_func_token(channel_tx_right)
+						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+							fmt.Println("BOTTOM")
+							os.Exit(5)
+						}
 					}
+					newList = append(newList, token_l_query_dict...)
 					continue
 				}
 
 				if is_cached_r == true && what_type(token_l_query_dict[0]) == FUNCTYPE {
 					if is_cached_l == false {
-						_ = get_func_token(channel_tx_left)
-						newList = append(newList, token_r_query_dict...)
-					} else {
-						newList = append(newList, token_r_query_dict...)
+						token_l_query_dict = get_func_token(channel_tx_left)
+						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+							fmt.Println("BOTTOM")
+							os.Exit(5)
+						}
 					}
+					newList = append(newList, token_r_query_dict...)
 					continue
 				}
 
