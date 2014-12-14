@@ -189,7 +189,7 @@ func what_type(token string) int {
 	return ILLEGAL
 }
 
-func is_unifiable(token_l []string, token_r []string) bool {
+func is_initial_unifiable(token_l []string, token_r []string) bool {
 
 	if token_l[0] == token_r[0] {
 		return true
@@ -684,7 +684,7 @@ func main() {
 				token_l_query_dict, is_cached_l := query_unification_dict(unification_dict, token_l)
 				token_r_query_dict, is_cached_r := query_unification_dict(unification_dict, token_r)
 
-				if is_unifiable(token_l_query_dict, token_r_query_dict) == false {
+				if is_initial_unifiable(token_l_query_dict, token_r_query_dict) == false {
 					fmt.Println("BOTTOM")
 					os.Exit(5)
 				}
@@ -778,6 +778,7 @@ func main() {
 
 				}
 
+				/* list with list */
 				if is_cached_l == true && what_type(token_r_query_dict[0]) == LISTTYPE {
 					if is_cached_r == false {
 						_ = get_list_token(channel_tx_right)
@@ -788,12 +789,33 @@ func main() {
 					continue
 				}
 
+				if is_cached_r == true && what_type(token_l_query_dict[0]) == LISTTYPE {
+					if is_cached_l == false {
+						_ = get_list_token(channel_tx_left)
+						newList = append(newList, token_r_query_dict...)
+					} else {
+						newList = append(newList, token_r_query_dict...)
+					}
+					continue
+				}
+
+				/* func with func */
 				if is_cached_l == true && what_type(token_r_query_dict[0]) == FUNCTYPE {
 					if is_cached_r == false {
 						_ = get_func_token(channel_tx_right)
 						newList = append(newList, token_l_query_dict...)
 					} else {
 						newList = append(newList, token_l_query_dict...)
+					}
+					continue
+				}
+
+				if is_cached_r == true && what_type(token_l_query_dict[0]) == FUNCTYPE {
+					if is_cached_l == false {
+						_ = get_func_token(channel_tx_left)
+						newList = append(newList, token_r_query_dict...)
+					} else {
+						newList = append(newList, token_r_query_dict...)
 					}
 					continue
 				}
