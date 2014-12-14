@@ -1,0 +1,4 @@
+(int,float,long)->[[[string]]]
+[[[[[()->string]]]]]
+([int],[string])->int
+((int,float,long)->[[[string]]],[[[[[()->string]]]]],([int],[string])->int)->string

@@ -1,0 +1,17 @@
+`a & int
+`a & int
+`b & float
+`b & float
+`c & long
+`c & long
+`d & string
+`d & string
+int & `a
+int & `a
+float & `b
+float & `b
+long & `c
+long & `c
+string & `d
+string & `d
+QUIT

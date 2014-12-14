@@ -1,0 +1,5 @@
+`a & (int,int)->int
+`a & (int,int)->int
+(int,int)->int & `a
+(int,int)->int & `a
+QUIT

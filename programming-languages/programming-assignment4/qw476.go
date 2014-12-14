@@ -887,7 +887,7 @@ func main() {
 		go start_unification()
 
 		// FIXME: sync up the threads before going to next loop
-		//        don't have the fucking time to fix this. leave it??
+		//        don't have the time to make this more elegant...
 		time.Sleep(10000000)
 	}
 }
