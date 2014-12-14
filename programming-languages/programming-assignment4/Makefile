@@ -1,9 +1,9 @@
 all:	clean
-	/bin/cp -f qw476.go qw476/src/unify/unify.go
+	/bin/cp -f qw476.go qw476/src/unify/qw476.go
 	cd qw476/src/unify && go install
 
 pkg:	all
-	zip -T qw476.zip qw476/src/unify/unify.go
+	zip -T qw476.zip qw476/src/unify/qw476.go
 
 clean:	
 	rm -fr qw476/bin *.zip
