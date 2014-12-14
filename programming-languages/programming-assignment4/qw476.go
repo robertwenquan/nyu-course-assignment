@@ -17,6 +17,9 @@ const (
 	TYPEVAR        = 4
 	FUNCTYPE       = 6
 	LISTTYPE       = 8
+
+	FUNCTYPE_END = 16
+	LISTTYPE_END = 18
 )
 
 func is_primitive_type(token string) bool {
@@ -183,17 +186,25 @@ func what_type(token string) int {
 		return FUNCTYPE
 	}
 
+	if token == "]" {
+		return LISTTYPE_END
+	}
+
+	if token == "}" {
+		return FUNCTYPE_END
+	}
+
 	return ILLEGAL
 }
 
-func is_initial_unifiable(token_l []string, token_r []string) bool {
+func is_initial_unifiable(token_l string, token_r string) bool {
 
-	if token_l[0] == token_r[0] {
+	if token_l == token_r {
 		return true
 	}
 
-	type_l := what_type(token_l[0])
-	type_r := what_type(token_r[0])
+	type_l := what_type(token_l)
+	type_r := what_type(token_r)
 
 	/* type variable could be unifiable with any type */
 	if type_l == TYPEVAR {
@@ -225,7 +236,31 @@ func is_initial_unifiable(token_l []string, token_r []string) bool {
 	return false
 }
 
-func is_further_unifiable(token_l []string, token_r []string) bool {
+func is_further_unifiable(list_left []string, list_right []string) bool {
+
+	index_l := 0
+	index_r := 0
+	len_l := len(list_left)
+	len_r := len(list_right)
+
+	for {
+		if index_l == len_l && index_r == len_r {
+			break
+		}
+
+		if index_l == len_l || index_r == len_r {
+			return false
+		}
+
+		single_token_status := is_initial_unifiable(list_left[index_l], list_right[index_r])
+		if single_token_status == false {
+			return false
+		}
+
+		index_l++
+		index_r++
+	}
+
 	return true
 }
 
@@ -661,7 +696,7 @@ func main() {
 		/*
 		 * Another go routine for type unification
 		 */
-		type_unification := func() {
+		to_hell_type_unification := func() {
 
 			token_l := ""
 			token_r := ""
@@ -685,7 +720,7 @@ func main() {
 				token_l_query_dict, is_cached_l := query_unification_dict(unification_dict, token_l)
 				token_r_query_dict, is_cached_r := query_unification_dict(unification_dict, token_r)
 
-				if is_initial_unifiable(token_l_query_dict, token_r_query_dict) == false {
+				if is_initial_unifiable(token_l_query_dict[0], token_r_query_dict[0]) == false {
 					fmt.Println("BOTTOM")
 					os.Exit(5)
 				}
@@ -783,10 +818,10 @@ func main() {
 				if is_cached_l == true && what_type(token_r_query_dict[0]) == LISTTYPE {
 					if is_cached_r == false {
 						token_r_query_dict = get_list_token(channel_tx_right)
-						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
-							fmt.Println("BOTTOM")
-							os.Exit(5)
-						}
+					}
+					if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+						fmt.Println("BOTTOM")
+						os.Exit(5)
 					}
 					newList = append(newList, token_l_query_dict...)
 					continue
@@ -795,10 +830,10 @@ func main() {
 				if is_cached_r == true && what_type(token_l_query_dict[0]) == LISTTYPE {
 					if is_cached_l == false {
 						token_l_query_dict = get_list_token(channel_tx_left)
-						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
-							fmt.Println("BOTTOM")
-							os.Exit(5)
-						}
+					}
+					if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+						fmt.Println("BOTTOM")
+						os.Exit(5)
 					}
 					newList = append(newList, token_r_query_dict...)
 					continue
@@ -808,10 +843,10 @@ func main() {
 				if is_cached_l == true && what_type(token_r_query_dict[0]) == FUNCTYPE {
 					if is_cached_r == false {
 						token_r_query_dict = get_func_token(channel_tx_right)
-						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
-							fmt.Println("BOTTOM")
-							os.Exit(5)
-						}
+					}
+					if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+						fmt.Println("BOTTOM")
+						os.Exit(5)
 					}
 					newList = append(newList, token_l_query_dict...)
 					continue
@@ -820,10 +855,10 @@ func main() {
 				if is_cached_r == true && what_type(token_l_query_dict[0]) == FUNCTYPE {
 					if is_cached_l == false {
 						token_l_query_dict = get_func_token(channel_tx_left)
-						if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
-							fmt.Println("BOTTOM")
-							os.Exit(5)
-						}
+					}
+					if is_further_unifiable(token_l_query_dict, token_r_query_dict) == false {
+						fmt.Println("BOTTOM")
+						os.Exit(5)
 					}
 					newList = append(newList, token_r_query_dict...)
 					continue
@@ -849,7 +884,7 @@ func main() {
 		go read_right_tokens()
 		go parse_left_type()
 		go parse_right_type()
-		go type_unification()
+		go to_hell_type_unification()
 
 		// FIXME: sync up the threads before going to next loop
 		//        don't have the fucking time to fix this. leave it??
