@@ -7,7 +7,7 @@ import (
 	"os"
 	"regexp"
 	"strings"
-	"time"
+	"sync"
 )
 
 const (
@@ -501,6 +501,8 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 
+	var wg sync.WaitGroup
+
 	/* global directory for the unification */
 	var unification_dict map[string][]string
 	unification_dict = make(map[string][]string)
@@ -632,6 +634,7 @@ func main() {
 		 * One go routine for generating left type tokens
 		 */
 		read_left_tokens := func() {
+			defer wg.Done()
 			for scanner_l.Scan() {
 				if err := scanner_l.Err(); err != nil {
 					fmt.Println("ERR")
@@ -648,6 +651,7 @@ func main() {
 		 * One go routine for generating right type tokens
 		 */
 		read_right_tokens := func() {
+			defer wg.Done()
 			for scanner_r.Scan() {
 				if err := scanner_r.Err(); err != nil {
 					fmt.Println("ERR")
@@ -667,36 +671,35 @@ func main() {
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
 		parse_left_type := func() {
-			for true {
-				ret, list := parse_oneline(channel_l, channel_tx_left)
-				if ret != true {
-					fmt.Println("ERR")
-					os.Exit(4)
-				}
-
-				spit_token_to_channel(channel_tx_left, list)
+			defer wg.Done()
+			ret, list := parse_oneline(channel_l, channel_tx_left)
+			if ret != true {
+				fmt.Println("ERR")
+				os.Exit(4)
 			}
+
+			spit_token_to_channel(channel_tx_left, list)
 		}
 
 		/*
 		 * Another go routine for parsing the tokens and generate the parse tree
 		 */
 		parse_right_type := func() {
-			for true {
-				ret, list := parse_oneline(channel_r, channel_tx_right)
-				if ret != true {
-					fmt.Println("ERR")
-					os.Exit(4)
-				}
-
-				spit_token_to_channel(channel_tx_right, list)
+			defer wg.Done()
+			ret, list := parse_oneline(channel_r, channel_tx_right)
+			if ret != true {
+				fmt.Println("ERR")
+				os.Exit(4)
 			}
+
+			spit_token_to_channel(channel_tx_right, list)
 		}
 
 		/*
 		 * Another go routine for type unification
 		 */
 		start_unification := func() {
+			defer wg.Done()
 
 			token_l := ""
 			token_r := ""
@@ -875,19 +878,21 @@ func main() {
 
 			/* print the unified result */
 			print_unified_result(newList, 1, unification_dict)
+
 		}
 
 		/*
 		 * Launch a few go routines to work out the type unification
 		 */
+
+		wg.Add(5)
+
 		go read_left_tokens()
 		go read_right_tokens()
 		go parse_left_type()
 		go parse_right_type()
 		go start_unification()
 
-		// FIXME: sync up the threads before going to next loop
-		//        don't have the time to make this more elegant...
-		time.Sleep(10000000)
+		wg.Wait()
 	}
 }
