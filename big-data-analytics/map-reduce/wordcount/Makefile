@@ -9,3 +9,6 @@ run:
 	hadoop jar wc.jar WordCount /user/robert/wordcount/input /user/robert/wordcount/output
 	@echo "--------------------------- Checking output"
 	hadoop fs -cat /user/robert/wordcount/output/part-00000
+
+clean:	
+	@rm -f *.class
