@@ -3,11 +3,23 @@
 ###### Robert Wen (robert.wen@nyu.edu)
 ###### N12246277, NetID: qw476
 
-### Instructions to run the Map-Reduce application
+### Instructions to run the Map-Reduce application using Makefile
 ```
 $ make prepare
 $ make
 $ make run
+```
+
+### Instructions to run the Map-Reduce application using Hadoop commands
+```
+$ hadoop com.sun.tools.javac.Main WordCountBinning.java
+$ jar cf wc.jar WordCountBinning*.class
+
+$ hadoop fs -rm -f -r /user/robert/wordcount-binning
+$ hadoop fs -mkdir -p /user/robert/wordcount-binning/input
+$ hadoop fs -mkdir -p /user/robert/wordcount-binning/output
+$ hadoop fs -copyFromLocal input/* /user/robert/wordcount-binning/input/
+$ hadoop jar wc.jar WordCountBinning /user/robert/wordcount-binning/input /user/robert/wordcount-binning/output
 ```
 
 ### Sample output for this application
