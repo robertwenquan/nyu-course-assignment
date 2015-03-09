@@ -6,7 +6,8 @@ LIST=dict()
 
 for line in sys.stdin:
   line = line.strip()
-  node_id,children_list,distance,status,parent_id = line.split("|")
+  node_id,rest = line.split()
+  children_list,distance,status,parent_id = rest.split("|")
   distance=int(distance)
 
   if LIST.get(node_id) == None:
@@ -28,6 +29,6 @@ for line in sys.stdin:
 
 for node_id in LIST:
   node = LIST[node_id]
-  print "%s|%s|%d|%s|%s" % (node[0], node[1], node[2], node[3], node[4])
+  print "%s\t%s|%d|%s|%s" % (node[0], node[1], node[2], node[3], node[4])
 
 

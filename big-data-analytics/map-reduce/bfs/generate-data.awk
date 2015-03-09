@@ -9,7 +9,7 @@ BEGIN{
   val = $2
 
   if (LIST[key] == "") {
-    LIST[key] = key "|" val
+    LIST[key] = key "\t" val
   } else {
     LIST[key] = LIST[key] "," val
   }
