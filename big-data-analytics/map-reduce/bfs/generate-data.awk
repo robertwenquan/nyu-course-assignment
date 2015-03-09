@@ -16,8 +16,19 @@ BEGIN{
 }
 
 END {
-  for (key in LIST)
+  n = length(LIST)
+  asort(LIST)
+  for (key=0;key<n;key++)
   {
-    print LIST[key] "|-1|WAIT|na"
+    if (LIST[key] == "") {
+      continue
+    }
+
+    if (substr(LIST[key], 0, 2) == "1\t") {
+      print LIST[key] "|0|TODO|root"
+    }
+    else {
+      print LIST[key] "|-1|WAIT|na"
+    }
   }
 }
