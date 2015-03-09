@@ -16,7 +16,9 @@ for line in sys.stdin:
 
     children_list = children_list.split(",")
     for child in children_list:
+      # skip empty ID
       if child == "":
         continue
+
       print "%s\t%s|%d|%s|%s" % (child, "", distance+1, "TODO", node_id)
 
