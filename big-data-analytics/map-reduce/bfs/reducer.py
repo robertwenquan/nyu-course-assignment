@@ -17,6 +17,10 @@ for line in sys.stdin:
   if LIST[node_id][1] == "" and children_list != "":
     LIST[node_id][1] = children_list
 
+  if LIST[node_id][2] == -1 and distance >= 0:
+    LIST[node_id][2] = distance
+    LIST[node_id][4] = parent_id
+
   if distance >= 0 and distance < LIST[node_id][2]:
     LIST[node_id][2] = distance
     LIST[node_id][4] = parent_id
