@@ -52,18 +52,76 @@ For noSQL:
 * Delete:
 * Update:
 
+##### Experimental environment
+
+The following experimental analysis is based on the MySQL and MongoDB instances sponsored by IBM. 
+
+174.79.32.150 - mysql
+174.79.32.135 - mongo
+
+Here is the basic hardware configuration of those two hosts
+            CPU              Memory             Disk   
+----------------------------------------------------------------
+mysql       XXXXX            32 GB (xxxxxx)     256 GB (xxxx)  
+mongo       XXXXX            32 GB (xxxxxx)     256 GB (xxxx)  
+
 ##### time to add "n" records
+
+Here we do the comparative experiment for record insertion into mysql and mongodb.
+In order to see a better trend of how they work with various volumns, I choose a series of numbers from 100 to 1 million.
+For each experiment, we clear the whole database and only insert those number of records.
+
+For MySQL, we use the following script to perform the records insertion
+For MongoDB, we use the following script to perform the records insertion
+
+Database
+(INSERT)   100    1000    10000   100000    1000000
+---------------------------------------------------
+MySQL     
+MongoDB
+
+Plot it with line chart
+
+Draw a conclusion based on the above observation:
+Which one plays better on small dataset?
+Which one plays better on large dataset?
+How many records could be inserted in 1s, 1min, 1hr, 1day on MySQL and MongoDB?
+
 
 ##### time to process "n" rows
 
+Process 100 records
+Process 1000 records
+Process 10000 records
+Process 100000 records
+Process 1000000 records
+
+Database
+(SELECT)   100    1000    10000   100000    1000000
+---------------------------------------------------
+MySQL     
+MongoDB
+
+Plot it with line chart
+
+
 ##### time to update/delete "n" records
+
+Update 100 records
+Update 1000 records
+Update 10000 records
+Update 100000 records
+Update 1000000 records
 
 ##### time to process rich variety
 
 ##### Summary
+
+As from the comparative analysis from the above chapters, it is hard to draw a conclusion whether SQL or noSQL is better than the other, because each type of database has its own advantage over the other.
 
 ##### Reference
 
  * http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
  * http://www.mongodb.com/nosql-explained
  * http://www.scriptrock.com/articles/mysql-vs-mongodb
+
