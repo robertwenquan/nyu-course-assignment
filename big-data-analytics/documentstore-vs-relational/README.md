@@ -11,7 +11,6 @@ Robert Wen (robert.wen@nyu.edu), N12246277, NetID: qw476<br>
 * Relational database has scalability concern. While SQL databases have better vertical scalability than noSQL databases, the scaling trend is not linear when the computing resource doulbes more than twice.
 * Fixed schema. Everything has to be converted into table schema. Not good for unstructural data. 
 * Hierarchical data.
-* 
  
 ##### Limitations of Document Stores 
 
@@ -19,16 +18,16 @@ Robert Wen (robert.wen@nyu.edu), N12246277, NetID: qw476<br>
 * No unified query language. Every vendor has its own query convention.
 * For high transactional based application. NoSQL is not stable enough.
 * Lack of commercial support. 
+* Data Integrity
+* Not easy to join table
  
 ##### Comparison of capabilities available in both
 
-##### time to add "n" records
-
-##### time to process "n" rows
-
-##### time to update/delete "n" records
-
-##### time to process rich variety
+As for common capabilities, both SQL and noSQL databases have the following features:
+* Add, Query, Update and Delete
+* CLI manipulation of the data
+* data import and export
+* Programmable APIs for various programming languages
 
 ##### conceptual and syntactic ease of achieving information retrieval and manipulation tasks
 
@@ -53,10 +52,18 @@ For noSQL:
 * Delete:
 * Update:
 
+##### time to add "n" records
+
+##### time to process "n" rows
+
+##### time to update/delete "n" records
+
+##### time to process rich variety
+
 ##### Summary
 
 ##### Reference
 
  * http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
  * http://www.mongodb.com/nosql-explained
-
+ * http://www.scriptrock.com/articles/mysql-vs-mongodb
