@@ -109,11 +109,41 @@ The other notable glitch on the mongoDB node is that the memory is not well conf
 
 #### Experimental Data
 
-The data for this experiment is the Flickr image meta data
+The data for this experiment is the Flickr image meta data provided by Yahoo Labs
+http://webscope.sandbox.yahoo.com/catalog.php?datatype=i&did=67
 
-* img_url
-* labels
-* blog_url
+The original data is 100 million items. For this experiment, we only extract 1 million items from it.
+
+The input data format after initial filtering and processing is like this. We have 1 million items in this format.
+'''
+{
+ u'crawler': u'firehose',
+ u'fh_ver': u'2.2',
+ u'image_urls': [u'https://38.media.tumblr.com/65e7f3f16c4036812e60a348f8c67974/tumblr_nm0ge7TmRk1ur4qc3o2_250.gif'],
+ u'labels': [],
+ u'ref_urls': [u'http://tmblr.co/ZJOTLv1h90ouq'],
+ u'tumblr_blogurl': u'http://seethesunlight3.tumblr.com/',
+ u'tumblr_notes': 260,
+ u'tumblr_timestamp': 1427735583,
+ u'url': u'https://38.media.tumblr.com/65e7f3f16c4036812e60a348f8c67974/tumblr_nm0ge7TmRk1ur4qc3o2_250.gif'
+}
+'''
+
+To process the input data format in MySQL and MongoDB, we need some data format transformation. Generally for MySQL we only extract the fileds of our interest and save the fileds into a table. For MongoDB because of its native support of JSON, we simply import the whole JSON object into the data collection.
+
+The following table schema is used for MySQL, to store the extracted data fields from the raw input JSON format.
+```
+mysql> desc flickr_pics;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| timestamp | mediumtext   | YES  |     | NULL    |       |
+| imgurl    | varchar(256) | YES  |     | NULL    |       |
+| blogurl   | varchar(256) | YES  |     | NULL    |       |
+| labels    | varchar(512) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+```
 
 #### Time to add "n" records
 
