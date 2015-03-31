@@ -116,13 +116,13 @@ For MongoDB1, we use db.table.insert() to import each of the record
 For MongoDB2, we use mongoimport to import all records in one batch
 
 Record
-(INSERT)   100    1000    10000   100000    1000000
----------------------------------------------------
-MySQL1   1.346  12.485  126.883   1300.0(*) 13000.0(*)
-MySQL2   0.138   0.355    1.194	   3.995     31.317
-MySQL3   0.188   0.680    4.293   35.307    344.56
-MongoDB1 0.151   1.055   10.642   
-MongoDB2 0.026   0.086    0.674    6.685     68.959
+(INSERT)   100    1000    10000     100000      1000000
+----------------------------------------------------------
+MySQL1   1.346  12.485  126.883   1300.000(*) 13000.000(*)
+MySQL2   0.138   0.355    1.194	     3.995       31.317
+MySQL3   0.188   0.680    4.293     35.307      344.560
+MongoDB1 0.151   1.055   10.642    106.379     1060.000(*)
+MongoDB2 0.026   0.086    0.674      6.685       68.959
 
 (*) Not tested but projected value
 
@@ -156,11 +156,11 @@ Process 100000 records
 Process 1000000 records
 
 Record
-(SELECT)   100    1000    10000   100000    1000000
+(SELECT)   100    1000     10000   100000   1000000
 ---------------------------------------------------
-MySQL1    0.019   0.031    0.464    3.084     29.839
-MySQL2    0.005   0.007    0.026    0.269      3.281
-MongoDB1
+MySQL1    0.019   0.031    0.464    3.084    29.839
+MySQL2    0.005   0.007    0.026    0.269     3.281
+MongoDB1  0.042   0.050    0.130    0.837
 MongoDB2
 
 Plot it with line chart
@@ -177,7 +177,11 @@ For MySQL, we use the following SQL query:
 
 For MongoDB, we use the following MongoDB query:
 '''
-> 
+> db.flickr_pics.find().forEach(
+    function(u) {
+      u.tumblr_blogurl = u.tumblr_blogurl.replace(/http\:\/\//g, "").replace(/\//, "");
+      db.flickr_pics.save(u); }
+    );
 '''
 
 Update 100 records
@@ -190,9 +194,13 @@ Record
 (UPDATE)   100    1000    10000   100000    1000000
 ---------------------------------------------------
 MySQL    0.019   0.031    0.464    3.084     29.839
-MongoDB
+MongoDB  0.066   0.311    2.916   27.525    274.375
 
 Plot it with line chart
+
+From the above we can observe the update performance on MySQL is much superior than that of MongoDB. That is because Mongo DB does not have native support for string replacement manipulation in UPDATE query. Instead we have to iterate each data record and set the value back.
+
+We can also observe the performance scales linearly on the data scale, both on MySQL and MongoDB. So in the real environment we can do some small dataset as performance evaluation and estimate the actual time cost of a bigger set. 
 
 ##### time to delete "n" records
 
@@ -214,6 +222,7 @@ MongoDB  0.036   0.035    0.036    0.036      0.036
 
 Plot it with line chart
 
+From the above performance data, we can see the DELETE query from MySQL is a O(n) while the TRUNCATE from MySQL and db.TABLE.drop() from MongoDB are both O(1). So when we delete table, we never want to use "DELETE from TABLE" to delete a table from MySQL when the table is considerably large.
 
 ##### time to process rich variety
 
