@@ -167,7 +167,7 @@ MongoDB2 | 0.026  |  0.086  |  0.674  |    6.685    |    68.959
 
 (*) Not tested but projected value
 
-![SELECT Performance Comparison](images/plot-select.png)
+![INSERT Performance Comparison](images/plot-insert.png)
 
 Draw a conclusion based on the above observation:
 Which one plays better on small dataset?
@@ -205,8 +205,7 @@ MySQL2   | 0.005  | 0.007  | 0.026  |  0.269  |   3.281
 MongoDB1 | 0.042  | 0.050  | 0.130  |  0.837  |   6.180
 MongoDB2 | 0.037  | 0.040  | 0.066  |  0.322  |   2.822
 
-Plot it with line chart
-
+![SELECT Performance Comparison](images/plot-select.png)
 
 #### Time to update "n" records
 
@@ -239,7 +238,7 @@ Record
 MySQL   | 0.019 | 0.031 | 0.464 |  3.084  |  29.839 |
 MongoDB | 0.066 | 0.311 | 2.916 | 27.525  | 274.375 |
 
-Plot it with line chart
+![INSERT Performance Comparison](images/plot-update.png)
 
 From the above we can observe the update performance on MySQL is much superior than that of MongoDB. That is because Mongo DB does not have native support for string replacement manipulation in UPDATE query. Instead we have to iterate each data record and set the value back.
 
@@ -264,7 +263,7 @@ MySQL1  | 0.018  | 0.018   | 0.281   | 1.099    | 14.906
 MySQL2  | 0.078  | 0.072   | 0.215   | 0.108    |  0.275
 MongoDB | 0.036  | 0.035   | 0.036   | 0.036    |  0.036
 
-Plot it with line chart
+![INSERT Performance Comparison](images/plot-delete.png)
 
 From the above performance data, we can see the DELETE query from MySQL is a O(n) while the TRUNCATE from MySQL and db.TABLE.drop() from MongoDB are both O(1). So when we delete table, we never want to use "DELETE from TABLE" to delete a table from MySQL when the table is considerably large.
 
