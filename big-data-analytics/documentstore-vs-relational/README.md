@@ -116,6 +116,7 @@ For MongoDB1, we use db.table.insert() to import each of the record
 For MongoDB2, we use mongoimport to import all records in one batch
 
 Record
+
 (INSERT) |   100  |   1000  |   10000 |   100000    |   1000000
 -------- | ------ | ------- | ------- | ----------- | ------------
 MySQL1   | 1.346  | 12.485  | 126.883 | 1300.000(*) | 13000.000(*)
@@ -156,6 +157,7 @@ Process 100000 records
 Process 1000000 records
 
 Record
+
 (SELECT) |   100  |  1000  | 10000  | 100000  | 1000000
 -------- | ------ | ------ | ------ | ------- | --------
 MySQL1   | 0.019  | 0.031  | 0.464  |  3.084  |  29.839
@@ -191,6 +193,7 @@ Update 100000 records
 Update 1000000 records
 
 Record
+
 (UPDATE)|   100 |  1000 | 10000 | 100000  | 1000000 |
 ------- | ----- | ----- | ----- | ------- | ------- |
 MySQL   | 0.019 | 0.031 | 0.464 |  3.084  |  29.839 |
@@ -214,6 +217,7 @@ MySQL1 is using DELETE from TABLENAME to delete all records from the table
 MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty
 
 Record
+
 (DELETE)|   100  | 1000    | 10000   | 100000   |1000000
 ------- | ------ | ------- | ------- | -------- | ------
 MySQL1  | 0.018  | 0.018   | 0.281   | 1.099    | 14.906
