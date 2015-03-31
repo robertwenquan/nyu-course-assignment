@@ -1,3 +1,1 @@
-
-select count(distinct blogurl) from flickr_pics order by blogurl;
-
+db.flickr_pics.distinct("tumblr_blogurl")
