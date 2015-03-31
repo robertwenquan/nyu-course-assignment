@@ -41,7 +41,7 @@ As for common capabilities, both SQL and noSQL databases have the following feat
 First let's compare the conceptual terminology between MySQL and MongoDB
 
 | MySQL           |  MongoDBi           |
-| --------------------------------------|
+| --------------- | ------------------- |
 | Database        |  Database           |
 | Table           |  Collection         |
 | Row             |  Document           |
