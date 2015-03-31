@@ -176,7 +176,15 @@ For MySQL, we use SELECT DISTINCT to query distinct records
 For MongoDB, we use db.collection.distinct() to query the distinct records
 ```
 > MongoDB1: db.flickr_pics.distinct("tumblr_blogurl")
-> MongoDB2: db.flickr_pics.distinct("tumblr_blogurl")
+> MongoDB2: db.flickr_pics.aggregate
+            (
+              {
+                $group : {_id : "$tumblr_blogurl"} 
+              }, 
+              {
+                $group : {_id : 1, count: {$sum : 1}}
+              }
+            )
 ```
 
 (SELECT) |   100  |  1000  | 10000  | 100000  | 1000000
@@ -186,6 +194,8 @@ MySQL2   | 0.005  | 0.007  | 0.026  |  0.269  |   3.281
 MongoDB1 | 0.042  | 0.050  | 0.130  |  0.837  |   6.180
 MongoDB2 | 0.037  | 0.040  | 0.066  |  0.322  |   2.822
 
+As we can see from the plot, for both queries MySQL performs better than MongoDB in smaller dataset. When the dataset goes bigger, the query1 from MySQL does much worse than MongoDB. But for the query2, only when the dataset goes up to 1 million the performance on MySQL is defeated by MongoDB to a small extent. From the syntactical point of view, both queries in MySQL is straight-forward to understand. The first query for MongoDB is also good in understanding level. But the second query in MongoDB is really a bit tedious from understanding point of view or typing effort point of view.
+
 ![SELECT Performance Comparison](images/plot-select.png)
 
 #### Time to UPDATE "n" records
@@ -194,7 +204,7 @@ In this experiment, we modify the blogurl data field in the table for all data r
 
 For MySQL, we use the following SQL query:
 ```
-> UPDATE flickr_pics set blogname = xxxx
+> UPDATE flickr_pics SET blogurl = REPLACE(REPLACE(blogurl, 'http://', ''),'/','');
 ```
 
 For MongoDB, we use the following MongoDB query:
@@ -205,14 +215,6 @@ For MongoDB, we use the following MongoDB query:
       db.flickr_pics.save(u); }
     );
 ```
-
-Update 100 records
-Update 1000 records
-Update 10000 records
-Update 100000 records
-Update 1000000 records
-
-Record
 
 (UPDATE)|   100 |  1000 | 10000 | 100000  | 1000000 |
 ------- | ----- | ----- | ----- | ------- | ------- |
@@ -227,16 +229,11 @@ We can also observe the performance scales linearly on the data scale, both on M
 
 #### Time to DELETE "n" records
 
-Delete 100 records
-Delete 1000 records
-Delete 10000 records
-Delete 100000 records
-Delete 1000000 records
+In this experiment, we try to delete the records/documents from the table/collection. In MySQL there is DELETE statement and TRUNCATE statement to do the same task so we experiment on both of them. 
 
-MySQL1 is using DELETE from TABLENAME to delete all records from the table
-MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty
-
-Record
+MySQL1 is using DELETE from TABLENAME to delete all records from the table.
+MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty.
+MongoDB is using db.TABLENAME.drop() to drop the collection(table).
 
 (DELETE)|   100  | 1000    | 10000   | 100000   |1000000
 ------- | ------ | ------- | ------- | -------- | ------
@@ -257,7 +254,7 @@ MongoDB | 0.036  | 0.035   | 0.036   | 0.036    |  0.036
 
 #### Conclusions
 
-As from the comparative analysis from the above experiments, we can clearly see it is hard to draw a conclusion whether SQL or noSQL is better than the other. 
+As from the comparative analysis from the above experiments, we can clearly see it is hard to draw a conclusion whether SQL or noSQL is better than the other. For most experiments, it works more efficient on MySQL with small dataset but vice versa. In some other experiments, MongoDB performs constantly better than MySQL. For complex queries it is usually more handy to write the SQL statements to perform the task while keeping good readability of the query language, but MongoDB might perform better with larger dataset even if the query statement is as complex as a short script. Generally MongDB does well on insertion, selection and deletion, but it does not perform well on update. 
 
 #### Reference
 
