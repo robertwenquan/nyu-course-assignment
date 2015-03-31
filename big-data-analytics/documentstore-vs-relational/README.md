@@ -134,6 +134,19 @@ How many records could be inserted in 1s, 1min, 1hr, 1day on MySQL and MongoDB?
 
 ##### time to process "n" rows
 
+In this experiment, we would like to see how many distinct
+
+For MySQL, we use SELECT DISTINCT to query distinct records 
+'''
+> MySQL1: SELECT DISTINCT blogurl from flickr_pics;
+> MySQL2: SELECT COUNT(DISTINCT blogurl) from flickr_pics;
+'''
+For MongoDB, we use db.collection.distinct() to query the distinct records
+'''
+> MongoDB1: db.flickr_pics.distinct("tumblr_blogurl")
+> MongoDB2: db.flickr_pics.distinct("tumblr_blogurl")
+'''
+
 Process 100 records
 Process 1000 records
 Process 10000 records
@@ -143,8 +156,10 @@ Process 1000000 records
 Database
 (SELECT)   100    1000    10000   100000    1000000
 ---------------------------------------------------
-MySQL    0.005   0.007    0.026    0.269      3.281
-MongoDB
+MySQL1    0.019   0.031    0.464    3.084     29.839
+MySQL2    0.005   0.007    0.026    0.269      3.281
+MongoDB1
+MongoDB2
 
 Plot it with line chart
 
@@ -196,6 +211,7 @@ MySQL2   0.078   0.072    0.215    0.108      0.275
 MongoDB
 
 Plot it with line chart
+
 
 ##### time to process rich variety
 
