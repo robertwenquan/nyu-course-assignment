@@ -167,7 +167,7 @@ MongoDB2 | 0.026  |  0.086  |  0.674  |    6.685    |    68.959
 
 (*) Not tested but projected value
 
-Plot it with line chart
+![SELECT Performance Comparison](images/plot-select.png)
 
 Draw a conclusion based on the above observation:
 Which one plays better on small dataset?
