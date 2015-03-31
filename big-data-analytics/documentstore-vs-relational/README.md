@@ -6,13 +6,19 @@ Robert Wen (robert.wen@nyu.edu), N12246277, NetID: qw476<br>
 
 ##### Introduction
 
+This paper is a comparative analysis between SQL and noSQL database. Specifically we choose MySQL and MongoDB as a representative of each database category for the analysis. First we illustrate the conceptual and syntactical difference for the common data store/query manipulations. Beyond that, we also perform a series of performance experiments to reveal the performance difference between the two databases.
+
 ##### Limitations of SQL Engines
+
+Although traditional SQL databases have evoled several decades and have dominated the database market, it still has several limitations. Those limitations are also the motive to create the noSQL databases.
 
 * Relational database has scalability concern. While SQL databases have better vertical scalability than noSQL databases, the scaling trend is not linear when the computing resource doulbes more than twice.
 * Fixed schema. Everything has to be converted into table schema. Not good for unstructural data. 
 * Hierarchical data.
  
 ##### Limitations of Document Stores 
+
+Depiste of the booming of noSQL databases in the recent years, it does not mean we should abandom the traditional SQL database and all switch to adopt the noSQL databases. Because noSQL database may not fit all environment. Here are a few limitations about the noSQL databases:
 
 * NoSQL DB is not doing well on complex queries
 * No unified query language. Every vendor has its own query convention.
@@ -24,6 +30,7 @@ Robert Wen (robert.wen@nyu.edu), N12246277, NetID: qw476<br>
 ##### Comparison of capabilities available in both
 
 As for common capabilities, both SQL and noSQL databases have the following features:
+
 * Add, Query, Update and Delete
 * CLI manipulation of the data
 * data import and export
@@ -36,8 +43,8 @@ First let's compare the conceptual terminology between MySQL and MongoDB
 MySQL              MongoDB
 --------------------------------------
 Database           Database
-Table	           Collection
-Row	           Document
+Table	             Collection
+Row	               Document
 Column             Field
 Table Join         Embedded Documents
 Primary Key        Primary Key
@@ -105,7 +112,7 @@ For each experiment, we clear the whole database and only insert those number of
 For MySQL1, we use SQL to import each of the record
 For MySQL2, we use import command to import all records in one batch
 For MongoDB1, we use db.table.insert() to import each of the record
-For MongoDB2, we use .... to import all records in one batch
+For MongoDB2, we use mongoimport to import all records in one batch
 
 Database
 (INSERT)   100    1000    10000   100000    1000000
@@ -143,6 +150,18 @@ Plot it with line chart
 
 
 ##### time to update "n" records
+
+In this experiment, we modify the blogurl data field in the table for all data records. The original data for the blogurl is like "http://myblogname.tumblr.com/". We would like to strip the leading "http://" and the trailing "/" for the blogurl and have it as "myblogname.tumblr.com".
+
+For MySQL, we use the following SQL query:
+'''
+> UPDATE flickr_pics set blogname = xxxx
+'''
+
+For MongoDB, we use the following MongoDB query:
+'''
+> 
+'''
 
 Update 100 records
 Update 1000 records
