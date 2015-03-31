@@ -136,9 +136,9 @@ mysql> desc flickr_pics;
 4 rows in set (0.00 sec)
 ```
 
-#### Time to add "n" records
+#### Time to INSERT "n" records
 
-Here we do the comparative experiment for record insertion into mysql and mongodb.
+In this experiment, we do the comparative analysis for record insertion into mysql and mongodb.
 In order to see a better trend of how they work with various volumns, I choose a series of numbers from 100 to 1 million.
 For each experiment, we clear the whole database and only insert those number of records.
 
@@ -147,8 +147,6 @@ For MySQL2, we use import command to import all records in one batch
 For MySQL3, we accumulate the data transformation time from JSON to TSV as MySQL does not support JSON import
 For MongoDB1, we use db.table.insert() to import each of the record
 For MongoDB2, we use mongoimport to import all records in one batch
-
-Record
 
 (INSERT) |   100  |   1000  |   10000 |   100000    |   1000000
 -------- | ------ | ------- | ------- | ----------- | ------------
@@ -162,14 +160,13 @@ MongoDB2 | 0.026  |  0.086  |  0.674  |    6.685    |    68.959
 
 ![INSERT Performance Comparison](images/plot-insert.png)
 
-Draw a conclusion based on the above observation:
-Which one plays better on small dataset?
-Which one plays better on large dataset?
-How many records could be inserted in 1s, 1min, 1hr, 1day on MySQL and MongoDB?
+From the above we can observe it is very unwise to load data via SQL INSERT. Even if we haven't experimented the 100000 records, it is expected to load the data in several hours, which is unbearable. The MySQL2 measurement looks the most promising among all the insertion means, but it is without the pre-processing of the raw data. Remember our raw data is in JSON format, we need to pre-process it in order to be imported by MySQL. The MySQL3 measurement is with the additional data pre-processing time, which seems not that promising compared to the numbers in MongoDB2 measurement.
 
-#### Time to process "n" rows
+Despite of the native support of JSON on MongoDB, we still try the per-record insertion with MongoDB. It is not surprising to see it's much slower in MongoDB1 than MongoDB2. But it's not that slow compared to the MySQL1 measurement. For 1 million records, it is anticipated to be loaded in less than 20 minutes. In the faster single batch import in Mongo, it outperforms MySQL by aggregated data processing time, but it is still about 2 times slower than MySQL considering about the data import separately. So if it's not JSON format but it's CSV format which MySQL could handle, it might be more efficient in MySQL for the data import.
 
-In this experiment, we would like to see how many distinct
+#### Time to SELECT "n" records
+
+In this experiment, we would like to see how many distinct blogs are in the dataset. 
 
 For MySQL, we use SELECT DISTINCT to query distinct records 
 ```
@@ -182,14 +179,6 @@ For MongoDB, we use db.collection.distinct() to query the distinct records
 > MongoDB2: db.flickr_pics.distinct("tumblr_blogurl")
 ```
 
-Process 100 records
-Process 1000 records
-Process 10000 records
-Process 100000 records
-Process 1000000 records
-
-Record
-
 (SELECT) |   100  |  1000  | 10000  | 100000  | 1000000
 -------- | ------ | ------ | ------ | ------- | --------
 MySQL1   | 0.019  | 0.031  | 0.464  |  3.084  |  29.839
@@ -199,7 +188,7 @@ MongoDB2 | 0.037  | 0.040  | 0.066  |  0.322  |   2.822
 
 ![SELECT Performance Comparison](images/plot-select.png)
 
-#### Time to update "n" records
+#### Time to UPDATE "n" records
 
 In this experiment, we modify the blogurl data field in the table for all data records. The original data for the blogurl is like "http://myblogname.tumblr.com/". We would like to strip the leading "http://" and the trailing "/" for the blogurl and have it as "myblogname.tumblr.com".
 
@@ -236,7 +225,7 @@ From the above we can observe the update performance on MySQL is much superior t
 
 We can also observe the performance scales linearly on the data scale, both on MySQL and MongoDB. So in the real environment we can do some small dataset as performance evaluation and estimate the actual time cost of a bigger set. 
 
-#### Time to delete "n" records
+#### Time to DELETE "n" records
 
 Delete 100 records
 Delete 1000 records
@@ -261,9 +250,14 @@ From the above performance data, we can see the DELETE query from MySQL is a O(n
 
 #### Time to process rich variety
 
-#### Summary
+(DELETE)|   100  | 1000    | 10000   | 100000   |1000000
+------- | ------ | ------- | ------- | -------- | ------
+MySQL   | 0.018  | 0.018   | 0.281   | 1.099    | 14.906
+MongoDB | 0.036  | 0.035   | 0.036   | 0.036    |  0.036
 
-As from the comparative analysis from the above chapters, it is hard to draw a conclusion whether SQL or noSQL is better than the other, because each type of database has its own advantage over the other.
+#### Conclusions
+
+As from the comparative analysis from the above experiments, we can clearly see it is hard to draw a conclusion whether SQL or noSQL is better than the other. 
 
 #### Reference
 
