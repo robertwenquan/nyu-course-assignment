@@ -1,5 +1,5 @@
 ## DocumentStore vs Relational Store A comparative Analysis
-### a comparative analysis of MySQL and mongo as dataStores
+##### a comparative analysis of MySQL and mongo as dataStores
 
 This paper is a course assignment for the Big Data Analytics class in Spring 2015 semester<br>
 Robert Wen (robert.wen@nyu.edu), N12246277, NetID: qw476<br>
