@@ -279,9 +279,15 @@ MongoDB2 |  0.143  |  0.157  |  0.284  |  1.553  | 13.851
 
 ![Variety Performance Comparison](images/plot-variaty.png)
 
+Similarly, MySQL does better on smaller dataset. But when dataset goes to 1 million, MongoDB outperforms. It is believed MongoDB will outperform even more significant when the dataset goes even larger to web scale, because we haven't scaled the workload horizontally to multiple database nodes yet. 
+
 #### Conclusions
 
 As from the comparative analysis from the above experiments, we can clearly see it is hard to draw a conclusion whether SQL or noSQL is better than the other. For most experiments, it works more efficient on MySQL with small dataset but vice versa. In some other experiments, MongoDB performs constantly better than MySQL. For complex queries it is usually more handy to write the SQL statements to perform the task while keeping good readability of the query language, but MongoDB might perform better with larger dataset even if the query statement is as complex as a short script. Generally MongDB does well on insertion, selection and deletion, but it does not perform well on update. 
+
+#### TODO for this analysis
+
+Although we already have done fair amount of performance analysis against those two databases, there is still large gap to fill to understand the performance between those two databases. The first thing is for really complex queries. Due to the time constraint, we haven't constructed page long SQL statement to stress the MySQL. Also when we have a page long SQL query statement, it is very hard to "translate" it to equivalent MongoDB query string. The other big point we have ignored is the web scale data. MongoBD is really good at scaling horizontally, and it does not make sense if we scale it to multiple nodes without several hundred million large dataset. Although we haven't tried. The 1 million dataset has already shown the non-trivial performance advantage over MySQL in some queries. It is anticipated to gain more benefit when the dataset grows to a web scale. But still more experiments need to be performed in order to understand this different from a quantity point of view.
 
 #### Reference
 
