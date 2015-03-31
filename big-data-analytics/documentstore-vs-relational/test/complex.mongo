@@ -1,0 +1,5 @@
+db.flickr_pics.find().limit(30)
+db.flickr_pics.find({},{_id:0, tumblr_timestamp:1, labels:1}).limit(20)
+db.flickr_pics.find({tumblr_timestamp :{$gt: 1427735965, $lt: 1427735988}},{_id:0, url:1, labels:1} ).limit(30)
+db.flickr_pics.aggregate ( { $group : {_id : "$tumblr_blogurl"} }, { $group : {_id : 1, count: {$sum : 1}} })
+

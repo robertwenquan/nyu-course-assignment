@@ -13,7 +13,7 @@ do
   time mongo qw476 < test/query2.mongo >/dev/null
 
   echo "Test update"
-  time mongo qw476 < test/update.sql
+  time mongo qw476 < test/update.mongo
 
   echo "Complex Query"
   time mongo qw476 < test/complex.mongo >/dev/null
