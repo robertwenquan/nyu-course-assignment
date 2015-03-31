@@ -1,0 +1,1 @@
+db.flickr_pics.aggregate({$group : {_id : "$tumblr_blogurl"} }, {$group: {_id:1, count: {$sum : 1 }}})

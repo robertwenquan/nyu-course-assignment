@@ -9,8 +9,11 @@ do
   echo "Test query"
   time mongo qw476 < test/query.mongo >/dev/null
 
-  echo "Test update"
-  time mongo qw476 < test/update.sql
+  echo "Test query"
+  time mongo qw476 < test/query2.mongo >/dev/null
+
+#  echo "Test update"
+#  time mongo qw476 < test/update.sql
 
   echo "Test delete"
   time mongo qw476 < test/delete.mongo
