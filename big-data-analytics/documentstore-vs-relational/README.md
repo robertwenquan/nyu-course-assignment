@@ -115,7 +115,7 @@ The data for this experiment is the Flickr image meta data
 * labels
 * blog_url
 
-#### time to add "n" records
+#### Time to add "n" records
 
 Here we do the comparative experiment for record insertion into mysql and mongodb.
 In order to see a better trend of how they work with various volumns, I choose a series of numbers from 100 to 1 million.
@@ -147,7 +147,7 @@ Which one plays better on large dataset?
 How many records could be inserted in 1s, 1min, 1hr, 1day on MySQL and MongoDB?
 
 
-#### time to process "n" rows
+#### Time to process "n" rows
 
 In this experiment, we would like to see how many distinct
 
@@ -180,7 +180,7 @@ MongoDB2 |        |        |        |         |
 Plot it with line chart
 
 
-#### time to update "n" records
+#### Time to update "n" records
 
 In this experiment, we modify the blogurl data field in the table for all data records. The original data for the blogurl is like "http://myblogname.tumblr.com/". We would like to strip the leading "http://" and the trailing "/" for the blogurl and have it as "myblogname.tumblr.com".
 
@@ -217,7 +217,7 @@ From the above we can observe the update performance on MySQL is much superior t
 
 We can also observe the performance scales linearly on the data scale, both on MySQL and MongoDB. So in the real environment we can do some small dataset as performance evaluation and estimate the actual time cost of a bigger set. 
 
-#### time to delete "n" records
+#### Time to delete "n" records
 
 Delete 100 records
 Delete 1000 records
@@ -240,7 +240,7 @@ Plot it with line chart
 
 From the above performance data, we can see the DELETE query from MySQL is a O(n) while the TRUNCATE from MySQL and db.TABLE.drop() from MongoDB are both O(1). So when we delete table, we never want to use "DELETE from TABLE" to delete a table from MySQL when the table is considerably large.
 
-#### time to process rich variety
+#### Time to process rich variety
 
 #### Summary
 
