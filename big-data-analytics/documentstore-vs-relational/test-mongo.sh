@@ -12,10 +12,14 @@ do
   echo "Test query"
   time mongo qw476 < test/query2.mongo >/dev/null
 
-#  echo "Test update"
-#  time mongo qw476 < test/update.sql
+  echo "Test update"
+  time mongo qw476 < test/update.sql
+
+  echo "Complex Query"
+  time mongo qw476 < test/complex.mongo >/dev/null
 
   echo "Test delete"
   time mongo qw476 < test/delete.mongo
+
 done
 
