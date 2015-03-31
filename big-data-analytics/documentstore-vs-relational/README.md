@@ -32,11 +32,12 @@ Depiste of the booming of noSQL databases in the recent years, it does not mean 
 As for common capabilities, both SQL and noSQL databases have the following features:
 
 * Add, Query, Update and Delete
-* CLI manipulation of the data
 * data import and export
+* CLI manipulation of the data
 * Programmable APIs for various programming languages
+* Server / Client model
 
-#### conceptual and syntactic ease of achieving information retrieval and manipulation tasks
+#### Conceptual Comparison
 
 First let's compare the conceptual terminology between MySQL and MongoDB
 
@@ -47,9 +48,12 @@ First let's compare the conceptual terminology between MySQL and MongoDB
 | Row             |  Document           |
 | Column          |  Field              |
 | Table Join      |  Embedded Documents |
-| Primary Key     |  Primary Key        |
 | mysqld(server)  |  mongod             |
 | mysql(client)   |  mongo              |
+
+The major difference between SQL and noSQL database is the name of table and row. Instead of calling table and row in the SQL databases, a.k.a. RDBMS, "Collection" and "Document" are used. In SQL database context, we say there are a bunch of rows in the table and a few tables in that database. In the noSQL database context, we say there are a few documents in this collection and a few collections of documents in that database.
+
+#### Syntactic ease of achieving information retrieval and manipulation tasks
 
 Then let's compare the grammar of some common data retrieval tasks from SQL and noSQL for the following common tasks:
 
@@ -62,7 +66,7 @@ Then let's compare the grammar of some common data retrieval tasks from SQL and 
 * Delete a table
 * Delete database
 
-For SQL: 
+###### For SQL: 
 
 * Create database: CREATE DATABASE DBNAME; USE DBNAME;
 * Create Table: CREATE TABLE TABLENAME (column_name1 type1, column_name2 type2);
@@ -73,7 +77,7 @@ For SQL:
 * Delete Table:  DROP TABLE TABLENAME;
 * Delete Database: DROP DATABASE DBNAME;
 
-For noSQL:
+###### For noSQL:
 
 * Create Database: use DBNAME
 * Create Table: Not necessary. (When the first record is inserted. The table is created.)
