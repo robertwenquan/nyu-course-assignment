@@ -85,7 +85,7 @@ Then let's compare the grammar of some common data retrieval tasks from SQL and 
 * Select Record: db.TABLENAME.find({}, {_id:0})
 * Delete Record: db.TABLENAME.remove(SELECTION_CRITERIA)
 * Update Record: db.TABLENAME.update(SELECTION_CRITERIA, UPDATE_DATA)
-* Delete Table: db.TABLENAME.drop(SELECTION_CRITERIA)
+* Delete Table: db.TABLENAME.drop()
 * Delete Database: db.dropDatabase()
 
 #### Experimental environment
