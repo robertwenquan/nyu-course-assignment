@@ -31,7 +31,20 @@ As for common capabilities, both SQL and noSQL databases have the following feat
 
 ##### conceptual and syntactic ease of achieving information retrieval and manipulation tasks
 
-Let's compare the grammar of some common data retrieval tasks from SQL and noSQL
+First let's compare the conceptual terminology between MySQL and MongoDB
+
+MySQL              MongoDB
+--------------------------------------
+Database           Database
+Table	           Collection
+Row	           Document
+Column             Field
+Table Join         Embedded Documents
+Primary Key        Primary Key
+mysqld(server)     mongod
+mysql(client)      mongo
+
+Then let's compare the grammar of some common data retrieval tasks from SQL and noSQL for the following common tasks:
 
 * Create database
 * Create a new table
@@ -90,15 +103,19 @@ In order to see a better trend of how they work with various volumns, I choose a
 For each experiment, we clear the whole database and only insert those number of records.
 
 For MySQL1, we use SQL to import each of the record
-For MySQL2, we use import command to import all the records in a batch
-For MongoDB, we use the following script to perform the records insertion
+For MySQL2, we use import command to import all records in one batch
+For MongoDB1, we use db.table.insert() to import each of the record
+For MongoDB2, we use .... to import all records in one batch
 
 Database
 (INSERT)   100    1000    10000   100000    1000000
 ---------------------------------------------------
-MySQL1
-MySQL2
-MongoDB
+MySQL1   1.346  12.485  126.883   1300.0(*) 13000.0(*)
+MySQL2   0.138   0.355    1.194	   3.995     31.317
+MongoDB1
+MongoDB2
+
+(*) Not tested but projected value
 
 Plot it with line chart
 
@@ -119,19 +136,47 @@ Process 1000000 records
 Database
 (SELECT)   100    1000    10000   100000    1000000
 ---------------------------------------------------
-MySQL     
+MySQL    0.005   0.007    0.026    0.269      3.281
 MongoDB
 
 Plot it with line chart
 
 
-##### time to update/delete "n" records
+##### time to update "n" records
 
 Update 100 records
 Update 1000 records
 Update 10000 records
 Update 100000 records
 Update 1000000 records
+
+Database
+(UPDATE)   100    1000    10000   100000    1000000
+---------------------------------------------------
+MySQL    0.019   0.031    0.464    3.084     29.839
+MongoDB
+
+Plot it with line chart
+
+##### time to delete "n" records
+
+Delete 100 records
+Delete 1000 records
+Delete 10000 records
+Delete 100000 records
+Delete 1000000 records
+
+MySQL1 is using DELETE from TABLENAME to delete all records from the table
+MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty
+
+Database
+(DELETE)   100    1000    10000   100000    1000000
+---------------------------------------------------
+MySQL1   0.018   0.018    0.281    1.099     14.906
+MySQL2   0.078   0.072    0.215    0.108      0.275
+MongoDB
+
+Plot it with line chart
 
 ##### time to process rich variety
 
@@ -144,4 +189,5 @@ As from the comparative analysis from the above chapters, it is hard to draw a c
  * http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
  * http://www.mongodb.com/nosql-explained
  * http://www.scriptrock.com/articles/mysql-vs-mongodb
+ * http://www.tutorialspoint.com/mongodb/index.htm
 
