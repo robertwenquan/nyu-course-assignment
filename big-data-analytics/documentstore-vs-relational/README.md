@@ -1,14 +1,14 @@
 ## DocumentStore vs Relational Store A comparative Analysis
-#### a comparative analysis of MySQL and mongo as dataStores
+### a comparative analysis of MySQL and mongo as dataStores
 
 This paper is a course assignment for the Big Data Analytics class in Spring 2015 semester<br>
 Robert Wen (robert.wen@nyu.edu), N12246277, NetID: qw476<br>
 
-##### Introduction
+#### Introduction
 
 This paper is a comparative analysis between SQL and noSQL database. Specifically we choose MySQL and MongoDB as a representative of each database category for the analysis. First we illustrate the conceptual and syntactical difference for the common data store/query manipulations. Beyond that, we also perform a series of performance experiments to reveal the performance difference between the two databases.
 
-##### Limitations of SQL Engines
+#### Limitations of SQL Engines
 
 Although traditional SQL databases have evoled several decades and have dominated the database market, it still has several limitations. Those limitations are also the motive to create the noSQL databases.
 
@@ -16,7 +16,7 @@ Although traditional SQL databases have evoled several decades and have dominate
 * Fixed schema. Everything has to be converted into table schema. Not good for unstructural data. 
 * Hierarchical data.
  
-##### Limitations of Document Stores 
+#### Limitations of Document Stores 
 
 Depiste of the booming of noSQL databases in the recent years, it does not mean we should abandom the traditional SQL database and all switch to adopt the noSQL databases. Because noSQL database may not fit all environment. Here are a few limitations about the noSQL databases:
 
@@ -27,7 +27,7 @@ Depiste of the booming of noSQL databases in the recent years, it does not mean 
 * Data Integrity
 * Not easy to join table
  
-##### Comparison of capabilities available in both
+#### Comparison of capabilities available in both
 
 As for common capabilities, both SQL and noSQL databases have the following features:
 
@@ -36,7 +36,7 @@ As for common capabilities, both SQL and noSQL databases have the following feat
 * data import and export
 * Programmable APIs for various programming languages
 
-##### conceptual and syntactic ease of achieving information retrieval and manipulation tasks
+#### conceptual and syntactic ease of achieving information retrieval and manipulation tasks
 
 First let's compare the conceptual terminology between MySQL and MongoDB
 
@@ -84,7 +84,7 @@ For noSQL:
 * Delete Table: db.TABLENAME.drop(SELECTION_CRITERIA)
 * Delete Database: db.dropDatabase()
 
-##### Experimental environment
+#### Experimental environment
 
 The following experimental analysis is based on the MySQL and MongoDB instances sponsored by IBM. 
 
@@ -103,7 +103,7 @@ For the mismatch of the disk size, as my test cases do not utilize much disk spa
 
 The other notable glitch on the mongoDB node is that the memory is not well configured. Somehow there are two NUMA nodes on this host but there is no local memory attached to the NUMA node0. This will lead to cross-node memory access, with much higher memory latency than the local memory access. This will definitely affect the performance for all applications running on this host. As it's a homework assignment, I am going to ignore this but in a real world testing, this must be correct in order to make the test result legitimate.
 
-##### Experimental Data
+#### Experimental Data
 
 The data for this experiment is the Flickr image meta data
 
@@ -111,7 +111,7 @@ The data for this experiment is the Flickr image meta data
 * labels
 * blog_url
 
-##### time to add "n" records
+#### time to add "n" records
 
 Here we do the comparative experiment for record insertion into mysql and mongodb.
 In order to see a better trend of how they work with various volumns, I choose a series of numbers from 100 to 1 million.
@@ -143,7 +143,7 @@ Which one plays better on large dataset?
 How many records could be inserted in 1s, 1min, 1hr, 1day on MySQL and MongoDB?
 
 
-##### time to process "n" rows
+#### time to process "n" rows
 
 In this experiment, we would like to see how many distinct
 
@@ -170,13 +170,13 @@ Record
 -------- | ------ | ------ | ------ | ------- | --------
 MySQL1   | 0.019  | 0.031  | 0.464  |  3.084  |  29.839
 MySQL2   | 0.005  | 0.007  | 0.026  |  0.269  |   3.281
-MongoDB1 | 0.042  | 0.050  | 0.130  |  0.837  |        
+MongoDB1 | 0.042  | 0.050  | 0.130  |  0.837  |   6.180
 MongoDB2 |        |        |        |         |
 
 Plot it with line chart
 
 
-##### time to update "n" records
+#### time to update "n" records
 
 In this experiment, we modify the blogurl data field in the table for all data records. The original data for the blogurl is like "http://myblogname.tumblr.com/". We would like to strip the leading "http://" and the trailing "/" for the blogurl and have it as "myblogname.tumblr.com".
 
@@ -213,7 +213,7 @@ From the above we can observe the update performance on MySQL is much superior t
 
 We can also observe the performance scales linearly on the data scale, both on MySQL and MongoDB. So in the real environment we can do some small dataset as performance evaluation and estimate the actual time cost of a bigger set. 
 
-##### time to delete "n" records
+#### time to delete "n" records
 
 Delete 100 records
 Delete 1000 records
@@ -236,13 +236,13 @@ Plot it with line chart
 
 From the above performance data, we can see the DELETE query from MySQL is a O(n) while the TRUNCATE from MySQL and db.TABLE.drop() from MongoDB are both O(1). So when we delete table, we never want to use "DELETE from TABLE" to delete a table from MySQL when the table is considerably large.
 
-##### time to process rich variety
+#### time to process rich variety
 
-##### Summary
+#### Summary
 
 As from the comparative analysis from the above chapters, it is hard to draw a conclusion whether SQL or noSQL is better than the other, because each type of database has its own advantage over the other.
 
-##### Reference
+#### Reference
 
  * http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
  * http://www.mongodb.com/nosql-explained
