@@ -95,6 +95,14 @@ Host  | IP Address    | CPU                    | Memory                |   Disk
 mysql | 174.79.32.150 | POWER7 3.3 GHz 80 lcpu | 30 GB                 | 1000 GB
 mongo | 174.79.32.135 | POWER7 3.3 GHz 32 lcpu | 30 GB(cross numa-node)| 200 GB backed by LVM
 
+As we can see from the above, they are two POWER7 machines with equivalent amount of memory but different number of logical CPUs. That is to say the host running MySQL is much more powerful than the other running MongoDB. Also the MySQL host has 5x disk space than the MongoDB one. 
+
+The number of logical CPUs will affect the overall throughput of the database but as all of my test cases are all single threaded, we can assume there is no performance difference between those two hosts because the single core frequency is the same across the two nodes. In a more series test, we will need to avoid this kind of mismatch on the hardware configuration. 
+
+For the mismatch of the disk size, as my test cases do not utilize much disk space, we can assume there is no impact on the differnece of the disk space. 
+
+The other notable glitch on the mongoDB node is that the memory is not well configured. Somehow there are two NUMA nodes on this host but there is no local memory attached to the NUMA node0. This will lead to cross-node memory access, with much higher memory latency than the local memory access. This will definitely affect the performance for all applications running on this host. As it's a homework assignment, I am going to ignore this but in a real world testing, this must be correct in order to make the test result legitimate.
+
 ##### Experimental Data
 
 The data for this experiment is the Flickr image meta data
