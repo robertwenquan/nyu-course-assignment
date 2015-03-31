@@ -33,24 +33,36 @@ As for common capabilities, both SQL and noSQL databases have the following feat
 
 Let's compare the grammar of some common data retrieval tasks from SQL and noSQL
 
+* Create database
+* Create a new table
 * Add a new record to a data set
 * Select a few records from a data set
 * Update a value of a record in a data set
 * Delete a record from a data set
+* Delete a table
+* Delete database
 
 For SQL: 
 
-* Add: INSERT into TABLENAME (column_name1, column_name2) VALUES(value1, value2);
-* Select: SELECT column_name1, column_name2 from TABLENAME;
-* Update: UPDATE TABLENAME set column_name1 = value1 WHERE column_name5 == 'Jacky';
-* Delete: DELETE from TABLENAME where column_name4 == "NA";
+* Create database: CREATE DATABASE DBNAME; USE DBNAME;
+* Create Table: CREATE TABLE TABLENAME (column_name1 type1, column_name2 type2);
+* Add Record: INSERT into TABLENAME (column_name1, column_name2) VALUES(value1, value2);
+* Select Record: SELECT column_name1, column_name2 from TABLENAME;
+* Update Record: UPDATE TABLENAME set column_name1 = value1 WHERE column_name5 == 'Jacky';
+* Delete Record: DELETE from TABLENAME where column_name4 == "NA";
+* Delete Table:  DROP TABLE TABLENAME;
+* Delete Database: DROP DATABASE DBNAME;
 
 For noSQL:
 
-* Add:
-* Select:
-* Delete:
-* Update:
+* Create Database: use DBNAME
+* Create Table: Not necessary. (When the first record is inserted. The table is created.)
+* Add Record: db.TABLENAME.insert(JSON_STRING)
+* Select Record: db.TABLENAME.find({}, {_id:0})
+* Delete Record: db.TABLENAME.remove(SELECTION_CRITERIA)
+* Update Record: db.TABLENAME.update(SELECTION_CRITERIA, UPDATE_DATA)
+* Delete Table: db.TABLENAME.drop(SELECTION_CRITERIA)
+* Delete Database: db.dropDatabase()
 
 ##### Experimental environment
 
