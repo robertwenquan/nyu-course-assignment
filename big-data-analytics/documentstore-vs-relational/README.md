@@ -115,7 +115,7 @@ http://webscope.sandbox.yahoo.com/catalog.php?datatype=i&did=67
 The original data is 100 million items. For this experiment, we only extract 1 million items from it.
 
 The input data format after initial filtering and processing is like this. We have 1 million items in this format.
-'''
+```
 {
  u'crawler': u'firehose',
  u'fh_ver': u'2.2',
@@ -127,7 +127,7 @@ The input data format after initial filtering and processing is like this. We ha
  u'tumblr_timestamp': 1427735583,
  u'url': u'https://38.media.tumblr.com/65e7f3f16c4036812e60a348f8c67974/tumblr_nm0ge7TmRk1ur4qc3o2_250.gif'
 }
-'''
+```
 
 To process the input data format in MySQL and MongoDB, we need some data format transformation. Generally for MySQL we only extract the fileds of our interest and save the fileds into a table. For MongoDB because of its native support of JSON, we simply import the whole JSON object into the data collection.
 
@@ -182,15 +182,15 @@ How many records could be inserted in 1s, 1min, 1hr, 1day on MySQL and MongoDB?
 In this experiment, we would like to see how many distinct
 
 For MySQL, we use SELECT DISTINCT to query distinct records 
-'''
+```
 > MySQL1: SELECT DISTINCT blogurl from flickr_pics;
 > MySQL2: SELECT COUNT(DISTINCT blogurl) from flickr_pics;
-'''
+```
 For MongoDB, we use db.collection.distinct() to query the distinct records
-'''
+```
 > MongoDB1: db.flickr_pics.distinct("tumblr_blogurl")
 > MongoDB2: db.flickr_pics.distinct("tumblr_blogurl")
-'''
+```
 
 Process 100 records
 Process 1000 records
@@ -215,18 +215,18 @@ Plot it with line chart
 In this experiment, we modify the blogurl data field in the table for all data records. The original data for the blogurl is like "http://myblogname.tumblr.com/". We would like to strip the leading "http://" and the trailing "/" for the blogurl and have it as "myblogname.tumblr.com".
 
 For MySQL, we use the following SQL query:
-'''
+```
 > UPDATE flickr_pics set blogname = xxxx
-'''
+```
 
 For MongoDB, we use the following MongoDB query:
-'''
+```
 > db.flickr_pics.find().forEach(
     function(u) {
       u.tumblr_blogurl = u.tumblr_blogurl.replace(/http\:\/\//g, "").replace(/\//, "");
       db.flickr_pics.save(u); }
     );
-'''
+```
 
 Update 100 records
 Update 1000 records
