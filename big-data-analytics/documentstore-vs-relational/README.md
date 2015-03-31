@@ -4,39 +4,11 @@
 This paper is a course assignment for the Big Data Analytics class in Spring 2015 semester<br>
 Robert Wen (robert.wen@nyu.edu), N12246277, NetID: qw476<br>
 
-##### Introduction
+#### Introduction
 
-This paper is a comparative analysis between SQL and noSQL database. Specifically we choose MySQL and MongoDB as a representative of each database category for the analysis. First we illustrate the conceptual and syntactical difference for the common data store/query manipulations. Beyond that, we also perform a series of performance experiments to reveal the performance difference between the two databases.
+This paper is a comparative analysis between SQL and noSQL database. Specifically we choose MySQL and MongoDB as a representative of each database category for the analysis. First we illustrate the conceptual and syntactical difference for the common data store/query manipulations. Beyond that, we also perform a series of performance experiments to reveal the performance difference between the two databases. It is assumed the reader has moderate knowledge on both MySQL and MongoDB because we don't cover any fundamentals of those two databases but directly dive into the comparison of them.
 
-##### Limitations of SQL Engines
-
-Although traditional SQL databases have evoled several decades and have dominated the database market, it still has several limitations. Those limitations are also the motive to create the noSQL databases.
-
-* Relational database has scalability concern. While SQL databases have better vertical scalability than noSQL databases, the scaling trend is not linear when the computing resource doulbes more than twice.
-* Fixed schema. Everything has to be converted into table schema. Not good for unstructural data. 
-* Hierarchical data.
- 
-##### Limitations of Document Stores 
-
-Depiste of the booming of noSQL databases in the recent years, it does not mean we should abandom the traditional SQL database and all switch to adopt the noSQL databases. Because noSQL database may not fit all environment. Here are a few limitations about the noSQL databases:
-
-* NoSQL DB is not doing well on complex queries
-* No unified query language. Every vendor has its own query convention.
-* For high transactional based application. NoSQL is not stable enough.
-* Lack of commercial support. 
-* Data Integrity
-* Not easy to join table
- 
-##### Comparison of capabilities available in both
-
-As for common capabilities, both SQL and noSQL databases have the following features:
-
-* Add, Query, Update and Delete
-* CLI manipulation of the data
-* data import and export
-* Programmable APIs for various programming languages
-
-##### conceptual and syntactic ease of achieving information retrieval and manipulation tasks
+#### Conceptual Comparison
 
 First let's compare the conceptual terminology between MySQL and MongoDB
 
@@ -47,22 +19,16 @@ First let's compare the conceptual terminology between MySQL and MongoDB
 | Row             |  Document           |
 | Column          |  Field              |
 | Table Join      |  Embedded Documents |
-| Primary Key     |  Primary Key        |
 | mysqld(server)  |  mongod             |
 | mysql(client)   |  mongo              |
 
-Then let's compare the grammar of some common data retrieval tasks from SQL and noSQL for the following common tasks:
+The major difference between SQL and noSQL database is the name of table and row. Instead of calling table and row in the SQL databases, a.k.a. RDBMS, "Collection" and "Document" are used. In SQL database context, we say there are a bunch of rows in the table and a few tables in that database. In the noSQL database context, we say there are a few documents in this collection and a few collections of documents in that database.
 
-* Create database
-* Create a new table
-* Add a new record to a data set
-* Select a few records from a data set
-* Update a value of a record in a data set
-* Delete a record from a data set
-* Delete a table
-* Delete database
+#### Syntactic Comparison
 
-For SQL: 
+Then let's compare the grammar of some common data retrieval tasks from SQL and noSQL for the common tasks like creating database, creating table, inserting a row, select rows, deleting rows, table or database.
+
+###### For SQL: 
 
 * Create database: CREATE DATABASE DBNAME; USE DBNAME;
 * Create Table: CREATE TABLE TABLENAME (column_name1 type1, column_name2 type2);
@@ -73,7 +39,7 @@ For SQL:
 * Delete Table:  DROP TABLE TABLENAME;
 * Delete Database: DROP DATABASE DBNAME;
 
-For noSQL:
+###### For noSQL:
 
 * Create Database: use DBNAME
 * Create Table: Not necessary. (When the first record is inserted. The table is created.)
@@ -81,10 +47,41 @@ For noSQL:
 * Select Record: db.TABLENAME.find({}, {_id:0})
 * Delete Record: db.TABLENAME.remove(SELECTION_CRITERIA)
 * Update Record: db.TABLENAME.update(SELECTION_CRITERIA, UPDATE_DATA)
-* Delete Table: db.TABLENAME.drop(SELECTION_CRITERIA)
+* Delete Table: db.TABLENAME.drop()
 * Delete Database: db.dropDatabase()
 
-##### Experimental environment
+Syntactically, SQL is more readable because it's more close to the natural language statement. You state what you want to do with the SQL and you get what you want. For the noSQL query in MongoDB, things like {}, and ":", and the "." connecting the data collection and the method name, makes the query language more like a programming language rathan than a data query statement. For people with background of JSON it might be familiar but for people we don't there will be some leaning curve.
+
+#### Comparison of capabilities available in both
+
+As for common capabilities, both SQL and noSQL databases have the following features:
+
+* Add, Query, Update and Delete
+* data import and export
+* CLI manipulation of the data
+* Programmable APIs for various programming languages
+* Server / Client model
+
+#### Limitations of SQL Engines
+
+Although traditional SQL databases have evoled several decades and have dominated the database market, it still has several limitations. Those limitations are also the motive to create the noSQL databases.
+
+* Relational database has scalability concern. While SQL databases have better vertical scalability than noSQL databases, the scaling trend is not linear when the computing resource doulbes more than twice.
+* Fixed schema. Everything has to be converted into table schema. Not good for unstructural data. 
+* Hierarchical data.
+ 
+#### Limitations of Document Stores 
+
+Depiste of the booming of noSQL databases in the recent years, it does not mean we should abandom the traditional SQL database and all switch to adopt the noSQL databases. Because noSQL database may not fit all environment. Here are a few limitations about the noSQL databases:
+
+* NoSQL DB is not doing well on complex queries
+* No unified query language. Every vendor has its own query convention.
+* For high transactional based application. NoSQL is not stable enough.
+* Lack of commercial support. 
+* Data Integrity
+* Not easy to join table
+ 
+#### Experimental environment 
 
 The following experimental analysis is based on the MySQL and MongoDB instances sponsored by IBM. 
 
@@ -103,15 +100,43 @@ For the mismatch of the disk size, as my test cases do not utilize much disk spa
 
 The other notable glitch on the mongoDB node is that the memory is not well configured. Somehow there are two NUMA nodes on this host but there is no local memory attached to the NUMA node0. This will lead to cross-node memory access, with much higher memory latency than the local memory access. This will definitely affect the performance for all applications running on this host. As it's a homework assignment, I am going to ignore this but in a real world testing, this must be correct in order to make the test result legitimate.
 
-##### Experimental Data
+#### Experimental Data
 
-The data for this experiment is the Flickr image meta data
+The data for this experiment is the Flickr image meta data provided by Yahoo Labs
+http://webscope.sandbox.yahoo.com/catalog.php?datatype=i&did=67
 
-* img_url
-* labels
-* blog_url
+The original data is 100 million items. For this experiment, we only extract 1 million items from it.
 
-##### time to add "n" records
+The input data format after initial filtering and processing is like this. We have 1 million items in this format.
+```
+{
+ u'image_urls': [u'https://38.media.tumblr.com/65e7f3f16c4036812e60a348f8c67974/tumblr_nm0ge7TmRk1ur4qc3o2_250.gif'],
+ u'labels': [],
+ u'ref_urls': [u'http://tmblr.co/ZJOTLv1h90ouq'],
+ u'tumblr_blogurl': u'http://seethesunlight3.tumblr.com/',
+ u'tumblr_notes': 260,
+ u'tumblr_timestamp': 1427735583,
+ u'url': u'https://38.media.tumblr.com/65e7f3f16c4036812e60a348f8c67974/tumblr_nm0ge7TmRk1ur4qc3o2_250.gif'
+}
+```
+
+To process the input data format in MySQL and MongoDB, we need some data format transformation. Generally for MySQL we only extract the fileds of our interest and save the fileds into a table. For MongoDB because of its native support of JSON, we simply import the whole JSON object into the data collection.
+
+The following table schema is used for MySQL, to store the extracted data fields from the raw input JSON format.
+```
+mysql> desc flickr_pics;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| timestamp | mediumtext   | YES  |     | NULL    |       |
+| imgurl    | varchar(256) | YES  |     | NULL    |       |
+| blogurl   | varchar(256) | YES  |     | NULL    |       |
+| labels    | varchar(512) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+```
+
+#### Time to add "n" records
 
 Here we do the comparative experiment for record insertion into mysql and mongodb.
 In order to see a better trend of how they work with various volumns, I choose a series of numbers from 100 to 1 million.
@@ -135,28 +160,27 @@ MongoDB2 | 0.026  |  0.086  |  0.674  |    6.685    |    68.959
 
 (*) Not tested but projected value
 
-Plot it with line chart
+![INSERT Performance Comparison](images/plot-insert.png)
 
 Draw a conclusion based on the above observation:
 Which one plays better on small dataset?
 Which one plays better on large dataset?
 How many records could be inserted in 1s, 1min, 1hr, 1day on MySQL and MongoDB?
 
-
-##### time to process "n" rows
+#### Time to process "n" rows
 
 In this experiment, we would like to see how many distinct
 
 For MySQL, we use SELECT DISTINCT to query distinct records 
-'''
+```
 > MySQL1: SELECT DISTINCT blogurl from flickr_pics;
 > MySQL2: SELECT COUNT(DISTINCT blogurl) from flickr_pics;
-'''
+```
 For MongoDB, we use db.collection.distinct() to query the distinct records
-'''
+```
 > MongoDB1: db.flickr_pics.distinct("tumblr_blogurl")
 > MongoDB2: db.flickr_pics.distinct("tumblr_blogurl")
-'''
+```
 
 Process 100 records
 Process 1000 records
@@ -170,29 +194,28 @@ Record
 -------- | ------ | ------ | ------ | ------- | --------
 MySQL1   | 0.019  | 0.031  | 0.464  |  3.084  |  29.839
 MySQL2   | 0.005  | 0.007  | 0.026  |  0.269  |   3.281
-MongoDB1 | 0.042  | 0.050  | 0.130  |  0.837  |        
-MongoDB2 |        |        |        |         |
+MongoDB1 | 0.042  | 0.050  | 0.130  |  0.837  |   6.180
+MongoDB2 | 0.037  | 0.040  | 0.066  |  0.322  |   2.822
 
-Plot it with line chart
+![SELECT Performance Comparison](images/plot-select.png)
 
-
-##### time to update "n" records
+#### Time to update "n" records
 
 In this experiment, we modify the blogurl data field in the table for all data records. The original data for the blogurl is like "http://myblogname.tumblr.com/". We would like to strip the leading "http://" and the trailing "/" for the blogurl and have it as "myblogname.tumblr.com".
 
 For MySQL, we use the following SQL query:
-'''
+```
 > UPDATE flickr_pics set blogname = xxxx
-'''
+```
 
 For MongoDB, we use the following MongoDB query:
-'''
+```
 > db.flickr_pics.find().forEach(
     function(u) {
       u.tumblr_blogurl = u.tumblr_blogurl.replace(/http\:\/\//g, "").replace(/\//, "");
       db.flickr_pics.save(u); }
     );
-'''
+```
 
 Update 100 records
 Update 1000 records
@@ -207,13 +230,13 @@ Record
 MySQL   | 0.019 | 0.031 | 0.464 |  3.084  |  29.839 |
 MongoDB | 0.066 | 0.311 | 2.916 | 27.525  | 274.375 |
 
-Plot it with line chart
+![INSERT Performance Comparison](images/plot-update.png)
 
 From the above we can observe the update performance on MySQL is much superior than that of MongoDB. That is because Mongo DB does not have native support for string replacement manipulation in UPDATE query. Instead we have to iterate each data record and set the value back.
 
 We can also observe the performance scales linearly on the data scale, both on MySQL and MongoDB. So in the real environment we can do some small dataset as performance evaluation and estimate the actual time cost of a bigger set. 
 
-##### time to delete "n" records
+#### Time to delete "n" records
 
 Delete 100 records
 Delete 1000 records
@@ -232,17 +255,17 @@ MySQL1  | 0.018  | 0.018   | 0.281   | 1.099    | 14.906
 MySQL2  | 0.078  | 0.072   | 0.215   | 0.108    |  0.275
 MongoDB | 0.036  | 0.035   | 0.036   | 0.036    |  0.036
 
-Plot it with line chart
+![INSERT Performance Comparison](images/plot-delete.png)
 
 From the above performance data, we can see the DELETE query from MySQL is a O(n) while the TRUNCATE from MySQL and db.TABLE.drop() from MongoDB are both O(1). So when we delete table, we never want to use "DELETE from TABLE" to delete a table from MySQL when the table is considerably large.
 
-##### time to process rich variety
+#### Time to process rich variety
 
-##### Summary
+#### Summary
 
 As from the comparative analysis from the above chapters, it is hard to draw a conclusion whether SQL or noSQL is better than the other, because each type of database has its own advantage over the other.
 
-##### Reference
+#### Reference
 
  * http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
  * http://www.mongodb.com/nosql-explained
