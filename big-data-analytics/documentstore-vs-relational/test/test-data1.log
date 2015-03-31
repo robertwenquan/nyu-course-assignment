@@ -1,0 +1,111 @@
+Executing test/load-100.sql
+
+real    0m0.138s
+user    0m0.003s
+sys     0m0.002s
+Test query
+count(distinct blogurl)
+44
+
+real    0m0.005s
+user    0m0.003s
+sys     0m0.002s
+Test update
+
+real    0m0.019s
+user    0m0.003s
+sys     0m0.002s
+Test delete
+
+real    0m0.018s
+user    0m0.003s
+sys     0m0.002s
+Executing test/load-1000.sql
+
+real    0m0.355s
+user    0m0.003s
+sys     0m0.002s
+Test query
+count(distinct blogurl)
+379
+
+real    0m0.007s
+user    0m0.003s
+sys     0m0.002s
+Test update
+
+real    0m0.031s
+user    0m0.003s
+sys     0m0.002s
+Test delete
+
+real    0m0.018s
+user    0m0.003s
+sys     0m0.002s
+Executing test/load-10000.sql
+
+real    0m1.194s
+user    0m0.003s
+sys     0m0.002s
+Test query
+count(distinct blogurl)
+3562
+
+real    0m0.026s
+user    0m0.003s
+sys     0m0.002s
+Test update
+
+real    0m0.464s
+user    0m0.003s
+sys     0m0.002s
+Test delete
+
+real    0m0.281s
+user    0m0.003s
+sys     0m0.002s
+Executing test/load-100000.sql
+
+real    0m3.995s
+user    0m0.003s
+sys     0m0.002s
+Test query
+count(distinct blogurl)
+27876
+
+real    0m0.269s
+user    0m0.003s
+sys     0m0.002s
+Test update
+
+real    0m3.084s
+user    0m0.003s
+sys     0m0.002s
+Test delete
+
+real    0m1.099s
+user    0m0.003s
+sys     0m0.002s
+Executing test/load-1000000.sql
+
+real    0m31.317s
+user    0m0.003s
+sys     0m0.002s
+Test query
+count(distinct blogurl)
+174439
+
+real    0m3.281s
+user    0m0.003s
+sys     0m0.002s
+Test update
+
+real    0m29.839s
+user    0m0.003s
+sys     0m0.002s
+Test delete
+
+real    0m14.906s
+user    0m0.003s
+sys     0m0.002s
+
