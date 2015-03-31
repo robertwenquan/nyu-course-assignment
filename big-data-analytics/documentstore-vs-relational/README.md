@@ -142,11 +142,11 @@ In this experiment, we do the comparative analysis for record insertion into mys
 In order to see a better trend of how they work with various volumns, I choose a series of numbers from 100 to 1 million.
 For each experiment, we clear the whole database and only insert those number of records.
 
-For MySQL1, we use SQL to import each of the record
-For MySQL2, we use import command to import all records in one batch
-For MySQL3, we accumulate the data transformation time from JSON to TSV as MySQL does not support JSON import
-For MongoDB1, we use db.table.insert() to import each of the record
-For MongoDB2, we use mongoimport to import all records in one batch
+* For MySQL1, we use SQL to import each of the record
+* For MySQL2, we use import command to import all records in one batch
+* For MySQL3, we accumulate the data transformation time from JSON to TSV as MySQL does not support JSON import
+* For MongoDB1, we use db.table.insert() to import each of the record
+* For MongoDB2, we use mongoimport to import all records in one batch
 
 (INSERT) |   100  |   1000  |   10000 |   100000    |   1000000
 -------- | ------ | ------- | ------- | ----------- | ------------
@@ -231,9 +231,9 @@ We can also observe the performance scales linearly on the data scale, both on M
 
 In this experiment, we try to delete the records/documents from the table/collection. In MySQL there is DELETE statement and TRUNCATE statement to do the same task so we experiment on both of them. 
 
-MySQL1 is using DELETE from TABLENAME to delete all records from the table.
-MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty.
-MongoDB is using db.TABLENAME.drop() to drop the collection(table).
+* MySQL1 is using DELETE from TABLENAME to delete all records from the table.
+* MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty.
+* MongoDB is using db.TABLENAME.drop() to drop the collection(table).
 
 (DELETE)|   100  | 1000    | 10000   | 100000   |1000000
 ------- | ------ | ------- | ------- | -------- | ------
@@ -265,12 +265,12 @@ db.flickr_pics.find( {tumblr_timestamp :{$gt: 1427735965, $lt: 1427735988}},{_id
 db.flickr_pics.aggregate ( { $group : {_id : "$tumblr_blogurl"} }, { $group : {_id : 1, count: {$sum : 1}} } )
 ```
 
-MySQL1: Execute the above MySQL commands one time
-MySQL2: Execute the above MySQL commands five times
-MongoDB1: Execute the above MongoDB commands one time
-MongoDB2: Execute the above MongoDB commands five times
+* MySQL1: Execute the above MySQL commands one time
+* MySQL2: Execute the above MySQL commands five times
+* MongoDB1: Execute the above MongoDB commands one time
+* MongoDB2: Execute the above MongoDB commands five times
 
-(DELETE) |    100  |   1000  |  10000  | 100000  |1000000
+(VARIATY)|    100  |   1000  |  10000  | 100000  |1000000
 -------- | ------- | ------- |  ------ | ------- | ------
 MySQL1   |  0.006  |  0.008  |  0.024  |  0.274  |  4.887
 MySQL2   |  0.012  |  0.019  |  0.103  |  1.603  | 16.002
