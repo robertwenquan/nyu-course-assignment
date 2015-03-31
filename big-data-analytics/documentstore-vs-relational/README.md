@@ -40,7 +40,7 @@ As for common capabilities, both SQL and noSQL databases have the following feat
 
 First let's compare the conceptual terminology between MySQL and MongoDB
 
-| MySQL           |  MongoDBi           |
+| MySQL           |  MongoDB            |
 | --------------- | ------------------- |
 | Database        |  Database           |
 | Table           |  Collection         |
@@ -90,10 +90,10 @@ The following experimental analysis is based on the MySQL and MongoDB instances 
 
 Here is the basic hardware configuration of those two database hosts:
 
-Host   IP Address     CPU                     Memory                  Disk   
--------------------------------------------------------------------------------------------
-mysql  174.79.32.150  POWER7 3.3 GHz 80 lcpu  30 GB                   1000 GB
-mongo  174.79.32.135  POWER7 3.3 GHz 32 lcpu  30 GB(cross numa-node)  200 GB backed by LVM
+Host  | IP Address    | CPU                    | Memory                |   Disk   
+----- | ------------- | ---------------------- | --------------------- | --------------------
+mysql | 174.79.32.150 | POWER7 3.3 GHz 80 lcpu | 30 GB                 | 1000 GB
+mongo | 174.79.32.135 | POWER7 3.3 GHz 32 lcpu | 30 GB(cross numa-node)| 200 GB backed by LVM
 
 ##### Experimental Data
 
