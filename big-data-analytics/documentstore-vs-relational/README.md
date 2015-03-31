@@ -142,11 +142,11 @@ In this experiment, we do the comparative analysis for record insertion into mys
 In order to see a better trend of how they work with various volumns, I choose a series of numbers from 100 to 1 million.
 For each experiment, we clear the whole database and only insert those number of records.
 
-For MySQL1, we use SQL to import each of the record
-For MySQL2, we use import command to import all records in one batch
-For MySQL3, we accumulate the data transformation time from JSON to TSV as MySQL does not support JSON import
-For MongoDB1, we use db.table.insert() to import each of the record
-For MongoDB2, we use mongoimport to import all records in one batch
+* For MySQL1, we use SQL to import each of the record
+* For MySQL2, we use import command to import all records in one batch
+* For MySQL3, we accumulate the data transformation time from JSON to TSV as MySQL does not support JSON import
+* For MongoDB1, we use db.table.insert() to import each of the record
+* For MongoDB2, we use mongoimport to import all records in one batch
 
 (INSERT) |   100  |   1000  |   10000 |   100000    |   1000000
 -------- | ------ | ------- | ------- | ----------- | ------------
@@ -176,7 +176,15 @@ For MySQL, we use SELECT DISTINCT to query distinct records
 For MongoDB, we use db.collection.distinct() to query the distinct records
 ```
 > MongoDB1: db.flickr_pics.distinct("tumblr_blogurl")
-> MongoDB2: db.flickr_pics.distinct("tumblr_blogurl")
+> MongoDB2: db.flickr_pics.aggregate
+            (
+              {
+                $group : {_id : "$tumblr_blogurl"} 
+              }, 
+              {
+                $group : {_id : 1, count: {$sum : 1}}
+              }
+            )
 ```
 
 (SELECT) |   100  |  1000  | 10000  | 100000  | 1000000
@@ -186,6 +194,8 @@ MySQL2   | 0.005  | 0.007  | 0.026  |  0.269  |   3.281
 MongoDB1 | 0.042  | 0.050  | 0.130  |  0.837  |   6.180
 MongoDB2 | 0.037  | 0.040  | 0.066  |  0.322  |   2.822
 
+As we can see from the plot, for both queries MySQL performs better than MongoDB in smaller dataset. When the dataset goes bigger, the query1 from MySQL does much worse than MongoDB. But for the query2, only when the dataset goes up to 1 million the performance on MySQL is defeated by MongoDB to a small extent. From the syntactical point of view, both queries in MySQL is straight-forward to understand. The first query for MongoDB is also good in understanding level. But the second query in MongoDB is really a bit tedious from understanding point of view or typing effort point of view.
+
 ![SELECT Performance Comparison](images/plot-select.png)
 
 #### Time to UPDATE "n" records
@@ -194,7 +204,7 @@ In this experiment, we modify the blogurl data field in the table for all data r
 
 For MySQL, we use the following SQL query:
 ```
-> UPDATE flickr_pics set blogname = xxxx
+> UPDATE flickr_pics SET blogurl = REPLACE(REPLACE(blogurl, 'http://', ''),'/','');
 ```
 
 For MongoDB, we use the following MongoDB query:
@@ -205,14 +215,6 @@ For MongoDB, we use the following MongoDB query:
       db.flickr_pics.save(u); }
     );
 ```
-
-Update 100 records
-Update 1000 records
-Update 10000 records
-Update 100000 records
-Update 1000000 records
-
-Record
 
 (UPDATE)|   100 |  1000 | 10000 | 100000  | 1000000 |
 ------- | ----- | ----- | ----- | ------- | ------- |
@@ -227,16 +229,11 @@ We can also observe the performance scales linearly on the data scale, both on M
 
 #### Time to DELETE "n" records
 
-Delete 100 records
-Delete 1000 records
-Delete 10000 records
-Delete 100000 records
-Delete 1000000 records
+In this experiment, we try to delete the records/documents from the table/collection. In MySQL there is DELETE statement and TRUNCATE statement to do the same task so we experiment on both of them. 
 
-MySQL1 is using DELETE from TABLENAME to delete all records from the table
-MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty
-
-Record
+* MySQL1 is using DELETE from TABLENAME to delete all records from the table.
+* MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty.
+* MongoDB is using db.TABLENAME.drop() to drop the collection(table).
 
 (DELETE)|   100  | 1000    | 10000   | 100000   |1000000
 ------- | ------ | ------- | ------- | -------- | ------
@@ -250,19 +247,52 @@ From the above performance data, we can see the DELETE query from MySQL is a O(n
 
 #### Time to process rich variety
 
-(DELETE)|   100  | 1000    | 10000   | 100000   |1000000
-------- | ------ | ------- | ------- | -------- | ------
-MySQL   | 0.018  | 0.018   | 0.281   | 1.099    | 14.906
-MongoDB | 0.036  | 0.035   | 0.036   | 0.036    |  0.036
+In this experiment, we are going to execute a bunch of queries on MySQL and MongoDB 1/5 times and compare the runtime on those aggregated tasks.
+
+On MySQL we are going to execute:
+```
+SELECT * FROM flickr_pics LIMIT 30;
+SELECT timestamp, labels FROM flickr_pics LIMIT 20;
+SELECT imgurl, labels FROM flickr_pics WHERE timestamp > 1427735965 AND timestamp < 1427735988 LIMIT 30;
+SELECT COUNT(DISTINCT blogurl) FROM flickr_pics;
+```
+
+On MongoDB we are going to execute:
+```
+db.flickr_pics.find().limit(30)
+db.flickr_pics.find( {},{_id:0, tumblr_timestamp:1, labels:1} ).limit(20)
+db.flickr_pics.find( {tumblr_timestamp :{$gt: 1427735965, $lt: 1427735988}},{_id:0, url:1, labels:1} ).limit(30)
+db.flickr_pics.aggregate ( { $group : {_id : "$tumblr_blogurl"} }, { $group : {_id : 1, count: {$sum : 1}} } )
+```
+
+* MySQL1: Execute the above MySQL commands one time
+* MySQL2: Execute the above MySQL commands five times
+* MongoDB1: Execute the above MongoDB commands one time
+* MongoDB2: Execute the above MongoDB commands five times
+
+(VARIATY)|    100  |   1000  |  10000  | 100000  |1000000
+-------- | ------- | ------- |  ------ | ------- | ------
+MySQL1   |  0.006  |  0.008  |  0.024  |  0.274  |  4.887
+MySQL2   |  0.012  |  0.019  |  0.103  |  1.603  | 16.002
+MongoDB1 |  0.063  |  0.065  |  0.093  |  0.357  |  2.808
+MongoDB2 |  0.143  |  0.157  |  0.284  |  1.553  | 13.851
+
+![Variety Performance Comparison](images/plot-variaty.png)
+
+Similarly, MySQL does better on smaller dataset. But when dataset goes to 1 million, MongoDB outperforms. It is believed MongoDB will outperform even more significant when the dataset goes even larger to web scale, because we haven't scaled the workload horizontally to multiple database nodes yet. 
 
 #### Conclusions
 
-As from the comparative analysis from the above experiments, we can clearly see it is hard to draw a conclusion whether SQL or noSQL is better than the other. 
+As from the comparative analysis from the above experiments, we can clearly see it is hard to draw a conclusion whether SQL or noSQL is better than the other. For most experiments, it works more efficient on MySQL with small dataset but vice versa. In some other experiments, MongoDB performs constantly better than MySQL. For complex queries it is usually more handy to write the SQL statements to perform the task while keeping good readability of the query language, but MongoDB might perform better with larger dataset even if the query statement is as complex as a short script. Generally MongDB does well on insertion, selection and deletion, but it does not perform well on update. 
+
+#### TODO for this analysis
+
+Although we already have done fair amount of performance analysis against those two databases, there is still large gap to fill to understand the performance between those two databases. The first thing is for really complex queries. Due to the time constraint, we haven't constructed page long SQL statement to stress the MySQL. Also when we have a page long SQL query statement, it is very hard to "translate" it to equivalent MongoDB query string. The other big point we have ignored is the web scale data. MongoBD is really good at scaling horizontally, and it does not make sense if we scale it to multiple nodes without several hundred million large dataset. Although we haven't tried. The 1 million dataset has already shown the non-trivial performance advantage over MySQL in some queries. It is anticipated to gain more benefit when the dataset grows to a web scale. But still more experiments need to be performed in order to understand this different from a quantity point of view.
 
 #### Reference
 
- * http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
- * http://www.mongodb.com/nosql-explained
- * http://www.scriptrock.com/articles/mysql-vs-mongodb
- * http://www.tutorialspoint.com/mongodb/index.htm
+* http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
+* http://www.mongodb.com/nosql-explained
+* http://www.scriptrock.com/articles/mysql-vs-mongodb
+* http://www.tutorialspoint.com/mongodb/index.htm
 
