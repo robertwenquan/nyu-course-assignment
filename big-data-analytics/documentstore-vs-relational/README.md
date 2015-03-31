@@ -247,10 +247,37 @@ From the above performance data, we can see the DELETE query from MySQL is a O(n
 
 #### Time to process rich variety
 
-(DELETE)|   100  | 1000    | 10000   | 100000   |1000000
-------- | ------ | ------- | ------- | -------- | ------
-MySQL   | 0.018  | 0.018   | 0.281   | 1.099    | 14.906
-MongoDB | 0.036  | 0.035   | 0.036   | 0.036    |  0.036
+In this experiment, we are going to execute a bunch of queries on MySQL and MongoDB 1/5 times and compare the runtime on those aggregated tasks.
+
+On MySQL we are going to execute:
+```
+SELECT * FROM flickr_pics LIMIT 30;
+SELECT timestamp, labels FROM flickr_pics LIMIT 20;
+SELECT imgurl, labels FROM flickr_pics WHERE timestamp > 1427735965 AND timestamp < 1427735988 LIMIT 30;
+SELECT COUNT(DISTINCT blogurl) FROM flickr_pics;
+```
+
+On MongoDB we are going to execute:
+```
+db.flickr_pics.find().limit(30)
+db.flickr_pics.find( {},{_id:0, tumblr_timestamp:1, labels:1} ).limit(20)
+db.flickr_pics.find( {tumblr_timestamp :{$gt: 1427735965, $lt: 1427735988}},{_id:0, url:1, labels:1} ).limit(30)
+db.flickr_pics.aggregate ( { $group : {_id : "$tumblr_blogurl"} }, { $group : {_id : 1, count: {$sum : 1}} } )
+```
+
+MySQL1: Execute the above MySQL commands one time
+MySQL2: Execute the above MySQL commands five times
+MongoDB1: Execute the above MongoDB commands one time
+MongoDB2: Execute the above MongoDB commands five times
+
+(DELETE) |    100  |   1000  |  10000  | 100000  |1000000
+-------- | ------- | ------- |  ------ | ------- | ------
+MySQL1   |  0.006  |  0.008  |  0.024  |  0.274  |  4.887
+MySQL2   |  0.012  |  0.019  |  0.103  |  1.603  | 16.002
+MongoDB1 |  0.063  |  0.065  |  0.093  |  0.357  |  2.808
+MongoDB2 |  0.143  |  0.157  |  0.284  |  1.553  | 13.851
+
+![Variety Performance Comparison](images/plot-variaty.png)
 
 #### Conclusions
 
