@@ -258,8 +258,8 @@ As from the comparative analysis from the above experiments, we can clearly see 
 
 #### Reference
 
- * http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
- * http://www.mongodb.com/nosql-explained
- * http://www.scriptrock.com/articles/mysql-vs-mongodb
- * http://www.tutorialspoint.com/mongodb/index.htm
+* http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
+* http://www.mongodb.com/nosql-explained
+* http://www.scriptrock.com/articles/mysql-vs-mongodb
+* http://www.tutorialspoint.com/mongodb/index.htm
 
