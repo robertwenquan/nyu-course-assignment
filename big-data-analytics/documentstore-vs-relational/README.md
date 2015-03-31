@@ -40,16 +40,16 @@ As for common capabilities, both SQL and noSQL databases have the following feat
 
 First let's compare the conceptual terminology between MySQL and MongoDB
 
-MySQL              MongoDB
---------------------------------------
-Database           Database
-Table	             Collection
-Row	               Document
-Column             Field
-Table Join         Embedded Documents
-Primary Key        Primary Key
-mysqld(server)     mongod
-mysql(client)      mongo
+| MySQL           |  MongoDBi           |
+| --------------------------------------|
+| Database        |  Database           |
+| Table           |  Collection         |
+| Row             |  Document           |
+| Column          |  Field              |
+| Table Join      |  Embedded Documents |
+| Primary Key     |  Primary Key        |
+| mysqld(server)  |  mongod             |
+| mysql(client)   |  mongo              |
 
 Then let's compare the grammar of some common data retrieval tasks from SQL and noSQL for the following common tasks:
 
