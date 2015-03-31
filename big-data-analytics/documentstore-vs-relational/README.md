@@ -35,15 +35,15 @@ Let's compare the grammar of some common data retrieval tasks from SQL and noSQL
 
 * Add a new record to a data set
 * Select a few records from a data set
-* Delete a record from a data set
 * Update a value of a record in a data set
+* Delete a record from a data set
 
 For SQL: 
 
-* Add: INSERT into TABLENAME (column_name1, column_name2, column_name3) VALUES(value1, value2, value3);
-* Select: SELECT column_name1, column_name2 from TABLENAME WHERE column_name3 like '%JUNE%';
-* Delete: DELETE from TABLENAME where column_name4 == "NA";
+* Add: INSERT into TABLENAME (column_name1, column_name2) VALUES(value1, value2);
+* Select: SELECT column_name1, column_name2 from TABLENAME;
 * Update: UPDATE TABLENAME set column_name1 = value1 WHERE column_name5 == 'Jacky';
+* Delete: DELETE from TABLENAME where column_name4 == "NA";
 
 For noSQL:
 
@@ -56,7 +56,8 @@ For noSQL:
 
 The following experimental analysis is based on the MySQL and MongoDB instances sponsored by IBM. 
 
-Here is the basic hardware configuration of those two hosts
+Here is the basic hardware configuration of those two database hosts:
+
 Host   IP Address     CPU                     Memory                  Disk   
 -------------------------------------------------------------------------------------------
 mysql  174.79.32.150  POWER7 3.3 GHz 80 lcpu  30 GB                   1000 GB
