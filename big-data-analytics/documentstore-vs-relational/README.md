@@ -104,16 +104,18 @@ For each experiment, we clear the whole database and only insert those number of
 
 For MySQL1, we use SQL to import each of the record
 For MySQL2, we use import command to import all records in one batch
+For MySQL3, we accumulate the data transformation time from JSON to TSV as MySQL does not support JSON import
 For MongoDB1, we use db.table.insert() to import each of the record
 For MongoDB2, we use .... to import all records in one batch
 
-Database
+Record
 (INSERT)   100    1000    10000   100000    1000000
 ---------------------------------------------------
 MySQL1   1.346  12.485  126.883   1300.0(*) 13000.0(*)
 MySQL2   0.138   0.355    1.194	   3.995     31.317
+MySQL3   0.188   0.680    4.293   35.307    344.56
 MongoDB1
-MongoDB2
+MongoDB2 0.026   0.086    0.674    6.685     68.959
 
 (*) Not tested but projected value
 
@@ -133,7 +135,7 @@ Process 10000 records
 Process 100000 records
 Process 1000000 records
 
-Database
+Record
 (SELECT)   100    1000    10000   100000    1000000
 ---------------------------------------------------
 MySQL    0.005   0.007    0.026    0.269      3.281
@@ -150,7 +152,7 @@ Update 10000 records
 Update 100000 records
 Update 1000000 records
 
-Database
+Record
 (UPDATE)   100    1000    10000   100000    1000000
 ---------------------------------------------------
 MySQL    0.019   0.031    0.464    3.084     29.839
@@ -169,12 +171,12 @@ Delete 1000000 records
 MySQL1 is using DELETE from TABLENAME to delete all records from the table
 MySQL2 is using TRUNCATE TABLE TABLENAME to truncate the table to empty
 
-Database
+Record
 (DELETE)   100    1000    10000   100000    1000000
 ---------------------------------------------------
 MySQL1   0.018   0.018    0.281    1.099     14.906
 MySQL2   0.078   0.072    0.215    0.108      0.275
-MongoDB
+MongoDB  0.036   0.035    0.036    0.036      0.036
 
 Plot it with line chart
 
