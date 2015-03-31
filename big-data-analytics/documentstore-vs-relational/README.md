@@ -117,8 +117,6 @@ The original data is 100 million items. For this experiment, we only extract 1 m
 The input data format after initial filtering and processing is like this. We have 1 million items in this format.
 ```
 {
- u'crawler': u'firehose',
- u'fh_ver': u'2.2',
  u'image_urls': [u'https://38.media.tumblr.com/65e7f3f16c4036812e60a348f8c67974/tumblr_nm0ge7TmRk1ur4qc3o2_250.gif'],
  u'labels': [],
  u'ref_urls': [u'http://tmblr.co/ZJOTLv1h90ouq'],
