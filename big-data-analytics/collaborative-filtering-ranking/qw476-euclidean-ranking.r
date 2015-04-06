@@ -16,6 +16,11 @@ library(dplyr)
 # Load the CSV data(qw476-ranking-data.txt) into a data frame
 data <- read.csv('qw476-ranking-data.txt', header = FALSE, col.names = c('Friend', 'x', 'y'))
 
+# Verify the loaded data
+str(data)
+head(data)
+tail(data)
+
 # JOIN the data frame
 merge(data, data, by = NULL) %>%
 
