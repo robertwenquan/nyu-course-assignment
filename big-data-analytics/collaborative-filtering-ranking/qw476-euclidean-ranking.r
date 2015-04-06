@@ -18,12 +18,16 @@ data <- read.csv('qw476-ranking-data.txt', header = FALSE, col.names = c('Friend
 
 # JOIN the data frame
 merge(data, data, by = NULL) %>%
+
 # Remove the lines with same Known and Unknown friend name
 filter(Friend.x != Friend.y) %>%
+
 # Change column names to a more user-friendly and recognizable ones
 select(Known = Friend.x, Unknown = Friend.y, x1 = x.x, y1 = y.x, x2 = x.y, y2 = y.y) %>%
-# Calculate Manhatten distance and add a column for it
+
+# Calculate euclidean distance and add a column for it
 mutate(euclidean = round(sqrt((x1-x2)^2 + (y1-y2)^2),2)) %>%
+
 # Sort by Known friend name and display the data frame
 arrange(Known)
 
