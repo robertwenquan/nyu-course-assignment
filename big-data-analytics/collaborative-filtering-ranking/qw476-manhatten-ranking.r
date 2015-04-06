@@ -23,7 +23,7 @@ filter(Friend.x != Friend.y) %>%
 # Change column names to a more user-friendly and recognizable ones
 select(Known = Friend.x, Unknown = Friend.y, x1 = x.x, y1 = y.x, x2 = x.y, y2 = y.y) %>%
 # Calculate Manhatten distance and add a column for it
-mutate(manhatten = abs(x1-y2) + abs(y1-y2)) %>%
+mutate(manhatten = abs(x1-x2) + abs(y1-y2)) %>%
 # Sort by Known friend name and display the data frame
 arrange(Known)
 
