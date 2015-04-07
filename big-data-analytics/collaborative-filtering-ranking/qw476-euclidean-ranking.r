@@ -1,4 +1,4 @@
-#!/usr/bin/R -f
+#!/usr/bin/R -q -f
 #
 # R script to calculate euclidean distance 
 #
