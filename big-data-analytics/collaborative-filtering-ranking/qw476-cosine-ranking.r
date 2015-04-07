@@ -7,7 +7,7 @@
 # Input : 'qw476-ranking-data.txt'
 #         it is a CSV format file that contains the X and Y values for a list of names
 #
-# Output: STDOUT
+# Output: STDOUT, with an add-on column for the cosine distance between friends
 #
 
 # We use dplyr package to filter and clean the data
