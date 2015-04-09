@@ -55,15 +55,15 @@ class PlayGround():
         cell = self.game.canvass[n]['cell']
 
         if cell.status == 'disabled':
-          color = 'grey'
+          color = 'black'
         elif cell.status == 'free':
-          color = 'white'
+          color = 'grey'
         elif cell.status == 'play_bot':
           color = 'blue'
         elif cell.status == 'play_human':
           color = 'purple'
 
-        if color == 'grey':
+        if color == 'black':
           # disabled buttons, which are unclickable
           button = Button(self.ui, state = DISABLED, height = 50, width = 50)
         else:
@@ -81,5 +81,7 @@ class PlayGround():
     '''
     refresh the playground
     '''
+    print "refreshing ui according to the cell status map"
+    #button.configure(bg = "#234")
     pass
 

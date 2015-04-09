@@ -80,6 +80,9 @@ class GameEngine():
   # who is playing?
   active_player = 'aibot'
 
+  # selected_cell
+  selected_cell = (-1,-1)
+
   # what is the playing doing?
   status = ''
 
@@ -167,17 +170,33 @@ class GameEngine():
         n = ncol*i + j
 
         c_status = self.canvass[n]['cell'].status
+        selected = self.canvass[n]['cell'].selected
         if c_status == 'disabled':
           sys.stdout.write('x')
         elif c_status == 'free':
           sys.stdout.write(' ')
         elif c_status == 'play_bot':
-          sys.stdout.write('=')
+          if selected == True:
+            sys.stdout.write('O')
+          else:
+            sys.stdout.write('=')
         elif c_status == 'play_human':
-          sys.stdout.write('+')
+          if selected == True:
+            sys.stdout.write('O')
+          else:
+            sys.stdout.write('+')
 
       print '|'
     print '+--------+'
+
+  def update_cell_status(self, x, y, status, selected):
+    '''
+    update cell status according to x,y
+    '''
+    n = self.ncol * x + y
+    cell = self.canvass[n]['cell']
+    cell.status = status
+    cell.selected = selected
 
   def start(self):
     self.ui.display()
@@ -188,8 +207,37 @@ class GameEngine():
     '''
 
     print "click cell(%d,%d)" % (x, y)
+    n = self.ncol*x + y
+
+    cell = self.canvass[n]['cell']
+    if self.selected_cell == (-1,-1):
+      if cell.selected == False and cell.status == 'play_human':
+        cell.selected = True
+        self.selected_cell = (x,y)
+      elif cell.selected == False and cell.status != 'play_human':
+        print 'you cannot select non-human cell to play'
+      elif cell.selected == True:
+        print 'BUG! Check your code!!!'
+    else:
+
+      # TODO caicai: check if it is a legitimate move
+      # according to the game rule
+
+      if cell.status == 'play_human' or cell.status == 'play_bot':
+        print 'move to an empty cell!!!'
+      elif cell.status == 'free' and cell.selected == False:
+        x1, y1 = self.selected_cell
+        x2, y2 = x, y
+
+        self.update_cell_status(x1, y1, 'free', False)
+        self.update_cell_status(x2, y2, 'play_human', False)
+        self.selected_cell = (-1,-1)
+      else:
+        print 'BUG! Check your code!!!'
+
     self.print_debug_cell_map()
     
+    self.ui.refresh_playground()
     #button.configure(bg = "#234")
 
   def is_match_point():
