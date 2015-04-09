@@ -24,6 +24,7 @@ class PlayGround():
   def __init__(self, game):
 
     self.ui = Tk()
+    self.ui.title('caicai AI programming assignment')
 
     ncol = game.ncol
     nrow = game.nrow
@@ -35,6 +36,10 @@ class PlayGround():
     self.prepare_the_playground(ncol, nrow)
 
   def display(self):
+    '''
+    start the display mainloop
+    All buttons will be on the screen right now
+    '''
     self.ui.mainloop()
 
   def prepare_the_playground(self, ncol, nrow):
@@ -42,8 +47,6 @@ class PlayGround():
     draw the playground according to the cell status map
     different status maps to different color
     '''
-
-    self.ui.title('caicai AI programming assignment')
 
     w = Canvas(self.ui, bg="white", height = self.height, width = self.width)
     w.pack()
@@ -68,8 +71,8 @@ class PlayGround():
           button = Button(self.ui, state = DISABLED, height = 50, width = 50)
         else:
           # active buttons, with callback function passing the button index
-          button = Button(self.ui, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
-          #button = Button(self.ui, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
+          button = Button(self.ui, activebackground = 'white', height = 50, width = 50, cursor = "target", \
+              background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
 
         # calculate the x,y coordinates and place the buttons
         x = self.margin + self.unit * j
