@@ -69,6 +69,7 @@ class PlayGround():
         else:
           # active buttons, with callback function passing the button index
           button = Button(self.ui, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
+          #button = Button(self.ui, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
 
         # calculate the x,y coordinates and place the buttons
         x = self.margin + self.unit * j

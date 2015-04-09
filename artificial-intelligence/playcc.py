@@ -238,24 +238,29 @@ class GameEngine():
     self.print_debug_cell_map()
     
     self.ui.refresh_playground()
-    #button.configure(bg = "#234")
 
   def is_match_point():
     '''
     Determine if it is approaching match point
     meaning one step further will without defensive action will end the game
     '''
-    pass
+    return False
 
   def is_match_end():
     '''
     Determine whether the current condition is a match end
     meaning either the human player wins or the AI bot wins the game
     '''
-    pass
+    return False
 
   def is_legitimate_move(loc_start, loc_end):
-    pass
+    '''
+    Determine it is a legitimate move from (x1,y1) to (x2,y2)
+    '''
+    x1, y1 = loc_start
+    x2, y2 = loc_end
+
+    return True
 
 
 #
