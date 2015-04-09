@@ -5,34 +5,12 @@
 # this is the playground canvass for the game
 #
 
-from pprint import pprint
 from Tkinter import *
-
-class Cell():
-  '''
-  one cell of the game canvass
-  '''
-  x = 0
-  y = 0
-  status = 'disabled'
-
-  def __init__(self, x, y, status):
-    self.x = x
-    self.y = y
-    self.status = status
-
-  def set_xy(self, x, y):
-    self.x = x
-    self.y = y
-
-  def set_status(self, status):
-    self.status = status
-
 
 class PlayGround():
   '''
   play ground for the game canvass
-  the canvass is made of 8 x 14 squared cells
+  the button_map is made of 8 x 14 squared cells
   '''
 
   width = 0
@@ -40,70 +18,26 @@ class PlayGround():
   unit = 50
   margin = 20
 
-  player = None
-
   ui = None
-  canvass = dict()
+  button_map = dict()
 
-  def __init__(self, game, ncol = 8, nrow = 14):
+  def __init__(self, game):
 
     self.ui = Tk()
+
+    ncol = game.ncol
+    nrow = game.nrow
 
     self.width = self.margin * 2 + self.unit * ncol
     self.height = self.margin * 4 + self.unit * nrow
     self.game = game
 
-    self.init_cells(ncol, nrow)
-
-    self.draw_the_playground(ncol, nrow)
+    self.prepare_the_playground(ncol, nrow)
 
   def display(self):
     self.ui.mainloop()
 
-  def init_cells(self, ncol, nrow):
-    '''
-    initialize cell coordinates and state
-
-    'free'       - the cell is not used
-    'disabled'   - the cell is disabled
-    'play_bot'   - the cell is occupied by the AI robot
-    'play_human' - the cell is occupied by the human player
-    '''
-    
-    # init all cells to 'free' state
-    for i in range(nrow):
-      for j in range(ncol):
-        n = ncol*i + j
-
-        cell = Cell(i,j,'free')
-        self.canvass[n] = {'cell' : cell}
-
-    # set the 'disabled' cells
-    # these cells will be marked as "disabled" buttons
-    for x,y in [ (0,0),  (0,1),  (0,2),  (0,5),  (0,6),  (0,7), \
-                 (1,0),  (1,1),                  (1,6),  (1,7), \
-                 (2,0),                                  (2,7), \
-                (11,0),                                 (11,7), \
-                (12,0), (12,1),                 (12,6), (12,7), \
-                (13,0), (13,1), (13,2), (13,5), (13,6), (13,7)]:
-      n = ncol*x + y
-      self.canvass[n]['cell'].status = 'disabled'
-
-    # set the robot play cells
-    # these cells will be marked with 'blue' color
-    for x,y in [(4,2), (4,3), (4,4), (4,5), \
-                       (5,3), (5,4)]:
-      n = ncol*x + y
-      self.canvass[n]['cell'].status = 'play_bot'
-
-    # set the human play cells
-    # these cells will be marked with 'purple' color
-    for x,y in [       (8,3), (8,4), \
-                (9,2), (9,3), (9,4), (9,5)]:
-      n = ncol*x + y
-      self.canvass[n]['cell'].status = 'play_human'
-
-  def draw_the_playground(self, ncol, nrow):
+  def prepare_the_playground(self, ncol, nrow):
     '''
     draw the playground according to the cell status map
     different status maps to different color
@@ -118,7 +52,7 @@ class PlayGround():
       for j in range(ncol):
         n = ncol*i + j
 
-        cell = self.canvass[n]['cell']
+        cell = self.game.canvass[n]['cell']
 
         if cell.status == 'disabled':
           color = 'grey'
@@ -141,7 +75,7 @@ class PlayGround():
         y = 3 * self.margin + self.unit * i
         button.place(x=x, y=y, width=self.unit, height=self.unit)
 
-        self.canvass[n]['button'] = button
+        self.button_map[n] = {'button' : button}
 
   def refresh_playground(self):
     '''

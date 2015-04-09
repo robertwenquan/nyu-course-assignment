@@ -5,9 +5,20 @@
 # this is the AI game
 #
 
+import sys
 from pprint import pprint
 from canvass import PlayGround
-from Tkinter import *
+
+class Cell():
+  '''
+  one cell of the game canvass
+  '''
+
+  def __init__(self, x, y, status = 'disabled'):
+    self.x = x
+    self.y = y
+    self.status = status
+    self.selected = False
 
 class Player():
   '''
@@ -60,8 +71,11 @@ class GameEngine():
    - internal logic of the ganme
   '''
 
-  player = None
-  ui = None
+  # define the size of the game play ground
+  ncol = 8
+  nrow = 14
+
+  canvass = dict()
 
   # who is playing?
   active_player = 'aibot'
@@ -71,9 +85,99 @@ class GameEngine():
 
   def __init__(self, player):
     self.player = player
+    self.init_cells(self.ncol, self.nrow)
     self.ui = PlayGround(self)
 
     #configure(bg = "#234")
+
+  def init_cells(self, ncol, nrow):
+    '''
+    initialize cell coordinates and state
+
+    FIXME:
+    this is a dirty initialization, with hard-coded cell selection
+    an ideal one should be converting a visualized map like below to the desired cell map
+
+    +--------+
+    |xxx  xxx|
+    |xx    xx|  x : disabled cells, not used in this map
+    |x      x| ' ': free cells
+    |        |  = : machine player
+    |  ====  |  + : human player
+    |   ==   |
+    |        |
+    |        |
+    |   ++   |
+    |  ++++  |
+    |        |
+    |x      x|
+    |xx    xx|
+    |xxx  xxx|
+    +--------+
+
+    '''
+    
+    # init all cells to 'free' state
+    for i in range(nrow):
+      for j in range(ncol):
+        n = ncol*i + j
+
+        cell = Cell(i,j,'free')
+        self.canvass[n] = {'cell' : cell}
+
+    # set the 'disabled' cells
+    # these cells will be marked as "disabled" buttons
+    for x,y in [ (0,0),  (0,1),  (0,2),  (0,5),  (0,6),  (0,7), \
+                 (1,0),  (1,1),                  (1,6),  (1,7), \
+                 (2,0),                                  (2,7), \
+                (11,0),                                 (11,7), \
+                (12,0), (12,1),                 (12,6), (12,7), \
+                (13,0), (13,1), (13,2), (13,5), (13,6), (13,7)]:
+      n = ncol*x + y
+      self.canvass[n]['cell'].status = 'disabled'
+
+    # set the robot play cells
+    # these cells will be marked with 'blue' color
+    for x,y in [(4,2), (4,3), (4,4), (4,5), \
+                       (5,3), (5,4)]:
+      n = ncol*x + y
+      self.canvass[n]['cell'].status = 'play_bot'
+
+    # set the human play cells
+    # these cells will be marked with 'purple' color
+    for x,y in [       (8,3), (8,4), \
+                (9,2), (9,3), (9,4), (9,5)]:
+      n = ncol*x + y
+      self.canvass[n]['cell'].status = 'play_human'
+
+  def print_debug_cell_map(self):
+    '''
+    print the ASCII cell map on the console
+    for debugging purpose ONLY
+    '''
+
+    nrow = self.nrow
+    ncol = self.ncol
+
+    print '+--------+'
+    for i in range(nrow):
+      sys.stdout.write('|') 
+
+      for j in range(ncol):
+        n = ncol*i + j
+
+        c_status = self.canvass[n]['cell'].status
+        if c_status == 'disabled':
+          sys.stdout.write('x')
+        elif c_status == 'free':
+          sys.stdout.write(' ')
+        elif c_status == 'play_bot':
+          sys.stdout.write('=')
+        elif c_status == 'play_human':
+          sys.stdout.write('+')
+
+      print '|'
+    print '+--------+'
 
   def start(self):
     self.ui.display()
@@ -81,9 +185,10 @@ class GameEngine():
   def on_click(self, x, y):
     '''
     handle the click event
-
     '''
+
     print "click cell(%d,%d)" % (x, y)
+    self.print_debug_cell_map()
     
     #button.configure(bg = "#234")
 
@@ -109,10 +214,10 @@ class GameEngine():
 # main game starts HERE
 #
 
-# setup the player
+# setup the game with player
 ai_player = Player('caicai')
 game = GameEngine(ai_player)
 
-# kick off the game
+# kick off the game with UI
 game.start()
 
