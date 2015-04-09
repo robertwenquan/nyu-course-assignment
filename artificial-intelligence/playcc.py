@@ -15,7 +15,7 @@ class Player():
 
   # name of the player
   # default is 'aibot'
-  name = 'robot'
+  name = 'aibot'
 
   # intelligence level
   #  1 - low
