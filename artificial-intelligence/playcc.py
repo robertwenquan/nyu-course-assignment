@@ -7,6 +7,7 @@
 
 from pprint import pprint
 from canvass import PlayGround
+from Tkinter import *
 
 class Player():
   '''
@@ -48,8 +49,11 @@ class Player():
 
     return ((x1,y1),(x2,y2))
 
-  def on_click(self, cell):
-    print "click cell(%d,%d)" % (cell.x, cell.y)
+  def on_click(self, playground, idx):
+    print "click cell(%d,%d)" % (playground.canvass[idx]['cell'].x, playground.canvass[idx]['cell'].y)
+    
+    cell = playground.canvass[idx]['cell']
+    button = playground.canvass[idx]['button']
 
 
 #

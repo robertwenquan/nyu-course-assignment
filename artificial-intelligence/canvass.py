@@ -123,7 +123,7 @@ class PlayGround():
         if color == 'grey':
           button = Button(top, state = DISABLED, height = 50, width = 50)
         else:
-          button = Button(top, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = self.player.on_click(cell))
+          button = Button(top, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = lambda idx = n: self.player.on_click(self, idx))
 
         x = self.margin + self.unit * j
         y = 3 * self.margin + self.unit * i
