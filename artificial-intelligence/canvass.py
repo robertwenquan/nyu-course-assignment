@@ -81,7 +81,26 @@ class PlayGround():
     '''
     refresh the playground
     '''
+
     print "refreshing ui according to the cell status map"
-    #button.configure(bg = "#234")
-    pass
+
+    nrow = self.game.nrow
+    ncol = self.game.ncol
+
+    for i in range(nrow):
+      for j in range(ncol):
+        n = ncol*i + j
+        cell = self.game.canvass[n]['cell']
+        button = self.button_map[n]['button']
+
+        if cell.status == 'free':
+          button.configure(bg = 'grey')
+        elif cell.selected == True:
+          button.configure(bg = "#234")
+        elif cell.status == 'play_bot':
+          button.configure(bg = 'blue')
+        elif cell.status == 'play_human':
+          button.configure(bg = 'purple')
+        else:
+          pass
 
