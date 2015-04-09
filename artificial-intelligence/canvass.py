@@ -42,17 +42,23 @@ class PlayGround():
 
   player = None
 
+  ui = None
   canvass = dict()
 
-  def __init__(self, player, ncol = 8, nrow = 14):
+  def __init__(self, game, ncol = 8, nrow = 14):
+
+    self.ui = Tk()
 
     self.width = self.margin * 2 + self.unit * ncol
     self.height = self.margin * 4 + self.unit * nrow
-    self.player = player
+    self.game = game
 
     self.init_cells(ncol, nrow)
 
     self.draw_the_playground(ncol, nrow)
+
+  def display(self):
+    self.ui.mainloop()
 
   def init_cells(self, ncol, nrow):
     '''
@@ -98,11 +104,14 @@ class PlayGround():
       self.canvass[n]['cell'].status = 'play_human'
 
   def draw_the_playground(self, ncol, nrow):
+    '''
+    draw the playground according to the cell status map
+    different status maps to different color
+    '''
 
-    top = Tk()
-    top.title('caicai AI programming assignment')
+    self.ui.title('caicai AI programming assignment')
 
-    w = Canvas(top, bg="white", height = self.height, width = self.width)
+    w = Canvas(self.ui, bg="white", height = self.height, width = self.width)
     w.pack()
 
     for i in range(nrow):
@@ -121,18 +130,22 @@ class PlayGround():
           color = 'purple'
 
         if color == 'grey':
-          button = Button(top, state = DISABLED, height = 50, width = 50)
+          # disabled buttons, which are unclickable
+          button = Button(self.ui, state = DISABLED, height = 50, width = 50)
         else:
-          button = Button(top, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = lambda idx = n: self.player.on_click(self, idx))
+          # active buttons, with callback function passing the button index
+          button = Button(self.ui, activebackground = 'white', height = 50, width = 50, cursor = "target", background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
 
+        # calculate the x,y coordinates and place the buttons
         x = self.margin + self.unit * j
         y = 3 * self.margin + self.unit * i
         button.place(x=x, y=y, width=self.unit, height=self.unit)
 
         self.canvass[n]['button'] = button
 
-    top.mainloop()
-
   def refresh_playground(self):
+    '''
+    refresh the playground
+    '''
     pass
 
