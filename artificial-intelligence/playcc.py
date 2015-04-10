@@ -199,6 +199,9 @@ class GameEngine():
     cell.selected = selected
 
   def start(self):
+    '''
+    kickstart the game by calling the ui display
+    '''
     self.ui.display()
 
   def on_click(self, x, y):
