@@ -212,7 +212,10 @@ class GameEngine():
     print "click cell(%d,%d)" % (x, y)
     n = self.ncol*x + y
 
+    # find the selected cell
     cell = self.canvass[n]['cell']
+
+    # this is to choose the cell to be moved
     if self.selected_cell == (-1,-1):
       if cell.selected == False and cell.status == 'play_human':
         cell.selected = True
@@ -221,16 +224,22 @@ class GameEngine():
         print 'you cannot select non-human cell to play'
       elif cell.selected == True:
         print 'BUG! Check your code!!!'
+    # this is to choose the cell to move to.
+    # in order to move here, it must be an empty cell on the canvass
     else:
 
-      # TODO caicai: check if it is a legitimate move
-      # according to the game rule
+      x1, y1 = self.selected_cell
+      x2, y2 = x, y
+
+      # check if it is a legitimate move according to the game rule
+      # if not, do not move and throw warning
+      if self.is_legitimate_move((x1, y1), (x2, y2)) == False:
+        print "This is not a legitimate move. Please re-consider!"
+        return
 
       if cell.status == 'play_human' or cell.status == 'play_bot':
         print 'move to an empty cell!!!'
       elif cell.status == 'free' and cell.selected == False:
-        x1, y1 = self.selected_cell
-        x2, y2 = x, y
 
         self.update_cell_status(x1, y1, 'free', False)
         self.update_cell_status(x2, y2, 'play_human', False)
@@ -245,7 +254,7 @@ class GameEngine():
   def is_match_point():
     '''
     Determine if it is approaching match point
-    meaning one step further will without defensive action will end the game
+    meaning one step further without defensive action will end the game
     '''
     return False
 
@@ -256,12 +265,18 @@ class GameEngine():
     '''
     return False
 
-  def is_legitimate_move(loc_start, loc_end):
+  def is_legitimate_move(self, loc_start, loc_end):
     '''
     Determine it is a legitimate move from (x1,y1) to (x2,y2)
     '''
     x1, y1 = loc_start
     x2, y2 = loc_end
+
+    idx1 = x1*self.ncol + y1
+    idx2 = x2*self.ncol + y2
+
+    print "Trying to move from (%d, %d)[idx %d] to (%d, %d)[idx %d]" % \
+        (x1, y1, idx1, x2, y2, idx2)
 
     return True
 

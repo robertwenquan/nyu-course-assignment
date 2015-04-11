@@ -10,3 +10,5 @@
 python playcc.py
 ```
 
+3. Screenshot
+
