@@ -32,6 +32,7 @@
 # TODO(rw): cell initialization with human readable map
 # TODO(rw): add student information in the footer of the application
 # TODO(rw): add 'good' github link in the footer of the application
+# TODO: Allow two robots playing together, meaning smart one(caicai) always wins the game
 # TODO:
 #
 import sys
@@ -48,6 +49,29 @@ class Cell():
     self.y = y
     self.status = status
     self.selected = False
+
+class GameCanvass():
+  '''
+  This is the main data structure to define the game canvass matrix(14 x 8)
+  Canvass is made of cells filled in rows and columns
+
+  TODO: has not been integrated into the game engine yet
+  '''
+
+  def init_canvass(self):
+    pass
+
+  def lock_canvass(self):
+    pass
+
+  def reset_canvass(self):
+    pass
+
+  def move_cell(self):
+    pass
+
+  def remove_cell(self):
+    pass
 
 class Player():
   '''
