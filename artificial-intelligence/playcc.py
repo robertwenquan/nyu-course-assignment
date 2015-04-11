@@ -7,28 +7,31 @@
 #
 #################################################################
 # Basic goals
-# TODO: the legitimate move checking
-# TODO: game winning rule
-# TODO: player logic
-# TODO: link the player to the game engine
-# TODO: reset game at any point, with confirmation.
+# TODO(cc): the legitimate move checking
+# DONE(rw): game winning rule1 (catle point is taken)
+# TODO(cc): game winning rule2 (all pieces are captured)
+# TODO(cc): player logic
+# TODO(rw): link the player to the game engine
+# TODO(rw): reset game at any point, with confirmation.
+# TODO(rw): end the game when winning condition is met.
 #
 #################################################################
 # Stretching goals
-# TODO: intelligence level
-# TODO: choose intelligence level before game starts
+# TODO(cc): intelligence level
+# TODO(rw): choose intelligence level before game starts
 #
 #################################################################
 # Aspirational goals (from software architecture point of view)
-# TODO: game hints: when the first cell is selected
-#                   give hints about all legitimate moving destimation cells
-# TODO: game point rule
-# TODO: unified logging
-# TODO: dettachable UI
-# TODO: notification via UI
-# TODO: cell initialization with human readable map
-# TODO: add student information in the footer of the application
-# TODO: add 'good' github link in the footer of the application
+# TODO(cc): game hints: when the first cell is selected
+#                       give hints about all legitimate moving destimation cells
+# TODO(rw): integrate the game hints with UI hints
+# TODO(cc): game point rule
+# TODO(rw): unified logging
+# TODO(rw): dettachable UI
+# TODO(rw): notification via UI
+# TODO(rw): cell initialization with human readable map
+# TODO(rw): add student information in the footer of the application
+# TODO(rw): add 'good' github link in the footer of the application
 # TODO:
 #
 import sys
@@ -277,7 +280,12 @@ class GameEngine():
     
     self.ui.refresh_playground()
 
-  def is_match_point():
+    # check the game ending condition after the move of the human player
+    win_the_game, who = self.is_match_end()
+    if win_the_game == True:
+      print "%s wins the game!! Ending game!!!" % who
+
+  def is_match_point(self):
     '''
     THIS IS OPTIONAL
     Determine if it is approaching match point
@@ -288,7 +296,7 @@ class GameEngine():
     '''
     return False
 
-  def is_match_end():
+  def is_match_end(self):
     '''
     Determine whether the current condition is a match end
     meaning either the human player wins or the AI bot wins the game
@@ -298,33 +306,63 @@ class GameEngine():
     2. one side kills all cells of the other side
 
     Input: N/A (Check the global class canvass)
-    Output: True / False
+    Output: (result, who) result = True / False, who = "north" / "south"
     '''
-    return False
 
-  def is_castle_occupied(self, side = "up"):
+    if self.is_castle_occupied("north") or self.is_all_pieces_dead("north"):
+      # south wins the game
+      # end the game with notification
+      return True, "south"
+    elif self.is_castle_occupied("south") or self.is_all_pieces_dead("south"):
+      # north wins the game
+      # end the game with notification
+      return True, "north"
+
+    return False, None
+
+  def is_castle_occupied(self, side = "north"):
     '''
     Check if the castle of any side is occupied
     This is one of the game winning(end) rules
 
-    Input: side = "up" or "down"
+    Input: side = "north" or "south"
     Output: True / False
 
-    castle_point1 = (0, 3)
-    castle_point2 = (0, 4)
-
+    north castle points: (0, 3), (0, 4)
+    south castle points: (13, 3), (13, 4)
     '''
-    pass
 
-  def is_all_pieces_dead(self, side = "up"):
+    if side == "north":
+      castle_points = [(0, 3), (0, 4)]
+
+      for x,y in castle_points:
+        idx = x * self.ncol + y
+        cell = self.canvass[idx]['cell']
+
+        if cell.status == "play_human":
+          return True
+
+    elif side == "south":
+      castle_points = [(13, 3), (13, 4)]
+
+      for x,y in castle_points:
+        idx = x * self.ncol + y
+        cell = self.canvass[idx]['cell']
+
+        if cell.status == "play_bot":
+          return True
+
+    return False
+
+  def is_all_pieces_dead(self, side = "north"):
     '''
     Check if all pieces of any side are dead
     This is one of the game winning(end) rules
 
-    Input: side = "up" or "down"
+    Input: side = "north" or "south"
     Output: True / False
     '''
-    pass
+    return False
 
   def is_legitimate_move(self, loc_start, loc_end):
     '''
