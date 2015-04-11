@@ -4,7 +4,33 @@
 #
 # this is the AI game
 #
-
+#
+#################################################################
+# Basic goals
+# TODO: the legitimate move checking
+# TODO: game winning rule
+# TODO: player logic
+# TODO: link the player to the game engine
+# TODO: reset game at any point, with confirmation.
+#
+#################################################################
+# Stretching goals
+# TODO: intelligence level
+# TODO: choose intelligence level before game starts
+#
+#################################################################
+# Aspirational goals (from software architecture point of view)
+# TODO: game hints: when the first cell is selected
+#                   give hints about all legitimate moving destimation cells
+# TODO: game point rule
+# TODO: unified logging
+# TODO: dettachable UI
+# TODO: notification via UI
+# TODO: cell initialization with human readable map
+# TODO: add student information in the footer of the application
+# TODO: add 'good' github link in the footer of the application
+# TODO:
+#
 import sys
 from pprint import pprint
 from canvass import PlayGround
@@ -255,6 +281,9 @@ class GameEngine():
     '''
     Determine if it is approaching match point
     meaning one step further without defensive action will end the game
+
+    Input: N/A (Check the global class canvass)
+    Output: True / False
     '''
     return False
 
@@ -262,12 +291,19 @@ class GameEngine():
     '''
     Determine whether the current condition is a match end
     meaning either the human player wins or the AI bot wins the game
+
+    Input: N/A (Check the global class canvass)
+    Output: True / False
     '''
     return False
 
   def is_legitimate_move(self, loc_start, loc_end):
     '''
     Determine it is a legitimate move from (x1,y1) to (x2,y2)
+
+    Input: loc_start: a tuple like (x, y)
+           loc_end: a tuple like (x, y)
+    Output: True / False
     '''
     x1, y1 = loc_start
     x2, y2 = loc_end
@@ -280,6 +316,21 @@ class GameEngine():
 
     return True
 
+  def legitimate_move_hints(self, cell_loc):
+    '''
+    Give hints about all possible moves
+    When one cell is selected for possible move, we can predict all possible moves
+    This will facilitate the human player to play the game with less thinking time...
+
+    Input: cell_loc: it is a tuple like (x, y)
+    Output: list_of_possible_moves: [(x1,y1), (x2,y2), (x3,y3)]
+    '''
+
+    x, y = cell_loc
+
+    list_of_possible_moves = []
+
+    return list_of_possible_moves
 
 #
 # main game starts HERE
