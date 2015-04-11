@@ -279,6 +279,7 @@ class GameEngine():
 
   def is_match_point():
     '''
+    THIS IS OPTIONAL
     Determine if it is approaching match point
     meaning one step further without defensive action will end the game
 
@@ -292,10 +293,38 @@ class GameEngine():
     Determine whether the current condition is a match end
     meaning either the human player wins or the AI bot wins the game
 
+    Game Winning Condition (meeting one wins the game)
+    1. one side taking the position of the other side
+    2. one side kills all cells of the other side
+
     Input: N/A (Check the global class canvass)
     Output: True / False
     '''
     return False
+
+  def is_castle_occupied(self, side = "up"):
+    '''
+    Check if the castle of any side is occupied
+    This is one of the game winning(end) rules
+
+    Input: side = "up" or "down"
+    Output: True / False
+
+    castle_point1 = (0, 3)
+    castle_point2 = (0, 4)
+
+    '''
+    pass
+
+  def is_all_pieces_dead(self, side = "up"):
+    '''
+    Check if all pieces of any side are dead
+    This is one of the game winning(end) rules
+
+    Input: side = "up" or "down"
+    Output: True / False
+    '''
+    pass
 
   def is_legitimate_move(self, loc_start, loc_end):
     '''
@@ -318,6 +347,7 @@ class GameEngine():
 
   def legitimate_move_hints(self, cell_loc):
     '''
+    THIS IS OPTIONAL
     Give hints about all possible moves
     When one cell is selected for possible move, we can predict all possible moves
     This will facilitate the human player to play the game with less thinking time...
