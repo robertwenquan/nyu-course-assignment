@@ -33,7 +33,9 @@
 # TODO(rw): add student information in the footer of the application
 # TODO(rw): add 'good' github link in the footer of the application
 # TODO: Allow two robots playing together, meaning smart one(caicai) always wins the game
-# TODO:
+# TODO: Add game play header, with two player's name, level, etc.
+# TODO: Add real-time timer and performance metrics for each play
+# TODO: save game records
 #
 import sys
 from pprint import pprint
