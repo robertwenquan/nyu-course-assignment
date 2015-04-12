@@ -413,25 +413,45 @@ class GameEngine():
 
     if (abs(x2-x1)!=0 and abs(x2-x1)!=2) or (abs(y2-y1)!=0 or abs(y2-y1)!=2):
       return False
+
+    x = (x1+x2)/2
+    y = (y1+y2)/2
+    n = ncol*x+y
+    cell = self.canvass[n]['cell']
+    if cell.status == 'play_human':
+      return True
+    elif cell.status == 'play_bot':
+      # FIXME: do not change cell status in this function
+      # let's figure out an elegant way to handle this outside of this
+      cell.update_cell_status(x,y, 'free', False)
+      return True
     else:
-      x = (x1+x2)/2
-      y = (y1+y2)/2
-      n = ncol*x+y
-      cell = self.canvass[n]['cell']
-      if cell.status == 'play_human':
-        return True
-      elif cell.status == 'play_bot':
-        cell.update_cell_status(x,y, 'free', False)
-        return True
-      else:
-        return False
+      return False
 
   def is_legitimate_first_move(self, loc_start, loc_end):
+    '''
+    This function checks whether the first jump is legitimate
+    The reason to distinguish first jump is first jump could be either
+    plain move or leap move while the successive moves could be only leap move
+
+    Input: loc_start: (x,y) a tuple of row and column index
+           loc_end  : (x,y) a tuple of row and column index
+
+    Return Value: whether_this_is_a_legal_move (True/False)
+        A legitimate plain move is a True for first move
+        A legitimate leap move is a True for first move
+    '''
     x1, y1 = loc_start
     x2, y2 = loc_end
 
+    # Check possible plain move
     if max(abs(x2-x1),abs(y2-y1))==1:
-      return 'is_terminated'
+      # FIXME? the cell status is not checked?
+      # Sorry for the confusion. the return value is not what I wanted.
+      # Let's remove the terminated move status for now
+      # read the comments below the function declaration
+      # once cleared, feel free to remove this section of comments
+      return True
     else:
       return self.is_legitimate_leap(loc_start,loc_end, [])
 
