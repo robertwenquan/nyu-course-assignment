@@ -38,6 +38,7 @@
 # TODO: save game records
 #
 import sys
+import getopt
 from pprint import pprint
 from canvass import PlayGround
 
@@ -78,6 +79,10 @@ class GameCanvass():
 class Player():
   '''
   the AI game player
+
+  attributes of one player:
+  - list_of_pieces : a list of all active pieces(soldiers)
+  - 
   '''
 
   # name of the player
@@ -130,7 +135,13 @@ class GameEngine():
   ncol = 8
   nrow = 14
 
+  # game canvass, data structure for the current board status
   canvass = dict()
+
+  # define two players, only two players
+  # human<->bot, bot<->human, bot<->bot, human<->human
+  north_player = None
+  south_player = None
 
   # who is playing?
   active_player = 'aibot'
@@ -145,8 +156,6 @@ class GameEngine():
     self.player = player
     self.init_cells(self.ncol, self.nrow)
     self.ui = PlayGround(self)
-
-    #configure(bg = "#234")
 
   def init_cells(self, ncol, nrow):
     '''
@@ -426,14 +435,66 @@ class GameEngine():
 
     return list_of_possible_moves
 
-#
-# main game starts HERE
-#
+######################################################
+# global functions start here
+######################################################
 
-# setup the game with player
-ai_player = Player('caicai')
-game = GameEngine(ai_player)
+def print_cmdline_help():
+  '''
+  command line helper
+  '''
+  print 'Command line help:'
+  print '-h/--help       Print This Help'
+  print '-v/--verbose    Verbose output, with debugging information'
+  print '-n/--north      Set north player name'
+  print '-s/--south      Set south player name'
 
-# kick off the game with UI
-game.start()
+def main(argv):
+  '''
+  main function
+  arguments parsing, initialize players, and launch game with two players
+  '''
+
+  verbose = 0
+  debug = 0
+  player_north = ''
+  player_south = ''
+
+  try:
+    opts, args = getopt.getopt(argv, 'hvdn:s:', ['help', 'verbose', 'debug', 'north=', 'south='])
+  except getopt.GetoptError:
+    print_cmdline_help()
+    sys.exit(2)
+
+  for opt, arg in opts:
+    if opt in ("-h", "--help"):
+      print_cmdline_help()
+      sys.exit()
+    elif opt in ("-v", "--verbose"):
+      verbose = 1
+    elif opt in ("-d", "--debug"):
+      debug = 1
+    elif opt in ("-n", "--north"):
+      player_north = arg
+    elif opt in ("-s", "--south"):
+      player_south = arg
+
+  if debug == 1:
+    print 'verbose = %d' % verbose
+    print 'debug   = %d' % debug
+    print 'player_north = %s' % player_north
+    print 'player_south = %s' % player_south
+
+  # setup the game with player
+  ai_player = Player('caicai')
+  game = GameEngine(ai_player)
+
+  # kick off the game with UI
+  game.start()
+
+#
+# command line execution starts from here
+#
+if __name__ == '__main__':
+  main(sys.argv[1:])
 
