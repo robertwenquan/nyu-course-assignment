@@ -256,6 +256,11 @@ class GameEngine():
   def update_cell_status(self, x, y, status, selected):
     '''
     update cell status according to x,y
+
+    x - row index in integer
+    y - column index in integer
+    status - string status 'disabled'/'free'/'play_human'/'play_bot'
+    selected - True/False
     '''
     n = self.ncol * x + y
     cell = self.canvass[n]['cell']
@@ -401,25 +406,25 @@ class GameEngine():
 
   def is_legitimate_leap(self, loc_start, loc_end, path):
     if loc_end in path:
-      return 'is_illegal'
+      return False
 
     x1, y1 = loc_start
     x2, y2 = loc_end
 
     if (abs(x2-x1)!=0 and abs(x2-x1)!=2) or (abs(y2-y1)!=0 or abs(y2-y1)!=2):
-      return 'is_illegal'
+      return False
     else:
       x = (x1+x2)/2
       y = (y1+y2)/2
       n = ncol*x+y
       cell = self.canvass[n]['cell']
       if cell.status == 'play_human':
-        return 'is_legal'
+        return True
       elif cell.status == 'play_bot':
-        cell.update_cell_status(x,y, 'free', 'False')
-        return 'is_legal'
+        cell.update_cell_status(x,y, 'free', False)
+        return True
       else:
-        return 'is_illegal'
+        return False
 
   def is_legitimate_first_move(self, loc_start, loc_end):
     x1, y1 = loc_start
