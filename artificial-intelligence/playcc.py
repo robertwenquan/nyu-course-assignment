@@ -390,6 +390,37 @@ class GameEngine():
     '''
     return False
 
+  def is_legitimate_leap(self, loc_start, loc_end, path):
+    if loc_end in path:
+      return 'is_illegal'
+
+    x1, y1 = loc_start
+    x2, y2 = loc_end
+
+    if (abs(x2-x1)!=0 and abs(x2-x1)!=2) or (abs(y2-y1)!=0 or abs(y2-y1)!=2):
+      return 'is_illegal'
+    else:
+      x = (x1+x2)/2
+      y = (y1+y2)/2
+      n = ncol*x+y
+      cell = self.canvass[n]['cell']
+      if cell.status == 'play_human':
+        return 'is_legal'
+      elif cell.status == 'play_bot':
+        cell.update_cell_status(x,y, 'free', 'False')
+        return 'is_legal'
+      else:
+        return 'is_illegal'
+
+  def is_legitimate_first_move(self, loc_start, loc_end):
+    x1, y1 = loc_start
+    x2, y2 = loc_end
+
+    if max(abs(x2-x1),abs(y2-y1))==1:
+      return 'is_terminated'
+    else:
+      return self.is_legitimate_leap(loc_start,loc_end, [])
+
   def is_legitimate_move(self, loc_start, loc_end):
     '''
     Determine it is a legitimate move from (x1,y1) to (x2,y2)
