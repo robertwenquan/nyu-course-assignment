@@ -505,11 +505,11 @@ class GameEngine():
         m = self.ncol*(xx)+yy
         cell_to = self.canvass[m]['cell']
         if cell_to.status == 'free':
-          set = copy(pending_set)
+          pending = copy(pending_set)
           if cell.status == 'play_human':
-            set.append((a,b))
+            pending.append((a,b))
           path = copy(current_path)
-          ret = self.possible_jump((xx,yy), path, explored_set, pending_set)
+          ret = self.possible_jump((xx,yy), path, explored_set, pending)
           for path in ret:
             return_path.append(path)
 
