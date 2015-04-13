@@ -33,6 +33,10 @@ class PlayGround():
     self.height = self.margin * 4 + self.unit * nrow
     self.game = game
 
+    self.icon_white = PhotoImage(file="images/white.gif")
+    self.icon_black = PhotoImage(file="images/black.gif")
+    self.icon_none = PhotoImage(file="images/none.gif")
+
     self.prepare_the_playground(ncol, nrow)
 
   def display(self):
@@ -57,29 +61,30 @@ class PlayGround():
 
         cell = self.game.canvass.get_cell((i,j))
 
+        # active buttons, with callback function passing the button index
         if cell.status == 'disabled':
-          color = 'black'
-        elif cell.status == 'free':
-          color = 'grey'
-        elif cell.status == 'north':
-          color = 'blue'
-        elif cell.status == 'south':
-          color = 'purple'
-
-        if color == 'black':
           # disabled buttons, which are unclickable
           button = Button(self.ui, state = DISABLED, height = 50, width = 50)
-        else:
-          # active buttons, with callback function passing the button index
-          button = Button(self.ui, activebackground = 'white', height = 50, width = 50, cursor = "target", \
+        elif cell.status == 'free':
+          color = 'grey'
+          button = Button(self.ui, activebackground = color, height = 50, width = 50, cursor = "target", \
               background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
+        elif cell.status == 'north':
+          button = Button(self.ui, height = 50, width = 50, cursor = "target", image = self.icon_white, \
+              background = 'grey', command = lambda x = i, y = j: self.game.on_click(x, y))
+        elif cell.status == 'south':
+          button = Button(self.ui, height = 50, width = 50, cursor = "target", image = self.icon_black, \
+              background = 'grey', command = lambda x = i, y = j: self.game.on_click(x, y))
 
         # calculate the x,y coordinates and place the buttons
         x = self.margin + self.unit * j
         y = 3 * self.margin + self.unit * i
         button.place(x=x, y=y, width=self.unit, height=self.unit)
 
-        self.button_map[n] = {'button' : button}
+        self.button_map[n] = button
+
+  def helloCallBack(self):
+    print 'sdfsdfsdf'
 
   def refresh_playground(self):
     '''
@@ -95,16 +100,17 @@ class PlayGround():
       for j in range(ncol):
         n = ncol*i + j
         cell = self.game.canvass.get_cell((i,j))
-        button = self.button_map[n]['button']
+        button = self.button_map[n]
 
         if cell.status == 'free':
           button.configure(bg = 'grey')
+          button.configure(image = self.icon_none)
         elif cell.selected == True:
           button.configure(bg = "#234")
         elif cell.status == 'north':
-          button.configure(bg = 'blue')
+          button.configure(image = self.icon_white)
         elif cell.status == 'south':
-          button.configure(bg = 'purple')
+          button.configure(image = self.icon_black)
         else:
           pass
 
