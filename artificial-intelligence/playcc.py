@@ -41,7 +41,7 @@ import sys
 import getopt
 from copy import copy
 from pprint import pprint
-from canvass import PlayGround
+from tkui import PlayGround
 
 class Cell():
   '''
@@ -82,7 +82,10 @@ class Player():
   the AI game player
 
   attributes of one player:
+  - name           : a human readable name of the player
+  - intell_level   : the intelligence level (1,2,3), the higher the smarter
   - list_of_pieces : a list of all active pieces(soldiers)
+  - rival          : the opponent player
   - 
   '''
 
