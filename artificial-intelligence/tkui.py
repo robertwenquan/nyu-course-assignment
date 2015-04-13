@@ -103,10 +103,7 @@ class PlayGround():
         button = self.button_map[n]
 
         if cell.status == 'free':
-          button.configure(bg = 'grey')
           button.configure(image = self.icon_none)
-        elif cell.selected == True:
-          button.configure(bg = "#234")
         elif cell.status == 'north':
           button.configure(image = self.icon_white)
         elif cell.status == 'south':
@@ -114,4 +111,8 @@ class PlayGround():
         else:
           pass
 
+        if cell.selected == True:
+          button.configure(bg = "#234")
+        else:
+          button.configure(bg = "grey")
 

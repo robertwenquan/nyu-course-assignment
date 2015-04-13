@@ -9,6 +9,7 @@
 # Basic goals
 # DONE(cc): the legitimate plain move checking
 # DONE(cc): the legitimate leap move checking
+# TODO(rw): stupid sample player (for integration)
 # TODO(cc): player logic
 # DONE(rw): game winning rule1 (catle point is taken)
 # DONE(rw): game winning rule2 (all pieces are captured)
@@ -488,6 +489,7 @@ class GameEngine():
       x1, y1 = player.select_loc
       x2, y2 = x, y
 
+      # double click to end the selection
       if (x1, y1) == (x2, y2):
         player.move_status = 'idle'
         player.select_piece(None)
@@ -625,8 +627,6 @@ class GameEngine():
     if cell.status == player.side:
       return True
     elif cell.status == player.rival.side:
-      # FIXME: do not change cell status in this function
-      # let's figure out an elegant way to handle this outside of this
       player.rival.remove_piece((x,y))
       return True
     else:
