@@ -55,15 +55,15 @@ class PlayGround():
       for j in range(ncol):
         n = ncol*i + j
 
-        cell = self.game.canvass[n]['cell']
+        cell = self.game.canvass.get_cell((i,j))
 
         if cell.status == 'disabled':
           color = 'black'
         elif cell.status == 'free':
           color = 'grey'
-        elif cell.status == 'play_bot':
+        elif cell.status == 'north':
           color = 'blue'
-        elif cell.status == 'play_human':
+        elif cell.status == 'south':
           color = 'purple'
 
         if color == 'black':
@@ -94,16 +94,16 @@ class PlayGround():
     for i in range(nrow):
       for j in range(ncol):
         n = ncol*i + j
-        cell = self.game.canvass[n]['cell']
+        cell = self.game.canvass.get_cell((i,j))
         button = self.button_map[n]['button']
 
         if cell.status == 'free':
           button.configure(bg = 'grey')
         elif cell.selected == True:
           button.configure(bg = "#234")
-        elif cell.status == 'play_bot':
+        elif cell.status == 'north':
           button.configure(bg = 'blue')
-        elif cell.status == 'play_human':
+        elif cell.status == 'south':
           button.configure(bg = 'purple')
         else:
           pass

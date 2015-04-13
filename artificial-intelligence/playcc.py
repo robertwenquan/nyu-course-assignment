@@ -7,11 +7,12 @@
 #
 #################################################################
 # Basic goals
-# TODO(cc): the legitimate move checking
-# DONE(rw): game winning rule1 (catle point is taken)
-# TODO(cc): game winning rule2 (all pieces are captured)
+# DONE(cc): the legitimate plain move checking
+# DONE(cc): the legitimate leap move checking
 # TODO(cc): player logic
-# TODO(rw): link the player to the game engine
+# DONE(rw): game winning rule1 (catle point is taken)
+# DONE(rw): game winning rule2 (all pieces are captured)
+# DONE(rw): link the player to the game engine
 # TODO(rw): reset game at any point, with confirmation.
 # TODO(rw): end the game when winning condition is met.
 #
@@ -25,7 +26,6 @@
 # TODO(cc): game hints: when the first cell is selected
 #                       give hints about all legitimate moving destimation cells
 # TODO(rw): integrate the game hints with UI hints
-# TODO(cc): game point rule
 # TODO(rw): unified logging
 # TODO(rw): dettachable UI
 # TODO(rw): notification via UI
@@ -43,6 +43,7 @@ from copy import copy
 from pprint import pprint
 from tkui import PlayGround
 
+
 class Cell():
   '''
   one cell of the game canvass
@@ -54,114 +55,21 @@ class Cell():
     self.status = status
     self.selected = False
 
+
 class GameCanvass():
   '''
   This is the main data structure to define the game canvass matrix(14 x 8)
   Canvass is made of cells filled in rows and columns
-
-  TODO: has not been integrated into the game engine yet
   '''
 
-  def init_canvass(self):
-    pass
+  def __init__(self, nrow, ncol):
 
-  def lock_canvass(self):
-    pass
+    self.cells = dict()
+    self.nrow = nrow
+    self.ncol = ncol
+    self.init_canvass(nrow, ncol)
 
-  def reset_canvass(self):
-    pass
-
-  def move_cell(self):
-    pass
-
-  def remove_cell(self):
-    pass
-
-class Player():
-  '''
-  the AI game player
-
-  attributes of one player:
-  - name           : a human readable name of the player
-  - intell_level   : the intelligence level (1,2,3), the higher the smarter
-  - list_of_pieces : a list of all active pieces(soldiers)
-  - rival          : the opponent player
-  - 
-  '''
-
-  # name of the player
-  # default is 'aibot'
-  name = 'aibot'
-
-  # intelligence level
-  #  1 - low
-  #  2 - medium
-  #  3 - superhigh
-  intell_level = 3
-
-  def __init__(self, name = 'aibot', difficulty = 3):
-
-    if name == 'caicai':
-      self.intell_level = 3
-    elif name == 'tao1':
-      self.intell_level = 2
-    elif name == 'tao2':
-      self.intell_level = 1
-    else:
-      self.intell_level = difficulty
-
-  def whats_next(self, canvass):
-    '''
-    from current situation, calculate what is next step
-    input:  The Canvass
-    output: ((x1,y1),(x2,y2))
-            (x,y) cooridinate of the source cell
-            (x,y) cooridinate of the detination cell
-    '''
-
-    x1 = 1
-    y1 = 1
-    x2 = 1
-    y2 = 1
-
-    return ((x1,y1),(x2,y2))
-
-
-class GameEngine():
-  '''
-  Define the rules of the game
-   - move rules
-   - defeat rules
-   - internal logic of the ganme
-  '''
-
-  # define the size of the game play ground
-  ncol = 8
-  nrow = 14
-
-  # game canvass, data structure for the current board status
-  canvass = dict()
-
-  # define two players, only two players
-  # human<->bot, bot<->human, bot<->bot, human<->human
-  north_player = None
-  south_player = None
-
-  # who is playing?
-  active_player = 'aibot'
-
-  # selected_cell
-  selected_cell = (-1,-1)
-
-  # what is the playing doing?
-  status = ''
-
-  def __init__(self, player):
-    self.player = player
-    self.init_cells(self.ncol, self.nrow)
-    self.ui = PlayGround(self)
-
-  def init_cells(self, ncol, nrow):
+  def init_canvass(self, nrow, ncol):
     '''
     initialize cell coordinates and state
 
@@ -189,12 +97,12 @@ class GameEngine():
     '''
     
     # init all cells to 'free' state
-    for i in range(nrow):
-      for j in range(ncol):
-        n = ncol*i + j
+    for x in range(nrow):
+      for y in range(ncol):
+        n = ncol*x + y
 
-        cell = Cell(i,j,'free')
-        self.canvass[n] = {'cell' : cell}
+        cell = Cell(x,y,'free')
+        self.cells[n] = cell
 
     # set the 'disabled' cells
     # these cells will be marked as "disabled" buttons
@@ -205,22 +113,74 @@ class GameEngine():
                 (12,0), (12,1),                 (12,6), (12,7), \
                 (13,0), (13,1), (13,2), (13,5), (13,6), (13,7)]:
       n = ncol*x + y
-      self.canvass[n]['cell'].status = 'disabled'
+      self.cells[n].status = 'disabled'
 
-    # set the robot play cells
+    # set the north player cells
     # these cells will be marked with 'blue' color
     for x,y in [(4,2), (4,3), (4,4), (4,5), \
                        (5,3), (5,4)]:
       n = ncol*x + y
-      self.canvass[n]['cell'].status = 'play_bot'
+      self.cells[n].status = 'north'
 
-    # set the human play cells
+    # set the south player cells
     # these cells will be marked with 'purple' color
     for x,y in [       (8,3), (8,4), \
                 (9,2), (9,3), (9,4), (9,5)]:
       n = ncol*x + y
-      self.canvass[n]['cell'].status = 'play_human'
+      self.cells[n].status = 'south'
 
+  def lock_canvass(self):
+    pass
+
+  def reset_canvass(self):
+    '''
+    when the game is reset, the canvass needs to be reset to initial state
+    '''
+    self.cells = dict()
+    init_canvass()
+
+  def free_cell(self, loc):
+    '''
+    set the cell free
+    '''
+    cell = self.get_cell(loc)
+    if cell == None:
+      print 'Error!'
+      return
+
+    cell.status = 'free'
+    cell.selected = False
+
+  def move_cell(self, loc_start, loc_end):
+    '''
+    move one cell from one location to another
+    '''
+    cell_from = self.get_cell(loc_start)
+    cell_to   = self.get_cell(loc_end)
+    if cell_from == None or cell_to == None:
+      print 'Error!'
+      return
+
+    cell_to.status = cell_from.status
+    cell_to.selected = cell_from.selected
+
+    self.free_cell(loc_start)
+
+  def remove_cell(self, loc):
+    self.free_cell(loc)
+    cell = self.get_cell(loc)
+    cell.status = 'free'
+    cell.selected = False
+
+  def get_cell(self, loc):
+    '''
+    get the cell object according to x,y coordinates
+    return None if cell is not found
+    '''
+    x, y = loc
+    idx = self.ncol * x + y
+    return self.cells.get(idx, None)
+    
   def print_debug_cell_map(self):
     '''
     print the ASCII cell map on the console
@@ -237,18 +197,18 @@ class GameEngine():
       for j in range(ncol):
         n = ncol*i + j
 
-        c_status = self.canvass[n]['cell'].status
-        selected = self.canvass[n]['cell'].selected
+        c_status = self.get_cell((i,j)).status
+        selected = self.get_cell((i,j)).selected
         if c_status == 'disabled':
           sys.stdout.write('x')
         elif c_status == 'free':
           sys.stdout.write(' ')
-        elif c_status == 'play_bot':
+        elif c_status == 'north':
           if selected == True:
             sys.stdout.write('O')
           else:
             sys.stdout.write('=')
-        elif c_status == 'play_human':
+        elif c_status == 'south':
           if selected == True:
             sys.stdout.write('O')
           else:
@@ -257,19 +217,213 @@ class GameEngine():
       print '|'
     print '+--------+'
 
-  def update_cell_status(self, x, y, status, selected):
-    '''
-    update cell status according to x,y
 
-    x - row index in integer
-    y - column index in integer
-    status - string status 'disabled'/'free'/'play_human'/'play_bot'
-    selected - True/False
+class Player():
+  '''
+  the AI game player
+
+  common attributes:
+  ------------------
+  - robot          : True/False
+  - name           : a human readable name of the player
+  - side           : 'north' or 'south'
+  - move_status    : intermediate move status ['idle', 'selected', 'hopped']
+  - list_of_pieces : a list of all active pieces(soldiers)
+  - castle_points  : castle points of this side
+  - rival          : the opponent player
+  - canvass        : the global canvass view
+
+  robot attributes :
+  ------------------
+  - intell_level   : the intelligence level (1,2,3), the higher the smarter
+  - 
+  '''
+
+  robot = True
+  name = 'aibot'
+  side = 'north'
+
+  move_status = 'idle'
+  select_loc = None
+  select_path = []
+
+  list_of_pieces = []
+
+  def __init__(self, robot = True, name = 'aibot', side = '', move_status = 'idle', difficulty = 3):
+
+    self.robot = robot
+    self.name = name
+    self.side = side
+    self.move_status = move_status
+
+    if self.name == 'caicai':
+      self.intell_level = 3
+    elif self.name == 'tao1':
+      self.intell_level = 2
+    elif self.name == 'tao2':
+      self.intell_level = 1
+    else:
+      self.intell_level = difficulty
+
+    self.init_pieces()
+    self.init_castle_points()
+
+  def init_pieces(self):
     '''
-    n = self.ncol * x + y
-    cell = self.canvass[n]['cell']
-    cell.status = status
-    cell.selected = selected
+      initialize the pieces of this player
+      north player and south player has different default pieces locations
+    '''
+
+    if self.side == 'north':
+      self.list_of_pieces = [(4,2), (4,3), (4,4), (4,5), (5,3), (5,4)]
+    elif self.side == 'south':
+      self.list_of_pieces = [(8,3), (8,4), (9,2), (9,3), (9,4), (9,5)]
+    else:
+      print 'BUG: Check your code!!!'
+      exit(55)
+
+  def init_castle_points(self):
+    '''
+      initialize the castle points of one player
+      north player and south play has different castle points
+    '''
+
+    if self.side == 'north':
+      self.castle_points = [(0, 3), (0, 4)]
+    elif self.side == 'south':
+      self.castle_points = [(13, 3), (13, 4)]
+    else:
+      print 'BUG: Check your code!!!'
+      exit(55)
+
+  def select_piece(self, loc):
+    self.select_loc = loc
+
+  def add_cell_to_select_path(self, loc):
+    self.select_path.append(loc)
+
+  def clear_select_path(self):
+    self.select_path = []
+
+  def set_rival(self, rival):
+    self.rival = rival
+
+  def set_canvass(self, canvass):
+    self.canvass = canvass
+
+  def is_self_piece(self, loc):
+    '''
+    Input:
+      loc is a tuple like (x,y)
+    Return Value:
+      True/False - indicating whether this location is a valid piece for this player
+    '''
+    return loc in self.list_of_pieces
+
+  def move_piece(self, loc_from, loc_to):
+    '''
+    move one piece from loc1 to loc2
+    update player piece info as well as canvass map
+    '''
+    self.list_of_pieces.remove(loc_from)
+    self.list_of_pieces.append(loc_to)
+    self.canvass.move_cell(loc_from, loc_to)
+
+  def remove_piece(self, location):
+    '''
+    remove one piece from the canvass
+    '''
+    self.list_of_pieces.remove(location)
+    self.canvass.remove_cell(location)
+
+  def whats_next_move(self):
+    '''
+    from current canvass situation, calculate what is next step
+    input:  
+    output: [(x1,y1),(x2,y2),(x3,y3),...]
+    '''
+
+    # self.canvass is for your consumption
+
+    # you can move the cells by yourself, or return the list of locations for me to move
+    # up to you
+
+    return [(1,2), (3,4), (5,6)]
+
+
+class GameEngine():
+  '''
+  Define the rules of the game
+   - move rules
+   - defeat rules
+   - internal logic of the ganme
+  '''
+
+  # define the size of the game play ground
+  ncol = 8
+  nrow = 14
+
+  # define two players, only two players
+  # human<->bot, bot<->human, bot<->bot, human<->human
+  north_player = None
+  south_player = None
+
+  # who is actively playing?
+  active_player = None
+
+  # selected_cell
+  selected_cell = (-1,-1)
+
+  # what is the playing doing?
+  status = ''
+
+  def __init__(self, player1, player2):
+
+    for player in [player1, player2]:
+      print player.robot
+      print player.name
+      if player.side == 'north':
+        self.north_player = player
+      elif player.side == 'south':
+        self.south_player = player
+
+    if self.north_player == None or self.south_player == None:
+      print 'Not enough player to play! Please check configuration!'
+      exit(54)
+
+    # if human player exists, human plays first
+    # otherwise north plays first
+    self.active_player = self.get_human_player()
+    if self.active_player == None:
+      self.active_player = self.north_player
+
+    self.canvass = GameCanvass(self.nrow, self.ncol)
+
+    # set rival to players
+    self.north_player.set_rival(self.south_player)
+    self.south_player.set_rival(self.north_player)
+
+    # set canvass to players
+    self.north_player.set_canvass(self.canvass)
+    self.south_player.set_canvass(self.canvass)
+
+    # initialize UI
+    self.ui = PlayGround(self)
+
+  def get_human_player(self):
+    '''
+    return the human player object
+    limit: there is at most one human player in the game
+           there is possibility no human player is available in the game
+    '''
+    for player in [self.north_player, self.south_player]:
+      if player == None:
+        continue
+
+      if player.robot == False:
+        return player
+
+    return None
 
   def start(self):
     '''
@@ -282,46 +436,85 @@ class GameEngine():
     handle the click event
     '''
 
+    player = self.get_human_player()
+    if player == None:
+      print 'no human player available. ui not clickable.'
+      return
+
     print "click cell(%d,%d)" % (x, y)
     n = self.ncol*x + y
 
     # find the selected cell
-    cell = self.canvass[n]['cell']
+    cell = self.canvass.get_cell((x,y))
 
-    # this is to choose the cell to be moved
-    if self.selected_cell == (-1,-1):
-      if cell.selected == False and cell.status == 'play_human':
-        cell.selected = True
-        self.selected_cell = (x,y)
-      elif cell.selected == False and cell.status != 'play_human':
-        print 'you cannot select non-human cell to play'
-      elif cell.selected == True:
-        print 'BUG! Check your code!!!'
-    # this is to choose the cell to move to.
-    # in order to move here, it must be an empty cell on the canvass
-    else:
+    if player.move_status == 'idle':
+      if player.is_self_piece((x,y)) == False:
+        print 'Your can only select the pieces for yourself!'
+        return
 
-      x1, y1 = self.selected_cell
+      # move to next select step
+      player.move_status = 'selected'
+      player.select_piece((x,y))
+      player.add_cell_to_select_path((x,y))
+
+      self.canvass.get_cell((x,y)).selected = True
+
+    elif player.move_status == 'selected':
+      x1, y1 = player.select_loc
       x2, y2 = x, y
-
-      # check if it is a legitimate move according to the game rule
-      # if not, do not move and throw warning
-      if self.is_legitimate_move((x1, y1), (x2, y2)) == False:
+      legal_move, terminated = self.is_legitimate_first_move((x1, y1), (x2, y2), player)
+      if legal_move == False:
         print "This is not a legitimate move. Please re-consider!"
         return
 
-      if cell.status == 'play_human' or cell.status == 'play_bot':
-        print 'move to an empty cell!!!'
-      elif cell.status == 'free' and cell.selected == False:
+      player.move_piece((x1, y1), (x2, y2))
 
-        self.update_cell_status(x1, y1, 'free', False)
-        self.update_cell_status(x2, y2, 'play_human', False)
-        self.selected_cell = (-1,-1)
+      # move to next select step
+      player.move_status = 'hopped'
+      player.select_piece((x2,y2))
+      player.add_cell_to_select_path((x2, y2))
+
+      self.canvass.get_cell((x1,y1)).selected = False
+      self.canvass.get_cell((x2,y2)).selected = True
+
+      if terminated == True:
+        player.move_status = 'idle'
+        player.select_piece(None)
+        player.clear_select_path()
+
+        self.canvass.get_cell((x2,y2)).selected = False
+
+    elif player.move_status == 'hopped':
+      x1, y1 = player.select_loc
+      x2, y2 = x, y
+
+      if (x1, y1) == (x2, y2):
+        player.move_status = 'idle'
+        player.select_piece(None)
+        player.clear_select_path()
+
+        print 'end multi path selection'
+        self.canvass.get_cell((x2,y2)).selected = False
       else:
-        print 'BUG! Check your code!!!'
+        legal_move = self.is_legitimate_leap((x1, y1), (x2, y2), player)
+        if legal_move == False:
+          print "This is not a legitimate leap move. Please re-consider!"
+          return
 
-    self.print_debug_cell_map()
+        player.move_piece((x1, y1), (x2, y2))
+
+        # move to next select step
+        player.move_status = 'hopped'
+        player.select_piece((x2,y2))
+        player.add_cell_to_select_path((x2, y2))
+
+        self.canvass.get_cell((x1,y1)).selected = False
+        self.canvass.get_cell((x2,y2)).selected = True
+
+    # print debug cell map
+    self.canvass.print_debug_cell_map()
     
+    # refresh the UI
     self.ui.refresh_playground()
 
     # check the game ending condition after the move of the human player
@@ -329,16 +522,17 @@ class GameEngine():
     if win_the_game == True:
       print "%s wins the game!! Ending game!!!" % who
 
-  def is_match_point(self):
-    '''
-    THIS IS OPTIONAL
-    Determine if it is approaching match point
-    meaning one step further without defensive action will end the game
+    # bot plays here
+    rival = player.rival
 
-    Input: N/A (Check the global class canvass)
-    Output: True / False
-    '''
-    return False
+    move_path = rival.whats_next_move()
+    for loc in move_path:
+      print "Moving path:" , loc
+
+    # check the game ending condition after the move of the human player
+    win_the_game, who = self.is_match_end()
+    if win_the_game == True:
+      print "%s wins the game!! Ending game!!!" % who
 
   def is_match_end(self):
     '''
@@ -353,18 +547,18 @@ class GameEngine():
     Output: (result, who) result = True / False, who = "north" / "south"
     '''
 
-    if self.is_castle_occupied("north") or self.is_all_pieces_dead("north"):
+    if self.is_castle_occupied(self.north_player) or self.is_all_pieces_dead(self.north_player):
       # south wins the game
       # end the game with notification
       return True, "south"
-    elif self.is_castle_occupied("south") or self.is_all_pieces_dead("south"):
+    elif self.is_castle_occupied(self.south_player) or self.is_all_pieces_dead(self.south_player):
       # north wins the game
       # end the game with notification
       return True, "north"
 
     return False, None
 
-  def is_castle_occupied(self, side = "north"):
+  def is_castle_occupied(self, player):
     '''
     Check if the castle of any side is occupied
     This is one of the game winning(end) rules
@@ -376,63 +570,69 @@ class GameEngine():
     south castle points: (13, 3), (13, 4)
     '''
 
-    if side == "north":
-      castle_points = [(0, 3), (0, 4)]
+    castle_points = player.castle_points
+    rival = player.rival
 
-      for x,y in castle_points:
-        idx = x * self.ncol + y
-        cell = self.canvass[idx]['cell']
-
-        if cell.status == "play_human":
-          return True
-
-    elif side == "south":
-      castle_points = [(13, 3), (13, 4)]
-
-      for x,y in castle_points:
-        idx = x * self.ncol + y
-        cell = self.canvass[idx]['cell']
-
-        if cell.status == "play_bot":
-          return True
+    for x,y in castle_points:
+      if rival.is_self_piece((x,y)):
+        return True
 
     return False
 
-  def is_all_pieces_dead(self, side = "north"):
+  def is_all_pieces_dead(self, player):
     '''
     Check if all pieces of any side are dead
     This is one of the game winning(end) rules
 
-    Input: side = "north" or "south"
+    Input: player
     Output: True / False
     '''
-    return False
+    if player.list_of_pieces == []:
+      return True
+    else:
+      return False
 
-  def is_legitimate_leap(self, loc_start, loc_end, path):
-    if loc_end in path:
+  def is_legitimate_leap(self, loc_start, loc_end, player):
+    '''
+    This function checks whether a leap move is legal
+    As leap move might involve removal of rival's cells
+    player is required in order to identify its identity
+
+    Input : loc_start is a tuple of (x,y)
+            loc_end   is a tuple of (x,y)
+            player    is the game player object
+    Output: True/False
+            True  - it is a legal move
+                    if it's leaped on rival's cells, they are removed from the cell map
+                    if it's leaped on its own cells, just leap
+            False - it is not a legal move
+    '''
+    if loc_end in player.select_path:
+      print 'loop move is not allowed'
       return False
 
     x1, y1 = loc_start
     x2, y2 = loc_end
 
-    if (abs(x2-x1)!=0 and abs(x2-x1)!=2) or (abs(y2-y1)!=0 or abs(y2-y1)!=2):
+    if (abs(x2-x1)!=0 and abs(x2-x1)!=2) or (abs(y2-y1)!=0 and abs(y2-y1)!=2):
+      print 'too far away'
       return False
 
     x = (x1+x2)/2
     y = (y1+y2)/2
-    n = ncol*x+y
-    cell = self.canvass[n]['cell']
-    if cell.status == 'play_human':
+    cell = self.canvass.get_cell((x,y))
+    print 'cell status: %s' % cell.status
+    if cell.status == player.side:
       return True
-    elif cell.status == 'play_bot':
+    elif cell.status == player.rival.side:
       # FIXME: do not change cell status in this function
       # let's figure out an elegant way to handle this outside of this
-      cell.update_cell_status(x,y, 'free', False)
+      player.rival.remove_piece((x,y))
       return True
     else:
       return False
 
-  def is_legitimate_first_move(self, loc_start, loc_end):
+  def is_legitimate_first_move(self, loc_start, loc_end, player):
     '''
     This function checks whether the first jump is legitimate
     The reason to distinguish first jump is first jump could be either
@@ -440,43 +640,35 @@ class GameEngine():
 
     Input: loc_start: (x,y) a tuple of row and column index
            loc_end  : (x,y) a tuple of row and column index
+           player   : need to know the play in order to do leap move
+                      because leap move might involve removal of rival's cells
 
-    Return Value: whether_this_is_a_legal_move (True/False)
+    Return Value: whether_this_is_a_legal_move (True/False), whether_it_is_terminated_move
         A legitimate plain move is a True for first move
         A legitimate leap move is a True for first move
-    '''
-    x1, y1 = loc_start
-    x2, y2 = loc_end
-
-    # Check possible plain move
-    if max(abs(x2-x1),abs(y2-y1))==1:
-      # FIXME? the cell status is not checked?
-      # Sorry for the confusion. the return value is not what I wanted.
-      # Let's remove the terminated move status for now
-      # read the comments below the function declaration
-      # once cleared, feel free to remove this section of comments
-      return True
-    else:
-      return self.is_legitimate_leap(loc_start,loc_end, [])
-
-  def is_legitimate_move(self, loc_start, loc_end):
-    '''
-    Determine it is a legitimate move from (x1,y1) to (x2,y2)
-
-    Input: loc_start: a tuple like (x, y)
-           loc_end: a tuple like (x, y)
-    Output: True / False
+        terminated move means the first move is a plain move. In this case it is not allowed to move again
+        If the first move is a leap move, it is ok to leap again and again.
     '''
     x1, y1 = loc_start
     x2, y2 = loc_end
 
     idx1 = x1*self.ncol + y1
     idx2 = x2*self.ncol + y2
-
     print "Trying to move from (%d, %d)[idx %d] to (%d, %d)[idx %d]" % \
         (x1, y1, idx1, x2, y2, idx2)
 
-    return True
+    # only free cell is movable target
+    cell = self.canvass.get_cell((x2,y2))
+    if cell.status != 'free':
+      return False, True
+
+    # Check plain move
+    if max(abs(x2-x1),abs(y2-y1))==1:
+      return True, True
+    else:
+      # check leap move
+      is_legal_leap = self.is_legitimate_leap(loc_start, loc_end, player)
+      return is_legal_leap, False
 
   def possible_jump(self, cell_loc, current_path, explored_set, pending_set):
     '''
@@ -497,7 +689,7 @@ class GameEngine():
     adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y+1),(x+1,y-1),(x-1,y-1),(x-1,y+1)]
     for (a,b) in adjacent:
       n = self.ncol*a+b
-      cell = self.canvass[n]['cell']
+      cell = self.canvass.get_cell((a,b))
       if cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
         continue
       else:
@@ -506,7 +698,7 @@ class GameEngine():
         if (xx,yy) in explored_set:
           continue
         m = self.ncol*(xx)+yy
-        cell_to = self.canvass[m]['cell']
+        cell_to = self.canvass.get_cell((xx,yy))
         if cell_to.status == 'free':
           pending = copy(pending_set)
           if cell.status == 'play_human':
@@ -517,23 +709,6 @@ class GameEngine():
             return_path.append(path)
 
     return return_path
-
-  def legitimate_move_hints(self, cell_loc):
-    '''
-    THIS IS OPTIONAL
-    Give hints about all possible moves
-    When one cell is selected for possible move, we can predict all possible moves
-    This will facilitate the human player to play the game with less thinking time...
-
-    Input: cell_loc: it is a tuple like (x, y)
-    Output: list_of_possible_moves: [(x1,y1), (x2,y2), (x3,y3)]
-    '''
-
-    x, y = cell_loc
-
-    list_of_possible_moves = []
-
-    return list_of_possible_moves
 
 ######################################################
 # global functions start here
@@ -586,8 +761,10 @@ def main(argv):
     print 'player_south = %s' % player_south
 
   # setup the game with player
-  ai_player = Player('caicai')
-  game = GameEngine(ai_player)
+  player1 = Player(robot = False, name = 'bobcat', side = 'north')
+  player2 = Player(robot = True,  name = 'caicai', side = 'south')
+
+  game = GameEngine(player1, player2)
 
   # kick off the game with UI
   game.start()
