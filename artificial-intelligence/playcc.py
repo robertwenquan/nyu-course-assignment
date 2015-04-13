@@ -9,12 +9,12 @@
 # Basic goals
 # DONE(cc): the legitimate plain move checking
 # DONE(cc): the legitimate leap move checking
-# TODO(rw): stupid sample player (for integration)
+# TODO(cc): stupid sample player (for integration)
 # TODO(cc): player logic
 # DONE(rw): game winning rule1 (catle point is taken)
 # DONE(rw): game winning rule2 (all pieces are captured)
 # DONE(rw): link the player to the game engine
-# TODO(rw): reset game at any point, with confirmation.
+# DONE(rw): reset game at any point, with confirmation.
 # TODO(rw): end the game when winning condition is met.
 #
 #################################################################
