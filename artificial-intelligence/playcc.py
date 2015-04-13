@@ -39,6 +39,7 @@
 #
 import sys
 import getopt
+from copy import copy
 from pprint import pprint
 from canvass import PlayGround
 
@@ -473,6 +474,46 @@ class GameEngine():
         (x1, y1, idx1, x2, y2, idx2)
 
     return True
+
+  def possible_jump(self, cell_loc, current_path, explored_set, pending_set):
+    '''
+    Calculate all possible path for a cell to move, is used for robot to choose the best move.
+
+    Input: cell_loc: a tuple like (x,y)
+           current_path: the path from original path to current cell
+           explored_set: all cell expeared on the path
+           pending_set: enemy piece that have been captured
+    Output: pathes reached this piece and moving on
+    '''
+
+    x, y = cell_loc
+    explored_set.append((x,y))
+    current_path.append((x,y))
+    return_path = [current_path]
+
+    adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y+1),(x+1,y-1),(x-1,y-1),(x-1,y+1)]
+    for (a,b) in adjacent:
+      n = self.ncol*a+b
+      cell = self.canvass[n]['cell']
+      if cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
+        continue
+      else:
+        xx = x + (a-x)*2 
+        yy = y + (b-y)*2
+        if (xx,yy) in explored_set:
+          continue
+        m = self.ncol*(xx)+yy
+        cell_to = self.canvass[m]['cell']
+        if cell_to.status == 'free':
+          set = copy(pending_set)
+          if cell.status == 'play_human':
+            set.append((a,b))
+          path = copy(current_path)
+          ret = self.possible_jump((xx,yy), path, explored_set, pending_set)
+          for path in ret:
+            return_path.append(path)
+
+    return return_path
 
   def legitimate_move_hints(self, cell_loc):
     '''
