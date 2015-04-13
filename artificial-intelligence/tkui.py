@@ -46,15 +46,28 @@ class PlayGround():
     '''
     self.ui.mainloop()
 
+  def make_menu(self):
+    menubar = Menu(self.ui)
+
+    menubar.add_command(label = 'Reset Game', command = self.game.reset_game)
+    menubar.add_command(label = 'About', command = self.game.about_me)
+
+    self.ui.config(menu=menubar)
+
   def prepare_the_playground(self, ncol, nrow):
     '''
     draw the playground according to the cell status map
     different status maps to different color
     '''
 
+    # place the canvas
     w = Canvas(self.ui, bg="white", height = self.height, width = self.width)
     w.pack()
 
+    # place the menu 
+    self.make_menu()
+
+    # place the buttons
     for i in range(nrow):
       for j in range(ncol):
         n = ncol*i + j

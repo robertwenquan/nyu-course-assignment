@@ -138,7 +138,7 @@ class GameCanvass():
     when the game is reset, the canvass needs to be reset to initial state
     '''
     self.cells = dict()
-    init_canvass()
+    self.init_canvass(self.nrow, self.ncol)
 
   def free_cell(self, loc):
     '''
@@ -268,6 +268,16 @@ class Player():
 
     self.init_pieces()
     self.init_castle_points()
+
+  def reset_player(self):
+    '''
+    This is for the game reset
+    reset all player info to the initial state
+    '''
+    self.init_pieces()
+    self.move_status = 'idle'
+    self.select_loc = None
+    self.select_path = []
 
   def init_pieces(self):
     '''
@@ -410,6 +420,21 @@ class GameEngine():
 
     # initialize UI
     self.ui = PlayGround(self)
+
+  def reset_game(self):
+    '''
+    reset the game canvass to default
+    '''
+    print 'resetting the game...'
+    self.canvass.reset_canvass()
+    self.north_player.reset_player()
+    self.south_player.reset_player()
+
+    self.canvass.print_debug_cell_map()
+    self.ui.refresh_playground()
+
+  def about_me(self):
+    print 'about me...'
 
   def get_human_player(self):
     '''
