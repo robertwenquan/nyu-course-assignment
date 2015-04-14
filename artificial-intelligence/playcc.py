@@ -19,6 +19,9 @@
 # TODO: DONE link the player to the game engine
 # TODO: DONE reset game at any point, with confirmation.
 # TODO: DONE end the game when winning condition is met.
+# TODO(rw): white(north) always starts first
+# TODO(rw): choose side for human player
+# TODO(rw): choose side on the UI
 # TODO(rw): performance metrics interface definition
 # TODO(rw): expose performance metrics to UI for each move
 # TODO(cc): record performance metrics for each move
@@ -34,8 +37,8 @@
 #
 # TODO(rw): unified logging
 # TODO(rw): notification via UI
-# TODO(rw): add student information in the footer of the application
-# TODO(rw): add about box with 'good' github link in the footer of the application
+# TODO(cc): add student information in the footer of the application
+# TODO(cc): add about box with 'good' github link in the footer of the application
 # TODO(cc): game hints: when the first cell is selected
 #                       give hints about all legitimate moving destimation cells
 # TODO(rw): integrate the game hints with UI hints
