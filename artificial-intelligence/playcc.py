@@ -613,7 +613,7 @@ class Player():
     '''
     max = 0
     min = 0
-    if self.side == 'South':
+    if self.side == 'south':
       for piece in self.list_of_pieces:
         x, y = piece
         max += (14-y)*(14-y)
