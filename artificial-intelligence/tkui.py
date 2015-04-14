@@ -77,17 +77,17 @@ class PlayGround():
         # active buttons, with callback function passing the button index
         if cell.status == 'disabled':
           # disabled buttons, which are unclickable
-          button = Button(self.ui, state = DISABLED, height = 50, width = 50)
+          button = Button(self.ui, state = DISABLED, height = 50, width = 50, background = '#875b00')
         elif cell.status == 'free':
-          color = 'grey'
+          color = 'white'
           button = Button(self.ui, activebackground = color, height = 50, width = 50, cursor = "target", \
-              background = color, command = lambda x = i, y = j: self.game.on_click(x, y))
+              background = '#dbb25c', command = lambda x = i, y = j: self.game.on_click(x, y))
         elif cell.status == 'north':
-          button = Button(self.ui, height = 50, width = 50, cursor = "target", image = self.icon_white, \
-              background = 'grey', command = lambda x = i, y = j: self.game.on_click(x, y))
+          button = Button(self.ui, activebackground = 'grey', height = 50, width = 50, cursor = "target", image = self.icon_white, \
+              background = '#dbb25c', command = lambda x = i, y = j: self.game.on_click(x, y))
         elif cell.status == 'south':
-          button = Button(self.ui, height = 50, width = 50, cursor = "target", image = self.icon_black, \
-              background = 'grey', command = lambda x = i, y = j: self.game.on_click(x, y))
+          button = Button(self.ui, activebackground = 'grey', height = 50, width = 50, cursor = "target", image = self.icon_black, \
+              background = '#dbb25c', command = lambda x = i, y = j: self.game.on_click(x, y))
 
         # calculate the x,y coordinates and place the buttons
         x = self.margin + self.unit * j
@@ -95,9 +95,6 @@ class PlayGround():
         button.place(x=x, y=y, width=self.unit, height=self.unit)
 
         self.button_map[n] = button
-
-  def helloCallBack(self):
-    print 'sdfsdfsdf'
 
   def refresh_playground(self):
     '''
@@ -127,5 +124,5 @@ class PlayGround():
         if cell.selected == True:
           button.configure(bg = "#234")
         else:
-          button.configure(bg = "grey")
+          button.configure(bg = "#dbb25c")
 
