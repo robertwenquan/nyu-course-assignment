@@ -218,7 +218,7 @@ class GameCanvass():
     # e.g    for (2, 7), n = 8*2 + 7 = 23
     #       also (3,-1), n = 8*3 - 1 = 23
     # cell[23] is valid but (3, -1) is not
-    if (x, y) not in self.valid_cell_map:
+    if x < 0 or x > self.nrow-1 or y < 0 or y > self.ncol-1:
       print 'Invalid cell lookup for', (x, y)
       return None
 
