@@ -15,11 +15,11 @@
 # DONE(rw): game winning rule2 (all pieces are captured)
 # DONE(rw): link the player to the game engine
 # DONE(rw): reset game at any point, with confirmation.
-# TODO(rw): end the game when winning condition is met.
+# DONE(rw): end the game when winning condition is met.
 #
 #################################################################
 # Stretching goals
-# TODO(cc): intelligence level
+# DONE(cc): intelligence level
 # TODO(rw): choose intelligence level before game starts
 #
 #################################################################
@@ -39,6 +39,7 @@
 # TODO: save game records
 #
 import sys
+import time
 import getopt
 from copy import copy
 from pprint import pprint
@@ -729,6 +730,7 @@ class GameEngine():
     elif player.move_status == 'selected':
       x1, y1 = player.select_loc
       x2, y2 = x, y
+
       legal_move, terminated = self.is_legitimate_first_move((x1, y1), (x2, y2), player)
       if legal_move == False:
         print "This is not a legitimate move. Please re-consider!"
@@ -745,11 +747,7 @@ class GameEngine():
       self.canvass.get_cell((x2,y2)).selected = True
 
       if terminated == True:
-        player.move_status = 'idle'
-        player.select_piece(None)
-        player.clear_select_path()
-
-        self.canvass.get_cell((x2,y2)).selected = False
+        player.move_status = 'stop'
 
     elif player.move_status == 'hopped':
       x1, y1 = player.select_loc
@@ -778,6 +776,18 @@ class GameEngine():
 
         self.canvass.get_cell((x1,y1)).selected = False
         self.canvass.get_cell((x2,y2)).selected = True
+    elif player.move_status == 'stop':
+      x1, y1 = player.select_loc
+      x2, y2 = x, y
+
+      # double click to end the selection
+      if (x1, y1) == (x2, y2):
+        player.move_status = 'idle'
+        player.select_piece(None)
+        player.clear_select_path()
+
+        print 'end path selection'
+        self.canvass.get_cell((x2,y2)).selected = False
 
     # print debug cell map
     self.canvass.print_debug_cell_map()
@@ -790,12 +800,27 @@ class GameEngine():
     if win_the_game == True:
       print "%s wins the game!! Ending game!!!" % who
 
+    '''
     # bot plays here
     rival = player.rival
 
     move_path = rival.whats_next_move()
+
     for loc in move_path:
       print "Moving path:" , loc
+
+    nmove = len(move_path) - 1
+    for i in range(nmove):
+      loc_from = move_path[i]
+      loc_to = move_path[i + 1]
+
+      print "Moving path: %s -> %s" % (loc_from, loc_to)
+      rival.move_piece(loc_from, loc_to)
+
+      # refresh UI at each move with delay
+      self.ui.refresh_playground()
+      time.sleep(0.3)
+    '''
 
     # check the game ending condition after the move of the human player
     win_the_game, who = self.is_match_end()
