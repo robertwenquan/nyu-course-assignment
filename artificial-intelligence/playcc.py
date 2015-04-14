@@ -856,7 +856,7 @@ class GameEngine():
       print "Moving path: %s -> %s" % (loc_from, loc_to)
       rival.move_piece(loc_from, loc_to)
 
-      rival_leap, loc = self.is_a_rival_leap(loc_from, loc_to, rival)
+      rival_leap, loc = self.is_leap_over_rival(loc_from, loc_to, rival)
       if rival_leap == True:
         player.remove_piece(loc)
 
@@ -935,7 +935,7 @@ class GameEngine():
     else:
       return False
 
-  def is_a_rival_leap(self, loc_start, loc_end, player):
+  def is_leap_over_rival(self, loc_start, loc_end, player):
     '''
     Check if (x1, y1) -> (x2, y2) is a leap over rival
     this is a helper function to determine whether one rival needs to be taken
