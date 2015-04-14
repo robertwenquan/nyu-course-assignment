@@ -365,7 +365,7 @@ class Player():
     input:  
     output: [(x1,y1),(x2,y2),(x3,y3),...]
     '''
-
+    #TODO(cc): fix bugs when value of level is big
     # self.canvass is for your consumption
 
     # you can move the cells by yourself, or return the list of locations for me to move
@@ -375,7 +375,7 @@ class Player():
     best_move = (-1,-1)
     alpha = -200
     beta = 200
-    level = 20
+    level = 3 
 
     maximum_value, best_piece, optimum_action = self.max_value(level, alpha, beta)
 
@@ -385,50 +385,190 @@ class Player():
     return optimum_path
 
   def max_value(self, level, alpha, beta):
+    '''
+    Help robot to find the optimal action
+    '''
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
-      if who == 'North':
-        return -200, (), []
-      else:
+      if who == self.side:
         return 200, (), []
+      else:
+        return -200, (), []
+    
+    if level == 0:
+      return self.estimate_function(),(),[] 
+    level -= 1
+    maximum_value = -200
+    optimum_path = []
+    best_piece = self.list_of_pieces[-1] 
+    for piece in self.list_of_pieces:
+      actions = self.possible_action(piece,self)
+      for path in actions:
+        pending_set = self.action_simulation(self,piece,path)
+        v_min, best, path_min = self.min_value(level, alpha, beta)
+        self.simulation_recovery(self.rival,piece,path,pending_set)
+        if v_min > maximum_value:
+          maximum_value = v_min
+          best_piece = piece
+          optimum_path = path
+        if v_min>= beta:
+          return maximum_value, best_piece, optimum_path
+        alpha = max(alpha,maximum_value)
+    return maximum_value, best_piece, optimum_path
+
+  def min_value(self, level, alpha, beta):
+    '''
+    Calculate best solution of rival player
+    '''
+    win_the_game, who = self.game.is_match_end()
+    if win_the_game == True:
+      if who == self.side:
+        return 200, (), []
+      else:
+        return -200, (), []
     
     if level == 0:
       return self.estimate_function(), (), []
     level -= 1
-    maximum_value = -200
+    minimum_value = 200
     optimum_path = []
-     
-    for piece in my_list_of_pieces:
-      actions = self.possible_action(piece)
+    best_piece = self.rival.list_of_pieces[-1] 
+    for piece in self.rival.list_of_pieces:
+      actions = self.possible_action(piece,self.rival)
       for path in actions:
-        pending_set = self.action_simulation(piece,path)
-        v_min, best, path_min = self.min_value
-        self.simulation_recovery(pending_set)
-        print piece
-        print path
-    
-    return 200, (5,3), [(3,3),(3,1)] 
+        pending_set = self.action_simulation(self.rival, piece,path)
+        v_max, best, path_max = self.max_value(level, alpha, beta)
+        self.simulation_recovery(self,piece,path,pending_set)
+        if v_max < minimum_value:
+          minimum_value = v_max
+          best_piece = piece
+          optimum_path = path
+        if v_max<= alpha:
+          return minimum_value, best_piece, optimum_path
+        beta = min(beta,minimum_value)
+    return minimum_value, best_piece, optimum_path
 
-  def possible_action(self, piece):
+  def action_simulation(self,player,piece,path):
+    '''
+    simulate action of every possibility
+    '''
     x, y = piece
-    possible_move = [[]]
+    pending_set = []
+   
+    for cell in path:
+      x1, y1 = cell
+      if max(abs(x1-x),abs(y1-y)) == 1:
+        player.move_piece((x,y),(x1,y1))
+        return []
+      else:
+        player.move_piece((x,y),(x1,y1))
+        cell = self.canvass.get_cell(((x+x1)/2,(y+y1)/2))
+        if cell.status != player.side:
+          player.rival.remove_piece(((x+x1)/2,(y+y1)/2))
+          pending_set.append(((x+x1)/2,(y+y1)/2))
+        x = x1
+        y = y1
+    return pending_set
+  
+  def simulation_recovery(self, player, piece,path,pending_set):
+    '''
+    Recover simulated canvass to original one
+    '''
+    for cell in pending_set:
+      player.add_piece(cell)
+    player.rival.move_piece(path[-1],piece)
+
+  def possible_action(self, piece,player):
+    '''
+    Calculate every possible of each piece
+    Input: available piece
+    Output: all possible path of this piece
+    '''
+    x, y = piece
+    possible_move = []
     adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y-1),(x+1,y+1),(x-1,y+1),(x-1,y-1)]
     for (a,b) in adjacent:
-      cell = self.copied_canvass.get_cell((a,b))
-      if cell == 'free':
-        possible_move.append((a,b))
+      cell = self.canvass.get_cell((a,b))
+      if cell == None:
+        continue
+      if cell.status == 'free':
+        possible_move.append([(a,b)])
       else:
         xx = 2*a-x
         yy = 2*b-y
-        cell_to = self.get_cell((xx,yy))
+        cell_to = self.canvass.get_cell((xx,yy))
+        if cell_to == None:
+          continue
         if cell_to.status == 'free':
-          ret = self.possible_jump((xx,yy), [], [], [])
+          ret = self.possible_jump((xx,yy),player, [], [(x,y)], [(a,b)])
           for path in ret:
             possible_move.append(path)
     return possible_move
 
-  def estimate_function(self,copied_canvass, my_list_of_pieces, rival_list_of_pieces):
-    return 200
+  def possible_jump(self, cell_loc, player, current_path, explored_set, pending_set):
+    '''
+    Calculate all possible path for a cell to move, is used for robot to choose the best move.
+
+    Input: cell_loc: a tuple like (x,y)
+           current_path: the path from original path to current cell
+           explored_set: all cell expeared on the path
+           pending_set: enemy piece that have been captured
+    Output: pathes reached this piece and moving on
+    '''
+
+    #TODO(cc): find the reason why it reaches the limitaion of recurssion times
+
+    x, y = cell_loc
+    explored_set.append((x,y))
+    current_path.append((x,y))
+    return_path = [current_path]
+
+    adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y+1),(x+1,y-1),(x-1,y-1),(x-1,y+1)]
+    for (a,b) in adjacent:
+      cell = self.canvass.get_cell((a,b))
+      if cell == None:
+        return []
+      if cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
+        continue
+      else:
+        xx = x + (a-x)*2 
+        yy = y + (b-y)*2
+        if (xx,yy) in explored_set:
+          continue
+        cell_to = self.canvass.get_cell((xx,yy))
+        if cell_to == None:
+          continue
+        if cell_to.status == 'free':
+          pending = copy(pending_set)
+          if cell.status == player.rival.side:
+            pending.append((a,b))
+          path = copy(current_path)
+          ret = self.possible_jump((xx,yy), player, path, explored_set, pending )
+          for path in ret:
+            return_path.append(path)
+    return return_path
+
+  def estimate_function(self):
+    '''
+    Estimate utility based on current canvass to help player make decision
+    '''
+    max = 0
+    min = 0
+    if self.side == 'South':
+      for piece in self.list_of_pieces:
+        x, y = piece
+        max += (14-y)*(14-y)
+      for piece in self.rival.list_of_pieces:
+        x, y = piece
+        min += (y+1)*(y+1)
+    else:
+      for piece in self.list_of_pieces:
+        x, y = piece
+        max += (y+1)*(y+1)
+      for piece in self.rival.list_of_pieces:
+        x, y = piece
+        min += (14-y)*(14-y)
+    return (max-min)/6
 
 class GameEngine():
   '''
@@ -767,45 +907,6 @@ class GameEngine():
       is_legal_leap = self.is_legitimate_leap(loc_start, loc_end, player)
       return is_legal_leap, False
 
-  def possible_jump(self, cell_loc, current_path, explored_set, pending_set):
-    '''
-    Calculate all possible path for a cell to move, is used for robot to choose the best move.
-
-    Input: cell_loc: a tuple like (x,y)
-           current_path: the path from original path to current cell
-           explored_set: all cell expeared on the path
-           pending_set: enemy piece that have been captured
-    Output: pathes reached this piece and moving on
-    '''
-
-    x, y = cell_loc
-    explored_set.append((x,y))
-    current_path.append((x,y))
-    return_path = [current_path]
-
-    adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y+1),(x+1,y-1),(x-1,y-1),(x-1,y+1)]
-    for (a,b) in adjacent:
-      n = self.ncol*a+b
-      cell = self.canvass.get_cell((a,b))
-      if cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
-        continue
-      else:
-        xx = x + (a-x)*2 
-        yy = y + (b-y)*2
-        if (xx,yy) in explored_set:
-          continue
-        m = self.ncol*(xx)+yy
-        cell_to = self.canvass.get_cell((xx,yy))
-        if cell_to.status == 'free':
-          pending = copy(pending_set)
-          if cell.status == 'play_human':
-            pending.append((a,b))
-          path = copy(current_path)
-          ret = self.possible_jump((xx,yy), path, explored_set, pending)
-          for path in ret:
-            return_path.append(path)
-
-    return return_path
 
 ######################################################
 # global functions start here
