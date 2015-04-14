@@ -52,7 +52,7 @@
 #################################################################
 # Bugs
 #
-# BUG(rw): UI doesn't refresh in the callback function (adversing the visual effect of bot moves)
+# FIXME(rw): UI doesn't refresh in the callback function (adversing the visual effect of bot moves)
 #
 #
 
