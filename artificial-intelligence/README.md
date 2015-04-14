@@ -1,14 +1,28 @@
 ## Artificial Intelligence Programming Assignment
 
 #### How to Run
-1. Prepare the run
+* Prepare the run
  * Install Python 2.7
  * Install Tkinter 
+ * Install unittest
+ * Install nosetest
 
-2. Run
+* Run
 ```
 python playcc.py
 ```
 
-3. Screenshot
+#### How to Test
+We use unittest and nosetest to test this code base
+```
+# nosetests
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.012s
+
+OK
+
+```
+
+#### Screenshot
 
