@@ -67,9 +67,11 @@ class GameCanvass():
 
   def __init__(self, nrow, ncol):
 
-    self.cells = dict()
     self.nrow = nrow
     self.ncol = ncol
+
+    self.cells = dict()
+    self.valid_cell_map = []
     self.init_canvass(nrow, ncol)
 
   def init_canvass(self, nrow, ncol):
@@ -102,6 +104,10 @@ class GameCanvass():
     # init all cells to 'free' state
     for x in range(nrow):
       for y in range(ncol):
+
+        # update valid cell map
+        self.valid_cell_map.append((x,y))
+
         n = ncol*x + y
 
         cell = Cell(x,y,'free')
@@ -207,6 +213,15 @@ class GameCanvass():
     return None if cell is not found
     '''
     x, y = loc
+
+    # validate (x, y)
+    # e.g    for (2, 7), n = 8*2 + 7 = 23
+    #       also (3,-1), n = 8*3 - 1 = 23
+    # cell[23] is valid but (3, -1) is not
+    if (x, y) not in self.valid_cell_map:
+      print 'Invalid cell lookup for', (x, y)
+      return None
+
     idx = self.ncol * x + y
     return self.cells.get(idx, None)
     
