@@ -25,6 +25,7 @@
 # TODO(rw): performance metrics interface definition
 # TODO(rw): expose performance metrics to UI for each move
 # TODO(cc): record performance metrics for each move
+# TODO(rw): unselect a cell when it was chosen by mistake
 #
 #################################################################
 # Stretching goals
