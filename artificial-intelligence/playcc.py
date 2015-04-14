@@ -55,6 +55,7 @@ class Cell():
     self.y = y
     self.status = status
     self.selected = False
+    self.lock = False
 
 
 class GameCanvass():
@@ -131,7 +132,28 @@ class GameCanvass():
       self.cells[n].status = 'south'
 
   def lock_canvass(self):
-    pass
+    '''
+    lock all celss when game ends
+    '''
+    nrow = self.nrow
+    ncol = self.ncol
+
+    for x in range(nrow):
+      for y in range(ncol):
+        cell = self.get_cell((x,y))
+        cell.lock = True
+
+  def unlock_canvass(self):
+    '''
+    unlock all cells when game is reset
+    '''
+    nrow = self.nrow
+    ncol = self.ncol
+
+    for x in range(nrow):
+      for y in range(ncol):
+        cell = self.get_cell((x,y))
+        cell.lock = False
 
   def reset_canvass(self):
     '''
@@ -151,6 +173,7 @@ class GameCanvass():
 
     cell.status = 'free'
     cell.selected = False
+    cell.lock = False
 
   def move_cell(self, loc_start, loc_end):
     '''
@@ -164,6 +187,7 @@ class GameCanvass():
 
     cell_to.status = cell_from.status
     cell_to.selected = cell_from.selected
+    cell_to.lock = cell_from.lock
 
     self.free_cell(loc_start)
 
@@ -174,6 +198,7 @@ class GameCanvass():
     cell = self.get_cell(loc)
     cell.status = side
     cell.selected = False
+    cell.lock = False
 
   def get_cell(self, loc):
     '''
@@ -643,6 +668,10 @@ class GameEngine():
     self.south_player.reset_player()
 
     self.canvass.print_debug_cell_map()
+
+    self.canvass.unlock_canvass()
+
+    self.ui.reset_ui()
     self.ui.refresh_playground()
 
   def about_me(self):
@@ -771,6 +800,7 @@ class GameEngine():
     # check the game ending condition after the move of the human player
     win_the_game, who = self.is_match_end()
     if win_the_game == True:
+      self.ui.notify_win(who)
       print "%s wins the game!! Ending game!!!" % who
 
   def is_match_end(self):
