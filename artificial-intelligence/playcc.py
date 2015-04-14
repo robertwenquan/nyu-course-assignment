@@ -322,6 +322,9 @@ class Player():
   def set_canvass(self, canvass):
     self.canvass = canvass
 
+  def set_game(self, game):
+    self.game = game
+
   def is_self_piece(self, loc):
     '''
     Input:
@@ -417,6 +420,10 @@ class GameEngine():
     # set canvass to players
     self.north_player.set_canvass(self.canvass)
     self.south_player.set_canvass(self.canvass)
+
+    # set game to players
+    self.north_player.set_game(self)
+    self.south_player.set_game(self)
 
     # initialize UI
     self.ui = PlayGround(self)
