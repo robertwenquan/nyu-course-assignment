@@ -322,6 +322,9 @@ class Player():
   def set_canvass(self, canvass):
     self.canvass = canvass
 
+  def set_game(self, game):
+    self.game = game
+
   def is_self_piece(self, loc):
     '''
     Input:
@@ -358,9 +361,65 @@ class Player():
 
     # you can move the cells by yourself, or return the list of locations for me to move
     # up to you
+    maximum_value = -200
+    optimum_path = []
+    best_move = (-1,-1)
+    alpha = -200
+    beta = 200
+    level = 20
 
-    return [(1,2), (3,4), (5,6)]
+    maximum_value, best_piece, optimum_action = self.max_value(level, alpha, beta)
 
+    optimum_path.append(best_piece)
+    for step in optimum_action:
+      optimum_path.append(step)
+    return optimum_path
+
+  def max_value(self, level, alpha, beta):
+    win_the_game, who = self.game.is_match_end()
+    if win_the_game == True:
+      if who == 'North':
+        return -200, (), []
+      else:
+        return 200, (), []
+    
+    if level == 0:
+      return self.estimate_function(), (), []
+    level -= 1
+    maximum_value = -200
+    optimum_path = []
+     
+    for piece in my_list_of_pieces:
+      actions = self.possible_action(piece)
+      for path in actions:
+        pending_set = self.action_simulation(piece,path)
+        v_min, best, path_min = self.min_value
+        self.simulation_recovery(pending_set)
+        print piece
+        print path
+    
+    return 200, (5,3), [(3,3),(3,1)] 
+
+  def possible_action(self, piece):
+    x, y = piece
+    possible_move = [[]]
+    adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y-1),(x+1,y+1),(x-1,y+1),(x-1,y-1)]
+    for (a,b) in adjacent:
+      cell = self.copied_canvass.get_cell((a,b))
+      if cell == 'free':
+        possible_move.append((a,b))
+      else:
+        xx = 2*a-x
+        yy = 2*b-y
+        cell_to = self.get_cell((xx,yy))
+        if cell_to.status == 'free':
+          ret = self.possible_jump((xx,yy), [], [], [])
+          for path in ret:
+            possible_move.append(path)
+    return possible_move
+
+  def estimate_function(self,copied_canvass, my_list_of_pieces, rival_list_of_pieces):
+    return 200
 
 class GameEngine():
   '''
@@ -417,6 +476,10 @@ class GameEngine():
     # set canvass to players
     self.north_player.set_canvass(self.canvass)
     self.south_player.set_canvass(self.canvass)
+
+    # set game to players
+    self.north_player.set_game(self)
+    self.south_player.set_game(self)
 
     # initialize UI
     self.ui = PlayGround(self)
