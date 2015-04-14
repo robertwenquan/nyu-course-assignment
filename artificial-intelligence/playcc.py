@@ -7,37 +7,52 @@
 #
 #################################################################
 # Basic goals
-# DONE(cc): the legitimate plain move checking
-# DONE(cc): the legitimate leap move checking
-# TODO(cc): stupid sample player (for integration)
-# TODO(cc): player logic
-# DONE(rw): game winning rule1 (catle point is taken)
-# DONE(rw): game winning rule2 (all pieces are captured)
-# DONE(rw): link the player to the game engine
-# DONE(rw): reset game at any point, with confirmation.
-# DONE(rw): end the game when winning condition is met.
+#
+# TODO: DONE game canvass with cell display
+# TODO: DONE cell free move without checking
+# TODO: DONE the legitimate plain move checking
+# TODO: DONE the legitimate leap move checking
+# TODO: DONE stupid sample player (for integration)
+# TODO: DONE player logic
+# TODO: DONE game winning rule1 (catle point is taken)
+# TODO: DONE game winning rule2 (all pieces are captured)
+# TODO: DONE link the player to the game engine
+# TODO: DONE reset game at any point, with confirmation.
+# TODO: DONE end the game when winning condition is met.
+# TODO(rw): performance metrics interface definition
+# TODO(rw): expose performance metrics to UI for each move
+# TODO(cc): record performance metrics for each move
 #
 #################################################################
 # Stretching goals
-# DONE(cc): intelligence level
-# TODO(rw): choose intelligence level before game starts
+#
+# TODO: DONE intelligence level
+# TODO(rw): choose intelligence level before game starts, on UI
 #
 #################################################################
-# Aspirational goals (from software architecture point of view)
+# Aspirational goals (from software architecture and ease-of-use point of view)
+#
+# TODO(rw): unified logging
+# TODO(rw): notification via UI
+# TODO(rw): add student information in the footer of the application
+# TODO(rw): add about box with 'good' github link in the footer of the application
 # TODO(cc): game hints: when the first cell is selected
 #                       give hints about all legitimate moving destimation cells
 # TODO(rw): integrate the game hints with UI hints
-# TODO(rw): unified logging
 # TODO(rw): dettachable UI
-# TODO(rw): notification via UI
 # TODO(rw): cell initialization with human readable map
-# TODO(rw): add student information in the footer of the application
-# TODO(rw): add 'good' github link in the footer of the application
 # TODO: Allow two robots playing together, meaning smart one(caicai) always wins the game
 # TODO: Add game play header, with two player's name, level, etc.
 # TODO: Add real-time timer and performance metrics for each play
 # TODO: save game records
 #
+#################################################################
+# Bugs
+#
+# BUG(rw): UI doesn't refresh in the callback function (adversing the visual effect of bot moves)
+#
+#
+
 import sys
 import time
 import getopt
@@ -820,7 +835,9 @@ class GameEngine():
       self.ui.notify_win(who)
       print "%s wins the game!! Ending game!!!" % who
 
-    # bot plays here
+    #################################################
+    # bot player engages
+    #################################################
     rival = player.rival
 
     move_path = rival.whats_next_move()
@@ -852,6 +869,10 @@ class GameEngine():
     if win_the_game == True:
       self.ui.notify_win(who)
       print "%s wins the game!! Ending game!!!" % who
+
+    #################################################
+    # bot player disengages
+    #################################################
 
   def is_match_end(self):
     '''
