@@ -169,8 +169,10 @@ class GameCanvass():
 
   def remove_cell(self, loc):
     self.free_cell(loc)
+
+  def add_cell(self, loc, side):
     cell = self.get_cell(loc)
-    cell.status = 'free'
+    cell.status = side
     cell.selected = False
 
   def get_cell(self, loc):
@@ -349,6 +351,13 @@ class Player():
     '''
     self.list_of_pieces.remove(location)
     self.canvass.remove_cell(location)
+
+  def add_piece(self, location):
+    '''
+    add one piece to the canvass
+    '''
+    self.list_of_pieces.append(location)
+    self.canvass.add_cell(location, self.side)
 
   def whats_next_move(self):
     '''
