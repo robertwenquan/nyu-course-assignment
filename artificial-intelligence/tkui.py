@@ -7,6 +7,7 @@
 
 from Tkinter import *
 
+
 class PlayGround():
   '''
   play ground for the game canvass
@@ -54,8 +55,8 @@ class PlayGround():
   def make_menu(self):
     menubar = Menu(self.ui)
 
-    menubar.add_command(label = 'Reset Game', command = self.game.reset_game)
-    menubar.add_command(label = 'About', command = self.game.about_me)
+    menubar.add_command(label='Reset Game', command=self.game.reset_game)
+    menubar.add_command(label='About', command=self.game.about_me)
 
     self.ui.config(menu=menubar)
 
@@ -66,33 +67,37 @@ class PlayGround():
     '''
 
     # place the canvas
-    w = Canvas(self.ui, bg="white", height = self.height, width = self.width)
+    w = Canvas(self.ui, bg="white", height=self.height, width=self.width)
     w.pack()
 
-    # place the menu 
+    # place the menu
     self.make_menu()
 
     # place the buttons
     for i in range(nrow):
       for j in range(ncol):
-        n = ncol*i + j
+        n = ncol * i + j
 
-        cell = self.game.canvass.get_cell((i,j))
+        cell = self.game.canvass.get_cell((i, j))
 
         # active buttons, with callback function passing the button index
         if cell.status == 'disabled':
           # disabled buttons, which are unclickable
-          button = Button(self.ui, state = DISABLED, height = 50, width = 50, background = '#875b00')
+          button = Button(self.ui,
+                          state=DISABLED,
+                          height=50,
+                          width=50,
+                          background='#875b00')
         elif cell.status == 'free':
           color = 'white'
-          button = Button(self.ui, activebackground = color, height = 50, width = 50, cursor = "target", \
-              background = '#dbb25c', command = lambda x = i, y = j: self.game.on_click(x, y))
+          button = Button(self.ui, activebackground=color, height=50, width=50, cursor="target", \
+              background='#dbb25c', command=lambda x=i, y=j: self.game.on_click(x, y))
         elif cell.status == 'north':
-          button = Button(self.ui, activebackground = 'grey', height = 50, width = 50, cursor = "target", image = self.icon_white, \
-              background = '#dbb25c', command = lambda x = i, y = j: self.game.on_click(x, y))
+          button = Button(self.ui, activebackground='grey', height=50, width=50, cursor="target", image=self.icon_white, \
+              background='#dbb25c', command=lambda x=i, y=j: self.game.on_click(x, y))
         elif cell.status == 'south':
-          button = Button(self.ui, activebackground = 'grey', height = 50, width = 50, cursor = "target", image = self.icon_black, \
-              background = '#dbb25c', command = lambda x = i, y = j: self.game.on_click(x, y))
+          button = Button(self.ui, activebackground='grey', height=50, width=50, cursor="target", image=self.icon_black, \
+              background='#dbb25c', command=lambda x=i, y=j: self.game.on_click(x, y))
 
         # calculate the x,y coordinates and place the buttons
         x = self.margin + self.unit * j
@@ -113,30 +118,30 @@ class PlayGround():
 
     for i in range(nrow):
       for j in range(ncol):
-        n = ncol*i + j
-        cell = self.game.canvass.get_cell((i,j))
+        n = ncol * i + j
+        cell = self.game.canvass.get_cell((i, j))
         button = self.button_map[n]
 
         if cell.lock == True:
-          button.configure(state = DISABLED)
+          button.configure(state=DISABLED)
           continue
         else:
-          button.configure(state = NORMAL)
+          button.configure(state=NORMAL)
 
         if cell.status == 'free':
-          button.configure(image = self.icon_none)
+          button.configure(image=self.icon_none)
         elif cell.status == 'north':
-          button.configure(image = self.icon_white)
+          button.configure(image=self.icon_white)
         elif cell.status == 'south':
-          button.configure(image = self.icon_black)
+          button.configure(image=self.icon_black)
 
         if cell.selected == True:
-          button.configure(bg = "#234")
+          button.configure(bg="#234")
         else:
           if cell.status == 'disabled':
-            button.configure(bg = "#875b00")
+            button.configure(bg="#875b00")
           else:
-            button.configure(bg = "#dbb25c")
+            button.configure(bg="#dbb25c")
 
   def reset_ui(self):
     self.label_endgame.place_forget()
@@ -145,5 +150,4 @@ class PlayGround():
     print 'place here'
     self.game.canvass.lock_canvass()
     self.refresh_playground()
-    self.label_endgame.place(x = 20, y = 260)
-
+    self.label_endgame.place(x=20, y=260)
