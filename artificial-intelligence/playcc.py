@@ -795,12 +795,16 @@ class GameEngine():
     # refresh the UI
     self.ui.refresh_playground()
 
+    # only if the move finishes move to game ending check and fival play
+    if player.move_status != 'idle':
+      return
+
     # check the game ending condition after the move of the human player
     win_the_game, who = self.is_match_end()
     if win_the_game == True:
+      self.ui.notify_win(who)
       print "%s wins the game!! Ending game!!!" % who
 
-    '''
     # bot plays here
     rival = player.rival
 
@@ -819,8 +823,7 @@ class GameEngine():
 
       # refresh UI at each move with delay
       self.ui.refresh_playground()
-      time.sleep(0.3)
-    '''
+      time.sleep(0.5)
 
     # check the game ending condition after the move of the human player
     win_the_game, who = self.is_match_end()
