@@ -6,29 +6,29 @@
  * Install Tkinter 
  * Install unittest
  * Install nosetest
+ * Install pylint
 
-* Run
+* Run the game
 ```
-python playcc.py
+$ python playcc.py
 ```
 
 #### How to Test
 We use unittest and nosetest to test this code base
 ```
-# nosetests
-...
+$ nosetests
+..........
 ----------------------------------------------------------------------
-Ran 3 tests in 0.012s
+Ran 10 tests in 0.050s
 
 OK
-
 ```
 
 #### Coding Validation
 the source code of this project is formatted with Google yapf (https://github.com/google/yapf)
 with the following settings:
 
-yapf --style yapf.ini
+$ yapf --style yapf.ini
 ```
 [style]
 
@@ -37,10 +37,10 @@ indent_width = 2
 split_before_logical_operator = true
 ```
 
-source code is checked with pylint
+the source code of this project is checked with pylint (http://www.pylint.org)
 with the following settings:
 ```
-pylint --disable=locally-disabled --max-line-length=100 --indent-string='  ' *.py
+$ pylint --disable=locally-disabled --max-line-length=100 --indent-string='  ' *.py
 ```
 
 #### Screenshot
