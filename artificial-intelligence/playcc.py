@@ -89,7 +89,6 @@ class GameCanvass():
     self.ncol = ncol
 
     self.cells = dict()
-    self.valid_cell_map = []
     self.init_canvass(nrow, ncol)
 
   def init_canvass(self, nrow, ncol):
@@ -122,9 +121,6 @@ class GameCanvass():
     # init all cells to 'free' state
     for x in range(nrow):
       for y in range(ncol):
-
-        # update valid cell map
-        self.valid_cell_map.append((x,y))
 
         n = ncol*x + y
 
