@@ -45,3 +45,9 @@ $ pylint --disable=locally-disabled --max-line-length=100 --indent-string='  ' *
 
 #### Screenshot
 
+game launch screen
+![Game Launch](images/game-start.png)
+
+game end screen
+![Game End](images/game-end.png)
+
