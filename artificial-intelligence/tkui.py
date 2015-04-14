@@ -1,31 +1,32 @@
 #!/usr/bin/python
 #
 # playground.py
-#
-# this is the playground canvass for the game
-#
 
-from Tkinter import *
+'''
+ this is the playground canvass for the game
+'''
+
+#from Tkinter import *
+from Tkinter import Tk, Canvas, Menu, Label, Button, PhotoImage, DISABLED, NORMAL
 
 
-class PlayGround():
+class PlayGround(object):
   '''
   play ground for the game canvass
   the button_map is made of 8 x 14 squared cells
   '''
 
-  width = 0
-  height = 0
-  unit = 50
-  margin = 20
-
-  ui = None
-  button_map = dict()
-
+  # pylint: disable=too-many-instance-attributes
+  # we just need those attributes
   def __init__(self, game):
 
-    self.ui = Tk()
-    self.ui.title('caicai AI programming assignment')
+    self.unit = 50
+    self.margin = 20
+
+    self.gui = Tk()
+    self.gui.title('caicai AI programming assignment')
+
+    self.button_map = dict()
 
     ncol = game.ncol
     nrow = game.nrow
@@ -50,15 +51,18 @@ class PlayGround():
     start the display mainloop
     All buttons will be on the screen right now
     '''
-    self.ui.mainloop()
+    self.gui.mainloop()
 
   def make_menu(self):
-    menubar = Menu(self.ui)
+    '''
+    make the menu bar
+    '''
+    menubar = Menu(self.gui)
 
     menubar.add_command(label='Reset Game', command=self.game.reset_game)
     menubar.add_command(label='About', command=self.game.about_me)
 
-    self.ui.config(menu=menubar)
+    self.gui.config(menu=menubar)
 
   def prepare_the_playground(self, ncol, nrow):
     '''
@@ -67,44 +71,47 @@ class PlayGround():
     '''
 
     # place the canvas
-    w = Canvas(self.ui, bg="white", height=self.height, width=self.width)
-    w.pack()
+    canvass = Canvas(self.gui, bg="white", height=self.height, width=self.width)
+    canvass.pack()
 
     # place the menu
     self.make_menu()
 
     # place the buttons
-    for i in range(nrow):
-      for j in range(ncol):
-        n = ncol * i + j
+    for row_idx in range(nrow):
+      for col_idx in range(ncol):
+        idx = ncol * row_idx + col_idx
 
-        cell = self.game.canvass.get_cell((i, j))
+        cell = self.game.canvass.get_cell((row_idx, col_idx))
 
         # active buttons, with callback function passing the button index
         if cell.status == 'disabled':
           # disabled buttons, which are unclickable
-          button = Button(self.ui,
+          button = Button(self.gui,
                           state=DISABLED,
                           height=50,
                           width=50,
                           background='#875b00')
         elif cell.status == 'free':
           color = 'white'
-          button = Button(self.ui, activebackground=color, height=50, width=50, cursor="target", \
-              background='#dbb25c', command=lambda x=i, y=j: self.game.on_click(x, y))
+          button = Button(self.gui, activebackground=color, height=50, width=50, cursor="target", \
+              background='#dbb25c', \
+              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.on_click(row_idx, col_idx))
         elif cell.status == 'north':
-          button = Button(self.ui, activebackground='grey', height=50, width=50, cursor="target", image=self.icon_white, \
-              background='#dbb25c', command=lambda x=i, y=j: self.game.on_click(x, y))
+          button = Button(self.gui, activebackground='grey', height=50, width=50, cursor="target", \
+              image=self.icon_white, background='#dbb25c', \
+              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.on_click(row_idx, col_idx))
         elif cell.status == 'south':
-          button = Button(self.ui, activebackground='grey', height=50, width=50, cursor="target", image=self.icon_black, \
-              background='#dbb25c', command=lambda x=i, y=j: self.game.on_click(x, y))
+          button = Button(self.gui, activebackground='grey', height=50, width=50, cursor="target", \
+              image=self.icon_black, background='#dbb25c', \
+              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.on_click(row_idx, col_idx))
 
         # calculate the x,y coordinates and place the buttons
-        x = self.margin + self.unit * j
-        y = 3 * self.margin + self.unit * i
-        button.place(x=x, y=y, width=self.unit, height=self.unit)
+        offset_x = self.margin + self.unit * col_idx
+        offset_y = 3 * self.margin + self.unit * row_idx
+        button.place(x=offset_x, y=offset_y, width=self.unit, height=self.unit)
 
-        self.button_map[n] = button
+        self.button_map[idx] = button
 
   def refresh_playground(self):
     '''
@@ -116,11 +123,11 @@ class PlayGround():
     nrow = self.game.nrow
     ncol = self.game.ncol
 
-    for i in range(nrow):
-      for j in range(ncol):
-        n = ncol * i + j
-        cell = self.game.canvass.get_cell((i, j))
-        button = self.button_map[n]
+    for row_idx in range(nrow):
+      for col_idx in range(ncol):
+        cell = self.game.canvass.get_cell((row_idx, col_idx))
+        idx = ncol * row_idx + col_idx
+        button = self.button_map[idx]
 
         if cell.lock == True:
           button.configure(state=DISABLED)
@@ -144,10 +151,19 @@ class PlayGround():
             button.configure(bg="#dbb25c")
 
   def reset_ui(self):
+    '''
+    reset UI by hiding the game winning picture from the canvass
+    '''
     self.label_endgame.place_forget()
 
   def notify_win(self, who):
-    print 'place here'
-    self.game.canvass.lock_canvass()
-    self.refresh_playground()
-    self.label_endgame.place(x=20, y=260)
+    '''
+    notify the game ending by annoucing the winner on top
+    the whole canvass will be locked and unclickable at this point
+    '''
+
+    if who == 'north' or who == 'south':
+      self.game.canvass.lock_canvass()
+      self.refresh_playground()
+      self.label_endgame.place(x=20, y=260)
+
