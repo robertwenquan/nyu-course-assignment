@@ -836,11 +836,18 @@ class GameEngine():
       print "Moving path: %s -> %s" % (loc_from, loc_to)
       rival.move_piece(loc_from, loc_to)
 
-      # refresh UI at each move with delay
-      self.ui.refresh_playground()
-      time.sleep(0.5)
+      rival_leap, loc = self.is_a_rival_leap(loc_from, loc_to, rival)
+      if rival_leap == True:
+        player.remove_piece(loc)
 
-    # check the game ending condition after the move of the human player
+      # refresh UI at each move with delay
+      # FIXME (rw): this doesn't work, need more research
+      #self.ui.refresh_playground()
+      #time.sleep(0.5)
+
+    self.ui.refresh_playground()
+
+    # check the game ending condition after the move of the bot player
     win_the_game, who = self.is_match_end()
     if win_the_game == True:
       self.ui.notify_win(who)
@@ -903,6 +910,27 @@ class GameEngine():
       return True
     else:
       return False
+
+  def is_a_rival_leap(self, loc_start, loc_end, player):
+    '''
+    Check if (x1, y1) -> (x2, y2) is a leap over rival
+    this is a helper function to determine whether one rival needs to be taken
+
+    Return Value:
+      status - True/False, whether it is a leap over rival
+      loc    - (x,y) location of the rival
+    '''
+
+    x1, y1 = loc_start
+    x2, y2 = loc_end
+
+    x = (x1+x2)/2
+    y = (y1+y2)/2
+    cell = self.canvass.get_cell((x,y))
+    if cell.status == player.rival.side:
+      return True, (x,y)
+    else:
+      return False, None
 
   def is_legitimate_leap(self, loc_start, loc_end, player):
     '''
