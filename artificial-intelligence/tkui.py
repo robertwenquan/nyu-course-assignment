@@ -39,6 +39,11 @@ class PlayGround():
 
     self.prepare_the_playground(ncol, nrow)
 
+    # end game label with a gif photo
+    self.photo_endgame = PhotoImage(file="images/game-over.gif")
+    self.label_endgame = Label(image=self.photo_endgame)
+    self.label_endgame.image = self.photo_endgame
+
   def display(self):
     '''
     start the display mainloop
@@ -125,4 +130,11 @@ class PlayGround():
           button.configure(bg = "#234")
         else:
           button.configure(bg = "#dbb25c")
+
+  def reset_ui(self):
+    self.label_endgame.place_forget()
+
+  def notify_win(self, who):
+    print 'place here'
+    self.label_endgame.place(x = 20, y = 260)
 

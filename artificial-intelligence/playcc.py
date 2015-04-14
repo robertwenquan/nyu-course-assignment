@@ -447,6 +447,8 @@ class GameEngine():
     self.south_player.reset_player()
 
     self.canvass.print_debug_cell_map()
+
+    self.ui.reset_ui()
     self.ui.refresh_playground()
 
   def about_me(self):
@@ -575,6 +577,7 @@ class GameEngine():
     # check the game ending condition after the move of the human player
     win_the_game, who = self.is_match_end()
     if win_the_game == True:
+      self.ui.notify_win(who)
       print "%s wins the game!! Ending game!!!" % who
 
   def is_match_end(self):
