@@ -4,6 +4,7 @@
 #
 # this is the AI game
 #
+# pylint: disable=fixme, disable=todo
 #
 #################################################################
 # Basic goals
@@ -69,7 +70,7 @@ from pprint import pprint
 from tkui import PlayGround
 
 
-class Cell():
+class Cell(object):
   '''
   one cell of the game canvass
   '''
@@ -82,7 +83,7 @@ class Cell():
     self.lock = False
 
 
-class GameCanvass():
+class GameCanvass(object):
   '''
   This is the main data structure to define the game canvass matrix(14 x 8)
   Canvass is made of cells filled in rows and columns
@@ -280,7 +281,7 @@ class GameCanvass():
     print '+--------+'
 
 
-class Player():
+class Player(object):
   '''
   the AI game player
 
@@ -631,7 +632,7 @@ class Player():
         min += (14-x)*(14-x)
     return (max-min)/6
 
-class GameEngine():
+class GameEngine(object):
   '''
   Define the rules of the game
    - move rules
