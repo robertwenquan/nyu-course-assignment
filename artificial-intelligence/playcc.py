@@ -235,7 +235,6 @@ class GameCanvass():
     #       also (3,-1), n = 8*3 - 1 = 23
     # cell[23] is valid but (3, -1) is not
     if x < 0 or x > self.nrow-1 or y < 0 or y > self.ncol-1:
-      print 'Invalid cell lookup for', (x, y)
       return None
 
     idx = self.ncol * x + y
@@ -432,7 +431,6 @@ class Player():
     level = 3 
 
     maximum_value, best_piece, optimum_action = self.max_value(level, alpha, beta)
-
     optimum_path.append(best_piece)
     for step in optimum_action:
       optimum_path.append(step)
@@ -448,7 +446,6 @@ class Player():
         return 200, (), []
       else:
         return -200, (), []
-    
     if level == 0:
       return self.estimate_function(),(),[] 
     level -= 1
@@ -611,17 +608,17 @@ class Player():
     if self.side == 'south':
       for piece in self.list_of_pieces:
         x, y = piece
-        max += (14-y)*(14-y)
+        max += (14-x)*(14-x)
       for piece in self.rival.list_of_pieces:
         x, y = piece
-        min += (y+1)*(y+1)
+        min += (x+1)*(x+1)
     else:
       for piece in self.list_of_pieces:
         x, y = piece
-        max += (y+1)*(y+1)
+        max += (x+1)*(x+1)
       for piece in self.rival.list_of_pieces:
         x, y = piece
-        min += (14-y)*(14-y)
+        min += (14-x)*(14-x)
     return (max-min)/6
 
 class GameEngine():
