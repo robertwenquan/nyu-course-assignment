@@ -427,12 +427,12 @@ class Player(object):
     '''
     #TODO(cc): fix bugs when value of level is big
 
-    maximum_value = -200
+    maximum_value = -300
     optimum_path = []
     best_move = (-1,-1)
-    alpha = -200
-    beta = 200
-    level = 3 
+    alpha = -300
+    beta = 300
+    level = 1 
 
     maximum_value, best_piece, optimum_action = self.max_value(level, alpha, beta)
     optimum_path.append(best_piece)
@@ -454,16 +454,18 @@ class Player(object):
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 200, (), []
+        return 300, (), []
       else:
-        return -200, (), []
+        return -300, (), []
     if level == 0:
       return self.estimate_function(),(),[] 
     level -= 1
-    maximum_value = -200
+    maximum_value = -300
     optimum_path = []
     best_piece = self.list_of_pieces[-1] 
-    for piece in self.list_of_pieces:
+    copy_pieces = copy(self.list_of_pieces)
+
+    for piece in copy_pieces:
       actions = self.possible_action(piece,self)
       for path in actions:
         pending_set = self.action_simulation(self,piece,path)
@@ -485,17 +487,19 @@ class Player(object):
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 200, (), []
+        return 300, (), []
       else:
-        return -200, (), []
+        return -300, (), []
     
     if level == 0:
       return self.estimate_function(), (), []
     level -= 1
-    minimum_value = 200
+    minimum_value = 300
     optimum_path = []
     best_piece = self.rival.list_of_pieces[-1] 
-    for piece in self.rival.list_of_pieces:
+    
+    copy_pieces = copy(self.rival.list_of_pieces)
+    for piece in copy_pieces:
       actions = self.possible_action(piece,self.rival)
       for path in actions:
         pending_set = self.action_simulation(self.rival, piece,path)
@@ -616,6 +620,17 @@ class Player(object):
     '''
     max = 0
     min = 0
+    number_of_adjacent = 0    
+    for piece in self.list_of_pieces:
+      x, y = piece
+      adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y-1),(x+1,y+1),(x-1,y+1),(x-1,y-1)]
+      for neighbour in adjacent:
+        cell = self.canvass.get_cell(neighbour)
+        if cell == None:
+          continue
+        elif cell.status == self.rival.side:
+            number_of_adjacent += 1
+
     if self.side == 'south':
       for piece in self.list_of_pieces:
         x, y = piece
@@ -630,7 +645,7 @@ class Player(object):
       for piece in self.rival.list_of_pieces:
         x, y = piece
         min += (14-x)*(14-x)
-    return (max-min)/6
+    return (max-min)/6+30*(len(self.list_of_pieces)-len(self.rival.list_of_pieces))+-30*number_of_adjacent
 
 class GameEngine(object):
   '''
