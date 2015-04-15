@@ -20,7 +20,7 @@ class PlayGround(object):
   # we just need those attributes
   def __init__(self, game):
 
-    self.unit = 50
+    self.unit = 40
     self.margin = 20
 
     self.gui = Tk()
