@@ -64,6 +64,12 @@ class PlayGround(object):
 
     self.gui.config(menu=menubar)
 
+  def about_me(self):
+    '''
+    show the author and version of this application
+    '''
+    pass
+
   def prepare_the_playground(self, ncol, nrow):
     '''
     draw the playground according to the cell status map
