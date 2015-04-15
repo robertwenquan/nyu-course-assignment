@@ -54,7 +54,8 @@
 # Bugs
 #
 # FIXME(rw): UI doesn't refresh in the callback function (adversing the visual effect of bot moves)
-#
+# FIXME(rw): on Mac, cell background color is not shown
+# FIXME(rw): on Mac, menu is not shown
 #
 
 import sys
