@@ -34,18 +34,18 @@
 # TODO(rw): choose intelligence level before game starts, on UI
 #
 #################################################################
-# Aspirational goals (from software architecture and ease-of-use point of view)
+# Aspirational goals (from software architecture and ease point of view)
 #
 # TODO(rw): unified logging
 # TODO(rw): notification via UI
 # TODO(cc): add student information in the footer of the application
-# TODO(cc): add about box with 'good' github link in the footer of the application
+# TODO(cc): add about box with 'good' github link in the footer
 # TODO(cc): game hints: when the first cell is selected
-#                       give hints about all legitimate moving destimation cells
+#                       give hints about all legitimate moving destimation
 # TODO(rw): integrate the game hints with UI hints
 # TODO(rw): dettachable UI
 # TODO(rw): cell initialization with human readable map
-# TODO: Allow two robots playing together, meaning smart one(caicai) always wins the game
+# TODO: Allow two robots playing together
 # TODO: Add game play header, with two player's name, level, etc.
 # TODO: Add real-time timer and performance metrics for each play
 # TODO: save game records
@@ -53,7 +53,7 @@
 #################################################################
 # Bugs
 #
-# FIXME(rw): UI doesn't refresh in the callback function (adversing the visual effect of bot moves)
+# FIXME(rw): UI doesn't refresh in the callback function
 # FIXME(rw): on Mac, cell background color is not shown
 # FIXME(rw): on Mac, menu is not shown
 #
@@ -287,7 +287,7 @@ class Player():
   - robot          : True/False
   - name           : a human readable name of the player
   - side           : 'north' or 'south'
-  - move_status    : intermediate move status ['idle', 'selected', 'hopped']
+  - move_status    : intermediate status ['idle', 'selected', 'hopped']
   - list_of_pieces : a list of all active pieces(soldiers)
   - castle_points  : castle points of this side
   - rival          : the opponent player
@@ -389,7 +389,7 @@ class Player():
     Input:
       loc is a tuple like (x,y)
     Return Value:
-      True/False - indicating whether this location is a valid piece for this player
+      True/False - whether this location is a valid piece for this player
     '''
     return loc in self.list_of_pieces
 
@@ -423,10 +423,7 @@ class Player():
     output: [(x1,y1),(x2,y2),(x3,y3),...]
     '''
     #TODO(cc): fix bugs when value of level is big
-    # self.canvass is for your consumption
 
-    # you can move the cells by yourself, or return the list of locations for me to move
-    # up to you
     maximum_value = -200
     optimum_path = []
     best_move = (-1,-1)
