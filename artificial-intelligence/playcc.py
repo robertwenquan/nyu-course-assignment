@@ -32,6 +32,7 @@
 #
 # TODO: DONE intelligence level
 # TODO(rw): choose intelligence level before game starts, on UI
+# TODO(rw): rollback and forward
 #
 #################################################################
 # Aspirational goals (from software architecture and ease point of view)
@@ -56,6 +57,8 @@
 # FIXME(rw): UI doesn't refresh in the callback function
 # FIXME(rw): on Mac, cell background color is not shown
 # FIXME(rw): on Mac, menu is not shown
+# FIXME(cc): one piece, game point not win
+# FIXME(cc): two pieces, game point not win but approaching the further piece
 #
 
 import sys
@@ -434,7 +437,14 @@ class Player():
     optimum_path.append(best_piece)
     for step in optimum_action:
       optimum_path.append(step)
-    return optimum_path
+
+    max_depth_reached = 11
+    nodes_generated = 22
+    num_pruning_max_value = 33
+    num_pruning_min_value = 44
+    move_statistics = (max_depth_reached, nodes_generated, num_pruning_max_value, num_pruning_min_value)
+
+    return optimum_path, move_statistics
 
   def max_value(self, level, alpha, beta):
     '''
@@ -835,7 +845,9 @@ class GameEngine():
     #################################################
     rival = player.rival
 
-    move_path = rival.whats_next_move()
+    # get optimal move path
+    # along with its move statistics
+    move_path, move_stats = rival.whats_next_move()
 
     for loc in move_path:
       print "Moving path:" , loc
