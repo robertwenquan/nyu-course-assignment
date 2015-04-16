@@ -555,7 +555,7 @@ class Player(object):
     adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y-1),(x+1,y+1),(x-1,y+1),(x-1,y-1)]
     for (a,b) in adjacent:
       cell = self.canvass.get_cell((a,b))
-      if cell == None:
+      if cell == None or cell.status == 'disable':
         continue
       if cell.status == 'free':
         possible_move.append([(a,b)])
@@ -593,7 +593,7 @@ class Player(object):
     for (a,b) in adjacent:
       cell = self.canvass.get_cell((a,b))
       if cell == None:
-        return []
+        continue 
       if cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
         continue
       else:
