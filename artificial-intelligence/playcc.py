@@ -246,11 +246,16 @@ class GameCanvass(object):
     
   def get_adjacent_cell_list(self, loc, query_type_blacklist):
     '''
-    get the adjacent cell list based on the query status
+    get the adjacent cell list based on a type check BLACKLIST
+
+    NORMALLY there are 8 adjacent cells surrounding the (x,y)
+    BUT in the border area, some of the 8 cells might be non-existing and should be excluded
+    IN SOME OTHER CASES, we dont want 'disabled' cells, or 'free' cells, so we have a query blacklist
 
     loc: (x,y) location of the cell
-    query_type_list: [] for all types for existing cells
-                     ['free', 'north_player', 'south_player'] to exclude 'disabled' cells
+    query_type_blacklist: [] get all valid adjacent cells in a list
+                          ['disabled', 'free'], to exclude 'disabled' and 'free' cells from the adjacent cells
+                          ['disabled'], only exclude 'disabled' cells from the adjacent cells
     '''
     x, y = loc
     adjacent_cells = [(x-1,y-1),(x-1,y),(x-1,y+1), \
