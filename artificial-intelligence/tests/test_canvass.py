@@ -67,6 +67,33 @@ class TestGameCanvass(unittest.TestCase):
     '''
     pass
 
+  def test_adjacent_cell_list(self):
+    '''
+    test normal center area
+    test corner and border cases
+    test blacklist filtering on various cases
+    '''
+
+    adj_list = self.test_canvass.get_adjacent_cell_list((0, 3), [])
+    expected_list = [(0, 2), (0, 4), (1, 2), (1, 3), (1, 4)]
+    self.assertEqual(set(adj_list), set(expected_list))
+
+    adj_list = self.test_canvass.get_adjacent_cell_list((0, 3), ['disabled'])
+    expected_list = [(0, 4), (1, 2), (1, 3), (1, 4)]
+    self.assertEqual(set(adj_list), set(expected_list))
+
+    adj_list = self.test_canvass.get_adjacent_cell_list((0, 3), ['disabled', 'free'])
+    expected_list = []
+    self.assertEqual(set(adj_list), set(expected_list))
+
+    adj_list = self.test_canvass.get_adjacent_cell_list((2, 1), ['disabled'])
+    expected_list = [(1, 2), (2, 2), (3, 0), (3, 1), (3, 2)]
+    self.assertEqual(set(adj_list), set(expected_list))
+
+    adj_list = self.test_canvass.get_adjacent_cell_list((3, 1), ['disabled', 'free'])
+    expected_list = [(4, 2)]
+    self.assertEqual(set(adj_list), set(expected_list))
+
   def test_move_cell(self):
     '''
     when one cell is moved, verify:
