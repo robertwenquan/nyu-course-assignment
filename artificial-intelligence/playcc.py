@@ -58,7 +58,7 @@
 # FIXME(rw): UI doesn't refresh in the callback function
 # FIXME(rw): on Mac, cell background color is not shown
 # FIXME(rw): on Mac, menu is not shown
-# FIXME(cc): one piece, game point not win
+# FIXME(cc): FIXED one piece, game point not win
 # FIXME(cc): two pieces, game point not win but approaching the further piece
 #
 
