@@ -244,6 +244,39 @@ class GameCanvass(object):
     idx = self.ncol * x + y
     return self.cells.get(idx, None)
     
+  def get_adjacent_cell_list(self, loc, query_type_blacklist):
+    '''
+    get the adjacent cell list based on the query status
+
+    loc: (x,y) location of the cell
+    query_type_list: [] for all types for existing cells
+                     ['free', 'north_player', 'south_player'] to exclude 'disabled' cells
+    '''
+    x, y = loc
+    adjacent_cells = [(x-1,y-1),(x-1,y),(x-1,y+1), \
+                      (x  ,y-1),        (x  ,y+1), \
+                      (x+1,y-1),(x+1,y),(x+1,y+1)]
+
+    adjacent_cell_list = []
+
+    for cell_loc in adjacent_cells:
+      cell = self.get_cell(cell_loc)
+
+      # never retrive non-existing cells
+      if cell == None:
+        continue
+
+      # if query type is not specified, don't check cell status
+      if query_type_blacklist == []:
+        adjacent_cell_list.append(cell_loc)
+        continue
+
+      # otherwise, only add cell status that not matches query list
+      if cell.status not in query_type_blacklist:
+        adjacent_cell_list.append(cell_loc)
+
+    return adjacent_cell_list
+
   def print_debug_cell_map(self):
     '''
     print the ASCII cell map on the console
@@ -552,11 +585,9 @@ class Player(object):
     '''
     x, y = piece
     possible_move = []
-    adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y-1),(x+1,y+1),(x-1,y+1),(x-1,y-1)]
-    for (a,b) in adjacent:
+    adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), ['disabled'])
+    for (a,b) in adjacent_cell_list:
       cell = self.canvass.get_cell((a,b))
-      if cell == None or cell.status == 'disabled':
-        continue
       if cell.status == 'free':
         possible_move.append([(a,b)])
       else:
@@ -589,27 +620,38 @@ class Player(object):
     current_path.append((x,y))
     return_path = [current_path]
 
-    adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y+1),(x+1,y-1),(x-1,y-1),(x-1,y+1)]
-    for (a,b) in adjacent:
-      cell = self.canvass.get_cell((a,b))
-      if cell == None or cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
+    adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), ['disabled', 'free'])
+    for (a,b) in adjacent_cell_list:
+
+      if (a,b) in pending_set:
         continue
-      else:
-        xx = x + (a-x)*2 
-        yy = y + (b-y)*2
-        if (xx,yy) in explored_set:
-          continue
-        cell_to = self.canvass.get_cell((xx,yy))
-        if cell_to == None:
-          continue
-        if cell_to.status == 'free':
-          pending = copy(pending_set)
-          if cell.status == player.rival.side:
-            pending.append((a,b))
-          path = copy(current_path)
-          ret = self.possible_jump((xx,yy), player, path, explored_set, pending )
-          for path in ret:
-            return_path.append(path)
+
+      cell = self.canvass.get_cell((a,b))
+
+      xx = x + (a-x)*2
+      yy = y + (b-y)*2
+      if (xx,yy) in explored_set:
+        continue
+
+      # TODO: since there are a lot of get and check, 
+      # better to write a function like check_cell_status('free') = True/False
+      # if you want to write it, write it
+      cell_to = self.canvass.get_cell((xx,yy))
+      if cell_to == None:
+        continue
+
+      if cell_to.status == 'free':
+        pending = copy(pending_set)
+        if cell.status == player.rival.side:
+          pending.append((a,b))
+        path = copy(current_path)
+        ret = self.possible_jump((xx,yy), player, path, explored_set, pending )
+        #print 'path', path
+        #print 'ret', ret
+        #for path in ret:
+        #  return_path.append(path)
+        return_path += ret
+
     return return_path
 
   def estimate_function(self):
@@ -621,13 +663,11 @@ class Player(object):
     number_of_adjacent = 0    
     for piece in self.list_of_pieces:
       x, y = piece
-      adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y-1),(x+1,y+1),(x-1,y+1),(x-1,y-1)]
-      for neighbour in adjacent:
-        cell = self.canvass.get_cell(neighbour)
-        if cell == None:
-          continue
-        elif cell.status == self.rival.side:
-            number_of_adjacent += 1
+      adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), [])
+      for (a,b) in adjacent_cell_list:
+        cell = self.canvass.get_cell((a,b))
+        if cell.status == self.rival.side:
+          number_of_adjacent += 1
 
     if self.side == 'south':
       for piece in self.list_of_pieces:
@@ -636,13 +676,17 @@ class Player(object):
       for piece in self.rival.list_of_pieces:
         x, y = piece
         min += (x+1)*(x+1)
-    else:
+    elif self.side == 'north':
       for piece in self.list_of_pieces:
         x, y = piece
         max += (x+1)*(x+1)
       for piece in self.rival.list_of_pieces:
         x, y = piece
         min += (14-x)*(14-x)
+    else:
+      print 'BUG: check your code!'
+      exit(55)
+
     return (max-min)/6+30*(len(self.list_of_pieces)-len(self.rival.list_of_pieces))+-30*number_of_adjacent
 
 class GameEngine(object):
