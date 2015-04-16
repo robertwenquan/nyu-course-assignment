@@ -592,9 +592,7 @@ class Player(object):
     adjacent = [(x-1,y),(x+1,y),(x,y-1),(x,y+1),(x+1,y+1),(x+1,y-1),(x-1,y-1),(x-1,y+1)]
     for (a,b) in adjacent:
       cell = self.canvass.get_cell((a,b))
-      if cell == None:
-        continue 
-      if cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
+      if cell == None or cell.status == 'free' or cell.status == 'disabled' or (a,b) in pending_set:
         continue
       else:
         xx = x + (a-x)*2 
