@@ -171,5 +171,5 @@ class PlayGround(object):
     if who == 'north' or who == 'south':
       self.game.canvass.lock_canvass()
       self.refresh_playground()
-      self.label_endgame.place(x=20, y=260)
+      self.label_endgame.place(x=20, y=219)
 
