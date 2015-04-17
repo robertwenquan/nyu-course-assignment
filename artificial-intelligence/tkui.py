@@ -1,6 +1,9 @@
 #!/usr/bin/python
 #
-# playground.py
+# tkui.py
+#
+# Tkinter UI Interface for the AI game
+#
 
 '''
  this is the playground canvass for the game

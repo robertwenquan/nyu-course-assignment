@@ -952,8 +952,12 @@ class GameEngine(object):
     # along with its move statistics
     move_path, move_stats = rival.whats_next_move()
 
+    print '----------- Moving Path --------------'
     for loc in move_path:
       print "Moving path:" , loc
+
+    print '---------- Moving statistics ---------'
+    print move_stats
 
     nmove = len(move_path) - 1
     for i in range(nmove):
