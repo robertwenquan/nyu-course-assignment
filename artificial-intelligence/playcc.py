@@ -465,40 +465,49 @@ class Player(object):
     '''
     #TODO(cc): fix bugs when value of level is big
 
-    maximum_value = -300
+    maximum_value = -1000
     optimum_path = []
     best_move = (-1,-1)
-    alpha = -300
-    beta = 300
-    level = 1 
+    alpha = -1000
+    beta = 1000
+    level = 3 
 
-    maximum_value, best_piece, optimum_action = self.max_value(level, alpha, beta)
+    move_statistics = (1, 0, 0, 0)
+
+    match_point_piece, match_point_path = self.is_match_point()
+    if match_point_piece != (-1,-1):
+      optimum_path.append(match_point_piece)
+      for step in match_point_path:
+        optimum_path.append(step)
+      return optimum_path, move_statistics
+
+    num_pruning_max_value = 0
+    num_pruning_min_value = 0
+    nodes_generated = 0
+    maximum_value, best_piece, optimum_action, num_pruning_max_value, num_pruning_min_value, nodes_generated, max_depth = self.max_value(level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated)
     optimum_path.append(best_piece)
     for step in optimum_action:
       optimum_path.append(step)
 
-    max_depth_reached = 11
-    nodes_generated = 22
-    num_pruning_max_value = 33
-    num_pruning_min_value = 44
+    max_depth_reached = level - max_depth
     move_statistics = (max_depth_reached, nodes_generated, num_pruning_max_value, num_pruning_min_value)
 
     return optimum_path, move_statistics
 
-  def max_value(self, level, alpha, beta):
+  def max_value(self, level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated):
     '''
     Help robot to find the optimal action
     '''
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 300, (), []
+        return 1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level - 1
       else:
-        return -300, (), []
+        return -1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
     if level == 0:
-      return self.estimate_function(),(),[] 
+      return self.estimate_function(),(),[], num_pruning_max_value, num_pruning_min_value, nodes_generated, level - 1
     level -= 1
-    maximum_value = -300
+    maximum_value = -1000
     optimum_path = []
     best_piece = self.list_of_pieces[-1] 
     copy_pieces = copy(self.list_of_pieces)
@@ -506,33 +515,35 @@ class Player(object):
     for piece in copy_pieces:
       actions = self.possible_action(piece,self)
       for path in actions:
+        nodes_generated += 1
         pending_set = self.action_simulation(self,piece,path)
-        v_min, best, path_min = self.min_value(level, alpha, beta)
+        v_min, best, path_min, num_pruning_max_value, num_pruning_min_value, nodes_generated, level_reached = self.min_value(level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated)
         self.simulation_recovery(self.rival,piece,path,pending_set)
         if v_min > maximum_value:
           maximum_value = v_min
           best_piece = piece
           optimum_path = path
         if v_min>= beta:
-          return maximum_value, best_piece, optimum_path
+          num_pruning_max_value += 1
+          return maximum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
         alpha = max(alpha,maximum_value)
-    return maximum_value, best_piece, optimum_path
+    return maximum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
 
-  def min_value(self, level, alpha, beta):
+  def min_value(self, level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated):
     '''
     Calculate best solution of rival player
     '''
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 300, (), []
+        return 1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
       else:
-        return -300, (), []
+        return -1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
     
     if level == 0:
-      return self.estimate_function(), (), []
+      return self.estimate_function(), (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
     level -= 1
-    minimum_value = 300
+    minimum_value = 1000
     optimum_path = []
     best_piece = self.rival.list_of_pieces[-1] 
     
@@ -540,17 +551,19 @@ class Player(object):
     for piece in copy_pieces:
       actions = self.possible_action(piece,self.rival)
       for path in actions:
+        nodes_generated += 1
         pending_set = self.action_simulation(self.rival, piece,path)
-        v_max, best, path_max = self.max_value(level, alpha, beta)
+        v_max, best, path_max, num_pruning_max_value, num_pruning_min_value, nodes_generated, level_reached = self.max_value(level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated)
         self.simulation_recovery(self,piece,path,pending_set)
         if v_max < minimum_value:
           minimum_value = v_max
           best_piece = piece
           optimum_path = path
-        if v_max<= alpha:
-          return minimum_value, best_piece, optimum_path
+        if v_max <= alpha:
+          num_pruning_min_value += 1
+          return minimum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
         beta = min(beta,minimum_value)
-    return minimum_value, best_piece, optimum_path
+    return minimum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
 
   def action_simulation(self,player,piece,path):
     '''
@@ -618,7 +631,7 @@ class Player(object):
     Output: pathes reached this piece and moving on
     '''
 
-    #TODO(cc): find the reason why it reaches the limitaion of recurssion times
+    #TODO(cc):DONE find the reason why it reaches the limitaion of recurssion times
 
     x, y = cell_loc
     explored_set.append((x,y))
@@ -663,11 +676,13 @@ class Player(object):
     '''
     Estimate utility based on current canvass to help player make decision
     '''
-    max = 0
-    min = 0
+    max_v = 0
+    min_v = 0
     number_of_adjacent = 0    
+    distance_to_center = 0
     for piece in self.list_of_pieces:
       x, y = piece
+      distance_to_center += min(abs(y-3),abs(y-4))
       adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), [])
       for (a,b) in adjacent_cell_list:
         cell = self.canvass.get_cell((a,b))
@@ -677,22 +692,47 @@ class Player(object):
     if self.side == 'south':
       for piece in self.list_of_pieces:
         x, y = piece
-        max += (14-x)*(14-x)
+        max_v += (14-x)*(14-x)
       for piece in self.rival.list_of_pieces:
         x, y = piece
-        min += (x+1)*(x+1)
+        min_v += (x+1)*(x+1)
     elif self.side == 'north':
       for piece in self.list_of_pieces:
         x, y = piece
-        max += (x+1)*(x+1)
+        max_v += (x+1)*(x+1)
       for piece in self.rival.list_of_pieces:
         x, y = piece
-        min += (14-x)*(14-x)
+        min_v += (14-x)*(14-x)
     else:
       print 'BUG: check your code!'
       exit(55)
 
-    return (max-min)/6+30*(len(self.list_of_pieces)-len(self.rival.list_of_pieces))+-30*number_of_adjacent
+    d_value_of_distance = (max_v-min_v)/6
+    d_value_of_number_of_pieces = len(self.rival.list_of_pieces) - len(self.list_of_pieces)
+    penalty_of_d_number_of_pieces = 30*d_value_of_number_of_pieces
+    penalty_of_rival_adjacent = 10*number_of_adjacent
+    penalty_of_far_away_from_center = 2*distance_to_center
+    return d_value_of_distance - penalty_of_d_number_of_pieces - penalty_of_rival_adjacent - penalty_of_far_away_from_center
+
+  def is_match_point(self):
+    match_point_piece = (-1,-1)
+    init_path = []
+
+    copy_pieces = copy(self.list_of_pieces)
+    for piece in copy_pieces:
+      actions = self.possible_action(piece, self)
+      for path in actions:
+        if (self.side == 'north' and (path[-1] == (13, 3) or path[-1] == (13, 4))) or \
+          (self.side == 'south' and (path[-1] == (0, 3) or path[-1] == (0, 4))):
+          return piece, path
+        pending_set = self.action_simulation(self,piece,path)
+        if len(self.rival.list_of_pieces) == 0:
+          self.simulation_recovery(self.rival,piece,path,pending_set)
+          return piece, path
+        else:
+          self.simulation_recovery(self.rival,piece,path,pending_set)
+
+    return match_point_piece, init_path
 
 class GameEngine(object):
   '''
@@ -967,6 +1007,7 @@ class GameEngine(object):
       return True, "north"
 
     return False, None
+
 
   def is_castle_occupied(self, player):
     '''
