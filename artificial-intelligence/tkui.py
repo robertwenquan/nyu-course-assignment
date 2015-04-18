@@ -10,7 +10,9 @@
 '''
 
 #from Tkinter import *
-from Tkinter import Tk, Canvas, Menu, Label, Button, PhotoImage, DISABLED, NORMAL
+from Tkinter import Tk, Canvas, Menu
+from Tkinter import Label, Button, PhotoImage
+from Tkinter import DISABLED, NORMAL
 
 
 class PlayGround(object):
