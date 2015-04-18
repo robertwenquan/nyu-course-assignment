@@ -675,6 +675,11 @@ class Player(object):
   def estimate_function(self):
     '''
     Estimate utility based on current canvass to help player make decision
+    It composed of 4 parts:
+    1. distance to castle, the closer the better.
+    2. penalty of being captured
+    3. penalty of stoping beside a rival piece
+    4. penalty of far away from center 
     '''
     max_v = 0
     min_v = 0
