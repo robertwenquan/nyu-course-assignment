@@ -10,7 +10,7 @@
 
 * Run the game
 ```
-$ python playcc.py
+$ python ./playcc.py
 ```
 
 #### How to Test
