@@ -1177,7 +1177,8 @@ def main(argv):
   player_south = ''
 
   try:
-    opts, args = getopt.getopt(argv, 'hvdn:s:', ['help', 'verbose', 'debug', 'north=', 'south='])
+    opts, args = getopt.getopt(argv, 'hvdn:s:', \
+                                    ['help', 'verbose', 'debug', 'north=', 'south='])
   except getopt.GetoptError:
     print_cmdline_help()
     sys.exit(2)
