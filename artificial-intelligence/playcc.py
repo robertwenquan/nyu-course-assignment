@@ -601,6 +601,7 @@ class Player(object):
     Input: available piece
     Output: all possible path of this piece
     '''
+    #TODO: (cc) Find the bug why sometimes return empty path
     x, y = piece
     possible_move = []
     adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), ['disabled'])
