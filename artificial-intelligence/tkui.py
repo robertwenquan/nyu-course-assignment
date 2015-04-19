@@ -9,7 +9,6 @@
  this is the playground canvass for the game
 '''
 
-#from Tkinter import *
 from Tkinter import Tk, Canvas, Menu
 from Tkinter import Label, Button, PhotoImage
 from Tkinter import DISABLED, NORMAL
@@ -69,6 +68,18 @@ class PlayGround(object):
 
     self.gui.config(menu=menubar)
 
+  def make_top_bar(self):
+    '''
+    make the top bar, with game restart, and statistics information
+    '''
+    button = Button(self.gui, text = 'reset game', height=30, width=120, \
+                    command=self.game.reset_game)
+    button.place(x=20, y=20, width=120, height=30)
+
+    button = Button(self.gui, text = 'start game', height=30, width=120, \
+                    command=self.game.start_game)
+    button.place(x=160, y=20, width=120, height=30)
+
   def about_me(self):
     '''
     show the author and version of this application
@@ -87,6 +98,9 @@ class PlayGround(object):
 
     # place the menu
     self.make_menu()
+
+    # place top bar
+    self.make_top_bar()
 
     # place the buttons
     for row_idx in range(nrow):
@@ -123,6 +137,8 @@ class PlayGround(object):
         button.place(x=offset_x, y=offset_y, width=self.unit, height=self.unit)
 
         self.button_map[idx] = button
+
+    self.refresh_playground()
 
   def refresh_playground(self):
     '''

@@ -80,7 +80,7 @@ class Cell(object):
     self.y = y
     self.status = status
     self.selected = False
-    self.lock = False
+    self.lock = True
 
 
 class GameCanvass(object):
@@ -803,6 +803,19 @@ class GameEngine(object):
     # initialize UI
     self.ui = PlayGround(self)
 
+  def start_game(self):
+    '''
+    start the game
+    let north plays first
+    '''
+
+    # if the north player is robot, let it play first
+    if self.north_player.robot == True:
+      self.bot_play(self.north_player)
+
+    self.canvass.unlock_canvass()
+    self.ui.refresh_playground()
+
   def reset_game(self):
     '''
     reset the game canvass to default
@@ -817,6 +830,9 @@ class GameEngine(object):
     self.canvass.unlock_canvass()
 
     self.ui.reset_ui()
+    self.ui.refresh_playground()
+
+    self.canvass.lock_canvass()
     self.ui.refresh_playground()
 
   def about_me(self):
@@ -952,11 +968,17 @@ class GameEngine(object):
     #################################################
     # bot player engages
     #################################################
-    rival = player.rival
+    self.bot_play(player.rival)
+
+  def bot_play(self, player):
+
+    if player.robot != True:
+      print 'BUG!!! Must be a robot here!!!'
+      exit(3)
 
     # get optimal move path
     # along with its move statistics
-    move_path, move_stats = rival.whats_next_move()
+    move_path, move_stats = player.whats_next_move()
 
     print '----------- Moving Path --------------'
     for loc in move_path:
@@ -971,11 +993,11 @@ class GameEngine(object):
       loc_to = move_path[i + 1]
 
       print "Moving path: %s -> %s" % (loc_from, loc_to)
-      rival.move_piece(loc_from, loc_to)
+      player.move_piece(loc_from, loc_to)
 
-      rival_leap, loc = self.is_leap_over_rival(loc_from, loc_to, rival)
+      rival_leap, loc = self.is_leap_over_rival(loc_from, loc_to, player)
       if rival_leap == True:
-        player.remove_piece(loc)
+        player.rival.remove_piece(loc)
 
       # refresh UI at each move with delay
       # FIXME (rw): this doesn't work, need more research
@@ -989,10 +1011,6 @@ class GameEngine(object):
     if win_the_game == True:
       self.ui.notify_win(who)
       print "%s wins the game!! Ending game!!!" % who
-
-    #################################################
-    # bot player disengages
-    #################################################
 
   def is_match_end(self):
     '''
@@ -1017,7 +1035,6 @@ class GameEngine(object):
       return True, "north"
 
     return False, None
-
 
   def is_castle_occupied(self, player):
     '''
@@ -1203,8 +1220,8 @@ def main(argv):
     print 'player_south = %s' % player_south
 
   # setup the game with player
-  player1 = Player(robot = False, name = 'bobcat', side = 'north')
-  player2 = Player(robot = True,  name = 'caicai', side = 'south')
+  player1 = Player(robot = False, name = 'bobcat', side = 'south')
+  player2 = Player(robot = True,  name = 'caicai', side = 'north')
 
   game = GameEngine(player1, player2)
 
