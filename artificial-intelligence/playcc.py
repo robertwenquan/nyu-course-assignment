@@ -868,7 +868,7 @@ class GameEngine(object):
     '''
     self.ui.display()
 
-  def on_click(self, x, y):
+  def human_play(self, x, y):
     '''
     handle the click event
     '''

@@ -119,15 +119,15 @@ class PlayGround(object):
           color = 'white'
           button = Button(self.gui, activebackground=color, height=50, width=50, cursor="target", \
               background='#dbb25c', \
-              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.on_click(row_idx, col_idx))
+              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
         elif cell.status == 'north':
           button = Button(self.gui, activebackground='grey', height=50, width=50, cursor="target", \
               image=self.icon_white, background='#dbb25c', \
-              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.on_click(row_idx, col_idx))
+              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
         elif cell.status == 'south':
           button = Button(self.gui, activebackground='grey', height=50, width=50, cursor="target", \
               image=self.icon_black, background='#dbb25c', \
-              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.on_click(row_idx, col_idx))
+              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
 
         # calculate the x,y coordinates and place the buttons
         offset_x = self.margin + self.unit * col_idx
