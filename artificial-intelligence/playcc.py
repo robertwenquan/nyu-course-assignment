@@ -1220,8 +1220,8 @@ def main(argv):
     print 'player_south = %s' % player_south
 
   # setup the game with player
-  player1 = Player(robot = False, name = 'bobcat', side = 'south')
-  player2 = Player(robot = True,  name = 'caicai', side = 'north')
+  player1 = Player(robot = False, name = 'bobcat', side = 'north')
+  player2 = Player(robot = True,  name = 'caicai', side = 'south')
 
   game = GameEngine(player1, player2)
 
