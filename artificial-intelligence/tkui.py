@@ -1,13 +1,11 @@
 #!/usr/bin/python
-#
-# tkui.py
-#
-# Tkinter UI Interface for the AI game
-#
 
-'''
- this is the playground canvass for the game
-'''
+"""
+ this is the AI game for Artificial Intelligence course in Spring 2015 semester
+
+ this source code defines the GUI part of the game.
+ The GUI is based on Python Tkinter interface via Tcl/Tk
+"""
 
 from Tkinter import Tk, Canvas, Menu
 from Tkinter import Label, Button, PhotoImage

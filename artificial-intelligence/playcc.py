@@ -1,9 +1,16 @@
 #!/usr/bin/python
+
+"""
+ this is the AI game for Artificial Intelligence course in Spring 2015 semester
+
+ this source code defines a few classes:
+ - the rules of the game (GameEngine)
+ - the logic of the game player (Player)
+ - the core data structure to support the game play (GameCanvass, Cell)
+"""
+
 #
-# playcc.py
-#
-# this is the AI game
-#
+# the following one line is to suppress some pylint warnings for pylint code validation
 # pylint: disable=fixme, disable=todo
 #
 #################################################################
@@ -20,24 +27,25 @@
 # TODO: DONE link the player to the game engine
 # TODO: DONE reset game at any point, with confirmation.
 # TODO: DONE end the game when winning condition is met.
-# TODO(rw): white(north) always starts first
-# TODO(rw): choose side for human player
+# TODO: DONE white(north) always starts first
+# TODO: DONE choose side for human player on configuration
 # TODO(rw): choose side on the UI
-# TODO(rw): performance metrics interface definition
+# TODO: DONE performance metrics interface definition
 # TODO(rw): expose performance metrics to UI for each move
-# TODO(cc): record performance metrics for each move
-# TODO(rw): unselect a cell when it was chosen by mistake
+# TODO: DONE record performance metrics for each move
 #
 #################################################################
-# Stretching goals
+# Stretching goals (with bonus points)
 #
+# TODO: DONE multiple jumps
 # TODO: DONE intelligence level
 # TODO(rw): choose intelligence level before game starts, on UI
-# TODO(rw): rollback and forward
 #
 #################################################################
 # Aspirational goals (from software architecture and ease point of view)
 #
+# TODO(rw): unselect a cell when it was chosen by mistake
+# TODO(rw): rollback and forward
 # TODO(rw): unified logging
 # TODO(rw): notification via UI
 # TODO(cc): add student information in the footer of the application
@@ -60,6 +68,7 @@
 # FIXME(rw): on Mac, menu is not shown
 # FIXME(cc): FIXED one piece, game point not win
 # FIXME(cc): two pieces, game point not win but approaching the further piece
+# FIXME(cc): in some cases, there is no moving path for the robot
 #
 
 import sys
