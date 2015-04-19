@@ -78,6 +78,11 @@ class PlayGround(object):
                     command=self.game.start_game)
     button.place(x=160, y=20, width=120, height=30)
 
+    label1 = Label(self.gui, text = '1111')
+    label2 = Label(self.gui, text = '1111')
+    label3 = Label(self.gui, text = '1111')
+    label4 = Label(self.gui, text = '1111')
+
   def about_me(self):
     '''
     show the author and version of this application

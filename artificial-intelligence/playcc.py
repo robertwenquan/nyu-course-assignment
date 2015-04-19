@@ -22,7 +22,7 @@
 # TODO: DONE the legitimate leap move checking
 # TODO: DONE stupid sample player (for integration)
 # TODO: DONE player logic
-# TODO: DONE game winning rule1 (catle point is taken)
+# TODO: DONE game winning rule1 (castle point is taken)
 # TODO: DONE game winning rule2 (all pieces are captured)
 # TODO: DONE link the player to the game engine
 # TODO: DONE reset game at any point, with confirmation.
@@ -35,7 +35,7 @@
 # TODO: DONE record performance metrics for each move
 #
 #################################################################
-# Stretching goals (with bonus points)
+# Stretching goals (for bonus points)
 #
 # TODO: DONE multiple jumps
 # TODO: DONE intelligence level
@@ -727,6 +727,9 @@ class Player(object):
     penalty_of_d_number_of_pieces = 30*d_value_of_number_of_pieces
     penalty_of_rival_adjacent = 10*number_of_adjacent
     penalty_of_far_away_from_center = 2*distance_to_center
+
+    # FIXME (code-review-comment): do not return expression
+    # very inelegant code and will lead to debug headache
     return d_value_of_distance - penalty_of_d_number_of_pieces - penalty_of_rival_adjacent - penalty_of_far_away_from_center
 
   def is_match_point(self):
@@ -766,9 +769,6 @@ class GameEngine(object):
   north_player = None
   south_player = None
 
-  # who is actively playing?
-  active_player = None
-
   # selected_cell
   selected_cell = (-1,-1)
 
@@ -788,12 +788,6 @@ class GameEngine(object):
     if self.north_player == None or self.south_player == None:
       print 'Not enough player to play! Please check configuration!'
       exit(54)
-
-    # if human player exists, human plays first
-    # otherwise north plays first
-    self.active_player = self.get_human_player()
-    if self.active_player == None:
-      self.active_player = self.north_player
 
     self.canvass = GameCanvass(self.nrow, self.ncol)
 
