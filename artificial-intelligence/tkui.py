@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 """
- this is the AI game for Artificial Intelligence course in Spring 2015 semester
+ this is the Mini Camelot game
+ for CS-GY 6613 Artificial Intelligence course in Spring 2015 semester
 
  this source code defines the GUI part of the game.
  The GUI is based on Python Tkinter interface via Tcl/Tk

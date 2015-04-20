@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 """
- this is the AI game for Artificial Intelligence course in Spring 2015 semester
+ this is the Mini Camelot game
+ for CS-GY 6613 Artificial Intelligence course in Spring 2015 semester
 
  this source code defines a few classes:
  - the rules of the game (GameEngine)
@@ -37,9 +38,11 @@
 #################################################################
 # Stretching goals (for bonus points)
 #
-# TODO: DONE multiple jumps
+# TODO: DONE successive jumps and captures
+# TODO: DONE graphical interface
 # TODO: DONE intelligence level
 # TODO(rw): choose intelligence level before game starts, on UI
+# TODO: DONE exceptional evaluation function
 #
 #################################################################
 # Aspirational goals (from software architecture and ease point of view)
