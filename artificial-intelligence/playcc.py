@@ -362,7 +362,7 @@ class Player(object):
 
   list_of_pieces = []
 
-  def __init__(self, robot = True, name = 'aibot', side = '', move_status = 'idle', difficulty = 3):
+  def __init__(self, robot = True, name = 'aibot', side = '', move_status = 'idle', difficulty = 1):
 
     self.robot = robot
     self.name = name
@@ -482,7 +482,7 @@ class Player(object):
     best_move = (-1,-1)
     alpha = -1000
     beta = 1000
-    level = 3 
+    level = self.intell_level
 
     move_statistics = (1, 0, 0, 0)
 
@@ -1230,7 +1230,7 @@ def main(argv):
 
   # setup the game with player
   player1 = Player(robot = False, name = 'bobcat', side = 'north')
-  player2 = Player(robot = True,  name = 'caicai', side = 'south')
+  player2 = Player(robot = True,  name = 'tao2', side = 'south')
 
   game = GameEngine(player1, player2)
 

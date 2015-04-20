@@ -35,7 +35,7 @@ class PlayGround(object):
     nrow = game.nrow
 
     self.width = self.margin * 2 + self.unit * ncol
-    self.height = self.margin * 4 + self.unit * nrow
+    self.height = self.margin * 5 + self.unit * nrow
     self.game = game
 
     self.icon_white = PhotoImage(file="images/white.gif")
@@ -62,7 +62,6 @@ class PlayGround(object):
     '''
     menubar = Menu(self.gui)
 
-    menubar.add_command(label='Reset Game', command=self.game.reset_game)
     menubar.add_command(label='About', command=self.game.about_me)
 
     self.gui.config(menu=menubar)
@@ -75,22 +74,22 @@ class PlayGround(object):
     # start game button
     button = Button(self.gui, text = 'start game', height=30, width=120, \
                     command=self.game.start_game)
-    button.place(x=20, y=5, width=120, height=20)
+    button.place(x=20, y=20, width=120, height=20)
 
     # reset game button
     button = Button(self.gui, text = 'reset game', height=30, width=120, \
                     command=self.game.reset_game)
-    button.place(x=160, y=5, width=120, height=20)
+    button.place(x=160, y=20, width=120, height=20)
 
     self.label_max_depth = Label(self.gui, text = '11')
     self.label_nodes = Label(self.gui, text = '22')
     self.label_prune_max = Label(self.gui, text = '33')
     self.label_prune_min = Label(self.gui, text = '44')
 
-    self.label_max_depth.place(x=20, y=40, width=70, height=20)
-    self.label_nodes.place(x=100, y=40, width=70, height=20)
-    self.label_prune_max.place(x=180, y=40, width=70, height=20)
-    self.label_prune_min.place(x=260, y=40, width=70, height=20)
+    self.label_max_depth.place(x=20, y=50, width=70, height=20)
+    self.label_nodes.place(x=100, y=50, width=70, height=20)
+    self.label_prune_max.place(x=180, y=50, width=70, height=20)
+    self.label_prune_min.place(x=260, y=50, width=70, height=20)
 
   def about_me(self):
     '''
@@ -107,9 +106,6 @@ class PlayGround(object):
     # place the canvas
     canvass = Canvas(self.gui, bg="white", height=self.height, width=self.width)
     canvass.pack()
-
-    # place the menu
-    self.make_menu()
 
     # place top bar
     self.make_top_bar()
@@ -145,7 +141,7 @@ class PlayGround(object):
 
         # calculate the x,y coordinates and place the buttons
         offset_x = self.margin + self.unit * col_idx
-        offset_y = 3 * self.margin + self.unit * row_idx
+        offset_y = 4 * self.margin + self.unit * row_idx
         button.place(x=offset_x, y=offset_y, width=self.unit, height=self.unit)
 
         self.button_map[idx] = button
