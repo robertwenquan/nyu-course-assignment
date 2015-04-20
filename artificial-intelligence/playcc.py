@@ -31,7 +31,7 @@
 # TODO: DONE choose side for human player on configuration
 # TODO(rw): choose side on the UI
 # TODO: DONE performance metrics interface definition
-# TODO(rw): expose performance metrics to UI for each move
+# TODO: DONE expose performance metrics to UI for each move
 # TODO: DONE record performance metrics for each move
 #
 #################################################################
