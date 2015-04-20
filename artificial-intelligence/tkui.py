@@ -70,18 +70,26 @@ class PlayGround(object):
     '''
     make the top bar, with game restart, and statistics information
     '''
-    button = Button(self.gui, text = 'reset game', height=30, width=120, \
-                    command=self.game.reset_game)
-    button.place(x=20, y=20, width=120, height=30)
 
+    # start game button
     button = Button(self.gui, text = 'start game', height=30, width=120, \
                     command=self.game.start_game)
-    button.place(x=160, y=20, width=120, height=30)
+    button.place(x=20, y=5, width=120, height=20)
 
-    label1 = Label(self.gui, text = '1111')
-    label2 = Label(self.gui, text = '1111')
-    label3 = Label(self.gui, text = '1111')
-    label4 = Label(self.gui, text = '1111')
+    # reset game button
+    button = Button(self.gui, text = 'reset game', height=30, width=120, \
+                    command=self.game.reset_game)
+    button.place(x=160, y=5, width=120, height=20)
+
+    self.label_max_depth = Label(self.gui, text = '11')
+    self.label_nodes = Label(self.gui, text = '22')
+    self.label_prune_max = Label(self.gui, text = '33')
+    self.label_prune_min = Label(self.gui, text = '44')
+
+    self.label_max_depth.place(x=20, y=40, width=70, height=20)
+    self.label_nodes.place(x=100, y=40, width=70, height=20)
+    self.label_prune_max.place(x=180, y=40, width=70, height=20)
+    self.label_prune_min.place(x=260, y=40, width=70, height=20)
 
   def about_me(self):
     '''
@@ -196,4 +204,25 @@ class PlayGround(object):
       self.game.canvass.lock_canvass()
       self.refresh_playground()
       self.label_endgame.place(x=20, y=219)
+
+  def update_statistics(self, move_stats):
+    '''
+    update the move statistics for the bot player, for each move
+
+    Four metrics are collected for the statistics:
+     - max_depth_reached
+     - nodes_generated-
+     - num_pruning_max_value
+     - num_pruning_min_value
+    '''
+
+    max_depth_reached, nodes_generated, \
+    num_pruning_max_value, num_pruning_min_value = move_stats
+
+    print 'updating moving statistics...'
+
+    self.label_max_depth.config(text = str(max_depth_reached))
+    self.label_nodes.config(text = str(nodes_generated))
+    self.label_prune_max.config(text = str(num_pruning_max_value))
+    self.label_prune_min.config(text = str(num_pruning_min_value))
 

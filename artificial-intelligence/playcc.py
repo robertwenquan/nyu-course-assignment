@@ -990,6 +990,9 @@ class GameEngine(object):
     print '---------- Moving statistics ---------'
     print move_stats
 
+    # update move statistics first
+    self.ui.update_statistics(move_stats)
+
     nmove = len(move_path) - 1
     for i in range(nmove):
       loc_from = move_path[i]
