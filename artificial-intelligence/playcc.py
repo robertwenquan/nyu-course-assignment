@@ -870,25 +870,20 @@ class GameEngine(object):
   # what is the playing doing?
   status = ''
 
-  def __init__(self, player1, player2):
+  def __init__(self):
 
-    for player in [player1, player2]:
-      print player.robot
-      print player.name
-      if player.side == 'north':
-        self.north_player = player
-      elif player.side == 'south':
-        self.south_player = player
-
-    if self.north_player == None or self.south_player == None:
-      print 'Not enough player to play! Please check configuration!'
-      exit(54)
-
-    self.canvass = GameCanvass(self.nrow, self.ncol)
+    # setup north and south with player
+    player1 = Player(side = 'north', robot = True)
+    self.north_player = player1
+    player2 = Player(side = 'south', robot = True)
+    self.south_player = player2
 
     # set rival to players
     self.north_player.set_rival(self.south_player)
     self.south_player.set_rival(self.north_player)
+
+    # initialize game canvass with cells
+    self.canvass = GameCanvass(self.nrow, self.ncol)
 
     # set canvass to players
     self.north_player.set_canvass(self.canvass)
@@ -906,6 +901,20 @@ class GameEngine(object):
     start the game
     let north plays first
     '''
+
+    # set side and difficult level
+    print "Starting game, with selected configuration..."
+    print "Side: ", self.ui.choose_side
+    print "Level: ", self.ui.choose_level
+    print "............................................."
+
+    if self.ui.choose_side == 'north':
+      self.north_player.robot = False
+    elif self.ui.choose_side == 'south':
+      self.south_player.robot = False
+    else:
+      print 'BUG: Check your code!!!'
+      exit(55)
 
     # if the north player is robot, let it play first
     if self.north_player.robot == True:
@@ -1321,11 +1330,7 @@ def main(argv):
     print 'player_north = %s' % player_north
     print 'player_south = %s' % player_south
 
-  # setup the game with player
-  player1 = Player(robot = False, name = 'bobcat', side = 'north')
-  player2 = Player(robot = True,  name = 'tao2', side = 'south')
-
-  game = GameEngine(player1, player2)
+  game = GameEngine()
 
   # kick off the game with UI
   game.start()
