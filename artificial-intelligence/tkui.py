@@ -27,7 +27,7 @@ class PlayGround(object):
     self.margin = 20
 
     self.gui = Tk()
-    self.gui.title('caicai AI programming assignment')
+    self.gui.title('Mini Camelot')
 
     self.button_map = dict()
 
@@ -81,10 +81,10 @@ class PlayGround(object):
                     command=self.game.reset_game)
     button.place(x=160, y=20, width=120, height=20)
 
-    self.label_max_depth = Label(self.gui, text = '11')
-    self.label_nodes = Label(self.gui, text = '22')
-    self.label_prune_max = Label(self.gui, text = '33')
-    self.label_prune_min = Label(self.gui, text = '44')
+    self.label_max_depth = Label(self.gui, text = '0')
+    self.label_nodes = Label(self.gui, text = '0')
+    self.label_prune_max = Label(self.gui, text = '0')
+    self.label_prune_min = Label(self.gui, text = '0')
 
     self.label_max_depth.place(x=20, y=50, width=70, height=20)
     self.label_nodes.place(x=100, y=50, width=70, height=20)
