@@ -970,6 +970,7 @@ class GameEngine(object):
     if win_the_game == True:
       self.ui.notify_win(who)
       print "%s wins the game!! Ending game!!!" % who
+      return
 
     #################################################
     # bot player engages
