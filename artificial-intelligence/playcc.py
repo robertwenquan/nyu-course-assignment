@@ -486,6 +486,9 @@ class Player(object):
 
     move_statistics = (1, 0, 0, 0)
 
+    '''
+    Check if it is match point, if so, make the winning action.
+    '''
     match_point_piece, match_point_path = self.is_match_point()
     if match_point_piece != (-1,-1):
       optimum_path.append(match_point_piece)
@@ -493,31 +496,47 @@ class Player(object):
         optimum_path.append(step)
       return optimum_path, move_statistics
 
-    num_pruning_max_value = 0
-    num_pruning_min_value = 0
+    '''
+    Initiate moving statistics
+    '''
+    num_pruning_max = 0
+    num_pruning_min = 0
     nodes_generated = 0
-    maximum_value, best_piece, optimum_action, num_pruning_max_value, num_pruning_min_value, nodes_generated, max_depth = self.max_value(level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated)
+
+    '''
+    Get optimal action by alpha-beta algorithm
+    '''
+    maximum_value, best_piece, optimum_action, num_pruning_max, num_pruning_min, nodes_generated, max_depth = self.max_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
+
+    '''
+    Construct the optimal path by combine action piece and it's optimal moving path
+    '''
     optimum_path.append(best_piece)
     for step in optimum_action:
       optimum_path.append(step)
 
+    '''
+    Update move_statistics
+    '''
     max_depth_reached = level - max_depth
-    move_statistics = (max_depth_reached, nodes_generated, num_pruning_max_value, num_pruning_min_value)
+    move_statistics = (max_depth_reached, nodes_generated, num_pruning_max, num_pruning_min)
 
     return optimum_path, move_statistics
 
-  def max_value(self, level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated):
+  def max_value(self, level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated):
     '''
     Help robot to find the optimal action
     '''
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level - 1
+        return 1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level - 1
       else:
-        return -1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
+        return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
+
     if level == 0:
-      return self.estimate_function(),(),[], num_pruning_max_value, num_pruning_min_value, nodes_generated, level - 1
+      return self.estimate_function(),(),[], num_pruning_max, num_pruning_min, nodes_generated, level - 1
+
     level -= 1
     maximum_value = -1000
     optimum_path = []
@@ -529,53 +548,57 @@ class Player(object):
       for path in actions:
         nodes_generated += 1
         pending_set = self.action_simulation(self,piece,path)
-        v_min, best, path_min, num_pruning_max_value, num_pruning_min_value, nodes_generated, level_reached = self.min_value(level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated)
+        v_min, best, path_min, num_pruning_max, num_pruning_min, nodes_generated, level_reached \
+              = self.min_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
         self.simulation_recovery(self.rival,piece,path,pending_set)
         if v_min > maximum_value:
           maximum_value = v_min
           best_piece = piece
           optimum_path = path
         if v_min>= beta:
-          num_pruning_max_value += 1
-          return maximum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
+          num_pruning_max+= 1
+          return maximum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
         alpha = max(alpha,maximum_value)
-    return maximum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
+    return maximum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
-  def min_value(self, level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated):
+  def min_value(self, level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated):
     '''
     Calculate best solution of rival player
     '''
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
+        return 1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
       else:
-        return -1000, (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
+        return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
     
     if level == 0:
-      return self.estimate_function(), (), [], num_pruning_max_value, num_pruning_min_value, nodes_generated, level -1
+      return self.estimate_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
+
     level -= 1
     minimum_value = 1000
     optimum_path = []
     best_piece = self.rival.list_of_pieces[-1] 
     
     copy_pieces = copy(self.rival.list_of_pieces)
+
     for piece in copy_pieces:
       actions = self.possible_action(piece,self.rival)
       for path in actions:
         nodes_generated += 1
         pending_set = self.action_simulation(self.rival, piece,path)
-        v_max, best, path_max, num_pruning_max_value, num_pruning_min_value, nodes_generated, level_reached = self.max_value(level, alpha, beta, num_pruning_max_value, num_pruning_min_value, nodes_generated)
+        v_max, best, path_max, num_pruning_max, num_pruning_min, nodes_generated, level_reached \
+              = self.max_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
         self.simulation_recovery(self,piece,path,pending_set)
         if v_max < minimum_value:
           minimum_value = v_max
           best_piece = piece
           optimum_path = path
         if v_max <= alpha:
-          num_pruning_min_value += 1
-          return minimum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
+          num_pruning_min+= 1
+          return minimum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
         beta = min(beta,minimum_value)
-    return minimum_value, best_piece, optimum_path, num_pruning_max_value, num_pruning_min_value, nodes_generated, min(level_reached, level)
+    return minimum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
   def action_simulation(self,player,piece,path):
     '''
