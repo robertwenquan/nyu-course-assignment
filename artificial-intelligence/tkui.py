@@ -9,8 +9,10 @@
 """
 
 from Tkinter import Tk, Canvas, Menu
-from Tkinter import Label, Button, PhotoImage
-from Tkinter import DISABLED, NORMAL
+from Tkinter import Label, Button, Radiobutton
+from Tkinter import PhotoImage, Toplevel
+from Tkinter import DISABLED, NORMAL, LEFT
+from Tkinter import IntVar
 
 
 class PlayGround(object):
@@ -48,6 +50,11 @@ class PlayGround(object):
     self.photo_endgame = PhotoImage(file="images/game-over.gif")
     self.label_endgame = Label(image=self.photo_endgame)
     self.label_endgame.image = self.photo_endgame
+
+    # game options pop up box
+    self.select_start_options()
+
+    # FINISH initialization, READY to start the game
 
   def display(self):
     '''
@@ -96,6 +103,75 @@ class PlayGround(object):
     show the author and version of this application
     '''
     pass
+
+  def select_start_options(self):
+    '''
+    popup box to select side and difficulty levels
+    '''
+    print 'select game start options'
+
+    popup = Toplevel(self.gui, width=300, height=110)
+    popup.grab_set()
+
+    # choose side 
+    label1 = Label(popup, text="Side", height=30, width=50)
+    label1.place(x=10, y=5, height=30, width=50)
+
+    v1 = IntVar()
+
+    bt_north = Radiobutton(popup, text="White", variable=v1, value=1)
+    bt_north.place(x=60,y=10)
+    bt_south = Radiobutton(popup, text="Black", variable=v1, value=2)
+    bt_south.place(x=120, y=10)
+
+    # by default, human plays first, meaning play the north side
+    bt_north.select()
+
+    # choose difficulty level
+    label2 = Label(popup, text="Level", height=30, width=50)
+    label2.place(x=10, y=35, height=30, width=50)
+
+    v2 = IntVar()
+
+    bt_level1 = Radiobutton(popup, text="Dumb", variable=v2, value=1)
+    bt_level1.place(x=60, y=40)
+    bt_level2 = Radiobutton(popup, text="Smart", variable=v2, value=2)
+    bt_level2.place(x=120, y=40)
+    bt_level3 = Radiobutton(popup, text="Genius", variable=v2, value=3)
+    bt_level3.place(x=180, y=40)
+
+    # by default, the game is hard
+    bt_level3.select()
+
+    button = Button(popup, text='SET', \
+              command=lambda: self.selected_start_options(popup, v1, v2))
+
+    button.place(x=70, y=70)
+
+  def selected_start_options(self, popup, choose_side, choose_level):
+    '''
+    this is the callback function of the submit button
+    for the game start options
+    '''
+
+    SIDE = { 1 : 'north' ,
+             2 : 'south'
+           }
+
+    LEVEL = { 1 : 'tao2' ,
+              2 : 'tao1' ,
+              3 : 'caicai'
+            }
+
+    self.choose_side = SIDE[choose_side.get()]
+    self.choose_level = LEVEL[choose_level.get()]
+
+    print 'selected start options'
+    print 'Side', self.choose_side
+    print 'Level', self.choose_level
+
+    popup.grab_release()
+    popup.destroy()
 
   def prepare_the_playground(self, ncol, nrow):
     '''
