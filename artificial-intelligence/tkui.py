@@ -52,7 +52,7 @@ class PlayGround(object):
     self.label_endgame.image = self.photo_endgame
 
     # game options pop up box
-    self.select_start_options()
+    # self.select_start_options()
 
     # FINISH initialization, READY to start the game
 
