@@ -530,12 +530,12 @@ class Player(object):
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level - 1
+        return 1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
       else:
-        return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
+        return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
     if level == 0:
-      return self.estimate_function(),(),[], num_pruning_max, num_pruning_min, nodes_generated, level - 1
+      return self.estimate_function(),(),[], num_pruning_max, num_pruning_min, nodes_generated, level
 
     level -= 1
     maximum_value = -1000
@@ -568,12 +568,12 @@ class Player(object):
     win_the_game, who = self.game.is_match_end()
     if win_the_game == True:
       if who == self.side:
-        return 1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
+        return 1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
       else:
-        return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
+        return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
     
     if level == 0:
-      return self.estimate_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level -1
+      return self.estimate_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
     level -= 1
     minimum_value = 1000
