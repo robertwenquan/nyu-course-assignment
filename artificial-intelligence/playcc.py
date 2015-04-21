@@ -863,11 +863,9 @@ class GameEngine(object):
 
   # define two players, only two players
   # human<->bot, bot<->human, bot<->bot, human<->human
+  # so far, ONLY human<->bot and bot<->human are supported
   north_player = None
   south_player = None
-
-  # selected_cell
-  selected_cell = (-1,-1)
 
   # what is the playing doing?
   status = ''
