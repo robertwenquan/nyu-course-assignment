@@ -122,6 +122,9 @@ class PlayGround(object):
     print 'select game start options'
 
     popup = Toplevel(self.gui, width=300, height=110)
+
+    # stays on top of the game canvass
+    popup.transient(self.gui)
     popup.grab_set()
 
     # choose side 
