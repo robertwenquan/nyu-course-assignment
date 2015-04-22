@@ -10,6 +10,9 @@
  - the core data structure to support the game play (GameCanvass, Cell)
 """
 
+__author__ = "Caicai CHEN <caicai.chen@nyu.edu>"
+__date__ = "22 Apr 2015"
+
 #
 # the following one line is to suppress some pylint warnings for pylint code validation
 # pylint: disable=fixme, disable=todo

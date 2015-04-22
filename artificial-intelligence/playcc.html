@@ -1,0 +1,400 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module playcc</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>playcc</strong></big></big> (22 Apr 2015)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/root/github/nyu-course-assignment/artificial-intelligence/playcc.py">/root/github/nyu-course-assignment/artificial-intelligence/playcc.py</a></font></td></tr></table>
+    <p><tt>this&nbsp;is&nbsp;the&nbsp;Mini&nbsp;Camelot&nbsp;game<br>
+for&nbsp;CS-GY&nbsp;6613&nbsp;Artificial&nbsp;Intelligence&nbsp;course&nbsp;in&nbsp;Spring&nbsp;2015&nbsp;semester<br>
+&nbsp;<br>
+this&nbsp;source&nbsp;code&nbsp;defines&nbsp;a&nbsp;few&nbsp;classes:<br>
+-&nbsp;the&nbsp;rules&nbsp;of&nbsp;the&nbsp;game&nbsp;(<a href="#GameEngine">GameEngine</a>)<br>
+-&nbsp;the&nbsp;logic&nbsp;of&nbsp;the&nbsp;game&nbsp;player&nbsp;(<a href="#Player">Player</a>)<br>
+-&nbsp;the&nbsp;core&nbsp;data&nbsp;structure&nbsp;to&nbsp;support&nbsp;the&nbsp;game&nbsp;play&nbsp;(<a href="#GameCanvass">GameCanvass</a>,&nbsp;<a href="#Cell">Cell</a>)</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="getopt.html">getopt</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="playcc.html#Cell">Cell</a>
+</font></dt><dt><font face="helvetica, arial"><a href="playcc.html#GameCanvass">GameCanvass</a>
+</font></dt><dt><font face="helvetica, arial"><a href="playcc.html#GameEngine">GameEngine</a>
+</font></dt><dt><font face="helvetica, arial"><a href="playcc.html#Player">Player</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Cell">class <strong>Cell</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>one&nbsp;cell&nbsp;of&nbsp;the&nbsp;game&nbsp;canvass<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Cell-__init__"><strong>__init__</strong></a>(self, x, y, status<font color="#909090">='disabled'</font>)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GameCanvass">class <strong>GameCanvass</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;is&nbsp;the&nbsp;main&nbsp;data&nbsp;structure&nbsp;to&nbsp;define&nbsp;the&nbsp;game&nbsp;canvass&nbsp;matrix(14&nbsp;x&nbsp;8)<br>
+Canvass&nbsp;is&nbsp;made&nbsp;of&nbsp;cells&nbsp;filled&nbsp;in&nbsp;rows&nbsp;and&nbsp;columns<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="GameCanvass-__init__"><strong>__init__</strong></a>(self, nrow, ncol)</dt></dl>
+
+<dl><dt><a name="GameCanvass-add_cell"><strong>add_cell</strong></a>(self, loc, side)</dt></dl>
+
+<dl><dt><a name="GameCanvass-free_cell"><strong>free_cell</strong></a>(self, loc)</dt><dd><tt>set&nbsp;the&nbsp;cell&nbsp;free</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-get_adjacent_cell_list"><strong>get_adjacent_cell_list</strong></a>(self, loc, query_type_blacklist)</dt><dd><tt>get&nbsp;the&nbsp;adjacent&nbsp;cell&nbsp;list&nbsp;based&nbsp;on&nbsp;a&nbsp;type&nbsp;check&nbsp;BLACKLIST<br>
+&nbsp;<br>
+NORMALLY&nbsp;there&nbsp;are&nbsp;8&nbsp;adjacent&nbsp;cells&nbsp;surrounding&nbsp;the&nbsp;(x,y)<br>
+BUT&nbsp;in&nbsp;the&nbsp;border&nbsp;area,&nbsp;some&nbsp;of&nbsp;the&nbsp;8&nbsp;cells&nbsp;might&nbsp;be&nbsp;non-existing&nbsp;and&nbsp;should&nbsp;be&nbsp;excluded<br>
+IN&nbsp;SOME&nbsp;OTHER&nbsp;CASES,&nbsp;we&nbsp;dont&nbsp;want&nbsp;'disabled'&nbsp;cells,&nbsp;or&nbsp;'free'&nbsp;cells,&nbsp;so&nbsp;we&nbsp;have&nbsp;a&nbsp;query&nbsp;blacklist<br>
+&nbsp;<br>
+loc:&nbsp;(x,y)&nbsp;location&nbsp;of&nbsp;the&nbsp;cell<br>
+query_type_blacklist:&nbsp;[]&nbsp;get&nbsp;all&nbsp;valid&nbsp;adjacent&nbsp;cells&nbsp;in&nbsp;a&nbsp;list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['disabled',&nbsp;'free'],&nbsp;to&nbsp;exclude&nbsp;'disabled'&nbsp;and&nbsp;'free'&nbsp;cells&nbsp;from&nbsp;the&nbsp;adjacent&nbsp;cells<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['disabled'],&nbsp;only&nbsp;exclude&nbsp;'disabled'&nbsp;cells&nbsp;from&nbsp;the&nbsp;adjacent&nbsp;cells</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-get_cell"><strong>get_cell</strong></a>(self, loc)</dt><dd><tt>get&nbsp;the&nbsp;cell&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;according&nbsp;to&nbsp;x,y&nbsp;coordinates<br>
+return&nbsp;None&nbsp;if&nbsp;cell&nbsp;is&nbsp;not&nbsp;found</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-init_canvass"><strong>init_canvass</strong></a>(self, nrow, ncol)</dt><dd><tt>initialize&nbsp;cell&nbsp;coordinates&nbsp;and&nbsp;state<br>
+&nbsp;<br>
+FIXME:<br>
+this&nbsp;is&nbsp;a&nbsp;dirty&nbsp;initialization,&nbsp;with&nbsp;hard-coded&nbsp;cell&nbsp;selection<br>
+an&nbsp;ideal&nbsp;one&nbsp;should&nbsp;be&nbsp;converting&nbsp;a&nbsp;visualized&nbsp;map&nbsp;like&nbsp;below&nbsp;to&nbsp;the&nbsp;desired&nbsp;cell&nbsp;map<br>
+&nbsp;<br>
++--------+<br>
+|xxx&nbsp;&nbsp;xxx|<br>
+|xx&nbsp;&nbsp;&nbsp;&nbsp;xx|&nbsp;&nbsp;x&nbsp;:&nbsp;disabled&nbsp;cells,&nbsp;not&nbsp;used&nbsp;in&nbsp;this&nbsp;map<br>
+|x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x|&nbsp;'&nbsp;':&nbsp;free&nbsp;cells<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;=&nbsp;:&nbsp;machine&nbsp;player<br>
+|&nbsp;&nbsp;====&nbsp;&nbsp;|&nbsp;&nbsp;+&nbsp;:&nbsp;human&nbsp;player<br>
+|&nbsp;&nbsp;&nbsp;==&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;&nbsp;&nbsp;++&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;&nbsp;++++&nbsp;&nbsp;|<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x|<br>
+|xx&nbsp;&nbsp;&nbsp;&nbsp;xx|<br>
+|xxx&nbsp;&nbsp;xxx|<br>
++--------+</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-lock_canvass"><strong>lock_canvass</strong></a>(self)</dt><dd><tt>lock&nbsp;all&nbsp;celss&nbsp;when&nbsp;game&nbsp;ends</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-move_cell"><strong>move_cell</strong></a>(self, loc_start, loc_end)</dt><dd><tt>move&nbsp;one&nbsp;cell&nbsp;from&nbsp;one&nbsp;location&nbsp;to&nbsp;another</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-print_debug_cell_map"><strong>print_debug_cell_map</strong></a>(self)</dt><dd><tt>print&nbsp;the&nbsp;ASCII&nbsp;cell&nbsp;map&nbsp;on&nbsp;the&nbsp;console<br>
+for&nbsp;debugging&nbsp;purpose&nbsp;ONLY</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-remove_cell"><strong>remove_cell</strong></a>(self, loc)</dt></dl>
+
+<dl><dt><a name="GameCanvass-reset_canvass"><strong>reset_canvass</strong></a>(self)</dt><dd><tt>when&nbsp;the&nbsp;game&nbsp;is&nbsp;reset,&nbsp;the&nbsp;canvass&nbsp;needs&nbsp;to&nbsp;be&nbsp;reset&nbsp;to&nbsp;initial&nbsp;state</tt></dd></dl>
+
+<dl><dt><a name="GameCanvass-unlock_canvass"><strong>unlock_canvass</strong></a>(self)</dt><dd><tt>unlock&nbsp;all&nbsp;cells&nbsp;when&nbsp;game&nbsp;is&nbsp;reset</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GameEngine">class <strong>GameEngine</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Define&nbsp;the&nbsp;rules&nbsp;of&nbsp;the&nbsp;game<br>
+&nbsp;-&nbsp;move&nbsp;rules<br>
+&nbsp;-&nbsp;defeat&nbsp;rules<br>
+&nbsp;-&nbsp;internal&nbsp;logic&nbsp;of&nbsp;the&nbsp;ganme<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="GameEngine-__init__"><strong>__init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GameEngine-about_me"><strong>about_me</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GameEngine-bot_play"><strong>bot_play</strong></a>(self, player)</dt></dl>
+
+<dl><dt><a name="GameEngine-get_human_player"><strong>get_human_player</strong></a>(self)</dt><dd><tt>return&nbsp;the&nbsp;human&nbsp;player&nbsp;<a href="__builtin__.html#object">object</a><br>
+limit:&nbsp;there&nbsp;is&nbsp;at&nbsp;most&nbsp;one&nbsp;human&nbsp;player&nbsp;in&nbsp;the&nbsp;game<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;there&nbsp;is&nbsp;possibility&nbsp;no&nbsp;human&nbsp;player&nbsp;is&nbsp;available&nbsp;in&nbsp;the&nbsp;game</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-human_play"><strong>human_play</strong></a>(self, x, y)</dt><dd><tt>handle&nbsp;the&nbsp;click&nbsp;event</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-is_all_pieces_dead"><strong>is_all_pieces_dead</strong></a>(self, player)</dt><dd><tt>Check&nbsp;if&nbsp;all&nbsp;pieces&nbsp;of&nbsp;any&nbsp;side&nbsp;are&nbsp;dead<br>
+This&nbsp;is&nbsp;one&nbsp;of&nbsp;the&nbsp;game&nbsp;winning(end)&nbsp;rules<br>
+&nbsp;<br>
+Input:&nbsp;player<br>
+Output:&nbsp;True&nbsp;/&nbsp;False</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-is_castle_occupied"><strong>is_castle_occupied</strong></a>(self, player)</dt><dd><tt>Check&nbsp;if&nbsp;the&nbsp;castle&nbsp;of&nbsp;any&nbsp;side&nbsp;is&nbsp;occupied<br>
+This&nbsp;is&nbsp;one&nbsp;of&nbsp;the&nbsp;game&nbsp;winning(end)&nbsp;rules<br>
+&nbsp;<br>
+Input:&nbsp;side&nbsp;=&nbsp;"north"&nbsp;or&nbsp;"south"<br>
+Output:&nbsp;True&nbsp;/&nbsp;False<br>
+&nbsp;<br>
+north&nbsp;castle&nbsp;points:&nbsp;(0,&nbsp;3),&nbsp;(0,&nbsp;4)<br>
+south&nbsp;castle&nbsp;points:&nbsp;(13,&nbsp;3),&nbsp;(13,&nbsp;4)</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-is_leap_over_rival"><strong>is_leap_over_rival</strong></a>(self, loc_start, loc_end, player)</dt><dd><tt>Check&nbsp;if&nbsp;(x1,&nbsp;y1)&nbsp;-&gt;&nbsp;(x2,&nbsp;y2)&nbsp;is&nbsp;a&nbsp;leap&nbsp;over&nbsp;rival<br>
+this&nbsp;is&nbsp;a&nbsp;helper&nbsp;function&nbsp;to&nbsp;determine&nbsp;whether&nbsp;one&nbsp;rival&nbsp;needs&nbsp;to&nbsp;be&nbsp;taken<br>
+&nbsp;<br>
+Return&nbsp;Value:<br>
+&nbsp;&nbsp;status&nbsp;-&nbsp;True/False,&nbsp;whether&nbsp;it&nbsp;is&nbsp;a&nbsp;leap&nbsp;over&nbsp;rival<br>
+&nbsp;&nbsp;loc&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;(x,y)&nbsp;location&nbsp;of&nbsp;the&nbsp;rival</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-is_legitimate_first_move"><strong>is_legitimate_first_move</strong></a>(self, loc_start, loc_end, player)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;whether&nbsp;the&nbsp;first&nbsp;jump&nbsp;is&nbsp;legitimate<br>
+The&nbsp;reason&nbsp;to&nbsp;distinguish&nbsp;first&nbsp;jump&nbsp;is&nbsp;first&nbsp;jump&nbsp;could&nbsp;be&nbsp;either<br>
+plain&nbsp;move&nbsp;or&nbsp;leap&nbsp;move&nbsp;while&nbsp;the&nbsp;successive&nbsp;moves&nbsp;could&nbsp;be&nbsp;only&nbsp;leap&nbsp;move<br>
+&nbsp;<br>
+Input:&nbsp;loc_start:&nbsp;(x,y)&nbsp;a&nbsp;tuple&nbsp;of&nbsp;row&nbsp;and&nbsp;column&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loc_end&nbsp;&nbsp;:&nbsp;(x,y)&nbsp;a&nbsp;tuple&nbsp;of&nbsp;row&nbsp;and&nbsp;column&nbsp;index<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player&nbsp;&nbsp;&nbsp;:&nbsp;need&nbsp;to&nbsp;know&nbsp;the&nbsp;play&nbsp;in&nbsp;order&nbsp;to&nbsp;do&nbsp;leap&nbsp;move<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;because&nbsp;leap&nbsp;move&nbsp;might&nbsp;involve&nbsp;removal&nbsp;of&nbsp;rival's&nbsp;cells<br>
+&nbsp;<br>
+Return&nbsp;Value:&nbsp;whether_this_is_a_legal_move&nbsp;(True/False),&nbsp;whether_it_is_terminated_move<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;legitimate&nbsp;plain&nbsp;move&nbsp;is&nbsp;a&nbsp;True&nbsp;for&nbsp;first&nbsp;move<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;legitimate&nbsp;leap&nbsp;move&nbsp;is&nbsp;a&nbsp;True&nbsp;for&nbsp;first&nbsp;move<br>
+&nbsp;&nbsp;&nbsp;&nbsp;terminated&nbsp;move&nbsp;means&nbsp;the&nbsp;first&nbsp;move&nbsp;is&nbsp;a&nbsp;plain&nbsp;move.&nbsp;In&nbsp;this&nbsp;case&nbsp;it&nbsp;is&nbsp;not&nbsp;allowed&nbsp;to&nbsp;move&nbsp;again<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;first&nbsp;move&nbsp;is&nbsp;a&nbsp;leap&nbsp;move,&nbsp;it&nbsp;is&nbsp;ok&nbsp;to&nbsp;leap&nbsp;again&nbsp;and&nbsp;again.</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-is_legitimate_leap"><strong>is_legitimate_leap</strong></a>(self, loc_start, loc_end, player)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;whether&nbsp;a&nbsp;leap&nbsp;move&nbsp;is&nbsp;legal<br>
+As&nbsp;leap&nbsp;move&nbsp;might&nbsp;involve&nbsp;removal&nbsp;of&nbsp;rival's&nbsp;cells<br>
+player&nbsp;is&nbsp;required&nbsp;in&nbsp;order&nbsp;to&nbsp;identify&nbsp;its&nbsp;identity<br>
+&nbsp;<br>
+Input&nbsp;:&nbsp;loc_start&nbsp;is&nbsp;a&nbsp;tuple&nbsp;of&nbsp;(x,y)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loc_end&nbsp;&nbsp;&nbsp;is&nbsp;a&nbsp;tuple&nbsp;of&nbsp;(x,y)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;the&nbsp;game&nbsp;player&nbsp;<a href="__builtin__.html#object">object</a><br>
+Output:&nbsp;True/False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;&nbsp;-&nbsp;it&nbsp;is&nbsp;a&nbsp;legal&nbsp;move<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;it's&nbsp;leaped&nbsp;on&nbsp;rival's&nbsp;cells,&nbsp;they&nbsp;are&nbsp;removed&nbsp;from&nbsp;the&nbsp;cell&nbsp;map<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;it's&nbsp;leaped&nbsp;on&nbsp;its&nbsp;own&nbsp;cells,&nbsp;just&nbsp;leap<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;False&nbsp;-&nbsp;it&nbsp;is&nbsp;not&nbsp;a&nbsp;legal&nbsp;move</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-is_match_end"><strong>is_match_end</strong></a>(self)</dt><dd><tt>Determine&nbsp;whether&nbsp;the&nbsp;current&nbsp;condition&nbsp;is&nbsp;a&nbsp;match&nbsp;end<br>
+meaning&nbsp;either&nbsp;the&nbsp;human&nbsp;player&nbsp;wins&nbsp;or&nbsp;the&nbsp;AI&nbsp;bot&nbsp;wins&nbsp;the&nbsp;game<br>
+&nbsp;<br>
+Game&nbsp;Winning&nbsp;Condition&nbsp;(meeting&nbsp;one&nbsp;wins&nbsp;the&nbsp;game)<br>
+1.&nbsp;one&nbsp;side&nbsp;taking&nbsp;the&nbsp;position&nbsp;of&nbsp;the&nbsp;other&nbsp;side<br>
+2.&nbsp;one&nbsp;side&nbsp;kills&nbsp;all&nbsp;cells&nbsp;of&nbsp;the&nbsp;other&nbsp;side<br>
+&nbsp;<br>
+Input:&nbsp;N/A&nbsp;(Check&nbsp;the&nbsp;global&nbsp;class&nbsp;canvass)<br>
+Output:&nbsp;(result,&nbsp;who)&nbsp;result&nbsp;=&nbsp;True&nbsp;/&nbsp;False,&nbsp;who&nbsp;=&nbsp;"north"&nbsp;/&nbsp;"south"</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-reset_game"><strong>reset_game</strong></a>(self)</dt><dd><tt>reset&nbsp;the&nbsp;game&nbsp;canvass&nbsp;to&nbsp;default</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-start"><strong>start</strong></a>(self)</dt><dd><tt>kickstart&nbsp;the&nbsp;game&nbsp;by&nbsp;calling&nbsp;the&nbsp;ui&nbsp;display</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-start_game"><strong>start_game</strong></a>(self)</dt><dd><tt>start&nbsp;the&nbsp;game<br>
+let&nbsp;north&nbsp;plays&nbsp;first</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>ncol</strong> = 8</dl>
+
+<dl><dt><strong>north_player</strong> = None</dl>
+
+<dl><dt><strong>nrow</strong> = 14</dl>
+
+<dl><dt><strong>south_player</strong> = None</dl>
+
+<dl><dt><strong>status</strong> = ''</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Player">class <strong>Player</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>the&nbsp;AI&nbsp;game&nbsp;player<br>
+&nbsp;<br>
+common&nbsp;attributes:<br>
+------------------<br>
+-&nbsp;robot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;True/False<br>
+-&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;a&nbsp;human&nbsp;readable&nbsp;name&nbsp;of&nbsp;the&nbsp;player<br>
+-&nbsp;side&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;'north'&nbsp;or&nbsp;'south'<br>
+-&nbsp;move_status&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;intermediate&nbsp;status&nbsp;['idle',&nbsp;'selected',&nbsp;'hopped']<br>
+-&nbsp;list_of_pieces&nbsp;:&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;active&nbsp;pieces(soldiers)<br>
+-&nbsp;castle_points&nbsp;&nbsp;:&nbsp;castle&nbsp;points&nbsp;of&nbsp;this&nbsp;side<br>
+-&nbsp;rival&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;the&nbsp;opponent&nbsp;player<br>
+-&nbsp;canvass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;the&nbsp;global&nbsp;canvass&nbsp;view<br>
+&nbsp;<br>
+robot&nbsp;attributes&nbsp;:<br>
+------------------<br>
+-&nbsp;intell_level&nbsp;&nbsp;&nbsp;:&nbsp;the&nbsp;intelligence&nbsp;level&nbsp;(1,2,3),&nbsp;the&nbsp;higher&nbsp;the&nbsp;smarter<br>
+-<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Player-__init__"><strong>__init__</strong></a>(self, robot<font color="#909090">=True</font>, name<font color="#909090">='aibot'</font>, side<font color="#909090">=''</font>, move_status<font color="#909090">='idle'</font>, difficulty<font color="#909090">=1</font>)</dt></dl>
+
+<dl><dt><a name="Player-action_simulation"><strong>action_simulation</strong></a>(self, player, piece, path)</dt><dd><tt>Given&nbsp;a&nbsp;piece&nbsp;and&nbsp;path,&nbsp;simulate&nbsp;the&nbsp;action&nbsp;and&nbsp;return&nbsp;the&nbsp;captured&nbsp;set&nbsp;for&nbsp;recovery.</tt></dd></dl>
+
+<dl><dt><a name="Player-add_cell_to_select_path"><strong>add_cell_to_select_path</strong></a>(self, loc)</dt></dl>
+
+<dl><dt><a name="Player-add_piece"><strong>add_piece</strong></a>(self, location)</dt><dd><tt>add&nbsp;one&nbsp;piece&nbsp;to&nbsp;the&nbsp;canvass</tt></dd></dl>
+
+<dl><dt><a name="Player-clear_select_path"><strong>clear_select_path</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Player-estimate_function"><strong>estimate_function</strong></a>(self)</dt><dd><tt>Estimate&nbsp;utility&nbsp;based&nbsp;on&nbsp;current&nbsp;canvass&nbsp;to&nbsp;help&nbsp;player&nbsp;make&nbsp;decision<br>
+It&nbsp;composed&nbsp;of&nbsp;4&nbsp;parts:<br>
+1.&nbsp;distance&nbsp;to&nbsp;castle,&nbsp;the&nbsp;closer&nbsp;the&nbsp;better.<br>
+2.&nbsp;penalty&nbsp;of&nbsp;being&nbsp;captured<br>
+3.&nbsp;penalty&nbsp;of&nbsp;stoping&nbsp;beside&nbsp;a&nbsp;rival&nbsp;piece<br>
+4.&nbsp;penalty&nbsp;of&nbsp;far&nbsp;away&nbsp;from&nbsp;center</tt></dd></dl>
+
+<dl><dt><a name="Player-init_castle_points"><strong>init_castle_points</strong></a>(self)</dt><dd><tt>initialize&nbsp;the&nbsp;castle&nbsp;points&nbsp;of&nbsp;one&nbsp;player<br>
+north&nbsp;player&nbsp;and&nbsp;south&nbsp;play&nbsp;has&nbsp;different&nbsp;castle&nbsp;points</tt></dd></dl>
+
+<dl><dt><a name="Player-init_pieces"><strong>init_pieces</strong></a>(self)</dt><dd><tt>initialize&nbsp;the&nbsp;pieces&nbsp;of&nbsp;this&nbsp;player<br>
+north&nbsp;player&nbsp;and&nbsp;south&nbsp;player&nbsp;has&nbsp;different&nbsp;default&nbsp;pieces&nbsp;locations</tt></dd></dl>
+
+<dl><dt><a name="Player-is_match_point"><strong>is_match_point</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Player-is_self_piece"><strong>is_self_piece</strong></a>(self, loc)</dt><dd><tt>Input:<br>
+&nbsp;&nbsp;loc&nbsp;is&nbsp;a&nbsp;tuple&nbsp;like&nbsp;(x,y)<br>
+Return&nbsp;Value:<br>
+&nbsp;&nbsp;True/False&nbsp;-&nbsp;whether&nbsp;this&nbsp;location&nbsp;is&nbsp;a&nbsp;valid&nbsp;piece&nbsp;for&nbsp;this&nbsp;player</tt></dd></dl>
+
+<dl><dt><a name="Player-max_value"><strong>max_value</strong></a>(self, level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)</dt><dd><tt>Help&nbsp;robot&nbsp;to&nbsp;find&nbsp;the&nbsp;optimal&nbsp;action</tt></dd></dl>
+
+<dl><dt><a name="Player-min_value"><strong>min_value</strong></a>(self, level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)</dt><dd><tt>Calculate&nbsp;best&nbsp;solution&nbsp;of&nbsp;rival&nbsp;player</tt></dd></dl>
+
+<dl><dt><a name="Player-move_piece"><strong>move_piece</strong></a>(self, loc_from, loc_to)</dt><dd><tt>move&nbsp;one&nbsp;piece&nbsp;from&nbsp;loc1&nbsp;to&nbsp;loc2<br>
+update&nbsp;player&nbsp;piece&nbsp;info&nbsp;as&nbsp;well&nbsp;as&nbsp;canvass&nbsp;map</tt></dd></dl>
+
+<dl><dt><a name="Player-possible_action"><strong>possible_action</strong></a>(self, piece, player)</dt><dd><tt>Calculate&nbsp;every&nbsp;possible&nbsp;of&nbsp;each&nbsp;piece<br>
+Input:&nbsp;available&nbsp;piece<br>
+Output:&nbsp;all&nbsp;possible&nbsp;path&nbsp;of&nbsp;this&nbsp;piece</tt></dd></dl>
+
+<dl><dt><a name="Player-possible_jump"><strong>possible_jump</strong></a>(self, cell_loc, player, current_path, explored_set, pending_set)</dt><dd><tt>Calculate&nbsp;all&nbsp;possible&nbsp;path&nbsp;for&nbsp;a&nbsp;cell&nbsp;to&nbsp;move,&nbsp;is&nbsp;used&nbsp;for&nbsp;robot&nbsp;to&nbsp;choose&nbsp;the&nbsp;best&nbsp;move.<br>
+&nbsp;<br>
+Input:&nbsp;cell_loc:&nbsp;a&nbsp;tuple&nbsp;like&nbsp;(x,y)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current_path:&nbsp;the&nbsp;path&nbsp;from&nbsp;original&nbsp;path&nbsp;to&nbsp;current&nbsp;cell<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;explored_set:&nbsp;all&nbsp;cell&nbsp;expeared&nbsp;on&nbsp;the&nbsp;path<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pending_set:&nbsp;enemy&nbsp;piece&nbsp;that&nbsp;have&nbsp;been&nbsp;captured<br>
+Output:&nbsp;pathes&nbsp;reached&nbsp;this&nbsp;piece&nbsp;and&nbsp;moving&nbsp;on</tt></dd></dl>
+
+<dl><dt><a name="Player-remove_piece"><strong>remove_piece</strong></a>(self, location)</dt><dd><tt>remove&nbsp;one&nbsp;piece&nbsp;from&nbsp;the&nbsp;canvass</tt></dd></dl>
+
+<dl><dt><a name="Player-reset_player"><strong>reset_player</strong></a>(self)</dt><dd><tt>This&nbsp;is&nbsp;for&nbsp;the&nbsp;game&nbsp;reset<br>
+reset&nbsp;all&nbsp;player&nbsp;info&nbsp;to&nbsp;the&nbsp;initial&nbsp;state</tt></dd></dl>
+
+<dl><dt><a name="Player-select_piece"><strong>select_piece</strong></a>(self, loc)</dt></dl>
+
+<dl><dt><a name="Player-set_canvass"><strong>set_canvass</strong></a>(self, canvass)</dt></dl>
+
+<dl><dt><a name="Player-set_game"><strong>set_game</strong></a>(self, game)</dt></dl>
+
+<dl><dt><a name="Player-set_intell_level"><strong>set_intell_level</strong></a>(self, level)</dt></dl>
+
+<dl><dt><a name="Player-set_rival"><strong>set_rival</strong></a>(self, rival)</dt></dl>
+
+<dl><dt><a name="Player-simulation_recovery"><strong>simulation_recovery</strong></a>(self, player, piece, path, pending_set)</dt><dd><tt>Recover&nbsp;simulated&nbsp;canvass&nbsp;to&nbsp;original&nbsp;one</tt></dd></dl>
+
+<dl><dt><a name="Player-whats_next_move"><strong>whats_next_move</strong></a>(self)</dt><dd><tt>from&nbsp;current&nbsp;canvass&nbsp;situation,&nbsp;calculate&nbsp;what&nbsp;is&nbsp;next&nbsp;step<br>
+input:&nbsp;&nbsp;<br>
+output:&nbsp;[(x1,y1),(x2,y2),(x3,y3),...]</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>list_of_pieces</strong> = []</dl>
+
+<dl><dt><strong>move_status</strong> = 'idle'</dl>
+
+<dl><dt><strong>name</strong> = 'aibot'</dl>
+
+<dl><dt><strong>robot</strong> = True</dl>
+
+<dl><dt><strong>select_loc</strong> = None</dl>
+
+<dl><dt><strong>select_path</strong> = []</dl>
+
+<dl><dt><strong>side</strong> = 'north'</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-main"><strong>main</strong></a>(argv)</dt><dd><tt>main&nbsp;function<br>
+arguments&nbsp;parsing,&nbsp;initialize&nbsp;players,&nbsp;and&nbsp;launch&nbsp;game&nbsp;with&nbsp;two&nbsp;players</tt></dd></dl>
+ <dl><dt><a name="-print_cmdline_help"><strong>print_cmdline_help</strong></a>()</dt><dd><tt>command&nbsp;line&nbsp;helper</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__author__</strong> = 'Caicai CHEN &lt;caicai.chen@nyu.edu&gt;'<br>
+<strong>__date__</strong> = '22 Apr 2015'</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Caicai&nbsp;CHEN&nbsp;&lt;caicai.chen@nyu.edu&gt;</td></tr></table>
+</body></html>
