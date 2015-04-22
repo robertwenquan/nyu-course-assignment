@@ -39,6 +39,9 @@ class PlayGround(object):
     ncol = game.ncol
     nrow = game.nrow
 
+    self.choose_side = 'north'
+    self.choose_level = 1
+
     self.width = self.margin * 2 + self.unit * ncol
     self.height = self.margin * 5 + self.unit * nrow
     self.game = game
