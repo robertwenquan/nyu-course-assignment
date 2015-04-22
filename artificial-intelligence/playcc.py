@@ -30,7 +30,7 @@
 # TODO: DONE end the game when winning condition is met.
 # TODO: DONE white(north) always starts first
 # TODO: DONE choose side for human player on configuration
-# TODO(rw): choose side on the UI
+# TODO: DONE choose side on the UI
 # TODO: DONE performance metrics interface definition
 # TODO: DONE expose performance metrics to UI for each move
 # TODO: DONE record performance metrics for each move
@@ -68,10 +68,9 @@
 #
 # FIXME(rw): UI doesn't refresh in the callback function
 # FIXME(rw): on Mac, cell background color is not shown
-# FIXME(rw): on Mac, menu is not shown
-# FIXME(cc): FIXED one piece, game point not win
-# FIXME(cc): two pieces, game point not win but approaching the further piece
-# FIXME(cc): in some cases, there is no moving path for the robot
+# FIXME: FIXED one piece, game point not win
+# FIXME: FIXED two pieces, game point not win but approaching the further piece
+# FIXME: FIXED in some cases, there is no moving path for the robot
 #
 
 import sys
