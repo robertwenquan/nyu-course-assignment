@@ -47,7 +47,7 @@ __date__ = "22 Apr 2015"
 # TODO: DONE exceptional evaluation function
 #
 #################################################################
-# Aspirational goals (from software architecture and ease point of view)
+# Aspirational goals (for software architecture and usability)
 #
 # TODO(rw): unselect a cell when it was chosen by mistake
 # TODO(rw): rollback and forward
@@ -66,14 +66,14 @@ __date__ = "22 Apr 2015"
 # TODO: save game records
 #
 #################################################################
-# Bugs
+# Known Bugs
 #
 # FIXME: UI doesn't refresh in the callback function
 # FIXME: FIXED on Mac, cell background color is not shown
 # FIXME: FIXED one piece, game point not win
 # FIXME: FIXED two pieces, game point not win but approaching the further piece
 # FIXME: FIXED in some cases, there is no moving path for the robot
-# FIXME: game options popup window is beneath the main game canvass window
+# FIXME: FIXED game options popup window is beneath the main game canvass window
 # FIXME: can click START GAME to re-enable the game canvass
 # FIXME: reset does not reset the statistics metrics
 #
