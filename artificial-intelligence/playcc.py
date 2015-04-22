@@ -487,12 +487,19 @@ class Player(object):
     beta = 1000
     level = self.intell_level
 
-    move_statistics = (1, 0, 0, 0)
+    '''
+    Initiate moving statistics
+    '''
+    num_pruning_max = 0
+    num_pruning_min = 0
+    nodes_generated = 1 
+
+    move_statistics = (1, nodes_generated, num_pruning_max, num_pruning_min)
 
     '''
     Check if it is match point, if so, make the winning action.
     '''
-    match_point_piece, match_point_path = self.is_match_point()
+    match_point_piece, match_point_path, num_node = self.is_match_point()
 
     if match_point_piece != (-1,-1):
       optimum_path.append(match_point_piece)
@@ -500,14 +507,11 @@ class Player(object):
       for step in match_point_path:
         optimum_path.append(step)
 
+      nodes_generated += num_node
+      move_statistics = (1, nodes_generated, num_pruning_max, num_pruning_min)
+
       return optimum_path, move_statistics
 
-    '''
-    Initiate moving statistics
-    '''
-    num_pruning_max = 0
-    num_pruning_min = 0
-    nodes_generated = 0
 
     '''
     Get optimal action by alpha-beta algorithm
@@ -829,6 +833,7 @@ class Player(object):
   def is_match_point(self):
     match_point_piece = (-1,-1)
     init_path = []
+    nodes_gen = 0
 
     copy_pieces = copy(self.list_of_pieces)
 
@@ -836,21 +841,24 @@ class Player(object):
       actions = self.possible_action(piece, self)
 
       for path in actions:
+        nodes_gen += 1
 
         if (self.side == 'north' and (path[-1] == (13, 3) or path[-1] == (13, 4))) or \
           (self.side == 'south' and (path[-1] == (0, 3) or path[-1] == (0, 4))):
-          return piece, path
+          print nodes_gen
+          return piece, path, nodes_gen
 
         pending_set = self.action_simulation(self,piece,path)
 
         if len(self.rival.list_of_pieces) == 0:
           self.simulation_recovery(self.rival,piece,path,pending_set)
-          return piece, path
+          print nodes_gen
+          return piece, path, nodes_gen
 
         else:
           self.simulation_recovery(self.rival,piece,path,pending_set)
 
-    return match_point_piece, init_path
+    return match_point_piece, init_path, nodes_gen
 
 class GameEngine(object):
   '''
