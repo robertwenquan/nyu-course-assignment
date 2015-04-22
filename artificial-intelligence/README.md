@@ -45,7 +45,8 @@ $ pylint --disable=locally-disabled --max-line-length=100 --indent-string='  ' *
 
 #### Documentation
 Below are some documentation for the source files
-* ![playcc](playcc.html)
+* ![Game Play](playcc.html)
+* ![User Interface](tkui.html)
 
 #### Screenshot
 
