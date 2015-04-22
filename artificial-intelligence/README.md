@@ -43,6 +43,9 @@ with the following settings:
 $ pylint --disable=locally-disabled --max-line-length=100 --indent-string='  ' *.py
 ```
 
+#### Documentation
+* ![playcc](playcc.html)
+
 #### Screenshot
 
 * game launch screen<br>
