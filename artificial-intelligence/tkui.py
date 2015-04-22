@@ -159,15 +159,10 @@ class PlayGround(object):
              2 : 'south'
            }
 
-    LEVEL = { 1 : 'tao2' ,
-              2 : 'tao1' ,
-              3 : 'caicai'
-            }
-
     self.choose_side = SIDE[choose_side.get()]
-    self.choose_level = LEVEL[choose_level.get()]
+    self.choose_level = int(choose_level.get())
 
-    print 'selected start options'
+    print 'Selected start options'
     print 'Side', self.choose_side
     print 'Level', self.choose_level
 

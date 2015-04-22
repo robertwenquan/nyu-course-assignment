@@ -918,6 +918,10 @@ class GameEngine(object):
       print 'BUG: Check your code!!!'
       exit(55)
 
+    player = self.get_human_player().rival
+    assert(player != None)
+    player.set_intell_level(self.ui.choose_level)
+
     # if the north player is robot, let it play first
     if self.north_player.robot == True:
       self.bot_play(self.north_player)
