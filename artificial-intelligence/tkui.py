@@ -40,7 +40,7 @@ class PlayGround(object):
     nrow = game.nrow
 
     self.choose_side = 'north'
-    self.choose_level = 1
+    self.choose_level = 2
 
     self.width = self.margin * 2 + self.unit * ncol
     self.height = self.margin * 5 + self.unit * nrow
@@ -156,7 +156,7 @@ class PlayGround(object):
     bt_level3.place(x=180, y=40)
 
     # by default, the game is hard
-    bt_level3.select()
+    bt_level2.select()
 
     button = Button(popup, text='SET', \
               command=lambda: self.selected_start_options(popup, v1, v2))
