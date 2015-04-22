@@ -434,6 +434,9 @@ class Player(object):
   def set_canvass(self, canvass):
     self.canvass = canvass
 
+  def set_intell_level(self, level):
+    self.intell_level = level
+
   def set_game(self, game):
     self.game = game
 

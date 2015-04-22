@@ -43,6 +43,7 @@ class PlayGround(object):
     self.icon_white = PhotoImage(file="images/white.gif")
     self.icon_black = PhotoImage(file="images/black.gif")
     self.icon_none = PhotoImage(file="images/none.gif")
+    self.icon_disabled = PhotoImage(file="images/disabled.gif")
 
     self.prepare_the_playground(ncol, nrow)
 
@@ -196,24 +197,10 @@ class PlayGround(object):
         # active buttons, with callback function passing the button index
         if cell.status == 'disabled':
           # disabled buttons, which are unclickable
-          button = Button(self.gui,
-                          state=DISABLED,
-                          height=50,
-                          width=50,
-                          background='#875b00')
-        elif cell.status == 'free':
-          color = 'white'
-          button = Button(self.gui, activebackground=color, height=50, width=50, cursor="target", \
-              background='#dbb25c', \
-              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
-        elif cell.status == 'north':
-          button = Button(self.gui, activebackground='grey', height=50, width=50, cursor="target", \
-              image=self.icon_white, background='#dbb25c', \
-              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
-        elif cell.status == 'south':
-          button = Button(self.gui, activebackground='grey', height=50, width=50, cursor="target", \
-              image=self.icon_black, background='#dbb25c', \
-              command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
+          button = Button(self.gui, state=DISABLED)
+        else:
+          button = Button(self.gui, cursor="target", \
+                   command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
 
         # calculate the x,y coordinates and place the buttons
         offset_x = self.margin + self.unit * col_idx
@@ -240,18 +227,14 @@ class PlayGround(object):
         idx = ncol * row_idx + col_idx
         button = self.button_map[idx]
 
-        if cell.lock == True:
-          button.configure(state=DISABLED)
-          continue
-        else:
-          button.configure(state=NORMAL)
-
         if cell.status == 'free':
           button.configure(image=self.icon_none)
         elif cell.status == 'north':
           button.configure(image=self.icon_white)
         elif cell.status == 'south':
           button.configure(image=self.icon_black)
+        elif cell.status == 'disabled':
+          button.configure(image=self.icon_disabled)
 
         if cell.selected == True:
           button.configure(bg="#234")
@@ -260,6 +243,12 @@ class PlayGround(object):
             button.configure(bg="#875b00")
           else:
             button.configure(bg="#dbb25c")
+
+        if cell.lock == True:
+          button.configure(state=DISABLED)
+          continue
+        else:
+          button.configure(state=NORMAL)
 
   def reset_ui(self):
     '''
