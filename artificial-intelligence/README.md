@@ -44,6 +44,7 @@ $ pylint --disable=locally-disabled --max-line-length=100 --indent-string='  ' *
 ```
 
 #### Documentation
+Below are some documentation for the source files
 * ![playcc](playcc.html)
 
 #### Screenshot
