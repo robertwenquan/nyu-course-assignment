@@ -8,6 +8,9 @@
  The GUI is based on Python Tkinter interface via Tcl/Tk
 """
 
+__author__ = "Caicai CHEN <caicai.chen@nyu.edu>"
+__date__ = "22 Apr 2015"
+
 from Tkinter import Tk, Canvas, Menu
 from Tkinter import Label, Button, Radiobutton
 from Tkinter import PhotoImage, Toplevel
