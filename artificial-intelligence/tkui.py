@@ -48,9 +48,13 @@ class PlayGround(object):
     self.prepare_the_playground(ncol, nrow)
 
     # end game label with a gif photo
-    self.photo_endgame = PhotoImage(file="images/game-over.gif")
-    self.label_endgame = Label(image=self.photo_endgame)
-    self.label_endgame.image = self.photo_endgame
+    self.photo_endgame_win = PhotoImage(file="images/game-over-win.gif")
+    self.label_endgame_win = Label(image=self.photo_endgame_win)
+    self.label_endgame_win.image = self.photo_endgame_win
+
+    self.photo_endgame_lose = PhotoImage(file="images/game-over-lose.gif")
+    self.label_endgame_lose = Label(image=self.photo_endgame_lose)
+    self.label_endgame_lose.image = self.photo_endgame_lose
 
     # game options pop up box
     self.select_start_options()
@@ -249,7 +253,8 @@ class PlayGround(object):
     '''
     reset UI by hiding the game winning picture from the canvass
     '''
-    self.label_endgame.place_forget()
+    self.label_endgame_win.place_forget()
+    self.label_endgame_lose.place_forget()
 
   def notify_win(self, who):
     '''
@@ -260,7 +265,11 @@ class PlayGround(object):
     if who == 'north' or who == 'south':
       self.game.canvass.lock_canvass()
       self.refresh_playground()
-      self.label_endgame.place(x=20, y=219)
+
+      if who == 'north':
+        self.label_endgame_win.place(x=20, y=219)
+      else:
+        self.label_endgame_lose.place(x=20, y=219)
 
   def update_statistics(self, move_stats):
     '''
