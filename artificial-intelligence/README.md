@@ -45,8 +45,8 @@ $ pylint --disable=locally-disabled --max-line-length=100 --indent-string='  ' *
 
 #### Documentation
 Below are some documentation for the source files
-* ![Game Play](playcc.html)
-* ![User Interface](tkui.html)
+* ![Game Play](http://htmlpreview.github.io/?https://raw.githubusercontent.com/robertwenquan/nyu-course-assignment/master/artificial-intelligence/playcc.html?token=AIe0tyqOXUBuKBfvY-UuqUf6mgQg7TIvks5VQHqewA%3D%3D)
+* ![User Interface](http://htmlpreview.github.io/?https://raw.githubusercontent.com/robertwenquan/nyu-course-assignment/master/artificial-intelligence/tkui.html?token=AIe0t_tfXT3WsD1nSYnTUMdlicRIprSVks5VQHpVwA%3D%3D)
 
 #### Screenshot
 
