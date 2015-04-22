@@ -40,8 +40,7 @@
 #
 # TODO: DONE successive jumps and captures
 # TODO: DONE graphical interface
-# TODO: DONE intelligence level
-# TODO(rw): choose intelligence level before game starts, on UI
+# TODO: DONE choose intelligence level before game starts, on UI
 # TODO: DONE exceptional evaluation function
 #
 #################################################################
@@ -66,11 +65,14 @@
 #################################################################
 # Bugs
 #
-# FIXME(rw): UI doesn't refresh in the callback function
-# FIXME(rw): on Mac, cell background color is not shown
+# FIXME: UI doesn't refresh in the callback function
+# FIXME: FIXED on Mac, cell background color is not shown
 # FIXME: FIXED one piece, game point not win
 # FIXME: FIXED two pieces, game point not win but approaching the further piece
 # FIXME: FIXED in some cases, there is no moving path for the robot
+# FIXME: game options popup window is beneath the main game canvass window
+# FIXME: can click START GAME to re-enable the game canvass
+# FIXME: reset does not reset the statistics metrics
 #
 
 import sys
