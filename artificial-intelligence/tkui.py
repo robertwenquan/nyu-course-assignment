@@ -262,6 +262,7 @@ class PlayGround(object):
     the whole canvass will be locked and unclickable at this point
     '''
 
+    # FIXME: not finished yet
     if who == 'north' or who == 'south':
       self.game.canvass.lock_canvass()
       self.refresh_playground()
