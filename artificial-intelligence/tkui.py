@@ -262,15 +262,18 @@ class PlayGround(object):
     the whole canvass will be locked and unclickable at this point
     '''
 
-    # FIXME: not finished yet
-    if who == 'north' or who == 'south':
-      self.game.canvass.lock_canvass()
-      self.refresh_playground()
+    assert(who == 'north' or who == 'south')
 
-      if who == 'north':
-        self.label_endgame_win.place(x=20, y=219)
-      else:
-        self.label_endgame_lose.place(x=20, y=219)
+    self.game.canvass.lock_canvass()
+    self.refresh_playground()
+
+    player = self.game.get_human_player()
+    assert(player != None)
+
+    if player.side == who:
+      self.label_endgame_win.place(x=20, y=219)
+    else:
+      self.label_endgame_lose.place(x=20, y=219)
 
   def update_statistics(self, move_stats):
     '''
