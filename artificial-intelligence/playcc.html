@@ -161,6 +161,15 @@ Data descriptors defined here:<br>
 
 <dl><dt><a name="GameEngine-bot_play"><strong>bot_play</strong></a>(self, player)</dt></dl>
 
+<dl><dt><a name="GameEngine-get_cached_move"><strong>get_cached_move</strong></a>(self)</dt><dd><tt>get&nbsp;cached&nbsp;optimal&nbsp;move<br>
+&nbsp;<br>
+this&nbsp;cached&nbsp;result&nbsp;is&nbsp;based&nbsp;on&nbsp;the&nbsp;exactly&nbsp;the&nbsp;same&nbsp;canvass&nbsp;senario<br>
+it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;at&nbsp;game&nbsp;play<br>
+&nbsp;<br>
+Input:&nbsp;None.&nbsp;But&nbsp;implicitely&nbsp;use&nbsp;the&nbsp;game&nbsp;canvass,&nbsp;and&nbsp;the&nbsp;list&nbsp;of&nbsp;pieces&nbsp;for&nbsp;both&nbsp;players<br>
+Output:&nbsp;[]&nbsp;at&nbsp;cache&nbsp;miss<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(x,y),&nbsp;(x,y),&nbsp;...]&nbsp;at&nbsp;cache&nbsp;hit</tt></dd></dl>
+
 <dl><dt><a name="GameEngine-get_human_player"><strong>get_human_player</strong></a>(self)</dt><dd><tt>return&nbsp;the&nbsp;human&nbsp;player&nbsp;<a href="__builtin__.html#object">object</a><br>
 limit:&nbsp;there&nbsp;is&nbsp;at&nbsp;most&nbsp;one&nbsp;human&nbsp;player&nbsp;in&nbsp;the&nbsp;game<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;there&nbsp;is&nbsp;possibility&nbsp;no&nbsp;human&nbsp;player&nbsp;is&nbsp;available&nbsp;in&nbsp;the&nbsp;game</tt></dd></dl>
@@ -227,7 +236,20 @@ Game&nbsp;Winning&nbsp;Condition&nbsp;(meeting&nbsp;one&nbsp;wins&nbsp;the&nbsp;
 Input:&nbsp;N/A&nbsp;(Check&nbsp;the&nbsp;global&nbsp;class&nbsp;canvass)<br>
 Output:&nbsp;(result,&nbsp;who)&nbsp;result&nbsp;=&nbsp;True&nbsp;/&nbsp;False,&nbsp;who&nbsp;=&nbsp;"north"&nbsp;/&nbsp;"south"</tt></dd></dl>
 
+<dl><dt><a name="GameEngine-load_cached_move"><strong>load_cached_move</strong></a>(self)</dt><dd><tt>load&nbsp;cached&nbsp;optimal&nbsp;move&nbsp;results&nbsp;from&nbsp;pickle&nbsp;file<br>
+it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;at&nbsp;game&nbsp;play<br>
+&nbsp;<br>
+Input:&nbsp;None.&nbsp;But&nbsp;implicitely&nbsp;load&nbsp;'game_move.cache'&nbsp;from&nbsp;the&nbsp;current&nbsp;directory<br>
+Output:&nbsp;A&nbsp;dictionary<br>
+&nbsp;<br>
+WHEN&nbsp;file&nbsp;is&nbsp;not&nbsp;found,&nbsp;the&nbsp;dictionary&nbsp;will&nbsp;be&nbsp;empty&nbsp;but&nbsp;it&nbsp;does&nbsp;not&nbsp;affect&nbsp;the&nbsp;game&nbsp;initialization</tt></dd></dl>
+
 <dl><dt><a name="GameEngine-reset_game"><strong>reset_game</strong></a>(self)</dt><dd><tt>reset&nbsp;the&nbsp;game&nbsp;canvass&nbsp;to&nbsp;default</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-save_cached_move"><strong>save_cached_move</strong></a>(self, move_path, move_stats)</dt><dd><tt>save&nbsp;cached&nbsp;move&nbsp;for&nbsp;the&nbsp;current&nbsp;game&nbsp;canvass&nbsp;scenario<br>
+it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;when&nbsp;the&nbsp;same&nbsp;scenario&nbsp;comes&nbsp;again<br>
+&nbsp;<br>
+the&nbsp;cached&nbsp;result&nbsp;will&nbsp;be&nbsp;saved&nbsp;into&nbsp;a&nbsp;dictionary&nbsp;first,&nbsp;and&nbsp;then&nbsp;into&nbsp;a&nbsp;pickle&nbsp;file</tt></dd></dl>
 
 <dl><dt><a name="GameEngine-start"><strong>start</strong></a>(self)</dt><dd><tt>kickstart&nbsp;the&nbsp;game&nbsp;by&nbsp;calling&nbsp;the&nbsp;ui&nbsp;display</tt></dd></dl>
 
