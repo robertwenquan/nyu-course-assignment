@@ -1148,6 +1148,41 @@ class GameEngine(object):
     #################################################
     self.bot_play(player.rival)
 
+  def load_cached_move(self):
+    '''
+    load cached optimal move results from pickle file
+    it is to save redundant time of thinking at game play
+
+    Input: None. But implicitely load 'game_move.cache' from the current directory
+    Output: A dictionary
+
+    WHEN file is not found, the dictionary will be empty but it does not affect the game initialization
+    '''
+    pass
+
+  def get_cached_move(self):
+    '''
+    get cached optimal move
+
+    this cached result is based on the exactly the same canvass senario
+    it is to save redundant time of thinking at game play
+
+    Input: None. But implicitely use the game canvass, and the list of pieces for both players
+    Output: [] at cache miss
+            [(x,y), (x,y), ...] at cache hit
+    '''
+
+    return ([],(0,0,0,0))
+
+  def save_cached_move(self, move_path, move_stats):
+    '''
+    save cached move for the current game canvass scenario
+    it is to save redundant time of thinking when the same scenario comes again
+
+    the cached result will be saved into a dictionary first, and then into a pickle file
+    '''
+    pass
+
   def bot_play(self, player):
 
     if player.robot != True:
@@ -1156,7 +1191,10 @@ class GameEngine(object):
 
     # get optimal move path
     # along with its move statistics
-    move_path, move_stats = player.whats_next_move()
+    move_path, move_stats = self.get_cached_move()
+    if move_path == []:
+      move_path, move_stats = player.whats_next_move()
+      self.save_cached_move(move_path, move_stats)
 
     print '----------- Moving Path --------------'
     for loc in move_path:
