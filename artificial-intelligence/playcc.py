@@ -499,23 +499,17 @@ class Player(object):
           The caller of this function must handle the rival piece removals
     '''
 
-    maximum_value = -1000
     optimum_path = []
-    best_move = (-1,-1)
     alpha = -1000
     beta = 1000
     level = self.intell_level
 
-    '''
-    Initiate moving statistics
-    '''
+    #Initiate moving statistics
     num_pruning_max = 0
     num_pruning_min = 0
     nodes_generated = 1 
 
-    '''
-    Check if it is match point, if so, make the winning action.
-    '''
+    #Check if it is match point, if so, make the winning action.
     match_point_piece, match_point_path, num_node = self.is_match_point()
 
     if match_point_piece != (-1,-1):
@@ -530,23 +524,17 @@ class Player(object):
       return optimum_path, move_statistics
 
 
-    '''
-    Get optimal action by alpha-beta algorithm
-    '''
+    #Get optimal action by alpha-beta algorithm
     maximum_value, best_piece, optimum_action, num_pruning_max, num_pruning_min, nodes_generated, max_depth \
                       = self.max_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
 
-    '''
-    Construct the optimal path by combine action piece and it's optimal moving path
-    '''
+    #Construct the optimal path by combine action piece and it's optimal moving path
     optimum_path.append(best_piece)
 
     for step in optimum_action:
       optimum_path.append(step)
 
-    '''
-    Update move_statistics
-    '''
+    #Update move_statistics
     max_depth_reached = level - max_depth
     move_statistics = (max_depth_reached, nodes_generated, num_pruning_max, num_pruning_min)
 
@@ -555,7 +543,13 @@ class Player(object):
   def max_value(self, level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated):
     '''
     Help robot to find the optimal action
+    Choose the action which can achieve the highest utility
+
+    Input: alpha beta value and current simulated canvass
+    Output: maximum utility and a list of location coordinates from start to end, as well as some statistic parameters.
     '''
+
+    #Check whether it is the goal state
     win_the_game, who = self.game.is_match_end()
 
     if win_the_game == True:
@@ -566,31 +560,23 @@ class Player(object):
       else:
         return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
-    '''
-    Cutting-Off when reaches depth limitation
-    '''
+    #Cutting-Off when reaches depth limitation
     if level == 0:
       return self.estimate_function(),(),[], num_pruning_max, num_pruning_min, nodes_generated, level
 
-    '''
-    Init Value of this node
-    '''
+    #Init Value of this node
     level -= 1
     maximum_value = -2000
     optimum_path = []
     best_piece = self.list_of_pieces[-1] 
 
-    '''
-    Copy current piece in list_of_pieces, in case simulation change the order of this list
-    '''
+    #Copy current piece in list_of_pieces, in case simulation change the order of this list
     copy_pieces = copy(self.list_of_pieces)
 
     for piece in copy_pieces:
       actions = self.possible_action(piece,self)
 
-      '''
-      For each action, simulate and pass the modified canvass to min_value function.
-      '''
+      #For each action, simulate and pass the modified canvass to min_value function.
       for path in actions:
         nodes_generated += 1
         pending_set = self.action_simulation(self,piece,path)
@@ -598,32 +584,33 @@ class Player(object):
               = self.min_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
         self.simulation_recovery(self.rival,piece,path,pending_set)
 
-        '''
-        Update value of current node
-        '''
+        #Update value of current node
         if v_min > maximum_value:
           maximum_value = v_min
           best_piece = piece
           optimum_path = path
 
-        '''
-        Pruning
-        '''
+        #Pruning
         if v_min>= beta:
           num_pruning_max+= 1
           return maximum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
-        '''
-        Update alpha of current node
-        '''
+        #Update alpha of current node
         alpha = max(alpha,maximum_value)
 
     return maximum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
   def min_value(self, level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated):
     '''
-    Calculate best solution of rival player
+    Simulate the action of human player, based on the modified canvass.
+    Help robot to made best decision according to all possible status human player can achieve.
+    Human player will prefer action that could achieve lowest utility.
+
+    Input: alpha beta value and current simulated canvass
+    Output: minimum utility and a list of location coordinates from start to end, as well as some statistic parameters.
     '''
+
+    #Check whether it is the goal state
     win_the_game, who = self.game.is_match_end()
 
     if win_the_game == True:
@@ -632,7 +619,8 @@ class Player(object):
         return 1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
       else:
         return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
-    
+
+    #Reaches the cutting-off level, return estimate value according to current canvass
     if level == 0:
       return self.estimate_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
@@ -643,6 +631,7 @@ class Player(object):
     
     copy_pieces = copy(self.rival.list_of_pieces)
 
+    #Try all possibilities, and pass the current canvass to max_value
     for piece in copy_pieces:
       actions = self.possible_action(piece,self.rival)
 
@@ -653,29 +642,41 @@ class Player(object):
               = self.max_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
         self.simulation_recovery(self,piece,path,pending_set)
 
+        #Update optimum status
         if v_max < minimum_value:
           minimum_value = v_max
           best_piece = piece
           optimum_path = path
 
+        #Pruning
         if v_max <= alpha:
           num_pruning_min+= 1
           return minimum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
+        #Update beta according to returned minimum value
         beta = min(beta,minimum_value)
 
     return minimum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
   def action_simulation(self,player,piece,path):
     '''
-    Given a piece and path, simulate the action and return the captured set for recovery.
+    Simulate action of robot and player.
+
+    Input: one piece (x,y) and its moving path
+           in the form [(x1,y1),(x2,y2),...]
+    Output: A modified canvass.
+
+    Note: As this is temperate modification of the canvass, so it need to keep a record of captured pieces
+          pass this set to recovery function to restore.
     '''
+
     x, y = piece
     pending_set = []
    
     for cell in path:
       x1, y1 = cell
 
+      #If this is a plain move, no piece captured.
       if max(abs(x1-x),abs(y1-y)) == 1:
         player.move_piece((x,y),(x1,y1))
         return []
@@ -684,10 +685,12 @@ class Player(object):
         player.move_piece((x,y),(x1,y1))
         cell = self.canvass.get_cell(((x+x1)/2,(y+y1)/2))
 
+        #Being captured so add it to pending_set
         if cell.status != player.side:
           player.rival.remove_piece(((x+x1)/2,(y+y1)/2))
           pending_set.append(((x+x1)/2,(y+y1)/2))
 
+        #jump from current cell
         x = x1
         y = y1
 
@@ -695,28 +698,47 @@ class Player(object):
   
   def simulation_recovery(self, player, piece,path,pending_set):
     '''
-    Recover simulated canvass to original one
+    Restore the original canvass
+    1. Move the moved piece from its final place to original cell.
+    2. Recover the captured piece to its coordinate
+    3. Re-add the captured piece to the player's list_of_pieces
+  
+    Input: Moved piece and its moving path
+    Output: Recovered canvass
     '''
+
     for cell in pending_set:
       player.add_piece(cell)
     player.rival.move_piece(path[-1],piece)
 
-  def possible_action(self, piece,player):
+  def possible_action(self, piece, player):
     '''
-    Calculate every possible of each piece
-    Input: available piece
-    Output: all possible path of this piece
+    According to the current canvass, calculate all possible action of one piece
+    Include:
+      1. Plain move
+      2. Leap over another piece
+        i) Cantering move: leap over friendly piece
+        ii)  Capturing move: leap over enemy piece
+
+    Output: all possible path of the piece
+        In the form [[(x1,y1)],[(x2,y2),(x3,y3),...,(x4,y4)],...]
     '''
-    #TODO: (cc) Find the bug why sometimes return empty path
+
+    #TODO: DONE (cc) Find the bug why sometimes return empty path
+
     x, y = piece
     possible_move = []
+    #Get all non-disabled adjacent cell
     adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), ['disabled'])
 
     for (a,b) in adjacent_cell_list:
       cell = self.canvass.get_cell((a,b))
 
+      #if the adjacent cell is free, it means the piece can make a plain move to this cell
       if cell.status == 'free':
         possible_move.append([(a,b)])
+
+      #if not, the piece might make a leap over this neighbour
       else:
         xx = 2*a-x
         yy = 2*b-y
@@ -725,15 +747,17 @@ class Player(object):
         if cell_to == None:
           continue
 
+        #If the cell beside the occupied adjacent cell is free, it can be a leap
+        #Call possible_leap function to complete the following steps
         if cell_to.status == 'free':
-          ret = self.possible_jump((xx,yy),player, [], [(x,y)], [(a,b)])
+          ret = self.possible_leap((xx,yy),player, [], [(x,y)], [(a,b)])
 
           for path in ret:
             possible_move.append(path)
 
     return possible_move
 
-  def possible_jump(self, cell_loc, player, current_path, explored_set, pending_set):
+  def possible_leap(self, cell_loc, player, current_path, explored_set, pending_set):
     '''
     Calculate all possible path for a cell to move, is used for robot to choose the best move.
 
@@ -741,22 +765,26 @@ class Player(object):
            current_path: the path from original path to current cell
            explored_set: all cell expeared on the path
            pending_set: enemy piece that have been captured
-    Output: pathes reached this piece and moving on
+    Output: pathes reached this piece 
+            and then pass the current path to next possible_leap
+
+    Like DFS, recurssion after finding next possible leap.
     '''
 
     #TODO(cc):DONE find the reason why it reaches the limitaion of recurssion times
 
-    '''
-    Add current node to the path
-    '''
+    #Add current node to the path
     x, y = cell_loc
     explored_set.append((x,y))
     current_path.append((x,y))
     return_path = [current_path]
 
+    #Get adjacent cell that is occupied
     adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), ['disabled', 'free'])
     for (a,b) in adjacent_cell_list:
 
+      #Pending_set means this piece has been captured in earlier leap
+      #This check garanteed that in real action, it will never leap over a free cell.
       if (a,b) in pending_set:
         continue
 
@@ -764,12 +792,11 @@ class Player(object):
 
       xx = x + (a-x)*2
       yy = y + (b-y)*2
+
+      #Piece is not allowed to arrive at the same position twice
       if (xx,yy) in explored_set:
         continue
 
-      # TODO: since there are a lot of get and check, 
-      # better to write a function like check_cell_status('free') = True/False
-      # if you want to write it, write it
       cell_to = self.canvass.get_cell((xx,yy))
       if cell_to == None:
         continue
@@ -781,7 +808,7 @@ class Player(object):
           pending.append((a,b))
 
         path = copy(current_path)
-        ret = self.possible_jump((xx,yy), player, path, explored_set, pending )
+        ret = self.possible_leap((xx,yy), player, path, explored_set, pending )
         return_path += ret
 
     return return_path
@@ -789,17 +816,19 @@ class Player(object):
   def estimate_function(self):
     '''
     Estimate utility based on current canvass to help player make decision
+
     It composed of 4 parts:
-    1. distance to castle, the closer the better.
-    2. penalty of being captured
-    3. penalty of stoping beside a rival piece
-    4. penalty of far away from center 
+      1. distance to castle, the closer the better.
+      2. penalty of being captured
+      3. penalty of stoping beside a rival piece
+      4. penalty of far away from center 
     '''
     max_v = 0
     min_v = 0
     num_adj = 0    
     center_dis = 0
 
+    #Find number of piece that besides an enemy piece
     for piece in self.list_of_pieces:
 
       x, y = piece
@@ -813,6 +842,10 @@ class Player(object):
           num_adj += 1
           break
 
+    #Get the distance utility of both self and enemy piece.
+    #In order to encourage robot moving the piece that nearest to enemy castle,
+    #squred the (14-distance) as its utility.
+    #So that the nearest move get the highest utility increase.
     if self.side == 'south':
 
       for piece in self.list_of_pieces:
@@ -837,16 +870,22 @@ class Player(object):
       print 'BUG: check your code!'
       exit(55)
 
+    #Encourage robot capture enemy piece and avoid from been captured
     d_num_pieces = len(self.rival.list_of_pieces) - len(self.list_of_pieces)
 
-    # FIXME (code-review-comment): do not return expression
-    # very inelegant code and will lead to debug headache
+    #Coefficient can be adjusted to achieve more rational action 
     return  ( max_v - min_v )  \
           - ( 30 * d_num_pieces ) \
           - ( 10 * num_adj ) \
           - ( 2 * center_dis )
 
   def is_match_point(self):
+    '''
+    Check whether it's a match point, that robot can achive success by one action
+
+    Input: Current canvass
+    Output: If it is, return the match point piece and action
+    '''
     match_point_piece = (-1,-1)
     init_path = []
     nodes_gen = 0
@@ -859,16 +898,16 @@ class Player(object):
       for path in actions:
         nodes_gen += 1
 
+        #Castle occupied?
         if (self.side == 'north' and (path[-1] == (13, 3) or path[-1] == (13, 4))) or \
           (self.side == 'south' and (path[-1] == (0, 3) or path[-1] == (0, 4))):
-          print nodes_gen
           return piece, path, nodes_gen
 
         pending_set = self.action_simulation(self,piece,path)
 
+        #Capture all opponent's piece?
         if len(self.rival.list_of_pieces) == 0:
           self.simulation_recovery(self.rival,piece,path,pending_set)
-          print nodes_gen
           return piece, path, nodes_gen
 
         else:
