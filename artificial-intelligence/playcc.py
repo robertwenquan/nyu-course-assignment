@@ -504,12 +504,12 @@ class Player(object):
     beta = 1000
     level = self.intell_level
 
-    #Initiate moving statistics
+    # Initiate moving statistics
     num_pruning_max = 0
     num_pruning_min = 0
     nodes_generated = 1 
 
-    #Check if it is match point, if so, make the winning action.
+    # Check if it is match point, if so, make the winning action.
     match_point_piece, match_point_path, num_node = self.is_match_point()
 
     if match_point_piece != (-1,-1):
@@ -524,17 +524,17 @@ class Player(object):
       return optimum_path, move_statistics
 
 
-    #Get optimal action by alpha-beta algorithm
+    # Get optimal action by alpha-beta algorithm
     maximum_value, best_piece, optimum_action, num_pruning_max, num_pruning_min, nodes_generated, max_depth \
                       = self.max_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
 
-    #Construct the optimal path by combine action piece and it's optimal moving path
+    # Construct the optimal path by combine action piece and it's optimal moving path
     optimum_path.append(best_piece)
 
     for step in optimum_action:
       optimum_path.append(step)
 
-    #Update move_statistics
+    # Update move_statistics
     max_depth_reached = level - max_depth
     move_statistics = (max_depth_reached, nodes_generated, num_pruning_max, num_pruning_min)
 
@@ -549,7 +549,7 @@ class Player(object):
     Output: maximum utility and a list of location coordinates from start to end, as well as some statistic parameters.
     '''
 
-    #Check whether it is the goal state
+    # Check whether it is the goal state
     win_the_game, who = self.game.is_match_end()
 
     if win_the_game == True:
@@ -560,23 +560,23 @@ class Player(object):
       else:
         return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
-    #Cutting-Off when reaches depth limitation
+    # Cutting-Off when reaches depth limitation
     if level == 0:
       return self.estimate_function(),(),[], num_pruning_max, num_pruning_min, nodes_generated, level
 
-    #Init Value of this node
+    # Init Value of this node
     level -= 1
     maximum_value = -2000
     optimum_path = []
     best_piece = self.list_of_pieces[-1] 
 
-    #Copy current piece in list_of_pieces, in case simulation change the order of this list
+    # Copy current piece in list_of_pieces, in case simulation change the order of this list
     copy_pieces = copy(self.list_of_pieces)
 
     for piece in copy_pieces:
       actions = self.possible_action(piece,self)
 
-      #For each action, simulate and pass the modified canvass to min_value function.
+      # For each action, simulate and pass the modified canvass to min_value function.
       for path in actions:
         nodes_generated += 1
         pending_set = self.action_simulation(self,piece,path)
@@ -584,18 +584,18 @@ class Player(object):
               = self.min_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
         self.simulation_recovery(self.rival,piece,path,pending_set)
 
-        #Update value of current node
+        # Update value of current node
         if v_min > maximum_value:
           maximum_value = v_min
           best_piece = piece
           optimum_path = path
 
-        #Pruning
+        # Pruning
         if v_min>= beta:
           num_pruning_max+= 1
           return maximum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
-        #Update alpha of current node
+        # Update alpha of current node
         alpha = max(alpha,maximum_value)
 
     return maximum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
@@ -610,7 +610,7 @@ class Player(object):
     Output: minimum utility and a list of location coordinates from start to end, as well as some statistic parameters.
     '''
 
-    #Check whether it is the goal state
+    # Check whether it is the goal state
     win_the_game, who = self.game.is_match_end()
 
     if win_the_game == True:
@@ -620,7 +620,7 @@ class Player(object):
       else:
         return -1000, (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
-    #Reaches the cutting-off level, return estimate value according to current canvass
+    # Reaches the cutting-off level, return estimate value according to current canvass
     if level == 0:
       return self.estimate_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
@@ -631,7 +631,7 @@ class Player(object):
     
     copy_pieces = copy(self.rival.list_of_pieces)
 
-    #Try all possibilities, and pass the current canvass to max_value
+    # Try all possibilities, and pass the current canvass to max_value
     for piece in copy_pieces:
       actions = self.possible_action(piece,self.rival)
 
@@ -642,18 +642,18 @@ class Player(object):
               = self.max_value(level, alpha, beta, num_pruning_max, num_pruning_min, nodes_generated)
         self.simulation_recovery(self,piece,path,pending_set)
 
-        #Update optimum status
+        # Update optimum status
         if v_max < minimum_value:
           minimum_value = v_max
           best_piece = piece
           optimum_path = path
 
-        #Pruning
+        # Pruning
         if v_max <= alpha:
           num_pruning_min+= 1
           return minimum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
 
-        #Update beta according to returned minimum value
+        # Update beta according to returned minimum value
         beta = min(beta,minimum_value)
 
     return minimum_value, best_piece, optimum_path, num_pruning_max, num_pruning_min, nodes_generated, min(level_reached, level)
@@ -676,7 +676,7 @@ class Player(object):
     for cell in path:
       x1, y1 = cell
 
-      #If this is a plain move, no piece captured.
+      # If this is a plain move, no piece captured.
       if max(abs(x1-x),abs(y1-y)) == 1:
         player.move_piece((x,y),(x1,y1))
         return []
@@ -685,12 +685,12 @@ class Player(object):
         player.move_piece((x,y),(x1,y1))
         cell = self.canvass.get_cell(((x+x1)/2,(y+y1)/2))
 
-        #Being captured so add it to pending_set
+        # Being captured so add it to pending_set
         if cell.status != player.side:
           player.rival.remove_piece(((x+x1)/2,(y+y1)/2))
           pending_set.append(((x+x1)/2,(y+y1)/2))
 
-        #jump from current cell
+        # jump from current cell
         x = x1
         y = y1
 
@@ -724,21 +724,21 @@ class Player(object):
         In the form [[(x1,y1)],[(x2,y2),(x3,y3),...,(x4,y4)],...]
     '''
 
-    #TODO: DONE (cc) Find the bug why sometimes return empty path
+    # TODO: DONE (cc) Find the bug why sometimes return empty path
 
     x, y = piece
     possible_move = []
-    #Get all non-disabled adjacent cell
+    # Get all non-disabled adjacent cell
     adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), ['disabled'])
 
     for (a,b) in adjacent_cell_list:
       cell = self.canvass.get_cell((a,b))
 
-      #if the adjacent cell is free, it means the piece can make a plain move to this cell
+      # if the adjacent cell is free, it means the piece can make a plain move to this cell
       if cell.status == 'free':
         possible_move.append([(a,b)])
 
-      #if not, the piece might make a leap over this neighbour
+      # if not, the piece might make a leap over this neighbour
       else:
         xx = 2*a-x
         yy = 2*b-y
@@ -747,8 +747,8 @@ class Player(object):
         if cell_to == None:
           continue
 
-        #If the cell beside the occupied adjacent cell is free, it can be a leap
-        #Call possible_leap function to complete the following steps
+        # If the cell beside the occupied adjacent cell is free, it can be a leap
+        # Call possible_leap function to complete the following steps
         if cell_to.status == 'free':
           ret = self.possible_leap((xx,yy),player, [], [(x,y)], [(a,b)])
 
@@ -771,20 +771,20 @@ class Player(object):
     Like DFS, recurssion after finding next possible leap.
     '''
 
-    #TODO(cc):DONE find the reason why it reaches the limitaion of recurssion times
+    # TODO(cc):DONE find the reason why it reaches the limitaion of recurssion times
 
-    #Add current node to the path
+    # Add current node to the path
     x, y = cell_loc
     explored_set.append((x,y))
     current_path.append((x,y))
     return_path = [current_path]
 
-    #Get adjacent cell that is occupied
+    # Get adjacent cell that is occupied
     adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), ['disabled', 'free'])
     for (a,b) in adjacent_cell_list:
 
-      #Pending_set means this piece has been captured in earlier leap
-      #This check garanteed that in real action, it will never leap over a free cell.
+      # Pending_set means this piece has been captured in earlier leap
+      # This check garanteed that in real action, it will never leap over a free cell.
       if (a,b) in pending_set:
         continue
 
@@ -793,7 +793,7 @@ class Player(object):
       xx = x + (a-x)*2
       yy = y + (b-y)*2
 
-      #Piece is not allowed to arrive at the same position twice
+      # Piece is not allowed to arrive at the same position twice
       if (xx,yy) in explored_set:
         continue
 
@@ -828,7 +828,7 @@ class Player(object):
     num_adj = 0    
     center_dis = 0
 
-    #Find number of piece that besides an enemy piece
+    # Find number of piece that besides an enemy piece
     for piece in self.list_of_pieces:
 
       x, y = piece
@@ -842,10 +842,10 @@ class Player(object):
           num_adj += 1
           break
 
-    #Get the distance utility of both self and enemy piece.
-    #In order to encourage robot moving the piece that nearest to enemy castle,
-    #squred the (14-distance) as its utility.
-    #So that the nearest move get the highest utility increase.
+    # Get the distance utility of both self and enemy piece.
+    # In order to encourage robot moving the piece that nearest to enemy castle,
+    # squred the (14-distance) as its utility.
+    # So that the nearest move get the highest utility increase.
     if self.side == 'south':
 
       for piece in self.list_of_pieces:
@@ -870,10 +870,10 @@ class Player(object):
       print 'BUG: check your code!'
       exit(55)
 
-    #Encourage robot capture enemy piece and avoid from been captured
+    # Encourage robot capture enemy piece and avoid from been captured
     d_num_pieces = len(self.rival.list_of_pieces) - len(self.list_of_pieces)
 
-    #Coefficient can be adjusted to achieve more rational action 
+    # Coefficient can be adjusted to achieve more rational action 
     return  ( max_v - min_v )  \
           - ( 30 * d_num_pieces ) \
           - ( 10 * num_adj ) \
@@ -898,14 +898,14 @@ class Player(object):
       for path in actions:
         nodes_gen += 1
 
-        #Castle occupied?
+        # Castle occupied?
         if (self.side == 'north' and (path[-1] == (13, 3) or path[-1] == (13, 4))) or \
           (self.side == 'south' and (path[-1] == (0, 3) or path[-1] == (0, 4))):
           return piece, path, nodes_gen
 
         pending_set = self.action_simulation(self,piece,path)
 
-        #Capture all opponent's piece?
+        # Capture all opponent's piece?
         if len(self.rival.list_of_pieces) == 0:
           self.simulation_recovery(self.rival,piece,path,pending_set)
           return piece, path, nodes_gen
