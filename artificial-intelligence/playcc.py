@@ -20,60 +20,57 @@ __date__ = "22 Apr 2015"
 #################################################################
 # Basic goals
 #
-# TODO: DONE game canvass with cell display
-# TODO: DONE cell free move without checking
-# TODO: DONE the legitimate plain move checking
-# TODO: DONE the legitimate leap move checking
-# TODO: DONE stupid sample player (for integration)
-# TODO: DONE player logic
-# TODO: DONE game winning rule1 (castle point is taken)
-# TODO: DONE game winning rule2 (all pieces are captured)
-# TODO: DONE link the player to the game engine
-# TODO: DONE reset game at any point, with confirmation.
-# TODO: DONE end the game when winning condition is met.
-# TODO: DONE white(north) always starts first
-# TODO: DONE choose side for human player on configuration
-# TODO: DONE choose side on the UI
-# TODO: DONE performance metrics interface definition
-# TODO: DONE expose performance metrics to UI for each move
-# TODO: DONE record performance metrics for each move
+# DONE: game canvass with cell display
+# DONE: cell free move without checking
+# DONE: the legitimate plain move checking
+# DONE: the legitimate leap move checking
+# DONE: stupid sample player (for integration)
+# DONE: player logic
+# DONE: game winning rule1 (castle point is taken)
+# DONE: game winning rule2 (all pieces are captured)
+# DONE: link the player to the game engine
+# DONE: reset game at any point, with confirmation.
+# DONE: end the game when winning condition is met.
+# DONE: white(north) always starts first
+# DONE: choose side for human player on configuration
+# DONE: choose side on the UI
+# DONE: performance metrics interface definition
+# DONE: expose performance metrics to UI for each move
+# DONE: record performance metrics for each move
 #
 #################################################################
 # Stretching goals (for bonus points)
 #
-# TODO: DONE successive jumps and captures
-# TODO: DONE graphical interface
-# TODO: DONE choose intelligence level before game starts, on UI
-# TODO: DONE exceptional evaluation function
+# DONE: successive jumps and captures
+# DONE: graphical interface
+# DONE: choose intelligence level before game starts, on UI
+# DONE: exceptional evaluation function
 #
 #################################################################
 # Aspirational goals (for software architecture and usability)
 #
-# TODO(rw): unselect a cell when it was chosen by mistake
-# TODO(rw): rollback and forward
-# TODO(rw): unified logging
-# TODO(rw): notification via UI
-# TODO(cc): add student information in the footer of the application
-# TODO(cc): add about box with 'good' github link in the footer
-# TODO(cc): game hints: when the first cell is selected
-#                       give hints about all legitimate moving destimation
-# TODO(rw): integrate the game hints with UI hints
-# TODO(rw): dettachable UI
-# TODO(rw): cell initialization with human readable map
+# TODO: unselect a cell when it was chosen by mistake
+# TODO: UI doesn't refresh in the callback function
+# TODO: rollback and forward
+# TODO: unified logging
+# TODO: notification via UI
+# TODO: add student information in the footer of the application
+# TODO: add about box with 'good' github link in the footer
+# TODO: cell initialization with human readable map
 # TODO: Allow two robots playing together
 # TODO: Add game play header, with two player's name, level, etc.
 # TODO: Add real-time timer and performance metrics for each play
 # TODO: save game records
+# TODO: prelearning and caching best result
 #
 #################################################################
 # Known Bugs
 #
-# FIXME: UI doesn't refresh in the callback function
-# FIXME: FIXED on Mac, cell background color is not shown
-# FIXME: FIXED one piece, game point not win
-# FIXME: FIXED two pieces, game point not win but approaching the further piece
-# FIXME: FIXED in some cases, there is no moving path for the robot
-# FIXME: FIXED game options popup window is beneath the main game canvass window
+# FIXED: on Mac, cell background color is not shown
+# FIXED: one piece, game point not win
+# FIXED: two pieces, game point not win but approaching the further piece
+# FIXED: in some cases, there is no moving path for the robot
+# FIXED: game options popup window is beneath the main game canvass window
 # FIXME: can click START GAME to re-enable the game canvass
 # FIXME: reset does not reset the statistics metrics
 #
@@ -176,7 +173,9 @@ class GameCanvass(object):
 
   def lock_canvass(self):
     '''
-    lock all celss when game ends
+    lock all celss and make all celss unclickable
+    This is used before the game starts when user is selecting the game options
+    or after the game ends before user restarts the game
     '''
     nrow = self.nrow
     ncol = self.ncol
@@ -188,7 +187,7 @@ class GameCanvass(object):
 
   def unlock_canvass(self):
     '''
-    unlock all cells when game is reset
+    unlock all cells when game starts
     '''
     nrow = self.nrow
     ncol = self.ncol
@@ -235,9 +234,15 @@ class GameCanvass(object):
     self.free_cell(loc_start)
 
   def remove_cell(self, loc):
+    '''
+    remove a cell from a specified (x,y) cooridinates
+    this is the same as free_cell but without integrity check
+    '''
     self.free_cell(loc)
 
   def add_cell(self, loc, side):
+    '''
+    '''
     cell = self.get_cell(loc)
     cell.status = side
     cell.selected = False
@@ -471,18 +476,28 @@ class Player(object):
 
   def add_piece(self, location):
     '''
-    add one piece to the canvass
+    add one piece to the canvass from the specified (x,y) coordinates
+
+    This involves:
+    1. update the list_of_pieces for the player
+    2. add a cell to the game canvass
+
+    Input: (x,y) a tuple of the location
     '''
     self.list_of_pieces.append(location)
     self.canvass.add_cell(location, self.side)
 
   def whats_next_move(self):
     '''
-    from current canvass situation, calculate what is next step
-    input:  
+    from current canvass situation, calculate what is the best next move for the robot player
+
+    input: implicitly use the current game canvass, list_of_pieces, etc.
     output: [(x1,y1),(x2,y2),(x3,y3),...]
+            A list of (x,y) location coordinates, from the starting point to the final target point
+
+    NOTE: The rival pieces will not be taken away from this function
+          The caller of this function must handle the rival piece removals
     '''
-    #TODO(cc): fix bugs when value of level is big
 
     maximum_value = -1000
     optimum_path = []
