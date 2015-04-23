@@ -1306,8 +1306,6 @@ def print_cmdline_help():
   print 'Command line help:'
   print '-h/--help       Print This Help'
   print '-v/--verbose    Verbose output, with debugging information'
-  print '-n/--north      Set north player name'
-  print '-s/--south      Set south player name'
 
 def main(argv):
   '''
@@ -1317,12 +1315,10 @@ def main(argv):
 
   verbose = 0
   debug = 0
-  player_north = ''
-  player_south = ''
 
   try:
-    opts, args = getopt.getopt(argv, 'hvdn:s:', \
-                                    ['help', 'verbose', 'debug', 'north=', 'south='])
+    opts, args = getopt.getopt(argv, 'hvd', \
+                                    ['help', 'verbose', 'debug'])
   except getopt.GetoptError:
     print_cmdline_help()
     sys.exit(2)
@@ -1335,16 +1331,10 @@ def main(argv):
       verbose = 1
     elif opt in ("-d", "--debug"):
       debug = 1
-    elif opt in ("-n", "--north"):
-      player_north = arg
-    elif opt in ("-s", "--south"):
-      player_south = arg
 
   if debug == 1:
     print 'verbose = %d' % verbose
     print 'debug   = %d' % debug
-    print 'player_north = %s' % player_north
-    print 'player_south = %s' % player_south
 
   game = GameEngine()
 
