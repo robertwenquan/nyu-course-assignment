@@ -959,6 +959,9 @@ class GameEngine(object):
     self.north_player.set_game(self)
     self.south_player.set_game(self)
 
+    # set the cached results
+    self.cached_results = dict()
+
     # initialize UI
     self.ui = PlayGround(self)
 
@@ -1148,6 +1151,15 @@ class GameEngine(object):
     #################################################
     self.bot_play(player.rival)
 
+  def get_canvass_hashkey(self):
+    '''
+    generate a hash code based on the current canvass map
+
+    caicai, this is your job!!
+    '''
+
+    return 'abcdefghijklmnopqrstuvwxyz'
+
   def load_cached_move(self):
     '''
     load cached optimal move results from pickle file
@@ -1155,6 +1167,8 @@ class GameEngine(object):
 
     Input: None. But implicitely load 'game_move.cache' from the current directory
     Output: A dictionary
+
+    NOTE: the cached results are saved per difficulty level
 
     WHEN file is not found, the dictionary will be empty but it does not affect the game initialization
     '''
@@ -1172,7 +1186,16 @@ class GameEngine(object):
             [(x,y), (x,y), ...] at cache hit
     '''
 
-    return ([],(0,0,0,0))
+    # get the hashid of the current canvass
+    hashkey = self.get_canvass_hashkey()
+
+    # query the dictionary
+    if self.cached_results.get(hashkey) == None:
+      # cache miss
+      return ([],(0,0,0,0))
+    else:
+      # cache hit
+      return cached_results[hashkey]
 
   def save_cached_move(self, move_path, move_stats):
     '''
