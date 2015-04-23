@@ -498,8 +498,6 @@ class Player(object):
     num_pruning_min = 0
     nodes_generated = 1 
 
-    move_statistics = (1, nodes_generated, num_pruning_max, num_pruning_min)
-
     '''
     Check if it is match point, if so, make the winning action.
     '''
@@ -563,7 +561,7 @@ class Player(object):
     Init Value of this node
     '''
     level -= 1
-    maximum_value = -1000
+    maximum_value = -2000
     optimum_path = []
     best_piece = self.list_of_pieces[-1] 
 
@@ -624,7 +622,7 @@ class Player(object):
       return self.estimate_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
     level -= 1
-    minimum_value = 1000
+    minimum_value = 2000
     optimum_path = []
     best_piece = self.rival.list_of_pieces[-1] 
     
@@ -798,6 +796,7 @@ class Player(object):
 
         if cell.status == self.rival.side:
           number_of_adjacent += 1
+          break
 
     if self.side == 'south':
 
