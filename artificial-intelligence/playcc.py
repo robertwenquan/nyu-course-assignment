@@ -782,20 +782,20 @@ class Player(object):
     '''
     max_v = 0
     min_v = 0
-    number_of_adjacent = 0    
-    distance_to_center = 0
+    num_adj = 0    
+    center_dis = 0
 
     for piece in self.list_of_pieces:
 
       x, y = piece
-      distance_to_center += min(abs(y-3),abs(y-4))
+      center_dis += min(abs(y-3),abs(y-4))
       adjacent_cell_list = self.canvass.get_adjacent_cell_list((x,y), [])
 
       for (a,b) in adjacent_cell_list:
         cell = self.canvass.get_cell((a,b))
 
         if cell.status == self.rival.side:
-          number_of_adjacent += 1
+          num_adj += 1
           break
 
     if self.side == 'south':
@@ -822,16 +822,14 @@ class Player(object):
       print 'BUG: check your code!'
       exit(55)
 
-    d_value_of_distance = (max_v-min_v)/6
-    d_value_of_number_of_pieces = len(self.rival.list_of_pieces) - len(self.list_of_pieces)
-    penalty_of_d_number_of_pieces = 30*d_value_of_number_of_pieces
-    penalty_of_rival_adjacent = 10*number_of_adjacent
-    penalty_of_far_away_from_center = 2*distance_to_center
+    d_num_pieces = len(self.rival.list_of_pieces) - len(self.list_of_pieces)
 
     # FIXME (code-review-comment): do not return expression
     # very inelegant code and will lead to debug headache
-    return d_value_of_distance - penalty_of_d_number_of_pieces \
-           - penalty_of_rival_adjacent - penalty_of_far_away_from_center
+    return  ( max_v - min_v )  \
+          - ( 30 * d_num_pieces ) \
+          - ( 10 * num_adj ) \
+          - ( 2 * center_dis )
 
   def is_match_point(self):
     match_point_piece = (-1,-1)
