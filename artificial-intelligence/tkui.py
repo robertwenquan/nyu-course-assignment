@@ -14,7 +14,7 @@ __date__ = "22 Apr 2015"
 from Tkinter import Tk, Canvas, Menu
 from Tkinter import Label, Button, Radiobutton
 from Tkinter import PhotoImage, Toplevel
-from Tkinter import DISABLED, NORMAL, LEFT
+from Tkinter import DISABLED, NORMAL
 from Tkinter import IntVar
 
 
@@ -46,6 +46,7 @@ class PlayGround(object):
     self.height = self.margin * 5 + self.unit * nrow
     self.game = game
 
+    # icons
     self.icon_white = PhotoImage(file="images/white.gif")
     self.icon_black = PhotoImage(file="images/black.gif")
     self.icon_none = PhotoImage(file="images/none.gif")
@@ -90,19 +91,20 @@ class PlayGround(object):
     '''
 
     # start game button
-    button = Button(self.gui, text = 'start game', height=30, width=120, \
+    button = Button(self.gui, text='start game', height=30, width=120, \
                     command=self.game.start_game)
     button.place(x=20, y=20, width=120, height=20)
 
     # reset game button
-    button = Button(self.gui, text = 'reset game', height=30, width=120, \
+    button = Button(self.gui, text='reset game', height=30, width=120, \
                     command=self.game.reset_game)
     button.place(x=160, y=20, width=120, height=20)
 
-    self.label_max_depth = Label(self.gui, text = '0')
-    self.label_nodes = Label(self.gui, text = '0')
-    self.label_prune_max = Label(self.gui, text = '0')
-    self.label_prune_min = Label(self.gui, text = '0')
+    # four labels for statistical numbers
+    self.label_max_depth = Label(self.gui, text='0')
+    self.label_nodes = Label(self.gui, text='0')
+    self.label_prune_max = Label(self.gui, text='0')
+    self.label_prune_min = Label(self.gui, text='0')
 
     self.label_max_depth.place(x=20, y=50, width=70, height=20)
     self.label_nodes.place(x=100, y=50, width=70, height=20)
@@ -128,15 +130,15 @@ class PlayGround(object):
     popup.transient(self.gui)
     popup.grab_set()
 
-    # choose side 
+    # choose side
     label1 = Label(popup, text="Side", height=30, width=50)
     label1.place(x=10, y=5, height=30, width=50)
 
-    v1 = IntVar()
+    val1 = IntVar()
 
-    bt_north = Radiobutton(popup, text="White", variable=v1, value=1)
-    bt_north.place(x=60,y=10)
-    bt_south = Radiobutton(popup, text="Black", variable=v1, value=2)
+    bt_north = Radiobutton(popup, text="White", variable=val1, value=1)
+    bt_north.place(x=60, y=10)
+    bt_south = Radiobutton(popup, text="Black", variable=val1, value=2)
     bt_south.place(x=120, y=10)
 
     # by default, human plays first, meaning play the north side
@@ -146,20 +148,20 @@ class PlayGround(object):
     label2 = Label(popup, text="Level", height=30, width=50)
     label2.place(x=10, y=35, height=30, width=50)
 
-    v2 = IntVar()
+    val2 = IntVar()
 
-    bt_level1 = Radiobutton(popup, text="Dumb", variable=v2, value=1)
+    bt_level1 = Radiobutton(popup, text="Dumb", variable=val2, value=1)
     bt_level1.place(x=60, y=40)
-    bt_level2 = Radiobutton(popup, text="Smart", variable=v2, value=2)
+    bt_level2 = Radiobutton(popup, text="Smart", variable=val2, value=2)
     bt_level2.place(x=120, y=40)
-    bt_level3 = Radiobutton(popup, text="Genius", variable=v2, value=3)
+    bt_level3 = Radiobutton(popup, text="Genius", variable=val2, value=3)
     bt_level3.place(x=180, y=40)
 
     # by default, the game is hard
     bt_level2.select()
 
     button = Button(popup, text='SET', \
-              command=lambda: self.selected_start_options(popup, v1, v2))
+              command=lambda: self.selected_start_options(popup, val1, val2))
 
     button.place(x=70, y=70)
 
@@ -169,11 +171,10 @@ class PlayGround(object):
     for the game start options
     '''
 
-    SIDE = { 1 : 'north' ,
-             2 : 'south'
-           }
+    side_name = {1 : 'north',
+                 2 : 'south'}
 
-    self.choose_side = SIDE[choose_side.get()]
+    self.choose_side = side_name[choose_side.get()]
     self.choose_level = int(choose_level.get())
 
     print 'Selected start options'
@@ -209,7 +210,8 @@ class PlayGround(object):
           button = Button(self.gui, state=DISABLED)
         else:
           button = Button(self.gui, cursor="target", \
-                   command=lambda row_idx=row_idx, col_idx=col_idx: self.game.human_play(row_idx, col_idx))
+                          command=lambda row_idx=row_idx, col_idx=col_idx: \
+                                         self.game.human_play(row_idx, col_idx))
 
         # calculate the x,y coordinates and place the buttons
         offset_x = self.margin + self.unit * col_idx
@@ -272,13 +274,13 @@ class PlayGround(object):
     the whole canvass will be locked and unclickable at this point
     '''
 
-    assert(who == 'north' or who == 'south')
+    assert who == 'north' or who == 'south'
 
     self.game.canvass.lock_canvass()
     self.refresh_playground()
 
     player = self.game.get_human_player()
-    assert(player != None)
+    assert player != None
 
     if player.side == who:
       self.label_endgame_win.place(x=20, y=219)
@@ -301,8 +303,8 @@ class PlayGround(object):
 
     print 'updating moving statistics...'
 
-    self.label_max_depth.config(text = str(max_depth_reached))
-    self.label_nodes.config(text = str(nodes_generated))
-    self.label_prune_max.config(text = str(num_pruning_max_value))
-    self.label_prune_min.config(text = str(num_pruning_min_value))
+    self.label_max_depth.config(text=str(max_depth_reached))
+    self.label_nodes.config(text=str(nodes_generated))
+    self.label_prune_max.config(text=str(num_pruning_max_value))
+    self.label_prune_min.config(text=str(num_pruning_min_value))
 
