@@ -50,18 +50,31 @@ __date__ = "22 Apr 2015"
 # Aspirational goals (for software architecture and usability)
 #
 # TODO: unselect a cell when it was chosen by mistake
-# TODO: UI doesn't refresh in the callback function
+# TODO: about me (student info)
+# TODO: show step-by-step move for robot player
 # TODO: rollback and forward
-# TODO: unified logging
-# TODO: notification via UI
-# TODO: add student information in the footer of the application
-# TODO: add about box with 'good' github link in the footer
-# TODO: cell initialization with human readable map
-# TODO: Allow two robots playing together
-# TODO: Add game play header, with two player's name, level, etc.
-# TODO: Add real-time timer and performance metrics for each play
-# TODO: save game records
-# TODO: prelearning and caching best result
+# TODO: two robots playing together
+# TODO: show game play header, with two player's name, level, etc.
+# TODO: show real-time timer and performance metrics for each play
+# TODO: save game records for game replay
+# TODO: game replay
+# TODO: unified logging with time and code line numbers
+#
+#################################################################
+# Aspirational performance goals
+#
+# TODO: caching best move results on the play
+# TODO: store and load caching with pickle file
+# TODO: prelearning and caching massive results
+#
+#################################################################
+# Wild goals
+#
+# TODO: split the player logic to standalone process
+# TODO: parallel the player logic calculation with multi-threading
+# TODO: pre-calculate the best move with map-reduce for all scenarios
+# TODO: host a web service for best move query
+#       then it is a memory recall game untill the algorithm is updated
 #
 #################################################################
 # Known Bugs
