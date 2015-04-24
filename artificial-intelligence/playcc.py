@@ -25,11 +25,11 @@ __date__ = "22 Apr 2015"
 # DONE: the legitimate plain move checking
 # DONE: the legitimate leap move checking
 # DONE: stupid sample player (for integration)
-# DONE: player logic
+# DONE: smart player logic
 # DONE: game winning rule1 (castle point is taken)
 # DONE: game winning rule2 (all pieces are captured)
 # DONE: link the player to the game engine
-# DONE: reset game at any point, with confirmation.
+# DONE: reset game at any point
 # DONE: end the game when winning condition is met.
 # DONE: white(north) always starts first
 # DONE: choose side for human player on configuration
@@ -71,8 +71,8 @@ __date__ = "22 Apr 2015"
 # FIXED: two pieces, game point not win but approaching the further piece
 # FIXED: in some cases, there is no moving path for the robot
 # FIXED: game options popup window is beneath the main game canvass window
-# FIXME: can click START GAME to re-enable the game canvass
-# FIXME: reset does not reset the statistics metrics
+# FIXED: can click START GAME to re-enable the game canvass
+# FIXED: reset does not reset the statistics metrics
 #
 
 import sys
