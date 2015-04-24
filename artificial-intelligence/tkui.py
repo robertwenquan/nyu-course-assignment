@@ -108,6 +108,7 @@ class PlayGround(object):
     restart game by re-selecting game options (side and level)
     '''
     self.game.reset_game()
+    self.clear_statistics()
     self.select_start_options()
 
   def about_me(self):
@@ -128,6 +129,10 @@ class PlayGround(object):
     # stays on top of the game canvass
     popup.transient(self.gui)
     popup.grab_set()
+
+    # bind window close events
+    popup.bind('<Escape>', lambda e: self.not_selected_start_options(popup))
+    popup.protocol("WM_DELETE_WINDOW", lambda : self.not_selected_start_options(popup))
 
     # choose side
     label1 = Label(popup, text="Side", height=30, width=50)
@@ -171,6 +176,16 @@ class PlayGround(object):
               command=lambda: self.selected_start_options(popup, val1, val2))
 
     button.place(x=70, y=70)
+
+  def not_selected_start_options(self, popup):
+    '''
+    actions for closing the game option window
+    '''
+
+    self.game.start_game()
+
+    popup.grab_release()
+    popup.destroy()
 
   def selected_start_options(self, popup, choose_side, choose_level):
     '''
@@ -295,6 +310,13 @@ class PlayGround(object):
       self.label_endgame_win.place(x=20, y=219)
     else:
       self.label_endgame_lose.place(x=20, y=219)
+
+  def clear_statistics(self):
+    '''
+    clear all statistics numbers to 0
+    '''
+    stats = (0, 0, 0, 0)
+    self.update_statistics(stats)
 
   def update_statistics(self, move_stats):
     '''
