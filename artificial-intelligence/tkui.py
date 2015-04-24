@@ -77,29 +77,19 @@ class PlayGround(object):
     '''
     self.gui.mainloop()
 
-  def make_menu(self):
-    '''
-    make the menu bar
-    '''
-    menubar = Menu(self.gui)
-
-    menubar.add_command(label='About', command=self.game.about_me)
-
-    self.gui.config(menu=menubar)
-
   def make_top_bar(self):
     '''
     make the top bar, with game restart, and statistics information
     '''
 
-    # start game button
-    button = Button(self.gui, text='start game', height=30, width=120, \
-                    command=self.game.start_game)
-    button.place(x=20, y=20, width=120, height=20)
-
     # reset game button
     button = Button(self.gui, text='reset game', height=30, width=120, \
-                    command=self.game.reset_game)
+                    command=self.reset_game)
+    button.place(x=20, y=20, width=120, height=20)
+
+    # about me button
+    button = Button(self.gui, text='about me', height=30, width=120, \
+                    command=self.about_me)
     button.place(x=160, y=20, width=120, height=20)
 
     # four labels for statistical numbers
@@ -113,11 +103,18 @@ class PlayGround(object):
     self.label_prune_max.place(x=180, y=50, width=70, height=20)
     self.label_prune_min.place(x=260, y=50, width=70, height=20)
 
+  def reset_game(self):
+    '''
+    restart game by re-selecting game options (side and level)
+    '''
+    self.game.reset_game()
+    self.select_start_options()
+
   def about_me(self):
     '''
     show the author and version of this application
     '''
-    pass
+    print 'about me'
 
   def select_start_options(self):
     '''
@@ -144,7 +141,10 @@ class PlayGround(object):
     bt_south.place(x=120, y=10)
 
     # by default, human plays first, meaning play the north side
-    bt_north.select()
+    if self.choose_side == 'north':
+      bt_north.select()
+    else:
+      bt_south.select()
 
     # choose difficulty level
     label2 = Label(popup, text="Level", height=30, width=50)
@@ -159,8 +159,13 @@ class PlayGround(object):
     bt_level3 = Radiobutton(popup, text="Genius", variable=val2, value=3)
     bt_level3.place(x=180, y=40)
 
-    # by default, the game is hard
-    bt_level2.select()
+    # by default, the game is medium level
+    if self.choose_level == 1:
+      bt_level1.select()
+    elif self.choose_level == 2:
+      bt_level2.select()
+    elif self.choose_level == 3:
+      bt_level3.select()
 
     button = Button(popup, text='SET', \
               command=lambda: self.selected_start_options(popup, val1, val2))
@@ -182,6 +187,8 @@ class PlayGround(object):
     print 'Selected start options'
     print 'Side', self.choose_side
     print 'Level', self.choose_level
+
+    self.game.start_game()
 
     popup.grab_release()
     popup.destroy()

@@ -979,8 +979,10 @@ class GameEngine(object):
 
     if self.ui.choose_side == 'north':
       self.north_player.robot = False
+      self.south_player.robot = True
     elif self.ui.choose_side == 'south':
       self.south_player.robot = False
+      self.north_player.robot = True
     else:
       print 'BUG: Check your code!!!'
       exit(55)
@@ -1014,9 +1016,6 @@ class GameEngine(object):
 
     self.canvass.lock_canvass()
     self.ui.refresh_playground()
-
-  def about_me(self):
-    print 'about me...'
 
   def get_human_player(self):
     '''
