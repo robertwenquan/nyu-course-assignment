@@ -14,7 +14,7 @@ __date__ = "22 Apr 2015"
 from Tkinter import Tk, Canvas, Menu
 from Tkinter import Label, Button, Radiobutton
 from Tkinter import PhotoImage, Toplevel
-from Tkinter import DISABLED, NORMAL
+from Tkinter import DISABLED, NORMAL, FALSE
 from Tkinter import IntVar
 
 
@@ -31,9 +31,6 @@ class PlayGround(object):
     self.unit = 40
     self.margin = 20
 
-    self.gui = Tk()
-    self.gui.title('Mini Camelot')
-
     self.button_map = dict()
 
     ncol = game.ncol
@@ -45,6 +42,11 @@ class PlayGround(object):
     self.width = self.margin * 2 + self.unit * ncol
     self.height = self.margin * 5 + self.unit * nrow
     self.game = game
+
+    # main window
+    self.gui = Tk()
+    self.gui.title('Mini Camelot')
+    self.gui.resizable(width=FALSE, height=FALSE)
 
     # icons
     self.icon_white = PhotoImage(file="images/white.gif")
