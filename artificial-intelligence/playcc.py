@@ -49,7 +49,7 @@ __date__ = "22 Apr 2015"
 #################################################################
 # Aspirational goals (for software architecture and usability)
 #
-# TODO: unselect a cell when it was chosen by mistake
+# DONE: unselect a cell when it was chosen by mistake
 # TODO: about me (student info)
 # TODO: show step-by-step move for robot player
 # TODO: rollback and forward
@@ -1082,6 +1082,20 @@ class GameEngine(object):
     elif player.move_status == 'selected':
       x1, y1 = player.select_loc
       x2, y2 = x, y
+
+      # double click to cancel the selection
+      if (x1, y1) == (x2, y2):
+        print 'cancel the selection of', (x1, y1)
+        player.move_status = 'idle'
+        player.select_piece(None)
+        player.clear_select_path()
+
+        self.canvass.get_cell((x2,y2)).selected = False
+
+        self.canvass.print_debug_cell_map()
+        self.ui.refresh_playground()
+
+        return
 
       legal_move, terminated = self.is_legitimate_first_move((x1, y1), (x2, y2), player)
       if legal_move == False:

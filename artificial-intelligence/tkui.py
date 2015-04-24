@@ -281,7 +281,6 @@ class PlayGround(object):
 
         if cell.lock == True:
           button.configure(state=DISABLED)
-          continue
         else:
           button.configure(state=NORMAL)
 
