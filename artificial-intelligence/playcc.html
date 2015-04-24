@@ -157,8 +157,6 @@ Data descriptors defined here:<br>
 <td width="100%">Methods defined here:<br>
 <dl><dt><a name="GameEngine-__init__"><strong>__init__</strong></a>(self)</dt></dl>
 
-<dl><dt><a name="GameEngine-about_me"><strong>about_me</strong></a>(self)</dt></dl>
-
 <dl><dt><a name="GameEngine-bot_play"><strong>bot_play</strong></a>(self, player)</dt></dl>
 
 <dl><dt><a name="GameEngine-get_cached_move"><strong>get_cached_move</strong></a>(self)</dt><dd><tt>get&nbsp;cached&nbsp;optimal&nbsp;move<br>
@@ -169,6 +167,10 @@ it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp
 Input:&nbsp;None.&nbsp;But&nbsp;implicitely&nbsp;use&nbsp;the&nbsp;game&nbsp;canvass,&nbsp;and&nbsp;the&nbsp;list&nbsp;of&nbsp;pieces&nbsp;for&nbsp;both&nbsp;players<br>
 Output:&nbsp;[]&nbsp;at&nbsp;cache&nbsp;miss<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(x,y),&nbsp;(x,y),&nbsp;...]&nbsp;at&nbsp;cache&nbsp;hit</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-get_canvass_hashkey"><strong>get_canvass_hashkey</strong></a>(self)</dt><dd><tt>generate&nbsp;a&nbsp;hash&nbsp;code&nbsp;based&nbsp;on&nbsp;the&nbsp;current&nbsp;canvass&nbsp;map<br>
+&nbsp;<br>
+caicai,&nbsp;this&nbsp;is&nbsp;your&nbsp;job!!</tt></dd></dl>
 
 <dl><dt><a name="GameEngine-get_human_player"><strong>get_human_player</strong></a>(self)</dt><dd><tt>return&nbsp;the&nbsp;human&nbsp;player&nbsp;<a href="__builtin__.html#object">object</a><br>
 limit:&nbsp;there&nbsp;is&nbsp;at&nbsp;most&nbsp;one&nbsp;human&nbsp;player&nbsp;in&nbsp;the&nbsp;game<br>
@@ -241,6 +243,8 @@ it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp
 &nbsp;<br>
 Input:&nbsp;None.&nbsp;But&nbsp;implicitely&nbsp;load&nbsp;'game_move.cache'&nbsp;from&nbsp;the&nbsp;current&nbsp;directory<br>
 Output:&nbsp;A&nbsp;dictionary<br>
+&nbsp;<br>
+NOTE:&nbsp;the&nbsp;cached&nbsp;results&nbsp;are&nbsp;saved&nbsp;per&nbsp;difficulty&nbsp;level<br>
 &nbsp;<br>
 WHEN&nbsp;file&nbsp;is&nbsp;not&nbsp;found,&nbsp;the&nbsp;dictionary&nbsp;will&nbsp;be&nbsp;empty&nbsp;but&nbsp;it&nbsp;does&nbsp;not&nbsp;affect&nbsp;the&nbsp;game&nbsp;initialization</tt></dd></dl>
 
