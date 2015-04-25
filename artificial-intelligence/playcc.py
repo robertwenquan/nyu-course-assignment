@@ -86,6 +86,8 @@ __date__ = "22 Apr 2015"
 # FIXED: game options popup window is beneath the main game canvass window
 # FIXED: can click START GAME to re-enable the game canvass
 # FIXED: reset does not reset the statistics metrics
+# FIXME: picture not filling the box on iOS
+# FIXME: margin between boxes are too big
 #
 
 import sys
