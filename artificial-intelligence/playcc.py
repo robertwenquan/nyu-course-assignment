@@ -1181,10 +1181,56 @@ class GameEngine(object):
     '''
     generate a hash code based on the current canvass map
 
-    caicai, this is your job!!
+    Output: A unique string represent the current canvass
+            South player piece + 'f' + north player piece
+
+    Note: f is separator 
     '''
 
-    return 'abcdefghijklmnopqrstuvwxyz'
+    #TODO: As robot can be either side, try to find a way to combine this two conditions
+
+    black_piece = ''
+    white_piece = ''
+    for x in range(14):
+      for y in range(8):
+        cell = self.canvass.get_cell((x,y))
+        if cell == None or cell.status == 'free' or cell.status == 'disabled':
+          continue
+
+        if cell.status == 'south':
+          black_piece += self.encryp((x,y))
+        else:
+          white_piece += self.encryp((x,y))
+    return black_piece + 'f' + white_piece
+
+  def encryp(self, cell):
+    '''
+    Convert integer coordinate to String
+
+    Input: coordinate (x,y)
+    Output: string of hex(x) and y
+            Like a4, d1 etc
+    '''
+
+    x, y = cell
+    if x < 10:
+      ret = str(x)
+    else:
+      if x == 10:
+        ret = 'a'
+      elif x == 11:
+        ret = 'b'
+      elif x == 12:
+        ret = 'c'
+      elif x == 13:
+        ret = 'd'
+      else:
+        print 'BUG: Check your code!!!'
+        exit(55)
+
+    ret += str(y)
+
+    return ret
 
   def load_cached_move(self):
     '''
