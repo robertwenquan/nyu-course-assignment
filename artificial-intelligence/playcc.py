@@ -51,7 +51,7 @@ __date__ = "22 Apr 2015"
 #
 # DONE: unselect a cell when it was chosen by mistake
 # TODO: about me (student info)
-# TODO: show step-by-step move for robot player
+# DONE: show step-by-step move for robot player
 # TODO: rollback and forward
 # TODO: two robots playing together
 # TODO: show game play header, with two player's name, level, etc.
@@ -981,6 +981,10 @@ class GameEngine(object):
     # initialize UI
     self.ui = PlayGround(self)
 
+    # bot playing status
+    # this flag is to prevent human play before bot finishes its moves
+    self.bot_playing = False
+
   def start_game(self):
     '''
     start the game
@@ -1062,6 +1066,11 @@ class GameEngine(object):
     player = self.get_human_player()
     if player == None:
       print 'no human player available. ui not clickable.'
+      return
+
+    print 'bot playing', self.bot_playing
+    if self.bot_playing == True:
+      print 'bot is still playing... click again later...'
       return
 
     print "click cell(%d,%d)" % (x, y)
@@ -1288,6 +1297,9 @@ class GameEngine(object):
       print 'BUG!!! Must be a robot here!!!'
       exit(3)
 
+    # entering bot playing mode
+    self.bot_playing = True
+
     # get optimal move path
     # along with its move statistics
     hash_key, (move_path, move_stats) = self.get_cached_move()
@@ -1328,10 +1340,15 @@ class GameEngine(object):
           self.ui.notify_win(who)
           print "%s wins the game!! Ending game!!!" % who
 
+      def end_bot_playing():
+        self.bot_playing = False
+
       # delay the move and ui refresh with 1s for each move
       self.ui.gui.after(1000*i, \
           lambda loc_from=loc_from, loc_to=loc_to: move_piece_local(loc_from, loc_to))
 
+      if i == nmove-1:
+        self.ui.gui.after(1000*i, end_bot_playing)
 
   def is_match_end(self):
     '''
