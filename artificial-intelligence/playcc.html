@@ -166,7 +166,7 @@ Input:&nbsp;coordinate&nbsp;(x,y)<br>
 Output:&nbsp;string&nbsp;of&nbsp;hex(x)&nbsp;and&nbsp;y<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like&nbsp;a4,&nbsp;d1&nbsp;etc</tt></dd></dl>
 
-<dl><dt><a name="GameEngine-get_cached_move"><strong>get_cached_move</strong></a>(self)</dt><dd><tt>get&nbsp;cached&nbsp;optimal&nbsp;move<br>
+<dl><dt><a name="GameEngine-get_cached_move"><strong>get_cached_move</strong></a>(self, player)</dt><dd><tt>get&nbsp;cached&nbsp;optimal&nbsp;move<br>
 &nbsp;<br>
 this&nbsp;cached&nbsp;result&nbsp;is&nbsp;based&nbsp;on&nbsp;the&nbsp;exactly&nbsp;the&nbsp;same&nbsp;canvass&nbsp;senario<br>
 it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;at&nbsp;game&nbsp;play<br>
@@ -260,7 +260,7 @@ WHEN&nbsp;file&nbsp;is&nbsp;not&nbsp;found,&nbsp;the&nbsp;dictionary&nbsp;will&n
 
 <dl><dt><a name="GameEngine-reset_game"><strong>reset_game</strong></a>(self)</dt><dd><tt>reset&nbsp;the&nbsp;game&nbsp;canvass&nbsp;to&nbsp;default</tt></dd></dl>
 
-<dl><dt><a name="GameEngine-save_cached_move"><strong>save_cached_move</strong></a>(self, hash_key, move_path, move_stats)</dt><dd><tt>save&nbsp;cached&nbsp;move&nbsp;for&nbsp;the&nbsp;current&nbsp;game&nbsp;canvass&nbsp;scenario<br>
+<dl><dt><a name="GameEngine-save_cached_move"><strong>save_cached_move</strong></a>(self, player, hash_key, move_path, move_stats)</dt><dd><tt>save&nbsp;cached&nbsp;move&nbsp;for&nbsp;the&nbsp;current&nbsp;game&nbsp;canvass&nbsp;scenario<br>
 it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;when&nbsp;the&nbsp;same&nbsp;scenario&nbsp;comes&nbsp;again<br>
 &nbsp;<br>
 the&nbsp;cached&nbsp;result&nbsp;will&nbsp;be&nbsp;saved&nbsp;into&nbsp;a&nbsp;dictionary&nbsp;first,&nbsp;and&nbsp;then&nbsp;into&nbsp;a&nbsp;pickle&nbsp;file</tt></dd></dl>
