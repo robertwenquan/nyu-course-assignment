@@ -83,6 +83,7 @@ __date__ = "22 Apr 2015"
 # FIXED: one piece, game point not win
 # FIXED: two pieces, game point not win but approaching the further piece
 # FIXED: in some cases, there is no moving path for the robot
+# FIXED: find the reason why it reaches the limitaion of recurssion times
 # FIXED: game options popup window is beneath the main game canvass window
 # FIXED: can click START GAME to re-enable the game canvass
 # FIXED: reset does not reset the statistics metrics
@@ -740,8 +741,6 @@ class Player(object):
         In the form [[(x1,y1)],[(x2,y2),(x3,y3),...,(x4,y4)],...]
     '''
 
-    # TODO: DONE (cc) Find the bug why sometimes return empty path
-
     x, y = piece
     possible_move = []
     # Get all non-disabled adjacent cell
@@ -786,8 +785,6 @@ class Player(object):
 
     Like DFS, recurssion after finding next possible leap.
     '''
-
-    # TODO(cc):DONE find the reason why it reaches the limitaion of recurssion times
 
     # Add current node to the path
     x, y = cell_loc
