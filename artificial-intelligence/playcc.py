@@ -977,6 +977,7 @@ class GameEngine(object):
 
     # set the cached results
     self.cached_results = dict()
+    self.load_cached_pickle()
 
     # initialize UI
     self.ui = PlayGround(self)
@@ -1242,17 +1243,20 @@ class GameEngine(object):
     WHEN file is not found, the dictionary will be empty but it does not affect the game initialization
     '''
 
-    #self.cached_results = dict()
-
-    pass
+    try:
+      self.cached_results = pickle.load(open('smartcc.cache', 'r'))
+    except:
+      self.cached_results[1] = { 'north' : {}, 'south' : {} }
+      self.cached_results[2] = { 'north' : {}, 'south' : {} }
+      self.cached_results[3] = { 'north' : {}, 'south' : {} }
 
   def save_cached_pickle(self):
     '''
     save the whole cached dictionary into a pickle file
     '''
-    pass
+    pickle.dump(self.cached_results, open('smartcc.cache', 'w'))
 
-  def get_cached_move(self):
+  def get_cached_move(self, player):
     '''
     get cached optimal move
 
@@ -1264,21 +1268,24 @@ class GameEngine(object):
             [(x,y), (x,y), ...] at cache hit
     '''
 
+    side = player.side
+    level = player.intell_level
+
     # get the hashid of the current canvass
     hashkey = self.get_canvass_hashkey()
     print 'hashkey:', hashkey
 
     # query the dictionary
-    if self.cached_results.get(hashkey) == None:
+    if self.cached_results[level][side].get(hashkey) == None:
       # cache miss
       print 'cache miss for', hashkey
       return (hashkey, ([], (0,0,0,0)))
     else:
       # cache hit
       print 'cache hit for', hashkey
-      return (hashkey, self.cached_results[hashkey])
+      return (hashkey, self.cached_results[level][side][hashkey])
 
-  def save_cached_move(self, hash_key, move_path, move_stats):
+  def save_cached_move(self, player, hash_key, move_path, move_stats):
     '''
     save cached move for the current game canvass scenario
     it is to save redundant time of thinking when the same scenario comes again
@@ -1286,10 +1293,14 @@ class GameEngine(object):
     the cached result will be saved into a dictionary first, and then into a pickle file
     '''
 
+    side = player.side
+    level = player.intell_level
+
     # save the cache into the dictionary first
-    self.cached_results[hash_key] = (move_path, move_stats)
+    self.cached_results[level][side][hash_key] = (move_path, move_stats)
 
     # sync the result into the pickle file
+    self.save_cached_pickle()
 
   def bot_play(self, player):
 
@@ -1302,10 +1313,10 @@ class GameEngine(object):
 
     # get optimal move path
     # along with its move statistics
-    hash_key, (move_path, move_stats) = self.get_cached_move()
+    hash_key, (move_path, move_stats) = self.get_cached_move(player)
     if move_path == []:
       move_path, move_stats = player.whats_next_move()
-      self.save_cached_move(hash_key, move_path, move_stats)
+      self.save_cached_move(player, hash_key, move_path, move_stats)
 
     print '----------- Moving Path --------------'
     for loc in move_path:
