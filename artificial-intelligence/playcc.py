@@ -1323,6 +1323,11 @@ class GameEngine(object):
       loc_to = move_path[i + 1]
 
       def move_piece_local(loc_from, loc_to):
+        '''
+        this is made a function for the ui to call it
+        in a deferred way
+        hence the ui will not be stucked
+        '''
 
         print "Moving path: %s -> %s" % (loc_from, loc_to)
         player.move_piece(loc_from, loc_to)
@@ -1341,12 +1346,20 @@ class GameEngine(object):
           print "%s wins the game!! Ending game!!!" % who
 
       def end_bot_playing():
+        '''
+        this is made a function for the ui to call it
+        in a deferred way
+        '''
         self.bot_playing = False
 
       # delay the move and ui refresh with 1s for each move
+      # 1st move delays 0 sec
+      # 2nd move delays 1 sec
+      # nth move delays n-1 sec
       self.ui.gui.after(1000*i, \
           lambda loc_from=loc_from, loc_to=loc_to: move_piece_local(loc_from, loc_to))
 
+      # when all moves finish, call end_bot_playing function to end the bot play mode
       if i == nmove-1:
         self.ui.gui.after(1000*i, end_bot_playing)
 
