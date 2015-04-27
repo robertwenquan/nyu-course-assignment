@@ -1193,19 +1193,19 @@ class GameEngine(object):
 
     black_piece = ''
     white_piece = ''
-    for x in range(14):
-      for y in range(8):
+    for x in range(self.nrow):
+      for y in range(self.ncol):
         cell = self.canvass.get_cell((x,y))
         if cell == None or cell.status == 'free' or cell.status == 'disabled':
           continue
 
         if cell.status == 'south':
-          black_piece += self.encryp((x,y))
+          black_piece += self.encrypt((x,y))
         else:
-          white_piece += self.encryp((x,y))
+          white_piece += self.encrypt((x,y))
     return black_piece + 'f' + white_piece
 
-  def encryp(self, cell):
+  def encrypt(self, cell):
     '''
     Convert integer coordinate to String
 
@@ -1215,22 +1215,7 @@ class GameEngine(object):
     '''
 
     x, y = cell
-    if x < 10:
-      ret = str(x)
-    else:
-      if x == 10:
-        ret = 'a'
-      elif x == 11:
-        ret = 'b'
-      elif x == 12:
-        ret = 'c'
-      elif x == 13:
-        ret = 'd'
-      else:
-        print 'BUG: Check your code!!!'
-        exit(55)
-
-    ret += str(y)
+    ret = hex(x)[2:] + hex(y)[2:]
 
     return ret
 
