@@ -1220,7 +1220,7 @@ class GameEngine(object):
 
     return ret
 
-  def load_cached_move(self):
+  def load_cached_pickle(self):
     '''
     load cached optimal move results from pickle file
     it is to save redundant time of thinking at game play
@@ -1231,6 +1231,15 @@ class GameEngine(object):
     NOTE: the cached results are saved per difficulty level
 
     WHEN file is not found, the dictionary will be empty but it does not affect the game initialization
+    '''
+
+    #self.cached_results = dict()
+
+    pass
+
+  def save_cached_pickle(self):
+    '''
+    save the whole cached dictionary into a pickle file
     '''
     pass
 
@@ -1267,7 +1276,11 @@ class GameEngine(object):
 
     the cached result will be saved into a dictionary first, and then into a pickle file
     '''
+
+    # save the cache into the dictionary first
     self.cached_results[hash_key] = (move_path, move_stats)
+
+    # sync the result into the pickle file
 
   def bot_play(self, player):
 
@@ -1297,25 +1310,28 @@ class GameEngine(object):
       loc_from = move_path[i]
       loc_to = move_path[i + 1]
 
-      print "Moving path: %s -> %s" % (loc_from, loc_to)
-      player.move_piece(loc_from, loc_to)
+      def move_piece_local(loc_from, loc_to):
 
-      rival_leap, loc = self.is_leap_over_rival(loc_from, loc_to, player)
-      if rival_leap == True:
-        player.rival.remove_piece(loc)
+        print "Moving path: %s -> %s" % (loc_from, loc_to)
+        player.move_piece(loc_from, loc_to)
 
-      # refresh UI at each move with delay
-      # FIXME (rw): this doesn't work, need more research
-      #self.ui.refresh_playground()
-      #time.sleep(0.5)
+        rival_leap, loc = self.is_leap_over_rival(loc_from, loc_to, player)
+        if rival_leap == True:
+          player.rival.remove_piece(loc)
 
-    self.ui.refresh_playground()
+        # refresh UI at each move with delay
+        self.ui.refresh_playground()
 
-    # check the game ending condition after the move of the bot player
-    win_the_game, who = self.is_match_end()
-    if win_the_game == True:
-      self.ui.notify_win(who)
-      print "%s wins the game!! Ending game!!!" % who
+        # check the game ending condition after the move of the bot player
+        win_the_game, who = self.is_match_end()
+        if win_the_game == True:
+          self.ui.notify_win(who)
+          print "%s wins the game!! Ending game!!!" % who
+
+      # delay the move and ui refresh with 1s for each move
+      self.ui.gui.after(1000*i, \
+          lambda loc_from=loc_from, loc_to=loc_to: move_piece_local(loc_from, loc_to))
+
 
   def is_match_end(self):
     '''
