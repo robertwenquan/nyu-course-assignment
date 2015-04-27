@@ -63,8 +63,8 @@ __date__ = "22 Apr 2015"
 #################################################################
 # Aspirational performance goals
 #
-# TODO: caching best move results on the play
-# TODO: store and load caching with pickle file
+# DONE: caching best move results on the play
+# DONE: store and load caching with pickle file
 # TODO: prelearning and caching massive results
 #
 #################################################################
