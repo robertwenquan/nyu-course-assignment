@@ -93,6 +93,7 @@ __date__ = "22 Apr 2015"
 import sys
 import time
 import getopt
+import pickle
 from copy import copy
 from pprint import pprint
 from tkui import PlayGround
@@ -1247,23 +1248,26 @@ class GameEngine(object):
 
     # get the hashid of the current canvass
     hashkey = self.get_canvass_hashkey()
+    print 'hashkey:', hashkey
 
     # query the dictionary
     if self.cached_results.get(hashkey) == None:
       # cache miss
-      return ([],(0,0,0,0))
+      print 'cache miss for', hashkey
+      return (hashkey, ([], (0,0,0,0)))
     else:
       # cache hit
-      return cached_results[hashkey]
+      print 'cache hit for', hashkey
+      return (hashkey, self.cached_results[hashkey])
 
-  def save_cached_move(self, move_path, move_stats):
+  def save_cached_move(self, hash_key, move_path, move_stats):
     '''
     save cached move for the current game canvass scenario
     it is to save redundant time of thinking when the same scenario comes again
 
     the cached result will be saved into a dictionary first, and then into a pickle file
     '''
-    pass
+    self.cached_results[hash_key] = (move_path, move_stats)
 
   def bot_play(self, player):
 
@@ -1273,10 +1277,10 @@ class GameEngine(object):
 
     # get optimal move path
     # along with its move statistics
-    move_path, move_stats = self.get_cached_move()
+    hash_key, (move_path, move_stats) = self.get_cached_move()
     if move_path == []:
       move_path, move_stats = player.whats_next_move()
-      self.save_cached_move(move_path, move_stats)
+      self.save_cached_move(hash_key, move_path, move_stats)
 
     print '----------- Moving Path --------------'
     for loc in move_path:
