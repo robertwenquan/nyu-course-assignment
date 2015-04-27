@@ -1,7 +1,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head><title>Python: module playcc</title>
-<meta charset="utf-8">
 </head><body bgcolor="#f0f0f8">
 
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
@@ -9,7 +8,7 @@
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>playcc</strong></big></big> (22 Apr 2015)</font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/robertwen/Desktop/nyu-course-assignment/artificial-intelligence/playcc.py">/Users/robertwen/Desktop/nyu-course-assignment/artificial-intelligence/playcc.py</a></font></td></tr></table>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/root/github/nyu-course-assignment/artificial-intelligence/playcc.py">/root/github/nyu-course-assignment/artificial-intelligence/playcc.py</a></font></td></tr></table>
     <p><tt>this&nbsp;is&nbsp;the&nbsp;Mini&nbsp;Camelot&nbsp;game<br>
 for&nbsp;CS-GY&nbsp;6613&nbsp;Artificial&nbsp;Intelligence&nbsp;course&nbsp;in&nbsp;Spring&nbsp;2015&nbsp;semester<br>
 &nbsp;<br>
@@ -25,9 +24,10 @@ this&nbsp;source&nbsp;code&nbsp;defines&nbsp;a&nbsp;few&nbsp;classes:<br>
     
 <tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="getopt.html">getopt</a><br>
+</td><td width="25%" valign=top><a href="pickle.html">pickle</a><br>
 </td><td width="25%" valign=top><a href="sys.html">sys</a><br>
 </td><td width="25%" valign=top><a href="time.html">time</a><br>
-</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+</td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ee77aa">
 <td colspan=3 valign=bottom>&nbsp;<br>
@@ -160,7 +160,7 @@ Data descriptors defined here:<br>
 
 <dl><dt><a name="GameEngine-bot_play"><strong>bot_play</strong></a>(self, player)</dt></dl>
 
-<dl><dt><a name="GameEngine-encryp"><strong>encryp</strong></a>(self, cell)</dt><dd><tt>Convert&nbsp;integer&nbsp;coordinate&nbsp;to&nbsp;String<br>
+<dl><dt><a name="GameEngine-encrypt"><strong>encrypt</strong></a>(self, cell)</dt><dd><tt>Convert&nbsp;integer&nbsp;coordinate&nbsp;to&nbsp;String<br>
 &nbsp;<br>
 Input:&nbsp;coordinate&nbsp;(x,y)<br>
 Output:&nbsp;string&nbsp;of&nbsp;hex(x)&nbsp;and&nbsp;y<br>
@@ -248,7 +248,7 @@ Game&nbsp;Winning&nbsp;Condition&nbsp;(meeting&nbsp;one&nbsp;wins&nbsp;the&nbsp;
 Input:&nbsp;N/A&nbsp;(Check&nbsp;the&nbsp;global&nbsp;class&nbsp;canvass)<br>
 Output:&nbsp;(result,&nbsp;who)&nbsp;result&nbsp;=&nbsp;True&nbsp;/&nbsp;False,&nbsp;who&nbsp;=&nbsp;"north"&nbsp;/&nbsp;"south"</tt></dd></dl>
 
-<dl><dt><a name="GameEngine-load_cached_move"><strong>load_cached_move</strong></a>(self)</dt><dd><tt>load&nbsp;cached&nbsp;optimal&nbsp;move&nbsp;results&nbsp;from&nbsp;pickle&nbsp;file<br>
+<dl><dt><a name="GameEngine-load_cached_pickle"><strong>load_cached_pickle</strong></a>(self)</dt><dd><tt>load&nbsp;cached&nbsp;optimal&nbsp;move&nbsp;results&nbsp;from&nbsp;pickle&nbsp;file<br>
 it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;at&nbsp;game&nbsp;play<br>
 &nbsp;<br>
 Input:&nbsp;None.&nbsp;But&nbsp;implicitely&nbsp;load&nbsp;'game_move.cache'&nbsp;from&nbsp;the&nbsp;current&nbsp;directory<br>
@@ -260,10 +260,12 @@ WHEN&nbsp;file&nbsp;is&nbsp;not&nbsp;found,&nbsp;the&nbsp;dictionary&nbsp;will&n
 
 <dl><dt><a name="GameEngine-reset_game"><strong>reset_game</strong></a>(self)</dt><dd><tt>reset&nbsp;the&nbsp;game&nbsp;canvass&nbsp;to&nbsp;default</tt></dd></dl>
 
-<dl><dt><a name="GameEngine-save_cached_move"><strong>save_cached_move</strong></a>(self, move_path, move_stats)</dt><dd><tt>save&nbsp;cached&nbsp;move&nbsp;for&nbsp;the&nbsp;current&nbsp;game&nbsp;canvass&nbsp;scenario<br>
+<dl><dt><a name="GameEngine-save_cached_move"><strong>save_cached_move</strong></a>(self, hash_key, move_path, move_stats)</dt><dd><tt>save&nbsp;cached&nbsp;move&nbsp;for&nbsp;the&nbsp;current&nbsp;game&nbsp;canvass&nbsp;scenario<br>
 it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;when&nbsp;the&nbsp;same&nbsp;scenario&nbsp;comes&nbsp;again<br>
 &nbsp;<br>
 the&nbsp;cached&nbsp;result&nbsp;will&nbsp;be&nbsp;saved&nbsp;into&nbsp;a&nbsp;dictionary&nbsp;first,&nbsp;and&nbsp;then&nbsp;into&nbsp;a&nbsp;pickle&nbsp;file</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-save_cached_pickle"><strong>save_cached_pickle</strong></a>(self)</dt><dd><tt>save&nbsp;the&nbsp;whole&nbsp;cached&nbsp;dictionary&nbsp;into&nbsp;a&nbsp;pickle&nbsp;file</tt></dd></dl>
 
 <dl><dt><a name="GameEngine-start"><strong>start</strong></a>(self)</dt><dd><tt>kickstart&nbsp;the&nbsp;game&nbsp;by&nbsp;calling&nbsp;the&nbsp;ui&nbsp;display</tt></dd></dl>
 
