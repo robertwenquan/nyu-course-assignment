@@ -244,18 +244,27 @@ class GameCanvass(object):
       print 'Error!'
       return
 
+    cell_from_lock_saved = cell_from.lock
+
     cell_to.status = cell_from.status
     cell_to.selected = cell_from.selected
     cell_to.lock = cell_from.lock
 
     self.free_cell(loc_start)
+    cell_from = self.get_cell(loc_start)
+    cell_from.lock = cell_from_lock_saved
 
   def remove_cell(self, loc):
     '''
     remove a cell from a specified (x,y) cooridinates
     this is the same as free_cell but without integrity check
     '''
+    cell = self.get_cell(loc)
+    cell_lock_saved = cell.lock
+
     self.free_cell(loc)
+    cell = self.get_cell(loc)
+    cell.lock = cell_lock_saved
 
   def add_cell(self, loc, side):
     '''
@@ -394,6 +403,8 @@ class Player(object):
     self.name = name
     self.side = side
     self.move_status = move_status
+
+    self.playing = False
 
     if self.name == 'caicai':
       self.intell_level = 3
@@ -949,7 +960,7 @@ class GameEngine(object):
   # what is the playing doing?
   status = ''
 
-  def __init__(self):
+  def __init__(self, robot_mode = False):
 
     # setup north and south with player
     player1 = Player(side = 'north', robot = True)
@@ -979,9 +990,8 @@ class GameEngine(object):
     # initialize UI
     self.ui = PlayGround(self)
 
-    # bot playing status
-    # this flag is to prevent human play before bot finishes its moves
-    self.bot_playing = False
+    # double robot mode
+    self.robot_mode = robot_mode
 
   def start_game(self):
     '''
@@ -995,20 +1005,61 @@ class GameEngine(object):
     print "Level: ", self.ui.choose_level
     print "............................................."
 
-    if self.ui.choose_side == 'north':
-      self.north_player.robot = False
-      self.south_player.robot = True
-    elif self.ui.choose_side == 'south':
-      self.south_player.robot = False
-      self.north_player.robot = True
+    # ROBOT MODE
+    # only set the difficulty level
+    if self.robot_mode == True:
+      self.north_player.set_intell_level(self.ui.choose_level)
+      self.south_player.set_intell_level(self.ui.choose_level)
+    # HUMAN vs ROBOT MODE
+    # set both side and level
     else:
-      print 'BUG: Check your code!!!'
-      exit(55)
+      if self.ui.choose_side == 'north':
+        self.north_player.robot = False
+        self.south_player.robot = True
+      elif self.ui.choose_side == 'south':
+        self.south_player.robot = False
+        self.north_player.robot = True
+      else:
+        print 'BUG: Check your code!!!'
+        exit(55)
 
-    player = self.get_human_player().rival
-    assert(player != None)
-    player.set_intell_level(self.ui.choose_level)
+      player = self.get_human_player().rival
+      assert(player != None)
+      player.set_intell_level(self.ui.choose_level)
 
+    ##########################
+    # TWO ROBOTS SCENARIO
+    ##########################
+    # if the both players are robots, which is supported in v2.0,
+    # never unlock the canvass for human player and keep the robots playing
+    # but still north first
+    def two_robots_play():
+      while True:
+
+        while self.south_player.playing == True:
+          time.sleep(0.1)
+        self.bot_play(self.north_player)
+
+        win_the_game, _ = self.is_match_end()
+        if win_the_game == True:
+          break
+
+        while self.north_player.playing == True:
+          time.sleep(0.1)
+        self.bot_play(self.south_player)
+
+        win_the_game, _ = self.is_match_end()
+        if win_the_game == True:
+          break
+
+    if self.north_player.robot == True and self.south_player.robot == True:
+      self.ui.gui.after(100, two_robots_play)
+      self.ui.refresh_playground()
+      return
+
+    ##########################
+    # HUMAN vs ROBOT SCENARIO
+    ##########################
     # if the north player is robot, let it play first
     if self.north_player.robot == True:
       self.bot_play(self.north_player)
@@ -1066,8 +1117,8 @@ class GameEngine(object):
       print 'no human player available. ui not clickable.'
       return
 
-    print 'bot playing', self.bot_playing
-    if self.bot_playing == True:
+    print 'bot playing', player.rival.playing
+    if player.rival.playing == True:
       print 'bot is still playing... click again later...'
       return
 
@@ -1185,7 +1236,8 @@ class GameEngine(object):
     #################################################
     # bot player engages
     #################################################
-    self.bot_play(player.rival)
+    #self.bot_play(player.rival)
+    self.ui.gui.after(500, self.bot_play(player.rival))
 
   def get_canvass_hashkey(self):
     '''
@@ -1306,7 +1358,7 @@ class GameEngine(object):
       exit(3)
 
     # entering bot playing mode
-    self.bot_playing = True
+    player.playing = True
 
     # get optimal move path
     # along with its move statistics
@@ -1353,23 +1405,30 @@ class GameEngine(object):
           self.ui.notify_win(who)
           print "%s wins the game!! Ending game!!!" % who
 
-      def end_bot_playing():
+      def end_bot_playing(player):
         '''
         this is made a function for the ui to call it
         in a deferred way
         '''
-        self.bot_playing = False
+        player.playing = False
 
-      # delay the move and ui refresh with 1s for each move
-      # 1st move delays 0 sec
-      # 2nd move delays 1 sec
-      # nth move delays n-1 sec
+      # human-robot mode, use call-back function
+      if self.robot_mode == False:
+        # delay the move and ui refresh with 1s for each move
+        # 1st move delays 0 sec
+        # 2nd move delays 1 sec
+        # nth move delays n-1 sec
+        self.ui.gui.after(1000*i, \
+            lambda loc_from=loc_from, loc_to=loc_to: move_piece_local(loc_from, loc_to))
+      else:
+        move_piece_local(loc_from, loc_to)
+
+    # when all moves finish, call end_bot_playing function to end the bot play mode
+    if self.robot_mode == False:
       self.ui.gui.after(1000*i, \
-          lambda loc_from=loc_from, loc_to=loc_to: move_piece_local(loc_from, loc_to))
-
-      # when all moves finish, call end_bot_playing function to end the bot play mode
-      if i == nmove-1:
-        self.ui.gui.after(1000*i, end_bot_playing)
+          lambda player=player:end_bot_playing(player))
+    else:
+      player.playing = False
 
   def is_match_end(self):
     '''
@@ -1547,10 +1606,11 @@ def main(argv):
 
   verbose = 0
   debug = 0
+  robot = False
 
   try:
-    opts, args = getopt.getopt(argv, 'hvd', \
-                                    ['help', 'verbose', 'debug'])
+    opts, args = getopt.getopt(argv, 'hvdr', \
+                                    ['help', 'verbose', 'debug', 'robot'])
   except getopt.GetoptError:
     print_cmdline_help()
     sys.exit(2)
@@ -1563,12 +1623,14 @@ def main(argv):
       verbose = 1
     elif opt in ("-d", "--debug"):
       debug = 1
+    elif opt in ("-r", "--robot"):
+      robot = True
 
   if debug == 1:
     print 'verbose = %d' % verbose
     print 'debug   = %d' % debug
 
-  game = GameEngine()
+  game = GameEngine(robot)
 
   # kick off the game with UI
   game.start()

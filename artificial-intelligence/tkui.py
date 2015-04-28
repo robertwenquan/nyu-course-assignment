@@ -65,6 +65,14 @@ class PlayGround(object):
     self.label_endgame_lose = Label(image=self.photo_endgame_lose)
     self.label_endgame_lose.image = self.photo_endgame_lose
 
+    self.photo_endgame_north_win = PhotoImage(file="images/game-over-north-win.gif")
+    self.label_endgame_north_win = Label(image=self.photo_endgame_north_win)
+    self.label_endgame_north_win.image = self.photo_endgame_north_win
+
+    self.photo_endgame_south_win = PhotoImage(file="images/game-over-south-win.gif")
+    self.label_endgame_south_win = Label(image=self.photo_endgame_south_win)
+    self.label_endgame_south_win.image = self.photo_endgame_south_win
+
     # game options pop up box
     self.select_start_options()
 
@@ -290,6 +298,8 @@ class PlayGround(object):
     '''
     self.label_endgame_win.place_forget()
     self.label_endgame_lose.place_forget()
+    self.label_endgame_north_win.place_forget()
+    self.label_endgame_south_win.place_forget()
 
   def notify_win(self, who):
     '''
@@ -299,6 +309,17 @@ class PlayGround(object):
 
     assert who == 'north' or who == 'south'
 
+    # robot only mode
+    if self.game.robot_mode == True:
+      if who == 'north':
+        #self.label_endgame_north_win.place(x=20, y=219)
+        pass
+      else:
+        #self.label_endgame_south_win.place(x=20, y=219)
+        pass
+      return
+
+    # human engage mode
     self.game.canvass.lock_canvass()
     self.refresh_playground()
 
