@@ -1382,6 +1382,7 @@ class GameEngine(object):
       loc_from = move_path[i]
       loc_to = move_path[i + 1]
 
+      print "Trying to move [%d]: %s -> %s" % (i, loc_from, loc_to)
       def move_piece_local(loc_from, loc_to):
         '''
         this is made a function for the ui to call it
@@ -1421,14 +1422,19 @@ class GameEngine(object):
         self.ui.gui.after(1000*i, \
             lambda loc_from=loc_from, loc_to=loc_to: move_piece_local(loc_from, loc_to))
       else:
-        move_piece_local(loc_from, loc_to)
+        self.ui.gui.after(1000*i + 500, \
+            lambda loc_from=loc_from, loc_to=loc_to: move_piece_local(loc_from, loc_to))
+        #move_piece_local(loc_from, loc_to)
+        #time.sleep(1)
 
     # when all moves finish, call end_bot_playing function to end the bot play mode
     if self.robot_mode == False:
       self.ui.gui.after(1000*i, \
           lambda player=player:end_bot_playing(player))
     else:
-      player.playing = False
+      #player.playing = False
+      self.ui.gui.after(1000*i + 1000, \
+          lambda player=player:end_bot_playing(player))
 
   def is_match_end(self):
     '''

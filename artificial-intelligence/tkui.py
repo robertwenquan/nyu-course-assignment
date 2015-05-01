@@ -39,7 +39,7 @@ class PlayGround(object):
     self.choose_side = 'north'
     self.choose_level = 2
 
-    self.width = self.margin * 2 + self.unit * ncol
+    self.width = self.margin * 2 + self.unit * ncol + 200
     self.height = self.margin * 5 + self.unit * nrow
     self.game = game
 
@@ -111,6 +111,25 @@ class PlayGround(object):
     self.label_prune_max.place(x=180, y=50, width=70, height=20)
     self.label_prune_min.place(x=260, y=50, width=70, height=20)
 
+  def make_side_info(self):
+    '''
+    make the side bar
+    which has the icon for north and south player
+    and the corresponding technical metrics during the play
+    '''
+
+    self.label_north_icon = Label(self.gui)
+    self.label_north_icon.place(x=370, y=120, width=80, height=80)
+
+    self.label_north_timer = Label(self.gui, text='00:00:00')
+    self.label_north_timer.place(x=370, y=210, width=160, height=30)
+
+    self.label_south_icon = Label(self.gui)
+    self.label_south_icon.place(x=370, y=400, width=80, height=80)
+
+    self.label_south_timer = Label(self.gui, text='00:00:00')
+    self.label_south_timer.place(x=370, y=490, width=160, height=30)
+
   def reset_game(self):
     '''
     restart game by re-selecting game options (side and level)
@@ -123,7 +142,11 @@ class PlayGround(object):
     '''
     show the author and version of this application
     '''
-    print 'about me'
+    print '================================='
+    print 'Mini Camelot Game'
+    print ''
+    print 'Caicai CHEN <caicai.chen@nyu.edu>'
+    print '================================='
 
   def select_start_options(self):
     '''
@@ -228,6 +251,9 @@ class PlayGround(object):
 
     # place top bar
     self.make_top_bar()
+
+    # place side info
+    self.make_side_info()
 
     # place the buttons
     for row_idx in range(nrow):
