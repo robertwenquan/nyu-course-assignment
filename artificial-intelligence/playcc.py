@@ -590,7 +590,7 @@ class Player(object):
 
     # Cutting-Off when reaches depth limitation
     if level == 0:
-      return self.estimate_function(),(),[], num_pruning_max, num_pruning_min, nodes_generated, level
+      return self.evaluation_function(),(),[], num_pruning_max, num_pruning_min, nodes_generated, level
 
     # Init Value of this node
     level -= 1
@@ -650,7 +650,7 @@ class Player(object):
 
     # Reaches the cutting-off level, return estimate value according to current canvass
     if level == 0:
-      return self.estimate_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level
+      return self.evaluation_function(), (), [], num_pruning_max, num_pruning_min, nodes_generated, level
 
     level -= 1
     minimum_value = 2000
@@ -837,7 +837,7 @@ class Player(object):
 
     return return_path
 
-  def estimate_function(self):
+  def evaluation_function(self):
     '''
     Estimate utility based on current canvass to help player make decision
 
@@ -901,7 +901,7 @@ class Player(object):
     return  ( max_v - min_v )  \
           - ( 30 * d_num_pieces ) \
           - ( 10 * num_adj ) \
-          - ( 2 * center_dis )
+          - ( 2 * center_dis) \
 
   def is_match_point(self):
     '''
@@ -1248,8 +1248,6 @@ class GameEngine(object):
 
     Note: f is separator 
     '''
-
-    #TODO: As robot can be either side, try to find a way to combine this two conditions
 
     black_piece = ''
     white_piece = ''
