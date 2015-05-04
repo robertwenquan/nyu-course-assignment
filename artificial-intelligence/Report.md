@@ -1,6 +1,10 @@
-####Proramming Language####
+## Report of Mini Camelot Project
+##### Caicai CHEN
+##### May 3, 2015
 
-  __Python__	
+#### Proramming Language
+
+Python 2.7
 
 ####How to run:####
 
@@ -13,6 +17,7 @@
 ####How to play:####
 
 1. Choose Side and Level	
+
 	After running playcc.py, you will see the windows below:
 	
 	![Image of SET](images/SideLevel.jpg)	
@@ -21,6 +26,7 @@
 	- Then press SET
 	
 2. How to play	
+
 	- Step 1: Click one of your piece	
 		If you want to give up moving this piece, click it again.
 	- Step 2: Click the next cell, the piece will move to the cell
@@ -28,12 +34,10 @@
 	- Step 3: Repeat Step 2 if not finished
 	- Step 4: Click the final position again	
 	
-	
 		The canvass is like the following:
 	
 		![Image of canvass](images/Canvass.jpg)	
 		 Four corners are disabled cells, you can not click.
-	
 
 ####About Design:####
 
@@ -44,6 +48,7 @@
 	Stop when level = 0, call evaluation function
 	
 2. Evaluation function
+
 	My evaluation function consist of four part: (The coefficients are empirical)
 	- Distance to castle (Coefficient: 1)
 		Squared (14 - distance), the closer, the higher utility.
@@ -61,11 +66,10 @@
 		- Genius: level = 3
 
 3.  Smartcc.cache
+
 	This file stores some playing history information of this game.
 	After human player played, Robot will check this file first
 	If this condition has appeared before
 	It will move directly according to the stored information.
 	If not, it will calculate the next move and store this condition in the file
 	
-	
-		
