@@ -55,7 +55,7 @@ After running playcc.py, you will see the window below:
 1. Step 4: Click the cell you want to stop with
   * At this point the cell should be in selected state
   * Just simply click it one more time to end the move
-  * The game play right will be handed over to the robot immediately
+  * The game control will be handed over to the robot immediately
 	
 #### Sample Canvass Map
   ![Image of canvass](images/Canvass.jpg)	
