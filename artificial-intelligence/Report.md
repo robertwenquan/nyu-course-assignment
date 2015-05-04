@@ -62,31 +62,32 @@ After running playcc.py, you will see the window below:
 
 ####About Design:####
 
-1. Cutoff
+##### Cutoff
 
   Pass the parameter `level` to alpha-beta algorithm. 
   When passing to next level, level - 1.
   Stop when level = 0, call evaluation function
 
-2. Evaluation function
+##### Evaluation function
 
   My evaluation function consist of four part: (The coefficients are empirical)
-* Distance to castle (Coefficient: 1)
-  * Squared (14 - distance), the closer, the higher utility.
-  * It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
-* Penalty of being captured (Coefficient: 30)
-  * It courages robot to capture enemy piece and avoid been captured.
-* Penalty of stoping beside a enemy piece (Coefficient: 0)
-  * Avoid been captured in the next move of enemy
-* Penalty of far away from center (Coefficient: 2) 
-  * Encourages Robot choosing more central cell
-* Different levels of difficulty
+  * Distance to castle (Coefficient: 1)
+    * Squared (14 - distance), the closer, the higher utility.
+    * It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
+  * Penalty of being captured (Coefficient: 30)
+    * It courages robot to capture enemy piece and avoid been captured.
+  * Penalty of stoping beside a enemy piece (Coefficient: 0)
+    * Avoid been captured in the next move of enemy
+  * Penalty of far away from center (Coefficient: 2) 
+    * Encourages Robot choosing more central cell
+
+##### Different levels of difficulty
   * Using cutting-off level to set different level of difficulty 
   * Dumb: level = 1
   * Smart: level = 2
   * Genius: level = 3
 
-3. Smart learning cache
+##### Smart learning cache
 
 * Purpose of the smart cache
   * As the thinking time of the robot is non-trivial, especially in Genius mode(level 3), the smart learning cache is introduced to speed up the thinking time of the robot.
