@@ -245,7 +245,13 @@ class PlayGround(object):
     self.photo_robot= PhotoImage(file="images/robot.gif")
     self.label_photo_robot= Label(image=self.photo_robot)
 
-    self.photo_human= PhotoImage(file="images/human.gif")
+    if self.choose_level == 1:
+      self.photo_human= PhotoImage(file="images/dumb.gif")
+    elif self.choose_level == 2:
+      self.photo_human= PhotoImage(file="images/conan.gif")
+    else: 
+      self.photo_human= PhotoImage(file="images/human.gif")
+
     self.label_photo_human= Label(image=self.photo_human)
 
     if self.choose_side == 'north':
