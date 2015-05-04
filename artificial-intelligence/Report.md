@@ -16,7 +16,7 @@ May 3, 2015
 
 #### How to play
 
-1. Choose Side and Level
+##### Choose Side and Level
 
 	After running playcc.py, you will see the window below:
 	
@@ -30,15 +30,17 @@ May 3, 2015
   * If White is chosen, the game with start with the default canvass and wait for the first move of the human player.
   * If Black is chosen, meaning the robot is playing the white. The robot player will start with the default game canvass and proceed with its first move. The human player may surprisingly observe the game canvass in a non-default mode before the first move.
 	
-2. How to play	
+##### How to play	
 
   ##### Terms
+
   * Cell Status
     * Disabled: The 6 cells on each corner. Those cells are not be able to hold any game piece.
     * Free: It is a legitimate cell on the game canvass. But it is not taken by any piece of the players.
     * Player: It is a legitimate cell on the game canvass. But it is taken by either white or black player.
 
   ##### Game Moving Rules
+
 	* Step 1: Select one of your own piece on the canvass when it is on your turn to play
     * You can select the piece by single clicking the mouse
     * When you by mistake choose one move before you make the move, you can de-select it by another single click on the same piece.
@@ -73,32 +75,32 @@ May 3, 2015
 2. Evaluation function
 
 	My evaluation function consist of four part: (The coefficients are empirical)
-	- Distance to castle (Coefficient: 1)
-		- Squared (14 - distance), the closer, the higher utility.
-		- It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
-	- Penalty of being captured (Coefficient: 30)
-		- It courages robot to capture enemy piece and avoid been captured.
-	- Penalty of stoping beside a enemy piece (Coefficient: 0)
-    - Avoid been captured in the next move of enemy
-	- Penalty of far away from center (Coefficient: 2) 
-		- Encourages Robot choosing more central cell
-	- Different levels of difficulty
-		- Using cutting-off level to set different level of difficulty 
-    - Dumb: level = 1
-		- Smart: level = 2
-		- Genius: level = 3
+	* Distance to castle (Coefficient: 1)
+		* Squared (14 - distance), the closer, the higher utility.
+		* It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
+	* Penalty of being captured (Coefficient: 30)
+		* It courages robot to capture enemy piece and avoid been captured.
+	* Penalty of stoping beside a enemy piece (Coefficient: 0)
+    * Avoid been captured in the next move of enemy
+	* Penalty of far away from center (Coefficient: 2) 
+		* Encourages Robot choosing more central cell
+	* Different levels of difficulty
+		* Using cutting-off level to set different level of difficulty 
+    * Dumb: level = 1
+		* Smart: level = 2
+		* Genius: level = 3
 
 3. Smart learning cache
 
-  - Purpose of the smart cache
-    - As the thinking time of the robot is non-trivial, especially in Genius mode(level 3), the smart learning cache is introduced to speed up the thinking time of the robot.
-  - How smart learning cache works
-    - Generally, the cache comes from pre-learning and active-learning
-    - pre-learning is that we simulate the canvass maps and precalculate the optimum move results based on the canvass map scenarios. 
-    - active-learning is the compliment of the pre-learning cache. In active-learning, every play that is with a smart-cache-miss will trigger a real-time optimum move calculation. Then this optimum result associated with the canvass map will be stored in the cache. When the same canvass map appears again, it will be a cache hit.
-  - How it is implemented
-    - Python pickle file is used to store the Python dictionary format.
-    - At each game start, the whole cache will be loaded from the pickle file.
-    - At each turn of robot play, cache is checked. With cache hit, the cached result will be fetched.
-    - When there is a cache miss, a real-time optimum move will be calculated. Then this result will be appended into the cache.
+  * Purpose of the smart cache
+    * As the thinking time of the robot is non-trivial, especially in Genius mode(level 3), the smart learning cache is introduced to speed up the thinking time of the robot.
+  * How smart learning cache works
+    * Generally, the cache comes from pre-learning and active-learning
+    * pre-learning is that we simulate the canvass maps and precalculate the optimum move results based on the canvass map scenarios. 
+    * active-learning is the compliment of the pre-learning cache. In active-learning, every play that is with a smart-cache-miss will trigger a real-time optimum move calculation. Then this optimum result associated with the canvass map will be stored in the cache. When the same canvass map appears again, it will be a cache hit.
+  * How it is implemented
+    * Python pickle file is used to store the Python dictionary format.
+    * At each game start, the whole cache will be loaded from the pickle file.
+    * At each turn of robot play, cache is checked. With cache hit, the cached result will be fetched.
+    * When there is a cache miss, a real-time optimum move will be calculated. Then this result will be appended into the cache.
 	
