@@ -64,13 +64,13 @@ After running playcc.py, you will see the window below:
 
 1. Cutoff
 
-	Pass the parameter `level` to alpha-beta algorithm. 
-	When passing to next level, level - 1.
-	Stop when level = 0, call evaluation function
-	
+  Pass the parameter `level` to alpha-beta algorithm. 
+  When passing to next level, level - 1.
+  Stop when level = 0, call evaluation function
+
 2. Evaluation function
 
-My evaluation function consist of four part: (The coefficients are empirical)
+  My evaluation function consist of four part: (The coefficients are empirical)
 * Distance to castle (Coefficient: 1)
   * Squared (14 - distance), the closer, the higher utility.
   * It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
