@@ -4,13 +4,13 @@ May 3, 2015
 
 #### Programming Language
 
-Python 2.7
+Python 2.7 with Tkinter for GUI
 
 #### How to run
 
-Install Python 2.7
-Install Tkinter
-$ python ./playcc.py
+```
+$ python playcc.py
+```
 
 #### How to play
 
@@ -60,7 +60,7 @@ After running playcc.py, you will see the window below:
 #### Sample Canvass Map
   ![Image of canvass](images/Canvass.jpg)	
 
-####About Design:####
+####Software Design
 
 ##### Cutoff
 
