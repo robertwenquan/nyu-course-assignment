@@ -74,16 +74,16 @@ May 3, 2015
 
 	My evaluation function consist of four part: (The coefficients are empirical)
 	- Distance to castle (Coefficient: 1)
-		Squared (14 - distance), the closer, the higher utility.
-		It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
+		- Squared (14 - distance), the closer, the higher utility.
+		- It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
 	- Penalty of being captured (Coefficient: 30)
-		It courages robot to capture enemy piece and avoid been captured.
+		- It courages robot to capture enemy piece and avoid been captured.
 	- Penalty of stoping beside a enemy piece (Coefficient: 0)
-    Avoid been captured in the next move of enemy
+    - Avoid been captured in the next move of enemy
 	- Penalty of far away from center (Coefficient: 2) 
-		Encourages Robot choosing more central cell
+		- Encourages Robot choosing more central cell
 	- Different levels of difficulty
-		Using cutting-off level to set different level of difficulty 
+		- Using cutting-off level to set different level of difficulty 
     - Dumb: level = 1
 		- Smart: level = 2
 		- Genius: level = 3
