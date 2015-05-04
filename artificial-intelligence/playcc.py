@@ -1286,6 +1286,14 @@ class GameEngine(object):
 
     Input: None. But implicitely load 'game_move.cache' from the current directory
     Output: A dictionary
+            Caches +- level1_cache -- north_side_cache['hashid']
+                   |               +- south_side_cache['hashid']
+                   |
+                   +- level2_cache -- north_side_cache['hashid']
+                   |               +- south_side_cache['hashid']
+                   |
+                   +- level3_cache -- north_side_cache['hashid']
+                                   +- south_side_cache['hashid']
 
     NOTE: the cached results are saved per difficulty level
 
