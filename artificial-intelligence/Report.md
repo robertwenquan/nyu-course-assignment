@@ -47,7 +47,7 @@ After running playcc.py, you will see the window below:
   * If your move is not legitimate, there will be notification one the screen
   * If you would like to end at the first move, go to Step 4
   * If you would like to continue with leaped move, go to Step 3
-1. Step 3: Click the next cell you want to move
+1. Step 3: Click the next cell if you still want to move
   * You can leap over your own piece or rival piece
   * If you leap over a rival piece, that rival piece will be taken off from the canvass
   * If you want to keep leaping, keep doing step3
