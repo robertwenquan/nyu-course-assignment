@@ -6,13 +6,13 @@ May 3, 2015
 
 Python 2.7 with Tkinter for GUI
 
-#### How to run
+#### How to run the game
 
 ```
 $ python playcc.py
 ```
 
-#### How to play
+#### How to play the game
 
 ##### Choose Side and Level
 
@@ -61,6 +61,32 @@ After running playcc.py, you will see the window below:
   ![Image of canvass](images/Canvass.jpg)	
 
 ####Software Design
+
+##### MVC Model
+
+1. Model
+  * For the Model of this game, game canvass and canvass cell are defined
+  * Cell() class in playcc.py
+    * to define a single cell on the game canvass
+    * each cell has a status of ['free', 'north', 'south', 'disabled']
+      * 'free' : the cell is a valid cell, and has not been occupied by any player
+      * 'north' : the cell is currently occupied by the 'north'/'white' player
+      * 'north' : the cell is currently occupied by the 'south'/'black' player
+      * 'disabled' : not a valid cell on the game canvass. (cells from four corners)
+  * Canvass() class in playcc.py
+    * canvass is the core data structure of this game
+    * canvass initialization, canvass update, cell movement, cell removal are all in this class
+  * For more details refer to the pydoc of playcc.py
+
+1. View
+  * View is implemented with Python Tkinter library. 
+  * View is all implemented in PlayGround() class in tkui.py
+  * For more details refer to the pydoc of tkui.py
+
+1. Control
+  * game logic is implemented in GameEngine() class in playcc.py
+  * robot player logic is implemented in Player() class in playcc.py
+  * For more details refer to the pydoc of playcc.py
 
 ##### Cutoff
 
