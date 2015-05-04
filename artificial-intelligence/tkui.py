@@ -40,7 +40,7 @@ class PlayGround(object):
     self.choose_level = 2
 
     self.width = self.margin * 2 + self.unit * ncol + 200
-    self.height = self.margin * 5 + self.unit * nrow
+    self.height = self.margin * 5 + self.unit * nrow + 30
     self.game = game
 
     # main window
@@ -101,15 +101,23 @@ class PlayGround(object):
     button.place(x=160, y=20, width=120, height=20)
 
     # four labels for statistical numbers
+    self.label_max_depth_text = Label(self.gui, text='max depth')
+    self.label_nodes_text = Label(self.gui, text='nodes gen')
+    self.label_prune_max_text = Label(self.gui, text='max prune')
+    self.label_prune_min_text = Label(self.gui, text='min prune')
     self.label_max_depth = Label(self.gui, text='0')
     self.label_nodes = Label(self.gui, text='0')
     self.label_prune_max = Label(self.gui, text='0')
     self.label_prune_min = Label(self.gui, text='0')
 
-    self.label_max_depth.place(x=20, y=50, width=70, height=20)
-    self.label_nodes.place(x=100, y=50, width=70, height=20)
-    self.label_prune_max.place(x=180, y=50, width=70, height=20)
-    self.label_prune_min.place(x=260, y=50, width=70, height=20)
+    self.label_max_depth_text.place(x=20, y=50, width=70, height=20)
+    self.label_nodes_text.place(x=100, y=50, width=70, height=20)
+    self.label_prune_max_text.place(x=180, y=50, width=70, height=20)
+    self.label_prune_min_text.place(x=260, y=50, width=70, height=20)
+    self.label_max_depth.place(x=20, y=80, width=70, height=20)
+    self.label_nodes.place(x=100, y=80, width=70, height=20)
+    self.label_prune_max.place(x=180, y=80, width=70, height=20)
+    self.label_prune_min.place(x=260, y=80, width=70, height=20)
 
   def make_side_info(self):
     '''
@@ -122,13 +130,13 @@ class PlayGround(object):
     self.label_north_icon.place(x=370, y=120, width=80, height=80)
 
     self.label_north_timer = Label(self.gui, text='00:00:00')
-    self.label_north_timer.place(x=370, y=210, width=160, height=30)
+    self.label_north_timer.place(x=370, y=320, width=160, height=30)
 
     self.label_south_icon = Label(self.gui)
     self.label_south_icon.place(x=370, y=400, width=80, height=80)
 
     self.label_south_timer = Label(self.gui, text='00:00:00')
-    self.label_south_timer.place(x=370, y=490, width=160, height=30)
+    self.label_south_timer.place(x=370, y=570, width=160, height=30)
 
   def reset_game(self):
     '''
@@ -234,6 +242,19 @@ class PlayGround(object):
     print 'Side', self.choose_side
     print 'Level', self.choose_level
 
+    self.photo_robot= PhotoImage(file="images/robot.gif")
+    self.label_photo_robot= Label(image=self.photo_robot)
+
+    self.photo_human= PhotoImage(file="images/human.gif")
+    self.label_photo_human= Label(image=self.photo_human)
+
+    if self.choose_side == 'north':
+      self.label_photo_human.place(x=370, y=120, width=160, height=180)
+      self.label_photo_robot.place(x=370, y=400, width=160, height=170)
+    else:
+      self.label_photo_robot.place(x=370, y=120, width=160, height=180)
+      self.label_photo_human.place(x=370, y=400, width=160, height=170)
+
     self.game.start_game()
 
     popup.grab_release()
@@ -273,7 +294,7 @@ class PlayGround(object):
 
         # calculate the x,y coordinates and place the buttons
         offset_x = self.margin + self.unit * col_idx
-        offset_y = 4 * self.margin + self.unit * row_idx
+        offset_y = 4 * self.margin + self.unit * row_idx + 30
         button.place(x=offset_x, y=offset_y, width=self.unit, height=self.unit)
 
         self.button_map[idx] = button
