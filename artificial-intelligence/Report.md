@@ -91,14 +91,14 @@ May 3, 2015
 3. Smart learning cache
 
   - Purpose of the smart cache
-   - As the thinking time of the robot is non-trivial, especially in Genius mode(level 3), the smart learning cache is introduced to speed up the thinking time of the robot.
+    - As the thinking time of the robot is non-trivial, especially in Genius mode(level 3), the smart learning cache is introduced to speed up the thinking time of the robot.
   - How smart learning cache works
-   - Generally, the cache comes from pre-learning and active-learning
-   - pre-learning is that we simulate the canvass maps and precalculate the optimum move results based on the canvass map scenarios. 
-   - active-learning is the compliment of the pre-learning cache. In active-learning, every play that is with a smart-cache-miss will trigger a real-time optimum move calculation. Then this optimum result associated with the canvass map will be stored in the cache. When the same canvass map appears again, it will be a cache hit.
+    - Generally, the cache comes from pre-learning and active-learning
+    - pre-learning is that we simulate the canvass maps and precalculate the optimum move results based on the canvass map scenarios. 
+    - active-learning is the compliment of the pre-learning cache. In active-learning, every play that is with a smart-cache-miss will trigger a real-time optimum move calculation. Then this optimum result associated with the canvass map will be stored in the cache. When the same canvass map appears again, it will be a cache hit.
   - How it is implemented
-   - Python pickle file is used to store the Python dictionary format.
-   - At each game start, the whole cache will be loaded from the pickle file.
-   - At each turn of robot play, cache is checked. With cache hit, the cached result will be fetched.
-   - When there is a cache miss, a real-time optimum move will be calculated. Then this result will be appended into the cache.
+    - Python pickle file is used to store the Python dictionary format.
+    - At each game start, the whole cache will be loaded from the pickle file.
+    - At each turn of robot play, cache is checked. With cache hit, the cached result will be fetched.
+    - When there is a cache miss, a real-time optimum move will be calculated. Then this result will be appended into the cache.
 	
