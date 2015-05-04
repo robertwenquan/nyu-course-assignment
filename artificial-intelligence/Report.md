@@ -48,8 +48,8 @@ After running playcc.py, you will see the window below:
   * If you would like to end at the first move, go to Step 4
   * If you would like to continue with leaped move, go to Step 3
 1. Step 3: Click the next cell if you still want to move
-  * You can leap over your own piece or rival piece
-  * If you leap over a rival piece, that rival piece will be taken off from the canvass
+  * You can leap over your own piece or enemy piece
+  * If you leap over a enemy piece, that enemy piece will be taken off from the canvass
   * If you want to keep leaping, keep doing step3
   * When you want to finish the move, to to step4
 1. Step 4: Click the cell you want to stop with
