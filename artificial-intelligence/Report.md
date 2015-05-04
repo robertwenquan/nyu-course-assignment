@@ -40,24 +40,24 @@ May 3, 2015
 
   ##### Game Moving Rules
 	- Step 1: Select one of your own piece on the canvass when it is on your turn to play
-   - You can select the piece by single clicking the mouse
-   - When you by mistake choose one move before you make the move, you can de-select it by another single click on the same piece.
-   - When it is robot playing time, you may end up being unable to select any piece of your own.
-   - When one piece is selected, that piece will have highlighted background color.
+    - You can select the piece by single clicking the mouse
+    - When you by mistake choose one move before you make the move, you can de-select it by another single click on the same piece.
+    - When it is robot playing time, you may end up being unable to select any piece of your own.
+    - When one piece is selected, that piece will have highlighted background color.
 	- Step 2: Click the next cell you want to move
-   - This is the first move, you can either proceed with a plain move or leaped move to a free cell.
-   - If your move is not legitimate, there will be notification one the screen
-   - If you would like to end at the first move, go to Step 4
-   - If you would like to continue with leaped move, go to Step 3
+    - This is the first move, you can either proceed with a plain move or leaped move to a free cell.
+    - If your move is not legitimate, there will be notification one the screen
+    - If you would like to end at the first move, go to Step 4
+    - If you would like to continue with leaped move, go to Step 3
 	- Step 3: Click the next cell you want to move
-   - You can leap over your own piece or rival piece
-   - If you leap over a rival piece, that rival piece will be taken off from the canvass
-   - If you want to keep leaping, keep doing step3
-   - When you want to finish the move, to to step4
+    - You can leap over your own piece or rival piece
+    - If you leap over a rival piece, that rival piece will be taken off from the canvass
+    - If you want to keep leaping, keep doing step3
+    - When you want to finish the move, to to step4
 	- Step 4: Click the cell you want to stop with
-   - At this point the cell should be in selected state
-   - Just simply click it one more time to end the move
-   - The game play right will be handed over to the robot immediately
+    - At this point the cell should be in selected state
+    - Just simply click it one more time to end the move
+    - The game play right will be handed over to the robot immediately
 	
 #### Sample Canvass Map
   ![Image of canvass](images/Canvass.jpg)	
