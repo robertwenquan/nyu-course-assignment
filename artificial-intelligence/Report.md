@@ -112,19 +112,19 @@ After running playcc.py, you will see the window below:
 
 ##### Evaluation function
 
-  My evaluation function consist of four part: (The coefficients are empirical)
-  1. Distance to castle (Coefficient: 1)
+  My evaluation function consists of four parts: (The coefficients are empirical)
+  1. Distance to castle points(Coefficient: 1)
     * Squared (14 - distance), the closer, the higher utility.
-    * It encourages Robot player move the piece near to castle, if two piece under the same circumstances.
+    * It encourages the robot player to move the piece near to castle. If two pieces are under the same circumstances.
   1. Penalty of being captured (Coefficient: 30)
     * It courages robot to capture enemy piece and avoid been captured.
-  1. Penalty of stoping beside a enemy piece (Coefficient: 0)
-    * Avoid been captured in the next move of enemy
-  1. Penalty of far away from center (Coefficient: 2) 
+  1. Penalty of far away from center (Coefficient: 2)
     * Encourages Robot choosing more central cell
+  1. Penalty of being far away from center (Coefficient: 2) 
+    * Encourage the robot to choose more central cells
 
 ##### Different levels of difficulty
-  * Using cutting-off level to set different level of difficulty 
+  * Using cutting-off level to set different levels of difficulty 
   * Dumb: level = 1
   * Smart: level = 2
   * Genius: level = 3
