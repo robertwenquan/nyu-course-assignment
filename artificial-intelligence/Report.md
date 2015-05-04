@@ -1,6 +1,6 @@
-## Report of Mini Camelot Project
-##### Caicai CHEN
-##### May 3, 2015
+##Report of Mini Camelot Project
+<p align=center> Caicai CHEN </p>
+<p align=center> May 3, 2015 </p>
 
 #### Proramming Language
 
