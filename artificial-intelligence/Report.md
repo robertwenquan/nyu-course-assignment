@@ -44,7 +44,7 @@ After running playcc.py, you will see the window below:
   * When one piece is selected, that piece will have highlighted background color.
 1. Step 2: Click the next cell you want to move
   * This is the first move, you can either proceed with a plain move or leaped move to a free cell.
-  * If your move is not legitimate, there will be notification one the screen
+  * If your move is not legitimate, there will be notification on the screen
   * If you would like to end at the first move, go to Step 4
   * If you would like to continue with leaped move, go to Step 3
 1. Step 3: Click the next cell if you still want to move
@@ -115,7 +115,7 @@ After running playcc.py, you will see the window below:
   My evaluation function consists of four parts: (The coefficients are empirical)
   1. Distance to castle points(Coefficient: 1)
     * Squared (14 - distance), the closer, the higher utility.
-    * It encourages the robot player to move the piece near to castle. If two pieces are under the same circumstances.
+    * It encourages the robot player to move the piece near to castle, if two pieces are under the same circumstances.
   1. Penalty of being captured (Coefficient: 30)
     * It courages robot to capture enemy piece and avoid been captured.
   1. Penalty of far away from center (Coefficient: 2)
