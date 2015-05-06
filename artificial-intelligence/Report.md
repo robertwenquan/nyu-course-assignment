@@ -118,8 +118,8 @@ After running playcc.py, you will see the window below:
     * It encourages the robot player to move the piece near to castle, if two pieces are under the same circumstances.
   1. Penalty of being captured (Coefficient: 30)
     * It courages robot to capture enemy piece and avoid been captured.
-  1. Penalty of far away from center (Coefficient: 2)
-    * Encourages Robot choosing more central cell
+  1. Penalty of stopping beside enemy piece (Coefficient: 10)
+    * If it stops by an enemy piece, it is highly possible that it will be captured in the next move, so use penalty to avoid this condition. 
   1. Penalty of being far away from center (Coefficient: 2) 
     * Encourage the robot to choose more central cells
 
