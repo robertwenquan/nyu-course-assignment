@@ -127,7 +127,7 @@ class GameCanvass(object):
     self.cells = dict()
     self.init_canvass(nrow, ncol)
 
-  def init_canvass(self, nrow, ncol):
+  def init_canvass(self, nrow, ncol, north_map=[], south_map=[]):
     '''
     initialize cell coordinates and state
 
@@ -175,18 +175,26 @@ class GameCanvass(object):
       self.cells[n].status = 'disabled'
 
     # set the north player cells
-    # these cells will be marked with 'blue' color
-    for x,y in [(4,2), (4,3), (4,4), (4,5), \
-                       (5,3), (5,4)]:
-      n = ncol*x + y
-      self.cells[n].status = 'north'
+    if north_map != []:
+      for x,y in north_map:
+        n = ncol*x + y
+        self.cells[n].status = 'north'
+    else:
+      for x,y in [(4,2), (4,3), (4,4), (4,5), \
+                         (5,3), (5,4)]:
+        n = ncol*x + y
+        self.cells[n].status = 'north'
 
     # set the south player cells
-    # these cells will be marked with 'purple' color
-    for x,y in [       (8,3), (8,4), \
-                (9,2), (9,3), (9,4), (9,5)]:
-      n = ncol*x + y
-      self.cells[n].status = 'south'
+    if south_map != []:
+      for x,y in south_map:
+        n = ncol*x + y
+        self.cells[n].status = 'south'
+    else:
+      for x,y in [       (8,3), (8,4), \
+                  (9,2), (9,3), (9,4), (9,5)]:
+        n = ncol*x + y
+        self.cells[n].status = 'south'
 
   def lock_canvass(self):
     '''
@@ -428,12 +436,18 @@ class Player(object):
     self.select_loc = None
     self.select_path = []
 
-  def init_pieces(self):
+  def init_pieces(self, piece_list = []):
     '''
       initialize the pieces of this player
       north player and south player has different default pieces locations
     '''
 
+    # if the piece_list is specified, use that list
+    if piece_list != []:
+      self.list_of_pieces = copy(piece_list)
+      return
+
+    # otherwise, initialize it to the default piece list according to the side
     if self.side == 'north':
       self.list_of_pieces = [(4,2), (4,3), (4,4), (4,5), (5,3), (5,4)]
     elif self.side == 'south':
@@ -995,6 +1009,22 @@ class GameEngine(object):
 
     # double robot mode
     self.robot_mode = robot_mode
+
+  def init_canvass_with_map(self, canvass_map):
+    '''
+    initialize game canvass with specified canvass map
+    '''
+    north_piece_map, south_piece_map = canvass_map
+
+    self.canvass.init_canvass(self.nrow, self.ncol, north_piece_map, south_piece_map)
+
+    self.north_player.set_canvass(self.canvass)
+    self.south_player.set_canvass(self.canvass)
+
+    self.north_player.init_pieces(north_piece_map)
+    self.south_player.init_pieces(south_piece_map)
+
+    self.canvass.print_debug_cell_map()
 
   def start_game(self):
     '''
