@@ -2,7 +2,9 @@
 
 ### Introducion about the Mini Camelot Game
 
-Check http://xxxxxxx for more details.
+Here is a few reference links for the Camelot game:
+* http://en.wikipedia.org/wiki/Camelot_(board_game)
+* http://www.iggamecenter.com/info/en/camelot.html
 
 ### Introduction
 
