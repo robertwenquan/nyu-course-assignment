@@ -960,7 +960,7 @@ class GameEngine(object):
   # what is the playing doing?
   status = ''
 
-  def __init__(self, robot_mode = False):
+  def __init__(self, robot_mode = False, ui_disabled = False):
 
     # setup north and south with player
     player1 = Player(side = 'north', robot = True)
@@ -988,7 +988,10 @@ class GameEngine(object):
     self.load_cached_pickle()
 
     # initialize UI
-    self.ui = PlayGround(self)
+    self.ui_disabled = ui_disabled
+
+    if self.ui_disabled == False:
+      self.ui = PlayGround(self)
 
     # double robot mode
     self.robot_mode = robot_mode
@@ -1642,7 +1645,7 @@ def main(argv):
     print 'verbose = %d' % verbose
     print 'debug   = %d' % debug
 
-  game = GameEngine(robot)
+  game = GameEngine(robot, False)
 
   # kick off the game with UI
   game.start()
