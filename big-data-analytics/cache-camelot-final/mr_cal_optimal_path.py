@@ -98,12 +98,16 @@ class MRCalculateOptimalPath(MRJob):
     for north_idx in range(0,6):
       north_piece = mapkey[north_idx * 2 : north_idx * 2 + 2]
       north_piece_loc = unmap_loc(north_piece)
-      north_pieces.append(north_piece_loc)
+
+      if north_piece_loc != (0, 0):
+        north_pieces.append(north_piece_loc)
 
     for south_idx in range(0,6):
       south_piece = mapkey[13 + south_idx * 2 : 13 + south_idx * 2 + 2]
       south_piece_loc = unmap_loc(south_piece)
-      south_pieces.append(south_piece_loc)
+
+      if south_piece_loc != (0, 0):
+        south_pieces.append(south_piece_loc)
 
     return [north_pieces, south_pieces]
 

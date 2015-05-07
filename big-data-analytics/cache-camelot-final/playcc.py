@@ -1024,8 +1024,6 @@ class GameEngine(object):
     self.north_player.init_pieces(north_piece_map)
     self.south_player.init_pieces(south_piece_map)
 
-    self.canvass.print_debug_cell_map()
-
   def start_game(self):
     '''
     start the game
