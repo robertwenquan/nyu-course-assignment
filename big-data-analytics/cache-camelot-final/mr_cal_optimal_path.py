@@ -17,8 +17,12 @@ class MRCalculateOptimalPath(MRJob):
 
     super(MRCalculateOptimalPath, self).__init__(args)
 
+  def filter(self, line):
+    return True
+
   def mapper1(self, _, line):
-    yield (None, line)
+    if self.filter(line) == True:
+      yield (None, line)
 
   def mapper2(self, _, line):
     yield ('xxxxxx', line)
