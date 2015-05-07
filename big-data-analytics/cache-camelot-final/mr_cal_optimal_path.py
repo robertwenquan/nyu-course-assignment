@@ -8,10 +8,18 @@
 
 from tkui import *
 from playcc import *
+from mrjob.job import MRJob
 
-def main():
-  print 'abcdefg'
+class MRCalculateOptimalPath(MRJob):
+
+  def __init__(self, args):
+
+    super(MRCalculateOptimalPath, self).__init__(args)
+
+  def mapper(self, _, line):
+
+    print line
 
 if __name__ == '__main__':
-  main()
+  MRCalculateOptimalPath.run()
 
