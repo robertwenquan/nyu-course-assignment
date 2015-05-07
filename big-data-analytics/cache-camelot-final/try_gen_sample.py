@@ -4,11 +4,12 @@
 generate "all" possible game canvass maps
 
 Becanse the magnitude of all canvass maps are huge, 
-we use some filtering technique to eliminate some cases
-like: 
-
+we use some filtering technique to eliminate some cases like: 
   1. already won case
   2. aggressively defensive mode
+
+Preferrable scenarios are:
+  1. close together battling
 """
 
 import itertools
@@ -74,6 +75,11 @@ def gen_canvass_maps():
         for south_piece_list in itertools.combinations(gen_valid_cell('south'), n_south):
           yield encode_canvass_map(list(north_piece_list) + [(-1,-1)] + list(south_piece_list))
 
+n = 0
 for canvass in gen_canvass_maps():
-  print canvass
+  n += 1
+  if n % 1000000 == 0:
+    print n
+  #print canvass
 
+print n
