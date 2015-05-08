@@ -10,49 +10,34 @@ from tkui import *
 from playcc import *
 from mrjob.job import MRJob
 from mrjob.job import MRStep
+from mrjob.protocol import JSONValueProtocol
 
 class MRCalculateOptimalPath(MRJob):
+
+  OUTPUT_PROTOCOL = JSONValueProtocol
 
   def __init__(self, args):
 
     super(MRCalculateOptimalPath, self).__init__(args)
     self.game = GameEngine(False, ui_disabled = True)
 
-  def filter(self, line):
-    '''
-    This is the machine learned filter for the unrealistic/low probability
-    canvass map scenarios
-    It is to help eleminate the low probability cases in order to reserve
-    cache space for the high probability cases
-    '''
-    return True
-
-  def prepare_game(self):
-    self.game.north_player.intell_level = 2;
-    self.game.south_player.intell_level = 2;
-
-  def get_game_result(self, mapkey):
-    '''
-    reset the game canvass with the mapkey
-    and calculate the optimal next move
-    '''
-
-    canvass_map = self.key_to_canvass(mapkey)
-
-    self.game.init_canvass_with_map(canvass_map)
-
-    move_path, move_stats = self.game.north_player.whats_next_move()
-    return (move_path, move_stats)
-
-  def mapper1(self, _, line):
+  """
+  MRJOB SPECIFIC FUNCTIONS
+  """
+  def mapper1(self, _, mapkey):
     '''
     This is the mapper function in step1
     It is to filter the low probability canvass scenarios
     '''
-    if self.filter(line) == True:
-      yield (None, line)
+    if self.filter(mapkey) == True:
+      yield (None, (mapkey, 1, 'north'))
+      yield (None, (mapkey, 1, 'south'))
+      yield (None, (mapkey, 2, 'north'))
+      yield (None, (mapkey, 2, 'south'))
+      yield (None, (mapkey, 3, 'north'))
+      yield (None, (mapkey, 3, 'south'))
 
-  def mapper2(self, _, mapkey):
+  def mapper2(self, _, request):
     '''
     This is the mapper function in step2
     It is to transform the canvass map hashkey to real canvass 
@@ -61,12 +46,46 @@ class MRCalculateOptimalPath(MRJob):
     The result in this step is the final result of this MapReduce job
     '''
 
-    optimal_path = self.get_game_result(mapkey)
-    yield (mapkey, optimal_path)
+    mapkey, level, side = request
+
+    if self.validate_mapkey(mapkey) == False or \
+        level < 1 or level > 3 or \
+        side != 'north' and side != 'south':
+      return
+
+    optimal_path = self.get_game_result(mapkey, level, side)
+    yield (mapkey, (level, side, optimal_path))
+
+  def reducer(self, key, results):
+
+    entry = dict()
+    entry[key] = dict()
+    entry[key][1] = { 'north' : {}, 'south' : {} }
+    entry[key][2] = { 'north' : {}, 'south' : {} }
+    entry[key][3] = { 'north' : {}, 'south' : {} }
+
+    for result in results:
+      level, side, path = result
+      entry[key][level][side] = path
+
+    yield key, entry
 
   def steps(self):
     return [MRStep(mapper=self.mapper1),
-            MRStep(mapper_init=self.prepare_game, mapper=self.mapper2)]
+            MRStep(mapper=self.mapper2, reducer=self.reducer)]
+
+
+  """
+  NON MRJOB SPECIFIC FUNCTIONS
+  """
+  def filter(self, line):
+    '''
+    This is the machine learned filter for the unrealistic/low probability
+    canvass map scenarios
+    It is to help eleminate the low probability cases in order to reserve
+    cache space for the high probability cases
+    '''
+    return True
 
   def key_to_canvass(self, mapkey):
     '''
@@ -110,6 +129,37 @@ class MRCalculateOptimalPath(MRJob):
         south_pieces.append(south_piece_loc)
 
     return [north_pieces, south_pieces]
+
+  def get_game_result(self, mapkey, level, side):
+    '''
+    reset the game canvass with the mapkey
+    and calculate the optimal next move
+    '''
+
+    # reset canvass map
+    canvass_map = self.key_to_canvass(mapkey)
+    self.game.init_canvass_with_map(canvass_map)
+
+    # reset difficulty level
+    self.game.north_player.intell_level = level;
+    self.game.south_player.intell_level = level;
+
+    # calculate results
+    if side == 'north':
+      move_path, move_stats = self.game.north_player.whats_next_move()
+    else:
+      move_path, move_stats = self.game.south_player.whats_next_move()
+
+    return (move_path, move_stats)
+
+  def validate_mapkey(self, mapkey):
+    '''
+    validate canvass map hashkey
+    '''
+    if len(mapkey) != 25:
+      return False
+
+    return True
 
 if __name__ == '__main__':
   MRCalculateOptimalPath.run()
