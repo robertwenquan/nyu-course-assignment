@@ -61,6 +61,13 @@ def encode_canvass_map(piece_list):
 
   return ret
 
+def is_invalid_canvass_map(north_piece_list, south_piece_list):
+  len_north = len(north_piece_list)
+  len_south = len(south_piece_list)
+
+  if len_north + len_south != len(list(set(north_piece_list + south_piece_list))):
+    return True
+
 def gen_canvass_maps():
   """
   geneate all canvass map combinations
@@ -73,13 +80,14 @@ def gen_canvass_maps():
     for north_piece_list in itertools.combinations(gen_valid_cell('north'), n_north):
       for n_south in range(6, 1, -1):
         for south_piece_list in itertools.combinations(gen_valid_cell('south'), n_south):
+          if is_invalid_canvass_map(list(north_piece_list), list(south_piece_list)):
+            continue
           yield encode_canvass_map(list(north_piece_list) + [(-1,-1)] + list(south_piece_list))
 
 n = 0
 for canvass in gen_canvass_maps():
   n += 1
-  if n % 1000000 == 0:
-    print n
-  #print canvass
+  #if n % 1000000 == 0:
+  #  print n
+  print canvass
 
-print n
