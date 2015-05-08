@@ -19,7 +19,7 @@ mapkey <- args[1]
 png(paste("canvass",".png",sep=""), width=800, height=1200)
 
 # draw the game canvass
-plot(c(0,400), c(0,600), xlab="", ylab="")
+plot(c(0,400), c(0,600), axes = F, xlab = NA, ylab = NA)
 
 # disabled cells are here
 disabled_cells <- rbind(c(x=0,y=0), c(0,1), c(0,2), c(0,5), c(0,6), c(0,7))
@@ -54,7 +54,7 @@ for (x in 0:13) {
 
 # draw black cells
 
-draw.circle(80,120,19,border="black",col="black")
-draw.circle(160,200,19,border="white",col="white")
-draw.circle(40,40,19,border="black",col="black")
+draw.circle(80,120,18,border="black",col="black")
+draw.circle(160,200,18,border="white",col="white")
+draw.circle(40,40,18,border="black",col="black")
 
