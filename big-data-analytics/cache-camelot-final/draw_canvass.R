@@ -16,10 +16,10 @@ args <- commandArgs(trailingOnly = TRUE)
 mapkey <- args[1]
 
 # set target output file
-png(paste("canvass",".png",sep=""))
+png(paste("canvass",".png",sep=""), width=800, height=1200)
 
 # draw the game canvass
-plot(c(0,600), c(0,600), xlab="", ylab="")
+plot(c(0,400), c(0,600), xlab="", ylab="")
 
 # disabled cells are here
 disabled_cells <- rbind(c(x=0,y=0), c(0,1), c(0,2), c(0,5), c(0,6), c(0,7))
