@@ -196,6 +196,8 @@ class GameCanvass(object):
         n = ncol*x + y
         self.cells[n].status = 'south'
 
+    self.print_debug_cell_map()
+
   def lock_canvass(self):
     '''
     lock all celss and make all celss unclickable
