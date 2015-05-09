@@ -1024,6 +1024,56 @@ class GameEngine(object):
     self.north_player.init_pieces(north_piece_map)
     self.south_player.init_pieces(south_piece_map)
 
+  def init_canvass_with_mapkey(self, mapkey):
+    '''
+    initialize game canvass with map hashkey
+    '''
+    canvass_map = self.key_to_canvass(mapkey)
+    self.init_canvass_with_map(canvass_map)
+
+  def key_to_canvass(self, mapkey):
+    '''
+    hashkey representation of canvass to
+    data structure in the game canvass
+
+    INPUT: "404142434445X121314152132"
+    OUTPUT: [[(4, 0), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5)], \
+             [(1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (3, 2)]]
+    '''
+
+    def unmap_loc(key):
+      '''
+      string to tuple representation of cell location
+
+      INPUT1: '40'
+      OUTPUT1: (4, 0)
+
+      INPUT2: 'a3'
+      OUTPUT2: (10, 3)
+      '''
+      off_x = int(key[0], 16)
+      off_y = int(key[1], 16)
+      return (off_x, off_y)
+
+    north_pieces = []
+    south_pieces = []
+
+    for north_idx in range(0,6):
+      north_piece = mapkey[north_idx * 2 : north_idx * 2 + 2]
+      north_piece_loc = unmap_loc(north_piece)
+
+      if north_piece_loc != (0, 0):
+        north_pieces.append(north_piece_loc)
+
+    for south_idx in range(0,6):
+      south_piece = mapkey[13 + south_idx * 2 : 13 + south_idx * 2 + 2]
+      south_piece_loc = unmap_loc(south_piece)
+
+      if south_piece_loc != (0, 0):
+        south_pieces.append(south_piece_loc)
+
+    return [north_pieces, south_pieces]
+
   def start_game(self):
     '''
     start the game
@@ -1396,6 +1446,53 @@ class GameEngine(object):
 
     # sync the result into the pickle file
     self.save_cached_pickle()
+
+  def list_hashkey(self, maphash, move_path, side):
+    '''
+    '''
+
+    list_hash = []
+
+    hashkey = self.get_canvass_hashkey()
+    assert(hashkey == maphash)
+    list_hash.append(hashkey)
+
+    recover_set = []
+
+    if side == 'north':
+      player = self.north_player
+    elif side == 'south':
+      player = self.south_player
+    else:
+      exit(55)
+
+    nmove = len(move_path) - 1
+
+    for i in range(nmove):
+      loc_from = move_path[i]
+      loc_to = move_path[i + 1]
+
+      player.move_piece(loc_from, loc_to)
+      
+      rival_leap, loc = self.is_leap_over_rival(loc_from, loc_to, player)
+      if rival_leap == True:
+        player.rival.remove_piece(loc)
+        recover_set.append(loc)
+
+      hashkey = self.get_canvass_hashkey()
+      list_hash.append(hashkey)
+
+    # recover rival pieces
+    for piece in recover_set:
+      player.rival.add_piece(piece)
+
+    # recover self piece
+    last_loc = move_path[-1]
+    first_loc = move_path[0]
+
+    player.move_piece(last_loc, first_loc)
+
+    return list_hash
 
   def bot_play(self, player):
 
