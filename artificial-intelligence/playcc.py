@@ -127,7 +127,7 @@ class GameCanvass(object):
     self.cells = dict()
     self.init_canvass(nrow, ncol)
 
-  def init_canvass(self, nrow, ncol):
+  def init_canvass(self, nrow, ncol, north_map=[], south_map=[]):
     '''
     initialize cell coordinates and state
 
@@ -175,18 +175,26 @@ class GameCanvass(object):
       self.cells[n].status = 'disabled'
 
     # set the north player cells
-    # these cells will be marked with 'blue' color
-    for x,y in [(4,2), (4,3), (4,4), (4,5), \
-                       (5,3), (5,4)]:
-      n = ncol*x + y
-      self.cells[n].status = 'north'
+    if north_map != []:
+      for x,y in north_map:
+        n = ncol*x + y
+        self.cells[n].status = 'north'
+    else:
+      for x,y in [(4,2), (4,3), (4,4), (4,5), \
+                         (5,3), (5,4)]:
+        n = ncol*x + y
+        self.cells[n].status = 'north'
 
     # set the south player cells
-    # these cells will be marked with 'purple' color
-    for x,y in [       (8,3), (8,4), \
-                (9,2), (9,3), (9,4), (9,5)]:
-      n = ncol*x + y
-      self.cells[n].status = 'south'
+    if south_map != []:
+      for x,y in south_map:
+        n = ncol*x + y
+        self.cells[n].status = 'south'
+    else:
+      for x,y in [       (8,3), (8,4), \
+                  (9,2), (9,3), (9,4), (9,5)]:
+        n = ncol*x + y
+        self.cells[n].status = 'south'
 
   def lock_canvass(self):
     '''
@@ -428,12 +436,18 @@ class Player(object):
     self.select_loc = None
     self.select_path = []
 
-  def init_pieces(self):
+  def init_pieces(self, piece_list = []):
     '''
       initialize the pieces of this player
       north player and south player has different default pieces locations
     '''
 
+    # if the piece_list is specified, use that list
+    if piece_list != []:
+      self.list_of_pieces = copy(piece_list)
+      return
+
+    # otherwise, initialize it to the default piece list according to the side
     if self.side == 'north':
       self.list_of_pieces = [(4,2), (4,3), (4,4), (4,5), (5,3), (5,4)]
     elif self.side == 'south':
@@ -960,7 +974,7 @@ class GameEngine(object):
   # what is the playing doing?
   status = ''
 
-  def __init__(self, robot_mode = False):
+  def __init__(self, robot_mode = False, ui_disabled = False):
 
     # setup north and south with player
     player1 = Player(side = 'north', robot = True)
@@ -988,10 +1002,27 @@ class GameEngine(object):
     self.load_cached_pickle()
 
     # initialize UI
-    self.ui = PlayGround(self)
+    self.ui_disabled = ui_disabled
+
+    if self.ui_disabled == False:
+      self.ui = PlayGround(self)
 
     # double robot mode
     self.robot_mode = robot_mode
+
+  def init_canvass_with_map(self, canvass_map):
+    '''
+    initialize game canvass with specified canvass map
+    '''
+    north_piece_map, south_piece_map = canvass_map
+
+    self.canvass.init_canvass(self.nrow, self.ncol, north_piece_map, south_piece_map)
+
+    self.north_player.set_canvass(self.canvass)
+    self.south_player.set_canvass(self.canvass)
+
+    self.north_player.init_pieces(north_piece_map)
+    self.south_player.init_pieces(south_piece_map)
 
   def start_game(self):
     '''
@@ -1244,9 +1275,9 @@ class GameEngine(object):
     generate a hash code based on the current canvass map
 
     Output: A unique string represent the current canvass
-            South player piece + 'f' + north player piece
+            North player piece + 'X' + South player piece
 
-    Note: f is separator 
+    Note: 'X' is separator 
     '''
 
     black_piece = ''
@@ -1261,7 +1292,16 @@ class GameEngine(object):
           black_piece += self.encrypt((x,y))
         else:
           white_piece += self.encrypt((x,y))
-    return black_piece + 'f' + white_piece
+
+    # add some test assertions
+    assert(len(black_piece) <= 12)
+    assert(len(white_piece) <= 12)
+
+    # add padding 00 if there are not 6 pieces on either side
+    black_piece += '0' * (12 - len(black_piece))
+    white_piece += '0' * (12 - len(white_piece))
+
+    return white_piece + 'X' + black_piece
 
   def encrypt(self, cell):
     '''
@@ -1536,6 +1576,11 @@ class GameEngine(object):
                     if it's leaped on its own cells, just leap
             False - it is not a legal move
     '''
+    cell = self.canvass.get_cell(loc_end)
+    if cell.status != 'free':
+      print 'This is not legitimate move'
+      return False
+
     if loc_end in player.select_path:
       print 'loop move is not allowed'
       return False
@@ -1642,7 +1687,7 @@ def main(argv):
     print 'verbose = %d' % verbose
     print 'debug   = %d' % debug
 
-  game = GameEngine(robot)
+  game = GameEngine(robot, False)
 
   # kick off the game with UI
   game.start()
@@ -1653,14 +1698,3 @@ def main(argv):
 if __name__ == '__main__':
   main(sys.argv[1:])
 
-def list_hashkey(self):
-
-    nmove = len(move_path) - 1
-    for i in range(nmove):
-      loc_from = move_path[i]
-      loc_to = move_path[i + 1]
-
-      self.move_piece(loc_from, loc_to)
-      self.get_canvass_hashkey
-     
-       

