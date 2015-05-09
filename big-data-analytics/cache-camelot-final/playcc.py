@@ -1024,6 +1024,56 @@ class GameEngine(object):
     self.north_player.init_pieces(north_piece_map)
     self.south_player.init_pieces(south_piece_map)
 
+  def init_canvass_with_mapkey(self, mapkey):
+    '''
+    initialize game canvass with map hashkey
+    '''
+    canvass_map = self.key_to_canvass(mapkey)
+    self.init_canvass_with_map(canvass_map)
+
+  def key_to_canvass(self, mapkey):
+    '''
+    hashkey representation of canvass to
+    data structure in the game canvass
+
+    INPUT: "404142434445X121314152132"
+    OUTPUT: [[(4, 0), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5)], \
+             [(1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (3, 2)]]
+    '''
+
+    def unmap_loc(key):
+      '''
+      string to tuple representation of cell location
+
+      INPUT1: '40'
+      OUTPUT1: (4, 0)
+
+      INPUT2: 'a3'
+      OUTPUT2: (10, 3)
+      '''
+      off_x = int(key[0], 16)
+      off_y = int(key[1], 16)
+      return (off_x, off_y)
+
+    north_pieces = []
+    south_pieces = []
+
+    for north_idx in range(0,6):
+      north_piece = mapkey[north_idx * 2 : north_idx * 2 + 2]
+      north_piece_loc = unmap_loc(north_piece)
+
+      if north_piece_loc != (0, 0):
+        north_pieces.append(north_piece_loc)
+
+    for south_idx in range(0,6):
+      south_piece = mapkey[13 + south_idx * 2 : 13 + south_idx * 2 + 2]
+      south_piece_loc = unmap_loc(south_piece)
+
+      if south_piece_loc != (0, 0):
+        south_pieces.append(south_piece_loc)
+
+    return [north_pieces, south_pieces]
+
   def start_game(self):
     '''
     start the game
