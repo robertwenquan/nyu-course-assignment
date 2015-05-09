@@ -1653,3 +1653,14 @@ def main(argv):
 if __name__ == '__main__':
   main(sys.argv[1:])
 
+def list_hashkey(self):
+
+    nmove = len(move_path) - 1
+    for i in range(nmove):
+      loc_from = move_path[i]
+      loc_to = move_path[i + 1]
+
+      self.move_piece(loc_from, loc_to)
+      self.get_canvass_hashkey
+     
+       
