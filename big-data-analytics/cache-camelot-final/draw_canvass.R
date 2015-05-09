@@ -162,5 +162,8 @@ for (col in 0:7) {
   text(x = 40 + col * 40, y = 600, labels = toupper(as.hexmode(col)))
 }
 
+# add title and description
+title(main = "Initial Game Canvass Map", sub = paste("MAPHASH:", mapkey), outer = FALSE)
+
 dev.off()
 
