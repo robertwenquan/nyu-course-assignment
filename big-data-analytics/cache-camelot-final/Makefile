@@ -1,2 +1,2 @@
 clean:	
-	rm -f *.pyc *.pdf
+	rm -f *.pyc *.pdf *.gif *.png
