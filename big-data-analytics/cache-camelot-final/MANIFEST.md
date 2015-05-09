@@ -18,9 +18,11 @@ If it is not covered, please contact the project owner: Robert WEN <robert.wen@n
 
 * playcc.py
  * Core game engine, from Artificial Intelligence course project
+ * We use the whats_next_move() function to calculate the result for this project
  * Credit is with Caicai CHEN <caicai.chen@nyu.edu>
 * tkui.py
  * Core game ui, from Artificial Intelligence course project
+ * Credit is with Caicai CHEN <caicai.chen@nyu.edu>
  * This file is not actually used, but is the dependency to run the game engine
 
 * try_gen_sample.py
