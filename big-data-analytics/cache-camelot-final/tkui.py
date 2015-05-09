@@ -119,24 +119,24 @@ class PlayGround(object):
     self.label_prune_max.place(x=180, y=80, width=70, height=20)
     self.label_prune_min.place(x=260, y=80, width=70, height=20)
 
-  def make_side_info(self):
-    '''
-    make the side bar
-    which has the icon for north and south player
-    and the corresponding technical metrics during the play
-    '''
+  #def make_side_info(self):
+  #  '''
+  #  make the side bar
+  #  which has the icon for north and south player
+  #  and the corresponding technical metrics during the play
+  #  '''
 
-    self.label_north_icon = Label(self.gui)
-    self.label_north_icon.place(x=370, y=120, width=80, height=80)
+  #  self.label_north_icon = Label(self.gui)
+  #  self.label_north_icon.place(x=370, y=120, width=80, height=80)
 
-    self.label_north_timer = Label(self.gui, text='00:00:00')
-    self.label_north_timer.place(x=370, y=320, width=160, height=30)
+  #  self.label_north_timer = Label(self.gui, text='00:00:00')
+  #  self.label_north_timer.place(x=370, y=320, width=160, height=30)
 
-    self.label_south_icon = Label(self.gui)
-    self.label_south_icon.place(x=370, y=400, width=80, height=80)
+  #  self.label_south_icon = Label(self.gui)
+  #  self.label_south_icon.place(x=370, y=400, width=80, height=80)
 
-    self.label_south_timer = Label(self.gui, text='00:00:00')
-    self.label_south_timer.place(x=370, y=570, width=160, height=30)
+  #  self.label_south_timer = Label(self.gui, text='00:00:00')
+  #  self.label_south_timer.place(x=370, y=570, width=160, height=30)
 
   def reset_game(self):
     '''
@@ -242,24 +242,24 @@ class PlayGround(object):
     print 'Side', self.choose_side
     print 'Level', self.choose_level
 
-    self.photo_robot= PhotoImage(file="images/robot.gif")
+    if self.choose_level == 1:
+      self.photo_robot= PhotoImage(file="images/dumb.gif")
+    elif self.choose_level == 2:
+      self.photo_robot= PhotoImage(file="images/conan.gif")
+    else: 
+      self.photo_robot= PhotoImage(file="images/human.gif")
+
     self.label_photo_robot= Label(image=self.photo_robot)
 
-    if self.choose_level == 1:
-      self.photo_human= PhotoImage(file="images/dumb.gif")
-    elif self.choose_level == 2:
-      self.photo_human= PhotoImage(file="images/conan.gif")
-    else: 
-      self.photo_human= PhotoImage(file="images/human.gif")
-
+    self.photo_human = PhotoImage(file="images/mario.gif")
     self.label_photo_human= Label(image=self.photo_human)
 
     if self.choose_side == 'north':
-      self.label_photo_human.place(x=370, y=120, width=160, height=180)
-      self.label_photo_robot.place(x=370, y=400, width=160, height=170)
+      self.label_photo_human.place(x=370, y=160, width=160, height=180)
+      self.label_photo_robot.place(x=370, y=420, width=160, height=170)
     else:
-      self.label_photo_robot.place(x=370, y=120, width=160, height=180)
-      self.label_photo_human.place(x=370, y=400, width=160, height=170)
+      self.label_photo_robot.place(x=370, y=160, width=160, height=180)
+      self.label_photo_human.place(x=370, y=420, width=160, height=170)
 
     self.game.start_game()
 
@@ -280,7 +280,7 @@ class PlayGround(object):
     self.make_top_bar()
 
     # place side info
-    self.make_side_info()
+    #self.make_side_info()
 
     # place the buttons
     for row_idx in range(nrow):
