@@ -19,7 +19,7 @@ class MRCalculateOptimalPath(MRJob):
   def __init__(self, args):
 
     super(MRCalculateOptimalPath, self).__init__(args)
-    self.game = GameEngine(False, ui_disabled = True)
+    self.game = GameEngine(True, ui_disabled = True)
 
   """
   MRJOB SPECIFIC FUNCTIONS
@@ -136,6 +136,8 @@ class MRCalculateOptimalPath(MRJob):
     and calculate the optimal next move
     '''
 
+    time_start = time.time()
+
     # reset canvass map
     canvass_map = self.key_to_canvass(mapkey)
     self.game.init_canvass_with_map(canvass_map)
@@ -150,7 +152,10 @@ class MRCalculateOptimalPath(MRJob):
     else:
       move_path, move_stats = self.game.south_player.whats_next_move()
 
-    return (move_path, move_stats)
+    time_end = time.time()
+    time_elapsed = time_end - time_start
+
+    return (move_path, move_stats, time_elapsed)
 
   def validate_mapkey(self, mapkey):
     '''
