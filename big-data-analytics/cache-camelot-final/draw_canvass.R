@@ -112,10 +112,10 @@ mapkey <- args[1]
 cell_map_list <- convert_hash_mapkey(mapkey)
 
 # set target output file
-png(paste("canvass",".png",sep=""), width=800, height=1200)
+png(paste("canvass",".png",sep=""), width=360, height=600)
 
 # draw the game canvass
-plot(c(0,400), c(0,600), axes = F, xlab = NA, ylab = NA)
+plot(c(0,360), c(0,600), axes = F, xlab = NA, ylab = NA)
 
 # disabled cells are here
 disabled_cells <- rbind(c(x=0,y=0),              c( 0,1), c( 0,2), c( 0,5), c( 0,6), c( 0,7))
@@ -146,4 +146,21 @@ nrows <- nrow(cell_map_list)
 for (i in 1:nrows) {
   draw_a_cell(cell_map_list[i,])
 }
+
+# draw the indexes
+for (row in 0:13) {
+  # left
+  text(x = 0, y = 40 + (13 - row)*40, labels = toupper(as.hexmode(row)))
+  # right
+  text(x = 360, y = 40 + (13 - row)*40, labels = toupper(as.hexmode(row)))
+}
+
+for (col in 0:7) {
+  # bottom
+  text(x = 40 + col * 40, y = 0, labels = toupper(as.hexmode(col)))
+  # upper
+  text(x = 40 + col * 40, y = 600, labels = toupper(as.hexmode(col)))
+}
+
+dev.off()
 
