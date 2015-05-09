@@ -1673,6 +1673,11 @@ class GameEngine(object):
                     if it's leaped on its own cells, just leap
             False - it is not a legal move
     '''
+    cell = self.canvass.get_cell(loc_end)
+    if cell.status != 'free':
+      print 'This is not legitimate move'
+      return False
+
     if loc_end in player.select_path:
       print 'loop move is not allowed'
       return False
