@@ -92,6 +92,10 @@ draw_a_cell <- function(cell_info) {
   off_x = strtoi(cell_info[1,1])
   off_y = strtoi(cell_info[1,2])
 
+  if (off_x == 0 & off_y == 0) {
+    return()
+  }
+
   draw_off_x <- (40 + (off_y) * 40)
   draw_off_y <- (40 + (13-off_x) * 40)
 
@@ -108,11 +112,16 @@ draw_a_cell <- function(cell_info) {
 # argument parsing and get cell list in data frame
 args <- commandArgs(trailingOnly = TRUE)
 mapkey <- args[1]
+output_png <- args[2]
+
+if (output_png == "") {
+  output_png <- 'canvass.png'
+}
 
 cell_map_list <- convert_hash_mapkey(mapkey)
 
 # set target output file
-png(paste("canvass",".png",sep=""), width=360, height=600)
+png(output_png, width=360, height=600)
 
 # draw the game canvass
 plot(c(0,360), c(0,600), axes = F, xlab = NA, ylab = NA)
