@@ -1397,6 +1397,53 @@ class GameEngine(object):
     # sync the result into the pickle file
     self.save_cached_pickle()
 
+  def list_hashkey(self, maphash, move_path, side):
+    '''
+    '''
+
+    list_hash = []
+
+    hashkey = self.get_canvass_hashkey()
+    assert(hashkey == maphash)
+    list_hash.append(hashkey)
+
+    recover_set = []
+
+    if side == 'north':
+      player = self.north_player
+    elif side == 'south':
+      player = self.south_player
+    else:
+      exit(55)
+
+    nmove = len(move_path) - 1
+
+    for i in range(nmove):
+      loc_from = move_path[i]
+      loc_to = move_path[i + 1]
+
+      player.move_piece(loc_from, loc_to)
+      
+      rival_leap, loc = self.is_leap_over_rival(loc_from, loc_to, player)
+      if rival_leap == True:
+        player.rival.remove_piece(loc)
+        recover_set.append(loc)
+
+      hashkey = self.get_canvass_hashkey()
+      list_hash.append(hashkey)
+
+    # recover rival pieces
+    for piece in recover_set:
+      player.rival.add_piece(piece)
+
+    # recover self piece
+    last_loc = move_path[-1]
+    first_loc = move_path[0]
+
+    player.move_piece(last_loc, first_loc)
+
+    return list_hash
+
   def bot_play(self, player):
 
     if player.robot != True:
