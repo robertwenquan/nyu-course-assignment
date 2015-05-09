@@ -1275,9 +1275,9 @@ class GameEngine(object):
     generate a hash code based on the current canvass map
 
     Output: A unique string represent the current canvass
-            South player piece + 'f' + north player piece
+            North player piece + 'X' + South player piece
 
-    Note: f is separator 
+    Note: 'X' is separator 
     '''
 
     black_piece = ''
@@ -1292,7 +1292,16 @@ class GameEngine(object):
           black_piece += self.encrypt((x,y))
         else:
           white_piece += self.encrypt((x,y))
-    return black_piece + 'f' + white_piece
+
+    # add some test assertions
+    assert(len(black_piece) <= 12)
+    assert(len(white_piece) <= 12)
+
+    # add padding 00 if there are not 6 pieces on either side
+    black_piece += '0' * (12 - len(black_piece))
+    white_piece += '0' * (12 - len(white_piece))
+
+    return white_piece + 'X' + black_piece
 
   def encrypt(self, cell):
     '''
