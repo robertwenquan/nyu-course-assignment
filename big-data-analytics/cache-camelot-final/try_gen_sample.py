@@ -82,7 +82,7 @@ def gen_canvass_maps():
         for south_piece_list in itertools.combinations(gen_valid_cell('south'), n_south):
           if is_invalid_canvass_map(list(north_piece_list), list(south_piece_list)):
             continue
-          yield encode_canvass_map(list(north_piece_list) + [(-1,-1)] + list(south_piece_list))
+          yield encode_canvass_map(sorted(list(north_piece_list)) + [(-1,-1)] + sorted(list(south_piece_list)))
 
 n = 0
 for canvass in gen_canvass_maps():
