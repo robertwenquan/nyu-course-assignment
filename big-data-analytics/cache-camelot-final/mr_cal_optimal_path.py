@@ -139,8 +139,7 @@ class MRCalculateOptimalPath(MRJob):
     time_start = time.time()
 
     # reset canvass map
-    canvass_map = self.key_to_canvass(mapkey)
-    self.game.init_canvass_with_map(canvass_map)
+    self.game.init_canvass_with_mapkey(mapkey)
 
     # reset difficulty level
     self.game.north_player.intell_level = level;
@@ -152,10 +151,12 @@ class MRCalculateOptimalPath(MRJob):
     else:
       move_path, move_stats = self.game.south_player.whats_next_move()
 
+    mapkey_list_over_path = self.game.get_maphash_list_over_path(mapkey, move_path, side)
+
     time_end = time.time()
     time_elapsed = time_end - time_start
 
-    return (move_path, move_stats, time_elapsed)
+    return (move_path, move_stats, mapkey_list_over_path, time_elapsed)
 
   def validate_mapkey(self, mapkey):
     '''
