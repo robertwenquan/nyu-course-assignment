@@ -1,5 +1,25 @@
 #!/usr/bin/python
 
+"""
+INPUT: A file named 'list'
+       The file is a single line JSON format like this:
+       ["424344455354X738492939495", "424344535463X738492939495"]
+       each element represents a game canvass map
+
+INTERMEDIATE OUTPUT: a series of png files numbered from 0
+                     like 0.png, 1.png, 2.png, etc.
+
+OUTPUT: an animated GIF named 'animated.gif'
+        with 1 frame per sec and infinite play loop
+
+EXAMPLE: ./gen_gif.py
+
+TODO: 
+  1. output file naem through comand line argument
+  2. list through command line argument
+  3. a switch to save/not-save intermediate results
+"""
+
 import os
 import sys
 import json
