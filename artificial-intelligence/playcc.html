@@ -96,7 +96,7 @@ query_type_blacklist:&nbsp;[]&nbsp;get&nbsp;all&nbsp;valid&nbsp;adjacent&nbsp;ce
 <dl><dt><a name="GameCanvass-get_cell"><strong>get_cell</strong></a>(self, loc)</dt><dd><tt>get&nbsp;the&nbsp;cell&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;according&nbsp;to&nbsp;x,y&nbsp;coordinates<br>
 return&nbsp;None&nbsp;if&nbsp;cell&nbsp;is&nbsp;not&nbsp;found</tt></dd></dl>
 
-<dl><dt><a name="GameCanvass-init_canvass"><strong>init_canvass</strong></a>(self, nrow, ncol)</dt><dd><tt>initialize&nbsp;cell&nbsp;coordinates&nbsp;and&nbsp;state<br>
+<dl><dt><a name="GameCanvass-init_canvass"><strong>init_canvass</strong></a>(self, nrow, ncol, north_map<font color="#909090">=[]</font>, south_map<font color="#909090">=[]</font>)</dt><dd><tt>initialize&nbsp;cell&nbsp;coordinates&nbsp;and&nbsp;state<br>
 &nbsp;<br>
 FIXME:<br>
 this&nbsp;is&nbsp;a&nbsp;dirty&nbsp;initialization,&nbsp;with&nbsp;hard-coded&nbsp;cell&nbsp;selection<br>
@@ -156,7 +156,7 @@ Data descriptors defined here:<br>
 &nbsp;-&nbsp;internal&nbsp;logic&nbsp;of&nbsp;the&nbsp;ganme<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="GameEngine-__init__"><strong>__init__</strong></a>(self, robot_mode<font color="#909090">=False</font>)</dt></dl>
+<dl><dt><a name="GameEngine-__init__"><strong>__init__</strong></a>(self, robot_mode<font color="#909090">=False</font>, ui_disabled<font color="#909090">=False</font>)</dt></dl>
 
 <dl><dt><a name="GameEngine-bot_play"><strong>bot_play</strong></a>(self, player)</dt></dl>
 
@@ -178,15 +178,24 @@ Output:&nbsp;[]&nbsp;at&nbsp;cache&nbsp;miss<br>
 <dl><dt><a name="GameEngine-get_canvass_hashkey"><strong>get_canvass_hashkey</strong></a>(self)</dt><dd><tt>generate&nbsp;a&nbsp;hash&nbsp;code&nbsp;based&nbsp;on&nbsp;the&nbsp;current&nbsp;canvass&nbsp;map<br>
 &nbsp;<br>
 Output:&nbsp;A&nbsp;unique&nbsp;string&nbsp;represent&nbsp;the&nbsp;current&nbsp;canvass<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;South&nbsp;player&nbsp;piece&nbsp;+&nbsp;'f'&nbsp;+&nbsp;north&nbsp;player&nbsp;piece<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;North&nbsp;player&nbsp;piece&nbsp;+&nbsp;'X'&nbsp;+&nbsp;South&nbsp;player&nbsp;piece<br>
 &nbsp;<br>
-Note:&nbsp;f&nbsp;is&nbsp;separator</tt></dd></dl>
+Note:&nbsp;'X'&nbsp;is&nbsp;separator</tt></dd></dl>
 
 <dl><dt><a name="GameEngine-get_human_player"><strong>get_human_player</strong></a>(self)</dt><dd><tt>return&nbsp;the&nbsp;human&nbsp;player&nbsp;<a href="__builtin__.html#object">object</a><br>
 limit:&nbsp;there&nbsp;is&nbsp;at&nbsp;most&nbsp;one&nbsp;human&nbsp;player&nbsp;in&nbsp;the&nbsp;game<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;there&nbsp;is&nbsp;possibility&nbsp;no&nbsp;human&nbsp;player&nbsp;is&nbsp;available&nbsp;in&nbsp;the&nbsp;game</tt></dd></dl>
 
+<dl><dt><a name="GameEngine-get_maphash_list_over_path"><strong>get_maphash_list_over_path</strong></a>(self, maphash, move_path, side)</dt><dd><tt>Input:<br>
+&nbsp;&nbsp;maphash&nbsp;&nbsp;&nbsp;-&nbsp;start&nbsp;map&nbsp;hashcode<br>
+&nbsp;&nbsp;move_path&nbsp;-&nbsp;moving&nbsp;path&nbsp;calculated&nbsp;from&nbsp;the&nbsp;whats_next_move<br>
+&nbsp;&nbsp;side&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;whether&nbsp;this&nbsp;is&nbsp;for&nbsp;the&nbsp;north&nbsp;player&nbsp;to&nbsp;move&nbsp;or&nbsp;south</tt></dd></dl>
+
 <dl><dt><a name="GameEngine-human_play"><strong>human_play</strong></a>(self, x, y)</dt><dd><tt>handle&nbsp;the&nbsp;click&nbsp;event</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-init_canvass_with_map"><strong>init_canvass_with_map</strong></a>(self, canvass_map)</dt><dd><tt>initialize&nbsp;game&nbsp;canvass&nbsp;with&nbsp;specified&nbsp;canvass&nbsp;map</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-init_canvass_with_mapkey"><strong>init_canvass_with_mapkey</strong></a>(self, mapkey)</dt><dd><tt>initialize&nbsp;game&nbsp;canvass&nbsp;with&nbsp;map&nbsp;hashkey</tt></dd></dl>
 
 <dl><dt><a name="GameEngine-is_all_pieces_dead"><strong>is_all_pieces_dead</strong></a>(self, player)</dt><dd><tt>Check&nbsp;if&nbsp;all&nbsp;pieces&nbsp;of&nbsp;any&nbsp;side&nbsp;are&nbsp;dead<br>
 This&nbsp;is&nbsp;one&nbsp;of&nbsp;the&nbsp;game&nbsp;winning(end)&nbsp;rules<br>
@@ -247,6 +256,12 @@ Game&nbsp;Winning&nbsp;Condition&nbsp;(meeting&nbsp;one&nbsp;wins&nbsp;the&nbsp;
 &nbsp;<br>
 Input:&nbsp;N/A&nbsp;(Check&nbsp;the&nbsp;global&nbsp;class&nbsp;canvass)<br>
 Output:&nbsp;(result,&nbsp;who)&nbsp;result&nbsp;=&nbsp;True&nbsp;/&nbsp;False,&nbsp;who&nbsp;=&nbsp;"north"&nbsp;/&nbsp;"south"</tt></dd></dl>
+
+<dl><dt><a name="GameEngine-key_to_canvass"><strong>key_to_canvass</strong></a>(self, mapkey)</dt><dd><tt>hashkey&nbsp;representation&nbsp;of&nbsp;canvass&nbsp;to<br>
+data&nbsp;structure&nbsp;in&nbsp;the&nbsp;game&nbsp;canvass<br>
+&nbsp;<br>
+INPUT:&nbsp;"404142434445X121314152132"<br>
+OUTPUT:&nbsp;[[(4,&nbsp;0),&nbsp;(4,&nbsp;1),&nbsp;(4,&nbsp;2),&nbsp;(4,&nbsp;3),&nbsp;(4,&nbsp;4),&nbsp;(4,&nbsp;5)],&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(1,&nbsp;2),&nbsp;(1,&nbsp;3),&nbsp;(1,&nbsp;4),&nbsp;(1,&nbsp;5),&nbsp;(2,&nbsp;1),&nbsp;(3,&nbsp;2)]]</tt></dd></dl>
 
 <dl><dt><a name="GameEngine-load_cached_pickle"><strong>load_cached_pickle</strong></a>(self)</dt><dd><tt>load&nbsp;cached&nbsp;optimal&nbsp;move&nbsp;results&nbsp;from&nbsp;pickle&nbsp;file<br>
 it&nbsp;is&nbsp;to&nbsp;save&nbsp;redundant&nbsp;time&nbsp;of&nbsp;thinking&nbsp;at&nbsp;game&nbsp;play<br>
@@ -349,7 +364,7 @@ Input:&nbsp;(x,y)&nbsp;a&nbsp;tuple&nbsp;of&nbsp;the&nbsp;location</tt></dd></dl
 
 <dl><dt><a name="Player-clear_select_path"><strong>clear_select_path</strong></a>(self)</dt></dl>
 
-<dl><dt><a name="Player-estimate_function"><strong>estimate_function</strong></a>(self)</dt><dd><tt>Estimate&nbsp;utility&nbsp;based&nbsp;on&nbsp;current&nbsp;canvass&nbsp;to&nbsp;help&nbsp;player&nbsp;make&nbsp;decision<br>
+<dl><dt><a name="Player-evaluation_function"><strong>evaluation_function</strong></a>(self)</dt><dd><tt>Estimate&nbsp;utility&nbsp;based&nbsp;on&nbsp;current&nbsp;canvass&nbsp;to&nbsp;help&nbsp;player&nbsp;make&nbsp;decision<br>
 &nbsp;<br>
 It&nbsp;composed&nbsp;of&nbsp;4&nbsp;parts:<br>
 &nbsp;&nbsp;1.&nbsp;distance&nbsp;to&nbsp;castle,&nbsp;the&nbsp;closer&nbsp;the&nbsp;better.<br>
@@ -360,7 +375,7 @@ It&nbsp;composed&nbsp;of&nbsp;4&nbsp;parts:<br>
 <dl><dt><a name="Player-init_castle_points"><strong>init_castle_points</strong></a>(self)</dt><dd><tt>initialize&nbsp;the&nbsp;castle&nbsp;points&nbsp;of&nbsp;one&nbsp;player<br>
 north&nbsp;player&nbsp;and&nbsp;south&nbsp;play&nbsp;has&nbsp;different&nbsp;castle&nbsp;points</tt></dd></dl>
 
-<dl><dt><a name="Player-init_pieces"><strong>init_pieces</strong></a>(self)</dt><dd><tt>initialize&nbsp;the&nbsp;pieces&nbsp;of&nbsp;this&nbsp;player<br>
+<dl><dt><a name="Player-init_pieces"><strong>init_pieces</strong></a>(self, piece_list<font color="#909090">=[]</font>)</dt><dd><tt>initialize&nbsp;the&nbsp;pieces&nbsp;of&nbsp;this&nbsp;player<br>
 north&nbsp;player&nbsp;and&nbsp;south&nbsp;player&nbsp;has&nbsp;different&nbsp;default&nbsp;pieces&nbsp;locations</tt></dd></dl>
 
 <dl><dt><a name="Player-is_match_point"><strong>is_match_point</strong></a>(self)</dt><dd><tt>Check&nbsp;whether&nbsp;it's&nbsp;a&nbsp;match&nbsp;point,&nbsp;that&nbsp;robot&nbsp;can&nbsp;achive&nbsp;success&nbsp;by&nbsp;one&nbsp;action<br>
