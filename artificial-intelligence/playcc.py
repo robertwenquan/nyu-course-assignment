@@ -1447,13 +1447,18 @@ class GameEngine(object):
     # sync the result into the pickle file
     self.save_cached_pickle()
 
-  def list_hashkey(self, maphash, move_path, side):
+  def get_maphash_list_over_path(self, maphash, move_path, side):
     '''
+    Input:
+      maphash   - start map hashcode
+      move_path - moving path calculated from the whats_next_move
+      side      - whether this is for the north player to move or south
     '''
 
     list_hash = []
 
     hashkey = self.get_canvass_hashkey()
+
     assert(hashkey == maphash)
     list_hash.append(hashkey)
 
