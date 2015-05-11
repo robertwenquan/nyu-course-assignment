@@ -1,22 +1,37 @@
 #!/usr/bin/python
 
 import sys
+import pprint
 import pymongo
 import argparse
 
-# Open the MongoDB connection
-def conn_open():
-  global connMongo
-  connMongo = pymongo.Connection('mongodb://localhost:27017')
+class QueryMovingPath():
 
-  db = connMongo.camelot
-  collection = db.smartcache
+  def __init__(self):
+    self.connMongo = None
 
-  return collection
+  # Open the MongoDB connection
+  def conn_open(self):
 
-# Close the MongoDB connection
-def conn_close():
-  connMongo.close()
+    self.connMongo = pymongo.Connection('mongodb://localhost:27017')
+
+    db = self.connMongo.camelot
+    collection = db.smartcache
+
+    return collection
+
+  # Close the MongoDB connection
+  def conn_close(self):
+    self.connMongo.close()
+
+  def query(self, hashid):
+
+    collection = self.conn_open()
+
+    doc = collection.find_one({hashid:{"$exists": "true"}}, {"_id":0})
+    pprint.pprint(doc)
+
+    self.conn_close()
 
 def main(argv):
 
@@ -29,15 +44,8 @@ def main(argv):
     print 'Specify HASHID to query!'
     exit(1)
 
-  connMongo = None
-  collection = conn_open()
-
-  for doc in collection.find({hashid:{"$exists": "true"}}, {"_id":0}):
-    print doc[hashid]['1']
-    print doc[hashid]['2']
-    print doc[hashid]['3']
-
-  conn_close()
+  aa = QueryMovingPath()
+  aa.query(hashid)
 
 #
 # main routine starts here
