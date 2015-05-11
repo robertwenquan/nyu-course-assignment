@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-INPUT: A file named 'list'
+INPUT: A file named specified from the command line
        The file is a single line JSON format like this:
        ["424344455354X738492939495", "424344535463X738492939495"]
        each element represents a game canvass map
@@ -25,7 +25,7 @@ import sys
 import json
 from PIL import Image, ImageSequence
 
-FILENAME = 'list'
+FILENAME = sys.argv[1]
 
 with open(FILENAME) as fp:
   for line in fp:
@@ -36,8 +36,10 @@ with open(FILENAME) as fp:
     idx = 0
 
     for mapkey in map_list:
-      os.system('./draw_canvass.R %s %s.png %d %d' % (mapkey, idx, n, idx))
+      print 'Generating %d of %d canvass maps...' % (idx+1, n)
+      os.system('./draw_canvass.R %s %s.png %d %d &>/dev/null' % (mapkey, idx, n, idx))
       idx += 1
 
+    print 'Generating animated GIF for the %d canvass maps...' % n
     os.system('convert -delay 100 -loop 0 *.png animated.gif')
 
