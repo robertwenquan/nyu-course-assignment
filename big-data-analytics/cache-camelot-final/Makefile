@@ -1,2 +1,3 @@
 clean:	
-	rm -f *.pyc *.pdf *.gif *.png
+	rm -f *.pdf *.gif *.png
+	find . -name "*.pyc" -exec rm -f {} \;
