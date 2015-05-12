@@ -9,7 +9,7 @@
 # from specified pieces information
 #
 # Example:
-#  $ ./draw_canvass.R "323334354344X737482838485"
+#  $ ./draw_canvass.R "323334354344X737482838485" "filename.png" "n" "index"
 #
 # Output:
 #  A static PNG 'canvass-start.png' will be generated
@@ -113,6 +113,10 @@ draw_a_cell <- function(cell_info) {
 args <- commandArgs(trailingOnly = TRUE)
 mapkey <- args[1]
 output_png <- args[2]
+n_moves <- as.integer(args[3])
+i_moves <- as.integer(args[4])
+
+print(i_moves)
 
 if (output_png == "") {
   output_png <- 'canvass.png'
@@ -137,17 +141,17 @@ disabled_cells <- data.frame(disabled_cells)
 
 # draw all cells
 for (x in 0:13) {
-    for (y in 0:7) {
-        if (is_cell_in_list(c(x,y), disabled_cells) == FALSE) {
-            if ((x %% 2 == 0 & y %% 2 == 1) | (x %% 2 == 1 & y %% 2 == 0)){
-                color <- "bisque1"
-                rect(20 + y * 40, 20 + x * 40, 60 + y * 40, 60 + x * 40, col=color)
-            } else if ((x %% 2 == 0 & y %% 2 == 0) | (x %% 2 == 1 & y %% 2 == 1)){
-                color <- "burlywood3"
-                rect(20 + y * 40, 20 + x * 40, 60 + y * 40, 60 + x * 40, col=color)
-            }
-        }
+  for (y in 0:7) {
+    if (is_cell_in_list(c(x,y), disabled_cells) == FALSE) {
+      if ((x %% 2 == 0 & y %% 2 == 1) | (x %% 2 == 1 & y %% 2 == 0)){
+        color <- "bisque1"
+        rect(20 + y * 40, 20 + x * 40, 60 + y * 40, 60 + x * 40, col=color)
+      } else if ((x %% 2 == 0 & y %% 2 == 0) | (x %% 2 == 1 & y %% 2 == 1)){
+        color <- "burlywood3"
+        rect(20 + y * 40, 20 + x * 40, 60 + y * 40, 60 + x * 40, col=color)
+      }
     }
+  }
 }
 
 # draw white and black cells
@@ -172,7 +176,11 @@ for (col in 0:7) {
 }
 
 # add title and description
-title(main = "Initial Game Canvass Map", sub = paste("MAPHASH:", mapkey), outer = FALSE)
+if (i_moves == 0) {
+  title(main = "Camelot Game Canvass Map", sub = paste("MAPHASH:", mapkey), outer = FALSE)
+} else {
+  title(main = "Camelot Game Canvass Map", sub = paste("MAPHASH:", mapkey, "move", toString(i_moves), "of", toString(n_moves-1)), outer = FALSE)
+}
 
 dev.off()
 

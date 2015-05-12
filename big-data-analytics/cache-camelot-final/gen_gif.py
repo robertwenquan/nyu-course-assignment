@@ -38,6 +38,7 @@ with open(FILENAME) as fp:
     for mapkey in map_list:
       print 'Generating %d of %d canvass maps...' % (idx+1, n)
       os.system('./draw_canvass.R %s %s.png %d %d &>/dev/null' % (mapkey, idx, n, idx))
+      #os.system('./draw_canvass.R %s %s.png %d %d' % (mapkey, idx, n, idx))
       idx += 1
 
     print 'Generating animated GIF for the %d canvass maps...' % n
