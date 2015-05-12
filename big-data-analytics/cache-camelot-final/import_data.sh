@@ -13,7 +13,7 @@
 #  documents will be inserted into camilot.smartcache
 #
 
-DATABASE="camilot"
+DATABASE="camelot"
 COLLECTION="smartcache"
 
 if [ $# -lt 1 ]
