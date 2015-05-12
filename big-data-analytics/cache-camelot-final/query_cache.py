@@ -10,8 +10,10 @@ class QueryMovingPath():
   def __init__(self):
     self.connMongo = None
 
-  # Open the MongoDB connection
   def conn_open(self):
+    """
+    open connection to MongoDB
+    """
 
     self.connMongo = pymongo.Connection('mongodb://localhost:27017')
 
@@ -20,18 +22,23 @@ class QueryMovingPath():
 
     return collection
 
-  # Close the MongoDB connection
   def conn_close(self):
+    """
+    close the connection to MongoDB
+    """
+
     self.connMongo.close()
 
-  def query(self, hashid):
+  def query(self, hashid, level=3, side='south'):
 
     collection = self.conn_open()
 
     doc = collection.find_one({hashid:{"$exists": "true"}}, {"_id":0})
-    pprint.pprint(doc)
-
+    item = doc[hashid]
+    path = doc[hashid][str(level)][side][0]
     self.conn_close()
+
+    return path
 
 def main(argv):
 
@@ -45,7 +52,7 @@ def main(argv):
     exit(1)
 
   aa = QueryMovingPath()
-  aa.query(hashid)
+  print aa.query(hashid)
 
 #
 # main routine starts here
