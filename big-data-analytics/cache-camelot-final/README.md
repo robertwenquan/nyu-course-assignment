@@ -22,7 +22,7 @@ In order to get the final result, we need some data transformation from the raw 
 Raw data is one or more text files.
 Each line is a 25 bytes string, with '\n' excluded, like the following
 ```
-'404142434445X121314152122'
+'424344455354X727475767782'
 ```
 It's a 12bytes + 12bytes string with an 'X' in the middle
 
