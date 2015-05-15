@@ -2,6 +2,7 @@
 
 ### Introduction
 
+Mini Camelot is a simplified version of a board game Camelot. It has white and black players on each side of the game canvass. Each player has to follow specific moving rules to move their own pieces. In order to maximize the game success rate, artificial intelligence alrorism is used in calculating the optimal evaluation. In this project I am trying to eliminate the thinking time for a game named Mini Camelot, a simplified version of the board game Camelot, by pre-calculating the gaming results on Amazon EMR (Elastic Map Reduce) service. In this paper, the design of the For more details about the camelot game, you can refer to http://en.wikipedia.org/wiki/Camelot_(board_game) or http://www.iggamecenter.com/info/en/camelot.html
 What problem we are trying to solve?
 What benefit will we have?
 We have an 
@@ -23,6 +24,11 @@ Raw data is one or more text files.
 Each line is a 25 bytes string, with '\n' excluded, like the following
 ```
 '424344455354X727475767782'
+ |            |
+ |            727475767782 (black player piece list)
+ 424344455354 (white player piece list)
+
+ Each two bytes represents the coordinates of one piece on one side. The first byte represents the row index ranging from 0 to D. The second byte represents the column index ranging from 0 to 7.
 ```
 It's a 12bytes + 12bytes string with an 'X' in the middle
 
@@ -76,11 +82,11 @@ conceptually there are approx 10^19 possible game canvass scenarios. Given
  
 For each data entry as one combination of the game canvass map, we have 6 scenarios to consider:
 1. Difficulty level 1, as white player
-2. Difficulty level 2, as white player
-3. Difficulty level 3, as white player
-4. Difficulty level 1, as black player
-5. Difficulty level 2, as black player
-6. Difficulty level 3, as black player
+1. Difficulty level 1, as black player
+1. Difficulty level 2, as white player
+1. Difficulty level 2, as black player
+1. Difficulty level 3, as white player
+1. Difficulty level 3, as black player
 
 ### Benchmark
 
