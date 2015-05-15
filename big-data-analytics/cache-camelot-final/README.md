@@ -2,21 +2,20 @@
 
 ### Introduction
 
-Mini Camelot is a simplified version of a board game Camelot. It has white and black players on each side of the game canvass. Each player has to follow specific moving rules to move their own pieces. In order to maximize the game success rate, artificial intelligence alrorism is used in calculating the optimal evaluation. In this project I am trying to eliminate the thinking time for a game named Mini Camelot, a simplified version of the board game Camelot, by pre-calculating the gaming results on Amazon EMR (Elastic Map Reduce) service. In this paper, the design of the For more details about the camelot game, you can refer to http://en.wikipedia.org/wiki/Camelot_(board_game) or http://www.iggamecenter.com/info/en/camelot.html
-What problem we are trying to solve?
-What benefit will we have?
-We have an 
-In order to expedite the thinking time of the robot, a smart caching layer is introduced for this game
+Mini Camelot is a simplified version of a board game Camelot. It has white and black players on each side of the game canvass. Each player has to follow specific moving rules to move their own pieces. In order to maximize the game success rate, artificial intelligence algorism is used in evaluating the optimal moving strategy. However, the calculating time, a.k.a thinking time of the robot player, takes seconds with moderate evaluation level. In this project I am trying to eliminate the thinking time for this Mini Camelot game to an unnoticable level, by pre-calculating the gaming results on Amazon EMR (Elastic Map Reduce) service and store them on local MongoDB for fast cached result query. The design of the data format transformation, as well as how the map-reduce is implemented are elaborated. To evaluate the impact of this proposed idea, a benchmark is designed to compare the performance with and without the cache. Lastly the further opportunites of this idea is discussed. For more details about the camelot game, you can refer to http://en.wikipedia.org/wiki/Camelot_(board_game) or http://www.iggamecenter.com/info/en/camelot.html
 
-##### Introducion about the Mini Camelot Game
+### Game Cache Layer Design
 
-Here is a few reference links for the Camelot game:
-* http://en.wikipedia.org/wiki/Camelot_(board_game)
-* http://www.iggamecenter.com/info/en/camelot.html
+The original mini Camelot game does not have game result cache layer. It calculates the game moving strategy based on the current game canvass on the fly. Here I design the game cache layer as a transparent cache service to the game engine. As the cache needs external database queries, the game is not designed to be fully dependent on the cache layer. If the cache query is not successful, the game will calculate the result on-the-fly. This ensures the availability of the game while maximize the usage of the cache. The other reason to keep the calculating power of the game but not fully depends on the game cache is that the combinations of the game canvass is incredibly high. To the current capacity of the cache design it is not pratical to pre-calculate and store all the cache results of the game. Hence we have to keep the computing power of the game when the cache layer is unaccessible or the cache result is unavailable. When there is a on-the-fly game result is calculated, the new cache entry will be saved into the database for futher query as the optimal move strategy is consistent with a specific game canvass.
+
+xxx
 
 ### Data Transformation
 
 In order to get the final result, we need some data transformation from the raw data format to the final data format.
+
+##### Data generation
+
 
 ##### Raw Data Format
 
