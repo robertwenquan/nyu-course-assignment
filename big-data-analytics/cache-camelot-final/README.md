@@ -6,9 +6,25 @@ Mini Camelot is a simplified version of a board game Camelot. It has white and b
 
 ### Game Cache Layer Design
 
+##### Cache Layer Introduction
+
 The original mini Camelot game does not have game result cache layer. It calculates the game moving strategy based on the current game canvass on the fly. Here I design the game cache layer as a transparent cache service to the game engine. As the cache needs external database queries, the game is not designed to be fully dependent on the cache layer. If the cache query is not successful, the game will calculate the result on-the-fly. This ensures the availability of the game while maximize the usage of the cache. The other reason to keep the calculating power of the game but not fully depends on the game cache is that the combinations of the game canvass is incredibly high. To the current capacity of the cache design it is not pratical to pre-calculate and store all the cache results of the game. Hence we have to keep the computing power of the game when the cache layer is unaccessible or the cache result is unavailable. When there is a on-the-fly game result is calculated, the new cache entry will be saved into the database for futher query as the optimal move strategy is consistent with a specific game canvass.
 
-xxx
+##### Cache Calculation
+
+The game cached results come from two parts: 
+
+1. Pre-calculated results
+
+sdfds
+
+1. On-the-fly results
+
+sdfds
+
+##### Cache Storage
+
+The cache 
 
 ### Data Transformation
 
@@ -112,7 +128,7 @@ For each data entry as one combination of the game canvass map, we have 6 scenar
 ### Summary
 * What have we achieved?
 
-### TODO?
+### Opportunities
 * Bigger data?
 ** Bigger data will increase the cache hit rate
 * Less data?
