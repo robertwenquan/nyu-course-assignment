@@ -282,9 +282,11 @@ do
 done
 ```
 
- As we can see, it takes 3 minutes 35 seconds to import data for 1,000,000 canvass map results.
+ There are 26 output files from the EMR map-reduce. These are the input files for the importer script.
 
  ![Data Import to MongoDB](images/import-1.png)
+
+ As we can see, it takes 3 minutes 35 seconds to import data for 1,000,000 canvass map results.
 
  ![Data Import to MongoDB](images/import-2.png)
 
