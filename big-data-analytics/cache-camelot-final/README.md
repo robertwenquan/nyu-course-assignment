@@ -316,6 +316,7 @@ Here is one example of the game move with the starting game canvass of "42434445
  * move7: "424445535487X000000000000"
 
 * R Plotting script
+
  Here is the plotting script written in R
 ```R
 # library to draw circles
