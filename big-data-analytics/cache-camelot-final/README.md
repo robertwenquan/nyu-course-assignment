@@ -214,9 +214,30 @@ def reducer(self, key, results):
 ** Move4 (A->B), xxx seconds
 ** Aggregated, xxxxx seconds
 * Compare the time spent in two modes in a chart
-![Level 1](images/benchmark-level1.png)
-![Level 2](images/benchmark-level2.png)
-![Level 3](images/benchmark-level3.png)
+
+Here is the benchmark for the level1 game play:
+
+ ![Level 1](images/benchmark-level1.png)
+
+ As we can see from the above data, there are 18 moves in this game, with total thinking time of 0.23s and average thinking time of 0.008 sec.
+ The speed up from the cache varis from 6x to 79x, with the average speed up of 27x.
+ With the cache, the total thinking time is 0.0083s, with average thinking time of 0.00046s.
+
+ ![Level 2](images/benchmark-level2.png)
+
+ As we can see from the above data, there are 24 moves in this game, with total thinking time of 8.2s and average thinking time of 0.013 sec.
+ The speed up from the cache varis from 16x to 1895x, with the average speed up of 639x.
+ With the cache, the total thinking time is 0.0128s, with average thinking time of 0.00053s.
+
+ ![Level 3](images/benchmark-level3.png)
+
+ As we can see from the above data, there are 16 moves in this game, with total thinking time of 127s and average thinking time of 7.980 sec.
+ The speed up from the cache varis from 17x to 74066x, with the average speed up of 12254x.
+ With the cache, the total thinking time is 0.010s, with average thinking time of 0.00065s.
+
+ ![Benchmark Summary](images/benchmark-summary.png)
+
+ As we can see from the above data, the thinking time as well as average thinking time increase linearly while the game difficulty level grows. However the cache retrieval time is almost constant across different game levels. That is to say, the higher level we play the game, the gain in the speed up is more. As we can see from earlier data, we have got a 40000+ times faster from the move5 on difficulty level3.
 
 ### Summary
 
