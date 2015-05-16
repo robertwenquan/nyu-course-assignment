@@ -235,6 +235,16 @@ Here are a few screen captures after the job is done. The full job takes 2 days 
 
  ![Hadoop Progress](images/hadoop-progress.png)
 
+Here are the screen shots for the input and output files on S3
+
+ * Input files on Amazon S3
+
+ ![Input Files](images/s3-input.png)
+
+ * Output files on Amazon S3
+
+ ![Output Files](images/s3-output.png)
+
 ### Data Importing
 
 The following bash script is used to import the map-reduce generated output data to a MongoDB database.
