@@ -6,7 +6,11 @@
 
 ### Introduction
 
-Mini Camelot is a simplified version of a board game Camelot. It has white and black players on each side of the game canvass. Each player has to follow specific moving rules to move their own pieces. In order to maximize the game success rate, artificial intelligence algorism is used in evaluating the optimal moving strategy. However, the calculating time, a.k.a thinking time of the robot player, takes seconds with moderate evaluation level. In this project I am trying to eliminate the thinking time for this Mini Camelot game to an unnoticable level, by pre-calculating the gaming results on Amazon EMR (Elastic Map Reduce) service and store them on local MongoDB for fast cached result query. The design of the data format transformation, as well as how the map-reduce is implemented are elaborated. To evaluate the impact of this proposed idea, a benchmark is designed to compare the performance with and without the cache. Lastly the further opportunites of this idea is discussed. 
+Mini Camelot is a simplified version of a board game Camelot. It has white and black players on each side of the game canvass. Each player has to follow specific moving rules to move their own pieces. In order to maximize the game success rate, artificial intelligence algorism is used in evaluating the optimal moving strategy. However, the calculating time, a.k.a thinking time of the robot player, takes seconds with moderate evaluation level. In this project I am trying to eliminate the thinking time for this Mini Camelot game to an unnoticable level, by pre-calculating the gaming results on Amazon EMR (Elastic Map Reduce) service and store them on local MongoDB for fast cached result query. The design of the data format transformation, as well as how the map-reduce is implemented are elaborated. Also the running progress of the EMR job is recorded for reference. To evaluate the impact of this proposed idea, a benchmark is designed to compare the performance with and without the cache. Lastly the further opportunites of this idea is discussed. 
+
+There are two objectives for this project. One is to eliminate the thinking time of the robot player as much as possible through the pre-calculated cache. This is transparently integrated into the original game UI hence there is no output except for the benchmark result. The other is to setup a web based UI for user to query a specific canvass map and get the next optimal game move strategy in a GIF animation.
+
+Here is the user interface of the Mini Camelot Game:
 
 ![Mini Camelot Game UI](images/game-ui.png)
 
@@ -40,7 +44,7 @@ The game cached results come from two parts:
 
 ### Data Transformation
 
-In order to get the final result, we need some data transformation from the raw data to the final data for consumption. This consists of the following few phases:
+In order to get the final results, we need some data transformation from the raw data to the final data for consumption. This consists of the following few phases:
 
   * Data Generation
   * Data Filtering
@@ -49,6 +53,10 @@ In order to get the final result, we need some data transformation from the raw 
 ##### Data generation
 
   Before the cached results are loaded. We need a list of canvass maps to calculate. Conceptually, there are about 10^18 magnitude of game canvass combinations. Considering an average 1 second thinking time for the on-the-fly calculation, we need 1,000,000 machines to calculate 31,000 years to get the full results. This is obviously not practical at all from the time and resource point of view. Also from the storage point of view, considing an average of 100 bytes per cached result, we need approximately 100 EB to store the cached results, which is also impractical at all.
+
+##### Data Filtering
+
+Although there are only 6 pieces for white and black side respectively, on a 88-cell game canvass, conceptually there are approx 10^18 possible game canvass scenarios. 
 
 ##### Raw Data Format
 
@@ -66,7 +74,7 @@ It's a 12bytes + 12bytes string with an 'X' in the middle
 
 ##### Data Calculation
 
-Data Calculation is the major part of preparation the core data for this project. It runs the stripped core game algorithm to calculate the optimal move stratety
+Data Calculation is the major part of preparation the core data for this project. It runs the stripped core game algorithm to calculate the optimal move stratety. The core algorithm is not modified but the calling interfaces are changed a bit to accommodate the map-reduce framework. It takes the input from the Amazon S3 bucket and write the output to another bucket on the Amazon S3. The per-step design of this map-reduce job is explained in the next chapter separately.
 
 ##### Final Data Format
 
@@ -109,12 +117,7 @@ Data Calculation is the major part of preparation the core data for this project
                                              6.91152811050415]}}}``
 ```
 
-##### Data Filtering
-
-Although there are only 6 pieces for white and black side respectively, on a 88-cell game canvass, 
-conceptually there are approx 10^18 possible game canvass scenarios. Given 
-
-### Result Calculation
+### Data Calculation
  
 For each data entry as one combination of the game canvass map, we have 6 scenarios to consider:
  1. Difficulty level 1, as white player
@@ -542,6 +545,42 @@ Now that we cannot cover all the game canvass scenarios, we will need to optimiz
 ### References
 * https://pythonhosted.org/mrjob/
 * http://docs.mongodb.org/getting-started/python/
+
+### MANIFEST
+
+* MANIFEST.md
+ * The current file, explaining the usage of the files and directories under this project
+
+* README.md
+ * High level introduction about this project
+
+* draw_canvass.R
+ * An R script to draw the game canvass from the game canvass hashkey
+
+* mr_cal_optimal_path.py
+ * A MRJob map-reduce script to generate the game moving results
+
+* playcc.py
+ * Core game engine, from Artificial Intelligence course project
+ * We use the whats_next_move() function to calculate the result for this project
+ * Credit is with Caicai CHEN <caicai.chen@nyu.edu>
+* tkui.py
+ * Core game ui, from Artificial Intelligence course project
+ * Credit is with Caicai CHEN <caicai.chen@nyu.edu>
+ * This file is not actually used, but is the dependency to run the game engine
+
+* try_gen_sample.py
+ * An experimental script to generate the canvass map data
+
+* Makefile
+ * Makefile, only make clean is available.
+
+* images
+ * images for plotting the game canvass
+
+* input
+ * test input data
+
 
 ### Acknowledgement
 
