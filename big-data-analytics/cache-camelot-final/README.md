@@ -524,15 +524,13 @@ Here is the benchmark for the level1 game play:
 
 ### Summary
 
-From the result of the benchmark we can see...
+In this project we have used the following technology to achieve the two objectives:
 
-##### Technology summary
-
-* Data preparation part is implemented in Python
-* Machine learning part is not fully implemented. 
-* Big Data part is implemented in Python with MRJob library and it is run on Amazon EMR cloud service
-* Query part is implemented in Python with Django web framework
-* Visualization part is maily implemented with R but is also combined with Python for GIF animation generation
+ * Data preparation part is implemented in Python
+ * Machine learning part is not fully implemented. 
+ * Big Data part is implemented in Python with MRJob library and it is run on Amazon EMR cloud service
+ * Query part is implemented in Python with Django web framework
+ * Visualization part is maily implemented with R but is also combined with Python for GIF animation generation
 
 ### Opportunities
 
