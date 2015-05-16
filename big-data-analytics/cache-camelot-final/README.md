@@ -57,6 +57,7 @@ Each line is a 25 bytes string, with '\n' excluded, like the following
  424344455354 (white player piece list)
 ```
 Each two bytes represents the coordinates of one piece on one side. The first byte represents the row index ranging from 0 to D. The second byte represents the column index ranging from 0 to 7.
+
 It's a 12bytes + 12bytes string with an 'X' in the middle
 
 ##### Final Data Format
