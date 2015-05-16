@@ -189,6 +189,37 @@ def reducer(self, key, results):
 
 ### Data Importing
 
+The following bash script is used to import the map-reduce generated output data to a MongoDB database.
+
+```bash
+DATABASE="camelot"
+COLLECTION="smartcache"
+
+if [ $# -lt 1 ]
+then
+  echo "Need files to be imported!"
+  exit 2
+fi
+
+echo "db.dropDatabase()" | mongo $DATABASE
+
+while [ $# -gt 1 ]
+do
+  INFILE=$1
+
+  if [ ! -f "$INFILE" ]
+  then
+    echo "$INFILE does not exist!"
+    shift
+    continue
+  fi
+
+  shift
+
+  mongoimport -d $DATABASE -c $COLLECTION --type json --file $INFILE
+done
+```
+
 ### Data Retrieving
 
 ### Data Viewing
