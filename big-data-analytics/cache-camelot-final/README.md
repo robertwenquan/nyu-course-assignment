@@ -1,8 +1,4 @@
-## Big Data Analytics Final Project
-
-### TODO
-* A graph about the caching architecture, which part is the game, which part is the caching, which part is the data generation
-* Query service flow, for web UI, and game UI
+## Optimizing Mini Camelot Game with caching service
 
 ### Introduction
 
