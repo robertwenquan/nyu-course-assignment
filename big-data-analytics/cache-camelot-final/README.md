@@ -116,6 +116,73 @@ For each data entry as one combination of the game canvass map, we have 6 scenar
 1. Difficulty level 3, as white player
 1. Difficulty level 3, as black player
 
+In this map-reduce, we have defined two steps.
+The first step is to read the mapkey from the raw input, and yield six items for the input of the mapper in the next step.
+The second step calculates the game result in the mapper for specified level and side, and combine the results of same mapkey with different levels and sides into one item in the reducer.
+For one raw input, there will be six output in phase one.  But in step two after the reducer, the final output will be reduced to only one again.
+The two steps are defined as follows:
+```
+  def steps(self):
+    return [MRStep(mapper=self.mapper1),
+            MRStep(mapper=self.mapper2, reducer=self.reducer)]
+```
+Here is the mapper function for step1:
+```
+  def mapper1(self, _, mapkey):
+    '''
+    This is the mapper function in step1
+    It is to filter the low probability canvass scenarios
+    '''
+    if self.filter(mapkey) == True:
+      yield (None, (mapkey, 1, 'north'))
+      yield (None, (mapkey, 1, 'south'))
+      yield (None, (mapkey, 2, 'north'))
+      yield (None, (mapkey, 2, 'south'))
+      yield (None, (mapkey, 3, 'north'))
+      yield (None, (mapkey, 3, 'south'))
+```
+Here is the mapper and reducer function for step2:
+```
+  def mapper2(self, _, request):
+    '''
+    This is the mapper function in step2
+    It is to transform the canvass map hashkey to real canvass
+    and calculate the optimal next move as well as the move statistics
+
+    The result in this step is the final result of this MapReduce job
+    '''
+
+    mapkey, level, side = request
+
+    if self.validate_mapkey(mapkey) == False or \
+        level < 1 or level > 3 or \
+        side != 'north' and side != 'south':
+      return
+
+    optimal_path = self.get_game_result(mapkey, level, side)
+    yield (mapkey, (level, side, optimal_path))
+
+  def reducer(self, key, results):
+    '''
+    This is the reducer function in step2
+    It is to combine the results for all levels and sides into a single dictionary
+    and return as a JSON string
+    '''
+
+    entry = dict()
+    entry[key] = dict()
+    entry[key][1] = { 'north' : {}, 'south' : {} }
+    entry[key][2] = { 'north' : {}, 'south' : {} }
+    entry[key][3] = { 'north' : {}, 'south' : {} }
+
+    for result in results:
+      level, side, path = result
+      entry[key][level][side] = path
+
+    yield key, entry
+
+```
+
 ### Game Benchmark
 
 * Workload
