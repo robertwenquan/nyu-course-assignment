@@ -193,15 +193,23 @@ Here are the Amazon EMR running progress.
 
 Here are a few screen captures after the job is done. The full job takes 2 days and 20 hours to finish.
 
- * Map Reduce job finished
+ * Amazon EMR Map Reduce job status page
 
  ![Job Finished](images/emr-status-finish.png)
 
+ * Amazon EMR Map Reduce job detail page
+
  ![Job Details](images/emr-detail.png)
+
+ * Amazon EMR Map Reduce job monitor page
 
  ![Job Monitor](images/emr-monitor.png)
 
+ * Hadoop status page
+
  ![Hadoop Status](images/hadoop-status.png)
+
+ * Hadoop map and reduce job progress
 
  ![Hadoop Progress](images/hadoop-progress.png)
 
