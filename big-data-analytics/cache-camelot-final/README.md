@@ -222,29 +222,21 @@ done
 
 ### Data Retrieving
 
+query_cache.py script is a quick query utility to check the cache in the MongoDB
+
+Given a canvass map hashid, with the desired level and side info, we can query the path info from the cache database in the MongoDB.
+```
+# python query_cache.py -k 404142434445X121314152332 --level 1 --side north
+[[4, 2], [2, 2], [0, 4], [2, 6]]
+# python query_cache.py -k 404142434445X121314152332 --level 2 --side south
+[[1, 2], [0, 3]]
+```
+
 ### Data Viewing
 
 ### Game Benchmark
 
-* Workload
- * The combination of workload scenarios we use for the benchmark
- * In order to make the workload typical, we recorded the game canvass map evolution with a real play.
- * There are totoally XXX moves in this game. Among those there are XXX moves for the robot player.
-* Without the smart cache
- * How many seconds we need to run the benchmark
- * Move1 (A->B), xxx seconds
- * Move2 (A->B), xxx seconds
- * Move3 (A->B), xxx seconds
- * Move4 (A->B), xxx seconds
- * Aggregated, xxxxx seconds
-* With the smart cache
- * How many seconds we need to run the benchmark
- * Move1 (A->B), xxx seconds
- * Move2 (A->B), xxx seconds
- * Move3 (A->B), xxx seconds
- * Move4 (A->B), xxx seconds
- * Aggregated, xxxxx seconds
-* Compare the time spent in two modes in a chart
+Here we design a benchmark to test the performance gain from the cache. We select one complete game play from beginning to end for each difficulty level for the white player only.
 
 Here is the benchmark for the level1 game play:
 
