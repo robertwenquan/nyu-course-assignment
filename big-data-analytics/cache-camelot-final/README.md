@@ -114,12 +114,12 @@ conceptually there are approx 10^18 possible game canvass scenarios. Given
 ### Result Calculation
  
 For each data entry as one combination of the game canvass map, we have 6 scenarios to consider:
-1. Difficulty level 1, as white player
-1. Difficulty level 1, as black player
-1. Difficulty level 2, as white player
-1. Difficulty level 2, as black player
-1. Difficulty level 3, as white player
-1. Difficulty level 3, as black player
+ 1. Difficulty level 1, as white player
+ 1. Difficulty level 1, as black player
+ 1. Difficulty level 2, as white player
+ 1. Difficulty level 2, as black player
+ 1. Difficulty level 3, as white player
+ 1. Difficulty level 3, as black player
 
 In this map-reduce, we have defined two steps.
 The first step is to read the mapkey from the raw input, and yield six items for the input of the mapper in the next step.
@@ -186,6 +186,25 @@ def reducer(self, key, results):
 
   yield key, entry
 ```
+
+### Map Reduce on Amazon EMR
+
+Here are the Amazon EMR running progress.
+
+Here are a few screen captures after the job is done. The full job takes 2 days and 20 hours to finish.
+
+ * Map Reduce job finished
+
+ ![Job Finished](images/emr-status-finish.png)
+
+ ![Job Details](images/emr-detail.png)
+
+ ![Job Monitor](images/emr-monitor.png)
+
+ ![Hadoop Status](images/hadoop-status.png)
+
+ ![Hadoop Progress](images/hadoop-progress.png)
+
 
 ### Data Importing
 
