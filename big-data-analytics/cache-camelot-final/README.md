@@ -1,5 +1,10 @@
 ## Big Data Analytics Final Project
 
+### TODO
+* A graph about the caching architecture, which part is the game, which part is the caching, which part is the data generation
+* Data generation flow chart, including data prepare, filtering, map, reduce, database loading
+* Query service flow, for web UI, and game UI
+
 ### Introduction
 
 Mini Camelot is a simplified version of a board game Camelot. It has white and black players on each side of the game canvass. Each player has to follow specific moving rules to move their own pieces. In order to maximize the game success rate, artificial intelligence algorism is used in evaluating the optimal moving strategy. However, the calculating time, a.k.a thinking time of the robot player, takes seconds with moderate evaluation level. In this project I am trying to eliminate the thinking time for this Mini Camelot game to an unnoticable level, by pre-calculating the gaming results on Amazon EMR (Elastic Map Reduce) service and store them on local MongoDB for fast cached result query. The design of the data format transformation, as well as how the map-reduce is implemented are elaborated. To evaluate the impact of this proposed idea, a benchmark is designed to compare the performance with and without the cache. Lastly the further opportunites of this idea is discussed. For more details about the camelot game, you can refer to http://en.wikipedia.org/wiki/Camelot_(board_game) or http://www.iggamecenter.com/info/en/camelot.html
@@ -22,7 +27,7 @@ The game cached results come from two parts:
 
   This serves the major portion of the game cached results. 
 
-  Before the cached results are loaded. We need a list of canvass maps to calculate. 
+  This part of the cache is calculated from the prepared list of canvass maps. The calculation is produced outside of the game that the human plays. Instead the game engine is extracted from the main game code and is converted into a map-reduce program to adapt the huge amount of data for calculation. Without the map-reduce, for 1 million game canvass with average 1 second thinking time, we need approximately 11 days on one machine to finish the calculation. With 6 million results we need about two months to finish all the calculation, which is not quite bearable for this project. With the introduction of map-reduce, we could parallel the calculation on multiple nodes and expedite the resutl generation in a much less turnaround time.
 
 1. On-the-fly results
 
@@ -32,10 +37,14 @@ The game cached results come from two parts:
 
 ### Data Transformation
 
-In order to get the final result, we need some data transformation from the raw data format to the final data format.
+In order to get the final result, we need some data transformation from the raw data to the final data for consumption. This consists of the following few phases:
+
+  * Data Generation
+  * Data Filtering
 
 ##### Data generation
 
+  Before the cached results are loaded. We need a list of canvass maps to calculate. Conceptually, there are about 10^18 magnitude of game canvass combinations. Considering an average 1 second thinking time for the on-the-fly calculation, we need 1,000,000 machines to calculate 31,000 years to get the full results. This is obviously not practical at all from the time and resource point of view. Also from the storage point of view, considing an average of 100 bytes per cached result, we need approximately 100 EB to store the cached results, which is also impractical at all.
 
 ##### Raw Data Format
 
@@ -95,7 +104,7 @@ It's a 12bytes + 12bytes string with an 'X' in the middle
 ##### Data Filtering
 
 Although there are only 6 pieces for white and black side respectively, on a 88-cell game canvass, 
-conceptually there are approx 10^19 possible game canvass scenarios. Given 
+conceptually there are approx 10^18 possible game canvass scenarios. Given 
 
 ### Result Calculation
  
@@ -107,7 +116,7 @@ For each data entry as one combination of the game canvass map, we have 6 scenar
 1. Difficulty level 3, as white player
 1. Difficulty level 3, as black player
 
-### Benchmark
+### Game Benchmark
 
 * Workload
 ** The combination of workload scenarios we use for the benchmark
@@ -130,9 +139,25 @@ For each data entry as one combination of the game canvass map, we have 6 scenar
 * Compare the time spent in two modes in a chart
 
 ### Summary
-* What have we achieved?
+
+From the result of the benchmark we can see...
+
+##### Technology summary
+
+* Data preparation part is implemented in Python
+* Machine learning part is not fully implemented. 
+* Big Data part is implemented in Python with MRJob library and it is run on Amazon EMR cloud service
+* Query part is implemented in Python with Django web framework
+* Visualization part is maily implemented with R but is also combined with Python for GIF animation generation
 
 ### Opportunities
+
+The ultimate goal for this game cache layer is to achieve 100% cache hit rate, with acceptable user response time. 
+
+In order to achieve this, we have discussed the impossibility to cover all the game canvass scenarios with reasonable resource in the current technology trend. Dispite of this, increasing the number of cache entries would still increase the probability of cache hit. 
+
+Now that we cannot cover all the game canvass scenarios, we will need to optimize our filtering model to keep the most effective game canvass in the cache 
+
 * Bigger data?
 ** Bigger data will increase the cache hit rate
 * Less data?
