@@ -477,7 +477,8 @@ for (col in 0:7) {
 if (i_moves == 0) {
   title(main = "Camelot Game Canvass Map", sub = paste("MAPHASH:", mapkey), outer = FALSE)
 } else {
-  title(main = "Camelot Game Canvass Map", sub = paste("MAPHASH:", mapkey, "move", toString(i_moves), "of", toString(n_moves-1)), outer = FALSE)
+  title(main = "Camelot Game Canvass Map", sub = paste("MAPHASH:", mapkey, "move", toString(i_moves), \
+               "of", toString(n_moves-1)), outer = FALSE)
 }
 
 dev.off()
