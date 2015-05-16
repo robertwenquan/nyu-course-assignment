@@ -234,7 +234,9 @@ Given a canvass map hashid, with the desired level and side info, we can query t
 
 ### Data Visualization
 
-With the path info retrived from the cache, we can manually check the coordinates on the game canvass and figure out how to move the game pieces on each side, which is not very straighforward. We go one step further to visualize the game piece movement in a GIF animation. Here is one example of the game move with the following path:
+With the path info retrived from the cache, we can manually check the coordinates on the game canvass and figure out how to move the game pieces on each side, which is not very straighforward. We go one step further to visualize the game piece movement in a GIF animation. 
+
+Here is one example of the game move with the starting game canvass of "424344455354X727475767782"
 
 * Path movements
  * [4, 3] -> [6, 3]
@@ -246,15 +248,16 @@ With the path info retrived from the cache, we can manually check the coordinate
  * [6, 7] -> [8, 7]
 
 * Canvass Evolution
- * move0: "424344455354X727475767782", 
- * move1: "424445535463X727475767782", 
- * move2: "424445535481X747576778200", 
- * move3: "424445535483X747576770000", 
- * move4: "424445535465X757677000000", 
- * move5: "424445535485X767700000000", 
- * move6: "424445535467X770000000000", 
+ * move0: "424344455354X727475767782"
+ * move1: "424445535463X727475767782" 
+ * move2: "424445535481X747576778200"
+ * move3: "424445535483X747576770000" 
+ * move4: "424445535465X757677000000"
+ * move5: "424445535485X767700000000" 
+ * move6: "424445535467X770000000000"
  * move7: "424445535487X000000000000"
 
+* Game movement in GIF animation
  ![Game Play 1](images/game-play1.gif)
 
 ### Game Benchmark
@@ -306,6 +309,12 @@ In order to achieve this, we have discussed the impossibility to cover all the g
 Now that we cannot cover all the game canvass scenarios, we will need to optimize our filtering model to keep the most effective game canvass in the cache. As this is a trained model, we will need more training data. With the single machine mini camelot game, it is difficult to collect a good amount of training data with only one human game player. Also with limited human player, it is difficult to get training data with variety in terms of moving habits and strategies. If the game could be extended to an online version, with more human players, it will be much easier to collect a lot of good training samples in a short period of time. Then with sufficient real game play data, we could train a better filtering model to increase the cache hit rate.
 
 ### References
-* MRjob
-* MongoDB
+* https://pythonhosted.org/mrjob/
+* http://docs.mongodb.org/getting-started/python/
+
+### Acknowledgement
+
+The Mini Camelot game path calculation algorithm code is from my friend Caicai CHEN <caicai.chen@nyu.edu> in her Artificial Intelligence course project. The algorithm was not modified at all but was just with some interface change in order to accommodate the map reduce framework.
+
+Also thanks go to both Professor Juan and Professor Raman who teach this Big Data Analytics course. This course offers flexibility not only on the course schedule but also on the course homework and project. This is what I liked most in this course, because with different background on almost everyone, it is not wise to have the same criteria for the homework or project. This gives me the freedom to make best use of my knowledge and skill to accomplish the assigned tasks. I am kind of new to Big Data Analytics and in the past few months I learned a lot from this course.
 
