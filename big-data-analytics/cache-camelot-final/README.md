@@ -121,13 +121,13 @@ The first step is to read the mapkey from the raw input, and yield six items for
 The second step calculates the game result in the mapper for specified level and side, and combine the results of same mapkey with different levels and sides into one item in the reducer.
 For one raw input, there will be six output in phase one.  But in step two after the reducer, the final output will be reduced to only one again.
 The two steps are defined as follows:
-```
+```python
 def steps(self):
   return [MRStep(mapper=self.mapper1),
           MRStep(mapper=self.mapper2, reducer=self.reducer)]
 ```
 Here is the mapper function for step1:
-```
+```python
 def mapper1(self, _, mapkey):
   '''
   This is the mapper function in step1
@@ -142,7 +142,7 @@ def mapper1(self, _, mapkey):
     yield (None, (mapkey, 3, 'south'))
 ```
 Here is the mapper and reducer function for step2:
-```
+```python
 def mapper2(self, _, request):
   '''
   This is the mapper function in step2
