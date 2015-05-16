@@ -41,6 +41,7 @@ In order to get the final result, we need some data transformation from the raw 
 
   * Data Generation
   * Data Filtering
+  * Data Calculation
 
 ##### Data generation
 
@@ -59,6 +60,10 @@ Each line is a 25 bytes string, with '\n' excluded, like the following
 Each two bytes represents the coordinates of one piece on one side. The first byte represents the row index ranging from 0 to D. The second byte represents the column index ranging from 0 to 7.
 
 It's a 12bytes + 12bytes string with an 'X' in the middle
+
+##### Data Calculation
+
+Data Calculation is the major part of preparation the core data for this project. It runs the stripped core game algorithm to calculate the optimal move stratety
 
 ##### Final Data Format
 
@@ -182,6 +187,12 @@ def reducer(self, key, results):
   yield key, entry
 ```
 
+### Data Importing
+
+### Data Retrieving
+
+### Data Viewing
+
 ### Game Benchmark
 
 * Workload
@@ -220,14 +231,9 @@ From the result of the benchmark we can see...
 
 The ultimate goal for this game cache layer is to achieve 100% cache hit rate, with acceptable user response time. 
 
-In order to achieve this, we have discussed the impossibility to cover all the game canvass scenarios with reasonable resource in the current technology trend. Dispite of this, increasing the number of cache entries would still increase the probability of cache hit. 
+In order to achieve this, we have discussed the impossibility to cover all the game canvass scenarios with reasonable resource in the current technology trend. Dispite of this, increasing the number of cache entries would still increase the probability of cache hit. From this approach, we need to increase the number of computing nodes when doing the pre-calculation map-reduce on Amazone EMR. In the 1 million data sample in this projects, we spent about 58 hours on 16 nodes. Preferrably we would like to run 64-128 nodes so we can reduce the elapsed time to less than 10 hours for the 1 million data items.
 
-Now that we cannot cover all the game canvass scenarios, we will need to optimize our filtering model to keep the most effective game canvass in the cache 
-
-* Bigger data?
-** Bigger data will increase the cache hit rate
-* Less data?
-** With training data from the real plays, we will have a better model to classify the game canvass
+Now that we cannot cover all the game canvass scenarios, we will need to optimize our filtering model to keep the most effective game canvass in the cache. As this is a trained model, we will need more training data. With the single machine mini camelot game, it is difficult to collect a good amount of training data with only one human game player. Also with limited human player, it is difficult to get training data with variety in terms of moving habits and strategies. If the game could be extended to an online version, with more human players, it will be much easier to collect a lot of good training samples in a short period of time. Then with sufficient real game play data, we could train a better filtering model to increase the cache hit rate.
 
 ### References
 * MRjob
