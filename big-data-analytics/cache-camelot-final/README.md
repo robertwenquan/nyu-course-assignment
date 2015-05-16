@@ -225,14 +225,37 @@ done
 query_cache.py script is a quick query utility to check the cache in the MongoDB
 
 Given a canvass map hashid, with the desired level and side info, we can query the path info from the cache database in the MongoDB.
-```
+```bash
 # python query_cache.py -k 404142434445X121314152332 --level 1 --side north
 [[4, 2], [2, 2], [0, 4], [2, 6]]
 # python query_cache.py -k 404142434445X121314152332 --level 2 --side south
 [[1, 2], [0, 3]]
 ```
 
-### Data Viewing
+### Data Visualization
+
+With the path info retrived from the cache, we can manually check the coordinates on the game canvass and figure out how to move the game pieces on each side, which is not very straighforward. We go one step further to visualize the game piece movement in a GIF animation. Here is one example of the game move with the following path:
+
+* Path movements
+ * [4, 3] -> [6, 3]
+ * [6, 3] -> [8, 1]
+ * [8, 1] -> [8, 3]
+ * [8, 3] -> [6, 5]
+ * [6, 5] -> [8, 5]
+ * [8, 5] -> [6, 7]
+ * [6, 7] -> [8, 7]
+
+* Canvass Evolution
+ * move0: "424344455354X727475767782", 
+ * move1: "424445535463X727475767782", 
+ * move2: "424445535481X747576778200", 
+ * move3: "424445535483X747576770000", 
+ * move4: "424445535465X757677000000", 
+ * move5: "424445535485X767700000000", 
+ * move6: "424445535467X770000000000", 
+ * move7: "424445535487X000000000000"
+
+ ![Game Play 1](images/game-play1.gif)
 
 ### Game Benchmark
 
