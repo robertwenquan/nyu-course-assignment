@@ -10,21 +10,25 @@ Mini Camelot is a simplified version of a board game Camelot. It has white and b
 
 The original mini Camelot game does not have game result cache layer. It calculates the game moving strategy based on the current game canvass on the fly. Here I design the game cache layer as a transparent cache service to the game engine. As the cache needs external database queries, the game is not designed to be fully dependent on the cache layer. If the cache query is not successful, the game will calculate the result on-the-fly. This ensures the availability of the game while maximize the usage of the cache. The other reason to keep the calculating power of the game but not fully depends on the game cache is that the combinations of the game canvass is incredibly high. To the current capacity of the cache design it is not pratical to pre-calculate and store all the cache results of the game. Hence we have to keep the computing power of the game when the cache layer is unaccessible or the cache result is unavailable. When there is a on-the-fly game result is calculated, the new cache entry will be saved into the database for futher query as the optimal move strategy is consistent with a specific game canvass.
 
+##### Cache Storage
+
+The cached results are stored in the document based NoSQL database MongoDB. MongoDB is chosen because of the following reasons. First it is because it suppports native JSON document storage. This eases the data parsing and storage a lot. Without this, data parsing and table design would be very tedious if I want to store the same amount of data into a relational database. Secondly MongoDB has better horizontal scaling than the relational databases. Although in this project we do not have huge amount of data to scale to multiple MongoDB nodes, it is better to consider the growing capacity ahead of time from the architecture point of view. Otherwise there will be disaster when the scaling wall is hit. The third reason to choose MongoDB is because this is the only NoSQL database we covered in this semester. In my personal view it is better to cover this database in this term project.
+
 ##### Cache Calculation
 
 The game cached results come from two parts: 
 
 1. Pre-calculated results
 
-  sdfds
+  This serves the major portion of the game cached results. 
+
+  Before the cached results are loaded. We need a list of canvass maps to calculate. 
 
 1. On-the-fly results
 
-  sdfds
+  At the beginning of the cache generation phase, this serves as data collection source for filtering model training. With real human play on the game, a few to plenty real game canvass scenarios could be saved together with the on-the-fly calculated results. 
 
-##### Cache Storage
-
-The cache 
+  After the massive pre-calculated caches are loaded. It will be rare to have the chance to run the on-the-fly result but things will still happen. This serves as the complementary portion of the game cached results when cache miss happens.
 
 ### Data Transformation
 
