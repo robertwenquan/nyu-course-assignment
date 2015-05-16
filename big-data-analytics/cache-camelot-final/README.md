@@ -598,10 +598,6 @@ Now that we cannot cover all the game canvass scenarios, we will need to optimiz
  * aws keys
  * emr configuration
 
-### References
-* https://pythonhosted.org/mrjob/
-* http://docs.mongodb.org/getting-started/python/
-
 ### Acknowledgement
 
 The Mini Camelot game path calculation algorithm code is from my friend Caicai CHEN <caicai.chen@nyu.edu> in her Artificial Intelligence course project. The algorithm was not modified at all but was just with some interface change in order to accommodate the map reduce framework.
