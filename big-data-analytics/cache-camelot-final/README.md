@@ -214,6 +214,9 @@ def reducer(self, key, results):
 ** Move4 (A->B), xxx seconds
 ** Aggregated, xxxxx seconds
 * Compare the time spent in two modes in a chart
+![Level 1](images/benchmark-level1.png)
+![Level 2](images/benchmark-level2.png)
+![Level 3](images/benchmark-level3.png)
 
 ### Summary
 
