@@ -282,6 +282,14 @@ do
 done
 ```
 
+ As we can see, it takes 3 minutes 35 seconds to import data for 1,000,000 canvass map results.
+
+ ![Data Import to MongoDB](images/import-1.png)
+
+ ![Data Import to MongoDB](images/import-2.png)
+
+ ![Data Import to MongoDB](images/import-3.png)
+
 ### Data Retrieving
 
 query_cache.py script is a quick query utility to check the cache in the MongoDB
