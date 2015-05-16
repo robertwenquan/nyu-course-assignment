@@ -553,6 +553,9 @@ Now that we cannot cover all the game canvass scenarios, we will need to optimiz
 * draw_canvass.R
  * An R script to draw the game canvass from the game canvass hashkey
 
+* gen_gif.py
+ * generate animated GIF
+
 * mr_cal_optimal_path.py
  * A MRJob map-reduce script to generate the game moving results
 
@@ -569,20 +572,31 @@ Now that we cannot cover all the game canvass scenarios, we will need to optimiz
 * try_gen_sample.py
  * An experimental script to generate the canvass map data
 
-* query_cache.py
- * query the MongoDB with specified mapkey, level and side info
-
 * import_data.sh
  * data importer script to import data into MongoDB
+
+* query_cache.py
+ * query the MongoDB with specified mapkey, level and side info
 
 * Makefile
  * Makefile, only make clean is available.
 
 * images
- * images for plotting the game canvass
+ * images for this report
 
 * input
  * test input data
+
+* output
+ * test output data
+
+* data
+ * path test data
+ * game benchmark data
+
+* aws
+ * aws keys
+ * emr configuration
 
 ### References
 * https://pythonhosted.org/mrjob/
