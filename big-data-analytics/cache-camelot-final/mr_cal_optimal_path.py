@@ -57,6 +57,11 @@ class MRCalculateOptimalPath(MRJob):
     yield (mapkey, (level, side, optimal_path))
 
   def reducer(self, key, results):
+    '''
+    This is the reducer function in step2
+    It is to combine the results for all levels and sides into a single dictionary
+    and return as a JSON string
+    '''
 
     entry = dict()
     entry[key] = dict()
