@@ -48,11 +48,13 @@ In order to get the final results, we need some data transformation from the raw
 
 ##### Data generation
 
-  Before the cached results are loaded. We need a list of canvass maps to calculate. Conceptually, there are about 10^18 magnitude of game canvass combinations. Considering an average 1 second thinking time for the on-the-fly calculation, we need 1,000,000 machines to calculate 31,000 years to get the full results. This is obviously not practical at all from the time and resource point of view. Also from the storage point of view, considing an average of 100 bytes per cached result, we need approximately 100 EB to store the cached results, which is also impractical at all.
+Before the cached results are loaded. In this phase, the generator script will enumerate all combinations of the white and black pieces on the canvass. Each line will be one of the combinations of the canvass map in an encoded way. The encoding of the raw canvass map will be discussed in the next chapter. 
+
+Conceptually, there are about 10^18 magnitude of game canvass combinations. Considering an average 1 second thinking time for the on-the-fly calculation, we need 1,000,000 machines to calculate 31,000 years to get the full results. This is obviously not practical at all from the time and resource point of view. Also from the storage point of view, considing an average of 100 bytes per cached result, we need approximately 100 EB to store the cached results, which is also impractical at all. Hence we need a filtering phase before we process the large amount of raw data generation.
 
 ##### Data Filtering
 
-Although there are only 6 pieces for white and black side respectively, on a 88-cell game canvass, conceptually there are approx 10^18 possible game canvass scenarios. 
+Although there are only 6 pieces for white and black side respectively, on a 88-cell game canvass, conceptually there are approx 10^18 possible game canvass scenarios. This makes the computing and storage impossible to happen in terms of efficiency. If we evaluate the generated canvass combination, we will easily notice most of the canvass map combinations would not happen in a real-world game, such as all pieces are lined up either horizontally or vertically, or staying near its castle. But there is not a clear line to distinguish which canvass is a commonly used canvass and which ones are not. Here we go with the machine learning approach, using human play canvass map data to train a commonly used cavnass map model. As the amount of played game grows, the amount of training data are accumulated. Then we can get a moderately well model to classifiy common and uncommon canvass map. For the uncommon canvass maps, we simply ignore them and do not calculate or store its cached result, in order to save time and space. For those classified with common canvass maps, the canvass mapkey will be passed to the next phase for the second step map-reduce.
 
 ##### Raw Data Format
 
