@@ -542,10 +542,6 @@ In order to achieve this, we have discussed the impossibility to cover all the g
 
 Now that we cannot cover all the game canvass scenarios, we will need to optimize our filtering model to keep the most effective game canvass in the cache. As this is a trained model, we will need more training data. With the single machine mini camelot game, it is difficult to collect a good amount of training data with only one human game player. Also with limited human player, it is difficult to get training data with variety in terms of moving habits and strategies. If the game could be extended to an online version, with more human players, it will be much easier to collect a lot of good training samples in a short period of time. Then with sufficient real game play data, we could train a better filtering model to increase the cache hit rate.
 
-### References
-* https://pythonhosted.org/mrjob/
-* http://docs.mongodb.org/getting-started/python/
-
 ### MANIFEST
 
 * MANIFEST.md
@@ -564,6 +560,7 @@ Now that we cannot cover all the game canvass scenarios, we will need to optimiz
  * Core game engine, from Artificial Intelligence course project
  * We use the whats_next_move() function to calculate the result for this project
  * Credit is with Caicai CHEN <caicai.chen@nyu.edu>
+
 * tkui.py
  * Core game ui, from Artificial Intelligence course project
  * Credit is with Caicai CHEN <caicai.chen@nyu.edu>
@@ -571,6 +568,12 @@ Now that we cannot cover all the game canvass scenarios, we will need to optimiz
 
 * try_gen_sample.py
  * An experimental script to generate the canvass map data
+
+* query_cache.py
+ * query the MongoDB with specified mapkey, level and side info
+
+* import_data.sh
+ * data importer script to import data into MongoDB
 
 * Makefile
  * Makefile, only make clean is available.
@@ -581,6 +584,9 @@ Now that we cannot cover all the game canvass scenarios, we will need to optimiz
 * input
  * test input data
 
+### References
+* https://pythonhosted.org/mrjob/
+* http://docs.mongodb.org/getting-started/python/
 
 ### Acknowledgement
 
