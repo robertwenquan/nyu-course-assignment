@@ -227,23 +227,23 @@ done
 ### Game Benchmark
 
 * Workload
-** The combination of workload scenarios we use for the benchmark
-** In order to make the workload typical, we recorded the game canvass map evolution with a real play.
-** There are totoally XXX moves in this game. Among those there are XXX moves for the robot player.
+ * The combination of workload scenarios we use for the benchmark
+ * In order to make the workload typical, we recorded the game canvass map evolution with a real play.
+ * There are totoally XXX moves in this game. Among those there are XXX moves for the robot player.
 * Without the smart cache
-** How many seconds we need to run the benchmark
-** Move1 (A->B), xxx seconds
-** Move2 (A->B), xxx seconds
-** Move3 (A->B), xxx seconds
-** Move4 (A->B), xxx seconds
-** Aggregated, xxxxx seconds
+ * How many seconds we need to run the benchmark
+ * Move1 (A->B), xxx seconds
+ * Move2 (A->B), xxx seconds
+ * Move3 (A->B), xxx seconds
+ * Move4 (A->B), xxx seconds
+ * Aggregated, xxxxx seconds
 * With the smart cache
-** How many seconds we need to run the benchmark
-** Move1 (A->B), xxx seconds
-** Move2 (A->B), xxx seconds
-** Move3 (A->B), xxx seconds
-** Move4 (A->B), xxx seconds
-** Aggregated, xxxxx seconds
+ * How many seconds we need to run the benchmark
+ * Move1 (A->B), xxx seconds
+ * Move2 (A->B), xxx seconds
+ * Move3 (A->B), xxx seconds
+ * Move4 (A->B), xxx seconds
+ * Aggregated, xxxxx seconds
 * Compare the time spent in two modes in a chart
 
 Here is the benchmark for the level1 game play:
