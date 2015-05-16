@@ -1,0 +1,231 @@
+refreshing ui according to the cell status map
+select game start options
+Selected start options
+Side north
+Level 3
+Starting game, with selected configuration...
+Side:  north
+Level:  3
+.............................................
+refreshing ui according to the cell status map
+hashkey: 424344455354X838492939495
+cache miss for 424344455354X838492939495
+elapsed time: 9.888456
+----------- Moving Path --------------
+Moving path: (4, 2)
+Moving path: (5, 2)
+---------- Moving statistics ---------
+(3, 24013, 539, 52)
+updating moving statistics...
+Trying to move [0]: (4, 2) -> (5, 2)
+Moving path: (4, 2) -> (5, 2)
+refreshing ui according to the cell status map
+hashkey: 434445525354X838492939495
+cache miss for 434445525354X838492939495
+elapsed time: 11.796707
+----------- Moving Path --------------
+Moving path: (9, 2)
+Moving path: (8, 2)
+---------- Moving statistics ---------
+(3, 29452, 994, 53)
+updating moving statistics...
+Trying to move [0]: (9, 2) -> (8, 2)
+Moving path: (9, 2) -> (8, 2)
+refreshing ui according to the cell status map
+hashkey: 434445525354X828384939495
+cache miss for 434445525354X828384939495
+elapsed time: 9.057146
+----------- Moving Path --------------
+Moving path: (4, 5)
+Moving path: (6, 3)
+---------- Moving statistics ---------
+(3, 22358, 530, 53)
+updating moving statistics...
+Trying to move [0]: (4, 5) -> (6, 3)
+Moving path: (4, 5) -> (6, 3)
+refreshing ui according to the cell status map
+hashkey: 434452535463X828384939495
+cache miss for 434452535463X828384939495
+elapsed time: 15.004407
+----------- Moving Path --------------
+Moving path: (9, 5)
+Moving path: (8, 6)
+---------- Moving statistics ---------
+(3, 37372, 882, 55)
+updating moving statistics...
+Trying to move [0]: (9, 5) -> (8, 6)
+Moving path: (9, 5) -> (8, 6)
+refreshing ui according to the cell status map
+hashkey: 434452535463X828384869394
+cache miss for 434452535463X828384869394
+elapsed time: 25.552748
+----------- Moving Path --------------
+Moving path: (4, 4)
+Moving path: (5, 5)
+---------- Moving statistics ---------
+(3, 61681, 1910, 49)
+updating moving statistics...
+Trying to move [0]: (4, 4) -> (5, 5)
+Moving path: (4, 4) -> (5, 5)
+refreshing ui according to the cell status map
+hashkey: 435253545563X828384869394
+cache miss for 435253545563X828384869394
+elapsed time: 10.786985
+----------- Moving Path --------------
+Moving path: (9, 4)
+Moving path: (7, 2)
+---------- Moving statistics ---------
+(3, 27520, 518, 61)
+updating moving statistics...
+Trying to move [0]: (9, 4) -> (7, 2)
+Moving path: (9, 4) -> (7, 2)
+refreshing ui according to the cell status map
+hashkey: 435253545563X728283848693
+cache miss for 435253545563X728283848693
+elapsed time: 7.876790
+----------- Moving Path --------------
+Moving path: (5, 2)
+Moving path: (7, 4)
+Moving path: (9, 2)
+---------- Moving statistics ---------
+(3, 20465, 531, 45)
+updating moving statistics...
+Trying to move [0]: (5, 2) -> (7, 4)
+Moving path: (5, 2) -> (7, 4)
+refreshing ui according to the cell status map
+Trying to move [1]: (7, 4) -> (9, 2)
+Moving path: (7, 4) -> (9, 2)
+refreshing ui according to the cell status map
+hashkey: 435354556392X728284869300
+cache miss for 435354556392X728284869300
+elapsed time: 12.011069
+----------- Moving Path --------------
+Moving path: (8, 4)
+Moving path: (8, 3)
+---------- Moving statistics ---------
+(3, 38297, 1407, 45)
+updating moving statistics...
+Trying to move [0]: (8, 4) -> (8, 3)
+Moving path: (8, 4) -> (8, 3)
+refreshing ui according to the cell status map
+hashkey: 435354556392X728283869300
+cache miss for 435354556392X728283869300
+elapsed time: 13.964343
+----------- Moving Path --------------
+Moving path: (5, 3)
+Moving path: (7, 3)
+Moving path: (9, 1)
+---------- Moving statistics ---------
+(3, 37034, 1133, 44)
+updating moving statistics...
+Trying to move [0]: (5, 3) -> (7, 3)
+Moving path: (5, 3) -> (7, 3)
+refreshing ui according to the cell status map
+Trying to move [1]: (7, 3) -> (9, 1)
+Moving path: (7, 3) -> (9, 1)
+refreshing ui according to the cell status map
+hashkey: 435455639192X728386930000
+cache miss for 435455639192X728386930000
+elapsed time: 5.562663
+----------- Moving Path --------------
+Moving path: (9, 3)
+Moving path: (7, 3)
+Moving path: (5, 3)
+Moving path: (3, 3)
+---------- Moving statistics ---------
+(3, 21179, 798, 31)
+updating moving statistics...
+Trying to move [0]: (9, 3) -> (7, 3)
+Moving path: (9, 3) -> (7, 3)
+refreshing ui according to the cell status map
+Trying to move [1]: (7, 3) -> (5, 3)
+Moving path: (7, 3) -> (5, 3)
+refreshing ui according to the cell status map
+Trying to move [2]: (5, 3) -> (3, 3)
+Moving path: (5, 3) -> (3, 3)
+refreshing ui according to the cell status map
+hashkey: 545591920000X337283860000
+cache miss for 545591920000X337283860000
+elapsed time: 3.348826
+----------- Moving Path --------------
+Moving path: (9, 1)
+Moving path: (9, 3)
+Moving path: (7, 3)
+Moving path: (7, 1)
+---------- Moving statistics ---------
+(3, 13092, 584, 28)
+updating moving statistics...
+Trying to move [0]: (9, 1) -> (9, 3)
+Moving path: (9, 1) -> (9, 3)
+refreshing ui according to the cell status map
+Trying to move [1]: (9, 3) -> (7, 3)
+Moving path: (9, 3) -> (7, 3)
+refreshing ui according to the cell status map
+Trying to move [2]: (7, 3) -> (7, 1)
+Moving path: (7, 3) -> (7, 1)
+refreshing ui according to the cell status map
+hashkey: 545571920000X338600000000
+cache miss for 545571920000X338600000000
+elapsed time: 0.268011
+----------- Moving Path --------------
+Moving path: (3, 3)
+Moving path: (2, 2)
+---------- Moving statistics ---------
+(3, 1755, 116, 15)
+updating moving statistics...
+Trying to move [0]: (3, 3) -> (2, 2)
+Moving path: (3, 3) -> (2, 2)
+refreshing ui according to the cell status map
+hashkey: 545571920000X228600000000
+cache miss for 545571920000X228600000000
+elapsed time: 0.860615
+----------- Moving Path --------------
+Moving path: (7, 1)
+Moving path: (8, 1)
+---------- Moving statistics ---------
+(3, 3169, 110, 25)
+updating moving statistics...
+Trying to move [0]: (7, 1) -> (8, 1)
+Moving path: (7, 1) -> (8, 1)
+refreshing ui according to the cell status map
+hashkey: 545581920000X228600000000
+cache miss for 545581920000X228600000000
+elapsed time: 0.259746
+----------- Moving Path --------------
+Moving path: (2, 2)
+Moving path: (1, 2)
+---------- Moving statistics ---------
+(3, 1588, 192, 7)
+updating moving statistics...
+Trying to move [0]: (2, 2) -> (1, 2)
+Moving path: (2, 2) -> (1, 2)
+refreshing ui according to the cell status map
+hashkey: 545581920000X128600000000
+cache miss for 545581920000X128600000000
+elapsed time: 1.429073
+----------- Moving Path --------------
+Moving path: (5, 5)
+Moving path: (4, 4)
+---------- Moving statistics ---------
+(2, 5111, 211, 32)
+updating moving statistics...
+Trying to move [0]: (5, 5) -> (4, 4)
+Moving path: (5, 5) -> (4, 4)
+refreshing ui according to the cell status map
+hashkey: 445481920000X128600000000
+cache miss for 445481920000X128600000000
+elapsed time: 0.011175
+----------- Moving Path --------------
+Moving path: (1, 2)
+Moving path: (0, 3)
+---------- Moving statistics ---------
+(1, 10, 0, 0)
+updating moving statistics...
+Trying to move [0]: (1, 2) -> (0, 3)
+Moving path: (1, 2) -> (0, 3)
+refreshing ui according to the cell status map
+south wins the game!! Ending game!!!
+no human player available. ui not clickable.
+no human player available. ui not clickable.
+no human player available. ui not clickable.
+no human player available. ui not clickable.
