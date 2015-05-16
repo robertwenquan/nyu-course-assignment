@@ -193,9 +193,13 @@ Here are a few screen captures while the map-reduce job is running.
 
  * Amazon EMR Map Reduce job list page
 
+ As you can see from the below screen capture, there were a few errors before the first successful run on the EMR. Some of them were with Python library dependency error, while some others are with PYTHONPATH error. Before I kicked off the 2 days and 20 hours job, I selected two smaller dataset to test the map reduce python streaming script. After the two scripts were both successfully executed with expected output, I launched the final map reduce job which takes 2 days and 20 hours to finish.
+
  ![Job List](images/emr-running-list.png)
 
  * Amazon EMR Map Reduce job status page
+
+ Here is the EC2 page view while the EMR job is running. We can see the CPU utilization for the selected instances are all saturated. This is within expectation because the job we are running is 100% CPU intensive. There is not much disk IO or network IO throughput, which is also as expected.
 
  ![Job Running Status](images/emr-running.png)
 
