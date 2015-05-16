@@ -258,6 +258,7 @@ Here is one example of the game move with the starting game canvass of "42434445
  * move7: "424445535487X000000000000"
 
 * Game movement in GIF animation
+
  ![Game Play 1](images/game-play1.gif)
 
 ### Game Benchmark
