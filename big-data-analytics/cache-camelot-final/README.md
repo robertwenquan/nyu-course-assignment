@@ -189,7 +189,25 @@ def reducer(self, key, results):
 
 ### Map Reduce on Amazon EMR
 
-Here are the Amazon EMR running progress.
+Here are a few screen captures while the map-reduce job is running. 
+
+ * Amazon EMR Map Reduce job list page
+
+ ![Job List](images/emr-running-list.png)
+
+ * Amazon EMR Map Reduce job status page
+
+ ![Job Running Status](images/emr-running.png)
+
+ * Hadoop status page
+
+ ![Hadoop Status](images/hadoop-running-status.png)
+
+ * Hadoop map and reduce job progress
+
+ ![Hadoop Progress](images/hadoop-running-progress.png)
+
+ ![Hadoop Progress](images/hadoop-running-progress-graph.png)
 
 Here are a few screen captures after the job is done. The full job takes 2 days and 20 hours to finish.
 
@@ -212,7 +230,6 @@ Here are a few screen captures after the job is done. The full job takes 2 days 
  * Hadoop map and reduce job progress
 
  ![Hadoop Progress](images/hadoop-progress.png)
-
 
 ### Data Importing
 
