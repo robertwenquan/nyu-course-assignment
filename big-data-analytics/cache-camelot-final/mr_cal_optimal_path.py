@@ -156,6 +156,7 @@ class MRCalculateOptimalPath(MRJob):
     else:
       move_path, move_stats = self.game.south_player.whats_next_move()
 
+    # record elapsed calculating time in second
     mapkey_list_over_path = self.game.get_maphash_list_over_path(mapkey, move_path, side)
 
     time_end = time.time()
