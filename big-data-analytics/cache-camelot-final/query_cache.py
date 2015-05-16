@@ -44,6 +44,8 @@ def main(argv):
 
   parser = argparse.ArgumentParser()
   parser.add_argument('-k', '--hashkey', help='hashkey of the canvass map for query', type=str)
+  parser.add_argument('-s', '--side', help='side of the game', type=str)
+  parser.add_argument('-l', '--level', help='difficulty level of the game', type=str)
   args = parser.parse_args()
 
   hashid = args.hashkey
@@ -52,7 +54,7 @@ def main(argv):
     exit(1)
 
   aa = QueryMovingPath()
-  print aa.query(hashid)
+  print aa.query(hashid, level=args.level, side=args.side)
 
 #
 # main routine starts here
