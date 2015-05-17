@@ -58,6 +58,24 @@ Conceptually, there are about 10^18 magnitude of game canvass combinations. Cons
 
 Although there are only 6 pieces for white and black side respectively, on a 88-cell game canvass, conceptually there are approx 10^18 possible game canvass scenarios. This makes the computing and storage impossible to happen in terms of efficiency. If we evaluate the generated canvass combination, we will easily notice most of the canvass map combinations would not happen in a real-world game, such as all pieces are lined up either horizontally or vertically, or staying near its castle. But there is not a clear line to distinguish which canvass is a commonly used canvass and which ones are not. Here we go with the machine learning approach, using human play canvass map data to train a commonly used cavnass map model. As the amount of played game grows, the amount of training data are accumulated. Then we can get a moderately well model to classifiy common and uncommon canvass map. For the uncommon canvass maps, we simply ignore them and do not calculate or store its cached result, in order to save time and space. For those classified with common canvass maps, the canvass mapkey will be passed to the next phase for the second step map-reduce.
 
+The machine learning filter is designed with the following parts:
+
+ * Training Data Collection
+ 
+ The training data is collected from the real game play. In this project 55 real game canvass maps have been collected from the real game play. The data is stored under ml_filtering/train/data. Each line has a single canvass map hashkey.
+
+ * Model Training
+ 
+ For now, only a single model has been applied using the mean (x,y) coordinates on the canvass map. For each canvass map scenario, we extract the mean (x,y) coordinates from the canvass for white and black player respectively. Then we will have two characteristic numbers for the canvass map. Among all the training examples, we will be able to collect a range of x and y respectively. Simply we can apply the range as the range for the normal canvass map for classification, or strip top and bottom 10% or 20% range and leave the middle range for the normal canvass map classification.
+
+ * Model Evaluation and Optimization
+
+ Due to the time constraint, this part hasn't been applied yet. The basic idea is to explore the single mean (x,y) model first, and 
+
+ * Model Applying to raw data
+ 
+ The filter has been hardcoded into the data generation script already in this project. More friendly, we should be able to automatically work on the trained model and apply the model as a configuration in the data generation code. In this way we can even try to iteratively geneate data based on the model trained from those less confident generated data with less confidence level.
+
 ##### Raw Data Format
 
 Raw data is one or more text files.
