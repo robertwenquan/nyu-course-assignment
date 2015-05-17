@@ -76,6 +76,10 @@ The machine learning filter is designed with the following parts:
  
  The filter has been hardcoded into the data generation script already in this project. More friendly, we should be able to automatically work on the trained model and apply the model as a configuration in the data generation code. In this way we can even try to iteratively geneate data based on the model trained from those less confident generated data with less confidence level.
 
+Here is the range learning example from the training data:
+
+![Job Running Status](images/filtering-training.png)
+
 ##### Raw Data Format
 
 Raw data is one or more text files.
