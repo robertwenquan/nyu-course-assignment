@@ -1,6 +1,6 @@
 ## Optimizing Mini Camelot Game with caching service
 
-###### Robert Wen <robert.wen@nyu.edu>
+###### Robert Wen <robert.wen@nyu.edu>, N12246277, qw476
 
 ### Introduction
 
