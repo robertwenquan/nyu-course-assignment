@@ -6,10 +6,10 @@ get_list_netid()
 }
 
 # print banner
-printf "%10s" " "
+printf "%15s" " "
 for netid in $(get_list_netid)
 do
-  printf "%10s" "$netid"
+  printf "%15s" "$netid"
 done
 echo
 
@@ -18,11 +18,11 @@ do
   casefile=${case##*/}
   casefile=${casefile%%.*}
 
-  printf "%10s" "$casefile"
+  printf "%15s" "$casefile"
   for netid in $(get_list_netid)
   do
     result=$(./$netid < $case | grep -o '\$.*' | sed 's/\.$//') 
-    printf "%10s" "$result"
+    printf "%15s" "$result"
   done
 
   echo

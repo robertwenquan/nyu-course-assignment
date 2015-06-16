@@ -1,0 +1,11 @@
+case0   sample case
+case1   start with 0
+case2   start with minus
+case3   floating number reading
+case4   just two small numbers
+case5   zero increment
+case6   zero increment at 0
+case7   big readings with increment`
+case8   input with character
+case9   big readings in small scale, should be same output as case7
+case10  bigger numbers
