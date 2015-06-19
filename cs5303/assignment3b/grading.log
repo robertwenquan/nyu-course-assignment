@@ -1,0 +1,44 @@
+Checking gws243
+=======================
+Checking hj843
+=======================
+Checking jtv241
+--- results/file1	2015-06-19 00:33:07.964333641 -0400
++++ results/file2	2015-06-19 00:33:07.969333769 -0400
+@@ -48,4 +48,5 @@
+ 47	4705.03	100.00	4.71	190.26
+ 48	4809.74	100.00	4.81	85.45
+ 49	4914.55	80.54	4.91	0.00
+-TOTAL	INTEREST	PAID:	124.46
+\ No newline at end of file
++TOTAL	NUMBER	OF	MONTHS	NEEDED:	49
++TOTAL	AMOUNT	OF	INTEREST	EARNED:	119.46
+=======================
+Checking lma467
+--- results/file1	2015-06-19 00:33:07.983334129 -0400
++++ results/file2	2015-06-19 00:33:07.987334231 -0400
+@@ -49,4 +49,4 @@
+ 48	4809.74	100.00	4.81	85.45
+ 49	4914.55	80.54	4.91	0.00
+ TOTAL	NUMBER	OF	MONTHS	NEEDED:	49
+-TOTAL	AMOUNT	OF	INTEREST	EARNED	IS	$119.46
++TOTAL	AMOUNT	OF	INTEREST	EARNED:	119.46
+=======================
+Checking md3608
+=======================
+Checking wc1234
+=======================
+Checking yc2174
+--- results/file1	2015-06-19 00:33:08.025335206 -0400
++++ results/file2	2015-06-19 00:33:08.031335360 -0400
+@@ -47,6 +47,6 @@
+ 46	4600.43	100.00	4.60	294.97
+ 47	4705.03	100.00	4.71	190.26
+ 48	4809.74	100.00	4.81	85.45
+-49	4914.55	85.45	4.91	0.00
++49	4914.55	80.54	4.91	0.00
+ TOTAL	NUMBER	OF	MONTHS	NEEDED:	49
+-TOTAL	AMOUNT	OF	INTEREST	EARNED:	119.46
+\ No newline at end of file
++TOTAL	AMOUNT	OF	INTEREST	EARNED:	119.46
+=======================
