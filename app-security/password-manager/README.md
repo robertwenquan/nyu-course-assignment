@@ -16,3 +16,9 @@
  * Satisfactory answers to homework questions – 20 pts
  * All materials submitted (source, executables, documentation) – 5 pts
 
+* Investigation
+ * What is ECB, CTR or CBC? 
+  * They are AES encryption mode.
+ * How to implemente them?
+  * http://stackoverflow.com/questions/1220751/how-to-choose-an-aes-encryption-mode-cbc-ecb-ctr-ocb-cfb
+  * http://docs.python-guide.org/en/latest/scenarios/crypto/
