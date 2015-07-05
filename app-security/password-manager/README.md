@@ -29,3 +29,10 @@
  * Think about how shadow files work: If user1 and user2 have the same password, why do they show up differently? 
   * shadow file on Linux
  * How can we make a bruteforcers' job harder if they had the masterkey?
+
+ * encrypted passwd under Linux
+ $6$TqX6OQUE$mLPI3rqNWhas.ZPglVRbXB6ODp66k4h.CHCWDtN5gWzARB8JJKyoWj.HAWMzbBQS/GAjv0iB8LQxYh90IfpeE/
+ according to crypt(3), $id$salt$encrypted
+ so 6 is id
+ TqX6OQUE is salt
+ mLPI3rqNWhas.ZPglVRbXB6ODp66k4h.CHCWDtN5gWzARB8JJKyoWj.HAWMzbBQS/GAjv0iB8LQxYh90IfpeE/ is encrypted key
