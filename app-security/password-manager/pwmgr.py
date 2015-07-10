@@ -60,7 +60,7 @@ class PasswordManager():
     parser.add_argument('-c', '--check', action='store_true', help='check password validity')
     parser.add_argument('-u', '--user', default=None, help='username')
     parser.add_argument('-p', '--passwd', default=None, help='password')
-    parser.add_argument('-t', '--type', default='ECB', help='cipher text encryption method')
+    parser.add_argument('-e', '--enc', default='ECB', help='cipher text encryption method')
     parser.add_argument('-d', '--debug', action='store_true', help='enable debugging output')
 
     ARGS = parser.parse_args(argv)
@@ -109,7 +109,7 @@ class PasswordManager():
       return False
 
     # check encryption type
-    arg_enc_type = args.type
+    arg_enc_type = args.enc
     if arg_enc_type.upper() != 'ECB' and arg_enc_type.upper() != 'CTR' \
       and arg_enc_type.upper() != 'CBC':
       return False
@@ -117,10 +117,49 @@ class PasswordManager():
     return True
 
   def add_passwd(self):
-    print 'add passwd'
+
+    user = self.ARGS.user
+
+    '''
+    if self.user_exists(user):
+      throw error
+      return
+
+    passwd_plain = self.ARGS.passwd
+    passwd_enc_method = self.ARGS.enc
+
+    passwd_cipher = self.encrypt_passwd(passwd_plain, self.random_string(), passwd_enc_method)
+
+    self.user_add(user, passwd_cipher, passwd_enc_method)
+
+    print 'user created'
+
+    '''
+
+    print 'add passwd finished'
 
   def check_passwd(self):
-    print 'check passwd'
+
+    user = self.ARGS.user
+
+    '''
+    if not self.user_exists(user):
+      throw error
+      return
+
+    passwd_plain = self.ARGS.passwd
+    passwd_enc_method = self.ARGS.enc
+
+    passwd_cipher = self.encrypt_passwd(passwd_plain, self.random_string(), passwd_enc_method)
+
+    if self.user_verify(user, passwd_cipher, passwd_enc_method):
+      good
+    else:
+      bad
+    
+    '''
+
+    print 'check passwd finished'
 
   @classmethod
   def random_string(cls, length=16):
