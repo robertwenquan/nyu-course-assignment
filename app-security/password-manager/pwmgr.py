@@ -21,9 +21,11 @@ Example:
 
 import os
 import sys
+import random
 import string
-import passlib
+from passlib.hash import sha512_crypt
 import argparse
+import sqlite3
 
 
 class Logger():
@@ -40,7 +42,64 @@ class Logger():
 
 class PasswordStore():
   '''
+  password store, backed by sqlite
   '''
+
+  def __init__(self):
+    self.connection = sqlite3.connect('passwd_manager.db')
+    self.connection.isolation_level = None
+
+  def user_exists(self, username):
+    ''' check if the username exists in the database '''
+
+    cur = self.connection.cursor()
+    sql_statmt = "SELECT * from shadow WHERE username = '%s'" % username
+    cur.execute(sql_statmt)
+    if cur.fetchone():
+      return True
+    else:
+      return False
+
+  def user_add(self, username, password):
+    ''' add a hashed password entry '''
+    cur = self.connection.cursor()
+    sql_statmt = "INSERT into shadow VALUES('%s', '%s')" % (username, password)
+    cur.execute(sql_statmt)
+    # check error with the execution
+
+  def user_verify(self, username, password):
+    ''' verify username and hashed password from the database '''
+    cur = self.connection.cursor()
+    sql_statmt = "SELECT passwd FROM shadow WHERE username = '%s'" % username
+    cur.execute(sql_statmt)
+
+    one_rec = cur.fetchone()
+    if not one_rec:
+      return False
+
+    # check error with the execution
+
+    # get the salt
+    # get the crypted one
+    cipher_fetched = one_rec[0]
+    _, enc_method, salt_key, encrypted_key = cipher_fetched.split('$')
+
+    # recalculate the crypted one
+    cipher_recalculated = sha512_crypt.encrypt(password, salt=salt_key, rounds=5000)
+
+    logger.log('DEBUG', 'username: %s' % username)
+    logger.log('DEBUG', 'password: %s' % password)
+    logger.log('DEBUG', 'salt: %s' % salt_key)
+    logger.log('DEBUG', 'hashed0: %s' % encrypted_key)
+    logger.log('DEBUG', 'hashed1: %s' % cipher_recalculated)
+
+    # compare them
+    if cipher_recalculated == cipher_fetched:
+      return True
+    else:
+      return False
+
+    # distinguish user-not-exist and password-error
 
 class PasswordManager():
   '''
@@ -52,6 +111,7 @@ class PasswordManager():
 
   def __init__(self, argv):
     self.ARGS = self.init_args(argv)
+    self.password_store = PasswordStore()
 
   def init_args(self, argv):
 
@@ -116,13 +176,30 @@ class PasswordManager():
 
     return True
 
+  def user_exists(self, username):
+    ''' check whether the user exists in the password database
+        return True if username exists
+        return False otherwise
+    '''
+
+    return self.password_store.user_exists(username)
+
+  def user_add(self, username, passwd, enc):
+    ''' add a user with hashed password '''
+
+    return self.password_store.user_add(username, passwd)
+
+  def user_verify(self, username, passwd, enc_type):
+    ''' verify username and hashed password from the password database '''
+    
+    return self.password_store.user_verify(username, passwd)
+
   def add_passwd(self):
 
     user = self.ARGS.user
 
-    '''
     if self.user_exists(user):
-      throw error
+      print 'User %s already exists.' % user
       return
 
     passwd_plain = self.ARGS.passwd
@@ -130,36 +207,34 @@ class PasswordManager():
 
     passwd_cipher = self.encrypt_passwd(passwd_plain, self.random_string(), passwd_enc_method)
 
+    logger.log('DEBUG', 'password enc method: %s' % passwd_enc_method)
+    logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
+    logger.log('DEBUG', 'password ciphertext: %s' % passwd_cipher)
+
     self.user_add(user, passwd_cipher, passwd_enc_method)
 
     print 'user created'
-
-    '''
-
     print 'add passwd finished'
 
   def check_passwd(self):
 
     user = self.ARGS.user
 
-    '''
     if not self.user_exists(user):
-      throw error
+      print 'User %s does not exist.' % user
       return
+
 
     passwd_plain = self.ARGS.passwd
     passwd_enc_method = self.ARGS.enc
 
-    passwd_cipher = self.encrypt_passwd(passwd_plain, self.random_string(), passwd_enc_method)
+    logger.log('DEBUG', 'password enc method: %s' % passwd_enc_method)
+    logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
 
-    if self.user_verify(user, passwd_cipher, passwd_enc_method):
-      good
+    if self.user_verify(user, passwd_plain, passwd_enc_method):
+      print 'Password verified for user %s' % user
     else:
-      bad
-    
-    '''
-
-    print 'check passwd finished'
+      print 'Password NOT verified for user %s' % user
 
   @classmethod
   def random_string(cls, length=16):
@@ -172,7 +247,7 @@ class PasswordManager():
       return None
 
     if enc_type == 'ECB':
-      cipher = passlib.hash.sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
+      cipher = sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
 
     return cipher
 
