@@ -15,8 +15,9 @@ Installation:
  $ pip install -r requirements.txt
 
 Example:
- ./pwmgr.py -a -u <username> -p <password> -t [ECB,CTR,CBC]
- ./pwmgr.py -c -u <username> -p <password> -t [ECB,CTR,CBC]
+ ./pwmgr.py -a -u <username> -p <password> -e [ECB,CTR,CBC]
+ ./pwmgr.py -c -u <username> -p <password> -e [ECB,CTR,CBC]
+ ./pwmgr.py -l
 """
 
 import os
