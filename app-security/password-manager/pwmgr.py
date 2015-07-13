@@ -100,6 +100,21 @@ class PasswordStore():
       return False
 
     # distinguish user-not-exist and password-error
+  
+  def list_users(self):
+    ''' list all users from the databases '''
+
+    cur = self.connection.cursor()
+    sql_statmt = "SELECT username, passwd FROM shadow"
+    cur.execute(sql_statmt)
+
+    print "%10s %16s %s" % (user, salt, encrypted)
+    for (user, passwd) in cur.fetchall():
+      enc = passwd.split('$')[1]
+      salt = passwd.split('$')[2]
+      encrypted = passwd.split('$')[3]
+      print "%10s %16s %s" % (user, salt, encrypted)
+
 
 class PasswordManager():
   '''
@@ -118,6 +133,7 @@ class PasswordManager():
     parser = argparse.ArgumentParser()
     parser.add_argument('-a', '--add', action='store_true', help='add password into database')
     parser.add_argument('-c', '--check', action='store_true', help='check password validity')
+    parser.add_argument('-l', '--list', action='store_true', help='list users from the password database')
     parser.add_argument('-u', '--user', default=None, help='username')
     parser.add_argument('-p', '--passwd', default=None, help='password')
     parser.add_argument('-e', '--enc', default='ECB', help='cipher text encryption method')
@@ -132,6 +148,7 @@ class PasswordManager():
     # print arguments
     logger.log('DEBUG', 'argument check: --add %s' % ARGS.add)
     logger.log('DEBUG', 'argument check: --check %s' % ARGS.check)
+    logger.log('DEBUG', 'argument check: --list %s' % ARGS.list)
     logger.log('DEBUG', 'argument check: --user %s' % ARGS.user)
     logger.log('DEBUG', 'argument check: --passwd %s' % ARGS.passwd)
 
@@ -147,15 +164,20 @@ class PasswordManager():
     # check command type
     arg_add = args.add
     arg_chk = args.check
+    arg_list = args.list
 
-    if not arg_add and not arg_chk:
+    if not arg_add and not arg_chk and not arg_list:
       # must choose one command type
       return False
 
-    if arg_add and not arg_chk:
+    if arg_add and not arg_chk and not arg_list:
       self.command_type = 'add'
-    elif not arg_add and arg_chk:
+    elif not arg_add and arg_chk and not arg_list:
       self.command_type = 'check'
+    elif not arg_add and not arg_chk and arg_list:
+      self.command_type = 'list'
+      # list doesn't need any extra argument
+      return True
     else:
       # only one command type could be selected
       return False
@@ -236,6 +258,12 @@ class PasswordManager():
     else:
       print 'Password NOT verified for user %s' % user
 
+  def list_passwd(self):
+    ''' list all the users' basic information from the database '''
+    logger.log('DEBUG', 'Listing all the users from the database...')
+
+    self.password_store.list_users()
+    
   @classmethod
   def random_string(cls, length=16):
     char_samples = string.ascii_uppercase + string.ascii_lowercase + string.digits
@@ -270,6 +298,8 @@ def main():
     manager.add_passwd()
   elif manager.command_type == 'check':
     manager.check_passwd()
+  elif manager.command_type == 'list':
+    manager.list_passwd()
   else:
     raise ValueError('Unsupported command type')
 
