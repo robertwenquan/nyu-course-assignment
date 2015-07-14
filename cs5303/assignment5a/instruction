@@ -1,0 +1,48 @@
+Assignment Instructions
+CS5303       Homework #5a
+
+DO NOT USE GLOBAL VARIABLES!
+
+Several students take a car trip during Break break. They begin the trip with a full tank of gas. After the trip ends, they fill the gas tank back to the maximum capacity. They wish to calculate the fuel efficiency of the car on the trip in miles/gallon and the cost for the gasoline used for the trip. They decide to split the cost of the fuel evenly among themselves.
+
+Write a main program that asks the user for the number of students on the trip, the number of miles travelled, the number of gallons purchased at the end of the trip and the price per gallon of the gasoline. Main then calls three functions to compute the required information and main then displays the results on the screen.
+
+First function: this function is passed the miles travelled and the number of gallons used. (each a double) and computes and returns the fuel efficiency, that is, the miles per gallon. Main will then print out a message containing the results.
+
+Second Function: This will compute and return the cost of the trip given the number of gallons used and the price per gallon for  gasoline. Again main will print out a message containing the results.
+
+Third function: This function is passed the cost of the gasoline and the number of students going on the trip and returns the amount each will have to pay for the gas. Main will them print out a message containing the results.
+
+Your program should allow the user to repeat this calculation as many times as he wants. (Hint: First get your program to work once and then add a loop in main)
+
+SAMPLE RUN:
+
+How many students went on the trip? 2
+
+How many miles did they travel? 275
+
+How many gallons did they use? 10.50
+
+What was the price per gallon? 3.85
+
+You travelled 275.00 miles on 10.50 gallons of gasoline which was 26.19 miles per gallon
+
+The cost of the trip was $40.42, so each student pays $20.21
+
+Do you want to do this calculation again?  (y/n) y
+
+How many students went on the trip? 4
+
+How many miles did they travel? 220.8
+
+How many gallons did they use? 15.308
+
+What was the price per gallon? 3.93
+
+You travelled 220.80 miles on 15.31 gallons of gasoline which was 14.42 miles per gallon
+
+The cost of the trip was $60.16, so each student $15.04
+
+Do you want to do this calculation again?  (y/n) n
+
+Name your program hw5a.cpp and submit it via NYU Classes
