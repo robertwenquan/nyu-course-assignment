@@ -1,6 +1,10 @@
 
  * Think about how shadow files work: If user1 and user2 have the same password, why do they show up differently? 
-  * shadow file on Linux
+  * shadow file on Linux uses salt to prevent the situation described above.
+  Salt is a random string that is (prepended or appended) to the original plaintext password.
+  Then the combined string will be hashed to another string that is stored in the shadow file.
+  As the salt is randomly chosen for each password, even if the plaintext password is the same, the salt will most likely to be different. Hence the combined string will be different which leads to a different hashed string that shows up in the shadow file.
+  In order to validate the password
 
  * How can we make a bruteforcers job harder if they had the masterkey?
   This depends on how the masterkey is designed to work with the password manager.
