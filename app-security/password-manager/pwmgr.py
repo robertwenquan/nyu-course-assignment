@@ -25,6 +25,7 @@ import sys
 import random
 import string
 from passlib.hash import sha512_crypt
+from Crypto.Cipher import AES
 import argparse
 import sqlite3
 
@@ -109,7 +110,6 @@ class PasswordStore():
     sql_statmt = "SELECT username, passwd FROM shadow"
     cur.execute(sql_statmt)
 
-    print "%10s %16s %s" % (user, salt, encrypted)
     for (user, passwd) in cur.fetchall():
       enc = passwd.split('$')[1]
       salt = passwd.split('$')[2]
@@ -276,7 +276,11 @@ class PasswordManager():
       return None
 
     if enc_type == 'ECB':
-      cipher = sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
+      cipher = 'ECB' + sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
+    elif enc_type == 'CTR':
+      cipher = 'CTR' + sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
+    elif enc_type == 'CBC':
+      cipher = 'CBC' + sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
 
     return cipher
 
