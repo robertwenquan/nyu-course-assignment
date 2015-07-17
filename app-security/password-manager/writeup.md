@@ -51,6 +51,22 @@
 
 ### Running examples
 ```
+
+(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py --help
+usage: pwmgr.py [-h] [-a] [-c] [-l] [-d] [-u USER] [-p PASSWD] [-e ENC] [-x]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a, --add             add password into database
+  -c, --check           check password validity
+  -l, --list            list users from the password database
+  -d, --dele            remove user from the password database
+  -u USER, --user USER  username
+  -p PASSWD, --passwd PASSWD
+                        password
+  -e ENC, --enc ENC     cipher text encryption method. ECB|CTR|CBC
+  -x, --debug           enable debugging output
+
 (v1)Roberts-MacBook-Pro:password-manager robert$ ls -l *.py *.db ~/.pwmgr.key
 -rw-r--r--  1 robert  staff     32 Jul 17 12:16 /Users/robert/.pwmgr.key
 -rw-r--r--  1 robert  staff   8192 Jul 17 12:58 passwd_manager.db
