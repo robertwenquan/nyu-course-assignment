@@ -2,6 +2,8 @@
 
 import unittest
 from pwmgr import PasswordStore
+from pwmgr import PasswordManager
+from pwmgr import Logger
 
 class TestPasswordMgr(unittest.TestCase):
 
@@ -42,12 +44,45 @@ class TestPasswordMgr(unittest.TestCase):
 
     pw_store = None
 
-  def test_add_user(self):
-    print 'add user test'
+  def test_add_and_verify_user(self):
+    ''' test add user function by password manager '''
 
-  def test_check_user(self):
-    print 'check user test'
+    # purge the database
+    manager = PasswordManager(['-l'])
+    manager.del_all()
 
-if __name__ == '__mani__':
+    # create a user 'sample_user' with password 'sample_password'
+    # with default ECB encryption
+    username = 'sample_user'
+    password = 'sample_password'
+
+    args = ['-a', '-u', username, '-p', password]
+    manager = PasswordManager(args)
+    manager.add_passwd()
+    self.assertTrue(manager.password_store.user_exists(username) == True)
+
+    args = ['-c', '-u', username, '-p', password]
+    manager = PasswordManager(args)
+    self.assertTrue(manager.check_passwd() == True)
+
+    # create 3 x 99 users with three password encryption methods
+    for userid in range(1,100):
+      for enc_method in ['CTR', 'ECB', 'CBC']:
+        username = 'user_valid_' + str(userid) + str(enc_method)
+        args = ['-a', '-u', username, '-p', 'password', '-e', enc_method]
+        manager = PasswordManager(args)
+        manager.add_passwd()
+        self.assertTrue(manager.password_store.user_exists(username) == True)
+
+    # verify password with the 3 x 99 users
+    for userid in range(1,100):
+      for enc_method in ['CTR', 'ECB', 'CBC']:
+        username = 'user_valid_' + str(userid) + str(enc_method)
+        args = ['-c', '-u', username, '-p', 'password', '-e', enc_method]
+        manager = PasswordManager(args)
+        self.assertTrue(manager.check_passwd() == True)
+
+
+if __name__ == '__main__':
   unittest.main()
 

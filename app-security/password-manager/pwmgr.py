@@ -319,7 +319,7 @@ class PasswordManager(object):
 
     if not self.user_exists(user):
       print 'User %s does not exist.' % user
-      return
+      return None
 
     passwd_plain = self.args.passwd
     passwd_enc_method = self.args.enc
@@ -329,8 +329,10 @@ class PasswordManager(object):
 
     if self.user_verify(user, passwd_plain, passwd_enc_method):
       print 'Password verified for user %s' % user
+      return True
     else:
       print 'Password NOT verified for user %s' % user
+      return False
 
   def list_passwd(self):
     ''' list all the users' basic information from the database '''
@@ -350,6 +352,11 @@ class PasswordManager(object):
     self.logger.log('DEBUG', 'removing %s from password database.' % user)
     print 'user %s deleted from database' % user
     self.password_store.del_user(user)
+
+  def del_all(self):
+    ''' delete all user entries from the database '''
+    ''' ONLY for unit testing '''
+    self.password_store.user_purge()
 
   @classmethod
   def random_string(cls, length=16):
