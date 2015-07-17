@@ -15,12 +15,13 @@ Installation:
  1. Install Python 2.7 (only run and tested with Python 2.7)
  2. Install pip
  3. Install dependencies
- $ pip install -r requirements.txt
+    $ pip install -r requirements.txt
 
 Example:
  ./pwmgr.py -a -u <username> -p <password> -e [ECB,CTR,CBC]
  ./pwmgr.py -c -u <username> -p <password> -e [ECB,CTR,CBC]
  ./pwmgr.py -l
+ ./pwmgr.py -d <username>
 """
 
 import os
@@ -29,11 +30,13 @@ import random
 import string
 import sqlite3
 import argparse
-from passlib.hash import sha512_crypt
+from Crypto.Hash import SHA
 from Crypto.Cipher import AES
+from Crypto.Util import Counter
 
 
 MASTER_KEY_FILE = '~/.pwmgr.key'
+PADDING_BYTE = '0'
 
 class Logger():
   '''
@@ -74,7 +77,7 @@ class PasswordStore():
     cur.execute(sql_statmt)
     # check error with the execution
 
-  def user_verify(self, username, password):
+  def user_verify(self, username):
     ''' verify username and hashed password from the database '''
     cur = self.connection.cursor()
     sql_statmt = "SELECT passwd FROM shadow WHERE username = '%s'" % username
@@ -91,22 +94,10 @@ class PasswordStore():
     cipher_fetched = one_rec[0]
     _, enc_method, salt_key, encrypted_key = cipher_fetched.split('$')
 
-    # recalculate the crypted one
-    cipher_recalculated = sha512_crypt.encrypt(password, salt=salt_key, rounds=5000)
+    salt_key = str(salt_key)
+    full_hashed_key = str(cipher_fetched)
 
-    logger.log('DEBUG', 'username: %s' % username)
-    logger.log('DEBUG', 'password: %s' % password)
-    logger.log('DEBUG', 'salt: %s' % salt_key)
-    logger.log('DEBUG', 'hashed0: %s' % encrypted_key)
-    logger.log('DEBUG', 'hashed1: %s' % cipher_recalculated)
-
-    # compare them
-    if cipher_recalculated == cipher_fetched:
-      return True
-    else:
-      return False
-
-    # distinguish user-not-exist and password-error
+    return salt_key, full_hashed_key
   
   def list_users(self):
     ''' list all users from the databases '''
@@ -185,7 +176,7 @@ class PasswordManager():
       filename = os.path.expanduser(MASTER_KEY_FILE)
       masterkey = open(filename).read()
     except:
-      masterkey = self.random_string(64)
+      masterkey = self.random_string(32)
       writeback = True
 
     if writeback:
@@ -255,10 +246,27 @@ class PasswordManager():
 
     return self.password_store.user_add(username, passwd)
 
-  def user_verify(self, username, passwd, enc_type):
+  def user_verify(self, username, password, enc_method):
     ''' verify username and hashed password from the password database '''
     
-    return self.password_store.user_verify(username, passwd)
+    logger.log('DEBUG', 'username: %s' % username)
+    logger.log('DEBUG', 'password: %s' % password)
+
+    salt, saved_encrypted_password = self.password_store.user_verify(username)
+    logger.log('DEBUG', 'salt: %s (%d) (%s)' % (salt, len(salt), type(salt)))
+    logger.log('DEBUG', 'hashed0: %s (%d) (%s)' % (saved_encrypted_password, \
+        len(saved_encrypted_password), \
+        type(saved_encrypted_password)))
+
+    # recalculate the crypted one
+    cipher_recalculated = self.encrypt_passwd(password, salt, enc_method)
+    logger.log('DEBUG', 'hashed1: %s' % cipher_recalculated)
+
+    # compare them
+    if cipher_recalculated == saved_encrypted_password:
+      return True
+    else:
+      return False
 
   def add_passwd(self):
 
@@ -331,13 +339,31 @@ class PasswordManager():
       return None
 
     if enc_type == 'ECB':
-      cipher = 'ECB' + sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
+      enc_method = AES.MODE_ECB
     elif enc_type == 'CTR':
-      cipher = 'CTR' + sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
+      enc_method = AES.MODE_CTR
     elif enc_type == 'CBC':
-      cipher = 'CBC' + sha512_crypt.encrypt(plaintext, salt=salt, rounds=5000)
+      enc_method = AES.MODE_CBC
 
-    return cipher
+    ctr = Counter.new(128)
+    iv = self.random_string(16)
+    key = self.masterkey
+
+    if enc_method == AES.MODE_CTR:
+      encoder = AES.new(key, enc_method, counter=ctr)
+    else:
+      encoder = AES.new(key, enc_method, iv)
+
+    logger.log('DEBUG', 'plaintext: %s' % plaintext)
+    cipher = encoder.encrypt(plaintext + ((16 - len(plaintext)%16) * PADDING_BYTE))
+    logger.log('DEBUG', 'cipher: %s' % cipher)
+
+    hashed_cipher = SHA.new(cipher + str(salt)).hexdigest()
+    logger.log('DEBUG', 'hashed_cipher: %s' % hashed_cipher)
+    password_full_entry = '$%s$%s$%s' % (enc_type, salt, hashed_cipher)
+    logger.log('DEBUG', 'password_entry: %s' % password_full_entry)
+
+    return password_full_entry
 
 
 class Password():
