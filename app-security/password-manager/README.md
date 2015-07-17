@@ -1,41 +1,47 @@
 * Using your favorite language, implement a little app that has the following features:
 
  * Given a (Username, Password) pair in ASCII; store the pair to a file
-  * $ python pwmgr.py -a -u username -p password
-  * password will be saved in "password_manager.db" with sqlite3
+   ```
+   $ python pwmgr.py -a -u username -p password
+   ```
+   * password will be saved in "password_manager.db" with sqlite3
  * Given a (Username, Password) pair in ASCII; check if the username exists and if the password matches the one stored in a file.
-  * $ python pwmgr.py -c -u username -p password
+   ```
+   $ python pwmgr.py -c -u username -p password
+   ```
  * Using a flag the user should be able to choose ECB, CTR or CBC modes.
-  * default it's encoded in ECB mode, use -e to switch encryption method
-  * $ python pwmgr.py -a -u username -p password -e CTR
-  * $ python pwmgr.py -a -u username -p password -e CBC
-  * $ python pwmgr.py -a -u username -p password -e ECB
+   * default it's encoded in ECB mode, use -e to switch encryption method
+   ```
+   $ python pwmgr.py -a -u username -p password -e CTR
+   $ python pwmgr.py -a -u username -p password -e CBC
+   $ python pwmgr.py -a -u username -p password -e ECB
+   ```
  * Program does not need to be interactive. Command line interface is sufficient.
-  * There is no user interaction in my implementation
+   * There is no user interaction in my implementation
  * Java has great crypto extensions and c/c++ has openssl, however feel free to use python or another scripting language. 
-  * I use Crypto library in Python
+   * I use Crypto library in Python
  * A master key needs to exist, could be auto generated and stored somewhere. 
-  * masterkey is automatically generated at the first launch
-  * masterkey is stored under ~/.pwmgr.key
+   * masterkey is automatically generated at the first launch
+   * masterkey is stored under ~/.pwmgr.key
 
 * Grading Criteria
 
  * Submitted script/executable runs – 10 pts
-  * DONE
+   * DONE
  * Submitted script/executable meets program specs – 10 pts
-  * I think so
+   * I think so
  * Clear understanding of crypto engineering – 10 pts
-  * I think so. I used encrypt then hash
+   * I think so. I used encrypt then hash
  * Crypto implemented properly – 25 pts
-  * I think so. The Crypto library in Python is pretty straight-forward to use
+   * I think so. The Crypto library in Python is pretty straight-forward to use
  * ECB, CTR, and CBC block ciphers supported – 20 pts
-  * Yes. All three modes are supported.
+   * Yes. All three modes are supported.
  * Satisfactory answers to homework questions – 20 pts
-  * It's kind of open question. But I think I answered them with well enough details.
+   * It's kind of open question. But I think I answered them with well enough details.
  * All materials submitted (source, executables, documentation) – 5 pts
-  * Source code
-  * Question in PDF
-  * Packed in a tarball
+   * Source code
+   * Question in PDF
+   * Packed in a tarball
 
 * Investigation
  * What is ECB, CTR or CBC? 
