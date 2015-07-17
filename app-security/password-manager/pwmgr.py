@@ -38,19 +38,20 @@ from Crypto.Util import Counter
 MASTER_KEY_FILE = '~/.pwmgr.key'
 PADDING_BYTE = '0'
 
-class Logger():
+class Logger(object):
   '''
   unified logger
   '''
-  
+
   ENABLE_DEBUG = False
 
   def log(self, loglevel, log_string):
+    ''' log function '''
     if loglevel.upper() == 'DEBUG' and self.ENABLE_DEBUG == True:
       print log_string
 
 
-class PasswordStore():
+class PasswordStore(object):
   '''
   password store, backed by sqlite
   '''
@@ -92,13 +93,13 @@ class PasswordStore():
     # get the salt
     # get the crypted one
     cipher_fetched = one_rec[0]
-    _, enc_method, salt_key, encrypted_key = cipher_fetched.split('$')
+    _, _, salt_key, _ = cipher_fetched.split('$')
 
     salt_key = str(salt_key)
     full_hashed_key = str(cipher_fetched)
 
     return salt_key, full_hashed_key
-  
+
   def list_users(self):
     ''' list all users from the databases '''
 
@@ -110,7 +111,7 @@ class PasswordStore():
       enc = passwd.split('$')[1]
       salt = passwd.split('$')[2]
       encrypted = passwd.split('$')[3]
-      print "%10s %16s %s" % (user, salt, encrypted)
+      print "%10s %3s %16s %s" % (user, enc, salt, encrypted)
 
   def del_user(self, username):
     ''' delete user password entry from database '''
@@ -120,7 +121,7 @@ class PasswordStore():
     cur.execute(sql_statmt)
 
 
-class PasswordManager():
+class PasswordManager(object):
   '''
   class for global password manager
   '''
@@ -135,12 +136,15 @@ class PasswordManager():
     self.masterkey = self.init_masterkey()
 
   def init_args(self, argv):
+    ''' initialize arguments '''
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-a', '--add', action='store_true', help='add password into database')
     parser.add_argument('-c', '--check', action='store_true', help='check password validity')
-    parser.add_argument('-l', '--list', action='store_true', help='list users from the password database')
-    parser.add_argument('-d', '--dele', action='store_true', help='remove user from the password database')
+    parser.add_argument('-l', '--list', action='store_true', \
+        help='list users from the password database')
+    parser.add_argument('-d', '--dele', action='store_true', \
+        help='remove user from the password database')
     parser.add_argument('-u', '--user', default=None, help='username')
     parser.add_argument('-p', '--passwd', default=None, help='password')
     parser.add_argument('-e', '--enc', default='ECB', help='cipher text encryption method')
@@ -241,14 +245,14 @@ class PasswordManager():
 
     return self.password_store.user_exists(username)
 
-  def user_add(self, username, passwd, enc):
+  def user_add(self, username, passwd):
     ''' add a user with hashed password '''
 
     return self.password_store.user_add(username, passwd)
 
   def user_verify(self, username, password, enc_method):
     ''' verify username and hashed password from the password database '''
-    
+
     logger.log('DEBUG', 'username: %s' % username)
     logger.log('DEBUG', 'password: %s' % password)
 
@@ -285,7 +289,7 @@ class PasswordManager():
     logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
     logger.log('DEBUG', 'password ciphertext: %s' % passwd_cipher)
 
-    self.user_add(user, passwd_cipher, passwd_enc_method)
+    self.user_add(user, passwd_cipher)
 
     print 'user created'
     print 'add passwd finished'
@@ -327,7 +331,7 @@ class PasswordManager():
 
     logger.log('DEBUG', 'removing %s from password database.' % user)
     self.password_store.del_user(user)
-    
+
   @classmethod
   def random_string(cls, length=16):
     ''' generate random text string with specified byte length'''
