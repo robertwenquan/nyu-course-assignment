@@ -6,12 +6,12 @@
  * Given a (Username, Password) pair in ASCII; check if the username exists and if the password matches the one stored in a file.
    * $ python pwmgr.py -c -u username -p password
  * Using a flag the user should be able to choose ECB, CTR or CBC modes.
-   * default it's encoded in ECB mode, use -e to switch encryption method
+   * default it will be encrypted in ECB mode, use -e to switch encryption methods among ECB, CTR and CBC
    * $ python pwmgr.py -a -u username -p password -e CTR
    * $ python pwmgr.py -a -u username -p password -e CBC
    * $ python pwmgr.py -a -u username -p password -e ECB
  * Program does not need to be interactive. Command line interface is sufficient.
-   * There is no user interaction in my implementation
+   * There is no user interaction in my software implementation
  * Java has great crypto extensions and c/c++ has openssl, however feel free to use python or another scripting language. 
    * I use Crypto library in Python
  * A master key needs to exist, could be auto generated and stored somewhere. 
