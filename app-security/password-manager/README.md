@@ -1,4 +1,4 @@
-* Using your favorite language, implement a little app that has the following features:
+### Using your favorite language, implement a little app that has the following features:
 
  * Given a (Username, Password) pair in ASCII; store the pair to a file
    * $ python pwmgr.py -a -u username -p password
@@ -18,7 +18,7 @@
    * masterkey is automatically generated at the first launch
    * masterkey is stored under ~/.pwmgr.key
 
-* Grading Criteria
+### Grading Criteria
 
  * Submitted script/executable runs – 10 pts
    * DONE
@@ -37,7 +37,7 @@
    * Question in PDF
    * Packed in a tarball
 
-* Investigation
+### Investigation
  * What is ECB, CTR or CBC? 
    * They are AES encryption mode.
  * What is master key?
@@ -46,7 +46,7 @@
    * http://stackoverflow.com/questions/1220751/how-to-choose-an-aes-encryption-mode-cbc-ecb-ctr-ocb-cfb
    * http://docs.python-guide.org/en/latest/scenarios/crypto/
 
-* Write-up
+### Write-up
  * Think about how shadow files work: If user1 and user2 have the same password, why do they show up differently? 
    * shadow file on Linux
  * How can we make a bruteforcers' job harder if they had the masterkey?
