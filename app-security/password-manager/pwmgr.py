@@ -298,8 +298,7 @@ class PasswordManager(object):
 
     self.user_add(user, passwd_cipher)
 
-    print 'user created'
-    print 'add passwd finished'
+    print 'user %s with password is created.' % user
 
   def check_passwd(self):
     ''' check the validity of the password '''
