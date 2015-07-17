@@ -13,7 +13,7 @@
  * Program does not need to be interactive. Command line interface is sufficient.
    * There is no user interaction in my software implementation
  * Java has great crypto extensions and c/c++ has openssl, however feel free to use python or another scripting language. 
-   * I use Crypto library in Python
+   * I use pycrypto library in Python
  * A master key needs to exist, could be auto generated and stored somewhere. 
    * masterkey is automatically generated at the first launch
    * masterkey is stored under ~/.pwmgr.key
@@ -27,7 +27,7 @@
  * Clear understanding of crypto engineering – 10 pts
    * I think so. I used encrypt then hash
  * Crypto implemented properly – 25 pts
-   * I think so. The Crypto library in Python is pretty straight-forward to use
+   * I think so. The pycrypto library in Python is pretty straight-forward to use
  * ECB, CTR, and CBC block ciphers supported – 20 pts
    * Yes. All three modes are supported.
  * Satisfactory answers to homework questions – 20 pts
