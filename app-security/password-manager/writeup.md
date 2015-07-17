@@ -52,7 +52,7 @@
 ### Running examples
 ```
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py --help
+(v1)robert-mac:password-manager robert$ ./pwmgr.py --help
 usage: pwmgr.py [-h] [-a] [-c] [-l] [-d] [-u USER] [-p PASSWD] [-e ENC] [-x]
 
 optional arguments:
@@ -67,61 +67,61 @@ optional arguments:
   -e ENC, --enc ENC     cipher text encryption method. ECB|CTR|CBC
   -x, --debug           enable debugging output
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ls -l *.py *.db ~/.pwmgr.key
+(v1)robert-mac:password-manager robert$ ls -l *.py *.db ~/.pwmgr.key
 -rw-r--r--  1 robert  staff     32 Jul 17 12:16 /Users/robert/.pwmgr.key
 -rw-r--r--  1 robert  staff   8192 Jul 17 12:58 passwd_manager.db
 -rwxr-xr-x  1 robert  staff  12515 Jul 17 12:40 pwmgr.py
 
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -l
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -l
 no user in the database
 
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -a -u user1 -p password_is_complicated
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -a -u user1 -p password_is_complicated
 user user1 with password is created.
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -c -u user1 -p password_is_complicated
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -c -u user1 -p password_is_complicated
 Password verified for user user1
 
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -a -u user_cbc -p password_is_random -e CBC
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -a -u user_cbc -p password_is_random -e CBC
 user user_cbc with password is created.
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -a -u user_ecb -p password_is_random -e ECB
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -a -u user_ecb -p password_is_random -e ECB
 user user_ecb with password is created.
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -a -u user_ctr -p password_is_random -e CTR
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -a -u user_ctr -p password_is_random -e CTR
 user user_ctr with password is created.
-(v1)Roberts-MacBook-Pro:password-manager robert$
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -c -u user_cbc -p password_is_random -e CBC
+(v1)robert-mac:password-manager robert$
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -c -u user_cbc -p password_is_random -e CBC
 Password verified for user user_cbc
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -c -u user_ecb -p password_is_random -e ECB
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -c -u user_ecb -p password_is_random -e ECB
 Password verified for user user_ecb
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -c -u user_ctr -p password_is_random -e CTR
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -c -u user_ctr -p password_is_random -e CTR
 Password verified for user user_ctr
 
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -l
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -l
      user1 ECB hMg0eJxIxmzHrRUr 6c208697535faa24bd22002223cc004974d5e788
   user_cbc CBC xHyUCZa0JQzAof3c d60e89c6d2938b98b62b75b8352da9663028338f
   user_ecb ECB kXMBQfhUXGflBTwf 05b24dc3b0b87c3b2ff0962104b0f8954e830d65
   user_ctr CTR kdzmnOvz5GrbFTYQ 6d1f0f001482487b098860f2bcaff1074481ef94
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -d -u user1
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -d -u user1
 user user1 deleted from database
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -l
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -l
   user_cbc CBC xHyUCZa0JQzAof3c d60e89c6d2938b98b62b75b8352da9663028338f
   user_ecb ECB kXMBQfhUXGflBTwf 05b24dc3b0b87c3b2ff0962104b0f8954e830d65
   user_ctr CTR kdzmnOvz5GrbFTYQ 6d1f0f001482487b098860f2bcaff1074481ef94
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -d -u user_cbc
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -d -u user_cbc
 user user_cbc deleted from database
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -d -u user_ecb
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -d -u user_ecb
 user user_ecb deleted from database
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -d -u user_ctr
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -d -u user_ctr
 user user_ctr deleted from database
 
-(v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -l
+(v1)robert-mac:password-manager robert$ ./pwmgr.py -l
 no user in the database
 
 ```
