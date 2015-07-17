@@ -10,11 +10,12 @@ and the password manager, for adding and checking user password
 import unittest
 from pwmgr import PasswordStore
 from pwmgr import PasswordManager
-from pwmgr import Logger
 
 class TestPasswordMgr(unittest.TestCase):
+  ''' unittests class for the password manager '''
 
   def test_password_store(self):
+    ''' test the sqlite3 password storage '''
 
     pw_store = PasswordStore()
 
@@ -22,12 +23,12 @@ class TestPasswordMgr(unittest.TestCase):
     pw_store.user_purge()
 
     # test for non-existing users
-    for userid in range(1,11):
+    for userid in range(1, 11):
       username = 'user_not_exist_' + str(userid)
       self.assertTrue(pw_store.user_exists(username) == False)
 
     # add a few users and test the validity
-    for userid in range(1,6):
+    for userid in range(1, 6):
       username = 'user_valid_' + str(userid)
       password = '$CBC$salt_salt_salt$passwd_valid_' + str(userid)
       pw_store.user_add(username, password)
@@ -40,7 +41,7 @@ class TestPasswordMgr(unittest.TestCase):
     pw_store.list_users()
 
     # del users
-    for userid in range(1,6):
+    for userid in range(1, 6):
       username = 'user_valid_' + str(userid)
       self.assertTrue(pw_store.user_exists(username) == True)
       pw_store.del_user(username)
@@ -73,7 +74,7 @@ class TestPasswordMgr(unittest.TestCase):
     self.assertTrue(manager.check_passwd() == True)
 
     # create 3 x 99 users with three password encryption methods
-    for userid in range(1,100):
+    for userid in range(1, 100):
       for enc_method in ['CTR', 'ECB', 'CBC']:
         username = 'user_valid_' + str(userid) + str(enc_method)
         args = ['-a', '-u', username, '-p', 'password', '-e', enc_method]
@@ -82,7 +83,7 @@ class TestPasswordMgr(unittest.TestCase):
         self.assertTrue(manager.password_store.user_exists(username) == True)
 
     # verify password with the 3 x 99 users
-    for userid in range(1,100):
+    for userid in range(1, 100):
       for enc_method in ['CTR', 'ECB', 'CBC']:
         username = 'user_valid_' + str(userid) + str(enc_method)
         args = ['-c', '-u', username, '-p', 'password', '-e', enc_method]
