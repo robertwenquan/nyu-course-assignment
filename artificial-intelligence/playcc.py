@@ -1510,10 +1510,14 @@ class GameEngine(object):
 
     # get optimal move path
     # along with its move statistics
+    time_start = time.time()
     hash_key, (move_path, move_stats) = self.get_cached_move(player)
     if move_path == []:
       move_path, move_stats = player.whats_next_move()
       self.save_cached_move(player, hash_key, move_path, move_stats)
+    time_end = time.time()
+    time_elapsed = time_end - time_start
+    print 'elapsed time: %f' % time_elapsed
 
     print '----------- Moving Path --------------'
     for loc in move_path:
