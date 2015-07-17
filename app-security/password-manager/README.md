@@ -1,4 +1,4 @@
-### Using your favorite language, implement a little app that has the following features:
+### Application Features
 
  * Given a (Username, Password) pair in ASCII; store the pair to a file
    * $ python pwmgr.py -a -u username -p password
