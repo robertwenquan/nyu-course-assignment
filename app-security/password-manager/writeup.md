@@ -58,7 +58,7 @@
 
 
 (v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -l
-(v1)Roberts-MacBook-Pro:password-manager robert$
+no user in the database
 
 
 (v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -a -u user1 -p password_is_complicated
@@ -106,5 +106,6 @@ user user_ecb deleted from database
 user user_ctr deleted from database
 
 (v1)Roberts-MacBook-Pro:password-manager robert$ ./pwmgr.py -l
+no user in the database
 
 ```

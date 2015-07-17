@@ -344,6 +344,7 @@ class PasswordManager(object):
       return
 
     logger.log('DEBUG', 'removing %s from password database.' % user)
+    print 'user %s deleted from database' % user
     self.password_store.del_user(user)
 
   @classmethod
