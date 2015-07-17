@@ -21,7 +21,7 @@ Example:
  ./pwmgr.py -a -u <username> -p <password> -e [ECB,CTR,CBC]
  ./pwmgr.py -c -u <username> -p <password> -e [ECB,CTR,CBC]
  ./pwmgr.py -l
- ./pwmgr.py -d <username>
+ ./pwmgr.py -d -u <username>
 """
 
 import os
