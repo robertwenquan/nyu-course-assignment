@@ -44,11 +44,11 @@ class Logger(object):
   unified logger
   '''
 
-  ENABLE_DEBUG = False
+  enable_debug = False
 
   def log(self, loglevel, log_string):
     ''' log function '''
-    if loglevel.upper() == 'DEBUG' and self.ENABLE_DEBUG == True:
+    if loglevel.upper() == 'DEBUG' and self.enable_debug == True:
       print log_string
 
 
@@ -141,12 +141,12 @@ class PasswordManager(object):
   class for global password manager
   '''
 
-  ARGS = None
+  args = None
   command_type = ''
   masterkey = ''
 
   def __init__(self, argv):
-    self.ARGS = self.init_args(argv)
+    self.args = self.init_args(argv)
     self.password_store = PasswordStore()
     self.masterkey = self.init_masterkey()
 
@@ -162,29 +162,30 @@ class PasswordManager(object):
         help='remove user from the password database')
     parser.add_argument('-u', '--user', default=None, help='username')
     parser.add_argument('-p', '--passwd', default=None, help='password')
-    parser.add_argument('-e', '--enc', default='ECB', help='cipher text encryption method. ECB|CTR|CBC')
+    parser.add_argument('-e', '--enc', default='ECB', \
+        help='cipher text encryption method. ECB|CTR|CBC')
     parser.add_argument('-x', '--debug', action='store_true', help='enable debugging output')
 
-    ARGS = parser.parse_args(argv)
+    args = parser.parse_args(argv)
 
     # set logger DEBUG flag
-    if ARGS.debug:
-      logger.ENABLE_DEBUG = True
+    if args.debug:
+      logger.enable_debug = True
 
     # print arguments
-    logger.log('DEBUG', 'argument check: --add %s' % ARGS.add)
-    logger.log('DEBUG', 'argument check: --check %s' % ARGS.check)
-    logger.log('DEBUG', 'argument check: --list %s' % ARGS.list)
-    logger.log('DEBUG', 'argument check: --dele %s' % ARGS.dele)
-    logger.log('DEBUG', 'argument check: --user %s' % ARGS.user)
-    logger.log('DEBUG', 'argument check: --passwd %s' % ARGS.passwd)
+    logger.log('DEBUG', 'argument check: --add %s' % args.add)
+    logger.log('DEBUG', 'argument check: --check %s' % args.check)
+    logger.log('DEBUG', 'argument check: --list %s' % args.list)
+    logger.log('DEBUG', 'argument check: --dele %s' % args.dele)
+    logger.log('DEBUG', 'argument check: --user %s' % args.user)
+    logger.log('DEBUG', 'argument check: --passwd %s' % args.passwd)
 
-    check_status = self.check_args(ARGS)
+    check_status = self.check_args(args)
     if not check_status:
       parser.print_help()
       exit(2)
 
-    return ARGS
+    return args
 
   def init_masterkey(self):
     ''' init masterkey '''
@@ -207,6 +208,7 @@ class PasswordManager(object):
     return masterkey
 
   def check_args(self, args):
+    ''' validate command line arguments '''
 
     # check command type
     arg_add = args.add
@@ -288,15 +290,16 @@ class PasswordManager(object):
       return False
 
   def add_passwd(self):
+    ''' add a password to the database '''
 
-    user = self.ARGS.user
+    user = self.args.user
 
     if self.user_exists(user):
       print 'User %s already exists.' % user
       return
 
-    passwd_plain = self.ARGS.passwd
-    passwd_enc_method = self.ARGS.enc
+    passwd_plain = self.args.passwd
+    passwd_enc_method = self.args.enc
 
     passwd_cipher = self.encrypt_passwd(passwd_plain, self.random_string(), passwd_enc_method)
 
@@ -311,14 +314,14 @@ class PasswordManager(object):
   def check_passwd(self):
     ''' check the validity of the password '''
 
-    user = self.ARGS.user
+    user = self.args.user
 
     if not self.user_exists(user):
       print 'User %s does not exist.' % user
       return
 
-    passwd_plain = self.ARGS.passwd
-    passwd_enc_method = self.ARGS.enc
+    passwd_plain = self.args.passwd
+    passwd_enc_method = self.args.enc
 
     logger.log('DEBUG', 'password enc method: %s' % passwd_enc_method)
     logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
@@ -337,7 +340,7 @@ class PasswordManager(object):
   def del_passwd(self):
     ''' delete the user from the password database '''
 
-    user = self.ARGS.user
+    user = self.args.user
 
     if not self.user_exists(user):
       print 'User %s does not exist.' % user
