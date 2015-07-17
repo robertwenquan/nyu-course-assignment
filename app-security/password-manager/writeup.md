@@ -1,5 +1,5 @@
 
- * Think about how shadow files work: If user1 and user2 have the same password, why do they show up differently? 
+## Think about how shadow files work: If user1 and user2 have the same password, why do they show up differently? 
 
   * shadow file on Linux uses salt to prevent the situation described above.
   Salt is a random string that is appended to the original plaintext password.
@@ -9,7 +9,7 @@
 
 
 
- * How can we make a bruteforcers job harder if they had the masterkey?
+## How can we make a bruteforcers job harder if they had the masterkey?
 
   This depends on how the masterkey is designed to work with the password manager.
 
