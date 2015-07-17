@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
+"""
+unittests for the password manager
+
+tested the password store, which is the sqlite3 storage
+and the password manager, for adding and checking user password
+"""
+
 import unittest
 from pwmgr import PasswordStore
 from pwmgr import PasswordManager
