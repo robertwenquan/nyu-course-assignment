@@ -10,10 +10,11 @@
 
 ### How can we make a bruteforcers job harder if they had the masterkey?
 
-  This depends on how the masterkey is designed to work with the password manager.
+ * This depends on how the masterkey is designed to work with the password manager.
 
-  The way the planitext and encrypted password is calculated and stored in this password manager is like this:
+ * The way the planitext and encrypted password is calculated and stored in this password manager is like this:
 
+ ```
   masterkey = random(16 bytes), which is saved in ~/.pwmgr.key
   initialize_vector = random(16 bytes)
   encrypted_password = ENCRYPTED_METHOD(plaintext) with masterkey and initialize_vector
@@ -21,14 +22,14 @@
   salt = random(16 bytes)
   combined_string = encrypted_password + salt
   hashed_encrypted_password = hash(combined_string)
+ ```
 
-  The information stored in the password database is like this:
+ * The information stored in the password database is like this:
+  ```
   username, enc_method, salt, hashed_encrypted_password
+  ```
 
-  In order to "decrypt" the plaintext password, bruteforcers need to generate a rainbow table for all the usernames in the dictionary with the salts.
-  With the masterkey compromised, hack will be able to encrypt any dictionary to a encrypted dictionary using the masterkey, to form another dictionary.
-  But this dictionary could not be directly used against the information stored in the database, because the data stored in the database is hashed with combined string.
-  As the salt varies for each password entry, it is almost impossible to generate the rainbow table 
+ * In order to "decrypt" the plaintext password, bruteforcers need to generate a rainbow table for all the usernames in the dictionary with the salts. With the masterkey compromised, hack will be able to encrypt any dictionary to a encrypted dictionary using the masterkey, to form another dictionary. But this dictionary could not be directly used against the information stored in the database, because the data stored in the database is hashed with combined string. As the salt varies for each password entry, it is almost impossible to generate the rainbow table 
 
   There are a few factors that increase the difficulties of the bruteforcing when the masterkey is compromised: 
 
