@@ -36,6 +36,7 @@ from Crypto.Util import Counter
 
 
 MASTER_KEY_FILE = '~/.pwmgr.key'
+INITIALIZATION_VECTOR = 'r3GK7xVX4v16VKjJ'
 PADDING_BYTE = '0'
 
 class Logger(object):
@@ -161,7 +162,7 @@ class PasswordManager(object):
         help='remove user from the password database')
     parser.add_argument('-u', '--user', default=None, help='username')
     parser.add_argument('-p', '--passwd', default=None, help='password')
-    parser.add_argument('-e', '--enc', default='ECB', help='cipher text encryption method')
+    parser.add_argument('-e', '--enc', default='ECB', help='cipher text encryption method. ECB|CTR|CBC')
     parser.add_argument('-x', '--debug', action='store_true', help='enable debugging output')
 
     ARGS = parser.parse_args(argv)
@@ -375,13 +376,17 @@ class PasswordManager(object):
       enc_method = AES.MODE_CBC
 
     ctr = Counter.new(128)
-    iv = self.random_string(16)
+    iv = INITIALIZATION_VECTOR
     key = self.masterkey
 
     if enc_method == AES.MODE_CTR:
+      # counter is only for MODE_CTR, couldn't be called with CBC or ECB
       encoder = AES.new(key, enc_method, counter=ctr)
-    else:
+    elif enc_method == AES.MODE_CBC:
+      # iv is only for CBC, though it will be ignored by CTR and ECB
       encoder = AES.new(key, enc_method, iv)
+    elif enc_method == AES.MODE_ECB:
+      encoder = AES.new(key, enc_method)
 
     logger.log('DEBUG', 'plaintext: %s' % plaintext)
     cipher = encoder.encrypt(plaintext + ((16 - len(plaintext)%16) * PADDING_BYTE))
