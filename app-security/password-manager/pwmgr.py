@@ -144,6 +144,7 @@ class PasswordManager(object):
   args = None
   command_type = ''
   masterkey = ''
+  logger = Logger()
 
   def __init__(self, argv):
     self.args = self.init_args(argv)
@@ -170,15 +171,15 @@ class PasswordManager(object):
 
     # set logger DEBUG flag
     if args.debug:
-      logger.enable_debug = True
+      self.logger.enable_debug = True
 
     # print arguments
-    logger.log('DEBUG', 'argument check: --add %s' % args.add)
-    logger.log('DEBUG', 'argument check: --check %s' % args.check)
-    logger.log('DEBUG', 'argument check: --list %s' % args.list)
-    logger.log('DEBUG', 'argument check: --dele %s' % args.dele)
-    logger.log('DEBUG', 'argument check: --user %s' % args.user)
-    logger.log('DEBUG', 'argument check: --passwd %s' % args.passwd)
+    self.logger.log('DEBUG', 'argument check: --add %s' % args.add)
+    self.logger.log('DEBUG', 'argument check: --check %s' % args.check)
+    self.logger.log('DEBUG', 'argument check: --list %s' % args.list)
+    self.logger.log('DEBUG', 'argument check: --dele %s' % args.dele)
+    self.logger.log('DEBUG', 'argument check: --user %s' % args.user)
+    self.logger.log('DEBUG', 'argument check: --passwd %s' % args.passwd)
 
     check_status = self.check_args(args)
     if not check_status:
@@ -270,18 +271,18 @@ class PasswordManager(object):
   def user_verify(self, username, password, enc_method):
     ''' verify username and hashed password from the password database '''
 
-    logger.log('DEBUG', 'username: %s' % username)
-    logger.log('DEBUG', 'password: %s' % password)
+    self.logger.log('DEBUG', 'username: %s' % username)
+    self.logger.log('DEBUG', 'password: %s' % password)
 
     salt, saved_encrypted_password = self.password_store.user_info_fetch(username)
-    logger.log('DEBUG', 'salt: %s (%d) (%s)' % (salt, len(salt), type(salt)))
-    logger.log('DEBUG', 'hashed0: %s (%d) (%s)' % (saved_encrypted_password, \
+    self.logger.log('DEBUG', 'salt: %s (%d) (%s)' % (salt, len(salt), type(salt)))
+    self.logger.log('DEBUG', 'hashed0: %s (%d) (%s)' % (saved_encrypted_password, \
         len(saved_encrypted_password), \
         type(saved_encrypted_password)))
 
     # recalculate the crypted one
     cipher_recalculated = self.encrypt_passwd(password, salt, enc_method)
-    logger.log('DEBUG', 'hashed1: %s' % cipher_recalculated)
+    self.logger.log('DEBUG', 'hashed1: %s' % cipher_recalculated)
 
     # compare them
     if cipher_recalculated == saved_encrypted_password:
@@ -303,9 +304,9 @@ class PasswordManager(object):
 
     passwd_cipher = self.encrypt_passwd(passwd_plain, self.random_string(), passwd_enc_method)
 
-    logger.log('DEBUG', 'password enc method: %s' % passwd_enc_method)
-    logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
-    logger.log('DEBUG', 'password ciphertext: %s' % passwd_cipher)
+    self.logger.log('DEBUG', 'password enc method: %s' % passwd_enc_method)
+    self.logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
+    self.logger.log('DEBUG', 'password ciphertext: %s' % passwd_cipher)
 
     self.user_add(user, passwd_cipher)
 
@@ -323,8 +324,8 @@ class PasswordManager(object):
     passwd_plain = self.args.passwd
     passwd_enc_method = self.args.enc
 
-    logger.log('DEBUG', 'password enc method: %s' % passwd_enc_method)
-    logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
+    self.logger.log('DEBUG', 'password enc method: %s' % passwd_enc_method)
+    self.logger.log('DEBUG', 'password plain text: %s' % passwd_plain)
 
     if self.user_verify(user, passwd_plain, passwd_enc_method):
       print 'Password verified for user %s' % user
@@ -333,7 +334,7 @@ class PasswordManager(object):
 
   def list_passwd(self):
     ''' list all the users' basic information from the database '''
-    logger.log('DEBUG', 'Listing all the users from the database...')
+    self.logger.log('DEBUG', 'Listing all the users from the database...')
 
     self.password_store.list_users()
 
@@ -346,7 +347,7 @@ class PasswordManager(object):
       print 'User %s does not exist.' % user
       return
 
-    logger.log('DEBUG', 'removing %s from password database.' % user)
+    self.logger.log('DEBUG', 'removing %s from password database.' % user)
     print 'user %s deleted from database' % user
     self.password_store.del_user(user)
 
@@ -392,14 +393,14 @@ class PasswordManager(object):
     elif enc_method == AES.MODE_ECB:
       encoder = AES.new(key, enc_method)
 
-    logger.log('DEBUG', 'plaintext: %s' % plaintext)
+    self.logger.log('DEBUG', 'plaintext: %s' % plaintext)
     cipher = encoder.encrypt(plaintext + ((16 - len(plaintext)%16) * PADDING_BYTE))
-    logger.log('DEBUG', 'cipher: %s' % cipher)
+    self.logger.log('DEBUG', 'cipher: %s' % cipher)
 
     hashed_cipher = SHA.new(cipher + str(salt)).hexdigest()
-    logger.log('DEBUG', 'hashed_cipher: %s' % hashed_cipher)
+    self.logger.log('DEBUG', 'hashed_cipher: %s' % hashed_cipher)
     password_full_entry = '$%s$%s$%s' % (enc_type, salt, hashed_cipher)
-    logger.log('DEBUG', 'password_entry: %s' % password_full_entry)
+    self.logger.log('DEBUG', 'password_entry: %s' % password_full_entry)
 
     return password_full_entry
 
@@ -420,6 +421,5 @@ def main():
     raise ValueError('Unsupported command type')
 
 if __name__ == '__main__':
-  logger = Logger()
   main()
 
