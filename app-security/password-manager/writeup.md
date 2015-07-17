@@ -124,4 +124,11 @@ user user_ctr deleted from database
 (v1)robert-mac:password-manager robert$ ./pwmgr.py -l
 no user in the database
 
+(v1)robert-mac:password-manager robert$ nosetests
+..
+----------------------------------------------------------------------
+Ran 2 tests in 1.357s
+
+OK
+
 ```
