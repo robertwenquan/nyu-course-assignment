@@ -330,11 +330,23 @@ class PasswordManager():
     
   @classmethod
   def random_string(cls, length=16):
+    ''' generate random text string with specified byte length'''
     char_samples = string.ascii_uppercase + string.ascii_lowercase + string.digits
     random_str = ''.join(random.choice(char_samples) for _ in range(length))
     return random_str
 
   def encrypt_passwd(self, plaintext, salt, enc_type='ECB'):
+    ''' encrypt the plaintext password with specified algorithm (ECB, CTR, CBC)
+        the plaintext password will be first encrypted with the masterkey with
+        the specified encryption alrorithm
+        then a salt will be appended to the encrypted key
+        and a final hashed key string will be computed against the combined string
+
+        the full stored password entry is composed of three elements:
+        encryption method, salt, hashed string
+        they are separated by '$', with an additional leading '$' at the beginning
+    '''
+
     if enc_type != 'ECB' and enc_type != 'CTR' and enc_type != 'CBC':
       return None
 
@@ -365,16 +377,6 @@ class PasswordManager():
 
     return password_full_entry
 
-
-class Password():
-  '''
-  class for password entry
-  '''
-
-  username = None
-  password = None
-  passwd_cipher = None
-  
 
 def main():
 
