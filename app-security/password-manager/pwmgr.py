@@ -59,6 +59,13 @@ class PasswordStore(object):
   def __init__(self):
     self.connection = sqlite3.connect('passwd_manager.db')
     self.connection.isolation_level = None
+    self.create_table_if_not_exist()
+
+  def create_table_if_not_exist(self):
+    ''' create table 'shadow' if it does not exist '''
+    cur = self.connection.cursor()
+    sql_statmt = 'CREATE TABLE IF NOT EXISTS shadow (username varchar(32), passwd varchar(64))'
+    cur.execute(sql_statmt)
 
   def user_exists(self, username):
     ''' check if the username exists in the database '''
