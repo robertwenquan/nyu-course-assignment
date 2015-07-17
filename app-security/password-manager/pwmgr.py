@@ -30,6 +30,8 @@ import argparse
 import sqlite3
 
 
+MASTER_KEY_FILE = '~/.pwmgr.key'
+
 class Logger():
   '''
   unified logger
@@ -124,10 +126,12 @@ class PasswordManager():
 
   ARGS = None
   command_type = ''
+  masterkey = ''
 
   def __init__(self, argv):
     self.ARGS = self.init_args(argv)
     self.password_store = PasswordStore()
+    self.masterkey = self.init_masterkey()
 
   def init_args(self, argv):
 
@@ -159,6 +163,26 @@ class PasswordManager():
       exit(2)
 
     return ARGS
+
+  def init_masterkey(self):
+    ''' init masterkey '''
+
+    writeback = False
+
+    try:
+      filename = os.path.expanduser(MASTER_KEY_FILE)
+      masterkey = open(filename).read()
+    except:
+      masterkey = self.random_string(64)
+      writeback = True
+
+    if writeback:
+      try:
+        open(filename, 'w').write(masterkey)
+      except:
+        return None
+
+    return masterkey
 
   def check_args(self, args):
 
