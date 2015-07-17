@@ -12,6 +12,9 @@ NetID: qw476
 N12246277
 
 Installation:
+ 1. Install Python 2.7 (only run and tested with Python 2.7)
+ 2. Install pip
+ 3. Install dependencies
  $ pip install -r requirements.txt
 
 Example:
