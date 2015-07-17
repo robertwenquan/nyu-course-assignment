@@ -24,10 +24,10 @@ import os
 import sys
 import random
 import string
+import sqlite3
+import argparse
 from passlib.hash import sha512_crypt
 from Crypto.Cipher import AES
-import argparse
-import sqlite3
 
 
 MASTER_KEY_FILE = '~/.pwmgr.key'
@@ -118,6 +118,13 @@ class PasswordStore():
       encrypted = passwd.split('$')[3]
       print "%10s %16s %s" % (user, salt, encrypted)
 
+  def del_user(self, username):
+    ''' delete user password entry from database '''
+
+    cur = self.connection.cursor()
+    sql_statmt = "DELETE from shadow WHERE username = '%s'" % username
+    cur.execute(sql_statmt)
+
 
 class PasswordManager():
   '''
@@ -139,10 +146,11 @@ class PasswordManager():
     parser.add_argument('-a', '--add', action='store_true', help='add password into database')
     parser.add_argument('-c', '--check', action='store_true', help='check password validity')
     parser.add_argument('-l', '--list', action='store_true', help='list users from the password database')
+    parser.add_argument('-d', '--dele', action='store_true', help='remove user from the password database')
     parser.add_argument('-u', '--user', default=None, help='username')
     parser.add_argument('-p', '--passwd', default=None, help='password')
     parser.add_argument('-e', '--enc', default='ECB', help='cipher text encryption method')
-    parser.add_argument('-d', '--debug', action='store_true', help='enable debugging output')
+    parser.add_argument('-x', '--debug', action='store_true', help='enable debugging output')
 
     ARGS = parser.parse_args(argv)
 
@@ -154,6 +162,7 @@ class PasswordManager():
     logger.log('DEBUG', 'argument check: --add %s' % ARGS.add)
     logger.log('DEBUG', 'argument check: --check %s' % ARGS.check)
     logger.log('DEBUG', 'argument check: --list %s' % ARGS.list)
+    logger.log('DEBUG', 'argument check: --dele %s' % ARGS.dele)
     logger.log('DEBUG', 'argument check: --user %s' % ARGS.user)
     logger.log('DEBUG', 'argument check: --passwd %s' % ARGS.passwd)
 
@@ -190,19 +199,22 @@ class PasswordManager():
     arg_add = args.add
     arg_chk = args.check
     arg_list = args.list
+    arg_del = args.dele
 
-    if not arg_add and not arg_chk and not arg_list:
+    if not arg_add and not arg_chk and not arg_list and not arg_del:
       # must choose one command type
       return False
 
-    if arg_add and not arg_chk and not arg_list:
+    if arg_add and not arg_chk and not arg_list and not arg_del:
       self.command_type = 'add'
-    elif not arg_add and arg_chk and not arg_list:
+    elif not arg_add and arg_chk and not arg_list and not arg_del:
       self.command_type = 'check'
-    elif not arg_add and not arg_chk and arg_list:
+    elif not arg_add and not arg_chk and arg_list and not arg_del:
       self.command_type = 'list'
       # list doesn't need any extra argument
       return True
+    elif not arg_add and not arg_chk and not arg_list and arg_del:
+      self.command_type = 'del'
     else:
       # only one command type could be selected
       return False
@@ -210,6 +222,10 @@ class PasswordManager():
     # check user and pass
     arg_user = args.user
     arg_pass = args.passwd
+
+    if arg_del and arg_user:
+      # --dele only needs --user
+      return True
 
     if not arg_user or not arg_pass:
       # username and password must be valid
@@ -264,13 +280,13 @@ class PasswordManager():
     print 'add passwd finished'
 
   def check_passwd(self):
+    ''' check the validity of the password '''
 
     user = self.ARGS.user
 
     if not self.user_exists(user):
       print 'User %s does not exist.' % user
       return
-
 
     passwd_plain = self.ARGS.passwd
     passwd_enc_method = self.ARGS.enc
@@ -288,6 +304,18 @@ class PasswordManager():
     logger.log('DEBUG', 'Listing all the users from the database...')
 
     self.password_store.list_users()
+
+  def del_passwd(self):
+    ''' delete the user from the password database '''
+
+    user = self.ARGS.user
+
+    if not self.user_exists(user):
+      print 'User %s does not exist.' % user
+      return
+
+    logger.log('DEBUG', 'removing %s from password database.' % user)
+    self.password_store.del_user(user)
     
   @classmethod
   def random_string(cls, length=16):
@@ -329,6 +357,8 @@ def main():
     manager.check_passwd()
   elif manager.command_type == 'list':
     manager.list_passwd()
+  elif manager.command_type == 'del':
+    manager.del_passwd()
   else:
     raise ValueError('Unsupported command type')
 
