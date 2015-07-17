@@ -1,21 +1,15 @@
 * Using your favorite language, implement a little app that has the following features:
 
  * Given a (Username, Password) pair in ASCII; store the pair to a file
-   * ```
-   $ python pwmgr.py -a -u username -p password
-   ```
+   * $ python pwmgr.py -a -u username -p password
    * password will be saved in "password_manager.db" with sqlite3
  * Given a (Username, Password) pair in ASCII; check if the username exists and if the password matches the one stored in a file.
-   ```
-   $ python pwmgr.py -c -u username -p password
-   ```
+   * $ python pwmgr.py -c -u username -p password
  * Using a flag the user should be able to choose ECB, CTR or CBC modes.
    * default it's encoded in ECB mode, use -e to switch encryption method
-   ```
-   $ python pwmgr.py -a -u username -p password -e CTR
-   $ python pwmgr.py -a -u username -p password -e CBC
-   $ python pwmgr.py -a -u username -p password -e ECB
-   ```
+   * $ python pwmgr.py -a -u username -p password -e CTR
+   * $ python pwmgr.py -a -u username -p password -e CBC
+   * $ python pwmgr.py -a -u username -p password -e ECB
  * Program does not need to be interactive. Command line interface is sufficient.
    * There is no user interaction in my implementation
  * Java has great crypto extensions and c/c++ has openssl, however feel free to use python or another scripting language. 
