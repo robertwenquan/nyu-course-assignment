@@ -85,7 +85,14 @@ class PasswordStore(object):
     cur.execute(sql_statmt)
     # check error with the execution
 
-  def user_verify(self, username):
+  def user_purge(self):
+    ''' remove all password entries from the database '''
+    ''' TESTING ONLY '''
+    cur = self.connection.cursor()
+    sql_statmt = "DELETE from shadow"
+    cur.execute(sql_statmt)
+
+  def user_info_fetch(self, username):
     ''' verify username and hashed password from the database '''
     cur = self.connection.cursor()
     sql_statmt = "SELECT passwd FROM shadow WHERE username = '%s'" % username
@@ -263,7 +270,7 @@ class PasswordManager(object):
     logger.log('DEBUG', 'username: %s' % username)
     logger.log('DEBUG', 'password: %s' % password)
 
-    salt, saved_encrypted_password = self.password_store.user_verify(username)
+    salt, saved_encrypted_password = self.password_store.user_info_fetch(username)
     logger.log('DEBUG', 'salt: %s (%d) (%s)' % (salt, len(salt), type(salt)))
     logger.log('DEBUG', 'hashed0: %s (%d) (%s)' % (saved_encrypted_password, \
         len(saved_encrypted_password), \
