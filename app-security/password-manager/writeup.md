@@ -1,15 +1,14 @@
 
-## Think about how shadow files work: If user1 and user2 have the same password, why do they show up differently? 
+### Think about how shadow files work: If user1 and user2 have the same password, why do they show up differently? 
 
-  * shadow file on Linux uses salt to prevent the situation described above.
-  Salt is a random string that is appended to the original plaintext password.
-  Then the combined string will be hashed to another string that is stored in the shadow file.
-  As the salt is randomly chosen for each password, even if the plaintext password is the same, the salt will most likely to be different. Hence the combined string will be different which leads to a different hashed string that shows up in the shadow file.
-  In order to validate the password, the salt string must be there to compose the combined string with the plaintext. When the user enters the password, the known salt will be appended to the password as the new combined string. Then the combined string will be hashed using the same alrogithm, resulting in a new hashed string. If the new hashed string is identical to the stored hashed string in the shadow file, then the password matches. Otherwise the password eos not match. This makes it possible to validate password without storing the plaintext password in the file.
+ * shadow file on Linux uses salt to prevent the situation described above.
+ * Salt is a random string that is appended to the original plaintext password.
+ * Then the combined string will be hashed to another string that is stored in the shadow file.
+ * As the salt is randomly chosen for each password, even if the plaintext password is the same, the salt will most likely to be different. Hence the combined string will be different which leads to a different hashed string that shows up in the shadow file.
+ * In order to validate the password, the salt string must be there to compose the combined string with the plaintext. When the user enters the password, the known salt will be appended to the password as the new combined string. Then the combined string will be hashed using the same alrogithm, resulting in a new hashed string. If the new hashed string is identical to the stored hashed string in the shadow file, then the password matches. Otherwise the password eos not match. This makes it possible to validate password without storing the plaintext password in the file.
 
 
-
-## How can we make a bruteforcers job harder if they had the masterkey?
+### How can we make a bruteforcers job harder if they had the masterkey?
 
   This depends on how the masterkey is designed to work with the password manager.
 
