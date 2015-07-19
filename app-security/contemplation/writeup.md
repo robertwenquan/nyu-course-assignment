@@ -8,13 +8,13 @@ In this article, I will start with what vulnerability is, and why vulnerability 
 
 #### Basic Concepts
 
-According to [1], a vulnerability is a weakness which allows an attacker to reduce a system's information assurance.
-
-what is security vulnerabilities
+According to [1], a vulnerability is a weakness which allows an attacker to reduce a system's information assurance. There are three factors for the vulnerability: the system has potential flaw, the attacker acquires the access to the flaw, and the capability of the attacker to exploit the flaw. It is important to distinguish vulnerability from risk. While a vulnerability may be at risk that introduces significant losses, some vulnerability might trigger little interest from the security export community. Withougt loss of potential large values, hhhhhhhhhhhhhhhhhhhhhhh
 
 why is vulnerability disclosure necessary and important
 
 #### Security Vulnerability Disclosure Comparison Analysis
+
+ There are a few security vulnerability disclosure methods. 
 
  * Assumption
 
