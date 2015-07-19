@@ -16,6 +16,12 @@ Without any managed disclosure guide, vulnerabilities will still be found every 
 
  There are a few security vulnerability disclosure methods. 
 
+ Full disclosure is an extreme way to disclose. It is straightforward to understand that for any vulnerability that is found, it should be made public with full details. It might be the most easy process to follow because of no extra effort involved. Anyone who finds a vulnerability and proves it, just choose a media, either a public maillist, forum or an academic conference to disclose. And that is it.
+
+ No disclosure is another extream way to not disclose any information upon vulnerability found. It is also easy to follow because of no extra effort involed. We will talk about the side effects and compare with each other afterwards.
+ 
+ Collaborative disclosure is the compromise of all involved partied. In combine of full disclosure and no disclosure, it provides privilege to the software vendor that is affected in the vulnerability to have access to full disclosure.
+
  As the pros and cons may vary due to different subject. For example, for people who knows how to protect themself against security flaws, they may benefit from some disclosure method. But meanwhile the software company that are affected by the security vulnerability may loose business value. In this article when the author talks about the pros and cons for a disclosure method, he will try to address the most part of the software user communities rather than merely to the business side or the security expert. 
 
  * Full discloure
