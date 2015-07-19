@@ -8,6 +8,8 @@ In this article, I will start with what vulnerability is, and why vulnerability 
 
 #### Basic Concepts
 
+According to [1], a vulnerability is a weakness which allows an attacker to reduce a system's information assurance.
+
 what is security vulnerabilities
 
 why is vulnerability disclosure necessary and important
@@ -43,8 +45,9 @@ why is vulnerability disclosure necessary and important
 In this article, the concept of security vulnerability is introduced. The necessecity of vulnerability disclosure is introduced afterwards. A few common vulnerability disclosure methods are discussed and compared with each other. Although there is no definitive answer about which disclosure method is the best, the author states his preference on collaborative disclosure due to its model maturity and comprehensive consideration for all involved parties. 
 
 #### Reference
- * 
- * [1] http://www.cert.org/vulnerability-analysis/vul-disclosure.cfm?
+ * [1] https://en.wikipedia.org/wiki/Vulnerability_(computing)
+
+ * [1] http://www.cert.org/vulnerability-analysis/vul-disclosure.cfm
  * [2] https://en.wikipedia.org/wiki/Responsible_disclosure
  * https://en.wikipedia.org/wiki/Full_disclosure_(computer_security)
  * [3] https://en.wikipedia.org/wiki/Vulnerability_(computing)#Vulnerability_disclosure
