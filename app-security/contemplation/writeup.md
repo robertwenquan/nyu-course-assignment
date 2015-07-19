@@ -15,7 +15,8 @@ why is vulnerability disclosure necessary and important
 #### Security Vulnerability Disclosure Comparison Analysis
 
  * Assumption
-  As the pros and cons may vary due to different subject. For example, for people who knows how to protect themself against security flaws, they may benefit from some disclosure method. But meanwhile the software company that are affected by the security vulnerability may loose business value. In this article when the author talks about the pros and cons for a disclosure method, he will try to address the most part of the software user communities rather than merely to the business side or the security expert. 
+
+ As the pros and cons may vary due to different subject. For example, for people who knows how to protect themself against security flaws, they may benefit from some disclosure method. But meanwhile the software company that are affected by the security vulnerability may loose business value. In this article when the author talks about the pros and cons for a disclosure method, he will try to address the most part of the software user communities rather than merely to the business side or the security expert. 
 
  * Full discloure
   * pros
