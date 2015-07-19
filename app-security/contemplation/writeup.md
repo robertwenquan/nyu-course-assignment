@@ -24,12 +24,15 @@ why is vulnerability disclosure necessary and important
   * cons
    * the first awareness may be leveraged by hackers as well.
    * commercial software company will lose value on this.
+
  * Coordinated disclosure
   * pros
   * cons
+
  * Disclosure via bug bounty
   * pros
   * cons
+
  * Private vulnerability sales
   * pros
   * cons
