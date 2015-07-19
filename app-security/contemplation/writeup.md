@@ -44,11 +44,10 @@ In this article, the concept of security vulnerability is introduced. The necess
 
 #### Reference
  * [1] https://en.wikipedia.org/wiki/Vulnerability_(computing)
-
- * [1] http://www.cert.org/vulnerability-analysis/vul-disclosure.cfm
- * [2] https://en.wikipedia.org/wiki/Responsible_disclosure
- * https://en.wikipedia.org/wiki/Full_disclosure_(computer_security)
- * [3] https://en.wikipedia.org/wiki/Vulnerability_(computing)#Vulnerability_disclosure
- * [4] https://en.wikipedia.org/wiki/Zero-day_(computing)
- * http://www.forbes.com/sites/andygreenberg/2012/03/23/shopping-for-zero-days-an-price-list-for-hackers-secret-software-exploits/
+ * [2] http://www.cert.org/vulnerability-analysis/vul-disclosure.cfm
+ * [3] https://en.wikipedia.org/wiki/Responsible_disclosure
+ * [4] https://en.wikipedia.org/wiki/Full_disclosure_(computer_security)
+ * [5] https://en.wikipedia.org/wiki/Vulnerability_(computing)#Vulnerability_disclosure
+ * [6] https://en.wikipedia.org/wiki/Zero-day_(computing)
+ * [7] http://www.forbes.com/sites/andygreenberg/2012/03/23/shopping-for-zero-days-an-price-list-for-hackers-secret-software-exploits/
 
