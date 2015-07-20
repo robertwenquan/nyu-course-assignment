@@ -18,7 +18,7 @@ Without any managed disclosure guide, vulnerabilities will still be found every 
 
  Full disclosure is an extreme way to disclose. It is straightforward to understand that for any vulnerability that is found, it should be made public with full details. It might be the most easy process to follow because of no extra effort involved. Anyone who finds a vulnerability and proves it, just choose a media, either a public maillist, forum or an academic conference to disclose. And that is it.
 
- No disclosure is another extream way to not disclose any information upon vulnerability found. It is also easy to follow because of no extra effort involed. We will talk about the side effects and compare with each other afterwards.
+ No disclosure is another extream way to not disclose any information upon vulnerability been found. It is also easy to follow because of no extra effort involed. We will talk about the side effects and compare with each other afterwards.
  
  Collaborative disclosure is the compromise of all involved partied. In combination of full disclosure and no disclosure, it provides privilege to the software vendor that is affected in the vulnerability to have access to full disclosure. At the same time it only gives a limited variable buffer for the vendor to fix the vulnerability before releasing to the public audiences. Determing the length of the buffer involves netogiation between involved parties affected by the vulnerability, possily including the target software users, software vendor, independent vulnerability management organization, governmental organization, independent security analyst or researchers.
 
@@ -26,25 +26,9 @@ Without any managed disclosure guide, vulnerabilities will still be found every 
 
  As the pros and cons may vary due to different subject. For example, for people who knows how to protect themself against security flaws, they may benefit from some disclosure method. But meanwhile the software company that are affected by the security vulnerability may loose business value. In this article when the author talks about the pros and cons for a disclosure method, he will try to address the most part of the software user communities rather than merely to the business side or the security expert. 
 
- * Full discloure
-  * pros
-   * transparency. people who are affected get the first awareness.
-   * very fast response from vendor for the fix or workaround.
-  * cons
-   * the first awareness may be leveraged by hackers as well.
-   * commercial software company will lose value on this.
+ There is another disclosure method that involves incentives. The bug bounty program offered by many software vendors opens a way to reach all the security experts in the world to help enhance the security of their softwares. Anyone who could find an unknown security vulnerability would get corresponding rewards based on their pre-classified level associated with a reward amount. The reward could be either monetary items, or swag of that company, to names on the fame of walls.
 
- * Coordinated disclosure
-  * pros
-  * cons
-
- * Disclosure via bug bounty
-  * pros
-  * cons
-
- * Private vulnerability sales
-  * pros
-  * cons
+ Among all the vulnerability disclosure methods, the author inclines to believe the collaborative disclosure is the best way to disclose security vulnerabilities.
 
 #### Conclusion
 
