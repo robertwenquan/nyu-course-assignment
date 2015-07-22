@@ -20,3 +20,24 @@ def get_text2(name):
 
 print get_text2("John")
 
+
+def strong_decorate(func):
+    def func_wrapper(name):
+        return "<strong>{0}</strong>".format(func(name))
+    return func_wrapper
+
+def div_decorate(func):
+    def func_wrapper(name):
+        return "<div>{0}</div>".format(func(name))
+    return func_wrapper
+
+
+
+@div_decorate
+@p_decorate
+@strong_decorate
+def get_text3(name):
+   return "hey, {0} how are you".format(name)
+
+print get_text3("Jake")
+
