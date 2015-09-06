@@ -1,5 +1,6 @@
 ### Crawler
 
+```
 In this assignment, you are asked to write a (very primitive) foused web rawler in Python that attempts
 to do a limited rawl of the web. The purpose of this assignment is to learn about rawling, to start
 programming in Python, and to learn a bit about the various strutures and features found in web pages
@@ -90,4 +91,4 @@ To summarize, your task is to build a basi web rawler in python. You may use omp
 as HTML parsing, downloading a file loated at a URL, and Robot Exlusion, but of ourse you should not
 simply download and reuse a omplete Python rawler. You should maintain your own data strutures for
 the queue, figure out how to get results from a searh engine (using APIs as needed), et.
-
+```
