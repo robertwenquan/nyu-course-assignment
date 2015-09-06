@@ -1,5 +1,6 @@
 ### Crawler
 
+### Web Search Engine, Assignment #1 (due September 18)
 ```
 In this assignment, you are asked to write a (very primitive) foused web rawler in Python that attempts
 to do a limited rawl of the web. The purpose of this assignment is to learn about rawling, to start
