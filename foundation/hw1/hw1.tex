@@ -37,9 +37,21 @@ p  q  p->q  !p   b   !q   b->!q
 
 So it's not a tautology.
 
-\textbf{4. Using c for "it is cold" and w for "it is windy", write "To be windy it is necessary that it be cold" in symbols.}
+\textbf{4. Using c for ``it is cold'' and w for ``it is windy'', write ``To be windy it is necessary that it be cold'' in symbols.}
+
+``To be windy it is necessary that it be cold'' means when it is windy it is cold but when it is cold it might be windy or not. ``is is cold'' is the necessary condition of ``it is windy''. ``it is windy'' is the sufficient condition of ``it is cold''
+Therefore $w \to c$
 
 \textbf{5. Determine whether the following compound proposition is satisfiable $(p \to q) \land (q \to \lnot p)\land (p \lor q)$}
+
+p  q  (p \to q)  \lnot p  (q \to \lnot p)  (p \lor q)  a \land b \land c
+1  1  1          0         0                1          0
+1  0  0          0         1                1          0
+0  0  1          1         1                0          0
+0  1  1          1         1                1          1
+
+According to the truth table, we know the compund proposition is true when p is false and q is true.
+Therefore the compound proposition is satisfiable.
 
 In the following 5 problems P(x,y) means "x+2y=xy", where x and y are integers. Determine the truth value of the statement.
 
@@ -67,27 +79,79 @@ $\therefore \lnot r$
 
 12. Show that the premises "Everyone who read the textbook passed the exam", and "Ed read the textbook" imply the conclusion "Ed passed the exam".
 
-13. Determine whether the premises "No juniors left campus for the weekend" and "Some math majors are not juniors" imply the conclusion "Some math majors left campus for the weekend."
+Let's note R(c) as ``c read the book'' and P(c) as ``c passed the exam'', and the domain of c is any people.
+We have:
+\forall x R(x) \to P(x)
+x = Ed
+R(x)
+
+\therefore P(x)
+
+13. Determine whether the premises ``No juniors left campus for the weekend'' and ``Some math majors are not juniors'' imply the conclusion "Some math majors left campus for the weekend."
+
+From the above two premises, we can say the junior portion of the math majors did not leave campus for the week. But we have no evidence to show whether the non-junior portion of the math majors left the campus or not.
+
+If none of the non-junior math majors left campus, which is possible, this contradicts the conclusion that "some math majors left campus for the weekend". 
+
+Therefore we can not drive the conclusion based on the two premises.
 
 14. Show that the premise "My daughter visited Europe last week" implies the conclusion "Someone visited Europe last week".
 
-15. Give a proof by contradiction of the following: “If n is an odd integer, then n2 is odd”.
+Note E(x) is ``x visited Europe last week''
+And we have E(p), when p denotes ``my daughter''
+Therefore \exists x E(x) that means ``Someone visited Europe last week'
+
+15. Give a proof by contradiction of the following: ``If n is an odd integer, then $n^2$ is odd''.
+Assume $n^2$ is even, then n^2 == 2k
 
 16. Consider the following theorem: If x is an odd integer, then x+2 is odd. Give a direct proof of this theorem
 
+If x is an odd integer, then x = 2k + 1 for k is an integer, then x+2 = 2k + 1 + 2 = 2k + 3 = 2(k+1) + 1
+As k is an integer, k + 1 must be integer as well. Let us demote c = k + 1 so we have x+2 = 2c + 1
+Hence x+2 is odd.
+
 17. Consider the following theorem: If x is an odd integer, then x+2 is odd. Give a proof by contraposition of this theorem.
+
+Denote q is ``x+2 is odd'', p is ``x is an odd integer''
+Assume \lnot q is true. That is x+2 is even, so we have x+2 = 2k for some integer k.
+Then we have x = 2k-2 = 2(k-1)
+As k is an integer, k-1 must be an integer as well. Denote c = k-1 we have x = 2c
+So x is even which means \lnot p is true
+So we have \lnot q \to \lnot p
+Therefore p \to q
 
 18. Consider the following theorem: If x is an odd integer, then x+2 is odd. Give a proof by contradiction of this theorem.
 
+Denote q is ``x+2 is odd'', p is ``x is an odd integer''
+Assume x+2 is even, so we have x+2 = 2k for some integer k.
+Then we have x = 2k-2 = 2(k-1)
+As k is an integer, k-1 must be an integer as well. Denote c = k-1 we have x = 2c
+So x is even which contradicts with the premise
+So the assumption x+2 is even is false so x+2 is odd.
+
 19. Prove: if m and n are even integers, then mn is a multiple of 4.
+As m and n are even integers, we have mn = 2c2k for some integer c and k.
+mn = 4ck
+As c and k are both integers, let us have i = ck. i must be another integer.
+So we have mn = 4i
+Therefore mn is a multiple of 4.
 
 20. Prove or disprove: For all real numbers x and y, $\lfloor x-y\rfloor =\lfloor x \rfloor -\lfloor y \rfloor$.
+Let us have x = 3.2, y = 1.9
+$\lfloor x-y\rfloor = \lfloor 1.3 \rfloor = 1
+$\lfloor x \rfloor - \lfloor y \rfloor = \lfloor 3.2 \rfloor - \lfloor 1.9 \rfloor = 3 - 1 = 2
 
-21. Prove that the following three statements about positive integers n are equivalent: (a) n is even; (b) n3+1 is odd; (c) n2-1 is odd.
+21. Prove that the following three statements about positive integers n are equivalent: (a) n is even; (b) $n^3+1$ is odd; (c) $n^2-1$ is odd.
+``n is even'' means n = 2k
 
 22. Given any 40 people, prove that at least four of them were born in the same month of the year.
 
-23. Prove that the equation $2x2+y2=14$ has no positive integer solutions.
+Assume at most three people were born in the same month of the year, there will be at most 36 people. In this case it is less than 40 people that contradicts with the ``Given any 40 people'' premise. 
+Thus my assumption is false and the statement is true.
+
+23. Prove that the equation $2x^2+y^2=14$ has no positive integer solutions.
+
+
 
 \end{document}
 
