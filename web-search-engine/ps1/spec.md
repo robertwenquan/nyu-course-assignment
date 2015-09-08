@@ -13,10 +13,11 @@
 * Downloading pages
  * use urllib
  * urlretrieve, urlget
+ * requests
 * Parsing
  * htmllib, xmllib
- * normal url
- * url on image
+ * normal url <a href>
+ * url on image <img>
  * url in javascript
  * url in Flash?
 * Ambiguity of URLs

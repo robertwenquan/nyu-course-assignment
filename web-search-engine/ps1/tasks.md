@@ -18,3 +18,8 @@
 * Integration
  * Goal: Make the basic components work together
 
+* Link examples
+ * <a href=link_url>text</a>
+ * <a href=http://sdfs.sdfs.fsdf./sfsdfdf>text</a>
+ * <a href=sfsdfdf/sdfsd/sdfsd.html>text</a>
+
