@@ -17,9 +17,25 @@
 \textbf{2. Determine whether $(p \to q) \land (\lnot p \to q) \equiv q$.}
 
 Answer: xxx
+(p->q) and (!p->q) === q
+p  q  !p  p->q  !p->q   res
+0  1  1   1     1       1
+1  0  0   0     1       0
+0  0  1   1     0       0
+1  1  0   1     1       1
+
+res === q
+
 \newline
 
 \textbf{3. Determine whether this proposition is a tautology: $((p \to q) \land \lnot p) \to \lnot q$.}
+p  q  p->q  !p   b   !q   b->!q
+0  1  1     1    1   0    0
+1  0  0     0    0   1    1
+0  0  1     1    1   1    1
+1  1  1     0    0   0    1
+
+So it's not a tautology.
 
 \textbf{4. Using c for "it is cold" and w for "it is windy", write "To be windy it is necessary that it be cold" in symbols.}
 
