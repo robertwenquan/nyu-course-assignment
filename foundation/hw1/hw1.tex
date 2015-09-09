@@ -26,8 +26,6 @@ p  q  !p  p->q  !p->q   res
 
 res === q
 
-\newline
-
 \textbf{3. Determine whether this proposition is a tautology: $((p \to q) \land \lnot p) \to \lnot q$.}
 p  q  p->q  !p   b   !q   b->!q
 0  1  1     1    1   0    0
@@ -44,26 +42,57 @@ Therefore $w \to c$
 
 \textbf{5. Determine whether the following compound proposition is satisfiable $(p \to q) \land (q \to \lnot p)\land (p \lor q)$}
 
-p  q  (p \to q)  \lnot p  (q \to \lnot p)  (p \lor q)  a \land b \land c
+$p  q  (p \to q)  \lnot p  (q \to \lnot p)  (p \lor q)  a \land b \land c$
 1  1  1          0         0                1          0
 1  0  0          0         1                1          0
 0  0  1          1         1                0          0
 0  1  1          1         1                1          1
 
-According to the truth table, we know the compund proposition is true when p is false and q is true.
+According to the truth table, we know the compound proposition is true when p is false and q is true.
 Therefore the compound proposition is satisfiable.
 
 In the following 5 problems P(x,y) means "x+2y=xy", where x and y are integers. Determine the truth value of the statement.
 
+According to ``x+2y=xy'', we have $x = \frac{2y}{y-1}$ and $y = \frac{x}{x-2}$
+
 \textbf{6. $\forall x \exists yP(x,y)$.}
+$x = \frac{2y}{y-1} = 2 + \frac{2}{y-1}$
+As $\frac{2}{y-1}$ is non zero, x could not be 2
+Therefore $\forall x \exists yP(x,y)$ is false
 
 \textbf{7. $\exists x \forall yP(x,y)$.}
+As $y = \frac{x}{x-2}$, 
+assume when x = c P(x,y) satisfies with any value of y, 
+we have $y = \frac{c}{c-2}$ satisifes with any value of y
+the value of the left side varies when y varies, 
+but the value of the right side remains constant.
+the inequality contradicts with the conclusion.
+Therefore the assumption of x = c is false.
+That means we can not find a value of x that satisfies P(x,y) with any value of y.
+Hence $\exists x \forall yP(x,y)$ is false
 
 \textbf{8. $\forall y \exists xP(x,y)$.}
+$y = \frac{x}{x-2} = \frac{x-2+2}{x-2} = 1 + \frac{2}{x-2}$ 
+As $\frac{2}{x-2}$ is non zero, y could not be 1
+Therefore $\forall y \exists xP(x,y)$ is false
 
 \textbf{9. $\exists y \forall xP(x,y)$.}
+As $x = \frac{2y}{y-1}$, 
+assume when y = c P(x,y) satisfies with any value of x,
+we have $x = \frac{2c}{c-1}$ satisfies with any value of x
+the value of the left side varies when x varies,
+but the value of the right side remains constant.
+the inequality contradicts with the conclusion.
+Therefore the assumption of y = c is false.
+That means we can not find a value of y that satisfies P(x,y) with any value of x.
+Hence $\exists y \forall xP(x,y)$ is false.
 
 \textbf{10. $\lnot \forall x \exists y \lnot P(x,y)$.}
+
+$\lnot \forall x \exists y \lnot P(x,y)$
+$\exists x \forall y \lnot \lnot P(x,y)$
+$\exists x \forall y P(x,y)$
+According to problem 7, the truth value of $\lnot \forall x \exists y \lnot P(x,y)$ is false.
 
 \textbf{11. Determine whether the following argument is valid:}
 
@@ -76,6 +105,13 @@ In the following 5 problems P(x,y) means "x+2y=xy", where x and y are integers. 
 ----------------
 
 $\therefore \lnot r$
+
+Assume r is true, 
+we have $\lnot (p \lor q) === \lnot p \land \lnot q$ so we have p and q are both false
+to satisfy both {$p \to r$} and {$q \to r$} with p === false and q === false,
+r could be either true or false
+Hence the conclusion $\lnot r$ does not hold
+Therefore the argument is false
 
 12. Show that the premises "Everyone who read the textbook passed the exam", and "Ed read the textbook" imply the conclusion "Ed passed the exam".
 
@@ -102,7 +138,16 @@ And we have E(p), when p denotes ``my daughter''
 Therefore \exists x E(x) that means ``Someone visited Europe last week'
 
 15. Give a proof by contradiction of the following: ``If n is an odd integer, then $n^2$ is odd''.
-Assume $n^2$ is even, then n^2 == 2k
+Let p is ``n is an odd integer'', q is ``$n^2$ is odd''
+\lnot q is ``$n^2$ is even''
+Assume $n^2$ is even, then $n^2 == 2k$ with k as an integer
+As n is an odd integer, let n=2a+1 with a as an integer, so we have $n^2 = 4a^2 + 4a + 1$
+So we have $4a^2 + 4a + 1 == 2k$
+$k = 2a^2 + 2a + \frac{1}{2}$
+As a is integer, $2a^2 + 2a$ must be integer, and $2a^2 + 2a + \frac{1}{2}$ must not be an integer.
+This contradicts with ``a is an integer''
+As the assumption leads to contradiction, we know the assumption ``$n^2$ is even'' is false
+Hence ``$n^2$ is odd'' is true
 
 16. Consider the following theorem: If x is an odd integer, then x+2 is odd. Give a direct proof of this theorem
 
@@ -142,16 +187,60 @@ $\lfloor x-y\rfloor = \lfloor 1.3 \rfloor = 1
 $\lfloor x \rfloor - \lfloor y \rfloor = \lfloor 3.2 \rfloor - \lfloor 1.9 \rfloor = 3 - 1 = 2
 
 21. Prove that the following three statements about positive integers n are equivalent: (a) n is even; (b) $n^3+1$ is odd; (c) $n^2-1$ is odd.
-``n is even'' means n = 2k
+In order to prove (a), (b) and (c) are equivalent, we would like to prove any condition could lead to any other.
+``n is even'' means n = 2k when k is an integer.
+Hence $n^3 + 1 = 8k^3 + 1 = 2(4k^3) + 1$
+let c = 4k^3, we have $n^3 + 1 = 2c + 1
+so $n^3 + 1 is odd
+Therefore we have (a) \to (b)
+
+Likewise $n^2-1 = (n+1)(n-1) = (2k+1)(2k-1) = 4k^2 - 1 = 2(2k^2-1) + 1$
+let c = 2k^2-1, we have $n^2-1 = 2c + 1
+so $n^2-1 is odd
+Therefore we have (a) \to (c)
+
+Let's have (c) $n^2-1$ is odd, so $n^2 - 1 + 1 = n^2$ must be even
+let p is ``n^2 is even'', q is ``n is even''
+\lnot q is ``n is odd'', then we will have n = 2k+1, n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1
+let c = 2k^2 + 2k, we have n^2 = 2c + 1
+n^2 is odd that contradicts with p
+so p->q, meaning when n^2 is even, n is even as well
+Thus $n^2-1$ is odd, n^2 is even, and n is even
+Therefore we have (c) \to (a)
+
+Let's have (b) $n^3+1$ is odd, so $n^3 + 1 - 1 = n^3$ must be even
+let p is ``n^3 is even'', q is ``n is even''
+\lnot q is ``n is odd'', then we will have $n = 2k+1$, $n^3 = 8k^3 + 12k^2 + 6k + 1 = 2(k^3 + 6k^2 + 3k) + 1$
+let c = k^3 + 6k^2 + 3k, we have n^3 = 2c + 1
+n^3 is odd that contradicts with p
+so p->q, meaning when n^3 is even, n is even as well
+Thus $n^3+1$ is odd, n^3 is even, and n is even
+Therefore we have (b) \to (a)
+
+So (a), (b) and (c) are equivalent
 
 22. Given any 40 people, prove that at least four of them were born in the same month of the year.
-
 Assume at most three people were born in the same month of the year, there will be at most 36 people. In this case it is less than 40 people that contradicts with the ``Given any 40 people'' premise. 
 Thus my assumption is false and the statement is true.
 
 23. Prove that the equation $2x^2+y^2=14$ has no positive integer solutions.
+As 2x^2 and y^2 both are incremental functions as x or y grows,
+when x and y are positive integers, there are only the following combinations 2x^2 + y^2 is below 14
+x  y  2x^2 + y^2
+0  0   0
+0  1   1
+0  2   4
+0  3   9
+1  0   2
+1  1   3
+1  2   6
+1  3  11
+2  0   8
+2  1   9
+2  2  12
 
-
+As we can see, none of them could lead to $2x^2+y^2=14$
+Hence the equation $2x^2+y^2=14$ has no positive integer solutions.
 
 \end{document}
 
