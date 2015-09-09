@@ -1,6 +1,9 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-
+\usepackage{geometry}     
+\usepackage{latexsym}
+								% TeX will automatically convert eps --> pdf in pdflatex	
+\usepackage{amssymb}
 \title{CS6003-INET Foundation of Computer Science Problem Set1}
 \author{Robert Wen (robert.wen@nyu.edu), NetID: qw476, N12246277}
 \date{September 2015}
@@ -101,11 +104,8 @@ According to problem 7, the truth value of $\lnot \forall x \exists y \lnot P(x,
 \textbf{$q \to r$}
 
 \textbf{$\lnot (p \lor q)$}
-
 ----------------
-
-$\therefore \lnot r$
-
+$\therefore$ $\lnot r$
 Assume r is true, 
 we have $\lnot (p \lor q) === \lnot p \land \lnot q$ so we have p and q are both false
 to satisfy both {$p \to r$} and {$q \to r$} with p === false and q === false,
@@ -117,11 +117,11 @@ Therefore the argument is false
 
 Let's note R(c) as ``c read the book'' and P(c) as ``c passed the exam'', and the domain of c is any people.
 We have:
-\forall x R(x) \to P(x)
+$\forall x R(x) \to P(x)$
 x = Ed
 R(x)
 
-\therefore P(x)
+$\therefore$ P(x)
 
 13. Determine whether the premises ``No juniors left campus for the weekend'' and ``Some math majors are not juniors'' imply the conclusion "Some math majors left campus for the weekend."
 
@@ -135,11 +135,11 @@ Therefore we can not drive the conclusion based on the two premises.
 
 Note E(x) is ``x visited Europe last week''
 And we have E(p), when p denotes ``my daughter''
-Therefore \exists x E(x) that means ``Someone visited Europe last week'
+Therefore $\exists$ x E(x) that means ``Someone visited Europe last week'
 
 15. Give a proof by contradiction of the following: ``If n is an odd integer, then $n^2$ is odd''.
 Let p is ``n is an odd integer'', q is ``$n^2$ is odd''
-\lnot q is ``$n^2$ is even''
+$\lnot$ q is ``$n^2$ is even''
 Assume $n^2$ is even, then $n^2 == 2k$ with k as an integer
 As n is an odd integer, let n=2a+1 with a as an integer, so we have $n^2 = 4a^2 + 4a + 1$
 So we have $4a^2 + 4a + 1 == 2k$
@@ -158,12 +158,12 @@ Hence x+2 is odd.
 17. Consider the following theorem: If x is an odd integer, then x+2 is odd. Give a proof by contraposition of this theorem.
 
 Denote q is ``x+2 is odd'', p is ``x is an odd integer''
-Assume \lnot q is true. That is x+2 is even, so we have x+2 = 2k for some integer k.
+Assume $\lnot$ q is true. That is x+2 is even, so we have x+2 = 2k for some integer k.
 Then we have x = 2k-2 = 2(k-1)
 As k is an integer, k-1 must be an integer as well. Denote c = k-1 we have x = 2c
-So x is even which means \lnot p is true
-So we have \lnot q \to \lnot p
-Therefore p \to q
+So x is even which means $\lnot$ p is true
+So we have $\lnot q \to \lnot$ p
+Therefore p $\to$ q
 
 18. Consider the following theorem: If x is an odd integer, then x+2 is odd. Give a proof by contradiction of this theorem.
 
@@ -183,39 +183,39 @@ Therefore mn is a multiple of 4.
 
 20. Prove or disprove: For all real numbers x and y, $\lfloor x-y\rfloor =\lfloor x \rfloor -\lfloor y \rfloor$.
 Let us have x = 3.2, y = 1.9
-$\lfloor x-y\rfloor = \lfloor 1.3 \rfloor = 1
-$\lfloor x \rfloor - \lfloor y \rfloor = \lfloor 3.2 \rfloor - \lfloor 1.9 \rfloor = 3 - 1 = 2
+$\lfloor x-y\rfloor = \lfloor 1.3 \rfloor = 1$
+$\lfloor x \rfloor - \lfloor y \rfloor = \lfloor 3.2 \rfloor - \lfloor 1.9 \rfloor = 3 - 1 = 2$
 
 21. Prove that the following three statements about positive integers n are equivalent: (a) n is even; (b) $n^3+1$ is odd; (c) $n^2-1$ is odd.
 In order to prove (a), (b) and (c) are equivalent, we would like to prove any condition could lead to any other.
 ``n is even'' means n = 2k when k is an integer.
 Hence $n^3 + 1 = 8k^3 + 1 = 2(4k^3) + 1$
-let c = 4k^3, we have $n^3 + 1 = 2c + 1
-so $n^3 + 1 is odd
-Therefore we have (a) \to (b)
+let $c = 4k^3$, we have $n^3 + 1 = 2c + 1$
+so $n^3 + 1$ is odd
+Therefore we have (a) $\to$ (b)
 
 Likewise $n^2-1 = (n+1)(n-1) = (2k+1)(2k-1) = 4k^2 - 1 = 2(2k^2-1) + 1$
-let c = 2k^2-1, we have $n^2-1 = 2c + 1
-so $n^2-1 is odd
-Therefore we have (a) \to (c)
+let $c = 2k^2-1$, we have $n^2-1 = 2c + 1$
+so $n^2-1$ is odd
+Therefore we have (a) $\to$ (c)
 
 Let's have (c) $n^2-1$ is odd, so $n^2 - 1 + 1 = n^2$ must be even
-let p is ``n^2 is even'', q is ``n is even''
-\lnot q is ``n is odd'', then we will have n = 2k+1, n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1
-let c = 2k^2 + 2k, we have n^2 = 2c + 1
-n^2 is odd that contradicts with p
-so p->q, meaning when n^2 is even, n is even as well
-Thus $n^2-1$ is odd, n^2 is even, and n is even
-Therefore we have (c) \to (a)
+let p is ``$n^2$ is even'', q is ``n is even''
+$\lnot$ q is ``n is odd'', then we will have $n = 2k+1, n^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$
+let $c = 2k^2 + 2k$, we have $n^2 = 2c + 1$
+$n^2$ is odd that contradicts with p
+so $p\to q$, meaning when $n^2$ is even, n is even as well
+Thus $n^2-1$ is odd, $n^2$ is even, and n is even
+Therefore we have (c) $\to$ (a)
 
 Let's have (b) $n^3+1$ is odd, so $n^3 + 1 - 1 = n^3$ must be even
-let p is ``n^3 is even'', q is ``n is even''
-\lnot q is ``n is odd'', then we will have $n = 2k+1$, $n^3 = 8k^3 + 12k^2 + 6k + 1 = 2(k^3 + 6k^2 + 3k) + 1$
-let c = k^3 + 6k^2 + 3k, we have n^3 = 2c + 1
-n^3 is odd that contradicts with p
-so p->q, meaning when n^3 is even, n is even as well
-Thus $n^3+1$ is odd, n^3 is even, and n is even
-Therefore we have (b) \to (a)
+let p is ``$n^3$ is even'', q is ``n is even''
+$\lnot$ q is ``n is odd'', then we will have $n = 2k+1$, $n^3 = 8k^3 + 12k^2 + 6k + 1 = 2(k^3 + 6k^2 + 3k) + 1$
+let $c = k^3 + 6k^2 + 3k$, we have $n^3 = 2c + 1$
+$n^3$ is odd that contradicts with p
+so $p\to q$, meaning when $n^3$ is even, n is even as well
+Thus $n^3+1$ is odd, $n^3$ is even, and n is even
+Therefore we have (b) $\to$ (a)
 
 So (a), (b) and (c) are equivalent
 
@@ -224,20 +224,36 @@ Assume at most three people were born in the same month of the year, there will 
 Thus my assumption is false and the statement is true.
 
 23. Prove that the equation $2x^2+y^2=14$ has no positive integer solutions.
-As 2x^2 and y^2 both are incremental functions as x or y grows,
-when x and y are positive integers, there are only the following combinations 2x^2 + y^2 is below 14
-x  y  2x^2 + y^2
-0  0   0
-0  1   1
-0  2   4
-0  3   9
-1  0   2
-1  1   3
-1  2   6
-1  3  11
-2  0   8
-2  1   9
-2  2  12
+As $2x^2$ and $y^2$ both are incremental functions as x or y grows,
+when x and y are positive integers, there are only the following combinations $2x^2 + y^2$ is below 14
+
+\begin{tabular}{|c|c|c|}
+\hline
+x & y & $2x^2 + y^2$ \\
+\hline
+0 & 0 &  0\\
+\hline
+0  &1 &  1\\
+\hline
+0 & 2&   4 \\
+\hline
+0  &3 &  9 \\
+\hline
+1  & 0  & 2 \\
+\hline
+1 & 1 &  3 \\
+\hline
+1&  2  & 6  \\
+\hline
+1 & 3 & 11 \\
+\hline
+2 & 0 &  8 \\
+\hline
+2 & 1 &  9 \\
+\hline
+2 & 2&  12 \\
+\hline
+\end{tabular}
 
 As we can see, none of them could lead to $2x^2+y^2=14$
 Hence the equation $2x^2+y^2=14$ has no positive integer solutions.
