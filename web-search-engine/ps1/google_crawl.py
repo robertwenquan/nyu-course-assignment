@@ -19,5 +19,5 @@ class GoogleWebCrawler(object):
 
   def query(self):
     ''' send query and return list of URLs '''
-    pass
+    return ['http://www.aaa.com', 'http://www.bbb.com']
 
