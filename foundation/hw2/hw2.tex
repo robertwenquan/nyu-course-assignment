@@ -21,8 +21,13 @@
 
 \textbf{Answer:} \\
 
-
-
+$\overline{A\cap B}$=${x|x \notin A\cap B}$
+                    =${x|\lnot(x \in A\cap B)}$
+                    =${x|\lnot(x \in A \land x \in B)}$
+                    =${x|(x \notin A) \lor (x \notin B)}$
+                    =${x|(x \in \overline{A}) \lor (x \in \overline{B})}$
+                    =${x|x \in \overline{A} \cup \overline{B}}$
+                    =$\overline{A} \cup \overline{B}$
 
 \textbf{In Problems 2-4 mark each statement TRUE or FALSE. Assume that the statement applies to all sets.} \\
 
@@ -30,24 +35,31 @@
 
 \textbf{Answer:} \\
 
+A-(B-C) = $A-(B \cap \overline{C})$
+        = $A \cap \overline{(B \cap \overline{C})}
+        = $A \cap (\overline{B} \cup C)$
 
+(A-B)-C = $A \cap \overline{B} \cap \overline{C}$
+        = $A \cap (\overline{B} \cap \overline{C})$
 
-
+As $\overline{B} \cup C$ does not equal to $\overline{B} \cap \overline{C}$
+$\therefore A-(B-C) \neq (A-B)-C$
 
 \textbf{3.(A-C)-(B-C)=A-B}.
 
 \textbf{Answer:} \\
 
+(A-C)-(B-C) = (A \cap \overline{C}) - (B \cap \overline{C})
+            = (A \cap \overline{C}) \cap \overline{(B \cap \overline{C})}
+            = (A \cap \overline{C}) \cap (\overline{B} \cup C)
 
-
-
+No
 
 \textbf{4. $\overline{A\cup \overline{B}} \cup \overline{A}=\overline{A}$}
 
 \textbf{Answer:} \\
 
-
-
+Yes
 
 \textbf{5. Find $\bigcap\limits_{i=1}^{+\infty}[1-\frac{1}{i}, 1]$.}
 
