@@ -16,6 +16,6 @@ class Page(object):
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''
 
-  def __init__(self, page_url):
-    pass
+  def __init__(self, url):
+    self.url = url
 
