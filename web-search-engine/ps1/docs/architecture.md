@@ -19,9 +19,14 @@ So we make two modes to run for this web crawler:
   * A command line utility to launch, check, and terminate the crawl.
   * This command also is able to query statistics of the historical crawls.
 
+* Worker Thread
+  * A thread that is spawned by the worker
+  * It crawls and parses only one URL passed by the worker
+  * It puts back more URLs back to the Queue for further crawl
+
 * Worker
   * A worker instance that runs on a single compute instance either on a physical or virtualized or cloud based environment.
-  * The worker will fetch task from the Queue and launch generic crawl job in a thread
+  * The worker will fetch task(s) from the Queue and launch generic crawl jobs, each in a worker thread
   * The worker will run on Amazon AWS EC2
 
 * Worker Group
