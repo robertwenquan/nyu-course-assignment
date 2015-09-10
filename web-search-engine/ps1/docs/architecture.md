@@ -5,13 +5,15 @@ crawlN simply means "crawl n web pages". That is what we are going to achieve in
 
 #### Overview
 
-Despite we can make it a messy all-in-one simple crawler, it will not be scalable to make large crawls.
-So we make two modes to run for this web crawler:
+Despite we can make it a messy all-in-one crawler in one source file running on local machine, it will not be scalable to make large crawls.
+With this consideration, we make two modes to run for this web crawler:
 
-* Local mode
- * Target for testing and small crawls
-* Scalable mode
- * Target for large crawls
+* Local mode: target for testing and small crawls
+* Scalable mode: target for large crawls
+
+For the local mode, all of the resources will be used in the local instance, say the laptop
+
+For the scalable mode, it is designed to work on Amazon AWS
 
 #### Terms
 
@@ -51,8 +53,21 @@ So we make two modes to run for this web crawler:
   * Amazon AWS S3 will be used for this
 
 #### Block Design
+  * this block diagram depicts how the basic components are glued together
 
 #### Queue
+  * A FIFO queue
+  * local mode is based on self implementation
+  * scalable mode is based on Amazon AWS SQS (Simple Queue Service)
+  * No gurantee the de-queue order is the same as en-queue order
+  * Guarantee one fetch per item, no duplicates
 
 #### Storage
+  * A directory based persistent storage
+  * local mode is based on local filesystem
+  * scalable mode is based on Amazon AWS S3 (Simple Storage Service)
+  * A unique-crawl-id is used to distinguish multiple crawls
+  * s3://<bucket-name>/<crawl-id>/pages
+  * s3://<bucket-name>/<crawl-id>/stats.log
+  * s3://<bucket-name>/<crawl-id>/crawl.log
 
