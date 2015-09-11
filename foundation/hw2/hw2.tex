@@ -259,15 +259,13 @@ If instead C = {2,3,8}, $f^{-1}$ = {(8,1),(3,2),(2,3)}
 
 \textbf{Answer:} \\
 
-Assume \emph{f} is not 1-1, that means for some a, b \in B, a \neq b, we have f(a) = f(b)
-If m, n \in A and m \neq n, we have g(m) = a, and g(n) = b
-As \emph{g} is 1-1, we have g(m) \neq g(n), which corresponds with a \neq b
-However, as $f\circ g$ = f(g(x)) is 1-1, this means for any x1, x2 \in B, f(g(x1)) \neq f(g(x2))
-This contradicts with when x1 = m, and x2 = n, then f(g(m)) = f(g(n))
+Let us have A = {1,2}, B = {2,4,6}, C = {7,8}
+g = {(1,2), (2,4)}, f = {(2,7), (4,8), (6,8)}
+$f\circ g$ = f(g(x)) = {(1,7), (2,8)}
+Obviously $f\circ g$ is 1-1 and \emph{g} is 1-1,
+But \emph{f} is not 1-1 because both 4 and 6 \in B map to 8 \in C
 
-So the assumption that \emph{f} is not 1-1 is false
-Therefore \emph{f} is 1-1
-
+Therefore \emph{f} is not 1-1
 
 \textbf{21. Suppose $g:A\to B$ and $f:B\to C$, where $f\circ g$ is 1-1 and \emph{f} is 1-1. Must g be 1-1?}
 
