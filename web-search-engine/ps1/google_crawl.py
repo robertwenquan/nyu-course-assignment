@@ -19,7 +19,6 @@ class GoogleWebCrawler(object):
   def make_query_string(self):
     ''' make google web search query string based on keywords '''
     return "+".join(self.queries)  
-    pass
 
   def query(self):
     ''' send query and return list of URLs '''
