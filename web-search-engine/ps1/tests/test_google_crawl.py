@@ -13,9 +13,11 @@ class TestGoogleCrawl(unittest.TestCase):
 
   def test_google_crawl(self):
     ''' test google top 10 search crawler '''
-    gs = GoogleWebCrawler(['nyu', 'poly', 'cse'])
-    urls = gs.query()
-    self.assertTrue(self.validate_urls(urls))
+    keywords = [['new', 'york', 'university'], ['Torsten', 'Suel'], ['Amazon', 'Full', 'Time'], ['Google', 'Ann', 'Arbor']]
+    for key in keywords:
+      gs = GoogleWebCrawler(key)
+      urls = gs.query()
+      self.assertTrue(self.validate_urls(urls))
 
 if __name__ == '__main__':
   unittest.main()
