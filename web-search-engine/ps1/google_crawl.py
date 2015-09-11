@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -21,12 +22,12 @@ class GoogleWebCrawler(object):
 
   def query(self):
     my_referer='http://www.google.com'
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
-    'referer': 'http://www.google.com'
-}
+    headers = {
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
+      'referer': 'http://www.google.com'
+    }
 
-cookies = {'RMME' : 'true',
+    cookies = {'RMME' : 'true',
            'ACCOUNT_CHOOSER' : 'AFx_qI6OWWcK4lZkpm70smCu2vbXPvpWFYcNBdNhibVdzkv88pKgneocw6ntYtHwqLXu109UvrhsvGLnp1FQhBwrOlyhfwrkqI_GgMbRpw1yiItKIFFO0n96IaDp54IFmMg9eBBwJYmM6c2bWExMwwyx_a1lE2Oq7yYqZyn3SJ5E32225rOh9nxn44gyKJAwQBqVvp8OSmwG',
           'PREF=ID' : '1111111111111111:FF=0:LD=en:NW=1:TM=1401696336:LM=1436847603:GM=1:V=1:S=JgA9IbCS_lH526TJ',
           'GoogleAccountsLocale_session':'en',
@@ -45,7 +46,7 @@ cookies = {'RMME' : 'true',
 
     # make google HTTP request
     google_url = "http://www.google.com/search?"
-    response = requests.get(google_url, params=params)
+    response = requests.get(google_url, params=params, headers = headers, cookies = cookies)
 
     # parse page contents
     data = response.text
@@ -59,6 +60,4 @@ cookies = {'RMME' : 'true',
           ret.append(linka.get('href'))
 
     # return array of URls in an array
-
-    return ret
-
+    return list(set(ret))[:10]
