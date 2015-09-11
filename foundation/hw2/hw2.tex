@@ -210,7 +210,23 @@ Therefore function $\emph{f}$ is not onto $\emph{N}$
 
 \textbf{Answer:} \\
 
+In order to make the \emph{g} 1-1, we need to prove \forall x, y \in R, x \neq y, f(x) \neq f(y)
+Assume a, b \in R, and a \neq b, we have
+f(b) - f(a) = \lfloor \frac{b-1}{2} \rfloor - \lfloor \frac{a-1}{2} \rfloor
+When b = 5.2 and a = 5.1, 
+f(b) - f(a) = \lfloor \frac{b-1}{2} \rfloor - \lfloor \frac{a-1}{2} \rfloor
+            = \lfloor \frac{4.2}{2} \rfloor - \lfloor \frac{4.1}{2} \rfloor
+            = \lfloor 2.1 \rfloor - \lfloor 2.05 \rfloor
+            = 2 - 2
+            = 0
+So for b \neq a, we have f(b) = f(a)
+Therefore \emph{g} is not 1-1
 
+In order to make the \emph{g} onto \emph{R}, 
+for $f(x) = y = \lfloor \frac{x-1}{2}\rfloor$, we need to prove for \forall y \exists x that satisfies f(x) = \lfloor \frac{x-1}{2}\rfloor$
+Obviously, when y is any non integer real numbers, we cannot find a real number x to satisfy the function because the floor of a real number is always an integer.
+Thus it is false that \forall y \exists x that satisfies f(x) = \lfloor \frac{x-1}{2}\rfloor$
+Therefore \emph{g} is not onto \emph{R}.
 
 
 \textbf{18. Find $f\circ g$.} 
