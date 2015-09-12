@@ -17,12 +17,32 @@
 
 
 1. Suppose you wish to use the Principle of Mathematical Induction to prove that
-1⋅1!+2⋅2!+3⋅3!+⋅⋅⋅+n⋅n!=(n+1)!−1 for all n≥1.
-(a) Write P(1) (b) Write P(5) (c) Write P(k) (d) Write P(k+1) (e) Use the Principle of Mathematical Induction to prove that P(n) is true for all n≥1
+1$\cdot$1!+2$\cdot$2!+3$\cdot$3! + $\cdots$ +n$\cdot$n!=(n+1)! - 1 for all n $\ge$ 1.
 
-2. Use the Principle of Mathematical Induction to prove that n3>n2+3 for all n≥2. 
+(a) Write P(1) (b) Write P(5) (c) Write P(k) (d) Write P(k+1) (e) Use the Principle of Mathematical Induction to prove that P(n) is true for all n
 
-3. Use the Principle of Mathematical Induction to prove that 1+3+9+27+⋅⋅⋅+3n=3n+1−12 for all n≥0.
+(a) P(1) = 1$\cdot$1! = 1
+
+(b) P(5) = 1$\cdot$1! + 2$\cdot$2! + 3$\cdot$3! + 4$\cdot$4! + 5$\cdot$5!
+         = 1$\cdot$1  + 2$\cdot$2  + 3$\cdot$6  + 4$\cdot$24 + 5$\cdot$120
+         = 719
+
+(c) P(k) = 1$\cdot$1! + 2$\cdot$2! + 3$\cdot$3! + ... + k$\cdot$k!
+
+(d) P(k+1) = 1$\cdot$1! + 2$\cdot$2! + 3$\cdot$3! + ... + k$\cdot$k! + (k+1)$\cdot$(k+1)!
+
+(e) For n = 1, P(1) = 1$\cdot$1! = 1 = (1+1)! - 1 = 2 - 1 = 1
+\indent    Suppose when n = k and k $\ge$ 1, P(k) = 1$\cdot$1! + $\cdots$ + k$\cdot$k! = (k+1)! - 1
+\indent    We know P(k+1) = P(k) + (k+1)$\cdot$(k+1)! 
+\indent \indent           = (k+1)! - 1 + (k+1)$\cdot$(k+1)!
+\indent \indent           = (k+1+1)(k+1)! - 1
+\indent \indent           = (k+2)! - 1
+\indent \indent           = ((k+1)+1)! - 1
+\indent    So for all n where n $\ge$ 1, 1$\cdot$1!+2$\cdot$2!+3$\cdot$3! + $\cdots$ +n$\cdot$n!=(n+1)! - 1
+
+\noindent2. Use the Principle of Mathematical Induction to prove that $n^{3}>n^{2}+3$ for all $n\ge 2$. \\
+
+3. Use the Principle of Mathematical Induction to prove that 1+3+9+27+ $\cdots$ +3n=3n+1−12 for all n $\ge$ 0.
 
 4. Use the Principle of Mathematical Induction to prove that any integer amount of postage from 18 cents on up can be made from an infinite supply of 4-cent and 7-cent stamps.
 
