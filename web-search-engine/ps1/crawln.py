@@ -16,7 +16,8 @@ How does it work?
   send google search query
   read queue as a loop, exit when the queue has been empty for 30s or crawled item reached N
 """
-from google_crawl import GoogleWebCrawler
+from utils import TaskQueue
+from utils import DeDupeCache
 from crawln_dispatcher import Dispatcher
 
 def main():
@@ -25,17 +26,16 @@ def main():
   # config file reading, for keys and configurable items
 
   # argument parsing
+  keywords = ['nyu', 'poly', 'computer science']
 
   # start queue service
+  qs = TaskQueue()
 
   # start de-duplicate hash
-  # ?? here or in the dispatcher ??
-
-  # crawl google web search engine
-  gs = GoogleWebCrawler()
+  cc = DeDupeCache()
 
   # kick off dispatcher
-  dp = Dispatcher()
+  dp = Dispatcher(qs, cc, keywords)
 
 if __name__ == '__main__':
   main()
