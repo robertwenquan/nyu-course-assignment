@@ -27,6 +27,8 @@ class GenericPageCrawler(object):
     self.parse()
 
   def parse(self):
+
+    # mock up 10 sub pages and put them into the queue
     import random
     import md5
 
@@ -37,4 +39,5 @@ class GenericPageCrawler(object):
 
       page = Page(url, self.depth + 1, random.randint(self.score - 40, self.score - 10))
       self.queue.en_queue(page)
+    # end of the mock 10 pages
 
