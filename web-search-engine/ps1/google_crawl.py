@@ -61,3 +61,4 @@ class GoogleWebCrawler(object):
 
     # return array of URls in an array
     return list(set(ret))[:10]
+
