@@ -21,7 +21,7 @@ from google_crawl import GoogleWebCrawler
 class Dispatcher(object):
   ''' nested crawl dispatcher '''
 
-  def __init__(self, queue, cache, keywords):
+  def __init__(self, queue, cache, keywords, max_pages):
     self.queue = queue
     self.cache = cache
     self.keywords = keywords
@@ -29,7 +29,7 @@ class Dispatcher(object):
     self.num_of_pages = 0
     self.bytes_of_pages = 0
 
-    self.max_num_pages = 10000
+    self.max_num_pages = max_pages
 
     self.run()
 
