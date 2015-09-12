@@ -12,6 +12,7 @@ class Page(object):
     self.url = url
     self.depth = depth
     self.score = score
+    self.size = 0
 
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''
