@@ -11,7 +11,9 @@ class DeDupeCache() to simulate a de-duplication hash table
 
 """
 
+import os
 import md5
+import json
 from page_crawl import Page
 
 class TaskQueue(object):
@@ -78,4 +80,22 @@ class DeDupeCache(object):
     if md5sum in self.url_cache:
       del self.url_cache[md5sum]
       self.url_count -= 1
+
+class Logger(object):
+  ''' logger for generic logging purpose '''
+
+  def __init__(self, logfile):
+    if not os.path.exists(os.path.dirname(logfile)):
+      # os.mkdir(os.path.dirname(logfile))
+      return
+
+    self.fd = open(logfile, 'a+')
+
+  def log(self, page):
+    log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size}
+    log_json_str = json.dumps(log_entry)
+    self.fd.write(log_json_str + '\n')
+
+  def close(self):
+    self.fd.close()
 

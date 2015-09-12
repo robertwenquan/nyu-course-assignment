@@ -14,6 +14,7 @@ de-duplication will be checked before forking the workers
 
 from utils import TaskQueue
 from utils import DeDupeCache
+from utils import Logger
 from page_crawl import GenericPageCrawler
 from page_crawl import Page
 from google_crawl import GoogleWebCrawler
@@ -21,10 +22,13 @@ from google_crawl import GoogleWebCrawler
 class Dispatcher(object):
   ''' nested crawl dispatcher '''
 
-  def __init__(self, queue, cache, keywords, max_pages):
+  def __init__(self, queue, cache, keywords, max_pages, fake_flag):
     self.queue = queue
     self.cache = cache
     self.keywords = keywords
+    self.fake_flag = fake_flag
+
+    self.logger = Logger('/tmp/crawl.log')
 
     self.num_of_pages = 0
     self.bytes_of_pages = 0
@@ -54,8 +58,10 @@ class Dispatcher(object):
       if page:
         GenericPageCrawler(page, self.queue, self.cache)
         self.num_of_pages += 1
-        print page.url, page.depth, page.score
+        self.logger.log(page)
 
       if self.num_of_pages == self.max_num_pages:
         break
+
+    self.logger.close()
 
