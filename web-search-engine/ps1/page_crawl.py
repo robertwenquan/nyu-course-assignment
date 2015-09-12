@@ -8,10 +8,10 @@ Generic Page Crawler and Parser
 '''
 
 class Page(object):
-  def __init__(self, url, depth):
+  def __init__(self, url, depth, score):
     self.url = url
     self.depth = depth
-    self.score = -1
+    self.score = score
 
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''
