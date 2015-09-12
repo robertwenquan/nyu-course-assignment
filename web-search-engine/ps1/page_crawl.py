@@ -34,21 +34,29 @@ class GenericPageCrawler(object):
     self.parse()
 
   def parse(self):
-    my_referer='http://www.google.com'
-
     headers = {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
-      'referer': 'http://www.google.com'
     }
+    black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
+
+    '''get header of url to decide whether it is crawlable '''
+    urlps = urlparse(self.url)
+    if not urlps.scheme == 'http':
+      return
+
+    header = requests.head(self.url)
+    if not header.headers.get('content-type'):
+      return
+
+    type = header.headers['content-type']
+    if 'text/html' not in type:
+      return
 
     ''' send query and return list of URLs '''
 
     response = requests.get(self.url, headers = headers)
     data = response.text
     soup = BeautifulSoup(data,'html.parser')
-    black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
-    white_list = ['html', 'htm', 'shtml', 'php', 'jsp', 'asp', 'aspx']
-
 
     page_links = []
 
@@ -62,29 +70,13 @@ class GenericPageCrawler(object):
       url = urlparse(link)
       path = url.path
 
-      i = len(url.path) - 1  
-      while i > 0:  
-        if url.path[i] == '/':  
-          break  
-        i = i - 1  
-
-      filename = url.path[i+1:len(url.path)]
-      extension = filename.split(".")[-1]
+      filename = url.path.split("/")[-1]
+      extension = filename.split(".")[-1].lower()
 
       if extension in black_list:
         continue
-      if extension in white_list:
-        page = Page(link, self.depth + 1, random.randint(self.score - 40, self.score - 10))
-        self.queue.en_queue(page)
-      else:
-        if not url.scheme == 'http':
-          continue
-        header = requests.head(link)
-        if header.headers.get('content-type'):
-          type = header.headers['content-type']
-          if 'text/html' in type:
-            page = Page(link, self.depth + 1, random.randint(self.score - 40, self.score - 10))
-            self.queue.en_queue(page)
+      page = Page(link, self.depth + 1, random.randint(self.score - 40, self.score - 10))
+      self.queue.en_queue(page)
 
 
 
