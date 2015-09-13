@@ -102,6 +102,21 @@ Therefore, for all positive integers \emph{n}, $\sum\limits_{j=n}^{2n-1}(2j+1)=3
 
 6. Use mathematical induction to show that n lines in the plane passing through the same point divide the plane into 2n regions.
 
+For n = 1, obviously the plane will be divided into 2n = 2 regions. So P(1) satisfies.
+
+Suppose for n = k, n lines in the plane passing through the same point divide the plane into 2k regions,
+
+For n = k + 1, we can see the last line as the extra line added to the k lines on the plane scenario. 
+That is, there are 2k regions before adding the last line.
+
+As all lines are passing through the same point, we can see the last line must be between two existing lines and divide the existing two regions made by the two lines with 2 extra regions.
+
+That is to say, for n = k + 1, P(k+1) = P(k) + 2 = 2k + 2 = 2(k+1)
+
+Therefore, P(k+1) satisifies when P(k) satisfies.
+
+Therefore, for n lines in the plane passing through the same point divide the plane into 2n regions.
+
 7. Let a1=2,a2=9, and an=2an−1+3an−2 for n≥3. Show that an≤3n for all positive integers n. 
 
 8. Find the error in the following proof of this “theorem”: “Theorem: Every positive integer equals the next largest positive integer.” “Proof: Let P(n) be the proposition ‘n=n+1’. To show that P(k)→P(k+1), assume that P(k) is true for some k, so that k=k+1. Add 1 to both sides of this equation to obtain k+1=k+2, which is P(k+1). Therefore P(k)→P(k+1) is true. Hence P(n) is true for all positive integers n.”
