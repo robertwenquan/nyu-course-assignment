@@ -167,7 +167,22 @@ Therefore, the recursive definition of the function f(n) is
 f(n) = 7 for $n = 1$
 f(n) = f(n-1) + 5 for $n \ge 2$
 
-10. Give a recursive definition with initial conditions for {an} where an=21/2n.
+10. Give a recursive definition with initial conditions for {$a_{n}$} where $a_{n}$=$2^{\frac{1}{2^n}}$
+
+By observation, 
+$a_{1}$ = $2^{\frac {1}{2}}
+$a_{2}$ = $2^{\frac {1}{4}}
+$a_{3}$ = $2^{\frac {1}{8}}
+
+Let us assume f(1) = 2^{\frac{1}{2}}, f(n) = f(n-1) ^{\frac {1}{2}} for any n $\ge$ 2.
+For n = 2, f(2) = 2^{\frac{1}{4}} = f(1) ^{\frac {1}{2}} = (2^{\frac{1}{2}})^{\frac{1}{2}} = 2^{\frac{1}{4}}
+So for n = 2, P(n) satisfies
+Let us assume for n = k P(n) satisfies. So we have f(k) = $2^{\frac{1}{2^k}}$
+When n = k+1, we have f(k+1) = $2^{\frac{1}{2^(k+1)}}$ = ($2^{\frac{1}{2^k}}$)^{\frac{1}{2}}
+                             = f(k)^{\frac{1}{2}}
+So the recursion definition of the function is: 
+for f(1) = 2^{\frac{1}{2}}, f(n) = f(n-1) ^{\frac {1}{2}} for any n $\ge$ 2.
+
 
 11. Consider the following program segment:
 
@@ -176,7 +191,8 @@ total := 1
 while i < n
   i := i + 1
   total := total + i
-Let p be the proposition “total =i(i+1)2 and i≤n.” Use mathematical induction to prove that p is a loop invariant.
+
+Let p be the proposition ``total = \frac{i(i+1)}{2} and i $\le$ n.'' Use mathematical induction to prove that p is a loop invariant.
 
 \end{large}
 
