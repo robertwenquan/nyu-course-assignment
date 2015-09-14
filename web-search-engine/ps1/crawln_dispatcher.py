@@ -57,7 +57,7 @@ class Dispatcher(object):
       page = self.queue.de_queue()
       if page:
         print page.url
-        GenericPageCrawler(page, self.queue, self.cache)
+        GenericPageCrawler(page, self.queue, self.cache, self.keywords)
         self.num_of_pages += 1
         self.logger.log(page)
 
