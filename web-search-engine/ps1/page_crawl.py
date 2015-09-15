@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from urlparse import urlparse 
 import random
+import math
 ''' test visited? '''
 ''' blacklist '''
 
@@ -35,24 +36,89 @@ class GenericPageCrawler(object):
 
     self.parse()
 
-  def update_page_score(self, text):
+  def update_page_score(self, soup):
+    '''
+    Get score of a page according to following three parts:
+      1. Whether "title" contains keywords
+      2. Whether "URL" contains keywords
+      3. Frequency of keywords appeared in content
+      4. Degree of mixing of keywords in content, represented by entropy
+    '''
+
     keywords = self.keywords
 
+    #Inherit 1/3 of its parent page score
+    self.score /= float(3)
+
+    #Lower case of keywords
     for index, item in enumerate(keywords):
       keywords[index] = keywords[index].lower()
 
-    words = text.split(" ")
+    #Get title and convert to lowercase
+    try:
+      title = soup.head.title.get_text().split(" ")
 
-    for word in words:
-      if word.lower() in keywords:
-        self.score +=  10
+      for index, item in enumerate(title):
+        title[index] = title[index].lower()
+
+      #See if title contains key word
+      key_in_title = 0
+      for word in keywords:
+        if word in title:
+          key_in_title += 1
+
+      #Ratio of keywords contains in URL
+      self.score += 3*(key_in_title / float(len(keywords)))
+
+      key_in_url = 0
+      for word in keywords:
+        if word in self.url:
+          key_in_url += 1
+
+      self.score += 3 * (key_in_url / float(len(keywords)))
+
+    except:
+      print 'NO TITLE IN THIS PAGE'
+
+    #Keyword in content
+    try:
+      body = soup.body.get_text().split(" ")
+      if len(body) == 0:
+        return
+
+      for index, item in enumerate(body):
+        body[index] = body[index].lower()
+
+      key_in_content = 0
+      for word in keywords:
+        key_in_content += body.count(word)
+
+      if key_in_content == 0:
+        return
+
+      #Calculate entropy of keywords
+      entropy = 0.5
+      for key in keywords:
+        entropy -= math.log(((body.count(key)+1)/ float(key_in_content)))/len(keywords)
+
+      word_frequency = key_in_content * entropy / len(body)
+
+      self.score += word_frequency * 200
+
+    except:
+      print 'NO CONTENT IN THIS PAGE'
+
+    #Adjust it to 0 - 9
+    self.score = math.ceil(self.score)
+    if self.score > 9:
+      self.score = 9
 
   def parse(self):
     headers = {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
     }
 
-    '''get header of url to decide whether it is crawlable '''
+    #get header of url to decide whether it is crawlable
     urlps = urlparse(self.url)
     if not urlps.scheme == 'http':
       return
@@ -65,16 +131,17 @@ class GenericPageCrawler(object):
     if 'text/html' not in type:
       return
 
-    ''' send query and return list of URLs '''
+    #send query and get content of the current page
 
     response = requests.get(self.url, headers = headers)
     data = response.text
     soup = BeautifulSoup(data,'html.parser')
 
-    ''' Update page score '''
-    self.update_page_score(soup.get_text())
+    #Update page score
+    self.update_page_score(soup)
+    print self.score
 
-    '''Get and return links from current page'''
+    #get and return hyperlink of the current page
     return self.get_next_level_page(soup)
 
   def get_next_level_page(self, soup):
@@ -97,12 +164,12 @@ class GenericPageCrawler(object):
       if extension in black_list:
         continue
 
-      ''' CHECK DEDUPLICATION '''
+      #CHECK DEDUPLICATION
       if self.check_duplication(link):
         continue
 
-      ''' If never visited, add to queue '''
-      page = Page(link, self.depth + 1, self.score/2)
+      #If the current page never visited, add to queue
+      page = Page(link, self.depth + 1, self.score)
       self.queue.en_queue(page)
 
   def check_duplication(self, link):
