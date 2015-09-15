@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import requests
 from bs4 import BeautifulSoup
-from urlparse import urlparse 
+from urlparse import urlparse, urljoin
 import random
 import math
 ''' test visited? '''
@@ -134,6 +134,8 @@ class GenericPageCrawler(object):
     for link in soup.find_all('a'):
       if link.get('href') and link.get('href').startswith('http'):
         page_links.append(link.get('href'))
+      else:
+        page_links.append(urljoin(self.url, link.get('href')))
 
     page_links = list(set(page_links))
 
