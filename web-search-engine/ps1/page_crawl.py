@@ -45,21 +45,15 @@ class GenericPageCrawler(object):
       4. Degree of mixing of keywords in content, represented by entropy
     '''
 
-    keywords = self.keywords
-
     #Inherit 1/3 of its parent page score
     self.score /= float(3)
 
     #Lower case of keywords
-    for index, item in enumerate(keywords):
-      keywords[index] = keywords[index].lower()
+    keywords = map(lambda word: word.lower(), self.keywords)
 
     #Get title and convert to lowercase
-    try:
-      title = soup.head.title.get_text().split(" ")
-
-      for index, item in enumerate(title):
-        title[index] = title[index].lower()
+    if soup.head and soup.head.title:
+      title = map(lambda word: word.lower(), soup.head.title.get_text().split(" "))
 
       #See if title contains key word
       key_in_title = 0
@@ -77,36 +71,26 @@ class GenericPageCrawler(object):
 
       self.score += 3 * (key_in_url / float(len(keywords)))
 
-    except:
-      print 'NO TITLE IN THIS PAGE'
-
     #Keyword in content
-    try:
+    if soup.body:
       body = soup.body.get_text().split(" ")
-      if len(body) == 0:
-        return
+      if len(body) != 0:
+        body = map(lambda word: word.lower(), body)
 
-      for index, item in enumerate(body):
-        body[index] = body[index].lower()
+        key_in_content = 0
+        for word in keywords:
+          key_in_content += body.count(word)
 
-      key_in_content = 0
-      for word in keywords:
-        key_in_content += body.count(word)
+        if key_in_content != 0:
+          #Calculate entropy of keywords
+          entropy = 0.5
 
-      if key_in_content == 0:
-        return
+          for key in keywords:
+            entropy -= math.log(((body.count(key)+1)/ float(key_in_content)))/len(keywords)
 
-      #Calculate entropy of keywords
-      entropy = 0.5
-      for key in keywords:
-        entropy -= math.log(((body.count(key)+1)/ float(key_in_content)))/len(keywords)
+          word_frequency = key_in_content * entropy / len(body)
 
-      word_frequency = key_in_content * entropy / len(body)
-
-      self.score += word_frequency * 200
-
-    except:
-      print 'NO CONTENT IN THIS PAGE'
+          self.score += word_frequency * 200
 
     #Adjust it to 0 - 9
     self.score = math.ceil(self.score)
@@ -139,10 +123,9 @@ class GenericPageCrawler(object):
 
     #Update page score
     self.update_page_score(soup)
-    print self.score
 
     #get and return hyperlink of the current page
-    return self.get_next_level_page(soup)
+    self.get_next_level_page(soup)
 
   def get_next_level_page(self, soup):
     black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
