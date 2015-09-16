@@ -103,6 +103,7 @@ class GenericPageCrawler(object):
     }
 
     #get header of url to decide whether it is crawlable
+    #TODO: Deal with pages stars with "https" and so on
     urlps = urlparse(self.url)
     if not urlps.scheme == 'http':
       return
@@ -134,7 +135,7 @@ class GenericPageCrawler(object):
     for link in soup.find_all('a'):
       if link.get('href') and link.get('href').startswith('http'):
         page_links.append(link.get('href'))
-      else:
+      elif link.get('href') and link.get('href').startswith('/'):
         page_links.append(urljoin(self.url, link.get('href')))
 
     page_links = list(set(page_links))
