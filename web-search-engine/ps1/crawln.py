@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
-
 """
 crawln.py: crawler for N pages starting from Google Search Engine
 
-How to run: 
+How to run:
 $ python crawln.py [-n [NUM]] [keyword [keyword ...]]
 
 Default with search 'nyu poly' with 10 pages
@@ -23,6 +21,8 @@ How does it work?
   read queue as a loop, exit when the queue has been empty for 30s or crawled item reached N
 """
 
+__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
+
 import argparse
 
 from utils import TaskQueue
@@ -31,13 +31,15 @@ from crawln_dispatcher import Dispatcher
 
 def arg_parse():
   parser = argparse.ArgumentParser()
-  parser.add_argument('-n', '--num', nargs='?', type=int, help='number of pages to crawl', default = 10)
+  parser.add_argument('-n', '--num', nargs='?', type=int, help='number of pages to crawl',
+                      default=10)
   parser.add_argument('--fake', action='store_true', help='fake run, do not crawl')
-  parser.add_argument('keywords', metavar='keyword', type=str, nargs='*', help='keyword to search', default = ['nyu', 'poly'])
+  parser.add_argument('keywords', metavar='keyword', type=str, nargs='*',
+                      help='keyword to search', default=['nyu', 'poly'])
   args = parser.parse_args()
 
   return args.keywords, args.num, args.fake
-  
+
 def main():
   ''' main routine function '''
 
@@ -53,7 +55,7 @@ def main():
   cc = DeDupeCache()
 
   # kick off dispatcher
-  dp = Dispatcher(qs, cc, keywords, max_num_pages, fake_flag)
+  Dispatcher(qs, cc, keywords, max_num_pages, fake_flag)
 
 
 if __name__ == '__main__':
