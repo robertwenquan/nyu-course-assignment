@@ -40,8 +40,7 @@ class TaskQueue(object):
 
   def de_queue(self):
     ''' get a task from the queue based on priority '''
-    #for pri in range(9, 0, -1):
-    for pri in range(10)[::-1]:
+    for pri in range(9, -1, -1):
       if self.prio_task_cnt[pri] != 0:
         self.prio_task_cnt[pri] -= 1
         self.total_task_cnt -= 1
