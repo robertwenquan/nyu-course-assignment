@@ -17,12 +17,12 @@
 \setlength{\parindent}{2ex}
 \textbf{1. Find a proposition with three variables p,q, and r that is true when p and r are true and q is false, and false otherwise.}
 
-\textbf{Answer:} $p \land r \land \lnot q$\\
+\textbf{Answer: $p \land r \land \lnot q$}\\
 
 
 \textbf{2. Determine whether $(p \to q) \land (\lnot p \to q) \equiv q$.}
 
-\textbf{Answer:} 
+\textbf{Answer: TRUE} 
 
 
 \begin{tabular*} {0.75\textwidth}{@{\extracolsep{\fill}}  c c c c c  | c}
@@ -44,7 +44,7 @@ $\therefore$$(p \to q) \land (\lnot p \to q) $ $\equiv$ q\\
 
 \textbf{3. Determine whether this proposition is a tautology: $((p \to q) \land \lnot p) \to \lnot q$.}
 
-\textbf{Answer:} 
+\textbf{Answer:} This proposition is \textbf{NOT a tautology}.
 
 \begin{tabular*} {0.75\textwidth}{@{\extracolsep{\fill}}  c c c c c c | c}
 p & q &  p$\to$q &  $\neg$p &   $((p \to q) \land \lnot p)$ &   $\neg$q &   $((p \to q) \land \lnot p)\to\neg$q \\
@@ -63,15 +63,14 @@ So it's not a tautology.\\
 
 \textbf{4. Using c for ``it is cold'' and w for ``it is windy'', write ``To be windy it is necessary that it be cold'' in symbols.}
 
-\textbf{Answer:} 
+\textbf{Answer:} $w \to c$
 
-
-``To be windy it is necessary that it be cold'' means when it is windy it is cold but when it is cold it might be windy or not. ``is is cold'' is the necessary condition of ``it is windy''. ``it is windy'' is the sufficient condition of ``it is cold''
+``To be windy it is necessary that it be cold'' means when it is windy it is cold but when it is cold it might be windy or not. ``it is cold'' is the necessary condition of ``it is windy''. ``it is windy'' is the sufficient condition of ``it is cold''.
 Therefore $w \to c$\\
 
 \textbf{5. Determine whether the following compound proposition is satisfiable $(p \to q) \land (q \to \lnot p)\land (p \lor q)$}
 
-\textbf{Answer:} 
+\textbf{Answer:} The compound proposition is \textbf{satisfiable}.
 
 
 \begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}}  c c c c c c | c }
@@ -190,9 +189,9 @@ From the above two premises, we can say the junior portion of the math majors di
 
 If none of the non-junior math majors left campus, which is possible, this contradicts the conclusion that "some math majors left campus for the weekend". 
 
-Therefore we can not drive the conclusion based on the two premises.
+Therefore we can not drive the conclusion based on the two premises. \\
 
-14. Show that the premise "My daughter visited Europe last week" implies the conclusion "Someone visited Europe last week".
+\textbf{14. Show that the premise "My daughter visited Europe last week" implies the conclusion "Someone visited Europe last week".}
 
 \textbf{Answer:}
 
@@ -274,12 +273,12 @@ In order to prove (a), (b) and (c) are equivalent, we would like to prove any co
 Hence $n^3 + 1 = 8k^3 + 1 = 2(4k^3) + 1$
 let $c = 4k^3$, we have $n^3 + 1 = 2c + 1$
 so $n^3 + 1$ is odd
-Therefore we have (a) $\to$ (b)
+Therefore we have (a) $\to$ (b)\\
 
 Likewise $n^2-1 = (n+1)(n-1) = (2k+1)(2k-1) = 4k^2 - 1 = 2(2k^2-1) + 1$
 let $c = 2k^2-1$, we have $n^2-1 = 2c + 1$
 so $n^2-1$ is odd
-Therefore we have (a) $\to$ (c)
+Therefore we have (a) $\to$ (c)\\
 
 Let's have (c) $n^2-1$ is odd, so $n^2 - 1 + 1 = n^2$ must be even
 let p is ``$n^2$ is even'', q is ``n is even''
@@ -288,7 +287,7 @@ let $c = 2k^2 + 2k$, we have $n^2 = 2c + 1$
 $n^2$ is odd that contradicts with p
 so $p\to q$, meaning when $n^2$ is even, n is even as well
 Thus $n^2-1$ is odd, $n^2$ is even, and n is even
-Therefore we have (c) $\to$ (a)
+Therefore we have (c) $\to$ (a)\\
 
 Let's have (b) $n^3+1$ is odd, so $n^3 + 1 - 1 = n^3$ must be even
 let p is ``$n^3$ is even'', q is ``n is even''
@@ -297,7 +296,7 @@ let $c = k^3 + 6k^2 + 3k$, we have $n^3 = 2c + 1$
 $n^3$ is odd that contradicts with p
 so $p\to q$, meaning when $n^3$ is even, n is even as well
 Thus $n^3+1$ is odd, $n^3$ is even, and n is even
-Therefore we have (b) $\to$ (a)
+Therefore we have (b) $\to$ (a)\\
 
 So (a), (b) and (c) are equivalent\\
 
