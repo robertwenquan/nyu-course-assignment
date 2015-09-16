@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
+
+'''
+Generic Page Crawler and Parser
+'''
+
 import requests
 from bs4 import BeautifulSoup
 from urlparse import urlparse, urljoin
@@ -7,12 +14,6 @@ import random
 import math
 ''' test visited? '''
 ''' blacklist '''
-
-__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
-
-'''
-Generic Page Crawler and Parser
-'''
 
 class Page(object):
   def __init__(self, url, depth, score):
