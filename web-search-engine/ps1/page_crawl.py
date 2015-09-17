@@ -94,7 +94,7 @@ class GenericPageCrawler(object):
           self.score += word_frequency * 200
 
     #Adjust it to 0 - 9
-    self.score = math.ceil(self.score)
+    self.score = int(math.ceil(self.score))
     if self.score > 9:
       self.score = 9
 
@@ -130,34 +130,50 @@ class GenericPageCrawler(object):
     self.get_next_level_page(soup)
 
   def get_next_level_page(self, soup):
-    black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
     page_links = []
 
     for link in soup.find_all('a'):
       if link.get('href') and link.get('href').startswith('http'):
         page_links.append(link.get('href'))
-      elif link.get('href') and link.get('href').startswith('/'):
+      elif link.get('href'):
         page_links.append(urljoin(self.url, link.get('href')))
 
     page_links = list(set(page_links))
 
     for link in page_links:
-      url = urlparse(link)
-      path = url.path
-
-      filename = url.path.split("/")[-1]
-      extension = filename.split(".")[-1].lower()
-
-      if extension in black_list:
+      #Avoid links with undesirable extensions
+      if self.check_extension(link):
         continue
 
       #CHECK DEDUPLICATION
       if self.check_duplication(link):
         continue
 
-      #If the current page never visited, add to queue
-      page = Page(link, self.depth + 1, self.score)
+      #Normalize
+      normlink = self.normalize_link(link)
+      page = Page(normlink, self.depth + 1, self.score)
       self.queue.en_queue(page)
 
-  def check_duplication(self, link):
+  def check_extension(self, link):
+    black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
+
+    url = urlparse(link)
+    path = url.path
+    filename = url.path.split("/")[-1]
+    extension = filename.split(".")[-1].lower()
+
+    if extension in black_list:
+      return True
+
     return False
+
+  def check_duplication(self, link):
+    return self.cache.is_url_dup(link)
+
+  def normalize_link(self, link):
+    '''
+    Deal with following cases:
+      1. URL encoding
+      2. Bookmark
+    '''
+    return link
