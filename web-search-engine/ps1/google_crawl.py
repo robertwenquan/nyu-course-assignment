@@ -46,6 +46,10 @@ class GoogleWebCrawler(object):
         if not linka.get('style'):
           ret.append(linka.get('href'))
 
+    # add this with fake mode
+    #if ret == []:
+    #  ret.append('http://engineering.nyu.edu')
+
     # return array of URls in an array
     return list(set(ret))[:10]
 
