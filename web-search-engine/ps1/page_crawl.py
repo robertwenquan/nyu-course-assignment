@@ -215,3 +215,4 @@ class GenericPageCrawler(object):
       2. Bookmark
     '''
     return link
+
