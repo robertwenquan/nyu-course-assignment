@@ -28,6 +28,7 @@ import argparse
 from utils import TaskQueue
 from utils import DeDupeCache
 from crawln_dispatcher import Dispatcher
+from settings import Settings
 
 def arg_parse():
   parser = argparse.ArgumentParser()
@@ -38,15 +39,16 @@ def arg_parse():
                       help='keyword to search', default=['nyu', 'poly'])
   args = parser.parse_args()
 
-  return args.keywords, args.num, args.fake
+  return args
 
 def main():
   ''' main routine function '''
 
-  # config file reading, for keys and configurable items
-
   # argument parsing
-  keywords, max_num_pages, fake_flag = arg_parse()
+  args = arg_parse()
+
+  # config file reading, for keys and configurable items
+  st = Settings(args)
 
   # start queue service
   qs = TaskQueue()
@@ -55,7 +57,7 @@ def main():
   cc = DeDupeCache()
 
   # kick off dispatcher
-  Dispatcher(qs, cc, keywords, max_num_pages, fake_flag)
+  Dispatcher(qs, cc, st)
 
 
 if __name__ == '__main__':

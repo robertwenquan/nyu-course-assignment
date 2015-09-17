@@ -10,8 +10,10 @@ Generic Page Crawler and Parser
 import requests
 from bs4 import BeautifulSoup
 from urlparse import urlparse, urljoin
-import random
+import os
 import math
+import random
+import string
 ''' test visited? '''
 ''' blacklist '''
 
@@ -25,7 +27,7 @@ class Page(object):
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''
 
-  def __init__(self, page, queue, cache, keywords):
+  def __init__(self, page, queue, cache, keywords, fake):
     self.url = page.url
     self.depth = page.depth
     self.score = page.score
@@ -34,6 +36,7 @@ class GenericPageCrawler(object):
     self.cache = cache
 
     self.keywords = keywords
+    self.fake = fake
 
     self.parse()
 
@@ -99,6 +102,40 @@ class GenericPageCrawler(object):
       self.score = 9
 
   def parse(self):
+    ''' fetch the page and parse it
+        1. Before fetching the page, the header of the file was fetched first
+           content-type is checked. non 'text/html' MIME type will be simply ignored
+        2. blacklist of file extensions are checked against the URL
+        3. the page is fetched and analyzed with TF (term frequency)
+        4. children links in this page are added to the crawl queue
+
+        Note: for the fake mode
+        fake mode doesn't follow any of the above process 
+        but simply inject 10-20 random URLs into the queue
+    '''
+
+    # fake single page crawl starts HERE
+    if self.fake:
+      def gen_random_url():
+        random_path = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(8))
+        random_filename = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(11)) + '.html'
+        random_url = urljoin('http://www.randomdomain.com/', os.path.join(random_path, random_filename))
+        return random_url
+
+      def gen_random_score():
+        return random.randint(0,9)
+
+      self.score = gen_random_score()
+      for count in range(random.randint(10,20)):
+        random_link = gen_random_url()
+        page = Page(random_link, self.depth + 1, self.score)
+        self.queue.en_queue(page)
+
+      return
+    # fake single page crawl ends HERE
+
+    # normal page crawl process starts HERE
+
     headers = {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
     }
@@ -107,6 +144,7 @@ class GenericPageCrawler(object):
     #TODO: Deal with pages stars with "https" and so on
     urlps = urlparse(self.url)
     if not urlps.scheme == 'http':
+      # log it
       return
 
     header = requests.head(self.url)
@@ -142,7 +180,7 @@ class GenericPageCrawler(object):
 
     for link in page_links:
       #Avoid links with undesirable extensions
-      if self.check_extension(link):
+      if self.check_blacklist_extension(link):
         continue
 
       #CHECK DEDUPLICATION
@@ -154,7 +192,7 @@ class GenericPageCrawler(object):
       page = Page(normlink, self.depth + 1, self.score)
       self.queue.en_queue(page)
 
-  def check_extension(self, link):
+  def check_blacklist_extension(self, link):
     black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
 
     url = urlparse(link)

@@ -18,22 +18,23 @@ from utils import Logger
 from page_crawl import GenericPageCrawler
 from page_crawl import Page
 from google_crawl import GoogleWebCrawler
+from settings import Settings
 
 class Dispatcher(object):
   ''' nested crawl dispatcher '''
 
-  def __init__(self, queue, cache, keywords, max_pages, fake_flag):
+  def __init__(self, queue, cache, st):
     self.queue = queue
     self.cache = cache
-    self.keywords = keywords
-    self.fake_flag = fake_flag
+    self.keywords = st.args.keywords
+    self.args = st.args
 
     self.logger = Logger('/tmp/crawl.log')
 
     self.num_of_pages = 0
     self.bytes_of_pages = 0
 
-    self.max_num_pages = max_pages
+    self.max_num_pages = st.args.num
 
     self.run()
 
@@ -45,7 +46,8 @@ class Dispatcher(object):
   def run(self):
 
     # crawl google web search engine
-    gs = GoogleWebCrawler(self.keywords)
+    gs = GoogleWebCrawler(self.keywords, self.args.fake)
+
     urls = gs.query()
     self.bulk_url_enqueue(urls)
 
@@ -57,7 +59,7 @@ class Dispatcher(object):
       page = self.queue.de_queue()
       if page:
         print page.url
-        GenericPageCrawler(page, self.queue, self.cache, self.keywords)
+        GenericPageCrawler(page, self.queue, self.cache, self.keywords, self.args.fake)
         self.num_of_pages += 1
         self.logger.log(page)
 

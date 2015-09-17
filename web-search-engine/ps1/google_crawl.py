@@ -13,14 +13,20 @@ Google Web Search Engine Crawler
 class GoogleWebCrawler(object):
   ''' Google Web Search Engine Crawler '''
 
-  def __init__(self, keywords):
+  def __init__(self, keywords, fake):
     self.queries = keywords
+    self.fake = fake
 
   def make_query_string(self):
     ''' make google web search query string based on keywords '''
     return "+".join(self.queries)  
 
   def query(self):
+    ''' send google search query and get the top 10 result as a list of URLs '''
+
+    if self.fake:
+      return ['http://engineering.nyu.edu', 'http://www.nyu.edu']
+
     my_referer='http://www.google.com'
     headers = {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
@@ -45,10 +51,6 @@ class GoogleWebCrawler(object):
       for linka in link.find_all('a'):
         if not linka.get('style'):
           ret.append(linka.get('href'))
-
-    # add this with fake mode
-    #if ret == []:
-    #  ret.append('http://engineering.nyu.edu')
 
     # return array of URls in an array
     return list(set(ret))[:10]
