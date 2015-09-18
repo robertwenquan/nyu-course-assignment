@@ -12,11 +12,16 @@ import yaml
 import argparse
 
 class Settings(object):
+  ''' config for the crawln crawler '''
 
   def __init__(self):
     self.args = None
     self.conf = None
 
+    # config file parsing
+    self.cfg_parse()
+
+    # argument parsing
     self.arg_parse()
 
   def arg_parse(self):
@@ -29,12 +34,21 @@ class Settings(object):
     parser.add_argument('--fake', action='store_true', help='fake run, do not crawl')
     parser.add_argument('-v', '--verbose', action='store_true', help='verbose output for debugging')
     parser.add_argument('keywords', metavar='keyword', type=str, nargs='*',
-                      help='keyword to search', default=['nyu', 'poly'])
+                        help='keyword to search', default=['nyu', 'poly'])
 
     # parse arguments
     self.args = parser.parse_args()
 
-  def conf_parse(self):
-    ''' parse configuration file '''
-    pass
+  def cfg_parse(self):
+    ''' parse yaml configuration file '''
+
+    conf_file = 'crawln.yml'
+    with open(conf_file, 'r') as fdr:
+      data = fdr.read()
+
+    try:
+      self.conf = yaml.load(data)
+    except Exception as e:
+      print 'parsing crawln.yml config file failed: %s' % str(e)
+      exit(2)
 

@@ -1,0 +1,13 @@
+#
+# configuration file for crawln
+#
+
+# configurable items for crawln
+crawl:
+  crawl_log   : '/tmp/crawl.log'
+  crawl_stats : '/tmp/crawl.stats'
+  crawl_pages : '/tmp/crawln'
+aws:
+  AWS_KEY     : 'a'
+  AWS_SECRET  : 'b'
+
