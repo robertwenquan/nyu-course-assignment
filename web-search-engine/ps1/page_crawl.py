@@ -115,7 +115,6 @@ class GenericPageCrawler(object):
         fake mode doesn't follow any of the above process 
         but simply inject 10-20 random URLs into the queue
     '''
-
     # fake single page crawl starts HERE
     if self.fake:
       def gen_random_url():
@@ -182,7 +181,7 @@ class GenericPageCrawler(object):
 
     for link in page_links:
       #Avoid links with undesirable extensions
-      if self.check_blacklist_extension(link):
+      if self.check_blacklist(link):
         continue
 
       #CHECK DEDUPLICATION
@@ -194,10 +193,15 @@ class GenericPageCrawler(object):
       page = Page(normlink, self.depth + 1, self.score)
       self.queue.en_queue(page)
 
-  def check_blacklist_extension(self, link):
+  def check_blacklist(self, link):
     black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
+    protocol_black_list = ['mailto']
 
     url = urlparse(link)
+
+    if url.scheme in protocol_black_list:
+      return True
+
     path = url.path
     filename = url.path.split("/")[-1]
     extension = filename.split(".")[-1].lower()
