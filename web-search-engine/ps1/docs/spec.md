@@ -3,7 +3,7 @@
 * [x] get top-10 results
 * [x] focused strategy until get N pages
 * [x] each page visited ONLY once
-* [ ] each page stored in a file in a directory
+* [x] each page stored in a file in a directory
 * [x] output a list of visited URLs into a file, with the order they are visited
 * [x] compute the total number of pages, and total size of pages fetched, with the depth of each page
 * [x] get priority score for each page
