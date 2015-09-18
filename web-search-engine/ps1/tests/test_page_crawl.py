@@ -36,6 +36,18 @@ class TestPageCrawl(unittest.TestCase):
     url2 = 'http://www.poly.edu/admission/page.html#tuition#abc'
     self.assertTrue(cr.normalize_link(url2) == 'http://www.poly.edu/admission/page.html')
 
+  def test_simplify_url(self):
+    url = "http://www.poly.edu/admission/../page.html"
+    page = Page(url, depth=1, score=9)
+    queue = TaskQueue()
+    keywords = ['nyu', 'poly']
+    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
+
+    self.assertTrue(cr.simplify_link(url) == 'http://www.poly.edu/page.html')
+
+    url2 = 'http://www.poly.edu/./page.html'
+    self.assertTrue(cr.normalize_link(url2) == 'http://www.poly.edu/page.html')
+
 if __name__ == '__main__':
   unittest.main()
 
