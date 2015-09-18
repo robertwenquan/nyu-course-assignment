@@ -20,7 +20,7 @@ import string
 ''' blacklist '''
 
 class Page(object):
-  def __init__(self, url, depth, score, ref=None):
+  def __init__(self, url, depth, score, ref=''):
     self.url = url      # page url to be crawled
     self.depth = depth  # depth of crawl, starting at 1 with google results
     self.score = score  # scores ranging [1,9], 9 is with highest priority
