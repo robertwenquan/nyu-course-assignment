@@ -187,16 +187,20 @@ class GenericPageCrawler(object):
     page_links = list(set(page_links))
 
     for link in page_links:
+      #Normalize
+      normlink = self.normalize_link(link)
+
+      #Simplify url
+      simple_link = self.simplify_link(normlink)
+
       #Avoid links with undesirable extensions
-      if self.check_blacklist(link):
+      if self.check_blacklist(simple_link):
         continue
 
       #CHECK DEDUPLICATION
-      if self.check_duplication(link):
+      if self.check_duplication(simple_link):
         continue
 
-      #Normalize
-      normlink = self.normalize_link(link)
       page = Page(normlink, self.page.depth + 1, self.page.score, ref=self.page.url)
       self.queue.en_queue(page)
 
@@ -234,3 +238,17 @@ class GenericPageCrawler(object):
     
     return normlink
 
+  def simplify_link(self, link):
+    component = link.split('/')
+
+    while '.' in component:
+      index = component.index('.')
+      del component[index]
+
+    #TODO: if '..' appeared in the component[0]
+    while '..' in component:
+      index = component.index('..')
+      del component[index]
+      del component[index-1]
+
+    return "/".join(component)
