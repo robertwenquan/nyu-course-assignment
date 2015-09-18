@@ -20,25 +20,27 @@ import string
 ''' blacklist '''
 
 class Page(object):
-  def __init__(self, url, depth, score):
-    self.url = url
-    self.depth = depth
-    self.score = score
-    self.size = 0
+  def __init__(self, url, depth, score, ref=None):
+    self.url = url      # page url to be crawled
+    self.depth = depth  # depth of crawl, starting at 1 with google results
+    self.score = score  # scores ranging [1,9], 9 is with highest priority
+    self.size = 0       # page size in bytes
+    self.content = ''   # page contents in plaintext
+    self.ref = ref      # parent page url
 
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''
 
-  def __init__(self, page, queue, cache, keywords, fake):
-    self.url = page.url
-    self.depth = page.depth
-    self.score = page.score
+  def __init__(self, page, queue, cache, log_queue, keywords, fake):
+    self.page = page
 
     self.queue = queue
     self.cache = cache
 
     self.keywords = keywords
     self.fake = fake
+
+    self.log_queue = log_queue
 
     self.parse()
 
@@ -52,7 +54,7 @@ class GenericPageCrawler(object):
     '''
 
     #Inherit 1/3 of its parent page score
-    self.score /= float(3)
+    self.page.score /= float(3)
 
     #Lower case of keywords
     keywords = map(lambda word: word.lower(), self.keywords)
@@ -68,14 +70,14 @@ class GenericPageCrawler(object):
           key_in_title += 1
 
       #Ratio of keywords contains in URL
-      self.score += 3*(key_in_title / float(len(keywords)))
+      self.page.score += 3*(key_in_title / float(len(keywords)))
 
       key_in_url = 0
       for word in keywords:
-        if word in self.url:
+        if word in self.page.url:
           key_in_url += 1
 
-      self.score += 3 * (key_in_url / float(len(keywords)))
+      self.page.score += 3 * (key_in_url / float(len(keywords)))
 
     #Keyword in content
     if soup.body:
@@ -96,12 +98,12 @@ class GenericPageCrawler(object):
 
           word_frequency = key_in_content * entropy / len(body)
 
-          self.score += word_frequency * 200
+          self.page.score += word_frequency * 200
 
     #Adjust it to 0 - 9
-    self.score = int(math.ceil(self.score))
-    if self.score > 9:
-      self.score = 9
+    self.page.score = int(math.ceil(self.page.score))
+    if self.page.score > 9:
+      self.page.score = 9
 
   def parse(self):
     ''' fetch the page and parse it
@@ -126,10 +128,10 @@ class GenericPageCrawler(object):
       def gen_random_score():
         return random.randint(0,9)
 
-      self.score = gen_random_score()
+      self.page.score = gen_random_score()
       for count in range(random.randint(10,20)):
         random_link = gen_random_url()
-        page = Page(random_link, self.depth + 1, self.score)
+        page = Page(random_link, self.page.depth + 1, self.page.score, ref=self.page.url)
         self.queue.en_queue(page)
 
       return
@@ -143,12 +145,12 @@ class GenericPageCrawler(object):
 
     #get header of url to decide whether it is crawlable
     #TODO: Deal with pages stars with "https" and so on
-    urlps = urlparse(self.url)
+    urlps = urlparse(self.page.url)
     if not urlps.scheme == 'http':
       # log it
       return
 
-    header = requests.head(self.url)
+    header = requests.head(self.page.url)
     if not header.headers.get('content-type'):
       return
 
@@ -158,7 +160,7 @@ class GenericPageCrawler(object):
 
     #send query and get content of the current page
 
-    response = requests.get(self.url, headers = headers)
+    response = requests.get(self.page.url, headers = headers)
     data = response.text
     soup = BeautifulSoup(data,'html.parser')
 
@@ -168,6 +170,11 @@ class GenericPageCrawler(object):
     #get and return hyperlink of the current page
     self.get_next_level_page(soup)
 
+    #send page info to log queue 
+    self.page.size = len(data)
+    self.page.content = data
+    self.log_queue.put(self.page)
+
   def get_next_level_page(self, soup):
     page_links = []
 
@@ -175,7 +182,7 @@ class GenericPageCrawler(object):
       if link.get('href') and link.get('href').startswith('http'):
         page_links.append(link.get('href'))
       elif link.get('href'):
-        page_links.append(urljoin(self.url, link.get('href')))
+        page_links.append(urljoin(self.page.url, link.get('href')))
 
     page_links = list(set(page_links))
 
@@ -190,7 +197,7 @@ class GenericPageCrawler(object):
 
       #Normalize
       normlink = self.normalize_link(link)
-      page = Page(normlink, self.depth + 1, self.score)
+      page = Page(normlink, self.page.depth + 1, self.page.score, ref=self.page.url)
       self.queue.en_queue(page)
 
   def check_blacklist(self, link):
@@ -226,3 +233,4 @@ class GenericPageCrawler(object):
       return "".join(normlink.split('#')[0]) 
     
     return normlink
+

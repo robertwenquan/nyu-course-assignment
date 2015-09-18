@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-
-__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
-
 """
 Global Dispatcher for the crawler
 
@@ -14,14 +10,18 @@ and start worker to crawl subsequent nested pages
 de-duplication will be checked before forking the workers
 """
 
+from __future__ import print_function
+
+__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
+
+
 import time
-from utils import TaskQueue
-from utils import DeDupeCache
+import threading
+import Queue
 from utils import Logger
 from page_crawl import GenericPageCrawler
 from page_crawl import Page
 from google_crawl import GoogleWebCrawler
-from settings import Settings
 
 
 class CrawlStats(object):
@@ -34,8 +34,8 @@ class CrawlStats(object):
     self.crawled_pages = 0
     self.crawled_bytes = 0
 
-    crawled_page_per_sec = -1
-    crawled_byte_per_sec = -1
+    self.crawled_page_per_sec = -1
+    self.crawled_byte_per_sec = -1
 
   def update_page_info(self, npage, nbyte):
     ''' increase crawled pages and bytes '''
@@ -72,8 +72,10 @@ class CrawlStats(object):
     print('Crawl   start: ' + time.ctime(self.crawl_start_time), file=fdw)
     print('Crawl    stop: ' + time.ctime(self.crawl_end_time), file=fdw)
     print('Crawl    time: %.1f secs' % duration, file=fdw)
-    print('Crawled pages: %15d (%.1f pages / sec)' % (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
-    print('Crawled bytes: %15d (%d bytes / sec)' % (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
+    print('Crawled pages: %15d (%.1f pages / sec)' %
+          (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
+    print('Crawled bytes: %15d (%d bytes / sec)' %
+          (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
     fdw.close()
 
 class Dispatcher(object):
@@ -94,12 +96,48 @@ class Dispatcher(object):
 
     self.stats = CrawlStats()
 
+    self.log_queue = Queue.Queue()
+    self.end_page_log_item = Page('none', 0, 0)
+
   def bulk_url_enqueue(self, urls):
     ''' add a list of URLs into the crawl queue '''
     for url in urls:
-      page = Page(url, 1, 9)
+      page = Page(url, depth=1, score=9)
       self.queue.en_queue(page)
-    
+
+  def run_page_crawler(self):
+    ''' listen to crawler priority queue and crawl pages '''
+
+    while True:
+      # get one item from the queue
+      # initialize a generic crawler instance
+      page = self.queue.de_queue()
+      if page:
+        GenericPageCrawler(page, self.queue, self.cache, self.log_queue, self.keywords, self.args.fake)
+
+      if self.stats.crawled_pages == self.max_num_pages:
+        break
+
+    self.log_queue.put(self.end_page_log_item)
+
+  def run_log_writter(self):
+    ''' listen to log FIFO queue and write back crawl logs '''
+
+    page_end = self.end_page_log_item
+
+    while True:
+      # get one log item from the queue
+      # 1. write back crawl page meta info including page link, size, depth, score, etc.
+      # 2. write crawled page back to the persistent storage
+      page = self.log_queue.get()
+      if page and page != page_end:
+        page_size = page.size
+        self.stats.update_page_info(1, page_size)
+        self.logger.log(page)
+
+      if page == page_end:
+        break
+
   def run(self):
     ''' run the dispatcher '''
 
@@ -109,19 +147,19 @@ class Dispatcher(object):
     urls = gs.query()
     self.bulk_url_enqueue(urls)
 
-    while True:
-      # get one item from the queue
-      # check duplication
-      # initialize a generic crawler instance
-      # run that instance asyncly
-      page = self.queue.de_queue()
-      if page:
-        GenericPageCrawler(page, self.queue, self.cache, self.keywords, self.args.fake)
-        self.stats.update_page_info(1, 1223)
-        self.logger.log(page)
+    # launch the crawler thread
+    t_crawler = threading.Thread(target=self.run_page_crawler)
+    t_crawler.daemon = True
+    t_crawler.start()
 
-      if self.stats.crawled_pages == self.max_num_pages:
-        break
+    # launch the log writer thread
+    t_logger = threading.Thread(target=self.run_log_writter)
+    t_logger.daemon = True
+    t_logger.start()
+
+    # wait for the workers to finish
+    t_crawler.join()
+    t_logger.join()
 
     # finalize statistical metrics
     self.stats.finalize()
