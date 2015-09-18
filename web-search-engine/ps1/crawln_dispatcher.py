@@ -16,6 +16,8 @@ __author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>
 
 
 import time
+import threading
+import Queue
 from utils import Logger
 from page_crawl import GenericPageCrawler
 from page_crawl import Page
@@ -94,11 +96,47 @@ class Dispatcher(object):
 
     self.stats = CrawlStats()
 
+    self.log_queue = Queue.Queue()
+    self.end_page_log_item = Page('none', 0, 0)
+
   def bulk_url_enqueue(self, urls):
     ''' add a list of URLs into the crawl queue '''
     for url in urls:
       page = Page(url, depth=1, score=9)
       self.queue.en_queue(page)
+
+  def run_page_crawler(self):
+    ''' listen to crawler priority queue and crawl pages '''
+
+    while True:
+      # get one item from the queue
+      # initialize a generic crawler instance
+      page = self.queue.de_queue()
+      if page:
+        GenericPageCrawler(page, self.queue, self.cache, self.log_queue, self.keywords, self.args.fake)
+
+      if self.stats.crawled_pages == self.max_num_pages:
+        break
+
+    self.log_queue.put(self.end_page_log_item)
+
+  def run_log_writter(self):
+    ''' listen to log FIFO queue and write back crawl logs '''
+
+    page_end = self.end_page_log_item
+
+    while True:
+      # get one log item from the queue
+      # 1. write back crawl page meta info including page link, size, depth, score, etc.
+      # 2. write crawled page back to the persistent storage
+      page = self.log_queue.get()
+      if page and page != page_end:
+        page_size = page.size
+        self.stats.update_page_info(1, page_size)
+        self.logger.log(page)
+
+      if page == page_end:
+        break
 
   def run(self):
     ''' run the dispatcher '''
@@ -109,19 +147,19 @@ class Dispatcher(object):
     urls = gs.query()
     self.bulk_url_enqueue(urls)
 
-    while True:
-      # get one item from the queue
-      # check duplication
-      # initialize a generic crawler instance
-      # run that instance asyncly
-      page = self.queue.de_queue()
-      if page:
-        GenericPageCrawler(page, self.queue, self.cache, self.keywords, self.args.fake)
-        self.stats.update_page_info(1, 1223)
-        self.logger.log(page)
+    # launch the crawler thread
+    t_crawler = threading.Thread(target=self.run_page_crawler)
+    t_crawler.daemon = True
+    t_crawler.start()
 
-      if self.stats.crawled_pages == self.max_num_pages:
-        break
+    # launch the log writer thread
+    t_logger = threading.Thread(target=self.run_log_writter)
+    t_logger.daemon = True
+    t_logger.start()
+
+    # wait for the workers to finish
+    t_crawler.join()
+    t_logger.join()
 
     # finalize statistical metrics
     self.stats.finalize()

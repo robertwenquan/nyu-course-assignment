@@ -25,12 +25,13 @@ class Page(object):
     self.depth = depth  # depth of crawl, starting at 1 with google results
     self.score = score  # scores ranging [1,9], 9 is with highest priority
     self.size = 0       # page size in bytes
+    self.content = ''   # page contents in plaintext
     self.ref = None     # parent page url
 
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''
 
-  def __init__(self, page, queue, cache, keywords, fake):
+  def __init__(self, page, queue, cache, log_queue, keywords, fake):
     self.page = page
 
     self.queue = queue
@@ -38,6 +39,8 @@ class GenericPageCrawler(object):
 
     self.keywords = keywords
     self.fake = fake
+
+    self.log_queue = log_queue
 
     self.parse()
 
@@ -168,6 +171,9 @@ class GenericPageCrawler(object):
     self.get_next_level_page(soup)
 
     #send page info to log queue 
+    self.page.size = len(data)
+    self.page.content = data
+    self.log_queue.put(self.page)
 
   def get_next_level_page(self, soup):
     page_links = []
