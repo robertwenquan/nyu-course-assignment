@@ -227,3 +227,4 @@ class GenericPageCrawler(object):
       return "".join(normlink.split('#')[:-1]) 
     
     return normlink
+
