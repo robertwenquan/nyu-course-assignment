@@ -13,14 +13,28 @@ class TestPageCrawl(unittest.TestCase):
         return False
     return True
 
-  def test_page_crawl(self):
-    ''' test generic page crawler '''
+  def test_page_crawler_init(self):
+    ''' test generic page crawler initialization '''
 
     url = 'http://www.nyu.edu/engineering'
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
     cr = GenericPageCrawler(page, queue, None, keywords, fake=True)
+
+  def test_normalize_url(self):
+    ''' test normalize url function '''
+
+    url = 'http://www.poly.edu/admission/page.html#tuition'
+    page = Page(url, depth=1, score=9)
+    queue = TaskQueue()
+    keywords = ['nyu', 'poly']
+    cr = GenericPageCrawler(page, queue, None, keywords, fake=True)
+
+    self.assertTrue(cr.normalize_link(url) == 'http://www.poly.edu/admission/page.html')
+
+    url2 = 'http://www.poly.edu/admission/page.html#tuition#abc'
+    self.assertTrue(cr.normalize_link(url2) == 'http://www.poly.edu/admission/page.html')
 
 if __name__ == '__main__':
   unittest.main()
