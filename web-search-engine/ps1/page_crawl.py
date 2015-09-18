@@ -13,6 +13,7 @@ from urlparse import urlparse, urljoin
 import urllib
 import random
 import os
+import md5
 import math
 import random
 import string
@@ -20,13 +21,35 @@ import string
 ''' blacklist '''
 
 class Page(object):
+  ''' object for a crawled page '''
+
   def __init__(self, url, depth, score, ref=''):
     self.url = url      # page url to be crawled
     self.depth = depth  # depth of crawl, starting at 1 with google results
     self.score = score  # scores ranging [1,9], 9 is with highest priority
     self.size = 0       # page size in bytes
-    self.content = ''   # page contents in plaintext
+    self.content = ''   # page content in plaintext
     self.ref = ref      # parent page url
+    self.linkhash = ''  # md5 hash of the url
+    self.pagehash = ''  # md5 hash of the page content
+    self.store = ''     # page store path
+
+    self.update_fields()
+
+  def update_fields(self):
+    ''' update linkhash and store based on url '''
+    self.linkhash = self.md5sum(self.url)
+    path = urlparse(self.url).path
+    if '.' in path:
+      self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:] + path.split('.')[-1])
+    else:
+      self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:])
+
+  def md5sum(cls, url):
+    m = md5.new()
+    m.update(url)
+    return m.hexdigest()
+
 
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''

@@ -27,7 +27,10 @@ from google_crawl import GoogleWebCrawler
 class CrawlStats(object):
   ''' statistical metrics for the crawler '''
 
-  def __init__(self):
+  def __init__(self, filename):
+
+    self.crawl_stats_file = filename
+
     self.crawl_start_time = time.time()
     self.crawl_end_time = -1
 
@@ -67,16 +70,15 @@ class CrawlStats(object):
 
     duration = self.crawl_end_time - self.crawl_start_time
 
-    fileto = '/tmp/crawl.stats'
-    fdw = open(fileto, 'w')
-    print('Crawl   start: ' + time.ctime(self.crawl_start_time), file=fdw)
-    print('Crawl    stop: ' + time.ctime(self.crawl_end_time), file=fdw)
-    print('Crawl    time: %.1f secs' % duration, file=fdw)
-    print('Crawled pages: %15d (%.1f pages / sec)' %
-          (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
-    print('Crawled bytes: %15d (%d bytes / sec)' %
-          (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
-    fdw.close()
+    with open(self.crawl_stats_file, 'w') as fdw:
+      print('Crawl   start: ' + time.ctime(self.crawl_start_time), file=fdw)
+      print('Crawl    stop: ' + time.ctime(self.crawl_end_time), file=fdw)
+      print('Crawl    time: %.1f secs' % duration, file=fdw)
+      print('Crawled pages: %15d (%.1f pages / sec)' %
+            (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
+      print('Crawled bytes: %15d (%d bytes / sec)' %
+            (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
+
 
 class Dispatcher(object):
   ''' nested crawl dispatcher '''
@@ -86,15 +88,15 @@ class Dispatcher(object):
     self.cache = cache
     self.keywords = st.args.keywords
     self.args = st.args
-
-    self.logger = Logger('/tmp/crawl.log')
+    self.conf = st.conf
 
     self.num_of_pages = 0
     self.bytes_of_pages = 0
 
     self.max_num_pages = st.args.num
 
-    self.stats = CrawlStats()
+    self.logger = Logger(self.conf['crawl']['crawl_log'])
+    self.stats = CrawlStats(self.conf['crawl']['crawl_stats'])
 
     self.log_queue = Queue.Queue()
     self.end_page_log_item = Page('none', 0, 0)
@@ -104,6 +106,10 @@ class Dispatcher(object):
     for url in urls:
       page = Page(url, depth=1, score=9)
       self.queue.en_queue(page)
+
+  def store_page(self, page):
+    ''' store cralwed page into persistent store '''
+    pass
 
   def run_page_crawler(self):
     ''' listen to crawler priority queue and crawl pages '''
@@ -133,6 +139,7 @@ class Dispatcher(object):
       if page and page != page_end:
         page_size = page.size
         self.stats.update_page_info(1, page_size)
+        self.store_page(page)
         self.logger.log(page)
 
       if page == page_end:
