@@ -28,6 +28,7 @@ from utils import DeDupeCache
 from crawln_dispatcher import Dispatcher
 from settings import Settings
 
+
 def main():
   ''' main routine function '''
 
@@ -41,7 +42,8 @@ def main():
   cc = DeDupeCache()
 
   # kick off dispatcher
-  Dispatcher(qs, cc, st)
+  dp = Dispatcher(qs, cc, st)
+  dp.run()
 
 
 if __name__ == '__main__':

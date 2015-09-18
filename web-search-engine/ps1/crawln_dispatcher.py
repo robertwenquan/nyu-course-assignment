@@ -36,14 +36,14 @@ class Dispatcher(object):
 
     self.max_num_pages = st.args.num
 
-    self.run()
-
   def bulk_url_enqueue(self, urls):
+    ''' add a list of URLs into the crawl queue '''
     for url in urls:
       page = Page(url, 1, 9)
       self.queue.en_queue(page)
     
   def run(self):
+    ''' run the dispatcher '''
 
     # crawl google web search engine
     gs = GoogleWebCrawler(self.keywords, self.args.fake)
