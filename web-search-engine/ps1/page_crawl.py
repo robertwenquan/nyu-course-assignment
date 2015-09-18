@@ -253,7 +253,7 @@ class GenericPageCrawler(object):
     normlink = urllib.unquote(link)
 
     if '#' in normlink:
-      return "".join(normlink.split('#')[:-1]) 
+      return "".join(normlink.split('#')[0]) 
     
     return normlink
 

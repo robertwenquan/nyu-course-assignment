@@ -20,7 +20,7 @@ class TestPageCrawl(unittest.TestCase):
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
-    cr = GenericPageCrawler(page, queue, None, keywords, fake=True)
+    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
 
   def test_normalize_url(self):
     ''' test normalize url function '''
@@ -29,7 +29,7 @@ class TestPageCrawl(unittest.TestCase):
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
-    cr = GenericPageCrawler(page, queue, None, keywords, fake=True)
+    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
 
     self.assertTrue(cr.normalize_link(url) == 'http://www.poly.edu/admission/page.html')
 
