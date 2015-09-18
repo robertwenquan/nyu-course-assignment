@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
-
-__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
-
 """
 Global Dispatcher for the crawler
 
@@ -14,14 +10,16 @@ and start worker to crawl subsequent nested pages
 de-duplication will be checked before forking the workers
 """
 
+from __future__ import print_function
+
+__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
+
+
 import time
-from utils import TaskQueue
-from utils import DeDupeCache
 from utils import Logger
 from page_crawl import GenericPageCrawler
 from page_crawl import Page
 from google_crawl import GoogleWebCrawler
-from settings import Settings
 
 
 class CrawlStats(object):
@@ -34,8 +32,8 @@ class CrawlStats(object):
     self.crawled_pages = 0
     self.crawled_bytes = 0
 
-    crawled_page_per_sec = -1
-    crawled_byte_per_sec = -1
+    self.crawled_page_per_sec = -1
+    self.crawled_byte_per_sec = -1
 
   def update_page_info(self, npage, nbyte):
     ''' increase crawled pages and bytes '''
@@ -72,8 +70,10 @@ class CrawlStats(object):
     print('Crawl   start: ' + time.ctime(self.crawl_start_time), file=fdw)
     print('Crawl    stop: ' + time.ctime(self.crawl_end_time), file=fdw)
     print('Crawl    time: %.1f secs' % duration, file=fdw)
-    print('Crawled pages: %15d (%.1f pages / sec)' % (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
-    print('Crawled bytes: %15d (%d bytes / sec)' % (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
+    print('Crawled pages: %15d (%.1f pages / sec)' %
+          (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
+    print('Crawled bytes: %15d (%d bytes / sec)' %
+          (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
     fdw.close()
 
 class Dispatcher(object):
@@ -99,7 +99,7 @@ class Dispatcher(object):
     for url in urls:
       page = Page(url, depth=1, score=9)
       self.queue.en_queue(page)
-    
+
   def run(self):
     ''' run the dispatcher '''
 
