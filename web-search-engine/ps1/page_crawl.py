@@ -184,8 +184,9 @@ class GenericPageCrawler(object):
     #send query and get content of the current page
 
     response = requests.get(self.page.url, headers = headers)
-    data = response.text
-    soup = BeautifulSoup(data,'html.parser')
+    encoding = response.encoding
+    data = response.text        # data is read out as unicode
+    soup = BeautifulSoup(data, 'html.parser')
 
     #Update page score
     self.update_page_score(soup)
@@ -195,7 +196,7 @@ class GenericPageCrawler(object):
 
     #send page info to log queue 
     self.page.size = len(data)
-    self.page.content = data
+    self.page.content = data    # stored in unicode
     self.log_queue.put(self.page)
 
   def get_next_level_page(self, soup):

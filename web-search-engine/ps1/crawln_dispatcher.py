@@ -15,6 +15,7 @@ from __future__ import print_function
 __author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
 
 
+import os
 import time
 import threading
 import Queue
@@ -109,7 +110,17 @@ class Dispatcher(object):
 
   def store_page(self, page):
     ''' store cralwed page into persistent store '''
-    pass
+
+    try:
+      fileto = os.path.join(self.conf['crawl']['crawl_pages'], page.store)
+      dirname = os.path.dirname(fileto)
+      if not os.path.exists(dirname):
+        os.makedirs(dirname)
+
+      with open(fileto, 'wb') as fpw:
+        fpw.write(page.content.encode('utf-8'))
+    except Exception as e:
+      print('Error writing back %s: %s' % (page.url, str(e)))
 
   def run_page_crawler(self):
     ''' listen to crawler priority queue and crawl pages '''
