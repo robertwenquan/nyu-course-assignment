@@ -14,6 +14,7 @@ class DeDupeCache() to simulate a de-duplication hash table
 import os
 import md5
 import json
+import time
 from page_crawl import Page
 
 class TaskQueue(object):
@@ -93,7 +94,9 @@ class Logger(object):
 
   def log(self, page):
     log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size, 
-                  'ref':page.ref, 'store':page.store, 'linkhash':page.linkhash}
+                  'ref':page.ref, 'store':page.store, 'linkhash':page.linkhash,
+                  'start':time.ctime(page.time_start), 'time':page.time_duration
+                }
     log_json_str = json.dumps(log_entry)
     self.fd.write(log_json_str + '\n')
 

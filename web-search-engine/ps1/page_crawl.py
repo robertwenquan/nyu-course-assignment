@@ -15,6 +15,7 @@ import random
 import os
 import md5
 import math
+import time
 import random
 import string
 ''' test visited? '''
@@ -33,6 +34,10 @@ class Page(object):
     self.linkhash = ''  # md5 hash of the url
     self.pagehash = ''  # md5 hash of the page content
     self.store = ''     # page store path
+
+    self.time_start = time.time()   # crawl start timestamp
+    self.time_end = -1              # crawl end timestamp
+    self.time_duration = -1         # crawl time
 
     self.update_fields()
 
@@ -196,7 +201,11 @@ class GenericPageCrawler(object):
 
     #send page info to log queue 
     self.page.size = len(data)
-    self.page.content = data    # stored in unicode
+    self.page.content = data
+
+    self.page.time_end = time.time()
+    self.page.time_duration = self.page.time_end - self.page.time_start
+
     self.log_queue.put(self.page)
 
   def get_next_level_page(self, soup):
