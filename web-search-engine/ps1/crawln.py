@@ -23,30 +23,17 @@ How does it work?
 
 __author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
 
-import argparse
-
 from utils import TaskQueue
 from utils import DeDupeCache
 from crawln_dispatcher import Dispatcher
+from settings import Settings
 
-def arg_parse():
-  parser = argparse.ArgumentParser()
-  parser.add_argument('-n', '--num', nargs='?', type=int, help='number of pages to crawl',
-                      default=10)
-  parser.add_argument('--fake', action='store_true', help='fake run, do not crawl')
-  parser.add_argument('keywords', metavar='keyword', type=str, nargs='*',
-                      help='keyword to search', default=['nyu', 'poly'])
-  args = parser.parse_args()
-
-  return args.keywords, args.num, args.fake
 
 def main():
   ''' main routine function '''
 
-  # config file reading, for keys and configurable items
-
-  # argument parsing
-  keywords, max_num_pages, fake_flag = arg_parse()
+  # argument passing and config file reading
+  st = Settings()
 
   # start queue service
   qs = TaskQueue()
@@ -55,7 +42,8 @@ def main():
   cc = DeDupeCache()
 
   # kick off dispatcher
-  Dispatcher(qs, cc, keywords, max_num_pages, fake_flag)
+  dp = Dispatcher(qs, cc, st)
+  dp.run()
 
 
 if __name__ == '__main__':
