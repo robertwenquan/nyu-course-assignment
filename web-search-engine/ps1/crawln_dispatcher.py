@@ -97,7 +97,7 @@ class Dispatcher(object):
   def bulk_url_enqueue(self, urls):
     ''' add a list of URLs into the crawl queue '''
     for url in urls:
-      page = Page(url, 1, 9)
+      page = Page(url, depth=1, score=9)
       self.queue.en_queue(page)
     
   def run(self):
