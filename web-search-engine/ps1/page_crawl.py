@@ -216,14 +216,9 @@ class GenericPageCrawler(object):
       1. URL encoding
       2. Bookmark, which is seperate by "#"
     '''
-<<<<<<< HEAD
     normlink = urllib.unquote(link)
 
     if '#' in normlink:
       return "".join(normlink.split('#')[:-1]) 
     
     return normlink
-=======
-    return link
-
->>>>>>> b1d02e7dbd4b4ea3003cb9e80688b1fb7d1c404f
