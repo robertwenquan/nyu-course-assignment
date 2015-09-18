@@ -10,6 +10,7 @@ Generic Page Crawler and Parser
 import requests
 from bs4 import BeautifulSoup
 from urlparse import urlparse, urljoin
+import urllib
 import random
 import math
 ''' test visited? '''
@@ -174,6 +175,11 @@ class GenericPageCrawler(object):
     '''
     Deal with following cases:
       1. URL encoding
-      2. Bookmark
+      2. Bookmark, which is seperate by "#"
     '''
-    return link
+    normlink = urllib.unquote(link)
+
+    if '#' in normlink:
+      return "".join(normlink.split('#')[:-1]) 
+    
+    return normlink
