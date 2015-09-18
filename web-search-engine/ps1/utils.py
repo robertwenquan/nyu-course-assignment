@@ -92,7 +92,7 @@ class Logger(object):
     self.fd = open(logfile, 'a+')
 
   def log(self, page):
-    log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size}
+    log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size, 'ref':page.ref}
     log_json_str = json.dumps(log_entry)
     self.fd.write(log_json_str + '\n')
 

@@ -26,7 +26,7 @@ class Page(object):
     self.score = score  # scores ranging [1,9], 9 is with highest priority
     self.size = 0       # page size in bytes
     self.content = ''   # page contents in plaintext
-    self.ref = None     # parent page url
+    self.ref = ref      # parent page url
 
 class GenericPageCrawler(object):
   ''' Generic Web Page Crawler and Parser '''
