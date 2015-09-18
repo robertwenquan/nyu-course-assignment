@@ -2,14 +2,15 @@
 * [x] contact a major web search engine, say Google
 * [x] get top-10 results
 * [x] focused strategy until get N pages
-* [ ] each page visited ONLY once
+* [x] each page visited ONLY once
 * [ ] each page stored in a file in a directory
-* [*] output a list of visited URLs into a file, with the order they are visited
-* [ ] compute the total number of pages, and total size of pages fetched, with the depth of each page
-* [*] get priority score for each page
+* [x] output a list of visited URLs into a file, with the order they are visited
+* [x] compute the total number of pages, and total size of pages fetched, with the depth of each page
+* [x] get priority score for each page
 
 ### Hints
 * Priority Scores
+
 * Downloading pages
  * use urllib
  * urlretrieve, urlget
@@ -59,5 +60,5 @@
   * blacklist
   * resume crawling
   * multi-threading
-  * multi-instance on AWS
+  * multi-instance large scale crawl on AWS
 
