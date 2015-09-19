@@ -18,7 +18,7 @@ import math
 import time
 import random
 import string
-from validation_check import ValidationCheck
+import validation_check as vc
 ''' test visited? '''
 ''' blacklist '''
 
@@ -148,7 +148,6 @@ class GenericPageCrawler(object):
         but simply inject 10-20 random URLs into the queue
     '''
     # fake single page crawl starts HERE
-    print self.page.url
     if self.fake:
       def gen_random_url():
         random_path = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(8))
@@ -224,8 +223,7 @@ class GenericPageCrawler(object):
     page_links = list(set(page_links))
 
     for link in page_links:
-      checklink = ValidationCheck(link)
-      ret = checklink.various_check()
+      ret = vc.various_check(link)
 
       if ret and not self.check_duplication(ret):
         page = Page(ret, self.page.depth + 1, self.page.score, ref=self.page.url)

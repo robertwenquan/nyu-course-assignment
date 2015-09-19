@@ -4,7 +4,7 @@
 import requests
 from bs4 import BeautifulSoup
 from urlparse import urljoin
-from validation_check import ValidationCheck
+import validation_check as vc
 
 __author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
 
@@ -54,8 +54,7 @@ class BingWebCrawler(object):
           if linka.get('href'):
             newlink = urljoin(response.url, linka.get('href'))
             if newlink.startswith('http'):
-              checklink = ValidationCheck(newlink)
-              retlink = checklink.various_check()
+              retlink = vc.various_check(newlink)
               if retlink:
                 ret.append(retlink)
 

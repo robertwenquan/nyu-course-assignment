@@ -4,7 +4,7 @@ import unittest
 from utils import TaskQueue
 from page_crawl import Page
 from page_crawl import GenericPageCrawler
-from validation_check import ValidationCheck
+import validation_check as vc
 
 class TestPageCrawl(unittest.TestCase):
 
@@ -22,7 +22,6 @@ class TestPageCrawl(unittest.TestCase):
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
     cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
-    vc = ValidationCheck(url)
 
   def test_normalize_url(self):
     ''' test normalize url function '''
@@ -31,7 +30,6 @@ class TestPageCrawl(unittest.TestCase):
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
-    vc = ValidationCheck(url)
 
     self.assertTrue(vc.normalize_link(url) == 'http://www.poly.edu/admission/page.html')
 
@@ -43,7 +41,6 @@ class TestPageCrawl(unittest.TestCase):
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
-    vc = ValidationCheck(url)
 
     self.assertTrue(vc.simplify_link(url) == 'http://www.poly.edu/page.html')
 
@@ -67,6 +64,9 @@ class TestPageCrawl(unittest.TestCase):
 
     url8 = 'http://www.poly.edu/index.html'
     self.assertTrue(vc.simplify_link(url8) == 'http://www.poly.edu')
+
+    url9 = 'http://www.poly.edu/a/../../b/index.html'
+    self.assertTrue(vc.simplify_link(url9) == 'http://www.poly.edu/b')
 
 if __name__ == '__main__':
   unittest.main()
