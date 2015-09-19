@@ -46,7 +46,10 @@ class TestPageCrawl(unittest.TestCase):
     self.assertTrue(cr.simplify_link(url) == 'http://www.poly.edu/page.html')
 
     url2 = 'http://www.poly.edu/./page.html'
-    self.assertTrue(cr.normalize_link(url2) == 'http://www.poly.edu/page.html')
+    self.assertTrue(cr.simplify_link(url2) == 'http://www.poly.edu/page.html')
+
+    url3 = 'http://www.poly.edu/../../../../page.html'
+    self.assertTrue(cr.simplify_link(url3) == 'http://www.poly.edu/page.html')
 
 if __name__ == '__main__':
   unittest.main()
