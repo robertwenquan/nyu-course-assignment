@@ -62,8 +62,17 @@ class TestPageCrawl(unittest.TestCase):
     url7 = 'http://www.poly.edu/./././aa/././././bb/./cc/.././././page.html'
     self.assertTrue(vc.simplify_link(url7) == 'http://www.poly.edu/aa/bb/page.html')
 
-    url8 = 'http://www.poly.edu/index.html'
-    self.assertTrue(vc.simplify_link(url8) == 'http://www.poly.edu')
+    url8 = [
+            'http://www.poly.edu/index.html',
+            'http://www.poly.edu/index.htm',
+            'http://www.poly.edu/index.jsp',
+            'http://www.poly.edu/index.asp',
+            'http://www.poly.edu/index.aspx',
+            'http://www.poly.edu/index.php',
+           ]
+
+    for url in url8:
+      self.assertTrue(vc.simplify_link(url) == 'http://www.poly.edu')
 
     url9 = 'http://www.poly.edu/a/../../b/index.html'
     self.assertTrue(vc.simplify_link(url9) == 'http://www.poly.edu/b')

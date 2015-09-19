@@ -48,7 +48,7 @@ class Page(object):
     self.linkhash = self.md5sum(self.url)
     path = urlparse(self.url).path
     if '.' in path:
-      self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:] + path.split('.')[-1])
+      self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:] + '.' + path.split('.')[-1])
     else:
       self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:])
 
