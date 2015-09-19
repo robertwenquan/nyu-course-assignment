@@ -4,6 +4,7 @@ import unittest
 from utils import TaskQueue
 from page_crawl import Page
 from page_crawl import GenericPageCrawler
+from validation_check import ValidationCheck
 
 class TestPageCrawl(unittest.TestCase):
 
@@ -21,6 +22,7 @@ class TestPageCrawl(unittest.TestCase):
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
     cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
+    vc = ValidationCheck(url)
 
   def test_normalize_url(self):
     ''' test normalize url function '''
@@ -29,24 +31,27 @@ class TestPageCrawl(unittest.TestCase):
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
-    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
+    vc = ValidationCheck(url)
 
-    self.assertTrue(cr.normalize_link(url) == 'http://www.poly.edu/admission/page.html')
+    self.assertTrue(vc.normalize_link(url) == 'http://www.poly.edu/admission/page.html')
 
     url2 = 'http://www.poly.edu/admission/page.html#tuition#abc'
-    self.assertTrue(cr.normalize_link(url2) == 'http://www.poly.edu/admission/page.html')
+    self.assertTrue(vc.normalize_link(url2) == 'http://www.poly.edu/admission/page.html')
 
   def test_simplify_url(self):
     url = "http://www.poly.edu/admission/../page.html"
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
-    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
+    vc = ValidationCheck(url)
 
-    self.assertTrue(cr.simplify_link(url) == 'http://www.poly.edu/page.html')
+    self.assertTrue(vc.simplify_link(url) == 'http://www.poly.edu/page.html')
 
     url2 = 'http://www.poly.edu/./page.html'
-    self.assertTrue(cr.normalize_link(url2) == 'http://www.poly.edu/page.html')
+    self.assertTrue(vc.simplify_link(url2) == 'http://www.poly.edu/page.html')
+
+    url3 = 'http://www.poly.edu/../../../../page.html'
+    self.assertTrue(vc.simplify_link(url3) == 'http://www.poly.edu/page.html')
 
 if __name__ == '__main__':
   unittest.main()

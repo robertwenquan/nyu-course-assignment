@@ -95,7 +95,8 @@ class Logger(object):
   def log(self, page):
     log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size, 
                   'ref':page.ref, 'store':page.store, 'linkhash':page.linkhash,
-                  'start':time.ctime(page.time_start), 'time':page.time_duration
+                  'start':time.ctime(page.time_start), 'time':page.time_duration,
+                  'code':page.status_code
                 }
     log_json_str = json.dumps(log_entry)
     self.fd.write(log_json_str + '\n')

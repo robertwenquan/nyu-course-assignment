@@ -18,6 +18,7 @@ import math
 import time
 import random
 import string
+from validation_check import ValidationCheck
 ''' test visited? '''
 ''' blacklist '''
 
@@ -38,6 +39,7 @@ class Page(object):
     self.time_start = time.time()   # crawl start timestamp
     self.time_end = -1              # crawl end timestamp
     self.time_duration = -1         # crawl time
+    self.status_code = -1      # response status code
 
     self.update_fields()
 
@@ -146,6 +148,7 @@ class GenericPageCrawler(object):
         but simply inject 10-20 random URLs into the queue
     '''
     # fake single page crawl starts HERE
+    print self.page.url
     if self.fake:
       def gen_random_url():
         random_path = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(8))
@@ -205,6 +208,7 @@ class GenericPageCrawler(object):
 
     self.page.time_end = time.time()
     self.page.time_duration = self.page.time_end - self.page.time_start
+    self.page.status_code = response.status_code
 
     self.log_queue.put(self.page)
 
@@ -220,68 +224,12 @@ class GenericPageCrawler(object):
     page_links = list(set(page_links))
 
     for link in page_links:
-      #Normalize
-      normlink = self.normalize_link(link)
+      checklink = ValidationCheck(link)
+      ret = checklink.various_check()
 
-      #Simplify url
-      simple_link = self.simplify_link(normlink)
-
-      #Avoid links with undesirable extensions
-      if self.check_blacklist(simple_link):
-        continue
-
-      #CHECK DEDUPLICATION
-      if self.check_duplication(simple_link):
-        continue
-
-      page = Page(normlink, self.page.depth + 1, self.page.score, ref=self.page.url)
-      self.queue.en_queue(page)
-
-  def check_blacklist(self, link):
-    black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
-    protocol_black_list = ['mailto']
-
-    url = urlparse(link)
-
-    if url.scheme in protocol_black_list:
-      return True
-
-    path = url.path
-    filename = url.path.split("/")[-1]
-    extension = filename.split(".")[-1].lower()
-
-    if extension in black_list:
-      return True
-
-    return False
+      if ret and not self.check_duplication(ret):
+        page = Page(ret, self.page.depth + 1, self.page.score, ref=self.page.url)
+        self.queue.en_queue(page)
 
   def check_duplication(self, link):
     return self.cache.is_url_dup(link)
-
-  def normalize_link(self, link):
-    '''
-    Deal with following cases:
-      1. URL encoding
-      2. Bookmark, which is seperate by "#"
-    '''
-    normlink = urllib.unquote(link)
-
-    if '#' in normlink:
-      return "".join(normlink.split('#')[0]) 
-    
-    return normlink
-
-  def simplify_link(self, link):
-    component = link.split('/')
-
-    while '.' in component:
-      index = component.index('.')
-      del component[index]
-
-    #TODO: if '..' appeared in the component[0]
-    while '..' in component:
-      index = component.index('..')
-      del component[index]
-      del component[index-1]
-
-    return "/".join(component)
