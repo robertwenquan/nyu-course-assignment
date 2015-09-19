@@ -39,7 +39,7 @@ class Page(object):
     self.time_start = time.time()   # crawl start timestamp
     self.time_end = -1              # crawl end timestamp
     self.time_duration = -1         # crawl time
-    #self.page.status_code = -1      # response status code
+    self.status_code = -1      # response status code
 
     self.update_fields()
 
@@ -148,6 +148,7 @@ class GenericPageCrawler(object):
         but simply inject 10-20 random URLs into the queue
     '''
     # fake single page crawl starts HERE
+    print self.page.url
     if self.fake:
       def gen_random_url():
         random_path = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(8))
@@ -207,7 +208,7 @@ class GenericPageCrawler(object):
 
     self.page.time_end = time.time()
     self.page.time_duration = self.page.time_end - self.page.time_start
-    #self.page.status_code = response.status_code
+    self.page.status_code = response.status_code
 
     self.log_queue.put(self.page)
 
