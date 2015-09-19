@@ -282,7 +282,6 @@ class GenericPageCrawler(object):
       index = component.index('.')
       del component[index]
 
-    #TODO: if '..' appeared in the component[0]
     while '..' in component:
       index = component.index('..')
       if index == 1:

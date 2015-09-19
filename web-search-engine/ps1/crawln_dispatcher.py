@@ -23,6 +23,7 @@ from utils import Logger
 from page_crawl import GenericPageCrawler
 from page_crawl import Page
 from google_crawl import GoogleWebCrawler
+from bing_crawl import BingWebCrawler
 
 
 class CrawlStats(object):
@@ -163,6 +164,11 @@ class Dispatcher(object):
     gs = GoogleWebCrawler(self.keywords, self.args.fake)
 
     urls = gs.query()
+
+    if not urls:
+      bs = BingWebCrawler(self.keywords, self.args.fake)
+      urls = bs.query()
+
     self.bulk_url_enqueue(urls)
 
     # launch the crawler thread
