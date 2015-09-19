@@ -40,8 +40,9 @@ def simplify_link(link):
   urlps = urlparse(link)
 
   component = urlps.path.split('/')
+  curpage_filename = ['index.html', 'index.htm', 'index.jsp', 'index.asp', 'index.aspx', 'index.php']
 
-  if component[-1] == 'index.html':
+  if component[-1] in curpage_filename:
     del component[-1]
 
   while '.' in component:
