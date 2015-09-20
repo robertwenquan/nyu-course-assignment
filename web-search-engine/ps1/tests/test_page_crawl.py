@@ -77,6 +77,16 @@ class TestPageCrawl(unittest.TestCase):
     url9 = 'http://www.poly.edu/a/../../b/index.html'
     self.assertTrue(vc.simplify_link(url9) == 'http://www.poly.edu/b')
 
+  def test_blacklist(self):
+    url = "https://www.ewtn.com/library/SCRIPTUR/JOBMOST.TXT"
+    self.assertTrue(vc.check_blacklist(url) == True)
+
+    url2 = "ftp://www.google.com/"
+    self.assertTrue(vc.check_blacklist(url2) == True)
+
+    #url3 = "https://www.google.com/"
+    #self.assertTrue(vc.check_blacklist(url3) == False)
+
 if __name__ == '__main__':
   unittest.main()
 

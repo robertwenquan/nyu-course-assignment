@@ -54,10 +54,9 @@ class GoogleWebCrawler(object):
         if not linka.get('style'):
           if linka.get('href'):
             newlink = urljoin(response.url, linka.get('href'))
-            if newlink.startswith('http'):
-              retlink = vc.various_check(newlink)
-              if retlink:
-                ret.append(retlink)
+            retlink = vc.various_check(newlink)
+            if retlink:
+              ret.append(retlink)
 
     # return array of URls in an array
     return list(set(ret))[:10]

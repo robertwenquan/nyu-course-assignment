@@ -87,11 +87,11 @@ class GenericPageCrawler(object):
     self.page.score /= float(3)
 
     #Lower case of keywords
-    keywords = map(lambda word: word.lower(), self.keywords)
+    keywords = [word.lower() for word in self.keywords]
 
     #Get title and convert to lowercase
     if soup.head and soup.head.title:
-      title = map(lambda word: word.lower(), soup.head.title.get_text().split(" "))
+      title = [ti.lower() for ti in soup.head.title.get_text().split(" ")]
 
       #See if title contains key word
       key_in_title = 0
@@ -173,13 +173,6 @@ class GenericPageCrawler(object):
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
     }
 
-    #get header of url to decide whether it is crawlable
-    #TODO: Deal with pages stars with "https" and so on
-    urlps = urlparse(self.page.url)
-    if not urlps.scheme == 'http':
-      # log it
-      return
-
     header = requests.head(self.page.url)
     if not header.headers.get('content-type'):
       return
@@ -191,7 +184,6 @@ class GenericPageCrawler(object):
     #send query and get content of the current page
 
     response = requests.get(self.page.url, headers = headers)
-    encoding = response.encoding
     data = response.text        # data is read out as unicode
     soup = BeautifulSoup(data, 'html.parser')
 
@@ -215,18 +207,18 @@ class GenericPageCrawler(object):
     page_links = []
 
     for link in soup.find_all('a'):
-      if link.get('href') and link.get('href').startswith('http'):
-        page_links.append(link.get('href'))
-      elif link.get('href'):
-        page_links.append(urljoin(self.page.url, link.get('href')))
+      if not link.get('href'):
+        continue
+      newlink = urljoin(self.page.url, link.get('href'))
+      retlink = vc.various_check(newlink)
+      if retlink:
+        page_links.append(retlink)
 
     page_links = list(set(page_links))
 
     for link in page_links:
-      ret = vc.various_check(link)
-
-      if ret and not self.check_duplication(ret):
-        page = Page(ret, self.page.depth + 1, self.page.score, ref=self.page.url)
+      if not self.check_duplication(link):
+        page = Page(link, self.page.depth + 1, self.page.score, ref=self.page.url)
         self.queue.en_queue(page)
 
   def check_duplication(self, link):

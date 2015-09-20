@@ -63,11 +63,12 @@ def simplify_link(link):
 
 def check_blacklist(link):
   black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
-  protocol_black_list = ['mailto']
+  #protocol_white_list = ['http', 'https']
+  protocol_white_list = ['http']
 
   url = urlparse(link)
 
-  if url.scheme in protocol_black_list:
+  if url.scheme not in protocol_white_list:
     return True
 
   path = url.path
