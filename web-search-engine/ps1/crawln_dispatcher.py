@@ -24,6 +24,7 @@ from page_crawl import GenericPageCrawler
 from page_crawl import Page
 from google_crawl import GoogleWebCrawler
 from bing_crawl import BingWebCrawler
+from worker import Worker
 
 
 class CrawlStats(object):
@@ -42,10 +43,13 @@ class CrawlStats(object):
     self.crawled_page_per_sec = -1
     self.crawled_byte_per_sec = -1
 
-  def update_page_info(self, npage, nbyte):
-    ''' increase crawled pages and bytes '''
-    self.crawled_pages += npage
+  def update_crawl_bytes(self, nbyte):
+    ''' increase crawled bytes '''
     self.crawled_bytes += nbyte
+
+  def update_crawl_count(self, npage):
+    ''' increase crawled pages '''
+    self.crawled_pages += npage
 
   def finalize(self):
     ''' mark the crawl end time
@@ -123,19 +127,26 @@ class Dispatcher(object):
     except Exception as e:
       print('Error writing back %s: %s' % (page.url, str(e)))
 
+  def call_crawl_page(self, page):
+    ''' thread function to be called '''
+    GenericPageCrawler(page, self.queue, self.cache, self.log_queue, self.keywords, self.args.fake)
+
   def run_page_crawler(self):
     ''' listen to crawler priority queue and crawl pages '''
 
+    worker = Worker(20)
     while True:
       # get one item from the queue
       # initialize a generic crawler instance
       page = self.queue.de_queue()
       if page:
-        GenericPageCrawler(page, self.queue, self.cache, self.log_queue, self.keywords, self.args.fake)
+        worker.add_task(self.call_crawl_page, page)
+        self.stats.update_crawl_count(1)
 
       if self.stats.crawled_pages == self.max_num_pages:
         break
 
+    worker.join()
     self.log_queue.put(self.end_page_log_item)
 
   def run_log_writter(self):
@@ -150,7 +161,7 @@ class Dispatcher(object):
       page = self.log_queue.get()
       if page and page != page_end:
         page_size = page.size
-        self.stats.update_page_info(1, page_size)
+        self.stats.update_crawl_bytes(page_size)
         self.store_page(page)
         self.logger.log(page)
 
@@ -164,10 +175,17 @@ class Dispatcher(object):
     gs = GoogleWebCrawler(self.keywords, self.args.fake)
 
     urls = gs.query()
+    if not urls and gs.error > 0:
+      print('Network Error. Please check network connection.')
+      return
 
     if not urls:
       bs = BingWebCrawler(self.keywords, self.args.fake)
       urls = bs.query()
+
+    if not urls:
+      print('See crawl failed. Please check network connection or contact the author.')
+      return
 
     self.bulk_url_enqueue(urls)
 
