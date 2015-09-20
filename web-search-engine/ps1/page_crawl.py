@@ -53,6 +53,10 @@ class Page(object):
       self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:])
 
   def md5sum(cls, url):
+    # dirty fix
+    if isinstance(url, unicode):
+      url = url.encode('utf-8')
+
     m = md5.new()
     m.update(url)
     return m.hexdigest()

@@ -63,6 +63,10 @@ class DeDupeCache(object):
     self.url_count = 0
 
   def md5sum(cls, url):
+    # dirty fix
+    if isinstance(url, unicode):
+      url = url.encode('utf-8')
+
     m = md5.new()
     m.update(url)
     return m.hexdigest()

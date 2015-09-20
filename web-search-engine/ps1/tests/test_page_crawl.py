@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import unittest
 from utils import TaskQueue
@@ -21,6 +22,12 @@ class TestPageCrawl(unittest.TestCase):
     page = Page(url, depth=1, score=9)
     queue = TaskQueue()
     keywords = ['nyu', 'poly']
+    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
+
+    url = u'http://www.nyu.edu/engineering'
+    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
+
+    url = u'http://www.google.com/search?q=♥'
     cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
 
   def test_normalize_url(self):
