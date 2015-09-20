@@ -172,9 +172,23 @@ class GenericPageCrawler(object):
     headers = {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
     }
+    try:
+      header = requests.head(self.page.url)
+      if not header.headers.get('content-type'):
+        return
+    except requests.exceptions.RequestException as e:
+      try:
+        fileto = self.conf['crawl']['crawl_errs']
+        dirname = os.path.dirname(fileto)
+        if not os.path.exists(dirname):
+          os.makedirs(dirname)
 
-    header = requests.head(self.page.url)
-    if not header.headers.get('content-type'):
+        with open(fileto, 'wb') as fpw:
+          fpw.write(url, e)
+
+      except Exception as e:
+        print('Error writing back %s: %s' % (page.url, str(e)))
+
       return
 
     type = header.headers['content-type']
@@ -183,7 +197,23 @@ class GenericPageCrawler(object):
 
     #send query and get content of the current page
 
-    response = requests.get(self.page.url, headers = headers)
+    try:
+      response = requests.get(self.page.url, headers = headers)
+    except requests.exceptions.RequestException as e:
+      try:
+        fileto = self.conf['crawl']['crawl_errs']
+        dirname = os.path.dirname(fileto)
+        if not os.path.exists(dirname):
+          os.makedirs(dirname)
+
+        with open(fileto, 'wb') as fpw:
+          fpw.write(url, e)
+
+      except Exception as e:
+        print('Error writing back %s: %s' % (page.url, str(e)))
+
+      return
+
     data = response.text        # data is read out as unicode
     soup = BeautifulSoup(data, 'html.parser')
 

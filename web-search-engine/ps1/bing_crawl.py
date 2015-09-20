@@ -41,7 +41,23 @@ class BingWebCrawler(object):
 
     # make google HTTP request
     bing_url= "http://www.bing.com/search?"
-    response = requests.get(bing_url, params=params, headers = headers)
+    try:
+      response = requests.get(bing_url, params=params, headers = headers)
+
+    except requests.exceptions.RequestException as e:
+      try:
+        fileto = self.conf['crawl']['crawl_errs']
+        dirname = os.path.dirname(fileto)
+        if not os.path.exists(dirname):
+          os.makedirs(dirname)
+
+        with open(fileto, 'wb') as fpw:
+          fpw.write(url, e)
+
+      except Exception as e:
+        print('Error writing back %s: %s' % (page.url, str(e)))
+
+      return
 
     # parse page contents
     data = response.text

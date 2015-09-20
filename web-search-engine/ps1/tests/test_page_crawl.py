@@ -87,6 +87,15 @@ class TestPageCrawl(unittest.TestCase):
     #url3 = "https://www.google.com/"
     #self.assertTrue(vc.check_blacklist(url3) == False)
 
+  '''
+  I don't now what the expected answer should be when requests failed
+  def test_error_capture(self):
+    url = 'https://www.ewtn.com/library/SCRIPTUR/JOBMOST.TXT'
+    page = Page(url, depth=1, score=9)
+    queue = TaskQueue()
+    keywords = ['nyu', 'poly']
+    cr = GenericPageCrawler(page, queue, None, None, keywords, fake=True)
+    self.assertTrue(cr == [])
+  '''
 if __name__ == '__main__':
   unittest.main()
-

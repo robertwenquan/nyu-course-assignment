@@ -41,7 +41,23 @@ class GoogleWebCrawler(object):
 
     # make google HTTP request
     google_url = "http://www.google.com/search?"
-    response = requests.get(google_url, params=params, headers = headers)
+    try:
+      response = requests.get(google_url, params=params, headers = headers)
+
+    except requests.exceptions.RequestException as e:
+      try:
+        fileto = self.conf['crawl']['crawl_errs']
+        dirname = os.path.dirname(fileto)
+        if not os.path.exists(dirname):
+          os.makedirs(dirname)
+
+        with open(fileto, 'wb') as fpw:
+          fpw.write(url, e)
+
+      except Exception as e:
+        print('Error writing back %s: %s' % (page.url, str(e)))
+
+      return
 
     # parse page contents
     data = response.text
