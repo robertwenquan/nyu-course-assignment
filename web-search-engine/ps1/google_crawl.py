@@ -55,7 +55,7 @@ class GoogleWebCrawler(object):
           fpw.write(url, e)
 
       except Exception as e:
-        print('Error writing back %s: %s' % (page.url, str(e)))
+        print('Error requesting: %s' % str(e))
 
       return
 
