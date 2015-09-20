@@ -17,7 +17,8 @@ basic requirements, if there are any.
 2. How does it work:
   Start:
     Send google search query, get returned urls and put into crawl queue
-    If it is captured by Google, try Bing instead
+    If somehow no results come back from Google, like the recapcha is prompted, try Bing search
+    If still no results come back from Bing, stop the crawl and prompt for network failure
 
   Run:
     Read queue as a loop, exit when the queue has been empty for 30s or crawled item reached N
