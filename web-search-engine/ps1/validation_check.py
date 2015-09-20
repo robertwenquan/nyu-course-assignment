@@ -63,8 +63,7 @@ def simplify_link(link):
 
 def check_blacklist(link):
   black_list = ['mp3','mp4','pdf','doc','jpg','png','gif','exe','txt']
-  #protocol_white_list = ['http', 'https']
-  protocol_white_list = ['http']
+  protocol_white_list = ['http', 'https']
 
   url = urlparse(link)
 
