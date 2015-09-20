@@ -151,6 +151,7 @@ class GenericPageCrawler(object):
         fake mode doesn't follow any of the above process 
         but simply inject 10-20 random URLs into the queue
     '''
+    print self.page.url
     # fake single page crawl starts HERE
     print 'parsing', self.page.url
 
