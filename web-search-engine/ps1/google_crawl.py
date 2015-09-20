@@ -18,6 +18,7 @@ class GoogleWebCrawler(object):
   def __init__(self, keywords, fake):
     self.queries = keywords
     self.fake = fake
+    self.error = -1
 
   def make_query_string(self):
     ''' make google web search query string based on keywords '''
@@ -57,6 +58,7 @@ class GoogleWebCrawler(object):
       except Exception as e:
         print('Error requesting: %s' % str(e))
 
+      self.error = 1
       return
 
     # parse page contents

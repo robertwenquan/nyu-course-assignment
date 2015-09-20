@@ -153,6 +153,8 @@ class GenericPageCrawler(object):
     '''
     print self.page.url
     # fake single page crawl starts HERE
+    print 'parsing', self.page.url
+
     if self.fake:
       def gen_random_url():
         random_path = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(8))
@@ -192,7 +194,7 @@ class GenericPageCrawler(object):
           fpw.write(url, e)
 
       except Exception as e:
-        print('Error writing back %s: %s' % (page.url, str(e)))
+        print('Error writing back %s: %s' % (self.page.url, str(e)))
 
       return
 
