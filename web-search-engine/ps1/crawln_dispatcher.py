@@ -140,6 +140,7 @@ class Dispatcher(object):
       # initialize a generic crawler instance
       page = self.queue.de_queue()
       if page:
+        page.time_dequeue = time.time()
         worker.add_task(self.call_crawl_page, page)
         self.stats.update_crawl_count(1)
 

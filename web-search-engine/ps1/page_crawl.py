@@ -36,7 +36,9 @@ class Page(object):
     self.pagehash = ''  # md5 hash of the page content
     self.store = ''     # page store path
 
-    self.time_start = time.time()   # crawl start timestamp
+    self.time_enqueue= time.time()  # enqueue timestamp
+    self.time_dequeue= -1           # dequeue timestamp
+    self.time_start = -1            # crawl start timestamp
     self.time_end = -1              # crawl end timestamp
     self.time_duration = -1         # crawl time
     self.status_code = -1      # response status code
@@ -151,9 +153,7 @@ class GenericPageCrawler(object):
         fake mode doesn't follow any of the above process 
         but simply inject 10-20 random URLs into the queue
     '''
-    print self.page.url
     # fake single page crawl starts HERE
-    print 'parsing', self.page.url
 
     if self.fake:
       def gen_random_url():
@@ -174,8 +174,10 @@ class GenericPageCrawler(object):
       return
     # fake single page crawl ends HERE
 
-    # normal page crawl process starts HERE
+    # crawl start
+    self.page.time_start = time.time()
 
+    # normal page crawl process starts HERE
     headers = {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
     }
