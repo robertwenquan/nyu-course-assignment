@@ -191,7 +191,7 @@ class GenericPageCrawler(object):
           fpw.write(url, e)
 
       except Exception as e:
-        print('Error writing back %s: %s' % (page.url, str(e)))
+        print('Error writing back %s: %s' % (self.page.url, str(e)))
 
       return
 
