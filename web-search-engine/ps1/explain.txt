@@ -1,0 +1,6 @@
+an explain.txt file containing a precise and 
+succint description of how the program works and 
+what the major functions are. Also, a list of any
+bugs or non-working features in your program. 
+Finally, a list of any special features beyond the 
+basic requirements, if there are any.
