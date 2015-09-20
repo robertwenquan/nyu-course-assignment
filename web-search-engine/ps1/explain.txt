@@ -4,3 +4,43 @@ what the major functions are. Also, a list of any
 bugs or non-working features in your program. 
 Finally, a list of any special features beyond the 
 basic requirements, if there are any.
+
+1. How to run:
+  $ python crawln.py [-n [NUM]] [keyword [keyword ...]]
+
+  Default with search 'nyu poly' with 10 pages
+  $ python crawln.py
+
+  The following launch will search 'nyu poly computer science' and crawl 1000 pages
+  $ python crawln.py -n 1000 'nyu poly computer science'
+
+2. How does it work:
+  Start:
+    Send google search query, get returned urls and put into crawl queue
+    If it is captured by Google, try Bing instead
+
+  Run:
+    Read queue as a loop, exit when the queue has been empty for 30s or crawled item reached N
+
+3. Major functions:
+  Parse pages:
+    fetch the page and parse it
+      1. Before fetching the page, the header of the file was fetched first
+         content-type is checked. non 'text/html' MIME type will be simply ignored
+      2. blacklist of file extensions are checked against the URL
+      3. the page is fetched and analyzed with TF (term frequency)
+      4. children links in this page are added to the crawl queue
+    
+  Score strategy:
+    Based on TF (term frequency)
+    1. Inherit 1/3 priority score of its parent page
+    2. Give higher weight of terms appeared in url and title
+    3. Encourage parsing pages with diverse keywords, measured by Entropy
+    4. Use max operation when one page is linked by multiple pages
+
+  Validation check:
+    1. 
+
+4. Multi-threading
+
+5. Fake test
