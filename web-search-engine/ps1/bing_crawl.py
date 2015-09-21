@@ -45,17 +45,6 @@ class BingWebCrawler(object):
       response = requests.get(bing_url, params=params, headers = headers)
 
     except requests.exceptions.RequestException as e:
-      try:
-        fileto = self.conf['crawl']['crawl_errs']
-        dirname = os.path.dirname(fileto)
-        if not os.path.exists(dirname):
-          os.makedirs(dirname)
-
-        with open(fileto, 'wb') as fpw:
-          fpw.write(url, e)
-
-      except Exception as e:
-        print('Error requesting: %s' % str(e))
 
       return
 
