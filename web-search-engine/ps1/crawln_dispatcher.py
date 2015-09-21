@@ -51,9 +51,14 @@ class CrawlStats(object):
     ''' increase crawled bytes '''
     self.crawled_bytes += nbyte
 
-  def update_crawl_count(self, npage):
+  def update_crawl_count(self, npage, success=True):
     ''' increase crawled pages '''
     self.crawled_pages += npage
+
+    if success:
+      self.crawled_succ += npage
+    else:
+      self.crawled_fail += npage
 
   def finalize(self):
     ''' mark the crawl end time
@@ -151,7 +156,6 @@ class Dispatcher(object):
       if page:
         page.time_dequeue = time.time()
         worker.add_task(self.call_crawl_page, page)
-        self.stats.update_crawl_count(1)
 
       if self.stats.crawled_pages == self.max_num_pages:
         break
@@ -177,9 +181,9 @@ class Dispatcher(object):
         self.logger.log(page)
 
         if page.error == 1:
-          self.stats.crawled_fail += 1
+          self.stats.update_crawl_count(1, success=False)
         else:
-          self.stats.crawled_succ += 1
+          self.stats.update_crawl_count(1, success=True)
 
       if page == page_end:
         break
