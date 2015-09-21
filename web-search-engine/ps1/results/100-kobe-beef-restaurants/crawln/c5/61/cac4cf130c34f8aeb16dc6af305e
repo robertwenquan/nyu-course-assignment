@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+      <title>Vox Advertising</title>
+      <meta name="og:title" content="Vox Advertising">
+
+    <meta property="og:image" content="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-xl-401a2441.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://voxmedia.com" />
+
+      <meta name="og:description" content="Vox Media builds smart media brands for smart audiences by combining the best content, technology, and distribution capabilities to connect with an audience of 150MM people who rely on us for a modern, intelligent take on the world around them." />
+      <meta name="description" content="Vox Media builds smart media brands for smart audiences by combining the best content, technology, and distribution capabilities to connect with an audience of 150MM people who rely on us for a modern, intelligent take on the world around them." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-s-22ff05b9.png" sizes="320x460" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-m-31504a34.png" sizes="640x920" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-l-f83d6302.png" sizes="768x1004" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-xl-401a2441.png" sizes="1024x748" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+    <link rel="apple-touch-icon-precomposed" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/iphone-bookmark-60x60-ec0eedd6.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/ipad-72x72-0ef17332.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/iphone-retina-120x120-a155fc41.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/ipad-retina-144x144-676b0fa4.png" />
+    <link rel="shortcut icon" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/favicon.ico">
+
+    <link href="http://ea-cdn.voxmedia.com/production/voxmedia/stylesheets/styles-bc9a3724.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.sbnation.com/voxmedia/public/stylesheets/symbolset/ss-standard.css" rel="stylesheet" />
+    <link href="http://assets.sbnation.com/voxmedia/public/stylesheets/ss-social/ss-social.css" rel="stylesheet" />
+    <link href="//cloud.typography.com/706184/773582/css/fonts.css" type="text/css" rel="stylesheet" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body class="vox-advertising vox-advertising_index  voxads">
+    <script>
+  dataLayer = [{
+    'Network': 'voxmedia.com',
+    'Community': 'voxmedia.com'
+  }];
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KDNV3F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KDNV3F');</script>
+<!-- End Google Tag Manager -->
+    <header class="m-header standard-white">
+  <a class="m-header__hamburger" id="toggle-mobile-nav"></a>
+  <a title="Vox Media home" class="m-header__logo" href="/">Vox Media</a>
+  <nav class="m-header__nav" id="site-nav" role="navigation">
+    <ul>
+      <li><a href="/who-we-are/">Who We Are</a></li>
+      <li><a href="/vox-advertising/">Vox Advertising</a></li>
+      <li>
+        <span class="tab">Brands<span class="arrow"></span></span>
+        <ul class="sub-nav">
+          <li><a href="/brands/curbed/">Curbed</a></li>
+          <li><a href="/brands/eater/">Eater</a></li>
+          <li><a href="/brands/polygon/">Polygon</a></li>
+          <li><a href="/brands/racked/">Racked</a></li>
+          <li><a href="/brands/sbnation/">SB&nbsp;Nation</a></li>
+          <li><a href="/brands/theverge/">The&nbsp;Verge</a></li>
+          <li><a href="/brands/vox/">Vox</a></li>
+        </ul>
+      </li>
+      <li><a href="/careers/">Careers</a></li>
+      <li>
+        <span class="tab">Blogs<span class="arrow"></span></span>
+        <ul class="sub-nav">
+          <li><a href="http://product.voxmedia.com">Product</a></li>
+          <li><a href="http://blog.voxmedia.com">News</a></li>
+          <li><a href="http://marketing.voxmedia.com">Marketing</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="tab">Contact<span class="arrow"></span></span>
+        <ul class="sub-nav">
+          <li><a href="mailto:press@voxmedia.com">press@voxmedia.com</a></li>
+          <li><a href="mailto:advertising@voxmedia.com">advertising@voxmedia.com</a></li>
+          <li><a href="mailto:international.advertising@voxmedia.com">international.advertising@voxmedia.com</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+    
+  <div class="m-notice">
+    <div class="m-notice__message">
+      <span>Latest News:</span> Vox Media is now available on Apple News
+<a href="http://blog.voxmedia.com/post/129238563277/vox-media-now-available-on-apple-news" target="_blank">Read more.</a> 
+    </div>
+    <div class="m-notice__close ss-icon">delete</div>
+  </div>
+
+    
+<link href="http://ea-cdn.voxmedia.com/production/voxmedia/stylesheets/ss-symbolicons/ss-symbolicons-block-ded5e39f.css" rel="stylesheet" type="text/css" />
+<nav class="m-chaser expanded" id="chaser">
+  <header>
+    <span class="ss-icon ss-standard">rows</span>
+    <span class="collapsible">jump to:</span>
+  </header>
+  <ul class="sticky-chaser-items">
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#introduction">Introduction</a>
+      </li>
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#audience">Our Audience</a>
+      </li>
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#vox-creative">Vox Creative</a>
+      </li>
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#brand-publishing">Brand Publishing</a>
+      </li>
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#sponsorships">Sponsorships</a>
+      </li>
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#display">Display</a>
+      </li>
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#analytics">Analytics</a>
+      </li>
+      <li>
+        <span class="circle"></span>
+        <a class="m-chaser__link" href="#marketing-events">Events</a>
+      </li>
+  </ul>
+</nav>
+<section class="m-cover" id="cover">
+  <script>
+  var covers = [
+  ];
+  coverUrl = covers[Math.round(Math.random() * Math.max(0, covers.length-1))];
+  document.getElementById('cover').setAttribute('style', 'background-image: url('+coverUrl+');');
+  </script>
+  <span class="m-cover__overlay"></span>
+  <div class="m-cover__logo-container container">
+    <img alt="Vox Advertising" src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/2404554/logo-vox-advertising.0.svg" />
+  </div>
+  <a class="ss-icon m-cover__down" href="#introduction">navigatedown</a>
+</section>
+
+<section class="m-sizzle" id="introduction">
+  <div class="container">
+    <h1 class="m-sizzle__header">The Future Of Brand Advertising</h1>
+      <div class="video-container">
+        <iframe src="//player.vimeo.com/video/99377712?title=0&amp;byline=0&amp;portrait=0" width="920" height="518" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    <div class="m-sizzle__blurb">
+      <p>Vox Media builds smart media brands for smart audiences by combining the best content, technology, and distribution capabilities to connect with an audience of 150MM people who rely on us for a modern, intelligent take on the world around them.</p><p>Vox Media is News (Vox.com), Technology and Culture (The Verge), Sports (SB Nation), Gaming (Polygon), Food and Nightlife (Eater), Fashion and Shopping (Racked), and Real estate and Design (Curbed).</p>
+    </div>
+  </div>
+</section>
+
+  <section class="m-audience off-white" id="audience">
+    <div class="container">
+      <h2 class="m-section__header center">Engagement At Scale</h2>
+
+
+        <div class="center"><p>Reaching over one hundred fifty million young, affluent, and influential users across our seven celebrated verticals, Vox Media is home to the highly covetable yet elusive audience of discerning tastemakers who care as much about the brands they support as the content they consume.</p></div>
+
+      <ul class="m-audience__list">
+          <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="84" height="82"><path d="M47 43.677v-15.677h-28v19h24.484c2.677 0 3.516-1.319 3.516-3.323zM44.422 51h-25.422v7.022c0 3.212 2.282 4.978 4.666 4.978h35.186c2.675 0 3.148-2.043 3.148-4.047v-30.953h-11v17.155c0 3.613-2.162 5.845-6.578 5.845zM17.402 17.428c1.494-1.494 3.458-2.428 5.569-2.428h24.029v-2h-43v29.746s1.915 4.254 4.299 4.254h6.701v-23.979c0-2.111.909-4.101 2.402-5.593zM23.927 24.932c.796 0 1.473-.277 2.031-.836.557-.558.836-1.233.836-2.032 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.798 0-1.474.278-2.031.835-.559.56-.837 1.236-.837 2.031 0 .799.278 1.475.837 2.032.557.558 1.233.836 2.031.836zM23.852 9.655c.796 0 1.472-.277 2.031-.837.557-.557.836-1.232.836-2.031 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.474.278-2.031.835-.558.56-.836 1.236-.836 2.031 0 .799.278 1.475.836 2.031.556.56 1.233.837 2.031.837zM39.219 24.932c.795 0 1.472-.277 2.031-.836.557-.558.836-1.233.836-2.032 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.475.278-2.031.835-.558.56-.836 1.236-.836 2.031 0 .799.279 1.475.836 2.032.556.558 1.233.836 2.031.836zM31.572 24.932c.796 0 1.473-.277 2.031-.836.557-.558.836-1.233.836-2.032 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.474.278-2.031.835-.559.56-.836 1.236-.836 2.031 0 .799.277 1.475.836 2.032.558.558 1.234.836 2.031.836zM8.56 9.655c.796 0 1.473-.277 2.032-.837.557-.557.836-1.232.836-2.031 0-.795-.279-1.472-.836-2.031-.56-.557-1.236-.835-2.032-.835-.797 0-1.474.278-2.031.835-.559.559-.837 1.236-.837 2.031 0 .799.278 1.475.836 2.031.558.56 1.234.837 2.032.837zM16.206 9.655c.796 0 1.472-.277 2.031-.837.557-.557.836-1.232.836-2.031 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.474.278-2.031.835-.559.56-.836 1.236-.836 2.031 0 .799.277 1.475.836 2.031.556.56 1.234.837 2.031.837z" fill="none"/><path d="M8.299 47c-2.384 0-4.299-1.042-4.299-4.254v-29.746h43v2h4v-7.256c0-2.11-.78-3.962-2.272-5.455-1.495-1.493-3.331-2.289-5.44-2.289h-35.684c-2.111 0-3.892.796-5.385 2.289-1.493 1.493-2.219 3.345-2.219 5.455v36.609c0 3.746 2.508 6.647 6.426 6.647h8.574v-4h-6.701zm13.521-42.244c.557-.557 1.234-.835 2.031-.835.796 0 1.472.278 2.031.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.031-.559.56-1.235.837-2.031.837-.797 0-1.474-.277-2.031-.837-.558-.557-.836-1.232-.836-2.031 0-.795.279-1.472.836-2.031zm-7.645 0c.557-.557 1.234-.835 2.031-.835.796 0 1.472.278 2.031.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.031-.559.56-1.235.837-2.031.837-.797 0-1.474-.277-2.031-.837-.559-.557-.836-1.232-.836-2.031 0-.795.277-1.472.836-2.031zm-7.646 0c.557-.557 1.233-.835 2.031-.835.796 0 1.473.278 2.032.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.031-.559.56-1.235.837-2.032.837-.797 0-1.474-.277-2.031-.837-.559-.556-.837-1.232-.837-2.031 0-.795.278-1.472.837-2.031z"/><path d="M62 58.953v-14.953h-25v19h21.852c2.675 0 3.148-2.043 3.148-4.047zM41.293 40.845c.796 0 1.473-.277 2.032-.837.557-.557.836-1.232.836-2.031 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.032-.835-.797 0-1.474.278-2.031.835-.559.56-.836 1.236-.836 2.031 0 .799.278 1.475.836 2.031.558.559 1.234.837 2.031.837zM59.79 66h-22.79v7.936c0 3.211 1.648 4.064 4.033 4.064h35.186c2.676 0 3.781-1.13 3.781-3.134v-30.866h-14v16.432c0 3.612-1.795 5.568-6.21 5.568zM48.939 40.845c.796 0 1.473-.277 2.031-.837.557-.557.836-1.232.836-2.031 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.474.278-2.031.835-.559.56-.836 1.236-.836 2.031 0 .799.277 1.475.836 2.031.557.559 1.235.837 2.031.837zM39.219 24.932c.795 0 1.472-.277 2.031-.836.557-.558.836-1.233.836-2.032 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.475.278-2.031.835-.558.56-.836 1.236-.836 2.031 0 .799.279 1.475.836 2.032.556.558 1.233.836 2.031.836zM35.086 33.384c1.493-1.493 3.141-2.384 5.251-2.384h21.663v-3h-43v30.022c0 3.212 2.282 4.978 4.666 4.978h9.334v-24.065c0-2.112.593-4.058 2.086-5.551zM56.585 40.845c.796 0 1.472-.277 2.031-.837.557-.557.836-1.232.836-2.031 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.474.278-2.031.835-.558.56-.836 1.236-.836 2.031 0 .799.278 1.475.836 2.031.557.559 1.234.837 2.031.837zM31.572 24.932c.796 0 1.473-.277 2.031-.836.557-.558.836-1.233.836-2.032 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.797 0-1.474.278-2.031.835-.559.56-.836 1.236-.836 2.031 0 .799.277 1.475.836 2.032.558.558 1.234.836 2.031.836zM23.927 24.932c.796 0 1.473-.277 2.031-.836.557-.558.836-1.233.836-2.032 0-.795-.279-1.472-.836-2.031-.559-.557-1.235-.835-2.031-.835-.798 0-1.474.278-2.031.835-.559.56-.837 1.236-.837 2.031 0 .799.278 1.475.837 2.032.557.558 1.233.836 2.031.836z" fill="none"/><path d="M23.666 62c-2.384 0-4.666-1.766-4.666-4.978v-29.022h43v3h4v-7.979c0-2.111-.597-4.102-2.089-5.594-1.494-1.493-3.146-2.427-5.257-2.427h-35.683c-2.111 0-4.075.934-5.569 2.428-1.493 1.492-2.402 3.482-2.402 5.593v36.609c0 3.746 2.875 6.37 6.793 6.37h11.207v-4h-9.334zm13.522-41.968c.557-.557 1.234-.835 2.031-.835.795 0 1.472.278 2.031.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.032-.559.559-1.235.836-2.031.836-.797 0-1.475-.277-2.031-.836-.558-.558-.836-1.233-.836-2.032-.001-.794.278-1.471.836-2.031zm-7.646 0c.557-.557 1.234-.835 2.031-.835.796 0 1.473.278 2.031.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.032-.559.559-1.235.836-2.031.836-.797 0-1.474-.277-2.031-.836-.559-.558-.836-1.233-.836-2.032 0-.794.277-1.471.836-2.031zm-7.646 0c.557-.557 1.233-.835 2.031-.835.796 0 1.473.278 2.031.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.032-.559.559-1.235.836-2.031.836-.798 0-1.474-.277-2.031-.836-.559-.558-.837-1.233-.837-2.032 0-.794.278-1.471.837-2.031zM81.594 33.384c-1.494-1.493-3.462-2.384-5.573-2.384h-35.684c-2.111 0-3.758.891-5.251 2.384s-2.086 3.439-2.086 5.551v36.608000000000004c0 3.746 2.242 6.457 6.16 6.457h37.997c4.415 0 6.843-2.043 6.843-5.655v-37.41c0-2.112-.914-4.058-2.406-5.551zm-27.04 2.561c.557-.557 1.234-.835 2.031-.835.796 0 1.472.278 2.031.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.031-.559.56-1.235.837-2.031.837-.797 0-1.474-.277-2.031-.837-.558-.557-.836-1.232-.836-2.031 0-.794.279-1.471.836-2.031zm-7.645 0c.557-.557 1.234-.835 2.031-.835.796 0 1.473.278 2.031.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.031-.559.56-1.235.837-2.031.837-.797 0-1.474-.277-2.031-.837-.559-.557-.836-1.232-.836-2.031-.001-.794.277-1.471.836-2.031zm-7.646 0c.557-.557 1.233-.835 2.031-.835.796 0 1.473.278 2.032.835.557.56.836 1.236.836 2.031 0 .799-.279 1.475-.836 2.031-.559.56-1.235.837-2.032.837-.797 0-1.474-.277-2.031-.837-.559-.557-.836-1.232-.836-2.031-.001-.794.277-1.471.836-2.031zm40.737 38.921c0 2.004-1.105 3.134-3.781 3.134h-35.186c-2.385 0-4.033-.853-4.033-4.064v-29.936h43v30.866z"/></svg>
+            <div class="middle">
+              <h4>7.0</h4>
+              <p>Content Verticals</p>
+            </div>
+          </li>
+          <li>
+              <svg viewBox="0 0 53.264 53.262" enable-background="new 0 0 53.264 53.262" xml:space="preserve">
+  <g>
+    <path  d="M22.191,37.48c0,0,4.438-4.993,4.438-14.179c0-5.486-4.5-9.986-9.986-9.986c-5.549,0-9.984,4.5-9.984,9.986
+      c0,9.186,4.438,14.179,4.438,14.179C11.096,44.385,0,42.227,0,49.932v2.222c0,0.614,0.492,1.108,1.107,1.108h31.069
+      c0.616,0,1.11-0.494,1.11-1.108v-2.222C33.289,42.166,22.191,44.385,22.191,37.48z"/>
+    <path  d="M42.166,24.165c0,0,4.438-4.993,4.438-14.179C46.604,4.5,42.104,0,36.619,0c-5.549,0-9.986,4.5-9.986,9.986
+      c0,1.109,0.062,2.096,0.186,3.082v0.062c0,0,4.254,3.76,4.254,10.171c0,8.815-3.944,14.794-3.944,14.794s1.048,0.986,3.698,1.851
+      h21.33c0.614,0,1.107-0.493,1.107-1.109v-2.22C53.262,28.85,42.166,31.069,42.166,24.165z"/>
+  </g>
+</svg>
+            <div class="middle">
+              <h4>150MM</h4>
+              <p>Monthly Uniques</p>
+            </div>
+          </li>
+          <li>
+              <svg viewBox="0 0 76.453 50.968" enable-background="new 0 0 76.453 50.968" xml:space="preserve">
+  <g>
+    <path d="M38.223,0C17.116,0,0,25.484,0,25.484s17.115,25.484,38.223,25.484c21.115,0,38.23-25.485,38.23-25.485
+        S59.338,0,38.223,0z M38.223,39.925c-7.975,0-14.44-6.466-14.44-14.441s6.467-14.438,14.44-14.438
+        c7.979,0,14.443,6.461,14.443,14.438C52.666,33.459,46.201,39.925,38.223,39.925z"/>
+    <circle  cx="38.227" cy="25.486" r="4.481"/>
+  </g>
+</svg>  
+            <div class="middle">
+              <h4>1.0</h4>
+              <p>Year/Year Growth</p>
+            </div>
+          </li>
+          <li>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 96.2 83" enable-background="new 0 0 96.2 83" xml:space="preserve">
+<path fill="none" d="M54.8,52.6c-1.2,0-1.8-0.3-3.8-1v0.1c0,1.9,0.8,3.6,2,5.1c1.2,1.5,2.8,2.4,4.7,2.8c-0.6,0.2-1.2,0.3-2.1,0.3
+  c-0.4,0-0.9,0-1.5-0.1c0.5,1.6,1.4,2.9,2.8,3.9c1.4,1,3,1.5,4.7,1.5c-3.1,2.5-6.4,3.7-10,3.7c-0.5,0-1.1,0-1.9-0.1
+  c3.6,2.4,7.8,3.6,12.4,3.6c3.5,0,6.8-0.7,9.8-2.1c3-1.4,5.4-3.2,7.3-5.4c1.9-2.2,3.3-4.7,4.3-7.4c1-2.7,1.5-5.4,1.5-8.1v-1.1
+  c2-1,2.8-2.4,4-4.1c-1.6,0.7-3.1,1.1-4.7,1.2c1.7-1,2.9-2.5,3.5-4.5c-1.6,0.9-3.3,1.6-5.1,2c-1.6-1.7-3.5-2.6-5.9-2.6
+  c-2.2,0-4.1,0.8-5.7,2.4c-1.6,1.6-2.3,3.5-2.3,5.7c0,0.7,0.1,1.3,0.2,1.8c-5.2-0.3-9.7-2-13.4-5.2c-1,1.6-2.2,3.1-3.5,4.5
+  C52.8,50.8,53.6,51.8,54.8,52.6z"/>
+<path d="M44.7,32.5c3.5-3.5,7.5-5.9,11.9-7.2c-0.7-6.5-3.4-12.2-8.2-17C43,2.8,36.3,0,28.4,0S13.9,2.8,8.3,8.3
+  C2.8,13.9,0,20.6,0,28.4c0,6.5,1.9,12.4,5.9,17.5c4,5.1,9.2,8.5,15.2,10V36.3h-7v-8h7v-5.8c0-3.2,1.2-6.2,3.3-8.6
+  c2.1-2.3,4.7-3.7,7.7-3.7H39v9H32c-0.7,0-1,0.2-1.5,0.9C30,20.8,30,21.5,30,22.5v5.8h9v8h-9v20.6c2-0.1,4.5-0.5,6.7-1.1
+  c-0.1-1-0.3-2-0.3-3.1C36.5,44.7,39.2,38,44.7,32.5z M87.9,34.5c-5.5-5.5-12.2-8.3-20.1-8.3c-2.9,0-5.6,0.4-8.2,1.1
+  c-4.4,1.3-8.4,3.7-11.9,7.2c-5.5,5.5-8.3,12.2-8.3,20.1c0,1.1,0.1,2.1,0.2,3.1l0,0c0.6,6.5,3.4,12.2,8.2,17C53.3,80.2,60,83,67.8,83
+  s14.5-2.8,20.1-8.3c5.5-5.5,8.3-12.2,8.3-20.1C96.2,46.7,93.4,40,87.9,34.5z M85,48.3v1.1c0,2.7-0.5,5.4-1.5,8.1
+  c-1,2.7-2.5,5.1-4.3,7.4c-1.9,2.2-4.3,4-7.3,5.4c-3,1.4-6.2,2.1-9.8,2.1c-4.6,0-8.7-1.2-12.4-3.6c0.8,0.1,1.4,0.1,1.9,0.1
+  c3.5,0,6.9-1.2,10-3.7c-1.8,0-3.3-0.6-4.7-1.5c-1.4-1-2.3-2.3-2.8-3.9c0.6,0.1,1.1,0.1,1.5,0.1c0.8,0,1.5-0.1,2.1-0.3
+  c-1.8-0.4-3.5-1.3-4.8-2.8c-1.2-1.5-2-3.2-2-5.1v-0.1c2,0.7,2.6,1,3.8,1c-1.2-0.8-2-1.8-2.6-2.9l0.1-0.1c-0.6-1.1-0.8-2.3-0.8-3.8
+  c0-1.4,0.4-2.8,1.1-4.1c1,1.2,2.1,2.3,3.3,3.3c3.8,3.2,8.2,4.9,13.4,5.2c-0.1-0.6-0.2-1.2-0.2-1.8c0-2.2,0.8-4.1,2.3-5.7
+  c1.6-1.6,3.5-2.4,5.7-2.4c2.3,0,4.3,0.9,5.9,2.6c1.8-0.4,3.4-1.1,5.1-2c-0.6,2-1.8,3.5-3.5,4.5c1.5-0.2,3.1-0.6,4.6-1.2
+  C87.9,45.9,87,47.3,85,48.3z"/>
+</svg>
+            <div class="middle">
+              <h4>300MM</h4>
+              <p>Unique social users reached organically per month</p>
+            </div>
+          </li>
+      </ul>
+      
+
+    </div>
+  </section>
+
+
+  <section class="m-services vox-creative" id="vox-creative">
+    <div class="container">
+          <h2 class="center"><img alt="Vox Creative" class="m-services__logo" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404558/logo-vox-creative.0.png" /></h2>
+
+
+
+
+        <div class="m-services__listing">
+            <h3>Our Capabilities:</h3>
+          <ul>
+              <li>
+                  <span class="ss-icon">videocamera</span>
+                <span>Broadcast-Quality Studio</span>
+              </li>
+              <li>
+                  <span class="ss-icon">typewriter</span>
+                <span>Publishing</span>
+              </li>
+              <li>
+                  <span class="ss-icon">wrenchpencil</span>
+                <span>Ad Product Development</span>
+              </li>
+              <li>
+                  <span class="ss-icon">searchfile</span>
+                <span>Research &amp; Analytics</span>
+              </li>
+              <li>
+                  <span class="ss-icon">globe</span>
+                <span>Events &amp; Experiential</span>
+              </li>
+              <li>
+                  <span class="ss-icon">desktop</span>
+                <span>Media Planning &amp; Buying</span>
+              </li>
+              <li>
+                  <span class="ss-icon">mobile</span>
+                <span>Mobile Development</span>
+              </li>
+              <li>
+                  <span class="ss-icon">share</span>
+                <span>Social Development</span>
+              </li>
+          </ul>
+        </div>
+
+        <div class="m-services__content">  
+          <p>Vox Creative is Vox Media's in-house group of designers, directors, storytellers, and creative coders whose mission is to help our clients build custom advertising experiences that are as appealing, engaging, and powerful as the editorial content on our sites.</p><p>Vox Creative extends the exact same tools and capabilities to our partners as we do to our own media brands.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+  <section class="m-services brand-publishing" id="brand-publishing">
+    <div class="container">
+          <h2 class="center">Brand Publishing</h2>
+
+
+        </div> 
+
+        <div class="m-services__gallery-container">
+          <a href="#" id="prev-brand-publishing" class="prev"><span class="ss-icon">navigateleft</span></a>
+          <a href="#" id="next-brand-publishing" class="next"><span class="ss-icon">navigateright</span></a> 
+          <div class="m-services__gallery cycle-slideshow" 
+            data-cycle-fx="carousel" 
+            data-cycle-carousel-fluid=true 
+            data-cycle-carousel-visible="1.25" 
+            data-cycle-timeout="0" 
+            data-cycle-next="#next-brand-publishing" 
+            data-cycle-prev="#prev-brand-publishing" 
+            data-cycle-slides=".gallery-brand-publishing">
+
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn0.vox-cdn.com/uploads/chorus_asset/file/3510106/nike_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Nike: First & Long</h3>
+                  <p>A collaboration between SB Nation and Vox Creative, Nike First & Long is a custom video series that chronicles the journey of 6 NFL stars who ventured back to their high schools and crashed summer training.</p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>6 NFL stars</li>
+ <li>15 short videos</li>
+ <li>1mm video views (owned + earned)</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.sbnation.com/sponsored/nike-pep-talks/">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn2.vox-cdn.com/uploads/chorus_asset/file/3510100/samsung_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Samsung: Aloe Blacc’s Holiday Gift Guide</h3>
+                  <p>During the holiday season, Samsung collaborated with Vox Creative to produce a high-touch native web app that showcased an array of musician Aloe Blacc’s sophisticated gift recommendations which included the Samsung Galaxy Tab S & Note 4. </p>
+                    <a class="demo-button" target="_blank" href="http://www.theverge.com/sponsored/samsung-gift-guide">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn1.vox-cdn.com/uploads/chorus_asset/file/3510204/bp_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>BP: The Next Mile</h3>
+                  <p>In ‘The Next Mile’, an interactive video content series, BP Fuels and Vox Creative explored trends, products, and technologies that are changing the world for the better. The Next Mile produced and distributed stories that take you a little further, through video, infographics, photography, and interviews.</p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>Mix of short videos, longforms, and infographics</li>
+<li>3.5MM video views</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.voxcreative.com/sponsored/bp-the-next-mile">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn3.vox-cdn.com/uploads/chorus_asset/file/3510220/future_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Intel: The Future is Now</h3>
+                  <p>Intel and Vox Creative showcased culture visionaries who are using Intel technology to shape our tomorrow through The Future Is Now, a custom video series and immersive multimedia experience powered by Chorus.</p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>10 custom videos</li>
+<li>1.5mm video views (owned + earned)</li>
+<li>3,500+ social shares</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.theverge.com/sponsored/intel-future-is-now">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn1.vox-cdn.com/uploads/chorus_asset/file/3510268/ford_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Ford: Detours</h3>
+                  <p>Ford and Vox Creative traveled across the country to find the people, groups, and companies that are solving some of America's biggest problems in unconventional ways. Detours is an episodic video series and media experience hosted in a custom content environment on The Verge.</p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>12 custom videos</li>
+<li>1mm video views (owned + earned)</li>
+<li>11k social shares</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.theverge.com/video/detours">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn1.vox-cdn.com/uploads/chorus_asset/file/3510098/chivalry_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Stetson Caliber: The Chivalry Playbook</h3>
+                  <p>Stetson Caliber and Vox Creative searched for the five most chivalrous professional athletes, individuals who have come to embody the spirit of the modern cowboy. The Chivalry Playbook is a custom content series hosted on SB Nation.</p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>5 custom editorial interviews</li>
+<li>72 - 83% avg. viewability rate for media</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.sbnation.com/sponsored/chivalry-playbook/">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn1.vox-cdn.com/uploads/chorus_asset/file/3510108/75_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Absolut: 75 Miles</h3>
+                  <p>Absolut partnered with Vox Creative to produce 75 Miles, an immersive, captivating six-part series designed to echo the themes of Absolut’s own 75-mile story. This series profiled the journeys of six passionate chefs and the legendary meals they create using the bounty of the local environment.</p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>6 renowned chefs</li>
+<li>80% lift in content engagement</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.eater.com/sponsored/absolut">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn0.vox-cdn.com/uploads/chorus_asset/file/3510096/gs_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Goldman Sachs: The North American Energy Opportunity</h3>
+                  <p>Goldman Sachs worked with Vox Creative to produce The North American Energy Opportunity, a custom series of short videos and infographics on the outlook and opportunity around North American energy.</p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>600k video views (owned + earned)</li>
+<li>99% video view conversion rate</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.vox.com/sponsored/goldman-sachs-naes/">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn3.vox-cdn.com/uploads/chorus_asset/file/3523212/goldie_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>SONY: Goldie</h3>
+                  <p>Sony worked with Vox Creative to introduce Goldie, one of their six new underwater apps for the waterproof Xperia Z1, in a custom content feature hosted on The Verge. </p>
+                    <em>Metrics:</em>
+                    <ul class="gallery-slide-metrics">
+                      <li>6 custom videos</li>
+<li>750k video views (owned + earned)</li>
+                    </ul>
+                    <a class="demo-button" target="_blank" href="http://www.theverge.com/sponsored/sony-water-apps-1/">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-brand-publishing">
+                <img alt="" src="https://cdn2.vox-cdn.com/uploads/chorus_asset/file/3510104/microsoft_collection.0.png" />
+                <div class="gallery-slide-overlay">
+                  <h3>Microsoft OneDrive: The Chronicles</h3>
+                  <p>Microsoft OneDrive worked with Vox Creative to produce The Chronicles, a custom content series that takes a look at those who are having a profound impact on their fields and the personal history that shaped their careers. The Chronicles tells those stories from the point of view of six prominent individuals: sharing their first success, their first failure, and their most profound moments as only they could.</p>
+                    <a class="demo-button" target="_blank" href="http://www.theverge.com/sponsored/microsoft-onedrive">View Demo</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container"> 
+
+
+        <div class="m-services__listing">
+            <h3>We Offer:</h3>
+          <ul>
+              <li>
+                  <span class="ss-icon">check</span>
+                <span>Custom Content Created With Talented Digital Storytellers</span>
+              </li>
+              <li>
+                  <span class="ss-icon">videocamera</span>
+                <span>Custom Video Production</span>
+              </li>
+              <li>
+                  <span class="ss-icon">upload</span>
+                <span>Smart On-Platform Distribution</span>
+              </li>
+              <li>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 96.2 83" enable-background="new 0 0 96.2 83" xml:space="preserve">
+<path fill="none" d="M54.8,52.6c-1.2,0-1.8-0.3-3.8-1v0.1c0,1.9,0.8,3.6,2,5.1c1.2,1.5,2.8,2.4,4.7,2.8c-0.6,0.2-1.2,0.3-2.1,0.3
+  c-0.4,0-0.9,0-1.5-0.1c0.5,1.6,1.4,2.9,2.8,3.9c1.4,1,3,1.5,4.7,1.5c-3.1,2.5-6.4,3.7-10,3.7c-0.5,0-1.1,0-1.9-0.1
+  c3.6,2.4,7.8,3.6,12.4,3.6c3.5,0,6.8-0.7,9.8-2.1c3-1.4,5.4-3.2,7.3-5.4c1.9-2.2,3.3-4.7,4.3-7.4c1-2.7,1.5-5.4,1.5-8.1v-1.1
+  c2-1,2.8-2.4,4-4.1c-1.6,0.7-3.1,1.1-4.7,1.2c1.7-1,2.9-2.5,3.5-4.5c-1.6,0.9-3.3,1.6-5.1,2c-1.6-1.7-3.5-2.6-5.9-2.6
+  c-2.2,0-4.1,0.8-5.7,2.4c-1.6,1.6-2.3,3.5-2.3,5.7c0,0.7,0.1,1.3,0.2,1.8c-5.2-0.3-9.7-2-13.4-5.2c-1,1.6-2.2,3.1-3.5,4.5
+  C52.8,50.8,53.6,51.8,54.8,52.6z"/>
+<path d="M44.7,32.5c3.5-3.5,7.5-5.9,11.9-7.2c-0.7-6.5-3.4-12.2-8.2-17C43,2.8,36.3,0,28.4,0S13.9,2.8,8.3,8.3
+  C2.8,13.9,0,20.6,0,28.4c0,6.5,1.9,12.4,5.9,17.5c4,5.1,9.2,8.5,15.2,10V36.3h-7v-8h7v-5.8c0-3.2,1.2-6.2,3.3-8.6
+  c2.1-2.3,4.7-3.7,7.7-3.7H39v9H32c-0.7,0-1,0.2-1.5,0.9C30,20.8,30,21.5,30,22.5v5.8h9v8h-9v20.6c2-0.1,4.5-0.5,6.7-1.1
+  c-0.1-1-0.3-2-0.3-3.1C36.5,44.7,39.2,38,44.7,32.5z M87.9,34.5c-5.5-5.5-12.2-8.3-20.1-8.3c-2.9,0-5.6,0.4-8.2,1.1
+  c-4.4,1.3-8.4,3.7-11.9,7.2c-5.5,5.5-8.3,12.2-8.3,20.1c0,1.1,0.1,2.1,0.2,3.1l0,0c0.6,6.5,3.4,12.2,8.2,17C53.3,80.2,60,83,67.8,83
+  s14.5-2.8,20.1-8.3c5.5-5.5,8.3-12.2,8.3-20.1C96.2,46.7,93.4,40,87.9,34.5z M85,48.3v1.1c0,2.7-0.5,5.4-1.5,8.1
+  c-1,2.7-2.5,5.1-4.3,7.4c-1.9,2.2-4.3,4-7.3,5.4c-3,1.4-6.2,2.1-9.8,2.1c-4.6,0-8.7-1.2-12.4-3.6c0.8,0.1,1.4,0.1,1.9,0.1
+  c3.5,0,6.9-1.2,10-3.7c-1.8,0-3.3-0.6-4.7-1.5c-1.4-1-2.3-2.3-2.8-3.9c0.6,0.1,1.1,0.1,1.5,0.1c0.8,0,1.5-0.1,2.1-0.3
+  c-1.8-0.4-3.5-1.3-4.8-2.8c-1.2-1.5-2-3.2-2-5.1v-0.1c2,0.7,2.6,1,3.8,1c-1.2-0.8-2-1.8-2.6-2.9l0.1-0.1c-0.6-1.1-0.8-2.3-0.8-3.8
+  c0-1.4,0.4-2.8,1.1-4.1c1,1.2,2.1,2.3,3.3,3.3c3.8,3.2,8.2,4.9,13.4,5.2c-0.1-0.6-0.2-1.2-0.2-1.8c0-2.2,0.8-4.1,2.3-5.7
+  c1.6-1.6,3.5-2.4,5.7-2.4c2.3,0,4.3,0.9,5.9,2.6c1.8-0.4,3.4-1.1,5.1-2c-0.6,2-1.8,3.5-3.5,4.5c1.5-0.2,3.1-0.6,4.6-1.2
+  C87.9,45.9,87,47.3,85,48.3z"/>
+</svg>
+                <span>Social Distribution & Amplification</span>
+              </li>
+              <li>
+                  <span class="ss-icon">searchfile</span>
+                <span>Deep Brand Analytics Through Harmony</span>
+              </li>
+          </ul>
+        </div>
+
+        <div class="m-services__content">  
+          <p>Great content is great content no matter who it comes from; we not only guide advertisers on creating great content that is intelligent and entertaining, we also help them strategically distribute it using the channels, formats, and tactics we know resonate with big audiences and drive true quantifiable and qualifiable business impact.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+  <section class="m-services sponsorships" id="sponsorships">
+    <div class="container">
+          <h2 class="center">Scalable Sponsorships &amp; Alignment</h2>
+
+
+
+        <div class="m-services__video">
+          <div class="m-services__listing">
+            <h3>Videos:</h3>
+            <ul data-videoplaylist="video-sponsorships">
+                <li>
+                  <a href="//player.vimeo.com/video/99664181">
+                    <span class='ss-icon ss-standard play'>play</span>
+                    Samsung - The Verge 50
+                  </a>
+                </li>
+                <li>
+                  <a href="//player.vimeo.com/video/99735456">
+                    <span class='ss-icon ss-standard play'>play</span>
+                    Applebee's - The Daily Win
+                  </a>
+                </li>
+                <li>
+                  <a href="//player.vimeo.com/video/99672100">
+                    <span class='ss-icon ss-standard play'>play</span>
+                    NBC - NHL Season Preview
+                  </a>
+                </li>
+                <li>
+                  <a href="//player.vimeo.com/video/99671339">
+                    <span class='ss-icon ss-standard play'>play</span>
+                    HP - Back to School Guide
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <div class="m-services__content">
+            <div class="m-services__video-ratio">
+              <iframe id="video-sponsorships" src="//player.vimeo.com/video/99664181?title=0&amp;byline=0&amp;portrait=0" width="920" height="518" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-services__listing">
+            <h3>The Metrics:</h3>
+          <ul>
+              <li>
+                  <span class="ss-icon">binoculars</span>
+                <span>3X Industry Average CTR</span>
+              </li>
+              <li>
+                  <span class="ss-icon">clock</span>
+                <span>14 Minutes Spent on Page</span>
+              </li>
+              <li>
+                  <span class="ss-icon ss-standard">cursor</span>
+                <span>1,550 Social Interactions</span>
+              </li>
+              <li>
+                  <span class="ss-icon">barchart</span>
+                <span>230K US Uniques</span>
+              </li>
+          </ul>
+        </div>
+
+        <div class="m-services__content">  
+          <p>Vox Media is the undisputed leader in bringing high-value content into the digital space, from arresting visual features and longform investigative reporting to authoritative franchises and broadcast-quality video — all distinctly optimized for consumption on the web and mobile. By surrounding and integrating within the content our users most anticipate and engage with, advertisers consistently see outstanding performance.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+  <section class="m-services display" id="display">
+    <div class="container">
+          <h2 class="center">Big, Bold, Beautiful Brand Advertising</h2>
+
+
+        </div> 
+
+        <div class="m-services__gallery-container">
+          <a href="#" id="prev-display" class="prev"><span class="ss-icon">navigateleft</span></a>
+          <a href="#" id="next-display" class="next"><span class="ss-icon">navigateright</span></a> 
+          <div class="m-services__gallery cycle-slideshow" 
+            data-cycle-fx="carousel" 
+            data-cycle-carousel-fluid=true 
+            data-cycle-carousel-visible="1.25" 
+            data-cycle-timeout="0" 
+            data-cycle-next="#next-display" 
+            data-cycle-prev="#prev-display" 
+            data-cycle-slides=".gallery-display">
+
+              <div class="gallery-slide gallery-display">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404702/brand-advertising-fifa.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>FIFA 2014 Brazil</h3>
+                  <p>Step through the demo using your left and right arrow keys or the navigation at the top of the page to see the unique interstitial solution in our 2014 World Cup Preview.</p>
+                    <a class="demo-button" target="_blank" href="http://www.sbnation.com/a/world-cup-preview-2014">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-display">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404694/brand-advertising-samsung-prelude.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Samsung Prelude</h3>
+                  <p>Scroll and interact with the demo page just as you would the real site to see the complete implementation of this campaign.</p>
+                    <a class="demo-button" target="_blank" href="http://www.theverge.com/?c.test=samsungprelude&amp;google_preview=XErDcBjKHyMYr5P7oQUwr6-wqQWIAYCAgKCT2uC2Sg&amp;iu=172968584&amp;gdfp_req=1&amp;lineItemId=48263344&amp;creativeId=55172071504">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-display">
+                <img alt="" src="http://cdn1.vox-cdn.com/uploads/chorus_asset/file/2405284/brand-advertising-eater.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Absolut</h3>
+                  <p>Scroll and interact with the demo page just as you would the real site to see the complete implementation of this campaign.</p>
+                    <a class="demo-button" target="_blank" href="http://www.eater.com/a/72-ways-food-can-change-the-world?c.test=salesdemo&amp;google_preview=j200vblmb1YY3L2GogUw3Nm7qQWIAYCAgKCT2u7faw&amp;iu=172968584&amp;gdfp_req=1&amp;lineItemId=47676784&amp;creativeId=53628828904">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-display">
+                <img alt="" src="http://cdn1.vox-cdn.com/uploads/chorus_asset/file/2405278/brand-advertising-mercedes.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Mercedes</h3>
+                  <p>Scroll and interact with the demo page just as you would the real site to see the complete implementation of this campaign.</p>
+                    <a class="demo-button" target="_blank" href="http://www.theverge.com/?c.test=salesdemo&amp;google_preview=D0kmGaJsno0YzMOGogUwzN-7qQWIAYCAgKCT2p60cA&amp;iu=172968584&amp;gdfp_req=1&amp;lineItemId=48023104&amp;creativeId=54261708664">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-display">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2405274/brand-advertising-sony.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Sony SEN</h3>
+                  <p>Scroll and interact with the demo page just as you would the real site to see the complete implementation of this campaign.</p>
+                    <a class="demo-button" target="_blank" href="http://www.polygon.com/?c.test=salesdemo&amp;google_preview=as01NZQHTqsYxMuGogUwxOe7qQWIAYCAgKCT2p65Ug&amp;iu=172968584&amp;gdfp_req=1&amp;lineItemId=48436744&amp;creativeId=55350987664">View Demo</a>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-display">
+                <img alt="" src="http://cdn1.vox-cdn.com/uploads/chorus_asset/file/2404704/brand-advertising-bww.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Buffalo Wild Wings</h3>
+                  <p>Scroll and interact with the demo page just as you would the real site to see the complete implementation of this campaign.</p>
+                    <a class="demo-button" target="_blank" href="http://www.sbnation.com/?c.test=bwwdemo&amp;google_preview=gKkJXY3jicEYxJL7oQUwxK6wqQWIAYCAgKCT2uDBhwE&amp;iu=172968584&amp;gdfp_req=1&amp;lineItemId=48308344&amp;creativeId=55182814024">View Demo</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container"> 
+
+
+        <div class="m-services__listing">
+            <h3>The Metrics:</h3>
+          <ul>
+              <li>
+                  <span class="ss-icon">binoculars</span>
+                <span>5.5X Average CTR</span>
+              </li>
+              <li>
+                  <span class="ss-icon">barchart</span>
+                <span>9X Interaction Rate of Standard Media</span>
+              </li>
+              <li>
+                  <span class="ss-icon ss-standard">cursor</span>
+                <span>16.9% Hover Rate</span>
+              </li>
+              <li>
+                  <span class="ss-icon">globe</span>
+                <span>11.6% Universal Interaction Rate</span>
+              </li>
+          </ul>
+        </div>
+
+        <div class="m-services__content">  
+          <p>We strive to create advertisements that are as beautiful as the content they surround.</p><p>At Vox Media, we believe that advertising should and can enhance the user experience on digital — which is why Vox Creative is continually developing a suite of exclusive Vox Media display units that offer heightened levels of awareness and engagement.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+  <section class="m-services analytics" id="analytics">
+    <div class="container">
+          <h2 class="center">Deep Brand-Focused Analytics</h2>
+
+        <img alt="" class="m-services__splash" src="http://cdn1.vox-cdn.com/uploads/chorus_asset/file/2404682/voxads-intro-analytics.0.jpg" />
+
+
+
+        <div class="m-services__listing">
+            <h3>What We Offer:</h3>
+          <ul>
+              <li>
+                  <span class="ss-icon">upload</span>
+                <span>Brand Lift</span>
+              </li>
+              <li>
+                  <span class="ss-icon">clock</span>
+                <span>Real-Time Engagement Including Interaction and Time Spent</span>
+              </li>
+              <li>
+                  <span class="ss-icon">binoculars</span>
+                <span>Viewability</span>
+              </li>
+              <li>
+                  <span class="ss-icon">malefemale</span>
+                <span>Advanced Audience Data Including Social Graphs</span>
+              </li>
+          </ul>
+        </div>
+
+        <div class="m-services__content">  
+          <p>As the industry moves away from the click, we're innovating to create advertisements and reporting that measure the data marketers truly care about.</p><p>We're constantly exploring new ways to understand how our users interact with creative and branded content — and how to translate those understandings into incomparable performance for our partners.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+  <section class="m-services marketing-events" id="marketing-events">
+    <div class="container">
+          <h2 class="center">Marketing &amp; Events</h2>
+
+
+        </div> 
+
+        <div class="m-services__gallery-container">
+          <a href="#" id="prev-marketing-events" class="prev"><span class="ss-icon">navigateleft</span></a>
+          <a href="#" id="next-marketing-events" class="next"><span class="ss-icon">navigateright</span></a> 
+          <div class="m-services__gallery cycle-slideshow" 
+            data-cycle-fx="carousel" 
+            data-cycle-carousel-fluid=true 
+            data-cycle-carousel-visible="1.25" 
+            data-cycle-timeout="0" 
+            data-cycle-next="#next-marketing-events" 
+            data-cycle-prev="#prev-marketing-events" 
+            data-cycle-slides=".gallery-marketing-events">
+
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404778/events-canon-beready-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Canon Powershot <em>Be Ready</em> Dinner</h3>
+                  <p>Nobu, Los Angeles</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/2404776/events-canon-beready-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Canon Powershot <em>Be Ready</em> Dinner</h3>
+                  <p>Nobu, Los Angeles</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn1.vox-cdn.com/uploads/chorus_asset/file/2404754/events-sxsw-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>SXSW Kickoff Party featuring Local Natives</h3>
+                  <p>The Moody Theatre, Austin</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404746/events-sxsw-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>SXSW Kickoff Party featuring Local Natives</h3>
+                  <p>The Moody Theatre, Austin</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404774/events-ces-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>The Verge Lounge presented by Ford</h3>
+                  <p>CES, Las Vegas</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn1.vox-cdn.com/uploads/chorus_asset/file/2404772/events-ces-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>The Verge CES Headquarters presented by Ford</h3>
+                  <p>CES, Las Vegas</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404770/events-eater-awards.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Eater Awards</h3>
+                  <p>Angel Orensanz Foundation, New York</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404766/events-eyg-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Eater Young Guns</h3>
+                  <p>LACMA, Los Angeles</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404762/events-eyg-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Eater Young Guns</h3>
+                  <p>LACMA, Los Angeles</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/2404764/events-pepcid-tastemakers-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Pepcid Tastemakers Dinner</h3>
+                  <p>Pok Pok NY, Brooklyn</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn3.vox-cdn.com/uploads/chorus_asset/file/2404760/events-pepcid-tastemakers-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Pepcid Tastemakers Dinner</h3>
+                  <p>Pok Pok NY, Brooklyn</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn2.vox-cdn.com/uploads/chorus_asset/file/2404758/events-polygon-e3-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>E3 Revenge of the Party Monsters</h3>
+                  <p>presented by Ford<br> Tower Theater, Los Angeles</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn1.vox-cdn.com/uploads/chorus_asset/file/2404756/events-polygon-e3-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>E3 Revenge of the Party Monsters</h3>
+                  <p>presented by Ford<br> Tower Theater, Los Angeles</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn3.vox-cdn.com/uploads/chorus_asset/file/2404752/events-racked-awards-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Racked Awards</h3>
+                  <p>The McKittrick Hotel, New York</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn3.vox-cdn.com/uploads/chorus_asset/file/2404768/events-racked-awards-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>Racked Awards</h3>
+                  <p>The McKittrick Hotel, New York</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn0.vox-cdn.com/uploads/chorus_asset/file/2404748/events-verge-holiday-1.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>The Verge 12.12.12</h3>
+                  <p>presented by AT&amp;T<br> Angel Orensanz Foundation, New York City</p>
+                </div>
+              </div>
+              <div class="gallery-slide gallery-marketing-events">
+                <img alt="" src="http://cdn3.vox-cdn.com/uploads/chorus_asset/file/2404750/events-verge-holiday-2.0.jpg" />
+                <div class="gallery-slide-overlay">
+                  <h3>The Verge 12.12.12</h3>
+                  <p>presented by AT&amp;T<br> Angel Orensanz Foundation, New York City</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="container"> 
+
+
+        <div class="m-services__listing">
+            <h3>We Manage:</h3>
+          <ul>
+              <li>
+                  <span class="ss-icon">ticket</span>
+                <span>Production</span>
+              </li>
+              <li>
+                  <span class="ss-icon">malefemale</span>
+                <span>Talent Curation</span>
+              </li>
+              <li>
+                  <span class="ss-icon">cocktail</span>
+                <span>Activations</span>
+              </li>
+          </ul>
+        </div>
+
+        <div class="m-services__content">  
+          <p>No agency or other media company conceptualizes and executes unique, polished offline experiences that connect readers, industry insiders, and advertisers the way Vox Media does.</p><p>From pop-ups to parties and from lounges to live filmings, we consistently exceed our clients' wildest expectations by leveraging our access to the most influential talent, guaranteeing and delivering heavy online exposure, and utilizing the engaged audiences that already adore and trust our seven media brands and our partners.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+<script>
+// Configures behavior of Video-Playlist features.
+// Causes an anchor click to swap the source of the related video iframe.
+$('[data-videoplaylist]').on('click', 'a', function(evt) {
+  evt.preventDefault();
+  var target = $(evt.target).closest('[data-videoplaylist]').attr('data-videoplaylist');
+  $('iframe#'+target).attr('src', $(evt.target).closest('a').attr('href'));
+});
+</script>
+
+<section class="m-contact">
+  <h2 class="m-contact__header">Contact Us</h2>
+  <ul class="m-contact__links">
+    <a href="mailto:press@voxmedia.com,fay.sliger@voxmedia.com">
+      <li>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+   y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+  <path d="M390.5,109.1V32.7H109.5v76.4H7.7v358.2h484.5V109.1H390.5z M467.7,441.8H34.1V134.5h101.8V58.2h230v76.4
+    h101.8V441.8z"/>
+  <path d="M250.5,109.1c-78.2,0-140.9,63.6-140.9,140.9c0,78.2,63.6,140.9,140.9,140.9s140-63.6,140.9-140.9
+    C391.4,171.8,327.7,109.1,250.5,109.1z M250.5,365.5C186.8,365.5,135,313.6,135,250s51.8-115.5,115.5-115.5
+    c62.7,0,114.5,51.8,115.5,115.5C365.9,313.6,314.1,365.5,250.5,365.5z"/>
+  <path d="M250.5,160.9c-49.1,0-89.1,40-89.1,89.1s40,89.1,89.1,89.1c49.1,0,89.1-40,89.1-89.1
+    S299.5,160.9,250.5,160.9z M250.5,313.6c-35.5,0-63.6-28.2-63.6-63.6c0-35.5,28.2-63.6,63.6-63.6c34.5,0,63.6,28.2,63.6,63.6
+    C314.1,285.5,285.9,313.6,250.5,313.6z"/>
+</g>
+</svg>
+        <header>Media &amp; Press Inquiries</header>
+        <footer>press@voxmedia.com, fay.sliger@voxmedia.com</footer>
+      </li>
+    </a>
+    <a href="mailto:advertising@voxmedia.com">
+      <li>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+   y="0px" viewBox="79.3 46 55 55" enable-background="new 79.3 46 55 55" xml:space="preserve">
+<path d="M128.3,58.6l-4.1,4l-3.7,1.4l-3.4-5.4l-34.9-4.9L82,59.6l-2.5,5.1L84.1,79l11.6,3.5l1.1,2.9l3.4,1l3.9,6.9
+  l3.9-1.6l-0.1-4l6.5-1.2l2.1-2.2l4.5,1.2l3.8,7.1l3.1-3.4l-2.4-8.1l3.2-5.3l1.3-7.5l3.5-2.3l0.6-6.8L128.3,58.6z M131.6,64.9
+  l-3.4,2.3l-1.4,8l-3.4,5.7l2.3,7.9l-0.5,0.5l-2.9-5.4l-6.5-1.7l-2.5,2.6l-7.5,1.4l0.1,4.3l-1,0.4l-3.4-6.1l-3.2-1l-1.1-2.9
+  l-11.5-3.5l-4-12.5l2.3-4.7l0.1-4.1l31.7,4.5l3.8,6l5.6-2.1l3.8-3.7l2.8,0.3L131.6,64.9z"/>
+</svg>
+        <header>National Ad Team</header>
+        <footer>advertising@voxmedia.com</footer>
+      </li>
+    </a>
+    <a href="mailto:international.advertising@voxmedia.com">
+      <li>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+   y="0px" viewBox="222.5 222.5 55 55" enable-background="new 222.5 222.5 55 55" xml:space="preserve">
+<path d="M250,225c-13.8,0-25,11.2-25,25c0,13.8,11.2,25,25,25s25-11.2,25-25C275,236.2,263.8,225,250,225z
+   M272.1,245.8l-1.8,0.3l-0.9-3.2l-5.2-3l-0.8-2.4l2.9-2.8C269.2,237.7,271.2,241.7,272.1,245.8z M239.4,232.3l2.5-2.5l6.4-1.5
+  l1.9,4.2l3.7,1.4l1,1.6l-5.7,3.4l-1,3.2l-1.1,0.9l-3.5-4.3l-3.5,5.2l4,4.8l-0.4,0.3l-5.6-3.9l-0.4-6.8L239.4,232.3z M227.5,250
+  c0-7.5,3.7-14.1,9.3-18.2l-1.5,6.2l0.4,8.3l7.7,5.3l-1.6,2.9l4.4,2.7l2,4.2l1.5,11.1C237.4,272.4,227.5,262.4,227.5,250z
+   M252.8,270.3h-0.9l-1.3-9.5l-2.5-5.4l-2.9-1.8l2.3-4l4.7-0.1l3.2,3l3.3,1.9l-4.8,10.2l-1.9,1.8L252.8,270.3z M255.8,271.7l-1.1-4.3
+  l1.3-1.1l6.1-12.9l-4.9-2.8l-3.9-3.7l-6.9,0.1l-2.9-3.5l0.5-0.8l2.9,3.5l3.7-2.8l0.9-3l7.1-4.2l-2.7-4.5l-3.5-1.4l-1.3-2.9
+  c5.3,0.1,10.1,2.1,13.8,5.4l-3.9,3.8l1.5,4.9l5.1,3l1.1,4.3l4-0.6c0,0.5,0.1,1.1,0.1,1.6C272.5,260.4,265.4,269.2,255.8,271.7z"/>
+</svg>
+        <header>International Ad Team</header>
+        <footer>international.advertising @voxmedia.com</footer>
+      </li>
+    </a>
+  </ul>
+</section>
+<script src="http://ea-cdn.voxmedia.com/production/voxmedia/javascripts/ss-symbolicons-a14c42ce.js" type="text/javascript"></script>
+    <footer class="main">
+  <div class="extended">
+    <div class="left">
+      <img class="logo" width="300" height="61" alt="Vox Media" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/vox-media-white-52daad43.svg" />
+      <h1>Smart&nbsp;Media&nbsp;Brands. Smart&nbsp;Audiences.</h1>
+      
+
+      <ul class="vertical-links">
+        <li>
+<a href="/brands/sbnation/">            <img class="sbn" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-sbnation-ca4caf50.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/theverge/">            <img class="verge" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-theverge-21570e53.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/polygon/">            <img class="polygon" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-polygon-b667a046.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/curbed/">            <img class="curbed" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-curbed-3429eff3.png" />
+</a>        </li>
+        <li>
+<a href="/brands/eater/">            <img class="eater" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-eater-dd852059.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/racked/">            <img class="racked" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-racked-3ccd2062.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/vox/">            <img class="vox" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-vox-ae55fe8e.svg" />
+</a>        </li>
+        <li>
+<a href="http://recode.net/">            <img class="recode" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-recode-17a0c29d.png" />
+</a>        </li>
+      </ul>
+    </div>
+
+    <div class="right">
+      <address>
+        <h1>DC Office</h1>
+        <p>1201 Connecticut Ave. NW <br>
+        Washington, DC 20036</p>
+      </address>
+
+      <address>
+        <h1>NY Office</h1>
+        <p>104 W 40th St <br>
+        New York, NY 10018</p>
+      </address>
+
+      <address>
+        <h1>Chicago Office</h1>
+        <p>10 West Hubbard Avenue <br>
+        Chicago, IL 60654</p>
+      </address>
+
+      <address>
+        <h1>San Francisco Office</h1>
+        <p>231 Sansome Street <br>
+        San Francisco, CA 94104</p>
+      </address>
+
+      <ul class="social">
+        <li><a class="ss-social" href="https://www.facebook.com/voxmediainc">facebook</a></li>
+        <li><a class="ss-social" href="https://twitter.com/voxmediainc">twitter</a></li>
+        <li><a class="ss-social" href="http://vimeo.com/voxstudios">vimeo</a></li>
+        <li><a class="ss-social" href="http://instagram.com/voxmedia">instagram</a></li>
+      </ul>
+
+      <ul class="policies">
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-use/">Terms of Use</a></li>
+        <li><a href="/security/">Security</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright-bar">
+    <div class="left">
+      <p>&copy; 2015. Vox Media, Inc. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="http://ea-cdn.voxmedia.com/production/voxmedia/javascripts/all-a8674ae9.js" type="text/javascript"></script>
+  </body>
+</html>
