@@ -1,18 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+utility functions for validation check
+"""
+
 __author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
 
-"""
-utility classes for local crawler mode
-
-class TaskQueue() to simulate a priority queue
-class DeDupeCache() to simulate a de-duplication hash table
-
-"""
 import urllib
 import string
 from urlparse import urlparse, urljoin
+
 
 def various_check(link):
   norm_link = normalize_link(link)
@@ -107,3 +105,4 @@ def robots_disallow_check(link):
           return False
 
   return False
+
