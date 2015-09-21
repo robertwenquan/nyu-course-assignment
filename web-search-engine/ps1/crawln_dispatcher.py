@@ -40,8 +40,12 @@ class CrawlStats(object):
     self.crawled_pages = 0
     self.crawled_bytes = 0
 
+    self.crawled_succ = 0
+    self.crawled_fail = 0
+
     self.crawled_page_per_sec = -1
     self.crawled_byte_per_sec = -1
+    self.crawled_succ_rate = -1
 
   def update_crawl_bytes(self, nbyte):
     ''' increase crawled bytes '''
@@ -60,6 +64,7 @@ class CrawlStats(object):
     duration = self.crawl_end_time - self.crawl_start_time
     self.crawled_page_per_sec = self.crawled_pages / duration
     self.crawled_byte_per_sec = self.crawled_bytes / duration
+    self.crawled_succ_rate = self.crawled_succ / float(self.crawled_pages)
 
     # write back statistics
     self.write_crawl_stats()
@@ -84,6 +89,7 @@ class CrawlStats(object):
             (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
       print('Crawled bytes: %15d (%d bytes / sec)' %
             (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
+      print('Crawled success rate: %15d' % self.crawled_succ_rate, file=fdw)
 
 
 class Dispatcher(object):
@@ -165,6 +171,11 @@ class Dispatcher(object):
         self.stats.update_crawl_bytes(page_size)
         self.store_page(page)
         self.logger.log(page)
+
+        if page.error == 1:
+          self.stats.crawled_fail += 1
+        else:
+          self.stats.crawled_succ += 1
 
       if page == page_end:
         break
