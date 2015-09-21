@@ -36,8 +36,9 @@ class Page(object):
     self.pagehash = ''  # md5 hash of the page content
     self.store = ''     # page store path
 
-    self.time_enqueue= time.time()  # enqueue timestamp
+    self.time_enqueue= -1           # enqueue timestamp
     self.time_dequeue= -1           # dequeue timestamp
+    self.queue_duration = -1        # queued duration
     self.time_start = -1            # crawl start timestamp
     self.time_end = -1              # crawl end timestamp
     self.time_duration = -1         # crawl time
