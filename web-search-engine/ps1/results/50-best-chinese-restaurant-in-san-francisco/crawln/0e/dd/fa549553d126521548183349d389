@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en"  class="ie ie8 "><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class=""><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwcHUlNaGwAFXFFUAAQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="language" content="en" />
+        <meta name="locale" content="en-US" />
+        <meta name="site" content="us-sanfrancisco" />
+        <meta name="category_mapping" content='{"shopping_and_style_(category)":"category_1","health_and_beauty_(category)":"category_1","restaurants_(category)":"category_2","bars_and_pubs_(category)":"category_2","art_(category)":"category_3","theatre_(category)":"category_4","music_(category)":"category_5","nightlife_(category)":"category_5","clubs_(category)":"category_5","things_to_do_(category)":"category_6","attractions_(category)":"category_6","museums_(category)":"category_6","sport_and_fitness_(category)":"category_6","comedy_(category)":"category_7","film_genres":"category_8","cinemas_(category)":"category_8","film_(category)":"category_8","dance_(category)":"category_9","default":"category_10"}' />
+        <meta name="home_url" content="/san-francisco" />
+                <meta name="description" content="San Francisco’s Chinatown is famous, but the best Chinese restaurants are scattered all over town. These are our favorites for dim sum and regional specialties." />
+                <link rel="canonical" href="http://www.timeout.com/san-francisco/restaurants/the-best-chinese-restaurants-in-san-francisco" />        <link rel="icon" type="image/png" href="/favicon.ico" />
+            <meta name="robots" content="NOODP, NOYDIR" />
+                        
+    <meta property="og:image" content="https://media.timeout.com/images/101707249/image.jpg">
+
+    <meta property="og:title" content="The best Chinese restaurants in San Francisco">
+
+
+<meta property="og:url" content="http://www.timeout.com/san-francisco/restaurants/the-best-chinese-restaurants-in-san-francisco" >
+<meta property="og:site_name" content="Time Out San Francisco">
+<meta property="og:description" content="San Francisco’s Chinatown is famous, but the best Chinese restaurants are scattered all over town. These are our favorites for dim sum and regional specialties.">
+
+
+<meta property="og:type" content="article">
+
+    <meta property="article:publisher" content="https://www.facebook.com/pages/Time-Out-San-Francisco/1423947147859126">
+
+<meta name="twitter:card" content="summary_large_image">
+
+	<meta name="twitter:title" content="The best Chinese restaurants in San Francisco">
+
+	<meta name="twitter:description" content="For exceptional dim sum and regional specialties, these are four of our favorite Chinese restaurants in Chinatown and beyond">
+
+    <meta name="twitter:site" content="@TimeOut_SF">
+    <meta name="twitter:creator" content="@TimeOut_SF">
+
+    <meta property="twitter:image:src" content="https://media.timeout.com/images/101707249/image.jpg">
+                                    <script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "https://s.btstatic.com/tag.js#site=5leRLIi";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="https://s.thebrighttag.com/iframe?c=5leRLIi" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>        
+        <title>Best Chinese restaurants in San Francisco for Dim sum and more—Time Out</title>
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/css/timeout.css" rel="stylesheet">
+        <!--<![endif]-->
+
+        <!--[if lte IE 9]>
+        <link href="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/css/timeout_page_1.css" rel="stylesheet">
+        <link href="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/css/timeout_page_2.css" rel="stylesheet">
+        <![endif]-->
+
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+        <!--[if lte IE 9]>
+            <script src="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/js/lib/matchmedia.js"></script>
+        <![endif]-->
+
+        <!--[if IE 9]>
+            <link href="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/css/crossbrowser/ie9.css" rel="stylesheet" />
+        <![endif]-->
+
+        <!--[if IE 8]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <link href="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/css/crossbrowser/ie8.css" rel="stylesheet" />
+        <![endif]-->
+        <meta data-module="adverts" data-params='{"host":"Time_Out_San_Francisco","network_code":"5185","zone":"restaurants","ad_pubs":{"page":"page","itemid":"page-499","audience":"default"},"taggings":{"venue":["restaurants"],"subject":["food-%26-drink"]}}'/>        
+        
+                                
+        
+                    <meta data-module="omniture"
+                  data-account="timeoutussanfrancisco,timeoutworldwide"
+                  data-site-name="San Francisco"
+                  data-content='{&quot;pageName&quot;:&quot;Feature : The best Chinese restaurants in San Francisco&quot;,&quot;prop3&quot;:&quot;the best chinese restaurants in san francisco&quot;,&quot;prop4&quot;:&quot;content-page-499&quot;,&quot;prop5&quot;:&quot;feature&quot;,&quot;hier1&quot;:&quot;san-francisco, feature&quot;,&quot;prop49&quot;:&quot;San Francisco&quot;,&quot;prop53&quot;:&quot;en&quot;,&quot;prop54&quot;:&quot;Restaurants&quot;,&quot;prop55&quot;:null}'
+                  data-track-manually="0" />
+            
+        
+        
+
+        
+        <meta data-graffiti="/graffiti/v1" data-graffiti-site="us-sanfrancisco" />
+        <meta
+            data-module='user'
+            data-params='{
+                "gigya_url": "https://cdns.gigya.com/JS/gigya.js?apikey=3_tQKJmyO5u50bQaNljqWymBh6uezUx-yvPK6kDyblgAUXK7V6Y-_aPghiLfHEUmNr&lang=en",
+                "token_url": "/san-francisco/en_US/user/token",
+                "gigya_conf": {
+                    "lang": "en",
+                    "gigyaPlugins" : {
+                        "rememberSessionExpiration" : -2
+                    }
+                },
+                "welcome_url": "/san-francisco/en_US/user/email/welcome"
+            }'
+        />
+    </head>
+    <body class="    
+    feature-page
+  en_US nojs"  data-country="us">
+        <script>document.body.className = document.body.className.replace('nojs','')</script>
+
+                    <div id="ad-skin-1505771328" class="ad  ad-skin" data-ad='{"type":"skin"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-skin;page=page;itemid=page-499;audience=default;tile=6;sz=1x1;ord=45670807;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-skin;page=page;itemid=page-499;audience=default;tile=6;sz=1x1;ord=45670807;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>        
+        <div id="main-container">
+
+                                
+<section class="sr-only">
+	<a href="#content" aria-hidden="true">Go to the content</a>
+	<a href="#site-footer" aria-hidden="true">Go to the footer</a>
+</section>
+
+<header id="header" class="header " role="banner">
+	<div class="sticky-placeholder">
+		<div class="sticky fixed">
+		
+
+    
+<div class="masthead" id="masthead">
+    <div class="container">
+        <div class="branding">
+            <div class="logos__desktop">
+
+                                <a class="timeout-logo" href="/san-francisco" title="Time Out San Francisco">Time Out San Francisco</a>
+
+                <div class="branding__locale">
+                    <a class="branding__site_name" title="Time Out San Francisco" href="/san-francisco">San Francisco</a>
+                                    </div>
+            </div>
+
+            <div class="logos__mobile">
+                <a class="timeout-logo" href="/san-francisco" title="Time Out San Francisco">Time Out San Francisco</a>
+                            </div>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="nav-top-item nav-utils__item">
+                
+<nav  class="drawer-menu drawer-menu__dir-left js-mobile-menu" data-module="drawer" data-uid="266287151">
+    <input type="checkbox" id="drawer-menu__toggle_266287151" class="drawer-menu__toggle"  data-uid="266287151">
+
+
+    <div class="drawer-menu__content">
+         <label class="drawer-menu__close_button icon_close" for="drawer-menu__toggle_266287151">
+            <span>Close</span>
+        </label>
+        <div class="drawer-menu__include">
+            
+            <nav id="mobile-nav" class="navmenu" role="navigation">
+	<ul class="nav">
+	                        		<li>
+		<a class="mobile-nav_item" href="/san-francisco/things-to-do"     data-track-click='{"pev2":"things to do menu drawer"}'
+ title="Things to Do" target="_self">
+			Things to Do
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/restaurants"     data-track-click='{"pev2":"restaurants menu drawer"}'
+ title="Restaurants" target="_self">
+			Restaurants
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/bars"     data-track-click='{"pev2":"bars menu drawer"}'
+ title="Bars" target="_self">
+			Bars
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/movies"     data-track-click='{"pev2":"movies menu drawer"}'
+ title="Movies" target="_self">
+			Movies
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/music-nightlife"     data-track-click='{"pev2":"music & nightlife menu drawer"}'
+ title="Music &amp; Nightlife" target="_self">
+			Music &amp; Nightlife
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/shopping"     data-track-click='{"pev2":"shopping menu drawer"}'
+ title="Shopping" target="_self">
+			Shopping
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/travel"     data-track-click='{"pev2":"city guide menu drawer"}'
+ title="City Guide" target="_self">
+			City Guide
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/neighborhoods"     data-track-click='{"pev2":"neighborhoods menu drawer"}'
+ title="Neighborhoods" target="_self">
+			Neighborhoods
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/hotels"     data-track-click='{"pev2":"hotels menu drawer"}'
+ title="Hotels" target="_self">
+			Hotels
+		</a>
+	</li>
+
+                    		<li>
+		<a class="mobile-nav_item" href="/san-francisco/blog"     data-track-click='{"pev2":"blog menu drawer"}'
+ title="Blog" target="_self">
+			Blog
+		</a>
+	</li>
+
+            		<li>
+			<a href="//www.timeout.com/find-your-time-out/" class="mobile-nav_item mobile-nav__item--city-link">Change city</a>
+		</li>
+													<li>
+					<a class="mobile-nav_item mobile-nav_item--social" href="https://www.facebook.com/pages/Time-Out-San-Francisco/1423947147859126" target="_blank">
+						Facebook
+						<i class="social-icon icon_facebook"></i>
+					</a>
+				</li>
+															<li>
+					<a class="mobile-nav_item mobile-nav_item--social" href="https://twitter.com/TimeOut_SF" target="_blank">
+						Twitter
+						<i class="social-icon icon_twitter"></i>
+					</a>
+				</li>
+										</ul>
+</nav>
+
+        </div>
+    </div>
+
+    <label class="drawer-menu__label mobile-menu__drawer icon_burger" for="drawer-menu__toggle_266287151" >
+                </label>
+</nav>            </div>
+        </div>
+
+        <div class="nav-utils">
+            <div class="nav-top-item nav-utils__item">
+                <a href="/san-francisco/search" class="search-trigger"     data-track-click='{"pev2":"search header"}'
+> <span><i>Search</i></span></a>
+            </div>
+
+                            <div class="nav-top-item nav-utils__item social-links social-links--header">
+                    <span class="social-links__title">Follow us</span>
+                    <span class="social-links__link-wrapper">
+                                                                                <a class="social-link icon_facebook" href="https://www.facebook.com/pages/Time-Out-San-Francisco/1423947147859126" title="Facebook" target="_blank">
+                                    <span>Facebook</span>
+                                </a>
+                                                                                                                <a class="social-link icon_twitter" href="https://twitter.com/TimeOut_SF" title="Twitter" target="_blank">
+                                    <span>Twitter</span>
+                                </a>
+                                                                        </span>
+                </div>
+            
+            <div class="nav-top-item nav-utils__item city-link">
+                <a href="//www.timeout.com/find-your-time-out/"> <span><i>Change city</i></span></a>
+            </div>
+
+            <div class="nav-top-item nav-utils__item">
+                    
+<nav  class="drawer-menu drawer-menu__dir-right " data-module="drawer" data-uid="323418894">
+    <input type="checkbox" id="drawer-menu__toggle_323418894" class="drawer-menu__toggle"  data-uid="323418894">
+
+
+    <div class="drawer-menu__content">
+         <label class="drawer-menu__close_button icon_close" for="drawer-menu__toggle_323418894">
+            <span>Close</span>
+        </label>
+        <div class="drawer-menu__include">
+            
+            <div
+    class="user__panel"
+    data-module="gigya"
+    data-action="log-register"
+    data-params='{
+        "screens": {
+            "screenSet":   "gigya-screens",
+            "containerID": "gigya-container",
+            "startScreen": "login-screen"
+        }
+    }'>
+
+    <nav class='gigya-screens__nav'>
+        <div class="gigya-screens__nav--logged-in">
+            <a href="/san-francisco/my" class="icon_cta--nav">
+                <span class="icon_cta__icon icon_home_filled"></span>
+                <span class="icon_cta__text">My Time Out</span>
+            </a>
+
+            <a href="/san-francisco/my#/favourites" class="icon_cta--nav">
+                <span class="icon_cta__icon icon_heart_filled"></span>
+                <span class="icon_cta__text">Things I love</span>
+            </a>
+
+            <a  href="/san-francisco/user/myAccount" class="icon_cta--nav icon_cta--light">
+                <span class="icon_cta__text">
+                    My Account
+                </span>
+            </a>
+            <button
+                data-module='gigya'
+                data-action='logOut'
+                id="user-logout"
+                class="icon_cta--nav icon_cta--light">
+                <span class="icon_cta__text">
+                    Sign out
+                </span>
+            </button>
+        </div>
+        <div class="gigya-screens__nav--log-register">
+            <a  href='#'
+                class="gigya-screens__nav_item gigya-active-button"
+                data-module='gigya'
+                data-action='switchscreen'
+                data-params='login-screen'>
+                <span>Sign in</span>
+            </a>
+            <a  href='#'
+                class="gigya-screens__nav_item"
+                data-module='gigya'
+                data-action='switchscreen'
+                data-params='create_account_screen'>
+                <span>Create account</span>
+            </a>
+        </div>
+    </nav>
+
+
+        <div id="gigya-container"></div>
+
+    <div class="gigya-screen-set" id="gigya-screens" data-on-pending-registration-screen="confirm_account_screen" >
+
+                <div class="gigya-screen" id="login-screen">
+
+    <h3>Sign in</h3>
+
+    
+    <div class="gigya-screens_social_login_prompt">
+        <p class='gigya-screens__info'>With your social account:</p>
+
+        
+<div id="gigya-social-login_169255873" class="gigya-social-login" style="overflow:hidden;height:40px;min-height:40px;">
+    <param name="width" value="250">
+    <param name="height" value="35">
+    <param name="enabledProviders" value="Facebook,Googleplus,Twitter">
+        <param name="showWhatsThis" value="false">
+    <param name="showTermsLink" value="false">
+    <param name="hideGigyaLink" value="true">
+
+</div>
+
+<div class="gigya-error-msg error-msg alert alert-danger" data-bound-to="gigya-social-login_169255873"></div>
+    </div>
+
+    
+    <p class="gigya-screens__info">Or with your email:</p>
+
+    <form class="gigya-login-form" method="POST" role='form'>
+
+        <div class="gigya-composite-control gigya-composite-control-textbox">
+            <label for="loginID">Email:</label>
+            <input class="gigya-input-text" tabindex="3" name="loginID" type="text" value="">
+            <span class="gigya-error-msg" data-bound-to="loginID"></span>
+        </div>
+
+        <div class="gigya-composite-control gigya-composite-control-password">
+            <label for="password">Password:</label>
+            <input class="gigya-input-password" tabindex="3" name="password" type="password">
+            <span class="gigya-error-msg" data-bound-to="password"></span>
+        </div>
+
+        <label for="remember">Remember me</label>
+        <input type="checkbox" name="remember" id="remember">
+
+        <div class="gigya-error-msg error-msg alert alert-danger" data-bound-to="gigya-login-form"></div>
+        <a href="/san-francisco/user/forgotPassword" class="gigya-forgotten_password">Forgotten your password?</a>
+        <button class="gigya-input-submit" tabindex="3" type="submit">Sign in</button>
+    </form>
+</div>
+                <div class="gigya-screen" id="create_account_screen">
+
+    <h3>You can create a Time Out account in two ways...</h3>
+
+        <div class="gigya-screens_social_login_prompt">
+        <p class="gigya-screens__info">With a few clicks using your favourite social network</p>
+        
+<div id="gigya-social-login_1408946510" class="gigya-social-login" style="overflow:hidden;height:40px;min-height:40px;">
+    <param name="width" value="250">
+    <param name="height" value="35">
+    <param name="enabledProviders" value="Facebook,Googleplus,Twitter">
+        <param name="showWhatsThis" value="false">
+    <param name="showTermsLink" value="false">
+    <param name="hideGigyaLink" value="true">
+
+</div>
+
+<div class="gigya-error-msg error-msg alert alert-danger" data-bound-to="gigya-social-login_1408946510"></div>
+    </div>
+
+    <p class='gigya-screens__info'>Or by entering your details below</p>
+
+    <form
+        id="create_account_form"
+        class="gigya-register-form"
+        method="POST"
+        role='form'>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" required  />
+            <span class="gigya-error-msg" data-bound-to="email"></span>
+
+            <label for="profile.firstName">First Name</label>
+            <input type="text" name="profile.firstName"/>
+            <span class="gigya-error-msg" data-bound-to="profile.firstName"></span>
+
+            <label for="profile.lastName">Last Name</label>
+            <input type="text" name="profile.lastName"/>
+            <span class="gigya-error-msg" data-bound-to="profile.lastName"></span>
+
+            <label for="password"> Create password</label>
+            <input type="password" name="password"/>
+            <span class="gigya-error-msg" data-bound-to="password"></span>
+
+            <label for="passwordRetype">Repeat new password</label>
+            <input type="password" name="passwordRetype"/>
+            <span class="gigya-error-msg" data-bound-to="passwordRetype"></span>
+
+            <input type="hidden" name="data.hasPassword" value="true" />
+            <input class="hidden" type="text" name="data.displayName" />
+
+            
+<fieldset class='gigya-screens__terms'>
+
+    
+    <div class="checkbox">
+        <input type="checkbox" name="data.terms" id="data.terms">
+
+                    <label class='gigya-screens__terms_label' for="data.terms">I accept Time Out's <a href='/san-francisco/privacy-policy' target='_blank'>terms of use</a>, including opt-in to newsletters.</label>
+        
+        <span class="gigya-error-msg error-msg" data-bound-to="data.terms"></span>
+    </div>
+
+    
+
+    
+</fieldset>
+        <span class="gigya-error-msg" data-bound-to="create_account_form"></span>
+        <button type="submit" class="gigya-input-submit">Create account</button>
+    </form>
+</div>
+                <div class="gigya-screen" id="confirm_account_screen">
+
+    <h3 class='gigya-screens__subtitle'>
+        Welcome,
+        <span
+            data-module="gigyascreens"
+                data-action="confirm_account_screen"
+                data-params="profile.firstName"></span>!
+    </h3>
+
+    <div class="gigya-profile-photo"></div>
+
+    <p class='gigya-screens__info'>
+        You have successfully connected your <span class="gigya-login-provider"></span> account to Time Out. You may sign in with this account in future.
+    </p>
+
+    <p class='gigya-screens__info'>
+        Please confirm your account details
+    </p>
+
+    <form id="confirm_account_form" class="gigya-profile-form" method="POST">
+        <div class='form-group'>
+            <label for="email">Email</label>
+            <input type="email" name="email" class='form-control' required />
+            <span class="gigya-error-msg error-msg" data-bound-to="email"></span>
+            <span class="gigya-error-msg error-msg" data-bound-to="loginID"></span>
+        </div>
+        <div class='form-group'>
+            <label for="email">First Name </label>
+            <input type="text" name="profile.firstName" class='form-control'/>
+            <span class="gigya-error-msg error-msg" data-bound-to="profile.firstName"></span>
+        </div>
+        <div class='form-group'>
+            <label class="" for="email">Last Name</label>
+            <input type="text" name="profile.lastName" class='form-control'/>
+            <span class="gigya-error-msg error-msg" data-bound-to="profile.lastName"></span>
+        </div>
+
+            
+<fieldset class='gigya-screens__terms'>
+
+    
+    <div class="checkbox">
+        <input type="checkbox" name="data.terms" id="data.terms">
+
+                    <label class='gigya-screens__terms_label' for="data.terms">I accept Time Out's <a href='/san-francisco/privacy-policy' target='_blank'>terms of use</a>, including opt-in to newsletters.</label>
+        
+        <span class="gigya-error-msg error-msg" data-bound-to="data.terms"></span>
+    </div>
+
+    
+
+    
+</fieldset>
+
+
+        <span class="gigya-error-msg error-msg" data-bound-to="confirm_account_form"></span>
+        <input class="hidden" type="text" name="data.displayName" />
+        <button type="submit" class="gigya-input-submit">Sign up</button>
+    </form>
+</div>
+    </div>
+
+
+    <div
+    class="error-handler"
+    data-module="error-handler"
+    data-params='{
+            "subscribe": {
+                "user.auth.error.generic" : "We couldn&#039;t log you in! Please try again later."
+            }
+        }'>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <label class="drawer-menu__label " for="drawer-menu__toggle_323418894"     data-track-click='{"pev2":"your time out","eVar59":"D=pev2"}'
+>
+                            <span class="user_greeting user_greeting--none" data-module="user_element">
+    <span class="user_greeting__image">
+        <img />
+    </span>
+
+    <span class="user_greeting__label user_greeting__label--anonymous">
+        <i>Sign in</i>
+    </span>
+
+    <span class="user_greeting__label user_greeting__label--logged_in">
+        <i>Hi, <span class="js-first-name"></span></i>
+    </span>
+</span>                </label>
+</nav>            </div>
+        </div>
+    </div>
+</div>		
+<nav id="primary-nav" class="navbar" role="navigation" data-module="navigation">
+    <div class="container">
+        <ul class="nav nav--hidden">
+                                                                <li class="nav-top-item">
+        <a href="/san-francisco/things-to-do"     data-track-click='{"pev2":"things to do header"}'
+ title="Things to Do" target="_self">Things to Do</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/restaurants"     data-track-click='{"pev2":"restaurants header"}'
+ title="Restaurants" target="_self">Restaurants</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/bars"     data-track-click='{"pev2":"bars header"}'
+ title="Bars" target="_self">Bars</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/movies"     data-track-click='{"pev2":"movies header"}'
+ title="Movies" target="_self">Movies</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/music-nightlife"     data-track-click='{"pev2":"music & nightlife header"}'
+ title="Music &amp; Nightlife" target="_self">Music &amp; Nightlife</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/shopping"     data-track-click='{"pev2":"shopping header"}'
+ title="Shopping" target="_self">Shopping</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/travel"     data-track-click='{"pev2":"city guide header"}'
+ title="City Guide" target="_self">City Guide</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/neighborhoods"     data-track-click='{"pev2":"neighborhoods header"}'
+ title="Neighborhoods" target="_self">Neighborhoods</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/hotels"     data-track-click='{"pev2":"hotels header"}'
+ title="Hotels" target="_self">Hotels</a>
+    </li>
+
+                                        <li class="nav-top-item">
+        <a href="/san-francisco/blog"     data-track-click='{"pev2":"blog header"}'
+ title="Blog" target="_self">Blog</a>
+    </li>
+
+                                        <li class="nav-top-item more-submenu has-submenu hidden">
+                <a href="#"> More </a>
+                <ul class="submenu"></ul>
+            </li>
+            <li class="nav-top-item search-trigger">
+                <a href="/san-francisco/search"     data-track-click='{"pev2":"search header"}'
+> Search</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+		</div>
+	</div>
+			<div id="ad-header-47958355" class="ad  ad-header" data-ad='{"type":"header"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-header;page=page;itemid=page-499;audience=default;tile=1;sz=728x90,900x250,940x250,970x250,970x415,970x90;ord=922509543;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-header;page=page;itemid=page-499;audience=default;tile=1;sz=728x90,900x250,940x250,970x250,970x415,970x90;ord=922509543;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>		<div id="ad-mobile-banner-1966672605" class="ad  ad-mobile-banner" data-ad='{"type":"mobilebanner"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-mobile-banner;page=page;itemid=page-499;audience=default;tile=4;sz=320,50;ord=452257887;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-mobile-banner;page=page;itemid=page-499;audience=default;tile=4;sz=320,50;ord=452257887;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>	</header>            
+            <main id="content" role="main" class="container">
+                <article class="feature_page">
+        
+        <div class="page_meta_controls__cta">
+            
+	    
+<div
+    class="icon_cta icon_cta--comment"
+    data-module="remotes"
+    data-action="comments">
+
+    <div class="comment_count--callout js-comment_count">
+        <span class="icon_cta__icon_text">1</span>
+    </div>
+
+    <a class="icon_cta__text" href="#comments">Add comment</a>
+</div>
+            
+
+
+    
+
+<div class="icon_cta lovr "
+     data-module="lovr"
+     data-params='{&quot;uid&quot;:&quot;Content-Page-499&quot;,&quot;count&quot;:0,&quot;name&quot;:&quot;The best Chinese restaurants in San Francisco&quot;,&quot;text&quot;:{&quot;success&quot;:&quot;Added to &lt;span class=&#039;notification--highlight&#039;&gt;Things I love&lt;\/span&gt;&quot;,&quot;error&quot;:&quot;Sorry, something went wrong. Please try again later&quot;,&quot;active&quot;:&quot;Loved&quot;}}' >
+
+    <a class="lovr__notification notification"     data-track-click='{"events":["event50"],"pev2":"added to your loved list clicked"}'
+ href="/san-francisco/my#/favourites"></a>
+
+    <span class="lovr__icon icon_cta__icon">
+                    <span class="lovr__count icon_cta__icon_text">0</span>
+            </span>
+
+    <span class="icon_cta__text">Love It</span>
+</div>        </div>
+
+        <header class="feature__header has_review_cta">
+            <h1>The best Chinese restaurants in San Francisco</h1>
+                            <div class="lede">
+                    <p>For exceptional dim sum and regional specialties, these are four of our favorite Chinese restaurants in Chinatown and beyond</p>
+                </div>
+            
+            <div class="post_meta">
+            
+<div class="page_sharing_widgets" data-module="social_widget">
+
+        
+		<a class="social_share__button social_share__facebook icon_facebook">
+		        <span class="social_share__text">Share</span>
+	</a>
+
+		<a class="social_share__button social_share__twitter icon_twitter" href="//twitter.com/intent/tweet?text=The%20best%20Chinese%20restaurants%20in%20San%20Francisco%20%7C%20http%3A%2F%2Fwww.timeout.com%2Fsan-francisco%2Frestaurants%2Fthe-best-chinese-restaurants-in-san-francisco" target="_blank">
+		<span class="social_share__text">Tweet</span>
+	</a>
+
+		<a class="social_share__button social_share__google icon_google" href="https://plus.google.com/share?url=http://www.timeout.com/san-francisco/restaurants/the-best-chinese-restaurants-in-san-francisco" data-share="googleplus">
+		<img src="//www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/>
+	</a>
+
+		<span class="social_share__total_shares">
+		<span class="social_share__share_count">0</span>
+		Shares
+	</span>
+
+</div>
+
+                <p class="post_info">
+                                                                                                            <span class="post_info__author">By Bonnie Wach</span>
+                    
+                                                                                            <span class="post_info__date">Posted: Tuesday September 30 2014</span>
+                                    </p>
+            </div>
+        </header>
+    
+        <div class="main_content">
+
+                            <section class="feature__article"><div class="hero"><figure class="hero__image"><div class="image_wrapper aspect-ratio-16-9"><div class="delayed-image-load"
+             data-class="imager video__splash_image"
+             data-imagesrc="https://media.timeout.com/images/101707249/{width}/{height}/image.jpg"
+             data-title=""
+             data-alt=""><noscript><img src="https://media.timeout.com/images/101707249/320/210/image.jpg" alt="" title="" /></noscript></div></div><figcaption class="hero__description"><address class="credit">Photograph: Courtesy Creative Commons/Flickr/ <a href="https://www.flickr.com/photos/yogma/3566417120" target="_blank" rel="nofollow">G M</a></address><span>Yuet Lee</span></figcaption></figure></div><div class="hero-text"><p>San Francisco has the country&rsquo;s largest Chinatown and the compact enclave is packed with great places to eat (you&rsquo;ll find further ideas in our round-up of the 49 best <a href="../../san-francisco/things-to-do/the-49-best-things-to-do-in-san-francisco">things to do in San Francisco</a>). But the best Chinese restaurants are scattered all over town, and particularly in the <a href="../../san-francisco/neighborhoods/golden-gate-park-​sunset-richmond">Richmond</a>. Whether you&rsquo;re looking for superior dim sum, seafood or fiery Hunan fare, the best <a href="../../san-francisco/restaurants/the-best-san-francisco-restaurants">San Francisco restaurants</a> showcasing the diverse cuisines of China go far beyond the takeout carton clich&eacute;.</p></div></section><div id="ad-mpu-1041365845" class="ad  module ad--mpu" data-ad='{"type":"mpu"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-mpu;page=page;itemid=page-499;audience=default;tile=2;sz=300x250;ord=570371195;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-mpu;page=page;itemid=page-499;audience=default;tile=2;sz=300x250;ord=570371195;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>            
+            
+            
+                <div class="zone small_list  ">
+
+                        <h2 class="zone_title">Chinese restaurants in San Francisco</h2>
+                            <div class="tiles"
+        data-module="load_more_widget"
+        data-params='{
+        "ajax_endpoint":"/san-francisco/en_US/paginate"
+                }'>
+    
+    
+
+
+
+<article class="feature-item category_2   no_count  ">
+    <div class="feature-item__content">
+        
+                                
+    <div class="row">
+
+                    <div class="feature-item__column feature-item__column--image">
+                <div class="feature-item__wrapper">
+                                    <a href="/san-francisco/restaurants/yank-sing" target="_self">
+                                    <div class="image_wrapper aspect-ratio-4-3">
+            <div class="delayed-image-load"
+             data-class="imager tile__image"
+             data-imagesrc="https://media.timeout.com/images/101719551/{width}/{height}/image.jpg"
+             data-title="Yank Sing"
+             data-alt="Yank Sing">
+            <noscript>
+                <img src="https://media.timeout.com/images/101719551/image.jpg" alt="Yank Sing" title="Yank Sing" />
+            </noscript>
+        </div>
+    </div>
+                    </a>
+                                </div>
+            </div>
+        
+        <div class="feature-item__column">
+                                            <h3>
+                                            <a href="/san-francisco/restaurants/yank-sing" target="_self">Yank Sing</a>
+                                        </h3>
+                
+                                                                            <div class="page_meta_controls">
+                                                        
+<div class="listings_flags"><span class="listings_flag listings_flags__star"><ul class="star_rating"><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class=" icon_star"></li></ul></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="clearfix"></div>
+                                    
+                                                
+                                                                            <p class="feature_item__annotation--truncated">
+                            The aromas coming from the steamed and fried dumplings at Yank Sing are so tantalizing, you'll likely gobble them down before finding out what's in them. Exceptionally fresh and flavorful dim sum is undoubtedly what keeps this longtime restaurant thriving in an unlikely corner of a massive office complex. Ordering is half the fun: Just point at what looks good as the waiters roll their carts past your table. Favorites include shanghai dumplings with pork, scallion, ginger and a shot of hot broth, stuffed crab claws, and goldfish dumplings filled with crunchy shrimp and bamboo shoot tips.
+                        </p>
+                                    
+                			    				<a href="/san-francisco/restaurants/yank-sing" class="read-more">Read more</a>
+    			        	        </div>
+    </div>
+    </div>
+            <div class="listing_meta_controls"><div class="listings_flags_bar"><div class="listings_flags"><span class="listings_flag icon icon_pin">
+            SoMa
+        </span><span class="listings_flag listings_flags__price"><ul class="price_rating timeout_brand"><li class="icon_highlight icon_currency"></li><li class="icon_highlight icon_currency"></li><li class=" icon_currency"></li><li class=" icon_currency"></li></ul></span></div></div></div>    </article>
+
+
+
+<article class="feature-item category_2   no_count  ">
+    <div class="feature-item__content">
+        
+                                
+    <div class="row">
+
+                    <div class="feature-item__column feature-item__column--image">
+                <div class="feature-item__wrapper">
+                                    <a href="/san-francisco/restaurants/henrys-hunan" target="_self">
+                                    <div class="image_wrapper aspect-ratio-4-3">
+            <div class="delayed-image-load"
+             data-class="imager tile__image"
+             data-imagesrc="https://media.timeout.com/images/101707069/{width}/{height}/image.jpg"
+             data-title="Henry’s Hunan"
+             data-alt="Henry’s Hunan">
+            <noscript>
+                <img src="https://media.timeout.com/images/101707069/image.jpg" alt="Henry’s Hunan" title="Henry’s Hunan" />
+            </noscript>
+        </div>
+    </div>
+                    </a>
+                                </div>
+            </div>
+        
+        <div class="feature-item__column">
+                                            <h3>
+                                            <a href="/san-francisco/restaurants/henrys-hunan" target="_self">Henry’s Hunan</a>
+                                        </h3>
+                
+                                                                            <div class="page_meta_controls">
+                                                        
+<div class="listings_flags"><span class="listings_flag listings_flags__star"><ul class="star_rating"><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class=" icon_star"></li><li class=" icon_star"></li></ul></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="clearfix"></div>
+                                    
+                                                
+                                                                            <p class="feature_item__annotation--truncated">
+                            Henry and Diana Chung started this local chain of Chinese restaurants in 1974, introducing the spicy, smoky dishes of their native Hunan province to San Francisco. It's been a love affair ever since, with locals flocking to their downtown and neighborhood locations for the Marty's Special (hot and spicy smoked ham and chicken with vegetables in black bean sauce), cold noodle salad (shredded chicken, cucumbers and peanut sauce), deep-fried onion cakes, hot and sour soup, and Diana's legendary meat pie -- ground pork in garlicky chili sauce topped with shredded lettuce sandwiched between circles of flaky fried bread. In recent years, grandsons Jeff and Eddie have opened branches in the Excelsior and Noe Valley that cater to a more health-conscious crowd, with lighter sauces, less oil, lean meats, and options such as brown rice. If you're averse to spicy food, make sure you specify &ldquo;mild&rdquo; when ordering.
+                        </p>
+                                    
+                			    				<a href="/san-francisco/restaurants/henrys-hunan" class="read-more">Read more</a>
+    			        	        </div>
+    </div>
+    </div>
+            <div class="listing_meta_controls"><div class="listings_flags_bar"><div class="listings_flags"><span class="listings_flag icon icon_pin">
+            North Beach
+        </span><span class="listings_flag listings_flags__price"><ul class="price_rating timeout_brand"><li class="icon_highlight icon_currency"></li><li class=" icon_currency"></li><li class=" icon_currency"></li><li class=" icon_currency"></li></ul></span></div></div></div>    </article>
+
+
+
+<article class="feature-item category_2   no_count  ">
+    <div class="feature-item__content">
+        
+                                
+    <div class="row">
+
+                    <div class="feature-item__column feature-item__column--image">
+                <div class="feature-item__wrapper">
+                                    <a href="/san-francisco/restaurants/yuet-lee" target="_self">
+                                    <div class="image_wrapper aspect-ratio-4-3">
+            <div class="delayed-image-load"
+             data-class="imager tile__image"
+             data-imagesrc="https://media.timeout.com/images/101707249/{width}/{height}/image.jpg"
+             data-title="Yuet Lee"
+             data-alt="Yuet Lee">
+            <noscript>
+                <img src="https://media.timeout.com/images/101707249/image.jpg" alt="Yuet Lee" title="Yuet Lee" />
+            </noscript>
+        </div>
+    </div>
+                    </a>
+                                </div>
+            </div>
+        
+        <div class="feature-item__column">
+                                            <h3>
+                                            <a href="/san-francisco/restaurants/yuet-lee" target="_self">Yuet Lee</a>
+                                        </h3>
+                
+                                                                            <div class="page_meta_controls">
+                                                        
+<div class="listings_flags"><span class="listings_flag listings_flags__star"><ul class="star_rating"><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class=" icon_star"></li><li class=" icon_star"></li></ul></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="clearfix"></div>
+                                    
+                                                
+                                                                            <p class="feature_item__annotation--truncated">
+                            Terrific seafood and the opportunity to indulge in some wee-hours dining attract sundry restaurant folk to this tiny, bright-green Chinese eatery. The roasted squab with fresh coriander and lemon, saut&eacute;ed clams with black bean sauce and &ldquo;eight precious noodle soup,&rdquo; made with eight kinds of meat, are all worth trying. Not fancy, but full of genuine Chinatown atmosphere.
+                        </p>
+                                    
+                			    				<a href="/san-francisco/restaurants/yuet-lee" class="read-more">Read more</a>
+    			        	        </div>
+    </div>
+    </div>
+            <div class="listing_meta_controls"><div class="listings_flags_bar"><div class="listings_flags"><span class="listings_flag icon icon_pin">
+            Chinatown
+        </span><span class="listings_flag listings_flags__price"><ul class="price_rating timeout_brand"><li class="icon_highlight icon_currency"></li><li class=" icon_currency"></li><li class=" icon_currency"></li><li class=" icon_currency"></li></ul></span></div></div></div>    </article>
+
+
+
+<article class="feature-item category_2   no_count  ">
+    <div class="feature-item__content">
+        
+                                
+    <div class="row">
+
+                    <div class="feature-item__column feature-item__column--image">
+                <div class="feature-item__wrapper">
+                                    <a href="/san-francisco/restaurants/ton-kiang" target="_self">
+                                    <div class="image_wrapper aspect-ratio-4-3">
+            <div class="delayed-image-load"
+             data-class="imager tile__image"
+             data-imagesrc="https://media.timeout.com/images/101707237/{width}/{height}/image.jpg"
+             data-title="Ton Kiang"
+             data-alt="Ton Kiang">
+            <noscript>
+                <img src="https://media.timeout.com/images/101707237/image.jpg" alt="Ton Kiang" title="Ton Kiang" />
+            </noscript>
+        </div>
+    </div>
+                    </a>
+                                </div>
+            </div>
+        
+        <div class="feature-item__column">
+                                            <h3>
+                                            <a href="/san-francisco/restaurants/ton-kiang" target="_self">Ton Kiang</a>
+                                        </h3>
+                
+                                                                            <div class="page_meta_controls">
+                                                        
+<div class="listings_flags"><span class="listings_flag listings_flags__star"><ul class="star_rating"><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class="icon_highlight icon_star"></li><li class=" icon_star"></li><li class=" icon_star"></li></ul></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="clearfix"></div>
+                                    
+                                                
+                                                                            <p class="feature_item__annotation--truncated">
+                            Ton Kiang is a longtime local fixture for dim sum, invariably packed and noisy, especially during peak hours (10am&ndash;3pm). Dining rooms on two floors fill up mid-morning with extended families, neighborhood regulars, weekend brunchers, and adventurous tourists all clamoring to get the attention of the ladies rolling around carts of steamed and fried Chinese dumplings, glistening roast duck, sticky rice wrapped in lotus leaves, clay pot stews and sweet egg custard tarts. For novices, the best strategy is to ignore the menu and just point at what looks and smells tasty. Don't miss the Shanghai dumplings, filled with meat and a shot of hot soup, or the crab claws stuffed with shrimp. And save room for a Chinese doughnuts&mdash;deep-fried chewy puffs rolled in sugar.
+                        </p>
+                                    
+                			    				<a href="/san-francisco/restaurants/ton-kiang" class="read-more">Read more</a>
+    			        	        </div>
+    </div>
+    </div>
+            <div class="listing_meta_controls"><div class="listings_flags_bar"><div class="listings_flags"><span class="listings_flag icon icon_pin">
+            Outer Richmond
+        </span><span class="listings_flag listings_flags__price"><ul class="price_rating timeout_brand"><li class="icon_highlight icon_currency"></li><li class="icon_highlight icon_currency"></li><li class=" icon_currency"></li><li class=" icon_currency"></li></ul></span></div></div></div>    </article>
+
+    
+
+<noscript class="previousButton">
+</noscript>
+
+
+
+    
+            </div>
+    
+
+            
+    </div>
+
+
+                                                            <div id="ad-mpu-2138160231" class="ad  module ad--mpu" data-ad='{"type":"mpu"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-mpu;page=page;itemid=page-499;audience=default;tile=2;sz=300x250;ord=1799027391;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-mpu;page=page;itemid=page-499;audience=default;tile=2;sz=300x250;ord=1799027391;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>                                    
+            
+            
+            <div data-ad='{"type":"replaceable","native_key":"ccf8396a","size":[6,6]}' class="zone-placeholder" id="ad-replace-1422629324"></div>
+
+            <section class="post__social">
+                
+<div class="page_sharing_widgets" data-module="social_widget">
+
+        
+		<a class="social_share__button social_share__facebook icon_facebook">
+		        <span class="social_share__text">Share</span>
+	</a>
+
+		<a class="social_share__button social_share__twitter icon_twitter" href="//twitter.com/intent/tweet?text=The%20best%20Chinese%20restaurants%20in%20San%20Francisco%20%7C%20http%3A%2F%2Fwww.timeout.com%2Fsan-francisco%2Frestaurants%2Fthe-best-chinese-restaurants-in-san-francisco" target="_blank">
+		<span class="social_share__text">Tweet</span>
+	</a>
+
+		<a class="social_share__button social_share__google icon_google" href="https://plus.google.com/share?url=http://www.timeout.com/san-francisco/restaurants/the-best-chinese-restaurants-in-san-francisco" data-share="googleplus">
+		<img src="//www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/>
+	</a>
+
+		<span class="social_share__total_shares">
+		<span class="social_share__share_count">0</span>
+		Shares
+	</span>
+
+</div>
+                
+	    
+<div
+    class="icon_cta icon_cta--comment"
+    data-module="remotes"
+    data-action="comments">
+
+    <div class="comment_count--callout js-comment_count">
+        <span class="icon_cta__icon_text">1</span>
+    </div>
+
+    <a class="icon_cta__text" href="#comments">Add comment</a>
+</div>
+            </section>
+
+
+                            
+            
+
+            <section class="post__ugc">
+                <h3 class="ugc__comments__title">Comments</h3>
+                
+
+<div id="comments"
+    class="timeout-ugc"
+    data-module="livefyre"
+    data-params='{"livefyre_url":"\/\/cdn.livefyre.com\/Livefyre.js","translations_url":"\/san-francisco\/en_US\/livefyre\/translation","edit_profile_url":"\/sanfrancisco\/en_US\/user\/myAccount","network":"timeout.fyre.co","widget":{"collectionMeta":"eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJhcnRpY2xlSWQiOiJDb250ZW50LVBhZ2UtNDk5LWVuLVVTIiwidXJsIjoiaHR0cDpcL1wvd3d3LnRpbWVvdXQuY29tXC9zYW4tZnJhbmNpc2NvXC9yZXN0YXVyYW50c1wvdGhlLWJlc3QtY2hpbmVzZS1yZXN0YXVyYW50cy1pbi1zYW4tZnJhbmNpc2NvIiwidGl0bGUiOiJUaGUgYmVzdCBDaGluZXNlIHJlc3RhdXJhbnRzIGluIFNhbiBGcmFuY2lzY28iLCJzaXRlSWQiOjM1MzE3NH0.EuttAjbQ5DYM7nLHar-A-zD1DvYjZnLQMMevhfiH9fI","siteId":353174,"articleId":"Content-Page-499-en-US","el":"comments"},"comment_count_selector":".js-comment_count"}'
+
+>
+<script>
+  (function() {
+    
+   var a=this;var b,c,d,e,f;function g(){return a.navigator?a.navigator.userAgent:null}f=e=d=c=b=!1;var h;if(h=g()){var i=a.navigator;b=0==h.indexOf("Opera");c=!b&&-1!=h.indexOf("MSIE");e=(d=!b&&-1!=h.indexOf("WebKit"))&&-1!=h.indexOf("Mobile");f=!b&&!d&&"Gecko"==i.product}var j=c,k=f,l=d,m=e;var n;if(b&&a.opera){var o=a.opera.version;"function"==typeof o&&o()}else k?n=/rv\:([^\);]+)(\)|;)/:j?n=/MSIE\s+([^\);]+)(\)|;)/:l&&(n=/WebKit\/(\S+)/),n&&n.exec(g());var p=document,q=p.createElement("link");q.rel="stylesheet";q.type="text/css";q.href="https://d3qdfnco3bamip.cloudfront.net/wjs/v3.0/css/livefyre_"+(m?"mobile":"embed")+".css";q.media="all";p.getElementsByTagName("head")[0].appendChild(q);var r="header hgroup footer article section aside nav figure figcaption embed audio video canvas details summary time mark".split(" "),s=p.createDocumentFragment(),t;for(t=0; t<r.length; t++){s.appendChild(p.createElement(r[t]))};
+   })();    
+</script>
+<div class="fyre fyre-width-large fyre-bootstrap">
+  <div class="fyre-widget">
+    <div class="fyre-stream-stats">
+      <div class="fyre-comment-count">
+        <span>1 comments</span>
+      </div>
+
+      <div class="fyre-divider"></div>
+
+      <div class="fyre-help">
+        <div class="fyre-box-wrapper">
+          <a href="http://livefyre.com" target="_blank"><span class="fyre-logo-drop">&nbsp</span>
+          <img class="fyre-logo-help" src="https://d3qdfnco3bamip.cloudfront.net/wjs/v3.0/images/lf-logo.png" alt="Livefyre" /></a>
+          
+          <ul class="fyre-box-list">
+            <li><a href="http://livefyre.com" target="_blank" title="Get Livefyre">Get
+            Livefyre</a></li>
+
+            <li><a href="http://support.livefyre.com" target="_blank" title=
+            "FAQ">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="fyre-auth">
+      <div class="fyre-login-bar"><a rel="nofollow" href="#" class="fyre-user-loggedout">Sign in</a></div>
+    </div>
+
+    <div class="fyre-editor">
+      <div class="fyre-editor-container">
+        <div class="fyre-editor-editable" style="height: 100px;"></div>
+
+        <div class="fyre-editor-toolbar">
+          <div class="goog-toolbar goog-toolbar-horizontal" style=
+          "-webkit-user-select: none;" role="toolbar" aria-activedescendant="">
+            <div class="goog-inline-block fyre-button-left fyre-format-button" title=""
+            role="button" style="-webkit-user-select: none;" id=":0">
+              <div class="goog-inline-block fyre-button-left-outer-box" style=
+              "-webkit-user-select: none;">
+                <div class="goog-inline-block fyre-button-left-inner-box" style=
+                "-webkit-user-select: none;"></div>
+              </div>
+            </div>
+
+            <div class="goog-inline-block fyre-button-left fyre-mention-button" title=""
+            role="button" style="-webkit-user-select: none;" id=":1">
+              <div class="goog-inline-block fyre-button-left-outer-box" style=
+              "-webkit-user-select: none;">
+                <div class="goog-inline-block fyre-button-left-inner-box" style=
+                "-webkit-user-select: none;"></div>
+              </div>
+            </div>
+
+            <div class="goog-inline-block fyre-button-left fyre-follow-button" title=""
+            role="button" style="-webkit-user-select: none;" id=":2">
+              <div class="goog-inline-block fyre-button-left-outer-box" style=
+              "-webkit-user-select: none;">
+                <div class="goog-inline-block fyre-button-left-inner-box" style=
+                "-webkit-user-select: none;">
+                  + Follow
+                </div>
+              </div>
+            </div>
+
+            <div class=
+            "goog-inline-block fyre-button-right fyre-post-button fyre-post-button-enabled"
+            title="" role="button" style="-webkit-user-select: none;" id=":3">
+              <div class="goog-inline-block fyre-button-right-outer-box" style=
+              "-webkit-user-select: none;">
+                <div class="goog-inline-block fyre-button-right-inner-box" style=
+                "-webkit-user-select: none;">
+                  Post comment
+                </div>
+              </div>
+            </div>
+
+            <div class=
+            "goog-inline-block fyre-button-right fyre-post-to fyre-post-to-facebook"
+            title="" role="button" style="-webkit-user-select: none;" id=":4">
+              <div class="goog-inline-block fyre-button-right-outer-box" style=
+              "-webkit-user-select: none;">
+                <div class="goog-inline-block fyre-button-right-inner-box" style=
+                "-webkit-user-select: none;"></div>
+              </div>
+            </div>
+
+            <div class=
+            "goog-inline-block fyre-button-right fyre-post-to fyre-post-to-twitter"
+            title="" role="button" style="-webkit-user-select: none;" id=":5">
+              <div class="goog-inline-block fyre-button-right-outer-box" style=
+              "-webkit-user-select: none;">
+                <div class="goog-inline-block fyre-button-right-inner-box" style=
+                "-webkit-user-select: none;"></div>
+              </div>
+            </div>
+
+            <div class=
+            "goog-inline-block fyre-button-right fyre-post-to fyre-post-to-linkedin"
+            title="" role="button" style="-webkit-user-select: none;" id=":7">
+              <div class="goog-inline-block fyre-button-right-outer-box" style=
+              "-webkit-user-select: none;">
+                <div class="goog-inline-block fyre-button-right-inner-box" style=
+                "-webkit-user-select: none;"></div>
+              </div>
+            </div>
+
+            <div class="goog-toolbar-separator goog-inline-block" style=
+            "-webkit-user-select: none;" role="separator" id=":6">
+              &nbsp;
+            </div>
+          </div>
+
+          <div class="fyre-format-toolbar" style="display: none;">
+            <div class="goog-toolbar goog-toolbar-horizontal" style=
+            "-webkit-user-select: none;" role="toolbar" tabindex="-1">
+              <div class="goog-inline-block goog-toolbar-button" title="Bold"
+              aria-pressed="true" role="button" style="-webkit-user-select: none;" id=
+              "+bold">
+                <div class="goog-inline-block goog-toolbar-button-outer-box" style=
+                "-webkit-user-select: none;">
+                  <div class="goog-inline-block goog-toolbar-button-inner-box" style=
+                  "-webkit-user-select: none;">
+                    <div class="tr-icon tr-bold" style="-webkit-user-select: none;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="goog-inline-block goog-toolbar-button" title="Italic"
+              aria-pressed="true" role="button" style="-webkit-user-select: none;" id=
+              "+italic">
+                <div class="goog-inline-block goog-toolbar-button-outer-box" style=
+                "-webkit-user-select: none;">
+                  <div class="goog-inline-block goog-toolbar-button-inner-box" style=
+                  "-webkit-user-select: none;">
+                    <div class="tr-icon tr-italic" style="-webkit-user-select: none;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="goog-inline-block goog-toolbar-button" title="Underline"
+              aria-pressed="true" role="button" style="-webkit-user-select: none;" id=
+              "+underline">
+                <div class="goog-inline-block goog-toolbar-button-outer-box" style=
+                "-webkit-user-select: none;">
+                  <div class="goog-inline-block goog-toolbar-button-inner-box" style=
+                  "-webkit-user-select: none;">
+                    <div class="tr-icon tr-underline" style="-webkit-user-select: none;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="goog-inline-block goog-toolbar-button" title=
+              "Add or remove link" aria-pressed="true" role="button" style=
+              "-webkit-user-select: none;" id="+link">
+                <div class="goog-inline-block goog-toolbar-button-outer-box" style=
+                "-webkit-user-select: none;">
+                  <div class="goog-inline-block goog-toolbar-button-inner-box" style=
+                  "-webkit-user-select: none;">
+                    <div class="tr-link" style="-webkit-user-select: none;">
+                      Link
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="goog-inline-block goog-toolbar-button" title="Numbered list"
+              aria-pressed="true" role="button" style="-webkit-user-select: none;" id=
+              "+insertOrderedList">
+                <div class="goog-inline-block goog-toolbar-button-outer-box" style=
+                "-webkit-user-select: none;">
+                  <div class="goog-inline-block goog-toolbar-button-inner-box" style=
+                  "-webkit-user-select: none;">
+                    <div class="tr-icon tr-insertOrderedList" style=
+                    "-webkit-user-select: none;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="goog-inline-block goog-toolbar-button" title="Bullet list"
+              aria-pressed="true" role="button" style="-webkit-user-select: none;" id=
+              "+insertUnorderedList">
+                <div class="goog-inline-block goog-toolbar-button-outer-box" style=
+                "-webkit-user-select: none;">
+                  <div class="goog-inline-block goog-toolbar-button-inner-box" style=
+                  "-webkit-user-select: none;">
+                    <div class="tr-icon tr-insertUnorderedList" style=
+                    "-webkit-user-select: none;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fyre-comment-stream" style="">
+      <div class="fyre-stream-sort">
+        <a class="fyre-stream-sort-newest">Newest</a> | <a class="fyre-stream-sort-oldest">Oldest</a>
+      </div>
+
+      <div class="fyre-stream-content">      
+        
+            
+
+        
+            
+
+        
+            
+
+        
+            
+<article class="fyre-comment-article">
+  <div class="fyre-comment-wrapper">
+  
+  
+  
+  <div class="fyre-comment-user">
+    <a class="fyre-comment-author"><img src="https://dpstvy7p9whsy.cloudfront.net/a/322/017eab064597f47276c70884357fbcd3/50.jpg?v=1421460371" class=
+    "fyre-user-avatar" alt="James S" /></a>
+
+    <div class="fyre-comment-socialsync fyre-comment-from-livefyre"></div>
+  </div>
+    
+  <header class="fyre-comment-head">
+    <a class="fyre-comment-username">James S</a> 
+    
+    
+    <span class="fyre-comment-user-rating" style="display: none;">5pts</span>
+    <span class="fyre-comment-like" style="float: right;">
+      
+    </span>
+    
+  </header>
+  
+  <section class="fyre-comment-body">
+    <div class="fyre-comment">
+      <p><p>Bonnie, I think that this list is pretty good. I like what you said about Yuet Lee and their hours. For me, working late and having a busy day usually means that if I'm going to get out at all, it has to be late at night. I love eating out, so this is the last chance I usually get every day, and I love eating Chinese!</p><p><br/></p></p>
+    </div>
+    
+  </section>
+
+  <footer class="fyre-comment-footer">
+  </footer>
+  </div>
+  <div class="fyre-comment-divider"><div class="fyre-comment-divider"></div></div>
+
+  
+    
+  <div class="fyre-comment-replies fyre-comment-container fyre-comment-replies-indent">
+  
+  </div>
+</article>
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+            </section>
+
+        </div>
+    </article>
+
+    
+        <aside class="side_content">
+            <div id="ad-mpu-1081072521" class="ad  module ad--mpu" data-ad='{"type":"mpu"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-mpu;page=page;itemid=page-499;audience=default;tile=2;sz=300x250;ord=936248326;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-mpu;page=page;itemid=page-499;audience=default;tile=2;sz=300x250;ord=936248326;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>
+            
+                                            
+    
+    
+        <div class="promo_list_wrapper">
+                    <h3>You might also like</h3>
+        
+        <section class="tabs tabs_widget inverted_theme" role="region" aria-live="polite">
+                            <input id="tabs_18028271771" class="tab__input" type="radio" name="radio-set-rhr" data-tab-input="1" checked="checked"/>
+                        
+                                                <ul class="promo_list">
+                                                                                    <li class="promo_list__item">
+                                    <a href="http://www.timeout.com/san-francisco/restaurants/the-best-thai-food-in-san-francisco" title="The best Thai food in San Francisco">
+                                                                                                                                <img class="promo_list__item__thumb" src="https://media.timeout.com/images/101707159/60/45/image.jpg" alt="" />
+                                                                                <span class="promo_list__item__title">The best Thai food in San Francisco</span>
+                                    </a>
+                                </li>
+                                                                                                                <li class="promo_list__item">
+                                    <a href="http://www.timeout.com/san-francisco/restaurants/the-best-japanese-restaurants-in-san-francisco" title="The best Japanese restaurants in San Francisco">
+                                                                                                                                <img class="promo_list__item__thumb" src="https://media.timeout.com/images/101722547/60/45/image.jpg" alt="" />
+                                                                                <span class="promo_list__item__title">The best Japanese restaurants in San Francisco</span>
+                                    </a>
+                                </li>
+                                                                                                                <li class="promo_list__item">
+                                    <a href="http://www.timeout.com/san-francisco/restaurants/the-best-pizza-in-san-francisco" title="The best pizza in San Francisco">
+                                                                                                                                <img class="promo_list__item__thumb" src="https://media.timeout.com/images/101719309/60/45/image.jpg" alt="" />
+                                                                                <span class="promo_list__item__title">The best pizza in San Francisco</span>
+                                    </a>
+                                </li>
+                                                                                                                <li class="promo_list__item">
+                                    <a href="http://www.timeout.com/san-francisco/restaurants/bakery-guide-to-san-francisco" title="Bakery guide to San Francisco">
+                                                                                                                                <img class="promo_list__item__thumb" src="https://media.timeout.com/images/102064425/60/45/image.jpg" alt="" />
+                                                                                <span class="promo_list__item__title">Bakery guide to San Francisco</span>
+                                    </a>
+                                </li>
+                                                                                                                <li class="promo_list__item">
+                                    <a href="http://www.timeout.com/san-francisco/neighborhoods/mission-district" title="The Mission neighborhood guide">
+                                                                                                                                <img class="promo_list__item__thumb" src="https://media.timeout.com/images/101716181/60/45/image.jpg" alt="" />
+                                                                                <span class="promo_list__item__title">The Mission neighborhood guide</span>
+                                    </a>
+                                </li>
+                                                                        </ul>
+                            
+        </section>
+
+    </div>
+                        <div id="ad-bottom-mpu-489990684" class="ad  module ad--bottommpu" data-ad='{"type":"bottommpu"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-bottom-mpu;page=page;itemid=page-499;audience=default;tile=3;sz=300x250,300x600;ord=1847420004;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-bottom-mpu;page=page;itemid=page-499;audience=default;tile=3;sz=300x250,300x600;ord=1847420004;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>        </aside>
+    
+
+    <div id="ad-mobile-background-696083727" class="ad  ad-mobile-background" data-ad='{"type":"mobile_background"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-mobile-background;page=page;itemid=page-499;audience=default;tile=9;sz=300, 50;ord=1195810251;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-mobile-background;page=page;itemid=page-499;audience=default;tile=9;sz=300, 50;ord=1195810251;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>    <div id="ad-mobile-cta-547260829" class="ad  ad-mobile-cta" data-ad='{"type":"mobile_cta"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-mobile-cta;page=page;itemid=page-499;audience=default;tile=10;sz=300, 25;ord=1979096561;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-mobile-cta;page=page;itemid=page-499;audience=default;tile=10;sz=300, 25;ord=1979096561;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>            </main>
+
+                          
+
+
+<footer class="site-footer">
+	<nav role="navigation" aria-label="Bottom navigation" id="footer-nav" class="site-footer__nav">
+		<div class="container">
+			<a href="javascript:scrollTo(0,0)" class="site-footer__top-link">Top</a>
+			<div class="row">
+				<!-- footer columns as defined in config -->
+				<div class="footer-tab">
+																						<input type="checkbox" id="footer-tab__toggle_0" class="footer-tab__toggle">
+								<h4>
+				<label for="footer-tab__toggle_0">
+					<a  href="http://www.timeout.com/about" title="About us" target="_self">About us</a>
+				</label>
+			</h4>
+				<ul>
+									<li><a href="http://www.timeout.com/about/time-out-group/work-for-time-out" title="Work for Time Out" target="_self">Work for Time Out</a></li>
+									<li><a href="http://www.timeout.com/san-francisco/privacy-policy" title="Privacy policy" target="_self">Privacy policy</a></li>
+									<li><a href="http://www.timeout.com/san-francisco/terms-conditions" title="Website terms of use" target="_self">Website terms of use</a></li>
+					</ul>
+	
+																		</div><div class="footer-tab">
+														<input type="checkbox" id="footer-tab__toggle_1" class="footer-tab__toggle">
+								<h4>
+				<label for="footer-tab__toggle_1">
+					<a  href="http://www.timeout.com/san-francisco/contact" title="Contact us" target="_self">Contact us</a>
+				</label>
+			</h4>
+				<ul>
+									<li><a href="http://www.timeout.com/san-francisco/get-listed" title="Get listed" target="_self">Get listed</a></li>
+									<li><a href="http://clientcenter.timeout.com/" title="Advertising" target="_self">Advertising</a></li>
+					</ul>
+	
+																		</div><div class="footer-tab">
+														<input type="checkbox" id="footer-tab__toggle_2" class="footer-tab__toggle">
+					<h4>
+				<label for="footer-tab__toggle_2">Time Out products</label>
+			</h4>
+				<ul>
+									<li><a href="http://www.timeout.com/san-francisco/time-out-apps" title="Mobile apps" target="_self">Mobile apps</a></li>
+									<li><a href="http://shop.timeout.com/" title="Time Out Shop" target="_self">Time Out Shop</a></li>
+									<li><a href="http://shop.timeout.com/" title="Time Out Guides" target="_self">Time Out Guides</a></li>
+									<li><a href="http://www.timeout.com/travel" title="Time Out Travel" target="_self">Time Out Travel</a></li>
+									<li><a href="http://www.timeout.com/" title="Time Out worldwide" target="_self">Time Out worldwide</a></li>
+					</ul>
+	
+												</div>
+									<div class="footer-tab social-links social-links--footer">
+                        						<h4>Follow us</h4>
+                        <span class="social-links__link-wrapper">
+																								<a class="social-link icon_facebook" href="https://www.facebook.com/pages/Time-Out-San-Francisco/1423947147859126" title="Facebook" target="_blank">
+										<span>Facebook</span>
+									</a>
+																															<a class="social-link icon_twitter" href="https://twitter.com/TimeOut_SF" title="Twitter" target="_blank">
+										<span>Twitter</span>
+									</a>
+																				</span>
+                                                					</div>
+							</div>
+		</div>
+	</nav>
+	<div class="site-footer__utilities">
+		<div class="container">
+			<a class="timeout-logo" href="/san-francisco" title="Time Out San Francisco">Time Out San Francisco</a>
+
+														
+							<a class="site-map" href="http://www.timeout.com/san-francisco/sitemap">Site map</a>
+					</div>
+	</div>
+</footer>            
+        </div>
+
+        <script src="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/js/main.js" data-main="//dist.timeout.com/dist/41cdbbcedfe28f4e8d99f36300911b985234be67/js/main.js"></script>
+		
+                    <div id="ad-interstitial-oop-567949789" class="ad " data-ad='{"type":"oop"}'><noscript><a href="http://ad.doubleclick.net/5185/jump/Time_Out_San_Francisco/restaurants;type=ad-interstitial-oop;page=page;itemid=page-499;audience=default;tile=1;sz=300x250;ord=201122038;venue=restaurants;subject=food-%26-drink;?"><img src="http://ad.doubleclick.net/5185/ad/Time_Out_San_Francisco/restaurants;type=ad-interstitial-oop;page=page;itemid=page-499;audience=default;tile=1;sz=300x250;ord=201122038;venue=restaurants;subject=food-%26-drink;?" /></a></noscript></div>        
+                                <noscript id="omnitureNoscript">
+            <img src="https://smetrics.timeout.com/b/ss/timeoutussanfrancisco,timeoutworldwide/1/H.23.8--NS/0?pageName=TO+%3A+No+Script" height="1" width="1" />
+            }
+        </noscript>
+    
+        
+            <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"078547f172","applicationID":"3580675","transactionName":"Y1MDNktRXkBQWkANCVoZIAFNWV9dHklVAwNrXw8GXEg=","queueTime":0,"applicationTime":748,"atts":"TxQAQANLTU4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>
+
