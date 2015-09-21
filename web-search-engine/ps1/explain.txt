@@ -40,7 +40,10 @@ basic requirements, if there are any.
     4. Use max operation when one page is linked by multiple pages
 
   Validation check:
-    1. 
+    1. Decode URL and turn it into simplest form
+    2. Avoid URLs with unexpected extension
+    3. Filter URLs with non http or https protocol
+    4. Give up pages that is disallowed by robot crawler
 
 == Known Issue
 

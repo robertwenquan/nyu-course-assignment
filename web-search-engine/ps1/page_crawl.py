@@ -154,7 +154,6 @@ class GenericPageCrawler(object):
         but simply inject 10-20 random URLs into the queue
     '''
     # fake single page crawl starts HERE
-
     if self.fake:
       def gen_random_url():
         random_path = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(8))
@@ -173,6 +172,10 @@ class GenericPageCrawler(object):
 
       return
     # fake single page crawl ends HERE
+
+    # robots.txt check
+    if vc.robots_disallow_check(self.page.url):
+      return
 
     # crawl start
     self.page.time_start = time.time()
@@ -219,7 +222,7 @@ class GenericPageCrawler(object):
           fpw.write(url, e)
 
       except Exception as e:
-        print('Error writing back %s: %s' % (page.url, str(e)))
+        print('Error writing back %s: %s' % (self.page.url, str(e)))
 
       return
 
