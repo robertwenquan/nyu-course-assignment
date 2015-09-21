@@ -113,6 +113,9 @@ class Dispatcher(object):
     self.log_queue = Queue.Queue()
     self.end_page_log_item = Page('none', 0, 0)
 
+    # shutdown signal
+    self.shutdown = False
+
   def bulk_url_enqueue(self, urls):
     ''' add a list of URLs into the crawl queue '''
     for url in urls:
@@ -154,6 +157,7 @@ class Dispatcher(object):
         break
 
     worker.join()
+    self.shutdown = True
     self.log_queue.put(self.end_page_log_item)
 
   def run_log_writter(self):
@@ -178,6 +182,40 @@ class Dispatcher(object):
           self.stats.crawled_succ += 1
 
       if page == page_end:
+        break
+
+  def run_progress_reporter(self):
+    ''' report crawling progress every N seconds
+        N is based on configuration or
+          argument -i (interval)
+
+        reporting metrics include:
+        - # of pages crawled.
+        - successful rate.
+        - # % finished.
+        - # pages / sec
+        - # bytes / sec
+    '''
+
+    # generate current progress report
+    def progress_report_current():
+      crawl_total = self.max_num_pages
+      crawled_pages = self.stats.crawled_pages
+      progress = '%d/%d pages crawled. [%d%%] finished' % (crawled_pages, crawl_total, (100*crawled_pages/crawl_total))
+      return progress
+
+    # generate current progress report END
+
+    try:
+      interval = self.conf['report']['interval']
+    except:
+      interval = 3
+
+    while True:
+      print(time.ctime() + '\t' +  progress_report_current())
+      time.sleep(interval)
+
+      if self.shutdown:
         break
 
   def run(self):
@@ -211,9 +249,15 @@ class Dispatcher(object):
     t_logger.daemon = True
     t_logger.start()
 
+    # launch the progress reporter
+    t_reporter = threading.Thread(target=self.run_progress_reporter)
+    t_reporter.daemon = True
+    t_reporter.start()
+
     # wait for the workers to finish
     t_crawler.join()
     t_logger.join()
+    t_reporter.join()
 
     # finalize statistical metrics
     self.stats.finalize()

@@ -32,12 +32,17 @@ class Settings(object):
     parser.add_argument('-n', '--num', nargs='?', type=int, help='number of pages to crawl',
                         default=10)
     parser.add_argument('--fake', action='store_true', help='fake run, do not crawl')
+    parser.add_argument('-i', '--interval', type=int, help='progress reporting interval')
     parser.add_argument('-v', '--verbose', action='store_true', help='verbose output for debugging')
     parser.add_argument('keywords', metavar='keyword', type=str, nargs='*',
                         help='keyword to search', default=['nyu', 'poly'])
 
     # parse arguments
     self.args = parser.parse_args()
+
+    # override configurations from arguments
+    if self.args.interval:
+      self.conf['report']['interval'] = self.args.interval
 
   def cfg_parse(self):
     ''' parse yaml configuration file '''

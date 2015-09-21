@@ -8,6 +8,8 @@ crawl:
   crawl_stats : '/tmp/crawl.stats'
   crawl_pages : '/tmp/crawln'
   crawl_errs  : '/tmp/error.log'
+report:
+  interval    : 3
 aws:
   AWS_KEY     : 'a'
   AWS_SECRET  : 'b'
