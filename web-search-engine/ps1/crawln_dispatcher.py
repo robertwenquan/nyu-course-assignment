@@ -20,11 +20,11 @@ import time
 import threading
 import Queue
 from utils import Logger
+from utils import Worker
 from page_crawl import GenericPageCrawler
 from page_crawl import Page
 from google_crawl import GoogleWebCrawler
 from bing_crawl import BingWebCrawler
-from worker import Worker
 
 
 class CrawlStats(object):
