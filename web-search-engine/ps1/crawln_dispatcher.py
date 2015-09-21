@@ -226,6 +226,7 @@ class Dispatcher(object):
         break
 
     # print finish statistics
+    print(time.ctime() + '\t' +  progress_report_current())
     print('crawl finished.')
 
   def run(self):
