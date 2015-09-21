@@ -1,7 +1,9 @@
 an explain.txt file containing a precise and 
 succint description of how the program works and 
-what the major functions are. Also, a list of any
-bugs or non-working features in your program. 
+what the major functions are. 
+
+Also, a list of any bugs or non-working features in your program. 
+
 Finally, a list of any special features beyond the 
 basic requirements, if there are any.
 
@@ -24,6 +26,7 @@ basic requirements, if there are any.
     Read queue as a loop, exit when the queue has been empty for 30s or crawled item reached N
 
 3. Major functions:
+
   Parse pages:
     fetch the page and parse it
       1. Before fetching the page, the header of the file was fetched first
@@ -45,11 +48,36 @@ basic requirements, if there are any.
     3. Filter URLs with non http or https protocol
     4. Give up pages that is disallowed by robot crawler
 
+  Crawl logs:
+    1. all crawled pages are logged, upon success or failure
+    2. HTTP status code, crawl page size, crawl start time, crawl duration, queued time, page depth, etc. are logged
+    3. logged in JSONL format
+
+  Crawl statistics:
+    The following statistics are logged for the crawl:
+    - crawl start time
+    - crawl end time
+    - crawl duration in seconds
+    - crawled number of pages
+    - crawled page in bytes
+    - crawled page in successful state
+    - crawled page in success rate
+
 == Known Issue
+
+ * Not supporting password protected page
+ * Not fully supporting robots.txt
+ * Crawling is not fast enough
 
 == Extra Features
 
  * Multi-threading
+  * we use threading library to parallel the crawling 
 
- * Fake test
+ * robots.txt checking
+  * only DisAllow is supported for the robots.txt protocol
+
+ * Fake crawl mode
+  * add --fake mode for testing and debugging
+  * This is quite useful without network connection
 
