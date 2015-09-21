@@ -198,7 +198,7 @@ class GenericPageCrawler(object):
         self.page.error = 1
         self.log_queue.put(self.page)
         return
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
       self.page.notes = str(e)
       self.page.error = 1
       self.page.time_end = time.time()
@@ -219,7 +219,7 @@ class GenericPageCrawler(object):
 
     try:
       response = requests.get(self.page.url, headers = headers, timeout=0.5)
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
       self.page.notes = str(e)
       self.page.error = 1
       self.page.time_end = time.time()
