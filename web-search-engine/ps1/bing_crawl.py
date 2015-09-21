@@ -9,11 +9,11 @@ import validation_check as vc
 __author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
 
 '''
-Google Web Search Engine Crawler
+Bing Web Search Engine Crawler
 '''
 
 class BingWebCrawler(object):
-  ''' Google Web Search Engine Crawler '''
+  ''' Bing Web Search Engine Crawler '''
 
   def __init__(self, keywords, fake):
     self.queries = keywords
