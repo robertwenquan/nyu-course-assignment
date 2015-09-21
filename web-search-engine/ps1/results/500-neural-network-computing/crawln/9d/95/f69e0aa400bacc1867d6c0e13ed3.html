@@ -1,0 +1,578 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link rel="stylesheet" title="default stylesheet" media="screen" type="text/css" href="http://cdn4.explainthatstuff.com/ets2.css">
+<link rel="canonical" href="http://www.explainthatstuff.com/integratedcircuits.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>How do integrated circuits work? | Who invented microchips?</title>
+  <meta name="keywords" content="integrated circuit, IC, semiconductor, p-type, n-type, Kilby, Noyce, planar process">
+  <meta name="description" content="An easy-to-understand introduction to integrated circuits, why we need them, how we make them, and how they were invented in the 1950s.">
+<link rel="shortcut icon" href="http://cdn4.explainthatstuff.com/favicon.ico">
+
+<!-- Begin Cookie Consent plugin. Original version by Silktide (http://silktide.com/cookieconsent), slightly modified by
+explainthatstuff.com on July 29, 2015), released under GNU General Public License Version (http://www.gnu.org/licenses/gpl.txt) as published by the Free Software Foundation.
+-->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to improve your experience of our site and to serve relevant, personalized advertising.","dismiss":"Got it!","learnMore":"More info","link":"http://www.explainthatstuff.com/privacy.html","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="http://cdn4.explainthatstuff.com/cookieconsent3.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body itemscope itemtype="http://schema.org/Article"><div class="container"><a name="pagetop"></a>
+
+
+
+
+
+
+
+
+
+<div class="header"><IMG class="headlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif"></div>
+
+<div class="searchtop">
+<!-- SiteSearch Google top search start -->
+<form action="http://www.explainthatstuff.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1030585152417294:7662706493" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="40" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<!-- SiteSearch Google top search end -->
+</div>
+
+
+
+
+
+
+<!-- Ad placement: electricity and electronics -->
+
+
+
+<div class="crumb">
+You are here:
+<a href="/">Home page</a> &gt;
+<a href="articles_computers.html">Computers</A> &gt;
+Integrated circuits
+</div>
+
+
+<!-- old nav bar -->
+
+
+
+<div class="nav">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+
+
+<div class="adrightsm">Advertisement
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="1317849019"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+
+<div class="main2">
+<!-- -->
+
+<p><img itemprop="image" src="http://cdn4.explainthatstuff.com/memorychip.jpg" class="ileftno" height="255" width="300" ALT="Memory chip from a USB flash memory stick"></p>
+
+<h1 itemprop="headline name">Integrated circuits</h1>
+
+
+<div class="sharetop"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fintegratedcircuits.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+<p>by <a href="chris-woodford.html">Chris Woodford</a>. <span class="italic">Last updated: November 14, 2014.</span></p>
+<meta itemprop="alternativeHeadline" content="How do integrated circuits work?">
+<meta itemprop="description" content="How does a miniaturized integrated circuit do the same job as a much larger, conventional electron circuit?">
+<meta itemprop="datePublished" content="2009-01-06">
+<meta itemprop="dateModified" content="2014-11-14">
+
+
+<p itemprop="articleBody"><span class="dropcap">H</span>ave you ever heard of a 1940s <a href="howcomputerswork.html">computer</a>
+called the ENIAC? It was about the same length and weight as three to four double-decker buses and
+contained 18,000 buzzing electronic switches known as vacuum tubes.
+Despite its gargantuan size, it was <a target="_blank"
+ href="http://www.toshiba-europe.com/computers/sna/tnt/visions97/feniac.htm">thousands
+of times less powerful</a> than a
+modern laptop&#8212;a machine about 100 times smaller.</P>
+
+<P>If the  <a href="historyofcomputers.html">history of computing</a> sounds like a magic trick&mdash;squeezing more and more power
+into less and less space&mdash;it is! What made it
+possible was the invention of the <B>integrated
+circuit (IC)</B> in 1958. It's a neat way of cramming hundreds, thousands, millions, or
+even billions of <a href="electronics.html">electronic</a> components
+onto tiny chips of silicon no
+bigger than a fingernail. Let's take a closer look at ICs and how
+they work!</p>
+
+<p><span class="credit">Photo: An integrated circuit from the outside. This is what an IC looks like when it's conveniently packaged inside a <a href="flashmemory.html" target="_blank">flash memory</A> chip. Inside the black protective case, there's a tiny integrated circuit, with millions of transistors capable of storing millions of binary digits of information. You can see what the circuit itself looks like in the photograph below.
+</span></p>
+
+<h2>What is an integrated circuit?</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/integratedcircuitnasa.jpg" class="irightno" height="288" width="327" ALT="Inside a typical microchip. You can see the  integrated circuit and the wires that connect to the terminals around its edge."></p>
+
+
+<p>Open up a <a href="television.html">television</a> or a <a
+ href="radio.html">radio</a> and you'll see it's built around a 
+<B>printed circuit board (PCB)</B>: a bit like an electric street-map with
+small <a href="electronics.html">electronic</a>
+components (such as <a href="resistors.html">resistors</a> and <a href="capacitors.html">capacitors</a>)
+in place of
+the buildings and printed <a href="copper.html">copper</a> connections
+linking them together
+like miniature metal streets. Circuit boards are fine in small
+appliances like this, but if you try to use the same technique to
+build a complex electronic machine, such as a <a href="howcomputerswork.html">computer</A>, you quickly
+hit a snag. Even the simplest computer needs eight electronic
+switches to store a single byte (character) of information. So if you
+want to build a computer with just enough memory to store this
+paragraph, you're looking at about 750 characters times 8 or about
+6000 switches&#8212;for a <span class="italic">single paragraph</span>! If
+you plump for
+switches like they had in the ENIAC&#8212;vacuum tubes about the size of
+an adult thumb&#8212;you soon end up with a whopping great big,
+power-hungry machine that needs its own mini <a href="powerplants.html">electricity
+plant</a> to
+keep it running.</p>
+
+
+<p><span class="credit">Photo: An integrated circuit from the inside. If you could lift the cover off a typical microchip like the one in the top photo (and you can't very easily&mdash;believe me, I've tried!), this is what you'd find inside. The integrated circuit is the tiny square in the center. Connections run out from it to the terminals (metal pins or legs) around the edge. When you hook up something to one of these terminals, you're actually connecting into the circuit itself. You can just about see the pattern of electronic components on the surface of the chip itself. Photo by courtesy of <a href="http://grcimagenet.grc.nasa.gov/" target="_blank">NASA Glenn Research Center (NASA-GRC)</A>.</span></p>
+
+<p>When three American physicists invented <a href="howtransistorswork.html">transistors</a>  in 1947, things
+improved somewhat. Transistors were a fraction the size of vacuum tubes and <a
+ href="howrelayswork.html">relays</a>
+(the electromagnetic switches that had started to replace vacuum tubes in
+the mid-1940s), used much less power, and were far more reliable. But
+there was still the problem of linking all those transistors
+together in complex circuits. Even after transistors were invented,
+computers were still a tangled mass of wires.</p>
+
+<p><img src="http://cdn4.explainthatstuff.com/fettransistor.jpg" class="ileftno" height="240" width="300" ALT="A FET transistor on a printed circuit board."></p>
+
+<p>Integrated circuits changed all that. The basic idea was to take a
+complete circuit, with all its many components and the connections between
+them, and recreate the whole thing in microscopically tiny form on the surface of a
+piece of silicon. It was an amazingly clever idea and it's made
+possible all kinds of "microelectronic" gadgets we now take for
+granted, from digital <a href="quartzclockwatch.html">watches</a> and
+pocket <a href="calculators.html">calculators</a> to Moon-landing
+<a href="spacerockets.html">rockets</a> and missiles with built-in <a
+ href="howgpsworks.html">satellite navigation</a>.</p>
+
+<p><span class="credit">Photo: A typical modern transistor mounted on a printed circuit board. Imagine having to wire hundreds of millions of these things onto a PCB!</span></p>
+
+
+<h2>How are integrated circuits made?</h2>
+
+<P>How do we make something like a memory or processor chip for a computer? It all starts with a raw chemical element such as silicon, which is chemically treated or doped to make it have different electrical properties...</P>
+
+<h3>Doping semiconductors</h3>
+<p>If you've read our articles on <a href="diodes.html">diodes</a> and
+<a href="howtransistorswork.html">transistors</a>, you'll be
+familiar with the idea of <B>semiconductors</B>.
+Traditionally, people thought of materials fitting into two neat categories: those
+that allow <a href="electricity.html">electricity</a> to flow through
+them quite readily (conductors) and those that don't (insulators).
+<a href="introduction-to-metals.html">Metals</A> make up most of the conductors, while nonmetals such as
+<a href="plastics.html">plastics</A>, <a href="wood.html">wood</A>, and <a href="glass.html">glass</A>
+are the insulators. In fact, things are far more complex than this&#8212;especially when it comes to certain
+elements in the middle of the periodic table (in groups 14 and 15), notably silicon and
+germanium. Normally insulators, these elements can be
+made to behave more like conductors if we add small quantities of
+impurities to them in a process known as <B>doping</B>.
+If you add antimony to silicon, you give it slightly more electrons than it
+would normally have&#8212;and the power to conduct electricity. Silicon
+"doped" that way is called <B>n-type</B>. Add boron instead of antimony
+and you remove some of silicon's electrons, leaving behind "holes"
+that work as "negative electrons," carrying a positive electric
+current in the opposite way. That kind of silicon is called <B>p-type</B>.
+Putting areas of n-type and p-type silicon side by side creates
+junctions where electrons behave in very interesting ways&#8212;and that's
+how we create electronic, semiconductor-based components like diodes,
+transistors, and <a href="how-computer-memory-works.html">memories</a>.</p>
+
+<p><img src="http://cdn4.explainthatstuff.com/circuitboardtracks.jpg" class="irightno" height="218" width="300" ALT="Printed circuit board tracks"></p>
+
+<p><span class="credit">Photo: A traditional printed circuit board (PCB) like this has tracks linking together the terminals (metal connecting legs) from different electronic components. Think of the tracks as "streets" making paths between "buildings" where useful things are done (the components themselves). There's a miniaturized version of a circuit board inside an integrated circuit: the tracks are created in microscopic form on the surface of a silicon wafer. This is the reverse side of the flash memory chip in our top photo.</span></p>
+
+<h3>Inside a chip plant</h3>
+<p><img src="http://cdn4.explainthatstuff.com/siliconwafer.jpg" class="ileftno" height="292" width="250" ALT="A silicon wafer"></p>
+
+<p>The process of making an integrated circuit starts off with a big
+<a href="http://en.wikipedia.org/wiki/Single_crystal" target="_blank">single crystal</A> of silicon, shaped like a long solid pipe, which is "salami sliced" into thin discs
+(about the dimensions of a compact disc) called <B>wafers</B>.
+The wafers are marked out into many identical square or rectangular areas, each
+of which will make up a single silicon chip (sometimes called a
+microchip). Thousands, millions, or billions of components are then
+created on each chip by doping different areas of the surface to turn them into
+n-type or p-type silicon. Doping is done by a variety of different
+processes. In one of them, known as <B>sputtering</B>,
+ions of the doping material are fired at the silicon wafer like bullets from a
+gun. Another process called <B>vapor deposition</B>
+involves introducing the doping material as a gas and letting it condense so
+the impurity atoms create a thin film on the surface of the silicon
+wafer. <a href="molecular-beam-epitaxy-introduction.html">Molecular beam epitaxy</a>
+is a much more precise form of deposition.</p>
+
+<p><span class="credit">Photo: A silicon wafer. Photo by courtesy of NASA Glenn Research Center (NASA-GRC).</span></p>
+
+
+<p>Of course, making integrated circuits that pack hundreds, millions,
+or billions of components onto a fingernail-sized chip of silicon is all
+a bit more complex and involved than it sounds. Imagine the havoc
+even a speck of dirt could cause when you're working at the
+<a href="microscopes.html">microscopic</a> (or sometimes even the <a href="nanotechnologyforkids.html">nanoscopic</a>)
+scale. That's why semiconductors are made in spotless laboratory environments called
+<B>clean rooms</B>, where the air is meticulously
+filtered and
+workers have to pass in and out through airlocks wearing all kinds of
+protective clothing.</p>
+</div>
+
+<div class="box">
+<h2>Who invented the integrated circuit?</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/assortedmicrochips.jpg" class="ileftno" height="240" width="300" ALT="Assorted computer microchips on a table"></p>
+
+<p><span class="dropcap">Y</span>ou've probably read in books that ICs were developed jointly by
+<B>Jack Kilby</B> (1923&ndash;2005) and
+<B>Robert Noyce</B> (1927&ndash;1990), as though these two men
+happily collaborated on their brilliant invention! In fact, Kilby and Noyce
+came up with the idea independently, at more or less exactly the same
+time, prompting a furious battle for the rights to the invention that
+was anything but happy.</p>
+
+
+<p><span class="credit">Photo: Computer microchips like these&mdash;and all the appliances and gadgets
+that use them&mdash;owe their existence to Jack Kilby and Robert Noyce.
+Photo by Warren Gretz courtesy of 
+<a href="http://www.nrel.gov/" target="_blank">US Department of Energy/National Renewable Energy Laboratory (US DOE/NREL)</A>.</span></p>
+
+
+<p>How could two people invent the same thing at exactly the same time? Easy:
+integrated circuits were an idea waiting to happen. By the mid-1950s,
+the world (and the military, in particular) had discovered the
+amazing potential of electronic computers and it was blindingly
+apparent to visionaries like Kilby and Noyce that there needed to be
+a better way of building and connecting transistors in large
+quantities. Kilby was working at Texas Instruments when he came upon
+the idea he called the <B>monolithic principle</B>:
+trying to build all the different parts of an electronic circuit on a silicon chip.
+On September 12, 1958, he hand-built the world's first, crude integrated circuit
+using a chip of germanium (a semiconducting element similar to
+silicon) and Texas Instruments applied for a patent on the
+idea the following year.</p>
+
+<p>Meanwhile, at another company called Fairchild Semiconductor (formed by
+transistor pioneer William Shockley and a small group of associates),
+the equally brilliant Robert Noyce was experimenting with miniature
+circuits of his own. In 1959, he used a series of photographic
+and chemical techniques known as the <B>planar process</B>
+(which had just been developed by a colleague, Jean Hoerni)
+to produce the first, practical, integrated circuit, a method that Fairchild then tried to
+patent.</p>
+
+<p><img src="http://cdn4.explainthatstuff.com/kilby-noyce-patents-compared.png" class="irightno" height="450" width="400" ALT="Integrated circuit patent diagrams from 1959 by Jack Kilby of Texas Instruments and Robert Noyce of Fairchild Semiconductor, compared side by side."></p>
+
+<p>
+There was considerable overlap between the two men's work and Texas
+Instruments and Fairchild battled in the courts for much of the 1960s over who
+had really developed the integrated circuit. Finally, in 1969, the
+companies agreed to share the idea. </p>
+<p>Kilby and Noyce are now rightly regarded as joint-inventors of
+arguably the most important and far-reaching technology developed in the 20th
+century. Both men were inducted into the National Inventors Hall of
+Fame (Kilby in 1982, Noyce the following year) and Kilby's
+breakthrough was also recognized with the award of a half-share in the 
+<a href="http://nobelprize.org/nobel_prizes/physics/laureates/2000/kilby-autobio.html" target="_blank">Nobel Prize in
+Physics in 2000</A> (as Kilby very generously noted in his acceptance speech, 
+Noyce would surely have shared in the prize too had he not died of a heart attack a decade earlier).</P>
+
+<P>While Kilby is remembered as a brilliant scientist, Noyce's legacy has an
+added dimension. In 1968, he co-founded the Intel Electronics company
+with <B>Gordon Moore</B> (1929&#8211;), which went on to develop the microprocessor
+(single-chip computer) in 1974. With IBM, Microsoft, Apple, and other
+pioneering companies, Intel is credited with helping to bring
+affordable personal computers to our homes and workplaces. Thanks to Noyce and
+Kilby, and brilliant engineers who subsequently built on their work, there are now something like two billion computers in use
+throughout the world, many of them incorporated into <a href="cellphones.html">cellphones</A>,
+portable <a href="howgpsworks.html">satellite navigation</A> devices, and other electronic gadgets.</p>
+
+<p><span class="credit">Artwork: Snap! Two great electrical engineers, Jack Kilby and Robert Noyce, came up with the same idea at almost exactly the same time in 1959. Although Kilby filed his patent first, Noyce's patent was granted earlier. Here are drawings from their original patent applications. You can see that we have essentially the same idea in both, with electronic components formed from junctions between layers of p-type (blue) and n-type (red) semiconductors. Connections to the p-type and n-type regions are shown in orange and yellow and the base layers (substrates) are shown in green. Artworks courtesy of US Patent and Trademark Office with our own added coloring to improve clarity and highlight the similarities. You can find links to the patents themselves in the references down below.</span></p>
+
+</div>
+
+<div class="main2">
+
+
+<div class="sharebot"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fintegratedcircuits.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+<h2>Find out more</h2>
+
+<h3>On this website</h3>
+<UL>
+<li><a href="diodes.html">Diodes and light-emitting diodes (LEDs)</a></li>
+<LI><a href="articles_electricity.html">Electricity and electronics</A></LI>
+<li><a href="historyofcomputers.html">History of computers</a></li>
+<li><a href="molecular-beam-epitaxy-introduction.html">Molecular beam epitaxy</a></li>
+<li><a href="howtransistorswork.html">Transistors</a></li>
+</UL>
+
+<h3>On other sites</h3>
+<UL>
+<LI>Want to learn more about the pioneers? Look at the excellent archive on
+<a href="http://www.ti.com/corp/docs/kilbyctr/jackstclair.shtml" target="_blank">Jack Kilby</a> on the Texas Instruments website 
+or explore the <a href="http://www.intel.com/content/www/us/en/company-overview/intel-museum.html" target="_blank">Intel Museum</a>
+to find out about Robert Noyce, Gordon Moore, and their colleagues. Both sites have a superb collection of 
+photos of early integrated circuits.</LI>
+</UL>
+
+<h3>Articles</h3>
+<UL><LI><a href="http://www.wired.com/2014/06/supercomputer_race/" target="_blank">Is the End of Moore's Law Slowing the World's Supercomputing Race?</A> by Robert Mcmillan. Wired, 23 June 2014. Supercomputers aren't getting faster quite as quickly as they used to. Could it be that Moore's law is finally coming to an end?</LI>
+<LI><a href="http://news.bbc.co.uk/1/hi/technology/7080772.stm" target="_blank">Getting more from Moore's Law</A> by Jonathan Fildes. BBC News, 13 November 2007. What can we do to ensure computers keep getting faster and more powerful?</LI>
+</UL>
+
+
+<h3>Books</h3>
+<h4>History</h4>
+<UL>
+<LI><a href="http://books.google.com/books?id=0bTpcTLCu6MC" target="_blank">Crystal Fire: The Invention of the Transistor and the Birth of the Information Age</A> by Michael Riordan and Lillian Hoddeson. W. W. Norton &amp; Co., 1998.
+A very readable account of the microelectronics revolution. Although most of this book is concerned with the early history of transistors, the final chapter (12) covers the work of Kilby and Noyce&mdash;and their legacy.</LI>
+<LI><a href="http://books.google.com/books?id=8w8x27pt-jcC" target="_blank">The Chip: How Two Americans Invented the Microchip and Launched a Revolution</A> by T. R. Reid. Random House Trade Paperbacks, 2001. The story of Kilby, Noyce, and a microchip battle that benefited the world.</LI>
+<LI><a href="http://books.google.com/books?id=YLd3RBUrDlkC" target="_blank">The Man behind the Microchip: Robert Noyce and the Invention of Silicon Valley</A> by Leslie Berlin. Oxford University Press, 2005.</LI>
+</UL>
+
+<h4>Technology</h4>
+<UL>
+<LI><a href="http://books.google.com/books?id=uYNn1N6YSwQC" target="_blank">Technology of integrated circuits</A> by Dietrich Widmann, Hermann Mader, and Hans Friedrich. Springer, 2000. A much more detailed reference for circuit designers.</LI>
+</UL>
+
+<h3>Videos</h3>
+<UL>
+<LI><a href="http://www.youtube.com/watch?v=KGN-KLABVLk" target="_blank">Inside Microchips</A> by Gary Backus for The Tech Virtual Museum Workshop. A nice little animated tour that opens up a microchip and shows you around inside.</LI>
+<LI><a href="http://www.youtube.com/watch?v=aCOyq4YzBtY" target="_blank">From Sand to Silicon</A>: Intel shows you the process of making a microchip, starting in the desert (with the sand that gives us silicon) and ending with a finished chip. Quite a neat video, but some commentary or explanation wouldn't have gone amiss: this video only really makes sense if you already know about all the processes that are being shown to you.</LI>
+</UL>
+
+<h3>Patents</h3>
+
+<P>One of the best ways of learning about inventions is to read how the inventors themselves saw and presented their own ideas; patents
+offer a great way to do that. For people who want a more detailed insight, here a couple of key patents by Kilby and Noyce that are worth looking at:</P>
+
+<UL>
+<LI><a href="http://www.google.com/patents/US3115581" target="_blank">US Patent 3,115,581: Miniature semiconductor integrated circuit</A> by Jack S. Kilby, Texas Instruments, filed May 6, 1959 and issued December 24, 1963. Describes the basic idea of making integrated circuits "using only one material for all circuit elements and a limited number of compatible process steps for the production thereof."</LI>
+<LI><a href="http://www.google.com/patents/US2981877" target="_blank">US Patent 2,981,877: Semiconductor device and lead structure</A> by Robert N. Noyce, Fairchild Semiconductor, filed July 30, 1959 and issued April 25, 1961. Although Noyce applied for this invention over two months after Kilby, the Noyce patent was granted over two years earlier, which helped to fuel the bitter battle between Texas Instruments and Fairchild over who exactly had invented the integrated circuit.</LI>
+</UL>
+
+
+
+</div>
+
+
+<div class="main2">
+<h2>If you liked this article...</h2>
+<P>You might like my new book, <a href="mybooks.php">Atoms Under the Floorboards: The Surprising Science Hidden in Your Home</a>, published worldwide by Bloomsbury.</P>
+</div>
+
+<!-- Desktop bottom ad -->
+<div class="bottomsquare"><span class="slinks2">Sponsored links</span>
+<P>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="9721739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</P>
+</div>
+
+
+
+
+
+<div class="cc"><P><span class="highlight">Please do NOT copy our articles onto blogs and other websites</span></P>
+<p>Text copyright &copy; Chris Woodford 2009, 2012. All rights reserved. <a href="copyright-and-legal-notices.html">Full copyright notice and terms of use</A>.</p>
+
+</div>
+
+<div class="sharesites"><h2>Follow us</h2>
+<ul class="nobull">
+<LI class="inline2"><a href="followus.html" title="Follow us on Facebook"><IMG class="sprite shr4" ALT="Follow us on Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a rel="publisher" href="https://plus.google.com/115402323314399894520" target="_blank" title="Follow us on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="rss.xml" target="_blank" title="Subscribe to our RSS feed"><IMG class="sprite shr10" ALT="RSS"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.flickr.com/photos/explainthatstuff" target="_blank" title="Find our photos on Flickr"><IMG class="sprite shr11" ALT="Flickr"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.pinterest.com/explainthatstuf/" title="Follow us on Pinterest" target="_blank"><IMG class="sprite shr12" ALT="Follow us on Pinterest" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+</ul>
+</div>
+
+<div class="sharesites"><h2>Rate this page</h2>
+<p>Please <a href="feedback.php">rate or give feedback on this page</A> and I will make a donation to WaterAid.</P>
+</div>
+
+
+<div class="sharesites">
+<h2>Save or share this page</h2>
+
+<p>Press CTRL + D to bookmark this page for later or tell your friends about it with:</p>
+
+<ul class="nobull">
+<LI class="inline2"><a title="Share this on Facebook"
+ href="http://www.facebook.com/sharer.php?u=http://www.explainthatstuff.com/integratedcircuits.html"><IMG class="sprite shr4" ALT="Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a
+ title="Post this page to Delicious"
+ href="http://del.icio.us/post?url=http://www.explainthatstuff.com/integratedcircuits.html&amp;title=Introduction%20to%20integrated%20circuits"><IMG class="sprite shr1" ALT="Delicious" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Digg"
+ href="http://digg.com/submit?url=http://www.explainthatstuff.com/integratedcircuits.html&amp;title=Introduction%20to%20integrated%20circuits"><IMG class="sprite shr2" ALT="Digg" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Reddit"
+ href="http://reddit.com/submit?url=http://www.explainthatstuff.com/integratedcircuits.html&amp;title=Introduction%20to%20integrated%20circuits"><IMG class="sprite shr3" ALT="Reddit" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this page on StumbleUpon"
+ href="http://www.stumbleupon.com/submit?url=http://www.explainthatstuff.com/integratedcircuits.html&amp;title=Introduction%20to%20integrated%20circuits"><IMG class="sprite shr5" ALT="StumbleUpon" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Add this to your Google Bookmarks"
+ href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.explainthatstuff.com/integratedcircuits.html&amp;title=Introduction%20to%20integrated%20circuits"><IMG class="sprite shr6" ALT="Google Bookmarks" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="http://www.twitter.com/home?status=How+integrated+circuits+work+http://www.explainthatstuff.com/integratedcircuits.html" title="Tweet this"><IMG class="sprite shr7" ALT="Twitter" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Email this page to a friend"
+ href="mailto:?subject=Introduction%20to%20integrated%20circuits&amp;body=Take%20a%20look%20at%20this%20page:%20http://www.explainthatstuff.com/integratedcircuits.html"><IMG class="sprite shr8" ALT="Email" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="https://plus.google.com/101536672158385330677?rel=author" title="Connect on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+</UL>
+
+
+<h2>Cite this page</h2>
+<!---Citation-->
+<P>
+<div class="citation"><P>
+Woodford, Chris. (2009) Integrated circuits. Retrieved from http://www.explainthatstuff.com/integratedcircuits.html. [Accessed (Insert date here)]
+</P>
+</div>
+
+
+<!--<h2>Link to this page</h2>
+
+<P>If you'd like to link to this page, thank you! Here's some code you can cut and paste:</P>
+
+<div class="citation">
+<P>
+&lt;a href="http://www.explainthatstuff.com/integratedcircuits.html"&gt;Introduction to integrated circuits&lt;/a&gt;
+</P>
+</div>  -->
+
+</div>
+
+
+
+
+
+
+
+<!-- advinfo2 -->
+
+<!-- bottom search position -->
+
+
+
+
+
+
+
+<div class="alsoon"><a name="navigation"></a>
+<IMG class="footlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif">
+<h2>More to explore on our website...</h2>
+<ul class="nobull">
+<LI class="inline"><a href="articles_communications.html">Communications</A></LI>
+<LI class="inline"><a href="articles_computers.html">Computers</A></LI>
+<LI class="inline"><a href="articles_electricity.html">Electricity &amp; electronics</A></LI>
+<LI class="inline"><a href="articles_energy.html">Energy</A></LI>
+<LI class="inline"><a href="articles_engineering.html">Engineering</A></LI>
+<LI class="inline2"><a href="articles_environment.html">Environment</A></LI><BR>
+<LI class="inline"><a href="articles_gadgets.html">Gadgets</A></LI>
+<LI class="inline"><a href="articles_homelife.html">Home life</A></LI>
+<LI class="inline"><a href="articles_materials.html">Materials</A></LI>
+<LI class="inline"><a href="articles_science.html">Science</A></LI>
+<LI class="inline"><a href="articles_tools.html">Tools &amp; instruments</A></LI>
+<LI class="inline2"><a href="articles_transportation.html">Transportation</A></LI>
+</UL>
+</div>
+
+<div class="footer">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li></ul>
+</div>
+
+<div class="totop">&uarr; <a href="#pagetop">Back to top</a></div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(d, t) {
+var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = 'https://apis.google.com/js/plusone.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+  })();
+</script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
+
+
+</body>
+</html>

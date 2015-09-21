@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" dir="ltr" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js gt-ie8" dir="ltr" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" >
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+			<title>TechTarget - Global Network of Information Technology Websites and Contributors</title>
+			<meta name="viewport" content="width=device-width,initial-scale=1" >
+			<meta name="robots" content="noodp" >
+			<link rel="canonical" href="http://www.techtarget.com/network" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="http://fast.fonts.net/jsapi/124d48dd-e515-4302-8bfb-1d5c1e3da916.js"></script><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/normalize.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/icomoon.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery.jscrollpane.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery-ui-1.10.3.custom.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.slide.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/mediaelementplayer.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/v8-legacy.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main.css?v=6.31"><!--[if IE 9]>
+<link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main_2.css?v=6.31"><![endif]-->
+<script src="http://cdn.optimizely.com/js/148927072.js"></script><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive.min.js?v=6.31"></script><script>
+TT("page", {"regHost":"http://users.techtarget.com","adScheme":"4","gaSiteAcct":"UA-19047037-1","lang":"en","ga":true,"timestamp":"2015-09-20 23:46:05","adId":"2240230432","siteName":"TechTarget","adAbbr":"hub","siteType":"hub","gaPageTrackUrl":"/page/etpk_0/ptpk_0/false/HOME/channel/cid_2240230432/date_null/mem_0/clst_0/rtpk_0/idx_0","siteId":0,"atHost":"http://go.techtarget.com","isChannel":true,"homeAdId":"4500246158","zone":"HOME"});
+</script>
+
+<!-- Begin Chartbeat -->
+		<script>var _sf_startpt=(new Date()).getTime();</script><!-- End Chartbeat -->
+	
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwcDVVZACwIDU1lS"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144×144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114×114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72×72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144×144" href="/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114×114" href="/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72×72" href="/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+	</head>
+<body id="home">
+	<div id="site-container" class="site-container">
+		<div><div><!-- PinnedNavBarController, generated at 16:11:00 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<!-- AdsController, generated at 16:11:00 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="interstitial" class="ad ad-ist"><script>GPT.display('interstitial')</script></div><div class="ad-wrapper header-leaderboard ad-mobile">
+	<!-- AdsController, generated at 16:11:00 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="mobile-lb" class="ad ad-mb"><script>GPT.display('mobile-lb')</script></div></div>
+
+<header class="header">
+	<button class="nav-toggle"><i class="icon" data-icon="9"></i></button>
+	<a href="http://www.techtarget.com/network" class="header-logo">
+		<span class="header-logo-mobile">TechTarget</span>
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-desktop replace_2x">
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-small replace_2x">
+	</a>
+
+	<button class="header-search-toggle"><i class="icon" data-icon="g"></i></button>
+	<form action="http://www.techtarget.com/search/query" method="get" class="header-search">
+		<label for="header-search-input" class="visuallyhidden">Search the TechTarget Network</label>
+		<input class="header-search-input" id="header-search-input" type="text" name="q" placeholder="Search the TechTarget Network">
+	</form>
+
+	<nav class="nav">
+		<a href="http://users.techtarget.com/registration/TechTarget/LoginRegister.page" class="nav-join-pro"><span>Sign-up now. Start my free, unlimited access.</span></a>
+		<div class="ad-wrapper nav-pro-callout">
+			<!-- AdsController, generated at 16:11:00 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="promo-1" class="ad ad-pr"><script>GPT.display('promo-1')</script></div></div>
+
+		<div class="nav-user">
+			<a href="http://users.techtarget.com/registration/TechTarget/LoginRegister.page" class="nav-user-login"><span class="nav-user-action">Login</span></a>
+		</div>
+		<script>TT(["context","lib/jquery"],function(c,$){var u=c.getUser();if(u.loggedIn){$('div.nav-user').children("a:first")
+			.before('<span class="nav-user-name">'+u.displayName+'</span>')
+			.attr("href", "http://users.techtarget.com/registration/TechTarget/Logout.page?fromURL=" + window.location.href).children("span.nav-user-action:first").text('Logout');
+			$('.nav-join-pro').removeAttr('href');$('a.nav-join-pro span').hide();}else{$('div.nav-user').children("a:first").attr("href", "http://users.techtarget.com/registration/TechTarget/LoginRegister.page?fromURL="+window.location.href);
+			$('a.nav-join-pro').attr("href", "http://users.techtarget.com/registration/TechTarget/LoginRegister.page?fromURL="+window.location.href);}});
+		</script>
+
+		<ul class="nav-list">			
+			<li class="nav-list-item nav-list-item-all-sites">
+				<div class="nav-list-item-header techtarget">
+					 <a href="http://www.techtarget.com/network"><span class="nav-list-item-header-title">All Sites</span></a>
+					<i class="icon icon-arrow-down" data-icon="5"></i>
+				</div>
+
+				<div class="nav-list-item-dropdown">
+					<div class="nav-list-item-jscroll">
+						<div class="nav-list-child-sites" id="child-sites-1a9942cfeeb78410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Application Development</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchcloudapplications.techtarget.com">SearchCloudApplications</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsoa.techtarget.com">SearchSOA</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsoftwarequality.techtarget.com">SearchSoftwareQuality</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchwindevelopment.techtarget.com">SearchWinDevelopment</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.ajaxian.com">Ajaxian</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.ebizQ.net">ebizQ.net</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.theserverside.com">TheServerSide</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchsoa.com.cn/">SearchSOA China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/develop/">SearchDevelop Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/develop/">SearchProject Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-4e9942cfeeb78410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Business Intelligence/Applications</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchbusinessanalytics.techtarget.com">SearchBusinessAnalytics</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcloudapplications.techtarget.com">SearchCloudApplications</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcontentmanagement.techtarget.com">SearchContentManagement</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcrm.techtarget.com">SearchCRM</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatamanagement.techtarget.com">SearchDataManagement</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdomino.techtarget.com">SearchDomino</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchexchange.techtarget.com">SearchExchange</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchfinancialapplications.techtarget.com">SearchFinancialApplications</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchmanufacturingerp.techtarget.com">SearchManufacturingERP</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchoracle.techtarget.com">SearchOracle</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsap.techtarget.com">SearchSAP</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsqlserver.techtarget.com">SearchSQLServer</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.beyenetwork.com">BeyeNetwork</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.computerweekly.com/resources/Business-intelligence-and-analytics">ComputerWeekly Business Analytics</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Applications-dentreprise">LeMagIT Applications</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Gestion-des-donnees">LeMagIT Data Management</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/es/recursos/Las-aplicaciones-de-negocios">SearchDataCenter en Español Business Applications</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchdatabase.com.cn/">SearchDatabase China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchbi.com.cn/">SearchBI China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchenterprisesoftware.de/">SearchEnterpriseSoftware Germany</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchbusinessintelligence.techtarget.in/">SearchBusinessIntelligence India</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/application/">SearchApplication Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/business/">SearchBusiness Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/crm/">SearchCRM Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/information/">SearchInformation Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/application/">SearchManufacture Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/application/">SearchRetail Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/saas/">SearchSaaS Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-1c2e88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">CIO Strategies</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchconsumerization.techtarget.com">SearchConsumerization</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcio.techtarget.com">SearchCIO</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.computerweekly.com">ComputerWeekly</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcio.techtarget.com.au/">SearchCIO Australia</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcio.techtarget.in/">SearchCIO India</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchcio.com.cn/">SearchCIO China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchsmb.com.cn/">SearchSMB China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/smb/">SearchSMB Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-b62e88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Channel</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchcloudprovider.techtarget.com">SearchCloudProvider</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com">SearchITChannel</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Network-Management-Services">SearchITChannel Networking</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Network-security-products-technologies-and-services">SearchITChannel Security</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Data-Storage-Management">SearchITChannel Storage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Computer-and-Information-Technology-Systems-Management">SearchITChannel Systems</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.microscope.co.uk">MicroscopeUK</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.strategiescloud.fr">StrategiesCloud.fr</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-2b4e88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Cloud</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchaws.techtarget.com">SearchAWS</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcloudapplications.techtarget.com">SearchCloudApplications</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcloudcomputing.techtarget.com">SearchCloudComputing</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcloudprovider.techtarget.com">SearchCloudProvider</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcloudsecurity.techtarget.com">SearchCloudSecurity</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcloudstorage.techtarget.com">SearchCloudStorage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Services-Cloud">LeMagIT Cloud Computing</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.strategiescloud.fr">StrategiesCloud.fr</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchcloudcomputing.com.cn">SearchCloudComputing China</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-f19e88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">DR/Compliance</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com">SearchCompliance</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchcontentmanagement.techtarget.com">SearchContentManagement</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com">SearchDataBackup</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdisasterrecovery.techtarget.com">SearchDisasterRecovery</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/business/">SearchCompliance Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-ec6e88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Data Center Management</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://search400.techtarget.com">Search400</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com">SearchDataCenter</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchenterprisedesktop.techtarget.com">SearchEnterpriseDesktop</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchenterpriselinux.techtarget.com">SearchEnterpriseLinux</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Computer-and-Information-Technology-Systems-Management">SearchITChannel Systems</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchwindowsserver.techtarget.com">SearchWindowsServer</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.computerweekly.com/resources/Data-Centre">ComputerWeekly DataCentre</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Datacenter">LeMagIT Data Center</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchdatacenter.com.cn/">SearchDataCenter China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchsv.com.cn/">SearchSV China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchdatacenter.de">SearchDataCenter.de</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/es/recursos/Centro-de-datos">SearchDataCenter en Español Data Center</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.in/">SearchDataCenter India</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.ict4executive.it/searchdatacenter">SearchDataCenter Italy</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/datacenter/">SearchDataCenter Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/operation/">SearchOperation Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-39be88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">End User Computing</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchconsumerization.techtarget.com">SearchConsumerization</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchenterprisedesktop.techtarget.com">SearchEnterpriseDesktop</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchvirtualdesktop.techtarget.com">SearchVirtualDesktop</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.brianmadden.com">BrianMadden</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchvirtual.com.cn">SearchVirtual China</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-fdab64db69aeb410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Español</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/es">SearchDataCenter en Español</a></li>
+										<li class="nav-list-sublist-item"><a href="http://bitpipees.techtarget.com">BitpipeES</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-dcbe150a9aa5b410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">France</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr">LeMagIT</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.strategiescloud.fr">StrategiesCloud.fr</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-208e150a9aa5b410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Germany</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://www.searchdatacenter.de">SearchDataCenter.de</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchenterprisesoftware.de">SearchEnterpriseSoftware.de</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchnetworking.de">SearchNetworking.de</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchsecurity.de">SearchSecurity.de</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchstorage.de">SearchStorage.de</a></li>
+										<li class="nav-list-sublist-item"><a href="http://bitpipede.techtarget.com">BitpipeDE</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-0dce88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Health Care IT</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchhealthit.techtarget.com">SearchHealthIT</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/healthcare/">SearchHealthIT Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchhealthit.techtarget.com/healthitexchange/itanswers/">Health IT Exchange</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-eaee88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Networking</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchenterprisewan.techtarget.com">SearchEnterpriseWAN</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Computer-Network-Installation-and-Administration-Projects">SearchITChannel Networking</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com">SearchMobileComputing</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchnetworking.techtarget.com">SearchNetworking</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsdn.techtarget.com">SearchSDN</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchtelecom.techtarget.com">SearchTelecom</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchunifiedcommunications.techtarget.com">SearchUnifiedCommunications</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.computerweekly.com/resources/Networking-and-communication">ComputerWeekly Networking</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Reseaux-telecoms">LeMagIT Networking</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchnetworking.com.cn/">SearchNetworking China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/es/recursos/Configuracion-de-redes">SearchDataCenter en Español Networking</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchnetworking.de/">SearchNetworking Germany</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/network/">SearchMobile Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/network/">SearchNetwork Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/unifiedcom/">SearchUnifiedCom Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-9a1f88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Security</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchcloudsecurity.techtarget.com">SearchCloudSecurity</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchfinancialsecurity.techtarget.com">SearchFinancialSecurity</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Network-security-products-technologies-and-services">SearchITChannel Security</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchmidmarketsecurity.techtarget.com">SearchMidmarketSecurity</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsecurity.techtarget.com">SearchSecurity</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.computerweekly.com/resources/IT-security">ComputerWeekly Security</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Securite">LeMagIT Security</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsecurity.techtarget.com.au/">SearchSecurity Australia</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchsecurity.com.cn/">SearchSecurity China</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchsecurity.de/">SearchSecurity Germany</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/es/recursos/Seguridad-de-la-informacion">SearchDataCenter en Español Security</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsecurity.techtarget.in/">SearchSecurity India</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.ict4executive.it/searchsecurity">SearchSecurity Italy</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/security/">SearchMailSecurity Japan</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/security/">SearchSecurity Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-434f88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Social Media</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://itknowledgeexchange.techtarget.com">IT Knowledge Exchange</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchhealthit.techtarget.com/healthitexchange/itanswers/">Health IT Exchange</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-5c1f88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Storage Architecture</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchcloudstorage.techtarget.com">SearchCloudStorage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatabackup.techtarget.com">SearchDataBackup</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchitchannel.techtarget.com/resources/Data-Storage-Management">SearchITChannel Storage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsmbstorage.techtarget.com">SearchSMBStorage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchsolidstatestorage.techtarget.com">SearchSolidStateStorage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchstorage.techtarget.com">SearchStorage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchvirtualstorage.techtarget.com">SearchVirtualStorage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.computerweekly.com/resources/Storage">ComputerWeekly Storage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Stockage">LeMagIT Storage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchstorage.techtarget.com.au/">SearchStorage Australia</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/es/resources/Almacenamiento">SearchDataCenter en Español Storage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchstorage.de/">SearchStorage Germany</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.searchstorage.com.cn/">SearchStorage China</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-e86f88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Technology Content Libraries</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://www.bitpipe.com">Bitpipe</a></li>
+										<li class="nav-list-sublist-item"><a href="http://es.Bitpipe.com">Bitpipe en Español</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.bitpipe.fr/">Bitpipe France</a></li>
+										<li class="nav-list-sublist-item"><a href="http://de.bitpipe.com/">Bitpipe Germany</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.knowledgestorm.com/">KnowledgeStorm</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr">LeMagIT</a></li>
+										<li class="nav-list-sublist-item"><a href="http://whatis.techtarget.com">WhatIs.com</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.whatis.com.cn/">Whatis China</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-5d8f88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Technology Product Reviews</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://www.brighthand.com/">Brighthand</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.desktopreview.com/">DesktopReview</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.digitalcamerareview.com/">DigitalCameraReview</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.notebookreview.com/">NotebookReview</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.printercomparison.com/">PrinterComparison</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.tabletpcreview.com/">TabletPCReview</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.technologyguide.com/">TechnologyGuide</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-child-sites" id="child-sites-b3bf88bd84088410VgnVCM1000000d01c80aRCRD">
+									<div class="nav-list-sublist-header nav-list-sublist-header-sites">
+										<span class="nav-list-sublist-header-sites-title">Virtualization</span>
+											<span class="view-all">View All<i class="icon" data-icon="6"></i>
+											</span>
+									</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item"><a href="http://searchservervirtualization.techtarget.com">SearchServerVirtualization</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchvirtualdesktop.techtarget.com">SearchVirtualDesktop</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchvirtualstorage.techtarget.com">SearchVirtualStorage</a></li>
+										<li class="nav-list-sublist-item"><a href="http://searchvmware.techtarget.com">SearchVMware</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.brianmadden.com">BrianMadden</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Virtualisation-de-serveurs">LeMagIT Server Virtualization</a></li>
+										<li class="nav-list-sublist-item"><a href="http://www.lemagit.fr/ressources/Poste-de-travail-mobilite">LeMagIT Virtual Desktop</a></li>
+										<li class="nav-list-sublist-item"><a href="http://techtarget.itmedia.co.jp/tt/virtualization/">SearchVirtualization Japan</a></li>
+										</ul>
+								</div>
+							<div class="nav-list-parent-sites">
+									<div class="nav-list-sublist-header nav-list-sublist-header-gray">Please select a group</div>
+									<ul class="nav-list-sublist">
+										<li class="nav-list-sublist-item" id="parent-sites-1a9942cfeeb78410VgnVCM1000000d01c80aRCRD">Application Development</li>
+										<li class="nav-list-sublist-item" id="parent-sites-4e9942cfeeb78410VgnVCM1000000d01c80aRCRD">Business Intelligence/Applications</li>
+										<li class="nav-list-sublist-item" id="parent-sites-1c2e88bd84088410VgnVCM1000000d01c80aRCRD">CIO Strategies</li>
+										<li class="nav-list-sublist-item" id="parent-sites-b62e88bd84088410VgnVCM1000000d01c80aRCRD">Channel</li>
+										<li class="nav-list-sublist-item" id="parent-sites-2b4e88bd84088410VgnVCM1000000d01c80aRCRD">Cloud</li>
+										<li class="nav-list-sublist-item" id="parent-sites-f19e88bd84088410VgnVCM1000000d01c80aRCRD">DR/Compliance</li>
+										<li class="nav-list-sublist-item" id="parent-sites-ec6e88bd84088410VgnVCM1000000d01c80aRCRD">Data Center Management</li>
+										<li class="nav-list-sublist-item" id="parent-sites-39be88bd84088410VgnVCM1000000d01c80aRCRD">End User Computing</li>
+										<li class="nav-list-sublist-item" id="parent-sites-fdab64db69aeb410VgnVCM1000000d01c80aRCRD">Español</li>
+										<li class="nav-list-sublist-item" id="parent-sites-dcbe150a9aa5b410VgnVCM1000000d01c80aRCRD">France</li>
+										<li class="nav-list-sublist-item" id="parent-sites-208e150a9aa5b410VgnVCM1000000d01c80aRCRD">Germany</li>
+										<li class="nav-list-sublist-item" id="parent-sites-0dce88bd84088410VgnVCM1000000d01c80aRCRD">Health Care IT</li>
+										<li class="nav-list-sublist-item" id="parent-sites-eaee88bd84088410VgnVCM1000000d01c80aRCRD">Networking</li>
+										<li class="nav-list-sublist-item" id="parent-sites-9a1f88bd84088410VgnVCM1000000d01c80aRCRD">Security</li>
+										<li class="nav-list-sublist-item" id="parent-sites-434f88bd84088410VgnVCM1000000d01c80aRCRD">Social Media</li>
+										<li class="nav-list-sublist-item" id="parent-sites-5c1f88bd84088410VgnVCM1000000d01c80aRCRD">Storage Architecture</li>
+										<li class="nav-list-sublist-item" id="parent-sites-e86f88bd84088410VgnVCM1000000d01c80aRCRD">Technology Content Libraries</li>
+										<li class="nav-list-sublist-item" id="parent-sites-5d8f88bd84088410VgnVCM1000000d01c80aRCRD">Technology Product Reviews</li>
+										<li class="nav-list-sublist-item" id="parent-sites-b3bf88bd84088410VgnVCM1000000d01c80aRCRD">Virtualization</li>
+										</ul>
+								</div>
+							</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="nav-social">
+			<li class="nav-social-item" title="Follow TechTarget on Google+" id="navBarGooglePlus"><a href="https://plus.google.com/u/0/108734187604689859397" target="_blank"><i class="icon" data-icon="s"></i></a></li><li class="nav-social-item" title="Like TechTarget on Facebook" id="navBarFacebook"><a href="http://www.facebook.com/pages/TechTarget/231963570219936" target="_blank"><i class="icon" data-icon="u"></i></a></li><li class="nav-social-item" title="Follow @techtarget on Twitter" id="navBarTwitter"><a href="https://twitter.com/techtarget" target="_blank"><i class="icon" data-icon="c"></i></a></li><li class="nav-social-item" title="Follow TechTarget on LinkedIn" id="navBarLinkedIn"><a href="http://www.linkedin.com/company/techtarget?trk=tyah" target="_blank"><i class="icon" data-icon="o"></i></a></li></ul>
+	 </nav>
+</header>
+
+<div class="ad-wrapper header-leaderboard ad-desktop">
+	<!-- AdsController, generated at 16:11:00 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="leaderboard" class="ad ad-lb"><script>GPT.display('leaderboard')</script></div></div>
+</div>
+</div><div id="main-content" class="main-content">
+			<article id="content-columns" class="content-columns">
+				<div>
+</div><div id="content-left" class="content-left">
+					<div>
+</div></div>
+				<div id="content-center" class="content-center">
+					<div><div><!-- FeaturedContributorsController, generated at 05:35:17 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<h1 class="hub-header">The TechTarget network of technology-specific websites give you access to industry experts, independent content and analysis.</h1>
+<section class="hub-section headshots-hub">
+<div class="headshots-hub-title-bar">
+		<h2>More than 750 contributors</h2>
+	</div>
+	<div class="headshots-hub-content closed">
+		<ul class="headshots-hub-list">
+		<li class="hub-list-item-1">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Alastair-Cooke"><img src="http://cdn.ttgtmedia.com/rms/onlineImages/cooke_alastair.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Alastair-Cooke">Alastair Cooke</a></h3>
+						<a href="http://www.techtarget.com/contributor/Alastair-Cooke" id="companyLink"><span></span></a>
+					<h4><a href="http://searchvirtualdesktop.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Virtual</span><span class="logo-2">Desktop</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-2">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Brien-Posey"><img src="http://cdn.ttgtmedia.com/rms/onlineImages/posey_brien.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Brien-Posey">Brien Posey</a></h3>
+						<a href="http://www.techtarget.com/contributor/Brien-Posey" id="companyLink"><span></span></a>
+					<h4><a href="http://searchvirtualstorage.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Virtual</span><span class="logo-2">Storage</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-3">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Ed-Burns"><img src="http://cdn.ttgtmedia.com/rms/onlineImages/burns_ed.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Ed-Burns">Ed Burns</a></h3>
+						<a href="http://www.techtarget.com/contributor/Ed-Burns" id="jobTitleLink"><span>Site Editor</span></a>
+					<h4><a href="http://searchbusinessanalytics.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Business</span><span class="logo-2">Analytics</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-4">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Meredith-Courtemanche"><img src="http://cdn.ttgtmedia.com/rms/onlineImages/courtemanche_meredith_2.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Meredith-Courtemanche">Meredith Courtemanche</a></h3>
+						<a href="http://www.techtarget.com/contributor/Meredith-Courtemanche" id="jobTitleLink"><span>Site Editor</span></a>
+					<h4><a href="http://searchdatacenter.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-5">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Dave-Raffo"><img src="http://cdn.ttgtmedia.com/rms/storage/raffo_david.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Dave-Raffo">Dave Raffo</a></h3>
+						<a href="http://www.techtarget.com/contributor/Dave-Raffo" id="jobTitleLink"><span>Senior News Director</span></a>
+					<h4><a href="http://searchstorage.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Storage</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-6">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Ed-Moyle"><img src="http://cdn.ttgtmedia.com/rms/onlineImages/moyle_ed.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Ed-Moyle">Ed Moyle</a></h3>
+						<a href="http://www.techtarget.com/contributor/Ed-Moyle" id="companyLink"><span>ISACA</span></a>
+					<h4><a href="http://searchsecurity.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Security</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-7">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Linda-Tucci"><img src="http://cdn.ttgtmedia.com/rms/cio/tucci_linda.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Linda-Tucci">Linda Tucci</a></h3>
+						<a href="http://www.techtarget.com/contributor/Linda-Tucci" id="jobTitleLink"><span>Executive Editor</span></a>
+					<h4><a href="http://searchcio.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">CIO</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-8">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Laura-Aberle"><img src="http://cdn.ttgtmedia.com/rms/onlineImages/aberle_laura.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Laura-Aberle">Laura Aberle</a></h3>
+						<a href="http://www.techtarget.com/contributor/Laura-Aberle" id="jobTitleLink"><span>Managing Editor</span></a>
+					<h4><a href="http://searchcontentmanagement.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Content</span><span class="logo-2">Management</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-9">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Nicole-Laskowski"><img src="http://cdn.ttgtmedia.com/rms/editorial/Nicole_Laskowski_headshot.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Nicole-Laskowski">Nicole Laskowski</a></h3>
+						<a href="http://www.techtarget.com/contributor/Nicole-Laskowski" id="jobTitleLink"><span>Senior News Writer</span></a>
+					<h4><a href="http://searchcio.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">CIO</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-10">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Brandan-Blevins"><img src="http://cdn.ttgtmedia.com/rms/editorial/bblevins_140x180.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Brandan-Blevins">Brandan Blevins</a></h3>
+						<a href="http://www.techtarget.com/contributor/Brandan-Blevins" id="jobTitleLink"><span>News Writer</span></a>
+					<h4><a href="http://searchsecurity.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">Security</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-11">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Beth-Pariseau"><img src="http://cdn.ttgtmedia.com/rms/dataCenter-Virtualization/pariseau_beth.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Beth-Pariseau">Beth Pariseau</a></h3>
+						<a href="http://www.techtarget.com/contributor/Beth-Pariseau" id="jobTitleLink"><span>Senior News Writer</span></a>
+					<h4><a href="http://searchaws.techtarget.com"><span><span class="logo-search">Search</span><span class="logo-1">AWS</span></span></a></h4>
+					</div>
+			</li>
+			<li class="hub-list-item-12">
+				<div class="image-resize">
+					<a href="http://www.techtarget.com/contributor/Warwick-Ashford"><img src="http://cdn.ttgtmedia.com/rms/computerweekly/ashford_warwick.jpg"></a>
+				</div>
+				<div class="contributor-info">
+					<h3><a href="http://www.techtarget.com/contributor/Warwick-Ashford">Warwick Ashford</a></h3>
+						<a href="http://www.techtarget.com/contributor/Warwick-Ashford" id="jobTitleLink"><span>Security Editor</span></a>
+					<h4><a href="http://www.computerweekly.com"><span><span class="logo-1">Computer</span><span class="logo-2">Weekly</span></span></a></h4>
+					</div>
+			</li>
+			</ul>
+		<div class="collapse-toggle">
+			<div class="collapse-toggle-inner show-more">+ Show More</div>
+		</div>
+	</div>
+	<div class="hub-alpha-nav">
+		<span>Find Contributors Alphabetically</span>
+		<ul>
+			<li><a href="http://www.techtarget.com/contributor/A">A</a></li>
+			<li><a href="http://www.techtarget.com/contributor/B">B</a></li>
+			<li><a href="http://www.techtarget.com/contributor/C">C</a></li>
+			<li><a href="http://www.techtarget.com/contributor/D">D</a></li>
+			<li><a href="http://www.techtarget.com/contributor/E">E</a></li>
+			<li><a href="http://www.techtarget.com/contributor/F">F</a></li>
+			<li><a href="http://www.techtarget.com/contributor/G">G</a></li>
+			<li><a href="http://www.techtarget.com/contributor/H">H</a></li>
+			<li><a href="http://www.techtarget.com/contributor/I">I</a></li>
+			<li><a href="http://www.techtarget.com/contributor/J">J</a></li>
+			<li><a href="http://www.techtarget.com/contributor/K">K</a></li>
+			<li><a href="http://www.techtarget.com/contributor/L">L</a></li>
+			<li><a href="http://www.techtarget.com/contributor/M">M</a></li>
+			<li><a href="http://www.techtarget.com/contributor/N">N</a></li>
+			<li><a href="http://www.techtarget.com/contributor/O">O</a></li>
+			<li><a href="http://www.techtarget.com/contributor/P">P</a></li>
+			<li><a href="http://www.techtarget.com/contributor/Q">Q</a></li>
+			<li><a href="http://www.techtarget.com/contributor/R">R</a></li>
+			<li><a href="http://www.techtarget.com/contributor/S">S</a></li>
+			<li><a href="http://www.techtarget.com/contributor/T">T</a></li>
+			<li><a href="http://www.techtarget.com/contributor/U">U</a></li>
+			<li><a href="http://www.techtarget.com/contributor/V">V</a></li>
+			<li><a href="http://www.techtarget.com/contributor/W">W</a></li>
+			<li><a href="http://www.techtarget.com/contributor/X">X</a></li>
+			<li><a href="http://www.techtarget.com/contributor/Y">Y</a></li>
+			<li><a href="http://www.techtarget.com/contributor/Z">Z</a></li>
+			</ul>
+	</div>
+</section>
+</div><div><!-- MediaGroupsController, generated at 05:35:17 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<section class="hub-section network-hub">
+	<div class="network-hub-title-bar">
+		<h2>TechTarget global network of technology-specific websites</h2>
+	</div>
+	<ul class="network-hub-list">
+		<li class="network-hub-group item-1 closed">
+				<h3 class="network-hub-group-toggle">Application Development<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget Application Development websites cover application development and architecture, ALM, software testing and QA, BPM, web services, agile, on-premise and cloud development tools and processes, and application project management.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchcloudapplications.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Applications</span></a></h4></li>
+						<li><h4><a href="http://searchsoa.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">SOA</span></a></h4></li>
+						<li><h4><a href="http://searchsoftwarequality.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Software</span><span class="logo-2">Quality</span></a></h4></li>
+						<li><h4><a href="http://searchwindevelopment.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Win</span><span class="logo-2">Development</span></a></h4></li>
+						<li><h4><a href="http://www.ajaxian.com"><span>Ajaxian</span></a></h4></li>
+						<li><h4><a href="http://www.ebizQ.net"><span>ebizQ.net</span></a></h4></li>
+						<li><h4><a href="http://www.theserverside.com"><span>TheServerSide</span></a></h4></li>
+						<li><h4><a href="http://www.searchsoa.com.cn/">Search<span>SOA China</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/develop/">Search<span>Develop Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/develop/">Search<span>Project Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-2 closed">
+				<h3 class="network-hub-group-toggle">Business Intelligence/Applications<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget Business Intelligence/Applications websites cover BI and analytics, Big Data, CPM, databases, data warehousing, MDM, data visualization, ERP, CRM, HR, customer experience, collaboration, content management, cloud application architectures and platforms, and SaaS</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchbusinessanalytics.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Business</span><span class="logo-2">Analytics</span></a></h4></li>
+						<li><h4><a href="http://searchcloudapplications.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Applications</span></a></h4></li>
+						<li><h4><a href="http://searchcontentmanagement.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Content</span><span class="logo-2">Management</span></a></h4></li>
+						<li><h4><a href="http://searchcrm.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">CRM</span></a></h4></li>
+						<li><h4><a href="http://searchdatamanagement.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Management</span></a></h4></li>
+						<li><h4><a href="http://searchdomino.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Domino</span></a></h4></li>
+						<li><h4><a href="http://searchexchange.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Exchange</span></a></h4></li>
+						<li><h4><a href="http://searchfinancialapplications.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Financial</span><span class="logo-2">Applications</span></a></h4></li>
+						<li><h4><a href="http://searchmanufacturingerp.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Manufacturing</span><span class="logo-2">ERP</span></a></h4></li>
+						<li><h4><a href="http://searchoracle.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Oracle</span></a></h4></li>
+						<li><h4><a href="http://searchsap.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">SAP</span></a></h4></li>
+						<li><h4><a href="http://searchsqlserver.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">SQL</span><span class="logo-2">Server</span></a></h4></li>
+						<li><h4><a href="http://www.beyenetwork.com"><span>BeyeNetwork</span></a></h4></li>
+						<li><h4><a href="http://www.computerweekly.com/resources/Business-intelligence-and-analytics"><span>ComputerWeekly Business Analytics</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Applications-dentreprise"><span>LeMagIT Applications</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Gestion-des-donnees"><span>LeMagIT Data Management</span></a></h4></li>
+						<li><h4><a href="http://searchdatacenter.techtarget.com/es/recursos/Las-aplicaciones-de-negocios">Search<span>DataCenter en Español Business Applications</span></a></h4></li>
+						<li><h4><a href="http://www.searchdatabase.com.cn/">Search<span>Database China</span></a></h4></li>
+						<li><h4><a href="http://www.searchbi.com.cn/">Search<span>BI China</span></a></h4></li>
+						<li><h4><a href="http://www.searchenterprisesoftware.de/">Search<span>EnterpriseSoftware Germany</span></a></h4></li>
+						<li><h4><a href="http://searchbusinessintelligence.techtarget.in/">Search<span>BusinessIntelligence India</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/application/">Search<span>Application Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/business/">Search<span>Business Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/crm/">Search<span>CRM Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/information/">Search<span>Information Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/application/">Search<span>Manufacture Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/application/">Search<span>Retail Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/saas/">Search<span>SaaS Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-3 closed">
+				<h3 class="network-hub-group-toggle">CIO Strategies<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget CIO strategies websites provide IT executives with industry news and analysis on cutting-edge technologies, trends and business topics. Coverage includes advances in cloud computing, enterprise mobility, Big Data, security and IT and business management.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchconsumerization.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Consumerization</span></a></h4></li>
+						<li><h4><a href="http://searchcio.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">CIO</span></a></h4></li>
+						<li><h4><a href="http://www.computerweekly.com"><span class="logo-1">Computer</span><span class="logo-2">Weekly</span></a></h4></li>
+						<li><h4><a href="http://searchcio.techtarget.com.au/">Search<span>CIO Australia</span></a></h4></li>
+						<li><h4><a href="http://searchcio.techtarget.in/">Search<span>CIO India</span></a></h4></li>
+						<li><h4><a href="http://www.searchcio.com.cn/">Search<span>CIO China</span></a></h4></li>
+						<li><h4><a href="http://www.searchsmb.com.cn/">Search<span>SMB China</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/smb/">Search<span>SMB Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-4 closed">
+				<h3 class="network-hub-group-toggle">Channel<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget channel websites provide channel professionals from VARs, OEMs, distributors and systems integrators with industry news and analysis on cutting edge technologies and business topics such as cloud, managed services, and expert advice on how to grow business.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchcloudprovider.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Provider</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">IT</span><span class="logo-2">Channel</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Network-Management-Services">Search<span>ITChannel Networking</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Network-security-products-technologies-and-services">Search<span>ITChannel Security</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Data-Storage-Management">Search<span>ITChannel Storage</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Computer-and-Information-Technology-Systems-Management">Search<span>ITChannel Systems</span></a></h4></li>
+						<li><h4><a href="http://www.microscope.co.uk"><span class="logo-1">Microscope</span><span class="logo-2">UK</span></a></h4></li>
+						<li><h4><a href="http://www.strategiescloud.fr"><span class="logo-1">Strategies</span><span class="logo-2">Cloud</span><span class="logo-3">.fr</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-5 closed">
+				<h3 class="network-hub-group-toggle">Cloud<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget has the web's most comprehensive resource for cloud-computing news, analysis and case studies. Topics include private, public and hybrid cloud, security, applications, cost-structure and management.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchaws.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">AWS</span></a></h4></li>
+						<li><h4><a href="http://searchcloudapplications.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Applications</span></a></h4></li>
+						<li><h4><a href="http://searchcloudcomputing.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Computing</span></a></h4></li>
+						<li><h4><a href="http://searchcloudprovider.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Provider</span></a></h4></li>
+						<li><h4><a href="http://searchcloudsecurity.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Security</span></a></h4></li>
+						<li><h4><a href="http://searchcloudstorage.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Storage</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Services-Cloud"><span>LeMagIT Cloud Computing</span></a></h4></li>
+						<li><h4><a href="http://www.strategiescloud.fr"><span class="logo-1">Strategies</span><span class="logo-2">Cloud</span><span class="logo-3">.fr</span></a></h4></li>
+						<li><h4><a href="http://www.searchcloudcomputing.com.cn">Search<span>CloudComputing China</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-6 closed">
+				<h3 class="network-hub-group-toggle">DR/Compliance<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget DR/compliance websites are a comprehensive resource for DR, business continuity and risk management. Topics include failover protection, recovery site configuration, RTO and RPO assessments, hosting services and everything you need to know about governance and regulatory compliance needs such as Sarbanes Oxley, HIPAA and PCI.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchcompliance.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Compliance</span></a></h4></li>
+						<li><h4><a href="http://searchcontentmanagement.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Content</span><span class="logo-2">Management</span></a></h4></li>
+						<li><h4><a href="http://searchdatabackup.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Backup</span></a></h4></li>
+						<li><h4><a href="http://searchdisasterrecovery.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Disaster</span><span class="logo-2">Recovery</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/business/">Search<span>Compliance Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-7 closed">
+				<h3 class="network-hub-group-toggle">Data Center Management<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget data center websites are the best online information resource for news, technology tips and expert advice on managing the complex data center. Topics include data center design, infrastructure, power & cooling and management.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://search400.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">400</span></a></h4></li>
+						<li><h4><a href="http://searchdatacenter.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span></a></h4></li>
+						<li><h4><a href="http://searchenterprisedesktop.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Enterprise</span><span class="logo-2">Desktop</span></a></h4></li>
+						<li><h4><a href="http://searchenterpriselinux.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Enterprise</span><span class="logo-2">Linux</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Computer-and-Information-Technology-Systems-Management">Search<span>ITChannel Systems</span></a></h4></li>
+						<li><h4><a href="http://searchwindowsserver.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Windows</span><span class="logo-2">Server</span></a></h4></li>
+						<li><h4><a href="http://www.computerweekly.com/resources/Data-Centre"><span>ComputerWeekly DataCentre</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Datacenter"><span>LeMagIT Data Center</span></a></h4></li>
+						<li><h4><a href="http://www.searchdatacenter.com.cn/">Search<span>DataCenter China</span></a></h4></li>
+						<li><h4><a href="http://www.searchsv.com.cn/">Search<span>SV China</span></a></h4></li>
+						<li><h4><a href="http://www.searchdatacenter.de"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span><span class="logo-3">.de</span></a></h4></li>
+						<li><h4><a href="http://searchdatacenter.techtarget.com/es/recursos/Centro-de-datos">Search<span>DataCenter en Español Data Center</span></a></h4></li>
+						<li><h4><a href="http://searchdatacenter.techtarget.in/">Search<span>DataCenter India</span></a></h4></li>
+						<li><h4><a href="http://www.ict4executive.it/searchdatacenter">Search<span>DataCenter Italy</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/datacenter/">Search<span>DataCenter Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/operation/">Search<span>Operation Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-8 closed">
+				<h3 class="network-hub-group-toggle">End User Computing<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget end user computing websites provide news, tech tips and expert advice around desktop and mobile and application delivery. Topics include desktops and devices, security, BYOD, EMM and desktop virtualization.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchconsumerization.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Consumerization</span></a></h4></li>
+						<li><h4><a href="http://searchenterprisedesktop.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Enterprise</span><span class="logo-2">Desktop</span></a></h4></li>
+						<li><h4><a href="http://searchvirtualdesktop.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Virtual</span><span class="logo-2">Desktop</span></a></h4></li>
+						<li><h4><a href="http://www.brianmadden.com"><span>BrianMadden</span></a></h4></li>
+						<li><h4><a href="http://www.searchvirtual.com.cn">Search<span>Virtual China</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-9 closed">
+				<h3 class="network-hub-group-toggle">Español<span class="toggle-marker">+</span>
+				<a href="http://www.techtarget.com/es/" class="home-link-desktop">
+					Home</a>
+				</h3>
+				<p></p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchdatacenter.techtarget.com/es"> <span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center&nbsp;</span><span class="logo-3">en Español</span></a></h4></li>
+						<li><h4><a href="http://bitpipees.techtarget.com"><span class="logo-1">Bitpipe</span><span class="logo-2">ES</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-10 closed">
+				<h3 class="network-hub-group-toggle">France<span class="toggle-marker">+</span>
+				<a href="http://www.techtarget.com/fr/" class="home-link-desktop">
+					Home</a>
+				</h3>
+				<p></p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://www.lemagit.fr"><span class="logo-1">Le</span><span class="logo-2">Mag</span><span class="logo-3">IT</span></a></h4></li>
+						<li><h4><a href="http://www.strategiescloud.fr"><span class="logo-1">Strategies</span><span class="logo-2">Cloud</span><span class="logo-3">.fr</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-11 closed">
+				<h3 class="network-hub-group-toggle">Germany<span class="toggle-marker">+</span>
+				<a href="http://www.techtarget.com/de/" class="home-link-desktop">
+					Home</a>
+				</h3>
+				<p></p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://www.searchdatacenter.de"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span><span class="logo-3">.de</span></a></h4></li>
+						<li><h4><a href="http://www.searchenterprisesoftware.de"><span class="logo-search">Search</span><span class="logo-1">Enterprise</span><span class="logo-2">Software</span><span class="logo-3">.de</span></a></h4></li>
+						<li><h4><a href="http://www.searchnetworking.de"><span class="logo-search">Search</span><span class="logo-1">Networking</span><span class="logo-2">.de</span></a></h4></li>
+						<li><h4><a href="http://www.searchsecurity.de"><span class="logo-search">Search</span><span class="logo-1">Security</span><span class="logo-2">.de</span></a></h4></li>
+						<li><h4><a href="http://www.searchstorage.de"><span class="logo-search">Search</span><span class="logo-1">Storage</span><span class="logo-2">.de</span></a></h4></li>
+						<li><h4><a href="http://bitpipede.techtarget.com"><span class="logo-1">Bitpipe</span><span class="logo-2">DE</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-12 closed">
+				<h3 class="network-hub-group-toggle">Health Care IT<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget health care IT websites cover building and managing a compliant electronic health care infrastructure and the intersection of healthcare policy (HIPAA, Meaningful Use, ICD-10) and technology (EHR software, mobility, security, cloud, storage, networking, etc.) for health care IT leaders in hospitals, medical centers, IDNs and other provider organizations</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchhealthit.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Health</span><span class="logo-2">IT</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/healthcare/">Search<span>HealthIT Japan</span></a></h4></li>
+						<li><h4><a href="http://searchhealthit.techtarget.com/healthitexchange/itanswers/"><span>Health IT Exchange</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-13 closed">
+				<h3 class="network-hub-group-toggle">Networking<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget networking websites cover routing and switching, network security and management, application performance and delivery, VoIP, unified communications and collaboration, wireless LANs, Software Defined Networking, Wide Area Networks and mobility.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchenterprisewan.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Enterprise</span><span class="logo-2">WAN</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Computer-Network-Installation-and-Administration-Projects">Search<span>ITChannel Networking</span></a></h4></li>
+						<li><h4><a href="http://searchmobilecomputing.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Mobile</span><span class="logo-2">Computing</span></a></h4></li>
+						<li><h4><a href="http://searchnetworking.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Networking</span></a></h4></li>
+						<li><h4><a href="http://searchsdn.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">SDN</span></a></h4></li>
+						<li><h4><a href="http://searchtelecom.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Telecom</span></a></h4></li>
+						<li><h4><a href="http://searchunifiedcommunications.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Unified</span><span class="logo-2">Communications</span></a></h4></li>
+						<li><h4><a href="http://www.computerweekly.com/resources/Networking-and-communication"><span>ComputerWeekly Networking</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Reseaux-telecoms"><span>LeMagIT Networking</span></a></h4></li>
+						<li><h4><a href="http://www.searchnetworking.com.cn/">Search<span>Networking China</span></a></h4></li>
+						<li><h4><a href="http://searchdatacenter.techtarget.com/es/recursos/Configuracion-de-redes">Search<span>DataCenter en Español Networking</span></a></h4></li>
+						<li><h4><a href="http://www.searchnetworking.de/">Search<span>Networking Germany</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/network/">Search<span>Mobile Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/network/">Search<span>Network Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/unifiedcom/">Search<span>UnifiedCom Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-14 closed">
+				<h3 class="network-hub-group-toggle">Security<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget security websites cover tools and tips on viruses, threats and threat management, certifications, standards compliance, security management, malware, data protection and mobile security.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchcloudsecurity.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Security</span></a></h4></li>
+						<li><h4><a href="http://searchfinancialsecurity.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Financial</span><span class="logo-2">Security</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Network-security-products-technologies-and-services">Search<span>ITChannel Security</span></a></h4></li>
+						<li><h4><a href="http://searchmidmarketsecurity.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Midmarket</span><span class="logo-2">Security</span></a></h4></li>
+						<li><h4><a href="http://searchsecurity.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Security</span></a></h4></li>
+						<li><h4><a href="http://www.computerweekly.com/resources/IT-security"><span>ComputerWeekly Security</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Securite"><span>LeMagIT Security</span></a></h4></li>
+						<li><h4><a href="http://searchsecurity.techtarget.com.au/">Search<span>Security Australia</span></a></h4></li>
+						<li><h4><a href="http://www.searchsecurity.com.cn/">Search<span>Security China</span></a></h4></li>
+						<li><h4><a href="http://www.searchsecurity.de/">Search<span>Security Germany</span></a></h4></li>
+						<li><h4><a href="http://searchdatacenter.techtarget.com/es/recursos/Seguridad-de-la-informacion">Search<span>DataCenter en Español Security</span></a></h4></li>
+						<li><h4><a href="http://searchsecurity.techtarget.in/">Search<span>Security India</span></a></h4></li>
+						<li><h4><a href="http://www.ict4executive.it/searchsecurity">Search<span>Security Italy</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/security/">Search<span>MailSecurity Japan</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/security/">Search<span>Security Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-15 closed">
+				<h3 class="network-hub-group-toggle">Social Media<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget social communities allow you to share real world information in real time with peers and technology experts. </p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://itknowledgeexchange.techtarget.com"><span>IT Knowledge Exchange</span></a></h4></li>
+						<li><h4><a href="http://searchhealthit.techtarget.com/healthitexchange/itanswers/"><span>Health IT Exchange</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-16 closed">
+				<h3 class="network-hub-group-toggle">Storage Architecture<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget storage websites are the best online information resource for news, tips and expert advice for the storage, backup and disaster recovery markets. Topics include SSD, backup, storage for virtual servers and cloud storage.
+
+</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchcloudstorage.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Storage</span></a></h4></li>
+						<li><h4><a href="http://searchdatabackup.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Backup</span></a></h4></li>
+						<li><h4><a href="http://searchitchannel.techtarget.com/resources/Data-Storage-Management">Search<span>ITChannel Storage</span></a></h4></li>
+						<li><h4><a href="http://searchsmbstorage.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">SMB</span><span class="logo-2">Storage</span></a></h4></li>
+						<li><h4><a href="http://searchsolidstatestorage.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Solid</span><span class="logo-2">State</span><span class="logo-3">Storage</span></a></h4></li>
+						<li><h4><a href="http://searchstorage.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Storage</span></a></h4></li>
+						<li><h4><a href="http://searchvirtualstorage.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Virtual</span><span class="logo-2">Storage</span></a></h4></li>
+						<li><h4><a href="http://www.computerweekly.com/resources/Storage"><span>ComputerWeekly Storage</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Stockage"><span>LeMagIT Storage</span></a></h4></li>
+						<li><h4><a href="http://searchstorage.techtarget.com.au/">Search<span>Storage Australia</span></a></h4></li>
+						<li><h4><a href="http://searchdatacenter.techtarget.com/es/resources/Almacenamiento">Search<span>DataCenter en Español Storage</span></a></h4></li>
+						<li><h4><a href="http://www.searchstorage.de/">Search<span>Storage Germany</span></a></h4></li>
+						<li><h4><a href="http://www.searchstorage.com.cn/">Search<span>Storage China</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-17 closed">
+				<h3 class="network-hub-group-toggle">Technology Content Libraries<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget content libraries are the web's largest library of vendor-neutral and vendor-provided white papers, webcasts, podcasts, videos, virtual trade shows, research reports, and more. </p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://www.bitpipe.com"><span>Bitpipe</span></a></h4></li>
+						<li><h4><a href="http://es.Bitpipe.com"><span>Bitpipe en Español</span></a></h4></li>
+						<li><h4><a href="http://www.bitpipe.fr/"><span>Bitpipe France</span></a></h4></li>
+						<li><h4><a href="http://de.bitpipe.com/"><span>Bitpipe Germany</span></a></h4></li>
+						<li><h4><a href="http://www.knowledgestorm.com/"><span>KnowledgeStorm</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr"><span class="logo-1">Le</span><span class="logo-2">Mag</span><span class="logo-3">IT</span></a></h4></li>
+						<li><h4><a href="http://whatis.techtarget.com"><span class="logo-1">What</span><span class="logo-2">Is</span><span class="logo-3">.com</span></a></h4></li>
+						<li><h4><a href="http://www.whatis.com.cn/"><span>Whatis China</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-18 closed">
+				<h3 class="network-hub-group-toggle">Technology Product Reviews<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget product review and evaluation websites cover in-depth news, reviews, comparisons and pricing on laptops, smartphones, tablets, and digital cameras.</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://www.brighthand.com/"><span>Brighthand</span></a></h4></li>
+						<li><h4><a href="http://www.desktopreview.com/"><span>DesktopReview</span></a></h4></li>
+						<li><h4><a href="http://www.digitalcamerareview.com/"><span>DigitalCameraReview</span></a></h4></li>
+						<li><h4><a href="http://www.notebookreview.com/"><span>NotebookReview</span></a></h4></li>
+						<li><h4><a href="http://www.printercomparison.com/"><span>PrinterComparison</span></a></h4></li>
+						<li><h4><a href="http://www.tabletpcreview.com/"><span>TabletPCReview</span></a></h4></li>
+						<li><h4><a href="http://www.technologyguide.com/"><span>TechnologyGuide</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		<li class="network-hub-group item-19 closed">
+				<h3 class="network-hub-group-toggle">Virtualization<span class="toggle-marker">+</span>
+				</h3>
+				<p>TechTarget virtualization websites provide cutting-edge information on introductory and advanced virtualization technologies. Topics include infrastructure, management, backup and DR across all hypervisor platforms.
+
+</p>
+				<div class="network-hub-sites-content closed">
+					<ul class="network-hub-list-sites">
+						<li><h4><a href="http://searchservervirtualization.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Server</span><span class="logo-2">Virtualization</span></a></h4></li>
+						<li><h4><a href="http://searchvirtualdesktop.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Virtual</span><span class="logo-2">Desktop</span></a></h4></li>
+						<li><h4><a href="http://searchvirtualstorage.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">Virtual</span><span class="logo-2">Storage</span></a></h4></li>
+						<li><h4><a href="http://searchvmware.techtarget.com"><span class="logo-search">Search</span><span class="logo-1">VMware</span></a></h4></li>
+						<li><h4><a href="http://www.brianmadden.com"><span>BrianMadden</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Virtualisation-de-serveurs"><span>LeMagIT Server Virtualization</span></a></h4></li>
+						<li><h4><a href="http://www.lemagit.fr/ressources/Poste-de-travail-mobilite"><span>LeMagIT Virtual Desktop</span></a></h4></li>
+						<li><h4><a href="http://techtarget.itmedia.co.jp/tt/virtualization/">Search<span>Virtualization Japan</span></a></h4></li>
+						</ul>
+					<div class="collapse-toggle">
+						<div class="collapse-toggle-inner show-more">+ Show More</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	<div class="body-pro-callout">
+		<div class="body-pro-callout-inner">
+			<!-- AdsController, generated at 05:35:18 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="promo-2" class="ad ad-pr"><script>GPT.display('promo-2')</script></div></div>
+	</div>
+</section></div>
+</div></div>
+				<div id="content-right" class="content-right"></div>
+			</article>
+		</div>
+		<div><div><!-- FooterLinksController, generated at 18:53:47 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<footer>
+	<div class="content-left">
+		<!-- Plug in TechTarget Logo inside the anchor tag here. -->
+		<div class="column column-logo">
+			<a href="#"></a>
+		</div>
+	</div>
+	<div class="content-center">
+		<ul class="column">
+			<li class="footer-item footer-item-col-1 footer-item-row-1"><a href="http://www.techtarget.com/html/about.html">About Us</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-2"><a href="http://www.techtarget.com/html/about_contact_directions.html">Contact Us</a></li>
+			</ul>
+		<ul class="column">
+			<li class="footer-item footer-item-col-2 footer-item-row-1"><a href="http://www.techtarget.com/html/privacy_policy.html">Privacy Policy</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-2"><a href="http://www.techtarget.com/html/resources.html">Resources for Marketers</a></li>
+			</ul>
+		<ul class="column column-mobile-hidden">
+			<li class="footer-item footer-item-col-3 footer-item-row-1"><a href="http://www.techtarget.com/html/pressroom.html">Press Releases</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-2"><a href="http://investor.techtarget.com/CorporateProfile.aspx?iid=4151732">Investor Relations</a></li>
+			</ul>
+	</div>
+	<div class="content-right">
+		<div class="column column-legal">
+			<p class="footer-legal">All Rights Reserved, <span>
+			Copyright 2015, TechTarget</span>
+			
+			</p>
+			
+		</div>
+	</div>
+</footer></div>
+</div><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive-ui.min.js?v=6.31"></script><!-- Begin Chartbeat -->
+		<script>
+    var _sf_async_config={};
+    _sf_async_config.uid = 41935;
+    _sf_async_config.domain = 'techtargetnetwork.com';
+    _sf_async_config.sections = 'hub, hub - NO TOPIC';
+    _sf_async_config.authors = 'NO AUTHOR, HOME, hub - HOME';
+    _sf_async_config.useCanonical = true;
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src',
+           (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') + 'js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script><!-- End Chartbeat -->
+	<!-- Begin GoogleTagManagerLegacy -->
+		<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CV3PD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CV3PD');
+</script><!-- End GoogleTagManagerLegacy -->
+	<!-- Begin DataPoint Media -->
+		<script>
+(function() {
+var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),sc = 'https:' == document.location.protocol ? 'https://' : 'http://';
+s.type='text/javascript';
+s.async=true;
+s.src=sc+'s.dpmsrv.com/dpm_b4c96d80854dd27e76d8cc9e21960eebda52e962.min.js';
+h.appendChild(s);
+})();
+</script><!-- End DataPoint Media -->
+	<!-- Begin CrazyEgg -->
+		<script>setTimeout(function(){
+var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/7034.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;
+a.type="text/javascript";
+b.parentNode.insertBefore(a,b)
+}, 1);</script><!-- End CrazyEgg -->
+	<!-- Begin GoogleRemarketing -->
+		<script>
+var google_conversion_id = 1070110249;
+var google_conversion_label = "RRsgCOW4tgMQqayi_gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1070110249/?value=0&label=RRsgCOW4tgMQqayi_gM&guid=ON&script=0">
+</div>
+</noscript>
+<script>
+var google_conversion_id = 1072226410;
+var google_conversion_label = "x3P_CIql1gMQ6sCj_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1072226410/?value=0&label=x3P_CIql1gMQ6sCj_wM&guid=ON&script=0">
+</div>
+</noscript><!-- End GoogleRemarketing -->
+	</div>
+	<div id="mobile-sidebars" class="mobile-sidebars">
+		</div>
+	<div id="image-overlay" class="image-overlay">
+		<div class="image-overlay-img"></div>
+		<div class="image-overlay-close">Close</div>
+	</div>
+	
+<!--
+Component Load Times
+====================
+DefaultPageController=8 ms
+
+Total time=8 ms
+Request Serving Server: vappma24.techtarget.com
+-->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"313780","applicationTime":67,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1068cf12f6","transactionName":"ZQMAYxdYXUBSAkFbClxJLFgXVFJfWhtQVjBAD01jAFpbZ1ITUlcRHUw=","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script></body>
+</html>

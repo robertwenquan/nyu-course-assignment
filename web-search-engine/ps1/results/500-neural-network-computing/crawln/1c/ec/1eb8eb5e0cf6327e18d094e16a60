@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Six lectures on Back-Propagation from 1996</TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="Prof Leslie Smith">
+<META NAME="Keywords" CONTENT="Tutorial Back-Propagation Neural networks">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<BODY>
+<H1> Six lectures on Back-Propagation from 1996 </H1>
+
+<p> These six lectures were written in 1996, which is a long time ago. Yet they aren't really all that dated. And people do ask me for sources fo information on the BP algorithm. So I have put them into .pdf, and here they are. I can't really update them, as the source files were written in a word processor I no longer have (they are .xow files, written using NeXTSTEP:  the WP package was called OpenWrite (I think). But if anyone knows of something that will read them either on MAC OSX or Windows XP, I'd be very interested!).
+
+<p> So here they are
+<ul>
+<LI> <A HREF="BP1.pdf">Lecture 1</A> </LI>
+<LI> <A HREF="BP2.pdf">Lecture 2</A> </LI>
+<LI> <A HREF="BP3.pdf">Lecture 3</A> </LI>
+<LI> <A HREF="BP4.pdf">Lecture 4</A> </LI>
+<LI> <A HREF="BP5.pdf">Lecture 5</A> </LI>
+<LI> <A HREF="BPR_RBF1.pdf">Lecture 6</A> </LI>
+</ul>
+<p> I can't really update them as I can't read the source any more. If you find errors, please email me, and I'll add an errata. If you want to use them, ask (and I'll almost certainly say yes, but it's nice to ask first!).
+<HR>
+Professor Leslie Smith:
+last updated 8 March 2005.
+<br> lss (at) cs.stir.ac.uk
+<br> Back to <A HREF="http://www.cs.stir.ac.uk/~lss">Leslie Smith's home page</A>.
+</BODY>
+</HTML>

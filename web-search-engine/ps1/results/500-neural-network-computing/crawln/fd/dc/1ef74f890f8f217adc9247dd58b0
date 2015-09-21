@@ -1,0 +1,1119 @@
+<!doctype html>
+
+<!--[if IE 7]><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js  lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js  lt-ie10 lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js  lt-ie10 ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js " lang="en"><!--<![endif]-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ">
+
+    <!--[if lte IE 9 ]>
+    <script type="text/javascript" src="/resources/js/polyfills.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init mendel">
+        Mendel = {};
+        $UI = {};
+        (function() {
+            var html = document.getElementsByTagName('html')[0];
+            html.className = html.className.replace( 'no-js', '');
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="The acquisition, recording, organization, retrieval, display, and dissemination of information. In recent years, the term has often been applied to computer-based operations specifically...." /><meta name="keywords" content="information processing, encyclopedia, encyclopaedia, britannica, article" /><link rel="canonical" href="http://www.britannica.com/topic/information-processing" /><meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@britannica" />
+
+<meta property="og:type"  content="article"/>
+<meta property="og:title" content="information processing"/>
+<meta property="og:description" content="The acquisition, recording, organization, retrieval, display, and dissemination of information. In recent years, the term has often been applied to computer-based operations specifically...."/>
+<meta property="og:site_name" content="Encyclopedia Britannica" />
+<meta property="og:url" content="http://www.britannica.com/topic/information-processing"/>
+<meta property="og:image" content="http://media-2.web.britannica.com/eb-media/89/1689-004-E4A85B38.jpg" />
+<meta property="og:image:type" content="image/jpg" />
+<script type="text/javascript" data-type="init opengraph">
+Mendel.openGraph = {
+    type: 'article',
+    title: 'information processing',
+    description: 'The acquisition, recording, organization, retrieval, display, and dissemination of information. In recent years, the term has often been applied to computer-based operations specifically....',
+    siteName: 'Encyclopedia Britannica',
+    url: 'http://www.britannica.com/topic/information-processing',
+    image: 'http://media-2.web.britannica.com/eb-media/89/1689-004-E4A85B38.jpg',
+    imageType: 'image/jpg'
+    
+};
+</script>
+
+<title>information processing | Britannica.com</title>
+
+    <link href="//fonts.googleapis.com/css?family=Coustard|Asap:400,700|Open+Sans:400,700,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/resources/css/libs/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/min-mendel.css?v=2.36.13" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <script type="text/javascript" data-type="init mendel config">
+
+Mendel.config = {
+	page: 'Topic',
+	testVersion: 'C',
+	server: 'http://www.britannica.com',
+	mediaServer: "http://media.web.britannica.com",
+	currentUrl: 'http://www.britannica.com/topic/information-processing',
+	sharedUrl: 'http://www.britannica.com/topic/information-processing',
+	userType: 'ANONYMOUS',
+	userInfo: { statId: '-1'
+	           ,userId: ''
+	           ,currency: 'USD'
+	           ,country: 'CA'
+	           ,bcomId: '-6638505493764392467'
+	           ,mvst: {
+  "QUIZ_INTRO" : "INTRO_3",
+  "GIST_STRIP_POSITION" : "TOP",
+  "RR_BRITANNICA_STORIES" : "ORIGINAL",
+  "RR_STORY_BRITANNICA_STORIES" : "6_STORIES",
+  "HEADER_UPSELL_IMAGE" : "http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg",
+  "HEADER_UPSELL" : "HU_1",
+  "US_SUBSCRIPTION_URL_PREFIX" : "https://safe1.britannica.com/registrations2/signup.do?partnerCode=",
+  "SMALL_ADDTNL_RESOURCES" : "YES"
+}
+	           ,provider: 'NONE'
+	           ,preferences: {}
+	},
+	isLoggedInAsUser: false,
+	hasAds: true,
+	hasVideoAds: true,
+	
+	adapTvId: 'nj232',
+	adapTvZid: 'Eb_autoplay-free',
+	
+	logGoogleGPT: false,
+	isMobile: false,
+	isTablet: false,
+	isPhone: false,
+	analytics: [
+	   
+	   { type: 'google', id: 'UA-6636134-11', logClickAction: true, logPageLoad: true, logFakePageLoad: true },
+	   { type: 'eb', logClickAction: false, logPageLoad: false, logFakePageLoad: true }
+	   
+	],
+	logAnalytics: false,
+	includeGigya: true,
+	gigyaProviders: 'facebook,twitter,googleplus,linkedin,yahoo'
+	
+	,mendelCookie: {
+  "pagesViewed" : 1,
+  "topicPagesViewed" : 1,
+  "articlePageUrl" : "http://www.britannica.com/topic/information-processing",
+  "mwQuizGroupNumber" : null,
+  "mwQuizGroupExcept" : null,
+  "vistedTopics" : [ 287847 ],
+  "currentReadingList" : 4322,
+  "galleryReferrer" : null
+},topicUrl: '/topic/information-processing'
+        ,topicContentType: 'ARTICLE'
+        ,freeTopicReason: 'FREE_TOPIC_FOR_READING_LIST'
+        ,channel: 'SCIENCE_AND_TECHNOLOGY'
+        ,topicId: 287847
+        ,topicTitle: 'information processing'
+	    ,topicAkw: 'social sciences,sports recreation,science technology,tourism'
+        ,isIndexEntry: false
+        ,template: 'MEDIUM'
+        ,hasToc: false
+};
+
+</script><script type="text/javascript" data-type="init Quantcast top">
+		    var _qevents = _qevents || [];
+		    (function() {
+		        var elem = document.createElement('script');
+		        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+		        elem.async = true;
+		        elem.type = "text/javascript";
+		        var scpt = document.getElementsByTagName('script')[0];
+		        scpt.parentNode.insertBefore(elem, scpt);
+		    })();
+		</script>
+	<script type="text/javascript" data-type="load GPT">
+         (function() {
+           var src = '//www.googletagservices.com/tag/js/gpt.js';
+           document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+	    <script src="http://js.indexww.com/ht/bri2.js"></script>
+	    <script type="text/javascript" data-type="load openX">
+         (function() {
+            var src = '//ox-d.merriamwebster.servedbyopenx.com/w/1.0/jstag?nc=34444486-EB';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+    <script type="text/javascript" data-type="init GPT slots">
+    var googletagSlots = [];
+    googletag.cmd.push(function() {
+        
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_C/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-7b1d2de7-b343-41e0-b88b-447fd4a0faaa')
+                             .setTargeting('POS',['BOT2'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_C/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-eab7fd73-215a-408b-90e7-44d3fc8bbd6e')
+                             .setTargeting('POS',['TOP'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_C/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-59b222f0-c1c8-411f-80b8-bb8e702df0c4')
+                             .setTargeting('POS',['BOT'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_C/ARTICLES_MEDIUM', [728,90],'div-gpt-ad-d3d3c3c2-b822-433a-84d2-657ca531dc14')
+                             .setTargeting('POS',['BOT'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_C/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-e7646afa-52a4-4dde-968a-a37fbaa45d3b')
+                             .setTargeting('POS',['PRE'])
+                             .addService(googletag.pubads())
+                    );
+                googletag.pubads().setTargeting('dc_ref',['http://www.britannica.com/topic/information-processing']);googletag.pubads().setTargeting('ARTICLE',['287847']);googletag.pubads().setTargeting('CAT',['social sciences,sports recreation,science technology,tourism']);googletag.pubads().setTargeting('PAGE',[1]);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+  });
+</script><script type="text/javascript" src="http://tags.crwdcntrl.net/c/6931/cc.js?ns=_cc6931" id="LOTCC_6931"></script>
+    <script type="text/javascript" language="javascript" data-type="lotame init">_cc6931.bcp();</script>
+<!--[if lte IE 8]>
+    <script type="text/javascript" data-type="ie8 html5 tags">
+        ( function() {
+            var tags = [ 'header', 'footer', 'aside', 'nav', 'section', 'article', 'figure', 'figcaption', 'time' ];
+            for ( var i = 0; i < tags.length; document.createElement( tags[i++] ) );
+        })();
+    </script>
+    <![endif]-->
+
+</head>
+
+<body ng-app class="topicPage topic-page-medium user-ANONYMOUS md-desktop font-sans has-footer-ad no-toolbar no-toc leg-c">
+
+    <div class="md-page-wrapper">
+
+        <header class="font-sans-ui">
+
+    <div class="header-content">
+
+        <div class="header-title">
+
+            <h4>
+	            <a class="logo-homepage" href="/"><img src="/resources/images/header/eb-logo-header.png" alt="Encyclopedia Britannica" /></a>
+                <a class="header-thistle" href="/"></a>
+            </h4>
+
+            <div class="header-login ">
+
+                <div class="grid">
+                    <div class="grid-xs-66">
+                        <div class="header-nav text-left">
+    <ul>
+        <li><a data-ytrk="25" href="http://store.britannica.com" target="_blank">Shop</a></li>
+        <li><a data-ytrk="27" href="http://info.eb.com" target="_blank">School and Library Subscribers</a></li>
+        </ul>
+</div>
+
+
+</div>
+                    <div class="grid-xs-auto text-right">
+
+                        <ul class="header-login-links">
+                            <li>
+                                        <a data-ytrk="262" href="#" class="md-header-join-link">JOIN</a>
+                                    </li>
+                                    <li>
+                                        <a data-ytrk="17" href="#" class="login-link" >LOGIN</a>
+                                    </li>
+                                <li >
+                                    <a data-ytrk="/19" class="md-upsell-link" href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPPGSUB_LP_MDL_C" rel="nofollow">
+                                        Activate Your Free Trial!</a>
+                                </li>
+                            </ul>
+
+                        <div class="header-login-upsell">
+                                <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPPGSUB_LP_MDL_C" rel="nofollow"><img src="http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg"/></a>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<div id="header-global-nav" data-position-fixed="0">
+
+    <div class="header-global-nav-content grid">
+
+        <a data-ytrk="/655" class="header-global-nav-home" href="/"><img src="/resources/images/header/homepage-small-thistle-v2.png" alt="home" /></a>
+
+        <ul id="header-global-nav-buttons" data-title="navigation" class="grid">
+            <li class="grid-fit"><a data-ytrk="/439" href="/popular-topics/browse" >Popular Topics</a></li>
+            <li class="grid-fit"><a data-ytrk="/440" href="/quiz/browse" >quizzes</a></li>
+            <li class="grid-fit"><a data-ytrk="/441" href="/gallery/browse" >galleries</a></li>
+            <li class="grid-fit"><a data-ytrk="/442" href="/list/browse" >lists</a></li>
+            </ul>
+
+        <div class="search-form grid-xs-auto">
+            <form method="get" action="/search" id="searchCriteria" class="">
+    <div class="search-box">
+        <input name="query" type="text" id="header-query" placeholder="Search Britannica..." class="query font-sans"  maxlength="200" />
+        <button data-ytrk="21" type="submit" class="search-submit" value=""><i class="fa fa-search"></i></button>
+    </div>
+</form>
+</div>
+
+        </div>
+
+    </div>
+
+<div class="md-after-header"><div class="container md-reading-list ui-away" data-position-fixed="0">
+
+		<a data-ytrk="/680" class="md-reading-list-story-link" href="/popular-topics/story/ibm-develops-ultradense-computer-chip">Read This Story and Join the Conversation</a>
+                <ul class="md-reading-list-dropdown">
+                    <li class="selected">
+                            <a href="/technology/computer-chip">
+                            <span class="behind-the-news">
+                                BEHIND THE NEWS: </span>
+                                    IBM Develops "Ultradense" Computer Chip</a>
+                        </li>
+                    <li >
+                            <a href="/science/earthquake-geology">
+                            <span class="behind-the-news">
+                                BEHIND THE NEWS: </span>
+                                    Magnitude-8.3 Quake Shocks Chile</a>
+                        </li>
+                    <li >
+                            <a href="/topic/Gene-Editing-Takes-a-Giant-Leap-Forward-2033461">
+                            <span class="behind-the-news">
+                                BEHIND THE NEWS: </span>
+                                    Call to Allow Gene Editing in Embryos</a>
+                        </li>
+                    <li >
+                            <a href="/place/Burkina-Faso">
+                            <span class="behind-the-news">
+                                BEHIND THE NEWS: </span>
+                                    Coup in Burkina Faso</a>
+                        </li>
+                    <li >
+                            <a href="/art/Toronto-International-Film-Festival">
+                            <span class="spotlight">
+                                SPOTLIGHT: </span>
+                                    Toronto Film Festival 2015</a>
+                        </li>
+                    <li >
+                            <a href="/technology/clock">
+                            <span class="behind-the-news">
+                                BEHIND THE NEWS: </span>
+                                    Bomb Scare Set Off By Homemade Clock</a>
+                        </li>
+                    <li >
+                            <a href="/topic/Canadian-election-2015-preview-2038071">
+                            <span class="spotlight">
+                                SPOTLIGHT: </span>
+                                    Who Will Lead Canada’s Next Government?</a>
+                        </li>
+                    </ul>
+            <div class="md-reading-list-list ">
+            <div class="md-reading-list-scroller ui-hidden-opacity">
+                <a data-ytrk="/676" href="/technology/computer-chip" class="">
+                        <div class="description">
+                                What is a computer chip?</div>
+                    </a>
+                <a data-ytrk="/676" href="/science/semiconductor" class="">
+                        <div class="image-wrapper">
+                                <img src="http://media-2.web.britannica.com/eb-media/07/207-003-6AB4B0F5.jpg" alt="" /></div>
+                        <div class="description">
+                                Are transistors made with semiconducting materials?</div>
+                    </a>
+                <a data-ytrk="/676" href="/topic/information-processing" class="visited selected">
+                        <div class="image-wrapper">
+                                <img src="http://media-1.web.britannica.com/eb-media/89/1689-003-60F57F00.jpg" alt="" /></div>
+                        <div class="description">
+                                How does a computer process information?</div>
+                    </a>
+                <a data-ytrk="/677" class="next-story behind-the-news" href="/science/earthquake-geology">
+                        <div class="image-wrapper">
+                            <img src="http://media-2.web.britannica.com/eb-media/49/186049-118-41414F86.jpg" />
+                        </div>
+                        <div class="description">
+                            <span>Next story:</span>
+                                Magnitude-8.3 Quake Shocks Chile</div>
+                    </a>
+                </div>
+        </div>
+
+	</div>
+
+	<div class="md-reading-list-arrows">
+
+		<a data-ytrk="/679" href="/science/semiconductor" class="prev-story">
+	                    <i class="arrow fa fa-chevron-left" title="Previous"></i>
+	                    <div class="description">
+	                        <div class="story behind-the-news">
+	                            <span>Behind The News:</span>
+	                            IBM Develops "Ultradense" Computer Chip</div>
+	                        <div class="item">
+	                            <div class="label">Previous</div>
+	                            Are transistors made with semiconducting materials?</div>
+	                    </div>
+	                </a>
+	            <a data-ytrk="/679" href="/science/earthquake-geology" class="next-story" data-position-fixed="0">
+	                    <div class="description">
+	                        <div class="story behind-the-news">
+	                            <span>Behind The News:</span>
+	                            Magnitude-8.3 Quake Shocks Chile</div>
+	                        <div class="item">
+	                            <div class="label">Next</div>
+	                            What causes earthquakes?</div>
+	                    </div>
+	                    <i class="arrow fa fa-chevron-right" title="Next"></i>
+	                </a>
+	            </div></div>
+        <div class="container">
+                <div class="md-page-h1-wrapper">
+                    <h1><span>Information processing</span></h1>
+        <div class="md-navigator hide-on-edit">
+    <div class="fa fa-bars fa-fw fa-2x" data-ytrk="586"></div>
+    <ul class="md-navigator-dropdown font-sans">
+        <li>
+                <strong>Article</strong>
+                    </li>
+        <li>
+                <a data-ytrk="/295" href="/topic/information-processing/article-websites" >Web sites</a>
+                    </li>
+        <li>
+                <a data-ytrk="/294" href="/topic/information-processing/article-bibliography" >Bibliography</a>
+                    </li>
+        <li>
+                <a data-ytrk="/211" href="/topic/information-processing/article-year-in-review" >Year in Review</a>
+                    </li>
+        <li>
+                <a data-ytrk="/292" href="/topic/information-processing/article-contributors" rel="nofollow">Contributors</a>
+                    </li>
+        </ul>
+</div><div class="subheading hide-on-edit">
+            <div class="md-horizontal-social-toolbar2 no-text">
+
+<span class="md-horizontal-social-toolbar2-contributor">Written by: <a href="/bps/user-profile/3442/vladimir-slamecka" data-ytrk="/212">Vladimir Slamecka</a>
+		</span>
+<ul class="md-toolbar ">
+
+	<li class="comments" title="Comments" data-ytrk="587">
+        <a href="#_comments">
+            <span class="fa-stack"><i class="fa fa-comment fa-stack-2x"></i><strong class="comments-text fa-stack-1x fa-inverse"></strong></span>
+            </a>
+    </li>
+	<li class="share" title="Share" data-ytrk="113">
+        <span class="fa-stack"><i class="fa fa-share-alt fa-stack-2x"></i></span>
+        </li>
+	<li class="t-email" title="Email" data-ytrk="112">
+        <span class="fa-stack"><i class="fa fa-envelope fa-stack-2x"></i></span>
+        </li>
+	<li class="t-print" title="Print" data-ytrk="111">
+        <a href="/print/article/287847" target="_blank">
+            <span class="fa-stack"><i class="fa fa-print fa-stack-2x"></i></span>
+            </a>
+    </li>
+    <li class="t-cite" title="Cite" data-ytrk="117">
+        <span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-quote-right fa-stack-1x"></i></span>
+        </li>
+	</ul>
+
+</div>
+</div>
+
+        <ul class="md-topic-title-links">
+
+	<li>
+	        <span id="md-topic-title-link-read">Read</span></li>
+
+		<li>
+			<a data-ytrk="/669" href="/topic/information-processing/images-videos">View All Media (7)</a>
+		</li>
+		<li>
+	        <a id="md-topic-title-link-history" data-ytrk="/291" href="/topic/information-processing/article-history" rel="nofollow">View History</a></li>
+		<li>
+		     <a class="md-topic-title-link-edit" href="#" rel="nofollow" data-ytrk="263">Edit</a>
+		</li>
+		<li>
+	            <a id="md-topic-title-link-feedback" href="/topic/information-processing/article-feedback" data-ytrk="/267" rel="nofollow">Feedback</a></li>
+	    </ul></div>
+            </div>
+        <div id="content" class="md-content ">
+
+            <div id="edit-toolbar-placeholder"></div><div class="md-content-wrapper  topic-content">
+                <article class="content-body font-sans-ui has-media" vocab="http://schema.org" resource="http://semantic.britannica.com/accepted_headword/core/287847/information-processing" typeof="Article">
+            <meta property="url" href="/topic/information-processing" />
+            <meta property="name" content="information processing" />
+
+            <!--[TOC-PLACEHOLDER]--><section id="toc287847main" class="eb-topic-section" data-level="intro"><p><b><span class="srTitle">Information processing </span></b><b>,</b>&nbsp;the acquisition, recording, organization, retrieval, <a data-ytrk="/548" href="/topic/display-information-recording"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/165854/display">display</span></a>, and dissemination of <a name="ref730235" id="ref730235"></a><a data-ytrk="/548" href="/science/information-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287881/information-science">information</span></a>. In recent years, the term has often been applied to computer-based operations specifically.</p><!--[END-1ST-PARA]--><p>In popular usage, the term <em><a data-ytrk="/548" href="/topic/information-communications"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287834/information">information</span></a></em> refers to facts and opinions provided and received during the course of daily life: one obtains information directly from other living beings, from <a data-ytrk="/548" href="/topic/mass-media"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/368234/mass-media">mass media</span></a>, from electronic <a data-ytrk="/548" href="/technology/data-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/152149/data">data</span></a> banks, and from all sorts of observable phenomena in the surrounding environment. A person using such facts and opinions generates more information, some of which is communicated to others during discourse, by instructions, in letters and documents, and through other media. Information organized according to some logical relationships is referred to as a body of knowledge, to be acquired by systematic <a data-ytrk="/548" href="/technology/exposure-photography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/198703/exposure">exposure</span></a> or study. Application of knowledge (or skills) yields expertise, and additional analytic or experiential insights are said to constitute instances of wisdom. Use of the term <em>information</em> is not restricted exclusively to its communication via natural language. Information is also registered and communicated through art and by facial expressions and gestures or by such other physical responses as shivering. Moreover, every living entity is endowed with information in the form of a genetic code. These information phenomena permeate the physical and mental world, and their variety is such that it has defied so far all attempts at a unified definition of information.</p><!--[MEDIA-STRIP]--><p>Interest in information phenomena increased dramatically in the 20th century, and today they are the objects of study in a number of disciplines, including philosophy, physics, biology, linguistics, information and <a data-ytrk="/548" href="/technology/computer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130429/computer">computer</span></a> science, electronic and communications <a data-ytrk="/548" href="/technology/engineering"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/187549/engineering">engineering</span></a>, management science, and the social sciences. On the commercial side, the information service <a data-ytrk="/548" href="/topic/industry"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287256/industry">industry</span></a> has become one of the newer industries worldwide. Almost all other industries—manufacturing and service—are increasingly concerned with information and its handling. The different, though often overlapping, viewpoints and phenomena of these fields lead to different (and sometimes conflicting) concepts and “definitions” of information.</p><p>This article touches on such concepts as they relate to information <a data-ytrk="/548" href="/technology/processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/477744/processing">processing</span></a>. In treating the basic elements of information processing, it distinguishes between information in analog and digital form, and it describes its acquisition, recording, organization, retrieval, display, and techniques of dissemination. A separate article, <a data-ytrk="/548" href="/topic/information-system"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287895/information-system">information system</span></a>, covers methods for organizational control and dissemination of information.</p></section><section class="eb-topic-section" data-level="1" id="toc61649"><h2 class="h2"><span>General considerations</span></h2><section class="eb-topic-section" data-level="2" id="toc61650"><h2 class="h3"><span>Basic concepts</span></h2><p>Interest in how information is <a name="ref212006" id="ref212006"></a><a data-ytrk="/548" href="/topic/communication"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/129024/communication">communicated</span></a> and how its carriers convey meaning has occupied, since the time of pre-Socratic philosophers, the <a data-ytrk="/548" href="/technology/field-data-storage"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/206151/field">field</span></a> of inquiry called <a name="ref212007" id="ref212007"></a><a data-ytrk="/548" href="/science/semiotics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/534099/semiotics">semiotics</span></a>, the study of <a name="ref212008" id="ref212008"></a><a data-ytrk="/548" href="/topic/sign-communications"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/543697/sign">signs</span></a> and sign phenomena. Signs are the irreducible elements of communication and the carriers of meaning. The American philosopher, mathematician, and physicist <a name="ref212009" id="ref212009"></a><a data-ytrk="/548" href="/biography/Charles-Sanders-Peirce"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/448884/Charles-Sanders-Peirce">Charles S. Peirce</span></a> is credited with having pointed out the three dimensions of signs, which are concerned with, respectively, the body or medium of the sign, the object that the sign designates, and the interpretant or interpretation of the sign. Peirce recognized that the fundamental relations of information are essentially triadic; in contrast, all relations of the physical sciences are reducible to dyadic (binary) relations. Another American philosopher, <a name="ref212010" id="ref212010"></a><a data-ytrk="/548" href="/biography/Charles-William-Morris"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/392865/Charles-William-Morris">Charles W. Morris</span></a>, designated these three sign dimensions syntactic, semantic, and pragmatic, the names by which they are known today.</p><p>Information processes are executed by information processors. For a given <a data-ytrk="/548" href="/topic/information-processor"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287874/information-processor">information processor</span></a>, whether physical or biological, a <a name="ref212011" id="ref212011"></a>token is an object, devoid of meaning, that the processor recognizes as being totally different from other tokens. A group of such unique tokens recognized by a processor constitutes its basic “alphabet”; for example, the dot, dash, and space constitute the basic token alphabet of a Morse-code processor. Objects that carry meaning are represented by patterns of tokens called <a name="ref212012" id="ref212012"></a><a data-ytrk="/548" href="/topic/symbol"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/577703/symbol">symbols</span></a>. The latter combine to form symbolic expressions that constitute inputs to or outputs from information processes and are stored in the processor memory.</p><p><a name="ref212013" id="ref212013"></a>Information processors are components of an <a data-ytrk="/548" href="/topic/information-system"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287895/information-system">information system</span></a>, which is a class of constructs. An <a data-ytrk="/548" href="/topic/abstract-document"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1944/abstract">abstract</span></a> model of an information system features four basic elements: processor, memory, <a data-ytrk="/548" href="/topic/receptor-information-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/493434/receptor">receptor</span></a>, and <a data-ytrk="/548" href="/topic/effector-information-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/179985/effector">effector</span></a> (<a href="/topic/information-processing/images-videos/2009" class="media-overlay-link" data-id="2009" data-type="image">Figure 1</a>). The processor has several functions: (1) to carry out elementary information processes on symbolic expressions, (2) to store temporarily in the processor’s short-term memory the <a data-ytrk="/548" href="/technology/input-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/288868/input">input</span></a> and <a data-ytrk="/548" href="/technology/output-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/435666/output">output</span></a> expressions on which these processes operate and that they generate, (3) to schedule execution of these processes, and (4) to change this <a data-ytrk="/548" href="/technology/sequence-programming"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1086517/sequence">sequence</span></a> of operations in accordance with the contents of the short-term memory. The <a name="ref212014" id="ref212014"></a><a data-ytrk="/548" href="/technology/computer-memory"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130610/computer-memory">memory</span></a> stores symbolic expressions, including those that represent composite information processes, called programs. The two other components, the <a name="ref212015" id="ref212015"></a>receptor and the <a name="ref212016" id="ref212016"></a>effector, are input and output mechanisms whose functions are, respectively, to receive symbolic expressions or stimuli from the external environment for manipulation by the processor and to emit the processed structures back to the environment.</p><p>The <a data-ytrk="/548" href="/science/power-physics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/473289/power">power</span></a> of this abstract model of an information-processing system is provided by the ability of its component processors to carry out a small number of elementary information processes: reading; comparing; creating, modifying, and naming; copying; storing; and writing. The model, which is representative of a broad variety of such systems, has been found useful to explicate man-made information systems implemented on sequential information processors.</p><p>Because it has been recognized that in nature information processes are not strictly sequential, increasing attention has been focused since 1980 on the study of the human brain as an information processor of the parallel type. The <a name="ref632822" id="ref632822"></a><a data-ytrk="/548" href="/science/cognitive-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/124505/cognitive-science">cognitive sciences</span></a>, the interdisciplinary field that focuses on the study of the human mind, have contributed to the development of <a name="ref212019" id="ref212019"></a>neurocomputers, a new class of parallel, distributed-information processors that mimic the functioning of the human <a name="ref212020" id="ref212020"></a><a data-ytrk="/548" href="/science/brain"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/77269/brain">brain</span></a>, including its capabilities for self-organization and learning. So-called <a name="ref212021" id="ref212021"></a><a data-ytrk="/548" href="/technology/neural-network"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/410549/neural-network">neural networks</span></a>, which are mathematical models inspired by the neural circuit <a data-ytrk="/548" href="/topic/network-broadcasting"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1200866/network">network</span></a> of the human brain, are increasingly finding applications in areas such as <a data-ytrk="/548" href="/technology/pattern-recognition-computer-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/446816/pattern-recognition">pattern recognition</span></a>, control of industrial processes, and finance, as well as in many research disciplines.</p></section><section class="eb-topic-section" data-level="2" id="toc61651"><h2 class="h3"><span>Information as a resource and <a name="ref212022" id="ref212022"></a><a data-ytrk="/548" href="/topic/commodity"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/128073/commodity">commodity</span></a></span></h2><p>In the late 20th century, information acquired two major utilitarian connotations. On the one hand, it is considered an economic resource, somewhat on par with other resources such as labour, <a data-ytrk="/548" href="/technology/material"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/369000/material">material</span></a>, and capital. This view stems from evidence that the possession, manipulation, and use of information can increase the cost-effectiveness of many physical and cognitive processes. The rise in information-processing activities in industrial <a data-ytrk="/548" href="/technology/manufacturing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/849534/manufacturing">manufacturing</span></a> as well as in human problem solving has been remarkable. Analysis of one of the three traditional divisions of the economy, the <a name="ref212023" id="ref212023"></a><a data-ytrk="/548" href="/topic/service-industry"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/535980/service-industry">service sector</span></a>, shows a sharp increase in information-intensive activities since the beginning of the 20th century. By 1975 these activities accounted for half of the labour force of the United States, giving rise to the so-called <a name="ref212024" id="ref212024"></a>information society.</p><div class="bps-topic-table-wrapper"><div class="bps-topic-table" id="toc9116021">
+<div class="oec-table-wrapper-title"><div>Table 1: Labour Distribution (%) in the United States,
+1880-2000</div></div>
+<div class="oec-table-wrapper"><div class="bps-table-pre oec_table"><pre>
+                                       1880      1920      1955      1975      2000 (est.) 
+ 
+Agriculture and extractive              50        28        14         4            2 
+Manufacturing, commerce, industry       36        53        37        29           22 
+Information, knowledge, education        2         9        29        50           66 
+Other services                          12        10        20        17           10 
+ 
+Source: Adapted from Graham T.T. Molitor, "The Information Society: The Path to Post-Industrial Growth," 
+Edward Cornish (ed.),<em>Communications Tomorrow, The Coming of the Information Society,</em>        
+reprinted by permission of the World Future Society, Bethesda, Md. 
+</pre></div></div>
+</div></div><p></p><p>As an individual and societal resource, information has some interesting characteristics that separate it from the traditional notions of economic resources. Unlike other resources, information is expansive, with limits apparently imposed only by time and human cognitive capabilities. Its expansiveness is attributable to the following: (1) it is naturally diffusive, (2) it reproduces rather than being consumed through use, and (3) it can be shared only, not exchanged in transactions. At the same time, information is compressible, both syntactically and semantically. Coupled with its ability to be substituted for other economic resources, its transportability at very high speeds, and its ability to impart advantages to the holder of information, these characteristics are at the base of such societal industries as research, education, publishing, marketing, and even politics. Societal concern with the husbanding of information resources has extended from the traditional domain of libraries and <a data-ytrk="/548" href="/topic/archives"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/33033/archives">archives</span></a> to encompass organizational, institutional, and governmental information under the umbrella of information resource management.</p><p>The second perception of information is that it is an economic commodity, which helps to stimulate the worldwide growth of a new <a data-ytrk="/548" href="/technology/segment-computer-memory"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/532656/segment">segment</span></a> of national economies—the information service sector. Taking advantage of the properties of information and <a data-ytrk="/548" href="/technology/building"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/83834/building">building</span></a> on the perception of its individual and societal utility and value, this sector provides a broad range of information products and services. By 1992 the market share of the U.S. information service sector had grown to about $25 billion. This was equivalent to about one-seventh of the country’s computer market, which, in turn, represented roughly 40 percent of the global market in computers in that year. However, the probable convergence of computers and television (which constitutes a market share 100 times larger than computers) and its impact on information services, entertainment, and education are likely to restructure the respective market shares of the information industry.</p></section></section><section class="eb-topic-section" data-level="1" id="toc61652"><h2 class="h2"><span>Elements of information processing</span></h2><p>Humans receive information with their <a name="ref212025" id="ref212025"></a><a data-ytrk="/548" href="/science/senses"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/534691/senses">senses</span></a>: sounds through hearing; images and <a data-ytrk="/548" href="/topic/text-media"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/589385/text">text</span></a> through sight; shape, temperature, and affection through touch; and odours through smell. To interpret the signals received from the senses, humans have developed and learned complex systems of languages consisting of “alphabets” of symbols and stimuli and the associated rules of usage. This has enabled them to recognize the objects they see, understand the messages they read or hear, and comprehend the signs received through the tactile and olfactory senses.</p><p>The carriers of information-conveying signs received by the senses are energy phenomena—audio waves, light waves, and chemical and electrochemical stimuli. In engineering parlance, humans are receptors of analog signals; and, by a somewhat loose convention, the messages conveyed via these carriers are called analog-form information, or simply <a name="ref212026" id="ref212026"></a>analog information. Until the development of the <a data-ytrk="/548" href="/technology/digital-computer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/163278/digital-computer">digital computer</span></a>, cognitive information was stored and processed only in analog form, basically through the technologies of <a data-ytrk="/548" href="/topic/printing-publishing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/477017/printing">printing</span></a>, photography, and telephony.</p><p>Although humans are adept at processing information stored in their memories, analog information stored external to the mind is not processed easily. Modern information <a data-ytrk="/548" href="/topic/technology"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/585418/technology">technology</span></a> greatly facilitates the manipulation of externally stored information as a result of its representation as digital signals—i.e., as the presence or absence of energy (electricity, light, or magnetism). Information represented digitally in two-state, or <a name="ref212027" id="ref212027"></a><a data-ytrk="/548" href="/technology/bit-communications"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/67148/bit">binary</span></a>, form is often referred to as <a data-ytrk="/548" href="/topic/digital-information"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/163310/digital-information">digital information</span></a>. Modern information systems are characterized by extensive metamorphoses of analog and digital information. With respect to information <a data-ytrk="/548" href="/technology/storage-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/567495/storage">storage</span></a> and communication, the transition from analog to digital information is so pervasive as to bring a historic transformation of the manner in which humans create, access, and use information.</p><section class="eb-topic-section" data-level="2" id="toc61653"><h2 class="h3"><span>Acquisition and recording of information in analog form</span></h2><p>The principal categories of information sources useful in modern information systems are text, video, and voice. One of the first ways in which prehistoric humans communicated was by <a name="ref212030" id="ref212030"></a><a data-ytrk="/548" href="/science/sound-physics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/555255/sound">sound</span></a>; sounds represented concepts such as pleasure, anger, and fear, as well as objects of the surrounding environment, including food and tools. Sounds assumed their meaning by convention—namely, by the use to which they were consistently put. Combining parts of sound allowed representation of more complex concepts and gradually led to the development of speech and eventually to spoken “natural” languages.</p><p>For information to be communicated broadly, it needs to be stored external to human memory; because accumulation of human experience, knowledge, and learning would be severely limited without such storage, the development of <a name="ref212031" id="ref212031"></a><a data-ytrk="/548" href="/topic/writing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/649670/writing">writing</span></a> systems was made necessary.</p><p>Civilization can be traced to the time when humans began to associate abstract shapes with concepts and with the sounds of speech that represented them. Early recorded representations were those of visually perceived objects and events, as, for example, the animals and activities depicted in Paleolithic cave drawings. The evolution of writing systems proceeded through the early development of <a name="ref212032" id="ref212032"></a><a data-ytrk="/548" href="/topic/pictography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/459568/pictography">pictographic</span></a> languages, in which a symbol would represent an entire concept. Such symbols would go through many metamorphoses of shape in which the resemblance between each symbol and the object it stood for gradually disappeared, but its semantic meaning would become more precise. As the conceptual world of humans became larger, the symbols, called <a name="ref212033" id="ref212033"></a><a data-ytrk="/548" href="/topic/ideogram"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/281922/ideogram">ideographs</span></a>, grew in number. Modern Chinese, a present-day result of this evolutionary direction of a pictographic writing system, has upwards of 50,000 ideographs.</p><p>At some point in the evolution of written languages, the method of representation shifted from the pictographic to the phonetic: speech sounds began to be represented by an <a name="ref212034" id="ref212034"></a>alphabet of graphic symbols. Combinations of a relatively small set of such symbols could stand for more complex concepts as words, phrases, and sentences. The <a data-ytrk="/548" href="/technology/invention-technology"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/292272/invention">invention</span></a> of the written phonetic alphabet is thought to have taken place during the 2nd millennium <span class="bps-small-text">bc</span>. The pragmatic advantages of alphabetic writing systems over the pictographic became apparent twice in the past millennium: after the invention of the movable-type <a data-ytrk="/548" href="/technology/printing-press"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/477067/printing-press">printing press</span></a> in the 15th century and again with the development of information processing by electronic means since the mid-1940s.</p><p>From the time early humans learned to represent concepts symbolically, they used whatever materials were readily available in nature for recording. The Sumerian <a name="ref212035" id="ref212035"></a><a data-ytrk="/548" href="/topic/cuneiform"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/146558/cuneiform">cuneiform</span></a>, a wedge-shaped writing system, was impressed by a <a data-ytrk="/548" href="/technology/stylus-phonograph"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/570345/stylus">stylus</span></a> into soft <a name="ref212036" id="ref212036"></a><a data-ytrk="/548" href="/topic/clay-tablet"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/120746/clay-tablet">clay tablets</span></a>, which were subsequently hardened by drying in the sun or the oven. The earliest <a name="ref212037" id="ref212037"></a><a data-ytrk="/548" href="/topic/Chinese-writing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/691537/Chinese-writing">Chinese writing</span></a>, dating to the 2nd millennium <span class="bps-small-text">bc</span>, is preserved on animal bone and shell, while early writing in India was done on palm leaves and birch bark. Applications of technology yielded other materials for writing. The Chinese had recorded their pictographs on silk, using brushes made from animal hair, long before they invented paper. The <a name="ref212038" id="ref212038"></a><a data-ytrk="/548" href="/topic/Egyptian-language"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/180732/Egyptian-language">Egyptians</span></a> first wrote on cotton, but they began using <a name="ref212039" id="ref212039"></a><a data-ytrk="/548" href="/topic/papyrus-writing-material"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/442267/papyrus">papyrus</span></a> sheets and rolls made from the fibrous lining of the papyrus plant during the 4th millennium <span class="bps-small-text">bc</span>. The reed brush and a palette of <a data-ytrk="/548" href="/topic/ink-writing-medium"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/288371/ink">ink</span></a> were the implements with which they wrote hieroglyphic <a data-ytrk="/548" href="/technology/script-computer-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1086480/script">script</span></a>. Writing on <a name="ref212040" id="ref212040"></a><a data-ytrk="/548" href="/topic/parchment"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/443382/parchment">parchment</span></a>, a material that was superior to papyrus and was made from the prepared skins of animals, became commonplace about 200 <span class="bps-small-text">bc</span>, some 300 years after its first recorded use, and the <a data-ytrk="/548" href="/topic/quill-pen"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/487311/quill-pen">quill pen</span></a> replaced the reed brush. By the 4th century <span class="bps-small-text">ad</span>, parchment came to be the principal writing material in Europe.</p><p><a name="ref212041" id="ref212041"></a><a data-ytrk="/548" href="/technology/paper"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/441928/paper">Paper</span></a> was invented in China at the beginning of the 2nd century <span class="bps-small-text">ad</span>, and for some 600 years its use was confined to East Asia. In <span class="bps-small-text">ad</span> 751 Arab and Chinese armies clashed at the Battle of Talas, near Samarkand; among the Chinese taken captive were some papermakers from whom the Arabs learned the techniques. From the 7th century on, paper became the dominant writing material of the Islamic world. Papermaking finally reached Spain and Sicily in the 12th century, and it took another three centuries before it was practiced in Germany.</p><p>With the invention of <a name="ref212042" id="ref212042"></a><a data-ytrk="/548" href="/topic/printing-publishing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/477017/printing">printing</span></a> from <a data-ytrk="/548" href="/technology/movable-type"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/395178/movable-type">movable type</span></a>, <a name="ref212043" id="ref212043"></a><a data-ytrk="/548" href="/technology/typesetting"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/611740/typesetting">typesetting</span></a> became the standard method of creating copy. Typesetting was an entirely manual operation until the <a data-ytrk="/548" href="/topic/adoption-education"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/6296/adoption">adoption</span></a> of a <a name="ref212044" id="ref212044"></a><a data-ytrk="/548" href="/technology/typewriter"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/611749/typewriter">typewriter-like</span></a> <a data-ytrk="/548" href="/topic/keyboard-information-recording"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/315878/keyboard">keyboard</span></a> in the 19th century. In fact, it was the <a data-ytrk="/548" href="/technology/typewriter"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/611749/typewriter">typewriter</span></a> that mechanized the process of recording original text. Although the typewriter was invented during the early 18th century in England, the first practical version, constructed by the American inventor <a name="ref212045" id="ref212045"></a><a data-ytrk="/548" href="/biography/Christopher-Latham-Sholes"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/541481/Christopher-Latham-Sholes">Christopher Latham Sholes</span></a>, did not appear until 1867. The mechanical typewriter finally found wide use after World War I. Today its electronic variant, the computer video terminal, is used pervasively to <a data-ytrk="/548" href="/technology/record-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/493773/record">record</span></a> original text.</p><p>Recording of original nontextual (image) information was a manual process until the development of <a name="ref212046" id="ref212046"></a><a data-ytrk="/548" href="/technology/technology-of-photography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/457963/technology-of-photography">photography</span></a> during the early decades of the 19th century; drawing and carving were the principal early means of recording graphics. Other techniques were developed alongside printing—for example, etching in stone and metal. The invention of <a data-ytrk="/548" href="/technology/film-photography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/206935/film">film</span></a> and the photographic process added a new dimension to information acquisition: for the first time, complex visual images of the real world could be captured accurately. Photography provided a method of storing information in less space and more accurately than was previously possible with narrative information.</p><p>During the 20th century, versatile electromagnetic media opened up new possibilities for capturing original analog information. <a name="ref730115" id="ref730115"></a><a data-ytrk="/548" href="/topic/magnetic-tape"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/357320/magnetic-tape">Magnetic audio tape</span></a> is used to capture speech and music, and magnetic <a data-ytrk="/548" href="/topic/videotape"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1521365/videotape">videotape</span></a> provides a low-cost medium for recording analog voice and video signals directly and simultaneously. Magnetic technology has other uses in the direct recording of analog information, including alphanumerics. Magnetic characters, bar codes, and special marks are printed on checks, labels, and forms for subsequent sensing by magnetic or optical readers and conversion to digital form. Banks, educational institutions, and the retail industry rely heavily on this technology. Nonetheless, paper and film continue to be the dominant media for direct storage of textual and visual information in analog form.</p></section><section class="eb-topic-section" data-level="2" id="toc61654"><h2 class="h3"><span>Acquisition and recording of information in digital form</span></h2><p>The versatility of modern information systems stems from their ability to represent information electronically as digital signals and to manipulate it automatically at exceedingly high speeds. Information is stored in <a name="ref212048" id="ref212048"></a><a data-ytrk="/548" href="/technology/bit-communications"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/67148/bit">binary</span></a> devices, which are the basic components of <a name="ref730175" id="ref730175"></a><a data-ytrk="/548" href="/topic/digital-information"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/163310/digital-information">digital</span></a> technology. Because these devices exist only in one of two states, information is represented in them either as the absence or the presence of energy (electric pulse). The two states of binary devices are conveniently designated by the binary digits, or bits, zero (0) and one (1).</p><p>In this manner, alphabetic symbols of natural-language writing systems can be represented digitally as combinations of zeros (no pulse) and ones (pulse). Tables of equivalences of alphanumeric characters and strings of binary digits are called <a name="ref212049" id="ref212049"></a>coding systems, the counterpart of writing systems. A combination of three binary digits can represent up to eight such characters; one comprising four digits, up to 16 characters; and so on. The choice of a particular coding system depends on the size of the character set to be represented. The widely used systems are the American Standard Code for Information Interchange (<a name="ref212050" id="ref212050"></a><a data-ytrk="/548" href="/topic/ASCII"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/37933/ASCII">ASCII</span></a>), a seven- or eight-bit code representing the English alphabet, numerals, and certain special characters of the standard computer keyboard; and the corresponding eight-bit <a name="ref212051" id="ref212051"></a><a data-ytrk="/548" href="/topic/EBCDIC"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/198825/EBCDIC">Extended Binary Coded Decimal Interchange Code</span></a> (EBCDIC), used for computers produced by IBM (International Business Machines Corp.) and most compatible systems. The digital representation of a character by eight bits is called a <a name="ref212052" id="ref212052"></a><a data-ytrk="/548" href="/technology/byte"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/87112/byte">byte</span></a>.</p><p>The seven-bit ASCII code is capable of representing up to 128 alphanumeric and special characters—sufficient to accommodate the writing systems of many phonetic scripts, including Latin and Cyrillic. Some alphabetic scripts require more than seven bits; for example, the Arabic alphabet, also used in the Urdu and Persian languages, has 28 consonantal characters (as well as a number of vowels and diacritical marks), but each of these may have four shapes, depending on its position in the word.</p><p>For digital representation of nonalphabetic writing systems, even the eight-bit code accommodating 256 characters is inadequate. Some writing systems that use Chinese characters, for example, have more than 50,000 ideographs (the minimal standard <a data-ytrk="/548" href="/technology/font"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/212443/font">font</span></a> for the Hanzi system in Chinese and the kanji system in Japanese has about 7,000 ideographs). Digital representation of such scripts can be accomplished in three ways. One approach is to develop a phonetic character set; the Chinese Pinyin, the Korean Hangul, and the Japanese hiragana phonetic schemes all have alphabetic sets similar in number to the Latin alphabet. As the use of phonetic alphabets in Oriental cultures is not yet widespread, they may be converted to ideographic by means of a dictionary lookup. A second technique is to decompose ideographs into a small number of elementary signs called strokes, the sum of which constitutes a shape-oriented, nonphonetic alphabet. The third approach is to use more than eight bits to encode the large numbers of ideographs; for instance, two bytes can represent uniquely more than 65,000 ideographs. Because the eight-bit ASCII code is inadequate for a number of writing systems, either because they are nonalphabetic or because their phonetic scripts possess large numbers of diacritical marks, the computer industry in 1991 began formulating a new international coding standard based on 16 bits.</p><section class="eb-topic-section" data-level="3" id="toc61655"><h2 class="h4"><span>Recording media</span></h2><p><a href="/topic/information-processing/images-videos/The-challenge-of-preserving-digital-information-2009-film/198702" class="bps-assembly-container media-overlay-link" data-id="198702" data-type="video" data-ytrk="77"><span class="md-assembly-content"><img alt="preserving digital information [Credit: Contunico © ZDF Enterprises GmbH, Mainz]" src="http://media-3.web.britannica.com/eb-media/37/179437-049-BEAA504D.jpg" width="426" height="240"><i class="fa fa-play-circle-o fa-3x"></i><span class="md-assembly-thumb-caption"><span class="md-assembly-thumb-title">preserving digital information</span><span class="md-assembly-thumb-credit">Contunico © ZDF Enterprises GmbH, Mainz</span></span></span></a><a name="ref212053" id="ref212053"></a><a data-ytrk="/548" href="/topic/punched-card"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/483451/punched-card">Punched cards</span></a> and perforated paper tape were once widely used to store data in binary form. Today they have been supplanted by media based on electromagnetic and electro-optic technologies except in a few special applications</p><p>Present-day storage media are of two types: random- and serial-, or sequential-, access. In <a name="ref212055" id="ref212055"></a><a data-ytrk="/548" href="/technology/RAM-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/491033/RAM">random-access</span></a> media (such as primary memory), the time required for accessing a given piece of data is independent of its location, while in <a name="ref212056" id="ref212056"></a>serial-access media the access time depends on the data’s location and the position of the read-write <a data-ytrk="/548" href="/topic/head-magnetic-recording"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/258050/head">head</span></a>. The typical serial-access medium is <a data-ytrk="/548" href="/topic/magnetic-tape"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/357320/magnetic-tape">magnetic tape</span></a>. The storage density of magnetic tape has increased considerably over the years, mainly by increases in the number of tracks packed across the width of the tape.</p><p>While magnetic tape remains a popular choice in applications requiring low-cost <a data-ytrk="/548" href="/technology/auxiliary-storage"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/45280/auxiliary-storage">auxiliary storage</span></a> and data exchange, new tape variants began entering the market of the 1990s. Video recording tape has been adapted for digital storage, and <a name="ref212057" id="ref212057"></a><a data-ytrk="/548" href="/topic/digital-audio-tape"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/163266/digital-audio-tape">digital audio tape</span></a> (DAT) surpasses all tape storage devices in offering the highest areal data densities. DAT technology uses a helical-scan recording method in which both the tape and the recording head move simultaneously, which allows extremely high recording densities. Early four-millimetre DAT cassettes had a capacity of up to eight billion bytes (eight gigabytes).</p><p>Another type of magnetic storage medium, the <a name="ref212058" id="ref212058"></a><a data-ytrk="/548" href="/topic/magnetic-disk"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/357041/magnetic-disk">magnetic disk</span></a>, provides rapid, random access to data. This device, developed in 1962, consists of either an aluminum or a plastic platen coated with a metallic material. Information is recorded on a disk by turning the charge of the read-write head on and off, which produces magnetic “dots” representing binary digits in circular tracks. A block of data on a given track can be accessed without having to pass over a large portion of its contents sequentially, as in the case of tape. Data-retrieval time is thus reduced dramatically. <a data-ytrk="/548" href="/technology/hard-disk"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1521171/hard-disk">Hard disk</span></a> drives built into personal computers and workstations have storage capacities of up to several gigabytes. Large computers using disk cartridges can provide virtually unlimited mass storage.</p><p>During the 1970s the <a name="ref212060" id="ref212060"></a><a data-ytrk="/548" href="/technology/floppy-disk"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/210582/floppy-disk">floppy disk</span></a>—a small, flexible disk—was introduced for use in personal computers and other <a data-ytrk="/548" href="/technology/microcomputer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/380316/microcomputer">microcomputer</span></a> systems. Compared with the storage capacity of the conventional <a data-ytrk="/548" href="/technology/hard-disk"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1521171/hard-disk">hard disk</span></a>, that of such a “soft” diskette is low—under three million characters. This medium is used primarily for loading and backing up personal computers.</p><p>An entirely different kind of recording and storage medium, the <a name="ref212061" id="ref212061"></a><a data-ytrk="/548" href="/topic/optical-disc"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/430383/optical-disc">optical</span></a> disc, became available during the early 1980s. The <a data-ytrk="/548" href="/topic/optical-disc"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/430383/optical-disc">optical disc</span></a> makes use of <a name="ref212062" id="ref212062"></a><a data-ytrk="/548" href="/technology/laser"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/330874/laser">laser</span></a> technology: digital data are recorded by burning a series of microscopic holes, or pits, with a laser beam into thin metallic film on the surface of a 4<span class="bps-article-fraction"><sup>3</sup>/<sub>4</sub></span>-inch (12-centimetre) plastic disc. In this way, information from magnetic tape is encoded on a master disc; subsequently, the master is replicated by a process called stamping. In the read mode, low-intensity laser light is reflected off the disc surface and is “read” by light-sensitive diodes. The radiant energy received by the diodes varies according to the presence of the pits, and this input is digitized by the diode circuits. The digital signals are then converted to analog information on a video <a data-ytrk="/548" href="/technology/screen-printing-process"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/529845/screen">screen</span></a> or in printout form.</p><p>Since the introduction of this technology, three main types of <a data-ytrk="/548" href="/topic/optical-storage"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/430490/optical-storage">optical storage</span></a> media have become available: (1) <a name="ref287297" id="ref287297"></a>rewritable, (2) write-once read-many (<a name="ref287298" id="ref287298"></a><a data-ytrk="/548" href="/technology/WORM-computer-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/649106/WORM">WORM</span></a>), and (3) <a data-ytrk="/548" href="/technology/compact-disc"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/129497/compact-disc">compact disc</span></a> <a data-ytrk="/548" href="/technology/read-only-memory"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/492815/read-only-memory">read-only memory</span></a> (<a name="ref287299" id="ref287299"></a><a data-ytrk="/548" href="/technology/CD-ROM"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/100922/CD-ROM">CD-ROM</span></a>). Rewritable discs are functionally equivalent to magnetic disks, although the former are slower. WORM discs are used as an archival storage medium to enter data once and retrieve it many times. CD-ROMs are the preferred medium for electronic distribution of digital libraries and <a data-ytrk="/548" href="/technology/software"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/552496/software">software</span></a>. To raise storage capacity, optical discs are arranged into “jukeboxes” holding as many as 10 million pages of text or more than one terabyte (one trillion bytes) of image data. The high storage capacities and random access of the magneto-optical, rewritable discs are particularly suited for storing <a data-ytrk="/548" href="/technology/multimedia"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/397049/multimedia">multimedia</span></a> information, in which text, image, and sound are combined.</p></section><section class="eb-topic-section" data-level="3" id="toc61656"><h2 class="h4"><span>Recording techniques</span></h2><p>Digitally stored information is commonly referred to as <a name="ref287300" id="ref287300"></a><a data-ytrk="/548" href="/technology/data-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/152149/data">data</span></a>, and its analog counterpart is called <a name="ref287301" id="ref287301"></a><a data-ytrk="/548" href="/technology/source-data"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/555467/source-data">source data</span></a>. Vast quantities of nondocument analog data are collected, digitized, and compressed automatically by means of appropriate instruments in fields such as astronomy, environmental monitoring, scientific experimentation and modeling, and national security. The capture of information generated by humankind, in the form of packages of symbols called documents, is accomplished by manual and, increasingly, automatic techniques. Data are entered manually by striking the keys of a <a name="ref287302" id="ref287302"></a><a data-ytrk="/548" href="/topic/keyboard-information-recording"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/315878/keyboard">keyboard</span></a>, touching a computer screen, or writing by hand on a <a data-ytrk="/548" href="/technology/digital-tablet"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1056165/digital-tablet">digital tablet</span></a> or its variant, the so-called <a data-ytrk="/548" href="/technology/pen-writing-implement"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/449539/pen">pen</span></a> computer. Manual data entry, a slow and error-prone process, is facilitated to a degree by special computer programs that include editing software, with which to insert formatting commands, verify spelling, and make text changes, and document-formatting software, with which to arrange and rearrange text and graphics flexibly on the output <a data-ytrk="/548" href="/technology/page-computer-memory"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/438202/page">page</span></a>.</p><p>It is estimated that 5 percent of all documents in the United States exist in digitized form and that two-thirds of the paper documents cannot be digitized by keyboard transcription because they contain drawings or still images and because such transcription would be highly uneconomical. Such documents are digitized economically by a process called <a name="ref287303" id="ref287303"></a><a data-ytrk="/548" href="/topic/document"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/167478/document">document</span></a> imaging (see <a href="/topic/information-processing/images-videos/2014" class="media-overlay-link" data-id="2014" data-type="image">Figure 2</a>).</p><p>Document imaging utilizes digital scanners to generate a digital representation of a document page. An <a name="ref287304" id="ref287304"></a><a data-ytrk="/548" href="/technology/optical-scanner"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/283266/optical-scanner">image scanner</span></a> divides the page into minute picture areas called <a name="ref287305" id="ref287305"></a><a data-ytrk="/548" href="/technology/pixel"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/459599/pixel">pixels</span></a> and produces an <a data-ytrk="/548" href="/technology/array-electronics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/673614/array">array</span></a> of binary digits, each representing the brightness of a <a data-ytrk="/548" href="/technology/pixel"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/459599/pixel">pixel</span></a>. The resulting stream of bits is enhanced and compressed (to as little as 10 percent of the original volume) by a device called an <a name="ref287306" id="ref287306"></a><a data-ytrk="/548" href="/technology/image-controller"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/283241/image-controller">image controller</span></a> and is stored on a magnetic or optical medium. A large storage capacity is required, because it takes about 45,000 bytes to store a typical compressed text page of 2,500 characters and as much as 1,000,000 bytes to store a page containing an image. Aside from document imaging applications, digital scanning is used for transmission of documents via facsimile, in satellite photography, and in other applications.</p><p>An image scanner digitizes an entire document page for storage and display as an image and does not recognize characters and words of text. The stored material therefore cannot be linguistically manipulated by text processing and other software techniques. When such manipulation is desired, a software program performs the <a name="ref287307" id="ref287307"></a><a data-ytrk="/548" href="/technology/OCR"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/430371/OCR">optical character recognition</span></a> (<a data-ytrk="/548" href="/technology/OCR"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/430371/OCR">OCR</span></a>) function by converting each optically scanned character into an electric signal and comparing it with the internally stored representation of an alphabet of characters, so as to select from it the one that matches the scanned character most closely or to reject it as an unidentifiable token. The more sophisticated of present-day OCR programs distinguish shapes, sizes, and pitch of symbols—including handwriting—and learn from experience. A universal OCR <a data-ytrk="/548" href="/technology/machine"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/354611/machine">machine</span></a> is not available, however, for even a single alphabet.</p><p>Still <a name="ref287308" id="ref287308"></a><a data-ytrk="/548" href="/technology/photography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/457919/history-of-photography">photographs</span></a> can be digitized by scanning or transferred from film to a compact digital disc holding more than 100 images. A recent development, the <a data-ytrk="/548" href="/technology/digital-camera"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/882189/digital-camera">digital camera</span></a>, makes it possible to bypass the film/paper step completely by capturing the image into the camera’s random-access memory or a special diskette and then transferring it to a personal computer. Since both technologies produce a graphics <a data-ytrk="/548" href="/technology/file-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/206798/file">file</span></a>, in either case the image is editable by means of suitable software.</p><p>The digital <a name="ref287309" id="ref287309"></a><a data-ytrk="/548" href="/technology/sound-recording"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/555393/sound-recording">recording</span></a> of sound is important because speech is the most frequently used natural carrier of communicable information. Direct capture of sound into personal computers is accomplished by means of a <a name="ref287310" id="ref287310"></a><a data-ytrk="/548" href="/technology/digital-signal-processor"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/163326/digital-signal-processor">digital signal processor</span></a> (DSP) chip, a special-purpose device built into the computer to perform array-processing operations. Conversion of analog audio signals to digital recordings is a commonplace process that has been used for years by the telecommunications and entertainment industries. Although the resulting digital <a data-ytrk="/548" href="/technology/sound-track"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/555414/sound-track">sound track</span></a> can be edited, automatic speech recognition—analogous to the recognition of characters and words in text by means of optical character recognition—is still under development. When perfected, voice recognition is certain to have a tremendous impact on the way humans communicate with recorded information, with computers, and among themselves.</p><p>By the beginning of the 1990s, the technology to record (or convert), store in digital form, and edit all visually and aurally perceived signals—<a name="ref287311" id="ref287311"></a><a data-ytrk="/548" href="/topic/electronic-publishing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/183863/electronic-publishing">text</span></a>, graphics, still images, animation, motion video, and sound—had thus become available and affordable. These capabilities opened a way for a new kind of multimedia document that employs <a data-ytrk="/548" href="/technology/print"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/476999/print">print</span></a>, video, and sound to generate more powerful and colourful messages, communicate them securely at electronic speeds, and allow them to be modified almost at will. The traditional business letter, <a data-ytrk="/548" href="/topic/newspaper"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/413113/newspaper">newspaper</span></a>, journal, and <a data-ytrk="/548" href="/topic/book-publication"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/73295/book">book</span></a> will no longer be the same.</p></section></section><section class="eb-topic-section" data-level="2" id="toc61657"><h2 class="h3"><span>Inventory of recorded information</span></h2><p>The development of recording media and techniques enabled society to begin building a store of human knowledge. The idea of collecting and organizing written records is thought to have originated in <a name="ref287314" id="ref287314"></a><a data-ytrk="/548" href="/place/Sumer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/573176/Sumer">Sumer</span></a> about 5,000 years ago; <a name="ref287315" id="ref287315"></a><a data-ytrk="/548" href="/place/ancient-Egypt"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/180468/ancient-Egypt">Egyptian</span></a> writing was introduced soon after. Early collections of Sumerian and Egyptian writings, recorded in cuneiform on clay tablets and in hieroglyphic script on papyrus, contained <a name="ref287312" id="ref287312"></a><a data-ytrk="/548" href="/topic/information-system"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287895/information-system">information</span></a> about legal and economic transactions. In these and other early <a name="ref287313" id="ref287313"></a><a data-ytrk="/548" href="/topic/document"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/167478/document">document</span></a> collections (e.g., those of <a name="ref287316" id="ref287316"></a><a data-ytrk="/548" href="/place/China"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/111803/China">China</span></a> produced during the Shang dynasty in the 2nd millennium <span class="bps-small-text">bc</span> and <a name="ref287317" id="ref287317"></a><a data-ytrk="/548" href="/topic/Buddhism"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/83184/Buddhism">Buddhist</span></a> collections in India dating to the 5th century <span class="bps-small-text">bc</span>), it is difficult to separate the concepts of the archive and the library.</p><p>From the Middle East the concept of document collections penetrated the Greco-Roman world. Roman kings institutionalized the population and property census as early as the 6th century <span class="bps-small-text">bc</span>. The great <a name="ref287318" id="ref287318"></a><a data-ytrk="/548" href="/topic/Library-of-Alexandria"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/14417/Library-of-Alexandria">Library of Alexandria</span></a>, established in the 3rd century <span class="bps-small-text">bc</span>, is best known as a large collection of papyri containing inventories of property, taxes, and other payments by citizens to their rulers and to each other. It is, in short, the ancient equivalent of today’s administrative information systems.</p><p>The scholarly splendour of the Islamic world from the 8th to the 13th century <span class="bps-small-text">ad</span> can in large part be attributed to the maintenance of public and private book libraries. The <a name="ref287319" id="ref287319"></a><a data-ytrk="/548" href="/place/Bayt-al-Hikmah"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/56961/Bayt-al-Hikmah">Bayt al-Ḥikmah</span></a> (“House of Wisdom”), founded in <span class="bps-small-text">ad</span> 830 in Baghdad, contained a <a data-ytrk="/548" href="/topic/public-library"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/482426/public-library">public library</span></a> with a large collection of materials on a wide range of subjects, and the 10th-century <a data-ytrk="/548" href="/topic/library"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/339421/library">library</span></a> of Caliph al-<a name="ref287320" id="ref287320"></a><a data-ytrk="/548" href="/biography/al-Hakam-II"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/252096/al-Hakam-II">Ḥakam</span></a> in Cordova, Spain, boasted more than 400,000 books.</p><section class="eb-topic-section" data-level="3" id="toc61658"><h2 class="h4"><span>Primary and secondary literature</span></h2><p>The late but rapid development of European libraries from the 16th century on followed the invention of printing from movable type, which spurred the growth of the printing and publishing industries. Since the beginning of the 17th century, <a name="ref287321" id="ref287321"></a><a data-ytrk="/548" href="/art/literature"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/343579/literature">literature</span></a> has become the principal medium for disseminating knowledge. The phrase <a name="ref287322" id="ref287322"></a>primary literature is used to designate original information in various printed formats: newspapers, monographs, conference proceedings, learned and trade journals, reports, patents, bulletins, and newsletters. The <a name="ref287323" id="ref287323"></a><a data-ytrk="/548" href="/topic/scholarly-journal"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/527958/scholarly-journal">scholarly journal</span></a>, the classic medium of scientific communication, first appeared in 1665. Three hundred years later the number of periodical titles published in the world was estimated at more than 60,000, reflecting not only growth in the number of practitioners of science and expansion of its body of knowledge through specialization but also a maturing of the system of rewards that encourages scientists to publish.</p><p>The sheer quantity of printed information has for some time prevented any individual from fully absorbing even a minuscule fraction of it. Such devices as tables of contents, summaries, and indexes of various types, which aid in identifying and locating relevant information in primary literature, have been in use since the 16th century and led to the development of what is termed <a name="ref287324" id="ref287324"></a>secondary literature during the 19th century. The purpose of secondary literature is to “filter” the primary information sources, usually by subject area, and provide the indicators to this literature in the form of reviews, <a name="ref287325" id="ref287325"></a><a data-ytrk="/548" href="/topic/abstract-document"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1944/abstract">abstracts</span></a>, and <a name="ref287326" id="ref287326"></a><a data-ytrk="/548" href="/topic/index-information-retrieval"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/285174/index">indexes</span></a>. Over the past 100 years there has evolved a system of disciplinary, national, and international abstracting and indexing services that acts as a gateway to several attributes of primary literature: authors, subjects, publishers, dates (and languages) of publication, and citations. The professional activity associated with these access-facilitating tools is called <a data-ytrk="/548" href="/technology/documentation"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/167508/documentation">documentation</span></a>.</p><p>The quantity of printed materials also makes it impossible, as well as undesirable, for any institution to acquire and house more than a small portion of it. The husbanding of recorded information has become a matter of public policy, as many countries have established national <a name="ref287327" id="ref287327"></a><a data-ytrk="/548" href="/topic/library"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/339421/library">libraries</span></a> and archives to direct the orderly acquisition of analog-form documents and records. Since these institutions alone are not able to keep up with the output of such documents and records, new forms of cooperative planning and sharing recorded materials are evolving—namely, public and private, national and regional library networks and consortia.</p></section><section class="eb-topic-section" data-level="3" id="toc61659"><h2 class="h4"><span><a name="ref212097" id="ref212097"></a><a data-ytrk="/548" href="/technology/database"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/152195/database">Databases</span></a></span></h2><p>The emergence of <a name="ref730195" id="ref730195"></a><a data-ytrk="/548" href="/topic/digital-information"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/163310/digital-information">digital technology</span></a> in the mid-20th century has affected humankind’s inventory of recorded information dramatically. During the early 1960s <a name="ref287328" id="ref287328"></a><a data-ytrk="/548" href="/technology/computer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130429/computer">computers</span></a> were used to digitize text for the first time; the purpose was to reduce the cost and time required to publish two American abstracting journals, the <em>Index Medicus</em> of the National Library of Medicine and the <em>Scientific and Technical Aerospace Reports</em> of the National Aeronautics and Space Administration (NASA). By the late 1960s such bodies of digitized alphanumeric information, known as <a name="ref212096" id="ref212096"></a><a data-ytrk="/548" href="/topic/bibliography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/64536/bibliography">bibliographic</span></a> and numeric databases, constituted a new type of information resource. This resource is husbanded outside the traditional repositories of information (libraries and archives) by <a data-ytrk="/548" href="/technology/database"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/152195/database">database</span></a> “vendors.” Advances in computer storage, telecommunications, software for computer sharing, and automated techniques of text indexing and <a data-ytrk="/548" href="/technology/searching"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/530981/searching">searching</span></a> fueled the development of an on-line database service industry. Meanwhile, electronic applications to bibliographic control in libraries and archives have led to the development of computerized catalogs and of union catalogs in library networks. They also have resulted in the introduction of comprehensive automation programs in these institutions.</p><p>The explosive growth of communications networks after 1990, particularly in the scholarly world, has accelerated the establishment of the “virtual library.” At the leading <a data-ytrk="/548" href="/topic/edge-graph-theory"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/179082/edge">edge</span></a> of this development is public-domain information. Residing in thousands of databases distributed worldwide, a growing portion of this vast resource is now accessible almost instantaneously via the <a name="ref212098" id="ref212098"></a><a data-ytrk="/548" href="/technology/Internet"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/291494/Internet">Internet</span></a>, the web of computer networks linking the global communities of researchers and, increasingly, nonacademic organizations. <a data-ytrk="/548" href="/technology/Internet"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/291494/Internet">Internet</span></a> resources of electronic information include selected library catalogs, collected works of the literature, some abstracting journals, full-text electronic journals, encyclopaedias, scientific data from numerous disciplines, software archives, demographic registers, daily news summaries, environmental reports, and prices in commodity markets, as well as hundreds of thousands of e-mail and bulletin-board messages.</p><p>The vast inventory of recorded information can be useful only if it is systematically organized and if mechanisms exist for locating in it items relevant to human needs. The main approaches for achieving such organization are reviewed in the following section, as are the tools used to retrieve desired information.</p></section></section><section class="eb-topic-section" data-level="2" id="toc61660"><h2 class="h3"><span>Organization and retrieval of information</span></h2><p>In any collection, physical objects are related by order. The ordering may be random or according to some characteristic called a <a name="ref212100" id="ref212100"></a>key. Such characteristics may be intrinsic properties of the objects (e.g., size, weight, shape, or colour), or they may be assigned from some agreed-upon set, such as object class or date of purchase. The values of the key are arranged in a <a data-ytrk="/548" href="/technology/sorting-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/554995/sorting">sorting</span></a> sequence that is dependent on the type of key involved: alphanumeric key values are usually sorted in alphabetic sequence, while other types may be sorted on the basis of similarity in class, such as books on a particular subject or flora of the same genus.</p><p>In most cases, order is imposed on a set of information objects for two reasons: to create their inventory and to facilitate locating specific objects in the set. There also exist other, secondary objectives for selecting a particular ordering, as, for example, conservation of space or economy of effort in fetching objects. Unless the objects in a collection are replicated, any ordering scheme is one-dimensional and unable to meet all the functions of ordering with equal effectiveness. The main approach for overcoming some of the limitations of one-dimensional ordering of recorded information relies on extended description of its content and, for analog-form information, of some features of the physical items. This approach employs various tools of content analysis that subsequently facilitate accessing and searching recorded information.</p><section class="eb-topic-section" data-level="3" id="toc61661"><h2 class="h4"><span>Description and <a name="ref212101" id="ref212101"></a><a data-ytrk="/548" href="/topic/content-analysis"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/134755/content-analysis">content analysis</span></a> of analog-form records</span></h2><p>The collections of libraries and archives, the primary repositories of analog-form information, constitute one-dimensional ordering of physical materials in print (documents), in image form (maps and photographs), or in audio-video format (recordings and videotapes). To break away from the confines of one-dimensional ordering, librarianship has developed an extensive set of attributes in terms of which it describes each item in the collection. The rules for assigning these attributes are called <a name="ref212102" id="ref212102"></a><a data-ytrk="/548" href="/topic/library-catalog"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/339456/library-catalog">cataloging</span></a> rules. <a name="ref212103" id="ref212103"></a>Descriptive cataloging is the extraction of bibliographic elements (author names, title, publisher, date of publication, etc.) from each item; the assignment of subject categories or headings to such items is termed <a name="ref212104" id="ref212104"></a><a data-ytrk="/548" href="/topic/subject-catalog"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/570727/subject-catalog">subject cataloging</span></a>.</p><p>Conceptually, the <a data-ytrk="/548" href="/topic/library-catalog"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/339456/library-catalog">library catalog</span></a> is a table or matrix in which each row describes a discrete physical item and each column provides values of the assigned key. When such a catalog is represented digitally in a computer, any attribute can serve as the ordering key. By sorting the catalog on different keys, it is possible to produce a variety of indexes as well as subject bibliographies. More important, any of the attributes of a computerized catalog becomes a search key (access point) to the collection, surpassing the utility of the traditional card catalog.</p><p>The most useful access key to analog-form items is subject. The extensive lists of subject headings of <a data-ytrk="/548" href="/science/library-classification"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/339461/library-classification">library classification</span></a> schemes provide, however, only a gross access <a data-ytrk="/548" href="/technology/tool"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/599411/tool">tool</span></a> to the content of the items. A technique called <a name="ref212105" id="ref212105"></a><a data-ytrk="/548" href="/topic/index-information-retrieval"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/285174/index">indexing</span></a> provides a refinement over library subject headings. It consists of extracting from the item or assigning to it subject and other “descriptors”—words or phrases denoting significant concepts (topics, names) that occur in or characterize the content of the record. Indexing frequently accompanies abstracting, a technique for condensing the full text of a document into a short summary that contains its main ideas (but invariably incurs an information loss and often introduces a bias). Computer-printed, indexed abstracting journals provide a means of keeping users informed of primary information sources.</p></section><section class="eb-topic-section" data-level="3" id="toc61662"><h2 class="h4"><span>Description and content analysis of digital-form information</span></h2><p>The description of an electronic document generally follows the principles of bibliographic cataloging if the document is part of a database that is expected to be accessed directly and individually. When the database is an element of a <a data-ytrk="/548" href="/topic/universe"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/139365/universe">universe</span></a> of globally distributed database servers that are searchable in parallel, the matter of document naming is considerably more challenging, because several complexities are introduced. The document description must include the name of the database server—i.e., its physical location. Because database servers may delete particular documents, the description must also contain a <a data-ytrk="/548" href="/technology/pointer-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/466421/pointer">pointer</span></a> to the document’s logical address (the generating organization). In contrast to their usefulness in the descriptive cataloging of analog documents, physical attributes such as format and size are highly variable in the milieu of electronic documents and therefore are meaningless in a universal document-naming scheme. On the other hand, the data type of the document (text, sound, etc.) is critical to its transmission and use. Perhaps the most challenging design is the “living document”—a constantly changing pastiche consisting of sections electronically copied from different documents, interspersed with original narrative or graphics or voice comments contributed by persons in distant locations, whose different versions reside on different servers. Efforts are under way to standardize the naming of documents in the universe of electronic networks.</p><section class="eb-topic-section" data-level="4" id="toc61663"><h2 class="h5"><span><a name="ref212107" id="ref212107"></a><a data-ytrk="/548" href="/topic/machine-indexing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/354642/machine-indexing">Machine indexing</span></a></span></h2><p>The subject analysis of electronic text is accomplished by means of <a data-ytrk="/548" href="/topic/machine-indexing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/354642/machine-indexing">machine indexing</span></a>, using one of two approaches: the assignment of subject descriptors from an unlimited vocabulary (<a name="ref212108" id="ref212108"></a>free indexing) or their assignment from a list of authorized descriptors (<a name="ref212109" id="ref212109"></a>controlled indexing). A collection of authorized descriptors is called an authority list or, if it also displays various relationships among descriptors such as hierarchy or synonymy, a <a data-ytrk="/548" href="/topic/thesaurus-information-retrieval"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/591793/thesaurus">thesaurus</span></a>. The result of the indexing process is a computer file known as an inverted <a data-ytrk="/548" href="/topic/index-information-retrieval"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/285174/index">index</span></a>, which is an alphabetic listing of descriptors and the addresses of their occurrence in the document body.</p><p><a name="ref212110" id="ref212110"></a>Full-text indexing, the use of every character string (word of a natural language) in the text as an index term, is an extreme case of free-text indexing: each word in the document (except function words such as articles and prepositions) becomes an access point to it. Used earlier for the generation of concordances in literary analysis and other computer applications in the humanities, full-text indexing placed great demands on computer storage because the resulting index is at least as large as the body of the text. With decreasing cost of mass storage, automatic full-text indexing capability has been incorporated routinely into state-of-the-art information-management software.</p><p>Text indexing may be supplemented by other syntactic techniques so as to increase its precision or robustness. One such method, the <a name="ref212111" id="ref212111"></a><a data-ytrk="/548" href="/technology/SGML"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/562957/SGML">Standard Generalized Markup Language</span></a> (SGML), takes advantage of standard text markers used by editors to pinpoint the location and other characteristics of document elements (paragraphs and tables, for example). In indexing <a name="ref212112" id="ref212112"></a><a data-ytrk="/548" href="/topic/spatial-data"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/558423/spatial-data">spatial data</span></a> such as maps and astronomical images, the textual index specifies the search areas, each of which is further described by a set of coordinates defining a rectangle or irregular polygon. These digital spatial document attributes are then used to retrieve and display a specific point or a selected region of the document. There are other specialized techniques that may be employed to augment the indexing of specific document types, such as encyclopaedias, electronic mail, catalogs, bulletin boards, tables, and maps.</p></section><section class="eb-topic-section" data-level="4" id="toc61664"><h2 class="h5"><span><a name="ref212114" id="ref212114"></a><a data-ytrk="/548" href="/science/semantics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/533811/semantics">Semantic</span></a> content analysis</span></h2><p>The analysis of digitally recorded <a name="ref212113" id="ref212113"></a><a data-ytrk="/548" href="/technology/natural-language-processing-computer-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/406281/natural-language-processing">natural-language</span></a> information from the semantic viewpoint is a matter of considerable complexity, and it lies at the foundation of such incipient applications as automatic question answering from a database or retrieval by means of unrestricted natural-language queries. The general approach has been that of computational linguistics: to derive representations of the syntactic and semantic relations between the linguistic elements of sentences and larger parts of the document. Syntactic relations are described by <a name="ref212115" id="ref212115"></a>parsing (decomposing) the grammar of sentences (<a href="/topic/information-processing/images-videos/2010" class="media-overlay-link" data-id="2010" data-type="image">Figure 3</a>). For semantic representation, three related formalisms dominate. In a so-called <a name="ref212116" id="ref212116"></a><a data-ytrk="/548" href="/technology/semantic-network"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/533805/semantic-network">semantic network</span></a>, conceptual entities such as objects, actions, or events are represented as a <a data-ytrk="/548" href="/topic/graph-mathematics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/241997/graph">graph</span></a> of linked nodes (<a href="/topic/information-processing/images-videos/2011" class="media-overlay-link" data-id="2011" data-type="image">Figure 4</a>). “Frames” represent, in a similar graph network, physical or abstract attributes of objects and in a sense define the objects. In “scripts,” events and actions rather than objects are defined in terms of their attributes.</p><p>Indexing and linguistic analyses of text generate a relatively gross measure of the semantic relationship, or subject similarity, of documents in a given collection. Subject similarity is, however, a pragmatic phenomenon that varies with the observer and the circumstances of an observation (purpose, time, and so forth). A technique experimented with briefly in the mid-1960s, which assigned to each document one or more “roles” (functions) and one or more “links” (pointers to other documents having the same or a similar role), showed potential for a pragmatic measure of similarity; its use, however, was too unwieldy for the computing environment of the day. Some 20 years later, a similar technique became popular under the name <a name="ref212117" id="ref212117"></a><a data-ytrk="/548" href="/technology/hypertext"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/279726/hypertext">“hypertext.”</span></a> In this technique, documents that a person or a group of persons consider related (by concept, sequence, hierarchy, experience, motive, or other characteristics) are connected via <a name="ref212118" id="ref212118"></a><a data-ytrk="/548" href="/technology/hyperlink"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/279622/hyperlink">“hyperlinks,”</span></a> mimicking the way humans associate ideas. Objects so linked need not be only text; speech and music, graphics and images, and animation and video can all be interlinked into a <a name="ref212119" id="ref212119"></a><a data-ytrk="/548" href="/technology/hypermedia"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/279629/hypermedia">“hypermedia”</span></a> database. The objects are stored with their hyperlinks, and a user can easily navigate the network of associations by clicking with a <a data-ytrk="/548" href="/technology/mouse-computer-device"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/395079/mouse">mouse</span></a> on a series of entries on a computer screen. Another technique that elicits semantic relationships from a body of text is <a data-ytrk="/548" href="/technology/SGML"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/562957/SGML">SGML</span></a>.</p></section><section class="eb-topic-section" data-level="4" id="toc61665"><h2 class="h5"><span>Image analysis</span></h2><p>The content analysis of images is accomplished by two primary methods: <a name="ref212120" id="ref212120"></a><a data-ytrk="/548" href="/technology/image-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/283261/image-processing">image processing</span></a> and <a name="ref212121" id="ref212121"></a><a data-ytrk="/548" href="/technology/pattern-recognition-computer-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/446816/pattern-recognition">pattern recognition</span></a>. <a data-ytrk="/548" href="/technology/image-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/283261/image-processing">Image processing</span></a> is a set of computational techniques for analyzing, enhancing, compressing, and reconstructing images. Pattern recognition is an information-reduction process: the assignment of visual or logical patterns to classes based on the features of these patterns and their relationships. The stages in pattern recognition involve <a data-ytrk="/548" href="/technology/measurement"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/371701/measurement">measurement</span></a> of the object to identify distinguishing attributes, extraction of features for the defining attributes, and assignment of the object to a class based on these features. Both <a data-ytrk="/548" href="/technology/image-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/283261/image-processing">image processing</span></a> and pattern recognition have extensive applications in various areas, including astronomy, medicine, industrial robotics, and remote sensing by satellites.</p></section><section class="eb-topic-section" data-level="4" id="toc61666"><h2 class="h5"><span>Speech analysis</span></h2><p>The immediate objective of content analysis of digital speech is the conversion of discrete sound elements into their alphanumeric equivalents. Once so represented, <a name="ref212123" id="ref212123"></a>speech can be subjected to the same techniques of content analysis as natural-language text—i.e., indexing and linguistic analysis. Converting speech elements into their alphanumeric counterparts is an intriguing problem because the “shape” of speech sounds embodies a wide range of many acoustic characteristics and because the linguistic elements of speech are not clearly distinguishable from one another. The technique used in <a data-ytrk="/548" href="/technology/speech-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/559065/speech-processing">speech processing</span></a> is to classify the spectral representations of sound and to match the resulting digital spectrographs against prestored “templates” so as to identify the alphanumeric equivalent of the sound. (The obverse of this technique, the digital-to-analog conversion of such templates into sound, is a relatively straightforward approach to generating synthetic speech.)</p><p>Speech processing is complex as well as expensive in terms of storage capacity and computational requirements. State-of-the-art speech recognition systems can identify limited vocabularies and parts of distinctly spoken speech and can be programmed to recognize tonal idiosyncracies of individual speakers. When more robust and reliable techniques become available and the process is made computationally tractable (as is expected with parallel computers), humans will be able to interact with computers via spoken commands and queries on a routine basis. In many situations this may make the keyboard obsolete as a data-entry device.</p></section></section><section class="eb-topic-section" data-level="3" id="toc61667"><h2 class="h4"><span>Storage structures for digital-form information</span></h2><p>Digital information is <a name="ref730215" id="ref730215"></a><a data-ytrk="/548" href="/technology/storage-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/567495/storage">stored</span></a> in complex patterns that make it feasible to address and operate on even the smallest element of symbolic expression, as well as on larger strings such as words or sentences and on images and sound.</p><p>From the viewpoint of digital information storage, it is useful to distinguish between <a name="ref212125" id="ref212125"></a>“structured” data, such as inventories of objects that can be represented by short symbol strings and numbers, and <a name="ref212126" id="ref212126"></a>“unstructured” data, such as the natural-language text of documents or pictorial images. The principal objective of all storage structures is to facilitate the processing of data elements on the basis of their relationships; the structures thus vary with the type of relationship they represent. The choice of a particular storage structure is governed by the relevance of the relationships it allows to be represented to the information-processing requirements of the task or system at hand.</p><p>In information systems whose store consists of unstructured databases of natural-language records, the objective is to retrieve records (or portions thereof) on the basis of the presence in the records of words or short phrases that constitute the query. Since there exists an index as a separate file that provides information about the locations of words and phrases in the database records, the relationships that are of interest (e.g., word adjacency) can be calculated from the index. Consequently, the database text itself can be stored as a simple ordered <a data-ytrk="/548" href="/technology/sequential-file"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/535219/sequential-file">sequential file</span></a> of records. The majority of the computations use the index, and they access the text file only to pull out the records or those portions that satisfy the result of the computations. The sequential file structure remains popular, with document-retrieval software intended for use with personal computers and <a data-ytrk="/548" href="/technology/CD-ROM"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/100922/CD-ROM">CD-ROM</span></a> databases.</p><p>When relationships between data elements need to be represented as part of the records so as to make more efficient the desired operations on these records, two types of “chained” <a name="ref212127" id="ref212127"></a><a data-ytrk="/548" href="/technology/file-structure"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/206812/file-structure">structures</span></a> are commonly used: hierarchical and network. In the <a name="ref212128" id="ref212128"></a><a data-ytrk="/548" href="/technology/hierarchical-file-structure"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/264983/hierarchical-file-structure">hierarchical file structure</span></a>, records are arranged in a scheme resembling a family tree, with records related to one another from top to bottom. In the <a name="ref212129" id="ref212129"></a><a data-ytrk="/548" href="/technology/network-file-structure"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/410336/network-file-structure">network file structure</span></a>, records are arranged in groupings known as sets; these can be connected in any number of ways, giving rise to considerable flexibility. In both hierarchical and network structures, the relationships are shown by means of <a name="ref212130" id="ref212130"></a><a data-ytrk="/548" href="/technology/pointer-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/466421/pointer">“pointers”</span></a> (i.e., identifiers such as addresses or keys) that become part of the records.</p><p>Another type of database storage structure, the <a name="ref212131" id="ref212131"></a><a data-ytrk="/548" href="/technology/relational-database"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/496814/relational-database">relational structure</span></a>, has become increasingly popular since the late 1970s. Its major advantage over the hierarchical and network structures is the ability to handle unanticipated data relationships without pointers. Relational storage structures are two-dimensional tables consisting of rows and columns, much like the conceptual library catalog mentioned above. The elegance of the relational model lies in its conceptual simplicity, the availability of theoretical underpinnings (relational algebra), and the ability of its associated software to handle data relationships without the use of pointers. The relational model was initially used for databases containing highly structured information. In the 1990s it largely replaced the hierarchical and network models, and it also became the model of choice for large-scale information-management applications, both textual and multimedia.</p><p>The feasibility of storing large volumes of full text on an economical medium (the digital optical disc) has renewed interest in the study of storage structures that permit more powerful retrieval and processing techniques to operate on cognitive entities other than words, to facilitate more extensive semantic content and context analysis, and to organize text conceptually into logical units rather than those dictated by printing conventions.</p></section><section class="eb-topic-section" data-level="3" id="toc61668"><h2 class="h4"><span><a name="ref212132" id="ref212132"></a><a data-ytrk="/548" href="/technology/query-language"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/487090/query-language">Query languages</span></a></span></h2><p>The uses of databases are manifold. They provide a means of retrieving records or parts of records and performing various calculations before displaying the results. The <a data-ytrk="/548" href="/technology/interface-computing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/677020/interface">interface</span></a> by which such manipulations are specified is called the <a data-ytrk="/548" href="/technology/query-language"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/487090/query-language">query language</span></a>. Whereas early query languages were originally so complex that interacting with electronic databases could be done only by specially trained individuals, recent interfaces are more user-friendly, allowing casual users to access database information.</p><p>The main types of popular query modes are the <a name="ref212133" id="ref212133"></a><a data-ytrk="/548" href="/technology/menu"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/375464/menu">menu</span></a>, the “fill-in-the-blank” technique, and the structured query. Particularly suited for novices, the menu requires a person to choose from several alternatives displayed on the video terminal screen. The <a name="ref212134" id="ref212134"></a><a data-ytrk="/548" href="/technology/fill-in-the-blank-technique"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/206883/fill-in-the-blank-technique">fill-in-the-blank technique</span></a> is one in which the user is prompted to enter key words as search statements. The structured query approach is effective with relational databases. It has a formal, powerful syntax that is in fact a programming language, and it is able to accommodate logical operators. One implementation of this approach, the <a name="ref212135" id="ref212135"></a><a data-ytrk="/548" href="/technology/SQL"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/569684/SQL">Structured Query Language</span></a> (SQL), has the form</p><p><em>select</em> [field Fa, Fb, . . . , Fn]</p><p><em>from</em> [database Da, Db, . . . , Dn]</p><p><em>where</em> [field Fa = abc] <em>and</em> [field Fb = def].</p><p>Structured query languages support database searching and other operations by using commands such as “find,” “delete,” “print,” “sum,” and so forth. The sentencelike structure of an <a data-ytrk="/548" href="/technology/SQL"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/569684/SQL">SQL</span></a> query resembles natural language except that its syntax is limited and fixed. Instead of using an SQL statement, it is possible to represent queries in tabular form. The technique, referred to as <a name="ref212136" id="ref212136"></a><a data-ytrk="/548" href="/technology/query-by-example"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/487088/query-by-example">query-by-example</span></a> (or QBE), displays an empty tabular form and expects the searcher to enter the search specifications into appropriate columns. The program then constructs an SQL-type query from the table and executes it.</p><p>The most flexible query language is of course natural language. The use of <a name="ref212137" id="ref212137"></a><a data-ytrk="/548" href="/technology/natural-language-processing-computer-science"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/406281/natural-language-processing">natural-language</span></a> sentences in a constrained form to search databases is allowed by some commercial database management software. These programs parse the syntax of the query; recognize its action words and their synonyms; identify the names of files, records, and fields; and perform the logical operations required. Experimental systems that accept such natural-language queries in spoken voice have been developed; however, the ability to employ unrestricted natural language to query unstructured information will require further advances in machine understanding of natural language, particularly in techniques of representing the semantic and pragmatic context of ideas. The prospect of an intelligent conversation between humans and a large store of digitally encoded knowledge is not imminent.</p></section><section class="eb-topic-section" data-level="3" id="toc61669"><h2 class="h4"><span>Information <a name="ref730216" id="ref730216"></a><a data-ytrk="/548" href="/technology/searching"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/530981/searching">searching</span></a> and retrieval</span></h2><p>State-of-the-art approaches to retrieving information employ two generic techniques: (1) matching words in the query against the database index (<a name="ref212138" id="ref212138"></a>key-word searching) and (2) traversing the database with the aid of <a data-ytrk="/548" href="/technology/hypertext"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/279726/hypertext">hypertext</span></a> or <a data-ytrk="/548" href="/technology/hypermedia"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/279629/hypermedia">hypermedia</span></a> links.</p><p>Key-word searches can be made either more general or more narrow in scope by means of logical operators (e.g., disjunction and conjunction). Because of the semantic ambiguities involved in free-text indexing, however, the precision of the key-word retrieval technique—that is, the percentage of relevant documents correctly retrieved from a collection—is far from ideal, and various modifications have been introduced to improve it. In one such enhancement, the search output is sorted by degree of relevance, based on a statistical match between the key words in the query and in the document; in another, the program automatically generates a new query using one or more documents considered relevant by the user. Key-word searching has been the dominant approach to text retrieval since the early 1960s; hypertext has so far been largely confined to personal or corporate <a data-ytrk="/548" href="/topic/information-retrieval"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1379580/information-retrieval">information-retrieval</span></a> applications.</p><p>The exponential growth of the use of <a name="ref730135" id="ref730135"></a><a data-ytrk="/548" href="/technology/computer-network"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130637/computer-network">computer networks</span></a> in the 1990s presages significant changes in systems and techniques of <a data-ytrk="/548" href="/topic/information-retrieval"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1379580/information-retrieval">information retrieval</span></a>. In a wide-area information service, a number of which began operating at the beginning of the 1990s on the Internet computer network, a user’s personal computer or terminal (called a <a name="ref212139" id="ref212139"></a><a data-ytrk="/548" href="/technology/client"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/121476/client">client</span></a>) can search simultaneously a number of databases maintained on heterogeneous computers (called <a name="ref212140" id="ref212140"></a><a data-ytrk="/548" href="/technology/server"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/535947/server">servers</span></a>). The latter are located at different geographic sites, and their databases contain different data types and often use incompatible data formats. The simultaneous, distributed search is possible because clients and servers agree on a standard document addressing scheme and adopt a common communications <a data-ytrk="/548" href="/topic/protocol-diplomacy"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/480258/protocol">protocol</span></a> that accommodates all the data types and formats used by the servers. Communication with other wide-area services using different protocols is accomplished by routing through so-called <a name="ref212141" id="ref212141"></a>gateways capable of protocol translation. The architecture of a typical networked information system is illustrated in <a href="/topic/information-processing/images-videos/2015" class="media-overlay-link" data-id="2015" data-type="image">Figure 5</a>. Several representative clients are shown: a “dumb” terminal (i.e., one with no internal processor), a personal computer (PC), a Macintosh (Mac), and a NeXT machine. They have access to data on the servers sharing a common protocol as well as to data provided by services that require protocol conversion via the gateways. Network news is such a wide-area service, containing hundreds of news groups on a variety of subjects, by which users can read and post messages.</p><p>Evolving information-retrieval techniques, exemplified by an experimental interface to the NASA space shuttle reference manual, combine natural language, hyperlinks, and key-word searching. Other techniques, seeking higher levels of retrieval precision and effectiveness, are studied by researchers involved with artificial intelligence and neural networks. The next major milestone may be a <a data-ytrk="/548" href="/technology/computer-program"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130654/computer-program">computer program</span></a> that traverses the seamless information universe of wide-area electronic networks and continuously filters its contents through profiles of organizational and personal interest: the information robot of the 21st century.</p></section></section><section class="eb-topic-section" data-level="2" id="toc61670"><h2 class="h3"><span>Information <a name="ref212142" id="ref212142"></a><a data-ytrk="/548" href="/topic/display-information-recording"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/165854/display">display</span></a></span></h2><p>For humans to perceive and understand information, it must be presented as print and image on paper; as print and image on film or on a video terminal; as sound via radio or telephony; as print, sound, and video in motion pictures, on television broadcasts, or at lectures and conferences; or in face-to-face encounters. Except for live encounters and audio information, such displays emanate increasingly from digitally stored data, with the output media being video, print, and sound.</p><section class="eb-topic-section" data-level="3" id="toc61671"><h2 class="h4"><span>Video</span></h2><p>Possibly the most widely used <a name="ref212143" id="ref212143"></a><a data-ytrk="/548" href="/technology/video-display-terminal"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/627918/video-display-terminal">video display</span></a> device, at least in the industrialized world, is the <a name="ref212144" id="ref212144"></a><a data-ytrk="/548" href="/technology/television-technology"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1262241/television-TV">television</span></a> set. Designed primarily for video and sound, its image <a data-ytrk="/548" href="/technology/resolution-photography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/499366/resolution">resolution</span></a> is inadequate for alphanumeric data except in relatively small amounts. Use of the television set in text-oriented information systems has been limited to menu-oriented applications such as videotex, in which information is selected from hierarchically arranged menus (with the aid of a numeric keyboard attachment) and displayed in fixed frames. The television, computer, and communications technologies are, however, converging in a high-resolution digital television set capable of receiving alphanumeric, video, and audio signals.</p><p>The computer video terminal is today’s ubiquitous interface that transforms computer-stored data into analog form for human viewing. The two basic apparatuses used are the <a name="ref212145" id="ref212145"></a><a data-ytrk="/548" href="/technology/cathode-ray-tube"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/99774/cathode-ray-tube-CRT">cathode-ray tube</span></a> (CRT) and the more recent <a name="ref212146" id="ref212146"></a><a data-ytrk="/548" href="/technology/flat-panel-display"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/209653/flat-panel-display">flat-panel display</span></a>. In CRT displays an electron gun emits beams of electrons on a phosphorus-coated surface; the beams are deflected, forming visible patterns representative of data. Flat-panel displays use one of four different media for visual representation of data: liquid crystal, light-emitting diodes, plasma panels, and electroluminescence. Advanced video display systems enable the user to scroll, page, zoom (change the <a data-ytrk="/548" href="/science/scale-cartography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/526312/scale">scale</span></a> of the details of the display image for enhancement), divide the screen into multiple colours and windows (viewing areas), and in some cases even activate commands by touching the screen instead of using the keyboard. The information capacity of the terminal screen depends on its resolution, which ranges from low (character-addressable) to high (bit-addressable). High resolution is indispensable for the display of graphic and video data in state-of-the-art workstations, such as those used in engineering or information systems design.</p></section><section class="eb-topic-section" data-level="3" id="toc61672"><h2 class="h4"><span><a name="ref212147" id="ref212147"></a><a data-ytrk="/548" href="/topic/printing-publishing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/477017/printing">Print</span></a></span></h2><p>Modern society continues to be dominated by printed information. The convenience and portability of print on paper make it difficult to imagine the paperless world that some have predicted. The generation of paper print has changed considerably, however. Although manual <a data-ytrk="/548" href="/technology/typesetting"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/611740/typesetting">typesetting</span></a> is still practiced for artwork, in special situations, and in some <a data-ytrk="/548" href="/technology/developing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/159982/developing">developing</span></a> countries, electronic means of composing pages for subsequent reproduction by photoduplication and other methods has become commonplace.</p><p>Since the 1960s, volume <a name="ref212148" id="ref212148"></a><a data-ytrk="/548" href="/topic/publishing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/482597/history-of-publishing">publishing</span></a> has become an automated process using large computers and high-speed printers to transfer digitally stored data on paper. The appearance of microcomputer-based publishing systems has proved to be another significant advance. Economical enough to allow even small organizations to become in-house publishers, these so-called <a name="ref212149" id="ref212149"></a><a data-ytrk="/548" href="/topic/desktop-publishing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/159237/desktop-publishing">desktop publishing</span></a> systems are able to format text and graphics interactively on a high-resolution video screen with the aid of page-description command languages. Once a page has been formatted, the entire image is transferred to an electronic printing or photocomposition device.</p><section class="eb-topic-section" data-level="4" id="toc61673"><h2 class="h5"><span><a name="ref212150" id="ref212150"></a><a data-ytrk="/548" href="/technology/computer-printer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/477009/computer-printer">Printers</span></a></span></h2><p>Computer printers are commonly divided into two general classes according to the way they produce images on paper: <a name="ref212151" id="ref212151"></a><a data-ytrk="/548" href="/technology/impact-printer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/283790/impact-printer">impact</span></a> and nonimpact. In the first type, images are formed by the print mechanism making contact with the paper through an ink-coated ribbon. The mechanism consists either of print hammers shaped like characters or of a print head containing a row of pins that produce a pattern of dots in the form of characters or other images.</p><p>Most <a name="ref212152" id="ref212152"></a>nonimpact printers form images from a matrix of dots, but they employ different techniques for transferring images to paper. The most popular type, the <a name="ref212153" id="ref212153"></a><a data-ytrk="/548" href="/technology/laser-printer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/330948/laser-printer">laser printer</span></a>, uses a beam of laser light and a system of optical components to etch images on a photoconductor drum from which they are carried via electrostatic photocopying to paper. <a name="ref212154" id="ref212154"></a>Light-emitting diode (LED) printers resemble laser printers in operation but direct light from energized diodes rather than a laser onto a photoconductive surface. <a name="ref212155" id="ref212155"></a>Ion-deposition printers make use of technology similar to that of photocopiers for producing electrostatic images. Another type of nonimpact printer, the <a name="ref212156" id="ref212156"></a><a data-ytrk="/548" href="/technology/ink-jet-printer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/288389/ink-jet-printer">ink-jet printer</span></a>, sprays electrically charged drops of ink onto the print surface.</p></section><section class="eb-topic-section" data-level="4" id="toc61674"><h2 class="h5"><span><a data-ytrk="/548" href="/topic/microfilm"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/380386/microfilm">Microfilm</span></a> and <a data-ytrk="/548" href="/topic/microfiche"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/380379/microfiche">microfiche</span></a></span></h2><p><a href="/topic/information-processing/images-videos/An-overview-of-microfilm-including-a-discussion-of-the-Barbarastollen/191521" class="bps-assembly-container media-overlay-link" data-id="191521" data-type="video" data-ytrk="77"><span class="md-assembly-content"><img alt="microfilm [Credit: Contunico © ZDF Enterprises GmbH, Mainz]" src="http://media-1.web.britannica.com/eb-media/35/179435-049-B6A60652.jpg" width="426" height="240"><i class="fa fa-play-circle-o fa-3x"></i><span class="md-assembly-thumb-caption"><span class="md-assembly-thumb-title">microfilm</span><span class="md-assembly-thumb-credit">Contunico © ZDF Enterprises GmbH, Mainz</span></span></span></a>Alphanumeric and image information can be transferred from digital computer storage directly to film. Reel <a name="ref212157" id="ref212157"></a><a data-ytrk="/548" href="/topic/microfilm"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/380386/microfilm">microfilm</span></a> and <a name="ref212158" id="ref212158"></a><a data-ytrk="/548" href="/topic/microfiche"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/380379/microfiche">microfiche</span></a> (a flat sheet of film containing multiple microimages reduced from the original) were popular methods of document storage and reproduction for several decades. During the 1990s they were largely replaced by optical disc technology (<em>see above</em> <a data-ytrk="/548" href="/topic/information-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287847/information-processing">Recording media</span></a>).</p></section></section><section class="eb-topic-section" data-level="3" id="toc61675"><h2 class="h4"><span>Voice</span></h2><p>In synthetic <a name="ref212159" id="ref212159"></a><a data-ytrk="/548" href="/topic/speech-synthesizer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/559067/speech-synthesizer">speech</span></a> generation, digitally prestored sound elements are converted to analog sound signals and combined to form words and sentences. Digital-to-analog converters are available as inexpensive boards for microcomputers or as software for larger machines. Human speech is the most effective natural form of communication, and so applications of this technology are becoming increasingly popular in situations where there are numerous requests for specific information (e.g., time, travel, and entertainment), where there is a need for repetitive instruction, in electronic <a data-ytrk="/548" href="/technology/voice-mail"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/865028/voice-mail">voice mail</span></a> (the counterpart of electronic text mail), and in toys.</p></section></section><section class="eb-topic-section" data-level="2" id="toc218046"><h2 class="h3"><span>Dissemination of information</span></h2><p>The process of recording information by handwriting was obviously laborious and required the dedication of the likes of Egyptian scribes or monks in monasteries around the world. It was only after mechanical means of reproducing writing were invented that information records could be duplicated more efficiently and economically.</p><p>The first practical method of reproducing writing mechanically was <a name="ref212161" id="ref212161"></a><a data-ytrk="/548" href="/technology/block-printing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/69570/block-printing">block printing</span></a>; it was developed in <a name="ref212162" id="ref212162"></a><a data-ytrk="/548" href="/place/China"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/111803/China">China</span></a> during the T’ang dynasty (618–907). <a name="ref212163" id="ref212163"></a><a data-ytrk="/548" href="/topic/ideogram"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/281922/ideogram">Ideographic</span></a> text and illustrations were engraved in wooden blocks, inked, and copied on paper. Used to produce books as well as cards, charms, and calendars, block printing spread to Korea and Japan but apparently not to the Islamic or European Christian civilizations. European woodcuts and metal engravings date only to the 14th century.</p><p>Printing from movable type was also invented in China (in the mid-11th century <span class="bps-small-text">ad</span>). There and in the bookmaking industry of <a name="ref212164" id="ref212164"></a><a data-ytrk="/548" href="/place/Korea"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/693609/Korea">Korea</span></a>, where the method was applied more extensively during the 15th century, the ideographic type was made initially of baked clay and wood and later of metal. The large number of typefaces required for pictographic text <a data-ytrk="/548" href="/technology/composition-printing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130157/composition">composition</span></a> continued to handicap printing in the Orient until the present time.</p><p>The invention of character-oriented printing from movable type (1440–50) is attributed to the German printer <a name="ref212165" id="ref212165"></a><a data-ytrk="/548" href="/biography/Johannes-Gutenberg"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/249878/Johannes-Gutenberg">Johannes Gutenberg</span></a>. Within 30 years of his invention, the movable-type printing press was in use throughout Europe. Character-type pieces were metallic and apparently cast from metallic molds; paper and vellum (calfskin parchment) were used to carry the impressions. Gutenberg’s technique of assembling individual letters by hand was employed until 1886, when the German-born American printer Ottmar Mergenthaler developed the <a name="ref212166" id="ref212166"></a><a data-ytrk="/548" href="/technology/Linotype"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/342596/Linotype">Linotype</span></a>, a keyboard-driven device that cast lines of type automatically. Typesetting <a data-ytrk="/548" href="/technology/speed-photography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/559076/speed">speed</span></a> was further enhanced by the <a name="ref212167" id="ref212167"></a><a data-ytrk="/548" href="/technology/Monotype-typesetting-machine"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/390177/Monotype">Monotype</span></a> technique, in which a perforated paper ribbon, punched from a keyboard, was used to operate a type-casting machine. Mechanical methods of typesetting prevailed until the 1960s. Since that time they have been largely supplanted by the electronic and <a data-ytrk="/548" href="/technology/optical-printing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/430463/optical-printing">optical printing</span></a> techniques described in the previous section.</p><p>Unlike the use of movable type for printing text, early <a name="ref212168" id="ref212168"></a><a data-ytrk="/548" href="/art/graphic-art"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/242020/graphic-art">graphics</span></a> were reproduced from wood relief engravings in which the nonprinting portions of the image were cut away. Musical scores, on the other hand, were reproduced from etched stone plates. At the end of the 18th century, the German printer Aloys Senefelder developed <a name="ref212169" id="ref212169"></a><a data-ytrk="/548" href="/topic/lithography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/343748/lithography">lithography</span></a>, a planographic technique of transferring images from a specially prepared surface of stone. In <a name="ref212170" id="ref212170"></a><a data-ytrk="/548" href="/technology/offset-printing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/425722/offset-printing">offset lithography</span></a> the image is transferred from zinc or aluminum plates instead of stone, and in <a name="ref212171" id="ref212171"></a><a data-ytrk="/548" href="/technology/photoengraving"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/457873/photoengraving">photoengraving</span></a> such plates are superimposed with film and then etched.</p><p>The first successful photographic process, the <a name="ref212172" id="ref212172"></a><a data-ytrk="/548" href="/technology/daguerreotype"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/149711/daguerreotype">daguerreotype</span></a>, was developed during the 1830s. The invention of <a name="ref212173" id="ref212173"></a><a data-ytrk="/548" href="/technology/technology-of-photography"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/457963/technology-of-photography">photography</span></a>, aside from providing a new medium for capturing still images and later video in analog form, was significant for two other reasons. First, recorded information (textual and graphic) could be easily reproduced from film, and, second, the image could be enlarged or reduced. Document reproduction from film to film has been relatively unimportant, because both printing and photocopying (see above) are cheaper. The ability to reduce images, however, has led to the development of the <a data-ytrk="/548" href="/topic/microform"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/380395/microform">microform</span></a>, the most economical method of disseminating analog-form information.</p><p>Another technique of considerable commercial importance for the duplication of paper-based information is <a name="ref212174" id="ref212174"></a><a data-ytrk="/548" href="/technology/photocopying-machine"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/457786/photocopying-machine">photocopying</span></a>, or dry photography. Printing is most economical when large numbers of copies are required, but photocopying provides a fast and efficient means of duplicating records in small quantities for personal or local use. Of the several technologies that are in use, the most popular process, xerography, is based on electrostatics.</p><p>While the volume of information issued in the form of printed matter continues unabated, the <a name="ref212175" id="ref212175"></a><a data-ytrk="/548" href="/topic/electronic-publishing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/183863/electronic-publishing">electronic publishing</span></a> industry has begun to disseminate information in digital form. The digital <a name="ref212176" id="ref212176"></a><a data-ytrk="/548" href="/topic/optical-disc"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/430383/optical-disc">optical</span></a> disc (see above <a data-ytrk="/548" href="/topic/information-processing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/287847/information-processing">Recording media</span></a>) is developing as an increasingly popular means of issuing large bodies of archival information—for example, legislation, court and hospital records, encyclopaedias and other reference works, referral databases, and libraries of computer software. Full-text databases, each containing digital page images of the complete text of some 400 periodicals stored on <a name="ref212177" id="ref212177"></a><a data-ytrk="/548" href="/technology/CD-ROM"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/100922/CD-ROM">CD-ROM</span></a>, entered the market in 1990. The optical disc provides the mass production technology for publication in machine-readable form. It offers the prospect of having large libraries of information available in virtually every school and at many professional workstations.</p><p>The coupling of computers and digital <a name="ref212178" id="ref212178"></a><a data-ytrk="/548" href="/technology/telecommunication"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/585799/telecommunication">telecommunications</span></a> is also changing the modes of information dissemination. High-speed digital satellite communications facilitate electronic printing at remote sites; for example, the world’s major newspapers and magazines transmit electronic page copies to different geographic locations for local printing and distribution. Updates of catalogs, computer software, and archival databases are distributed via e-mail, a method of rapidly forwarding and storing bodies of digital information between remote computers.</p><p>Indeed, a large-scale transformation is taking place in modes of formal as well as informal communication. For more than three centuries, formal communication in the scientific community has relied on the <a name="ref212180" id="ref212180"></a><a data-ytrk="/548" href="/topic/scholarly-journal"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/527958/scholarly-journal">scholarly</span></a> and professional periodical, widely distributed to tens of thousands of libraries and to tens of millions of individual subscribers. In 1992 a major international publisher announced that its journals would gradually be available for computer storage in digital form; and in that same year the State University of New York at Buffalo began building a completely electronic, paperless library. The scholarly article, rather than the journal, is likely to become the basic unit of formal communication in scientific disciplines; digital copies of such an article will be transmitted electronically to subscribers or, more likely, on demand to individuals and organizations who learn of its existence through referral databases and new types of alerting information services. The Internet already offers instantaneous public access to vast resources of noncommercial information stored in computers around the world.</p><p>Similarly, the traditional modes of informal communications—various types of face-to-face encounters such as meetings, conferences, seminars, workshops, and classroom lectures—are being supplemented and in some cases replaced by e-mail, <a name="ref212181" id="ref212181"></a><a data-ytrk="/548" href="/technology/bulletin-board-system"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/183745/bulletin-board-system-BBS">electronic bulletin boards</span></a> (a technique of <a data-ytrk="/548" href="/technology/broadcasting"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/80543/broadcasting">broadcasting</span></a> newsworthy textual and multimedia messages between computer users), and electronic teleconferencing and distributed problem-solving (a method of linking remote persons in real time by voice-and-image communication and special software called “groupware”). These technologies are forging virtual societal networks—communities of geographically dispersed individuals who have common professional or social interests.</p></section></section></article>
+
+        <div class="hide-on-edit">
+
+            <div class="md-horizontal-social-toolbar2 ">
+
+<ul class="md-toolbar ">
+
+	<li class="comments" title="Comments" data-ytrk="587">
+        <a href="#_comments">
+            <span class="fa-stack"><i class="fa fa-comment fa-stack-2x"></i><strong class="comments-text fa-stack-1x fa-inverse"></strong></span>
+            <span class="label">Comments</span></a>
+    </li>
+	<li class="share" title="Share" data-ytrk="113">
+        <span class="fa-stack"><i class="fa fa-share-alt fa-stack-2x"></i></span>
+        <span class="label">Share</span></li>
+	<li class="t-email" title="Email" data-ytrk="112">
+        <span class="fa-stack"><i class="fa fa-envelope fa-stack-2x"></i></span>
+        <span class="label">Email</span></li>
+	<li class="t-print" title="Print" data-ytrk="111">
+        <a href="/print/article/287847" target="_blank">
+            <span class="fa-stack"><i class="fa fa-print fa-stack-2x"></i></span>
+            <span class="label">Print</span></a>
+    </li>
+    <li class="t-cite" title="Cite" data-ytrk="117">
+        <span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-quote-right fa-stack-1x"></i></span>
+        <span class="label">Cite</span></li>
+	<li class="last-modified" data-ytrk="/588">
+        <a href="/topic/information-processing/article-history">Last Updated <time>6-9-2015</time></a>
+    </li>
+    </ul>
+
+</div>
+<div class="read-more hide-on-edit">
+        <h3 class="md-extra-content-title">You may also be interested in...</h3>
+        <ul class="row font-sans-ui">
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/computer" title="computer">computer</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/library" title="library">library</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/information-theory" title="information theory">information theory</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/information-system" title="information system">information system</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/archives" title="archives">archives</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/science/information-science" title="information science">information science</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/museum-cultural-institution" title="museum">museum</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/systems-analysis-information-processing" title="systems analysis">systems analysis</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/printing-publishing" title="printing">printing</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/photography" title="history of photography">history of photography</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/artificial-intelligence" title="artificial intelligence (AI)">artificial intelligence (AI)</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/computer-memory" title="computer memory">computer memory</a></li>
+            </ul>
+    </div>
+<h3 class="md-extra-content-title">Keep exploring</h3>
+<ul class="md-high-engagement font-sans-ui">
+    <li>
+            <a data-ytrk="/250" href="/quiz/technological-ingenuity">
+                <img src="http://media-2.web.britannica.com/eb-media/87/167287-118-CBDD028E.jpg"/>
+                <br/>Technological Ingenuity</a>
+        </li>
+    <li>
+            <a data-ytrk="/250" href="/quiz/geography-and-science-fact-or-fiction">
+                <img src="http://media-3.web.britannica.com/eb-media/60/157960-118-1695C5B6.jpg"/>
+                <br/>Geography and Science: Fact or Fiction?</a>
+        </li>
+    <li>
+            <a data-ytrk="/250" href="/quiz/computers-and-technology">
+                <img src="http://media-2.web.britannica.com/eb-media/63/166063-118-C27B3982.jpg"/>
+                <br/>Computers and Technology</a>
+        </li>
+    <li>
+            <a data-ytrk="/251" href="/list/9-britannica-articles-that-explain-the-meaning-of-life">
+                <img src="http://media-1.web.britannica.com/eb-media/43/111343-118-CF329E36.jpg"/>
+                <br/>Editor Picks: 9 Britannica Articles That Explain the Meaning of Life</a>
+        </li>
+    <li>
+            <a data-ytrk="/251" href="/list/10-of-the-most-famous-endangered-species">
+                <img src="http://media-1.web.britannica.com/eb-media/72/176572-118-C96B60B1.jpg"/>
+                <br/>Falling Stars: 10 of the Most Famous Endangered Species</a>
+        </li>
+    </ul></div>
+
+        <div class="md-fb-comments hide-on-edit" id="_comments">
+         <div id="comments" class="md-extra-content-title">
+             What made you want to look up information processing?
+         </div>
+         <div id="gigya-comments"></div>
+     </div>
+ <form method="POST" id="md-email-dialog" class="ui-hidden">
+    <label for="md-email-dialog-form-to">To</label><input class="span6" type="text" name="to" data-validation="email" required="true" id="md-email-dialog-form-to" />
+    <label for="md-email-dialog-form-from">From</label><input class="span6" type="text" name="from" data-validation="email" required="true" id="md-email-dialog-form-from" />
+    <label for="md-email-dialog-form-subject">Subject</label><input class="span6" type="text" name="subject" id="md-email-dialog-form-subject"  />
+    <label for="md-email-dialog-form-comments">Comments</label><textarea class="span6" name="comments" id="md-email-dialog-form-comments" maxlength="900" ></textarea>
+    <div class="md-email-dialog-form-msg">(Please limit to 900 characters)</div>
+    <input type="hidden" name="url" id="md-email-dialog-url" />
+    <input type="hidden" name="title" id="md-email-dialog-title" />
+    <input type="submit" value="Send"/><button>Cancel</button>
+</form></div>
+
+            <aside class="md-sidebar "><div class="hide-on-edit">
+
+	        
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-e7646afa-52a4-4dde-968a-a37fbaa45d3b" data-slot="PRE" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-e7646afa-52a4-4dde-968a-a37fbaa45d3b'); });</script>
+	</div>
+	
+
+
+<div class="google-ad-iframe">
+        <div class="sliding-box-300x50">
+            <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOK_300x50_A" class="sidebar-in-house-upsell"><img src="http://safe.britannica.com/safeimages/EBOK_300x200A.jpg"/></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-eab7fd73-215a-408b-90e7-44d3fc8bbd6e" data-slot="TOP" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-eab7fd73-215a-408b-90e7-44d3fc8bbd6e'); });</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-59b222f0-c1c8-411f-80b8-bb8e702df0c4" data-slot="BOT" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-59b222f0-c1c8-411f-80b8-bb8e702df0c4'); });</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md-sidebar-box font-sans sidebar-quiz-box">
+
+    <div class="md-sidebar-box-title"><span>FEATURED QUIZZES</span></div>
+
+    <div class="md-sidebar-box-content md-sidebar-box-content-list">
+
+	    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="font-sans-ui">
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/vocabulary-quiz">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-1.web.britannica.com/eb-media/94/178194-118-7A636614.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Vocabulary Quiz</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/true-or-false">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-3.web.britannica.com/eb-media/95/178195-118-019518C4.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">True or False</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/name-that-thing">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-1.web.britannica.com/eb-media/96/178196-118-49DC431A.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Name That Thing</span>
+            </a>
+        </li>
+    
+</ul>
+
+	    
+	    <div class="text-right md-more-link">
+            
+	            
+		            <a data-ytrk="/85" href="/quiz/browse" class="md-sidebar-list-all">See More Quizzes<i class="fa fa-chevron-right"></i></a>
+                
+				
+            
+        </div>
+	    
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md-sidebar-box font-sans sidebar-quiz-box">
+
+    <div class="md-sidebar-box-title"><span>MORE QUIZZES</span></div>
+
+    <div class="md-sidebar-box-content md-sidebar-box-content-list">
+
+	    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="font-sans-ui">
+    
+        <li>
+            <a data-ytrk="//135" href="/quiz/metals-fact-or-fiction">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-2.web.britannica.com/eb-media/15/167115-118-30B39167.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Metals: Fact or Fiction?</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//135" href="/quiz/measurement-mania">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-3.web.britannica.com/eb-media/85/167285-118-1F56053F.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Measurement Mania</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//135" href="/quiz/mountains-and-the-sea-fact-or-fiction">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-3.web.britannica.com/eb-media/50/159950-118-FDE0CC78.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Mountains and the Sea: Fact or Fiction?</span>
+            </a>
+        </li>
+    
+</ul>
+
+	    
+	    <div class="text-right md-more-link">
+            
+	            
+		            <a data-ytrk="/85" href="/quiz/browse" class="md-sidebar-list-all">See More Quizzes<i class="fa fa-chevron-right"></i></a>
+                
+				
+            
+        </div>
+	    
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-7b1d2de7-b343-41e0-b88b-447fd4a0faaa" data-slot="BOT2" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-7b1d2de7-b343-41e0-b88b-447fd4a0faaa'); });</script>
+	</div>
+	
+
+
+</div></aside>
+            <div class="md-page-wrapper-bottom hide-on-edit"></div>
+
+        </div>
+
+        </div>
+
+    <footer id="md-footer" class="footer-wrapper hide-on-edit">
+
+    <div class="footer-ad">
+            
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-d3d3c3c2-b822-433a-84d2-657ca531dc14" data-slot="BOT" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-d3d3c3c2-b822-433a-84d2-657ca531dc14'); });</script>
+	</div>
+	
+
+
+</div>
+    <div class="footer-bck">
+        <ul class="md-footer-slim">
+            <li><a data-ytrk="59" href="http://corporate.britannica.com" target="_blank">About Us</a></li>
+            <li><a data-ytrk="129" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">About Our Ads</a></li>
+            <li><a data-ytrk="37" href="http://corporate.britannica.com/contact/consumer/" target="_blank" rel="nofollow">Contact Us</a></li>
+            <li><a data-ytrk="60" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">Privacy Policy</a></li>
+            <li><a data-ytrk="61" href="http://corporate.britannica.com/termsofuse.html" target="_blank" rel="nofollow">Terms of Use</a></li>
+        </ul>
+        &copy;2015 Encyclop&aelig;dia Britannica, Inc.
+    </div>
+
+</footer><div id="md-citations" class="md-overlay-citations ui-hidden" title="Citations">
+
+    <dl>
+        <dt>MLA style:</dt>
+        <dd>"information processing".&nbsp;<em>Encyclop&aelig;dia Britannica. Encyclop&aelig;dia Britannica Online.</em><br/>Encyclop&aelig;dia Britannica Inc., 2015. Web. 20 Sep. 2015<br/>&lt;<span class="citation-url">http://www.britannica.com/topic/information-processing</span>&gt;.</dd>
+        <dt>APA style:</dt>
+        <dd>information processing.&nbsp;(2015). In <em>Encyclop&aelig;dia Britannica</em>. Retrieved from <span class="citation-url">http://www.britannica.com/topic/information-processing</span></dd>
+        <dt>Harvard style:</dt>
+        <dd>information processing.&nbsp;2015. <em>Encyclop&aelig;dia Britannica Online</em>. Retrieved 20 September, 2015, from <span class="citation-url">http://www.britannica.com/topic/information-processing</span></dd>
+        <dt>Chicago Manual of Style:</dt>
+        <dd><em>Encyclop&aelig;dia Britannica Online</em>, s. v. "information processing", accessed September 20, 2015, <span class="citation-url">http://www.britannica.com/topic/information-processing</span>.</dd>
+    </dl>
+
+    <p class="md-citations-warning">
+        While every effort has been made to follow citation style rules, there may be some discrepancies.<br/>
+        Please refer to the appropriate style manual or other sources if you have any questions.
+    </p>
+
+</div>
+<div id="md-edit-divs">
+
+<div id="md-edit-toolbar" data-position-fixed="50" class="ui-hidden">
+
+    <ul id="md-edit-toolbar-tabs" class="ui-tabs">
+        <li id="md-edit-edit-tab"><a href="#md-edit-toolbar-edit" data-ytrk="282" class="font-serif-ui">Update</a><span class="md-edit-toolbar-tab-arrow"></span></li>
+        <li id="md-edit-link-tab"><a href="#md-edit-toolbar-link" data-ytrk="283" class="font-serif-ui">Link</a><span class="md-edit-toolbar-tab-arrow"></span></li>
+    </ul>
+
+    <div class="ui-tabs-content">
+
+        <div id="md-edit-toolbar-edit">
+
+            Click anywhere inside the article to add text or insert superscripts, subscripts, and special characters.<br/>
+            You can also highlight a section and use the tools in this bar to modify existing content:
+
+            <div class="md-edit-toolbar-styles">
+                <ul>
+                    <li><button id="edit-bold" title="Bold" data-ui-editor-action="bold"></button></li>
+                    <li><button id="edit-italic" title="Italic" data-ui-editor-action="italic"></button></li>
+                    <li><button id="edit-sup" title="Superscript" data-ui-editor-action="superscript"></button></li>
+                    <li><button id="edit-sub" title="Subscript" data-ui-editor-action="subscript"></button></li>
+                    <li><button id="edit-ul" title="Bulleted List" data-ui-editor-action="insertunorderedlist"></button></li>
+                    <li><button id="edit-ol" title="Ordered List" data-ui-editor-action="insertorderedlist"></button></li>
+                    <li><button id="edit-special-char" title="Insert Special Character" data-ui-editor-action="special-characters"></button></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="md-edit-toolbar-link">
+
+            Add links to related Britannica articles!<br/>
+            
+                    You can double-click any word or highlight a word or phrase in the text below and then select an article from the search box.<br/>
+                    Or, simply highlight a word or phrase in the article, then enter the article name or term you'd like to link to in the search box below, and select from the list of results.
+                <div class="md-toolbar-link-form-container">
+                <form method="get" action="/search" id="md-edit-toolbar-link-form" class="">
+    <div class="search-box">
+        <input name="query" type="text" id="md-edit-toolbar-link-query" placeholder="Search Britannica..." class="md-edit-toolbar-link-query"  maxlength="200" />
+        <button data-ytrk="" type="submit" class="search-submit" value=""><i class="fa fa-search"></i></button>
+    </div>
+</form>
+<div class="md-edit-toolbar-link-note">
+                    <b>Note:</b> we do not allow links to external resources in editor.<br/>
+                    Please click the <a href="/topic/information-processing/article-websites"><strong>Web sites</strong></a> link for this article to add citations for<br />
+                    external Web sites.
+                </div>
+           </div>
+
+        </div>
+    </div>
+
+    <div class="md-edit-help">
+       <strong>Editing Tools:</strong>
+       <ul>
+           <li><a href="#" id="md-edit-help-tips" data-ytrk="280">Tips for Editing</a></li>
+       </ul>
+    </div>
+
+</div>
+
+<div id="md-edit-submission-toolbar" class="ui-hidden">
+    <div class="md-edit-submission-toolbar-container">
+        <div class="md-edit-submission-toolbar-buttons">
+            <button class="btn font-serif-ui" id="md-edit-cancel" data-ytrk="284">Leave Edit Mode</button>
+            <button class="btn btn-primary font-serif-ui" id="md-edit-submit" data-ytrk="285">Submit</button>
+        </div>
+    </div>
+</div>
+
+<div id="md-edit-editing-tips" title="Tips for Editing" class="md-edit-help-box ui-hidden">
+    We welcome suggested improvements to any of our articles.<br/>
+    You can make it easier for us to review and, hopefully, publish your contribution by keeping a few points in mind:<br/>
+    <ol>
+        <li>Encyclopaedia Britannica articles are written in a neutral, objective tone for a general audience.</li>
+        <li>You may find it helpful to search within the site to see how similar or related subjects are covered.</li>
+        <li>Any text you add should be original, not copied from other sources.</li>
+        <li>At the bottom of the article, feel free to list any sources that support your changes, so that we can fully understand their context. (Internet URLs are best.)</li>
+    </ol>
+    Your contribution may be further edited by our staff, and its publication is subject to our final approval. Unfortunately, our editorial approach may not be able to accommodate all contributions.
+</div>
+
+<div id="md-edit-toc-placeholder"></div>
+
+</div><div id="md-media-overlay" class="ui-hidden">
+
+    <a href="#" data-ytrk="607" class="md-media-overlay-close fa-stack" title="Close">
+        <i class="fa fa-stack-2x fa-circle-o"></i>
+        <i class="fa fa-stack-1x fa-times"></i>
+    </a>
+
+	<div class="md-media-overlay-title">
+        <div class="subtitle">MEDIA FOR:</div>
+        <div class="maintitle">information processing</div>
+    </div>
+
+    <div class="md-media-overlay-content-container">
+
+		<div class="md-media-wrapper">
+			<a data-ytrk="94" href="#" class="md-media-overlay-arrow md-media-overlay-previous"><i class="fa fa-4x fa-angle-left"></i></a>
+            <a data-ytrk="94" href="#" class="md-media-overlay-arrow md-media-overlay-next"><i class="fa fa-4x fa-angle-right"></i></a>
+			<div id="md-media-container">
+				<span></span>
+                <a rel="nofollow" title="See Full Size" id="md-media-overlay-zoom" target="_blank" href="#" data-ytrk="95" class="ui-hidden"><i class="fa fa-search-plus"></i></a>
+			</div>
+		</div>
+
+		<div id="md-media-overlay-caption" class="font-sans-ui">
+			<div id="md-media-overlay-count"></div>
+			<div id="md-media-overlay-caption-title"></div>
+			<div id="md-media-overlay-caption-text" class="fancy-scrollbar white"></div>
+			<div id="md-media-overlay-credit"></div>
+			<div id="md-media-overlay-license"></div>
+		</div>
+
+        <div class="md-media-overlay-toolbar">
+            <a id="md-media-overlay-toolbar-print" data-ytrk="96" href="#" target="_blank" title="Print" rel="nofollow"><i class="fa fa-fw fa-print"></i></a>
+            <span id="md-media-overlay-toolbar-citations" data-ytrk="605" title="Citation"><i class="fa fa-fw fa-quote-right"></i></span>
+            <span id="md-media-overlay-toolbar-email" data-ytrk="604" title="Email"><i class="fa fa-fw fa-envelope"></i></span>
+        </div>
+
+		<div id="md-media-overlay-citations" class="md-media-overlay-box ui-hidden font-sans-ui">
+		    <div class="md-media-overlay-citations-menu">
+			    <div id="md-media-overlay-citations-close" class="md-media-overlay-box-close"><i class="fa fa-stack-1x fa-times"></i></div>
+			    <em>Citation</em>
+                <ul class="md-media-overlay-citations-select">
+                    <li data-value="mla">MLA</li>
+                    <li data-value="apa">APA</li>
+                    <li data-value="harvard">Harvard</li>
+                    <li data-value="chicago">Chicago</li>
+                </ul>
+		    </div>
+			<div id="md-media-overlay-citations-text"></div>
+		</div>
+
+		<div id="md-media-overlay-email" class="md-media-overlay-box ui-hidden font-sans-ui">
+			<em>Email</em>
+			<div id="md-media-overlay-email-close" class="md-media-overlay-box-close"><i class="fa fa-stack-1x fa-times"></i></div>
+			<form id="md-media-overlay-email-form">
+                <input type="hidden" name="assembly_id" />
+                <input type="hidden" name="page_id" />
+				<label for="md-media-overlay-email-to">To:</label>
+				<input type="text" id="md-media-overlay-email-to" name="to" placeholder="Enter an email address" required="true" data-validation="email" />
+				<label for="md-media-overlay-email-from">From:</label>
+				<input type="text" id="md-media-overlay-email-from" name="from" placeholder="Enter an email address" required="true" data-validation="email" />
+				<label for="md-media-overlay-email-comment">Comment:</label>
+				<textarea id="md-media-overlay-email-comment" name="comment" placeholder="Add a comment"></textarea>
+				<input type="submit" value="SEND" />
+			</form>
+		</div>
+
+		<div id="md-media-overlay-submit-email" class="md-media-overlay-box ui-hidden font-sans-ui">
+			<div class="md-media-overlay-submit-email-ok ui-hidden">You have successfully emailed this.</div>
+			<div class="md-media-overlay-submit-email-error">Error when sending the email. Try again later.</div>
+			<input type="button" value="OK" class="btn btn-primary" />
+		</div>
+
+	</div>
+
+	<div class="md-vertical-media-strip ui-hidden"></div>
+
+	<div id="md-media-overlay-ad">
+	        <iframe id="media-overlay-ad-iframe" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="160" height="600"></iframe>
+	    </div>
+	</div><div id="loginbox-dialog" class="ui-hidden">
+    <div id="loginbox-dialog-iframe-container"></div>
+    <div class="loginbox-continue-container">
+        <p>Or click <strong>Continue</strong> to submit anonymously:</p>
+        <div class="btn loginbox-btn" id="loginbox-continue">Continue</div>
+    </div>
+</div><!--[if lt IE 9]>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-1.11.3.min.js"><\/script>');</script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-2.1.4.min.js"><\/script>');</script>
+<!--<![endif]--><script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_QkFp1fFi8gwTK97KWaFi_v2eOF3cwcvUA9vC26R9gFKQjRikRuijZ1eOnERznNEN">
+            {
+                siteName: 'britannica.com (Production - Consumer)',
+                enabledProviders: 'facebook,twitter,googleplus,linkedin,yahoo',
+                connectWithoutLoginBehavior: "alwaysLogin"
+            }
+        </script>
+        <script type="text/javascript" src="http://cdn.gigya.com/js/gigyaGAIntegration.js"></script>
+    <script src="/resources/js/min-mendel.js?v=2.36.13"></script>
+
+    <script type="text/javascript" src="/resources/files/jwplayer6/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key='Pe2g3JQXoO64YRACwMhuLjL1bdEO24JIXiW6kA=';</script><script type="text/javascript" data-type="init page">
+        $( function() {
+            Mendel.Page.init();
+            if ($.isDefined(Mendel.TopicPage)) { Mendel.TopicPage.init(); }
+        });
+
+    </script>
+
+    <!--[if lt IE 8 ]>
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    	<script type="text/javascript">window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init Quantcast bottom">
+		    _qevents.push( { qacct:"p-fePJXh17dNmkk"} );
+		</script>
+		<noscript>
+			<div style="display: none;">
+		        <img src="http://pixel.quantserve.com/pixel/p-fePJXh17dNmkk.gif" height="1" width="1" alt="Quantcast"/>
+			</div>
+		</noscript>
+	<script type="text/javascript" data-type="load analytics">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+<script type="text/javascript" data-type="init crazyeggs">
+        function CE_READY() {
+            CE2.set( 1, 'ANONYMOUS' );
+            CE2.set( 2, 'C' );
+            CE2.set( 3, 'TOPIC PAGINATED MEDIUM' );
+            
+        }
+    </script>
+    <script type="text/javascript" data-type="load crazyeggs">
+        setTimeout(function(){
+            var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/3876.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)
+        }, 1);
+    </script>
+<script src="http://www.britannica.com/webstats/mendelstats.js?v=1"></script>
+    <script type="text/javascript" data-type="eb stats">
+        
+        var EBStat={accountId:-1,host:'www.britannica.com',domain:'www.britannica.com'};
+        try{writeStat(null,{accountId:-1,hostnameOverride:'www.britannica.com',domain:'www.britannica.com', json:''});}
+        catch(err){}
+    </script>
+<script type="text/javascript" src="/resources/js/libs/jquery.scrolldepth.min.js"></script>
+	<script type="text/javascript" data-type="init scrollDepth">
+		$( function() { jQuery.scrollDepth(); } );
+		</script>
+</body>
+</html>

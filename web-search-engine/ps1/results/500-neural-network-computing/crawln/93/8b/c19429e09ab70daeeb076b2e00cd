@@ -1,0 +1,776 @@
+<!doctype html>
+
+<!--[if IE 7]><html data-ytrk-page="QUIZ QUESTION" class="no-js  lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html data-ytrk-page="QUIZ QUESTION" class="no-js  lt-ie10 lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html data-ytrk-page="QUIZ QUESTION" class="no-js  lt-ie10 ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html data-ytrk-page="QUIZ QUESTION" class="no-js " lang="en"><!--<![endif]-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ">
+
+    <!--[if lte IE 9 ]>
+    <script type="text/javascript" src="/resources/js/polyfills.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init mendel">
+        Mendel = {};
+        $UI = {};
+        (function() {
+            var html = document.getElementsByTagName('html')[0];
+            html.className = html.className.replace( 'no-js', '');
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Take this quiz at Encyclopedia Britannica to test your general knowledge." /><meta name="keywords" content="Britannica, encyclopedia Britannica, quiz, quizzes, true or false, random, knowledge, trivia" /><meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@britannica" />
+
+<meta property="og:type"  content="website"/>
+<meta property="og:title" content="True or False"/>
+<meta property="og:description" content="Take this quiz at Encyclopedia Britannica to test your general knowledge."/>
+<meta property="og:site_name" content="Encyclopedia Britannica" />
+<meta property="og:url" content="http://www.britannica.com/quiz/true-or-false"/>
+<meta property="og:image" content="http://media-3.web.britannica.com/eb-media/95/178195-118-019518C4.jpg" />
+<meta property="og:image:type" content="image/jpg" />
+<script type="text/javascript" data-type="init opengraph">
+Mendel.openGraph = {
+    type: 'website',
+    title: 'True or False',
+    description: 'Take this quiz at Encyclopedia Britannica to test your general knowledge.',
+    siteName: 'Encyclopedia Britannica',
+    url: 'http://www.britannica.com/quiz/true-or-false',
+    image: 'http://media-3.web.britannica.com/eb-media/95/178195-118-019518C4.jpg',
+    imageType: 'image/jpg'
+    
+};
+</script>
+
+<title>True or False Quiz | Britannica.com</title>
+
+    <link href="//fonts.googleapis.com/css?family=Coustard|Asap:400,700|Open+Sans:400,700,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/resources/css/libs/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/min-mendel.css?v=2.36.13" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <script type="text/javascript" data-type="init mendel config">
+
+Mendel.config = {
+	page: 'Quiz',
+	testVersion: 'C',
+	server: 'http://www.britannica.com',
+	mediaServer: "http://media.web.britannica.com",
+	currentUrl: 'http://www.britannica.com/quiz/true-or-false',
+	sharedUrl: 'http://www.britannica.com/quiz/true-or-false',
+	userType: 'ANONYMOUS',
+	userInfo: { statId: '-1'
+	           ,userId: ''
+	           ,currency: 'USD'
+	           ,country: 'CA'
+	           ,bcomId: '-3839455739875645272'
+	           ,mvst: {
+  "QUIZ_INTRO" : "INTRO_3",
+  "GIST_STRIP_POSITION" : "TOP",
+  "RR_BRITANNICA_STORIES" : "ORIGINAL",
+  "RR_STORY_BRITANNICA_STORIES" : "6_STORIES",
+  "HEADER_UPSELL_IMAGE" : "http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg",
+  "HEADER_UPSELL" : "HU_1",
+  "US_SUBSCRIPTION_URL_PREFIX" : "https://safe1.britannica.com/registrations2/signup.do?partnerCode=",
+  "SMALL_ADDTNL_RESOURCES" : "YES"
+}
+	           ,provider: 'NONE'
+	           ,preferences: {}
+	},
+	isLoggedInAsUser: false,
+	hasAds: true,
+	hasVideoAds: true,
+	
+	adapTvId: 'nj232',
+	adapTvZid: 'Eb_autoplay-free',
+	
+	logGoogleGPT: false,
+	isMobile: false,
+	isTablet: false,
+	isPhone: false,
+	analytics: [
+	   
+	   { type: 'google', id: 'UA-6636134-11', logClickAction: true, logPageLoad: true, logFakePageLoad: true },
+	   { type: 'eb', logClickAction: false, logPageLoad: false, logFakePageLoad: true }
+	   
+	],
+	logAnalytics: false,
+	includeGigya: true,
+	gigyaProviders: 'facebook,twitter,googleplus,linkedin,yahoo'
+	
+	,mendelCookie: {
+  "pagesViewed" : 1,
+  "topicPagesViewed" : 0,
+  "articlePageUrl" : null,
+  "mwQuizGroupNumber" : 13,
+  "mwQuizGroupExcept" : {
+    "MW_TRUE_FALSE" : [ 13 ]
+  },
+  "vistedTopics" : null,
+  "currentReadingList" : null,
+  "galleryReferrer" : null
+},quizPageType: 'questions'
+        ,quizId: 11000
+        ,quizType: 'MW_TRUE_FALSE'
+        ,questionsGroup: 13
+        ,quizSpellItPath: 'http://audio.merriam-webster.com/quiz/spellit/'
+        ,quizTitle: 'True or False'
+        ,quizDescription: ''
+        ,quizThumbnail: 'http://media-3.web.britannica.com/eb-media/95/178195-118-019518C4.jpg'
+        ,quizLength: 10
+        ,pointMultiplier: 5
+        ,bonusSeconds: 10,previousBest: 0
+        ,maxPoints: 205
+};
+
+</script><script type="text/javascript" data-type="init Quantcast top">
+		    var _qevents = _qevents || [];
+		    (function() {
+		        var elem = document.createElement('script');
+		        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+		        elem.async = true;
+		        elem.type = "text/javascript";
+		        var scpt = document.getElementsByTagName('script')[0];
+		        scpt.parentNode.insertBefore(elem, scpt);
+		    })();
+		</script>
+	<script type='text/javascript' data-type="load GPT">
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            (function(){ var gads = document.createElement('script');
+              gads.async = true; gads.type = 'text/javascript';
+              var useSSL = 'https:' == document.location.protocol;
+              gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+              var node = document.getElementsByTagName('script')[0];
+              node.parentNode.insertBefore(gads, node);
+            })();
+        </script>
+	    <script src="http://js.indexww.com/ht/bri2.js"></script>
+	    <script type="text/javascript" data-type="init GPT slots">
+    var googletagSlots = [];
+    googletag.cmd.push(function() {
+        
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_C/QUIZ', [300,250],'div-gpt-ad-a946d1a0-9592-4864-a22e-471f7ab59673')
+                             .setTargeting('POS',['TOP'])
+                             .addService(googletag.pubads())
+                    );
+                googletag.pubads().setTargeting('dc_ref',['http://www.britannica.com/quiz/true-or-false']);googletag.pubads().setTargeting('PAGE',[1]);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+  });
+</script><script type="text/javascript" src="http://tags.crwdcntrl.net/c/6931/cc.js?ns=_cc6931" id="LOTCC_6931"></script>
+    <script type="text/javascript" language="javascript" data-type="lotame init">_cc6931.bcp();</script>
+<!--[if lte IE 8]>
+    <script type="text/javascript" data-type="ie8 html5 tags">
+        ( function() {
+            var tags = [ 'header', 'footer', 'aside', 'nav', 'section', 'article', 'figure', 'figcaption', 'time' ];
+            for ( var i = 0; i < tags.length; document.createElement( tags[i++] ) );
+        })();
+    </script>
+    <![endif]-->
+
+</head>
+
+<body ng-app class="quiz-page user-ANONYMOUS md-desktop font-sans has-footer-ad no-toolbar no-toc leg-c">
+
+    <div class="md-page-wrapper">
+
+        <header class="font-sans-ui">
+
+    <div class="header-content">
+
+        <div class="header-title">
+
+            <h4>
+	            <a class="logo-homepage" href="/"><img src="/resources/images/header/eb-logo-header.png" alt="Encyclopedia Britannica" /></a>
+                <a class="header-thistle" href="/"></a>
+            </h4>
+
+            <div class="header-login ">
+
+                <div class="grid">
+                    <div class="grid-xs-66">
+                        <div class="header-nav text-left">
+    <ul>
+        <li><a data-ytrk="25" href="http://store.britannica.com" target="_blank">Shop</a></li>
+        <li><a data-ytrk="27" href="http://info.eb.com" target="_blank">School and Library Subscribers</a></li>
+        </ul>
+</div>
+
+
+</div>
+                    <div class="grid-xs-auto text-right">
+
+                        <ul class="header-login-links">
+                            <li>
+                                        <a data-ytrk="262" href="#" class="md-header-join-link">JOIN</a>
+                                    </li>
+                                    <li>
+                                        <a data-ytrk="17" href="#" class="login-link" >LOGIN</a>
+                                    </li>
+                                <li >
+                                    <a data-ytrk="/19" class="md-upsell-link" href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPBPSUBQUIZ_LP_MDL_C" rel="nofollow">
+                                        Activate Your Free Trial!</a>
+                                </li>
+                            </ul>
+
+                        <div class="header-login-upsell">
+                                <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPBPSUBQUIZ_LP_MDL_C" rel="nofollow"><img src="http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg"/></a>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<div id="header-global-nav" data-position-fixed="0">
+
+    <div class="header-global-nav-content grid">
+
+        <a data-ytrk="/655" class="header-global-nav-home" href="/"><img src="/resources/images/header/homepage-small-thistle-v2.png" alt="home" /></a>
+
+        <ul id="header-global-nav-buttons" data-title="navigation" class="grid">
+            <li class="grid-fit"><a data-ytrk="/439" href="/popular-topics/browse" >Popular Topics</a></li>
+            <li class="grid-fit"><a data-ytrk="/440" href="/quiz/browse"  class="selected">quizzes</a></li>
+            <li class="grid-fit"><a data-ytrk="/441" href="/gallery/browse" >galleries</a></li>
+            <li class="grid-fit"><a data-ytrk="/442" href="/list/browse" >lists</a></li>
+            </ul>
+
+        <div class="search-form grid-xs-auto">
+            <form method="get" action="/search" id="searchCriteria" class="">
+    <div class="search-box">
+        <input name="query" type="text" id="header-query" placeholder="Search Britannica..." class="query font-sans"  maxlength="200" />
+        <button data-ytrk="21" type="submit" class="search-submit" value=""><i class="fa fa-search"></i></button>
+    </div>
+</form>
+</div>
+
+        </div>
+
+    </div>
+
+<div id="content" class="md-content grid">
+
+            <div class="md-content-wrapper  md-content-quiz grid-md-auto">
+                <div ng-controller="Mendel.QuizPage.QuizController" ng-cloak >
+
+            <div ng-switch on="view">
+
+                <div ng-switch-default class="md-intro-view">
+
+                    <div class="md-quiz-intro">
+                        <img src="http://media-1.web.britannica.com/eb-media/95/178195-131-4DEB4742.jpg" alt="True or False" ng-click="setView('question')" />
+                        <div class="md-mask text-center">
+                            <div class="md-intro-content" data-category="Literature &amp; Language">
+                                <h1>True or False</h1>
+
+                                <p class="md-lead  grid-xs-hidden">
+                                    You have 10 seconds to answer each question. The faster you answer, the higher your score. When you're done, try again to beat your best score!</p>
+
+                                <button class="md-button md-button-xlg md-success" ng-click="setView('question')">Start This Quiz</button>
+
+                                <div class="md-intro-bottom grid-xs-hidden">
+                                    <em class="grid-md-hidden grid-sm-hidden">
+                                        </em>
+                                    <div class="md-social-toolbar-circle inverted colored" >
+    <i data-ytrk="690" class="fa fa-fw fa-facebook" data-provider="facebook"></i>
+    <i data-ytrk="691" class="fa fa-fw fa-twitter" data-provider="twitter"></i>
+    <i data-ytrk="692" class="fa fa-fw fa-google-plus" data-provider="googleplus"></i>
+    <i data-ytrk="693" class="fa fa-fw fa-linkedin"  data-provider="linkedin"></i>
+</div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div ng-switch-when="question" class="md-question-view">
+
+                    <h2 class="text-center grid-xs-hidden">True or False</h2>
+
+                    <div class="md-quiz-header">
+                        <span>QUESTION</span> <strong>{{currentQuestion}}</strong> of {{quiz.questions.length}}
+                        <div class="md-quiz-timer timeleft-{{ bonusRemaining }}" ng-show="bonusRemaining">
+                            <div class="text">Bonus! <span>+{{ bonusRemaining }}</span></div>
+                            <div class="time">:{{ timeRemaining }}</div></div>
+                        <div class="md-quiz-score-wrapper">
+                            <span class="hide-mobile">Your</span> score:
+                            <span class="md-quiz-score">{{scoreCard.total}}</span>
+                        </div>
+                        <div class="md-quiz-score-bars">
+                            <span class="md-quiz-difficulty">DIFFICULTY: <strong>{{difficulty[question.level]}}</strong></span>
+                            <div class="md-quiz-score-bar" ng-repeat="question in quiz.questions" ng-class="[ scoreCard.responses[$index] ]"></div>
+                        </div>
+                    </div>
+
+                    <div class="md-quiz-question-container">
+                        <div class="md-quiz-question md-quiz-txt" ng-bind-html="trusted(question.question)">Vincent van Gogh sold only one painting during his lifetime.</div>
+                            <ul class="md-quiz-answers">
+                                    <li class="answer" ng-click="checkAnswer(1)" ng-bind-html="trusted(question.answers[0])">True</li>
+                                    <li class="answer" ng-click="checkAnswer(2)" ng-bind-html="trusted(question.answers[1])">False</li>
+                                    <li class="answer" ng-show="question.answers[2]" ng-click="checkAnswer(3)" ng-bind-html="trusted(question.answers[2])"></li>
+                                    <li class="answer" ng-show="question.answers[3]" ng-click="checkAnswer(4)" ng-bind-html="trusted(question.answers[3])"></li>
+                                </ul>
+                            </div>
+                </div>
+
+                <div ng-switch-when="answer" class="md-answer-view" data-qa-response="{{scoreCard.responses[scoreCard.responses.length - 1]}}">
+
+                    <h2 class="text-center grid-xs-hidden">True or False</h2>
+
+                    <div class="md-quiz-header">
+                        <span>QUESTION</span> <strong>{{currentQuestion}}</strong> of {{quiz.questions.length}}
+                        <div class="md-quiz-timer timeleft-{{ bonusRemaining }}">
+                            <div ng-show="!answered">
+                                <div class="text">Time's up!</div>
+                                <div class="time">:00</div>
+                            </div>
+                            <div ng-show="answered">
+                                <div ng-show="isCorrect">
+                                    <div class="text">Bonus! <span>+{{ bonusRemaining }}</span></div>
+                                    <div class="time">:{{ timeRemaining }}</div>
+                                </div>
+                                <div ng-show="!isCorrect" class="incorrect text">
+                                    Oops!<br />Wrong<br />answer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md-quiz-score-wrapper">
+                            <span class="hide-mobile">Your</span> score:
+                            <span class="md-quiz-score">{{scoreCard.total}}</span>
+                            <span class="md-quiz-score animated" ng-show="scoreCard.bump">+{{scoreCard.bump}}</span>
+                        </div>
+                        <div class="md-quiz-score-bars">
+                            <span class="md-quiz-difficulty">DIFFICULTY: <strong>{{difficulty[question.level]}}</strong></span>
+                            <div class="md-quiz-score-bar" ng-repeat="question in quiz.questions" ng-class="[ scoreCard.responses[$index] ]"></div>
+                        </div>
+                    </div>
+
+                    <div class="md-quiz-question-container">
+                        <div class="md-quiz-question md-quiz-txt" ng-bind-html="trusted(question.question)">Vincent van Gogh sold only one painting during his lifetime.</div>
+                            <div class="md-quiz-answers">
+                            <div ng-repeat-start="answer in question.answers track by $index"></div>
+                            <div class="answer"
+                                 ng-class="{
+                                                incorrect: answered-1 == $index && question.correct-1 != $index,
+                                                correct: question.correct-1 == $index,
+                                                guessed: answered-1 == $index && question.correct-1 == $index,
+                                                disabled: !answered }"
+                                 ng-show="answer.length > 0"
+                                 ng-bind-html="trusted(answer)"
+                                    ></div>
+                            <div ng-show="question.correct-1 == $index">
+                                <div class="md-quiz-explanation" ng-show="question.explanation" ng-bind-html="trusted(question.explanation)"></div>
+                            </div>
+                            <div ng-repeat-end></div>
+                        </div>
+
+                        <span data-ytrk="/{{ytrk}}" class="md-quiz-answer-next md-quiz-next-link" ng-click="setView('question')">{{nextQuestion}}</span>
+                    </div>
+                </div>
+
+                <div ng-switch-when="results" class="md-quiz-results">
+
+                    <div class="md-quiz-results-header">
+                        <div class="md-quiz-results-score">
+                            <div class="your-score" data-total="{{scoreCard.total}}">Your score:</div>
+                            <div class="out-of">out of {{scoreCard.max}} points</div>
+                            <div class="count">{{scoreCard.total}}</div>
+                            <div class="score-message" ng-bind-html="trusted(scoreMessage)"></div>
+                        </div>
+                        <div>
+                            <a data-ytrk="/519" href="http://www.britannica.com/quiz/true-or-false">
+                                <span>try<br /> again</span>
+                                    <img data-type="icon" src="/resources/images/quiz/quiz-retake.png" alt="" />
+                            </a>
+                        </div>
+                        <div>
+                            <a data-ytrk="520" href="#" id="gigya-share">
+                                <span>share<br /> your score</span>
+                                <img data-type="icon" src="/resources/images/quiz/quiz-share.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="md-quiz-results-more">
+                        <div class="title">
+                            try another quiz!
+                            <a class="back-to-browse" data-ytrk="558" href="/quiz/browse">browse all quizzes</a>
+                        </div>
+                        <div class="more-quizzes">
+                            <a data-ytrk="/559" href="/quiz/languages-of-the-world"><img src="http://media-3.web.britannica.com/eb-media/69/72169-118-44A47557.jpg" alt="" /><span>Languages of the World</span></a>
+                            <a data-ytrk="/559" href="/quiz/write-vs-wrong-fact-or-fiction"><img src="http://media-2.web.britannica.com/eb-media/74/142274-118-30F254F8.jpg" alt="" /><span>Write vs. Wrong: Fact or Fiction?</span></a>
+                            <a data-ytrk="/609" href="/quiz/getting-into-character"><img src="http://media-3.web.britannica.com/eb-media/00/151200-118-B42E4634.jpg" alt="" /><span>Getting Into Character</span></a>
+                            </div>
+                    </div>
+
+                    <div class="md-quiz-scores group">
+                        <div class="age-demographics">
+
+                            <div class="your-score">Average Score:</div>
+                            <div class="out-of">out of {{ scoreCard.max }} points</div>
+                            <div class="count">{{ average || 0 | number: 0 }}</div>
+
+                            <div class="small title">How do you stack up?</div>
+                            <div ng-show="!ageSelected">
+                                <ul class="avg-score-dropdown">
+                                    <li>Select your age group:</li>
+                                    <li data-value="age10" data-ytrk="565">Teens</li>
+                                    <li data-value="age20" data-ytrk="566">20-something</li>
+                                    <li data-value="age30" data-ytrk="567">30-something</li>
+                                    <li data-value="age40" data-ytrk="568">40-something</li>
+                                    <li data-value="age50" data-ytrk="569">50-something</li>
+                                    <li data-value="age60" data-ytrk="570">60-something</li>
+                                    <li data-value="age70" data-ytrk="571">70+</li>
+                                </ul>
+                            </div>
+                            <div ng-show="ageSelected">
+                                <strong>AVERAGE SCORES</strong>
+                                <table>
+                                    <tbody>
+                                    <tr ng-class="{ selected: ageSelected == 'age10' }">
+                                        <td>Teens:</td>
+                                        <td>{{ age10.score_sum / age10.count || 0 | number: 0 }}</td>
+                                    </tr>
+                                    <tr ng-class="{ selected: ageSelected == 'age20' }">
+                                        <td>20-something:</td>
+                                        <td>{{ age20.score_sum / age20.count || 0 | number: 0 }}</td>
+                                    </tr>
+                                    <tr ng-class="{ selected: ageSelected == 'age30' }">
+                                        <td>30-something:</td>
+                                        <td>{{ age30.score_sum / age30.count || 0 | number: 0 }}</td>
+                                    </tr>
+                                    <tr ng-class="{ selected: ageSelected == 'age40' }">
+                                        <td>40-something:</td>
+                                        <td>{{ age40.score_sum / age40.count || 0 | number: 0 }}</td>
+                                    </tr>
+                                    <tr ng-class="{ selected: ageSelected == 'age50' }">
+                                        <td>50-something:</td>
+                                        <td>{{ age50.score_sum / age50.count || 0 | number: 0 }}</td>
+                                    </tr>
+                                    <tr ng-class="{ selected: ageSelected == 'age60' }">
+                                        <td>60-something:</td>
+                                        <td>{{ age60.score_sum / age60.count || 0 | number: 0 }}</td>
+                                    </tr>
+                                    <tr ng-class="{ selected: ageSelected == 'age70' }">
+                                        <td>70+:</td>
+                                        <td>{{ age70.score_sum / age70.count || 0 | number: 0 }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="leaderboards">
+                            <div class="title">Quiz Leaderboards</div>
+                            <div class="md-leaderboard-switch" data-challenge="quizmaster">
+                                <div data-quiz="">This Quiz</div>
+                                <div class="active">Overall</div>
+                            </div>
+                            <div id="gigya-leaderboard"></div>
+                        </div>
+                    </div>
+
+
+                    <div id="gigya-quiz-comments"></div>
+
+                    <div class="md-quiz-results-extras">
+                            <h4 class="title">Trending Quizzes <a class="back-to-browse" href="/quiz/browse">browse all quizzes</a></h4>
+                             
+
+
+
+
+
+
+
+
+
+
+
+<ul class="md-browse-thumb-list  grid grid-gutters grid-gutters-xs">
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/this-or-that-greek-gods-vs-roman-gods">
+                    
+                        
+                        <img src="http://media-2.web.britannica.com/eb-media/82/115182-118-FEC3021C.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">This or That?: Greek Gods vs. Roman Gods</div>
+                    
+            </a>
+        </li>
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/name-that-author">
+                    
+                        
+                        <img src="http://media-3.web.britannica.com/eb-media/57/139457-118-CA006FE2.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">Name That Author</div>
+                    
+            </a>
+        </li>
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/cheese-fact-or-fiction">
+                    
+                        
+                        <img src="http://media-1.web.britannica.com/eb-media/14/167214-118-28CC484F.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">Cheese: Fact or Fiction?</div>
+                    
+            </a>
+        </li>
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/history-buff-quiz">
+                    
+                        
+                        <img src="http://media-3.web.britannica.com/eb-media/19/153419-118-F5EF4ED0.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">History Buff Quiz</div>
+                    
+            </a>
+        </li>
+    
+</ul><h4 class="title">Featured Quizzes <a class="back-to-browse" href="/quiz/browse">browse all quizzes</a></h4>
+                             
+
+
+
+
+
+
+
+
+
+
+
+<ul class="md-browse-thumb-list  grid grid-gutters grid-gutters-xs">
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/vocabulary-quiz">
+                    
+                        
+                        <img src="http://media-1.web.britannica.com/eb-media/94/178194-118-7A636614.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">Vocabulary Quiz</div>
+                    
+            </a>
+        </li>
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/true-or-false">
+                    
+                        
+                        <img src="http://media-2.web.britannica.com/eb-media/95/178195-118-019518C4.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">True or False</div>
+                    
+            </a>
+        </li>
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/spell-it">
+                    
+                        
+                        <img src="http://media-3.web.britannica.com/eb-media/93/178193-118-4EB99A95.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">Spell It</div>
+                    
+            </a>
+        </li>
+    
+        <li class=" grid-md-25 grid-sm-33 grid-xs-50">
+            <a data-ytrk="/562" href="/quiz/name-that-thing">
+                    
+                        
+                        <img src="http://media-3.web.britannica.com/eb-media/96/178196-118-49DC431A.jpg"/>
+                    
+                    <div class="md-browse-thumb-title">Name That Thing</div>
+                    
+            </a>
+        </li>
+    
+</ul></div>
+                    </div>
+            </div>
+        </div></div>
+
+            <aside class="md-sidebar "><div class="grid grid-gutters">
+            <div class="grid-md-100 grid-fit">
+                    
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-a946d1a0-9592-4864-a22e-471f7ab59673" data-slot="TOP" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-a946d1a0-9592-4864-a22e-471f7ab59673'); });</script>
+	</div>
+	
+
+
+</div>
+            <div class="grid-md-100 grid-sm-auto">
+                <div class="md-sidebar-quizzes md-box">
+                    <h2>More <span class="grid-sm-hidden grid-md-hidden">Literature &amp; Language</span> Quizzes</h2>
+                    <a class="sidebar-quiz" href="/quiz/from-the-latin">
+                            <img class="float-left" src="http://media-2.web.britannica.com/eb-media/93/172693-118-FAB0028A.jpg" alt="From the Latin" />
+                            <div class="title">From the Latin</div>
+                        </a>
+                    <a class="sidebar-quiz" href="/quiz/famous-authors">
+                            <img class="float-left" src="http://media-3.web.britannica.com/eb-media/74/177874-118-0B8C1CB5.jpg" alt="Famous Authors" />
+                            <div class="title">Famous Authors</div>
+                        </a>
+                    <a class="sidebar-quiz" href="/quiz/a-study-of-writers">
+                            <img class="float-left" src="http://media-3.web.britannica.com/eb-media/28/176128-118-C3133FE8.jpg" alt="A Study of Writers" />
+                            <div class="title">A Study of Writers</div>
+                        </a>
+                    <div class="more-quizzes text-right">
+                        <a href="/quiz/browse">SEE MORE QUIZZES <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div></aside>
+            <div class="md-page-wrapper-bottom hide-on-edit"></div>
+
+        </div>
+
+        </div>
+
+    <footer id="md-footer" class="footer-wrapper hide-on-edit">
+
+    <div class="footer-ad">
+            
+
+
+
+
+
+
+
+
+	
+
+
+</div>
+    <div class="footer-bck">
+        <ul class="md-footer-slim">
+            <li><a data-ytrk="59" href="http://corporate.britannica.com" target="_blank">About Us</a></li>
+            <li><a data-ytrk="129" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">About Our Ads</a></li>
+            <li><a data-ytrk="37" href="http://corporate.britannica.com/contact/consumer/" target="_blank" rel="nofollow">Contact Us</a></li>
+            <li><a data-ytrk="60" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">Privacy Policy</a></li>
+            <li><a data-ytrk="61" href="http://corporate.britannica.com/termsofuse.html" target="_blank" rel="nofollow">Terms of Use</a></li>
+        </ul>
+        &copy;2015 Encyclop&aelig;dia Britannica, Inc.
+    </div>
+
+</footer><form method="POST" id="md-email-dialog" class="ui-hidden">
+    <label for="md-email-dialog-form-to">To</label><input class="span6" type="text" name="to" data-validation="email" required="true" id="md-email-dialog-form-to" />
+    <label for="md-email-dialog-form-from">From</label><input class="span6" type="text" name="from" data-validation="email" required="true" id="md-email-dialog-form-from" />
+    <label for="md-email-dialog-form-subject">Subject</label><input class="span6" type="text" name="subject" id="md-email-dialog-form-subject"  />
+    <label for="md-email-dialog-form-comments">Comments</label><textarea class="span6" name="comments" id="md-email-dialog-form-comments" maxlength="900" ></textarea>
+    <div class="md-email-dialog-form-msg">(Please limit to 900 characters)</div>
+    <input type="hidden" name="url" id="md-email-dialog-url" />
+    <input type="hidden" name="title" id="md-email-dialog-title" />
+    <input type="submit" value="Send"/><button>Cancel</button>
+</form><div id="loginbox-dialog" class="ui-hidden">
+    <div id="loginbox-dialog-iframe-container"></div>
+    <div class="loginbox-continue-container">
+        <p>Or click <strong>Continue</strong> to submit anonymously:</p>
+        <div class="btn loginbox-btn" id="loginbox-continue">Continue</div>
+    </div>
+</div><!--[if lt IE 9]>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-1.11.3.min.js"><\/script>');</script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-2.1.4.min.js"><\/script>');</script>
+<!--<![endif]--><script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_QkFp1fFi8gwTK97KWaFi_v2eOF3cwcvUA9vC26R9gFKQjRikRuijZ1eOnERznNEN">
+            {
+                siteName: 'britannica.com (Production - Consumer)',
+                enabledProviders: 'facebook,twitter,googleplus,linkedin,yahoo',
+                connectWithoutLoginBehavior: "alwaysLogin"
+            }
+        </script>
+        <script type="text/javascript" src="http://cdn.gigya.com/js/gigyaGAIntegration.js"></script>
+    <script src="/resources/js/min-mendel.js?v=2.36.13"></script>
+
+    <script type="text/javascript" data-type="init page">
+        $( function() {
+            Mendel.Page.init();
+            if ($.isDefined(Mendel.QuizPage)) { Mendel.QuizPage.init(); }
+        });
+
+    </script>
+
+    <!--[if lt IE 8 ]>
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    	<script type="text/javascript">window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init Quantcast bottom">
+		    _qevents.push( { qacct:"p-fePJXh17dNmkk"} );
+		</script>
+		<noscript>
+			<div style="display: none;">
+		        <img src="http://pixel.quantserve.com/pixel/p-fePJXh17dNmkk.gif" height="1" width="1" alt="Quantcast"/>
+			</div>
+		</noscript>
+	<script type="text/javascript" data-type="load analytics">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+<script type="text/javascript" data-type="init crazyeggs">
+        function CE_READY() {
+            CE2.set( 1, 'ANONYMOUS' );
+            CE2.set( 2, 'C' );
+            CE2.set( 3, 'QUIZ QUESTION' );
+            
+        }
+    </script>
+    <script type="text/javascript" data-type="load crazyeggs">
+        setTimeout(function(){
+            var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/3876.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)
+        }, 1);
+    </script>
+<script src="http://www.britannica.com/webstats/mendelstats.js?v=1"></script>
+    <script type="text/javascript" data-type="eb stats">
+        
+        var EBStat={accountId:-1,host:'www.britannica.com',domain:'www.britannica.com'};
+        try{writeStat(null,{accountId:-1,hostnameOverride:'www.britannica.com',domain:'www.britannica.com', json:''});}
+        catch(err){}
+    </script>
+<script type="text/javascript" src="/resources/js/libs/jquery.scrolldepth.min.js"></script>
+	<script type="text/javascript" data-type="init scrollDepth">
+		$( function() { jQuery.scrollDepth(); } );
+		</script>
+<script type="text/javascript" src="/resources/files/jwplayer6/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key='Pe2g3JQXoO64YRACwMhuLjL1bdEO24JIXiW6kA=';</script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script></body>
+</html>

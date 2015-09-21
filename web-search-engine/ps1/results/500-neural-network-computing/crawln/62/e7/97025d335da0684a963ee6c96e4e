@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" dir="ltr" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js gt-ie8" dir="ltr" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" >
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+			<title>Data Center information, news and tips - SearchDataCenter</title>
+			<meta name="viewport" content="width=device-width,initial-scale=1" >
+			<meta name="robots" content="noodp" >
+			<link rel="canonical" href="http://searchdatacenter.techtarget.com/" />
+			<meta name="google-site-verification" content="rZaq1jkHspRZlqJRwuEdqAuVm5wiEXePze_foZRIYqc" >
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="http://fast.fonts.net/jsapi/124d48dd-e515-4302-8bfb-1d5c1e3da916.js"></script><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/normalize.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/icomoon.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery.jscrollpane.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery-ui-1.10.3.custom.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.slide.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/mediaelementplayer.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/v8-legacy.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main.css?v=6.31"><!--[if IE 9]>
+<link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main_2.css?v=6.31"><![endif]-->
+<script src="http://cdn.optimizely.com/js/148927072.js"></script><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive.min.js?v=6.31"></script><script>
+TT("page", {"regHost":"http://users.techtarget.com","adScheme":"4","gaSiteAcct":"UA-18475716-5","lang":"en","ga":true,"timestamp":"2015-09-20 23:46:06","adId":"2240012798","siteName":"searchDataCenter","adAbbr":"sdc","siteType":"editorial","gaPageTrackUrl":"/page/etpk_0/ptpk_0/false/HOME/channel/cid_2240012798/date_null/mem_0/clst_0/rtpk_0/idx_0","siteId":80,"atHost":"http://go.techtarget.com","isChannel":true,"homeAdId":"2240012798","zone":"HOME"});
+</script>
+
+<!-- Begin Chartbeat -->
+		<script>var _sf_startpt=(new Date()).getTime();</script><!-- End Chartbeat -->
+	
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwcDVVZACwIDU1lS"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144×144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114×114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72×72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144×144" href="/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114×114" href="/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72×72" href="/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+	</head>
+<body id="home">
+	<div id="site-container" class="site-container">
+		<div><div><!-- PinnedNavBarController, generated at 23:46:06 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<!-- AdsController, generated at 23:46:06 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div id="interstitial" class="ad ad-ist"><script>GPT.display('interstitial')</script></div><div class="ad-wrapper header-leaderboard ad-mobile">
+	<!-- AdsController, generated at 23:46:06 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div id="mobile-lb" class="ad ad-mb"><script>GPT.display('mobile-lb')</script></div></div>
+
+<header class="header">
+	<button class="nav-toggle"><i class="icon" data-icon="9"></i></button>
+	<a href="http://searchdatacenter.techtarget.com" class="header-logo mobile-link">
+		<span class="header-logo-mobile">SearchDataCenter</span>
+	</a>
+	<a href="http://www.techtarget.com/network" class="header-logo desktop-link">
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-desktop replace_2x">
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-small replace_2x">
+	</a> 
+
+	<button class="header-search-toggle"><i class="icon" data-icon="g"></i></button>
+	<form action="http://www.techtarget.com/search/query" method="get" class="header-search">
+		<label for="header-search-input" class="visuallyhidden">Search the TechTarget Network</label>
+		<input class="header-search-input" id="header-search-input" type="text" name="q" placeholder="Search the TechTarget Network">
+	</form>
+
+	<nav class="nav">
+		<a href="http://users.techtarget.com/registration/searchDataCenter/LoginRegister.page" class="nav-join-pro"><span>Sign-up now. Start my free, unlimited access.</span></a>
+		<div class="ad-wrapper nav-pro-callout">
+			<!-- AdsController, generated at 23:46:06 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div id="promo-1" class="ad ad-pr"><script>GPT.display('promo-1')</script></div></div>
+
+		<div class="nav-user">
+		<a href="http://users.techtarget.com/registration/searchDataCenter/LoginRegister.page" class="nav-user-login"><span class="nav-user-action">Login</span></a>
+		</div>
+		<script>TT(["context","lib/jquery"],function(c,$){var u=c.getUser();if(u.loggedIn){$('div.nav-user').children("a:first")
+			.before('<span class="nav-user-name">'+u.displayName+'</span>')
+			.attr("href", "http://users.techtarget.com/registration/searchDataCenter/Logout.page?fromURL=" + window.location.href).children("span.nav-user-action:first").text('Logout');
+			$('.nav-join-pro').removeAttr('href');$('a.nav-join-pro span').hide();}else{$('div.nav-user').children("a:first").attr("href", "http://users.techtarget.com/registration/searchDataCenter/LoginRegister.page?fromURL="+window.location.href);
+			$('a.nav-join-pro').attr("href", "http://users.techtarget.com/registration/searchDataCenter/LoginRegister.page?fromURL="+window.location.href);}});
+		</script>
+		
+		<ul class="nav-list">
+			<li class="nav-list-item nav-list-item-searchsites">
+				<div class="nav-list-item-header searchdatacenter">
+					<a href="http://searchdatacenter.techtarget.com">
+						<span class="nav-list-item-header-title">
+							<span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span></span>
+					</a>
+					<i class="icon icon-arrow-down" data-icon="5"></i>
+				</div>
+				<div class="nav-list-sublist nav-list-item-dropdown">
+					<ul class="nav-list-item-jscroll">
+						<li class="nav-list-sublist-item"><a href="http://searchwindowsserver.techtarget.com">SearchWindowsServer</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchenterpriselinux.techtarget.com">SearchEnterpriseLinux</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchservervirtualization.techtarget.com">SearchServerVirtualization</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchcloudcomputing.techtarget.com">SearchCloudComputing</a></li>
+						</ul>
+				</div>
+			</li>
+			<li class="nav-list-item nav-list-item-topics">
+				<div class="nav-list-item-header">
+					<span class="nav-list-item-header-type">Topic</span>
+					<span class="nav-list-item-header-title">
+						<a>All</a>
+					</span>
+					<i class="icon icon-arrow-down" data-icon="5"></i>
+					<i class="icon icon-navigation-detail" data-icon="A"></i>
+				</div>
+				<div class="nav-list-item-dropdown infotype">
+					<div class="nav-list-item-jscroll">
+						<div class="nav-list-parent-topics">
+							<div class="nav-list-sublist-header nav-list-sublist-header-gray">Please select a category</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item" id="parent-topic-3aad1bd95109a210VgnVCM1000000d01c80aRCRD">
+										Data center operations and best practices</li>
+								<li class="nav-list-sublist-item" id="parent-topic-4a091bd95109a210VgnVCM1000000d01c80aRCRD">
+										Data center design and facilities</li>
+								<li class="nav-list-sublist-item" id="parent-topic-ba5f1bd95109a210VgnVCM1000000d01c80aRCRD">
+										Data Center Infrastructure</li>
+								<li class="nav-list-sublist-item" id="parent-topic-17d85b931b6df410VgnVCM100000ef01c80aRCRD">
+										Data center storage and networking</li>
+								<li class="nav-list-sublist-item" id="parent-topic-b4041bd95109a210VgnVCM1000000d01c80aRCRD">
+										Data Center Systems Management</li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-3aad1bd95109a210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Data center operations and best practices</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-budget-and-culture">
+									Data center budget considerations</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-jobs-and-staffing-and-professional-development">
+									Data center jobs, professional development</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/IT-compliance-and-governance-strategies">
+									Data center standards and metrics</a></li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-4a091bd95109a210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Data center design and facilities</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-ba5f1bd95109a210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Data Center Infrastructure</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Converged-infrastructure-CI">
+									Converged infrastructure</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/IBM-system-z-and-mainframe-systems">
+									IBM system z and mainframe systems</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Linux-servers">
+									Linux servers</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchwindowsserver.techtarget.com/resources/Windows-Server-Monitoring-and-Administration">
+									Microsoft Windows Server in the data center</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Server-hardware-strategy">
+									x86 commodity rackmount servers</a></li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-17d85b931b6df410VgnVCM100000ef01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Data center storage and networking</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Enterprise-data-storage-strategies">
+									Enterprise data storage strategies</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchnetworking.techtarget.com/resources/Data-Center-Network-Infrastructure">
+									Network hardware in the data center</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/SDN-and-other-network-strategies">
+									SDN and other network strategies</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchstorage.techtarget.com/resources/Primary-Storage-or-Storage-Hardware">
+									Storage hardware in the data center</a></li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-b4041bd95109a210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Data Center Systems Management</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Application-and-infrastructure-monitoring">
+									Server hardware monitoring</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcloudcomputing.techtarget.com/resources/Cloud-architecture-design-and-planning">
+									Cloud strategies</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Colocation-hosting-and-outsourcing-management">
+									Colocation, hosting and outsourcing management</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-automation-and-orchestration">
+									IT process automation, data center automation</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-capacity-planning">
+									Data center capacity planning</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/DevOps-and-configuration-management">
+									Configuration and change management tools</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Emerging-IT-workload-types">
+									Emerging IT workload types</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Virtualization-and-private-cloud">
+									Data center server virtualization</a></li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-90add9ff8419d210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Topics Archive</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Application-performance-management">
+									Application performance management</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Blade-servers">
+									Blade servers</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-backup-power-and-power-distribution">
+									Data center backup power and power distribution</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-cooling">
+									Data center cooling</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-design-and-construction">
+									Data center design and construction</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdisasterrecovery.techtarget.com/resources/Disaster-Recovery-Facilities-Operations">
+									Data center disaster recovery</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-energy-efficiency">
+									Data center energy efficiency</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-hosted-services">
+									Data center hosted services</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-issues-in-the-channel">
+									Data Center Issues in the Channel</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-networking">
+									Data center networking</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-physical-security-and-fire-suppression">
+									Data center physical security and fire suppression</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-storage">
+									Data center storage</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Data-center-systems-concerns-for-value-added-resellers-VARs">
+									Data center systems concerns for value-added resellers (VARs)</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/iSeries-data-center">
+									iSeries - data center</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/IT-Compliance-SOX-and-HIPAA-in-the-data-center">
+									IT Compliance: SOX and HIPAA in the data center</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/IT-Governance-ITIL-ITSM-COBIT">
+									IT Governance: ITIL, ITSM, COBIT</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Mainframe-jobs">
+									Mainframe jobs</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Mainframe-Linux-IBM-System-z">
+									Mainframe Linux, IBM System z</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Mainframe-migration-projects">
+									Mainframe migration projects</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Mainframe-operating-systems-and-management">
+									Mainframe operating systems and management</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Mainframe-security-and-disaster-recovery">
+									Mainframe security and disaster recovery</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Managing-data-center-outsourcing-services-and-vendors">
+									Managing data center outsourcing services, vendors</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Microsoft-Windows-Server-in-the-Data-Center">
+									Microsoft Windows Server</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Network-cabling">
+									Network cabling</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchnetworking.techtarget.com/resources/Network-Management">
+									Network management strategies for the data center</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Server-hardware-packaging-recycling-e-waste">
+									Server hardware packaging, recycling, e-waste</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchstoragechannel.techtarget.com/resources/Storage-Virtualization">
+									Storage Virtualization</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchwindowsserver.techtarget.com/resources/Windows-Server-Monitoring-and-Administration">
+									Server management for Windows administrators</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Server-virtualization-tips-and-trends">
+									Server virtualization tips and trends</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchstorage.techtarget.com/resources/SAN-storage-area-network">
+									Storage management in the data center</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchservervirtualization.techtarget.com/resources/Server-virtualization-management-tools-and-practices">
+									Systems management for virtual servers</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/resources/Unix-servers">
+									Unix servers</a></li>
+								</ul>
+						</div>
+						</div>				
+				</div>
+			</li>
+			<li class="nav-list-item nav-list-item-sections">
+					<div class="nav-list-item-header">
+						<span class="nav-list-item-header-type">Section</span>
+						<span class="nav-list-item-header-title">
+									<a>All</a>
+								</span>
+							<i class="icon icon-arrow-down" data-icon="5"></i>
+						<i class="icon icon-navigation-arrow" data-icon="B"></i>
+					</div>				
+					<div class="nav-list-sublist nav-list-item-dropdown">
+						<ul class="nav-list-item-jscroll">
+						<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/info/news">News</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/info/getstarted">Get Started</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/info/evaluate">Evaluate</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/info/manage">Manage</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com/info/problemsolve">Problem Solve</a></li>
+						<li class="nav-list-sublist-item sponsored"><a href="http://searchdatacenter.techtarget.com/sponsored_communities">Sponsored Communities</a></li>
+						</ul>
+					</div>
+				</li>
+		</ul>
+		<ul class="nav-social">
+			<li class="nav-social-item" title="Follow searchDataCenter on Google+" id="navBarGooglePlus"><a href="https://plus.google.com/u/0/102511699240860956808" target="_blank"><i class="icon" data-icon="s"></i></a></li><li class="nav-social-item" title="Like searchDataCenter on Facebook" id="navBarFacebook"><a href="http://www.facebook.com/searchdatacenter" target="_blank"><i class="icon" data-icon="u"></i></a></li><li class="nav-social-item" title="Follow @datacentertt on Twitter" id="navBarTwitter"><a href="https://twitter.com/datacentertt" target="_blank"><i class="icon" data-icon="c"></i></a></li><li class="nav-social-item" title="Follow searchDataCenter on LinkedIn" id="navBarLinkedIn"><a href="http://www.linkedin.com/company/2999377?trk=tyah" target="_blank"><i class="icon" data-icon="o"></i></a></li></ul>
+	 </nav>
+</header>
+
+<div class="ad-wrapper header-leaderboard ad-desktop">
+	<!-- AdsController, generated at 23:46:06 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div id="leaderboard" class="ad ad-lb"><script>GPT.display('leaderboard')</script></div></div>
+</div><div class="header-gradient">
+	<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/temp/home_gradient_desktop.png">
+</div></div><div id="main-content" class="main-content">
+			<article id="content-columns" class="content-columns">
+				<div><div><!-- ContentItemController, generated at 18:59:17 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<header class="homepage-header">
+	<h1 class="homepage-title searchdatacenter"><span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span></h1>
+</header></div>
+</div><div id="content-left" class="content-left">
+					<div><div class="locking-full-bar">
+	<div class="locking-left-bar">
+		</div>
+	<aside class="resources-bar desktop-resources-bar">
+		</aside>
+</div></div></div>
+				<div id="content-center" class="content-center">
+					<div><div><!-- NewAndNotableController, generated at 23:44:37 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section new-notable-home">
+	<h2>New &amp; Notable</h2>
+	<div class="nn-home-item nn-item-1">
+			<div class="nn-item-img">
+				<a href="http://searchdatacenter.techtarget.com/video/Icelands-blueprints-for-a-data-center-industry"><img src="http://cdn.ttgtmedia.com/visuals/searchDataCenter/newAndNotableDefaultImage_1_searchsitedesktop_508X169.jpg"></a>
+					</div>
+			<h3>News</h3>
+			<h4>
+				<i class="icon" data-icon="b"></i>
+				<a href="http://searchdatacenter.techtarget.com/video/Icelands-blueprints-for-a-data-center-industry">How to cultivate a regional data center industry</a>
+					</h4>
+			</div>
+	<div class="nn-home-item nn-item-2">
+			<h3>News</h3>
+			<h4>
+				<i class="icon" data-icon="2"></i>
+				<a href="http://searchdatacenter.techtarget.com/feature/Memristor-technology-brings-about-an-analog-revolution">Memristor technology heralds brain-like computers</a>
+					</h4>
+			<p>Are we ready for memristor-based artificially intelligent infrastructure in the enterprise data center?</p></div>
+	<div class="nn-home-item nn-item-3">
+			<h3>Problem Solve</h3>
+			<h4>
+				<i class="icon" data-icon="2"></i>
+				<a href="http://searchdatacenter.techtarget.com/feature/Who-controls-big-data-implementation">Who's the boss on big data?</a>
+					</h4>
+			<p>In the rush to capitalize on big data, enterprises can pitch a battle against their own IT departments. In these conflicts, no one comes out the winner.</p></div>
+	<div class="nn-home-item nn-item-4">
+			<h3>Evaluate</h3>
+			<h4>
+				<i class="icon" data-icon="2"></i>
+				<a href="http://searchdatacenter.techtarget.com/feature/Enterprises-have-options-for-big-data-infrastructure">The trouble with big data infrastructure</a>
+					</h4>
+			<p>Many in the IT industry remain wary of big data's effect on infrastructure. Here's why.</p></div>
+	<div class="nn-home-item nn-item-5">
+			<h3>Manage</h3>
+			<h4>
+				<i class="icon" data-icon="2"></i>
+				<a href="http://searchdatacenter.techtarget.com/feature/Data-center-water-usage-whets-appetite-for-change">Water concerns rising in data center field</a>
+					</h4>
+			<p>Will drought dry up the digital economy? With water scarcity a pressing concern, major data centers are re-examining water use for cooling.</p></div>
+	</section>
+</div><div><!-- TrendingTopicsController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section trending-topics-home">
+		<h2>Trending Topics</h2>
+		<div class="ad-wrapper ad-inline">
+			<!-- AdsController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div id="mu-1" class="ad ad-mu"><script>GPT.display('mu-1')</script></div></div>
+		<ul class="trending-topics-items tt-list-1">
+			<li class="trending-topics-item tt-item-1">
+					<h3>
+						<a href="http://searchdatacenter.techtarget.com/resources/Converged-infrastructure-CI">
+						Converged infrastructure</a>
+						<span>News</span>
+						</h3>
+					<h4>
+						<i class="icon" data-icon="2"></i><a href="http://searchdatacenter.techtarget.com/feature/Memristor-technology-brings-about-an-analog-revolution">Memristor technology heralds brain-like computers</a>
+					</h4>
+					<p>Are we ready for memristor-based artificially intelligent infrastructure in the enterprise data center?</p>
+				</li>
+			<li class="trending-topics-item tt-item-2">
+					<h3>
+						<a href="http://searchdatacenter.techtarget.com/resources/Server-hardware-strategy">
+						x86 commodity rackmount servers</a>
+						<span>Manage</span>
+						</h3>
+					<h4>
+						<i class="icon" data-icon="2"></i><a href="http://searchdatacenter.techtarget.com/feature/Data-center-water-usage-whets-appetite-for-change">Water concerns rising in data center field</a>
+					</h4>
+					<p>Will drought dry up the digital economy? With water scarcity a pressing concern, major data centers are re-examining water use for cooling.</p>
+				</li>
+			<li class="trending-topics-item tt-item-3">
+					<h3>
+						<a href="http://searchdatacenter.techtarget.com/resources/Data-center-jobs-and-staffing-and-professional-development">
+						Data center jobs, professional development</a>
+						<span>News</span>
+						</h3>
+					<h4>
+						<i class="icon" data-icon="b"></i><a href="http://searchdatacenter.techtarget.com/video/Icelands-blueprints-for-a-data-center-industry">How to cultivate a regional data center industry</a>
+					</h4>
+					<p>Icelanders are fond of saying they're a "new" country -- and they're developing a new data center industry from scratch as well.</p>
+				</li>
+			<li class="trending-topics-item tt-item-4">
+					<h3>
+						<a href="http://searchdatacenter.techtarget.com/resources/Data-center-automation-and-orchestration">
+						IT process automation, data center automation</a>
+						<span>Get Started</span>
+						</h3>
+					<h4>
+						<i class="icon" data-icon="2"></i><a href="http://searchdatacenter.techtarget.com/tip/Survive-the-server-orchestration-takeover">Automated orchestration threatens today's IT admin jobs</a>
+					</h4>
+					<p>The tenets of traditional IT -- well-tended data center hardware, owned software deployments -- are falling away in the cloud era of standardization and orchestration.</p>
+				</li>
+			</ul>
+		<ul class="trending-topics-items tt-list-2">
+			<li class="trending-topics-item tt-item-5">
+					<h3>
+						<a href="">
+						</a>
+						</h3>
+					<h4>
+						<i class="icon" data-icon="2"></i><a href=""></a>
+					</h4>
+					<p></p>
+				</li>	
+			<li class="trending-topics-item tt-item-6">
+					<h3>
+						<a href="http://searchdatacenter.techtarget.com/resources/Data-center-budget-and-culture">
+						Data center budget considerations</a>
+						<span>News</span>
+						</h3>
+					<h4>
+						<i class="icon" data-icon="2"></i><a href="http://searchdatacenter.techtarget.com/news/4500252956/Colocation-pricing-morphs-into-cloud-pay-per-use-model">Data center provider changes colocation pricing scheme</a>
+					</h4>
+					<p>Cloud computing users have been able to pay just for what they use, but that hasn't been an option for colocation customers -- until now.</p>
+				</li>	
+			</ul>
+	</section>
+</div><div><!-- TopicsCoveredController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div class="homepage-topics">
+		<div class="homepage-topics-inner">
+			<h3>
+				Topics Covered</h3>
+			<ul>
+				<li class="topics-collapse-toggle">
+									<h5>Best practices for data center operations<span class="subtopics-number"> (3)</span>
+										<span class="toggle-marker">+</span>
+									</h5> 
+									<div class="homepage-topics-subtopics">
+										<ul>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Data-center-budget-and-culture">Data center budget and culture</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Data-center-jobs-and-staffing-and-professional-development">Data Center Jobs and Staffing and Professional Development</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/IT-compliance-and-governance-strategies">IT compliance and governance strategies</a></li>
+											</ul>
+									</div>
+								</li>
+							<li><h5><a href="http://searchdatacenter.techtarget.com/resources/Data-center-design-and-facilities">Data Center Design and Facilities</a></h5></li>
+							<li class="topics-collapse-toggle">
+									<h5>Data center server infrastructure and OSes<span class="subtopics-number"> (5)</span>
+										<span class="toggle-marker">+</span>
+									</h5> 
+									<div class="homepage-topics-subtopics">
+										<ul>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Converged-infrastructure-CI">Converged infrastructure (CI)</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/IBM-system-z-and-mainframe-systems">IBM system z and mainframe systems</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Linux-servers">Linux servers</a></li>
+											<li><a href="http://searchwindowsserver.techtarget.com/resources/Windows-Server-Monitoring-and-Administration">Microsoft Windows Server in the data center</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Server-hardware-strategy">Server hardware strategy</a></li>
+											</ul>
+									</div>
+								</li>
+							<li class="topics-collapse-toggle">
+									<h5>Data center storage and networking<span class="subtopics-number"> (4)</span>
+										<span class="toggle-marker">+</span>
+									</h5> 
+									<div class="homepage-topics-subtopics">
+										<ul>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Enterprise-data-storage-strategies">Enterprise data storage strategies</a></li>
+											<li><a href="http://searchnetworking.techtarget.com/resources/Data-Center-Network-Infrastructure">Network hardware in the data center</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/SDN-and-other-network-strategies">SDN and other network strategies</a></li>
+											<li><a href="http://searchstorage.techtarget.com/resources/Primary-Storage-or-Storage-Hardware">Storage hardware in the data center</a></li>
+											</ul>
+									</div>
+								</li>
+							<li class="topics-collapse-toggle">
+									<h5>IT infrastructure management and planning<span class="subtopics-number"> (8)</span>
+										<span class="toggle-marker">+</span>
+									</h5> 
+									<div class="homepage-topics-subtopics">
+										<ul>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Application-and-infrastructure-monitoring">Application and infrastructure monitoring</a></li>
+											<li><a href="http://searchcloudcomputing.techtarget.com/resources/Cloud-architecture-design-and-planning">Cloud strategies</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Colocation-hosting-and-outsourcing-management">Colocation, hosting and outsourcing management</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Data-center-automation-and-orchestration">Data center automation and orchestration</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Data-center-capacity-planning">Data center capacity planning</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/DevOps-and-configuration-management">DevOps and configuration management</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Emerging-IT-workload-types">Emerging IT workload types</a></li>
+											<li><a href="http://searchdatacenter.techtarget.com/resources/Virtualization-and-private-cloud">Virtualization and private cloud</a></li>
+											</ul>
+									</div>
+								</li>
+							</ul>
+		</div>
+	</div>
+</div><div><!-- HaveAQuestionForAnExpertController, generated at 23:46:06 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="section homepage-section expert-question-home" data-menu-title="Ask An Expert">
+	<h2>Have a question for an expert?</h2>
+			<p id="create_question_mini_widget_error" class="missing-info-error-msg">Please add a title for your question</p>
+			<p>Get answers from your peers on your most technical Data Center challenges.</p>
+			<form class="expert-question-form" id="create_question_mini_widget" name="create_question_mini_widget" action="http://itknowledgeexchange.techtarget.com/itanswers/ask_question/" method="post" >
+				<label for="expert-question-title" class="visuallyhidden">Add a title</label>
+				<input id="post_title" name="post_title" maxlength="150" class="expert-question-title" type="text" placeholder="Add a title">
+				<input class="button teal-button expert-question-form-btn" type="submit" value="Ask Question">
+				<span class="expert-question-help">You will be able to add details on the next page.</span>
+			</form>
+			<div class="expert-question-links">
+			<p>Meet all of our <a href="http://searchdatacenter.techtarget.com/experts">Data Center experts</a></p><p>View all <a href="http://searchdatacenter.techtarget.com/answers">Data Center questions and answers</a></p></div>
+		</section>
+</div><div><!-- DiscussionsController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section discussion-home">
+	<div class="join-discussion-wrapper">
+		<ul class="join-discussion-content carousel carousel-slide" data-transition="slide" data-paginate="">
+			<li class="carousel-item carousel-active">
+					<div class="discussion-question">
+						<div class="image-resize">
+									<img class="asker-img" src="http://cdn.ttgtmedia.com/ITKE/uploads/avatar/379717-1853579950.gif">
+								</div>
+								<p>
+									<span class="asker">Meredith Courtemanche</span>&nbsp;asks:</p>
+							<h2 class="question">Where are your data centers located? Why?</h2>
+						<i class="icon" data-icon="Z"></i>
+					</div>
+					<div class="discussion-cta">
+						<p class="response-count">1&nbsp;
+						Response</p>
+						<a href="http://itknowledgeexchange.techtarget.com/discussions/discussion/where-are-your-data-centers-located-why/" class="button blue-button">Join the Discussion</a>
+					</div>
+				</li>
+			<li class="carousel-item">
+					<div class="discussion-question">
+						<div class="image-resize">
+									<img class="asker-img" src="http://cdn.ttgtmedia.com/ITKE/uploads/avatar/434494-923822553.gif">
+								</div>
+								<p>
+									<span class="asker">Robert Gates</span>&nbsp;asks:</p>
+							<h2 class="question">How do you think job cuts at Hewlett Packard Enterprise will affect enterprise customers?</h2>
+						<i class="icon" data-icon="Z"></i>
+					</div>
+					<div class="discussion-cta">
+						<p class="response-count">0&nbsp;
+						Responses</p>
+						<a href="http://itknowledgeexchange.techtarget.com/discussions/discussion/how-do-you-think-job-cuts-at-hewlett-packard-enterprise-will-affect-enterprise-customers/" class="button blue-button">Join the Discussion</a>
+					</div>
+				</li>
+			<li class="carousel-item">
+					<div class="discussion-question">
+						<div class="image-resize">
+									<img class="asker-img" src="http://cdn.ttgtmedia.com/ITKE/uploads/avatar/402342-2078705087.gif">
+								</div>
+								<p>
+									<span class="asker">Jim O'Reilly</span>&nbsp;asks:</p>
+							<h2 class="question">What server benchmark setup have you found provides the best performance/price balance?</h2>
+						<i class="icon" data-icon="Z"></i>
+					</div>
+					<div class="discussion-cta">
+						<p class="response-count">0&nbsp;
+						Responses</p>
+						<a href="http://itknowledgeexchange.techtarget.com/discussions/discussion/what-server-benchmark-setup-have-you-found-provides-the-best-performanceprice-balance/" class="button blue-button">Join the Discussion</a>
+					</div>
+				</li>
+			</ul>	
+	</div>
+</section>
+</div><div><!-- FindSolutionsController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section find-solutions-home">
+		<h2>Find Solutions For Your Project</h2>
+		<ul class="find-solutions-sections">
+			<li>
+					<h3>Evaluate</h3>
+					<div class="find-solutions-sections-primary">
+						<h4 style="height: 87px;">
+							<i class="icon" data-icon="2"></i>
+							<a href="http://searchdatacenter.techtarget.com/feature/Enterprises-have-options-for-big-data-infrastructure">The trouble with big data infrastructure</a>
+						</h4>
+						<p>Many in the IT industry remain wary of big data's effect on infrastructure. Here's why.</p>
+					</div>
+					<ul class="find-solutions-sections-links">
+							<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/tip/IT-benchmarking-incorporates-more-than-server-performance">Comparing data center hardware options for IT workloads</a>
+										</h5>
+									</li>
+								<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/news/4500253573/TSA-packs-bags-tight-with-data-center-consolidation-initiative">TSA pats-down its data center strategy</a>
+										</h5>
+									</li>
+								<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/answer/Should-I-use-a-battery-cooling-system-in-the-data-center">Does isolated battery cooling save HVAC costs?</a>
+										</h5>
+									</li>
+								</ul>
+						<a href="http://searchdatacenter.techtarget.com/info/evaluate" class="button teal-button">View All Evaluate</a>
+						</li>
+			<li>
+					<h3>Problem Solve</h3>
+					<div class="find-solutions-sections-primary">
+						<h4 style="height: 87px;">
+							<i class="icon" data-icon="2"></i>
+							<a href="http://searchdatacenter.techtarget.com/feature/Who-controls-big-data-implementation">Who's the boss on big data?</a>
+						</h4>
+						<p>In the rush to capitalize on big data, enterprises can pitch a battle against their own IT departments. In these conflicts, no one comes out the winner.</p>
+					</div>
+					<ul class="find-solutions-sections-links">
+							<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/feature/Data-center-water-usage-whets-appetite-for-change">Water concerns rising in data center field</a>
+										</h5>
+									</li>
+								<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/tip/Managing-shadow-IT-risk-to-the-business">How to mitigate the threat of shadow IT</a>
+										</h5>
+									</li>
+								<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/tip/A-cloud-migration-plan-for-conservative-data-centers">What's the best plan for on-premises to cloud migration?</a>
+										</h5>
+									</li>
+								</ul>
+						<a href="http://searchdatacenter.techtarget.com/info/problemsolve" class="button teal-button">View All Problem Solve</a>
+						</li>
+			<li>
+					<h3>Manage</h3>
+					<div class="find-solutions-sections-primary">
+						<h4 style="height: 87px;">
+							<i class="icon" data-icon="x"></i>
+							<a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Data-center-water-use-grows">Data center water use grows</a>
+						</h4>
+						<p>There is a lot of warm weather on the horizon. But data center operators shouldn't let that fool them in to thinking that they shouldn't worry about water conservation. Data centers are major water hogs, right up there with farms and golf courses. ...</p>
+					</div>
+					<ul class="find-solutions-sections-links">
+							<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/feature/Stop-being-IT-heroes-and-take-the-low-key-approach">The small-ball approach to IT</a>
+										</h5>
+									</li>
+								<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/opinion/How-learning-Linux-jumpstarted-my-career">How I began a lifelong love for Linux</a>
+										</h5>
+									</li>
+								<li>
+										<h5>
+											<i class="icon" data-icon="2"></i>
+											<a href="http://searchdatacenter.techtarget.com/news/4500253214/ITSM-tools-no-silver-bullet-for-data-center-service-delivery">ITSM tools only half the battle</a>
+										</h5>
+									</li>
+								</ul>
+						<a href="http://searchdatacenter.techtarget.com/info/manage" class="button teal-button">View All Manage</a>
+						</li>
+			</ul>
+	</section>
+</div><div><!-- ProPlusDownloadsController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section pro-downloads-home">
+		<div class="pro-downloads-title-bar">
+			<h2>
+				<span>Pro+</span> Data Center Downloads</h2>
+			<a href="http://searchdatacenter.techtarget.com/eproducts">View All<i class="icon" data-icon="0"></i></a>
+		</div>
+		<ul class="pro-downloads-list">
+			<li class="pd-item-1">
+					<div class="image-resize">
+						<a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Data-center-water-use-grows"><img src="http://cdn.ttgtmedia.com/rms/EProductCovers/sDC_Modern_Infrastructure_091515.jpg"></a>
+					</div>
+					<h3>E-Zine<span> | September 2015</span>
+					</h3>
+					<h4 style="height: 48px;"><a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Data-center-water-use-grows">Data center water use grows</a></h4>
+					<a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Data-center-water-use-grows" class="pro-download"><i class="icon" data-icon="C"></i>Download</a>
+				</li>
+			<li class="pd-item-2">
+					<div class="image-resize">
+						<a href="http://searchdatacenter.techtarget.com/ehandbook/Moving-out-to-a-colocation-provider"><img src="http://cdn.ttgtmedia.com/rms/EProductCovers/sDC_colocation_hb_072815.jpg"></a>
+					</div>
+					<h3>E-Handbook<span> | July 2015</span>
+					</h3>
+					<h4 style="height: 48px;"><a href="http://searchdatacenter.techtarget.com/ehandbook/Moving-out-to-a-colocation-provider">Moving out to a colocation provider</a></h4>
+					<a href="http://searchdatacenter.techtarget.com/ehandbook/Moving-out-to-a-colocation-provider" class="pro-download"><i class="icon" data-icon="C"></i>Download</a>
+				</li>
+			<li class="pd-item-3">
+					<div class="image-resize">
+						<a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Lift-and-shift-vs-re-platforming-cloud-apps"><img src="http://cdn.ttgtmedia.com/rms/EProductCovers/sDC_MI_ezine_july2015.jpg"></a>
+					</div>
+					<h3>E-Zine<span> | July 2015</span>
+					</h3>
+					<h4 style="height: 48px;"><a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Lift-and-shift-vs-re-platforming-cloud-apps">Lift and shift vs. re-platforming cloud apps</a></h4>
+					<a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Lift-and-shift-vs-re-platforming-cloud-apps" class="pro-download"><i class="icon" data-icon="C"></i>Download</a>
+				</li>
+			<li class="pd-item-4">
+					<div class="image-resize">
+						<a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Can-hyperconverged-systems-transform-the-enterprise"><img src="http://cdn.ttgtmedia.com/rms/EProductCovers/sDC_Modern_Infrastructure_ez061615.jpg"></a>
+					</div>
+					<h3>E-Zine<span> | June 2015</span>
+					</h3>
+					<h4 style="height: 48px;"><a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Can-hyperconverged-systems-transform-the-enterprise">Can hyperconverged systems transform the enterprise?</a></h4>
+					<a href="http://searchdatacenter.techtarget.com/ezine/Modern-Infrastructure/Can-hyperconverged-systems-transform-the-enterprise" class="pro-download"><i class="icon" data-icon="C"></i>Download</a>
+				</li>
+			<li class="pd-item-5">
+					<div class="image-resize">
+						<a href="http://searchdatacenter.techtarget.com/ebook/Multi-vendor-data-center/Consolidating-operating-systems"><img src="http://cdn.ttgtmedia.com/rms/EProductCovers/sDC_consolidating_OS_eb060515.jpg"></a>
+					</div>
+					<h3>E-Chapter<span> | June 2015</span>
+					</h3>
+					<h4 style="height: 48px;"><a href="http://searchdatacenter.techtarget.com/ebook/Multi-vendor-data-center/Consolidating-operating-systems">Consolidating operating systems</a></h4>
+					<a href="http://searchdatacenter.techtarget.com/ebook/Multi-vendor-data-center/Consolidating-operating-systems" class="pro-download"><i class="icon" data-icon="C"></i>Download</a>
+				</li>
+			</ul>
+	</section>
+</div><div><!-- LearnMoreController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section learn-more-home">
+		<h2>Data Center Basics</h2>
+		<div class="learn-more-sections">
+			<ul class="learn-more-items">
+				<li class="lm-item-1">
+							<h3>Get Started</h3>
+							<h4>
+								<i class="icon" data-icon="b"></i>
+								<a href="http://searchdatacenter.techtarget.com/video/Icelands-blueprints-for-a-data-center-industry">How to cultivate a regional data center industry</a>
+							</h4>
+							<p>Icelanders are fond of saying they're a "new" country -- and they're developing a new data center industry from scratch as well.</p>
+						</li>
+				<li class="lm-item-2">
+							<h3>Get Started</h3>
+							<h4>
+								<i class="icon" data-icon="k"></i>
+								<a href="http://searchdatacenter.techtarget.com/photostory/4500253523/Icelands-data-center-opportunities-and-challenges/1/Get-to-know-data-centers-in-Iceland">Iceland's data center opportunities and challenges</a>
+							</h4>
+							<p>Data centers in Iceland access a stable power grid and free cooling. But questions still loom about Iceland's available capital and global connectivity.</p>
+						</li>
+				<li class="lm-item-3">
+							<h3>Get Started</h3>
+							<h4>
+								<i class="icon" data-icon="2"></i>
+								<a href="http://searchdatacenter.techtarget.com/opinion/How-learning-Linux-jumpstarted-my-career">How I began a lifelong love for Linux</a>
+							</h4>
+							<p>Choosing an alternative to Windows 98 and learning Linux -- back in the 90s -- led Jack Wallen to his current career. How did you get started with Linux?</p>
+						</li>
+				</ul>
+			<a href="http://searchdatacenter.techtarget.com/info/getstarted" class="button teal-button">View All Get Started</a>
+		</div>
+	</section>
+</div><div><!-- MultimediaController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section multimedia-home">
+		<h2>Multimedia</h2>
+		<div class="multimedia-header-menu">
+			<h3>Videos, Podcasts and Photo Stories</h3>
+			<div class="multimedia-menu">
+				<div class="dropdown-toggle">
+					View all Multimedia<i class="icon icon-arrow-down" data-icon="5"></i>
+				</div>
+				<ul class="dropdown-menu" style="display: none;">
+					<li><a href="http://searchdatacenter.techtarget.com/videos">Videos</a></li>
+					<li><a href="http://searchdatacenter.bitpipe.com/webcasts">Podcasts</a></li>
+					<li><a href="http://searchdatacenter.techtarget.com/photostories">Photo Stories</a></li>
+				</ul>
+			</div>
+		</div>
+		<ul class="multimedia-sections">
+			<li class="multimedia-col-1">
+			<img src="http://cdn.ttgtmedia.com/visuals/mm-video.png" alt="" class="getVideoThumbnail" data-video-id="4484223734001">
+			<div class="multimedia-sections-primary">
+					<h3>News</h3>
+					<h4>
+						<i class="icon" data-icon="b"></i>
+						<a href="http://searchdatacenter.techtarget.com/video/Icelands-blueprints-for-a-data-center-industry">How to cultivate a regional data center industry</a>
+					</h4>		
+				</div>
+				</li>
+			<li class="multimedia-col-2">
+			<img src="http://cdn.ttgtmedia.com/rms/onlineImages/sdc_iceland_splash.jpg" alt="sdc_iceland_splash.jpg">
+			<div class="multimedia-sections-primary">
+					<h3>News</h3>
+					<h4>
+						<i class="icon" data-icon="k"></i>
+						<a href="http://searchdatacenter.techtarget.com/photostory/4500253523/Icelands-data-center-opportunities-and-challenges/1/Get-to-know-data-centers-in-Iceland">Iceland's data center opportunities and challenges</a>
+					</h4>		
+				</div>
+				</li>
+			<li class="multimedia-col-3">
+			<img src="http://cdn.ttgtmedia.com/rms/onlineImages/datacenter_companies2015_splash.jpg" alt="datacenter_companies2015_splash.jpg">
+			<div class="multimedia-sections-primary">
+					<h3>Evaluate</h3>
+					<h4>
+						<i class="icon" data-icon="k"></i>
+						<a href="http://searchdatacenter.techtarget.com/photostory/2240240285/Data-center-companies-to-watch-in-2015/1/Shakeup-coming-to-data-center-products">Data center companies to watch in 2015</a>
+					</h4>		
+				</div>
+				</li>
+			</ul>
+	</section>
+</div><div><!-- VendorResourcesController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div class="learn-more-resources">
+		<h3>Vendor Resources</h3>
+		<ul class="learn-more-resources-list">
+			<li class="resources-list-item">
+					<a href="http://searchdatacenter.bitpipe.com/detail/RES/1375913973_747.html">Deployment Guide: Configuring a highly available Microsoft® Exchange Server ...</a>
+					<span>&ndash;White Paper</span>
+					<i class="icon" data-icon="8"></i>
+				</li>
+			<li class="resources-list-item">
+					<a href="http://searchdatacenter.bitpipe.com/detail/RES/1441977273_27.html">2015 Report: Top Priorities for IT Infrastructure</a>
+					<span>&ndash;White Paper</span>
+					<i class="icon" data-icon="8"></i>
+				</li>
+			<li class="resources-list-item">
+					<a href="http://searchdatacenter.bitpipe.com/detail/RES/1442506820_41.html">Modern Infrastructure E-zine – September 2015</a>
+					<span>&ndash;Ezine</span>
+					<i class="icon" data-icon="x"></i>
+				</li>
+			</ul>
+	</div>
+</div><div><!-- BlogsController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section blogs-home">
+	<h2>Blog: Data Center Apparatus</h2>
+	<ul class="blog-sections">
+		<li class="blog-section-1">
+					<h4><i class="icon" data-icon="G"></i><a href="http://itknowledgeexchange.techtarget.com/data-center/the-best-of-searchdatacenter-in-june/">The best of SearchDataCenter in June</a></h4>
+					<p>The summer weather didn&#8217;t slow down anyone in the cool, dark halls of the data center. Catch up on the big news and expert advice from the past month that other data center pros found valuable. The big picture: Ten data center trends you need to know These trends, shared at the Gartner IT ...<a href="http://itknowledgeexchange.techtarget.com/data-center/the-best-of-searchdatacenter-in-june/">Continue Reading</a></p>
+			</li>
+		<li class="blog-section-2">
+					<h4><i class="icon" data-icon="G"></i><a href="http://itknowledgeexchange.techtarget.com/data-center/a-great-time-to-be-a-geek/">A great time to be a geek</a></h4>
+					<p>The problem with getting older is that I sometimes find myself set in my ways &#8212; gravitating toward things that I knew (or was at least interested in). I confess that I sometimes feel a little overwhelmed by the many abstract concepts emerging across the industry like big data and the Internet...<a href="http://itknowledgeexchange.techtarget.com/data-center/a-great-time-to-be-a-geek/">Continue Reading</a></p>
+			</li>
+		<li class="blog-section-3">
+				<h3>More Data Center Apparatus Posts</h3>
+					<ul class="blog-links">
+						<li><h4><i class="icon" data-icon="G"></i><a href="http://itknowledgeexchange.techtarget.com/data-center/the-19-variables-that-most-affect-google-data-centers-pue/">The 19 variables that most affect Google data centers’ PUE</a></h4></li>
+						<li><h4><i class="icon" data-icon="G"></i><a href="http://itknowledgeexchange.techtarget.com/data-center/searchdatacenters-cant-miss-articles-of-may/">SearchDataCenter’s can’t-miss articles of May</a></h4></li>
+						<li><h4><i class="icon" data-icon="G"></i><a href="http://itknowledgeexchange.techtarget.com/data-center/long-weekend-in-the-data-center/">Long weekend in the data center</a></h4></li>
+						</ul>
+				<a href="http://itknowledgeexchange.techtarget.com/data-center" class="button blue-button">View All Blog Posts</a>
+			</li>
+		</ul>
+</section>
+
+
+</div><div><!-- NewsController, generated at 13:42:39 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="homepage-section from-across-home">
+			<div class="from-across-title-bar">
+				<h2><span>Sections from across</span> SearchDataCenter</h2>
+			</div>
+			<div class="from-across-sections">
+				<ul class="from-across-items">
+					<li class="fa-item-1">
+						<h3><span>News</span></h3>
+						<a href="http://searchdatacenter.techtarget.com/info/news" class="button black-button fa-item-1-button">View All<i class="icon" data-icon="0"></i></a>
+					</li>
+					<li class="fa-item-2">
+								<h3>Data Center Jobs and Staffing and Professional Development</h3>
+								<h4><a href="http://searchdatacenter.techtarget.com/news/4500253754/HP-Enterprise-to-cut-up-to-30000-jobs-ahead-of-split">More HP job cuts come ahead of split</a></h4>
+								<p>A leaner, more nimble HP Enterprise will have as many as 30,000 fewer employees after the company splits in November.</p>
+						</li>
+					<li class="fa-item-3">
+								<h3>Data center capacity planning</h3>
+								<h4><a href="http://searchdatacenter.techtarget.com/news/4500253573/TSA-packs-bags-tight-with-data-center-consolidation-initiative">TSA pats-down its data center strategy</a></h4>
+								<p>The TSA is overhauling its IT infrastructure with equipment upgrades, virtualization and cloud as part of a major data center consolidation initiative.</p>
+						</li>
+					<li class="fa-item-4">
+								<h3>Data Center Jobs and Staffing and Professional Development</h3>
+								<h4><a href="http://searchdatacenter.techtarget.com/news/4500253434/IT-jobs-surge-in-upper-Midwest-Rockies-led-by-Java">IT hiring booms in Midwest, Rockies</a></h4>
+								<p>IT jobs are being filled at the highest rate away from some of the traditional technology hotspots -- including many Midwestern states.</p>
+						</li>
+					</ul>
+			</div>
+	</section>
+</div><div><!-- DefinitionsController, generated at 13:42:40 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div class="from-across-definitions">
+	<div class="from-across-definitions-inner">
+		<h3><span>SearchDataCenter</span> Definitions</h3>
+		<div class="from-across-definitions-lists">
+			<ul class="fa-defs-list-1">
+				<li><a href="http://searchdatacenter.techtarget.com/definition/runlevel">runlevel</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/OpenPower-Foundation">OpenPower Foundation</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/unified-computing-system-UCS">unified computing system (UCS)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/CEEDA-Certified-Energy-Efficient-Datacenter-Award">CEEDA (Certified Energy-Efficient Datacenter Award)</a></li>
+				</ul>
+			<ul class="fa-defs-list-2">
+				<li><a href="http://searchdatacenter.techtarget.com/definition/ISO-50001-International-Organization-for-Standardization-50001">ISO 50001 (International Organization for Standardization 50001)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/brownfield-site">brownfield (brownfield deployment, brownfield site)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/total-benefit-of-ownership-TBO">total benefit of ownership (TBO)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/IT">Information Technology (IT)</a></li>
+				</ul>
+			<ul class="fa-defs-list-3">
+				<li><a href="http://searchdatacenter.techtarget.com/definition/PCI-Express">Peripheral Component Interconnect Express (PCIe, PCI-E)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/TCO">TCO (total cost of ownership)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/uninterruptible-power-supply">uninterruptible power supply (UPS)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/FirewallD">FirewallD</a></li>
+				</ul>
+			<ul class="fa-defs-list-4">
+				<li><a href="http://searchdatacenter.techtarget.com/definition/coaxial-cable">coaxial cable</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/grid-computing">grid computing</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/ducting-data-center-cooling">ducting (data center cooling)</a></li>
+				<li><a href="http://searchdatacenter.techtarget.com/definition/moves-adds-and-changes-MAC">moves, adds and changes (MAC)</a></li>
+				</ul>
+			</div>
+		<a href="http://whatis.techtarget.com" class="button teal-button">View All Definitions</a>
+	</div>
+</div>
+</div>
+</div></div>
+				<div id="content-right" class="content-right"></div>
+			</article>
+		</div>
+		<div><div><!-- GoogleAdSenseController, generated at 18:56:52 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div class="ad-wrapper body-pro-callout">
+		<div class="body-pro-callout-inner">
+			<!-- AdsController, generated at 18:56:52 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div id="promo-2" class="ad ad-pr"><script>GPT.display('promo-2')</script></div></div>
+	</div>
+<section class="main-content ads-by-google">
+		<h2><a href="https://www.google.com/adsense/support/bin/request.py?contact=abg_afc">-ADS BY GOOGLE</a></h2>
+		<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Search Sites Responsive AFC -->
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-6050985421795229"
+			data-ad-slot="8728364240"
+			data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</section>
+</div><div><!-- NetworkCoverageController, generated at 18:56:52 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="latest-wrapper">
+		<nav class="latest-nav-wrapper">
+			<h2>Latest TechTarget <span class="latest-title">resources</span></h2>
+			<ul class="latest-nav">
+				<li>
+						<a href="#" class="latest-nav-item selected" data-item="1">
+							Windows Server<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="2">
+							Enterprise Linux<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="3">
+							Server Virtualization<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="4">
+							Cloud Computing<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				</ul>
+		</nav>
+		<span class="latest-nav-mask before-mask"></span>
+		<span class="latest-nav-mask after-mask"></span>
+		<div class="latest-body">
+			<div class="latest-content" data-item="1">
+					<h2 class="searchwindowsserver">
+						<a href="http://searchwindowsserver.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Windows</span><span class="logo-2">Server</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchwindowsserver.techtarget.com/tip/Six-must-read-Windows-security-resources-for-admins">Six must-read Windows security resources for admins</a></h3>
+										<p>Need to brush up on your Windows security skills, but don't have time to sort through the noise? Consider these six resources as ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchwindowsserver.techtarget.com/tip/Manage-user-identity-with-Windows-Azure-Active-Directory">Manage user identity with Windows Azure Active Directory</a></h3>
+										<p>Azure Active Directory allows admins to manage end-user identities and comes in three versions. Which one depends on your ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchwindowsserver.techtarget.com/tip/Use-a-PowerShell-script-to-force-logoff-of-an-RDP-session">Use a PowerShell script to force logoff an RDP session</a></h3>
+										<p>When end users remain logged in to an RDP session, it consumes valuable resources. Use this PowerShell script to force users to ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="2">
+					<h2 class="searchenterpriselinux">
+						<a href="http://searchenterpriselinux.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Enterprise</span><span class="logo-2">Linux</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchenterpriselinux.techtarget.com/news/2240162912/SUSE-Linux-jumps-on-the-open-private-cloud-deployment-train">SUSE Linux jumps on the open private cloud deployment train</a></h3>
+										<p>SUSE Linux Enterprise planning private cloud deployment with OpenStack weight behind it. NVIDIA works on Linux drivers for ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchenterpriselinux.techtarget.com/news/2240158152/Want-one-of-the-many-Linux-jobs-out-there-Time-to-go-back-to-class">Want one of the many Linux jobs out there? Time to go back to class</a></h3>
+										<p>Does extended education from the Linux Foundation and others help graduates meet the demands of today’s Linux jobs? Some say yes.</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchenterpriselinux.techtarget.com/news/2240151181/Ubuntu-ARM-server-AMI-for-Amazon-EC2-offers-fast-access-in-the-cloud">Ubuntu ARM server AMI for Amazon EC2 offers fast access in the cloud</a></h3>
+										<p>Canonical’s Ubuntu ARM server AMI for Amazon EC2 provide open source shops with a fast ARM server for the cloud.</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="3">
+					<h2 class="searchservervirtualization">
+						<a href="http://searchservervirtualization.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Server</span><span class="logo-2">Virtualization</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchservervirtualization.techtarget.com/tip/Weighing-the-pros-and-cons-of-application-containers">Weighing the pros and cons of application containers</a></h3>
+										<p>There are several potential advantages to using containers, but don't jump right in without considering the potential challenges ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchservervirtualization.techtarget.com/feature/As-interest-grows-container-management-features-still-missing">As interest grows, container management features still missing</a></h3>
+										<p>The growth of application containers continues but admins having management features could be a big boost for the technology.</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchservervirtualization.techtarget.com/tip/Tips-for-your-virtual-server-backup-strategy">Tips for your virtual server backup strategy</a></h3>
+										<p>The measure of good backup software can often be how powerful the recovery tools are. Make sure to avoid these mistakes when ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="4">
+					<h2 class="searchcloudcomputing">
+						<a href="http://searchcloudcomputing.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Computing</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcloudcomputing.techtarget.com/tip/Container-orchestration-tools-strategies-for-success">Container orchestration tools, strategies for success</a></h3>
+										<p>As more and more IT pros start to adopt container technology, orchestration tools like Docker Swarm will play a key role.</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcloudcomputing.techtarget.com/news/4500253747/HP-Helion-throws-forward-PaaS-to-hybrid-clouds">HP Helion throws forward PaaS to hybrid clouds</a></h3>
+										<p>HP unwraps new cloud, development and converged platforms to bolster its hybrid cloud strategy, and move up the cloud stack in ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcloudcomputing.techtarget.com/tip/Embrace-these-cloud-service-level-agreement-best-practices">Embrace these cloud service-level agreement best practices</a></h3>
+										<p>SLAs help users know what to expect from their cloud provider. But they also present a number of headaches for the enterprise, ...</p>
+									</li>
+								</ul>
+				</div>
+			</div>
+	</section>
+</div><div><!-- FooterLinksController, generated at 18:54:29 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<footer>
+	<div class="content-left">
+		<!-- Plug in TechTarget Logo inside the anchor tag here. -->
+		<div class="column column-logo">
+			<a href="#"></a>
+		</div>
+	</div>
+	<div class="content-center">
+		<ul class="column">
+			<li class="footer-item footer-item-col-1 footer-item-row-1"><a href="http://searchdatacenter.techtarget.com/about">About Us</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-2"><a href="http://searchdatacenter.techtarget.com/about/contact">Contact Us</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-3"><a href="http://www.techtarget.com/html/privacy_policy.html">Privacy Policy</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-4"><a href="http://searchdatacenter.techtarget.com/videos">Videos</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-5"><a href="http://searchdatacenter.techtarget.com/photostories">Photo Stories</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-6"><a href="http://searchdatacenter.techtarget.com/guides">Guides</a></li>
+			</ul>
+		<ul class="column">
+			<li class="footer-item footer-item-col-2 footer-item-row-1"><a href="http://searchdatacenter.techtarget.com/about/advertising">Advertisers</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-2"><a href="http://searchdatacenter.techtarget.com/about/partners">Business Partners</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-3"><a href="http://www.techtarget.com/mediakit">Media Kit</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-4"><a href="http://www.techtarget.com">Corporate Site</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-5"><a href="http://searchdatacenter.techtarget.com/experts">Experts</a></li>
+			</ul>
+		<ul class="column column-mobile-hidden">
+			<li class="footer-item footer-item-col-3 footer-item-row-1"><a href="http://reprints.ygsgroup.com/m/techtarget">Reprints</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-2"><a href="http://searchdatacenter.techtarget.com/archive">Archive</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-3"><a href="http://searchdatacenter.techtarget.com/sitemap">Site Map</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-4"><a href="http://searchdatacenter.techtarget.com/events">Events</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-5"><a href="http://searchdatacenter.techtarget.com/eproducts">E-Products</a></li>
+			</ul>
+	</div>
+	<div class="content-right">
+		<div class="column column-legal">
+			<p class="footer-legal">All Rights Reserved, <span>
+			<a href="http://searchdatacenter.techtarget.com/about/copyright">Copyright 2000 - 2015</a>, TechTarget</span>
+			
+			</p>
+			
+		</div>
+	</div>
+</footer></div>
+</div><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive-ui.min.js?v=6.31"></script><!-- Begin Chartbeat -->
+		<script>
+    var _sf_async_config={};
+    _sf_async_config.uid = 41935;
+    _sf_async_config.domain = 'techtargetnetwork.com';
+    _sf_async_config.sections = 'sdc, sdc - NO TOPIC';
+    _sf_async_config.authors = 'NO AUTHOR, HOME, sdc - HOME';
+    _sf_async_config.useCanonical = true;
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src',
+           (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') + 'js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script><!-- End Chartbeat -->
+	<!-- Begin GoogleTagManagerLegacy -->
+		<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CV3PD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CV3PD');
+</script><!-- End GoogleTagManagerLegacy -->
+	<!-- Begin DataPoint Media -->
+		<script>
+(function() {
+var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),sc = 'https:' == document.location.protocol ? 'https://' : 'http://';
+s.type='text/javascript';
+s.async=true;
+s.src=sc+'s.dpmsrv.com/dpm_b4c96d80854dd27e76d8cc9e21960eebda52e962.min.js';
+h.appendChild(s);
+})();
+</script><!-- End DataPoint Media -->
+	<!-- Begin CrazyEgg -->
+		<script>setTimeout(function(){
+var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/7034.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;
+a.type="text/javascript";
+b.parentNode.insertBefore(a,b)
+}, 1);</script><!-- End CrazyEgg -->
+	<!-- Begin GoogleRemarketing -->
+		<script>
+var google_conversion_id = 1070110249;
+var google_conversion_label = "RRsgCOW4tgMQqayi_gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1070110249/?value=0&label=RRsgCOW4tgMQqayi_gM&guid=ON&script=0">
+</div>
+</noscript>
+<script>
+var google_conversion_id = 1072226410;
+var google_conversion_label = "x3P_CIql1gMQ6sCj_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1072226410/?value=0&label=x3P_CIql1gMQ6sCj_wM&guid=ON&script=0">
+</div>
+</noscript><!-- End GoogleRemarketing -->
+	</div>
+	<div id="mobile-sidebars" class="mobile-sidebars">
+		</div>
+	<div id="image-overlay" class="image-overlay">
+		<div class="image-overlay-img"></div>
+		<div class="image-overlay-close">Close</div>
+	</div>
+	
+<!--
+Component Load Times
+====================
+DefaultPageController=6 ms
+PinnedNavBarController=50 ms
+AdsController=0 ms
+HaveAQuestionForAnExpertController=0 ms
+
+Total time=56 ms
+Request Serving Server: vappma22.techtarget.com
+-->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"313780","applicationTime":161,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1068cf12f6","transactionName":"ZQMAYxdYXUBSAkFbClxJLFgXVFJfWhtQVjBAD00d","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script></body>
+</html>

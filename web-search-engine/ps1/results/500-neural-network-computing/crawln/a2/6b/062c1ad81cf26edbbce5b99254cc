@@ -1,0 +1,561 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  
+  
+    <meta name="description" content="">
+  
+
+  <meta property="og:site_name" content="The Britannica Store" />
+  
+  <meta property="og:image" content="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/logo.png?13522423707433717129" />
+    
+
+  <title> The Britannica Store </title>
+  
+  <script>
+//<![CDATA[
+      var Shopify = Shopify || {};
+      Shopify.shop = "ebtest1.myshopify.com";
+      Shopify.theme = {"name":"Megatronic","id":2132282,"theme_store_id":null,"role":"main"};
+
+//]]>
+</script>
+
+
+<script>
+//<![CDATA[
+    (function() {
+      function asyncLoad() {
+        var urls = ["https:\/\/delivery.shopifyapps.com\/assets\/checkout\/script.js?shop=ebtest1.myshopify.com"];
+        for (var i = 0; i < urls.length; i++) {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = urls[i];
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+    })();
+
+//]]>
+</script>
+<script id="__st">
+//<![CDATA[
+var __st={"a":1010252,"offset":-18000,"reqid":"bd6c7c97-c420-46c0-8b21-5bffc012a619","pageurl":"store.britannica.com\/","u":"045466cbe2bc","p":"home"};
+//]]>
+</script>
+<script>
+//<![CDATA[
+      (function() {
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+
+//]]>
+</script>
+<script src="http://stats.g.doubleclick.net/dc.js" type="text/javascript"></script><script type="text/javascript">var pageTracker = _gat._getTracker('UA-29405359-1');pageTracker._addDevId('o5cUG');pageTracker._setAllowLinker(true);pageTracker._setDomainName('none');pageTracker._trackPageview();</script><script type="text/javascript" src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-f888be82dfc735c04a5e0b253a366bb5.js"></script>
+
+
+   
+
+  <link href="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/style.css?13522423707433717129" rel="stylesheet" type="text/css"  media="all"  />  
+  <link href="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/facebox.css?13522423707433717129" rel="stylesheet" type="text/css"  media="all"  />
+  <script src="//cdn.shopify.com/s/assets/themes_support/option_selection-54fd013c3dd1f914fc3ca277900ec7c1.js" type="text/javascript"></script>
+  
+<link rel="canonical" href="http://store.britannica.com/" />
+</head>
+
+<body class=" template-index" id="the-britannica-store">
+
+  <!-- Header -->
+  <div id="header-wrapper">
+    <div id="header" class="wrapper clearfix">
+      
+       <h1 id="site-title"> 
+        <a href="/" title="Home">
+           <img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/logo.png?13522423707433717129" alt="The Britannica Store" />         
+        </a>
+       </h1> 
+    
+      <form id="search" action="/search" method="get">
+        <label for="top-search-input" class="visuallyhidden">Search</label>
+        <input type="text" id="top-search-input" name="q" class="search-input" value="" accesskey="4" autocomplete="off" />
+        <input type="submit" class="search-submit" value="Search" />
+      </form>
+      
+      <p class="poweredby"><a target="_blank" rel="nofollow" href="https://www.shopify.com">Ecommerce Software by Shopify</a></p>
+      
+    </div><!-- /#header -->
+  </div><!-- /#header-wrapper -->
+    
+    
+  <div id="main-wrapper">
+
+    <!-- Top Menu -->
+    <div id="top-menu" class="wrapper clearfix top-menu">
+      <ul id="nav">
+        
+        <li class="current">
+          
+          
+            <a class="root" href="/">Home</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            <a class="root" href="/collections/books">Books</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            <a class="root" href="/collections/software">Software</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            <a class="root" href="/collections/dvds">DVDs</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            <a class="root" href="/collections/kids">Kids</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            <a class="root" href="/pages/about-us">About Us</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            <a class="root" href="/pages/help">Help</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            <a class="root" href="/collections/sale">Sale</a>
+          
+        </li>
+        
+      </ul><!-- /#nav -->
+    
+      <ul id="customer-controls">
+        
+        <li class="customer-account-links">
+          
+            <p><a href="/account/login" id="customer_login_link">Login</a></p>
+          
+        </li>
+             
+      
+           
+      
+        <li class="cart-link">
+          <a href="/cart" class="num-items-in-cart">
+            <span id="top-cartlink-text" class="icon">
+              
+                Your cart is empty
+              
+            </span>
+          </a>             
+        </li>
+      </ul><!-- #customer-controls -->
+    </div><!-- /#top-menu --> 
+  
+  
+  
+  <!-- Main Content -->
+    <div id="main" class="wrapper clearfix">
+      <div class="content-wrapper clearfix">
+          
+        
+          <div class="col-content">
+  
+  
+		<div id="carousel-wrapper">
+			<div id="carousel">	
+				<ol class="items">
+					
+					
+					<li>
+						
+							<a href="http://store.britannica.com/products/044015enref" title=""><img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/carousel-item-1.jpg?13522423707433717129" alt="" /></a>
+						
+					</li>
+					
+					
+					
+					<li>
+						
+						<a href="http://store.britannica.com/products/04211380jcas" title=""><img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/carousel-item-2.jpg?13522423707433717129" alt="" /></a>
+						
+					</li>
+					
+					
+					
+					<li>
+						
+						<a href="http://store.britannica.com/products/04271380jcas" title=""><img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/carousel-item-3.jpg?13522423707433717129" alt="" /></a>
+						
+					</li>
+					
+					
+					
+					<li>
+										
+						<a href="http://store.britannica.com/products/052700000" title=""><img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/carousel-item-4.jpg?13522423707433717129" alt="" /></a>
+						
+					</li>
+					
+					
+					
+				
+																						
+
+				</ol>						
+			</div>
+			
+			
+			<div id="carousel-controls" class="clearfix">
+				<ol id="carousel-slide-menu"></ol>
+				<p class="carousel-nextprev"><a class="prev browse left" title="Previous slide">Previous</a> / <a class="next browse right" title="Next slide">Next</a> </p>				
+			</div>
+			
+			
+		</div>
+	
+
+    	
+
+	
+	
+	
+	
+	<!-- Product list -->
+	<div class="productlist-wrapper condensed">
+		<div class="productlist-header section-header">
+			<h2><a href="/collections/featuredproducts" title="">Featured Products</a></h2>
+		</div>
+		
+		
+		<ul class="thumbgrid clearfix">
+			
+				<li>
+					<div class="product-photo"><a href="/products/044015enref"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/BSE_2015_compact.jpg?v=1403200442" alt="Britannica Student Encyclopedia (2015 Copyright)" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/044015enref">Britannica Student Encyclopedia ...</a></h3>
+						<p class="product-price">
+						
+							$349.00
+							 <del>$449.00</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="product-photo"><a href="/products/04121510wrld"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/BBOY_15_compact.jpg?v=1428958095" alt="2015 Britannica Book of the Year (A Review of 2014)" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/04121510wrld">2015 Britannica Book of the Year...</a></h3>
+						<p class="product-price">
+						
+							$69.95
+															
+						
+						</p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="product-photo"><a href="/products/04121410wrld"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/bboy2014_compact.jpg?v=1396454398" alt="2014 Britannica Book of the Year (A Review of 2013)" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/04121410wrld">2014 Britannica Book of the Year...</a></h3>
+						<p class="product-price">
+						
+							$49.95
+							 <del>$69.95</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="product-photo"><a href="/products/04121310wrld"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/bboy1_2013_compact.jpg?v=1361559003" alt="2013 Britannica Book of the Year (A Review of 2012)" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/04121310wrld">2013 Britannica Book of the Year...</a></h3>
+						<p class="product-price">
+						
+							$39.95
+							 <del>$69.95</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+				<li class="last-in-row">
+					<div class="product-photo"><a href="/products/054711enref"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/BISL_large_compact.png?v=1321387541" alt="Britannica Illustrated Science Library (2011 Edition)" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/054711enref">Britannica Illustrated Science L...</a></h3>
+						<p class="product-price">
+						
+							$349.00
+							 <del>$479.00</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="product-photo"><a href="/products/04211380jcas"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/2013_Ultimate_grande_7727df20-daa1-407e-bd08-bd0c26b3ef1b_compact.jpg?v=1410276791" alt="Britannica 2013 Ultimate DVD" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/04211380jcas">Britannica 2013 Ultimate DVD</a></h3>
+						<p class="product-price">
+						
+							$29.95
+							 <del>$39.95</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="product-photo"><a href="/products/04271380jcas"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/2013_DLX_grande_f0171d36-d2b5-4ef8-b793-af9628cd182e_compact.jpg?v=1410276782" alt="Britannica 2013 Deluxe DVD" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/04271380jcas">Britannica 2013 Deluxe DVD</a></h3>
+						<p class="product-price">
+						
+							$19.95
+							 <del>$24.95</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="product-photo"><a href="/products/04211280jcas"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/2012urs_large_grande_8f6ecb8e-ef74-4c04-bac7-9185b7f42899_compact.jpg?v=1410276775" alt="Britannica 2012 Ultimate Reference DVD" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/04211280jcas">Britannica 2012 Ultimate Referen...</a></h3>
+						<p class="product-price">
+						
+							$14.95
+							 <del>$39.95</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+				<li>
+					<div class="product-photo"><a href="/products/052700000"><img src="//cdn.shopify.com/s/files/1/0101/0252/products/REPLICA-SET_compact.jpg?v=1321287055" alt="1768 Encyclopaedia Britannica Replica Set" /></a></div>
+					<div class="product-desc">
+						<h3 class="product-title"><a href="/products/052700000">1768 Encyclopaedia Britannica Re...</a></h3>
+						<p class="product-price">
+						
+							$149.00
+							 <del>$195.00</del>								
+						
+						</p>
+					</div>
+				</li>
+			
+		</ul>
+		
+	</div><!-- /.productlist-wrapper -->
+ </div>
+ 
+
+
+<div class="col-browse">
+    
+<!-- Widget: list all collections -->
+<div class="widget widget-linklist" id="widget-allcollections">
+    <div class="widget-header">
+		<h3><a href="/collections">Product Categories</a></h3>
+	</div>
+	<div class="widget-content">
+		<ul>
+		
+			<li><a href="/collections/award-winners" title="Award Winners">Award Winners<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/books" title="Books">Books<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/britannica-branded-products" title="Britannica Branded Products!">Britannica Branded Products!<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/britannica-multi-volume-sets" title="Britannica Multi-Volume Sets">Britannica Multi-Volume Sets<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/dictionaries-thesauri" title="Dictionaries & Thesauri">Dictionaries & Thesauri<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/dvds" title="DVDs">DVDs<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/featuredproducts" title="Featured Products">Featured Products<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/foreign-language" title="Foreign Language">Foreign Language<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/general-adult" title="General Adult">General Adult<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/kids" title="Kids">Kids<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/last-chance-sale" title="Last Chance Sale">Last Chance Sale<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/sale" title="Sale">Sale<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/software" title="Software">Software<span class="arrow"></span></a></li>
+		
+			<li><a href="/collections/toys-games" title="Toys & Games">Toys & Games<span class="arrow"></span></a></li>
+		
+		</ul>
+	</div>		
+</div><!-- /.widget -->
+
+
+
+
+
+
+
+		
+	
+
+
+
+
+
+
+</div><!-- /#col-browse -->
+
+</div><!-- /.col-content -->	
+
+        
+        
+      </div><!-- /.content -->
+    </div><!-- /#main -->
+  
+  </div><!-- /#main-wrapper -->
+  <!-- Footer -->
+  <div id="footer-wrapper">
+    <div id="footer" class="wrapper clearfix">
+            
+      
+      
+      <div class="footer-linklists footer-col">
+        	
+<div class="footer-linklist">				
+	<h3>   </h3>
+	<ul>
+		
+      <li class="first">
+				<a href="/pages/terms-of-use"><span class="arrow"></span>Terms of Use</a>
+			</li>
+    
+      <li>
+				<a href="/pages/contact-us"><span class="arrow"></span>Contact Us</a>
+			</li>
+    
+      <li>
+				<a href="/pages/help"><span class="arrow"></span>Help</a>
+			</li>
+    
+      <li class="last">
+				<a href="/pages/privacy-policy"><span class="arrow"></span>Privacy Policy</a>
+			</li>
+    	
+	</ul>
+</div>
+       
+        	
+<div class="footer-linklist">				
+	<h3>   </h3>
+	<ul>
+		
+      <li class="first">
+				<a href="/pages/international-sales"><span class="arrow"></span>International Sales</a>
+			</li>
+    
+      <li>
+				<a href="/pages/returns-exchanges"><span class="arrow"></span>Returns & Exchanges</a>
+			</li>
+    
+      <li>
+				<a href="/pages/yearbook-privileges-program"><span class="arrow"></span>Yearbook Privileges Program</a>
+			</li>
+    
+      <li class="last">
+				<a href="/pages/faq"><span class="arrow"></span>FAQ</a>
+			</li>
+    	
+	</ul>
+</div>
+       
+        	
+<div class="footer-linklist">				
+	<h3></h3>
+	<ul>
+			
+	</ul>
+</div>
+                 
+      </div>      
+      
+      <div class="footer-text footer-col">
+        <p>Copyright Encyclopaedia Britannica, 2013.</p>
+              
+      </div>
+
+    
+    <div id="footer-payment-methods">
+      <p>Payment methods we accept</p>
+             <img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/cc-amex.png?13522423707433717129" alt="" /> 
+         <img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/cc-discover.png?13522423707433717129" alt="" /> 
+             <img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/cc-visa.png?13522423707433717129" alt="" />      
+       <img src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/cc-mastercard.png?13522423707433717129" alt="" />      
+      
+       
+      
+           
+    </div>
+    
+
+
+    
+    </div><!-- /#footer -->
+  </div><!-- /#footer-wrapper -->
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/jquery.hoverintent.js?13522423707433717129" type="text/javascript"></script>    
+  <script src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/jquery.tools.min.js?13522423707433717129" type="text/javascript"></script>  
+  <script src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/facebox.js?13522423707433717129" type="text/javascript"></script>
+  
+  
+        
+  
+
+  
+
+  <script src="//cdn.shopify.com/s/files/1/0101/0252/t/3/assets/theme.js?13522423707433717129" type="text/javascript"></script>
+    
+</body>
+</html>

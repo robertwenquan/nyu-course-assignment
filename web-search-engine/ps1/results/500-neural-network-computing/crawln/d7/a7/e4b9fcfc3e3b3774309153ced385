@@ -1,0 +1,3316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>		
+		<link href='/images/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="google-site-verification" content="bF8r2vTwUlV8QcU8e-9aAyKi3wvocZ9ncnJhehWltDQ" />
+		
+<link href="/fonts/proximanova/stylesheet.css" media="all" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/min/globalstyles.css?1437374899" media="screen" rel="stylesheet" type="text/css" />
+
+		<title>IDG Connect</title>
+<meta name="description" content="IDG Connect provides research and editorial insight to its global community of B2B decision makers." />
+<meta name="keywords" content="technology report, articles on technology, information technology white papers, technology news, technology blogs, B2B technology research, technology research, it white papers" />
+
+		
+		
+	    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		<meta name="robots" content="NOODP"/>       
+        <link rel="canonical" href="http://www.idgconnect.com/" />
+
+
+
+		<meta name="copyright" content="Copyright ©2015"/>
+          	<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-750296-1', 'auto');
+ga('send', 'pageview');
+</script>
+		<meta content="authenticity_token" name="csrf-param" />
+<meta content="c0c8daRA2NBmHQ9uLU5lScbJ8wZ3qfPYAZgRJ7jXky4=" name="csrf-token" />
+		<link href="/stylesheets/resp.css?1432624457" media="screen" rel="stylesheet" type="text/css" />
+		<script src="/javascripts/ios-bug.js?1413803936" type="text/javascript"></script>
+		<style type="text/css">
+			body {
+				-webkit-text-size-adjust: 100%;
+			}
+		</style>
+<link href="https://plus.google.com/+Idgconnect" rel="publisher" />
+
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="wrapper_header">
+	<div class="header_top">
+		<div class="header_logo">
+			<a href="/"><img src="/images/logo.png" alt="no-images" /></a>
+			<p>ICT and the Global Community</p>
+		</div><!--header_logo-->
+		<div class="header_social_links">
+			<div class="log_register">
+
+						<p class="login_image">
+		<a href="/login">Login</a>/<a href="/comment_new_registration">Register</a>
+	</p>
+
+			</div>
+			<div class="social-links">
+				<img src="/images/plus.jpg" alt="check here" />
+			</div>
+          	     <ul class="social_con">
+<li><a href="http://twitter.com/idgconnect" target="_blank"><img src="../../../images/twt.png?1413803936" alt="twt" /></a></li>
+<li><a href="https://plus.google.com/105240867714830699547/posts" target="_blank"><img src="../../../images/google-p.png?1413803936" alt="google" /></a></li>
+<li><a href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2570925&amp;trk=myg_ugrp_ovr" target="_blank"><img title="LinkedIn" src="../../../images/linkd.png?1413803936" alt="Linkd" /></a></li>
+<li><a href="http://www.facebook.com/#!/pages/IDG-Connect/7303190806?ref=ts" target="_blank"><img src="../../../images/fb.png?1413803936" alt="fb" /></a></li>
+</ul>
+<ul>
+	
+		<li>
+		<a  href="/feeds/rss" target="_blank"><img alt="rss" src="/images/rss.png?1413803936" /></a>
+	</li>
+</ul>
+
+		</div><!--header_social_links-->
+	</div><!--header_top-->
+
+	<div class="header_middle">
+	<div class="menu_400">
+		<a href="javascripts:void(0)">Menu</a>
+	</div>
+	<div id="menu" class="menu_top">
+		<ul>
+			<li class="">
+				<a href="/type/opinion" class="" title="Opinion">Opinion</a>
+			</li>
+			<li class="">
+				<a href="/type/interviews" class="" title="Interviews">Interviews</a>
+			</li>
+			<li class="">
+				<a href="/type/analysis-review" class="" title="Analysis/Review">Analysis/Review</a>
+			</li>
+			<li class="">
+				<a href="/type/news" class="" title="News">News</a>
+			</li>
+			<li class="">
+				<a href="/full_library" class="" title="White papers">White papers</a>
+			</li>
+		</ul>
+	</div>
+	<div class="search_box">
+
+		<form accept-charset="UTF-8" action="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+		<input class="search" id="query" name="query" placeholder="Search" type="text" />
+				<input id="facet" name="facet" type="hidden" value="true" />
+                <input id="search_sort" name="sort" type="hidden" value="Date" />
+
+		<input class="button" id="s" name="commit" type="submit" value=" " />
+</form>	</div>
+</div>
+<!--header_middle-->
+<div class="menucontainer">
+	<ul class="mainmenu">
+		<li class="active">
+			<a href="javascript:void(0)" class="global_400"><img src="/images/region-select.png" alt="no-image" /></a>
+			<a href="/" class="global"><img src="/images/region-select.png" alt="no-image" /></a>
+		</li>
+		<li class="">
+			<a href="/regions/africa">Africa</a>
+		</li>
+		<li class="">
+			<a href="/regions/asia">Asia</a>
+		</li>
+		<li class="">
+			<a href="/regions/australia">Australia</a>
+		</li>
+		<li class="">
+			<a href="/regions/europe">Europe</a>
+		</li>
+		<li class="">
+			<a href="/regions/middle-east">Middle East</a>
+		</li>
+		<li class="">
+			<a href="/regions/north-america">North America</a>
+		</li>
+		<li class="">
+			<a href="/regions/latin-america">Latin America</a>
+		</li>
+		<li class="search_top">
+			<a href="javascript:void(0)">Search by Topic</a>
+
+		
+			 
+
+			<ul class="sub_menu" style="display: none;">
+				<li>      
+					<h3><a href="/browse_documents/1/business-management">Business Management</a>
+					</h3><br />
+                            <h4>
+                             <a href="/browse_documents/2/business-management/accounting-and-finance"><span> - </span><span>Accounting and Finance</span></a></h4>
+                            
+                            <p><a href="/browse_documents/3/business-management/accounting-and-finance/budgeting-planning-forecasting"><span> - </span><span>Budgeting, Planning &amp; Forecasting</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/4/business-management/accounting-and-finance/enterprise-accounting-software"><span> - </span><span>Enterprise Accounting Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/5/business-management/accounting-and-finance/financial-management-solutions"><span> - </span><span>Financial Management Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/6/business-management/accounting-and-finance/fixed-asset-management"><span> - </span><span>Fixed Asset Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/7/business-management/accounting-and-finance/invoicing-and-billing"><span> - </span><span>Invoicing and Billing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/8/business-management/accounting-and-finance/small-and-medium-sized-business-accounting-software"><span> - </span><span>Small and Medium Sized Business Accounting Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/9/business-management/accounting-and-finance/treasury-cash-and-risk-management"><span> - </span><span>Treasury, Cash and Risk Management</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/10/business-management/business-intelligence"><span> - </span><span>Business Intelligence</span></a></h4>
+                            
+                            <p><a href="/browse_documents/11/business-management/business-intelligence/balanced-scorecard"><span> - </span><span>Balanced Scorecard</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/12/business-management/business-intelligence/business-activity-monitoring-bam"><span> - </span><span>Business Activity Monitoring (BAM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/13/business-management/business-intelligence/business-intelligence-software"><span> - </span><span>Business Intelligence Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/14/business-management/business-intelligence/business-process-management-bpm"><span> - </span><span>Business Process Management (BPM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/15/business-management/business-intelligence/data-mining"><span> - </span><span>Data Mining</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/16/business-management/business-intelligence/enterprise-dashboards"><span> - </span><span>Enterprise Dashboards</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/17/business-management/business-intelligence/enterprise-performance-management"><span> - </span><span>Enterprise Performance Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/18/business-management/business-intelligence/olap"><span> - </span><span>OLAP</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/19/business-management/business-intelligence/reporting-and-end-user-query-tools"><span> - </span><span>Reporting and End-User Query Tools</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/20/business-management/business-intelligence/statistical-data-analysis"><span> - </span><span>Statistical Data Analysis</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/21/business-management/business-logistics"><span> - </span><span>Business Logistics</span></a></h4>
+                            
+                            <p><a href="/browse_documents/22/business-management/business-logistics/distribution"><span> - </span><span>Distribution</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/23/business-management/business-logistics/inventory-management"><span> - </span><span>Inventory Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/24/business-management/business-logistics/procurement"><span> - </span><span>Procurement</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/25/business-management/business-logistics/rfid-radio-frequency-identification"><span> - </span><span>RFID-- Radio Frequency Identification</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/26/business-management/business-logistics/spend-management"><span> - </span><span>Spend Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/27/business-management/business-logistics/supply-chain-automation"><span> - </span><span>Supply Chain Automation</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/28/business-management/business-logistics/supply-chain-integration"><span> - </span><span>Supply Chain Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/29/business-management/business-logistics/supply-chain-management"><span> - </span><span>Supply Chain Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/30/business-management/business-logistics/warehouse-management-software"><span> - </span><span>Warehouse Management Software</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/31/business-management/crm"><span> - </span><span>CRM</span></a></h4>
+                            
+                            <p><a href="/browse_documents/32/business-management/crm/social-media-marketing"><span> - </span><span>Social Media Marketing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/33/business-management/crm/call-center-management"><span> - </span><span>Call Center Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/34/business-management/crm/contact-center-management"><span> - </span><span>Contact Center Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/35/business-management/crm/crm-services"><span> - </span><span>CRM Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/36/business-management/crm/crm-software"><span> - </span><span>CRM Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/37/business-management/crm/customer-data-integration"><span> - </span><span>Customer Data Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/38/business-management/crm/customer-data-management"><span> - </span><span>Customer Data Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/39/business-management/crm/customer-experience-management-cem"><span> - </span><span>Customer Experience Management (CEM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/40/business-management/crm/customer-information-management"><span> - </span><span>Customer Information Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/41/business-management/crm/customer-service"><span> - </span><span>Customer Service</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/42/business-management/crm/help-desk-management"><span> - </span><span>Help Desk Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/43/business-management/crm/lead-management"><span> - </span><span>Lead Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/44/business-management/crm/mobile-crm"><span> - </span><span>Mobile CRM</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/45/business-management/crm/sales-and-marketing-software"><span> - </span><span>Sales and Marketing Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/46/business-management/crm/salesforce-automation-sfa"><span> - </span><span>Salesforce Automation (SFA)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/47/business-management/crm/sales-management"><span> - </span><span>Sales Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/48/business-management/crm/sales-order-management"><span> - </span><span>Sales Order Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/49/business-management/crm/website-registration"><span> - </span><span>Website Registration</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/50/business-management/facilities-management-and-office-resources"><span> - </span><span>Facilities Management and Office Resources</span></a></h4>
+                            
+                            <p><a href="/browse_documents/51/business-management/facilities-management-and-office-resources/email-management"><span> - </span><span>Email Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/52/business-management/facilities-management-and-office-resources/enterprise-asset-management-eam"><span> - </span><span>Enterprise Asset Management (EAM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/53/business-management/facilities-management-and-office-resources/facilities-management-and-maintenance"><span> - </span><span>Facilities Management and Maintenance</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/54/business-management/facilities-management-and-office-resources/work-order-management"><span> - </span><span>Work Order Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/368/business-management/facilities-management-and-office-resources/smart-building-management"><span> - </span><span>Smart Building Management</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/55/business-management/healthcare"><span> - </span><span>Healthcare</span></a></h4>
+                            
+                            <p><a href="/browse_documents/56/business-management/healthcare/electronic-medical-billing-systems"><span> - </span><span>Electronic Medical Billing Systems</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/57/business-management/healthcare/ehr-systems"><span> - </span><span>EHR Systems</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/58/business-management/healthcare/healthcare-inventory-management"><span> - </span><span>Healthcare Inventory Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/59/business-management/healthcare/medical-devices"><span> - </span><span>Medical Devices</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/60/business-management/healthcare/telemedicine"><span> - </span><span>Telemedicine</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/61/business-management/healthcare/medical-records-management"><span> - </span><span>Medical Records Management</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/62/business-management/human-resources"><span> - </span><span>Human Resources</span></a></h4>
+                            
+                            <p><a href="/browse_documents/63/business-management/human-resources/employee-benefits-administration"><span> - </span><span>Employee Benefits Administration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/64/business-management/human-resources/employee-relationship-management-erm"><span> - </span><span>Employee Relationship Management (ERM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/65/business-management/human-resources/human-capital-management"><span> - </span><span>Human Capital Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/66/business-management/human-resources/human-resource-management"><span> - </span><span>Human Resource Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/67/business-management/human-resources/learning-management-systems-lms"><span> - </span><span>Learning Management Systems (LMS)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/68/business-management/human-resources/training-and-development"><span> - </span><span>Training and Development</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/69/business-management/human-resources/workforce-planning-and-management"><span> - </span><span>Workforce Planning and Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/70/business-management/human-resources/human-resources-and-payroll-software"><span> - </span><span>Human Resources and Payroll Software</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/71/business-management/it-services"><span> - </span><span>IT Services</span></a></h4>
+                            
+                            <p><a href="/browse_documents/72/business-management/it-services/hosting-services"><span> - </span><span>Hosting Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/73/business-management/it-services/managed-services"><span> - </span><span>Managed Services</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/74/business-management/knowledge-and-content-management"><span> - </span><span>Knowledge and Content Management</span></a></h4>
+                            
+                            <p><a href="/browse_documents/75/business-management/knowledge-and-content-management/content-management"><span> - </span><span>Content Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/76/business-management/knowledge-and-content-management/content-management-systems"><span> - </span><span>Content Management Systems</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/77/business-management/knowledge-and-content-management/document-management"><span> - </span><span>Document Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/78/business-management/knowledge-and-content-management/enterprise-content-management"><span> - </span><span>Enterprise Content Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/79/business-management/knowledge-and-content-management/information-lifecycle-management"><span> - </span><span>Information Lifecycle Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/80/business-management/knowledge-and-content-management/knowledge-management"><span> - </span><span>Knowledge Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/81/business-management/knowledge-and-content-management/master-data-management"><span> - </span><span>Master Data Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/82/business-management/knowledge-and-content-management/metadata-management"><span> - </span><span>Metadata Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/83/business-management/knowledge-and-content-management/records-management"><span> - </span><span>Records Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/84/business-management/knowledge-and-content-management/taxonomies"><span> - </span><span>Taxonomies</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/85/business-management/knowledge-and-content-management/electronic-discovery"><span> - </span><span>Electronic Discovery</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/86/business-management/manufacturing-and-process-management"><span> - </span><span>Manufacturing and Process Management</span></a></h4>
+                            
+                            <p><a href="/browse_documents/87/business-management/manufacturing-and-process-management/advanced-planning-and-scheduling"><span> - </span><span>Advanced Planning and Scheduling</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/88/business-management/manufacturing-and-process-management/manufacturing-enterprise-resource-planning-merp"><span> - </span><span>Manufacturing Enterprise Resource Planning (MERP)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/89/business-management/manufacturing-and-process-management/integrated-manufacturing-solutions"><span> - </span><span>Integrated Manufacturing Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/90/business-management/manufacturing-and-process-management/lean-manufacturing"><span> - </span><span>Lean Manufacturing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/91/business-management/manufacturing-and-process-management/operations-planning"><span> - </span><span>Operations Planning</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/92/business-management/manufacturing-and-process-management/product-data-management"><span> - </span><span>Product Data Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/93/business-management/manufacturing-and-process-management/product-life-cycle-management-plm"><span> - </span><span>Product Life Cycle Management (PLM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/94/business-management/manufacturing-and-process-management/quality-control"><span> - </span><span>Quality Control</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/95/business-management/project-management-and-collaboration"><span> - </span><span>Project Management and Collaboration</span></a></h4>
+                            
+                            <p><a href="/browse_documents/96/business-management/project-management-and-collaboration/collaborative-tools"><span> - </span><span>Collaborative Tools</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/97/business-management/project-management-and-collaboration/messaging-solutions"><span> - </span><span>Messaging Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/98/business-management/project-management-and-collaboration/project-management-solutions"><span> - </span><span>Project Management Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/99/business-management/project-management-and-collaboration/resource-planning-and-scheduling"><span> - </span><span>Resource Planning and Scheduling</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/100/business-management/project-management-and-collaboration/web-video-and-audio-conferencing"><span> - </span><span>Web, Video and Audio Conferencing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/101/business-management/project-management-and-collaboration/groupware"><span> - </span><span>Groupware</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/102/business-management/regulatory-compliance"><span> - </span><span>Regulatory Compliance</span></a></h4>
+                            
+                            <p><a href="/browse_documents/103/business-management/regulatory-compliance/hippa"><span> - </span><span>HIPPA</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/104/business-management/regulatory-compliance/mifid"><span> - </span><span>MiFID</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/105/business-management/regulatory-compliance/sox"><span> - </span><span>SOX</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/367/business-management/smb"><span> - </span><span>SMB</span></a></h4>
+                            <h4>
+                             <a href="/browse_documents/567/business-management/trends"><span> - </span><span>Trends</span></a></h4>
+                            <h4>
+                             <a href="/browse_documents/568/business-management/market-analysis"><span> - </span><span>Market Analysis</span></a></h4>
+                            <h4>
+                             <a href="/browse_documents/569/business-management/predictions"><span> - </span><span>Predictions</span></a></h4>
+
+				</li>
+				<li>      
+					<h3><a href="/browse_documents/106/it-systems-management">IT &amp; Systems Management</a>
+					</h3><br />
+                            <h4>
+                             <a href="/browse_documents/107/it-systems-management/database-solutions"><span> - </span><span>Database Solutions</span></a></h4>
+                            
+                            <p><a href="/browse_documents/108/it-systems-management/database-solutions/data-cleansing-and-quality"><span> - </span><span>Data Cleansing and Quality</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/109/it-systems-management/database-solutions/data-warehousing"><span> - </span><span>Data Warehousing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/110/it-systems-management/database-solutions/database-administration"><span> - </span><span>Database Administration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/111/it-systems-management/database-solutions/database-migration"><span> - </span><span>Database Migration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/112/it-systems-management/database-solutions/database-planning-and-implementation"><span> - </span><span>Database Planning and Implementation</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/113/it-systems-management/database-solutions/database-software"><span> - </span><span>Database Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/107/it-systems-management/database-solutions"><span> - </span><span>Database Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/115/it-systems-management/database-solutions/databases"><span> - </span><span>Databases</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/116/it-systems-management/database-solutions/database-management"><span> - </span><span>Database Management</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/117/it-systems-management/cloud-computing"><span> - </span><span>Cloud Computing</span></a></h4>
+                            
+                            <p><a href="/browse_documents/118/it-systems-management/cloud-computing/cloud-computing-applications"><span> - </span><span>Cloud Computing Applications</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/119/it-systems-management/cloud-computing/cloud-computing-management"><span> - </span><span>Cloud Computing Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/120/it-systems-management/cloud-computing/cloud-computing-platforms"><span> - </span><span>Cloud Computing Platforms</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/121/it-systems-management/cloud-computing/cloud-computing-security"><span> - </span><span>Cloud Computing Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/122/it-systems-management/cloud-computing/saas"><span> - </span><span>SaaS</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/123/it-systems-management/enterprise-application-integration-eai"><span> - </span><span>Enterprise Application Integration (EAI)</span></a></h4>
+                            
+                            <p><a href="/browse_documents/124/it-systems-management/enterprise-application-integration-eai/application-integration"><span> - </span><span>Application Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/125/it-systems-management/enterprise-application-integration-eai/data-integration"><span> - </span><span>Data Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/126/it-systems-management/enterprise-application-integration-eai/enterprise-application-integration"><span> - </span><span>Enterprise Application Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/127/it-systems-management/enterprise-application-integration-eai/enterprise-application-integration-middleware"><span> - </span><span>Enterprise Application Integration Middleware</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/128/it-systems-management/enterprise-application-integration-eai/enterprise-service-business"><span> - </span><span>Enterprise Service Business</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/129/it-systems-management/enterprise-application-integration-eai/legacy-integration"><span> - </span><span>Legacy Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/130/it-systems-management/enterprise-application-integration-eai/service-oriented-architecture-soa"><span> - </span><span>Service Oriented Architecture (SOA)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/131/it-systems-management/enterprise-application-integration-eai/soap"><span> - </span><span>SOAP</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/132/it-systems-management/enterprise-application-integration-eai/web-services"><span> - </span><span>Web Services</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/133/it-systems-management/it-planning-management"><span> - </span><span>IT Planning &amp; Management</span></a></h4>
+                            
+                            <p><a href="/browse_documents/134/it-systems-management/it-planning-management/business-it-alignment"><span> - </span><span>Business IT Alignment</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/135/it-systems-management/it-planning-management/business-process-automation"><span> - </span><span>Business Process Automation</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/136/it-systems-management/it-planning-management/business-service-management-bsm"><span> - </span><span>Business Service Management (BSM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/137/it-systems-management/it-planning-management/business-technology-optimization"><span> - </span><span>Business Technology Optimization</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/138/it-systems-management/it-planning-management/it-compliance"><span> - </span><span>IT Compliance</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/139/it-systems-management/it-planning-management/enterprise-architecture-management-eam"><span> - </span><span>Enterprise Architecture Management (EAM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/140/it-systems-management/it-planning-management/enterprise-resource-management"><span> - </span><span>Enterprise Resource Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/141/it-systems-management/it-planning-management/enterprise-resource-planning-erp"><span> - </span><span>Enterprise Resource Planning (ERP)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/142/it-systems-management/it-planning-management/information-technology-infrastructure-library-itil"><span> - </span><span>Information Technology Infrastructure Library (ITIL)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/143/it-systems-management/it-planning-management/infrastructure-management"><span> - </span><span>Infrastructure Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/144/it-systems-management/it-planning-management/it-asset-management-itam"><span> - </span><span>IT Asset Management (ITAM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/145/it-systems-management/it-planning-management/it-best-practices"><span> - </span><span>IT Best Practices</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/146/it-systems-management/it-planning-management/it-consulting-services"><span> - </span><span>IT Consulting Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/147/it-systems-management/it-planning-management/it-governance"><span> - </span><span>IT Governance</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/148/it-systems-management/it-planning-management/it-management-services"><span> - </span><span>IT Management Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/149/it-systems-management/it-planning-management/it-portfolio-management"><span> - </span><span>IT Portfolio Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/150/it-systems-management/it-planning-management/it-service-management-itsm"><span> - </span><span>IT Service Management (ITSM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/151/it-systems-management/it-planning-management/outsourcing"><span> - </span><span>Outsourcing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/152/it-systems-management/it-planning-management/offshore-outsourcing"><span> - </span><span>Offshore Outsourcing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/153/it-systems-management/it-planning-management/project-portfolio-management-ppm"><span> - </span><span>Project Portfolio Management (PPM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/154/it-systems-management/it-planning-management/risk-management"><span> - </span><span>Risk Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/155/it-systems-management/it-planning-management/roi"><span> - </span><span>ROI</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/156/it-systems-management/it-planning-management/strategic-planning"><span> - </span><span>Strategic Planning</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/157/it-systems-management/it-planning-management/technology-planning-and-analysis"><span> - </span><span>Technology Planning and Analysis</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/158/it-systems-management/mobile-communications"><span> - </span><span>Mobile Communications</span></a></h4>
+                            
+                            <p><a href="/browse_documents/159/it-systems-management/mobile-communications/mobile-working"><span> - </span><span>Mobile Working</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/160/it-systems-management/mobile-communications/handheld-technology"><span> - </span><span>Handheld Technology</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/161/it-systems-management/mobile-communications/mobile-applications"><span> - </span><span>Mobile Applications</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/162/it-systems-management/mobile-communications/mobile-device-management"><span> - </span><span>Mobile Device Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/163/it-systems-management/mobile-communications/handheld-devices"><span> - </span><span>Handheld Devices</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/164/it-systems-management/mobile-communications/laptops-notebooks"><span> - </span><span>Laptops/Notebooks</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/565/it-systems-management/mobile-communications/byod-bring-your-own-device"><span> - </span><span>BYOD (Bring Your Own Device)</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/165/it-systems-management/networking-communications"><span> - </span><span>Networking &amp; Communications</span></a></h4>
+                            
+                            <p><a href="/browse_documents/166/it-systems-management/networking-communications/bandwidth-management"><span> - </span><span>Bandwidth Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/167/it-systems-management/networking-communications/communications-services"><span> - </span><span>Communications Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/168/it-systems-management/networking-communications/communications-software"><span> - </span><span>Communications Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/169/it-systems-management/networking-communications/content-delivery-networks"><span> - </span><span>Content Delivery Networks</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/170/it-systems-management/networking-communications/fibre-optic-networking"><span> - </span><span>Fibre Optic Networking</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/171/it-systems-management/networking-communications/grid-computing"><span> - </span><span>Grid Computing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/172/it-systems-management/networking-communications/internet-traffic-management"><span> - </span><span>Internet Traffic Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/173/it-systems-management/networking-communications/ip-networks"><span> - </span><span>IP Networks</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/174/it-systems-management/networking-communications/lan"><span> - </span><span>LAN</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/175/it-systems-management/networking-communications/managed-service-provider-msp"><span> - </span><span>Managed Service Provider (MSP)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/176/it-systems-management/networking-communications/network-appliances"><span> - </span><span>Network Appliances</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/177/it-systems-management/networking-communications/network-configuration-management-software"><span> - </span><span>Network Configuration Management Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/178/it-systems-management/networking-communications/network-management"><span> - </span><span>Network Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/179/it-systems-management/networking-communications/network-management-software"><span> - </span><span>Network Management Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/180/it-systems-management/networking-communications/remote-access-technologies"><span> - </span><span>Remote Access Technologies</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/181/it-systems-management/networking-communications/routers"><span> - </span><span>Routers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/182/it-systems-management/networking-communications/server-virtualization"><span> - </span><span>Server Virtualization</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/183/it-systems-management/networking-communications/switches"><span> - </span><span>Switches</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/184/it-systems-management/networking-communications/unified-communications"><span> - </span><span>Unified Communications</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/185/it-systems-management/networking-communications/voice-data-convergence"><span> - </span><span>Voice &amp; Data Convergence</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/186/it-systems-management/networking-communications/voip"><span> - </span><span>VoIP</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/187/it-systems-management/networking-communications/vpn"><span> - </span><span>VPN</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/188/it-systems-management/networking-communications/wan"><span> - </span><span>WAN</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/189/it-systems-management/networking-communications/wi-fi"><span> - </span><span>Wi-Fi</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/190/it-systems-management/networking-communications/wireless-technologies"><span> - </span><span>Wireless Technologies</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/191/it-systems-management/networking-communications/wlan"><span> - </span><span>WLAN</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/369/it-systems-management/networking-communications/file-transfer"><span> - </span><span>File Transfer</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/192/it-systems-management/risk"><span> - </span><span>Risk</span></a></h4>
+                            
+                            <p><a href="/browse_documents/193/it-systems-management/risk/credit-risk"><span> - </span><span>Credit Risk</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/194/it-systems-management/risk/energy-risk"><span> - </span><span>Energy Risk</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/195/it-systems-management/risk/life-and-pension-risk"><span> - </span><span>Life and Pension Risk</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/196/it-systems-management/risk/operational-risk"><span> - </span><span>Operational Risk</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/154/it-systems-management/it-planning-management/risk-management"><span> - </span><span>Risk Management</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/198/it-systems-management/security"><span> - </span><span>Security</span></a></h4>
+                            
+                            <p><a href="/browse_documents/199/it-systems-management/security/access-control"><span> - </span><span>Access Control</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/200/it-systems-management/security/anti-spam"><span> - </span><span>Anti-Spam</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/201/it-systems-management/security/anti-spyware"><span> - </span><span>Anti-Spyware</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/202/it-systems-management/security/anti-virus-solutions"><span> - </span><span>Anti-Virus Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/203/it-systems-management/security/application-security"><span> - </span><span>Application Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/204/it-systems-management/security/authentication"><span> - </span><span>Authentication</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/205/it-systems-management/security/biometrics"><span> - </span><span>Biometrics</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/206/it-systems-management/security/content-filtering"><span> - </span><span>Content Filtering</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/207/it-systems-management/security/cybercrime"><span> - </span><span>Cybercrime</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/208/it-systems-management/security/data-privacy-and-security"><span> - </span><span>Data Privacy and Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/209/it-systems-management/security/email-encryption"><span> - </span><span>Email Encryption</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/210/it-systems-management/security/encryption"><span> - </span><span>Encryption </span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/211/it-systems-management/security/endpoint-security"><span> - </span><span>Endpoint Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/212/it-systems-management/security/enterprise-data-privacy"><span> - </span><span>Enterprise Data Privacy</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/213/it-systems-management/security/enterprise-data-protection"><span> - </span><span>Enterprise Data Protection</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/214/it-systems-management/security/firewalls"><span> - </span><span>Firewalls</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/215/it-systems-management/security/fraud-detection-prevention"><span> - </span><span>Fraud Detection &amp; Prevention</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/216/it-systems-management/security/identity-fraud-theft"><span> - </span><span>Identity Fraud &amp; Theft</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/217/it-systems-management/security/identity-management"><span> - </span><span>Identity Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/218/it-systems-management/security/internet-security"><span> - </span><span>Internet Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/219/it-systems-management/security/intrusion-detection-and-prevention"><span> - </span><span>Intrusion Detection and Prevention</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/220/it-systems-management/security/it-security-frameworks-and-standards"><span> - </span><span>IT Security Frameworks and Standards</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/221/it-systems-management/security/laptop-security"><span> - </span><span>Laptop Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/222/it-systems-management/security/malware"><span> - </span><span>Malware</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/223/it-systems-management/security/managed-security-services"><span> - </span><span>Managed Security Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/224/it-systems-management/security/messaging-security"><span> - </span><span>Messaging Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/225/it-systems-management/security/network-security"><span> - </span><span>Network Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/226/it-systems-management/security/password-management"><span> - </span><span>Password Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/227/it-systems-management/security/patch-management"><span> - </span><span>Patch Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/228/it-systems-management/security/remote-access-security"><span> - </span><span>Remote Access Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/229/it-systems-management/security/secure-content-management"><span> - </span><span>Secure Content Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/230/it-systems-management/security/security-audits"><span> - </span><span>Security Audits</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/231/it-systems-management/security/security-monitoring"><span> - </span><span>Security Monitoring</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/232/it-systems-management/security/security-policies"><span> - </span><span>Security Policies</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/233/it-systems-management/security/ssl"><span> - </span><span>SSL</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/234/it-systems-management/security/threat-and-vulnerability-management"><span> - </span><span>Threat and Vulnerability Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/235/it-systems-management/security/wireless-security"><span> - </span><span>Wireless Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/236/it-systems-management/security/unified-threat-management"><span> - </span><span>Unified Threat Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/237/it-systems-management/security/virtual-private-network-security"><span> - </span><span>Virtual Private Network Security</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/238/it-systems-management/servers"><span> - </span><span>Servers </span></a></h4>
+                            
+                            <p><a href="/browse_documents/239/it-systems-management/servers/application-servers"><span> - </span><span>Application Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/240/it-systems-management/servers/blade-servers"><span> - </span><span>Blade Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/241/it-systems-management/servers/database-servers"><span> - </span><span>Database Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/242/it-systems-management/servers/directory-servers"><span> - </span><span>Directory Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/243/it-systems-management/servers/e-mail-servers"><span> - </span><span>E-mail Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/244/it-systems-management/servers/mainframe-servers"><span> - </span><span>Mainframe Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/245/it-systems-management/servers/midrange-servers"><span> - </span><span>Midrange Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/246/it-systems-management/servers/print-servers"><span> - </span><span>Print Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/247/it-systems-management/servers/remote-servers"><span> - </span><span>Remote Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/248/it-systems-management/servers/web-servers"><span> - </span><span>Web Servers</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/249/it-systems-management/servers/microprocessor"><span> - </span><span>Microprocessor</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/250/it-systems-management/storage-data-center-solutions"><span> - </span><span>Storage &amp; Data Center Solutions</span></a></h4>
+                            
+                            <p><a href="/browse_documents/251/it-systems-management/storage-data-center-solutions/archiving-software"><span> - </span><span>Archiving Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/252/it-systems-management/storage-data-center-solutions/capacity-planning"><span> - </span><span>Capacity Planning</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/253/it-systems-management/storage-data-center-solutions/content-archiving"><span> - </span><span>Content Archiving</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/254/it-systems-management/storage-data-center-solutions/continuous-data-protection"><span> - </span><span>Continuous Data Protection</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/255/it-systems-management/storage-data-center-solutions/cooling-systems"><span> - </span><span>Cooling Systems</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/256/it-systems-management/storage-data-center-solutions/data-centre-storage-solutions"><span> - </span><span>Data Centre &amp; Storage Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/257/it-systems-management/storage-data-center-solutions/data-center-management"><span> - </span><span>Data Center Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/258/it-systems-management/storage-data-center-solutions/data-recovery"><span> - </span><span>Data Recovery</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/259/it-systems-management/storage-data-center-solutions/data-replication"><span> - </span><span>Data Replication</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/260/it-systems-management/storage-data-center-solutions/disk-backups"><span> - </span><span>Disk Backups</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/261/it-systems-management/storage-data-center-solutions/disk-storage-systems"><span> - </span><span>Disk Storage Systems</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/262/it-systems-management/storage-data-center-solutions/disk-to-disk-to-tape"><span> - </span><span>Disk-to-Disk-to-Tape</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/263/it-systems-management/storage-data-center-solutions/email-archiving"><span> - </span><span>Email Archiving</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/264/it-systems-management/storage-data-center-solutions/fibre-channel-solutions"><span> - </span><span>Fibre Channel Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/265/it-systems-management/storage-data-center-solutions/network-storage"><span> - </span><span>Network Storage</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/266/it-systems-management/storage-data-center-solutions/network-attached-storage-nas"><span> - </span><span>Network Attached Storage (NAS)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/267/it-systems-management/storage-data-center-solutions/power-solutions"><span> - </span><span>Power Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/268/it-systems-management/storage-data-center-solutions/raid"><span> - </span><span>RAID</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/269/it-systems-management/storage-data-center-solutions/remote-and-offsite-data-storage"><span> - </span><span>Remote and Offsite Data Storage</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/270/it-systems-management/storage-data-center-solutions/san-management"><span> - </span><span>SAN Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/271/it-systems-management/storage-data-center-solutions/san-virtualization-and-consolidation"><span> - </span><span>SAN Virtualization and Consolidation</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/272/it-systems-management/storage-data-center-solutions/storage-area-network-san"><span> - </span><span>Storage Area Network (SAN)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/273/it-systems-management/storage-data-center-solutions/storage-hardware"><span> - </span><span>Storage Hardware</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/274/it-systems-management/storage-data-center-solutions/storage-management"><span> - </span><span>Storage Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/275/it-systems-management/storage-data-center-solutions/storage-management-software"><span> - </span><span>Storage Management Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/276/it-systems-management/storage-data-center-solutions/storage-resource-management"><span> - </span><span>Storage Resource Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/277/it-systems-management/storage-data-center-solutions/storage-security"><span> - </span><span>Storage Security</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/278/it-systems-management/storage-data-center-solutions/storage-virtualization"><span> - </span><span>Storage Virtualization</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/279/it-systems-management/storage-data-center-solutions/tape-drives-and-libraries"><span> - </span><span>Tape Drives and Libraries</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/280/it-systems-management/storage-data-center-solutions/virtual-tape-libraries"><span> - </span><span>Virtual Tape Libraries</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/281/it-systems-management/storage-data-center-solutions/data-deduplication"><span> - </span><span>Data Deduplication</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/282/it-systems-management/system-design-management"><span> - </span><span>System Design &amp; Management</span></a></h4>
+                            
+                            <p><a href="/browse_documents/283/it-systems-management/system-design-management/application-lifecycle-management-alm"><span> - </span><span>Application Lifecycle Management (ALM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/284/it-systems-management/system-design-management/application-performance-management-apm"><span> - </span><span>Application Performance Management (APM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/285/it-systems-management/system-design-management/backup-systems-and-services"><span> - </span><span>Backup Systems and Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/286/it-systems-management/system-design-management/change-management"><span> - </span><span>Change Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/287/it-systems-management/system-design-management/clustering"><span> - </span><span>Clustering</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/288/it-systems-management/system-design-management/configuration-management"><span> - </span><span>Configuration Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/289/it-systems-management/system-design-management/desktop-management"><span> - </span><span>Desktop Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/290/it-systems-management/system-design-management/desktop-virtualization"><span> - </span><span>Desktop Virtualization</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/291/it-systems-management/system-design-management/disaster-recovery"><span> - </span><span>Disaster Recovery</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/292/it-systems-management/system-design-management/enterprise-systems-management"><span> - </span><span>Enterprise Systems Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/293/it-systems-management/system-design-management/high-availability"><span> - </span><span>High Availability</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/294/it-systems-management/system-design-management/load-balancing"><span> - </span><span>Load Balancing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/295/it-systems-management/system-design-management/network-monitoring"><span> - </span><span>Network Monitoring</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/296/it-systems-management/system-design-management/network-traffic-management"><span> - </span><span>Network Traffic Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/297/it-systems-management/system-design-management/qos"><span> - </span><span>QOS</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/298/it-systems-management/system-design-management/remote-administration"><span> - </span><span>Remote Administration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/299/it-systems-management/system-design-management/remote-network-management"><span> - </span><span>Remote Network Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/300/it-systems-management/system-design-management/service-level-management"><span> - </span><span>Service Level Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/301/it-systems-management/system-design-management/systems-integration"><span> - </span><span>Systems Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/302/it-systems-management/system-design-management/systems-maintenance"><span> - </span><span>Systems Maintenance</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/303/it-systems-management/system-design-management/systems-management-services"><span> - </span><span>Systems Management Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/304/it-systems-management/system-design-management/systems-modeling-and-analysis"><span> - </span><span>Systems Modeling and Analysis</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/305/it-systems-management/system-design-management/business-continuity"><span> - </span><span>Business Continuity</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/566/it-systems-management/system-design-management/performance-monitoring-tools"><span> - </span><span>Performance Monitoring Tools</span></a></p>
+                         
+
+				</li>
+				<li>      
+					<h3><a href="/browse_documents/306/software-web-development">Software &amp; Web Development</a>
+					</h3><br />
+                            <h4>
+                             <a href="/browse_documents/307/software-web-development/application-development"><span> - </span><span>Application Development</span></a></h4>
+                            
+                            <p><a href="/browse_documents/307/software-web-development/application-development"><span> - </span><span>Application Development</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/309/software-web-development/application-development/application-outsourcing"><span> - </span><span>Application Outsourcing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/310/software-web-development/application-development/client-server-architectures"><span> - </span><span>Client-Server Architectures</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/311/software-web-development/application-development/open-source"><span> - </span><span>Open Source</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/312/software-web-development/application-development/software-architectures"><span> - </span><span>Software Architectures</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/313/software-web-development/application-development/software-development-tools"><span> - </span><span>Software Development Tools</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/314/software-web-development/application-development/technology-outsourcing"><span> - </span><span>Technology Outsourcing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/315/software-web-development/application-development/application-deployment"><span> - </span><span>Application Deployment</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/316/software-web-development/application-development/software-configuration-management-scm"><span> - </span><span>Software Configuration Management (SCM)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/317/software-web-development/application-development/software-testing"><span> - </span><span>Software Testing</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/318/software-web-development/application-development/version-control"><span> - </span><span>Version Control</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/319/software-web-development/application-development/software-as-a-service-saas"><span> - </span><span>Software as a Service (SaaS)</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/320/software-web-development/web-development"><span> - </span><span>Web Development</span></a></h4>
+                            
+                            <p><a href="/browse_documents/321/software-web-development/web-development/site-management-tools"><span> - </span><span>Site Management Tools</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/322/software-web-development/web-development/web-analytics"><span> - </span><span>Web Analytics</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/323/software-web-development/web-development/web-applications-architecture"><span> - </span><span>Web Applications Architecture</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/324/software-web-development/web-development/web-applications-software"><span> - </span><span>Web Applications Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/325/software-web-development/web-development/web-server-software"><span> - </span><span>Web Server Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/326/software-web-development/web-development/web-services-architecture"><span> - </span><span>Web Services Architecture</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/327/software-web-development/web-development/wireless-application-development"><span> - </span><span>Wireless Application Development</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/328/software-web-development/e-commerce-solutions"><span> - </span><span>E-Commerce Solutions</span></a></h4>
+                            
+                            <p><a href="/browse_documents/329/software-web-development/e-commerce-solutions/b2b-integration"><span> - </span><span>B2B Integration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/330/software-web-development/e-commerce-solutions/ecommerce-services"><span> - </span><span>ecommerce Services</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/331/software-web-development/e-commerce-solutions/ecommerce-software"><span> - </span><span>ecommerce Software</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/332/software-web-development/e-commerce-solutions/electronic-catalog-management"><span> - </span><span>Electronic Catalog Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/333/software-web-development/e-commerce-solutions/electronic-commerce-interchange-edi-xml"><span> - </span><span>Electronic Commerce Interchange (EDI-XML)</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/334/software-web-development/e-commerce-solutions/fraud-protection"><span> - </span><span>Fraud Protection</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/335/software-web-development/e-commerce-solutions/web-portal-solutions"><span> - </span><span>Web Portal Solutions</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/336/software-web-development/e-commerce-solutions/search-engines"><span> - </span><span>Search Engines</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/337/software-web-development/e-commerce-solutions/web-content-management"><span> - </span><span>Web Content Management</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/338/software-web-development/internet"><span> - </span><span>Internet</span></a></h4>
+                            
+                            <p><a href="/browse_documents/339/software-web-development/internet/collaborative-working"><span> - </span><span>Collaborative Working</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/340/software-web-development/internet/open-source-collaboration"><span> - </span><span>Open-Source Collaboration</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/341/software-web-development/internet/instant-messaging-im"><span> - </span><span>Instant Messaging/IM</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/342/software-web-development/internet/social-networks"><span> - </span><span>Social Networks</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/343/software-web-development/software"><span> - </span><span>Software</span></a></h4>
+                            
+                            <p><a href="/browse_documents/344/software-web-development/software/enterprise-applications"><span> - </span><span>Enterprise Applications</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/345/software-web-development/software/microsoft-windows"><span> - </span><span>Microsoft Windows</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/346/software-web-development/software/mac-os"><span> - </span><span>MAC OS</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/365/software-web-development/software/windows-os"><span> - </span><span>Windows OS</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/366/software-web-development/software/analytics-software"><span> - </span><span>Analytics Software</span></a></p>
+                         
+
+				</li>
+				<li>      
+					<h3><a href="/browse_documents/347/green-business">Green Business</a>
+					</h3><br />
+                            <h4>
+                             <a href="/browse_documents/348/green-business/carbon-trading"><span> - </span><span>Carbon Trading</span></a></h4>
+                            <h4>
+                             <a href="/browse_documents/349/green-business/data-center"><span> - </span><span>Data Center</span></a></h4>
+                            
+                            <p><a href="/browse_documents/350/green-business/data-center/air-management"><span> - </span><span>Air Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/351/green-business/data-center/cooling"><span> - </span><span>Cooling</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/352/green-business/data-center/data-center-design"><span> - </span><span>Data Center Design</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/353/green-business/data-center/data-center-power-management"><span> - </span><span>Data Center Power Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/354/green-business/data-center/energy-efficiency"><span> - </span><span>Energy Efficiency</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/355/green-business/data-center/energy-savings"><span> - </span><span>Energy Savings</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/356/green-business/data-center/remote-management"><span> - </span><span>Remote Management</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/357/green-business/data-center/server-consolidation"><span> - </span><span>Server Consolidation</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/358/green-business/data-center/virtualization"><span> - </span><span>Virtualization</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/359/green-business/finance"><span> - </span><span>Finance</span></a></h4>
+                            
+                            <p><a href="/browse_documents/360/green-business/finance/carbon-offsetting"><span> - </span><span>Carbon Offsetting</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/348/green-business/carbon-trading"><span> - </span><span>Carbon Trading</span></a></p>
+                         
+                            <h4>
+                             <a href="/browse_documents/362/green-business/management"><span> - </span><span>Management</span></a></h4>
+                            
+                            <p><a href="/browse_documents/159/it-systems-management/mobile-communications/mobile-working"><span> - </span><span>Mobile Working</span></a></p>
+                         
+                            
+                            <p><a href="/browse_documents/364/green-business/management/teleconferencing"><span> - </span><span>Teleconferencing</span></a></p>
+                         
+
+				</li>
+			</ul>
+		
+		</li>
+	</ul>
+</div>
+<!--menucontainer-->
+
+
+</div><!--wrapper_header-->
+
+
+			<div id="wrapper_container">
+
+				<div class="container_left">
+					
+
+<div class="content_left">
+	<div data-connectwith="" id="container_32">
+<div class="section_content component_block" data-url="/edit-component?id=187&amp;type=site" id="component_187">
+
+
+	
+
+	<script type="text/javascript">
+	var image_details = [{"image_anchor":"/blog-abstract/10426/news-roundup-fb-buttons-cortana-self-destructing-microchips","image_anchor_small_image_src":"/IMG/718/32718/image-via-wikimedia4432-190x116.jpg","image_anchor_big_image_src":"/IMG/718/32718/image-via-wikimedia4432-430x350.jpg","content_block_para_anchor_href":"/browse_documents/338/software-web-development/internet","content_block_para_anchor_text":"INTERNET","content_block_h2_anchor_href":"/blog-abstract/10426/news-roundup-fb-buttons-cortana-self-destructing-microchips","content_block_h2_anchor_text":"News Roundup: FB Buttons, Cortana everywhere and self-destructing...","content_block_ul_imagecomment_anchor_href":"/blog-abstract/10426/news-roundup-fb-buttons-cortana-self-destructing-microchips#comment_tab","content_block_ul_imagecomment_anchor_text":"","content_block_ul_imagecomment_anchor_date":"Sep 18"},{"image_anchor":"/blog-abstract/10421/rant-techies-killed-conference","image_anchor_small_image_src":"/IMG/916/25916/friday-rant3444-190x116.jpg","image_anchor_big_image_src":"/IMG/916/25916/friday-rant3444-430x350.jpg","content_block_para_anchor_href":"/browse_documents/364/green-business/management/teleconferencing","content_block_para_anchor_text":"TELECONFERENCING","content_block_h2_anchor_href":"/blog-abstract/10421/rant-techies-killed-conference","content_block_h2_anchor_text":"Rant: Techies killed the conference call","content_block_ul_imagecomment_anchor_href":"/blog-abstract/10421/rant-techies-killed-conference#comment_tab","content_block_ul_imagecomment_anchor_text":"","content_block_ul_imagecomment_anchor_date":"Sep 18"},{"image_anchor":"/abstract/10419/seeing-gaudi-casa-batll-augmented-reality","image_anchor_small_image_src":"/IMG/708/32708/casa-batloo-main-attrib-borkur-sigurbjornsson-via-flickr2907-190x116.jpg","image_anchor_big_image_src":"/IMG/708/32708/casa-batloo-main-attrib-borkur-sigurbjornsson-via-flickr2907-430x350.jpg","content_block_para_anchor_href":"/browse_documents/358/green-business/data-center/virtualization","content_block_para_anchor_text":"VIRTUALIZATION","content_block_h2_anchor_href":"/abstract/10419/seeing-gaudi-casa-batll-augmented-reality","content_block_h2_anchor_text":"Seeing Gaudi\u2019s Casa Batll\u00f3 through augmented reality","content_block_ul_imagecomment_anchor_href":"/abstract/10419/seeing-gaudi-casa-batll-augmented-reality#comment_tab","content_block_ul_imagecomment_anchor_text":"","content_block_ul_imagecomment_anchor_date":"Sep 18"},{"image_anchor":"/abstract/10416/sub-saharan-africa-highest-female-entrepreneurship-rate-globally","image_anchor_small_image_src":"/IMG/703/32703/african-women-entrepreneurs2601-190x116.jpg","image_anchor_big_image_src":"/IMG/703/32703/african-women-entrepreneurs2601-430x350.jpg","content_block_para_anchor_href":"/browse_documents/1/business-management","content_block_para_anchor_text":"BUSINESS MANAGEMENT","content_block_h2_anchor_href":"/abstract/10416/sub-saharan-africa-highest-female-entrepreneurship-rate-globally","content_block_h2_anchor_text":"Sub-Saharan Africa: Highest female entrepreneurship rate...","content_block_ul_imagecomment_anchor_href":"/abstract/10416/sub-saharan-africa-highest-female-entrepreneurship-rate-globally#comment_tab","content_block_ul_imagecomment_anchor_text":"","content_block_ul_imagecomment_anchor_date":"Sep 18"}]
+
+	</script>
+
+	<div class="container_top">
+	<div id="container_left_image_parent">
+		    <div id="container_left_image_parent_slide">
+		       
+		       <!--rails loop start-->
+		       	<div class="container_left_image"  style="left:0%">
+					<a href="/blog-abstract/10426/news-roundup-fb-buttons-cortana-self-destructing-microchips"><img alt=" " src="/IMG/718/32718/image-via-wikimedia4432-430x350.jpg?1442588113" /></a>
+					<span></span>
+					<div class="hover_image_1 left_content">
+						<p>
+			<a href="/browse_documents/338/software-web-development/internet">INTERNET</a>
+						</p>
+						<h2><a href="/blog-abstract/10426/news-roundup-fb-buttons-cortana-self-destructing-microchips">News Roundup: FB Buttons, Cortana everywhere and self-destructing microchips...</a></h2>
+						<ul>
+							<li>
+								<a>Sep 18</a>
+							</li>
+						</ul>
+					</div>
+					<!--hover_image_1-->
+				</div>
+			<!--container_left_image-->
+			<!--rails loop end-->
+		       <!--rails loop start-->
+		       	<div class="container_left_image"  style="left:100%">
+					<a href="/blog-abstract/10421/rant-techies-killed-conference"><img alt=" " src="/IMG/916/25916/friday-rant3444-430x350.jpg?1433417651" /></a>
+					<span></span>
+					<div class="hover_image_1 left_content">
+						<p>
+			<a href="/browse_documents/364/green-business/management/teleconferencing">TELECONFERENCING</a>
+						</p>
+						<h2><a href="/blog-abstract/10421/rant-techies-killed-conference">Rant: Techies killed the conference call</a></h2>
+						<ul>
+							<li>
+								<a>Sep 18</a>
+							</li>
+						</ul>
+					</div>
+					<!--hover_image_1-->
+				</div>
+			<!--container_left_image-->
+			<!--rails loop end-->
+		       <!--rails loop start-->
+		       	<div class="container_left_image"  style="left:200%">
+					<a href="/abstract/10419/seeing-gaudi-casa-batll-augmented-reality"><img alt=" " src="/IMG/708/32708/casa-batloo-main-attrib-borkur-sigurbjornsson-via-flickr2907-430x350.jpg?1442563336" /></a>
+					<span></span>
+					<div class="hover_image_1 left_content">
+						<p>
+			<a href="/browse_documents/358/green-business/data-center/virtualization">VIRTUALIZATION</a>
+						</p>
+						<h2><a href="/abstract/10419/seeing-gaudi-casa-batll-augmented-reality">Seeing Gaudi’s Casa Batlló through augmented reality</a></h2>
+						<ul>
+							<li>
+								<a>Sep 18</a>
+							</li>
+						</ul>
+					</div>
+					<!--hover_image_1-->
+				</div>
+			<!--container_left_image-->
+			<!--rails loop end-->
+		       <!--rails loop start-->
+		       	<div class="container_left_image"  style="left:300%">
+					<a href="/abstract/10416/sub-saharan-africa-highest-female-entrepreneurship-rate-globally"><img alt=" " src="/IMG/703/32703/african-women-entrepreneurs2601-430x350.jpg?1442554318" /></a>
+					<span></span>
+					<div class="hover_image_1 left_content">
+						<p>
+			<a href="/browse_documents/1/business-management">BUSINESS MANAGEMENT</a>
+						</p>
+						<h2><a href="/abstract/10416/sub-saharan-africa-highest-female-entrepreneurship-rate-globally">Sub-Saharan Africa: Highest female entrepreneurship rate globally</a></h2>
+						<ul>
+							<li>
+								<a>Sep 18</a>
+							</li>
+						</ul>
+					</div>
+					<!--hover_image_1-->
+				</div>
+			<!--container_left_image-->
+			<!--rails loop end-->
+
+			</div>
+		</div>
+		<div class="container_right_image">
+			<div class="right_image_1">
+				<a href="/blog-abstract/10421/rant-techies-killed-conference"><img alt=" " src="/IMG/916/25916/friday-rant3444-190x116.jpg?1433417651" /></a>
+				<span></span>
+				<div class="hover_image_2 left_content">
+					<p>
+	<a href="/browse_documents/364/green-business/management/teleconferencing">TELECONFERENCING</a>
+					</p>
+					<h2><a href="/blog-abstract/10421/rant-techies-killed-conference">Rant: Techies killed the conference call</a></h2>
+					<ul>
+						<li>
+							<a>Sep 18</a>
+						</li>
+					</ul>
+				</div>
+				<!--hover_image_1-->
+			</div>
+			<!--right_image_1-->			<div class="right_image_1">
+				<a href="/abstract/10419/seeing-gaudi-casa-batll-augmented-reality"><img alt=" " src="/IMG/708/32708/casa-batloo-main-attrib-borkur-sigurbjornsson-via-flickr2907-190x116.jpg?1442563336" /></a>
+				<span></span>
+				<div class="hover_image_2 left_content">
+					<p>
+	<a href="/browse_documents/358/green-business/data-center/virtualization">VIRTUALIZATION</a>
+					</p>
+					<h2><a href="/abstract/10419/seeing-gaudi-casa-batll-augmented-reality">Seeing Gaudi’s Casa Batlló through augmented reality</a></h2>
+					<ul>
+						<li>
+							<a>Sep 18</a>
+						</li>
+					</ul>
+				</div>
+				<!--hover_image_1-->
+			</div>
+			<!--right_image_1-->			<div class="right_image_1">
+				<a href="/abstract/10416/sub-saharan-africa-highest-female-entrepreneurship-rate-globally"><img alt=" " src="/IMG/703/32703/african-women-entrepreneurs2601-190x116.jpg?1442554317" /></a>
+				<span></span>
+				<div class="hover_image_2 left_content">
+					<p>
+	<a href="/browse_documents/1/business-management">BUSINESS MANAGEMENT</a>
+					</p>
+					<h2><a href="/abstract/10416/sub-saharan-africa-highest-female-entrepreneurship-rate-globally">Sub-Saharan Africa: Highest female entrepreneurship rate globally</a></h2>
+					<ul>
+						<li>
+							<a>Sep 18</a>
+						</li>
+					</ul>
+				</div>
+				<!--hover_image_1-->
+			</div>
+			<!--right_image_1-->
+		</div>
+		<!--container_right_image-->
+	</div>
+	<!--container_top-->
+
+
+
+</div>
+<div class="section_content component_block" data-url="/edit-component?id=188&amp;type=site" id="component_188">
+
+
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/blog-abstract/10415/freelance-hackers-were-cars-born-wild"><img alt=" " src="/IMG/701/32701/born-to-be-wild4953-300x190.jpg?1442493155" /></a>
+		<p><a href="/browse_documents/338/software-web-development/internet">INTERNET</a></p>
+		<h2><a href="/blog-abstract/10415/freelance-hackers-were-cars-born-wild">Freelance hackers: Were our cars born to be wild?</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/457">IDG Connect</a>
+			</li>
+			<li>
+				<a>09/17/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Jan Valcke comments on the awful future world of car hacking
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/abstract/10418/brck-plan-change-education-africa"><img alt=" " src="/IMG/704/32704/e-limu0741-300x190.jpg?1442485991" /></a>
+		<p><a href="/browse_documents/68/business-management/human-resources/training-and-development">TRAINING AND DEVELOPMENT</a></p>
+		<h2><a href="/abstract/10418/brck-plan-change-education-africa">BRCK latest plan to change education in Africa</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/660">Vincent Matinde</a>
+			</li>
+			<li>
+				<a>09/17/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Built in Africa, made for Africa; BRCK is set to enter into the education sector in Kenya and provide stable internet and electricity connection.
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/blog-abstract/10413/the-business-switching-source-databases"><img alt=" " src="/IMG/699/32699/switch4450-300x190.jpg?1442477199" /></a>
+		<p><a href="/browse_documents/115/it-systems-management/database-solutions/databases">DATABASES</a></p>
+		<h2><a href="/blog-abstract/10413/the-business-switching-source-databases">The business case for switching to open source databases</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/457">IDG Connect</a>
+			</li>
+			<li>
+				<a>09/17/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Gartner reports that many organizations are shifting to over to open source databases – why is this?
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/abstract/10412/will-future-employment-robots"><img alt=" " src="/IMG/698/32698/gleonhard-portrait-by-f2836-300x190.jpg?1442468230" /></a>
+		<p></p>
+		<h2><a href="/abstract/10412/will-future-employment-robots">Will future employment just be for robots?</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/716">Marc Ambasna-Jones</a>
+			</li>
+			<li>
+				<a>09/17/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Gerd Leonhard, futurologist, sees a future where everything can be done at zero cost
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/blog-abstract/10422/back-school-should-ditch-virtual-learning"><img alt=" " src="/IMG/709/32709/tim-ellis-via-flickr2712-300x190.jpg?1442414211" /></a>
+		<p><a href="/browse_documents/68/business-management/human-resources/training-and-development">TRAINING AND DEVELOPMENT</a></p>
+		<h2><a href="/blog-abstract/10422/back-school-should-ditch-virtual-learning">Back to school: Should we ditch it for virtual learning?</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/212">Kathryn Cave</a>
+			</li>
+			<li>
+				<a>09/16/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			We look at how great technological strides in online learning have impacted home schooling
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/blog-abstract/10410/top-tips-organising-successful-devops-teams"><img alt=" " src="/IMG/143/9143/toptips-header-300x190.jpg?1415112930" /></a>
+		<p><a href="/browse_documents/91/business-management/manufacturing-and-process-management/operations-planning">OPERATIONS PLANNING</a></p>
+		<h2><a href="/blog-abstract/10410/top-tips-organising-successful-devops-teams">Top Tips: Organising successful DevOps teams</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/457">IDG Connect</a>
+			</li>
+			<li>
+				<a>09/16/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Top tips for organising successful DevOps teams to ensure the best possible results are delivered for a business
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/blog-abstract/10409/how-london-fashion-week-technology-collide"><img alt=" " src="/IMG/696/32696/featureflash-via-shutterstock5431-300x190.jpg?1442399792" /></a>
+		<p><a href="/browse_documents/568/business-management/market-analysis">MARKET ANALYSIS</a></p>
+		<h2><a href="/blog-abstract/10409/how-london-fashion-week-technology-collide">How London Fashion Week and technology collide</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/457">IDG Connect</a>
+			</li>
+			<li>
+				<a>09/16/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			How technology can help retail firms in react to the latest trends on the catwalk
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/blog-abstract/10420/accenture-scales-luminous-summit-cloud-sherpas-deal"><img alt=" " src="/IMG/542/6542/snapshot-300x190.jpg?1379346069" /></a>
+		<p><a href="/browse_documents/117/it-systems-management/cloud-computing">CLOUD COMPUTING</a></p>
+		<h2><a href="/blog-abstract/10420/accenture-scales-luminous-summit-cloud-sherpas-deal">Accenture scales a luminous summit with Cloud Sherpas deal</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/425">Martin Veitch</a>
+			</li>
+			<li>
+				<a>09/16/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Cloud Sherpas purchase shows Accenture acknowledges a new ICT services world
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/abstract/10408/profit-vs-a-raw-deal-peru-rural-phone-users"><img alt=" " src="/IMG/694/32694/geraint-rowland-via-flickr5247-300x190.jpg?1442390952" /></a>
+		<p><a href="/browse_documents/158/it-systems-management/mobile-communications">MOBILE COMMUNICATIONS</a></p>
+		<h2><a href="/abstract/10408/profit-vs-a-raw-deal-peru-rural-phone-users">Profit vs. need: A raw deal for Peru’s rural phone users</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/835">Jonathan Keane</a>
+			</li>
+			<li>
+				<a>09/16/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			More services needed for rural mobile phone users in Peru
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/abstract/10407/safecity-an-online-map-public-sexual-violence-india"><img alt=" " src="/IMG/693/32693/safecity3224-300x190.jpg?1442381513" /></a>
+		<p><a href="/browse_documents/161/it-systems-management/mobile-communications/mobile-applications">MOBILE APPLICATIONS</a></p>
+		<h2><a href="/abstract/10407/safecity-an-online-map-public-sexual-violence-india">Safecity: An online map of public sexual violence in India</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/212">Kathryn Cave</a>
+			</li>
+			<li>
+				<a>09/16/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Born out of the Delhi gang rape in 2012, Safecity allows women to document their personal stories of harassment
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/abstract/10417/sap-takes-aim-legacy-crm-salesforce"><img alt=" " src="/IMG/542/6542/snapshot-300x190.jpg?1379346069" /></a>
+		<p><a href="/browse_documents/36/business-management/crm/crm-software">CRM SOFTWARE</a></p>
+		<h2><a href="/abstract/10417/sap-takes-aim-legacy-crm-salesforce">SAP takes aim at “legacy CRM” of Salesforce</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/425">Martin Veitch</a>
+			</li>
+			<li>
+				<a>09/15/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			The German giant is targeting Salesforce.com with forthcoming products and claims the cloud firm is past its best
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/blog-abstract/10414/our-summer-robots"><img alt=" " src="/IMG/700/32700/summer-robots3325-300x190.jpg?1442327763" /></a>
+		<p><a href="/browse_documents/157/it-systems-management/it-planning-management/technology-planning-and-analysis">TECHNOLOGY PLANNING AND ANALYSIS</a></p>
+		<h2><a href="/blog-abstract/10414/our-summer-robots">Our summer of robots</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/212">Kathryn Cave</a>
+			</li>
+			<li>
+				<a>09/15/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Some highlights from IDG Connect’s extensive coverage on robots this summer
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/abstract/10406/c-suite-career-advice-greg-zemor-neteven"><img alt=" " src="/IMG/993/11993/c-suite-header-300x190.jpg?1415113016" /></a>
+		<p><a href="/browse_documents/62/business-management/human-resources">HUMAN RESOURCES</a></p>
+		<h2><a href="/abstract/10406/c-suite-career-advice-greg-zemor-neteven">C-suite career advice: Greg Zemor, NETEVEN</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/457">IDG Connect</a>
+			</li>
+			<li>
+				<a>09/15/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			We ask industry leading C-suite professionals for their expert career advice...
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/blog-abstract/10411/uber-step-closer-ditching-sharing-economy"><img alt=" " src="/IMG/542/6542/snapshot-300x190.jpg?1379346069" /></a>
+		<p><a href="/browse_documents/1/business-management">BUSINESS MANAGEMENT</a></p>
+		<h2><a href="/blog-abstract/10411/uber-step-closer-ditching-sharing-economy">Uber a step closer to ditching the sharing economy</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/336">Dan Swinhoe</a>
+			</li>
+			<li>
+				<a>09/15/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Uber may be a “sharing economy” giant, but only until it doesn’t need people.
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<div class="container_left_content">
+	<div class="left_content">
+				<a href="/blog-abstract/10405/for-entrepreneurs-winning-isn"><img alt=" " src="/IMG/690/32690/poojan-kumar2434-300x190.jpg?1442304621" /></a>
+		<p><a href="/browse_documents/1/business-management">BUSINESS MANAGEMENT</a></p>
+		<h2><a href="/blog-abstract/10405/for-entrepreneurs-winning-isn">For entrepreneurs, winning isn’t everything, it’s the only thing</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/457">IDG Connect</a>
+			</li>
+			<li>
+				<a>09/15/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			PernixData CEO Poojan Kumar learned about calculated risk taking from Richard Branson and chess
+		</p>
+	</div><!--left_content-->
+	<div class="left_content">
+				<a href="/blog-abstract/10403/digital-tech-musicians-play"><img alt=" " src="/IMG/686/32686/music-old-and-new5857-300x190.jpg?1442295584" /></a>
+		<p><a href="/browse_documents/1/business-management">BUSINESS MANAGEMENT</a></p>
+		<h2><a href="/blog-abstract/10403/digital-tech-musicians-play">Digital tech lets musicians play on</a></h2>
+		<ul>
+			<li class="extra_space">
+                                                        <a href="/author/685">Jon Collins</a>
+			</li>
+			<li>
+				<a>09/15/2015</a>
+			</li>
+		</ul>
+		<p class="left_content_para">
+			Despite the fretting the advent of the web wasn’t the day the music business died
+		</p>
+	</div><!--left_content-->
+</div><!--container_left_content-->
+<!--<div class="button">
+</div> -->
+<div class="button">
+        <a href="/type/all/page/2">See More</a>
+</div>
+
+
+</div>
+</div>
+
+</div><!--content_left-->
+
+				</div>
+				<div class="container_right">
+					<div class="parent_block">
+<div class="right_common_block tab_content_parent latest-content">
+	<div class="right_heading">
+		<h3>Blogs</h3>
+	</div><!--right_heading-->
+		<div data-connectwith="" id="container_82">
+<div class="section_content component_block" data-url="/edit-component?id=277&amp;type=site" id="component_277">
+
+<div class="tab_content">
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/author/685?title=Digital+tech+lets+musicians+play+on"><img alt="jon-collins" src="/IMG/684/22684/jon-collins3822-80x80.jpg?1425897503" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<p>
+				
+				<a href="/author/685">Thinking Different</a>
+
+			</p>
+			<h2><a href="/blog-abstract/10403/digital-tech-musicians-play">Digital tech lets musicians play on</a></h2>
+			<p>
+					Jon Collins’ in-depth look at tech and society
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/author/888?title=Bloat-to-content+ratio+is+killing+the+Web+%E2%80%93+here%E2%80%99s+how+to+fix+it"><img alt="rupert-goodwins" src="/IMG/253/22253/rupert-goodwins1830-80x80.jpeg?1425295111" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<p>
+				
+				<a href="/author/888">Tech Transformations</a>
+
+			</p>
+			<h2><a href="/blog-abstract/10395/bloat-content-ratio-killing-web-fix">Bloat-to-content ratio is killing the Web – here’s how to fix it</a></h2>
+			<p>
+					Rupert Goodwins’ unique angle on tech change
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/author/808?title=From+maker+to+taker%3A+China%E2%80%99s+%245bn+search+for+M%26A+tech+targets"><img alt="phil-muncaster" src="/IMG/254/22254/phil-muncaster3102-80x80.jpg?1425295862" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<p>
+				
+				<a href="/author/808">China Rising</a>
+
+			</p>
+			<h2><a href="/blog-abstract/10294/from-maker-taker-china-usd5bn-search-m-a-tech-targets">From maker to taker: China’s $5bn search for M&amp;A tech targets</a></h2>
+			<p>
+					Phil Muncaster reports on China and beyond
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+</div>
+<!--div class="moreLink">
+	<a href="/blogs">More blogs</a>
+</div-->
+
+
+
+</div>
+</div>
+</div>
+<div class="right_common_block">
+	<div class="right_tab">
+		<div class="right_heading">
+			<h3>Top Content</h3>
+		</div><!--right_heading-->
+		<div id="parent_tab">
+
+			<div data-connectwith="" id="container_36">
+<div class="component_block" data-url="/edit-component?id=194&amp;type=site" id="component_194">
+<div class="ttab ui-tabs component_content ui-widget ui-widget-content ui-corner-allab ui-tabs component_content" id="tab_tab_right"><ul id="tab_right" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+	<li class="ui-corner-top ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#Opinion" title="Opinion">Opinion</a></li>
+	<li class="ui-corner-top ui-state-default"><a href="#Interviews" title="Interviews">Interviews</a></li>
+	<li class="ui-corner-top ui-state-default"><a href="#Analysis" title="Analysis">Analysis</a></li>
+	<li class="ui-corner-top ui-state-default"><a href="#news" title="News">News</a></li>
+</ul>
+<div id='Opinion' class="">
+    <div class="tab_content">
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/blog-abstract/10426/news-roundup-fb-buttons-cortana-self-destructing-microchips"><img alt=" " src="/IMG/718/32718/image-via-wikimedia4432-80x60.jpg?1442731825" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/338/software-web-development/internet">INTERNET</a></h5>
+			<p>
+		<a href="/blog-abstract/10426/news-roundup-fb-buttons-cortana-self-destructing-microchips">News Roundup: FB Buttons, Cortana everywhere...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/blog-abstract/10383/what-internet-look-2040"><img alt=" " src="/IMG/663/32663/internet-future3229-80x60.jpg?1441781453" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/338/software-web-development/internet">INTERNET</a></h5>
+			<p>
+		<a href="/blog-abstract/10383/what-internet-look-2040">What will the internet look like in 2040?...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/blog-abstract/4145/biometric-privacy-senator-franken-firestorm"><img alt=" " src="/IMG/094/7094/biometrics-security1513-80x60.jpg?1381757533" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/198/it-systems-management/security">SECURITY</a></h5>
+			<p>
+		<a href="/blog-abstract/4145/biometric-privacy-senator-franken-firestorm">Biometric Privacy, Senator Franken and the...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+</div>
+
+</div>
+
+<div id='Interviews' class="ui-tabs-hide">
+    <div class="tab_content">
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/10419/seeing-gaudi-casa-batll-augmented-reality"><img alt=" " src="/IMG/708/32708/casa-batloo-main-attrib-borkur-sigurbjornsson-via-flickr2907-80x60.jpg?1442731825" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/358/green-business/data-center/virtualization">VIRTUALIZATION</a></h5>
+			<p>
+		<a href="/abstract/10419/seeing-gaudi-casa-batll-augmented-reality">Seeing Gaudi’s Casa Batlló through augmented...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/10412/will-future-employment-robots"><img alt=" " src="/IMG/698/32698/gleonhard-portrait-by-f2836-80x60.jpg?1442731825" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5></h5>
+			<p>
+		<a href="/abstract/10412/will-future-employment-robots">Will future employment just be for robots?...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/10047/saisai-wireless-free-internet-access-zimbabweans"><img alt=" " src="/IMG/897/26897/africa-internet1826-80x60.jpg?1435042242" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/338/software-web-development/internet">INTERNET</a></h5>
+			<p>
+		<a href="/abstract/10047/saisai-wireless-free-internet-access-zimbabweans">Saisai Wireless: Free internet access for...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+</div>
+
+</div>
+
+<div id='Analysis' class="ui-tabs-hide">
+    <div class="tab_content">
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/10417/sap-takes-aim-legacy-crm-salesforce"><img alt=" " src="/IMG/542/6542/snapshot-80x60.jpg?1379346069" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/36/business-management/crm/crm-software">CRM SOFTWARE</a></h5>
+			<p>
+		<a href="/abstract/10417/sap-takes-aim-legacy-crm-salesforce">SAP takes aim at “legacy CRM” of Salesforce...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/10220/solving-african-shipping-ecommerce"><img alt=" " src="/IMG/047/30047/soweto4750-80x60.jpg?1438584631" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/328/software-web-development/e-commerce-solutions">E-COMMERCE SOLUTIONS</a></h5>
+			<p>
+		<a href="/abstract/10220/solving-african-shipping-ecommerce">Solving the African shipping problem in eCommerce...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/8985/the-dark-net-will-black-market-continue-rise"><img alt=" " src="/IMG/178/18178/dark-web5808-80x60.jpg?1414219868" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/338/software-web-development/internet">INTERNET</a></h5>
+			<p>
+		<a href="/abstract/8985/the-dark-net-will-black-market-continue-rise">The Dark Net: Will the Black Market Continue...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+</div>
+
+</div>
+
+<div id='news' class="ui-tabs-hide">
+    <div class="tab_content">
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/2865/zuckerberg-ads-instagram"><img alt=" " src="/IMG/756/5756/instagram20video20screen20shot20giants20stadium500-80x60.png?1374729696" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/338/software-web-development/internet">INTERNET</a></h5>
+			<p>
+		<a href="/abstract/2865/zuckerberg-ads-instagram">Zuckerberg says no ads on Instagram -- at...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/1864/the-alternative-video-chat-apps-completely-free"><img alt=" " src="/IMG/745/4745/tango2100037208orig500-80x60.jpg?1409553321" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5></h5>
+			<p>
+		<a href="/abstract/1864/the-alternative-video-chat-apps-completely-free">The 5 best alternative video chat apps--all...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+	<div class="tab_info">
+		<div class="tab_image">
+			<a href="/abstract/4627/sidecar-lyft-switch-donations-minimum-fares-california"><img alt=" " src="/IMG/642/4642/lyfy20car20promo20shot500-80x60.jpg?1384585323" /></a>
+		</div><!--tab_image-->
+		<div class="image_content">
+			<h5><a href="/browse_documents/338/software-web-development/internet">INTERNET</a></h5>
+			<p>
+		<a href="/abstract/4627/sidecar-lyft-switch-donations-minimum-fares-california">Sidecar and Lyft switch from donations to...</a>
+
+			</p>
+		</div><!--image_content-->
+	</div><!--tab_info-->
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+		</div><!--parent_tab-->
+	</div><!--right_tab-->
+</div><!--right_common_block-->
+</div>
+<div class="apps">
+<!--	<a href="http://itunes.apple.com/us/app/idg-connect-it-white-paper/id477692770?mt=8" target="_blank"><img src="/images/app.jpg" alt="no-image" /></a>-->
+<a href="http://www.idgconnectmarketers.com" target="_blank"><img src="/images/Marketers_button.jpg" alt="no-image" /></a>
+<!--	<a href="http://www.idgconnectapp.com" target="_blank"><img src="/images/android.jpg" alt="no-image" /></a>	-->
+</div><!--apps-->
+<div class="parent_block">
+<div data-connectwith="" id="container_34">
+<div class="section_content component_block" data-url="/edit-component?id=192&amp;type=site" id="component_192">
+
+
+<div class="right_common_block">
+	<div class="library_content">
+		<div class="right_heading">
+			<h3>Content Library</h3>
+		</div><!--right_heading-->
+		<div class="library_block">
+			<!--img src="/images/cate.jpg" alt="no-image" /-->
+			<div id="myImageFlow" class="imageflow" style="height:900px; visibility: visible;">
+
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;IT &amp; Systems Management&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Four Ways to Satisfy...&lt;/h2&gt;&lt;p&gt;Modern technology users are challenging IT by bringing...&lt;/p&gt;&lt;a href='/download/31132'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31132" src="/IMG/893/28893/cherwell-logo5922-150x150.png?1435842005" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;IT &amp; Systems Management&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;3 Ways to Boost IT Agility...&lt;/h2&gt;&lt;p&gt;IT is expected to do more with less, support more users...&lt;/p&gt;&lt;a href='/download/31131'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31131" src="/IMG/893/28893/cherwell-logo5922-150x150.png?1435842005" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Enterprise Data Protection&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Top 5 Data Protection...&lt;/h2&gt;&lt;p&gt;Read how cloud data protection leverages existing infrastructure...&lt;/p&gt;&lt;a href='/download/31126'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31126" src="/IMG/629/23629/logo4352-150x150.JPG?1428007522" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Cloud Computing Platforms&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;The Cost Savings of Cloud-Based...&lt;/h2&gt;&lt;p&gt;Discover cost savings with cloud-based application...&lt;/p&gt;&lt;a href='/download/31125'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31125" src="/IMG/107/3107/newakamai-125x100-150x150.jpg?1348252315" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Backup Systems and Services&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;The Future is in the...&lt;/h2&gt;&lt;p&gt;A hybrid cloud soltuion allows businesses to scale...&lt;/p&gt;&lt;a href='/download/31124'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31124" src="/IMG/629/23629/logo4352-150x150.JPG?1428007522" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Cloud Computing Security&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Cloud security solutions...&lt;/h2&gt;&lt;p&gt;Discover how to respond to cyberthreats with cloud...&lt;/p&gt;&lt;a href='/download/31123'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31123" src="/IMG/107/3107/newakamai-125x100-150x150.jpg?1348252315" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Backup Systems and Services&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Data Protection Performance...&lt;/h2&gt;&lt;p&gt;Is your data protection system ready for anything?...&lt;/p&gt;&lt;a href='/download/31122'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31122" src="/IMG/629/23629/logo4352-150x150.JPG?1428007522" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Backup Systems and Services&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Keeping Your Options...&lt;/h2&gt;&lt;p&gt;Data protection shouldn’t lock you in. Get data protection...&lt;/p&gt;&lt;a href='/download/31121'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31121" src="/IMG/629/23629/logo4352-150x150.JPG?1428007522" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Product Life Cycle Management (PLM)&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Redefine innovation to...&lt;/h2&gt;&lt;p&gt;Find out why manufacturers need to rethink innovation...&lt;/p&gt;&lt;a href='/download/31120'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31120" src="/IMG/601/4601/infor-20130150-150x150.JPG?1369188154" />
+				<img alt="&lt;div class='left_content'&gt;&lt;p&gt;&lt;a&gt;Threat and Vulnerability Management&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;Akamai’s State of the...&lt;/h2&gt;&lt;p&gt;This report explores emerging trends in internet security....&lt;/p&gt;&lt;a href='/download/31119'&gt;Download Content&lt;/a&gt;&lt;/div&gt;" data-url="/download/31119" src="/IMG/107/3107/newakamai-125x100-150x150.jpg?1348252315" />
+			</div>
+
+			<div class="more_links_new">
+				<a href="/full_library">View the full Content Library ></a>
+			</div><!--more_links_new-->
+		</div><!--libaray_block-->
+	</div><!--library_content-->
+</div><!--right_common_block-->
+
+
+</div>
+</div>
+<div class="section_content component_block" data-url="/edit-component?id=189&amp;type=site" id="component_189">
+
+<div class="right_common_block">
+	<div class="recent_comments">
+		<div class="right_heading">
+			<h3>Most Recent Comments</h3>
+		</div><!--right_heading-->
+		<div id="newsticker_block">
+		<div id="news_ticker">
+			<ul>
+				<li class="ticker_list">
+					<div class="recent_content">
+						<ul>
+							<li>
+								<div class="para_content">
+									<div class="bottom_image">
+							<p>
+								Hi Carlo, Grace Hopper was a United States Navy Rear Admiral, which as far as I know, is the fourth highest rank in the United States Navy.
+							</p>
+									</div><!--bottom_image-->
+								</div><!--para_content-->
+								<p class="comment-text">
+									<a>Kate Hoy </a> on <a  href="/blog-abstract/10357/this-tech-history-september-first-bug-literally#comment_tab">This month in tech history: September – First computer “bug” found (literally)</a>
+
+									<a href="#"></a>
+								</p>
+							</li>
+
+						</ul>
+					</div><!--recent_content-->
+				</li>
+				<li class="ticker_list">
+					<div class="recent_content">
+						<ul>
+							<li>
+								<div class="para_content">
+									<div class="bottom_image">
+							<p>
+								You're the sighted person in the land of he blind; the sane one in the asylum. And moral decline is humanity's natural state, but the good Lord...
+							</p>
+									</div><!--bottom_image-->
+								</div><!--para_content-->
+								<p class="comment-text">
+									<a>DesD </a> on <a  href="/blog-abstract/10396/rant-tech-slow-demise-friendship#comment_tab">Rant: Tech &amp; the slow demise of work friendship?</a>
+
+									<a href="#"></a>
+								</p>
+							</li>
+
+						</ul>
+					</div><!--recent_content-->
+				</li>
+				<li class="ticker_list">
+					<div class="recent_content">
+						<ul>
+							<li>
+								<div class="para_content">
+									<div class="bottom_image">
+							<p>
+								Not only do I agree with the 5 top qualities for IT Leaders, I would add one more important quality to the list.  There is a unique quality which...
+							</p>
+									</div><!--bottom_image-->
+								</div><!--para_content-->
+								<p class="comment-text">
+									<a>Beverly Weed-Schertzer </a> on <a  href="/blog-abstract/10363/top-tips-preparing-generation-cio#comment_tab">Top Tips: Preparing for the next generation of CIO</a>
+
+									<a href="#"></a>
+								</p>
+							</li>
+
+						</ul>
+					</div><!--recent_content-->
+				</li>
+				<li class="ticker_list">
+					<div class="recent_content">
+						<ul>
+							<li>
+								<div class="para_content">
+									<div class="bottom_image">
+							<p>
+								The Apple Watch's fitness app advises that you stand up at 10 minutes to the hour, if you haven't already within that hour. I'm wondering if...
+							</p>
+									</div><!--bottom_image-->
+								</div><!--para_content-->
+								<p class="comment-text">
+									<a>Mark Palmer </a> on <a  href="/blog-abstract/9887/i-surveillance-watch#comment_tab">I’m under surveillance — by my watch</a>
+
+									<a href="#"></a>
+								</p>
+							</li>
+
+						</ul>
+					</div><!--recent_content-->
+				</li>
+				<li class="ticker_list">
+					<div class="recent_content">
+						<ul>
+							<li>
+								<div class="para_content">
+									<div class="bottom_image">
+							<p>
+								Congratulations Jonathan, very nice article on Brazil digital cities movement. Remind that many of these projects, in connection with IoT technologies...
+							</p>
+									</div><!--bottom_image-->
+								</div><!--para_content-->
+								<p class="comment-text">
+									<a>Jorge Medeiros </a> on <a  href="/blog-abstract/10387/the-brazil-digital-cities#comment_tab">The state of Brazil’s digital cities</a>
+
+									<a href="#"></a>
+								</p>
+							</li>
+
+						</ul>
+					</div><!--recent_content-->
+				</li>
+				<li class="ticker_list">
+					<div class="recent_content">
+						<ul>
+							<li>
+								<div class="para_content">
+									<div class="bottom_image">
+							<p>
+								Wonderful article, but don't you think that there is a danger if the augmented technology becomes more powerful than brain. Primary and Secondary...
+							</p>
+									</div><!--bottom_image-->
+								</div><!--para_content-->
+								<p class="comment-text">
+									<a>Rajeev </a> on <a  href="/blog-abstract/9203/ceo-sentient-ai-not-replacing-human-intelligence#comment_tab">CEO of Sentient: AI is Not Replacing Human Intelligence</a>
+
+									<a href="#"></a>
+								</p>
+							</li>
+
+						</ul>
+					</div><!--recent_content-->
+				</li>
+				
+			</ul>
+		</div>
+		</div>
+	</div><!--recent_comments-->
+</div><!--right_common_block-->
+
+
+
+</div>
+</div>
+<div class="apps">
+        <a href="http://itunes.apple.com/us/app/idg-connect-it-white-paper/id477692770?mt=8" target="_blank"><img src="/images/app.jpg" alt="no-image" /></a>
+</div>
+<div class="parent_block">
+
+<div class="section_content component_block" data-url="/edit-component?id=191&amp;type=site" id="component_191">
+
+
+<div class="right_common_block">
+<div class="twitter_mention">
+<div class="tweet">
+<div class="twitter_header">
+	<a href="https://twitter.com/search/?q=IDG+Connect" target="_blank">IDG Connect Mentions on Twitter</a>
+	</div>
+	<a data-chrome="noheader nofooter noborders" height="375" class="twitter-timeline" href="https://twitter.com/search?q=IDG+Connect"  data-widget-id="342594990020648963">Tweets about "#idg"</a>
+	<div class="twitter_footer">
+	<a style="float: left;" target="_blank" href="https://twitter.com"><img src="http://widgets.twimg.com/i/widget-bird.png" alt="" /></a>
+	<a target="_blank" href="https://twitter.com/search/?q=IDG+Connect">Join the conversation</a>
+	</div>
+	<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+<div data-connectwith="" id="container_35">
+<div class="section_content component_block" data-url="/edit-component?id=193&amp;type=site" id="component_193">
+
+<div class="right_common_block">
+	<div class="resource_center">
+		<div class="right_heading">
+			<h3>Resource Center</h3>
+		</div><!--right_heading-->
+
+		<div class="resource">
+
+			<div id="wrap">
+
+				<div class=" jcarousel-skin-tango">
+
+					<div style="position: relative; display: block;" class="jcarousel-container jcarousel-container-vertical">
+
+						<div style="position: relative;" class="jcarousel-clip jcarousel-clip-vertical">
+
+							<ul style="overflow: hidden; position: relative; top: -425px; margin: 0px; padding: 0px; left: 0px; height: 950px;" id="mycarousel" class="jcarousel jcarousel-list jcarousel-list-vertical">
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/1541/a10-networks"><img alt="/view_company_report/1541/a10-networks" longdesc="/view_company_report/1541/a10-networks" src="/IMG/672/8672/a10-logo4356-120x74.png?1408113656" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/775/aruba-networks"><img alt="/view_company_report/775/aruba-networks" longdesc="/view_company_report/775/aruba-networks" src="/IMG/375/28375/aruba-networks-new-logo0830-120x74.PNG?1437427640" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/1450/bit9-carbon-black"><img alt="/view_company_report/1450/bit9-carbon-black" longdesc="/view_company_report/1450/bit9-carbon-black" src="/IMG/153/25153/bit9-logo-tag-ltblue-png5316-120x74.png?1432759097" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/624/interactive-intelligence"><img alt="/view_company_report/624/interactive-intelligence" longdesc="/view_company_report/624/interactive-intelligence" src="/IMG/830/2830/interactive-intelligence-logo-120x74.jpg?1342011074" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/1219/jama-software"><img alt="/view_company_report/1219/jama-software" longdesc="/view_company_report/1219/jama-software" src="/IMG/677/3677/jama-logo-120x74.png?1367201820" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/661/kaseya"><img alt="/view_company_report/661/kaseya" longdesc="/view_company_report/661/kaseya" src="/IMG/379/2379/kaseya-logo-11-120x74.JPG?1421451317" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/506/qualys"><img alt="/view_company_report/506/qualys" longdesc="/view_company_report/506/qualys" src="/IMG/644/16644/horz-2c-logo-tag-cs-13131-120x74.png?1411058153" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/391/silver-peak-systems"><img alt="/view_company_report/391/silver-peak-systems" longdesc="/view_company_report/391/silver-peak-systems" src="/IMG/628/22628/silverpeak-new-logo-35642-120x74.jpg?1426777934" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/2095/simply-hired"><img alt="/view_company_report/2095/simply-hired" longdesc="/view_company_report/2095/simply-hired" src="/IMG/285/29285/simplyhired-logo-cmyk-fullcolor4436-120x74.PNG?1437662949" /></a>
+								</li>
+								
+								<li style="float: left; list-style: none outside none;" class="jcarousel-item jcarousel-item-vertical jcarousel-item-1 jcarousel-item-1-vertical">
+									<a href="/view_company_report/419/splunk"><img alt="/view_company_report/419/splunk" longdesc="/view_company_report/419/splunk" src="/IMG/992/29992/splunk-logo2313-120x74.png?1437508322" /></a>
+								</li>
+							</ul>
+
+						</div>
+
+						<div style="display: block;" class="jcarousel-prev jcarousel-prev-vertical"></div>
+						<div style="display: block;" class="jcarousel-next jcarousel-next-vertical"></div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div><!--resource-->
+
+	</div><!--resource_center-->
+
+</div><!--right_common_block-->
+
+
+</div>
+</div>
+</div>
+<div class="parent_block">
+<div data-connectwith="" id="container_37">
+<div class="section_content component_block" data-url="/edit-component?id=196&amp;type=site" id="component_196">
+
+<div class="right_common_block " id="update-poll">
+	<div class="polls">
+		<div class="right_heading">
+			<h3>Poll</h3>
+		</div><!--right_heading-->
+		<div class="new_poll_style">
+			<p>
+				Is re-introducing the BBC microbit a good way to encourage kids into tech?”
+			</p>
+			<form accept-charset="UTF-8" action="/wpl/vote/74?article_title=microbit&amp;source=idgconnect" method="post" name="vote"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="c0c8daRA2NBmHQ9uLU5lScbJ8wZ3qfPYAZgRJ7jXky4=" /></div>
+			<input id="poll_id" name="poll_id" type="hidden" value="74" />
+			<table class="new_poll_options">
+				<tbody>
+					<tr>
+						
+						<td> <input id="poll_options_id_236" name="poll_options_id" type="radio" value="236" /> </td>
+						<td><label for="poll_options_id_236"> Yes </label></td>
+                      
+					</tr>
+					<tr>
+						
+						<td> <input id="poll_options_id_237" name="poll_options_id" type="radio" value="237" /> </td>
+						<td><label for="poll_options_id_237"> No </label></td>
+                      
+					</tr>
+					<tr>
+						
+						<td> <input id="poll_options_id_238" name="poll_options_id" type="radio" value="238" /> </td>
+						<td><label for="poll_options_id_238"> Don't know </label></td>
+                      
+					</tr>
+					
+				</tbody>
+			</table>
+</form>			<div class="poll_result_new">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" data-url="/poll_result/74" class="poll_survey">Poll results</a>|
+					</li>
+					<li><a href="/polls">More Polls</a></li>
+				</ul>
+				<div class="button">
+					<input type="button" value="Vote" class="vote_input poll_survey" id="vote" data-url= "/home/vote/74?article_title=Microbit&amp;source=idgconnect"/>
+				</div><!---button-->
+			</div><!--poll_result_new-->
+		</div><!--poll_content-->
+	</div><!--polls-->
+</div><!--resource_center-->
+
+
+
+</div>
+</div>
+</div>
+<div class="parent_block">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- IDG Connect Two -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:300px;height:250px"
+data-ad-client="ca-pub-1431814281960489"
+data-ad-slot="9387398655"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+
+
+				</div><!--container_right-->
+			</div><!--wrapper_container-->
+			<div id="wrapper_footer">
+                <div data-connectwith="" id="container_44">
+<div class="section_content component_block" data-editurl="http://staging.incisivecms.co.uk/admin/static_page/edit/875?admin=true&amp;type=site" data-url="/edit-component?id=205&amp;type=site" id="component_205">
+
+<div class="footer_top">
+<div class="footer_site">
+<h4>Site Map</h4>
+<ul>
+<li><a href="../../../static/about">About Us</a></li>
+<li><a href="http://www.idgconnect.com/contact_us" target="_blank">Contact Us</a></li>
+<li><a href="http://www.idgconnect.com/comment_new_registration">Subscribe</a></li>
+<li><a href="http://www.idgconnect-resources.com/idgconnect_internal.asp" target="_blank">Unsubscribe</a></li>
+<li><a href="../../../full_library">White Papers</a></li>
+</ul>
+</div>
+<!--footer_site-->
+<div class="footer_site">
+<h4>Regular Features</h4>
+<ul>
+<li><a href="http://www.idgconnect.com/search?utf8=%E2%9C%93&amp;query=%22Crowdsourcing+Innovation%22&amp;facet=true&amp;sort=Date&amp;commit=+">Crowdsourcing Innovation</a></li>
+<li><a href="http://www.idgconnect.com/search?utf8=%E2%9C%93&amp;query=%22C-suite+career+advice%22&amp;facet=true&amp;sort=Date&amp;commit=+">C-suite career advice</a></li>
+<li><a href="http://www.idgconnect.com/search?utf8=%E2%9C%93&amp;query=%22rant%3A%22&amp;facet=true&amp;sort=Date&amp;commit=+">Friday Rant</a></li>
+<li><a href="http://www.idgconnect.com/search?utf8=%E2%9C%93&amp;query=%22Top+Tips%3A%22&amp;facet=true&amp;sort=Date&amp;commit=+">Top Tips</a></li>
+<li><a href="http://www.idgconnect.com/search?utf8=%E2%9C%93&amp;query=%22Typical+24%22&amp;facet=true&amp;sort=Date&amp;commit=+">Typical 24: My Working Day</a></li>
+</ul>
+</div>
+<!--footer_site-->
+<div class="footer_site">
+<h4>IDG PARTNER SITES</h4>
+<ul>
+<li><a href="http://www.idgconnectmarketers.com" target="_blank">IDG Connect Marketers</a></li>
+<li><a href="http://www.idgdirect.com" target="_blank">IDG Direct</a></li>
+<li><a href="http://www.workplacefujitsu.com" target="_blank">Fujitsu Workplace (Connect Zone)</a></li>
+<li><a href="http://futureofthedatacenter.com/" target="_blank">Future of the Data Center (Connect Zone)</a></li>
+</ul>
+</div>
+<!--footer_site-->
+<div class="footer_social_links">
+<ul>
+<li><a href="http://twitter.com/idgconnect" target="_blank"><img src="../../../images/twt.png?1367904393" alt="twt" /></a></li>
+<li><a href="https://plus.google.com/105240867714830699547/posts" target="_blank"><img src="../../../images/google-p.png?1367904393" alt="google" /></a></li>
+<li><a href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2570925&amp;trk=myg_ugrp_ovr" target="_blank"><img title="LinkedIn" src="../../../images/linkd.png?1367904393" alt="Linkd" /></a></li>
+<li><a href="http://www.facebook.com/#!/pages/IDG-Connect/7303190806?ref=ts" target="_blank"><img src="../../../images/fb.png?1367904393" alt="fb" /></a></li>
+<li><a href="../../../latestpapers" target="_blank"><img src="../../../images/rss.png?1367904393" alt="rss" /></a></li>
+</ul>
+</div>
+</div>
+
+
+</div>
+<div class="section_content component_block" data-editurl="http://staging.incisivecms.co.uk/admin/static_page/edit/4550?admin=true&amp;type=site" data-url="/edit-component?id=231&amp;type=site" id="component_231">
+
+<div class="footer_bottom">
+		<div class="footer_bottom_left">
+			<a href="/"><img src="/images/footer-logo.jpg" alt="no-image" /></a>
+			<p>
+				Copyright  &copy; 2015 IDG Connect Ltd. All rights reserved.
+			</p>
+			<p>
+				Designated trademarks and brands are the property of their respective owners.
+			</p>
+		</div><!--footer-bottom_left-->
+		<div class="footer_bottom_right">
+			<ul>
+				<li>
+					<a href="/static/privacy-policy"> Privacy Policy </a>
+				</li>
+				<li>
+					<a href="/static/terms-of-service-agreement">Terms &amp; Conditions</a>
+				</li>
+				<li>
+					<a href="/contact_us">Contact Us</a>
+				</li>
+				<li>
+					<a href="/static/site-map">Site Map</a>
+				</li>
+			</ul>
+		</div><!--footer_bottom_right-->
+	</div><!---footer_bottom-->
+
+
+</div>
+<div class="section_content component_block" data-editurl="http://staging.incisivecms.co.uk/admin/static_page/edit/4549?admin=true&amp;type=site" data-url="/edit-component?id=232&amp;type=site" id="component_232">
+
+<div class="footer_down_links">
+		<ul>
+			<li>
+				<a href="http://www.cio.com" target="_balnk">CIO</a>|
+			</li>
+			<li>
+				<a href="http://www.computerworld.com" target="_balnk">Computerworld</a>|
+			</li>
+			<li>
+				<a href="http://www.csoonline.com" target="_balnk">CSO</a>|
+			</li>
+			
+			<li>
+				<a href="http://www.idgworldexpo.com" target="_balnk">World Expo</a>|
+			</li>
+			<li>
+				<a href="http://www.infoworld.com" target="_balnk">Infoworld</a>|
+			</li>
+			<li>
+				<a href="http://www.itworld.com" target="_balnk">ITworld</a>|
+			</li>
+			<li>
+				<a href="http://www.javaworld.com" target="_balnk">JavaWorld</a>
+			</li>
+			<li>
+				<a href="http://www.linuxworld.com" target="_balnk">Linuxworld</a>|
+			</li>
+			<li>
+				<a href="http://www.macuser.com" target="_balnk">MacUser</a>|
+			</li>
+			<li>
+				<a href="http://www.macworld.com" target="_balnk">Macworld</a>|
+			</li>
+			<li>
+				<a href="http://www.networkworld.com" target="_balnk">Network World</a>|
+			</li>
+			<li>
+				<a href="http://www.pcworld.com" target="_balnk">PC World</a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+</div>
+
+        </div>
+
+		</div><!--wrapper-->
+		<script src="/javascripts/min/globaljavascripts.js?1413803936" type="text/javascript"></script>
+<script src="/javascripts/jquery.browser.js?1413803936" type="text/javascript"></script>
+<script src="/javascripts/jquery_tabslider.js?1413803936" type="text/javascript"></script>
+<script src="/javascripts/jquery.ad-gallery.js?1426661315" type="text/javascript"></script>
+<script src="/javascripts/jquery.flexslider.js?1426661315" type="text/javascript"></script>
+<script src="/javascripts/fullscreen.js?1426661315" type="text/javascript"></script>
+<script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
+<script src="http://www.jugbit.com/jquery/jquery.vticker-min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+	$(function(){
+		   var opts= {defaultTab: 0};	
+	  if($("#tab_right")[0] ){
+		 var $tabs=$('#tab_tab_right').tabs();
+		 $tabs.tabs("select",opts)
+	  }
+	});
+});    
+
+//]]>
+</script>
+			
+			
+			
+<script type="text/javascript">
+$(function(){
+	newsTicker()
+//updateTicker();
+ setInterval("updateTicker()",1800000)
+});
+
+var updateTicker = function(){
+        $('#newsticker_block').empty()
+	$.ajax({
+		url :'/comment_ticker',
+		type:'POST',
+		dataType:'html',
+                beforeSend: function(xhr){
+                xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+                },
+		success:function(ticker){
+			//$('#news_ticker').empty();
+			//$('#news_ticker').html(ticker);
+                         $('#newsticker_block').html(ticker);
+                        newsTicker();
+		}
+	});
+}
+
+var newsTicker = function(){
+	$('#news_ticker').vTicker({ 
+		speed: 700,
+		pause: 3000,
+		animation: 'fade',
+		mousePause: false,
+		showItems: 3,
+		padding:4,
+		height:400
+	});
+}
+</script>
+<script type="text/javascript">
+		$(function() {
+           $(".page_display_bar_right").on("change","select",function(){
+           $(".page_display_bar_right span.select_overlay").html($("option:selected",this).text())
+            });
+            }); 
+	</script>
+
+<script type="text/javascript">
+$(function(){
+	$('#container_left_image_parent_slide .container_left_image:first').addClass('active')
+        var left = 0;
+$('#container_left_image_parent_slide .container_left_image').each(function(){
+    $(this).attr('style','left:'+left+'%')
+    left = left+100;
+});
+});
+		$('.container_top').attr('data-value','1,2,3,4')
+            var slideIndex=1;
+		 	var looping_function = function(){
+				var arr = $('.container_top').attr('data-value').split(',')
+				//console.log(arr)
+				var arr1 = [];
+				arr1[0]=arr[0],
+				arr1[1]=arr[1],
+				arr1[2]=arr[2],
+				arr1[3]=arr[3]
+			
+				arr[0] = arr[arr.length-1],
+				arr[1] = arr1[0],
+				arr[2] = arr1[1],
+				arr[3] = arr1[2];
+				$('.container_top').attr('data-value',arr)
+                
+                if(slideIndex==arr.length){
+                    left="0%";slideIndex=1;duration=0;
+                }else{
+                    left="-"+((slideIndex)*100)+"%";slideIndex+=1;duration=1000
+                }
+                
+                $("#container_left_image_parent_slide").animate({
+                    left: left
+                }, {
+                    duration: duration,
+                    specialEasing: {
+                      height: "easeOutBounce"
+                    },
+                    start:function(){
+                        $("#container_left_image_parent_slide .container_left_image span").animate({
+                        bottom:"-116px"
+                      },500)
+                      $("#container_left_image_parent_slide .container_left_image .hover_image_1").animate({
+                        bottom:"-116px"
+                      },500)
+                    },
+                    complete: function() {
+                      $("#container_left_image_parent_slide .container_left_image").removeClass("active")
+                      $("#container_left_image_parent_slide .container_left_image:nth-child("+slideIndex+")").addClass("active")
+                      $("#container_left_image_parent_slide .container_left_image:nth-child("+slideIndex+") span").animate({
+                        bottom:"0px"
+                      },500)
+                      $("#container_left_image_parent_slide .container_left_image:nth-child("+slideIndex+") .hover_image_1").animate({
+                        bottom:"0px"
+                      },500)
+                    }
+                  });
+                
+               
+				right_image_details=image_details.filter(function (item,index) { return index !== (slideIndex-1) });
+			    $.each(right_image_details,function(index,val){
+			      $('.container_right_image .right_image_1:eq("'+index+'")>a').attr('href',val['image_anchor'])
+			      $('.container_right_image .right_image_1:eq("'+index+'")>a>img').attr('src',val['image_anchor_small_image_src'])
+			      $('.container_right_image .right_image_1:eq("'+index+'") div.hover_image_2.left_content p>a').attr('href',val['content_block_para_anchor_href']);
+			      $('.container_right_image .right_image_1:eq("'+index+'") div.hover_image_2.left_content p>a').text(val['content_block_para_anchor_text'])
+			      $('.container_right_image .right_image_1:eq("'+index+'") div.hover_image_2.left_content h2>a').attr('href',val['content_block_h2_anchor_href']);
+			      $('.container_right_image .right_image_1:eq("'+index+'") div.hover_image_2.left_content h2>a').text(val['content_block_h2_anchor_text'])
+			      $('.container_right_image .right_image_1:eq("'+index+'") div.hover_image_2.left_content ul li.image_comment>a').attr('href',val['content_block_ul_imagecomment_anchor_href']);
+			      $('.container_right_image .right_image_1:eq("'+index+'") div.hover_image_2.left_content ul li.image_comment>a').text(val['content_block_ul_imagecomment_anchor_text']);
+			      $('.container_right_image .right_image_1:eq("'+index+'") div.hover_image_2.left_content ul li:eq(1)>a').text(val['content_block_ul_imagecomment_anchor_date'])
+			    });
+
+			}
+			var refreshId = setInterval("looping_function()",8000)
+			$('.container_top').mouseover(function(){
+				clearInterval(refreshId);
+			});
+			$('.container_top').mouseout(function(){
+				refreshId = setInterval("looping_function()",8000)
+			});
+		
+	</script>
+			
+			<script type="text/javascript">
+    $(document).ready(function(){
+        jQuery.ajax({
+            type: 'GET',
+            dataType: 'html',
+            beforeSend: function(xhr){
+                xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+            },
+            url: '/verify-site-login',
+            success: function(update_data){
+                jQuery(".log_register").html(update_data);
+            }
+        });
+    });
+    
+</script>
+
+
+<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).load(function() {
+				  // The slider being synced must be initialized first
+				  $('#carousel1').flexslider({
+				    animation:"slide",
+				    controlNav: false,
+				    animationLoop: false,
+				    //slideshow: false,\
+				    itemWidth: 144,
+				    itemMargin: 5,
+				    asNavFor: '#slider1'
+				  });
+				   
+				  $('#slider1').flexslider({
+				  	keyboardNav: true,
+				    animation: "slide",
+				    controlNav: false,
+				    animationLoop:true,
+				    slideshow:true,
+				    pausePlay:true,
+				    pauseText: 'PAUSE SLIDES',
+				    playText: 'PLAY SLIDES', 
+				    slideshowSpeed: 7000,
+				    
+				    controlsContainer: ".flex-container",
+				    //sync: "#carousel1",
+				    start: function(slider) {
+			            slider.find('.slideIndex').html(slider.currentSlide + 1 +  " / "  + slider.count);
+			            $('a.first-slide').click(function() {
+				            $('.flexslider').show();
+				            var slideTo = $(this).attr("rel");
+				            var slideToInt = parseInt(slideTo);
+				            if (slider.currentSlide != slideToInt) {
+				                slider.flexAnimate(slideToInt);
+				            }
+				        });
+				        $('a.last-slide').click(function() {
+				            $('.flexslider').show();
+				            var slideTo = $(this).attr("rel");
+				            var slideToInt = parseInt(slideTo);
+				            if (slider.currentSlide != slideToInt) {
+				                slider.flexAnimate(slideToInt);
+				            }
+				        });
+				        $(".previous-slide").click(function(){
+							$('#slider1').flexslider('previous');
+						});
+						$(".next-slide").click(function(){
+							$('#slider1').flexslider('next');
+						});
+			          },
+			        after: function(slider) {
+			        	
+				        slider.find('.slideIndex').html(slider.currentSlide + 1 +  "/"  + slider.count);
+				        
+				    }
+				  });
+				});
+			});
+			
+		</script>
+		
+		
+		<script type="text/javascript">
+		$(document).ready(function(){
+				$(".fullscreen").click(function(){
+				      //$(".ad-image-wrapper").fullScreen(false);    
+				    if (screenfull.enabled) {
+				        screenfull.toggle($('#slide-gal')[0]);
+				    }else{
+				      if($('.slide-play-block').hasClass('fullgallery')){
+				    	esc_fullscreen()
+				      }else{
+				    	$(document).scrollTop(0);
+				    	$('.slide-play-block').addClass("fullgallery");
+				    	$('.over_lay').css('display','block');
+				    	$('body').css('overflow','hidden');
+				      }
+				        return false;
+				    }
+				 });
+			
+				  var esc_fullscreen = function(){
+				  		$(document).scrollTop(100);
+				        $('.slide-play-block').removeClass("fullgallery");
+				        $('.over_lay').css('display','none');
+				        $('body').css('overflow','scroll')
+				  }
+			
+				$(document).keyup(function(e) {
+				 	if (e.keyCode == 27) {
+				 		esc_fullscreen();
+				 	}  
+				});
+			
+				$(document).on('click','.over_lay',function(){
+				    esc_fullscreen();
+				});
+				
+
+});
+</script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	// $("#list_gallery_holder").tabSlider({"interval":4000})
+	/*$("#list_gallery_holder").tabSlider({"interval":4000,"rotateLoop":6,})
+	$('.images_1').css('display','none');*/
+
+});    
+</script>
+
+<script type="text/javascript">
+		$(".search_top").hover(function(){
+                     $(".sub_menu").show();
+                     }, function(){
+                     $(".sub_menu").hide();
+                });
+		</script>
+		<script type="text/javascript">
+		   $(function(){
+			$('#search_result_menu ul li a').toggle(function(){
+				$('.search_result .search_result_content').hide();
+			   		$('#search_result_menu ul li').removeClass('active');
+			   		$(this).parent().addClass('active');
+			   		var data_active = $(this).data('id');
+			   		$(data_active).show();
+			   },function(){
+			   		$(this).parent().removeClass('active');
+			   		var data_active = $(this).data('id');
+			   		$(data_active).hide();
+			   });
+		    });
+		</script>
+		<script type="text/javascript">
+                $('.button_left').click(function(){
+		  $("input[type=checkbox]").attr("checked", false);
+		});
+		</script>
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('#mycarousel').jcarousel({
+			vertical : true,
+			scroll : 1
+		});
+	}); 
+</script>
+	<script type="text/javascript">
+		$('.comment-reply-link').toggle(function(){
+ 		   $(this).next('.comment_reply').show();
+		},function(){
+     		$(this).next('.comment_reply').hide();
+		});
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('#registration_form').validate({
+			rules : {
+				"subscriber[email_id]" : {
+					required : true,
+					email : true
+				},
+                                
+                        },
+                       messages : {
+				"subscriber[email_id]" : {
+					required : "The Email field should not be empty",
+					email : "email is invalid"
+				},
+				
+                       }
+                });
+});
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('#forgotten_form').validate({
+			rules : {
+				"user[email]" : {
+					required : true,
+					email : true
+				},
+                                
+                        },
+                       messages : {
+				"user[email]" : {
+					required : "The Email field should not be empty",
+					email : "email is invalid"
+				},
+				
+                       }
+                });
+});
+</script>
+<script type="text/javascript">
+	$(".search_top").hover(function() {
+		$(".sub_menu").show();
+	}, function() {
+		$(".sub_menu").hide();
+	}); 
+</script>
+<script type="text/javascript">
+	$(document).on('click', '.poll_survey', function() {
+		var poll_val = $('input:radio[name=poll_options_id]:checked').val();
+		var poll_view = $(this).attr('data-url');
+		var pollid = $("#poll_id").val();
+		$.ajax({
+			type : 'POST',
+			url : poll_view,
+			data : 'poll_options_id=' + poll_val + '&poll_id=' + pollid,
+			dataType : 'html',
+			beforeSend: function(xhr){
+                xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+            },
+			success : function(update) {
+				$('#update-poll').html(update);
+			}
+		})
+	}); 
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('#send_to_friend_form').validate({
+			rules : {
+				"recepient_email[email]" : {
+					required : true,
+					email : true
+				},
+				"sender[email]" : {
+					required : true,
+					email : true
+				},
+				"sender[firstname]" : {
+					required : true,
+					
+				},
+				"sender[lastname]" : {
+					required : true,
+				},
+                                
+                        },
+                       messages : {
+				"recepient_email[email]" : {
+					required : "The recepient Email field should not be empty",
+					email : "email is invalid"
+				},
+				"sender[email]" : {
+					required : "The sender Email field should not be empty",
+					email : "email is invalid"
+				},
+				"sender[firstname]" : {
+					required : "The first name field should not be empty",
+					
+				},
+				"sender[lastname]" : {
+					required : "The last name field should not be empty",
+					
+				},
+                       }
+                });
+});
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('#login_form').validate({
+			rules : {
+				"subscriber[email_id]" : {
+					required : true,
+					email : true
+				},
+                                "subscriber[password]" : {
+					required : true	
+				}
+                        },
+                       messages : {
+				"subscriber[email_id]" : {
+					required : "The Email field should not be empty",
+					email : "email is invalid"
+				},
+				"subscriber[password]" : {
+					required : "Password field should not be empty"
+				}
+                       }
+                });
+});
+
+ 
+</script>
+<script type="text/javascript">
+	$(function() {
+    $('#subscriber_email_id').blur(function() {
+      var error_field = $('span[for="subscriber_email_id"]').is(':visible')
+      if($(this).attr('value')!="" && error_field==false){
+        $.ajax({
+          url : '/wpl/check_subscriber_exist',
+          data : 'email=' + $(this).attr('value') ,
+          type : 'POST',
+          dataType : 'json',
+          success : function(data) {
+            if (data.status == 'false') {
+              if (confirm('This email id already exists,please go to login page')) {
+                location.href = "/login";
+              }
+            }
+          }
+        });
+      }
+    });
+});  
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('#asset_reg_submit').click(function() {
+			var email = $("#subscriber_email_reg").val();
+			if(email==null||email=="")
+			{
+				alert("Please enter the email");
+				return false;
+			}
+			else
+			{		
+			$.ajax({
+				url : '/wpl/check_subscriber_exist',
+				data : 'email=' + email ,
+				type : 'POST',
+				dataType : 'json',
+				beforeSend: function(xhr){
+                                             xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+				success : function(data) {
+					if (data.status == 'false') {
+						if (confirm('This email id already exists,please go to login page')) {
+							location.href = "/login";
+						}
+					}
+				else
+					{
+						$("#custom_reg_form").submit();
+					}
+				}
+			});
+			}
+		});
+	}); 
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('#questfddfdionnare_reg_form').validate({
+			rules : {
+				"subscriber_properties[first_name]" : {
+					required : true,
+					
+				},
+				"questionnaire_submission[new_answers][SingleAnswer][177]" : {
+					required : true,
+				},
+				"subscriber_properties[county_id]" : {
+					required : true,
+					
+				},
+				"subscriber_properties[end_user_company_name]" : {
+					required : true,
+					
+				},
+				"subscriber_properties[last_name]" : {
+					required : true,
+				},
+				"subscriber_properties[job_role_id]" : {
+					required : true,
+				},
+				
+				"subscriber_properties[job_title_id]" : {
+					required : true,
+				},
+				"subscriber_properties[business_size_id]" : {
+					required : true,
+					
+				},
+				"subscriber_properties[industry_id]" : {
+					required : true,
+				},
+				"subscriber_properties[phone]" : {
+					required : true,
+				},
+				"subscriber_properties[address1]" : {
+					required : true,
+				},
+                                "subscriber_properties[city]" : {
+					required : true,
+				},
+				"subscriber_properties[postal_code]" : {
+					required : true,
+				},		
+
+			},
+			messages : {
+				"subscriber_properties[first_name]" : {
+					required : "The First Name field should not be empty",
+					
+				},
+				"questionnaire_submission[new_answers][SingleAnswer][177]" : {
+					required : "This field should not be empty",
+					
+				},
+				"subscriber_properties[county_id]" : {
+					required : "Country field should not be empty",
+					
+				},
+				"subscriber_properties[end_user_company_name]" : {
+					required : "Company Name field should not be empty",
+					
+				},
+				"subscriber_properties[last_name]" : {
+					required : "The Last Name field should not be empty",
+				},
+				"subscriber_properties[job_role_id]" : {
+					required : "The Job Role field should not be empty",
+				},
+				
+				"subscriber_properties[job_title_id]]" : {
+					required : "The Job Title field should not be empty",
+				},
+				
+				"subscriber_properties[business_size_id]" : {
+					required : "The Business Size should not be empty",
+					
+				},
+				"subscriber_properties[industry_id]" : {
+					required : "The Company field should not be empty",
+				},
+               			"subscriber_properties[phone]" : {
+					required : "The Phone field should not be empty",
+				},
+				"subscriber_properties[phone]" : {
+					required : "The Phone field should not be empty",
+				},
+				"subscriber_properties[address1]" : {
+					required : "The Address field should not be empty",
+				},
+				"subscriber_properties[city]" : {
+					required : "The City field should not be empty",
+				},
+				"subscriber_properties[postal_code]" : {
+					required : "The Postal Code field should not be empty",
+				},
+			}
+		});
+
+	});
+
+/*search checkbox submit function*/
+$(function() {
+	$('.search_docs input:checkbox').click(function(){
+		var check_class=$(this).parents('.search_result_content').attr('id');
+                var check_count= $('#'+check_class).attr('data-attr');
+                if(check_count=='one'){
+                  if($('#'+check_class).find('input[type="checkbox"]:checked').length>1){
+                    $('#'+check_class).find('input[type="checkbox"]').removeAttr('checked');         
+                    $('#'+check_class).find(this).attr('checked','checked');
+                  }
+                }
+	});
+
+	$('#search_doc_submit').click(function(){
+                var wpl_tax = ""
+                $('#menu_wpl input[type="checkbox"]:checked').each(function(){
+                  wpl_tax+=$(this).attr("value")+"$";
+                });
+                var multiple_taxonomy = $('.search_docs #wpl_taxonomy_names').attr('value');
+                multiple_taxonomy+= wpl_tax
+                $('.search_docs #wpl_taxonomy_names').attr('value',multiple_taxonomy) 
+	//	$('.search_docs #wpl_taxonomy_names').attr('value',$('#menu_wpl input[type="checkbox"]:checked').attr('value'))
+		$('.search_docs #content_type').attr('value',$('#menu_type input[type="checkbox"]:checked').attr('value'))
+		$('.search_docs #month_year_based').attr('value',$('#menu_date input[type="checkbox"]:checked').attr('value'))
+		$('.search_docs #company_name').attr('value',$('#menu_company input[type="checkbox"]:checked').attr('value'));
+                $('.search_docs form input').each(function(){
+                        if($(this).attr('value')==""){
+                                $(this).removeAttr('name')
+                        }
+                });
+                $('.relevance_select').removeAttr('name');
+		$('.search_docs #search_form').submit();
+	});
+
+
+         $('.search_author input:checkbox').click(function(){
+	   var check_class=$(this).parents('.search_result_content').attr('id');
+           var check_count= $('#'+check_class).attr('data-attr');
+           if(check_count=='one'){
+             if($('#'+check_class).find('input[type="checkbox"]:checked').length>1){
+               $('#'+check_class).find('input[type="checkbox"]').removeAttr('checked');		
+               $('#'+check_class).find(this).attr('checked','checked');
+        	}
+         	}  
+	});
+ 
+	$('.search_author #search_submit').click(function(){
+                var wpl_tax = ""
+                $('#menu_cat input[type="checkbox"]:checked').each(function(){
+                  wpl_tax+=$(this).attr("value")+"$";
+                });
+                var multiple_taxonomy = $('.search_author #wpl_taxonomy_names').attr('value');
+                multiple_taxonomy+= wpl_tax
+                $('.search_author #wpl_taxonomy_names').attr('value',multiple_taxonomy)
+	//	$('.search_author #wpl_taxonomy_names').attr('value',$('#menu_cat input[type="checkbox"]:checked').attr('value'))
+		$('.search_author #section').attr('value',$('#menu_content input[type="checkbox"]:checked').attr('value'))
+		$('.search_author #month_year_based').attr('value',$('#menu_publish input[type="checkbox"]:checked').attr('value'))
+		$('.search_author #author').attr('value',$('#menu_comp input[type="checkbox"]:checked').attr('value'));
+                $('.search_author form input').each(function(){
+			if($(this).attr('value')==""){
+				$(this).removeAttr('name')
+			}
+		});
+                $('.relevance_select').removeAttr('name');
+		$('.search_author #search_form').submit();
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+
+ $('.cancel_search').click(function(){
+ var author = $("#author").val();
+ if(author==undefined){
+ var serch_loc=location.protocol+"//"+location.host+"/full_library";
+ }
+ else{ 
+ var serch_loc=location.protocol+"//"+location.host+"/search?utf8=%E2%9C%93&amp;query=&amp;facet=true&amp;sort=Date";
+ }
+ window.location.href=serch_loc;
+ });
+
+$(".search_close").click(function(){
+var block_id= '#'+$(this).parents('.search_result').attr('id');
+var check_data = $(this).attr('data-id')
+if(check_data=="wpl_taxonomy_names"){
+  var taxon = ""
+  $(block_id+" .search_close[data-id='wpl_taxonomy_names']").not($(this)).each(function(){
+    taxon+=$(this).attr("data-value")+"$";
+  });
+  if(taxon==""){
+    $(block_id).find('#'+$(this).attr('data-id')).attr('name','');
+  }
+  else{
+    $(block_id).find('#'+$(this).attr('data-id')).attr('value',taxon);
+  }
+}
+else{
+$(block_id).find('#'+$(this).attr('data-id')).attr('name','');
+}
+$(this).parent().remove();
+$(block_id).find('form input').each(function(){
+    if($(this).attr('value')==""){
+        $(this).removeAttr('name')
+     }
+});
+   $('.relevance_select').removeAttr('name');
+   $(block_id).find('form').submit()
+});
+
+});
+
+$(".container_left_content .left_content:last-child").css('padding-right','0px');
+$('.tab_content .tab_info:last-child').css({'padding-bottom':'0px','border-bottom':'none'}); 
+$('.left_content ul li:last-child').css('background','none');
+</script>
+<script type="text/javascript">
+/*$(function() {
+    $("input#query").placeholder();
+});*/
+ 
+</script>
+<script type="text/javascript">
+		$('.relevance_select').change(function(){
+    $('.search_box form #search_sort').attr('value',$(this).attr('value'));
+    $('.search_box form').submit()
+});
+	</script>
+<script type="text/javascript">
+		$(".search_top").hover(function(){
+                     $(".sub_menu").show();
+                     }, function(){
+                     $(".sub_menu").hide();
+                });
+              $(".menu_400").click(function(){
+                     $("#menu").toggle();
+                })
+</script>
+<script type="text/javascript">
+		   $(function(){
+			$('#search_result_menu ul li a').toggle(function(){
+				$('.search_result .search_result_content').hide();
+			   		$('#search_result_menu ul li').removeClass('active');
+			   		$(this).parent().addClass('active');
+			   		var data_active = $(this).data('id');
+			   		$(data_active).show();
+			   },function(){
+			   		$(this).parent().removeClass('active');
+			   		var data_active = $(this).data('id');
+			   		$(data_active).hide();
+			   });
+		    });
+</script>
+<script type="text/javascript">
+                $('.button_left').click(function(){
+		  $("input[type=checkbox]").attr("checked", false);
+		});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$('.social-links').toggle(function(){
+		  $(this).next('ul').show();
+		},
+		function(){
+		  $(this).next('ul').hide();
+	});
+
+
+	$('.mainmenu li.active a.global_400').toggle(function(){
+	  			$('.mainmenu>li').not('.mainmenu>li:first,.mainmenu>li:last').show();
+		},function(){
+		 		$('.mainmenu>li').not('.mainmenu>li:first,.mainmenu>li:last').hide();
+	});
+
+	$('.menu_400').toggle(function(){
+		  $(this).next('#menu').show();
+		},
+		function(){
+		  $(this).next('#menu').hide();
+	});
+});
+</script>
+
+
+		
+<script type="text/javascript">
+	jQuery(document).ready(function () {
+	  var device_used;
+          var entity_id=$('#entity_id').val();
+          var entity_type=$('#entity_type').val();
+	  var isiPad = /ipad/i.test(navigator.userAgent.toLowerCase());
+  //    $.get("http://ipinfo.io", function(response) {
+        $.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+       if($.browser.device)
+		{
+			mobile = ['iphone','ipad','android','blackberry','nokia','opera mini','windows mobile','windows phone','iemobile']; 
+            for (var i in mobile) 
+             {
+            	if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) {
+            		device_used = mobile[i].toLowerCase() ;
+            	}
+            }
+        }
+		else
+		{
+		   device_used = 'Desktop'
+		}
+	    $.ajax({
+			url : "/users/behavorial_tracking?browser_name="+$.browser.name+"&resolution="+$(document).width()+"*"+$(document).height()+"&device_used="+device_used+"&is_ipad="+isiPad+"&url="+$(location).attr('href')+"&ip="+ "" +"&entity_id="+entity_id+"&entity_type="+entity_type,
+			type : 'POST',
+			dataType:'json',
+			beforeSend : function(xhr) {
+				xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
+			},
+			success : function(msg) {
+				    //alert($.browser.name + ", " + $(document).width()+"*"+$(document).height() + ', '+ device_used + ', ' + isiPad);
+			},
+        });	
+//	  }, "jsonp");
+   });
+</script>
+		</body>
+</html>

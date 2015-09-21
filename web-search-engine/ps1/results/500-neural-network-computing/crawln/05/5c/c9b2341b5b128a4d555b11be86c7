@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html id="ie6" dir="ltr" lang="en-US" class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html id="ie7" dir="ltr" lang="en-US" class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html id="ie8" dir="ltr" lang="en-US" class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" id="html-standards" dir="ltr" lang="en-US"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width" />
+<title>Contact Us | Encyclopædia Britannica, Inc. Corporate Site</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://corporate.britannica.com/wp-content/themes/britannica-corporate/style.css" />
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>  -->
+<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+<link rel="pingback" href="http://corporate.britannica.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://corporate.britannica.com/wp-content/themes/britannica-corporate/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://corporate.britannica.com/wp-content/themes/britannica-corporate/js/hoverIntent.js"></script>
+<script type="text/javascript" src="http://corporate.britannica.com/wp-content/themes/britannica-corporate/js/superfish.js"></script>
+<script type="text/javascript">
+
+// initialise plugins
+jQuery(function(){
+	jQuery('#access .menu ul').superfish();
+});
+
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+  $("a").removeAttr("title");
+  });
+</script>
+
+<style type="text/css"> .sf-sub-indicator { display:none; } </style>
+<link rel="alternate" type="application/rss+xml" title="Encyclopædia Britannica, Inc. Corporate Site &raquo; Feed" href="http://corporate.britannica.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Encyclopædia Britannica, Inc. Corporate Site &raquo; Comments Feed" href="http://corporate.britannica.com/comments/feed/" />
+<script type='text/javascript' src='http://corporate.britannica.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://corporate.britannica.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://corporate.britannica.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='News' href='http://corporate.britannica.com/news/' />
+<link rel='next' title='At Home' href='http://corporate.britannica.com/products/home/' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='http://corporate.britannica.com/contact/' />
+</head>
+
+<body class="page page-id-128 page-template-default singular two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+                                
+                  
+                              
+                                            <img class=" wp-image-485 alignright" title="advancinged" src="http://corporate.britannica.com/wp-content/uploads/2012/02/advancinged.png" alt="" /><a href="http://corporate.britannica.com"><img class="alignleft size-full wp-image-60" title="britannica" src="http://corporate.britannica.com/wp-content/uploads/2012/02/britannica1.png" alt="Encyclopedia Britannica Inc" width="313" height="74" /></a>                                                 
+                                <div style="clear:both;"></div>                
+			</hgroup>
+            <div style="clear:both;"></div>
+
+        	<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+								<div class="menu"><ul><li ><a href="http://corporate.britannica.com/" title="Home">Home</a></li><li class="page_item page-item-95"><a href="#" style="cursor: default;" title="About Us">About Us</a><ul><li class="page_item page-item-94"><a href="http://corporate.britannica.com/about/today/" title="Britannica Today">Britannica Today</a></li><li class="page_item page-item-98"><a href="http://corporate.britannica.com/about/brands/" title="Brands and Divisions">Brands and Divisions</a></li><li class="page_item page-item-187"><a href="http://corporate.britannica.com/about/executive/" title="Executive Team">Executive Team</a></li><li class="page_item page-item-190"><a href="http://corporate.britannica.com/about/contributors/" title="Contributors">Contributors</a></li></ul></li><li class="page_item page-item-1776"><a href="http://corporate.britannica.com/board-of-directors-2/" title="Board of Directors">Board of Directors</a></li><li class="page_item page-item-102"><a href="#" style="cursor: default;" title="Products">Products</a><ul><li class="page_item page-item-142"><a href="http://corporate.britannica.com/products/home/" title="At Home">At Home</a></li><li class="page_item page-item-144"><a href="http://corporate.britannica.com/products/schools/" title="Schools">Schools</a></li><li class="page_item page-item-148"><a href="http://corporate.britannica.com/products/libraries/" title="Libraries">Libraries</a></li><li class="page_item page-item-150"><a href="http://corporate.britannica.com/products/universities/" title="Colleges &amp; Universities">Colleges &#038; Universities</a></li><li class="page_item page-item-343"><a href="http://corporate.britannica.com/products/business/" title="Business &amp; Government">Business &#038; Government</a></li></ul></li><li class="page_item page-item-5193"><a href="http://corporate.britannica.com/for-journalists/" title="For Journalists">For Journalists</a></li><li class="page_item page-item-632"><a href="http://corporate.britannica.com/publishing-partner-program/" title="Publishing Partner Program">Publishing Partner Program</a></li><li class="page_item page-item-65"><a href="#" style="cursor: default;" title="News">News</a><ul><li class="page_item page-item-1004"><a href="http://corporate.britannica.com/news/britannica-in-the-news-2/" title="Britannica in the News">Britannica in the News</a></li><li class="page_item page-item-100"><a href="http://corporate.britannica.com/news/press/" title="Press Releases">Press Releases</a></li><li class="page_item page-item-887"><a href="http://corporate.britannica.com/news/press-kits/" title="Press Kits">Press Kits</a></li><li class="page_item page-item-5670"><a href="http://corporate.britannica.com/news/miscellany/" title="Want More?">Want More?</a></li></ul></li><li class="page_item page-item-128 current_page_item"><a href="http://corporate.britannica.com/contact/" title="Contact Us">Contact Us</a></li></ul></div>
+                <div style="clear:both;"></div>
+			</nav><!-- #access -->
+            <div style="clear:both;"></div>
+	</header><!-- #branding -->
+
+	<div id="main">
+		<div id="primary" class="page-template">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-128" class="post-128 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Contact Us</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><strong></strong><img class="alignright size-full wp-image-595 contact-bg" title="Britannica World Headquarters" src="/wp-content/uploads/2012/02/Britannica-World-Headquarters.jpg" alt="Britannica World Headquarters" width="250" height="931" /><strong>For help with Britannica CD-ROMs and DVDs</strong><br />
+Visit our online <a href="http://support.britannica.com/">Technical Support site</a>.</p>
+<p><strong>If you represent a school, library, or other institution in the United States or Canada</strong><br />
+Call (800) 621-3900 or write <a href="mailto:">contact@eb.com</a>. More <a title="info.eb.com" href="http://info.eb.com/contact-us/" target="_blank">here</a>.</p>
+<p><strong>For help with any of Encyclopædia Britannica’s consumer products</strong>, including Britannica Online, Britannica Kids, our apps, or institutional products outside North America, contact the office nearest you.</p>
+<h3>United States and Canada</h3>
+<p><strong>Address:</strong> Britannica Customer Support<br />
+331 North La Salle Street<br />
+Chicago, IL 60654-2682<br />
+<strong>Hours: </strong>Monday-Friday, 8:00 AM-6:00 PM, CST<strong><br />
+Phone:</strong> 800.323.1229 (U.S. and Canada) or 312.347.7000 (all other countries)<br />
+<strong>Fax:</strong> 312.294.2104<br />
+<strong>Web:</strong> <a href="http://forms01.britannica.com/help/bpshelpform.html" target="_blank">Online Help Form</a></p>
+<h3>Australia, Asia Pacific</h3>
+<p><strong>Address:</strong> Encyclopædia Britannica Australia Ltd.<br />
+Level 1 9 Help Street<br />
+Chatswood NSW 2067<br />
+Australia<br />
+<strong>Phone:</strong> 61.2.9915.8800<br />
+<strong>Fax:</strong> 61.2.9419.5247<br />
+<strong>E-mail:</strong> <a href="mailto:sales@eb.com.au">sales@eb.com.au</a><br />
+<strong>Web:</strong> <a href="http://www.britannica.com.au">http://www.britannica.com.au</a></p>
+<p><strong>Schools, libraries, and other institutions</strong><br />
+<strong>E-mail:</strong> <a href="mailto:bol@eb.com.au">bol@eb.com.au</a><br />
+<strong>Web:</strong> <a href="http://edu.eb.com/">http://edu.eb.com/</a></p>
+<h3>Europe, Middle East, and Africa</h3>
+<p><strong>Address:</strong> Encyclopædia Britannica (UK) Ltd.<br />
+2nd Floor<br />
+Unity Wharf<br />
+Mill Street<br />
+London<br />
+SE1 2BH<br />
+England<br />
+<strong>Phone:</strong> 44.(0)20.7500.7800 (Customer Support)<br />
+0800.282433 (Consumer Sales UK only)<br />
+44.207.500.7843 (Consumer Sales outside UK)<br />
+<strong>Fax:</strong> 44.(0)20.7500.7878<br />
+<strong>E-mail:</strong> <a href="mailto:enquiries@britannica.co.uk">enquiries@britannica.co.uk</a><br />
+<strong>Web:</strong> <a href="http://www.britannica.co.uk">http://www.britannica.co.uk</a> (consumers) / <a href="http://britannica.co.uk/schools">http://britannica.co.uk/schools</a> (schools)</p>
+<h3>Israel</h3>
+<p><strong>Address:</strong> Britannica.com Israel Ltd.<br />
+16 Tozeret Ha&#8217;aretz St.<br />
+Tel Aviv 67891<br />
+Israel<br />
+<strong>Phone:</strong> 972.3.607.0400<br />
+<strong>Fax:</strong> 972.3.607.0401<br />
+<strong>Web:</strong> <a href="http://www.britannica.co.il">http://www.britannica.co.il</a></p>
+<h3>Japan</h3>
+<p><strong>Address:</strong> Britannica Japan Co., Ltd.<br />
+Nishi-Gotanda 8 Chome Building<br />
+8-3-16 Nishi-Gotanda<br />
+Shinagawa<br />
+Tokyo 141-0031<br />
+Japan<br />
+<strong>Phone:</strong> 81.3.5436.1388 (consumers); 81.3.5436.1390 (institutions)<br />
+<strong>Fax:</strong> 81.3.5436.1380<br />
+<strong>E-mail:</strong><a href="mailto:info@britannica.co.jp"> info@britannica.co.jp</a><br />
+<strong>Web:</strong> <a href="http://www.britannica.co.jp">http://www.britannica.co.jp</a></p>
+<h3>Korea</h3>
+<p><strong>Address:</strong> Korea Britannica Corporation<br />
+Younghan B/D 7F<br />
+59 – 23 Chungmuro 3ga<br />
+Joong-gu, Seoul, Korea<br />
+100-013<br />
+<strong>Phone:</strong> 82.1588.1768<br />
+<strong>Fax:</strong> 82.2.2278-9983<br />
+<strong>E-mail:</strong> <a href="mailto:webmaster@britannica.co.kr">webmaster@britannica.co.kr</a><br />
+<strong>Web:</strong> <a href="http://www.britannica.co.kr">http://www.britannica.co.kr</a></p>
+<h3>Latin America</h3>
+<p><strong>Phone:</strong> 1.312.347.7456<br />
+<strong>Fax:</strong> 1.312.294.2162<br />
+<strong>E-mail:</strong> <a href="mailto:latinamerica@eb.com">latinamerica@eb.com</a><br />
+<strong>Web:</strong> <a href="http://britannica.es">http://britannica.es</a> or <a href="http://www.britannica.com.br">http://www.britannica.com.br</a></p>
+<h3>South Asia</h3>
+<p><strong>Address:</strong> Encyclopædia Britannica (India) Pvt. Ltd.<br />
+A-41, Mohan Co-operative Industrial Estate<br />
+Mathura Road, New Delhi &#8211; 110 044<br />
+India<br />
+<strong>Phone:</strong> 91.11.4715.4100<br />
+<strong>Fax:</strong> 91.11.4715.4116<br />
+<strong>E-mail:</strong> <a href="mailto:bcd@ebindia.com">bcd@ebindia.com</a> (consumers); <a href="mailto:online@ebindia.com">online@ebindia.com</a> (institutions)<br />
+<strong>Web:</strong> <a href="http://www.britannicaindia.com">http://www.britannicaindia.com</a></p>
+<p>&nbsp;</p>
+<p><script type="text/javascript" language="javascript">// <![CDATA[
+   function openBrowserWindow(theURL, winName, features) { 	window.open(theURL, winName, features); }
+// ]]&gt;</script></p>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-128 -->
+
+					<p>&nbsp;</p>
+                    	<div id="comments">
+	
+	
+	
+									
+</div><!-- #comments -->
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area" role="complementary">
+		</div><!-- #secondary .widget-area -->
+
+        <div style="clear:both;"></div>
+
+	</div><!-- #main -->
+
+</div><!-- #page -->
+
+<div id="colophon" role="contentinfo">
+
+		
+<div id="supplementary" class="five">
+		<div id="first" class="widget-area" role="complementary">
+		<aside id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">Our Sites</h3><div class="menu-our-sites-container"><ul id="menu-our-sites" class="menu"><li id="menu-item-545" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-545"><a href="http://www.britannica.com">Britannica Online Premium</a></li>
+<li id="menu-item-4220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4220"><a href="http://info.eb.com/products/britannica-school/">Britannica School</a></li>
+<li id="menu-item-4221" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4221"><a href="http://info.eb.com/products/britannica-academic-edition/">Britannica Academic Edition</a></li>
+<li id="menu-item-296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-296"><a href="http://merriamwebster.com/">Merriam-Webster</a></li>
+<li id="menu-item-4222" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4222"><a href="http://info.eb.com/products/pathways-science/">Pathways: Science</a></li>
+<li id="menu-item-4223" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4223"><a href="http://info.eb.com/products/e-books/">Britannica eBooks</a></li>
+<li id="menu-item-298" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-298"><a href="http://info.eb.com/">School &#038; Library Products</a></li>
+<li id="menu-item-4225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4225"><a>Britannica Store (Consumers)</a></li>
+<li id="menu-item-4224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4224"><a href="http://shop.eb.com/">Britannica Store (Institutions)</a></li>
+<li id="menu-item-300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-300"><a href="http://advocacy.britannica.com/blog/advocacy">Advocacy for Animals</a></li>
+</ul></div></aside>	</div><!-- #first .widget-area -->
+	
+		<div id="second" class="widget-area" role="complementary">
+		<aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Mobile</h3><div class="menu-mobile-container"><ul id="menu-mobile" class="menu"><li id="menu-item-301" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-301"><a href="http://itunes.apple.com/us/app/id447919187?mt=8">iPhone App</a></li>
+<li id="menu-item-302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-302"><a href="http://itunes.apple.com/us/app/id447919187?mt=8">iPad App</a></li>
+<li id="menu-item-303" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-303"><a href="http://corporate.britannica.com/apps/">Britannica Kids Apps</a></li>
+</ul></div></aside>	</div><!-- #second .widget-area -->
+	
+		<div id="third" class="widget-area" role="complementary">
+		<aside id="nav_menu-6" class="widget widget_nav_menu"><h3 class="widget-title">Stay Connected</h3><div class="menu-stay-connected-container"><ul id="menu-stay-connected" class="menu"><li id="menu-item-305" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-305"><a href="http://www.facebook.com/britannica">Facebook</a></li>
+<li id="menu-item-306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-306"><a href="http://www.twitter.com/britannica">Twitter</a></li>
+<li id="menu-item-307" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-307"><a href="http://www.youtube.com/britannica">Youtube</a></li>
+<li id="menu-item-308" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-308"><a href="https://safe.britannica.com/customer/mailinglist/">Newsletters</a></li>
+<li id="menu-item-309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-309"><a href="http://www.britannica.com/feeds">RSS</a></li>
+<li id="menu-item-310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-310"><a href="http://www.britannica.com/widgets">Widgets</a></li>
+</ul></div></aside>	</div><!-- #third .widget-area -->
+		
+		<div id="fourth" class="widget-area" role="complementary">
+		<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">International</h3><div class="menu-international-container"><ul id="menu-international" class="menu"><li id="menu-item-311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-311"><a href="http://www.britannica.com.au/">Australia</a></li>
+<li id="menu-item-312" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-312"><a href="http://www.britannica.com.br/">Brazil</a></li>
+<li id="menu-item-547" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-547"><a href="http://www.china.eb.com">China</a></li>
+<li id="menu-item-314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-314"><a href="http://www.britannicaindia.com/">India</a></li>
+<li id="menu-item-548" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-548"><a href="http://www.britannica.co.jp/">Japan</a></li>
+<li id="menu-item-315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-315"><a href="http://www.britannica.co.kr/">Korea</a></li>
+<li id="menu-item-316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-316"><a href="http://www.britannica.es/">Latin America</a></li>
+<li id="menu-item-318" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-318"><a href="http://www.britannica.co.uk/">United Kingdom</a></li>
+</ul></div></aside>	</div><!-- #fourth .widget-area -->
+	
+		<div id="fifth" class="widget-area" role="complementary">
+		<aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">Corporate</h3><div class="menu-corporate-container"><ul id="menu-corporate" class="menu"><li id="menu-item-319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-319"><a href="http://corporate.britannica.com/privacy.html">Privacy Policy</a></li>
+<li id="menu-item-320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-320"><a href="http://corporate.britannica.com/termsofuse.html">Terms of Use</a></li>
+</ul></div></aside>	</div><!-- #fifth .widget-area -->
+	
+			</div><!-- #supplementary -->        <div style="clear:both;"></div>
+        <div class="copyright">&copy; 2014 Encyclopædia Britannica, Inc.  All Rights Reserved. &nbsp;&nbsp;&nbsp;&nbsp;EB<sup>&reg;</sup></div>
+
+
+</div><!-- #colophon -->
+
+
+<script
+type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-6636134-1"]);_gaq.push(["_trackPageview"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+
+</body>
+</html>

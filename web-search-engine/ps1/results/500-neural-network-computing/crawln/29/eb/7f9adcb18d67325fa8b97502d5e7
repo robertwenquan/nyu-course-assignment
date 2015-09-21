@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+   <TITLE> Neural Networks - A Systematic Introduction </TITLE>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<style type="text/css">
+body{ background-color: #99ccff}
+.title{
+	font-family: Arial;
+	font-size: 20px;
+
+}
+.subtitle{
+	font-family: Arial;
+	font-size: 17px;
+	font-style: italic;
+
+}
+a:link, a:visited, a:hover  {
+		text-decoration: underline;	
+		font-family: Arial;
+		font-size: 14px;
+		color: #000099;
+		
+}
+p {
+	font-family: Arial;
+	font-size: 14px;
+		
+}
+
+</style>
+</HEAD>
+<BODY>
+
+
+<table align="center" width="100%">
+<tbody ><tr><td>
+<p class="title" align="center"> Neural Networks - A Systematic Introduction</p>
+<p align="center"> <i>a book by Raul Rojas</i></p>
+<P align="center">Foreword by Jerome Feldman</P>
+
+<P align="center">Springer-Verlag, Berlin, New-York, 1996 (502 p.,350 illustrations).</P>
+
+<div align="center" ><a name="start"><img src="http://www.inf.fu-berlin.de/~rojas/neural/umschlag.gif"  alt="Book cover"></a></div><br>
+
+<div align="center">
+<a href="#forword">Forword</a>, <a href="#preface">Preface</a>
+<a href="#chapter 1">chapter 1</a>, <a href="#chapter 2">chapter 2</a>, <a href="#chapter 3">chapter 3</a>, <a href="#chapter 4">chapter 4</a>, 
+<a href="#chapter 5">chapter 5</a>, <a href="#chapter 6">chapter 6</a>, <a href="#chapter 7">chapter 7</a>, <a href="#chapter 8">chapter 8</a>, 
+<a href="#chapter 9">chapter 9</a>, <a href="#chapter 10">chapter 10</a>, <a href="#chapter 11">chapter 11</a>, <a href="#chapter 12">chapter 12</a>, 
+<a href="#chapter 13">chapter 13</a>, <a href="#chapter 14">chapter 14</a>, <a href="#chapter 15">chapter 15</a>, <a href="#chapter 16">chapter 16</a>, 
+<a href="#chapter 17">chapter 17</a>, <a href="#chapter 18">chapter 18</a>, <a href="#references">References</a>
+</div>
+
+<hr>
+<p align="center">Whole Book <a href="neuron.pdf" target="neu_blank">(PDF)</a></p>
+<P align="center"><A HREF="file:////web/page.mi.fu-berlin.de/web-home/rojas/public_html/neural/review.html" target="neu_blank">Review in &quot;Computer Reviews&quot;</A></P>
+<P align="center"><A HREF="http://www.inf.fu-berlin.de/~rojas/neural/errata.html" target="neu_blank">Reported errata</A></P>
+<hr>
+
+<table align="center"><tbody><tr>
+<td valign="top"  style="padding-left:150;">
+<p class="subtitle"><a name="forword">&nbsp;</a>§ Forword<a href="chapter/forword.pdf">(PDF)</a></p>
+<p class="subtitle"><a name="preface">&nbsp;</a>§ Preface<a href="chapter/preface.pdf">(PDF)</a></p>
+<!--Content chapter 1-->
+
+<p class="subtitle"><a name="chapter 1">&nbsp;</a>1. The biological paradigm <a href="chapter/K1.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>1.1 Neural computation</li>
+<li>1.1.1 Natural and artificial neural networks</li>
+<li>1.1.2 Models of computation</li>
+<li>1.1.3 Elements of a computing model</li>
+<li>1.2 Networks of neurons</li>
+<li>1.2.1 Structure of the neurons</li>
+<li>1.2.2 Transmission of information</li>
+<li>1.2.3 Information processing at the neurons and synapses</li>
+<li>1.2.4 Storage of information - Learning</li>
+<li>1.2.5 The neuron - a self-organizing system</li>
+<li>1.3 Artificial neural networks</li>
+<li>1.3.1 Networks of primitive functions</li>
+<li>1.3.2 Approximation of functions</li>
+<li>1.3.3 Caveat</li>
+<li>1.4 Historical and bibliographical remarks</li>
+</ul>
+
+<!--Content chapter 2-->
+<p class="subtitle"><a name="chapter 2">&nbsp;</a>2. Threshold logic <a href="chapter/K2.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>2.1 Networks of functions</li>
+<li>2.1.1 Feed-forward and recurrent networks</li>
+<li>2.1.2 The computing units</li>
+<li>2.2 Synthesis of Boolean functions</li>
+<li>2.2.1 Conjunction, disjunction, negation</li>
+<li>2.2.2 Geometric interpretation</li>
+<li>2.2.3 Constructive synthesis</li>
+<li>2.3 Equivalent networks</li>
+<li>2.3.1 Weighted and unweighted networks</li>
+<li>2.3.2 Absolute and relative inhibition</li>
+<li>2.3.3 Binary signals and pulse coding</li>
+<li>2.4 Recurrent networks</li>
+<li>2.4.1 Stored state networks</li>
+<li>2.4.2 Finite automata</li>
+<li>2.4.3 Finite automata and recurrent networks</li>
+<li>2.4.4 A first classification of neural networks</li>
+<li>2.5 Harmonic analysis of logical function</li>
+<li>2.5.1 General expression</li>
+<li>2.5.2 The Hadamard-Walsh transform</li>
+<li>2.5.3 Applications of threshold logic</li>
+<li>2.6 Historical and bibliographical remarks</li>
+</ul>
+
+
+
+<!--Content chapter 3-->
+<p class="subtitle"><a name="chapter 3">&nbsp;</a>3. Weighted Networks - The Perceptron <a href="chapter/K3.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>3.1 Perceptrons and parallel processing </li>
+<li>3.1.1 Perceptrons as weighted threshold elements </li>
+<li>3.1.2 Computational limits of the perceptron model</li>
+<li>3.2 Implementation of logical functions </li>
+<li>3.2.1 Geometric interpretation </li>
+<li>3.2.2 The XOR problem</li>
+<li>3.3 Linearly separable functions </li>
+<li>3.3.1 Linear separability </li>
+<li>3.3.2 Duality of input space and weight space </li>
+<li>3.3.3 The error function in weight space </li>
+<li>3.3.4 General decision curves</li>
+<li>3.4 Applications and biological analogy </li>
+<li>3.4.1 Edge detection with perceptrons </li>
+<li>3.4.2 The structure of the retina </li>
+<li>3.4.3 Pyramidal networks and the neocognitron </li>
+<li>3.4.4 The silicon retina</li>
+<li>3.5 Historical and bibliographical remarks</li>
+</ul>
+
+
+
+<!--Content chapter 4-->
+<p class="subtitle"><a name="chapter 4">&nbsp;</a>4. Perceptron learning<a href="chapter/K4.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>4.1 Learning algorithms for neural networks </li>
+<li>4.1.1 Classes of learning algorithms </li>
+<li>4.1.2 Vector notation </li>
+<li>4.1.3 Absolute linear separability</li>
+<li>4.1.4 The error surface and the search method</li>
+<li>4.2 Algorithmic learning </li>
+<li>4.2.1 Geometric visualization </li>
+<li>4.2.2 Convergence of the algorithm </li>
+<li>4.2.3 Accelerating convergence </li>
+<li>4.2.4 The pocket algorithm </li>
+<li>4.2.5 Complexity of perceptron learning</li>
+<li>4.3 Linear programming </li>
+<li>4.3.1 Inner points of polytopes </li>
+<li>4.3.2 Linear separability as linear optimization </li>
+<li>4.3.3 Karmarkar&acute;s Algorithm</li>
+<li>4.4 Historical and bibliographical remarks</li>
+</ul>
+
+<!--Content chapter 5-->
+<p class="subtitle"><a name="chapter 5">&nbsp;</a>5. Unsupervised learning and clustering algorithms<a href="chapter/K5.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>5.1 Competitive learning </li>
+<li>5.1.1 Generalization of the perceptron problem </li>
+<li>5.1.2 Unsupervised learning through competition</li>
+<li>5.2 Convergence analysis </li>
+<li>5.2.1 The one-dimensional case - Energy function </li>
+<li>5.2.2 Multidimensional case - The classical methods </li>
+<li>5.2.3 Unsupervised learning as minimization problem </li>
+<li>5.2.4 Stability of the solutions</li>
+<li>5.3 Principal component analysis </li>
+<li>5.3.1 Unsupervised reinforcement learning </li>
+<li>5.3.2 Convergence of the learning algorithm </li>
+<li>5.3.3 Multiple principal components</li>
+<li>5.4 Examples </li>
+<li>5.4.1 Pattern recognition </li>
+<li>5.4.2 Image compression</li>
+<li>5.5 Historical and bibliographical remarks</li>
+</ul>
+
+<!--Content chapter 6-->
+<p class="subtitle"><a name="chapter 6">&nbsp;</a>6. One and two layered networks<a href="chapter/K6.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>6.1 Structure and geometric visualization</li>
+<li>6.1.1 Network architecture </li>
+<li>6.1.2 The XOR problem revisited</li>
+<li>6.1.3 Geometric visualization</li>
+<li>6.2 Counting regions in input and weight space </li>
+<li>6.2.1 Weight space regions for the XOR problem </li>
+<li>6.2.2 Bipolar vectors </li>
+<li>6.2.3 Projection of the solution regions </li>
+<li>6.2.4 Geometric interpretation</li>
+<li>6.3 Regions for two layered networks </li>
+<li>6.3.1 Regions in weight space for the XOR problem </li>
+<li>6.3.2 Number of regions in general </li>
+<li>6.3.3 Consequences </li>
+<li>6.3.4 The Vapnik-Chervonenkis dimension </li>
+<li>6.3.5 The problem of local minima</li>
+<li>6.4 Historical and bibliographical remarks</li>
+</ul>
+
+</td>
+<td valign="top">
+
+<!--Content chapter 7-->
+<p class="subtitle"><a name="chapter 7">&nbsp;</a>7. The backpropagation algorithm<a href="chapter/K7.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>7.1 Learning as gradient descent </li>
+<li>7.1.1 Differentiable activation functions </li>
+<li>7.1.2 Regions in input space </li>
+<li>7.1.3 Local minima of the error function</li>
+<li>7.2 General feed-forward networks </li>
+<li>7.2.1 The learning problem </li>
+<li>7.2.2 Derivatives of network functions </li>
+<li>7.2.3 Steps of the backpropagation algorithm </li>
+<li>7.2.4 Learning with Backpropagation</li>
+<li>7.3 The case of layered networks </li>
+<li>7.3.1 Extended network </li>
+<li>7.3.2 Steps of the algorithm </li>
+<li>7.3.3 Backpropagation in matrix form </li>
+<li>7.3.4 The locality of backpropagation </li>
+<li>7.3.5 An Example</li>
+<li>7.4 Recurrent networks </li>
+<li>7.4.1 Backpropagation through time </li>
+<li>7.4.2 Hidden Markov Models </li>
+<li>7.4.3 Variational problems</li>
+<li>7.5 Historical and bibliographical remarks</li>
+</ul>
+
+
+<!--Content chapter 8-->
+<p class="subtitle"><a name="chapter 8">&nbsp;</a>8. Fast learning algorithms<a href="chapter/K8.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>8.1 Introduction - Classical backpropagation </li>
+<li>8.1.1 Backpropagation with momentum </li>
+<li>8.1.2 The fractal geometry of backpropagation</li>
+<li>8.2 Some simple improvements to backpropagation </li>
+<li>8.2.1 Initial weight selection </li>
+<li>8.2.2 Clipped derivatives and offset term </li>
+<li>8.2.3 Reducing the number of floating-point operations </li>
+<li>8.2.4 Data decorrelation</li>
+<li>8.3 Adaptive step algorithms </li>
+<li>8.3.1 Silva and Almeida&acute;s algorithm </li>
+<li>8.3.2 Delta-bar-delta </li>
+<li>8.3.3 RPROP </li>
+<li>8.3.4 The Dynamic Adaption Algorithm</li>
+<li>8.4 Second-order algorithms </li>
+<li>8.4.1 Quickprop </li>
+<li>8.4.2 Second-order backpropagation</li>
+<li>8.5 Relaxation methods </li>
+<li>8.5.1 Weight and node perturbation </li>
+<li>8.5.2 Symmetric and asymmetric relaxation </li>
+<li>8.5.3 A final thought on taxonomy</li>
+<li>8.6 Historical and bibliographical remarks</li>
+</ul>
+
+
+<!--Content chapter 9-->
+<p class="subtitle"><a name="chapter 9">&nbsp;</a>9. Statistics and Neural Networks<a href="chapter/K9.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>9.1 Linear and nonlinear regression </li>
+<li>9.1.1 The problem of good generalization </li>
+<li>9.1.2 Linear regression </li>
+<li>9.1.3 Nonlinear units </li>
+<li>9.1.4 Computing the prediction error </li>
+<li>9.1.5 The jackknife and cross-validation </li>
+<li>9.1.6 Committees of networks</li>
+<li>9.2 Multiple regression </li>
+<li>9.2.1 Visualization of the solution regions </li>
+<li>9.2.2 Linear equations and the pseudoinverse </li>
+<li>9.2.3 The bidden layer </li>
+<li>9.2.4 Computation of the pseudoinverse</li>
+<li>9.3 Classification networks </li>
+<li>9.3.1 An application: NETtalk </li>
+<li>9.3.2 The Bayes property of classifier networks </li>
+<li>9.3.3 Connectionist speech recognition </li>
+<li>9.3.4 Autoregressive models for time series analysis</li>
+<li>9.4 Historical and bibliographical remarks</li>
+</ul>
+
+
+<!--Content chapter 10-->
+<p class="subtitle"><a name="chapter 10">&nbsp;</a>10. The complexity of learning<a href="chapter/K10.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>10.1 Network functions </li>
+<li>10.1.1 Learning algorithms for multilayer networks </li>
+<li>10.1.2 Hilbert&acute;s problem and computability </li>
+<li>10.1.3 Kolmogorov&acute;s theorem</li>
+<li>10.2 Function approximation </li>
+<li>10.2.1 The one-dimensional case </li>
+<li>10.2.2 The multidimensional case</li>
+<li>10.3 Complexity of learning problems </li>
+<li>10.3.1 Complexity classes </li>
+<li>10.3.2 NP-complete learning problems </li>
+<li>10.3.3 Complexity of learning with AND-OR networks </li>
+<li>10.3.4 Simplifications of the network architecture </li>
+<li>10.3.5 Learning with hints</li>
+<li>10.4 Historical and bibliographical remarks</li>
+</ul>
+
+<!--Content chapter 11-->
+<p class="subtitle"><a name="chapter 11">&nbsp;</a>11. Fuzzy Logic<a href="chapter/K11.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>11.1 Fuzzy sets and fuzzy logic </li>
+<li>11.1.1 Imprecise data and imprecise rules </li>
+<li>11.1.2 The fuzzy set concept </li>
+<li>11.1.3 Geometric representation of fuzzy sets </li>
+<li>11.1.4 Set theory, logic operators and geometry </li>
+<li>11.1.5 Families of fuzzy operators</li>
+<li>11.2 Fuzzy inferences </li>
+<li>11.2.1 Inferences from imprecise data </li>
+<li>11.2.2 Fuzzy numbers and inverse operation</li>
+<li>11.3 Control with fuzzy logic </li>
+<li>11.3.1 Fuzzy controllers </li>
+<li>11.3.2 Fuzzy networks </li>
+<li>11.3.3 Function approximation with fuzzy methods </li>
+<li>11.3.4 The eye as a fuzzy system - color vision</li>
+<li>11.4 Historical and bibliographical remarks</li>
+</ul>
+
+<!--Content chapter 12-->
+<p class="subtitle"><a name="chapter 12">&nbsp;</a>12. Associative Networks<a href="chapter/K12.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>12.1 Associative pattern recognition </li>
+<li>12.1.1 Recurrent networks and types of associative memories </li>
+<li>12.1.2 Structure of an associative memory </li>
+<li>12.1.3 The eigenvector automaton</li>
+<li>12.2 Associative learning </li>
+<li>12.2.1 Hebbian Learning - The correlation matrix </li>
+<li>12.2.2 Geometric interpretation of Hebbian learning </li>
+<li>12.2.3 Networks as dynamical systems - Some experiments </li>
+<li>12.2.4 Another visualization</li>
+<li>12.3 The capacity problem</li>
+<li>12.4 The pseudoinverse </li>
+<li>12.4.1 Definition and properties of the pseudoinverse </li>
+<li>12.4.2 Orthogonal projections </li>
+<li>12.4.3 Holographic memories </li>
+<li>12.4.4 Translation invariant pattern recognition</li>
+<li>12.5 Historical and bibliographical remarks</li>
+</ul>
+
+</td>
+<td valign="top">
+<!--Content chapter 13-->
+<p class="subtitle"><a name="chapter 13">&nbsp;</a>13. The Hopfield Model<a href="chapter/K13.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>13.1 Synchronous and asynchronous networks </li>
+<li>13.1.1 Recursive networks with stochastic dynamics </li>
+<li>13.1.2 The bidirectional associative memory </li>
+<li>13.1.3 The energy function</li>
+<li>13.2 Definition of Hopfield networks </li>
+<li>13.2.1 Asynchronous networks </li>
+<li>13.2.2 Examples of the model </li>
+<li>13.2.3 Isomorphism between the Hopfield and Ising models</li>
+<li>13.3 Converge to stable states </li>
+<li>13.3.1 Dynamics of Hopfield networks </li>
+<li>13.3.2 Convergence proof </li>
+<li>13.3.3 Hebbian learning</li>
+<li>13.4 Equivalence of Hopfield and perceptron learning </li>
+<li>13.4.1 Perceptron learning in Hopfield networks </li>
+<li>13.4.2 Complexity of learning in Hopfield models</li>
+<li>13.5 Parallel combinatorics </li>
+<li>13.5.1 NP-complete problems and massive parallelism </li>
+<li>13.5.2 The multiflop problem </li>
+<li>13.5.3 The eight rooks problem </li>
+<li>13.5.4 The eight queens problem </li>
+<li>13.5.5 The traveling salesman </li>
+<li>13.5.6 The limits of Hopfield networks</li>
+<li>13.6 Implementation of Hopfield networks </li>
+<li>13.6.1 Electrical implementation </li>
+<li>13.6.2 Optical implementation</li>
+<li>13.7 Historical and bibliographical remarks</li>
+</ul>
+
+<!--Content chapter 14-->
+<p class="subtitle"><a name="chapter 14">&nbsp;</a>14. Stochastic networks<a href="chapter/K14.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>14.1 Variations of the Hopfield model </li>
+<li>14.1.1 The continuous model</li>
+<li>14.2 Stochastic systems </li>
+<li>14.2.1 Simulated annealing </li>
+<li>14.2.2 Stochastic neural networks </li>
+<li>14.2.3 Markov chains </li>
+<li>14.2.4 The Boltzmann distribution </li>
+<li>14.2.5 Physical meaning of the Boltzmann distribution</li>
+<li>14.3 Learning algorithms and applications </li>
+<li>14.3.1 Boltzmann learning </li>
+<li>14.3.2 Combinatorial optimization</li>
+<li>14.4 Historical and bibliographical remarks</li>
+</ul>
+
+<!--Content chapter 15-->
+<p class="subtitle"><a name="chapter 15">&nbsp;</a>15. Kohonen networks<a href="chapter/K15.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>15.1 Self-organization </li>
+<li>15.1.1 Charting input space </li>
+<li>15.1.2 Topology preserving maps in the brain</li>
+<li>15.2 Kohonen&acute;s model </li>
+<li>15.2.1 Learning algorithm </li>
+<li>15.2.2 Mapping low dimensional spaces with high-dimensional grids</li>
+<li>15.3 Analysis of convergence </li>
+<li>15.3.1 Potential function - the one-dimensional case </li>
+<li>15.3.2 The two-dimensional case </li>
+<li>15.3.3 Effect of a unit&acute;s neighborhood </li>
+<li>15.3.4 Metastable states </li>
+<li>15.3.5 What dimension for Kohonen networks?</li>
+<li>15.4 Applications </li>
+<li>15.4.1 Approximation of functions </li>
+<li>15.4.2 Inverse kinematics</li>
+<li>15.5 Historical and bibliographical remarks</li>
+</ul>
+
+
+
+<!--Content chapter 16-->
+<p class="subtitle"><a name="chapter 16">&nbsp;</a>16. Modular Neural Network<a href="chapter/K16.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>16.1 Constructive algorithms for modular networks </li>
+<li>16.1.1 Cascade correlation </li>
+<li>16.1.2 Optimal modules and mixtures of experts</li>
+<li>16.2 Hybrid networks </li>
+<li>16.2.1 The ART architecures </li>
+<li>16.2.2 Maximum entropy </li>
+<li>16.2.3 Counterpropagation networks </li>
+<li>16.2.4 Spline networks </li>
+<li>16.2.5 Radial basis functions</li>
+<li>16.3 Historical and bibliographical remarks</li>
+</ul>
+
+
+
+<!--Content chapter 17-->
+<p class="subtitle"><a name="chapter 17">&nbsp;</a>17. Genetic Algorithms<a href="chapter/K17.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>17.1 Coding and operators </li>
+<li>17.1.1 Optimization problems </li>
+<li>17.1.2 Methods of stochastic optimization </li>
+<li>17.1.3 Genetic coding </li>
+<li>17.1.4 Information exchange with genetic operators</li>
+<li>17.2 Properties of genetic algorithms </li>
+<li>17.2.1 Convergence analysis </li>
+<li>17.2.2 Deceptive problems </li>
+<li>17.2.3 Genetic drift </li>
+<li>17.2.4 Gradient methods versus genetic algorithms</li>
+<li>17.3 Neural networks and genetic algorithms </li>
+<li>17.3.1 The problem of symmetries </li>
+<li>17.3.2 A numerical experiment </li>
+<li>17.3.3 Other applications of Gas</li>
+<li>17.4 Historical and bibliographical remarks</li>
+</ul>
+
+
+<!--Content chapter 18-->
+<p class="subtitle"><a name="chapter 18">&nbsp;</a>18. Hardware for neural networks<a href="chapter/K18.pdf">(PDF)</a></p>
+
+<ul type="circle">
+<li>18.1 Taxonomy of neural hardware </li>
+<li>18.1.1 Performance requirements </li>
+<li>18.1.2 Types of neurocomputers</li>
+<li>18.2 Analog neural networks </li>
+<li>18.2.1 Coding </li>
+<li>18.2.2 VLSI transistor circuits </li>
+<li>18.2.3 Transistors with stored charge </li>
+<li>18.2.4 CCD components</li>
+<li>18.3 Digital networks </li>
+<li>18.3.1 Numerical representation of weights and signals </li>
+<li>18.3.2 Vector and signal processors </li>
+<li>18.3.3 Systolic arrays </li>
+<li>18.3.4 One-dimensional structures</li>
+<li>18.4 Innovative computer architectures </li>
+<li>18.4.1 VLSI microprocessors for neural networks </li>
+<li>18.4.2 Optical computers </li>
+<li>18.4.3 Pulse coded networks</li>
+<li>18.5 Historical and bibliographical remarks<BR>
+</ul>
+
+<p class="subtitle"><a name="references">&nbsp;</a>§ References<a href="chapter/references.pdf">(PDF)</a></p>
+
+</tr></tbody></table>
+<p align="right"><a href="#start"><i>Start of the page</i> </a></p>
+
+</td></tr></tbody></table>
+
+
+<HR WIDTH="100%"><I>e-mail: rojas@inf.fu-berlin.de </I></P>
+
+<P><I>Tel: ++49/30/83875130 </I></P>
+
+</BODY>
+</HTML>

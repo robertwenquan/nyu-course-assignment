@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Computing Science and Mathematics,
+       University of Stirling</title>
+<meta name="keywords" content="big data,software engineering,computing,computer,science,computing science,computer science,mathematics,maths,university,stirling,scotland,uk,united kingdom,great britain,education,undegraduate,postgraduate,research,BSc,MSc,Diploma,PhD" />
+<meta name="description" content="Department of Computing Science and Mathematics, University of Stirling, Scotland.  Our undergraduate degrees include BSc in Computing Science, Information Systems, Software Engineering, Business Computing, Mathematics and its Applications together with a large selection of combined and joint degrees.  Postgraduate qualifications include the MSc in Big Data, MSc in Computing for Business, MSc in Computing for Financial Markets, MSc in Information Technology, MSc in Software Engineering and MSc and PhD by research. The Department is committed to internationally excellent research in Computing Science and Mathematics. We provide a stimulating and lively environment for postgraduate students, research fellows and visitors on one of the most beautiful campuses in the world." />
+<meta name="author" content="Graham Cochrane" />
+    <!-- Uni CSS -->
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/style.css" />
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/typo.v8.css" />
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/assets.v167.css" />
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/webfont.css" />
+  <!-- Print CSS -->
+<link rel="stylesheet" type="text/css" media="print" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/print.css" />
+  <!-- Colour packs -->
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/colourpacks/Lime.css" />
+  <!-- CS&M CSS -->
+<link rel="stylesheet" type="text/css" media="screen" href="/css/unicsams.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/css/unicsamp.css" />
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/css/lt-ie9.css" />
+<![endif]-->
+
+<script type="text/javascript" src="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/javascript/jquery-1.6.2.min.js"></script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-340900-19']);
+    _gaq.push(['_trackPageview']);
+ 
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+
+
+<body class="Study with Stirling">
+
+  <div class="off-left"><a href="#maincontent"
+  title="Skip to main page content">Skip to main page content</a>
+  - your browser does not fully support our CSS, or is text-only.</div>
+
+<div id="page">
+<div class="header leaf">
+<div id="portal-status"></div>
+<a href="http://www.stir.ac.uk/" class="logo"><img src="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/images/Stir-logo.svg" alt="University of Stirling" width="216" height="63"></a>
+<form name="search" id="search" action="http://www.stir.ac.uk/s/search.html"><input type="text" name="query" id="q" placeholder="Search" class="ui-autocomplete-input" autocomplete="on" role="textbox" aria-autocomplete="list" aria-haspopup="true"><input type="hidden" name="collection" value="stirling"> <input type="hidden" name="profile" value="_default"><input type="image" id="go" name="go" src="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/images/search-small.png" alt="Go" title="Search the University website"></form><script type="text/javascript" src="http://www.stir.ac.uk/search/js/jquery/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="http://www.stir.ac.uk/search/js/jquery/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="http://www.stir.ac.uk/search/js/jquery.funnelback-completion.js"></script>
+<script>function setTextToBlank(){document.getElementById("search,q").value="";}jQuery(function(){jQuery("#search,#q").fbcompletion({'enabled':'enabled','collection':'stirling','program':'http://www.stir.ac.uk/search/../s/suggest.json','format':'simple','alpha':'.5','show':'10','sort':'0','length':'3','delay':'0','profile':'_default'});});</script>
+</div>
+
+<ul class="nav">
+ <li title="University Home" class="home"><a href="http://www.stir.ac.uk/">Home</a></li>
+ <li title="Undergraduate, postgraduate, part time, CPD and exchange" class="study"><a href="http://www.stir.ac.uk/courses/">Courses</a></li>
+ <li title="International" class="international"><a href="http://www.stir.ac.uk/study-in-the-uk/">International</a></li>
+ <li title="Campus life" class="campus"><a href="http://www.stir.ac.uk/campus-life/">Campus life</a></li>
+ <li title="Research" class="research"><a href="http://www.stir.ac.uk/research/">Research</a></li>
+ <li title="Alumni & supporters" class="alumni"><a href="http://www.stir.ac.uk/alumni/">Alumni & supporters</a></li>
+ <li title="About us" class="about"><a href="http://www.stir.ac.uk/about/">About us</a></li>
+</ul>
+
+
+
+<div id="breadcrumb">
+You are here:
+<a href="/" title="Computing Science and Mathematics home">CS&amp;M</a>
+</div>
+
+  <div id="stir-content" class="seven-ten">
+  <a name="maincontent"></a>
+    <h1>Computing Science and Mathematics</h1>
+<img src="/img/csmlab-banner.jpg" class="banner shadowed" alt="">
+  <!-- Right hand main content stuff goes below here -->
+<p>
+Welcome to Computing Science and Mathematics, School of Natural
+Sciences, University of Stirling, Scotland.
+</p>
+
+      <div class="onecolumn right micronews">
+
+<p style="font-size: 90%; line-height: 25px; ">
+<a href="https://www.facebook.com/StirUniCSM"><img alt="CSMStirUni Facebook"
+  style="width: 20px; height: 20px; vertical-align: middle; "
+  src="/img/f_logo.png" /></a>
+  <a href="https://www.facebook.com/StirUniCSM">Follow CS&amp;M on Facebook</a>
+</p>
+
+
+      <h2>New and Returning Students</h2>
+      <ul>
+      <li class="news"><a href="/courses/msc/induction2015.html">Postgraduate Induction</a></li>
+      </ul>
+
+      <!--
+      <li class="news"><a href="http://www.aro.stir.ac.uk/student-programmes/sepfaq.php">Student Admin's FAQ - help with module registration, seminar sign up and Succeed access</a></li>
+      <li class="news"><a href="/intro/ptregister.html">Practical and Tutorial Registration</a></li>
+      -->
+
+      </ul>
+
+      <h2>Latest News</h2>
+      <ul>
+      <!-- li class="news latest"><a href="/events/"><b><i class="greentext">NEW - </i></b>Text</a></li -->
+      <li class="news "><a href="/alumni/grad2015/">CS&amp;M Graduation photographs, June 2015</a></li>
+      <li class="news "><a href="http://www.cs.stir.ac.uk/news/stacshack.html">Another success for the Stirling University Computer Club</a></li>
+      <li class="news "><a href="http://www.equatescotland.org.uk/students/2015-work-placements">2015 Summer Work Placements for Women in STEM Subjects</a></li>
+      <li class="news "><a href="http://www.cs.stir.ac.uk/news/geeksochackathon.html">Joint First Prize for SUCC team at Geek Soc Hackathon</a></li>
+      <li class="news "><a href="http://www.cs.stir.ac.uk/courses/msc-bd/funded.html">Fully Funded Places Available on Stirling's MSc in Big Data</a></li>
+      <li class="news"><a href="http://www.bbc.co.uk/news/technology-23945326">Stirling Computing Science graduate Jonathon Fletcher: forgotten father of the search engine</a></li>
+      <li class="news "><a href="/vacancies/daase-phds.html">10 PhD Studentships in Dynamic Adaptive Automated Software Engineering, starting now</a></li>
+      </ul>
+
+      <h2>Events</h2>
+      <ul>
+      <li class="news latest"><a href="/sciencegrrl/"><b><i class="greentext">NEW - </i></b>Science Fair, 26th September 2015</a></li>
+      <li class="news "><a href="/events/bics2015/"></b>BICS 2015, 7th International Conference on Brain-Inspired Cognitive Systems</a></li>
+      <li class="news "><a href="http://www.cs.stir.ac.uk/events/sipra-workshop2015/">The 6th China-Scotland SIPRA Workshop, 31 May - 1 June 2015</a></li>
+      <li class="news "><a href="http://www.cs.stir.ac.uk/research/phd-talks/">CS&amp;M Research Student Talks</a></li>
+      <li class="news "><a href="http://www.cs.stir.ac.uk/events/CICARE2015/">CICARE2015, IEEE Symposium on Computational Intelligence in healthcare and e-health</a></li>
+      <li class="news "><a href="http://www.cs.stir.ac.uk/events/stamp/">STAMP Science Days at Stirling University</a></li>
+      <li class="news "><a href="http://www.maths.stir.ac.uk/lectures/">CS&amp;M Public Lecture Series, Spring 2015</a></li>
+      <li class="news"><a href="/events/nerccourse2015">Introduction to Mathematical Modelling for the Environmental and Biological Sciences</a></li>
+      <li class="news"><a href="/news/csm-prizes.html">CS&amp;M Prizes, 2013-14</a></li>
+      </ul>
+
+      <h2>Publications</h2>
+      <ul>
+      <li class="news "><a href="http://link.springer.com/book/10.1007%2F978-3-662-44320-0"></b>Evolutionary Computation in Combinatorial Optimisation, Edited by Dr Gabriela Ochoa and others.</a></li>
+      <li class="news"><a href="http://www.journals.elsevier.com/neural-networks/call-for-papers/affective-and-cognitive-learning-systems-for-big-social-data/">Special Issue, Elsevier Neural Networks journal, Edited by Prof Amir Hussain and others</a></li>
+      <li class="news"><a href="http://www.springer.com/engineering/computational+intelligence+and+complexity/book/978-3-642-28110-5">Integral Biomathics, edited by Prof Leslie Smith and others</a></li>
+      <li class="news"><a href="http://www.biomathforum.org/biomath/index.php/biomath/about">Dr Jozsef Farkas appointed Editorial Board member, BIOMATH Journal</a></li>
+      <li class="news"><a href="http://www.tandfonline.com/toc/tjbd20/6/sup1">Special Issue, Journal of Biological Dynamics, Edited by Dr&nbsp;Jozsef&nbsp;Farkas and others</a></li>
+      </ul>
+
+      <h2>Other News</h2>
+      <ul>
+      <li class="news"><a href="http://biomathsociety.in/ijbsb.html">Dr Jozsef Farkas appointed Associate Editor, International Journal of Biomathematics and Systems Biology</a></li>
+      <li class="news"><a href="/news/bc-china-grant.html">British Council grant with Anhui University, China</a></li>
+      <li class="news"><a href="http://www.standardlife.com/careers/graduates/index.html">Stirling students invited to apply for Standard Life jobs and internships</a></li>
+      <li class="news"><a href="http://www.cs.stir.ac.uk/courses/study-abroad/">New Erasmus Programme launched</a></li>
+    </ul>
+    </div>
+
+<!--
+<p style="font-size: 90%; line-height: 25px; ">
+<a href="http://www.maths.stir.ac.uk/lectures/"><img alt="Public Lecture Series"
+  style="vertical-align: middle; "
+  src="http://www.maths.stir.ac.uk/lectures/img/numbergraphic-mini.jpg" /></a> 
+  <a href="http://www.maths.stir.ac.uk/lectures/">CS&amp;M Public
+  Lecture Series, Spring 2014</a>
+</p>
+-->
+
+<!-- Clearing message Starts Here... -->
+<div class="redtabbox rounded shadowed" style="margin-right: 245px;"> 
+<p>
+<span class="greentab">* Clearing 2015 *</span>
+<p>
+Students interested in applying through Clearing should call our Exams
+Helpline on +44 (0)1786 466 166.
+</p>
+<p>
+<a href="http://www.stir.ac.uk/clearing/">View Further Clearing info</a>
+</p>
+</div>
+<!-- clearing ends -->
+
+<!--
+<div class="redtabbox rounded shadowed" style="margin-right: 245px;">
+<p>
+<a href="http://www.guardian.co.uk/education/universityguide" 
+title="guardian university guide"><img style="vertical-align: middle; "
+alt="guardian university guide" src="/news/img/guardian.gif" /></a>
+<b> - University Guide 2013</b>
+<br />
+<a href="http://www.guardian.co.uk/education/table/2012/may/22/university-guide-computer-sciences-it">Computing Science</a> at Stirling 12th overall in
+UK and 1st for student satisfaction with course and feedback.
+<br />
+<a href="http://www.guardian.co.uk/education/table/2012/may/22/university-guide-mathematics">Mathematics</a> at Stirling 7th overall in UK and 1st for
+student satisfaction with teaching and feedback.
+</p>
+</div>
+-->
+
+      <div class="greentabbox rounded shadowed" style="margin-right: 245px;"> 
+      <p>
+      <span class="greentab">Undergraduate</span>
+      <br />Our <a href="/entrants/">undergraduate degrees</a> include BSc in 
+      Computing Science, Information Systems, Software Engineering, 
+      Business Computing, Mathematics and its Applications together with 
+      a large selection of combined and joint degrees.
+      <br />
+      Our Computing degrees are accredited by the BCS (The Chartered
+      Institute for IT), and Mathematics degrees by the Institute of 
+      Mathematics and its Applications.
+      </p>
+      </div>
+
+      <div class="greentabbox rounded shadowed" style="margin-right: 245px;">
+      <p>
+      <span class="greentab">Postgraduate</span>
+      <br />Postgraduate qualifications include the 
+      <a href="/entrants/cb/">MSc in Computing for Business</a>, the
+      <a href="/entrants/cfm/">MSc in Computing for Financial Markets</a>, the 
+      <a href="/entrants/it/">MSc in Information Technology</a>, the
+      <a href="/entrants/se/">MSc in Software Engineering</a>
+      and <a href="/entrants/research/">MSc and PhD by research</a>.  
+      <br /><span class="greentext">**</span>
+      New for 2014 is the 
+      <a href="/entrants/bd/">MSc in Big Data</a>.
+      </p>
+      </div>
+      
+      <div class="greentabbox rounded shadowed" style="margin-right: 245px;">
+      <p>
+      <span class="greentab">Research</span> 
+      <br />
+      We are committed to internationally excellent 
+      <a href ="/research/">research</a> in Computing Science and Mathematics. 
+      We provide a stimulating and lively environment for undergraduate
+      and postgraduate students, research fellows and visitors on one of the 
+      most beautiful campuses in the world.  Computing Science is part of the 
+      <a href="http://www.sicsa.ac.uk/">Scottish Informatics and 
+      Computer Science Alliance (SICSA)</a> Scotland-wide pooling initiative 
+      in research and knowledge exchange.
+      </p>
+      </div>
+
+
+<hr class="clearer">
+
+<div id="pa_info" class="sidebar rounded padded shadowed ie_clearfix">
+<form action="/cgi-bin/get-email" method="post">
+<p style="font-size: 90%; text-align: left; padding: 5px; 
+   border-left: 5px solid #5b9936; ">
+<i>This page is maintained by:
+<input name="user" class="buttonaslink" title="reveal email address"
+
+  value="Web Administrator" type="submit" />
+
+
+
+<br />Computing Science and Mathematics
+
+<br />School of Natural Sciences
+
+<br />University of Stirling, Stirling FK9 4LA
+<br />Tel: +44 1786 46 
+
+  7421
+
+</i>
+</p>
+</form>
+</div>
+
+</div>
+
+  <!-- Left hand navigation menu stuff goes below here -->
+  <ul class="subnav">
+  <li class="nav-header" style="margin-top: -8px;">Computing Science &amp; Mathematics</li>
+  <li class="navactive"><a title="computing science and mathematics home page" href="http://www.cs.stir.ac.uk/">CS&amp;M Home</a></li>
+
+  
+  <li class="(none)"><a title="information for students wishing to study computing science and/or mathematics" href="http://www.cs.stir.ac.uk/entrants/">Prospective Students</a></li>
+  
+
+  
+  <li class="(none)"><a title="computing science and mathematics staff list" href="http://www.cs.stir.ac.uk/intro/whoiswho.html">Staff List</a></li>
+  
+
+  
+  <li class="(none)"><a title="computing science and mathematics research information" href="http://www.cs.stir.ac.uk/research/">Research Information</a></li>
+  
+
+  <li class="(none)"><a title="conferences and worshops held by CS&amp;M" href="http://www.cs.stir.ac.uk/events/">Conferences and Workshops</a></li>
+  <li class="(none)"><a title="industrial liaison information" href="http://www.cs.stir.ac.uk/industrial/">Industrial Liaison</a></li>
+  <li class="(none)"><a title="job opportunities, studentships and vacation work" href="http://www.cs.stir.ac.uk/vacancies/">Vacancies</a></li>
+  <li class="(none)"><a title="our previous graduates and alumni information" href="http://www.cs.stir.ac.uk/alumni/">Alumni</a></li>
+  <li class="(none)"><a title="postal, telephone and e-mail addresses" href="http://www.cs.stir.ac.uk/intro/enquiries.html">Contact Us</a></li>
+  <li class="(none)"><a title="miscellaneous other links" href="http://www.cs.stir.ac.uk/intro/otherlinks.html">Other Links</a></li>
+  <li class="nav-header">Computing Science</li>
+  <li class="(none)"><a title="information for current computing science students" href="http://www.cs.stir.ac.uk/current.html">Current Student Information</a></li>
+  <li class="(none)"><a title="computing science seminar list for current/next semester" href="http://www.cs.stir.ac.uk/seminars/">Computing Science Seminars</a></li>
+  <li class="nav-header">Mathematics &amp; Statistics Group</li>
+  <li class="(none)"><a title="mathematics and statistics group" href="http://www.maths.stir.ac.uk/">M&amp;SG Home</a></li>
+  <li class="(none)"><a title="mathematics seminar list for current/next semester" href="http://www.maths.stir.ac.uk/seminars.html">Mathematics Seminars</a></li>
+  <li class="(none)"><a title="university-wide statistical service" href="http://www.maths.stir.ac.uk/statservice/">Statistical Service</a></li>
+  <li class="nav-header">School of Natural Sciences</li>
+  <li><a title="school of natural sciences home page" href="http://www.stir.ac.uk/departments/natural-sciences">School Home</a></li>
+  <li class="nav-header">The University</li>
+  <li><a title="university of stirling home page" href="http://www.stir.ac.uk/">University Home</a></li>
+  <li><a title="university of stirling staff/student portal" href="http://portal.stir.ac.uk/">Student/Staff Portal</a></li>
+  <li><a title="university of stirling succeed home" href="http://succeed.stir.ac.uk/">Succeed</a></li>
+  <!-- <li><a title="university of stirling webct home" href="http://webct.stir.ac.uk/">WebCT</a></li> -->
+  </ul>
+
+
+<div class="footer leaf">
+<ul class="links">
+        <li><a href="http://www.stir.ac.uk/schools/">Academic Schools</a></li>
+        <li><a href="http://www.stir.ac.uk/jobs">Jobs at Stirling</a></li>
+        <li><a href="http://www.stir.ac.uk/about/getting-here">Getting here</a></li>
+        <li><a href="http://www.stirlingstudentsunion.com/">Students' Union</a></li>
+
+        <li><a href="http://www.stir.ac.uk/legal">Policy, legal &amp; cookies</a></li>
+        <li><a href="http://www.stir.ac.uk/accessibility">Accessibility</a></li>
+        <li><a href="http://www-cgi.stir.ac.uk/cgi-bin/parser.pl">Text only</a></li>
+        <li><a href="http://www.stir.ac.uk/contact">Contact us</a></li>
+        <li title="My Portal"><a href="https://portal.stir.ac.uk/my-portal.jsp">My Portal</a></li>
+      </ul>
+        <div class="address">&copy; <strong>University of Stirling</strong> FK9 4LA Scotland UK Telephone +44 1786 473171<br>
+        Scottish Charity No SC011159</div>
+      </div>
+</div>
+
+<script type="text/javascript" src="/include/javascript/document.ready.v56.js"></script>
+<!--[if lt IE 9]> <script type="text/javascript" src="http://www.stir.ac.uk/media/wwwstiracuk/styleassets/javascript/iefixes.js"></script> <![endif]-->
+
+</body>
+</html>
+

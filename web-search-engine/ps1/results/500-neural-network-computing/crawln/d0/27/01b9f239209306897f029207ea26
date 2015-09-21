@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta name="pageStart" content="1442807158285" />
+<title>C - C to C4U | File Extension Definitions from WhatIs.com</title>
+<meta name="description" content="C to C4U - Comprehensive alphabetical index of file extensions on WhatIs.com." />
+<div>
+
+
+	<div><!-- TTBC-TMP-Head, whatis.techtarget.com, generated at 23:45:58 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<!-- vSolo -->
+<title>Computer Glossary, Computer Terms - Technology Definitions and Cheat Sheets from Whatis.com - The Tech Dictionary and IT Encyclopedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="robots" content="noodp"/>
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/global.css" id="stylesheetGlobal" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/whatis_new.css" id="stylesheetSiteSpecific" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/tt_thickbox_reg.css" id="stylesheetGlobal" media="screen" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://cdn.ttgtmedia.com/rms/ux/css/ieBugFixes.css" media="screen" />
+<![endif]-->
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://users.techtarget.com/registration/js/userreg-lib.js"></script>
+<script type="text/javascript" src="http://admin.brightcove.com/js/experience_util.js"></script>
+<!-- BEGIN: OPTIMIZELY Script Tag -->
+<script src="http://cdn.optimizely.com/js/148927072.js"></script> 
+<!-- END: OPTIMIZELY Script Tag -->
+
+<script type="text/javascript">
+	var taxes=[];
+	var adIdString = '';
+	if(adIdString != null && adIdString != "null"){
+		var adIds = adIdString.split(",");
+		for (var i = 0; i < adIds.length; i++) {
+			taxes[i]=adIds[i];
+		}
+	}
+	
+	google_ad_client = 'ca-pub-6050985421795229';
+	google_ad_channel = 'techtarget_footer';
+	google_ad_output = 'js';
+	google_max_num_ads = 5;
+	
+	var ENV_name = 'PROD';
+	var ENV_isStage = false;
+	var ENV_mediaHost = 'http://cdn.ttgtmedia.com/rms/ux';
+	var ENV_clicktrackHost = 'http://clicktrack.techtarget.com';	
+	var SITE_name = 'WhatIs';
+	var SITE_v5sid = '9';
+	var SITE_domain = '.techtarget.com';
+	var SITE_bitpipeHost = 'whatis.bitpipe.com';
+	var SITE_logoutURL = 'http://users.techtarget.com/registration/whatis/Logout.page';
+	var SITE_hostName = 'techtarget';
+	var networkPopupURL = '';
+	var regFromUrl = document.location;
+	var SITE_memberUpdateFlag = 'off';
+	var SITE_memberUpdateURL = '';
+	var interstitialSwitch = true;
+	var isHome = false;
+	var is404 = false;
+	var accountAbbr = 'swht';
+	var zone = 'FILEFORMATS'; 
+	var gci = ''; 
+	var tax = ''; 
+	var clu = ''; 
+	var defaultTax = '2240118291';
+	var timestamp = '2015-09-20 23:45:58';
+	
+	var taxNameWithOutSpecialChars = 'FileExtensions';
+	var isSponsored = false;
+	
+	var PAGE_cltIsVendorOnly = 1;
+	</script>
+
+<!-- BEGIN: gpt ad includes -->
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/vgn-gpt-1.0.min.js"></script>
+<!-- END: gpt ad includes -->
+
+<!-- BEGIN: chartbeat head includes -->
+<script type='text/javascript'>
+var _sf_startpt=(new Date()).getTime();
+var _sf_async_config={};
+_sf_async_config.uid = 41935;
+_sf_async_config.domain = 'techtargetnetwork.com';
+_sf_async_config.sections = 'swht, swht - NO TOPIC';
+_sf_async_config.authors = 'NO AUTHOR, FILEFORMATS, swht - FILEFORMATS';
+_sf_async_config.useCanonical = true;
+</script>
+<!-- END: chartbeat head includes -->
+
+<!-- BEGIN: Google Analytics -->
+<script type="text/javascript">
+	var SITE_gaAccountID = "UA-19047342-9";
+	var gaPageTrackUrl = "/page/etpk_0/ptpk_0/false/FILEFORMATS/channel/cid_2240118291/date_null/mem_0/clst_0/rtpk_0/idx_0";
+	var memberStatus = "NOT_MEMBER";
+	var parentTopicId = "";
+	var parentTopicName = "";
+	var topicId = "";
+	var topicName = "";
+	var uid = "2240118291";
+	var uidType = "channel";
+	var publicationDate = "";
+	var appCode = "0";
+	var clusterId = "";
+	var clusterName = "";
+	var regTopicId = "";
+	var regTopicName = "";
+	var pageIndex = "0";
+	var topical = "false";
+</script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/googleAnalytics.min.js?date=20150920"></script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/ga/gtm.js?date=20150920"></script>
+<!-- END: Google Analytics -->
+
+</div>
+</div>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwcDVVZACwIDU1lS"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><script type="text/javascript">
+var isMboxJsIncluded = false;
+var isMboxEnabled = false;
+</script>
+<script type="text/javascript">
+isMboxJsIncluded =true;
+</script>
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/js/mbox.js">
+</script>
+</head>
+<body id="alphaBridge">
+	<!-- Begin Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PWWZSH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWWZSH');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+if (typeof jQuery == "function") jQuery(document).trigger("onbodyopen");
+
+function tt_mboxCreate(mboxName){
+	if(typeof isMboxJsIncluded != "undefined" && typeof isMboxEnabled != "undefined"){
+		if(isMboxJsIncluded && isMboxEnabled){
+			mboxCreate(mboxName);
+		}
+	}
+}
+</script>
+<div class="mboxDefault"></div>
+	<script type="text/javascript">
+		isMboxEnabled = true;
+		tt_mboxCreate('global_WhatIs');
+	</script>
+<div id="adjInterstitial"><script type="text/javascript">GPT.display("adjInterstitial");</script></div><div id="header">
+		<div>
+
+
+	<div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- WhatIs Header Region, whatis.techtarget.com, generated at 10:59:04 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+
+
+
+<div class="mboxDefault">
+
+<div id="universalBar">
+        <div id="universalBarCompress">
+                <div id="membershipLinks">
+                        <ul>
+                                <li id="mlLogin"><a href="http://users.techtarget.com/registration/whatis/LoginRegister.page">Login</a></li>
+                                <li id="mlRegister"><a href="http://users.techtarget.com/registration/whatis/Register.page">Become a member</a></li>
+                                
+                                <li id="mlRss"><a href="/rss"><span></span>RSS</a></li>
+                                <li id="mlNetwork"><a href="/?vgnextfmt=portfolio" class="ttNetworkLinks">Part of the TechTarget network</a></li>
+                        </ul>
+                        
+                        
+                        
+                        <script type="text/javascript">
+                                if (typeof regFromUrl == "undefined")
+                                        var regFromUrl = document.location;
+                                $("#mlLogin a").attr("href", "http://users.techtarget.com/registration/whatis/LoginRegister.page?fromURL=" + encodeURIComponent(regFromUrl));
+                                $("#mlRegister a").attr("href", "http://users.techtarget.com/registration/whatis/Register.page?fromURL=" + encodeURIComponent(regFromUrl));
+                        </script>
+                </div>
+                <div id ="universalBarLogo">
+                <span id="headerTechtargetLogo"></span>
+                </div>
+        </div>
+</div>
+
+                </div>
+                <script type="text/javascript">tt_mboxCreate('universalBar_WhatIs');</script>
+
+</div>
+
+	<div><!-- TTBC-TMP-Header, whatis.techtarget.com, generated at 22:59:10 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div class="mboxDefault">
+<div id="headerLogo">
+        <div id="headerLogoCompress">
+                <a href="/"></a>
+ 			<div id="leaderboardHeader">
+	<div id="leaderboard"><script type="text/javascript">GPT.display("leaderboard");</script></div></div>
+</div>
+	</div>
+		<script type="text/javascript">tt_mboxCreate('leaderBoard_WhatIs');</script>
+		</div>
+<script type="text/javascript">tt_mboxCreate('headerLogo_WhatIs');</script>
+<div id="headerNavigation">
+  	     <div id="headerNavigationCompress">
+  	     	<div class="megaMenu">
+  	              <ul>
+  	                      <li class="mmNavItem">
+	<a href="http://whatis.techtarget.com/glossaries" class="mmNavLink">Browse Definitions<br />by Topic</a>
+	</li>
+<li class="mmNavItem">
+	<a href="http://whatis.techtarget.com/definitions/A" class="mmNavLink">Browse Definitions<br/>by Alphabet</a>
+	</li>
+<li class="mmNavItem">
+	<a href="http://whatis.techtarget.com/references" class="mmNavLink">Research<br/>Library</a>
+	</li>
+<li class="mmNavItem">
+	<a href="http://whatis.techtarget.com/file-extension-list/A" class="mmNavLink">File<br/>Extensions</a>
+	</li>
+</ul>
+       	         </div>
+       	 </div>
+	</div>
+	<div id="headerSubnav">
+	        <div id="headerSubnavCompress">
+	                <div id="headerNavigationSearch" class="navigationSearch">
+	                        <form action="/search/query" method="get" id="headerNavigationSearchForm">
+	                                <fieldset>
+	                                        <label for="headerNavigationSearchTextbox" class="navigationSearchLabel">Search</label>
+	                                        <input type="text" name="q" id="headerNavigationSearchTextbox" class="navigationSearchBox" value="Search our IT encyclopedia"/>
+	                                        <input type="submit" value="Search" id="headerNavigationSearchSubmit" class="navigationSearchSubmitButton" />
+	                                </fieldset>
+	                        </form>
+	                </div>
+	
+			<div class="headerBrowseAlpha">
+				<h3>Browse Alphabetically</h3>
+				<ul class="listTypeAlpha">
+					<li><a href="http://whatis.techtarget.com/definitions/A">A</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/B">B</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/C">C</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/D">D</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/E">E</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/F">F</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/G">G</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/H">H</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/I">I</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/J">J</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/K">K</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/L">L</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/M">M</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/N">N</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/O">O</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/P">P</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/Q">Q</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/R">R</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/S">S</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/T">T</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/U">U</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/V">V</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/W">W</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/X">X</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/Y">Y</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/Z">Z</a></li>
+					<li><a href="http://whatis.techtarget.com/definitions/0">#</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div></div>
+	<div id="content">
+		<div id="contentCompress">
+			<div id="contentHeader">
+				<div>
+
+
+	<div><!-- WhatIs Content Header Region, whatis.techtarget.com, generated at 12:28:21 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div><div id="breadcrumbs">
+					<ul>
+					<li><a href="/">Home</a></li><li><em>File Extensions: C - C4U</em></li>
+					</ul>
+				</div>
+			</div>
+			<div id="articleLeftAd"><script type="text/javascript">GPT.display("articleLeftAd");</script></div><div id="article">
+				<span class="decoration decorationTopLeft"></span>
+				<span class="decoration decorationBottomRight"></span>
+				<div id="articleHeader">
+					<div id="headline">
+						<h1>Browse File Extensions by Alphabet</h1>
+					</div>
+				</div>
+				<div id="articleBody">
+					<div><div><!-- WhatIs Alpha Bridge LeftCol Region, whatis.techtarget.com, generated at 23:45:58 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<ul class="listTypeAlphaBridge">
+	<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/A">
+					A</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/B">
+					B</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/C">
+					C</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/D">
+					D</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/E">
+					E</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/F">
+					F</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/G">
+					G</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/H">
+					H</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/I">
+					I</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/J">
+					J</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/K">
+					K</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/L">
+					L</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/M">
+					M</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/N">
+					N</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/O">
+					O</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/P">
+					P</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/Q">
+					Q</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/R">
+					R</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/S">
+					S</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/T">
+					T</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/U">
+					U</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/V">
+					V</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/W">
+					W</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/X">
+					X</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/Y">
+					Y</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/Z">
+					Z</a>
+			</li>
+		<li >
+				<a class="removedAdsParams" 
+				href="http://whatis.techtarget.com/file-extension-list/0">
+					#</a>
+			</li>
+		</ul>
+	</div><div><!-- WhatIs File Ext Bridge LeftCol Region, whatis.techtarget.com, generated at 23:45:58 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<!-- WhatIs Alpha Bridge LeftCol Region, whatis.techtarget.com, generated at 23:45:58 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div class="childTopicHeader">
+	<h3>C - C4U</h3>
+</div>
+<div class="childTopicColumns">
+	<ul><li>
+		<div class="childCol1">
+		
+			<ul>
+				<li class="selected"><a href="http://whatis.techtarget.com/file-extension-list/C">C - C4U<span></span></a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/2">C4V - CAS</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/3">CAT - CCI</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/4">CCJ - CDK</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/5">CDL - CF1</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/6">CF2 - CH</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/7">CHA - CIT</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/8">CIV - CLJ</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/9">CLK - CMK</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/10">CML - COC</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/11">COD - COX</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/12">CP - CR</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/13">CRA - CSD</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/14">CSE - CTF</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/15">CTG - CV</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/16">CV3 - CXB</a></li>
+						<li><a href="http://whatis.techtarget.com/file-extension-list/C/page/17">CXC - C~G</a></li>
+						</ul>
+		
+		</div>
+	</li>
+	<li>
+		<div class="childCol2">
+			<div class="childTopicPagination">
+				<div class="alignLeft">
+					</div>
+				<div class="alignRight">
+					<a href="http://whatis.techtarget.com/file-extension-list/C/page/2" class="callToAction">C4V - CAS</a>
+						<span class="pageNext"><a href="http://whatis.techtarget.com/file-extension-list/C/page/2"></a></span>
+					</div>
+			</div>
+			<ul>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-C-code">C</a> 
+						
+									- C code</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-ADS-Source-Code-Autodesk-Inc">C</a> 
+						
+									- ADS Source Code ( Autodesk Inc.)</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-C-C-Source-Code-File">C</a> 
+						
+									- C/C++ Source Code File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Site-configuration-for-Secure-Remote-CheckPoint-VPN">C</a> 
+						
+									- Site configuration for Secure Remote (CheckPoint VPN)</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Unix-file-archive-COMPACT">C</a> 
+						
+									- Unix file archive - COMPACT</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Check-Point-Site-Configuration-for-Secure-Remote">C</a> 
+						
+									- Check Point Site Configuration for Secure Remote</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Desktop-color-separation-specification-cyan-layer">C</a> 
+						
+									- Desktop color separation specification cyan layer</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-ANSI-C-script">C</a> 
+						
+									- ANSI C script</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-V-Cvip-file">C</a> 
+						
+									- V Cvip file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Compressed-unix-file-archive">C</a> 
+						
+									- Compressed unix file archive</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-C-programming-language-source-code">C</a> 
+						
+									- C programming language source code</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Origin-C-Program-File-OriginLab-Corporation">C</a> 
+						
+									- Origin C Program File ( OriginLab Corporation )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Site-configuration-for-Secure-Remote">C</a> 
+						
+									- Site configuration for Secure Remote</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-_-Audio-Utility-Midimach-compressed-file">C!_</a> 
+						
+									- Audio Utility Midimach compressed file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C-Sphinx-C-Source-code">C--</a> 
+						
+									- Sphinx C-- Source code</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C00-Ventura-Publisher-Print-file">C00</a> 
+						
+									- Ventura Publisher Print file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C01-Typhoon-wave">C01</a> 
+						
+									- Typhoon wave</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C01-C03-ETC-Split-Compressed-Archive-File">C01</a> 
+						
+									- C03 ETC Split Compressed Archive File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C02-WinAce-Compressed-File-Split-Portion-of-Compressed-File-e-merge-GmbH">C02</a> 
+						
+									- WinAce Compressed File Split Portion of Compressed File (e- merge GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C02-C02-C38-Driveimage-Ace-File">C02</a> 
+						
+									- (C02-C38) Driveimage Ace File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C02-Driveimage-ace-file">C02</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C03-Split-Multi-volume-ACE-compressed-file-archive">C03</a> 
+						
+									- Split Multi - volume ACE compressed file archive</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C04-Driveimage-ace-file">C04</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C04-WinAce-Compressed-File-Split-Portion-of-Compressed-File-e-merge-GmbH">C04</a> 
+						
+									- WinAce Compressed File Split Portion of Compressed File (e- merge GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C05-WinAce-Compressed-File-Split-Portion-of-Compressed-File-e-merge-GmbH">C05</a> 
+						
+									- WinAce Compressed File Split Portion of Compressed File (e- merge GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C05-Driveimage-ace-file">C05</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C06-WinAce-Compressed-File-Split-Portion-of-Compressed-File-e-merge-GmbH">C06</a> 
+						
+									- WinAce Compressed File Split Portion of Compressed File (e- merge GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C06-Driveimage-ace-file">C06</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C07-WinAce-Compressed-File-Split-Portion-of-Compressed-File-e-merge-GmbH">C07</a> 
+						
+									- WinAce Compressed File Split Portion of Compressed File (e- merge GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C07-Driveimage-ace-file">C07</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C08-Split-Multi-volume-ACE-compressed-file">C08</a> 
+						
+									- Split Multi - volume ACE compressed file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C08-Driveimage-ace-file">C08</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C09-WinAce-Compressed-File-Split-Portion-of-Compressed-File-e-merge-GmbH">C09</a> 
+						
+									- WinAce Compressed File Split Portion of Compressed File (e- merge GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C09-Driveimage-ace-file">C09</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C1-Pov-Ray-for-Windows-3-x-scenes-advanced-newltpot-file">C1</a> 
+						
+									- Pov-Ray for Windows 3.x scenes advanced newltpot file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C10-WinAce-Compressed-File-Split-Portion-of-Compressed-File-e-merge-GmbH">C10</a> 
+						
+									- WinAce Compressed File Split Portion of Compressed File (e- merge GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C10-Driveimage-ace-file">C10</a> 
+						
+									- Driveimage ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C10-Split-Multi-volume-ACE-compressed-file-archive">C10</a> 
+						
+									- Split Multi - volume ACE compressed file archive</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C10-IRIG-106-original-recording-file">C10</a> 
+						
+									- IRIG 106 original recording file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C13-Charlie-Packer">C13</a> 
+						
+									- Charlie Packer</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C18-Dassault-Systemes-Catia-V4-sequential-file">C18</a> 
+						
+									- Dassault Systemes Catia V4 sequential file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C1S-Capture-One-Photo-Cache-File-Phase-One">C1S</a> 
+						
+									- Capture One Photo Cache File ( Phase One)</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2-Pov-Ray-for-Windows-3-x-scenes-advanced-newltpot-file">C2</a> 
+						
+									- Pov-Ray for Windows 3.x scenes advanced newltpot file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2C-CopyToDVD-Project-File-VSO-Software">C2C</a> 
+						
+									- CopyToDVD Project File (VSO- Software )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2D-IsoBuster-CD-DVD-Image-File">C2D</a> 
+						
+									- IsoBuster CD/DVD Image File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2D-WinOnCD-Disc-Image">C2D</a> 
+						
+									- WinOnCD Disc Image</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2E-Chinese-dictionary-file-index">C2E</a> 
+						
+									- Chinese dictionary file index</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2I-Driver-file">C2I</a> 
+						
+									- Driver file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2I-Tt-File">C2I</a> 
+						
+									- Tt File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2L-Cequadrat-Winoncd-file">C2L</a> 
+						
+									- Cequadrat Winoncd file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2R-Windows-Media-Center-Click-To-Record-File">C2R</a> 
+						
+									- Windows Media Center Click -To- Record File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2R-Microsoft-Windows-Media-Center-click-to-record-file">C2R</a> 
+						
+									- Microsoft Windows Media Center click -to- record file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C2X-Winoncd-file">C2X</a> 
+						
+									- Winoncd file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3-Pov-ray-for-Windows-v3-1-Scenes-Advanced-Newltpot-File">C3</a> 
+						
+									- Pov-ray for Windows v3.1 Scenes Advanced Newltpot File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3-3D-model-Header">C3</a> 
+						
+									- 3D model Header</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3-3D-model-file">C3</a> 
+						
+									- 3D model file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C39-C39-C56-Quicken-Ace-File">C39</a> 
+						
+									- (C39-C56) Quicken Ace File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C39-Quicken-ace-file">C39</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D-Coordinate-3D">C3D</a> 
+						
+									- Coordinate 3D</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D-Cult3D-file">C3D</a> 
+						
+									- Cult3D file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D-Chem3D-chemical-file">C3D</a> 
+						
+									- Chem3D chemical file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D-3D-biomechanics-data-standard">C3D</a> 
+						
+									- 3D biomechanics data standard</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D-Micrografx">C3D</a> 
+						
+									- Micrografx</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D1-Chem3D-Cartesian-1-chemical-modeller-output-file">C3D1</a> 
+						
+									- Chem3D Cartesian 1 chemical modeller output file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D1-Chem3D-Cartesian-1-chemical-modeller-input-file">C3D1</a> 
+						
+									- Chem3D Cartesian 1 chemical modeller input file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D2-Chem3D-Cartesian-2-chemical-modeller-input-file">C3D2</a> 
+						
+									- Chem3D Cartesian 2 chemical modeller input file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3D2-Chem3D-Cartesian-2-chemical-modeller-output-file">C3D2</a> 
+						
+									- Chem3D Cartesian 2 chemical modeller output file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3E-CYPE-related-file">C3E</a> 
+						
+									- CYPE related file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3T-Chem3D-Chemical-Template-File">C3T</a> 
+						
+									- Chem3D Chemical Template File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C3XML-Chem3D-XML-format">C3XML</a> 
+						
+									- Chem3D XML format</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4-JEDMICS-Bitmap-Image-File">C4</a> 
+						
+									- JEDMICS Bitmap Image File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4-JEDMICS-Image-File">C4</a> 
+						
+									- JEDMICS Image File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4-Edmics-image-format">C4</a> 
+						
+									- Edmics image format</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4-Unknown-Apple-II-File">C4</a> 
+						
+									- Unknown Apple II File</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C40-Quicken-ace-file">C40</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C41-Quicken-ace-file">C41</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C42-Quicken-ace-file">C42</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C43-Quicken-ace-file">C43</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C44-Quicken-ace-file">C44</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C45-Quicken-ace-file">C45</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C46-Quicken-ace-file">C46</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C47-Quicken-ace-file">C47</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C48-Quicken-ace-file">C48</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C49-Quicken-ace-file">C49</a> 
+						
+									- Quicken ace file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4D-Cinema-4D-3D-Model-MAXON-Computer-GmbH">C4D</a> 
+						
+									- Cinema 4D 3D Model ( MAXON Computer GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4D-Maxon-Cinema-4D-v4-x-object-Header">C4D</a> 
+						
+									- Maxon Cinema 4D v4.x object Header</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4D-Game-object-definition">C4D</a> 
+						
+									- Game object definition</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4D-Clonk-Object-Definition-RedWolf-Design-GmbH">C4D</a> 
+						
+									- Clonk Object Definition ( RedWolf Design GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4D-CINEMA-4D-model-generic">C4D</a> 
+						
+									- CINEMA 4D model ( generic )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4F-Game-round-file">C4F</a> 
+						
+									- Game round file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4F-Clonk-Round-File-RedWolf-Design-GmbH">C4F</a> 
+						
+									- Clonk Round File ( RedWolf Design GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4G-Clonk-System-File-RedWolf-Design-GmbH">C4G</a> 
+						
+									- Clonk System File ( RedWolf Design GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4I-Clonk-object-info-file">C4I</a> 
+						
+									- Clonk object info file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4M-Clonk-material-file">C4M</a> 
+						
+									- Clonk material file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4P-Game-player-file">C4P</a> 
+						
+									- Game player file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4P-Clonk-Player-File-RedWolf-Design-GmbH">C4P</a> 
+						
+									- Clonk Player File ( RedWolf Design GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4Q-Clonk-queue-file">C4Q</a> 
+						
+									- Clonk queue file</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4S-Clonk-Scenario-RedWolf-Design-GmbH">C4S</a> 
+						
+									- Clonk Scenario ( RedWolf Design GmbH )</li>
+				<li><a href="http://whatis.techtarget.com/fileformat/C4S-Game-scenario-file">C4S</a> 
+						
+									- Game scenario file</li>
+				</ul>
+			<div class="childTopicPagination">
+				<div class="alignLeft">
+					</div>
+				<div class="alignRight">
+					<a href="http://whatis.techtarget.com/file-extension-list/C/page/2" class="callToAction">C4V - CAS</a>
+						<span class="pageNext"><a href="http://whatis.techtarget.com/file-extension-list/C/page/2"></a></span>
+					</div>
+			</div>
+		</div>
+	</li></ul>
+</div>
+</div>
+</div></div>
+				<div id="articleFooter">
+					<div class="pageNav">
+						<a href="#content" class="backToTop">Back to top</a>
+					</div>
+				</div>
+			</div>
+			<div id="sidebar">
+				<div><div><!-- WhatIs Alpha Bridge LeftCol Region, whatis.techtarget.com, generated at 23:29:13 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<!-- WhatIs File Ext Bridge RightCol Region, whatis.techtarget.com, generated at 23:29:13 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div class="splash editorialSplash relatedContentSplash" id="relatedContentAnswers">
+	<div class="splashHeader">
+		<h4>Ask Your Peers a Question</h4>
+	</div>
+	<div class="splashBody">
+		<h5>Answers about file extension:</h5>
+			<ul class="listTypeExternalLinks listTypeBullet">
+			 	<li><a href="http://itknowledgeexchange.techtarget.com/itanswers/how-to-open-a-webarchive-file/">How to open a webarchive file</a></li>
+			 	<li><a href="http://itknowledgeexchange.techtarget.com/itanswers/suspected-virus-attach/">Suspected virus attached to my computer</a></li>
+			 	<li><a href="http://itknowledgeexchange.techtarget.com/itanswers/why-does-lost-e-mail-nd-addresses/">Why did I lose my email address?</a></li>
+			 	<li class="viewAll noBullet"><a href="http://itknowledgeexchange.techtarget.com/itanswers?s=file+extension&searchtype=IT+Answers&x=0&y=0">See All Answers</a></li>
+				</ul>
+			<p class="splashButton"><a href="http://itknowledgeexchange.techtarget.com/itanswers/ask_question//" class="button primaryButton">Ask a Question</a></p>
+		<p class="poweredBy"><a href="http://itknowledgeexchange.techtarget.com/itanswers/" class="poweredByItke">Powered by ITKnowledgeExchange.com</a></p>
+		</div>
+</div>	
+				
+</div><div>
+
+
+<div id="bigAd1"><script type="text/javascript">GPT.display("bigAd1");</script></div>
+
+</div><div>
+
+
+<div id="cltAd"><script type="text/javascript">GPT.display("cltAd");</script></div>
+
+</div><div>
+
+
+<div id="bigAd2"><script type="text/javascript">GPT.display("bigAd2");</script></div>
+
+</div><div><!-- WhatIs FileFormat RightCol Region, whatis.techtarget.com, generated at 15:27:24 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div id="topFileExt" class="splash editorialSplash relatedContentSplash">
+					<div class="splashHeader">
+						<h4>Top 20 File Extensions</h4>
+					</div>
+					<div class="splashBody">
+						<div class="sidebarListColumns">
+							<ul class="listTypeBullet">
+								<li><a href="http://whatis.techtarget.com/fileformat/STP-Catia-file">STP</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/INDD-Adobe-InDesign-document">INDD</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/RPT-Crystal-Reports-file-and-a-sub-set-of-Microsoft-Visual-Basic">RPT</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/XLS_-Excel-Spreadsheet-File">XLS</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/HTM-A-Web-page">HTM</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/MND-Menu-source-AutoCAD-Menu-Compiler">MND</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/WEBARCHIVE-Safari-Web-archive-file">WEBARCHIVE</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/MSI-Installer-package-Microsoft-Windows">MSI</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/DBF-dBASE-file">DBF</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/MDB-Database-Microsoft-Access">MDB</a></li>
+								</ul>
+									<ul class="listTypeBullet">
+								<li><a href="http://whatis.techtarget.com/fileformat/LDT-Loader-Data-File-in-Oracle-Applications-Environment">LDT</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/TRC-Debug-support-file-Power-CTrace">TRC</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/DXF-Drawing-Interchange-Format-AutoCAD">DXF</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/TSV-Tab-separated-values-file">TSV</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/MHT-MHTML-document-Microsoft">MHT</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/PPT-PowerPoint-presentation-Microsoft">PPT</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/PSB-Adobe-Photoshop-image-file">PSB</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/EMF-Enhanced-Windows-Metafile">EMF</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/JSP-A-HTML-page-containing-a-reference-to-a-Java-servlet">JSP</a></li>
+								<li><a href="http://whatis.techtarget.com/fileformat/GHO-Symantec-ghost-image-file">GHO</a></li>
+								</ul>
+								</div>
+					</div>
+				</div>
+			</div><div><!-- WhatIs Alpha Bridge LeftCol Region, whatis.techtarget.com, generated at 22:58:56 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<!-- Word-of-the-Day, whatis.techtarget.com, generated at 22:58:56 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div id="wordOfTheDay" class="splash editorialSplash relatedContentSplash">
+	<div class="splashHeader">
+		<h4>Word of the Day</h4>
+	</div>
+	<div class="splashBody">
+		<div class="wordOfTheDayDef">
+			<h4><a href="http://searchservervirtualization.techtarget.com/definition/VMware-vSphere-Metro-Storage-Cluster-VMware-vMSC">VMware vSphere Metro Storage Cluster (VMware vMSC)</a></h4>
+			<p>VMware vSphere Metro Storage Cluster (VMware vMSC) is a configuration option, introduced in vSphere 5, that allows for the use of stretched clusters ...</p>
+		</div>
+		<div class="wordOfTheDaySignUp">
+			<h4>Get the Word of the Day via email</h4>
+			<form id="wordOfTheDayForm" action="http://whatis.techtarget.com/tieredRegProcess/1,,sid9,00.html" method="get" onsubmit="return false">
+				<fieldset>
+					<input type="hidden" id="newsletters" name="newsletters" value="796341"/>
+					<input type="text" id="getEmailUpdatesEmailAddress" class="wordOfTheDaySearchBox" name="email"/>
+					<input type="submit" value="Sign-Up" class="button primaryButton" />
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</div><div><!-- WhatIs Alpha Bridge LeftCol Region, whatis.techtarget.com, generated at 22:59:15 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<!-- 20-Newest-Terms, whatis.techtarget.com, generated at 22:59:15 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div id="newestTerms" class="splash editorialSplash relatedContentSplash">
+	<div class="splashHeader">
+		<h4>20 Newest Terms</h4>
+	</div>
+	<div class="splashBody">
+		<ul class="listTypeBullet">
+			<li><a href="http://searchstorage.techtarget.com/definition/network-attached-storage">network-attached storage (NAS)</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/strategic-inflection-point">strategic inflection point</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/inflection-point">inflection point</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/clickjacking-user-interface-or-UI-redressing-and-IFRAME-overlay">clickjacking (user-interface or UI redressing and IFRAME overlay)</a></li>
+			<li><a href="http://searchcio.techtarget.com/definition/digital-strategy">digital strategy (digital media strategy)</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/virtual-printer">virtual printer</a></li>
+			<li><a href="http://searchdatabackup.techtarget.com/definition/asynchronous-replication">asynchronous replication</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/file-shredder">file shredder</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/algorithmic-transparency">algorithmic transparency</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/HP-OneView">HP OneView</a></li>
+			<li><a href="http://searchmobilecomputing.techtarget.com/definition/mobile-card-reader">mobile card reader</a></li>
+			<li><a href="http://searchmobilecomputing.techtarget.com/definition/CYOD-choose-your-own-device">CYOD (choose your own device)</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/IoT-security-Internet-of-Things-security">IoT security (Internet of Things security)</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/Turing-Test">Turing test</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/Photoshop">Photoshop</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/synthetic-intelligence-SI">synthetic intelligence (SI)</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/first-person-view-FPV">first-person view (FPV)</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/drone-photography">drone photography</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/drone-surveillance">drone surveillance</a></li>
+			<li><a href="http://whatis.techtarget.com/definition/TOR-third-generation-onion-routing">Tor browser</a></li>
+			</ul>
+	</div>
+</div>
+</div><div><!-- PAG-HPRightCol, whatis.techtarget.com, generated at 12:39:59 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div id="sitePromo" class="splash editorialSplash ">
+			<div class="splashHeader">
+				<h4>Latest Smartphone Reviews</h4>
+				</div>
+
+			<div class="splashBody">
+				<div class="sitePromoPhoto">
+					<a href="http://www.brighthand.com/" ><img src="http://i.pgcdn.com/pi/99/61/26/996126204_50.jpg"/></a> 
+					</div>
+				<div class="sitePromoInfo">
+				<h4><a href="http://www.brighthand.com/" >Brighthand.com </a></h4> 
+					<p>
+				Check Brighthand for our favorite new smartphones including the <a href="http://www.brighthand.com/default.asp?newsID=19009&news=HTC+One+S+Review+Android">HTC One S, a surprisingly powerful smartphone.</a></p>
+				</div>
+			</div>
+
+		</div>
+	</div><div><!-- PAG-HPRightCol, whatis.techtarget.com, generated at 12:39:59 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div id="sitePromo" class="splash editorialSplash ">
+			<div class="splashHeader">
+				<h4>Windows 8 Features & Tips</h4>
+				</div>
+
+			<div class="splashBody">
+				<div class="sitePromoPhoto">
+					<a href="http://www.notebookreview.com/default.asp?newsID=6268" ><img src="http://media.techtarget.com/facebook/images/windows8-image.jpg"/></a> 
+					</div>
+				<div class="sitePromoInfo">
+				<h4><a href="http://www.notebookreview.com/default.asp?newsID=6268" >Windows 8 Features</a></h4> 
+					<p>
+				With the release of their latest version of Windows, Microsoft has made quite a few changes that may have some folks scracthing their heads. Notebook Review is here to help you understand it all with: <ul> <li> <a href="http://www.notebookreview.com/default.asp?newsID=6634&news=windows+8+how+to+use+tiles" title="Windows 8 Tips"><span style="color:#e37d00">Tips on using the Windows 8 tile interface,</span></a></li> <li>A list of <a href="http://www.notebookreview.com/default.asp?newsID=6268" title="Windows 8 Features"><span style="color:#e37d00">key Windows 8 features</span></a> to help make sense of the new interface,</li> <li>And TabletPCReview has a <a href="http://www.tabletpcreview.com/default.asp?newsID=3587&news=Microsoft+Windows+8" title="Windows 8 Video Preview"><span style="color:#e37d00">Video Preview of Windows 8</span></a> in action. </ul> <br>  Keep an eye on <a href="http://www.notebookreview.com/">NotebookReview.com</a> for all of your Windows 8 and laptop coverage.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div></div>
+			<div id="contentFooter">
+				<div>
+
+
+	<div><!-- TMP-ContentFooter, whatis.techtarget.com, generated at 11:40:10 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div id="footerAdsPlacement">
+<script type="text/javascript">
+	var cl_exclusive = "N";
+	if(cl_exclusive != 'Y') {
+		document.write('<a name="marketplace_top"></a>');
+		document.write('<div id="adGoogleFooter" class="splash adSplash on">');
+		document.write('<div class="adSplashContent">');
+		document.write('<h4><a href="https://www.google.com/adsense/support/bin/request.py?contact=abg_afc">Ads by Google</a></h4>');
+
+		document.write('<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scr'+'ipt>');
+		// <!-- Search Sites Old Design 728x90 AFC -->
+		document.write('<ins class="adsbygoogle"' +
+		     ' style="display:inline-block;width:728px;height:90px"' +
+		     ' data-ad-client="ca-pub-6050985421795229"' +
+		     ' data-ad-slot="4878417448"></ins>');
+
+		document.write('</div>');
+		document.write('</div>');
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	}
+</script>
+</div>
+</div>
+</div></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+
+
+	<div><!-- TTBC-TMP-Footer, whatis.techtarget.com, generated at 22:59:04 Sun Sep 20, 2015 , by vappma20.techtarget.com -->
+<div id="footerNavigation">
+	<div id="footerNavigationCompress">
+		<div class="megaMenu">
+			<script type="text/javascript">
+				(function ($) {
+					var mm = $("#headerNavigation .megaMenu");
+					if (mm.length > 0) {
+						$("#footerNavigation .megaMenu").html(mm.html());
+					} else {
+						$(document).ready(function ($) {
+							$("#footerNavigation .megaMenu").html($("#headerNavigation .megaMenu").html());
+						});
+					}
+				})(jQuery);
+			</script>
+		</div>
+<div id="footerNavigationSearch" class="navigationSearch">
+			<form action="/search/query" method="get" id="footerNavigationSearchForm">
+				<fieldset>
+					<label for="footerNavigationSearchTextbox" class="navigationSearchLabel">Search this site</label>
+					<input type="hidden" name="start" value="0" />
+					<input type="hidden" name="filter" value="1" />
+					<input type="text" name="q" id="footerNavigationSearchTextbox" class="navigationSearchBox" />
+					<input type="submit" value="Search" id="footerNavigationSearchSubmit" class="navigationSearchSubmitButton" />
+				</fieldset>
+			</form>
+		</div>
+</div>
+</div>
+<div id="footerCompress">
+<div id="relatedSites">
+	<div id="relatedSitesHeader">
+		<h5>More from Related TechTarget Sites</h5>
+		<div class="relatedSitesLink">
+			<!-- Need to update the URL once the bridge page is build -->
+			( <a href="/sites" class="viewAll">View All TechTarget Sites</a> )
+		</div>
+	</div>
+	<ul id="relatedSitesNav" class="listTypeTab">
+			<li><a href="#rsh-tab0">Storage</a></li>
+			<li><a href="#rsh-tab1">CIO</a></li>
+			<li><a href="#rsh-tab2">Data Backup</a></li>
+			<li><a href="#rsh-tab3">Mobile Computing</a></li>
+			<li><a href="#rsh-tab4">Windows Server</a></li>
+			<li><a href="#rsh-tab5">Cloud computing</a></li>
+			<li><a href="#rsh-tab6">AWS</a></li>
+			<li><a href="#rsh-tab7">Networking</a></li>
+			</ul>
+		<ul id="relatedSitesHeadlines" class="listTypeTabContent">
+			<li id="rsh-tab0">
+					<div class="rshLogo">
+						<a href="http://searchstorage.techtarget.com"
+							class="searchstorage">Storage</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchStorage" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchstorage.techtarget.com/definition/network-attached-storage">network-attached storage (NAS)</a>
+								</h6> <p>Network-attached storage uses a standard Ethernet connection to provide network nodes with file-based shared storage services.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchstorage.techtarget.com/definition/Clustered-file-system-CFS">clustered file system (CFS)</a>
+								</h6> <p>Clustered file systems are file systems that run on multiple storage servers and can be accessed and managed as a single system.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchstorage.techtarget.com/definition/Persistent-storage">persistent storage</a>
+								</h6> <p>Persistent storage is any data storage device that retains throughout instances of lost power.</p>
+									</li>
+						</ul>
+				</li>
+			<li id="rsh-tab1">
+					<div class="rshLogo">
+						<a href="http://searchcio.techtarget.com"
+							class="searchcio">CIO</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchCIO" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchcio.techtarget.com/definition/digital-strategy">digital strategy (digital media strategy)</a>
+								</h6> <p>A digital strategy is a blueprint for managing customer-facing information technology (IT) initiatives. It requires marketing and IT to work together closely.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchcio.techtarget.com/definition/business-model-innovation">business model innovation</a>
+								</h6> <p>Business model innovation is the implementation of unique concepts to support a company's viability, including the development of new processes for delivering products and services to customers.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchcio.techtarget.com/definition/authentic-leadership">authentic leadership</a>
+								</h6> <p>Authentic leadership is a management approach in which the head of a group or company governs and connects with his followers in an honest, open manner.</p>
+									</li>
+						</ul>
+				</li>
+			<li id="rsh-tab2">
+					<div class="rshLogo">
+						<a href="http://searchdatabackup.techtarget.com"
+							class="searchdatabackup">Data Backup</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchDataBackup" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchdatabackup.techtarget.com/definition/asynchronous-replication">asynchronous replication</a>
+								</h6> <p>Asynchronous replication is an approach to data backup in which data is written to primary storage and then replicated to a replication target.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchdatabackup.techtarget.com/definition/LTO-4-Linear-Tape-Open-4">LTO-4 (Linear Tape-Open 4)</a>
+								</h6> <p>LTO-4 is a tape format from the Linear Tape-Open Consortium that has been succeeded by LTO-5 and the current LTO-6 version.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchdatabackup.techtarget.com/definition/LTO-7-Linear-Tape-Open-7">LTO-7 (Linear Tape-Open 7)</a>
+								</h6> <p>LTO-7 is a forthcoming tape format from the Linear Tape-Open Consortium. It is slated to offer sustained data transfer rates of up to 750 MBps for compressed data.</p>
+									</li>
+						</ul>
+				</li>
+			<li id="rsh-tab3">
+					<div class="rshLogo">
+						<a href="http://searchmobilecomputing.techtarget.com"
+							class="searchmobilecomputing">Mobile Computing</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchMobileComputing" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchmobilecomputing.techtarget.com/definition/mobile-card-reader">mobile card reader</a>
+								</h6> <p>A mobile card reader, such as Square or PayPal Here, allows the user to accept payments through their mobile devices.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchmobilecomputing.techtarget.com/definition/CYOD-choose-your-own-device">CYOD (choose your own device)</a>
+								</h6> <p>CYOD (choose your own device) is an alternative model to BYOD (bring your own device) that involves allowing employees to select the device they want from among a limited number of options. CYOD is an example of the COPE (corporate-owned, personally-enabled) model.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchmobilecomputing.techtarget.com/definition/Apple-AirDrop">Apple AirDrop</a>
+								</h6> <p>Apple AirDrop is a feature on iOS and OS X devices that allows users to transfer data over the same Wi-Fi network from one Apple device to another.</p>
+									</li>
+						</ul>
+				</li>
+			<li id="rsh-tab4">
+					<div class="rshLogo">
+						<a href="http://searchwindowsserver.techtarget.com"
+							class="searchwindowsserver">Windows Server</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchWindowsServer" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchwindowsserver.techtarget.com/definition/Microsoft-Azure-Key-Vault">Microsoft Azure Key Vault</a>
+								</h6> <p>Microsoft Azure Key Vault is a cloud-hosted management service that allows users to encrypt keys and small secrets like passwords or answers to security questions that are used in their cloud applications and services.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchwindowsserver.techtarget.com/definition/Just-Enough-Administration-JEA">Just Enough Administration (JEA)</a>
+								</h6> <p>Just Enough Administration (JEA) is a PowerShell toolkit designed to help an organization reduce risk by restricting IT administrative rights.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchwindowsserver.techtarget.com/definition/Microsoft-Windows-Server-2016">Microsoft Windows Server 2016</a>
+								</h6> <p>Microsoft Windows Server 2016, previously referred to as Windows Server vNext, is a server operating system (OS).</p>
+									</li>
+						</ul>
+				</li>
+			<li id="rsh-tab5">
+					<div class="rshLogo">
+						<a href="http://searchcloudcomputing.techtarget.com"
+							class="searchcloudcomputing">Cloud computing</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchCloudComputing" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchcloudcomputing.techtarget.com/definition/cloud-management">cloud management</a>
+								</h6> <p>Cloud management is the exercise of administrative control over public, private and hybrid clouds.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchcloudcomputing.techtarget.com/definition/RightScale-Inc">RightScale Inc.</a>
+								</h6> <p>RightScale is a software as a service (SaaS) provider that offers cloud management and analytics tools for public, private and hybrid clouds.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchcloudcomputing.techtarget.com/definition/cloud-infrastructure">cloud infrastructure</a>
+								</h6> <p>Cloud infrastructure refers to the hardware and software components -- such as servers, storage and virtualization software -- that are needed to support the computing requirements of a cloud computing model.</p>
+									</li>
+						</ul>
+				</li>
+			<li id="rsh-tab6">
+					<div class="rshLogo">
+						<a href="http://searchaws.techtarget.com"
+							class="searchaws">AWS</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchAWS" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchaws.techtarget.com/definition/AWS-Spot-Fleets-Amazon-Web-Services-Spot-Fleets">AWS Spot Fleets (Amazon Web Services Spot Fleets)</a>
+								</h6> <p>An AWS Spot Fleet (Amazon Web Services Spot Fleets) is a collection of virtual servers (instances) purchased at reduced rates within Amazon Elastic Compute Cloud (EC2). EC2 also manages those servers.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchaws.techtarget.com/definition/AWS-Lambda-Amazon-Web-Services-Lambda">AWS Lambda (Amazon Web Services Lambda)</a>
+								</h6> <p>AWS Lambda (Amazon Web Services Lambda) is a responsive cloud service that analyzes actions within an application and responds by deploying the appropriate user-defined codes, which are called functions.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchaws.techtarget.com/definition/AWS-On-Demand-Instances-Amazon-Web-Services-On-Demand-Instances">AWS On-Demand Instances (Amazon Web Services On-Demand Instances)</a>
+								</h6> <p>AWS On-Demand Instances (Amazon Web Services On-Demand Instances) are virtual servers that run in AWS Elastic Compute Cloud (EC2) or AWS Relational Database Service (RDS) and are purchased at a fixed rate per hour.</p>
+									</li>
+						</ul>
+				</li>
+			<li id="rsh-tab7">
+					<div class="rshLogo">
+						<a href="http://searchnetworking.techtarget.com"
+							class="searchnetworking">Networking</a>
+					</div>
+					<div class="rshLink">
+						( <a href="http://whatis.techtarget.com/site/searchNetworking" class="viewAll">Find Out More About This
+							Site</a> )
+					</div>
+					<ul class="rshCols">
+						<li>
+								<h6>
+									<a href="http://searchnetworking.techtarget.com/definition/hybrid-WAN">hybrid WAN</a>
+								</h6> <p>Hybrid WAN connects a geographically dispersed telecommunications network by sending traffic through the public Internet VPN and a traditional WAN service.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchnetworking.techtarget.com/definition/virtual-LAN">virtual LAN (VLAN)</a>
+								</h6> <p>A virtual local area network (virtual LAN) lets network nodes that are geographically dispersed communicate as if they physically resided on the same network.</p>
+									</li>
+						<li>
+								<h6>
+									<a href="http://searchnetworking.techtarget.com/definition/CIDR">CIDR (Classless Inter-Domain Routing or supernetting)</a>
+								</h6> <p>CIDR (Classless Inter-Domain Routing) is a way to allocate Internet addresses more flexibly than the original system of Internet Protocol (IP) address classes allowed.</p>
+									</li>
+						</ul>
+				</li>
+			</ul>
+	<span id="footerTechtargetLogo"></span>
+</div>
+</div>
+<div id="footerMiscLinks">
+	<div id="footerMiscLinksCompress">
+		<div id="footerCopyright">
+			All Rights Reserved,<a href="/about/copyright">Copyright 1999 - 2015</a>, TechTarget</div>
+		<ul>
+		<li><a href="/about">About Us</a></li>
+			<li><a href="/about/contact">Contact Us</a></li>
+			<li><a href="/definition-search">Overview</a></li><li><a href="/about/index">Site Index</a></li>
+			<li><a href="http://www.techtarget.com/html/privacy_policy.html">Privacy policy</a></li>
+			<li><a href="/about/advertising">Advertisers</a></li><li><a href="/about/partners">Business partners</a></li><li><a href="http://events.techtarget.com/html/index.html">TechTarget events</a></li>
+			<li><a href="http://www.techtarget.com/mediakit/">Media kit</a></li>
+			<li><a href="http://www.techtarget.com/">TechTarget Corporate site</a></li>
+			<li><a href="http://reprints.ygsgroup.com/m/techtarget">Reprints</a></li>
+			<li><a href="/sitemap">Site map</a></li>
+</ul>
+	</div>
+</div></div>
+</div></div>
+	
+
+
+<script>
+
+var date = new Date();
+date.setTime(date.getTime()+(5*365*24*60*60*1000));
+var expires = "expires="+date.toGMTString();
+
+
+
+</script><!-- key: /template/vgn-ext-templating/techtarget/browseFileFormatsByAlphaKeyPage/onBodyClose -->
+<script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/ss-combined.min.js"></script><script type='text/javascript'>
+	// chartbeat config set in the head
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src',
+           (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
+           'js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script>
+<script type="text/javascript">
+if (typeof jQuery == "function") jQuery(document).trigger("onclosebody");
+</script>
+
+<!-- Google Code for Remarketing tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1070110249;
+var google_conversion_label = "RRsgCOW4tgMQqayi_gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1070110249/?value=0&label=RRsgCOW4tgMQqayi_gM&guid=ON&script=0"/>
+</div>
+</noscript>
+
+<!-- Google Code for Remarketing tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1072226410;
+var google_conversion_label = "x3P_CIql1gMQ6sCj_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072226410/?value=0&label=x3P_CIql1gMQ6sCj_wM&guid=ON&script=0"/>
+</div>
+</noscript>
+<!--  Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CV3PD"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5CV3PD');
+</script>
+<!-- Google Tag Manager End -->
+<!-- 
+Region/Component Load time
+===============
+Head=24
+Header=4
+Content Header=2
+Left Column=25
+Right Column=108
+Content Footer=2
+Footer=3
+End-Of-Page=1
+
+TOTAL PAGE LOAD TIME=169
+ --> 
+<!-- Request Serving Server : vappma20.techtarget.com-->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"313780","applicationTime":218,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1068cf12f6","transactionName":"ZQMAYxdYXUBSAkFbClxJLFgXVFJfWhtQVjBAD01gDVhHekBOHw==","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script></body>
+</html>

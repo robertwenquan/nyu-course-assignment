@@ -1,0 +1,412 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="www.madisonlogic.com" />
+	<link rel="stylesheet" href="/itwhitepapers.css.php" type="text/css"/>
+	<link rel="stylesheet" href="/styles/reset.css" type="text/css" />
+	<link rel="stylesheet" href="/styles/general.css" type="text/css" />
+	<title>IT Whitepapers</title>
+<meta name="description" content="IT white paper resource providing hundreds of enterprise technology and IT topic-specific white papers covering server virtualization , IT services, application integration, and more." />
+<meta name="keywords" content="white papers, it research, technical guide, technical briefs, technology research" />
+<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="http://www.itwhitepapers.com/images/favicon.ico" />
+
+	</head>
+<body   >
+
+<!-- start ml content -->
+
+
+
+
+
+
+<div id="container">
+
+	
+	<div id="site_header">
+    
+		
+		<div id="site_name" style="float:left;"><a href="/">ITwhitepapers</a></div>
+		<div id="top_actions" style="float:right;">
+		<a href="/registration">Free Registration</a> | 
+				<a href="/index.php?option=com_contact&task=view&pathway=no&step=3">Help</a>
+        
+		</div> <!-- end top_actions -->
+		<div id="nav">
+			<ul>
+				<li ><a href="/technology" class="hoverLink"><span class="tab">Topics</span></a></li>
+				<li ><a href="/option,com_vendordirectory/task,viewvendor/pathway,no/Itemid,54/" class="hoverLink"><span class="tab">Vendor Directory</span></a></li>
+				<li ><a href="/popular-research" class="hoverLink"><span class="tab">Popular White Papers</span></a></li>
+				<li ><a href="/index.php?option=com_sitemap&task=newsletters&pathway=no"><span class="tab">Newsletters</span></a></li>
+                <li style="padding-top:5px;"><a href="https://twitter.com/ITWPs" target="_blank"><img src="/Twitter-Button.png" width="25" border="0" /></a></li>
+				<!--<li ><a href="/index.php?option=com_sitemap&task=listrss&pathway=no"><span class="tab">RSS</a></span></li>-->
+			</ul>
+		</div> <!-- end nav -->
+	
+
+
+
+	</div> <!-- end site_header -->
+				<div class="content" id="homepage">
+		
+		<div id="left_col">
+			<div class="breadcrumbs">
+						<table width="100%">
+							<tr><td>
+							
+								<a href='http://www.itwhitepapers.com'>IT White Papers Library</a> : 							</td></tr>
+						</table>		
+			</div>
+
+						
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						
+							<tr>
+								<td width="100%" colspan="3">
+									<div>
+
+										<div class="content_section" id="popular_topics">
+										
+											<h2>Popular Whitepaper Topics</h2>
+											
+											<div class="section_body">
+											
+														  <ul class="topic_col">
+			<li>
+				<a href="/technology/data_management/application_integration/">Application Integration</a>	
+			</li>
+			<li>
+				<a href="/technology/storage/backup_and_recovery/">Backup & Recovery</a>
+			</li>
+			<li>
+				<a href="/technology/data_management/business_intelligence/">Business Intelligence</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/business_process_management/">Business Process Management</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/call_center_software/">Call Center Software
+			</a></li>
+			<li>
+				<a href="/technology/data_center/cloud_computing">Cloud Computing</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/customer_relationship_management/">CRM Software</a>
+			</li>
+			<li>
+				<a href="/technology/data_management/">Data Management</a>
+			</li>
+			<li>
+				<a href="/technology/data_management/data_warehousing/">Data Warehousing</a>
+			</li>
+			<li>
+				<a href="/technology/data_management/database_development/">Database Development</a>
+			</li>
+			<li>
+				<a href="/technology/security/disaster_recovery/">Disaster Recovery</a>
+			</li>
+			<li>
+				<a href="/technology/security/email_security/">Email Security</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/enterprise_resource_planning/">Enterprise Resource Planning</a>
+			</li>
+		</ul>
+		<ul class="topic_col">
+			<li>
+				<a href="/technology/security/intrusion_prevention/">Intrusion Prevention</a>
+			</li>
+			<li>
+				<a href="/technology/it_management/">IT Management</a>
+			</li>
+			<li>
+				<a href="/technology/it_management/itil/">ITIL</a>
+			</li>
+			<li>
+				<a href="/technology/knowledge_management/">Knowledge Management</a>
+			</li>
+			<li>
+				<a href="/technology/platforms/linux/">Linux</a>
+			</li>
+			<li>
+				<a href="/technology/platforms/microsoft_exchange/">Microsoft Exchange</a>
+			</li>
+		  
+			<li>
+				<a href="/technology/networking/">Networking</a>
+			</li>
+			<li>
+				<a href="/technology/platforms/">Platforms</a>
+			</li>
+			<li>
+				<a href="/technology/it_management/project_management/">Project Management</a>
+			</li>
+			<li>
+				<a href="/technology/knowledge_management/records_management/">Records Management</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/sales___marketing_software/">Sales & Marketing Software</a>
+			</li>
+			<li>
+				<a href="/technology/security/">Security</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/server_virtualization/">Server Virtualization</a>
+			</li>		  
+		</ul>
+		<ul class="topic_col">
+			<li>
+				<a href="/technology/data_management/service_oriented_architecture/">Service Oriented Architecture</a>
+			</li>
+			<li>
+				<a href="/technology/networking/small_business_networks/">Small Business Networks</a>
+			</li>
+			<li>
+				<a href="/technology/software_development/">Software Development</a>
+			</li>
+			<li>
+				<a href="/technology/storage/">Storage</a>
+			</li>
+			<li>
+				<a href="/technology/storage/storage_area_networks/">Storage Area Networks</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/supply_chain_management/">Supply Chain Management</a>
+			</li>
+			<li>
+				<a href="/technology/enterprise_applications/voice_over_ip/">VoIP</a>
+			</li>
+			<li>
+				<a href="/technology/networking/vpn/">VPN</a>
+			</li>
+			<li>
+				<a href="/technology/software_development/web_services/">Web Services</a>
+			</li>
+			<li>
+				<a href="/technology/networking/wide_area_networks/">Wide Area Networks</a>
+			</li>
+			<li>
+				<a href="/technology/platforms/windows_server/">Windows Server</a>
+			</li>
+			<li>
+				<a href="/technology/wireless/">Wireless</a>
+			</li>
+			<li>
+				<a href="/technology/wireless/wireless_security/">Wireless Security</a>
+			</li>
+		  </ul>
+
+												
+												<div class="clear"></div>
+											
+											</div> <!-- end section body -->
+											
+										</div> <!-- end popular_topics -->
+
+																		</div>
+								</td>
+							</tr>
+						  
+							 
+							<tr>
+								<td colspan="3" width="100%">
+
+									<h1 class="subhead" >Featured Resources</h1>
+<script type="text/javascript" src="http://jsc.madisonlogic.com/jsc?pub=88&pgr=75&src=3968&layrf=5654&num=5"></script>
+ <!-- Displays body -->
+
+								</td>
+							</tr>
+											<tr>
+								<td><div class="bwBottomLine"><img src="/images_common/spacer.gif" height="3" width="1"></div></td>
+							</tr>
+							<tr><td style="text-align:left;" colspan="3"><div class="curveBoxBar"><h1 class="subhead"><a href="/technology/">Technology Topics</a></h1></div></td>
+								
+							</tr>
+							<tr>
+								<td align="left" valign="top" colspan="5"><img src="/images_common/spacer.gif" height="10" width="1" /></td>
+							</tr>
+							<tr >
+								<td valign="top" style="padding-right:10px;">
+									<script language='javascript'>function showOverflow(cid) { var  x = document.getElementById(cid); x.style.display = "inline"; y = document.getElementById('more' + cid); y.style.display = "none"; } function hideOverflow(cid) { var  x = document.getElementById(cid); x.style.display = "none"; y = document.getElementById('more' + cid); y.style.display = "inline";}</script><table border='0' cellspacing='3' cellpadding='1' width='100%'><tr><td align='left' width='48%' valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/data_center' class='categoryLink'>Data Center</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/data_center/virtualization'>Virtualization</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_center/cloud_computing'>Cloud Computing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_center/infrastructure'>Infrastructure</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_center/design_and_facilities'>Design and Facilities</a></nobr><span id='more655' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(655); return false' >more</a></span><span id='655' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/data_center/power_and_cooling'>Power and Cooling</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_center/green_computing'>Green Computing</a></nobr>&nbsp;&nbsp; <a href='#' id='less655' class='more-less less' title='display less' onClick='hideOverflow(655); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more655'); x.style.display = "inline";y = document.getElementById('less655'); y.style.display = "inline"; z = document.getElementById('655'); z.style.display = "none";</script></div></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/data_management' class='categoryLink'>Data Management</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/data_management/application_integration'>Application Integration</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/analytical_applications'>Analytical Applications</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/business_intelligence'>Business Intelligence</a></nobr><span id='more23' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(23); return false' >more</a></span><span id='23' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/configuration_management'>Configuration Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/database_development'>Database Development</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/data_integration'>Data Integration</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/data_mining'>Data Mining</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/data_protection'>Data Protection</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/data_quality'>Data Quality</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/data_replication'>Data Replication</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/database_security'>Database Security</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/edi'>EDI</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/soap'>SOAP</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/service_oriented_architecture'>Service Oriented Architecture</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/web_service_management'>Web Service Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/data_management/data_warehousing'>Data Warehousing</a></nobr>&nbsp;&nbsp; <a href='#' id='less23' class='more-less less' title='display less' onClick='hideOverflow(23); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more23'); x.style.display = "inline";y = document.getElementById('less23'); y.style.display = "inline"; z = document.getElementById('23'); z.style.display = "none";</script></div></td></tr><tr><td align='left' width='48%' valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/enterprise_applications' class='categoryLink'>Enterprise Applications</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/application_integration'>Application Integration</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/application_performance_management'>Application Performance Management</a></nobr><span id='more20' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(20); return false' >more</a></span><span id='20' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/best_practices'>Best Practices</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_activity_monitoring'>Business Activity Monitoring</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_analytics'>Business Analytics</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_integration'>Business Integration</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_intelligence'>Business Intelligence</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_management'>Business Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_metrics'>Business Metrics</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_process_automation'>Business Process Automation</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/business_process_management'>Business Process Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/call_center_management'>Call Center Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/call_center_software'>Call Center Software</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/change_management'>Change Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/corporate_governance'>Corporate Governance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/customer_interaction_service'>Customer Interaction Service</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/customer_relationship_management'>Customer Relationship Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/customer_satisfaction'>Customer Satisfaction</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/customer_service'>Customer Service</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/ebusiness'>EBusiness</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/enterprise_resource_planning'>Enterprise Resource Planning</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/enterprise_software'>Enterprise Software</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/eprocurement'>EProcurement</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/extranets'>Extranets</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/groupware_workflow'>Groupware Workflow</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/hipaa_compliance'>HIPAA Compliance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/ip_faxing'>IP Faxing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/it_spending'>IT Spending</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/marketing_automation'>Marketing Automation</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/performance_testing'>Performance Testing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/product_lifecycle_management'>Product Lifecycle Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/project_management'>Project Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/return_on_investment'>Return On Investment</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/risk_management'>Risk Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/sales___marketing_software'>Sales & Marketing Software</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/sales_automation'>Sales Automation</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/server_virtualization'>Server Virtualization</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/simulation_software'>Simulation Software</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/supply_chain_management'>Supply Chain Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/system_management_software'>System Management Software</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/total_cost_of_ownership'>Total Cost of Ownership</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/video_conferencing'>Video Conferencing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/voice_recognition'>Voice Recognition</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/voice_over_ip'>Voice Over IP</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/workforce_management'>Workforce Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/incentive_compensation'>Incentive Compensation</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/spend_management'>Spend Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/manufacturing_execution_systems'>Manufacturing Execution Systems</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/enterprise_applications/international_computing'>International Computing</a></nobr>&nbsp;&nbsp; <a href='#' id='less20' class='more-less less' title='display less' onClick='hideOverflow(20); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more20'); x.style.display = "inline";y = document.getElementById('less20'); y.style.display = "inline"; z = document.getElementById('20'); z.style.display = "none";</script></div></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/it_career_advancement' class='categoryLink'>IT Career Advancement</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/it_career_advancement/cisco_certification'>Cisco Certification</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_career_advancement/microsoft_certification'>Microsoft Certification</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_career_advancement/linux_certification'>Linux Certification</a></nobr><span id='more38' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(38); return false' >more</a></span><span id='38' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/it_career_advancement/network_security_certification'>Network Security Certification</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_career_advancement/software_development_certification'>Software Development Certification</a></nobr>&nbsp;&nbsp; <a href='#' id='less38' class='more-less less' title='display less' onClick='hideOverflow(38); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more38'); x.style.display = "inline";y = document.getElementById('less38'); y.style.display = "inline"; z = document.getElementById('38'); z.style.display = "none";</script></div></td></tr><tr><td align='left' width='48%' valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/it_management' class='categoryLink'>IT Management</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/it_management/employee_performance'>Employee Performance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_management/itil'>ITIL</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_management/productivity'>Productivity</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_management/project_management'>Project Management</a></nobr><span id='more17' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(17); return false' >more</a></span><span id='17' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/it_management/software_compliance'>Software Compliance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_management/sarbanes_oxley_compliance'>Sarbanes Oxley Compliance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_management/service_management'>Service Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/it_management/desktop_management'>Desktop Management</a></nobr>&nbsp;&nbsp; <a href='#' id='less17' class='more-less less' title='display less' onClick='hideOverflow(17); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more17'); x.style.display = "inline";y = document.getElementById('less17'); y.style.display = "inline"; z = document.getElementById('17'); z.style.display = "none";</script></div></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/knowledge_management' class='categoryLink'>Knowledge Management</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/collaboration'>Collaboration</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/collaborative_commerce'>Collaborative Commerce</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/contact_management'>Contact Management</a></nobr><span id='more19' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(19); return false' >more</a></span><span id='19' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/content_delivery'>Content Delivery</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/content_integration'>Content Integration</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/content_management_system'>Content Management System</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/corporate_portals'>Corporate Portals</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/customer_experience_management'>Customer Experience Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/document_management'>Document Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/information_management'>Information Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/intranets'>Intranets</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/messaging'>Messaging</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/records_management'>Records Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/search_and_retrieval'>Search And Retrieval</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/search_engines'>Search Engines</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/secure_content_management'>Secure Content Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/knowledge_management/sla'>SLA</a></nobr>&nbsp;&nbsp; <a href='#' id='less19' class='more-less less' title='display less' onClick='hideOverflow(19); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more19'); x.style.display = "inline";y = document.getElementById('less19'); y.style.display = "inline"; z = document.getElementById('19'); z.style.display = "none";</script></div></td></tr><tr><td align='left' width='48%' valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/networking' class='categoryLink'>Networking</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/networking/active_directory'>Active Directory</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/bandwidth_management'>Bandwidth Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/convergence'>Convergence</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/distributed_computing'>Distributed Computing</a></nobr><span id='more14' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(14); return false' >more</a></span><span id='14' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/ethernet_networking'>Ethernet Networking</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/fibre_channel'>Fibre Channel</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/gigabit_networking'>Gigabit Networking</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/governance'>Governance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/grid_computing'>Grid Computing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/infrastructure'>Infrastructure</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/internetworking_hardware'>Internetworking Hardware</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/interoperability'>Interoperability</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/ip_networks'>IP Networks</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/ip_telephony'>IP Telephony</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/local_area_networking'>Local Area Networking</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/load_balancing'>Load Balancing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/migration'>Migration</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/monitoring'>Monitoring</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/network_architecture'>Network Architecture</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/network_management'>Network Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/network_performance'>Network Performance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/network_performance_management'>Network Performance Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/network_provisioning'>Network Provisioning</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/network_security'>Network Security</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/olap'>OLAP</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/optical_networking'>Optical Networking</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/quality_of_service'>Quality Of Service</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/remote_access'>Remote Access</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/remote_network_management'>Remote Network Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/server_hardware'>Server Hardware</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/servers'>Servers</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/small_business_networks'>Small Business Networks</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/tcp_ip_protocol'>TCP/IP Protocol</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/test_and_measurement'>Test And Measurement</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/traffic_management'>Traffic Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/tunneling'>Tunneling</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/utility_computing'>Utility Computing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/vpn'>VPN</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/wide_area_networks'>Wide Area Networks</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/green_computing'>Green Computing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/cloud_computing'>Cloud Computing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/power_and_cooling'>Power and Cooling</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/data_center_design_and_management'>Data Center Design and Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/colocation_and_web_hosting'>Colocation and Web Hosting</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/networking/content_management'>Content Management</a></nobr>&nbsp;&nbsp; <a href='#' id='less14' class='more-less less' title='display less' onClick='hideOverflow(14); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more14'); x.style.display = "inline";y = document.getElementById('less14'); y.style.display = "inline"; z = document.getElementById('14'); z.style.display = "none";</script></div></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/platforms' class='categoryLink'>Platforms</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/platforms/as_400'>AS/400</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/domino'>Domino</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/linux'>Linux</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/microsoft_exchange'>Microsoft Exchange</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/oracle'>Oracle</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/peoplesoft'>PeopleSoft</a></nobr><span id='more21' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(21); return false' >more</a></span><span id='21' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/sap'>SAP</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/siebel'>Siebel</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/solaris'>Solaris</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/tivoli'>Tivoli</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/unix'>Unix</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/web_sphere'>Web Sphere</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/windows'>Windows</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/platforms/windows_server'>Windows Server</a></nobr>&nbsp;&nbsp; <a href='#' id='less21' class='more-less less' title='display less' onClick='hideOverflow(21); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more21'); x.style.display = "inline";y = document.getElementById('less21'); y.style.display = "inline"; z = document.getElementById('21'); z.style.display = "none";</script></div></td></tr><tr><td align='left' width='48%' valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/security' class='categoryLink'>Security</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/security/access_control'>Access Control</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/anti_spam'>Anti Spam</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/anti_spyware'>Anti Spyware</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/anti_virus'>Anti Virus</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/application_security'>Application Security</a></nobr><span id='more15' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(15); return false' >more</a></span><span id='15' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/security/auditing'>Auditing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/authentication'>Authentication</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/biometrics'>Biometrics</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/business_continuity'>Business Continuity</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/compliance'>Compliance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/ddos'>DDoS</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/disaster_recovery'>Disaster Recovery</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/email_security'>Email Security</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/encryption'>Encryption</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/firewalls'>Firewalls</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/hacker_detection'>Hacker Detection</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/high_availability'>High Availability</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/identity_management'>Identity Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/internet_security'>Internet Security</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/intrusion_detection'>Intrusion Detection</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/intrusion_prevention'>Intrusion Prevention</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/ipsec'>IPSec</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/network_security_appliance'>Network Security Appliance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/password_management'>Password Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/patch_management'>Patch Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/phishing'>Phishing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/pki'>PKI</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/policy_based_management'>Policy Based Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/security_management'>Security Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/security_policies'>Security Policies</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/single_sign_on'>Single Sign On</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/ssl'>SSL</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/secure_instant_messaging'>Secure Instant Messaging</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/web_service_security'>Web Service Security</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/pci_compliance'>PCI Compliance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/security/vulnerability_management'>Vulnerability Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/index.php?option=com_categoryreport&task=viewlist&n=1&id=684'>Mobile Device Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/index.php?option=com_categoryreport&task=viewlist&n=1&id=685'>Data Loss Prevention</a></nobr>&nbsp;&nbsp; <a href='#' id='less15' class='more-less less' title='display less' onClick='hideOverflow(15); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more15'); x.style.display = "inline";y = document.getElementById('less15'); y.style.display = "inline"; z = document.getElementById('15'); z.style.display = "none";</script></div></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/software_development' class='categoryLink'>Software Development</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/software_development/_net'>.NET</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/c__'>C++</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/database_development'>Database Development</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/java'>Java</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/middleware'>Middleware</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/open_source'>Open Source</a></nobr><span id='more16' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(16); return false' >more</a></span><span id='16' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/software_outsourcing'>Software Outsourcing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/quality_assurance'>Quality Assurance</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/scripting'>Scripting</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/soap'>SOAP</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/software_testing'>Software Testing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/visual_basic'>Visual Basic</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/web_development'>Web Development</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/web_services'>Web Services</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/web_service_security'>Web Service Security</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/software_development/xml'>XML</a></nobr>&nbsp;&nbsp; <a href='#' id='less16' class='more-less less' title='display less' onClick='hideOverflow(16); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more16'); x.style.display = "inline";y = document.getElementById('less16'); y.style.display = "inline"; z = document.getElementById('16'); z.style.display = "none";</script></div></td></tr><tr><td align='left' width='48%' valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/storage' class='categoryLink'>Storage</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/storage/backup_and_recovery'>Backup And Recovery</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/blade_servers'>Blade Servers</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/clustering'>Clustering</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/ip_storage'>IP Storage</a></nobr><span id='more22' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(22); return false' >more</a></span><span id='22' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/iscsi'>ISCSI</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/network_attached_storage'>Network Attached Storage</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/raid'>RAID</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/storage_area_networks'>Storage Area Networks</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/storage_management'>Storage Management</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/storage_virtualization'>Storage Virtualization</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/email_archiving'>Email Archiving</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/storage/data_deduplication'>Data Deduplication</a></nobr>&nbsp;&nbsp; <a href='#' id='less22' class='more-less less' title='display less' onClick='hideOverflow(22); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more22'); x.style.display = "inline";y = document.getElementById('less22'); y.style.display = "inline"; z = document.getElementById('22'); z.style.display = "none";</script></div></td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign='top'><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/index.php?option=com_categoryreport&task=viewlist&n=1&id=630' class='categoryLink'>Telecom</a></h3></div></td></tr><tr><td><div style='padding-bottom: 8px;'><h3><a href='http://www.itwhitepapers.com/technology/wireless' class='categoryLink'>Wireless</a></h3><nobr><a href='http://www.itwhitepapers.com/technology/wireless/802_11'>802.11</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/bluetooth'>Bluetooth</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/cdma'>CDMA</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/gps'>GPS</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/mobile_computing'>Mobile Computing</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/mobile_data_systems'>Mobile Data Systems</a></nobr><span id='more18' style='display: none;' >... <a href='#' class='more-less more' title='display more' onClick='showOverflow(18); return false' >more</a></span><span id='18' style='display: inline;'>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/mobile_workers'>Mobile Workers</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/pda'>PDA</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/rfid'>RFID</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/smart_phones'>Smart Phones</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wifi'>WiFi</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_application_software'>Wireless Application Software</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_communications'>Wireless Communications</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_hardware'>Wireless Hardware</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_infrastructure'>Wireless Infrastructure</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_messaging'>Wireless Messaging</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_phones'>Wireless Phones</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_security'>Wireless Security</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wireless_service_providers'>Wireless Service Providers</a></nobr>, <nobr><a href='http://www.itwhitepapers.com/technology/wireless/wlan'>WLAN</a></nobr>&nbsp;&nbsp; <a href='#' id='less18' class='more-less less' title='display less' onClick='hideOverflow(18); return false;' style='display: none'>less</a></span><script>x = document.getElementById('more18'); x.style.display = "inline";y = document.getElementById('less18'); y.style.display = "inline"; z = document.getElementById('18'); z.style.display = "none";</script></div></td></tr></table>									<!-- Displays categories and sections -->
+								</td>
+							</tr>
+									  			 
+							 <tr>
+								<td colspan="3"><img src="/images_common/spacer.gif" height="1" width="1"></td>
+							</tr>
+
+							<!--<tr>
+								<td colspan="3" align="left">
+									<div class="bwTopBottomLine">
+																			</div>
+								</td>
+							</tr>-->
+
+							<tr>
+								<td align="center" valign="middle" colspan="3">
+									<div style="padding-top: 15px">
+																			</div>
+								</td>
+							</tr>
+						</table>
+
+		</div> <!-- end left_col -->
+				<div id="right_col">
+        
+<form action="/index.php" method="get" name="loginform" >
+<div class="iphonefixsearch" style="float:right;">
+
+			<input alt="search" type="text" name="searchword" id="searchword"  size="28" value="Search Library" style="margin-bottom: 6px; color:#999;" onclick="javascript:clearSearch()" onblur="javascript:PopulateSearch()" />
+            
+            <input type="submit" name="sa" value="" class="searchBtn2" onmouseover="this.style.cursor='pointer';"/>
+
+</div>
+<input type="hidden" name="option" value="com_advsearch" />
+<input type="hidden" name="task" value="search" />
+</form>
+
+<script type="text/javascript">
+function clearSearch(){
+	if(document.getElementById('searchword').value == 'Search Library'){
+		document.getElementById('searchword').value = '';	
+	}
+}
+
+function PopulateSearch(){
+	if(document.getElementById('searchword').value == ''){
+		document.getElementById('searchword').value = 'Search Library';	
+	}
+}
+</script>
+						
+						<div class="content_section">
+	<h2>Add White Papers</h2>
+	<div class="ml-module-content">
+	Get your company's white papers in the hands of targeted business professionals.<br /><br />
+	<a href="http://www.itwhitepapers.com/contact_us"><input type="submit" name="sa" value="Get Started Today" class="searchBtn" onmouseover="this.style.cursor='pointer';" onclick="location.href='http://www.itwhitepapers.com/contact_us';"/></a>
+	</div>
+</div><script type="text/javascript" src="http://jsc.madisonlogic.com/jsc?pub=88&pgr=75&src=3971&layrf=5657&num=1"></script>				
+									
+<!-- end ml code -->           
+								
+
+	
+	
+		</div> <!-- end right_col -->
+		
+		<div class="clear"></div>
+		
+	</div> <!-- end content -->
+	
+	<div class="content" id="footer_search">
+    		<div class="search">
+		
+			<h3 style="	float:left;
+	margin:0; font-family: Arial,Helvetica,sans-serif;
+	background-color:transparent;
+	background-image:url(/images/header_arrow.gif);
+	background-position:left 4px;
+	background-repeat:no-repeat;
+	color:#002200;
+	font-size:18px;
+	font-weight:bold;
+	line-height:normal;
+	padding-left:21px;">Search The Library</h3>
+			
+			<div class="search_form">
+				<form action="index.php" method="post" name="searchform" >
+					<input alt="search" type="text" name="searchword" size="50" value="" />
+					<input type="hidden" name="option" value="com_advsearch" />
+					<input type="hidden" name="task" value="search" />&nbsp;&nbsp;
+					<input type="submit" name="sa" value="Search" class="searchBtn" onmouseover="this.style.cursor='pointer';"/>
+				</form>
+			</div>
+			<div class="clear"></div>
+		</div>
+        	</div> <!-- end search_library -->
+
+	<div id="footer">
+		<br />
+		<div class="footer_links" id="site_links">
+			<a href="/option,com_vendordirectory/task,viewvendor/pathway,no/Itemid,54/">Vendor Directory</a>  ::  <a href="/option,com_categoryreport/popular-research">Popular White Papers</a>  ::  <a href="/index.php?option=com_sitemap&task=newsletters&pathway=no">Newsletter</a>  ::  <a href="/index.php?option=com_contact&task=view&pathway=no&step=1">Advertise</a>  ::  <a href="http://careers.idg.com/">Careers at IDG</a>  :: <a href="mailto:SWeglage@idgenterprise.com">Contacts</a>  ::  <a href="/index.php?option=com_sitemap&task=privacy&pathway=no">Privacy Policy</a>  <!--::  <a href="#">Sitemap</a>  -->:: <span class="copyright">&copy;2015 IDG Communications Inc. All rights reserved.</span>
+		</div> <!-- end site_links -->
+		
+		<div class="footer_links" id="network_links">
+			<div class="logo"><a href="http://www.idg.com"><img src="/images/idg_logo.jpg"></a></div>
+			<div class="module_header">The IDG Network</div>
+			<a href="http://www.cio.com">CIO</a> ::
+			<a href="http://www.computerworld.com">Computerworld</a> :: 
+			<a href="http://www.csoonline.com">CSO</a> :: 
+			<a href="http://www.gamepro.com">GamePro</a> :: 
+			<a href="http://www.games.net">Games.net</a> ::
+			<a href="http://www.infoworld.com">InfoWorld</a> :: 
+			<a href="http://www.itworld.com">ITworld</a> :: 
+			<a href="http://www.javaworld.com">JavaWorld</a> :: 
+			<a href="http://www.macworld.com">Macworld</a> :: 
+			<a href="http://www.networkworld.com">Network World</a> :: 
+			<a href="http://www.demo.com">DEMO</a> ::
+			<a href="http://www.idgconnect.com">IDG Connect</a> ::
+			<a href="http://www.idgknowledgehub.com">IDG Knowledge Hub</a> ::
+			<a href="http://www.idgtechnetwork.com">IDG Tech Network</a> ::
+			<a href="http://www.idgworldexpo.com">IDG World Expo</a>
+		</div> <!-- end footer_links -->
+		
+	</div> <!-- end footer -->
+
+</div>
+<!-- SiteCatalyst code version: H.17.
+Copyright 1997-2009 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=""
+s.server="www.itwhitepapers.com"
+s.channel=""
+s.pageType=""
+s.prop1="http://www.itwhitepapers.com/1"
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://infoworlditwhitepapers.112.2O7.net/b/ss/infoworlditwhitepapers/1/H.17--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.17. -->
+
+
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-403675-35");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+
+</body></html>

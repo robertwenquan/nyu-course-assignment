@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr" >
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+  <link rel="stylesheet" href="/templates/ieee-tatemplate3.1p/css/template_css.php" type="text/css" media="all" />
+  <base href="http://cis.ieee.org/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="ieee, intelligency, intelligence, society, biological, linguistic, computational, paradigms, neural, networks, evolutionary algorithms, fuzzy systems, hybrid intelligent systems" />
+  <meta name="description" content="From its institution as the Neural Networks Council in the early 1990s, the IEEE Computational Intelligence Society has rapidly grown into a robust community with a vision for addressing real-world issues with biologically-motivated computational paradigms. The Society offers leading research in nature-inspired problem solving, including neural networks, evolutionary algorithms, fuzzy systems, and hybrid intelligent systems. Members contribute to the theory, design, application, and development of biologically and linguistically motivated computational paradigms, emphasizing neural networks, connectionist systems, genetic algorithms, evolutionary programming, fuzzy systems, and hybrid intelligent systems in which these paradigms are contained." />
+  <meta name="generator" content="IEEE Content Management" />
+  <title>IEEE Computational Intelligence Society</title>
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/plugins/system/jcemediabox/css/jcemediabox.css?v=1011" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/jcemediabox/themes/ieeepopup/css/style.css?version=1011" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_IEEETabber/css/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="http://cis.ieee.org/modules/mod_IEEEConferenceSchedule/css/styles.css" type="text/css" />
+  <script type="text/javascript" src="/plugins/system/jcemediabox/js/jcemediabox.js?v=1011"></script>
+  <script type="text/javascript" src="/plugins/system/jcemediabox/js/mediaobject.js?v=1011"></script>
+  <script type="text/javascript" src="/plugins/system/jcemediabox/addons/default.js?v=1011"></script>
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+  <script type="text/javascript" src="/ieeescripts/ieeejquery.js"></script>
+  <script type="text/javascript" src="/ieeescripts/ieeejquery.cycle.min.js"></script>
+  <script type="text/javascript">
+	JCEMediaObject.init('/', {flash:"10,0,22,87",windowmedia:"5,1,52,701",quicktime:"6,0,2,0",realmedia:"7,0,0,0",shockwave:"8,5,1,0"});JCEMediaBox.init({popup:{width:750,height:350,legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:300,scalespeed:350,hideobjects:1,scrolling:"fixed",close:2,labels:{'close':'Close','next':'Next','previous':'Previous','cancel':'Cancel','numbers':'{$current} of {$total}'}},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"custom",themecustom:"ieeepopup",themepath:"plugins/system/jcemediabox/themes"});
+  </script>
+
+  <link rel="stylesheet" href="/templates/ieee-tatemplate3.1p/css/sharethis_custom.php" type="text/css" media="all" />
+  <script type="text/javascript">var addthis_config = {"data_track_clickback":true, ui_click:true, ui_508_compliant:true};</script>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e0cbd4b650c215b"></script>
+  <!-- Custom Styles and CSS Overrides -->
+  <link rel="stylesheet" href="/templates/ieee-tatemplate3.1p/css/template_custom.php" type="text/css" media="all" />
+
+  <!-- Script Modules -->
+  <!--***** Google Analytics *****-->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5565007-28']);
+  _gaq.push(['_setCustomVar',1,'User Segment: anonymous','/', 3]);
+_gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+  <!--***** Track outbound and file links *****-->
+  <script type="text/javascript">
+	ieeejquery(document).ready(function($) {
+		 $(".jcepopup").each( function() {
+		   $(this).attr("onclick","javascript: _gaq.push(['_trackPageview', '"+$(this).attr("href")+"'],['_setCustomVar',1,'User Segment: anonymous','"+$(this).attr("href")+"', 3]);");
+
+		 });
+
+		$("a").each(function() {
+			if($(this).attr("href")) {
+				if( $(this).attr("href").match(/images\/files/) ) {
+		   			$(this).attr("onclick","javascript: _gaq.push(['_trackPageview', '"+$(this).attr("href")+"'],['_setCustomVar',1,'User Segment: anonymous','"+$(this).attr("href")+"', 3]);");
+				}
+			}
+		});
+
+	});
+  </script>
+
+
+</head>
+<body>
+<!-- Global IEEE Header -->
+<div id="global-hd-container">
+	<div id="global-hd">
+		<div id="util-left">
+			<a href="http://www.ieee.org/" class="first">IEEE.org</a>
+			|
+			<a href="http://ieeexplore.ieee.org/">IEEE <em>Xplore</em> Digital Library</a>
+			|
+			<a href="http://standards.ieee.org/">IEEE Standards</a>
+			|
+			<a href="http://spectrum.ieee.org/">IEEE Spectrum</a>
+			|
+			<a href="http://www.ieee.org/sitemap" class="last">More Sites</a>
+		</div>
+		<div id="util-right">
+						<div id="sign_in">
+				<a href="/member-sign-in-form.html?q=signingin">Sign in</a>
+			</div>
+					</div>
+	</div>
+</div>
+<!--***** Homepage Banner / Branding *****-->
+<div id="banner"><div id="ieee_mb"><a href="http://www.ieee.org/" title="Go to IEEE Home"><img src="/templates/ieee-tatemplate3.1p/images/ieee_mb_and_wedge_0.png" alt="IEEE Home"/></a></div><div id="join_ou"><a href="/join-cis.html">Join CIS</a></div>
+<img id="bannerImage" src="/images/files/template/cis-header-20111113.jpg" alt="IEEE Computational Intelligence Society" usemap="#bannerImageMap"/><map id="bannerImageMap" name="bannerImageMap"><area shape="rect" coords="0,0,700,125" href="/" alt="Home" title="Go to Homepage"/></map></div>
+
+<!-- Search and Social -->
+<div id="search_and_social">
+	<div id="search">
+		<form action="index.php" method="post">
+			<div id="search-content"><label for="searchbox">Search IEEE Computational Intelligence Society</label></div>
+			<div class="left"><input type="text" name="searchword" size="25" id="searchbox" /></div>
+			<div class="left"><input type="image" src="/templates/ieee-tatemplate3.1p/images/button_search.gif" id="searchbutton" name="searchbutton" alt="Search" title="Search" /></div>
+			<input type="hidden" name="task" value="search"/>
+			<input type="hidden" name="limit" value="100000"/>
+			<input type="hidden" name="option" value="com_search"/>
+		</form>
+	</div>
+	<!-- Social Media Icons -->
+	<div id="socialmedia">
+		<div id="socialmediaicons">
+			Follow:
+			<a href="http://www.facebook.com/IEEE.CIS" target="_blank"><img src="/templates/ieee-tatemplate3.1p/images/icon_facebook.gif" width="23" height="23" alt="Facebook" title="Facebook" class="socialicon" /></a>
+			<a href="http://twitter.com/#!/ieeecis" target="_blank"><img src="/templates/ieee-tatemplate3.1p/images/icon_twitter.gif" width="23" height="23" alt="Twitter" title="Twitter" class="socialicon" /></a>
+			<a href="http://www.linkedin.com/groups?home=&amp;gid=75152" target="_blank"><img src="/templates/ieee-tatemplate3.1p/images/icon_linkedin.gif" width="23" height="23" alt="LinkedIn" title="LinkedIn" class="socialicon" /></a>
+							<img src="/templates/ieee-tatemplate3.1p/images/icon_social_separator.gif" width="3" height="23" alt="Separate the follow links from the share link." class="socialicon" />
+			<span id="sharethis_label">Share:<a title="Share" class="addthis_button" style="text-decoration: none;" ><img class="stbutton" width="24" border="0" alt="Share" src="/templates/ieee-tatemplate3.1p/images/icon_share.gif"/></a></span>
+		</div>
+	</div>
+</div>
+
+<!--***** Menu - Primary *****-->
+<div id="menu_primary">
+	<ul class="menu_primary">
+	<li id="current" class="active_item"><a href="http://cis.ieee.org/">Home</a></li>
+
+	<li><a href="/about-cis.html">About CIS</a></li>
+
+	<li><a href="/awards.html">Awards</a></li>
+
+	<li><a href="/conferences.html">Conferences</a></li>
+
+	<li><a href="/history.html">History</a></li>
+
+	<li><a href="/education.html">Education</a></li>
+
+	<li><a href="/membership.html">Membership</a></li>
+
+	<li><a href="/publications.html">Publications</a></li>
+
+	<li><a href="/technical-activities.html">Technical Activities</a></li>
+
+	<li><a href="http://www.zazzle.com/ieee_cis">CIS Store</a></li>
+</ul>
+</div>
+
+<!-- Start of Page Content -->
+<div id="page_content">
+
+
+<!--***** Homepage Page Body *****-->
+
+<!--begin home page row one-->
+
+<div id="hp_row_one">
+<div id="hpR1P1" class="hp60">
+<!--begin module content-->
+<div class="ieeemodcontainer">
+<div class="ieeemodwrapper">
+<!-- BEGIN IEEE IMAGE ROTATOR MODULE -->
+
+<div >
+  <div id='slideshowControls2_28' class='slideshowControlsTop_28'>
+    <img id='slideshowPrev2_28' class='slidePrev_28' src='./modules/mod_IEEEImageRotator/images/pager_prev.png' alt='Previous' />
+    <img id='slideshowPause2_28' class='slidePause_28' src='./modules/mod_IEEEImageRotator/images/pager_pause.png' alt='Pause' />
+    <img id='slideshowNext2_28' class='slideNext_28' src='./modules/mod_IEEEImageRotator/images/pager_next.png' alt='Next' /> 
+    <div id='slideshowPager2_28' class='slidePager_28'></div> 
+  </div> 
+  <div class='slideshowContainer_28'>
+    <style type='text/css'>
+      .slideshowControlsTop_28{
+        border: 0px solid #BDBDBD;
+        border-bottom: 1px solid #BDBDBD;
+        padding: 1px 0px;
+        background-color: #EFEFEF;
+        background-image: url('./modules/mod_IEEEImageRotator/images/control_bkgd.png');
+        height: 20px;
+        margin: 0px auto;
+        width: 100%;
+        line-height: 20px;
+      }
+
+      .slidePager_28 a{
+        color: #333333;
+        padding-top: 1px;
+        display: block;
+        background-image: url('./modules/mod_IEEEImageRotator/images/pager.png');
+        background-repeat: no-repeat;
+        float: left;
+        font-weight: bold;
+        font-size: .9em;
+        padding: 0px;
+        height: 20px;
+        width: 25px;
+        text-indent: 6px;
+        text-decoration: none;
+      }
+
+      .slidePager_28 a.activeSlide{
+        background-image:url('./modules/mod_IEEEImageRotator/images/pager_active.png');
+      }
+
+      .slideImage_28{
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 234px;
+        border: 0;
+      }
+
+      .slide_28{
+        height: 290px;
+        width: 100%;
+      }
+
+      .captionContent_28{
+        width: auto;
+        height: 100%;
+        border: 0px;
+        padding: 0px;
+      }
+
+      .slideCaptionBottom_28{
+        background-image: url('./modules/mod_IEEEImageRotator/images/caption_bkgd.png');
+        position: absolute;
+        left: 0;
+        border-style: solid;
+        border-color: #CDCCCD;
+        bottom: 0;
+        border-width: 1px 0px 0px 0px;
+        height: 55px;
+        color: #333333;
+        width: 100%;
+        overflow: hidden;
+      }
+
+
+      /* Cycle / Slide Show Module Styles */
+      .slideshowContainer_28{
+        background-color: #ededed;
+        border-style: solid;
+        border-color: #bdbcbd;
+        margin: 0px auto;
+        height:290px;
+        width: 100%;
+      }
+
+      .slidePager_28,.slideNext_28, .slidePause_28, .slidePrev_28{
+        cursor: pointer;
+        height: 20px;
+      }
+
+      .slidePager_28{
+        float: right;
+      }
+
+      .slideNext_28, .slidePause_28, .slidePrev_28{
+        float: left;
+      }
+    </style>    <div id='slideshow2_28' class='slideshow_28'>
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/ssci15.jpg' alt='IEEE Symposium Series on Computational Intelligence 2015 at Cape Town, South AfricaIEEE Symposium Series on Computational Intelligence 2015 at Cape Town, South Africa' />
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>SSCI 2015-IEEE Symposium Series on Computational Intelligence 2015 at Cape Town, South Africa</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/wcci16.jpg' alt='IEEE World Congress on Computational Intelligence 2016 at Vancouver, Canada IEEE World Congress on Computational Intelligence 2016 at Vancouver, Canada' />
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>WCCI 2016-IEEE World Congress on Computational Intelligence 2016 at Vancouver, Canada</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/ssci16.jpg' alt='IEEE Symposium Series on Computational Intelligence 2016 at Athens, Greece' />
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>SSCI 2016-IEEE Symposium Series on Computational Intelligence 2016 at Athens, Greece</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/cec15-kagami-biraki.jpg' alt='General Chairs perform traditional breaking of a sake cask at the reception' />
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>CEC 2015-General Chairs perform traditional breaking of a sake cask at the reception</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/cec15-wciyp.jpg' alt='Joint reception for WCI, students, and young professionals' />
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>CEC 2015-Joint reception for WCI, students, and young professionals</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/ssci14-gcvppp.jpg' alt='IEEE CIS Past President Marios M. Polycarpou, Conference VP Bernadette Bouchon-Meunier and General Chair Haibo He IEEE CIS Past President Marios M. Polycarpou, Conference VP Bernadette Bouchon-Meunier and General Chair Haibo He' />
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>SSCI 2014-IEEE CIS Past President Marios M. Polycarpou, Conference VP Bernadette Bouchon-Meunier and General Chair Haibo He</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/wcci14-chairs.jpg' alt='IEEE CIS President Xin Yao presents certificates to General Chairs and Program Chairs' />
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>WCCI 2014-IEEE CIS President Xin Yao presents certificates to General Chairs and Program Chairs</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+      <!-- ****************** Begin Content ****************** -->
+      <div class='slide_28'>
+        <a href='http://www.ieee.org/about/initiatives/2030_challenge.html?WT.mc_id=nic_spromo1'><img class='slideImage_28' src='http://cis.ieee.org/images/files/slideshow/nic_2030_challenge_2504x875.jpg' alt='The IEEE New Initiatives Committee to provide up to $40,000 in seed grant funding for innovative, creative, and potentially disruptive ideas that serve engineers and technology professionals working in industry.' /></a>
+        <div class='slideCaptionBottom_28'>
+          <div class='ieeemodcontent'>
+           <div class='captionContent_28'>The IEEE New Initiatives Committee to provide up to $40,000 in seed grant funding for innovative, creative, and potentially disruptive ideas that serve engineers and technology professionals working in industry.</div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************  End Content  ****************** -->
+    </div>
+  </div>
+  <script type='text/javascript'>
+    ieeejquery(document).ready(function() {
+      ieeejquery('#slideshow2_28').cycle({
+        fx: 'fade',
+        speed: 750,
+        timeout: 6000,
+        next: '#slideshowNext2_28',
+        prev: '#slideshowPrev2_28',
+        pager: '#slideshowPager2_28',
+        pause: 1
+      });
+    });
+    ieeejquery('#slideshowPause2_28').click(function() {
+      var src = ieeejquery(this).attr('src');
+      if (src == './modules/mod_IEEEImageRotator/images/pager_pause.png') {
+        ieeejquery('#slideshow2_28').cycle('pause');
+        ieeejquery(this).attr('src','./modules/mod_IEEEImageRotator/images/pager_play.png');
+        ieeejquery(this).attr('alt','Play');
+      } else if (src == './modules/mod_IEEEImageRotator/images/pager_play.png') {
+        ieeejquery('#slideshow2_28').cycle('resume', true);
+        ieeejquery(this).attr('src','./modules/mod_IEEEImageRotator/images/pager_pause.png');
+        ieeejquery(this).attr('alt','Pause');
+      }
+    });
+  </script>
+  <noscript></noscript>
+</div>
+<!-- END IEEE IMAGE ROTATOR MODULE --><!-- BEGIN IEEE ANNOUNCEMENT MODULE -->
+<div id="homepage_announcements" >
+  <h2>News & Announcements</h2><div id="announcementsContainer_61">  <div class='announcement_item_clear'>
+<div class="announcement_title"><h3>2016 IEEE CIS Awards Program</h3></div><div class="announcement_content"><p>It is with distinct pleasure to announce the 2016 IEEE CIS Awards Program approved by the AdCom at its meeting in Istanbul, Turkey on August 2, 2015. The awards to be conferred in 2016 include:</p>
+<p>2016 IEEE CIS Neural Networks Pioneer award to Marios M. Polycarpou for pioneering the use of neural networks and learning systems in monitoring and control</p>
+<p>2016 IEEE CIS Neural Networks Pioneer award to Jürgen Schmidhuber for pioneering contributions to deep learning and neural networks</p>
+<p>2016 IEEE CIS Fuzzy Systems Pioneer award to Frederick E. Petry for the development of approaches to modeling uncertainty in databases and spatial data systems</p>
+<p>2016 IEEE CIS Evolutionary Computation Pioneer award to Marco Dorigo for the development of the ant colony optimization methodology</p>
+<p>2016 IEEE CIS Meritorious Service award to Gary Fogel for service to the IEEE Computational Intelligence Society</p>
+<p>2016 IEEE CIS Outstanding TNNLS Paper award to “Just-in-Time Classifiers for Recurrent Concepts” by Cesare Alippi, Giacomo Boracchi and Manuel Roveri, <em>IEEE Transactions on Neural Networks and Learning Systems</em>, Vol. 24, No. 4, pp. 620- 634, 2013</p>
+<p>2016 IEEE CIS Outstanding TNNLS Paper award to “Rapid Feedforward Computation by Temporal Encoding and Learning with Spiking Neurons” by Qiang Yu, Huajin Tang, Kay Chen Tan and Haizhou Li, <em>IEEE Transactions on Neural Networks and Learning Systems</em>, Vol. 24, No. 10, pp. 1539-1552, 2013</p>
+<p>2016 IEEE CIS Outstanding TFS Paper award to “A New Approach to Interval-Valued Choquet Integrals and the Problem of Ordering in Interval-Valued Fuzzy Set Applications” by Humberto Bustince, Mikel Galar, Benjamin Bedregal, Anna Kolesárová and Radko Mesiar, <em>IEEE Transactions on Fuzzy Systems</em>, Vol. 21, No. 6, pp. 1150-1162, 2013</p>
+<p>2016 IEEE CIS Outstanding TEVC Paper award to “Evolving Diverse Ensembles Using Genetic Programming for Classification with Unbalanced Data” by Urvesh Bhowan, Mark Johnston, Mengjie Zhang and Xin Yao, <em>IEEE Transactions on Evolutionary Computation</em>, Vol. 17, No. 3, pp. 368-386, 2013</p>
+<p>2016 IEEE CIS Outstanding TAMD Paper award to “Young Children’s Dialogical Actions: The Beginnings of Purposeful Intersubjectivity” by Joanna Rączaszek-Leonardi, Iris Nomikou and Katharina J. Rohlfing, <em>IEEE Transactions on Autonomous Mental Development</em>, Vol. 5, No. 3, pp. 210-221, 2013</p>
+<p>2016 IEEE CIS Outstanding TCIAIG Paper award to “Crowd-Sourcing the Aesthetics of Platform Games” by Noor Shaker, Georgios N. Yannakakis and Julian Togelius, <em>IEEE Transactions on Computational Intelligence and AI in Games</em>, Vol. 5, No. 3, pp. 276-290, 2013</p>
+<p>2016 IEEE CIS Outstanding CIM Paper award to “Image Segmentation Using Extended Topological Active Nets Optimized by Scatter Search” by Nicola Bova, Óscar Ibáñez and Óscar Cordón, <em>IEEE Computational Intelligence Magazine</em>, Vol. 8, No. 1, pp. 16-32, 2013</p>
+<p>2016 IEEE CIS Outstanding Chapter award to Xiamen Chapter</p>
+<p>2016 IEEE CIS Outstanding PhD Dissertation award to Wei-Neng Chen from Sun Yat-Sen University, China for his dissertation “Set-Based Discrete Particle Swarm Optimization and its Application to Project Resource Scheduling” in 2012</p>
+<p>2016 IEEE CIS Outstanding Early Career award to Yun Fu for contributions to neural computing, manifold learning, and visual intelligence</p>
+<p>Please join me to congratulate these awardees for their significant contributions and meritorious service in the field of computational intelligence.</p>
+<p>Gary G. Yen, Chair<br /> CIS Awards Committee<br /> Oklahoma State University<br /> School of Electrical and Computer Engineering<br /> Stillwater, OK 74078-5032, USA<br /> phone: (+1 405) 744 7743  fax: (+1 405) 744 9198<br /> email: <a href="/gyen.a_t.okstate.edu">gyen.a_t.okstate.edu</a></p></div></div>
+  <div class='announcement_item'>
+<div class="announcement_title"><h3>Prof. RONALD R. YAGER wins the 2016 IEEE Frank Rosenblatt Award</h3></div><div class="announcement_content"><p>Warmest congratulations to Prof. RONALD R. YAGER (LFIEE), Professor, Iona College, New York, New York, USA, for winning the 2016 IEEE Frank Rosenblatt Award "For contributions to the theory of fuzzy sets and systems." Prof. Yager is a CIS member and currently also a member of the CIS Administrative Committee.</p></div></div>
+  <div class='announcement_item_clear'>
+<div class="announcement_title"><h3>Celebration of the 50th Anniversary of Fuzzy Set Theory, free participation, August 3-4, 2015, Istanbul</h3></div><div class="announcement_content"><p>The IEEE Computational Intelligence Society is celebrating the 50th Anniversary of the pioneering work of Lotfi Zadeh introducing the concept of fuzzy sets. This celebration will take place in Kadir Has University, Istanbul, Turkey, during August 3-4, 2015.</p>
+<p>This event—including plenary lectures, an exhibition on the history of fuzzy logic, and a panel on its future—is collocated with FUZZ-IEEE 2015. Participation in this celebration is free. Capacity is limited and requests for attendance will be considered on a first-come-first served basis. Please register at <a href="http://doodle.com/6p483ymbsw8972t7" target="_blank">http://doodle.com/6p483ymbsw8972t7</a>.</p>
+<p>The program is given at <a href="http://fuzzieee2015.org/the-fiftieth-anniversary-events/" target="_blank">http://fuzzieee2015.org/the-fiftieth-anniversary-events/</a>.</p>
+<p>Please participate in this exceptional event!</p></div></div>
+  <div class='announcement_item'>
+<div class="announcement_title"><h3>Call for proposals on Membership Promotion Activities from Chapters</h3></div><div class="announcement_content"><p>The IEEE CIS solicits proposals of Chapter initiatives for promoting IEEE CIS membership. Chapter chairs or officers are encouraged to submit a proposal from July 2015 to October 2015.</p>
+<p>For details please refer to the <a target="_blank" href="/images/files/Documents/cfp-chapters.pdf">CFP-chapters</a>.</p></div></div>
+  <div class='announcement_item_clear'>
+<div class="announcement_title"><h3>IEEE CIS: A vibrant rising society!</h3></div><div class="announcement_content"><p>According to the April 2015 IEEE Membership Development Report, CIS has grown <strong>16.9%</strong> with respect to April 2014. To learn the benefits of being a member of CIS, please visit <a href="/membership.html">http://cis.ieee.org/membership.html</a>.</p></div></div>
+  <div class='announcement_item'>
+<div class="announcement_title"><h3>Call for Nominations for IEEE CIS AdCom Elections - Term 2016-2018</h3></div><div class="announcement_content"><p>Each year, five members of the IEEE Computational Intelligence Society are elected by the voting members of the Society to serve on the AdCom for a 3-year term. The AdCom represents the members of the Society, defines the strategic goals of the Society, approves the plans for the Society's activities, approves the Society's budget, amendments to the Constitution and Bylaws, appoints Society officers, and authorizes the expenditure of Society funds. Members of the AdCom are expected to attend annual meetings and be involved in Society activities.</p>
+<p>Eligibility: All members of the Society of grade higher than Student member and in good standing at the time of the election are eligible to be nominated to the AdCom. Each nominee should be consulted prior to the nomination to make sure that he/she is willing to serve. Self-nominations are acceptable.</p>
+<p>There are two ways to nominate a candidate:</p>
+<p>1) Via nomination through the IEEE CIS Nominations Committee. Please email the following: (i) the name and full contact information of the nominee and (ii) a 250-word vita of the nominee, to the IEEE CIS Nominations Committee Chair, Marios M. Polycarpou (<a href="mailto:mpolycar@ucy.ac.cy">mpolycar@ucy.ac.cy</a>), with cc to the IEEE CIS Executive Administrator Jo-Ellen B. Snyder (<a href="mailto:j.e.snyder@ieee.org">j.e.snyder@ieee.org</a>). The deadline for submitting nominations to the above email addresses is <strong>June 26, 2014</strong>. The IEEE CIS Nominations Committee will select the members to be put on the ballot.</p>
+<p>2) Via petition. A valid nomination by petition from the Society's members is guaranteed to put a candidate on the ADCOM electoral ballot. Nominations by petition in 2015 must include at least 134 valid signatures of Society members and need to be submitted in writing (no fax/emails acceptable) to: IEEE CIS President, Xin Yao, c/o Jo-Ellen B. Snyder, CIS Executive Administrator; IEEE Computational Intelligence Society; 445 Hoes Lane; P.O. Box 1331, Piscataway, NJ  08855, USA. Alternatively, petitions and signatures can be also submitted electronically through a petition web site established and managed by the IEEE. If you are interested in opening a petition web site, please contact Jo-Ellen B. Snyder, IEEE CIS Executive Administrator (<a href="mailto:j.e.snyder@ieee.org">j.e.snyder@ieee.org</a>).</p></div></div>
+  <div class='announcement_item_clear'>
+<div class="announcement_title"><h3>Call for Nominations / Applications for the position of the next Editor-in-Chief of IEEE TNNLS</h3></div><div class="announcement_content"><p><em>IEEE Transactions on Neural Networks and Learning Systems</em> (TNNLS) is a flagship publication of the IEEE Computational Intelligence Society (CIS), which enjoys a privileged position among the researchers in Neural Networks, Learning Systems, and related areas. The details about the transactions can be found at: <a href="/ieee-transactions-on-neural-networks-and-learning-systems.html">http://cis.ieee.org/ieee-transactions-on-neural-networks-and-learning-systems.html</a>.</p>
+<p>The tenure of the present Editor will be over on December 31, 2015. IEEE CIS Executive Committee has formed an Adhoc Search Committee for recommending to CIS Administrative Committee a suitable candidate to serve as the next EIC of TNNLS. The Search Committee is seeking nominations /applications for this. The nominees/applicants should be dedicated volunteers with outstanding research profiles and extensive editorial experience. The nomination/application package should include complete CV along with separate description on each of the following items: Vision Statement; Editorial Experience; IEEE-CIS Publication Experience; IEEE CIS Volunteer Experience; Leadership Skills; Institutional Support; Networking with Community; Challenges ahead with the publication, if any, and how to deal with them; Why do the candidate considers himself/herself fit for this position?</p>
+<p>The nomination/application package should be emailed as a single PDF at <a href="mailto:nrpal59@gmail.com">nrpal59@gmail.com</a> by <strong>June 20, 2015</strong>.</p>
+<p>Nikhil R. Pal<br /> On behalf of the Search Committee</p></div></div>
+  <div class='announcement_item'>
+<div class="announcement_title"><h3>UPDATE</h3></div><div class="announcement_content"><div id="_mcePaste">As a technology-driven society, CIS leads and promotes the use <span style="font-size: 12px; line-height: 1.4em;">of the technologies. From 1 January 2015, all complimentary </span><span style="font-size: 12px; line-height: 1.4em;">copies of the IEEE Computational Intelligence Magazine (CIM) to </span><span style="font-size: 12px; line-height: 1.4em;">our members will be delivered electronically only. However, </span><span style="font-size: 12px; line-height: 1.4em;">paper copies are still available, for a small fee ($15.00), to </span><span style="font-size: 12px; line-height: 1.4em;">those who need them. As a society, we are making our small </span><span style="font-size: 12px; line-height: 1.4em;">contributions to the environment by cutting the use of paper.</span></div></div></div>
+  <div class='announcement_item_clear'>
+<div class="announcement_title"><h3>Archived News</h3></div><div class="announcement_content"><p> </p>
+<p><a href="/archived-news.html">Click here for previous announcements!</a></p></div></div>
+</div></div><!-- END IEEE ANNOUNCEMENT MODULE -->
+<!-- BEGIN IEEE ANNOUNCEMENT MODULE -->
+<div id="homepage_featured_conference" >
+  <h2>Featured Conference</h2><div id="announcementsContainer_63">  <div class='announcement_item_clear'>
+<div class="announcement_title"><h3>2016 IEEE World Congress on Computational Intelligence (IEEE WCCI 2016)</h3></div><div class="announcement_content"><p><img src="/images/files/conferencelogos/wcci16-banner-s.jpg" width="500" height="76" alt="wcci16-banner-s" /></p>
+<p>The IEEE WCCI 2016 will be held from 25-29 July 2016 at the Vancouver Convention Centre, Vancouver, Canada. It will host three conferences: The 2016 International Joint Conference on Neural Networks (IJCNN 2016), the 2016 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE 2016), and the 2016 IEEE Congress on Evolutionary Computation (IEEE CEC 2016) under one roof. IEEE WCCI 2016 encourages cross-fertilization of ideas among the three big areas and provides a forum for intellectuals from all over the world to discuss and present their research findings on computational intelligence.</p>
+<p>The regular registration includes attendance of any sessions of any technical meetings, a complete set of proceedings, coffee breaks and the banquet. The IEEE WCCI 2016 will feature tutorials, keynote speakers, invited speakers, competitions, exhibits etc. The IEEE CIS usually offers a limited number of travel grants to students and travel grants to researchers from developing countries who are presenting a paper. Best paper awards will also be presented during the congress.</p>
+<ul>
+<li>* Special Session & Workshop Proposals Deadline:  15 November 2015</li>
+<li>* Competition & Tutorial Proposals Deadline:  15 December 2015</li>
+<li>* Paper Submission Deadline:  15 January 2016</li>
+<li>* Paper Acceptance Notification Date:  15 March 2016</li>
+<li>* Final Paper Submission & Early Registration Deadline:  15 April 2016</li>
+<li>* IEEE WCCI 2016:  25-29 July 2016</li>
+</ul>
+<p>For more information on the congress, please visit: <a href="http://www.wcci2016.org/" target="_blank">www.wcci2016.org</a>.</p></div></div>
+  <div class='announcement_item'>
+<div class="announcement_title"><h3>2016 IEEE Symposium Series on Computational Intelligence (IEEE SSCI 2016)</h3></div><div class="announcement_content"><p><img src="/images/files/conferencelogos/ssci2016-banner-s.jpg" width="500" height="116" alt="ssci2016-banner-s" /></p>
+<p>The 2016 IEEE Symposium Series on Computational Intelligence (IEEE SSCI 2016) will be held in Athens, Greece, a city full of arts, philosophy and historical attractions. SSCI is a flagship annual international conference on computational intelligence sponsored by the IEEE Computational Intelligence Society, promoting all aspects of theory, algorithm design, applications and related emerging techniques. As a tradition, IEEE SSCI 2016 will co-locate a large number of exciting symposiums, each dedicated to a special topic within or related to computational intelligence, thereby providing a unique platform for promoting cross-fertilization and collaboration. SSCI 2016 will be featured by cross-symposium tutorials, keynote speeches, panel discussions, PhD consortiums, oral presentations and poster sessions. Student grants, Best paper Awards and Student Best Paper Award will be given.</p>
+<p>Further information about SSCI 2016 can be found at: <a href="http://ssci2016.cs.surrey.ac.uk/" target="_blank">http://ssci2016.cs.surrey.ac.uk/</a></p></div></div>
+</div></div><!-- END IEEE ANNOUNCEMENT MODULE -->
+<!-- BEGIN IEEE ANNOUNCEMENT MODULE -->
+<div id="homepage_featured_paper" >
+  <h2>Featured Paper</h2><div id="announcementsContainer_62">  <div class='announcement_item_clear'>
+<div class="announcement_title"><h3>Selected article from IEEE Transactions on Fuzzy Systems</h3></div><div class="announcement_content"><p><img src="/images/files/publications/featured/featured-publication-tfs.jpg" alt="featured-publication-tfs" style="margin: 20px 15px 10px 0px; float: left;" width="180" /><br /><strong>Observer-Biased Fuzzy Clustering</strong>, by P. Fazendeiro and J. V. de Oliveira, <em>IEEE Transactions on Fuzzy Systems</em>, 23(1):85-97, 2015.</p>
+<p>DOI: 10.1109/TFUZZ.2014.2306434<br /> URL: <a target="_blank" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6740819">http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6740819</a></p>
+<p>As generated by clustering algorithms, clusterings (or partitions) are hypotheses on data explanation which are better evaluated by experts from the application domain. In general, clustering algorithms allow a limited usage of domain knowledge about the cluster formation process. In this study, we propose both a design technique and a new partitioning-based clustering algorithm which can be used to assist the data analyst while looking for a set of meaningful clusters, i.e., clusters that actually correspond to the underlying data structure. Following an observer metaphor according to which the perception of a group of objects depends on the observer position—the closer an observer is from an image more details (s)he perceives—we resort to shrinkage to incorporate a regularization term, accounting for the observation point, within the objective function of an otherwise unbiased clustering algorithm. This technique allows our resulting biased algorithm to generate a set of reasonable partitions, i.e., partitions validated by a given cluster validity index, corresponding to views of data with different levels of granularity (levels of detail) in different regions of the data space. For the illustration of the design technique, we adopted the fuzzy c-means (FCM) algorithm as the unbiased clustering algorithm and include a convergence theorem assuring that changing the point of observation in the corresponding biased algorithm FCM with focal point (FCMFP) does not jeopardize its convergence. Experimental studies on both synthetic and real data are included to illustrate the usefulness of the approach. In addition, and as a convenient side effect of using shrinkage, the experimental results suggest that our biased algorithm (FCMFP) not only seems to scale better than the successive runs of the unbiased one (FCM) but on the average, seems to produce clusters exhibiting higher validity index values as well. In addition, less sensitivity to initialization was observed for the biased algorithm when compared with the unbiased one.</p></div></div>
+  <div class='announcement_item'>
+<div class="announcement_title"><h3>Selected article from IEEE Transactions on Computational Intelligence and AI in Games</h3></div><div class="announcement_content"><p><img width="180" style="margin: 10px 15px 15px 0px; float: left;" alt="featured-publication-tciaig" src="/images/files/publications/featured/featured-publication-tciaig.jpg" /><strong>Learning-Based Procedural Content Generation</strong>, by J. Roberts and K. Chen, <em>IEEE Transactions on Computational Intelligence and AI in Games</em>, 7(1):88-101, 2015.</p>
+<p>DOI: 10.1109/TCIAIG.2014.2335273<br /> URL: <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6853332" target="_blank">http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6853332</a></p>
+<p>Procedural content generation (PCG) has recently become one of the hottest topics in computational intelligence and AI game research. While some substantial progress has been made in this area, there are still several challenges ranging from content evaluation to personalized content generation. In this paper, we present a novel PCG framework based on machine learning, named learning-based procedure content generation (LBPCG), to tackle a number of challenging problems. By exploring and exploiting information gained in game development and public player test, our framework can generate robust content adaptable to end-user or target players on-line with minimal interruption to their gameplay experience. As the data-driven methodology is emphasized in our framework, we develop learning-based enabling techniques to implement the various models required in our framework. For a proof of concept, we have developed a prototype based on the classic open source first-person shooter game, Quake. Simulation results suggest that our framework is promising in generating quality content.</p></div></div>
+</div></div><!-- END IEEE ANNOUNCEMENT MODULE -->
+
+</div>
+</div>
+<!--end module content-->
+</div>
+<div id="hpR1P2" class="hp40">
+<!--begin module content-->
+<div class="ieeemodcontainer">
+<div class="ieeemodwrapper">
+<!-- BEGIN IEEE TAB MODULE -->
+
+    <div id='featured_publications'>
+      <h2 class='tab_title_60'>Featured CIS Publications</h2>
+      <ul class='tabs tabs_60'>
+        <li><a href='#tab_60_1'>TNNLS</a></li>
+        <li><a href='#tab_60_2'>TFS</a></li>
+        <li><a href='#tab_60_3'>TEVC</a></li>
+        <li><a href='#tab_60_4'>TAMD</a></li>
+        <li><a href='#tab_60_5'>TCIAIG</a></li>
+        <li><a href='#tab_60_6'>CI Magazine</a></li>
+      </ul>
+      <div class='tab_container tab_container_60'>
+<!-- START TAB 1 -->
+      <div id='tab_60_1' class='tab_content tab_content_60'>
+<div class="hp-featured-publication-content">
+<div class="hp-featured-publication-overview"><a href="/ieee-transactions-on-neural-networks-and-learning-systems.html"><img style="margin: 10px 10px 0px; float: left;" src="/images/files/publications/featured/featured-publication-tnnls.jpg" alt="IEEE Transactions on Neural Networks and Learning Systems" width="135" /></a> 
+<ul style="float: right; width: 170px; margin-top: 6px;">
+<li><a href="/ieee-transactions-on-neural-networks-and-learning-systems.html">About the Publication</a></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="xplore">Access online (IEEE Xplore)</a></li>
+<li><a href="/component/content/article/7/136-ieee-transactions-on-neural-networks-and-learning-systems-information-for-authors-.html">Information for Authors</a></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/tocalerts_list.jsp">Add Journal to my IEEE Xplore Alerts</a></li>
+</ul>
+</div>
+<div class="hp-featured-publication-xplorefeed">
+<h4 style="margin: 0px; padding: 5px; border-bottom: 1px solid #bdbdbd;">Recent articles online (IEEE Xplore)</h4>
+<div style="border-radius: 0px 0px 0px 5px; background-color: #ffffff; height: 165px; overflow-x: hidden; overflow-y: auto;">		<div class="moduletable">
+					
+
+    <div class="feed_23">
+      <ul class="feed_23">
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7206803" target="_blank">IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS publication information</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6910289" target="_blank">Globally Stable Adaptive Backstepping Neural Network Control for Uncertain Strict-Feedback Systems With Tracking Accuracy Known <italic>a Priori</italic></a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6913554" target="_blank">Progressive Learning Machine: A New Approach for General Hybrid System Approximation</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6920071" target="_blank">Artificial Electrical MorrisLecar Neuron</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6924800" target="_blank">Distributed Containment Control for Multiple Unknown Second-Order Nonlinear Systems With Application to Networked Lagrangian Systems</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6924775" target="_blank">Training Recurrent Neural Networks With the LevenbergMarquardt Algorithm for Optimal Control of a Grid-Connected Converter</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6926841" target="_blank">Learning Stable Multilevel Dictionaries for Sparse Representations</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6928428" target="_blank">Scalable Nonparametric Low-Rank Kernel Learning Using Block Coordinate Descent</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6932473" target="_blank">Fault Identification in Distributed Sensor Networks Based on Universal Probabilistic Modeling</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6932476" target="_blank">A Kernel Classification Framework for Metric Learning</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6933869" target="_blank">Feedforward Categorization on AER Motion Events Using Cortex-Like Features in a Spiking Neural Network</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6945907" target="_blank">MTC: A Fast and Robust Graph-Based Transductive Learning Method</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6948269" target="_blank">Context Dependent Encoding Using Convolutional Dynamic Networks</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6948375" target="_blank">An Improved TA-SVM Method Without Matrix Inversion and Its Fast Implementation for Nonstationary Datasets</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6949691" target="_blank">Learning With Mixed Hard/Soft Pointwise Constraints</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6949664" target="_blank">Adaptive Synchronization of Memristor-Based Neural Networks with Time-Varying Delays</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6955804" target="_blank">Passivity and Passification of Memristor-Based Recurrent Neural Networks With Additive Time-Varying Delays</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6963487" target="_blank">Two Efficient Twin ELM Methods With Prediction Interval</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6965621" target="_blank">Dynamic Infinite Mixed-Membership Stochastic Blockmodel</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6975243" target="_blank">Dynamic Surface Control Using Neural Networks for a Class of Uncertain Nonlinear Systems With Input Saturation</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6991549" target="_blank">Robust Novelty Detection via Worst Case CVaR Minimization</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6987269" target="_blank">A Distributed Approach Toward Discriminative Distance Metric Learning</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6987360" target="_blank">Incorporating Wind Power Forecast Uncertainties Into Stochastic Unit Commitment Using Neural Network-Based Prediction Intervals</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6985615" target="_blank">Group Factor Analysis</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6985646" target="_blank">Ficks Law Assisted Propagation for Semisupervised Learning</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6994284" target="_blank">Application of Reinforcement Learning Algorithms for the Adaptive Computation of the Smoothing Parameter for Probabilistic Neural Network</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6937190" target="_blank">Variational Bayesian Inference Algorithms for Infinite Relational Model of Network Data</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6940303" target="_blank">Hyperparameter Selection for Gaussian Process One-Class Classification</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6945381" target="_blank">Properties and Performance of Imperfect Dual Neural Network-Based <inline-formula> <tex-math notation="LaTeX">$k$ </tex-math></inline-formula>WTA Networks</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6945382" target="_blank">A Unified Framework for Data Visualization and Coclustering</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6960906" target="_blank">Discriminative Hierarchical K-Means Tree for Large-Scale Image Classification</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6971194" target="_blank">Retargeted Least Squares Regression Algorithm</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7000606" target="_blank">Online Sequential Extreme Learning Machine With Kernels</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7206802" target="_blank">IEEE Computational Intelligence Society Information</a></li>
+<li class="item_from_feed_23"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7206792" target="_blank">IEEE Transactions on Neural Networks information for authors</a></li>      </ul>
+    </div>		</div>
+	</div>
+</div>
+</div>
+      </div>
+<!-- END TAB 1 -->
+
+<!-- START TAB 2 -->
+      <div id='tab_60_2' class='tab_content tab_content_60'>
+<div class="hp-featured-publication-content">
+<div class="hp-featured-publication-overview"><a href="/ieee-transactions-on-fuzzy-systems.html"><img style="margin: 0px 10px; margin-top: 10px; float: left;" src="/images/files/publications/featured/featured-publication-tfs.jpg" alt="IEEE Transactions on Fuzzy Systems" width="149" /></a> 
+<ul style="float: right; width: 170px; margin-top: 6px;">
+<li><a href="/ieee-transactions-on-fuzzy-systems.html">About the Publication</a></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91" target="xplore">Access online (IEEE Xplore)</a></li>
+<li><a href="/component/content/article/7/128-ieee-transactions-on-fuzzy-systems-information-for-authors.html">Information for Authors</a></li>
+</ul>
+</div>
+<div class="hp-featured-publication-xplorefeed">
+<h4 style="margin: 0px; padding: 5px; border-bottom: 1px solid #bdbdbd;">Recent articles online (IEEE Xplore)</h4>
+<div style="border-radius: 0px 0px 0px 5px; background-color: #ffffff; height: 165px; overflow-x: hidden; overflow-y: auto;">		<div class="moduletable">
+					
+
+    <div class="feed_38">
+      <ul class="feed_38">
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7174618" target="_blank">IEEE Transactions on Fuzzy Systems publication information</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824798" target="_blank">Fuzzy Adaptive Output Feedback Control of MIMO Nonlinear Systems With Partial Tracking Errors Constrained</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824821" target="_blank">Time-Validating-Based Atanassovs Intuitionistic Fuzzy Decision Making</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824765" target="_blank">Gain Tuning of Fuzzy PID Controllers for MIMO Systems: A Performance-Driven Approach</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824811" target="_blank">A Novel Approach to Building a Robust Fuzzy Rough Classifier</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824795" target="_blank">Dynamical Models of Stock Prices Based on Technical Trading Rules Part I: The Models</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824779" target="_blank">Fuzzy <inline-formula>  </inline-formula>-Means Clustering and Its Application to a Fuzzy Rule-Based Classifier: Toward Good Generalization and Good Interpretability</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824841" target="_blank">Minimax Probability TSK Fuzzy System Classifier: A More Transparent and Highly Interpretable Classification Model</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824788" target="_blank">Stability Analysis of TS Fuzzy Control Systems by Using Set Theory</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6824838" target="_blank">On the Transformation of Fuzzy Measures to the Power Set and Its Role in Determining the Measure of a Measure</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6827946" target="_blank">Clustering Granular Data and Their Characterization With Information Granules of Higher Type</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6847164" target="_blank">Evolving Fuzzy-Model-Based Design of Experiments With Supervised Hierarchical Clustering</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6843982" target="_blank">On the Choice of the Pair ConjunctionImplication Into the Fuzzy Morphological Edge Detector</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6843926" target="_blank">A Parameterized Nonlinear Programming Approach to Solve Matrix Games With Payoffs of I-Fuzzy Numbers</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6843964" target="_blank">An Inexact ProbabilisticPossibilistic Optimization Framework for Flood Management in a Hybrid Uncertain Environment</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6846282" target="_blank">Principal-Agent Problems Based on Credibility Measure</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6846287" target="_blank">Evolving Granular Fuzzy Model-Based Control of Nonlinear Dynamic Systems</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6849469" target="_blank">Firing Fuzzy Rules With Measure Type Inputs</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6849490" target="_blank">Ensuring the Centroid of an Interval Type-2 Fuzzy Set</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6855327" target="_blank">A Numerical-Integration-Based Simulation Algorithm for Expected Values of Strictly Monotone Functions of Ordinary Fuzzy Variables</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6849462" target="_blank">A Compact Evolutionary Interval-Valued Fuzzy Rule-Based Classification System for the Modeling and Prediction of Real-World Financial Applications With Imbalanced Data</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6849437" target="_blank">A Self-Tuning zSlices-Based General Type-2 Fuzzy PI Controller</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6849965" target="_blank">Interval Type-2 Fuzzy Set Reconstruction Based on Fuzzy Information-Theoretic Kernels</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6857367" target="_blank">Characterizing Compactness of Geometrical Clusters Using Fuzzy Measures</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6857407" target="_blank">Decentralized Fuzzy Control of Multiple Cooperating Robotic Manipulators With Impedance Interaction</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6851922" target="_blank">The Notion of Weak-Contradiction: Definition and Measures</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6851891" target="_blank">A Hybrid Neuro-Fuzzy Network Based on Differential Biogeography-Based Optimization for Online Population Classification in Earthquakes</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6873256" target="_blank">Indirect Adaptive Type-2 Fuzzy Impulsive Control of Nonlinear Systems</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6873331" target="_blank">Output-Feedback Control for TS Fuzzy Delta Operator Systems With Time-Varying Delays via an InputOutput Approach</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6873266" target="_blank">Adaptive Robust Control for Fuzzy Mechanical Systems: Constraint-Following and Redundancy in Constraints</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6873314" target="_blank">Dynamical Models of Stock Prices Based on Technical Trading Rules---Part II: Analysis of the Model</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6873282" target="_blank">Least-Squares Regression Based on Atanassovs Intuitionistic Fuzzy InputsOutputs and Atanassovs Intuitionistic Fuzzy Parameters</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6874525" target="_blank">On <italic>T</italic>-Norms for Type-2 Fuzzy Sets</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6876213" target="_blank">Deviation Square Priority Method for Distinct Preference Structures Based on Generalized Multiplicative Consistency</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6878441" target="_blank">A Certainty-Based Model for Uncertain Databases</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6879274" target="_blank"><inline-formula>  </inline-formula> Fuzzy Control Synthesis for a Large-Scale System With a Reduced Number of LMIs</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6878480" target="_blank">Framework of Group Decision Making With Intuitionistic Fuzzy Preference Information</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6879325" target="_blank">Observer-Based Adaptive Fuzzy Tracking Control of MIMO Stochastic Nonlinear Systems With Unknown Control Directions and Unknown Dead Zones</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6880357" target="_blank">Fuzzy and Crisp Recursive Profiling of Online Reviewers and Businesses</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6880387" target="_blank">Overlap Indices: Construction of and Application to Interpolative Fuzzy Systems</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6881632" target="_blank">Pinning Synchronization in TS Fuzzy Complex Networks With Partial and Discrete-Time Couplings</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6887358" target="_blank">Speedup of Learning in Interval Type-2 Neural Fuzzy Systems Through Graphic Processing Units</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6850008" target="_blank">Weighting the Support Conjectures Inherit From Premises</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6849975" target="_blank">Stancu OWA Operator</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6878443" target="_blank">Stability Analysis and Region-of-Attraction Estimation Using Piecewise Polynomial Lyapunov Functions: Polynomial Fuzzy Model Approach</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6891199" target="_blank">Stability of Fuzzy Differential Equations With the Second Type of Hukuhara Derivative</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7174623" target="_blank">Special Issue on Brain Computer Interface (BCI)</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7174611" target="_blank">IEEE World Congress on Computational Intelligence</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7174628" target="_blank">Open Access</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7174622" target="_blank">IEEE xplore digital library</a></li>
+<li class="item_from_feed_38"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7174625" target="_blank">IEEE Computational Intelligence Society Information</a></li>      </ul>
+    </div>		</div>
+	</div>
+</div>
+</div>
+      </div>
+<!-- END TAB 2 -->
+
+<!-- START TAB 3 -->
+      <div id='tab_60_3' class='tab_content tab_content_60'>
+<div class="hp-featured-publication-content">
+<div class="hp-featured-publication-overview"><a href="/ieee-transactions-on-evolutionary-computation.html"><img style="margin: 0px 10px; margin-top: 10px; float: left;" src="/images/files/publications/featured/featured-publication-tevc.jpg" alt="IEEE Transactions on Evolutionary Computation" width="149" /></a> 
+<ul style="float: right; width: 170px; margin-top: 6px;">
+<li><a href="/ieee-transactions-on-evolutionary-computation.html">About the Publication</a></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4235" target="xplore">Access online (IEEE Xplore)</a></li>
+<li><a href="/component/content/article/7/125-ieee-transactions-on-evolutionary-computation-information-for-authors.html">Information for Authors</a></li>
+</ul>
+</div>
+<div class="hp-featured-publication-xplorefeed">
+<h4 style="margin: 0px; padding: 5px; border-bottom: 1px solid #bdbdbd;">Recent articles online (IEEE Xplore)</h4>
+<div style="border-radius: 0px 0px 0px 5px; background-color: #ffffff; height: 165px; overflow-x: hidden; overflow-y: auto;">		<div class="moduletable">
+					
+
+    <div class="feed_39">
+      <ul class="feed_39">
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169656" target="_blank">IEEE Transactions on Evolutionary Computation publication information</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6851939" target="_blank">An Edge-Set Representation Based on a Spanning Tree for Searching Cut Space</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6861439" target="_blank">Automated Feature Design for Numeric Sequence Classification by Genetic Programming</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6867354" target="_blank">Six-Sigma Robust Design Optimization Using a Many-Objective Decomposition-Based Evolutionary Algorithm</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6882229" target="_blank">An External Archive Guided Multiobjective Evolutionary Algorithm Based on Decomposition for Combinatorial Optimization</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6883177" target="_blank">TwoArch2: An Improved Two-Archive Algorithm for Many-Objective Optimization</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6901271" target="_blank">Online Diversity Assessment in Evolutionary Multiobjective Optimization: A Geometrical Perspective</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6913512" target="_blank">Differential Evolution With an Individual-Dependent Mechanism</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6919298" target="_blank">A Discrete Particle Swarm Optimization for Covering Array Generation</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7090975" target="_blank">A Many-Objective Evolutionary Algorithm With Enhanced Mating and Environmental Selections</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169634" target="_blank">IEEE World Congress on Computational Intelligence</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169648" target="_blank">Fuel your imagination</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169639" target="_blank">IEEE Xplore Digital Library</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169645" target="_blank">IEEE Computational Intelligence Society Information</a></li>
+<li class="item_from_feed_39"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7169642" target="_blank">IEEE Transactions on Evolutionary Computation information for authors</a></li>      </ul>
+    </div>		</div>
+	</div>
+</div>
+</div>
+      </div>
+<!-- END TAB 3 -->
+
+<!-- START TAB 4 -->
+      <div id='tab_60_4' class='tab_content tab_content_60'>
+<div class="hp-featured-publication-content">
+<div class="hp-featured-publication-overview"><a href="/ieee-transactions-on-autonomous-mental-development.html"><img style="margin: 0px 10px; margin-top: 10px; float: left;" src="/images/files/publications/featured/featured-publication-tamd.jpg" alt="IEEE Transactions on Autonomous Mental Development" width="149" /></a> 
+<ul style="float: right; width: 170px; margin-top: 6px;">
+<li><a href="/ieee-transactions-on-autonomous-mental-development.html">About the Publication</a></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4563672" target="xplore">Access online (IEEE Xplore)</a></li>
+<li><a href="/component/content/article/7/131-ieee-transactions-on-autonomous-mental-development-information-for-authors.html">Information for Authors</a></li>
+</ul>
+</div>
+<div class="hp-featured-publication-xplorefeed">
+<h4 style="margin: 0px; padding: 5px; border-bottom: 1px solid #bdbdbd;">Recent articles online (IEEE Xplore)</h4>
+<div style="border-radius: 0px 0px 0px 5px; background-color: #ffffff; height: 165px; overflow-x: hidden; overflow-y: auto;">		<div class="moduletable">
+					
+
+    <div class="feed_46">
+      <ul class="feed_46">
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7121043" target="_blank">IEEE Transactions on Autonomous Mental Development publication information</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7056490" target="_blank">Sparsity-Constrained fMRI Decoding of Visual Saliency in Naturalistic Video Streams</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7069203" target="_blank">Motor-Primed Visual Attention for Humanoid Robots</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7073587" target="_blank">A Probabilistic Concept Web on a Humanoid Robot</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7079487" target="_blank">Action Priors for Learning Domain Invariances</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7094253" target="_blank">Staged Development of Robot Skills: Behavior Formation, Affordance Learning and Imitation with Motionese</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7096939" target="_blank">Structural BootstrappingA Novel, Generative Mechanism for Faster and More Efficient Acquisition of Action-Knowledge</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7121040" target="_blank">Imagine a community hopeful for the future</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7121049" target="_blank">Imagine a teenager excited about technology</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7121053" target="_blank">IEEE Computational Intelligence Society Information</a></li>
+<li class="item_from_feed_46"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7121066" target="_blank">IEEE Transactions on Autonomous Mental Development information for authors</a></li>      </ul>
+    </div>		</div>
+	</div>
+</div>
+</div>
+      </div>
+<!-- END TAB 4 -->
+
+<!-- START TAB 5 -->
+      <div id='tab_60_5' class='tab_content tab_content_60'>
+<div class="hp-featured-publication-content">
+<div class="hp-featured-publication-overview"><a href="/ieee-transactions-on-computational-intelligence-and-ai-in-games.html"><img style="margin: 0px 10px; margin-top: 10px; float: left;" src="/images/files/publications/featured/featured-publication-tciaig.jpg" alt="IEEE Transactions on Computational Intelligence and AI in Games" width="149" /></a> 
+<ul style="float: right; width: 170px; margin-top: 6px;">
+<li><a href="/ieee-transactions-on-computational-intelligence-and-ai-in-games.html">About the Publication</a></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4804728" target="xplore">Access online (IEEE Xplore)</a></li>
+<li><a href="/component/content/article/7/122-ieee-transactions-on-computational-intelligence-and-ai-in-games-information-for-authors.html">Information for Authors</a></li>
+</ul>
+</div>
+<div class="hp-featured-publication-xplorefeed">
+<h4 style="margin: 0px; padding: 5px; border-bottom: 1px solid #bdbdbd;">Recent articles online (IEEE Xplore)</h4>
+<div style="border-radius: 0px 0px 0px 5px; background-color: #ffffff; height: 165px; overflow-x: hidden; overflow-y: auto;">		<div class="moduletable">
+					
+
+    <div class="feed_47">
+      <ul class="feed_47">
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7254275" target="_blank">IEEE Transactions on Computational Intelligence and AI in Games publication information</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7254211" target="_blank">The Age of Analytics</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7055252" target="_blank">An Analytic and Psychometric Evaluation of Dynamic Game Adaption for Increasing Session-Level Retention in Casual Games</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7091007" target="_blank">Detecting Predatory Behavior in Game Chats</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6895268" target="_blank">Player Preference and Style in a Leading Mobile Card Game</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7182769" target="_blank">Thinking Style and Team Competition Game Performance and Enjoyment</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7055316" target="_blank">Churn Prediction in Online Games Using Players Login Records: A Frequency Analysis Approach</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6975073" target="_blank">Clustering Game Behavior Data</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6987353" target="_blank">Postprocessing Gameplay Metrics for Gameplay Performance Segmentation Based on Audiovisual Analysis</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7012062" target="_blank">Past Our Prime: A Study of Age and Play Style Development in Battlefield 3</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6861960" target="_blank">On Learning From Game Annotations</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7254278" target="_blank">IEEE Computational Intelligence Society Information</a></li>
+<li class="item_from_feed_47"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7254273" target="_blank">IEEE Transactions on Computational Intelligence and AI in Games information for authors</a></li>      </ul>
+    </div>		</div>
+	</div>
+</div>
+</div>
+      </div>
+<!-- END TAB 5 -->
+
+<!-- START TAB 6 -->
+      <div id='tab_60_6' class='tab_content tab_content_60'>
+<div class="hp-featured-publication-content">
+<div class="hp-featured-publication-overview"><a href="/ieee-computational-intelligence-magazine.html"><img style="margin: 0px 10px; margin-top: 10px; float: left;" src="/images/files/publications/featured/featured-publication-ci-magazine.jpg" alt="IEEE Computational Intelligence Magazine" width="149" /></a> 
+<ul style="float: right; width: 170px; margin-top: 6px;">
+<li><a href="/ieee-computational-intelligence-magazine.html">About the Publication</a></li>
+<li><a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10207" target="xplore">Access online (IEEE Xplore)</a></li>
+<li><a href="/component/content/article/7/134-ieee-computational-intelligence-magazine-paper-submission-guidelines-and-information-for-authors.html">Information for Authors</a></li>
+</ul>
+</div>
+<div class="hp-featured-publication-xplorefeed">
+<h4 style="margin: 0px; padding: 5px; border-bottom: 1px solid #bdbdbd;">Recent articles online (IEEE Xplore)</h4>
+<div style="border-radius: 0px 0px 0px 5px; background-color: #ffffff; height: 165px; overflow-x: hidden; overflow-y: auto;">		<div class="moduletable">
+					
+
+    <div class="feed_48">
+      <ul class="feed_48">
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160806" target="_blank">IEEE WCCI 2016</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160850" target="_blank">CIM Editorial Board</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160810" target="_blank">WCCI 2006 and WCCI 2016 in Vancouver [Editor&#039;s Remarks]</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160812" target="_blank">2016 IEEE Symposium Series on Computational Intelligence</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160843" target="_blank">50th Anniversary of Fuzzy Logic [President&#039;s Message]</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160834" target="_blank">CIS Society Officers</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160837" target="_blank">CIS Publication Spotlight [Publication Spotlight]</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160807" target="_blank">Call for Papers for Journal Special Issues</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160853" target="_blank">New Trends of Learning in Computational Intelligence (Part II) [Guest Editorial]</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160847" target="_blank">IEEE CIG 2015</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160844" target="_blank">An Effective Missing-Data Estimation Approach for Small-Size Image Sequences</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160842" target="_blank">Weighted Tanimoto Extreme Learning Machine with Case Study in Drug Discovery</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160856" target="_blank">Semi-Random Projection for Dimensionality Reduction and Extreme Learning Machine in High-Dimensional Space</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160839" target="_blank">Learning Distributions of Image Features by Interactive Fuzzy Lattice Reasoning in Pattern Recognition Applications</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160838" target="_blank">ENN: Extended Nearest Neighbor Method for Pattern Recognition [Research Frontier]</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160854" target="_blank">IEEE SSCI 2015</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160840" target="_blank">Predictive Cloud Computing with Big Data: Professional Golf and Tennis Forecasting [Application Notes]</a></li>
+<li class="item_from_feed_48"><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7160851" target="_blank">[Conference Calendar]</a></li>      </ul>
+    </div>		</div>
+	</div>
+</div>
+</div>
+      </div>
+<!-- END TAB 6 -->
+
+      </div>
+</div>
+    <script type="text/javascript">
+    ieeejquery(document).ready(function($) {
+
+      //Default Action
+      $(".tab_content_60").hide();                           //Hide all content
+      $("ul.tabs_60 li:first-child").addClass("active").show();    //Activate first tab
+      $(".tab_content_60:first-child").show();                     //Show first tab content
+
+      //On Click Event
+      $("ul.tabs_60 li").click(function() {
+        $("ul.tabs_60 li").removeClass("active");            //Remove any "active" class
+        $(this).addClass("active");                       //Add "active" class to selected tab
+        $(".tab_content_60").hide();                         //Hide all tab content
+        var activeTab = $(this).find("a").attr("href");   //Find the rel attribute value to identify the active tab + content
+        $(activeTab).show();
+        return false;
+      });
+			$.noConflict();
+    });
+    </script>
+
+    <!-- END IEEE TAB MODULE --><!-- BEGIN IEEE TAB MODULE -->
+
+    <div id='upcoming_conferences'>
+      <h2 class='tab_title_134'>Upcoming CIS Conferences</h2><h2 style='float: right; clear:none; text-align: right;'><a href='http://cis.ieee.org/upcoming-conferences.html'>View Full Calendar</a></h2>
+      <ul class='tabs tabs_134'>
+        <li><a href='#tab_134_1'>Sponsored</a></li>
+        <li><a href='#tab_134_2'>Technically Co-Sponsored</a></li>
+      </ul>
+      <div class='tab_container tab_container_134'>
+<!-- START TAB 1 -->
+      <div id='tab_134_1' class='tab_content tab_content_134'>
+		<div class="moduletable">
+					
+<div class="clearboth">
+ <div id='hpConferenceListS'>
+ <div class='conflist' id='conf_0'>
+ <div class='conf_summary_item'>
+ <a href='http://dsaa2015.lip6.fr/' class='conf_summary_title' target='_blank'>2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA)</a><br />
+ <span class='conf_summary_place'>Paris, France</span>
+ <span class='conf_summary_date'>Oct 19, 2015 - Oct 21, 2015</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://ieee-ssci.org.za:8080/' class='conf_summary_title' target='_blank'>2015 IEEE Symposium Series on Computational Intelligence (SSCI)</a><br />
+ <span class='conf_summary_place'>Cape Town, South Africa</span>
+ <span class='conf_summary_date'>Dec 7, 2015 - Dec 10, 2015</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://civemsa2016.ieee-ims.org' class='conf_summary_title' target='_blank'>2016 IEEE International Conference on Computational Intelligence and Virtual Environments for
+Measurement Systems and Applications (CIVEMSA)</a><br />
+ <span class='conf_summary_place'>Budapest, Hungary</span>
+ <span class='conf_summary_date'>Jun 27, 2016 - Jun 29, 2016</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://www.wcci2016.org' class='conf_summary_title' target='_blank'>2016 IEEE World Congress on Computational Intelligence (WCCI)</a><br />
+ <span class='conf_summary_place'>BC, Canada</span>
+ <span class='conf_summary_date'>Jul 25, 2016 - Jul 29, 2016</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://www.cibcb2016.org' class='conf_summary_title' target='_blank'>2016 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)</a><br />
+ <span class='conf_summary_place'>Chiang Mai, Thailand</span>
+ <span class='conf_summary_date'>Oct 5, 2016 - Oct 7, 2016</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='' class='conf_summary_title' target='_blank'>2016 IEEE Symposium Series on Computational Intelligence (SSCI)</a><br />
+ <span class='conf_summary_place'>Athens, Greece</span>
+ <span class='conf_summary_date'>Dec 6, 2016 - Dec 9, 2016</span>
+ </div></div>
+</div>
+</div>		</div>
+	
+      </div>
+<!-- END TAB 1 -->
+
+<!-- START TAB 2 -->
+      <div id='tab_134_2' class='tab_content tab_content_134'>
+		<div class="moduletable">
+					
+<div class="clearboth">
+ <div id='hpConferenceListT'>
+ <div class='conflist' id='conf_0'>
+ <div class='conf_summary_item'>
+ <a href='http://la-cci.org/' class='conf_summary_title' target='_blank'>2015 Latin America Congress on Computational Intelligence (LA-CCI)</a><br />
+ <span class='conf_summary_place'>Curitiba, Brazil</span>
+ <span class='conf_summary_date'>Oct 13, 2015 - Oct 16, 2015</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://isnn.mae.cuhk.edu.hk/' class='conf_summary_title' target='_blank'>2015 12th International Symposium on Neural Networks (ISNN)</a><br />
+ <span class='conf_summary_place'>Jeju, Korea (South)</span>
+ <span class='conf_summary_date'>Oct 15, 2015 - Oct 18, 2015</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='' class='conf_summary_title' target='_blank'>2015 International Conference on Behavioral, Economic and Socio-cultural Computing (BESC)</a><br />
+ <span class='conf_summary_place'>Nanjing, China</span>
+ <span class='conf_summary_date'>Oct 30, 2015 - Nov 1, 2015</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://www.smap2015.org/' class='conf_summary_title' target='_blank'>2015 10th International Workshop on Semantic and Social Media Adaptation and Personalization (SMAP)</a><br />
+ <span class='conf_summary_place'>Trento, Italy</span>
+ <span class='conf_summary_date'>Nov 5, 2015 - Nov 6, 2015</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://taai2015.nutn.edu.tw/' class='conf_summary_title' target='_blank'>2015 Conference on Technologies and Applications of Artificial Intelligence (TAAI)</a><br />
+ <span class='conf_summary_place'>Tainan, Taiwan</span>
+ <span class='conf_summary_date'>Nov 20, 2015 - Nov 22, 2015</span>
+ </div>
+ <div class='conf_summary_item'>
+ <a href='http://auto.hust.edu.cn/icicip2015/index.html' class='conf_summary_title' target='_blank'>2015 Sixth International Conference on Intelligent Control and Information Processing (ICICIP)</a><br />
+ <span class='conf_summary_place'>Wuhan, China</span>
+ <span class='conf_summary_date'>Nov 26, 2015 - Nov 28, 2015</span>
+ </div></div>
+</div>
+</div>		</div>
+	
+      </div>
+<!-- END TAB 2 -->
+
+      </div>
+</div>
+    <script type="text/javascript">
+    ieeejquery(document).ready(function($) {
+
+      //Default Action
+      $(".tab_content_134").hide();                           //Hide all content
+      $("ul.tabs_134 li:first-child").addClass("active").show();    //Activate first tab
+      $(".tab_content_134:first-child").show();                     //Show first tab content
+
+      //On Click Event
+      $("ul.tabs_134 li").click(function() {
+        $("ul.tabs_134 li").removeClass("active");            //Remove any "active" class
+        $(this).addClass("active");                       //Add "active" class to selected tab
+        $(".tab_content_134").hide();                         //Hide all tab content
+        var activeTab = $(this).find("a").attr("href");   //Find the rel attribute value to identify the active tab + content
+        $(activeTab).show();
+        return false;
+      });
+			$.noConflict();
+    });
+    </script>
+
+    <!-- END IEEE TAB MODULE --><!-- Begin IEEE Aarticle Include -->
+
+<div class='ArticleMod_55'>
+  <h2>Featured Multimedia</h2>
+  <div class='ieeemodcontent'>
+<h3><a href="http://www.youtube.com/watch?v=I1-YX6HBqkk#t=16" target="_blank"><img src="/images/files/photos/photo_wcci2016.jpg" width="200" height="120" alt="photo_wcci2016" style="margin-right: 15px; margin-bottom: 15px; float: left;" /></a><a href="http://www.youtube.com/watch?v=I1-YX6HBqkk#t=16" target="_blank">IEEE WCCI 2016</a></h3>
+<p>IEEE World Congress on Computational Intelligence</p>
+<p>25-29 July 2016<br />Vancouver, Canada</p>
+<p><a href="http://www.wcci2016.org" target="_blank">www.wcci2016.org</a></p>
+<h3><a href="http://www.youtube.com/watch?v=5fHMg0JkfqY&list=PLe2tiLL2q02KGAb7IW5-u2zeJnX3wr4S3&index=1" target="_blank"><img src="/images/files/photos/xinyao-publish.jpg" width="200" height="147" alt="xinyao-publish" style="margin-right: 15px; margin-bottom: 15px; float: left;" /></a><a href="http://www.youtube.com/watch?v=5fHMg0JkfqY&list=PLe2tiLL2q02KGAb7IW5-u2zeJnX3wr4S3&index=1" target="_blank">How to Publish your Research</a></h3>
+<p>Prof. Xin Yao</p>
+<p>University of Birmingham, UK</p>
+<p>Talk given at IEEE Congress on Evolutionary Computation 2013</p>
+<h3><img src="/images/files/photos/fuzzy logic.jpg" width="200" height="118" alt="fuzzy logic" style="float: left; margin-right: 15px; margin-bottom: 5px;" />Fuzzy Logic Video Competition</h3>
+<p>The two winners of the fuzzy logic Youtube video competition held by the IEEE CIS Pre-college Education subcommittee are the  following:</p>
+<p>1) <strong><em><a target="_blank" href="http://www.youtube.com/watch?v=J_Q5X0nTmrA">An Egg-Boiling Fuzzy Logic Robot</a></em></strong>: KIOS Research Center for Intelligent Systems and Networks,  University of Cyprus</p>
+<p>2) <strong><em><a target="_blank" href="http://www.youtube.com/watch?v=P8wY6mi1vV8">Fuzzy Logic:  An Introduction</a></em></strong>: DeMontfort University, Leicester, England.  These videos are produced for a general audience, not just researchers in CIS.  Click here for the winning videos.</p>
+  </div>
+</div><!-- End IEEE Article Include -->
+</div>
+</div>
+<!--end module content-->
+</div>
+</div>
+
+<!--end home page row one-->
+
+
+
+
+
+
+<!-- End of Page Content-->
+</div>
+
+<!--***** Page Footer *****-->
+<div id="footer">
+	<div class="divider"><!-- graphic rule/divider --></div>
+	<p>
+		<a href="/">Home</a>  |
+		<a href="/sitemap.html">Sitemap</a>  |
+		<a href="/contact-cis.html">Contact CIS</a>  |
+		<a href="http://www.ieee.org/security_privacy.html">Privacy &amp; Opting Out of Cookies</a>  |
+		<a href="http://www.ieee.org/site_terms_conditions.html">Terms &amp; Conditions</a>  |
+		<a href="http://www.ieee.org/about/corporate/governance/p9-26.html">Nondiscrimination Policy</a>
+				<br/>
+	IEEE Computational Intelligence Society<br />
+		&copy; Copyright 2015 IEEE - All rights reserved. Use of this Web site signifies your agreement to the terms and conditions.
+	</p>
+</div>
+
+
+
+</body>
+</html>

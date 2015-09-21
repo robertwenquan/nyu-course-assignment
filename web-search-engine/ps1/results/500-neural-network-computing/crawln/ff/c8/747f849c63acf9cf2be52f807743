@@ -1,0 +1,10444 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie10 lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js lt-ie10" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+	
+
+
+
+
+
+
+
+
+
+
+<head>
+	
+	<!-- metas -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />		
+	<title>CIO.com - Tech News, Analysis, Blogs, Video</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+		
+				
+		
+		
+		
+	
+	
+    
+	<link rel="canonical" href="http://www.cio.com" />
+	
+	
+
+	
+	<meta name="description" content="CIO.com delivers the latest tech news, analysis, how-to, blogs, and video for IT professionals. Covers apps, careers, cloud computing, data center, mobile, outsourcing, security, social media, hardware and software." />
+	
+	
+
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://www.cio.com/index.rss" />
+	
+	
+		
+		
+			<meta property="og:title" content="CIO.com - Tech News, Analysis, Blogs, Video">
+		
+	
+	
+	
+	
+	
+		
+		
+			<meta property="og:image" content="http://idge.staticworld.net/cio/CIO_logo_300x300.png" />
+			<meta itemprop="image" content="http://idge.staticworld.net/cio/CIO_logo_300x300.png">
+			<meta itemprop="thumbnailURl" content="http://idge.staticworld.net/cio/CIO_logo_300x300.png" />
+			<link rel="image_src" href="http://idge.staticworld.net/cio/CIO_logo_300x300.png" />
+			<meta name="twitter:image" content="http://idge.staticworld.net/cio/CIO_logo_300x300.png" />
+		
+	
+	
+		
+		
+			<meta property="og:type" content="website" />
+		
+		
+	<meta property="og:site_name" content="CIO" />
+	<meta property="fb:app_id" content="129182073794488" />
+	
+		
+		
+			<meta name="twitter:url" content="http://www.cio.com/">
+			<meta property="og:url" content="http://www.cio.com/">
+			
+			
+			
+		
+	
+
+	
+
+	
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@CIOonline">
+	
+		<meta property="og:description" content="CIO.com delivers the latest tech news, analysis, how-to, blogs, and video for IT professionals. Covers apps, careers, cloud computing, data center, mobile, outsourcing, security, social media, hardware and software.">
+		<meta name="twitter:description" content="CIO.com delivers the latest tech news, analysis, how-to, blogs, and video for IT professionals. Covers apps, careers, cloud computing, data center, mobile, outsourcing, security, social media, hardware and software.">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<meta name="rating" content="General">
+	
+	<meta name="robots" content="NOODP,NOYDIR" />
+	
+	<!-- pagination -->
+	
+	
+	
+	<!-- css -->
+	<link rel="stylesheet" href="/www.idge/css/normalize.css?v=20150917091405" />
+	<link rel="stylesheet" href="/www.idge/css/prettify.css?v=20150917091405" />
+	
+	
+		<link rel="stylesheet" href="/www.idge/css/sitewrapper.css?v=20150917091405" />
+		
+			
+			
+			
+				<link rel="stylesheet" href="/www.idge/css/homepage.css?v=20150917091405" />			
+			
+				
+		
+		<link rel="stylesheet" href="/www.idge/css/print.css?v=20150917091405" />
+		
+	
+	
+		<link rel="stylesheet" href="/www.idge.cio/css/sitewrapper.css?v=20150917091405" />
+		
+		<link rel="stylesheet" href="/www.idge.cio/css/homepage.css?v=20150917091405" />
+		
+	
+	
+	<link rel="stylesheet" href="/www.idge/css/webfonts/ss-social.css?v=20150917091405" />
+	<link rel="stylesheet" href="/www.idge/css/webfonts/ss-standard.css?v=20150917091405" />
+	<!--[if lte IE 8]>  
+		<link href="/www.idge/css/webfonts/ss-ie8.css" rel="stylesheet" />
+	<![endif]--> 
+	
+		
+	
+		<script type="text/javascript" src="http://fonts.staticworld.net/sqc0dqh.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	<link rel="stylesheet" href="/www.idge/css/search-style.css?v=20150917091405">
+	
+	<!--  fav and touch icons -->
+	<link rel="shortcut icon" type="image/x-icon" href="http://idge.staticworld.net/cio/favicon.ico"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://idge.staticworld.net/cio/CIO_logo_144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://idge.staticworld.net/cio/CIO_logo_114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://idge.staticworld.net/cio/CIO_logo_72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://idge.staticworld.net/cio/CIO_logo_57x57.png" />
+	<link rel="apple-touch-icon" href="http://idge.staticworld.net/cio/CIO_logo_300x300.png" />
+
+	<!-- js -->
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+	<script src="/www.idge/js/jquery/jquery-1.10.2.min.js"></script>
+	<!-- google_dfp needs jquery defined first -->
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/www/js/ads/gpt_includes.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+	// Set up ad related variables
+	try {
+		IDG.GPT.unitName = "/8456/IDG.US_E_CIO.com";
+		IDG.GPT.yieldbotEnabled = "false";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+
+	
+	try {
+		IDG.GPT.unitName = IDG.GPT.unitName + "/" + "homepage_door";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	// global variables
+	var global_ShowSuper = false;
+	var global_ShowHero = true;
+	
+	//XFP global targeting, more targeting thm_pre
+	var url = window.location.href;
+	if(url.indexOf("?")>1){
+		url=url.split('?')[0];
+	}
+	
+
+	try {
+		IDG.GPT.addTarget("URL", encodeURIComponent(url));
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	try {IDG.GPT.addTarget("zone", 'index-home');}	catch (exception) {console.log ("google_dfp can't use IDG.GPT "+ exception);}
+	
+	
+	
+	
+	try {
+		if (null != IDG.GPT.getQsVal("env")) {		
+			IDG.GPT.addTarget("env", IDG.GPT.getQsVal("env").replace(/\W/g, "") );
+		}
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+	
+	
+	
+		
+
+	try {
+		IDG.GPT.addTarget("page_type", '');
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+
+	
+	
+	
+	
+	
+	
+</script>
+
+
+<script type="text/javascript" src="/www/js/ads/proximic.js?v=20150917091405"></script>  
+<script type="text/javascript">
+	 var currentUrl = encodeURIComponent(window.location.href);
+	 (function (u) {
+		var f = "scr";
+		var e = (u ? ("url=" + u) : "");
+		document.write("<"+f+"ipt type='text/javascript' src='http://t.zqtk.net/c.js?m=1&s=idg_js&"+e.replace(/\'/g, "")+"'></"+f+"ipt>");
+	  })((typeof (currentUrl) === "undefined") ? "" : currentUrl);
+</script>
+
+
+
+<script type="text/javascript">
+	
+	
+	
+	
+</script>
+  
+<script src="/www.idge/js/thm_pre.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+try {
+	IDG.GPT.setIDGExtraTargetings();
+	IDG.GPT.setAllGoogleTagTargetings();
+	IDG.GPT.dfpAdManager.init();
+	IDG.GPT.defineAllGoogleTagSlots();
+	IDG.GPT.initGoogleTagService();
+}
+catch (exception) {
+	console.log ("google_dfp can't use IDG.GPT "+ exception);
+}
+</script>
+
+
+	
+	<script src="/www/js/swfobject.js?v=20150917091405"></script>
+	
+	
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="/www.idge/js/mule/modernizr.js?v=20150917091405"></script>
+	<script src="/www.idge/js/mule/respond.min.js?v=20150917091405"></script>
+	
+
+
+
+
+
+
+
+
+
+
+<!-- Begin Eloqua Tracking -->
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqCfg.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqImg.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqFCS.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqScr.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqIDG.js"></script>
+
+
+
+	
+	
+	
+
+<script type="text/javascript">
+	IDG = window.IDG || {};
+	IDG.PageInfo = IDG.PageInfo || {};
+	IDG.PageInfo = function() {
+		return {
+			eloqua_type: "", 
+			eloqua_topic: ""
+		};
+	}();
+	var elqCustomerGUID = "";
+	if (this.GetElqCustomerGUID && typeof GetElqCustomerGUID === "function") {
+	        elqCustomerGUID = GetElqCustomerGUID();
+	}
+	IDG.Eloqua.invoke_flash();
+</script>
+<!-- End Eloqua Tracking -->
+	
+	
+		
+	<script type="text/javascript">
+		var g_arrModules = new Array();
+	</script>
+
+
+
+
+
+	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+			
+		
+		
+		
+			
+				
+				
+			
+			
+			
+			
+			
+			
+			
+						
+			
+			
+		
+	
+	
+		
+		<meta name="parsely-title" content="CIO.com - Tech News, Analysis, Blogs, Video" />
+		<meta name="parsely-link" content="http://www.cio.com/" />
+		<meta name="parsely-type" content="Homepage" />
+		<meta name="parsely-image-url" content="" />
+		<meta name="parsely-pub-date" content="" />
+		<meta name="parsely-section" content="" />
+		<meta name="parsely-author" content="" />
+		<meta name="parsely-tags" content="" />		
+
+
+
+	
+	<script type="application/ld+json">
+				{
+					"@context": "http://schema.org",
+					"@type": "WebSite",
+					"url": "http://www.cio.com/ ",
+					"potentialAction": {
+					"@type": "SearchAction",
+					"target": "http://www.cio.com/search?query={search_term}",
+					"query-input": "required name=search_term"
+					}
+				}
+			</script>
+
+	
+	
+	<script src="http://a.postrelease.com/serve/load.js?async=true"></script>
+	
+	
+	
+	
+	<script>
+	dataLayer = [{
+			   'primaryCategory': '',
+			   'articleType': '',
+			   'articleId': ''
+	}];
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?GTM-NCMJGX"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NCMJGX');</script>
+	<!-- End Google Tag Manager -->
+
+	
+</head>
+
+
+
+	<body id="homepage" class="home cio">
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN PAGE HEADER -->
+<header id="banner" >
+	
+    <div class="ad">
+  		
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="topleaderboard" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("topleaderboard", "true");
+						$('#topleaderboard').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+  
+    </div>
+	
+    <div class="main-header">
+    	
+    	<script>
+    	if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){
+			$('.main-header').insertBefore($('#banner .ad'));
+    	}
+		</script>
+		
+	    <section class="topics">
+	        <nav id="scrollable">
+				
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #877 blox4.raw_link_list  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	<ul>
+		<li class="header">Trending<span class="colon">:</span></li>
+		
+			
+				<li><a href="/cio100/2015">CIO 100 Winners</a></li>
+			
+		
+			
+				<li><a href="/category/big-data">Big Data</a></li>
+			
+		
+			
+				<li><a href="/category/careers-staffing">Careers</a></li>
+			
+		
+			
+				<li><a href="/category/cloud-computing">Cloud</a></li>
+			
+		
+			
+				<li><a href="/category/consumer-technology">Consumer Tech</a></li>
+			
+		
+			
+				<li><a href="/category/project-management">Project Management</a></li>
+			
+		
+			
+				<li><a href="/category/it-strategy">IT Strategy</a></li>
+			
+		
+			
+				<li><a href="/category/mobile">Mobile</a></li>
+			
+		
+			
+				<li><a href="/category/security">Security</a></li>
+			
+		
+			
+				<li><a href="/resources/">Resources/White Papers</a></li>
+			
+		
+	</ul>
+
+		
+	
+
+
+	        </nav>
+	        <div class="fading-gradient"></div>
+	    </section>
+	    <section class="main">
+	        <div class="wrapper">
+	            <div class="masthead">
+	                
+	                <button><i class="ss-icon ss-rows"></i></button>
+	                
+	                <a href="/"><h1 class="ir logo">cio</h1></a>
+	            	
+	            	<!--
+	            	<img class="print-only" src="/www.idge.cio/images/cio-logo-print.png">
+	            	-->
+	            	
+	            	<img class="print-only" src="http://idge.staticworld.net/cio/cio-logo-print.png">
+	            	
+	            </div>
+	            <div id="reading-tools-wrapper">
+
+	                
+	                
+	                <div class="reading">
+	                    <div id="reading-selector">
+	                        <div class="label">Most read<span class="colon">:</span> <i class="ss-icon ss-dropdown tick"></i></div>
+	                        
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+<li><a  href="/article/2983624/business-analytics/how-sunny-delight-juices-up-sales-with-cloud-based-analytics.html">How Sunny Delight juices up sales with cloud-based analytics</a></li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+<li><a  href="/article/2983677/security/its-10-oclock-do-you-know-what-your-it-security-team-is-doing.html">It’s 10 o&#039;clock – do you know what your IT security team is doing?</a></li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+<li><a  href="/article/2983620/careers-staffing/netflix-parental-leave-policy-neglects-workers-who-need-it-most.html">Netflix parental leave policy neglects workers who need it most</a></li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+<li><a  href="/article/2983449/it-skills-training/8-ways-to-find-legit-freelance-work.html">8 ways to find legit freelance work</a></li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+<li><a  href="/article/2981895/os-x/8-tips-and-tricks-for-os-x-el-capitan.html">8 tips and tricks for OS X El Capitan</a></li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+<li><a  href="/article/2983743/microsoft-renews-information-sharing-partnership-with-nato.html">Microsoft renews information-sharing partnership with NATO</a></li>
+				
+				
+			
+		
+	
+
+
+	
+	
+</ul>
+	                    </div>
+	                </div>
+	                
+	                <nav class="tools">
+	                    
+	                    <ul class="social">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<li><a href="https://twitter.com/CIOonline" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Twitter')"><i class="ss-icon ss-social-circle ss-twitter"></i></a></li>
+
+
+
+	<li><a href="https://www.linkedin.com/company/cio-online" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('LinkedIn')"><i class="ss-icon ss-social-circle brand ss-linkedin"></i></a></li>
+
+
+
+	<li><a href="https://www.facebook.com/CIOfacebook" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Facebook')"><i class="ss-icon ss-social-circle brand ss-facebook"></i></a></li>				
+
+
+
+	<li><a href="https://plus.google.com/+CIOOnline" itemprop="sameAs" rel="publisher" target="_blank" onclick="brandFollowTrack('Google+')"><i class="ss-icon ss-social-circle brand ss-googleplus"></i></a></li>                	
+
+
+
+	<li><a href="https://www.youtube.com/user/CIOtv" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('YouTube')"><i class="ss-icon ss-social-circle brand ss-youtube"></i></a></li>
+
+
+
+
+
+	<li><a href="/about/rss/" target="_blank"><i class="ss-icon ss-social-circle ss-rss"></i></a></li>
+
+
+
+	                    </ul>
+	                    
+	                    <ul class="user">
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	                        
+	                        	<li><a href="#search" id="search-btn"><i class="ss-icon">Search</i></a></li>
+	                        
+	                    </ul>
+	                </nav>
+	            </div>
+	        </div>
+	    </section>
+	    <section class="tools-expand  ">
+	        
+	        
+	        
+	        
+	        	
+	        	
+			        <form class="search" id="search-form" action="/search">
+			            <label for="search-box">Search for</label>
+						<input type="text" name="query" id="banner-search-term" value="" />
+			            <input type="submit" id="banner-search-submit" value="Go" />
+			            <input type="hidden" name="contentType" value="article,resource" />
+			            <div class="search-suggest">Suggestions for you</div>
+			        </form>
+			    
+			
+	        <div class="user">
+	            <form>
+	                <label for="login-email">Insider email</label> <input id="login-email" type="text" />
+	            </form>
+	        </div>
+	        
+	    </section>
+	    
+	    
+	    
+		
+	    <nav class="main">
+	    	<ul class="primary">
+				
+					
+	        		<li><a href="/category/big-data/">Big Data</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/cio100/">CIO 100 Symposium and Awards</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/careers-staffing/">Careers/Staffing</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/cloud-computing/">Cloud Computing</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/consumer-technology/">Consumer Technology</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/consumerization-of-it/">Consumerization of IT</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/developer/">Developers</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/enterprise-software/">Enterprise Software</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/government/">Government</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/hardware/">Hardware</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/healthcare/">Healthcare</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/it-industry/">IT Industry</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/it-strategy/" class="hasChildren">IT Strategy<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/it-strategy/">All IT Strategy</a></li>
+		            			
+		            				<li><a href="/category/cio-role/">CIO Role</a></li>
+		            			
+		            				<li><a href="/category/cmo-role/">CMO Role</a></li>
+		            			
+		            				<li><a href="/category/innovation/">Innovation</a></li>
+		            			
+		            				<li><a href="/category/leadership-management/">Leadership and Management</a></li>
+		            			
+		            				<li><a href="/category/outsourcing/">Outsourcing</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/infrastructure/" class="hasChildren">Infrastructure<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/infrastructure/">All Infrastructure</a></li>
+		            			
+		            				<li><a href="/category/data-center/">Data Center</a></li>
+		            			
+		            				<li><a href="/category/networking/">Networking</a></li>
+		            			
+		            				<li><a href="/category/infrastructure-storage/">Storage</a></li>
+		            			
+		            				<li><a href="/category/virtualization/">Virtualization</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/insider/">Insider</a>
+	            		
+	        		</li>
+				
+					
+	        		<li><a href="/category/internet/" class="hasChildren">Internet<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/internet/">All Internet</a></li>
+		            			
+		            				<li><a href="/category/online-marketing/">Online Marketing</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/mobile/" class="hasChildren">Mobile<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/mobile/">All Mobile</a></li>
+		            			
+		            				<li><a href="/category/mobile-application-management/">Mobile Application Management (MAM)</a></li>
+		            			
+		            				<li><a href="/category/mobile-apps/">Mobile Apps</a></li>
+		            			
+		            				<li><a href="/category/mobile-device-management/">Mobile Management</a></li>
+		            			
+		            				<li><a href="/category/smartphones/">Smartphones</a></li>
+		            			
+		            				<li><a href="/category/tablets/">Tablets</a></li>
+		            			
+		            				<li><a href="/category/wearable-technology/">Wearable Technology</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/operating-systems/" class="hasChildren">Operating Systems<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/operating-systems/">All Operating Systems</a></li>
+		            			
+		            				<li><a href="/category/linux/">Linux</a></li>
+		            			
+		            				<li><a href="/category/windows/">Windows</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/security/" class="hasChildren">Security<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/security/">All Security</a></li>
+		            			
+		            				<li><a href="/category/cyber-attacks-espionage/">Cyber Attacks/Espionage</a></li>
+		            			
+		            				<li><a href="/category/disaster-recovery/">Disaster Recovery</a></li>
+		            			
+		            				<li><a href="/category/malware/">Malware</a></li>
+		            			
+		            				<li><a href="/category/privacy/">Privacy</a></li>
+		            			
+		            				<li><a href="/category/regulation/">Regulation</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+			</ul>
+	
+	    	<ul class="secondary">
+           		
+           		
+
+
+
+
+
+
+
+
+
+
+<li><a href="/about/contactus.html">Contact Us</a></li>
+<li>
+	<a href="/about/subscription-services.html" class="hasChildren" >
+		Magazine 
+		<span class="ss-icon ss-navigateright"></span>
+	</a>
+	<ul>
+		<li><a href="/about/subscription-services.html">Subscription Services</a></li>
+		<li><a href="https://cxo.omeda.com/cgi-win/cio.cgi?p=WEBADD" target="_blank">Subscribe</a></li>
+		<li><a href="/magazine">Archive</a></li>
+	</ul>
+</li>
+<li><a href="/news/">News</a></li>
+<li><a href="/opinion/">Opinion</a></li>
+<li><a href="/resources/">Resources</a></li>
+<li><a href="/slideshows/">Slideshows</a></li>
+<li><a href="/video/">Video</a></li>
+<li>
+	<a href="#" class="hasChildren">More <span class="ss-icon ss-navigateright"></span></a>
+	<ul>
+		<li><a href="#">More</a></li>
+		<li><a href="http://council.cio.com/" target="_blank">CIO Executive Council</a></li>
+		<li><a href="http://events.cio.com/events">CIO Events</a></li>
+		<li><a href="http://itjobs.cio.com/">IT Jobs</a></li>
+		<li><a href="/newsletters/signup.html">Newsletters</a></li>
+		<li><a href="/about/rss.html">RSS</a></li>
+	</ul>
+</li>
+<li><a href="/blogs/">Blogs</a></li>
+
+           		
+	    	</ul>
+		</nav>
+		
+	</div>
+</header>
+<!-- END PAGE HEADER -->
+
+
+		<div id="page-wrapper" class="page-wrapper">
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+			
+			<section role="main">
+
+				
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+			<div class="ticker-ad ad">
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="ticker" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("ticker", "true");
+						$('#ticker').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+			</div>
+		
+	
+	
+
+
+
+<!-- Events Header -->
+
+ 
+ 
+	
+	
+	
+	
+	
+
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<!-- //end Events Header -->
+
+
+	
+	
+	
+	
+	
+	
+		
+	
+
+
+
+	
+	
+		
+	
+		
+		
+
+
+
+				<section class="bodee">
+
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+<!-- TOP STORIES - CAROUSEL -->
+<section id="top-stories" class="cols-wrapper" data-vr-zone="homepage_top_stories">
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #777 blox4.link_list  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- main navigator -->
+   <ul id="main_navi" class="not-mobile">
+ 	
+ 		
+ 			
+	 			
+	 		    	<li class="active">
+	 		    
+	 		    
+ 		    
+ 		    	
+				
+					<div>Social Networking</div>
+				
+   			</li>
+   		
+   	
+ 		
+ 			
+	 			
+	 		    <li class="">
+ 		    
+ 		    	
+				
+					<div>Layoffs</div>
+				
+   			</li>
+   		
+   	
+ 		
+ 			
+	 			
+	 		    <li class="">
+ 		    
+ 		    	
+				
+					<div>CIO Role</div>
+				
+   			</li>
+   		
+   	
+ 		
+ 			
+	 			
+	 		    <li class="">
+ 		    
+ 		    	
+				
+					<div>IT Strategy</div>
+				
+   			</li>
+   		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+ 		
+   	
+   </ul>
+
+<!-- root element for the main scrollable -->
+				
+<div id="topStoriesCarousel" class="item-carousel topstories-carousel clearfix">
+  <!-- root element for pages -->
+  <a class="prev browse left"><i class="ss-icon ss-left"></i></a>
+  <div class="carousel-inside-crop">  	
+  	<div class="items carousel-items clearfix">
+  		
+  		
+	    
+	
+	     <div class="excerpt" data-vr-contentbox="">
+			
+				
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984934/social-networking/how-to-create-your-own-snapchat-geofilter.html"><img  class="primary.idgeImage  imgId100615618 " src="http://core2.staticworld.net/images/article/2015/09/snapchat_geofilter_fenwaypark-100615618-primary.idge.jpg" alt="snapchat geofilter fenwaypark" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+			
+					
+			<!-- If content is freeform, it won't have the properties of an article, so it will blow out the module, so we need to skip the below processing. -->
+			
+				<div class="hed">
+					<div class="eyebrow">
+						
+					</div>
+					<a  href="/article/2984934/social-networking/how-to-create-your-own-snapchat-geofilter.html"><h2>How to create your own Snapchat geofilter</h2></a>
+				
+					<div class="byline-wrapper">
+						<p><span class="byline">
+						
+								
+								
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+Lauren Brousell
+
+
+							</span>
+							<span class="date"> Sat, September 19, 2015</span>
+						</p>
+						
+						<div class="social-wrapper">
+						 <div class="social-icons">
+								<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984934%2Fsocial-networking%2Fhow-to-create-your-own-snapchat-geofilter.html&via=CIOonline&text=How to create your own Snapchat geofilter" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+								 <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984934%2Fsocial-networking%2Fhow-to-create-your-own-snapchat-geofilter.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+								<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984934%2Fsocial-networking%2Fhow-to-create-your-own-snapchat-geofilter.html&title=How to create your own Snapchat geofilter&summary=Snapchat geofilters are a fun way to show your location through your photos and videos. But what if no geofilters are available for your favorite neighborhood, town or landmark (or you just want to add your own)? It’s easy to create a geofilter. Here’s&source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+								<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984934%2Fsocial-networking%2Fhow-to-create-your-own-snapchat-geofilter.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			
+				
+		 	
+		 	
+		 </div><!-- item -->
+	      
+	    
+	   
+  		
+	    
+	
+	     <div class="excerpt" data-vr-contentbox="">
+			
+				
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984682/layoffs/how-to-do-layoffs-right-when-you-absolutely-have-to.html"><img  class="primary.idgeImage  imgId100615534 " src="http://core5.staticworld.net/images/article/2015/09/layoff-ts-100615534-primary.idge.jpg" alt="layoff ts" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+			
+					
+			<!-- If content is freeform, it won't have the properties of an article, so it will blow out the module, so we need to skip the below processing. -->
+			
+				<div class="hed">
+					<div class="eyebrow">
+						
+					</div>
+					<a  href="/article/2984682/layoffs/how-to-do-layoffs-right-when-you-absolutely-have-to.html"><h2>How to do layoffs right (when you have to)</h2></a>
+				
+					<div class="byline-wrapper">
+						<p><span class="byline">
+						
+								
+								
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+Rob Enderle
+
+
+							</span>
+							<span class="date"> Fri, September 18, 2015</span>
+						</p>
+						
+						<div class="social-wrapper">
+						 <div class="social-icons">
+								<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984682%2Flayoffs%2Fhow-to-do-layoffs-right-when-you-absolutely-have-to.html&via=CIOonline&text=How to do layoffs right (when you have to)" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+								 <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984682%2Flayoffs%2Fhow-to-do-layoffs-right-when-you-absolutely-have-to.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+								<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984682%2Flayoffs%2Fhow-to-do-layoffs-right-when-you-absolutely-have-to.html&title=How to do layoffs right (when you have to)&summary=The tech industry has a history of doing major layoffs too frequently and often badly. The reality is this can and should be avoided. Columnist Rob Enderle discusses why layoffs should be seldom used and how to do them right when necessary.   &source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+								<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984682%2Flayoffs%2Fhow-to-do-layoffs-right-when-you-absolutely-have-to.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			
+				
+		 	
+		 	
+		 </div><!-- item -->
+	      
+	    
+	   
+  		
+	    
+	
+	     <div class="excerpt" data-vr-contentbox="">
+			
+				
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984647/cio-role/big-data-projects-gaining-steam-but-not-due-to-the-cio.html"><img  class="primary.idgeImage  imgId100615422 " src="http://core3.staticworld.net/images/article/2015/09/big_data_group-100615422-primary.idge.jpg" alt="big data group" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+			
+					
+			<!-- If content is freeform, it won't have the properties of an article, so it will blow out the module, so we need to skip the below processing. -->
+			
+				<div class="hed">
+					<div class="eyebrow">
+						
+					</div>
+					<a  href="/article/2984647/cio-role/big-data-projects-gaining-steam-but-not-due-to-the-cio.html"><h2>Big data projects gaining steam, but not from CIOs</h2></a>
+				
+					<div class="byline-wrapper">
+						<p><span class="byline">
+						
+								
+								
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+Clint Boulton
+
+
+							</span>
+							<span class="date"> Fri, September 18, 2015</span>
+						</p>
+						
+						<div class="social-wrapper">
+						 <div class="social-icons">
+								<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984647%2Fcio-role%2Fbig-data-projects-gaining-steam-but-not-due-to-the-cio.html&via=CIOonline&text=Big data projects gaining steam, but not from CIOs" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+								 <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984647%2Fcio-role%2Fbig-data-projects-gaining-steam-but-not-due-to-the-cio.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+								<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984647%2Fcio-role%2Fbig-data-projects-gaining-steam-but-not-due-to-the-cio.html&title=Big data projects gaining steam, but not from CIOs&summary=The number of big data projects businesses are kicking off is increasing, according to new data from Gartner. But other members of the C-suite – not the CIO – are initiating the plans. 
+
+     &source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+								<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984647%2Fcio-role%2Fbig-data-projects-gaining-steam-but-not-due-to-the-cio.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			
+				
+		 	
+		 	
+		 </div><!-- item -->
+	      
+	    
+	   
+  		
+	    
+	
+	     <div class="excerpt" data-vr-contentbox="">
+			
+				
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984710/it-strategy/why-enterprise-digital-transformation-efforts-stall.html"><img  class="primary.idgeImage  imgId100614033 " src="http://core5.staticworld.net/images/article/2015/09/innovation-digital-transformation-ts-100614033-primary.idge.jpg" alt="innovation digital transformation ts" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+			
+					
+			<!-- If content is freeform, it won't have the properties of an article, so it will blow out the module, so we need to skip the below processing. -->
+			
+				<div class="hed">
+					<div class="eyebrow">
+						
+					</div>
+					<a  href="/article/2984710/it-strategy/why-enterprise-digital-transformation-efforts-stall.html"><h2>Why digital transformation efforts stall</h2></a>
+				
+					<div class="byline-wrapper">
+						<p><span class="byline">
+						
+								
+								
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+Stephanie Overby
+
+
+							</span>
+							<span class="date"> Fri, September 18, 2015</span>
+						</p>
+						
+						<div class="social-wrapper">
+						 <div class="social-icons">
+								<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984710%2Fit-strategy%2Fwhy-enterprise-digital-transformation-efforts-stall.html&via=CIOonline&text=Why digital transformation efforts stall" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+								 <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984710%2Fit-strategy%2Fwhy-enterprise-digital-transformation-efforts-stall.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+								<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984710%2Fit-strategy%2Fwhy-enterprise-digital-transformation-efforts-stall.html&title=Why digital transformation efforts stall&summary=Most enterprises are likely to hit a roadblock after the initial stage of digital adoption. Everest Group calls this phenomenon the ‘digital trough.’           &source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+								<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984710%2Fit-strategy%2Fwhy-enterprise-digital-transformation-efforts-stall.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			
+				
+		 	
+		 	
+		 </div><!-- item -->
+	      
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	   
+  		
+	    
+	     
+	</div> <!-- end .items -->
+  </div><!-- END .carousel-inside-crop -->
+  <a class="next browse right"><i class="ss-icon ss-right"></i></a>
+  <div class="navi mobile"></div>
+</div><!-- END #heroCarousel -->
+
+
+
+		
+	
+
+
+</section>
+<!-- END TOP STORIES - CAROUSEL -->
+
+<!-- SEVEN TOP STORIES OUTSIDE THE CAROUSEL - LEFT COLUMN -->
+<section id="top-stories-2" class="cols-wrapper" data-vr-zone="homepage_featured_stories" >
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #782 blox4.link_list  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+				 
+				
+				
+				
+				
+				
+			
+			<div class="top-story-tr" data-vr-contentbox="">
+				
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984799/wearable-technology/style-tech-converge-at-2015-new-york-fashion-week.html"><img  class="carousel.idgeImage  imgId100615530 " src="http://core4.staticworld.net/images/article/2015/09/fashion-show-intro_hp-100615530-carousel.idge.jpg" alt="fashion show intro hp" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+				
+				
+				
+				
+				<div class="social-icons">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984799%2Fwearable-technology%2Fstyle-tech-converge-at-2015-new-york-fashion-week.html&via=CIOonline&text=Style, tech converge at 2015 New York Fashion Week" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984799%2Fwearable-technology%2Fstyle-tech-converge-at-2015-new-york-fashion-week.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984799%2Fwearable-technology%2Fstyle-tech-converge-at-2015-new-york-fashion-week.html&title=Style, tech converge at 2015 New York Fashion Week&summary=The 2015 New York Fashion Week featured new collections from many top designers, and some savvy companies set their products apart by building cutting edge technology into clothing and accessories.&source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984799%2Fwearable-technology%2Fstyle-tech-converge-at-2015-new-york-fashion-week.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+				</div>
+				
+				<div class="storyline">
+					<div class="eyebrow">
+					
+						
+					
+					</div>
+					<a  href="/article/2984799/wearable-technology/style-tech-converge-at-2015-new-york-fashion-week.html">
+						
+						<h3><br />Style, tech converge at 2015 New York Fashion Week</h3>
+					</a>
+				</div>
+			</div>
+			
+		
+	
+	
+		
+			
+				
+				 
+				
+				
+				
+				
+			
+			<div class="top-story-br" data-vr-contentbox="">
+				
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984785/ehr/could-better-user-design-unlock-ehr-potential.html"><img  class="carousel.idgeImage  imgId100615425 " src="http://core5.staticworld.net/images/article/2015/09/ehr-dr-patient-ts-100615425-carousel.idge.jpg" alt="ehr dr patient ts" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+				
+				
+				
+				
+				<div class="social-icons">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984785%2Fehr%2Fcould-better-user-design-unlock-ehr-potential.html&via=CIOonline&text=Could better user design unlock EHR potential?" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984785%2Fehr%2Fcould-better-user-design-unlock-ehr-potential.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984785%2Fehr%2Fcould-better-user-design-unlock-ehr-potential.html&title=Could better user design unlock EHR potential?&summary=Healthcare providers have widely adopted electronic health record systems, but the technology will never meet the promise of a more engaged patient base if consumers don't get on board. &source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984785%2Fehr%2Fcould-better-user-design-unlock-ehr-potential.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+				</div>
+				
+				<div class="storyline">
+					<div class="eyebrow">
+					
+						
+					
+					</div>
+					<a  href="/article/2984785/ehr/could-better-user-design-unlock-ehr-potential.html">
+						
+						<h3><br />Could better user design unlock EHR potential?</h3>
+					</a>
+				</div>
+			</div>
+			
+		
+	
+	
+		
+			
+				
+				
+				 
+				
+				
+				
+			
+			<div class="top-story-left" data-vr-contentbox="">
+				
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984650/mobile/could-ios-9-be-apples-greatest-gift-to-enterprise-it.html"><img  class="lazy carousel.idgeImage  imgId100615307 " data-original="http://core5.staticworld.net/images/article/2015/09/091715-ios-100615307-carousel.idge.jpg" alt="ios" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+				
+				
+				
+				
+				<div class="social-icons">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984650%2Fmobile%2Fcould-ios-9-be-apples-greatest-gift-to-enterprise-it.html&via=CIOonline&text=Could iOS 9 be Apple’s greatest enterprise gift?" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984650%2Fmobile%2Fcould-ios-9-be-apples-greatest-gift-to-enterprise-it.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984650%2Fmobile%2Fcould-ios-9-be-apples-greatest-gift-to-enterprise-it.html&title=Could iOS 9 be Apple’s greatest enterprise gift?&summary=The latest version of Apple’s mobile platform includes several workplace-centric features designed to make the company’s devices more useful to corporate users and the IT departments that have to manage them.    &source=Network World" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984650%2Fmobile%2Fcould-ios-9-be-apples-greatest-gift-to-enterprise-it.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+				</div>
+				
+				<div class="storyline">
+					<div class="eyebrow">
+					
+						
+					
+					</div>
+					<a  href="/article/2984650/mobile/could-ios-9-be-apples-greatest-gift-to-enterprise-it.html">
+						
+						<h3><br />Could iOS 9 be Apple’s greatest enterprise gift?</h3>
+					</a>
+				</div>
+			</div>
+			
+		
+	
+	
+		
+			
+				
+				
+				
+				 
+				
+				
+			
+			<div class="top-story-right" data-vr-contentbox="">
+				
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984227/startups/big-sports-teams-look-to-small-startups-for-tech-edge.html"><img  class="lazy carousel.idgeImage  imgId100615133 " data-original="http://core0.staticworld.net/images/article/2015/09/sports-startups-100615133-carousel.idge.jpeg" alt="sports startups" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+				
+				
+				
+				
+				<div class="social-icons">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984227%2Fstartups%2Fbig-sports-teams-look-to-small-startups-for-tech-edge.html&via=CIOonline&text=Big sports teams look to small startups for tech edge" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984227%2Fstartups%2Fbig-sports-teams-look-to-small-startups-for-tech-edge.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984227%2Fstartups%2Fbig-sports-teams-look-to-small-startups-for-tech-edge.html&title=Big sports teams look to small startups for tech edge&summary=Savvy sports organizations, including the Los Angeles Dodgers and Cleveland Cavaliers, increasingly look to the startup community for technologies that can enhance the fan experience and improve business operations, on and off the field.      &source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984227%2Fstartups%2Fbig-sports-teams-look-to-small-startups-for-tech-edge.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+				</div>
+				
+				<div class="storyline">
+					<div class="eyebrow">
+					
+						
+					
+					</div>
+					<a  href="/article/2984227/startups/big-sports-teams-look-to-small-startups-for-tech-edge.html">
+						
+						<h3><br />Big sports teams look to small startups for tech</h3>
+					</a>
+				</div>
+			</div>
+			
+		
+	
+	
+		
+			
+				
+				
+				
+				
+				 
+					<div class="btm-top-stories">
+				
+				
+			
+			<div class="top-story-btm" data-vr-contentbox="">
+				
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984468/demo/at-demo-hadoop-inventor-calls-nsa-snooping-a-cautionary-tale-for-devs.html"><img  class="lazy carousel.idgeImage  imgId100612146 " data-original="http://core3.staticworld.net/images/article/2015/09/p6_man-drawing-cloud-security-100612146-carousel.idge.jpg" alt="p6 man drawing cloud security" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+				
+				
+				
+				
+				<div class="social-icons">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984468%2Fdemo%2Fat-demo-hadoop-inventor-calls-nsa-snooping-a-cautionary-tale-for-devs.html&via=CIOonline&text=Hadoop inventor calls NSA snooping a cautionary tale" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984468%2Fdemo%2Fat-demo-hadoop-inventor-calls-nsa-snooping-a-cautionary-tale-for-devs.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984468%2Fdemo%2Fat-demo-hadoop-inventor-calls-nsa-snooping-a-cautionary-tale-for-devs.html&title=Hadoop inventor calls NSA snooping a cautionary tale&summary=The creator of big data analytics platform Hadoop said the NSA's secretive bulk collection of data should be a warning to developers that transparency about what data is collected and how it's used should be a cornerstone to any work they do.       &source=Computerworld" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984468%2Fdemo%2Fat-demo-hadoop-inventor-calls-nsa-snooping-a-cautionary-tale-for-devs.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+				</div>
+				
+				<div class="storyline">
+					<div class="eyebrow">
+					
+						
+					
+					</div>
+					<a  href="/article/2984468/demo/at-demo-hadoop-inventor-calls-nsa-snooping-a-cautionary-tale-for-devs.html">
+						
+						<h3>Hadoop inventor calls NSA snooping a cautionary</h3>
+					</a>
+				</div>
+			</div>
+			
+		
+	
+	
+		
+			
+				
+				
+				
+				
+				
+				
+			
+			<div class="top-story-btm" data-vr-contentbox="">
+				
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984555/cio-role/cio-hits-college-fairs-to-court-tech-talent.html"><img  class="lazy carousel.idgeImage  imgId100615041 " data-original="http://core5.staticworld.net/images/article/2015/09/it_recruiting_college-100615041-carousel.idge.jpg" alt="it recruiting college" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+				
+				
+				
+				
+				<div class="social-icons">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984555%2Fcio-role%2Fcio-hits-college-fairs-to-court-tech-talent.html&via=CIOonline&text=CIO hits college fairs to court tech talent" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984555%2Fcio-role%2Fcio-hits-college-fairs-to-court-tech-talent.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984555%2Fcio-role%2Fcio-hits-college-fairs-to-court-tech-talent.html&title=CIO hits college fairs to court tech talent&summary=Textron CIO Diane Schwarz dishes details of the recruiting trail that took her to the University of Notre Dame career fair last week, where she spent three days scouting prospective IT candidates.        &source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984555%2Fcio-role%2Fcio-hits-college-fairs-to-court-tech-talent.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+				</div>
+				
+				<div class="storyline">
+					<div class="eyebrow">
+					
+						
+					
+					</div>
+					<a  href="/article/2984555/cio-role/cio-hits-college-fairs-to-court-tech-talent.html">
+						
+						<h3>CIO hits college fairs to court tech talent</h3>
+					</a>
+				</div>
+			</div>
+			
+		
+	
+	
+		
+			
+				
+				
+				
+				
+				
+				
+			
+			<div class="top-story-btm" data-vr-contentbox="">
+				
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="feature-img">
+					
+						
+						
+							<a  href="/article/2984320/education/top-10-computer-science-schools-based-on-potential-salary.html"><img  class="lazy carousel.idgeImage  imgId100614873 " data-original="http://core4.staticworld.net/images/article/2015/09/intro_computer_science-100614873-carousel.idge.jpg" alt="intro computer science" /></a>
+						
+					
+					
+					
+				</figure>
+				
+		
+		
+	
+
+				
+				
+				
+				
+				<div class="social-icons">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984320%2Feducation%2Ftop-10-computer-science-schools-based-on-potential-salary.html&via=CIOonline&text=Top 10 computer science schools" target="_blank"><i class="ss-icon ss-social ss-twitter"></i></a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984320%2Feducation%2Ftop-10-computer-science-schools-based-on-potential-salary.html" target="_blank"><i class="ss-icon ss-social ss-facebook"></i></a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984320%2Feducation%2Ftop-10-computer-science-schools-based-on-potential-salary.html&title=Top 10 computer science schools&summary=CIO.com rounds up the top 10 computer science schools for undergraduates looking for a great education as well as maximum earning potential.                  &source=CIO" target="_blank"><i class="ss-icon ss-social ss-linkedin"></i></a>
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.cio.com%2Farticle%2F2984320%2Feducation%2Ftop-10-computer-science-schools-based-on-potential-salary.html" target="_blank"><i class="ss-icon ss-social ss-googleplus last"></i></a>
+				</div>
+				
+				<div class="storyline">
+					<div class="eyebrow">
+					
+						
+					
+					</div>
+					<a  href="/article/2984320/education/top-10-computer-science-schools-based-on-potential-salary.html">
+						
+						<h3>Top 10 computer science schools</h3>
+					</a>
+				</div>
+			</div>
+			</div><!-- Closes btm-top-stories -->
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+
+	
+
+
+		
+	
+
+	
+</section>
+
+<section id="latest-stories" class="cols-wrapper" data-vr-zone="homepage_latest">
+	<!-- LATEST module -->
+	<div class="latest-wrapper">
+		<div id="latest">
+		    <h3 class="four-dot">LATEST</h3>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+	
+
+
+<ul class="latest-col1">
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984976/uk-gets-first-drone-conviction-after-flights-over-football-stadiums.html">UK gets first drone conviction after flights over football stadiums</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984668/cloud-storage/comparing-iclouds-new-lower-prices-to-the-competition.html">Comparing iCloud&#039;s new lower prices to the competition</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984665/ios/ios-9-download-problems-not-due-to-overloaded-delivery-networks.html">iOS 9 download problems not due to overloaded delivery networks</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984825/windows/microsoft-designed-windows-10-to-pull-users-into-windows-store-and-it-might-be-working.html">Microsoft designed Windows 10 to pull users into Windows Store, and it might</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+	
+
+
+</ul><ul class="latest-col2">
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984664/healthcare/researchers-can-use-mris-to-print-a-model-heart-in-3-hours.html">Researchers can use MRIs to print a model heart in 3 hours</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984934/social-networking/how-to-create-your-own-snapchat-geofilter.html">How to create your own Snapchat geofilter</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984775/cloud-computing/amazon-rolls-out-cold-cloud-storage-option.html">Amazon rolls out cold cloud storage option </a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984932/smartwatches/smartwatch-growth-predicted-thanks-largely-to-apple-watch.html">Smartwatch growth predicted, thanks largely to Apple Watch</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+</ul><ul class="latest-col3">
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984748/verizon-becomes-first-us-carrier-to-offer-international-roaming-in-cuba.html">Verizon becomes first US carrier to offer international roaming in Cuba</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984708/data-center/the-2015-ig-nobel-prize-winners.html">The 2015 Ig Nobel Prize winners</a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984838/volkswagen-said-to-use-software-to-fudge-emissions-tests.html">Volkswagen said to use software to fudge emissions tests </a>
+<hr />
+</li>
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+		
+	
+	
+
+
+
+<li data-vr-contentbox="">
+
+
+	
+	
+	
+	
+
+
+<a  href="/article/2984682/layoffs/how-to-do-layoffs-right-when-you-absolutely-have-to.html">How to do layoffs right (when you absolutely have to)</a>
+<hr />
+</li>
+</ul>
+
+				
+				
+			
+		
+	
+
+
+		</div>
+	</div>
+</section>
+
+
+<!-- TOP IMU PLUS RESOURCES AND NEWSLETTER - RIGHT COLUMN -->
+<section id="hp-resources" class="cols-wrapper">
+	<div id="col-modules">
+		
+		<div class="ad" id="iab1">
+			
+				
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			<div id="topimu" class="side-promo side-module side-ad">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("topimu", "true");
+						IDG.GPT.addSlot("topimu", [[300,250],[300,600]]);
+					    $('#topimu').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>	
+			
+			
+		
+	
+ 	
+                  
+		</div>
+	
+		<div class="more">
+	
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+	
+		
+			
+		
+		
+	
+
+
+
+
+
+             
+<div class="promo apart resources" data-placement-id="resourcesModule">
+    <div class="hed">
+    
+    <a href="/resources" onclick='oClickTrack("")'>Resources</a>
+    
+    
+    </div>
+    
+    
+    	
+    	
+    		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<ul>
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="with-image" data-vr-contentbox="">
+	
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+		
+			
+			<figure class="well-img">
+				  <div class="sized-img-teaser">
+					
+					  
+					    
+					    <a href="http://resources.cio.com/ccd/assets/90449/detail"><img  class="lazy smallImage  imgId100615490 " data-original="http://core5.staticworld.net/images/idge/imported/imageapi/2015/09/18/15/ast-0149791_caprizaidg_evpariel091715-100615490-small.png" /></a>
+					  
+					  
+					
+				  </div>
+				</figure>
+			
+		
+	
+
+
+	
+		<div class="item-eyebrow">White Paper</div>
+	
+	<div class="title">
+		
+			
+			
+				<a  href="http://resources.cio.com/ccd/assets/90449/detail">A Mobility Catalyst Drives Need for User-Centric Apps</a>
+			
+		
+	</div>
+</li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="with-image" data-vr-contentbox="">
+	
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+		
+			
+			<figure class="well-img">
+				  <div class="sized-img-teaser">
+					
+					  
+					    
+					    <a href="http://resources.cio.com/ccd/assets/90431/detail"><img  class="lazy smallImage  imgId100615474 " data-original="http://core1.staticworld.net/images/idge/imported/imageapi/2015/09/18/14/ast-0149501_a_new_world_order_for_it_cio3.0_executivebrief-100615474-small.png" /></a>
+					  
+					  
+					
+				  </div>
+				</figure>
+			
+		
+	
+
+
+	
+		<div class="item-eyebrow">White Paper</div>
+	
+	<div class="title">
+		
+			
+			
+				<a  href="http://resources.cio.com/ccd/assets/90431/detail">A New World Order for IT</a>
+			
+		
+	</div>
+</li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="with-image" data-vr-contentbox="">
+	
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+		
+			
+			<figure class="well-img">
+				  <div class="sized-img-teaser">
+					
+					  
+					    
+					    <a href="http://resources.cio.com/ccd/assets/90460/detail"><img  class="lazy smallImage  imgId100615537 " data-original="http://core0.staticworld.net/images/idge/imported/imageapi/2015/09/18/18/gartner_casb_thumb_v2-100615537-small.png" /></a>
+					  
+					  
+					
+				  </div>
+				</figure>
+			
+		
+	
+
+
+	
+		<div class="item-eyebrow">White Paper</div>
+	
+	<div class="title">
+		
+			
+			
+				<a  href="http://resources.cio.com/ccd/assets/90460/detail">Gartner Report: Technology Overview for Cloud Access Security Brokers</a>
+			
+		
+	</div>
+</li>
+				
+				
+			
+		
+	</ul>
+
+
+	
+		<div class="more">
+			<a href="/resources" onclick='oClickTrack("")'>See All</a>
+		</div>
+	
+	<form action="/resources/search" method="get">
+		<input type="text" name="query" placeholder="Search Resources">
+		<!--  add additional dto options here -->
+		<input type="hidden" name="rid" value="2"/>
+		<input type="hidden" name="chld" value="true"/>
+		<button class="btn" type="submit">Go</button>
+	</form>
+
+</div>
+
+
+
+			
+			<div class="promo package-promo">
+				
+
+
+
+
+
+
+
+
+
+
+
+<div id="conditional-promo" class="newsletter">
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #787 blox4.html  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPnewsletterpromo1 blxM787  blox4_html  blxC5149">  <div class="hed four-dot">Newsletters</div> <div class="desc">Sign up and receive the latest news, reviews and trends on your favorite technology topics.</div> <p>Get our Daily News newsletter</p> <form action="/newsletters/signup.html"> <input type="email" name="email" placeholder="Enter your email address"> <input type="hidden" name="list" value="cio_insider" id="cio_insider" /><button class="btn" type="submit">Go</button> </form></div>
+		
+	
+
+		
+	
+
+	
+</div><!-- newsletter -->
+
+<script type="text/javascript">
+	//CIOB-523 conditionaly suppress Newsletter Promo Module if Top IMU is greater than 250.
+	window.onload = function() {
+		try {
+			//try for up to 5 seconds
+			var topImuHeight = 0;
+			var i = 0;
+			(function checkLoop() {
+			  setTimeout(function() {
+			    if (i++ < 10) {
+			      topImuHeight = getTopImuHeight();
+			      if (topImuHeight > 250){
+			    	  $("#conditional-promo").hide();
+			      }
+			      else if (topImuHeight == 0) {
+				      checkLoop();  
+			      }
+			    }
+			  }, 500);
+			})();				
+		}
+		catch (e) {
+			console.log(e);
+		}
+	};
+	
+	function getTopImuHeight() {
+	    var bodyOffset = 0;
+	    var htmlHeight = 0;
+	    var htmlOffset = 0;
+	    
+	    if ($('#topimu div iframe').length) {
+			var body = document.getElementById('topimu').getElementsByTagName('iframe')[0].contentWindow.document.body;
+	    	var html = document.getElementById('topimu').getElementsByTagName('iframe')[0].contentWindow.document.documentElement;
+
+	    	if (body != null) {
+	    		
+	    		if (body.innerHTML.length == 0) return 0; //empty body, no ad being served
+	    		
+	    		bodyOffset = body.offsetHeight;
+	    	}
+	    	if (html != null) {
+	    		htmlHeight = html.clientHeight;
+	    		htmlOffset = html.offsetHeight;
+	    	}
+	    }
+	    return Math.max(bodyOffset, htmlHeight, htmlOffset);
+	}		
+</script>
+			</div>
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #1214 blox4.html  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPhomepagehubpromo blxM1214  blox4_html  blxC7259"><div class="promo partner-hub">
+    <div class="hed">The Agile Data Center</div>
+    <span class="sponsored-by">Presented by</span><img class="sponsor-img" src="http://idge.staticworld.net/cio/sponsor_logos/symantec-logo90x24.png"/>
+    <div class="desc"><a href="http://pubads.g.doubleclick.net/gampad/clk?id=146355416&iu=/8456/IDG.US_E_CIO.com">Partnering with innovators to drive business and IT forward.</a></div>
+</div>       </div>
+		
+	
+
+		
+	
+
+
+		
+		</div>
+	</div>
+</section>
+
+
+<!-- FOLLOW CIO MODULE -->
+<section id="follow-on-cio">
+	<div class="cols-wrapper">
+		<hr class="social-line" />
+		<h3>FOLLOW ON CIO</h3>
+	</div>
+</section>
+<section id="follow-module">
+	<div class="cols-wrapper">
+		<div id="followCarousel" class="item-carousel follow-carousel clearfix">
+		<a class="prev browse left"><i class="ss-icon ss-left"></i></a>
+  			<div class="carousel-inside-crop">
+	    		<div class="items carousel-items clearfix">
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Sarah-K.-White/"><span itemprop="name">Sarah K. White</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Sarah-K.-White/" rel="author" title="Sarah K. White"><img  class="lazy bylineImage  imgId100581813 " data-original="http://core5.staticworld.net/images/article/2015/04/sarah-white_headshot-100581813-byline.jpg" alt="Sarah K. White" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2983449/it-skills-training/8-ways-to-find-legit-freelance-work.html">8 ways to find legit freelance work</a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Sarah-K.-White/"><span itemprop="name">Sarah K. White</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Matt-Kapko/"><span itemprop="name">Matt Kapko</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Matt-Kapko/" rel="author" title="Matt Kapko"><img  class="lazy bylineImage  imgId100321700 " data-original="http://core5.staticworld.net/images/article/2014/06/matt-kapko-150-100321700-byline.jpg" alt="Matt Kapko" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2984576/consumer-technology/why-apple-and-microsoft-are-suddenly-playing-nice.html">Why Apple and Microsoft are suddenly playing nice </a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Matt-Kapko/"><span itemprop="name">Matt Kapko</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Thor-Olavsrud/"><span itemprop="name">Thor Olavsrud</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Thor-Olavsrud/" rel="author" title="Thor Olavsrud"><img  class="lazy bylineImage  imgId100321428 " data-original="http://core1.staticworld.net/images/article/2014/06/thor-olavsrud-150-100321428-byline.jpg" alt="Thor Olavsrud" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2984510/business-analytics/microsofts-cortana-gives-salesforce-customers-insights-into-sales-pipeline.html">Microsoft's Cortana gives Salesforce customers insights into sales pipeline</a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Thor-Olavsrud/"><span itemprop="name">Thor Olavsrud</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Sharon-Florentine/"><span itemprop="name">Sharon Florentine</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Sharon-Florentine/" rel="author" title="Sharon Florentine"><img  class="lazy bylineImage  imgId100321345 " data-original="http://core5.staticworld.net/images/article/2014/06/sharon-florentine-150-100321345-byline.jpg" alt="Sharon Florentine" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2984577/it-skills-training/ignore-legacy-software-at-your-own-risk.html">Ignore legacy software at your own risk</a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Sharon-Florentine/"><span itemprop="name">Sharon Florentine</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Lauren-Brousell/"><span itemprop="name">Lauren Brousell</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Lauren-Brousell/" rel="author" title="Lauren Brousell"><img  class="lazy bylineImage  imgId100321843 " data-original="http://core2.staticworld.net/images/article/2014/06/lauren-brousell-150-100321843-byline.jpg" alt="Lauren Brousell" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2984934/social-networking/how-to-create-your-own-snapchat-geofilter.html">How to create your own Snapchat geofilter</a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Lauren-Brousell/"><span itemprop="name">Lauren Brousell</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Al-Sacco/"><span itemprop="name">Al Sacco</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Al-Sacco/" rel="author" title="Al Sacco"><img  class="lazy bylineImage  imgId100313542 " data-original="http://core4.staticworld.net/images/article/2014/06/sacco-150-100313542-byline.jpg" alt="Al Sacco" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2982627/apple-phone/4-ways-apple-missed-the-mark-with-iphone-6s.html">4 ways Apple missed the mark with iPhone 6s</a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Al-Sacco/"><span itemprop="name">Al Sacco</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Rich-Hein/"><span itemprop="name">Rich Hein</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Rich-Hein/" rel="author" title="Rich Hein"><img  class="lazy bylineImage  imgId100611322 " data-original="http://core1.staticworld.net/images/article/2015/08/rich_hein-100611322-byline.jpg" alt="Rich Hein" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2968318/staff-management/9-tips-for-dealing-with-toxic-coworkers.html">9 tips for dealing with toxic coworkers</a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Rich-Hein/"><span itemprop="name">Rich Hein</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+		
+		
+		
+		<div class="excerpt">
+			<div class="author-name-top"><a rel="author" itemprop="url" href="/author/Dan-Muse/"><span itemprop="name">Dan Muse</span></a></div>
+			<div class="excerpt-img">
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/author/Dan-Muse/" rel="author" title="Dan Muse"><img  class="lazy bylineImage  imgId100320997 " data-original="http://core1.staticworld.net/images/article/2014/06/muse-150-100320997-byline.jpg" alt="Dan Muse" itemprop="image" /></a>
+
+			</div>
+			<div class="excerpt-text">
+			
+			
+				<h3><a  href="/article/2983116/careers-staffing/best-cities-for-tech-workers-ready-to-make-a-move.html">Best cities for tech workers ready to make a move</a></h3>
+			
+			<div class="more-by">More by<br><span class="name"><a rel="author" itemprop="url" href="/author/Dan-Muse/"><span itemprop="name">Dan Muse</span></a></span></div>	
+			</div>		
+		</div>
+		
+		
+	
+
+				</div>
+			</div>
+		<a class="next browse right"><i class="ss-icon ss-right"></i></a>
+		</div>			
+	</div>
+</section>
+
+
+<!-- MIDDLE SECTION: NEWS / POPULAR / SLIDESHOWS / PULLQUOTE / AROUND THE WEB -->
+<section id="middle-section" class="cols-wrapper">
+	<div class="section-wrapper">
+		<div class="col-wrap">	
+		
+			<div id="col-middle2" data-vr-zone="homepage_news">
+				
+				<h3 class="four-dot">NEWS</h3>
+				
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="with-image"  data-vr-contentbox="">
+	
+		<div class="img-link"><a  href="/article/2984894/att-says-malware-secretly-unlocked-hundreds-of-thousands-of-phones.html"><img  class="carousel.idgeImage  imgId100615497 " src="http://core0.staticworld.net/images/article/2015/09/20150918-att-logo-100615497-carousel.idge.jpg" alt="AT&T logo on Boston store" itemprop="image" /></a></div>
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984894/att-says-malware-secretly-unlocked-hundreds-of-thousands-of-phones.html">AT&amp;T says malware secretly unlocked hundreds of thousands of phones</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984862/robotics/overcoming-our-fears-and-avoiding-robot-overlords.html">Overcoming our fears and avoiding robot overlords</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984866/car-tech/apple-meets-with-california-dmv-hinting-that-public-car-tests-could-happen-soon.html">Apple meets with California DMV, hinting that public car tests could happen</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984680/cpu-processors/broadwell-c-is-not-dead-intel-clarifies.html">Broadwell-C is not dead, Intel clarifies</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984864/ios/ios-9-adoption-gets-off-to-slower-start-than-2013s-ios.html">iOS 9 adoption gets off to slower start than 2013’s iOS</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="with-image"  data-vr-contentbox="">
+	
+		<div class="img-link"><a  href="/article/2984783/cloud-storage/apple-drops-icloud-prices-matches-rival-storage-services-from-google-and-microsoft.html"><img  class="carousel.idgeImage  imgId100615418 " src="http://core0.staticworld.net/images/article/2015/09/icloud-prices-100615418-carousel.idge.jpg" alt="icloud prices" itemprop="image" /></a></div>
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984783/cloud-storage/apple-drops-icloud-prices-matches-rival-storage-services-from-google-and-microsoft.html">Apple drops iCloud prices, matches rival storage services from Google and</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984774/cyber-attacks-espionage/russian-military-attacked-possibly-by-chinese-cyber-group.html">Russian military attacked, possibly by Chinese cyber group</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984792/cloud-computing/microsoft-tests-a-sweet-service-direct-shipping-data-for-uploading-to-the-cloud.html">Microsoft tests a sweet service: Direct-shipping data for uploading to the</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984650/mobile/could-ios-9-be-apples-greatest-gift-to-enterprise-it.html">Could iOS 9 be Apple’s greatest gift to enterprise IT?</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984772/security/malware-enables-cheating-at-online-poker.html">Malware enables cheating at online poker</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984489/security/under-ddos-attack-look-for-something-worse.html">Under DDoS attack? Look for something worse</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984651/mobile-security/windows-devices-account-for-80-of-malware-infections-transmitted-via-mobile-networks.html">Windows devices account for 80% of malware infections transmitted via mobile</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div   data-vr-contentbox="">
+	
+	
+	
+		
+		
+			
+		
+	
+	
+	<a  href="/article/2984610/social-business/facebook-getting-down-to-business-in-the-enterprise.html">Facebook getting down to business in the enterprise</a>
+	<hr />
+</div>
+
+				
+				
+			
+		
+	
+
+
+				<div class="more-news"><a href="/news">More News</a></div>
+			</div><!-- END #col-middle2 -->
+			
+			<div id="col-middle1">
+				
+
+				
+				<div class="slideshow-module" data-vr-zone="homepage_slideshows">
+	    			<h3 class="four-dot">SLIDESHOWS</h3>
+					<div id="slideshowCarousel" class="item-carousel slideshow-carousel clearfix">
+						<a class="prev browse left"><i class="ss-icon ss-left"></i></a>
+		    			<div class="carousel-inside-crop">
+				    		<div class="items carousel-items clearfix">
+	    						
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt with-image"  data-vr-contentbox="">
+	
+	
+		<a  href="/article/2984799/wearable-technology/style-tech-converge-at-2015-new-york-fashion-week.html"><img  class="lazy carousel.idgeImage  imgId100615500 " data-original="http://core3.staticworld.net/images/article/2015/09/0fashion-show-intro_title-100615500-carousel.idge.jpg" alt="0fashion show intro title" itemprop="image" /></a>
+	
+	
+	
+		
+		
+			
+		
+	
+	<div class="slide-hed"><a  href="/article/2984799/wearable-technology/style-tech-converge-at-2015-new-york-fashion-week.html">Style, tech converge at 2015 New York Fashion Week</a></div>
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt with-image"  data-vr-contentbox="">
+	
+	
+		<a  href="/article/2984611/data-center/celebrating-25-years-of-wacky-ig-nobel-prize-brilliance.html"><img  class="lazy carousel.idgeImage  imgId100615312 " data-original="http://core1.staticworld.net/images/article/2015/09/ignobels-25-anniversary-awards-1-100615312-carousel.idge.jpg" alt="ignobels 25 anniversary awards 1" itemprop="image" /></a>
+	
+	
+	
+		
+		
+			
+		
+	
+	<div class="slide-hed"><a  href="/article/2984611/data-center/celebrating-25-years-of-wacky-ig-nobel-prize-brilliance.html">Celebrating 25 years of wacky Ig Nobel Prize brilliance</a></div>
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt with-image"  data-vr-contentbox="">
+	
+	
+		<a  href="/article/2984584/desktop-computers/the-most-expensive-pcs-in-computing-history.html"><img  class="lazy carousel.idgeImage  imgId100614801 " data-original="http://core4.staticworld.net/images/article/2015/09/hp-37ss-expensive-pcs-100614801-carousel.idge.jpg" alt="The most expensive PCs in history" itemprop="image" /></a>
+	
+	
+	
+		
+		
+			
+		
+	
+	<div class="slide-hed"><a  href="/article/2984584/desktop-computers/the-most-expensive-pcs-in-computing-history.html">The most expensive PCs in computing history</a></div>
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt with-image"  data-vr-contentbox="">
+	
+	
+		<a  href="/article/2984618/developer/the-terrible-10-programmers-biggest-frustrations.html"><img  class="lazy carousel.idgeImage  imgId100614973 " data-original="http://core3.staticworld.net/images/article/2015/09/frustrated_developer-100614973-carousel.idge.jpg" alt="A man pulling his hair out" itemprop="image" /></a>
+	
+	
+	
+		
+		
+			
+		
+	
+	<div class="slide-hed"><a  href="/article/2984618/developer/the-terrible-10-programmers-biggest-frustrations.html">The terrible 10: Programmers’ biggest frustrations</a></div>
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt with-image"  data-vr-contentbox="">
+	
+	
+		<a  href="/article/2984348/data-protection/7-security-and-privacy-concerns-at-the-polls.html"><img  class="lazy carousel.idgeImage  imgId100614880 " data-original="http://core1.staticworld.net/images/article/2015/09/0_title_7securityandprivacy-100614880-carousel.idge.jpg" alt="0 title 7securityandprivacy" itemprop="image" /></a>
+	
+	
+	
+		
+		
+			
+		
+	
+	<div class="slide-hed"><a  href="/article/2984348/data-protection/7-security-and-privacy-concerns-at-the-polls.html">7 security and privacy concerns at the polls</a></div>
+</div>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt with-image"  data-vr-contentbox="">
+	
+	
+		<a  href="/article/2984460/apple-phone/11-reasons-you-should-upgrade-to-apples-iphone-6s.html"><img  class="lazy carousel.idgeImage  imgId100614898 " data-original="http://core4.staticworld.net/images/article/2015/09/iphone-6s-primary-100614898-carousel.idge.jpg" alt="iphone 6s primary" itemprop="image" /></a>
+	
+	
+	
+		
+		
+			
+		
+	
+	<div class="slide-hed"><a  href="/article/2984460/apple-phone/11-reasons-you-should-upgrade-to-apples-iphone-6s.html">11 reasons you should upgrade to Apple&#039;s iPhone 6s</a></div>
+</div>
+
+				
+				
+			
+		
+	
+
+
+							</div>
+						</div>
+						<a class="next browse right"><i class="ss-icon ss-right"></i></a>	
+					</div> 
+					<div class="more-slideshows"><a href="/slideshows">MORE SLIDESHOWS</a></div>
+				</div><!-- end .slideshow-module -->
+				
+				
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="promo apart answers-promo simple">
+	
+		<div class="answers-header">
+			
+			<div class="logo">IDG Answers</div>
+			<div class="more-info"><a href="http://www.idganswers.com" target="_blank">Learn more</a></div>
+		</div>
+		
+		<div class="question">
+	
+			
+			
+				<div class="excerpt">
+					<a  class="question-text" href="http://www.idganswers.com/question/23418/how-to-incorporate-threat-intelligence-into-security-program#src=cio" target="_blank">How to incorporate threat intelligence into security program?</a>
+					
+					<a  class="btn answer-me answer-btn" href="http://www.idganswers.com/question/23418/how-to-incorporate-threat-intelligence-into-security-program#src=cio" target="_blank">Answer</a>
+				</div>
+			
+				<div class="excerpt">
+					<a  class="question-text" href="http://www.idganswers.com/question/23416/how-to-determine-my-organization-s-cybersecurity-risk-profile#src=cio" target="_blank">How to determine my organization&#039;s cybersecurity risk profile? </a>
+					
+					<a  class="btn answer-me answer-btn" href="http://www.idganswers.com/question/23416/how-to-determine-my-organization-s-cybersecurity-risk-profile#src=cio" target="_blank">Answer</a>
+				</div>
+			
+				<div class="excerpt">
+					<a  class="question-text" href="http://www.idganswers.com/question/15174/how-to-handle-tough-feedback-at-work#src=cio" target="_blank">How to handle tough feedback at work?</a>
+					
+					<a  class="btn answer-me answer-btn" href="http://www.idganswers.com/question/15174/how-to-handle-tough-feedback-at-work#src=cio" target="_blank">Answer</a>
+				</div>
+			
+		
+		</div>
+	
+	</div> 
+	
+
+				
+				
+				<div class="pullquote">
+					
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #788 blox4.quote  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+<div class="quote"><a  href="/article/2983620/careers-staffing/netflix-parental-leave-policy-neglects-workers-who-need-it-most.html">[Netflix] policy excludes workers who'd benefit the most. They can't afford nannies for their children, or elder care for other relatives, and this disproportionately affects women. Two-thirds of the nearly 20 million low-wage workers in the U.S. are women.</a></div>
+<div class="attribution"><a  href="/article/2983620/careers-staffing/netflix-parental-leave-policy-neglects-workers-who-need-it-most.html"> Karin Roland, organizing director at UltraViolet</a></div>
+		
+	
+
+
+				</div>
+				
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #878 blox4.external-content-list  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+		
+	
+
+	<div class="around-web">
+		<h3>Around the Web</h3>
+		
+		<ul class="first-col">
+		
+			
+			<li class="story">
+				
+					<div class="source">Wired</div>
+				
+				
+				<div class="headline"><a href="http://www.wired.com/2015/05/devops-isnt-job-still-important/?es_p=472234" target="_blank" rel="nofollow">Devops isnt a job bit it&#039;s still important</a></div>
+				<div class="desc">DevOps isn’t really a job, it’s an organizational strategy. That said, there are skills that tech professionals can learn that will help them adapt to a DevOps way of thinking.    </div>
+			</li>
+			
+			
+
+			
+			<li class="story">
+				
+					<div class="source">Fierce CIO</div>
+				
+				
+				<div class="headline"><a href="http://www.fiercecio.com/story/digital-disruption-threatens-change-it-its-core/2015-05-21" target="_blank" rel="nofollow">Digital disruption threatens to change IT to its core</a></div>
+				<div class="desc"> A great deal of lip service has been paid this year to digital transformation and its impact on the CIO role, but no less critical is the topic of digital disruption. </div>
+			</li>
+			
+			
+
+			
+			<li class="story">
+				
+					<div class="source">ServiceDesk 360</div>
+				
+				
+				<div class="headline"><a href="http://www.servicedesk360.com/does-itil-fit-within-the-new-style-of-it/?es_p=471651" target="_blank" rel="nofollow">Does ITIL fit the new style of IT?</a></div>
+				<div class="desc">Business technology has changed dramatically since the ITIL books were written and subsequently revised.  Tony Price of HP discuses whether the guidance offered by the framework is still relevant.  </div>
+			</li>
+			
+			
+				</ul><ul class="second-col">
+			
+
+			
+			<li class="story">
+				
+					<div class="source">VentureBeat</div>
+				
+				
+				<div class="headline"><a href="http://venturebeat.com/2015/03/08/advice-to-cios-when-youre-introducing-new-tech-focus-on-the-middle/" target="_blank" rel="nofollow">Advice to CIOs </a></div>
+				<div class="desc"> When you’re introducing new tech, focus on the middle    </div>
+			</li>
+			
+			
+
+			
+			<li class="story">
+				
+					<div class="source">Harvard Business Review</div>
+				
+				
+				<div class="headline"><a href="https://hbr.org/2015/01/what-kind-of-leader-do-you-want-to-be" target="_blank" rel="nofollow">What Kind of Leader Do You Want to Be?</a></div>
+				<div class="desc"> It’s the question missing from so much of leadership development: “What kind of leader do you want to be?” We facilitate and encourage self-awareness among up-and-coming leaders (what kind of leader...</div>
+			</li>
+			
+			
+
+			
+			<li class="story">
+				
+					<div class="source">GigaOm Research</div>
+				
+				
+				<div class="headline"><a href="http://research.gigaom.com/2015/02/the-enterprise-cio-is-moving-to-a-consumption-first-paradigm/?utm_content=buffere4ad9&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" target="_blank" rel="nofollow">The CIO Is Moving to a Consumption-First Paradigm</a></div>
+				<div class="desc"> Take yourself back a couple of decades and the IT industry looked very different than it does today. Back then the number of solution choices was relatively limited and only available to those with...</div>
+			</li>
+			
+			
+
+			
+			
+		</ul>
+	</div>
+
+		
+	
+
+
+			</div><!-- END #col-middle1 -->
+			
+		</div><!-- END .col-wrap -->
+		
+		<div id="col-middle3" data-vr-zone="homepage_popular_articles">
+			<h3 class="four-dot">POPULAR</h3>
+			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		
+		<a  href="/article/2980853/wearable-technology/the-internet-of-things-comes-to-the-nfl.html"><img  class="lazy carousel.idgeImage  imgId100612794 " data-original="http://core0.staticworld.net/images/article/2015/09/football_turf-100612794-carousel.idge.jpg" alt="football turf" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><a href="/feature" itemprop="genre">Feature</a>
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/article/2980853/wearable-technology/the-internet-of-things-comes-to-the-nfl.html">The Internet of Things comes to the NFL</a></h3>
+		<h4>Every NFL player and stadium will be equipped with RFID sensors and receivers, respectively, this football season,...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		<a  href="/video/57307/the-fbis-cyber-division-its-mission-and-capabilities"><i class="ss-play"></i></a>
+		<a  href="/video/57307/the-fbis-cyber-division-its-mission-and-capabilities"><img  class="lazy posterImage  imgId100610960 " data-original="http://core0.staticworld.net/images/article/2015/08/irari-fbi-interview-100610960-poster.jpg" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><span class="video">video</span> 
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/video/57307/the-fbis-cyber-division-its-mission-and-capabilities"><i class="icon-play-btn-white"></i>The FBI&#039;s Cyber Division: Its mission and capabilities</a></h3>
+		<h4>In this episode of the Irari Report, Ira Winkler and Araceli Treu Gomes chat with Donald Good, Deputy Assistant...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		<a  href="/video/57103/exclusive-inside-amd-s-wild-project-quantum-pc"><i class="ss-play"></i></a>
+		<a  href="/video/57103/exclusive-inside-amd-s-wild-project-quantum-pc"><img  class="lazy posterImage  imgId100609818 " data-original="http://core4.staticworld.net/images/article/2015/08/template-c100.00_01_19_12.still003-100609818-poster.jpg" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><span class="video">video</span> 
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/video/57103/exclusive-inside-amd-s-wild-project-quantum-pc"><i class="icon-play-btn-white"></i>Exclusive! Inside AMD’s wild Project Quantum PC</a></h3>
+		<h4>Join us on Hardcore Hardware this week as we tear down AMD's intriguing Project Quantum prototype PC....</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		
+		<a  href="/article/2974303/browsers/the-best-web-browser-of-2015-firefox-chrome-edge-ie-and-opera-compared.html"><img  class="lazy carousel.idgeImage  imgId100609192 " data-original="http://core5.staticworld.net/images/article/2015/08/pcw-browsers-primary-100609192-carousel.idge.jpg" alt="pcw browsers primary" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><a href="/feature" itemprop="genre">Feature</a>
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/article/2974303/browsers/the-best-web-browser-of-2015-firefox-chrome-edge-ie-and-opera-compared.html">The best Web browser of 2015: Firefox, Chrome, Edge, IE, and Opera compared</a></h3>
+		<h4>We've tested the top browsers—Google Chrome, Microsoft’s Edge and Internet Explorer, Mozilla Firefox, and Opera—against...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		
+		<a  href="/article/2973977/byod/byod-the-tech-revolution-that-wasn-t.html"><img  class="lazy carousel.idgeImage  imgId100600358 " data-original="http://core5.staticworld.net/images/article/2015/08/byod-100600358-carousel.idge.jpg" alt="byod" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><a href="/feature" itemprop="genre">Feature</a>
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/article/2973977/byod/byod-the-tech-revolution-that-wasn-t.html">BYOD – the tech revolution that wasn’t</a></h3>
+		<h4>Once upon a time, BYOD and the consumerization of IT was held up as a paragon of productivity and cost savings for...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		<a  href="/video/56863/privacy-visor-fools-facial-recognition"><i class="ss-play"></i></a>
+		<a  href="/video/56863/privacy-visor-fools-facial-recognition"><img  class="lazy posterImage  imgId100608893 " data-original="http://core0.staticworld.net/images/article/2015/08/wtu-081715-visor-100608893-poster.png" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><span class="video">video</span> 
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/video/56863/privacy-visor-fools-facial-recognition"><i class="icon-play-btn-white"></i>Privacy visor fools facial recognition </a></h3>
+		<h4>Researchers at Japan’s National Institute of Informatics have come up with a way to help protect privacy. ...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		
+		<a  href="/article/2972791/consumer-technology/why-you-should-be-very-wary-of-windows-10-if-you-own-an-older-pc.html"><img  class="lazy carousel.idgeImage  imgId100607015 " data-original="http://core0.staticworld.net/images/article/2015/08/windows10-100607015-carousel.idge.jpg" alt="windows10" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><a href="/opinion" itemprop="genre">Opinion</a>
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/article/2972791/consumer-technology/why-you-should-be-very-wary-of-windows-10-if-you-own-an-older-pc.html">Why you should be (very) wary of Windows 10 if you own an older PC</a></h3>
+		<h4>Despite Microsoft's massive Windows 10 advertising blitz, many older PCs do not support the new OS, and it can be...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		<a  href="/video/56603/tech-trains-more-powerful-athletes"><i class="ss-play"></i></a>
+		<a  href="/video/56603/tech-trains-more-powerful-athletes"><img  class="lazy posterImage  imgId100608197 " data-original="http://core5.staticworld.net/images/article/2015/08/wtu-081715-techathletics-100608197-poster.png" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><span class="video">video</span> 
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/video/56603/tech-trains-more-powerful-athletes"><i class="icon-play-btn-white"></i>Tech trains more powerful athletes</a></h3>
+		<h4>Northeastern University has invested heavily in technology to reduce injuries in its athletics program. The suite of...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		<a  href="/video/56351/hands-on-with-the-samsung-galaxy-note-5"><i class="ss-play"></i></a>
+		<a  href="/video/56351/hands-on-with-the-samsung-galaxy-note-5"><img  class="lazy posterImage  imgId100605803 " data-original="http://core0.staticworld.net/images/article/2015/08/gho_003_samsunggalaxynote-100605803-poster.jpg" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><span class="video">video</span> 
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/video/56351/hands-on-with-the-samsung-galaxy-note-5"><i class="icon-play-btn-white"></i>Hands-on with the Samsung Galaxy Note 5</a></h3>
+		<h4>Samsung’s back with its fifth-generation phone-tablet hybrid....</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="river-well article" data-vr-contentbox="">
+
+	<figure class="well-img">
+		<a  href="/video/56350/hands-on-with-the-galaxy-s6-edge"><i class="ss-play"></i></a>
+		<a  href="/video/56350/hands-on-with-the-galaxy-s6-edge"><img  class="lazy posterImage  imgId100606618 " data-original="http://core4.staticworld.net/images/article/2015/08/template-c100.00_00_28_00.still002-100606618-poster.jpg" itemprop="image" /></a>
+	</figure>
+	<div class="post-cont">
+				
+		<div class="eyebrow"><span class="video">video</span> 
+
+
+
+
+
+
+
+
+
+
+</div>
+		<h3><a  href="/video/56350/hands-on-with-the-galaxy-s6-edge"><i class="icon-play-btn-white"></i>Hands-On With the Galaxy S6 Edge+</a></h3>
+		<h4>Samsung's throwing another phablet into the ring, but this one's curved on both sides. ...</h4>
+	</div>
+</div>
+		
+
+				
+				
+			
+		
+	
+
+
+		</div>
+		
+	</div><!-- END .section-wrapper -->
+</section><!-- END #middle-section -->
+
+
+<section id="before-trending"></section>
+
+
+<section id="trending-module">
+	<div class="cols-wrapper">
+				<hr class="social-line" />
+		<h3>SOCIAL</h3>
+		
+		<div class="follow-authors">
+			<ul>
+				<li>
+					<a href="https://twitter.com/dmuse" target="_blank"><img class="lazy headshot" data-original="http://idge.staticworld.net/cio/Muse-150.jpg" alt="Dan Muse" /></a>
+					<div class="author-name"><a href="https://twitter.com/dmuse" target="_blank">Dan Muse</a></div>
+					<div class="twitter-name"><a href="https://twitter.com/dmuse" target="_blank">@dmuse</a></div>
+					<div class="bio">A technology editor and writer who has come to grips with the fact that he'll never play center field for the Red Sox.</div>
+					<hr />
+				</li>
+				<li class="vert-rule"><img src="http://idge.staticworld.net/cio/vert_stroke_gradient_1x253.png" alt="" /></li>
+				<li>
+					<a href="https://twitter.com/WebDev_Rich" target="_blank"><img class="lazy headshot" data-original="http://idge.staticworld.net/cio/Hein-150.jpg" alt="Rich Hein" /></a>
+					<div class="author-name"><a href="https://twitter.com/WebDev_Rich" target="_blank">Rich Hein</a></div>
+					<div class="twitter-name"><a href="https://twitter.com/WebDev_Rich" target="_blank">@WebDev_Rich</a></div>
+					<div class="bio">Online Managing Editor for CIO.com - Writer, editor, surfer, lover of all things digital. Living the dream in sunny FLA.</div>
+					<hr />
+				</li>
+				<li class="vert-rule"><img src="http://idge.staticworld.net/cio/vert_stroke_gradient_1x253.png" alt="" /></li>
+				<li>
+					<a href="https://twitter.com/MobileWorkHorse" target="_blank"><img class="lazy headshot" data-original="http://idge.staticworld.net/cio/Sacco-150.jpg" alt="Al Sacco" /></a>
+					<div class="author-name"><a href="https://twitter.com/MobileWorkHorse" target="_blank">Al Sacco</a></div>
+					<div class="twitter-name"><a href="https://twitter.com/MobileWorkHorse" target="_blank">@MobileWorkHorse</a></div>
+					<div class="bio">Al Sacco is a CIO.com Senior Editor and author of the Mobile WorkHorse blog.</div>
+				</li>
+				<li class="vert-rule"><img src="http://idge.staticworld.net/cio/vert_stroke_gradient_1x253.png" alt="" /></li>
+				<li>
+					<a href="https://twitter.com/ThorOlavsrud" target="_blank"><img class="lazy headshot" data-original="http://idge.staticworld.net/cio/Thor-Olavsrud-150.jpg" alt="Thor Olavsrud" /></a>
+					<div class="author-name"><a href="https://twitter.com/ThorOlavsrud" target="_blank">Thor Olavsrud</a></div>
+					<div class="twitter-name"><a href="https://twitter.com/ThorOlavsrud" target="_blank">@ThorOlavsrud</a></div>
+					<div class="bio">Thor Olavsrud covers IT security, Big Data and open source technologies for CIO.com. He resides in New York.</div>
+				</li>
+			</ul>
+		</div>
+		<div class="follow-subscribe">	
+			<div class="links">
+				<div class="hed">FOLLOW CIO</div>
+				<ul class="social">
+					<li><a href="https://twitter.com/CIOonline" rel="nofollow" target="_blank"><i class="ss-icon ss-social ss-twitter" onclick="brandFollowTrack('Twitter')"></i></a></li>
+					<li><a href="https://www.facebook.com/CIOfacebook" rel="nofollow" target="_blank"><i class="ss-icon ss-social ss-facebook" onclick="brandFollowTrack('Facebook')"></i></a></li>
+					<li><a href="https://www.linkedin.com/company/cio-online" rel="nofollow" target="_blank"><i class="ss-icon ss-social ss-linkedin" onclick="brandFollowTrack('LinkedIn')"></i></a></li>
+					<li><a href="https://plus.google.com/+CIOOnline" rel="publisher" target="_blank"><i class="ss-icon ss-social ss-googleplus" onclick="brandFollowTrack('Google+')"></i></a></li>
+				</ul>		
+			</div>
+			
+			<div class="subscribe">
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #881 blox4.html  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPnewsletterpromo2 blxM881  blox4_html  blxC5566"> <div class="hed">Subscribe</div> <div class="desc"> Get our<br /> daily<br /> newsletter</div> <form action="/newsletters/signup.html"> <input type="email" name="email" placeholder="Email Address"> <button class="btn" type="submit">Go</button> </form></div>
+		
+	
+
+		
+	
+
+
+			</div>
+		</div>	
+	</div>
+</section><!-- END section#trending-module -->
+
+<section id="after-trending"></section>
+
+
+
+
+
+
+<section id="bottom-section" class="cols-wrapper">
+	<div class="section-wrapper">
+		<div id="post-col" class="col-wrap">
+			
+			<div id="col-bottom2" data-vr-zone="homepage_brandposts">
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mod-style clearleft brandposts" >
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="eyebrow-wrapper"><div class="eyebrow">BRANDPOSTS</div><a href="#" class="learn-more-home">What is this?</a></div>
+	<ul class="sponsored">
+		
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="clearfix "  vr-contentbox="" >
+		
+	<div class="title"><a  href="/article/2984820/security/securing-the-emerging-internet-of-everything.html">Securing the Emerging Internet of Everything</a></div>
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="blog-branding-text"><span class="sponsored-by">Sponsored by</span> PC Connection</div>
+
+	
+</li>
+				
+				
+			
+		
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="clearfix  with-image"  vr-contentbox="" >
+	
+	<div class="wrap">
+		<a  href="/article/2984607/security/the-average-ciso-tenure-is-17-months-don-t-be-a-statistic.html"><img  class="lazy carousel.idgeImage  imgId100615367 " data-original="http://core1.staticworld.net/images/article/2015/09/post_2-tenable_cio_dont-be-a-statistic1-100615367-carousel.idge.png" alt="post 2 tenable cio dont be a statistic1" itemprop="image" /></a>
+	</div>
+		
+	<div class="title"><a  href="/article/2984607/security/the-average-ciso-tenure-is-17-months-don-t-be-a-statistic.html">The Average CISO Tenure is 17 Months – Don’t be a Statistic!</a></div>
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="blog-branding-text"><span class="sponsored-by">Sponsored by</span> Tenable</div>
+
+	
+</li>
+				
+				
+			
+		
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="clearfix  with-image"  vr-contentbox="" >
+	
+	<div class="wrap">
+		<a  href="/article/2984222/security/what-keeps-it-up-at-night-part-2-enemies-at-the-gates.html"><img  class="lazy carousel.idgeImage  imgId100615002 " data-original="http://core2.staticworld.net/images/article/2015/09/hacker-100615002-carousel.idge.jpg" alt="hacker" itemprop="image" /></a>
+	</div>
+		
+	<div class="title"><a  href="/article/2984222/security/what-keeps-it-up-at-night-part-2-enemies-at-the-gates.html">What Keeps IT Up at Night Part 2: Enemies at the Gates</a></div>
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="blog-branding-text"><span class="sponsored-by">Sponsored by</span> PGi</div>
+
+	
+</li>
+				
+				
+			
+		
+	</ul>
+	
+	
+
+</div>
+			</div><!-- END #col-bottom2 -->
+			
+		</div>
+		
+		
+		<div id="col-bottom1">
+			
+			<script>
+			//remove the mobile IMU before it can get lazy loaded
+			if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){
+				$('.imu2node2').remove();
+			}
+			
+			//or remove the non-mobile version
+			else {
+				$('.imu2node1').remove();
+			}
+			</script>
+			
+			
+			<div class="imu2node1">
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ad"id="iab2">
+
+
+	
+		<div class="lazyload_ad">
+			<code type="text/javascript">
+			<!--
+				IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;
+				document.write('<div id="' + IDG.GPT.getIMUSlotName() + '">'); 
+				IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), IDG.GPT.slots["topimu"], false);
+				document.write('</div>');
+				$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+			</code>
+		</div>
+	
+	
+	
+
+
+
+</div>
+
+			</div>
+			
+			
+			
+			
+			<div class="insider-style clearleft">
+    			
+    				
+    				
+    				
+    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+<div class="insider-promo-wrapper not-nsdr">
+	<div class="promo apart">
+	  <div class="insider-both">
+
+		
+			<div class="become-an-insider">
+				<div class="insider-wrapper-green"><div class="insider-green"></div></div>
+				<div class="ribbon-wrapper-red">
+					<div class="ribbon-red">
+						FREE
+					</div>
+				</div>
+				<div class="notlogin-insider-title"><h3>Become An Insider</h3></div>
+				<div class="notlogin-insider-deck">Sign up now and get free access to 
+				<a href="/insider">hundreds of Insider articles</a>, guides, reviews, interviews, blogs, and other premium content 
+				from the best tech brands on the Internet: CIO, CSO, Computerworld, InfoWorld, 
+				IT World and Network World <a href="/learn-about-insider">Learn more</a>.</div>
+			</div>												
+		
+	
+		<div class="other-insider">
+		
+		
+			
+				
+					<div class="insider-promo-title"><h3>Insider Recommendations</h3></div>
+				
+				
+				
+			
+			<ul>
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.csoonline.com/article/2943968/data-breach/hacking-team-hacked-attackers-claim-400gb-in-dumped-data.html#tk.cio_nsdr_ndxprmomod">Hacking Team hacked, attackers claim 400GB in dumped data</a></li>	
+	
+
+
+				
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.itworld.com/article/2969408/careers/up-your-coding-game-with-these-7-habits-of-great-programmers.html#tk.cio_nsdr_ndxprmomod">Up your coding game with these 7 habits of great programmers</a></li>	
+	
+
+
+				
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.networkworld.com/article/2977633/cloud-computing/vmworld-vmware-ceo-network-virtualization-reality-feuding-with-cisco-the-emc-federations-future.html#tk.cio_nsdr_ndxprmomod">VMware CEO hits on network virtualization reality, feuding...</a></li>	
+	
+
+
+				
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.infoworld.com/article/2888046/virtualization/desktop-virtualization-review-vmware-workstation-vs-oracle-virtualbox.html#tk.cio_nsdr_ndxprmomod">Desktop virtualization review: VMware Workstation vs....</a></li>	
+	
+
+
+				
+		    
+		    	
+		    
+		    	
+		    
+			</ul>
+		
+		
+			<div class="more-insider"><a href="/insider">More INSIDER</a></div>
+		
+		</div><!-- //.other-insider -->
+		
+	  </div><!-- //.insider-both -->
+	</div><!--  //.promo.apart -->
+</div>
+
+    		</div>
+		</div><!-- END #col-bottom1 -->
+		
+		
+		<div id="col-bottom3" data-vr-zone="homepage_more_from_cio">
+			
+			<div class="mod-style">
+	    			<h3 class="four-dot">MORE FROM CIO</h3>
+	    			
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #872 blox4.external-content-list  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<ul class="firstone">
+			
+			<li class="story" data-vr-contentbox="">
+				<hr>
+				
+					<a href="http://www.cio100.com/"><img  class="lazy originalImage  imgId100353810 " data-original="http://core4.staticworld.net/images/article/2014/06/cio100_stacked_square-100353810-orig.png" alt="cio100 stacked square" itemprop="image" /></a>
+				
+				<div class="source">CIO 100</div>
+				<div class="headline"><a href="http://www.cio100.com/">CIO 100</a></div>
+				<div class="desc">CIO's annual event recognizes 100 organizations that have distinguished themselves by creating business value through the innovative use of IT.      </div>
+			</li>
+			
+			
+			<li class="story" data-vr-contentbox="">
+				<hr>
+				
+					<a href="http://www.cioperspectives.com/index.php"><img  class="lazy originalImage  imgId100315033 " data-original="http://core0.staticworld.net/images/article/2014/06/sss-100315033-orig.jpg" alt="sss" itemprop="image" /></a>
+				
+				<div class="source">CIO Perspectives</div>
+				<div class="headline"><a href="http://www.cioperspectives.com/index.php">CIO Perspectives</a></div>
+				<div class="desc">The CIO Perspectives Forums are regionally focused one-day executive events for  senior IT leaders at mid- to large-sized organizations in the private and public sectors.                    </div>
+			</li>
+			
+				</ul><ul class="secondone">
+			
+			
+			<li class="story" data-vr-contentbox="">
+				<hr>
+				
+				<div class="source">CIO Events</div>
+				<div class="headline"><a href="http://events.cio.com/events">CIO Executive Conferences</a></div>
+				<div class="desc">CIO Executive Conferences attract the best and brightest IT executives because the CIO brand is synonymous with the highest quality and integrity. Whether it's the celebrated CIO 100 Symposium, The...</div>
+			</li>
+			
+			
+			<li class="story" data-vr-contentbox="">
+				<hr>
+				
+				<div class="source">CIO Executive Council</div>
+				<div class="headline"><a href="http://council.cio.com/programs/the-future-state-cio-journey/">The Future-State CIO®</a></div>
+				<div class="desc">The Future-State CIO® will be accountable for IT function success and business process transformation by adopting a more company-external focus and concentrating on using information to drive...</div>
+			</li>
+			
+			
+			<li class="story" data-vr-contentbox="">
+				<hr>
+				
+				<div class="source">CIO 100</div>
+				<div class="headline"><a href="/article/2439507/infrastructure/technology-topics-definitions-and-solutions.html">CIO Definitions and Solutions</a></div>
+				<div class="desc">Sometimes we all can use a refresher course - or we need to make sure our team and our colleagues are all on the same page. The following tutorials will give you and your counterparts a jumpstart on...</div>
+			</li>
+			
+			
+		</ul>
+
+		
+	
+
+
+	    			
+			</div>
+		</div><!-- END #col-bottom3 -->
+		
+	</div>
+</section><!-- END #bottom-section -->
+
+<section class="insider-mobile">
+
+<div class="imu2node2">
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ad"id="iab2">
+
+
+	
+		<div class="lazyload_ad">
+			<code type="text/javascript">
+			<!--
+				IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;
+				document.write('<div id="' + IDG.GPT.getIMUSlotName() + '">'); 
+				IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), IDG.GPT.slots["topimu"], false);
+				document.write('</div>');
+				$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+			</code>
+		</div>
+	
+	
+	
+
+
+
+</div>
+
+</div>
+
+
+<div class="insider-style clearleft">
+	
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+<div class="insider-promo-wrapper not-nsdr">
+	<div class="promo apart">
+	  <div class="insider-both">
+
+		
+			<div class="become-an-insider">
+				<div class="insider-wrapper-green"><div class="insider-green"></div></div>
+				<div class="ribbon-wrapper-red">
+					<div class="ribbon-red">
+						FREE
+					</div>
+				</div>
+				<div class="notlogin-insider-title"><h3>Become An Insider</h3></div>
+				<div class="notlogin-insider-deck">Sign up now and get free access to 
+				<a href="/insider">hundreds of Insider articles</a>, guides, reviews, interviews, blogs, and other premium content 
+				from the best tech brands on the Internet: CIO, CSO, Computerworld, InfoWorld, 
+				IT World and Network World <a href="/learn-about-insider">Learn more</a>.</div>
+			</div>												
+		
+	
+		<div class="other-insider">
+		
+		
+			
+				
+					<div class="insider-promo-title"><h3>Insider Recommendations</h3></div>
+				
+				
+				
+			
+			<ul>
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.csoonline.com/article/2943968/data-breach/hacking-team-hacked-attackers-claim-400gb-in-dumped-data.html#tk.cio_nsdr_ndxprmomod">Hacking Team hacked, attackers claim 400GB in dumped data</a></li>	
+	
+
+
+				
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.itworld.com/article/2969408/careers/up-your-coding-game-with-these-7-habits-of-great-programmers.html#tk.cio_nsdr_ndxprmomod">Up your coding game with these 7 habits of great programmers</a></li>	
+	
+
+
+				
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.networkworld.com/article/2977633/cloud-computing/vmworld-vmware-ceo-network-virtualization-reality-feuding-with-cisco-the-emc-federations-future.html#tk.cio_nsdr_ndxprmomod">VMware CEO hits on network virtualization reality, feuding...</a></li>	
+	
+
+
+				
+		    
+		    	
+		   		
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<li><a href="http://www.infoworld.com/article/2888046/virtualization/desktop-virtualization-review-vmware-workstation-vs-oracle-virtualbox.html#tk.cio_nsdr_ndxprmomod">Desktop virtualization review: VMware Workstation vs....</a></li>	
+	
+
+
+				
+		    
+		    	
+		    
+		    	
+		    
+			</ul>
+		
+		
+			<div class="more-insider"><a href="/insider">More INSIDER</a></div>
+		
+		</div><!-- //.other-insider -->
+		
+	  </div><!-- //.insider-both -->
+	</div><!--  //.promo.apart -->
+</div>
+
+</div>
+
+</section>
+
+
+
+	
+	
+	
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+
+
+							
+
+
+
+
+
+
+
+
+
+
+						
+					
+				
+				</section><!-- /.bodee -->
+
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+	
+		<section id="resources-sponsored-links">
+	
+	
+ 	<section class="sponsored-links">
+ 	  <div class="head">Sponsored Links</div>
+	 	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<ul class="first">
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+	
+
+
+
+
+<li>
+	<a rel="nofollow" target="_blank" href="http://pubads.g.doubleclick.net/gampad/clk?id=465114896&iu=/8456/IDG.US_E_CIO.com" onclick="moduleTrack('Sponsored Links','resources-sponsored-links component')">
+		Register for a free trial and you could be test-driving Kaseya in minutes.
+	</a>
+</li>
+				
+				
+			
+		
+	</ul>
+
+
+ 	</section>
+</section>
+	
+	
+
+
+				
+
+			</section><!-- /role=main -->
+
+		</div><!-- /#page-wrapper -->
+
+		
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <section class="brand" itemscope itemtype="http://schema.org/Organization">
+   	
+   		<link itemprop="url" href="http://www.cio.com"> 
+        <a href="/"><span class="logo">CIO</span></a>
+		<span class="tagline"> </span>
+        
+        <span class="follow">
+			<label>Follow us</label>
+            	<ul>
+            		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<li><a href="https://twitter.com/CIOonline" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Twitter')"><i class="ss-icon ss-social-circle ss-twitter"></i></a></li>
+
+
+
+	<li><a href="https://www.linkedin.com/company/cio-online" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('LinkedIn')"><i class="ss-icon ss-social-circle brand ss-linkedin"></i></a></li>
+
+
+
+	<li><a href="https://www.facebook.com/CIOfacebook" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Facebook')"><i class="ss-icon ss-social-circle brand ss-facebook"></i></a></li>				
+
+
+
+	<li><a href="https://plus.google.com/+CIOOnline" itemprop="sameAs" rel="publisher" target="_blank" onclick="brandFollowTrack('Google+')"><i class="ss-icon ss-social-circle brand ss-googleplus"></i></a></li>                	
+
+
+
+	<li><a href="https://www.youtube.com/user/CIOtv" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('YouTube')"><i class="ss-icon ss-social-circle brand ss-youtube"></i></a></li>
+
+
+
+
+
+	<li><a href="/about/rss/" target="_blank"><i class="ss-icon ss-social-circle ss-rss"></i></a></li>
+
+
+
+            	</ul>
+        </span>
+        
+    </section>
+    	
+    <section class="topics">
+    	
+			
+        
+        
+        <nav id="ft2">
+            <ul>
+           		
+           		
+
+
+
+
+
+
+
+
+
+
+<li><a href="/feature">Feature</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/news-analysis">News Analysis</a></li>
+<li><a href="/opinion">Opinion</a></li>
+<li><a href="/slideshows">Slideshows</a></li>
+<li><a href="/video">Videos</a></li>
+           		
+            </ul>
+        </nav>
+        
+        
+			
+				<nav id="ft2a">
+		            <ul>
+		           		
+		           		
+
+
+
+
+
+
+
+
+
+
+<li><a href="/newsletters/signup.html">Sign up for Newsletters</a></li>
+<li><a href="/insider">Sign up for Insider</a></li>
+<li><a href="/about/subscription-services.html">Subscribe to the Magazine</a></li>
+		           		
+		            </ul>
+		        </nav>
+			
+		
+    </section>
+    
+    
+    <section class="about">
+		<div class="wrapper"> 
+        	<nav class="tertiary" id="ft3">
+            	<ul>
+            		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="/about/about.html"  >About CIO</a>
+
+<li><a href="/about/adchoices.html"  >Ad Choices</a>
+
+<li><a href="http://www.ciomediakit.com/"  >Advertising</a>
+
+<li><a href="http://careers.idg.com/" target="_blank" >Careers at IDG</a>
+
+<li><a href="/about/contactus.html"  >Contact Us</a>
+
+<li><a href="/about/privacy.html"  >Privacy Policy</a>
+
+<li><a href="/about/tos.html"  >Terms of Service</a>
+
+<li><a href="/about/sitemap.html"  >Site Map</a>
+
+<li><a href="/about/subscription-services.html"  >Subscription Services</a>
+
+
+
+
+            	</ul>
+        	</nav>
+		</div>
+	</section>
+	
+    <section class="copyright">
+        <div class="wrapper">
+        	<p>Copyright &copy; 1994 - 2015 CXO Media Inc. a subsidiary of IDG Enterprise</p>
+			<div class="network">
+				<div id="network-selector">
+                <div class="label">Explore the IDG Network <i class="ss-icon tick">descend</i></div>
+                	<ul>
+						<li><a href="http://www.cfoworld.com/" target="_blank">CFOworld</a></li>
+						<li><a href="http://www.cio.com" target="_blank">CIO</a></li>
+						<li><a href="http://www.computerworld.com" target="_blank">Computerworld</a></li>
+						<li><a href="http://www.csoonline.com" target="_blank">CSO</a></li>
+						<li><a href="http://www.demo.com" target="_blank">DEMO</a></li>
+						<li><a href="http://www.fritterati.com" target="_blank">Fritterati</a></li>					
+						<li><a href="http://www.greenbot.com" target="_blank">Greenbot</a></li>
+						<li><a href="http://www.idc.com" target="_blank">IDC</a></li>
+						<li><a href="http://www.idg.com" target="_blank">IDG</a></li>
+						<li><a href="http://www.idganswers.com/" target="_blank">IDG Answers</a></li>                	                						
+						<li><a href="http://www.idgconnect.com" target="_blank">IDG Connect</a></li>
+						<li><a href="http://www.idgknowledgehub.com" target="_blank">IDG Knowledge Hub</a></li>
+						<li><a href="http://www.idgtechnetwork.com" target="_blank">IDG TechNetwork</a></li>
+						<li><a href="http://www.idg.tv" target="_blank">IDG.TV</a></li>
+						<li><a href="http://www.idgventures.com" target="_blank">IDG Ventures</a></li>
+						<li><a href="http://www.infoworld.com" target="_blank">InfoWorld</a></li>
+						<li><a href="http://www.itnews.com" target="_blank">IT News</a></li>
+						<li><a href="http://www.itwhitepapers.com" target="_blank">ITwhitepapers</a></li>
+						<li><a href="http://www.itworld.com" target="_blank">ITworld</a></li>
+						<li><a href="http://www.javaworld.com" target="_blank">JavaWorld</a></li>
+						<li><a href="http://www.linuxworld.com" target="_blank">LinuxWorld</a></li>
+						<li><a href="http://www.macworld.com" target="_blank">Macworld</a></li>
+						<li><a href="http://www.networkworld.com" target="_blank">Network World</a></li>
+						<li><a href="http://www.pcworld.com" target="_blank">PC World</a></li>
+						<li><a href="http://www.techhive.com" target="_blank">TechHive</a></li>
+                	</ul>
+				</div><!-- /#network-selector -->
+			</div><!-- /.network -->
+		</div><!-- /.wrapper -->
+    </section>
+</footer>
+
+<script src="/www/js/jquery/jquery-ui.js?v=20150917091405"></script>
+<script src="/www/js/jquery/jquery.dfp.min.js?v=20150917091405"></script>
+
+<script src="/www.idge/js/FTScroller_plugins.js?v=20150917091405"></script>
+<script src="/www.idge/js/mule/shortstack_nav.js?v=20150917091405"></script>
+<script src="/www.idge/js/jquery/jt-scrollable.min.js?v=20150917091405"></script>
+<script src="/www/js/jquery/jquery.timeago.js?v=20150917091405"></script>
+<script>
+$(document).ready(function(){
+	$(".timeago").timeago();
+});
+</script>
+
+
+
+
+		
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+				<!-- Begin welcome ad overlay - gpt-overlay position  -->
+				<div id="superadunit" class="hidden">
+					<div class="ad">
+						<a href="javascript:unhide('superadunit');" id="superstitial-text">This ad will close in 20 seconds. Continue to site &raquo;</a>
+						<div id="gpt-overlay" class="">
+							<script type="text/javascript">
+								IDG.GPT.addDisplayedAd("gpt-overlay", "true");
+								googletag.cmd.push(function() { googletag.display('gpt-overlay'); });
+							</script>
+						</div>
+					</div>
+				</div>		
+				<!--  End welcome ad overlay - gpt-overlay position -->
+			
+			
+			
+			
+		
+	
+ 	
+ 
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="catfish" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("catfish", "true");
+						$('#catfish').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+				<!--  Begin gpt-skin -->
+				<div id="gpt-skin" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("gpt-skin", "true");
+						googletag.cmd.push(function() { googletag.display('gpt-skin'); });
+					</script>
+				</div>
+				<!--  End gpt-skin -->	
+			
+			
+			
+		
+	
+ 	
+ 
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="mobilewelcomead" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("mobilewelcomead", "true");
+						$('#mobilewelcomead').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+
+
+<script src="/www/js/analytics/tracking.js?v=20150917091405"></script>
+<script src="/www/js/autocomplete.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var listItems = $('#scrollable ul li');
+	var listWidth = 0;
+	for (var i=0;i < listItems.length; i++) {
+		listWidth = listWidth + $(listItems[i]).outerWidth();
+	}
+
+	$('#scrollable ul').width(listWidth+100); //adding an extra 100px of buffer	
+});
+
+//we need to disable this for IE10 for now - link clicks don't work!
+var trackPointerEvents = window.navigator.msPointerEnabled;
+
+if (!trackPointerEvents) {
+	//set up the FT Scroller for the topics
+	var scroller = new FTScroller(document.getElementById('scrollable'), {
+		scrollingY: false,
+		bouncing: false,
+		updateOnWindowResize: true,
+		scrollbars: false
+	});	
+}
+</script>
+
+
+
+<script src="/www/js/jquery/jquery.lazyload.min.js?v=20150917091405"></script>
+<script src="/www.idge/js/global.js?v=20150917091405"></script>
+
+<script src="/www/js/webfonts/ss-social.js?v=20150917091405"></script>
+<script src="/www/js/webfonts/ss-standard.js?v=20150917091405"></script>
+<script src="/www/js/analytics/brandAnalytics.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-300704-2']);
+_gaq.push(['_setDomainName', 'cio.com']);
+
+if(""=="11"){
+	 _gaq.push(['_trackPageview',''+'/slideshow/'+ '1']);
+} else{
+ _gaq.push(['_trackPageview']);
+}
+(function() { 
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s); }
+)();
+
+function trackGoogleAnalytics(articleId, slideNumber,articleUri) {
+	_gaq.push(['_setAccount', 'UA-300704-2']);
+	_gaq.push(['_setDomainName', 'cio.com']);
+	//_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageview', articleUri +'/slideshow/' + slideNumber]);
+	
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+	
+<script type="text/javascript">
+	var _sf_async_config={};
+
+	_sf_async_config.uid = 29363;
+
+	_sf_async_config.path = "/";
+	_sf_async_config.title = "CIO.com - Tech News, Analysis, Blogs, Video";
+	_sf_async_config.domain = "cio.com";
+	if(window.location.href.indexOf("video")&&true) {
+		_sf_async_config.playerdomain= _sf_async_config.domain.replace("www.","");
+	}
+	
+	_sf_async_config.useCanonical = true;
+	
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement("script");
+	    e.setAttribute("language", "javascript");
+	    e.setAttribute("type", "text/javascript");
+	    e.setAttribute("src", (("https:" == document.location.protocol) ? 
+	      "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + 
+	      ((window.location.href.indexOf("video")) ? "js/chartbeat_video.js" : "js/chartbeat.js"));
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != "function") ?
+	 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript" src="/www/js/jquery/jquery.cookie.js"></script>
+<!-- CryptoJS -->
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script type="text/javascript" src="/www/js/analytics/idg_bk_coreapi.js?v=20150917091405"></script>
+	
+<script type="text/javascript">
+var blueKaiId=14337;
+var blueKaiPort=10;
+var brandCode = "cio";
+var regUrl="http://regdev.idge.int/api/"
+var daysToRefresh=30;
+var bk_debug_log=false;
+
+
+
+	 regUrl="http://reg.idgenterprise.com/api/";
+
+
+
+	daysToRefresh=30;
+
+
+	
+
+
+	
+
+if ( typeof(s) != 'undefined' ) {
+	bk_addPageCtx("pageType", (typeof(s.pageType)!='undefined')?s.pageType:'');
+}
+
+
+
+bk_addPageCtx("cmpy", "[]");
+
+
+bk_addPageCtx('tid', '');
+
+	
+	
+
+// Add the list name and email address hash params to bluekai tracking
+// If the user came from a newsletter clickthru, also set the isnl pagectx
+params = getUrlParams('phint');
+if(Object.keys(params).length > 0)
+	{
+	bk_addPageCtx("idg_eid", params['idg_eid']);
+	bk_addPageCtx("newt", params['newt']);
+	bk_addPageCtx("isnl", "1");	
+	}
+
+	try{
+		IDG.bkCoreApi.start();
+	}
+	catch(e){
+		//alert("Triggering catch")
+		bk_doJSTag(blueKaiId ,blueKaiPort);
+		if (window.console && window.console.log){
+			window.console.log("Error Occured While Processing Profile Siubmission")
+		}
+	}
+
+</script>
+
+
+
+<!-- End BlueKai Tag -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN Krux Control Tag for CIO -->
+<script class="kxct" data-id="Hx-xwwyV" data-timing="async" data-version="1.9" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+    var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);    
+    k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+      (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=Hx-xwwyV";
+    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  })();
+</script>
+<!-- END Krux Controltag -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- START Nielsen Online SiteCensus? V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+    (function () {
+        var d = new Image(1, 1);
+        d.onerror = d.onload = function () {
+            d.onerror = d.onload = null;
+        };
+        d.src = ["http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-203426h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join();
+    })();
+</script>
+
+
+<!-- END Nielsen Online SiteCensus? V6.0 -->
+
+<script type="text/javascript" src="/www/js/ads/jquery.lazyload-ad.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+// -- Load Lazy Advertisement placement as deferred
+$("div.lazyload_ad").lazyLoadAd({
+        threshold    : 500,         // You can set threshold on how close to the edge ad should come before it is loaded. Default is 0 (when it is visible).
+        forceLoad    : false,       // Ad is loaded even if not visible. Default is false.
+        onLoad       : false,       // Callback function on call ad loading
+        onComplete   : false,       // Callback function when load is loaded
+        timeout      : 1500,        // Timeout ad load
+        debug        : false,       // For debug use : draw colors border depends on load status
+        xray         : false        // For debug use : display a complete page view with ad placements
+}) ;
+</script>
+
+
+
+	<script>
+	//check to see if there's a fireplace loaded - if so, constrain the carousel width
+	var setInt = setInterval(checkFireplace, 200);
+	var setIntCount = 0;
+	function checkFireplace() {
+		//limit checking time to 10 seconds max
+		if (setIntCount < 50) {
+			if ($('body div').data('studioassetid')) {
+				$('body').addClass('has-fireplace');	
+				clearInterval(setInt);
+			}
+			
+			setIntCount++;
+		}
+		else {
+			clearInterval(setInt);	
+		}
+	}
+	</script>
+
+
+<script type='text/javascript' src="/www/js/carousel-extend.js"></script><script type='text/javascript' src="/www.idge.cio/js/homepage.js"></script><script type='text/javascript'>
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+
+		$('#resources-sponsored-links').addClass('show');
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+	var omniture_account="cxociocom";
+	
+	var omniture_trackingServer = "idgenterprise.d1.sc.omtrdc.net";
+	
+	g_sOmnitureReportSuite = "cxociocom";
+	
+
+$(document).ready(function(){
+	
+	if(!!$('.sharing-tools').length || !!$('#ss-share').length || (!!$('#sharer').length && !!!$('#sharer.sidecar').length)){
+		Socialite.load();
+		Socialite.setup({
+			twitter: {
+				lang      : 'en',
+		        onclick   : function(e) {socialTrack("Article","Twitter","Click");},
+		        ontweet   : function(e) {
+		        	socialTrack("Article","Twitter","Tweet");
+		        	$thm.logPlEvent({"b":"cio","e":"twshare","t":"article","id":""});
+			    },
+		        onretweet : function(e) {socialTrack("Article","Twitter","Retweet");},
+		        onfavorite: function(e) {socialTrack("Article","Twitter","Favorite");},
+		        onfollow  : function(e) {socialTrack("Article","Twitter","Follow");followTrack();}
+		    },
+		    facebook: {
+		    	lang	: 'en_US',
+		    	appId	: '196366870381968',
+		    	onlike	: function(url){
+		    		socialTrack("Article","Facebook","Like");
+		    		$thm.logPlEvent({"b":"cio","e":"fblike","t":"article","id":""});
+		    	},
+		    	onunlike: function(url){socialTrack("Article","Facebook","Unlike");},
+		    	xfbml	: true,
+		    	version	:  'v2.1'
+		    },
+		    googleplus: {
+		        lang	: 'en-US',
+		        callback: function(el, e) {
+		        	socialTrack("Article","Googleplus","Click");
+		        	$thm.logPlEvent({"b":"cio","e":"googplus","t":"article","id":""});
+		        }
+		    }
+		});
+		
+		//$('.sharing-tools').show();
+		$('#ss-share').show();
+		
+	}
+	
+	$('a.pinterest-pinit').click(function(e){
+		socialTrack('Article','Pinterest','share');
+	});
+	$('li.redditShare').click(function(e) {
+		socialTrack('Article','Reddit','share');
+	});
+	
+	$('li.stumbleUponShare').click(function(e) {
+		socialTrack('Article','StumbleUpon','share');
+	});
+
+	$('.banner-tw').click(function(e){
+		brandFollowTrack("twitter");
+		
+	});
+	$('.banner-fb').click(function(e){
+		brandFollowTrack("facebook");
+	});
+	$('.mediaresource #download-asset').click(function(e){
+		Analytics.logAssetDownload($(this).data('id'));
+	});
+
+	if (typeof(FB)!='undefined') {
+		FB.Event.subscribe('edge.create', function(response){
+			s = s_gi(g_sOmnitureReportSuite);
+			s.linkTrackEvents = s.events = "event36";
+			s.prop48="facebook share";
+			s.linkTrackVars = "prop48,events";
+			s.tl(true, 'o', 'Social Media share');
+		});
+	}
+
+	if (typeof(digMag) != 'undefined'){
+		if(typeof(digLogin) != 'undefined'){
+			DigAnalytics.logSignIn(digLogin);
+		}
+	}
+
+
+});
+
+var Analytics = new Object();
+Analytics.logArticleComment = function(){
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackVars="prop25,eVar25,events";
+	s.linkTrackEvents="event19";
+	s.events="event19";
+	s.prop25 = 'Article Comment';
+	s.tl(this,'o','Article Comments');
+};
+Analytics.logSocialSignin = function(provider){
+	s = s_gi(g_sOmnitureReportSuite);
+
+	s.linkTrackEvents = s.events = "event32";
+	s.prop19=provider;
+	s.linkTrackVars = "prop19,events";
+	s.tl(true, 'o', provider);
+};
+Analytics.logInternalSignin = function(){
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackEvents = s.events = "event32";
+	s.prop19="Internal Login";
+	s.linkTrackVars = "prop19,events";
+	s.tl(true, 'o', 'Login');
+};
+Analytics.logAssetDownload = function(assetname){ 
+	s = s_gi(g_sOmnitureReportSuite); 
+	s.linkTrackVars="prop52,eVar37,events"; 
+	s.linkTrackEvents="event49"; 
+	s.pagename = 'filetype:'+s.pagename;
+	s.events="event49"; 
+	s.prop52 = 'asset:'+assetname;
+	eVar37= s.prop52;
+	s.tl(this,'o','Asset Download'); 
+} 
+
+/**
+ * Trigger Omniture and Google Analytics tracking code
+ * loc - Home, Footer, Header, Article
+ * network - Facebook, Twitter, LinkedIn, Googleplus 
+ * socialAction - Like, Unlike, Share, Follow, Tweet, Retweet, Favorite, Click
+ */
+function socialTrack(loc,network,socialAction) {
+	//Omniture
+	var trackString = network + ":" + loc + ":" + socialAction;
+	console.log("socialTrack() "+trackString);
+	s.prop48 = trackString;
+	s.eVar27 = "D=c48";
+	s.event36 = trackString;
+	s.linkTrackEvents=s.events="event36";
+	s.linkTrackVars = "prop48,eVar27,events";
+	s.tl(true, 'o', 'Social media');
+}
+
+function linkedInTrack() {
+	socialTrack("Article","LinkedIn","Share");
+};
+
+function followTrack() {
+	console.log("followTrack()");
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackEvents = s.events = "event37";
+	s.prop49="social media";
+	s.linkTrackVars = "prop49,events";
+	s.tl(true, 'o', 'Social media follow');
+}
+function brandFollowTrack(network){
+	console.log("brandFollowTrack()");
+	s = s_gi(g_sOmnitureReportSuite);
+	s.eVar16="followed on:"+network;
+	s.linkTrackEvents = s.events = "event37";
+	s.prop49="social media";
+	s.linkTrackVars = "prop49,eVar16,events";
+	s.tl(true, 'o', 'Social media brand follow');
+    if (typeof IDG.Eloqua != "undefined") {
+        IDG.Eloqua.invoke_flash("social-" + network);
+	}
+}
+function sharingTrack(type, pixelLogString) {
+	s = s_gi(g_sOmnitureReportSuite);
+	s.eVar16="Sharing on: " + type;
+	s.linkTrackEvents = s.events = "event37";
+	s.prop49="social media sharing";
+	s.linkTrackVars = "prop49,eVar16,events";
+	s.tl(true, 'o', 'Social Media Sharing');
+    if (typeof IDG.Eloqua != "undefined") {
+        IDG.Eloqua.invoke_flash("social-" + type);
+	}
+    // Record Social Event in pixel logger
+    if (pixelLogString !== undefined) {
+    	$thm.logPlEvent({"b":"cio","e":pixelLogString,"t":"article","id":""});
+    }   
+}
+function moduleTrack(moduleName,loc) {
+	console.log("moduleTrack()");
+	s = s_gi(g_sOmnitureReportSuite);
+	s.eVar42=moduleName;
+	s.eVar44=loc;
+	s.linkTrackEvents=s.events='event31';
+	s.list3=s.prop42+","+s.eVar42;
+	s.tl(true, 'o', 'Module click');
+}
+function trackSlideshow(articleId, slideTitle, slideNumber) {
+	s = s_gi(g_sOmnitureReportSuite);
+	s.prop15="page number:" + slideNumber;
+	s.eVar15="D=c15";
+	s.tl(true, 'o', 'Track Slideshow: articleId:' + articleId + ' title:' + slideTitle + " Slide No.:" + slideNumber);
+}
+function oClickTrack(key) {
+	// test for empty key and don't log if empty
+	if (typeof(key) != 'undefined' && key.length > 0){
+		s = s_gi(g_sOmnitureReportSuite);
+
+		s.linkTrackVars="eVar42,events";
+	    s.events="event49";
+	    s.linkTrackEvents="event49";
+	
+		s.eVar42 = key;
+		s.list3=s.prop42+","+s.eVar42;
+		s.tl(true,'o','module click');
+	}
+};
+</script>
+<!-- SiteCatalyst code version: H.26.2.
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+
+<script language="JavaScript" type="text/javascript" src="/www.idge/js/analytics/s_code.js?v=20150917091405"></script>
+<script language="JavaScript" type="text/javascript" id="omniVars"><!--
+g_sOmnitureReportSuite = typeof g_sOmnitureReportSuite != 'undefined' && g_sOmnitureReportSuite ? g_sOmnitureReportSuite : "cxociocom"; 
+
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+//BEGIN OMNITURE VARS 
+s.pageName="home page:CIO.com - Tech News, Analysis, Blogs, Video";
+
+s.pageType="";
+if (typeof omnitureChannel != 'undefined'){
+s.channel=omnitureChannel;
+}
+s.prop1="";s.eVar1="D=c1";
+s.prop2="";s.eVar2="D=c2";
+s.prop3="display type:home page";s.eVar3="D=c3";
+s.prop4="";s.eVar4="D=c4";
+
+s.prop6="";
+s.prop7="";s.eVar7="D=c7";
+s.prop9="";s.eVar9="D=c9";
+s.prop11="";s.eVar11="D=c11";
+s.prop12="";s.eVar12="D=c12";
+s.prop13="";s.eVar13="D=c13";
+s.prop14="";s.eVar14="D=c14";
+s.prop15="";s.eVar15="D=c15";
+s.prop17="uri:/";s.eVar17="D=c17";
+s.prop18="";s.eVar18="D=c18";
+s.prop24=getLoginStatusForOmniture();s.eVar24="D=c24";
+s.prop28=getTrackingToken('tk') ? "tokens:"+getTrackingToken('tk') : "";s.eVar28="D=c28";
+
+s.prop37="rpn:cio::home page:cio.com - tech news, analysis, blogs, video";
+
+s.eVar37="D=c37";
+s.prop39="";s.eVar39="D=c39";
+s.prop40="";
+s.prop41=IDG.GPT.getDisplayedAds(',') + ',' + IDG.GPT.getOtherAds(',');
+s.prop42=IDG.GPT.getModules(',');s.eVar42="D=c42";
+
+
+s.prop53="";s.eVar53="D=c53";
+s.prop54="";s.eVar30="D=c54";
+s.eVar33=s.prop55="";s.eVar33="D=c55";
+s.prop56="";s.eVar40="D=c56";
+s.prop61="";s.eVar10="D=c61";
+s.prop74="";s.eVar58="D=c74";
+s.prop75="";s.eVar60="D=c75";
+s.prop58=":";s.eVar59="D=c58";
+//module tracking
+var sModules = '';
+for(var i in g_arrModules){
+	if(g_arrModules[i] && i != ''){
+		sModules += i+',';
+	}
+}
+sModules = sModules.replace(/,$/,'');
+s.prop42 = sModules;
+s.eVar42="D=c42";
+//now set events
+s.events="";
+
+
+s.list3=s.prop42+","+s.eVar42;
+//force all values to lower case for reporting consistency
+for(var p in s){
+	if(s[p] && p.match(/^(prop|ceVar)\d+$/)){
+		//console.log(p+": "+s[p]);
+		s[p] = s[p].toLowerCase();
+		//console.log(p+": "+s[p]);
+	}
+}
+//END OMNITURE VARS 
+
+/* Conversion Variables */
+s.campaign=getTrackingToken('tk') ? "tokens:"+getTrackingToken('tk') : "";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://idgenterprise.d1.sc.omtrdc.net/b/ss/cxociocom/1/H.25--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.26.2. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div id="loginModal"></div>
+		<div id="logoffModal"></div>
+
+		
+
+    	
+			
+
+
+
+
+
+
+
+
+
+
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <span id="parsely-cfg" data-parsely-site="cio.com"></span>
+</div>
+<script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+      if (e) return;
+      e = d.createElement(s); e.id = i; e.async = true;
+      e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+						
+	</body>
+</html>

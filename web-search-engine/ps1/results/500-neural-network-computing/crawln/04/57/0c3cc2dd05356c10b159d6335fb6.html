@@ -1,0 +1,596 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link rel="stylesheet" title="default stylesheet" media="screen" type="text/css" href="http://cdn4.explainthatstuff.com/ets2.css">
+  <link rel="canonical" href="http://www.explainthatstuff.com/how-computer-memory-works.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>How does computer memory work? - Explain that Stuff</title>
+  <meta name="description" content="An easy-to-understand introduction to computer memory, including an explanation of terms such as RAM, ROM, SDRAM, and DRAM.">
+<link rel="shortcut icon" href="http://cdn4.explainthatstuff.com/favicon.ico">
+
+<!-- Begin Cookie Consent plugin. Original version by Silktide (http://silktide.com/cookieconsent), slightly modified by
+explainthatstuff.com on July 29, 2015), released under GNU General Public License Version (http://www.gnu.org/licenses/gpl.txt) as published by the Free Software Foundation.
+-->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to improve your experience of our site and to serve relevant, personalized advertising.","dismiss":"Got it!","learnMore":"More info","link":"http://www.explainthatstuff.com/privacy.html","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="http://cdn4.explainthatstuff.com/cookieconsent3.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body itemscope itemtype="http://schema.org/Article"><div class="container"><a name="pagetop"></a>
+
+
+
+
+
+
+<div class="header"><IMG class="headlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif"></div>
+
+<div class="searchtop">
+<!-- SiteSearch Google top search start -->
+<form action="http://www.explainthatstuff.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1030585152417294:7662706493" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="40" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<!-- SiteSearch Google top search end -->
+</div>
+
+
+
+<!-- Ad placement: computing -->
+
+
+
+<div class="crumb">
+You are here:
+<a href="/">Home page</a> &gt;
+<a href="articles_computers.html">Computers</A> &gt;
+Computer memory
+</div>
+
+
+<!-- old nav bar -->
+
+
+
+<div class="nav">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+
+
+<div class="adrightsm">Advertisement
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="1317849019"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+
+<div class="main2">
+<p><img itemprop="image" src="http://cdn4.explainthatstuff.com/memorychip.jpg" class="ileftno" alt="A 256MB flash memory integrated circuit chip." height="255" width="300"></p>
+
+<H1 itemprop="headline name">Computer memory</H1>
+<!-- google_ad_section_start(weight=ignore) -->
+
+
+<div class="sharetop"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhow-computer-memory-works.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+<p>by <a href="chris-woodford.html">Chris Woodford</a>. <span class="italic">Last updated: August 13, 2014.</span></p>
+<meta itemprop="alternativeHeadline" content="How does computer memory work?">
+<meta itemprop="description" content="Describes and compares the main types of computer memory, including RAM, ROM, and DRAM.">
+<meta itemprop="datePublished" content="2010-07-27">
+<meta itemprop="dateModified" content="2014-08-13">
+
+<p itemprop="articleBody"><span class="dropcap">I</span>s your memory like an elephant's... or is it more like a sieve? You often hear
+people comparing themselves to one of those things, but you almost
+never hear someone say their memory is like a <a href="howcomputerswork.html">computer</a>. That's
+partly because human brains and <B>computer memories</B> have very different
+purposes and operate in <a href="internet-and-brain.html">quite different ways</A>. But it also reflects
+the fact that where we humans often struggle to remember names,
+faces, and even the day of the week, computer memories are the
+closest thing we have to memory perfection. How exactly do these "remarkable
+rememberers" actually work? Let's take a closer look!</P>
+
+<p><span class="credit">Photo: A computer memory chip like this is an example of an
+<a href="integratedcircuits.html">integrated circuit</a>.
+That means it's a miniaturized collection of thousands of <a href="electronics.html">electronic</A> parts (usually
+called components) created on a tiny chip of silicon about the size of a pinkie nail. This one is a 256-megabyte (256 MB) <a href="flashmemory.html">flash memory</A> chip from a <a href="usb.html">USB</A> memory stick.</span></p>
+
+
+<h2>What is memory?</h2>
+
+<P>The basic purpose of memory&mdash;human or machine&mdash;is to keep a record of
+information for a period of time. One of the really noticeable things about 
+human memory is that it's extremely good at <span class="italic">forgetting</span>. That sounds
+like a major defect until you consider that we can only pay
+attention to so many things at once. In other words, forgetting is most likely a clever
+tactic humans have evolved that helps us to focus on the things that are
+immediately relevant and important in the endless clutter of our
+everyday lives&mdash;a way of concentrating on what really matters. Forgetting
+is like turning out old junk from your closet to make room for new stuff.</P>
+
+<p><img src="http://cdn4.explainthatstuff.com/neural-network.jpg" class="irightno" height="250" width="220" ALT="General illustration of a neural network: a brain scan photo overlaid with dots to represent connected neural units."></p>
+
+<P>Computers don't remember or forget things the way that human brains do.
+Computers work in <B>binary</B> (explained more fully in the box
+below): they either know something or they
+don't&mdash;and once they've learned, barring some sort of catastrophic
+failure, they generally don't forget. Humans are different.
+We can <I>recognize</I> things ("I've seen that face before somewhere")
+or feel certain that we know something ("I remember learning the
+German word for cherry when I was at school") without necessarily being able to
+recollect them. Unlike computers, humans can
+forget... remember... forget... remember... making memory seem more
+like art or magic than science or technology. When clever people 
+master tricks that allow them to memorize thousands of pieces of
+information, they're celebrated like great magicians&mdash;even though
+what they've achieved is far less impressive than anything a
+five-dollar, USB flash memory stick could do!</P>
+
+<p><span class="credit">Photo: Computers remember things in a very different way from human brains, although it is
+possible to program a computer to remember things and recognize patterns in a brain-like way
+using what are called <a href="introduction-to-neural-networks.html">neural networks</a>. Brain scan photo courtesy of
+<a href="http://www.nida.nih.gov/" target="_blank">National Institute on Drug Abuse</a> and <a href="http://www.nih.gov/index.html" target="_blank">National Institutes of Health (NIH)</a> with neural network pattern by explainthatstuff.com.</span></p>
+
+<h2>The two types of memory</h2>
+
+<P>One thing human brains and computers do have in common is different types of
+memory. Human memory is actually split into a short-term "working"
+memory (of things we've recently seen, heard, or processed with our
+brains) and a long-term memory (of facts we've learned, events we've
+experienced, things we know how to do, and so on, which we generally
+need to remember for much longer). A typical computer has two different kinds of memory as well.
+</P>
+
+<!-- google_ad_section_end -->
+
+<p><img src="http://cdn4.explainthatstuff.com/ipod-hard-drive2.jpg" height="225" width="300" class="ileftno" ALT="A 20GB iPod PCMCIA hard drive and a 30GB laptop hard drive (inside view), both made by Toshiba."></P>
+
+<P>There's a built-in <B>main memory</B> (sometimes called internal memory), made
+up of silicon chips (<a href="integratedcircuits.html">integrated circuits</a>). It can store and retrieve
+<B>data</B> (computerized information) very quickly, so it's used to help the computer process whatever it's currently working on. Generally, internal memory is <B>volatile</B>, which means it forgets its contents as soon as the power is
+switched off. That's why computers also have what's called <B>auxiliary
+memory</B> (or storage) as well, which remembers things even when the power is disconnected.
+In a typical PC or laptop, auxiliary memory is generally provided by a <a href="harddrive.html">hard drive</a> or a
+<a href="flashmemory.html">flash memory</A>. Auxiliary
+memory is also called <B>external memory</B> because in older, larger
+computers, it was typically housed in a completely separate machine
+connected to the main computer box by a cable. In a similar way, modern
+PCs often have plug-in auxiliary storage in the form of USB flash
+memory sticks, SD memory cards (which plug into things like <a href="digitalcameras.html">digital
+cameras</A>), plug in hard-drives, <a href="cdplayers.html">CD/DVD ROMs</A> and rewriters and so on.</P>
+
+<P>
+<span class="credit">Photo: These two hard drives are examples of auxiliary computer memory. On the left, we have a 20GB PCMCIA hard drive from an iPod. On the right, there's a somewhat bigger 30GB hard-drive from a laptop. The 30GB hard drive can hold about 120 times more
+information than the 256MB flash memory chip in our top photo. See more photos like this in our
+main article on <a href="harddrive.html">hard drives</a>.</span></p>
+
+
+<P>In practice, the distinction between main memory and auxiliary memory can get a little blurred.
+Computers have a limited amount of main memory (typically somewhere between 512MB and 4GB on a modern computer). The more they have, the more quickly they can process information, and the faster they get things done. If a computer needs to store more space than its main memory has room for, it can temporarily move less important things from the main memory onto its hard drive in what's called a <B>virtual memory</B> to free up some space. When this happens, you'll hear the hard drive clicking away at very high speed as the computer reads and writes data back and forth between its virtual memory and its real (main) memory. Because hard drives take more time to access than memory chips, using virtual memory is a much slower process than using main memory&mdash;and it really slows your computer down. That's essentially why computers with more memory work faster.</P>
+
+
+<h2>Internal memory</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/nasa-stacked-memory-circuit.jpg" height="225" width="300" class="irightno" ALT="NASA 3D stacked memory circuit from 1999."></P>
+
+<H3>RAM and ROM</H3>
+
+<P>The chips that make up a computer's internal memory come in two broad flavors
+known as <B>RAM (random access memory)</B> and
+<B>ROM (read-only memory)</B>.
+RAM chips remember things only
+while a computer is powered on, so they're used for storing whatever
+a computer is working on in the very short term. ROM chips, on the
+other hand, remember things whether or not the power is on. They're
+preprogrammed with information in the factory and used to store
+things like the computer's BIOS (the basic input/output system that
+operates fundamental things like the computer's screen and <a href="computerkeyboards.html">keyboard</A>).
+RAM and ROM are not the most helpful names in the world, as we'll shortly find out,
+so don't worry if they sound baffling. Just remember
+this key point: the main memory inside a computer is based on two kinds
+of chip: a temporary, volatile kind that remembers only while
+the power is on (RAM) and a permanent, nonvolatile kind that
+remembers whether the power is on or off (ROM).</P>
+
+<P><span class="credit">Photo: Most memory chips are two dimensional, with the
+<a href="howtransistorswork.html">transistors</A> (electronic switches) that store
+information laid out in a flat grid. By contrast, in this 3D stack memory, the transistors are arranged vertically,
+as well as horizontally, so more information can be packed into a smaller space. Photo courtesy of
+<a href="http://lisar.larc.nasa.gov/" target="_blank">NASA Langley Research Center (NASA-LaRC)</a>.</span></p>
+
+
+<H3>Random and sequential access</H3>
+
+<P>This is where things can get slightly confusing. RAM has the name <B>random
+access</B> because (in theory) it's just as quick for the computer to
+read or write information from any one part of a RAM memory chip as from any
+other. (Incidentally, that applies just as much to most ROM chips, which
+you could say are examples of nonvolatile, RAM chips!) Hard drives are
+also, broadly speaking, random-access devices, because it takes
+roughly the same time to read information from any point on the drive.</P>
+
+<P>Not all kinds of computer memory is random access, however. It used to be common
+for computers to store information on separate machines, known as tape drives, using long
+spools of magnetic tape (like giant-sized versions of the music
+cassettes in old-fashioned Sony Walkman cassette players). If
+the computer wanted to access information, it had to spool backward
+or forward through the tape until it reached exactly the point it
+wanted&mdash;just like you had to wind back and forth through a tape for
+ages to find the track you wanted to play. If the tape was right at the
+beginning but the information the computer wanted was at the very end,
+there was quite a delay waiting for the tape to spool forward to the right
+point. If the tape just happened to be in the right place, the computer
+could access the information it wanted pretty much instantly.
+Tapes are an example of <B>sequential access</B>: information
+is stored in sequence and how long it takes to read or write a
+piece of information depends where the tape happens to be in relation
+to the read-write head (the <a href="magnetism.html">magnet</A> that reads and writes information
+from the tape) at any given moment.</P>
+
+<p class="center">
+<img src="http://cdn4.explainthatstuff.com/hard-drive-random-access.png" class="icentno" alt="Artwork showing how a hard drive can access information randomly." height="240" width="300">
+<img src="http://cdn4.explainthatstuff.com/tape-drive-sequential-access.png" class="icentno" alt="Artwork showing how a tape drive has to access information sequentially." height="240" width="300">
+<BR><span class="credit">Picture: Left: Random access: A hard drive can read or write any piece of information in more or less the same amount of time, just by scanning its read-write head back and forth over the spinning platter.
+Right: Sequential access: A tape drive has to spool the tape backward or forward until it's at the right position before it can read or write information.</span></p>
+
+
+<H3>DRAM and SRAM</H3>
+
+<P>RAM comes in two main varieties called <B>DRAM (dynamic RAM)</B> and
+<B>SRAM (static RAM)</B>. DRAM is the less expensive of the two and has a higher density
+(packs more data into a smaller space) than SRAM, so it's used for
+most of the internal memory you find in PCs, games consoles, and so on.
+SRAM is faster and uses less power than DRAM and, given its greater
+cost and lower density, is more likely to be used in the smaller,
+temporary, "working memories" (caches) that form part of a
+computer's internal or external memories. It's also widely used in portable gadgets such
+as <a href="cellphones.html">cellphones</A>, where minimizing power consumption (and maximizing
+<a href="batteries.html">battery</A> life) is extremely important.</P>
+
+<P>The differences between DRAM and SRAM arise from the way they're built
+out of basic <a href="electronics.html">electronic components</a>. Both types of RAM are volatile,
+but DRAM is also <B>dynamic</B> (it needs power to be zapped
+through it occasionally to keep its memory fresh) where SRAM is
+<B>static</B> (it doesn't need "refreshing" in the same way). DRAM is
+more dense (stores more information in less space) because it uses
+just one <a href="capacitors.html">capacitor</A> and one <a href="howtransistorswork.html">transistor</A> to store each bit (binary
+digit) of information, where SRAM needs several transistors for each
+bit.</P>
+
+<H3>ROM</H3>
+
+<P>Like RAM, ROM also comes in different varieties&mdash;and, just to confuse matters, not all of it is strictly
+readonly. The <a href="flashmemory.html">flash-memory</a> you find in USB memory sticks and
+digital camera memory cards is actually a kind of ROM that retains
+information almost indefinitely, even when the power is off (much like conventional ROM) but
+can still be reprogrammed relatively easily whenever necessary (more
+like conventional RAM). Technically speaking, flash memory is a type of <B>EEPROM</B> (electrically
+erasable programmable ROM), which means information can be stored or wiped out
+relatively easily just by passing an <a href="electricity.html">electric current</A> through the memory.
+Hmmm, you might be thinking, doesn't all memory work that way... by passing electricity through it? Yes!
+But the name is really a historic reference to the fact that erasable
+and reprogrammable ROM used to work a different way. Back in the 1970s, the most common form of
+erasable and rewritable ROM was <B>EPROM</B> (erasable programmable ROM).
+EPROM chips had to be erased by the relatively laborious and inconvenient method of first removing them from their circuit
+and then blasting them with powerful <a href="electromagnetic-spectrum.html">ultraviolet light</A>.
+Imagine if you had to go through that longwinded process every time you wanted to store a new set of photos
+on your digital camera memory card.</P>
+
+<P>Gadgets such as cellphones, <a href="modems.html">modems</a>, and <a href="wirelessinternet.html">wireless routers</A> often
+store their software not on ROM (as you might expect) but on
+flash memory. That means you can easily update them with new <B>firmware</B>
+(relatively permanent software stored in ROM), whenever an upgrade
+comes along, by a process called "flashing." As you may have
+noticed if you've ever copied large amounts of information to a flash
+memory, or upgraded your router's firmware, flash memory and
+reprogrammable ROM works more slowly than conventional RAM memory and
+takes longer to write to than to read.</P>
+
+
+<h2>Auxiliary memory</h2>
+
+
+<p><img src="http://cdn4.explainthatstuff.com/ibm-370-mainframe-1981.jpg" height="240" width="300" class="irightno" ALT="An IBM System/370 mainframe computer with tape drives in the background."></P>
+
+<P>The most popular kinds of auxiliary memory used in modern PCs are <a href="harddrive.html">hard drives</a>
+and <a href="cdplayers.html">CD/DVD ROMs</A>.
+But in the long and fascinating <a href="historyofcomputers.html">history of computing</A>, people have used all kinds of other memory
+devices, most of which stored information by magnetizing things.
+<B>Floppy drives</B> (popular from about the late-1970s to the mid-1990s) stored
+information on floppy disks. These were small, thin circles of plastic, coated with magnetic material, spinning inside durable <a href="plastics.html">plastic</A> cases, which were gradually reduced in size from about 8 inches, through 5.25 inches, down to the final popular size of about 3.5 inches.
+<B>Zip drives</B> were similar but stored much more information in a highly compressed
+form inside chunky cartridges. In the 1970s and 1980s, microcomputers
+(the forerunners of today's PCs) often stored information using
+<B>cassette tapes</B>, exactly like the ones people used back then for
+playing music. You might be surprised to hear that big computer departments still widely use tapes for backing
+up data today, largely because this method is so simple and inexpensive. It doesn't matter that
+tapes work slowly and sequentially when you're using them for backups, because generally you want
+to copy and restore your data in a very systematic way&mdash;and time isn't necessarily that critical.</P>
+
+<p><img src="http://cdn4.explainthatstuff.com/magnetic-core-memory.jpg" class="ileftno" alt="Left: A large magnetic core memory unit from 1954. Middle: A magnetic core memory circuit from the unit. Right: An individual ferrite magnetic memory core from the circuit" height="200" width="430"></P>
+
+<p><span class="credit">Photo: Right: This is the operator's terminal of an IBM System/370 mainframe computer dating from 1981.
+You can see a bank of five tape drives whirring away in the background and, behind them, cupboards filled with stored tapes. If
+the computer needed to read some really old data (say, last year's payroll records or a backup of data made a few days ago),
+a human operator had to search for the correct tape in the cupboard and then "mount it" (load it into the drive) before the machine could read it! We still talk about "mounting" discs and drives to this day, even when all we mean is getting a computer to recognize some part of its memory that isn't currently active. Photo courtesy of <a href="http://grcimagenet.grc.nasa.gov/" target="_blank">NASA Glenn Research Center (NASA-GRC)</a>.</span></p>
+
+
+<P>Going back even further in time, computers of the 1950s and 1960s recorded information on
+<B>magnetic cores</B> (small rings made from <a href="magnetism.html">ferromagnetic</A>
+and <a href="ceramics.html">ceramic</A> material) while even earlier machines stored information using
+<a href="howrelayswork.html">relays</A> (switches like those used in <a href="telephone.html">telephone</a> circuits) and
+vacuum tubes (a bit like miniature versions of the cathode-ray tubes
+used in old-style <a href="television.html">televisions</A>).</P>
+
+<P><span class="credit">Photo: Left: Memory as it used to be in 1954. This closet-sized <a href="http://en.wikipedia.org/wiki/Magnetic_core_memory" target="_blank">magnetic core memory</A> unit (left) was made up of
+individual circuits (middle) containing tiny rings of magnetic material (ferrite), known as cores (right), which could be magnetized or demagnetized
+to store or erase information. Since any core could be read from or written to as easily as any other, this was a form of random access memory. Photos courtesy of NASA Glenn Research Center (NASA-GRC).</span></p>
+</div>
+
+<div class="box">
+<h2>How memories store information in binary</h2>
+<p>
+Photos, videos, text files, or sound, computers store and process all kinds of information
+in the form of numbers, or digits. That's why they're sometimes called <a href="analog-and-digital.html">digital</A> computers.
+Humans like to work with numbers in the decimal (base 10) system (with ten different digits ranging from 0 through 9).
+Computers, on the other hand, work using an entirely different number system
+called <B>binary</B> based on just two numbers, zero (0) and one (1). In the decimal system, the columns of numbers correspond to ones, tens, hundreds, thousands, and so on as you
+step to the left&mdash;but in binary the same columns represent powers of two
+(two, four, eight, sixteen, thirty two, sixty four, and so on). So the
+decimal number 55 becomes 110111 in binary, which is 32+16+4+2+1. You need a lot more
+<B>b</B>inary dig<B>its</B> (also called <B>bits</B>) to store a number. With eight bits (also called a <B>byte</B>), you can store any decimal number from 0&ndash;255 (00000000&ndash;11111111 in binary).</p>
+
+<p>
+One reason people like decimal numbers is because we have 10
+fingers. Computers don't have 10 fingers. What they have instead is
+thousands, millions, or even billions of electronic switches called
+<a href="howtransistorswork.html">transistors</a>. Transistors store binary numbers when electric currents
+passing through them switch them on and off. Switching on a transistor stores a one; switching it off
+stores a zero. A computer can store decimal numbers in its memory by switching off a
+whole series of transistors in a binary pattern, rather like someone holding
+up a series of flags. The number 55 is like holding up five flags and
+keeping one of them down in this pattern:</p>
+<p class="center">
+<img src="http://cdn4.explainthatstuff.com/binary-flag-signalling.png" alt="Binary code illustrated with a pattern of flags" height="170" width="400" class="icentno" alt="Showing a binary number with flags"
+ height="100" width="299"><br>
+
+<span class="credit">Artwork: 55 in decimal is equal to (1&times;32) +
+(1&times;16) + (0&times;8) + (1&times;4) + (1&times;2) + (1&times;1) =
+110111 in binary. A computer doesn't have any flags inside it, but it can store the
+number 55 with six transistors switched on or off in the same pattern.</span></p>
+
+<p>So storing numbers is easy. But how can you add,
+subtract, multiply, and divide using nothing but electric currents? You
+have to use clever circuits called logic gates, which you can read all
+about in our <a href="logicgates.html">logic gates</a> article.</p>
+</div>
+
+<div class="main2">
+
+
+
+<div class="sharebot"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhow-computer-memory-works.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+<h2>Find out more</h2>
+
+<h3>On this website</h3>
+<p>You might like these other articles on our site covering similar topics:</p>
+<UL>
+<li><a href="howcomputerswork.html">Computers</a></li>
+<li><a href="flashmemory.html">Flash memory</a></li>
+<li><a href="harddrive.html">Hard drives</a></li>
+<li><a href="howtransistorswork.html">Transistors</a></li>
+</UL>
+
+<h3>Books</h3>
+
+<h4>General introductions</h4>
+<ul>
+<li><a href="http://books.google.com/books?id=3kQoAwAAQBAJ" target="_blank">The Essentials of Computer Organization and Architecture</a> by Linda Null et al. Jones &amp; Bartlett, 2014. A comprehensive, basic introduction to computer science. Chapter 6 covers memory, including virtual memory and paging.</li>
+</UL>
+
+
+<h4>Upgrading your PC memory</h4>
+<ul>
+<li><a href="http://books.google.com/books?id=cXRmfDmjcngC" target="_blank">PC Mods for the Evil Genius</a> by Jim Aspinwall. McGraw-Hill Professional, 2006. A simple introduction to hacking a basic PC into something slightly more interesting.</li>
+<li><a href="http://books.google.com/books?id=Z4zlQgAACAAJ" target="_blank">Build Your Own Computer</a> by Gary Marshall. Haynes, 2010. A simple illustrated guide to building a PC, written in the familiar Haynes car manual style.</li>
+<li><a href="http://books.google.com/books?id=hid3cTJoyi0C" target="_blank">Build Your PC for Dummies</a> by Mark L. Chambers. Dummies, 2009. A Dummies-style introduction showing you how to assemble a PC from scratch.</li>
+</UL>
+
+
+</div>
+
+<div class="main2">
+<h2>If you liked this article...</h2>
+<P>You might like my new book, <a href="mybooks.php">Atoms Under the Floorboards: The Surprising Science Hidden in Your Home</a>, published worldwide by Bloomsbury.</P>
+</div>
+
+<!-- Desktop bottom ad -->
+<div class="bottomsquare"><span class="slinks2">Sponsored links</span>
+<P>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="9721739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</P>
+</div>
+
+
+
+<div class="cc"><P><span class="highlight">Please do NOT copy our articles onto blogs and other websites</span></P>
+<p>Text copyright &copy; Chris Woodford 2010, 2011. All rights reserved. <a href="copyright-and-legal-notices.html">Full copyright notice and terms of use</A>.</p>
+
+</div>
+
+<div class="sharesites"><h2>Follow us</h2>
+<ul class="nobull">
+<LI class="inline2"><a href="followus.html" title="Follow us on Facebook"><IMG class="sprite shr4" ALT="Follow us on Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a rel="publisher" href="https://plus.google.com/115402323314399894520" target="_blank" title="Follow us on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="rss.xml" target="_blank" title="Subscribe to our RSS feed"><IMG class="sprite shr10" ALT="RSS"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.flickr.com/photos/explainthatstuff" target="_blank" title="Find our photos on Flickr"><IMG class="sprite shr11" ALT="Flickr"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.pinterest.com/explainthatstuf/" title="Follow us on Pinterest" target="_blank"><IMG class="sprite shr12" ALT="Follow us on Pinterest" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+</ul>
+</div>
+
+<div class="sharesites"><h2>Rate this page</h2>
+<p>Please <a href="feedback.php">rate or give feedback on this page</A> and I will make a donation to WaterAid.</P>
+</div>
+
+
+<div class="sharesites">
+<h2>Share this page</h2>
+<p>Press CTRL + D to bookmark this page for later or tell your friends about it with:</p>
+
+<ul class="nobull">
+<LI class="inline2"><a title="Share this on Facebook"
+ href="http://www.facebook.com/sharer.php?u=http://www.explainthatstuff.com/how-computer-memory-works.html"><IMG class="sprite shr4" ALT="Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a
+ title="Post this page to Delicious"
+ href="http://del.icio.us/post?url=http://www.explainthatstuff.com/how-computer-memory-works.html&amp;title=How%20computer%20memory%20works"><IMG class="sprite shr1" ALT="Delicious" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Digg"
+ href="http://digg.com/submit?url=http://www.explainthatstuff.com/how-computer-memory-works.html&amp;title=How%20computer%20memory%20works"><IMG class="sprite shr2" ALT="Digg" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Reddit"
+ href="http://reddit.com/submit?url=http://www.explainthatstuff.com/how-computer-memory-works.html&amp;title=How%20computer%20memory%20works"><IMG class="sprite shr3" ALT="Reddit" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this page on StumbleUpon"
+ href="http://www.stumbleupon.com/submit?url=http://www.explainthatstuff.com/how-computer-memory-works.html&amp;title=How%20computer%20memory%20works"><IMG class="sprite shr5" ALT="StumbleUpon" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Add this to your Google Bookmarks"
+ href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.explainthatstuff.com/how-computer-memory-works.html&amp;title=How%20computer%20memory%20works"><IMG class="sprite shr6" ALT="Google Bookmarks" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="http://www.twitter.com/home?status=I'm+learning+all+about+computer+memory+http://www.explainthatstuff.com/how-computer-memory-works.html" title="Tweet this"><IMG class="sprite shr7" ALT="Twitter" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Email this page to a friend"
+ href="mailto:?subject=How%20computer%20memory%20works&amp;body=Take%20a%20look%20at%20this%20page:%20http://www.explainthatstuff.com/how-computer-memory-works.html"><IMG class="sprite shr8" ALT="Email" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="https://plus.google.com/101536672158385330677?rel=author" title="Connect on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+</UL>
+
+
+<!--<h2>Link to this page</h2>
+
+<P>If you'd like to link to this page, thank you! Here's some code you can cut and paste:</P>
+
+<div class="citation">
+<P>
+&lt;a href="http://www.explainthatstuff.com/how-computer-memory-works.html"&gt;How computer memory works&lt;/a&gt;
+</P>
+</div>-->
+
+
+</div>
+
+
+
+
+
+
+<!-- advinfo2 -->
+
+<!-- bottom search position -->
+
+
+
+
+
+
+<div class="alsoon"><a name="navigation"></a>
+<IMG class="footlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif">
+<h2>More to explore on our website...</h2>
+<ul class="nobull">
+<LI class="inline"><a href="articles_communications.html">Communications</A></LI>
+<LI class="inline"><a href="articles_computers.html">Computers</A></LI>
+<LI class="inline"><a href="articles_electricity.html">Electricity &amp; electronics</A></LI>
+<LI class="inline"><a href="articles_energy.html">Energy</A></LI>
+<LI class="inline"><a href="articles_engineering.html">Engineering</A></LI>
+<LI class="inline2"><a href="articles_environment.html">Environment</A></LI><BR>
+<LI class="inline"><a href="articles_gadgets.html">Gadgets</A></LI>
+<LI class="inline"><a href="articles_homelife.html">Home life</A></LI>
+<LI class="inline"><a href="articles_materials.html">Materials</A></LI>
+<LI class="inline"><a href="articles_science.html">Science</A></LI>
+<LI class="inline"><a href="articles_tools.html">Tools &amp; instruments</A></LI>
+<LI class="inline2"><a href="articles_transportation.html">Transportation</A></LI>
+</UL>
+</div>
+
+<div class="footer">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li></ul>
+</div>
+
+<div class="totop">&uarr; <a href="#pagetop">Back to top</a></div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(d, t) {
+var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = 'https://apis.google.com/js/plusone.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+  })();
+</script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
+
+
+</body>
+</html>

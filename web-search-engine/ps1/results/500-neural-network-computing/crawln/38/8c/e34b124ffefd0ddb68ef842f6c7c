@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if IE 10]> <html class="no-js ie10" lang="en"> <![endif]-->
+<!--[if IE 11]> <html class="no-js ie11" lang="en"> <![endif]-->
+<!--[if gt IE 11]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<link rel="dns-prefetch" href="//static.digg.com">
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+
+
+<meta name="apple-itunes-app" content="app-id=362872995, affiliate-data=bevbOqLt02I, app-argument=digg://">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+
+
+<link rel="canonical" href="http://digg.com/submit" />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@digg">
+<meta property="fb:app_id" content="123277257693179" />
+<meta property="og:url" content="http://digg.com/submit" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Submit a link | Digg" />
+<meta property="og:image" content="http://static.digg.com/static/fe/897a61/images/logo-digg@2x.png" />
+<meta name="application-name" content="Digg"/>
+<meta name="msapplication-TileImage" content="/static/images/windows-tile-144x144.png"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+
+
+
+
+<link rel="icon" href="http://static.digg.com/static/fe/897a61/images/digg_favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="http://static.digg.com/static/fe/897a61/images/digg_favicon.png" type="image/x-icon">
+<title>Submit a link | Digg</title>
+<link rel="alternate" type="application/rss+xml" title="Digg Top Stories RSS" href="/rss/top.rss" />
+
+
+
+<link rel="stylesheet" href="http://static.digg.com/static/fe/897a61/css/1.3.0/digg.css" type="text/css" media="screen" />
+
+
+
+<link rel="stylesheet" href="http://static.digg.com/static/fe/897a61/css/1.3.0/digg_default.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="http://static.digg.com/static/fe/897a61/css/1.3.0/secondary.css" type="text/css" media="screen" />
+
+
+<link rel="apple-touch-icon" href="/static/images/apple/apple-touch-icon-57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple/apple-touch-icon-72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple/apple-touch-icon-114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/static/images/apple/apple-touch-icon-144.png" />
+
+<!--[if lt IE 9]>
+<script src="http://static.digg.com/static/fe/897a61/js/external/html5shiv/3.6.2/html5shiv.min.js"></script>
+<![endif]-->
+
+<script src="//use.typekit.net/bdt8ody.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-33556916-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+<noscript>
+<img src="http://www.google-analytics.com/collect?v=1&_v=j27d&t=pageview&_s=1&dl=/nojs/submit&ul=en-us&de=UTF-8&&je=1&fl=15.0%20r0&_utma=16511831.1105623166.1442807067.1442807067.1442807067&_utmz=16511831.1442807067.2.2.utmcsr%3D(direct)%7Cutmcmd%3D(none)&_utmht=1411419978909&_u=MSACAEQ~&cid=1105623166.1442807067&tid=UA-33556916-1&z=1105623166
+" border="0">
+</noscript>
+
+
+</head>
+<body class="secondary submitlink">
+
+
+<header class="digg-header js--digg-header" id="digg-header" role="banner">
+<div class="header-inner">
+<h1 class="logo" id="digg-header-logo"><a href="/">Digg</a></h1>
+<p class="skip"><a href="#content-main">Skip to content</a>, or <a href="#header-search">skip to search</a>.</p>
+<div class="digg-nav-toggle" id="digg-nav-toggle"></div>
+<div class="digg-nav-wrap">
+<div class="digg-nav">
+<ul class="nav-list nav-primary" role="navigation">
+<li class="nav-item nav-home"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item nav-video"><a href="/video" class="nav-link">Video</a></li>
+<li class="nav-item nav-reader"><a href="/reader" class="nav-link">Reader</a></li>
+</ul>
+<ul class="nav-list nav-utility">
+<li class="nav-item nav-user" id="nav-user"><a class="nav-link" id="nav-signin" href="#">Sign In</a></li>
+<li class="nav-item nav-search" id="nav-search" role="search">
+<form id="form-digg-search" class="form-digg-search" action="/search" method="GET" autocomplete="off">
+<label class="btn-search" for="form-digg-search-input">Search</label>
+<input type="text" id="form-digg-search-input" placeholder="Search" name="q" autocomplete="off" spellcheck="false" />
+</form>
+</li>
+</ul>
+<p class="skip"><a href="#content-main">Skip to content</a>.</p>
+
+<ul class="nav-list nav-secondary">
+<li class="nav-item"><a href="#dailydigg" class="nav-link launch-dailydigg-modal" id="nav-dailydigg">Subscribe To The Daily Digg</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+
+
+
+
+<div id="container" class="page-container">
+
+
+<div class="secondary-sidebar">
+<ul>
+<li class="secondary-sidebar-about"><a href="/about">About</a></li>
+<li class="secondary-sidebar-jobs"><a href="/jobs">Jobs</a></li>
+<li class="secondary-sidebar-faq"><a href="/faq">FAQ</a></li>
+<li class="secondary-sidebar-blog"><a href="http://blog.digg.com/">Blog</a></li>
+<li class="secondary-sidebar-advertising"><a href="/advertising">Advertising</a></li>
+<!--<li id="secondary-sidebar-digg"><a href="/">Digg</a></li>-->
+</ul>
+</div>
+
+<div id="submit-link" class="secondary-content-well">
+<div id="submit-link-form" class="form">
+<h1>Submit a link to Digg</h1>
+<div>
+<input type="text" id="submit-link-url-input" placeholder="http://www.example.com/story.html" value="http://www.explainthatstuff.com/introduction-to-neural-networks.html"  />
+</div>
+<div id="submit-btns-container">
+<div id="login-to-facebook">
+<div id="fb-root"></div>
+<a id="btn-facebook-auth-submitlink" class="btn-service-auth btn-facebook-auth" href="#fb">
+<div class="auth-ico"></div>
+Sign in with Facebook
+</a>
+</div>
+<a id="btn-twitter-auth-submitlink" class="btn-service-auth btn-twitter-auth" href="#twitter">
+<div class="auth-ico"></div>
+Sign in with Twitter
+</a>
+</div>
+<div id="btn-submit-link-action" class="btn-primary btn-service-auth btn-submit-link-action">Submit</div>
+<div id="submit-link-error"></div>
+</div>
+<div id="submit-link-thanks" style="display: none;">
+<h1>Thanks!</h1>
+<div id="submit-thanks-text">Thanks for submitting a story at</div>
+<div id="submit-thanks-url"></div>
+<div id="submit-thanks-another" class="btn-primary btn-service-auth">Submit Another</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+<div id="fb-root"></div>
+<div id="session-forms"></div>
+
+
+<footer id="footer" class="ftr">
+<div class="ftr-nav">
+<div class="ftr-inner">
+<ul class="ftr-nav-list nav-primary">
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/about">About</a></li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/faq">Help</a></li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="http://blog.digg.com/">Blog</a></li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/contact">Contact</a></li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/jobs">Jobs</a></li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/advertising">Advertise</a></li>
+
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" id="btn-hdr-submit-link" href="/submit">Submit a Link</a></li>
+
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/enable/mobile">Mobile Site</a></li>
+</ul>
+<ul class="ftr-nav-list nav-secondary">
+<li class="ftr-nav-list-item">&copy; <span id="footer-copyright-year">2015</span> News.me Inc</li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="http://betaworks.com" target="_blank">Made in NYC by betaworks</a></li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/tos">Terms</a></li>
+<li class="ftr-nav-list-item"><a class="ftr-nav-list-link" href="/privacy">Privacy</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="http://static.digg.com/static/fe/897a61/js/external/modernizr/2.8.3/modernizr.custom.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://static.digg.com/static/fe/897a61/js/external/jquery/1.8.3/jquery.min.js"><\/script>')</script>
+
+<script src="http://static.digg.com/static/fe/897a61/js/external/bootstrap/bootstrap-modal.js"></script>
+<script src="http://static.digg.com/static/fe/897a61/js/external/lodash/2.3.0/lodash.min.js"></script>
+<script src="http://static.digg.com/static/fe/897a61/js/external/almond/almond.min.js"></script>
+
+<script src="http://static.digg.com/static/fe/897a61/js/external/backbone/1.0.0/backbone-min.js"></script>
+
+<script>
+
+window.onerror = function (errorMsg, url, line) {
+var errorDataProvider = $.ajax({
+url : '/api/miccheck.json',
+type: 'POST',
+data : {
+m : errorMsg,
+u : url,
+l : line
+}
+});
+};
+
+window.BS = {
+config: {
+FB_APP_ID: '123277257693179',
+FB_API_VERSION: 'v2.3',
+FB_PERMISSIONS: 'email,public_profile,user_friends',
+v : '1.6.0'
+},
+features: {"search": true, "polling_scores": false, "saved_stories": true, "dialog_requires_invite": false, "homepage_new_stories": true, "signin": true, "submit_link": true, "digg_deeper": true, "readlater": true, "triple_lift": true, "homepage_popular_stories": true, "homepage_new_stories_polling": false, "digg": true}
+};
+
+
+
+</script>
+
+
+
+<script src="http://static.digg.com/static/fe/897a61/js/1.2/bs/submit.js"></script>
+
+
+<script>
+// Load Twitter SDK Asynchronously
+window.twttr = (function (d,s,id) {
+var t, js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+// Load the FB SDK Asynchronously
+(function(d){
+var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+js = d.createElement('script'); js.id = id; js.async = true;
+js.src = "//connect.facebook.net/en_US/sdk.js";
+d.getElementsByTagName('head')[0].appendChild(js);
+}(document));
+</script>
+
+<script type="text/javascript">
+var _sf_async_config={uid:30608,domain:"digg.com"};
+(function(){
+function loadChartbeat() {
+window._sf_endpt=(new Date()).getTime();
+
+window._sf_async_config.useCanonical = true;
+
+
+var e = document.createElement('script');
+e.setAttribute('language', 'javascript');
+e.setAttribute('type', 'text/javascript');
+e.setAttribute('src',
+(("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+"js/chartbeat_video.js");
+document.body.appendChild(e);
+}
+var oldonload = window.onload;
+window.onload = (typeof window.onload != 'function') ?
+loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+
+
+
+<!-- Quantcast Tag -->
+<script>
+qcdata = {} || qcdata;
+(function(){
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-XScWTQ3jeFt7B";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem,scpt);
+}());
+var qcdata = {
+qacct: 'p-XScWTQ3jeFt7B',
+
+};
+</script>
+<noscript>
+<img src="//pixel.quantserve.com/pixel/p-XScWTQ3jeFt7B.gif?" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast Tag -->
+
+
+
+
+<!-- built with love by amateurs! -->
+</body>
+</html>

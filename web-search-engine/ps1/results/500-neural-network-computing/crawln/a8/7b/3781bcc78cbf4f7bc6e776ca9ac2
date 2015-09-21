@@ -1,0 +1,935 @@
+<!doctype html>
+
+<!--[if IE 7]><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js  lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js  lt-ie10 lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js  lt-ie10 ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html data-ytrk-page="TOPIC PAGINATED MEDIUM" class="no-js " lang="en"><!--<![endif]-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ">
+
+    <!--[if lte IE 9 ]>
+    <script type="text/javascript" src="/resources/js/polyfills.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init mendel">
+        Mendel = {};
+        $UI = {};
+        (function() {
+            var html = document.getElementsByTagName('html')[0];
+            html.className = html.className.replace( 'no-js', '');
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="In artificial intelligence, a type of evolutionary computer algorithm in which symbols (often called &ldquo;genes&rdquo; or &ldquo;chromosomes&rdquo;) representing possible solutions are &ldquo;bred.&rdquo; This..." /><meta name="keywords" content="genetic algorithm, encyclopedia, encyclopaedia, britannica, article" /><link rel="canonical" href="http://www.britannica.com/technology/genetic-algorithm" /><meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@britannica" />
+
+<meta property="og:type"  content="article"/>
+<meta property="og:title" content="genetic algorithm | computer science"/>
+<meta property="og:description" content="In artificial intelligence, a type of evolutionary computer algorithm in which symbols (often called &ldquo;genes&rdquo; or &ldquo;chromosomes&rdquo;) representing possible solutions are &ldquo;bred.&rdquo; This..."/>
+<meta property="og:site_name" content="Encyclopedia Britannica" />
+<meta property="og:url" content="http://www.britannica.com/technology/genetic-algorithm"/>
+<meta property="og:image" content="http://www.britannica.com/resources/images/shared/facebook-logo.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="90" /><meta property="og:image:height" content="90" /><script type="text/javascript" data-type="init opengraph">
+Mendel.openGraph = {
+    type: 'article',
+    title: 'genetic algorithm | computer science',
+    description: 'In artificial intelligence, a type of evolutionary computer algorithm in which symbols (often called \u201Cgenes\u201D or \u201Cchromosomes\u201D) representing possible solutions are \u201Cbred.\u201D This...',
+    siteName: 'Encyclopedia Britannica',
+    url: 'http://www.britannica.com/technology/genetic-algorithm',
+    image: 'http://www.britannica.com/resources/images/shared/facebook-logo.png',
+    imageType: 'image/png'
+    
+    ,imageWidth: 90
+    ,imageHeight: 90
+};
+</script>
+
+<title>genetic algorithm | computer science | Britannica.com</title>
+
+    <link href="//fonts.googleapis.com/css?family=Coustard|Asap:400,700|Open+Sans:400,700,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/resources/css/libs/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/min-mendel.css?v=2.36.13" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <script type="text/javascript" data-type="init mendel config">
+
+Mendel.config = {
+	page: 'Topic',
+	testVersion: 'B',
+	server: 'http://www.britannica.com',
+	mediaServer: "http://media.web.britannica.com",
+	currentUrl: 'http://www.britannica.com/technology/genetic-algorithm',
+	sharedUrl: 'http://www.britannica.com/technology/genetic-algorithm',
+	userType: 'ANONYMOUS',
+	userInfo: { statId: '-1'
+	           ,userId: ''
+	           ,currency: 'USD'
+	           ,country: 'CA'
+	           ,bcomId: '-7571549943412992041'
+	           ,mvst: {
+  "QUIZ_INTRO" : "INTRO_2",
+  "GIST_STRIP_POSITION" : "BOTTOM",
+  "RR_BRITANNICA_STORIES" : "3_STORIES",
+  "RR_STORY_BRITANNICA_STORIES" : "3_STORIES",
+  "HEADER_UPSELL_IMAGE" : "http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg",
+  "HEADER_UPSELL" : "HU_1",
+  "US_SUBSCRIPTION_URL_PREFIX" : "https://safe1.britannica.com/registrations/signup.do?partnerCode=",
+  "SMALL_ADDTNL_RESOURCES" : "NO"
+}
+	           ,provider: 'NONE'
+	           ,preferences: {}
+	},
+	isLoggedInAsUser: false,
+	hasAds: true,
+	hasVideoAds: true,
+	
+	adapTvId: 'nj232',
+	adapTvZid: 'Eb_autoplay-free',
+	
+	logGoogleGPT: false,
+	isMobile: false,
+	isTablet: false,
+	isPhone: false,
+	analytics: [
+	   
+	   { type: 'google', id: 'UA-6636134-11', logClickAction: true, logPageLoad: true, logFakePageLoad: true },
+	   { type: 'eb', logClickAction: false, logPageLoad: false, logFakePageLoad: true }
+	   
+	],
+	logAnalytics: false,
+	includeGigya: true,
+	gigyaProviders: 'facebook,twitter,googleplus,linkedin,yahoo'
+	
+	,mendelCookie: {
+  "pagesViewed" : 1,
+  "topicPagesViewed" : 1,
+  "articlePageUrl" : "http://www.britannica.com/technology/genetic-algorithm",
+  "mwQuizGroupNumber" : null,
+  "mwQuizGroupExcept" : null,
+  "vistedTopics" : [ 752681 ],
+  "currentReadingList" : null,
+  "galleryReferrer" : null
+},topicUrl: '/technology/genetic-algorithm'
+        ,topicContentType: 'ARTICLE'
+        ,freeTopicReason: 'COUNTRY_UNIVERSAL_FREE_TOPIC'
+        ,channel: 'SCIENCE_AND_TECHNOLOGY'
+        ,topicId: 752681
+        ,topicTitle: 'genetic algorithm'
+	    ,topicAkw: 'science technology,technology'
+        ,isIndexEntry: false
+        ,template: 'MEDIUM'
+        ,hasToc: false
+};
+
+</script><script type="text/javascript" data-type="init Quantcast top">
+		    var _qevents = _qevents || [];
+		    (function() {
+		        var elem = document.createElement('script');
+		        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+		        elem.async = true;
+		        elem.type = "text/javascript";
+		        var scpt = document.getElementsByTagName('script')[0];
+		        scpt.parentNode.insertBefore(elem, scpt);
+		    })();
+		</script>
+	<script type="text/javascript" data-type="load GPT">
+         (function() {
+           var src = '//www.googletagservices.com/tag/js/gpt.js';
+           document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+	    <script src="http://js.indexww.com/ht/bri2.js"></script>
+	    <script type="text/javascript" data-type="load openX">
+         (function() {
+            var src = '//ox-d.merriamwebster.servedbyopenx.com/w/1.0/jstag?nc=34444486-EB';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+    <script type="text/javascript" data-type="init GPT slots">
+    var googletagSlots = [];
+    googletag.cmd.push(function() {
+        
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_B/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-1424e62d-9d87-4b29-9795-1e14dbbefbfd')
+                             .setTargeting('POS',['BOT2'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_B/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-9d9587d3-53c6-4cc7-a4e5-ec4a172586f4')
+                             .setTargeting('POS',['TOP'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_B/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-1ddfe1bf-b269-4082-bf83-57b822365f8b')
+                             .setTargeting('POS',['BOT'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_B/ARTICLES_MEDIUM', [728,90],'div-gpt-ad-d3832798-3e7a-482f-acdc-71c8a5c7f562')
+                             .setTargeting('POS',['BOT'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_B/ARTICLES_MEDIUM', [300,250],'div-gpt-ad-e8808a4e-3211-4024-aa32-8ed3af1f616a')
+                             .setTargeting('POS',['PRE'])
+                             .addService(googletag.pubads())
+                    );
+                googletag.pubads().setTargeting('dc_ref',['http://www.britannica.com/technology/genetic-algorithm']);googletag.pubads().setTargeting('ARTICLE',['752681']);googletag.pubads().setTargeting('CAT',['science technology,technology']);googletag.pubads().setTargeting('PAGE',[1]);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+  });
+</script><script type="text/javascript" src="http://tags.crwdcntrl.net/c/6931/cc.js?ns=_cc6931" id="LOTCC_6931"></script>
+    <script type="text/javascript" language="javascript" data-type="lotame init">_cc6931.bcp();</script>
+<!--[if lte IE 8]>
+    <script type="text/javascript" data-type="ie8 html5 tags">
+        ( function() {
+            var tags = [ 'header', 'footer', 'aside', 'nav', 'section', 'article', 'figure', 'figcaption', 'time' ];
+            for ( var i = 0; i < tags.length; document.createElement( tags[i++] ) );
+        })();
+    </script>
+    <![endif]-->
+
+</head>
+
+<body ng-app class="topicPage topic-page-medium user-ANONYMOUS md-desktop font-sans has-footer-ad no-toolbar no-toc leg-b has-identifier">
+
+    <div class="md-page-wrapper">
+
+        <header class="font-sans-ui">
+
+    <div class="header-content">
+
+        <div class="header-title">
+
+            <h4>
+	            <a class="logo-homepage" href="/"><img src="/resources/images/header/eb-logo-header.png" alt="Encyclopedia Britannica" /></a>
+                <a class="header-thistle" href="/"></a>
+            </h4>
+
+            <div class="header-login ">
+
+                <div class="grid">
+                    <div class="grid-xs-66">
+                        <div class="header-nav text-left">
+    <ul>
+        <li><a data-ytrk="25" href="http://store.britannica.com" target="_blank">Shop</a></li>
+        <li><a data-ytrk="27" href="http://info.eb.com" target="_blank">School and Library Subscribers</a></li>
+        </ul>
+</div>
+
+
+</div>
+                    <div class="grid-xs-auto text-right">
+
+                        <ul class="header-login-links">
+                            <li>
+                                        <a data-ytrk="262" href="#" class="md-header-join-link">JOIN</a>
+                                    </li>
+                                    <li>
+                                        <a data-ytrk="17" href="#" class="login-link" >LOGIN</a>
+                                    </li>
+                                <li >
+                                    <a data-ytrk="/19" class="md-upsell-link" href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPPGSUB_LP_MDL_B" rel="nofollow">
+                                        Activate Your Free Trial!</a>
+                                </li>
+                            </ul>
+
+                        <div class="header-login-upsell">
+                                <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPPGSUB_LP_MDL_B" rel="nofollow"><img src="http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg"/></a>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<div id="header-global-nav" data-position-fixed="0">
+
+    <div class="header-global-nav-content grid">
+
+        <a data-ytrk="/655" class="header-global-nav-home" href="/"><img src="/resources/images/header/homepage-small-thistle-v2.png" alt="home" /></a>
+
+        <ul id="header-global-nav-buttons" data-title="navigation" class="grid">
+            <li class="grid-fit"><a data-ytrk="/439" href="/popular-topics/browse" >Popular Topics</a></li>
+            <li class="grid-fit"><a data-ytrk="/440" href="/quiz/browse" >quizzes</a></li>
+            <li class="grid-fit"><a data-ytrk="/441" href="/gallery/browse" >galleries</a></li>
+            <li class="grid-fit"><a data-ytrk="/442" href="/list/browse" >lists</a></li>
+            </ul>
+
+        <div class="search-form grid-xs-auto">
+            <form method="get" action="/search" id="searchCriteria" class="">
+    <div class="search-box">
+        <input name="query" type="text" id="header-query" placeholder="Search Britannica..." class="query font-sans"  maxlength="200" />
+        <button data-ytrk="21" type="submit" class="search-submit" value=""><i class="fa fa-search"></i></button>
+    </div>
+</form>
+</div>
+
+        </div>
+
+    </div>
+
+<div class="container">
+                <div class="md-page-h1-wrapper">
+                    <h1><span>Genetic algorithm</span></h1>
+        <div class="md-navigator hide-on-edit">
+    <div class="fa fa-bars fa-fw fa-2x" data-ytrk="586"></div>
+    <ul class="md-navigator-dropdown font-sans">
+        <li>
+                <strong>Article</strong>
+                    </li>
+        <li>
+                <a data-ytrk="/295" href="/technology/genetic-algorithm/article-websites" >Web sites</a>
+                    </li>
+        <li>
+                <a data-ytrk="/292" href="/technology/genetic-algorithm/article-contributors" rel="nofollow">Contributors</a>
+                    </li>
+        </ul>
+</div>
+
+<br/>
+	    <span class="md-topic-title-identifier">Computer science</span><div class="subheading hide-on-edit">
+            <div class="md-horizontal-social-toolbar2 no-text">
+
+<span class="md-horizontal-social-toolbar2-contributor">Written by: <a href="/bps/user-profile/6481/william-l-hosch" data-ytrk="/212">William L. Hosch</a>
+		</span>
+<ul class="md-toolbar ">
+
+	<li class="comments" title="Comments" data-ytrk="587">
+        <a href="#_comments">
+            <span class="fa-stack"><i class="fa fa-comment fa-stack-2x"></i><strong class="comments-text fa-stack-1x fa-inverse"></strong></span>
+            </a>
+    </li>
+	<li class="share" title="Share" data-ytrk="113">
+        <span class="fa-stack"><i class="fa fa-share-alt fa-stack-2x"></i></span>
+        </li>
+	<li class="t-email" title="Email" data-ytrk="112">
+        <span class="fa-stack"><i class="fa fa-envelope fa-stack-2x"></i></span>
+        </li>
+	<li class="t-print" title="Print" data-ytrk="111">
+        <a href="/print/article/752681" target="_blank">
+            <span class="fa-stack"><i class="fa fa-print fa-stack-2x"></i></span>
+            </a>
+    </li>
+    <li class="t-cite" title="Cite" data-ytrk="117">
+        <span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-quote-right fa-stack-1x"></i></span>
+        </li>
+	</ul>
+
+</div>
+</div>
+
+        <ul class="md-topic-title-links">
+
+	<li>
+	        <span id="md-topic-title-link-read">Read</span></li>
+
+		<li>
+	        <a id="md-topic-title-link-history" data-ytrk="/291" href="/technology/genetic-algorithm/article-history" rel="nofollow">View History</a></li>
+		<li>
+		     <a class="md-topic-title-link-edit" href="#" rel="nofollow" data-ytrk="263">Edit</a>
+		</li>
+		<li>
+	            <a id="md-topic-title-link-feedback" href="/technology/genetic-algorithm/article-feedback" data-ytrk="/267" rel="nofollow">Feedback</a></li>
+	    </ul></div>
+            </div>
+        <div id="content" class="md-content ">
+
+            <div id="edit-toolbar-placeholder"></div><div class="md-content-wrapper  topic-content">
+                <article class="content-body font-sans-ui " vocab="http://schema.org" resource="http://semantic.britannica.com/accepted_headword/core/752681/genetic-algorithm" typeof="Article">
+            <meta property="url" href="/technology/genetic-algorithm" />
+            <meta property="name" content="genetic algorithm" />
+
+            <!--[TOC-PLACEHOLDER]--><section id="toc752681main" class="eb-topic-section" data-level="intro"><p><b><span class="srTitle">Genetic algorithm</span></b><b>,</b>&nbsp;in <a data-ytrk="/548" href="/technology/artificial-intelligence"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/37146/artificial-intelligence-AI">artificial intelligence</span></a>, a type of evolutionary computer <a data-ytrk="/548" href="/topic/algorithm"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/15174/algorithm">algorithm</span></a> in which symbols (often called “genes” or “chromosomes”) representing possible solutions are “bred.” This “breeding” of symbols typically includes the use of a mechanism analogous to the crossing-over process in genetic <a data-ytrk="/548" href="/science/recombination-genetics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/493676/recombination">recombination</span></a> and an adjustable <a data-ytrk="/548" href="/science/mutation-genetics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/399695/mutation">mutation</span></a> rate. A fitness function is used on each generation of algorithms to gradually improve the solutions in analogy to the process of <a data-ytrk="/548" href="/science/natural-selection"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/406351/natural-selection">natural selection</span></a>. The process of evolving the genetic algorithms and automating the selection is known as <a name="ref1073526" id="ref1073526"></a><a data-ytrk="/548" href="/topic/genetic-programming"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1563584/genetic-programming">genetic programming</span></a>. In addition to general software, genetic algorithms are sometimes used in research with <a data-ytrk="/548" href="/technology/artificial-life"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/1562885/artificial-life">artificial life</span></a>, <a data-ytrk="/548" href="/topic/cellular-automata"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/862593/cellular-automata-CA">cellular automatons</span></a>, and <a data-ytrk="/548" href="/technology/neural-network"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/410549/neural-network">neural networks</span></a>.</p><!--[MEDIA-STRIP]--><!--[END-1ST-PARA]--><p>Although not the first to experiment with genetic algorithms, <a name="ref1073523" id="ref1073523"></a><a data-ytrk="/548" href="/biography/John-Henry-Holland"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/745552/John-Henry-Holland">John Holland</span></a> did much to develop and popularize the field with his work in the early 1970s at the <a data-ytrk="/548" href="/topic/University-of-Michigan"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/380125/University-of-Michigan">University of Michigan</span></a>. As described in his book, <em>Adaptation in Natural and Artificial Systems</em> (1975; revised and expanded 1992), he devised a method, or schema theorem, for evaluating each generation of genetic algorithms. <a name="ref1073524" id="ref1073524"></a>John Koza, one of Holland’s doctoral students and a holder of more than a dozen patents related to genetic programming, was one of the first to develop commercial applications of the field, as a founder of a company known as Scientific Games. Koza shared his programming experiences in a sequence of books beginning with <em>Genetic Programming: On the Programming of Computers by Means of Natural Selection</em> (1992).</p><p>One difficulty often encountered in genetic programming is that of the algorithms becoming stuck in the region of a reasonably good solution (a “locally optimal region”) rather than finding the best solution (a “global optimum”). Overcoming such evolutionary dead ends sometimes requires human intervention. In addition, genetic programming is computationally intensive. During the 1990s programming techniques for it had not developed sufficiently to justify the expensive use of <a data-ytrk="/548" href="/technology/supercomputer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/574200/supercomputer">supercomputers</span></a>, which limited applications to rather simplistic problems. However, as cheaper personal computers became more powerful, genetic programming began having notable commercial success in circuit design, data sorting and searching, and <a data-ytrk="/548" href="/technology/quantum-computer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/746092/quantum-computer">quantum computing</span></a>. In addition, the <a data-ytrk="/548" href="/topic/NASA"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/404272/National-Aeronautics-and-Space-Administration-NASA">National Aeronautics and Space Administration</span></a> (NASA) used genetic programming in the design of <a data-ytrk="/548" href="/technology/antenna-electronics"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/27190/antenna">antenna</span></a>s for the Space Technology 5 Project, which involved three “micro-satellites” launched in 2006 for monitoring the effects of solar activity on Earth’s magnetosphere.</p><span class="bps-article-author"><a class="md-author-link" href="/bps/user-profile/6481">William L. Hosch</a></span></section></article>
+
+        <div class="hide-on-edit">
+
+            <div class="md-horizontal-social-toolbar2 ">
+
+<ul class="md-toolbar ">
+
+	<li class="comments" title="Comments" data-ytrk="587">
+        <a href="#_comments">
+            <span class="fa-stack"><i class="fa fa-comment fa-stack-2x"></i><strong class="comments-text fa-stack-1x fa-inverse"></strong></span>
+            <span class="label">Comments</span></a>
+    </li>
+	<li class="share" title="Share" data-ytrk="113">
+        <span class="fa-stack"><i class="fa fa-share-alt fa-stack-2x"></i></span>
+        <span class="label">Share</span></li>
+	<li class="t-email" title="Email" data-ytrk="112">
+        <span class="fa-stack"><i class="fa fa-envelope fa-stack-2x"></i></span>
+        <span class="label">Email</span></li>
+	<li class="t-print" title="Print" data-ytrk="111">
+        <a href="/print/article/752681" target="_blank">
+            <span class="fa-stack"><i class="fa fa-print fa-stack-2x"></i></span>
+            <span class="label">Print</span></a>
+    </li>
+    <li class="t-cite" title="Cite" data-ytrk="117">
+        <span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-quote-right fa-stack-1x"></i></span>
+        <span class="label">Cite</span></li>
+	<li class="last-modified" data-ytrk="/588">
+        <a href="/technology/genetic-algorithm/article-history">Last Updated <time>10-22-2013</time></a>
+    </li>
+    </ul>
+
+</div>
+<div class="read-more hide-on-edit">
+        <h3 class="md-extra-content-title">You may also be interested in...</h3>
+        <ul class="row font-sans-ui">
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/computer" title="computer">computer</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/Turing-test" title="Turing test">Turing test</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/technology" title="technology">technology</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/artificial-intelligence" title="artificial intelligence (AI)">artificial intelligence (AI)</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/machine-learning" title="machine learning">machine learning</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/neural-network" title="neural network">neural network</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/LISP-computer-language" title="LISP">LISP</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/distributed-computing" title="distributed computing">distributed computing</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/computer-architecture" title="computer architecture">computer architecture</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/expert-system" title="expert system">expert system</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/technology/perceptrons" title="perceptrons">perceptrons</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-6" data-ytrk="/584"><a href="/topic/information-processing" title="information processing">information processing</a></li>
+            </ul>
+    </div>
+<h3 class="md-extra-content-title">Keep exploring</h3>
+<ul class="md-high-engagement font-sans-ui">
+    <li>
+            <a data-ytrk="/250" href="/quiz/computers-fact-or-fiction">
+                <img src="http://media-1.web.britannica.com/eb-media/09/166709-118-F57CFBAA.jpg"/>
+                <br/>Computers: Fact or Fiction?</a>
+        </li>
+    <li>
+            <a data-ytrk="/250" href="/quiz/computers-and-technology">
+                <img src="http://media-3.web.britannica.com/eb-media/63/166063-118-C27B3982.jpg"/>
+                <br/>Computers and Technology</a>
+        </li>
+    <li>
+            <a data-ytrk="/250" href="/quiz/computers-and-operating-systems-">
+                <img src="http://media-1.web.britannica.com/eb-media/93/149293-118-56BE8400.jpg"/>
+                <br/>Computers and Operating Systems </a>
+        </li>
+    <li>
+            <a data-ytrk="/251" href="/list/7-of-the-worlds-most-dangerous-lizards-and-turtles">
+                <img src="http://media-1.web.britannica.com/eb-media/69/181369-118-C51011CF.jpg"/>
+                <br/>7 of the World’s Most Dangerous Lizards and Turtles</a>
+        </li>
+    <li>
+            <a data-ytrk="/251" href="/list/my-top-10-must-visit-zoo-animals">
+                <img src="http://media-1.web.britannica.com/eb-media/26/176726-118-0F96FA11.jpg"/>
+                <br/>Editor Picks: 10 Must-visit Zoo Animals</a>
+        </li>
+    </ul></div>
+
+        <div class="md-fb-comments hide-on-edit" id="_comments">
+         <div id="comments" class="md-extra-content-title">
+             What made you want to look up genetic algorithm?
+         </div>
+         <div id="gigya-comments"></div>
+     </div>
+ <form method="POST" id="md-email-dialog" class="ui-hidden">
+    <label for="md-email-dialog-form-to">To</label><input class="span6" type="text" name="to" data-validation="email" required="true" id="md-email-dialog-form-to" />
+    <label for="md-email-dialog-form-from">From</label><input class="span6" type="text" name="from" data-validation="email" required="true" id="md-email-dialog-form-from" />
+    <label for="md-email-dialog-form-subject">Subject</label><input class="span6" type="text" name="subject" id="md-email-dialog-form-subject"  />
+    <label for="md-email-dialog-form-comments">Comments</label><textarea class="span6" name="comments" id="md-email-dialog-form-comments" maxlength="900" ></textarea>
+    <div class="md-email-dialog-form-msg">(Please limit to 900 characters)</div>
+    <input type="hidden" name="url" id="md-email-dialog-url" />
+    <input type="hidden" name="title" id="md-email-dialog-title" />
+    <input type="submit" value="Send"/><button>Cancel</button>
+</form></div>
+
+            <aside class="md-sidebar "><div class="hide-on-edit">
+
+	        
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-e8808a4e-3211-4024-aa32-8ed3af1f616a" data-slot="PRE" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-e8808a4e-3211-4024-aa32-8ed3af1f616a'); });</script>
+	</div>
+	
+
+
+<div class="google-ad-iframe">
+        <div class="sliding-box-300x50">
+            <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOK_300x50_A" class="sidebar-in-house-upsell"><img src="http://safe.britannica.com/safeimages/EBOK_300x200A.jpg"/></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-9d9587d3-53c6-4cc7-a4e5-ec4a172586f4" data-slot="TOP" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-9d9587d3-53c6-4cc7-a4e5-ec4a172586f4'); });</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-1ddfe1bf-b269-4082-bf83-57b822365f8b" data-slot="BOT" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1ddfe1bf-b269-4082-bf83-57b822365f8b'); });</script>
+	</div>
+	
+
+
+<div class="md-sidebar-news-features RR_3_STORIES">
+		<div class="md-sidebar-box-title">Britannica Stories</div>
+		<ul>
+			<li style="background-image: url('http://media-1.web.britannica.com/eb-media/49/186049-117-A33D702E.jpg')">
+					<a data-ytrk="/759" href="/popular-topics/story/magnitude-83-quake-shocks-chile" class="BEHIND_THE_NEWS">
+						<span class="md-story-title">Behind The News / Science</span>
+						Magnitude-8.3 Quake Shocks Chile</a>
+				</li>
+			<li style="background-image: url('http://media-3.web.britannica.com/eb-media/61/62261-117-A7AFA3D9.jpg')">
+					<a data-ytrk="/759" href="/popular-topics/story/coup-in-burkina-faso-widely-condemned" class="BEHIND_THE_NEWS">
+						<span class="md-story-title">Behind The News / Society</span>
+						Coup in Burkina Faso Widely Condemned</a>
+				</li>
+			<li style="background-image: url('http://media-1.web.britannica.com/eb-media/77/185777-117-A27AA0EB.jpg')">
+					<a data-ytrk="/760" href="/popular-topics/story/toronto-international-film-festival-2015" class="SPOTLIGHT">
+						<span class="md-story-title">Spotlight / Arts &amp; Culture</span>
+						Toronto International Film Festival 2015</a>
+				</li>
+			</ul>
+        <div class="md-more-link text-right">
+            <a data-ytrk="/761" href="/popular-topics/archive">See More Stories <i class="fa fa-chevron-right"></i></a>
+        </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md-sidebar-box font-sans sidebar-quiz-box">
+
+    <div class="md-sidebar-box-title"><span>FEATURED QUIZZES</span></div>
+
+    <div class="md-sidebar-box-content md-sidebar-box-content-list">
+
+	    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="font-sans-ui">
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/vocabulary-quiz">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-3.web.britannica.com/eb-media/94/178194-118-7A636614.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Vocabulary Quiz</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/true-or-false">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-1.web.britannica.com/eb-media/95/178195-118-019518C4.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">True or False</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/name-that-thing">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-2.web.britannica.com/eb-media/96/178196-118-49DC431A.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Name That Thing</span>
+            </a>
+        </li>
+    
+</ul>
+
+	    
+	    <div class="text-right md-more-link">
+            
+	            
+		            <a data-ytrk="/85" href="/quiz/browse" class="md-sidebar-list-all">See More Quizzes<i class="fa fa-chevron-right"></i></a>
+                
+				
+            
+        </div>
+	    
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-1424e62d-9d87-4b29-9795-1e14dbbefbfd" data-slot="BOT2" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1424e62d-9d87-4b29-9795-1e14dbbefbfd'); });</script>
+	</div>
+	
+
+
+</div></aside>
+            <div class="md-page-wrapper-bottom hide-on-edit"></div>
+
+        </div>
+
+        </div>
+
+    <footer id="md-footer" class="footer-wrapper hide-on-edit">
+
+    <div class="footer-ad">
+            
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-d3832798-3e7a-482f-acdc-71c8a5c7f562" data-slot="BOT" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-d3832798-3e7a-482f-acdc-71c8a5c7f562'); });</script>
+	</div>
+	
+
+
+</div>
+    <div class="footer-bck">
+        <ul class="md-footer-slim">
+            <li><a data-ytrk="59" href="http://corporate.britannica.com" target="_blank">About Us</a></li>
+            <li><a data-ytrk="129" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">About Our Ads</a></li>
+            <li><a data-ytrk="37" href="http://corporate.britannica.com/contact/consumer/" target="_blank" rel="nofollow">Contact Us</a></li>
+            <li><a data-ytrk="60" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">Privacy Policy</a></li>
+            <li><a data-ytrk="61" href="http://corporate.britannica.com/termsofuse.html" target="_blank" rel="nofollow">Terms of Use</a></li>
+        </ul>
+        &copy;2015 Encyclop&aelig;dia Britannica, Inc.
+    </div>
+
+</footer><div id="md-citations" class="md-overlay-citations ui-hidden" title="Citations">
+
+    <dl>
+        <dt>MLA style:</dt>
+        <dd>"genetic algorithm".&nbsp;<em>Encyclop&aelig;dia Britannica. Encyclop&aelig;dia Britannica Online.</em><br/>Encyclop&aelig;dia Britannica Inc., 2015. Web. 20 Sep. 2015<br/>&lt;<span class="citation-url">http://www.britannica.com/technology/genetic-algorithm</span>&gt;.</dd>
+        <dt>APA style:</dt>
+        <dd>genetic algorithm.&nbsp;(2015). In <em>Encyclop&aelig;dia Britannica</em>. Retrieved from <span class="citation-url">http://www.britannica.com/technology/genetic-algorithm</span></dd>
+        <dt>Harvard style:</dt>
+        <dd>genetic algorithm.&nbsp;2015. <em>Encyclop&aelig;dia Britannica Online</em>. Retrieved 20 September, 2015, from <span class="citation-url">http://www.britannica.com/technology/genetic-algorithm</span></dd>
+        <dt>Chicago Manual of Style:</dt>
+        <dd><em>Encyclop&aelig;dia Britannica Online</em>, s. v. "genetic algorithm", accessed September 20, 2015, <span class="citation-url">http://www.britannica.com/technology/genetic-algorithm</span>.</dd>
+    </dl>
+
+    <p class="md-citations-warning">
+        While every effort has been made to follow citation style rules, there may be some discrepancies.<br/>
+        Please refer to the appropriate style manual or other sources if you have any questions.
+    </p>
+
+</div>
+<div id="md-edit-divs">
+
+<div id="md-edit-toolbar" data-position-fixed="50" class="ui-hidden">
+
+    <ul id="md-edit-toolbar-tabs" class="ui-tabs">
+        <li id="md-edit-edit-tab"><a href="#md-edit-toolbar-edit" data-ytrk="282" class="font-serif-ui">Update</a><span class="md-edit-toolbar-tab-arrow"></span></li>
+        <li id="md-edit-link-tab"><a href="#md-edit-toolbar-link" data-ytrk="283" class="font-serif-ui">Link</a><span class="md-edit-toolbar-tab-arrow"></span></li>
+    </ul>
+
+    <div class="ui-tabs-content">
+
+        <div id="md-edit-toolbar-edit">
+
+            Click anywhere inside the article to add text or insert superscripts, subscripts, and special characters.<br/>
+            You can also highlight a section and use the tools in this bar to modify existing content:
+
+            <div class="md-edit-toolbar-styles">
+                <ul>
+                    <li><button id="edit-bold" title="Bold" data-ui-editor-action="bold"></button></li>
+                    <li><button id="edit-italic" title="Italic" data-ui-editor-action="italic"></button></li>
+                    <li><button id="edit-sup" title="Superscript" data-ui-editor-action="superscript"></button></li>
+                    <li><button id="edit-sub" title="Subscript" data-ui-editor-action="subscript"></button></li>
+                    <li><button id="edit-ul" title="Bulleted List" data-ui-editor-action="insertunorderedlist"></button></li>
+                    <li><button id="edit-ol" title="Ordered List" data-ui-editor-action="insertorderedlist"></button></li>
+                    <li><button id="edit-special-char" title="Insert Special Character" data-ui-editor-action="special-characters"></button></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="md-edit-toolbar-link">
+
+            Add links to related Britannica articles!<br/>
+            
+                    You can double-click any word or highlight a word or phrase in the text below and then select an article from the search box.<br/>
+                    Or, simply highlight a word or phrase in the article, then enter the article name or term you'd like to link to in the search box below, and select from the list of results.
+                <div class="md-toolbar-link-form-container">
+                <form method="get" action="/search" id="md-edit-toolbar-link-form" class="">
+    <div class="search-box">
+        <input name="query" type="text" id="md-edit-toolbar-link-query" placeholder="Search Britannica..." class="md-edit-toolbar-link-query"  maxlength="200" />
+        <button data-ytrk="" type="submit" class="search-submit" value=""><i class="fa fa-search"></i></button>
+    </div>
+</form>
+<div class="md-edit-toolbar-link-note">
+                    <b>Note:</b> we do not allow links to external resources in editor.<br/>
+                    Please click the <a href="/technology/genetic-algorithm/article-websites"><strong>Web sites</strong></a> link for this article to add citations for<br />
+                    external Web sites.
+                </div>
+           </div>
+
+        </div>
+    </div>
+
+    <div class="md-edit-help">
+       <strong>Editing Tools:</strong>
+       <ul>
+           <li><a href="#" id="md-edit-help-tips" data-ytrk="280">Tips for Editing</a></li>
+       </ul>
+    </div>
+
+</div>
+
+<div id="md-edit-submission-toolbar" class="ui-hidden">
+    <div class="md-edit-submission-toolbar-container">
+        <div class="md-edit-submission-toolbar-buttons">
+            <button class="btn font-serif-ui" id="md-edit-cancel" data-ytrk="284">Leave Edit Mode</button>
+            <button class="btn btn-primary font-serif-ui" id="md-edit-submit" data-ytrk="285">Submit</button>
+        </div>
+    </div>
+</div>
+
+<div id="md-edit-editing-tips" title="Tips for Editing" class="md-edit-help-box ui-hidden">
+    We welcome suggested improvements to any of our articles.<br/>
+    You can make it easier for us to review and, hopefully, publish your contribution by keeping a few points in mind:<br/>
+    <ol>
+        <li>Encyclopaedia Britannica articles are written in a neutral, objective tone for a general audience.</li>
+        <li>You may find it helpful to search within the site to see how similar or related subjects are covered.</li>
+        <li>Any text you add should be original, not copied from other sources.</li>
+        <li>At the bottom of the article, feel free to list any sources that support your changes, so that we can fully understand their context. (Internet URLs are best.)</li>
+    </ol>
+    Your contribution may be further edited by our staff, and its publication is subject to our final approval. Unfortunately, our editorial approach may not be able to accommodate all contributions.
+</div>
+
+<div id="md-edit-toc-placeholder"></div>
+
+</div><div id="md-media-overlay" class="ui-hidden">
+
+    <a href="#" data-ytrk="607" class="md-media-overlay-close fa-stack" title="Close">
+        <i class="fa fa-stack-2x fa-circle-o"></i>
+        <i class="fa fa-stack-1x fa-times"></i>
+    </a>
+
+	<div class="md-media-overlay-title">
+        <div class="subtitle">MEDIA FOR:</div>
+        <div class="maintitle">genetic algorithm</div>
+    </div>
+
+    <div class="md-media-overlay-content-container">
+
+		<div class="md-media-wrapper">
+			<a data-ytrk="94" href="#" class="md-media-overlay-arrow md-media-overlay-previous"><i class="fa fa-4x fa-angle-left"></i></a>
+            <a data-ytrk="94" href="#" class="md-media-overlay-arrow md-media-overlay-next"><i class="fa fa-4x fa-angle-right"></i></a>
+			<div id="md-media-container">
+				<span></span>
+                <a rel="nofollow" title="See Full Size" id="md-media-overlay-zoom" target="_blank" href="#" data-ytrk="95" class="ui-hidden"><i class="fa fa-search-plus"></i></a>
+			</div>
+		</div>
+
+		<div id="md-media-overlay-caption" class="font-sans-ui">
+			<div id="md-media-overlay-count"></div>
+			<div id="md-media-overlay-caption-title"></div>
+			<div id="md-media-overlay-caption-text" class="fancy-scrollbar white"></div>
+			<div id="md-media-overlay-credit"></div>
+			<div id="md-media-overlay-license"></div>
+		</div>
+
+        <div class="md-media-overlay-toolbar">
+            <a id="md-media-overlay-toolbar-print" data-ytrk="96" href="#" target="_blank" title="Print" rel="nofollow"><i class="fa fa-fw fa-print"></i></a>
+            <span id="md-media-overlay-toolbar-citations" data-ytrk="605" title="Citation"><i class="fa fa-fw fa-quote-right"></i></span>
+            <span id="md-media-overlay-toolbar-email" data-ytrk="604" title="Email"><i class="fa fa-fw fa-envelope"></i></span>
+        </div>
+
+		<div id="md-media-overlay-citations" class="md-media-overlay-box ui-hidden font-sans-ui">
+		    <div class="md-media-overlay-citations-menu">
+			    <div id="md-media-overlay-citations-close" class="md-media-overlay-box-close"><i class="fa fa-stack-1x fa-times"></i></div>
+			    <em>Citation</em>
+                <ul class="md-media-overlay-citations-select">
+                    <li data-value="mla">MLA</li>
+                    <li data-value="apa">APA</li>
+                    <li data-value="harvard">Harvard</li>
+                    <li data-value="chicago">Chicago</li>
+                </ul>
+		    </div>
+			<div id="md-media-overlay-citations-text"></div>
+		</div>
+
+		<div id="md-media-overlay-email" class="md-media-overlay-box ui-hidden font-sans-ui">
+			<em>Email</em>
+			<div id="md-media-overlay-email-close" class="md-media-overlay-box-close"><i class="fa fa-stack-1x fa-times"></i></div>
+			<form id="md-media-overlay-email-form">
+                <input type="hidden" name="assembly_id" />
+                <input type="hidden" name="page_id" />
+				<label for="md-media-overlay-email-to">To:</label>
+				<input type="text" id="md-media-overlay-email-to" name="to" placeholder="Enter an email address" required="true" data-validation="email" />
+				<label for="md-media-overlay-email-from">From:</label>
+				<input type="text" id="md-media-overlay-email-from" name="from" placeholder="Enter an email address" required="true" data-validation="email" />
+				<label for="md-media-overlay-email-comment">Comment:</label>
+				<textarea id="md-media-overlay-email-comment" name="comment" placeholder="Add a comment"></textarea>
+				<input type="submit" value="SEND" />
+			</form>
+		</div>
+
+		<div id="md-media-overlay-submit-email" class="md-media-overlay-box ui-hidden font-sans-ui">
+			<div class="md-media-overlay-submit-email-ok ui-hidden">You have successfully emailed this.</div>
+			<div class="md-media-overlay-submit-email-error">Error when sending the email. Try again later.</div>
+			<input type="button" value="OK" class="btn btn-primary" />
+		</div>
+
+	</div>
+
+	<div class="md-vertical-media-strip ui-hidden"></div>
+
+	<div id="md-media-overlay-ad">
+	        <iframe id="media-overlay-ad-iframe" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="160" height="600"></iframe>
+	    </div>
+	</div><div id="loginbox-dialog" class="ui-hidden">
+    <div id="loginbox-dialog-iframe-container"></div>
+    <div class="loginbox-continue-container">
+        <p>Or click <strong>Continue</strong> to submit anonymously:</p>
+        <div class="btn loginbox-btn" id="loginbox-continue">Continue</div>
+    </div>
+</div><!--[if lt IE 9]>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-1.11.3.min.js"><\/script>');</script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-2.1.4.min.js"><\/script>');</script>
+<!--<![endif]--><script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_QkFp1fFi8gwTK97KWaFi_v2eOF3cwcvUA9vC26R9gFKQjRikRuijZ1eOnERznNEN">
+            {
+                siteName: 'britannica.com (Production - Consumer)',
+                enabledProviders: 'facebook,twitter,googleplus,linkedin,yahoo',
+                connectWithoutLoginBehavior: "alwaysLogin"
+            }
+        </script>
+        <script type="text/javascript" src="http://cdn.gigya.com/js/gigyaGAIntegration.js"></script>
+    <script src="/resources/js/min-mendel.js?v=2.36.13"></script>
+
+    <script type="text/javascript" src="/resources/files/jwplayer6/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key='Pe2g3JQXoO64YRACwMhuLjL1bdEO24JIXiW6kA=';</script><script type="text/javascript" data-type="init page">
+        $( function() {
+            Mendel.Page.init();
+            if ($.isDefined(Mendel.TopicPage)) { Mendel.TopicPage.init(); }
+        });
+
+    </script>
+
+    <!--[if lt IE 8 ]>
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    	<script type="text/javascript">window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init Quantcast bottom">
+		    _qevents.push( { qacct:"p-fePJXh17dNmkk"} );
+		</script>
+		<noscript>
+			<div style="display: none;">
+		        <img src="http://pixel.quantserve.com/pixel/p-fePJXh17dNmkk.gif" height="1" width="1" alt="Quantcast"/>
+			</div>
+		</noscript>
+	<script type="text/javascript" data-type="load analytics">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+<script type="text/javascript" data-type="init crazyeggs">
+        function CE_READY() {
+            CE2.set( 1, 'ANONYMOUS' );
+            CE2.set( 2, 'B' );
+            CE2.set( 3, 'TOPIC PAGINATED MEDIUM' );
+            
+        }
+    </script>
+    <script type="text/javascript" data-type="load crazyeggs">
+        setTimeout(function(){
+            var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/3876.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)
+        }, 1);
+    </script>
+<script src="http://www.britannica.com/webstats/mendelstats.js?v=1"></script>
+    <script type="text/javascript" data-type="eb stats">
+        
+        var EBStat={accountId:-1,host:'www.britannica.com',domain:'www.britannica.com'};
+        try{writeStat(null,{accountId:-1,hostnameOverride:'www.britannica.com',domain:'www.britannica.com', json:''});}
+        catch(err){}
+    </script>
+<script type="text/javascript" src="/resources/js/libs/jquery.scrolldepth.min.js"></script>
+	<script type="text/javascript" data-type="init scrollDepth">
+		$( function() { jQuery.scrollDepth(); } );
+		</script>
+</body>
+</html>

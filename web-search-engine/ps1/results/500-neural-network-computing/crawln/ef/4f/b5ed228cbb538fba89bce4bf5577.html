@@ -1,0 +1,687 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link rel="stylesheet" title="default stylesheet" media="screen" type="text/css" href="http://cdn4.explainthatstuff.com/ets2.css">
+<link rel="canonical" href="http://www.explainthatstuff.com/howtransistorswork.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>How do transistors work? - Explain that Stuff</title>
+  <meta name="AUTHOR" content="Chris Woodford">
+  <meta name="keywords" content="transistor, semiconductor, doping, chip">
+  <meta name="description" content="An easy-to-understand introduction to transistors, including simple diagrams explaining how junction transistors and FETs work.">
+<link rel="shortcut icon" href="http://cdn4.explainthatstuff.com/favicon.ico">
+
+<!-- Begin Cookie Consent plugin. Original version by Silktide (http://silktide.com/cookieconsent), slightly modified by
+explainthatstuff.com on July 29, 2015), released under GNU General Public License Version (http://www.gnu.org/licenses/gpl.txt) as published by the Free Software Foundation.
+-->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to improve your experience of our site and to serve relevant, personalized advertising.","dismiss":"Got it!","learnMore":"More info","link":"http://www.explainthatstuff.com/privacy.html","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="http://cdn4.explainthatstuff.com/cookieconsent3.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body itemscope itemtype="http://schema.org/Article"><div class="container"><a name="pagetop"></a>
+
+
+
+<div class="header"><IMG class="headlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif"></div>
+
+<div class="searchtop">
+<!-- SiteSearch Google top search start -->
+<form action="http://www.explainthatstuff.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1030585152417294:7662706493" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="40" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<!-- SiteSearch Google top search end -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ad placement: electricity and electronics -->
+
+
+
+
+
+
+
+
+
+<div class="crumb">
+You are here:
+<a href="/">Home page</a> &gt;
+<a href="articles_electricity.html">Electricity and electronics</A> &gt;
+Transistors
+</div>
+
+<!-- old nav bar -->
+
+
+
+<div class="nav">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+
+
+<div class="adrightsm">Advertisement
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="1317849019"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+
+
+
+<div class="main2">
+<!-- -->
+
+<p><img itemprop="image" src="http://cdn4.explainthatstuff.com/fettransistor.jpg" class="ileftno" height="240" width="300" ALT="A FET transistor on a printed circuit board."></p>
+
+<h1 itemprop="headline name">Transistors</h1>
+
+
+<div class="sharetop"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhowtransistorswork.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+<p>by <a href="chris-woodford.html">Chris Woodford</a>. <span class="italic">Last updated: May 9, 2015. </span></p>
+<meta itemprop="alternativeHeadline" content="How do transistors work?">
+<meta itemprop="description" content="A simple explanation of how a transistor can work as either a switch or an amplifier, including a brief history of transistors.">
+<meta itemprop="datePublished" content="2007-01-10">
+<meta itemprop="dateModified" content="2015-05-09">
+
+<p itemprop="articleBody"><span class="dropcap">Y</span>our brain contains around 100 billion cells called neurons&mdash;the tiny switches that let you think and remember things. 
+<a href="howcomputerswork.html">Computers</A> contain billions
+of miniature "brain cells" as well. They're called <span class="bold">transistors</span> and
+they're made from silicon, a chemical element commonly found in sand.
+Transistors have revolutionized <a href="electronics.html">electronics</A> since they were first
+invented over half a century ago by John Bardeen, Walter Brattain, and
+William Shockley. But what are they&mdash;and how do they work?</p>
+
+<P><span class="credit">Photo: An insect with three legs? No, a typical transistor on an electronic circuit board. Although simple circuits contain individual transistors like this, complex circuits inside computers also contain microchips, each of which might have thousands, millions, or hundreds of millions of transistors packed inside.</span></P>
+
+<h2>What does a transistor actually do?</h2>
+
+<p>A transistor is really simple&mdash;and really complex. Let's start with
+the simple part. A transistor is a miniature electronic component that
+can do two different jobs. It can work either as an <a href="amplifiers.html">amplifier</a> or a switch:</p>
+
+<p><img src="http://cdn4.explainthatstuff.com/early-hearing-aid-components.jpg" class="irightno" height="300" width="225" ALT="The electronic components inside a pocket-style analog hearing aid.">
+</p>
+
+<UL>
+<LI>When it works as an <span class="bold">amplifier</span>, it takes
+in a tiny <a href="electricity.html">electric current</a> at one end (an
+input current) and produces a much bigger electric current (an output
+current) at the other. In other words, it's a kind of current booster. That comes in
+really useful in things like <a href="hearingaids.html">hearing aids</A>, one of the first things
+people used transistors for. A hearing aid has a tiny <a href="microphones.html">microphone</A> in it
+that picks up <a href="sound.html">sounds</A> from the world around you and turns them into
+fluctuating electric currents. These are fed into a transistor that
+boosts them and powers a tiny <a href="loudspeakers.html">loudspeaker</a>,
+so you hear a much louder version of the sounds around you.
+William Shockley, one of the inventors of the transistor, once explained transistor-amplifiers to a student in a more
+humorous way: <span class="italic">"If you take a bale of hay and tie it to the
+tail of a mule and then strike a match and set the bale of hay on fire,
+and if you then compare the energy expended shortly thereafter by the
+mule with the energy expended by yourself in the striking of the match,
+you will understand the concept of amplification."</span></LI>
+<LI>Transistors can also work as <span class="bold">switches</span>. A
+tiny electric current flowing through one part of a transistor can make a much bigger
+current flow through another part of it. In other words, the small
+current switches on the larger one. This is essentially how all computer chips work. For
+example, a <a href="how-computer-memory-works.html">memory</a> chip
+contains hundreds of millions or even billions of transistors,
+each of which can be switched on or off individually. Since each
+transistor can be in two distinct states, it can
+store two different numbers, zero and one. With billions of transistors, a chip can store billions of zeros and ones, and 
+almost as many ordinary numbers and letters (or characters, as we call them). More about this in a moment.</LI>
+</UL>
+
+<!-- google_ad_section_start(weight=ignore) -->
+
+<p><span class="credit">Photo: Compact hearing aids were among the first applications for transistors&mdash;and this one dates from about the late 1950s or 1960s. About the size of a pack of playing cards, it was designed to be worn in or on a jacket pocket. There's a microphone on the other side of the case that picks up ambient sounds. You can clearly see the four little back transistors inside, amplifying those sounds and then shooting them out to the little loudspeaker that sits in your ear.</span></p>
+
+<p>The great thing about old-style machines was that you could take
+them apart to figure out how they worked. It was never too hard, with a
+bit of pushing and poking, to discover which bit did what and how one
+thing led to another. But electronics is entirely different. It's all
+about using <span class="bold">electrons</span> to control electricity. An electron is a
+minute
+particle inside an <a href="atoms.html">atom</A>. It's so small, it weighs just under
+0.000000000000000000000000000001 kg! The most advanced transistors work
+by controlling the movements of individual electrons, so you can
+imagine just how small they are. In a modern computer chip, the size of
+a fingernail, you'll probably find between 500 million 
+and two billion separate transistors. There's no chance of taking a transistor apart to find out how it
+works, so we have to understand it with theory and imagination instead.
+First off, it helps if we know what a transistor is made from.</p>
+
+<h2>How is a transistor made?</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/siliconwafer.jpg" class="ileftno" height="292" width="250" ALT="A silicon wafer"></p>
+
+<p>Transistors are made from silicon, a chemical element found in sand, which does not normally conduct
+electricity (it doesn't allow electrons to flow through it easily).
+Silicon is a <span class="bold">semiconductor</span>, which means it's
+neither really a
+conductor (something like a <a href="introduction-to-metals.html">metal</a> that lets electricity flow) nor an
+insulator (something like <a href="plastics.html">plastic</A> that stops electricity flowing). If
+we treat silicon with impurities (a process known as <span class="bold">doping</span>),
+we can make it behave in a different
+way. If we dope silicon with the chemical elements arsenic, phosphorus,
+or antimony, the silicon gains some extra "free" electrons&mdash;ones that 
+can carry an electric current&mdash;so electrons will flow <span class="italic">out</span>
+of it more naturally. Because electrons have a negative charge, silicon
+treated this way is called <span class="bold">n-type</span> (negative
+type). We can also dope silicon with other impurities such as boron,
+gallium, and <a href="aluminum.html">aluminum</A>. Silicon treated this way has fewer of those
+"free" electrons, so the electrons in nearby materials will tend to flow <span class="italic">into</span> it. We call this sort of silicon <span class="bold">p-type</span> (positive type).</P>
+
+<P>Quickly, in passing, it's important to note that neither n-type or p-type silicon actually has a charge <I>in itself</I>: both are electrically neutral. It's true that n-type silicon has extra "free" electrons that increase its conductivity, while p-type silicon has fewer of those free electrons, which helps to increase its conductivity in the opposite way. In each case, the extra conductivity comes from having added <I>neutral</I> (uncharged) atoms of impurities to silicon that was <I>neutral</I> to start with&mdash;and we can't create electrical charges out of thin air! A more detailed explanation would need me to introduce an idea called
+<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/solids/band.html" target="_new">band theory</a>, which is a little bit beyond the scope of this article. All we need to remember is that "extra electrons" means extra <I>free</I> electrons&mdash;ones that can freely move about and help to carry an electric current.</p>
+
+<p><span class="credit">Photo: A wafer of silicon. Photo by courtesy of <a href="http://grcimagenet.grc.nasa.gov/" target="_blank">NASA Glenn Research Center (NASA-GRC)</A>.</span></p>
+
+
+<h2>Silicon sandwiches</h2>
+<p>We now have two different types of silicon. If we put them together
+in layers, making sandwiches of p-type and n-type material, we can make
+different kinds of electronic components that work in all kinds of
+ways.
+</p>
+<p>
+Suppose we join a piece of n-type silicon to a piece of p-type
+silicon and put electrical contacts on either side. Exciting and useful
+things start to happen at the <span class="bold">junction</span> between the two
+materials. If we turn
+on the current, we can make electrons flow through the junction from
+the n-type side to the p-type side and out through the circuit. This
+happens because the lack of electrons on the p-type side of the
+junction pulls electrons over from the n-type side and vice-versa. But
+if
+we reverse the current, the electrons won't flow at all. What we've
+made here is called a <a href="diodes.html">diode</a> (or rectifier).
+It's an electronic
+component that lets current flow through it in only one direction. It's
+useful if you want to turn alternating (two-way) electric current into
+direct (one-way) current. Diodes can also be made so they give off
+light when electricity flows through them. You might have seen these
+light-emitting diodes (LEDs) on pocket <a href="calculators.html">calculators</A> and electronic
+displays on hi-fi stereo equipment.</p>
+
+<!-- google_ad_section_end -->
+
+<!-- google_ad_section_start -->
+
+<h2>How a junction transistor works</h2>
+<p>Now suppose we use three layers of silicon in our sandwich instead
+of two. We can either make a p-n-p sandwich (with a slice of n-type
+silicon as the filling between two slices of p-type) or an n-p-n
+sandwich (with the p-type in between the two slabs of n-type). If we
+join electrical contacts to all three layers of the sandwich, we can
+make a component that will either amplify a current or switch it on or
+off&mdash;in other words, a transistor. Let's see how it works in the case of an
+n-p-n transistor.</p>
+<p>So we know what we're talking about, let's give names to the three
+electrical contacts. We'll call the two contacts joined to the two
+pieces of n-type silicon the <span class="bold">emitter</span> and the <span class="bold">collector</span>,
+and the contact
+joined to the p-type silicon we'll call the <span class="bold">base</span>. When no
+current is
+flowing in the transistor, we know the p-type silicon is short of
+electrons (shown here by the little plus signs, representing positive
+charges) and the two pieces of n-type silicon have extra electrons
+(shown by the little minus signs, representing negative charges). </p>
+
+<p class="center"><img src="http://cdn4.explainthatstuff.com/junction-transistor-construction.png" height="150" width="500" alt="Artwork showing junction transistor in off mode"></p>
+
+<p>Another way of looking at this is to say that while the n-type has a
+surplus of electrons, the p-type has <span class="bold">holes</span> where electrons
+should be. Normally, the holes in the base act like a barrier, preventing any
+significant current flow from the emitter to the collector while
+the transistor is in its "off" state.</p>
+
+<p>A transistor works when the electrons and the holes start moving
+across the two junctions between the n-type and p-type silicon.<br>
+</p>
+<p>Let's
+connect the transistor up to some power. Suppose we attach a small
+positive voltage to the base, make the emitter negatively charged, and
+make the collector positively charged. Electrons are pulled from the
+emitter into the base&mdash;and then from the base into the collector. And
+the transistor switches to its "on" state:</p>
+<p class="center"><img src="http://cdn4.explainthatstuff.com/how-transistor-works.png" alt="Artwork showing junction transistor in on mode, with electrons and holes moving across the junctions" height="150" width="500"></p>
+<p>The small current that we turn on at the base makes a big current
+flow between the emitter and the collector. By turning a small input
+current into a large output current, the transistor acts like an amplifier. But
+it also acts like a switch at the same time. When there is no current to
+the base, little or no current flows between the collector and the
+emitter. Turn on the base current and a big current flows. So the base
+current switches the whole transistor on and off. Technically, this
+type of transistor is called <span class="bold">bipolar</span> because
+two different kinds (or "polarities") of electrical charge (negative electrons and
+positive holes) are involved in making the current flow.</p>
+
+<P>We can also understand a transistor by thinking of it like a pair of diodes. With the
+base positive and the emitter negative, the base-emitter junction is like a forward-biased
+diode, with electrons moving in one direction across the junction (from left to right in
+the diagram) and holes going the opposite way (from right to left). The base-collector
+junction is like a reverse-biased diode. The positive voltage of the collector pulls
+most of the electrons through and into the outside circuit (though some electrons do recombine with holes in the base).</P>
+
+
+<h2>How a field-effect transistor (FET) works</h2>
+<p>All transistors work by controlling the movement of electrons, but
+not all of them do it the same way. Like a junction transistor, a <span
+ class="bold">FET
+</span>(field effect transistor) has three different terminals&mdash;but they
+have the names <span class="bold">source</span> (analogous to the emitter), <span class="bold">drain</span>
+(analogous to the
+collector), and <span class="bold">gate</span> (analogous to the base). In a FET, the
+layers of
+n-type and p-type silicon are arranged in a slightly different way and
+coated with layers of metal and oxide. That gives us a device called a
+<span class="bold">MOSFET</span> (Metal Oxide Semiconductor Field
+Effect Transistor). </p>
+<p class="center"><img src="http://cdn4.explainthatstuff.com/fet1.gif" height="147" width="278" alt="artwork showing MOSFET in off mode"></p>
+<p>Although there are extra electrons in the n-type source and drain,
+they cannot flow from one to the other because of the holes in
+the p-type gate in between them. However, if we attach a positive
+voltage to the gate, an electric field is created there that allows
+electrons to flow in a thin channel from the source to the drain. This
+"field effect" allows a current to flow and switches the transistor on:</p>
+<p class="center"><img src="http://cdn4.explainthatstuff.com/fet2.gif" height="145" width="275" alt="artwork showing MOSFET in on mode"></p>
+<p>For the sake of completeness, we could note that a MOSFET is a <span class="bold">unipolar</span>
+transistor because only one kind ("polarity")
+of electric charge is involved in making it work.</p>
+<!-- google_ad_section_end -->
+
+<h2>How do transistors work in calculators and computers?</h2>
+
+<p>In practice, you don't need to know any of this stuff about
+electrons and holes unless you're going
+to design computer chips for a living! All you need to know is that a
+transistor works like an amplifier or a switch, using a small current
+to switch on a larger one. But there's one other thing worth knowing:
+how does all this help computers store
+information and make decisions?</p>
+
+<p>We can put a few transistor switches together to make something
+called a <a href="logicgates.html">logic gate</a>, which compares several
+input currents and gives a different output as a result. Logic gates let computers make
+very simple decisions using a mathematical technique called <span
+ class="bold">Boolean algebra</span>. Your brain makes decisions the same way. For example,
+using "inputs" (things you know) about the weather and what you have in
+your hallway, you can make a decision like this: "If it's raining AND I
+have an umbrella, I will go to the
+shops". That's an example of Boolean algebra using what's called an AND
+"operator" (the word operator is just a bit of mathematical jargon to
+make things seem more complicated than they really are). You can make
+similar decisions with other operators. "If it's windy OR it's snowing,
+then I will put on a coat" is
+an example of using an OR operator. Or how about "If it's raining AND I
+have an umbrella OR I have a coat then it's okay to go out". Using AND,
+OR, and other operators called
+NOR, NOT, and NAND, computers can add up or compare binary numbers.
+That idea is
+the foundation stone of <span class="bold">computer programs</span>: the logical
+series of instructions that make computers do things.</p>
+<p>Normally, a junction transistor is "off" when there is no base
+current and switches to "on" when the base current flows. That means it
+takes an electric current to switch the transistor on or off. But
+transistors like this can be hooked up with logic gates so their output
+connections feed back into their inputs. The transistor
+then stays on even when the base current is removed. Each time a new
+base
+current flows, the transistor "flips" on or off. It remains in one of
+those <span class="bold">stable states </span>(either on or off) until another current
+comes along and flips it the other way. This kind of arrangement
+is known as a <span class="bold">flip-flop</span> and it turns a
+transistor into a simple
+memory device that stores a zero (when it's off) or a one (when it's
+on). Flip-flops are the basic technology behind <a href="how-computer-memory-works.html">computer memory</A> chips.</p>
+</div>
+
+
+<!-- google_ad_section_start(weight=ignore) -->
+
+<div class="box">
+<h2>Who invented the transistor?</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/bardeen-brattain-transistor-patent.png" class="irightno" height="331" width="400" ALT="Two illustrations from the original US patent (2,524,035) drawing of a point contact transistor by John Barden and Walter Brattain."></p>
+
+<p>Transistors were invented at Bell Laboratories in New Jersey in 1947
+by three brilliant US physicists: <span class="bold">John Bardeen</span> (1908&ndash;1991), <span class="bold">Walter
+Brattain</span> (1902&ndash;1987), and <span class="bold">William
+Shockley</span> (1910&ndash;1989).</P>
+
+<P>The team, led by Shockley, had been trying to
+develop a new kind of amplifier for the US <a href="telephone.html">telephone</A> system&mdash;but what
+they actually invented turned out to have much more widespread
+applications. Bardeen and Brattain made the first practical transistor
+(known as a point-contact transistor) on Tuesday, December 16, 1947.
+Although Shockley had played a large part in the project, he was
+furious and agitated at being left out. Shortly afterward, during a
+stay in a hotel at a physics conference, he single-handedly figured out
+the theory of the junction transistor&mdash;a much better device than the
+point-contact transistor.</p>
+
+<p>While Bardeen quit Bell Labs to become an academic (he went on to
+enjoy even more success studying <a href="superconductors.html">superconductors</A> at the University of Illinois),
+Brattain stayed for a while before retiring to become a teacher.
+Shockley set up his own transistor-making company and helped to inspire
+the modern-day phenomenon that is "Silicon Valley" (the prosperous area
+around Palo Alto, California where electronics corporations have
+congregated). Two of his employees, Robert Noyce and Gordon Moore, went
+on to found Intel, the world's biggest micro-chip manufacturer.</p>
+
+<p>Bardeen, Brattain, and Shockley were briefly reunited a few years later when
+they shared the world's top science
+award, the 
+<a href="http://nobelprize.org/nobel_prizes/physics/laureates/1956/" target="_blank">1956 Nobel Prize in Physics</A>, 
+for their discovery. Their story is
+a riveting tale of
+intellectual brilliance battling with petty jealousy and it's well
+worth reading
+more about. You can find some great accounts of it among the books and
+websites listed below.</p>
+
+
+<p><span class="credit">Artwork: The original design of the point-contact transistor, as set out in
+John Bardeen and Walter Brattain's US patent (2,524,035), filed in June 1948 (about six months after
+the original discovery) and awarded October 3, 1950. This is a simple PN transistor with a
+thin upper layer of P-type germanium (yellow) on a lower layer of N-type germanium (orange).
+The three contacts are emitter (E, red), collector (C, blue), and base (G, green).
+You can read more in the original patent document, which is listed in the references below.
+Artwork courtesy of US Patent and Trademark Office.</span></p>
+
+
+</div>
+
+<div class="main2">
+
+<div class="sharebot"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhowtransistorswork.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+<h2>Find out more</h2>
+
+<h3>On this website</h3>
+<UL>
+<LI><a href="historyofcomputers.html">Computers: a brief history</A></LI>
+<LI><a href="flashmemory.html">Flash memory</A></LI>
+<li><a href="integratedcircuits.html">Integrated circuits</a></li>
+<li><a href="how-thyristors-work.html">Thyristors</a></li>
+</UL>
+
+<h3>Other websites</h3>
+<ul>
+<li><a href="http://www.intel.com/content/www/us/en/education/k12/the-journey-inside.html" target="_blank">The Journey Inside</a>: Intel's educational website, all about transistors and <a href="integratedcircuits.html">integrated circuits</A>.</li>
+<li><a href="http://www.pbs.org/transistor/" target="_blank">Transistorized!</a>: A PBS website about Bardeen, Brattain, Shockley, and the history of the transistor.</li>
+<li><a href="http://nobelprize.org/educational/physics/transistor/index.html" target="_blank">The Transistor</a>: Learn about transistors in a fun way, with games and interactives on the Nobel Prize website.</li>
+</ul>
+
+<h3>Books</h3>
+<ul>
+<LI><a href="http://books.google.com/books?id=0bTpcTLCu6MC" target="_blank">Crystal Fire: The
+Invention of the Transistor and the Birth of the Information Age</A> by Michael Riordan and Lillian Hoddeson. New York: W. W. Norton &amp; Co., 1998. A very readable history of transistors and integrated circuits.</LI>
+<li><a href="http://books.google.com/books?id=PQzYdC3BtQkC" target="_blank">Make: Electronics</A> by Charles Platt. O'Reilly, 2008. A clear, well-illustrated primer for electronics beginners. A great place for a keen teenager to start.</li>
+<li><a href="http://books.google.com/books?id=c5x2AAAACAAJ" target="_blank">Getting Started in Electronics</A> by Forrest M. Mims III. Master Publishing, 2003. Dependable introduction with lots of example circuits to try.</li>
+<li><a href="http://books.google.com/books?id=wBzaAAAACAAJ" target="_blank">Eyewitness: Electronics</A> by Roger Bridgman. New York: Dorling Kindersley, 2007. Aimed at the 9&ndash;12 age group, this is an illustrated history of electronic technology.</li>
+<li><a href="http://books.google.com/books?id=bkOMDgwFA28C" target="_blank">The Art of Electronics</A> by Paul Horowitz, Winfield Hill. Cambridge University Press, 1989. This is a much more detailed undergraduate textbook&mdash;and the one I used myself at college.</li>
+<li><a href="http://books.google.com/books?id=VOo9LAogcKMC" target="_blank">Why Things Are the Way They Are</A> by B.S. Chandrasekhar. Cambridge University Press, 1998. A relatively easy-to-follow introduction to solid state physics; in effect, it explains how solids really work from the inside.</li>
+</ul>
+
+<h3>Articles</h3>
+<ul>
+<LI><a href="http://www.guardian.co.uk/technology/2011/may/04/intel-3d-chip-tri-gate" target="_blank">Intel goes 3D with transistor redesign</A> by Charles Arthur, Guardian, 4 May 2011. Making "three-dimensional" transistors allows engineers to cram even more of them into the same space.</LI>
+<LI><a href="http://www.wired.com/wiredscience/2008/04/scientists-buil/" target="_blank">Scientists Build World's Smallest Transistor, Gordon Moore Sighs With Relief</A> by Alexis Madrigal, Wired, April 17, 2008. Announcements about a new "smallest transistor" happen every couple of years!</LI>
+<LI><a href="http://news.bbc.co.uk/1/hi/in_pictures/7090811.stm" target="_blank">In Pictures: Transistor History</A>: BBC News, 15 November 2007. Photos of the transistor pioneers, early transistors, and circuits.</LI>
+<LI><a href="http://news.bbc.co.uk/1/hi/5259594.stm" target="_blank">Speedy silicon sets world record</A>: BBC News, 17 August 2006. How fluorine ion implantation can make faster transistors</LI>
+<LI><a href="http://news.bbc.co.uk/1/hi/sci/tech/528109.stm" target="_blank">World's smallest transistor</A> by David Whitehouse. BBC News, 19 November 1999. A new 50 nanometer transistor pushes the limits of tiny technology.</LI>
+</ul>
+
+<h3>Patents</h3>
+<ul>
+<li><a href="http://www.google.com/patents/US2524035" target="_blank">US Patent: 2,524,035: Three-electrode circuit element utilizing semiconducting materials</a>: The original point-contact transistor patent filed by John Bardeen and Walter Brattain on June 17, 1948 and awarded in October 1950.</li>
+<li><a href="http://www.google.com/patents/US2569347" target="_blank">US Patent: 2,569,347: Circuit element utilizing semiconductive material</a>: This was Shockley's furious follow-up to the original patent, filed on June 26, 1948 (about 10 days after the original Bardeen/Brattain patent) and awarded on September 25, 1951.</li>
+<li><a href="http://www.google.com/patents/US2502488" target="_blank">US Patent: 2,502,488: Semiconductor amplifier</a>: Another of Shockley's patents, filed in September 1948 and awarded in April 1950.</li>
+</ul>
+
+<h3>Videos</h3>
+<h4>Technical</h4>
+<ul>
+<li><a href="http://www.youtube.com/watch?v=-td7YT-Pums" target="_blank">MAKE presents: The Transistor</a>: An excellent, easy-to-follow, 9-minute intro to transistors from Collin Cunningham of MAKE. Explains the difference between low-power (signal) transistors and high-powered devices, why transistors were better than vacuum tubes, and what we can use transistors for. There's also a very good explanation of the original Bardeen and Brattain point-contact transistors.</li>
+</UL>
+<h4>History</h4>
+
+<P>We're fortunate to have some surviving archive footage of the three transistor pioneers!</P>
+<UL>
+<li><a href="http://www.youtube.com/watch?v=LWGVuoisDbI" target="_blank">William Shockley Interview, 1969</a>: Shockley explains how transistors came to be invented and the part he played.</li>
+<li><a href="http://www.youtube.com/watch?v=OyV8qSwGUHU" target="_blank">Spark of Genius: The Story of John Bardeen at the University of Illinois</a>: A 23-minute documentary about Bardeen's life and work.</li>
+<li><a href="http://www.youtube.com/watch?v=Cdr89n_nf9Y" target="_blank">AT&amp;T Archives: Dr. Walter Brattain on Semiconductor Physics</a>: Watch Dr Brattain explaining the theory of semiconductors and solid-state physics (29 minutes).</li>
+</UL>
+
+<P>Also from the archives, you might like to watch this video explaining electron tubes&mdash;and life before transistors came along:</P>
+<UL>
+<li><a href="http://www.youtube.com/watch?v=S6IeuC8DSvg" target="_blank">AT&amp;T Archives: Bottle of Magic</a>: How electron tubes made possible amplification of long-distance telephone calls. Transistors were the next logical step and were originally developed for exactly the same purpose.</li>
+</ul>
+
+
+</div>
+
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="main2">
+<h2>If you liked this article...</h2>
+<P>You might like my new book, <a href="mybooks.php">Atoms Under the Floorboards: The Surprising Science Hidden in Your Home</a>, published worldwide by Bloomsbury.</P>
+</div>
+
+<!-- Desktop bottom ad -->
+<div class="bottomsquare"><span class="slinks2">Sponsored links</span>
+<P>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="9721739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</P>
+</div>
+
+
+
+
+
+<div class="cc"><P><span class="highlight">Please do NOT copy our articles onto blogs and other websites</span></P>
+<p>Text copyright &copy; Chris Woodford 2007, 2015. All rights reserved. <a href="copyright-and-legal-notices.html">Full copyright notice and terms of use</A>.</p>
+
+
+</div>
+
+
+<div class="sharesites"><h2>Follow us</h2>
+<ul class="nobull">
+<LI class="inline2"><a href="followus.html" title="Follow us on Facebook"><IMG class="sprite shr4" ALT="Follow us on Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a rel="publisher" href="https://plus.google.com/115402323314399894520" target="_blank" title="Follow us on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="rss.xml" target="_blank" title="Subscribe to our RSS feed"><IMG class="sprite shr10" ALT="RSS"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.flickr.com/photos/explainthatstuff" target="_blank" title="Find our photos on Flickr"><IMG class="sprite shr11" ALT="Flickr"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.pinterest.com/explainthatstuf/" title="Follow us on Pinterest" target="_blank"><IMG class="sprite shr12" ALT="Follow us on Pinterest" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+</ul>
+</div>
+
+<div class="sharesites"><h2>Rate this page</h2>
+<p>Please <a href="feedback.php">rate or give feedback on this page</A> and I will make a donation to WaterAid.</P></div>
+
+
+
+
+<div class="sharesites">
+<h2>Share this page</h2>
+<p>Press CTRL + D to bookmark this page for later or tell your friends about it with:</p>
+<ul class="nobull">
+<LI class="inline2"><a title="Share this on Facebook"
+ href="http://www.facebook.com/sharer.php?u=http://www.explainthatstuff.com/howtransistorswork.html"><IMG class="sprite shr4" ALT="Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a
+ title="Post this page to Delicious"
+ href="http://del.icio.us/post?url=http://www.explainthatstuff.com/howtransistorswork.html&amp;title=How%20transistors%20work"><IMG class="sprite shr1" ALT="Delicious" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Digg"
+ href="http://digg.com/submit?url=http://www.explainthatstuff.com/howtransistorswork.html&amp;title=How%20transistors%20work"><IMG class="sprite shr2" ALT="Digg" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Reddit"
+ href="http://reddit.com/submit?url=http://www.explainthatstuff.com/howtransistorswork.html&amp;title=How%20transistors%20work"><IMG class="sprite shr3" ALT="Reddit" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this page on StumbleUpon"
+ href="http://www.stumbleupon.com/submit?url=http://www.explainthatstuff.com/howtransistorswork.html&amp;title=How%20transistors%20work"><IMG class="sprite shr5" ALT="StumbleUpon" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Add this to your Google Bookmarks"
+ href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.explainthatstuff.com/howtransistorswork.html&amp;title=How%20transistors%20work"><IMG class="sprite shr6" ALT="Google Bookmarks" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="http://www.twitter.com/home?status=A+simple+explanation+of+how+transistors+work+http://www.explainthatstuff.com/howtransistorswork.html" title="Tweet this"><IMG class="sprite shr7" ALT="Twitter" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Email this page to a friend"
+ href="mailto:?subject=How%20transistors%20work&amp;body=Take%20a%20look%20at%20this%20page:%20http://www.explainthatstuff.com/howtransistorswork.html"><IMG class="sprite shr8" ALT="Email" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="https://plus.google.com/101536672158385330677?rel=author" title="Connect on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+</UL>
+
+<h2>Cite this page</h2>
+
+<!---Citation-->
+<div class="citation">
+<P>
+Woodford, Chris. (2007) Transistors. Retrieved from http://www.explainthatstuff.com/howtransistorswork.html. [Accessed (Insert date here)]
+</P>
+</div>
+<!--
+
+<h2>Link to this page</h2>
+
+<P>If you'd like to link to this page, thank you! Here's some code you can cut and paste:</P>
+
+<div class="citation">
+<P>
+&lt;a href="http://www.explainthatstuff.com/howtransistorswork.html"&gt;How transistors work&lt;/a&gt;
+</P>
+</div>  -->
+</div>
+
+
+
+
+
+<!-- advinfo2 -->
+
+<!-- bottom search position -->
+
+
+
+
+
+
+
+
+<div class="alsoon"><a name="navigation"></a>
+<IMG class="footlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif">
+<h2>More to explore on our website...</h2>
+<ul class="nobull">
+<LI class="inline"><a href="articles_communications.html">Communications</A></LI>
+<LI class="inline"><a href="articles_computers.html">Computers</A></LI>
+<LI class="inline"><a href="articles_electricity.html">Electricity &amp; electronics</A></LI>
+<LI class="inline"><a href="articles_energy.html">Energy</A></LI>
+<LI class="inline"><a href="articles_engineering.html">Engineering</A></LI>
+<LI class="inline2"><a href="articles_environment.html">Environment</A></LI><BR>
+<LI class="inline"><a href="articles_gadgets.html">Gadgets</A></LI>
+<LI class="inline"><a href="articles_homelife.html">Home life</A></LI>
+<LI class="inline"><a href="articles_materials.html">Materials</A></LI>
+<LI class="inline"><a href="articles_science.html">Science</A></LI>
+<LI class="inline"><a href="articles_tools.html">Tools &amp; instruments</A></LI>
+<LI class="inline2"><a href="articles_transportation.html">Transportation</A></LI>
+</UL>
+</div>
+
+<div class="footer">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li></ul>
+</div>
+
+<div class="totop">&uarr; <a href="#pagetop">Back to top</a></div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(d, t) {
+var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = 'https://apis.google.com/js/plusone.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+  })();
+</script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
+
+
+</body>
+</html>

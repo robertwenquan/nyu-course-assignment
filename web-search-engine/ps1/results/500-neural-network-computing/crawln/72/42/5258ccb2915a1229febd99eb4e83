@@ -1,0 +1,3441 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie10 lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js lt-ie10" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+	
+
+
+
+
+
+
+
+
+
+
+
+<head>
+	
+	<!-- metas -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />		
+	<title>Welcome to Fritterati. Productivity declined.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		
+			<link rel="canonical" href="http://www.fritterati.com" />			
+		
+		
+		
+	
+
+	
+	<meta name="description" content="You seek respite from the joyless grind that is your daily existence, your work &#034;life.&#034; You are in search of a sudden, magical spark to lift your spirits, to give you a reason to laugh, a reason to hope, a reason to feel superior to the people featured in our Fail section. You seek the glittering web gem to share with friends and co-workers, wreaking havoc with their attention and diligence. Or maybe you are an economic subversive, grimly aware that record corporate profits and increasing worker productivity eventually will boomerang to the detriment of us all, with the possible exception of those who are too busy to visit this site, i.e. our overlords. Let others pledge allegiance to the GDP; you will be here savoring NSFW videos while sticking it to The Man." />
+	
+	
+
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://www.fritterati.com/index.rss" />
+	
+	
+		<meta property="og:title" content="Welcome to Fritterati. Productivity declined.">
+	
+	
+	
+		
+		
+			<meta property="og:image" content="http://idge.staticworld.net/frit/fritterati_icon_300x300.png" />
+			<meta itemprop="image" content="http://idge.staticworld.net/frit/fritterati_icon_300x300.png">
+			<meta itemprop="thumbnailURl" content="http://idge.staticworld.net/frit/fritterati_icon_300x300.png" />
+			<link rel="image_src" href="http://idge.staticworld.net/frit/fritterati_icon_300x300.png" />
+			
+		
+	
+	
+	
+		
+		
+			<meta property="og:type" content="website" />
+		
+		
+	<meta property="og:site_name" content="Fritterati" />
+	<meta property="fb:app_id" content="744652128953672" />
+	
+	
+		
+		
+			
+			<meta property="og:url" content="http://www.fritterati.com/">
+		
+	
+	
+
+
+	
+	
+		
+			
+				<meta property="og:description" content="It is our mission and our pleasure to offer you the finest and most entertaining diversions that the Internet has to offer. We promise to leave no digital stone unturned in our quest to help you waste time. Now go forth and be unproductive. And share. Share often.">	
+			
+			
+		
+	
+
+	
+	
+	
+		
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:site" content="@Fritterati">
+			
+				
+				
+					<meta name="twitter:image:src" content="http://idge.staticworld.net/frit/frit-twitter-default.jpg">
+				
+						
+			
+				
+				
+					
+						
+							<meta property="twitter:description" content="It is our mission and our pleasure to offer you the finest and most entertaining diversions that the Internet has to offer. We promise to leave no digital stone unturned in our quest to help you waste time. Now go forth and be unproductive. And share. Share often.">	
+						
+						
+					
+				
+			
+			
+				
+					<meta name="twitter:title" content="Welcome to Fritterati. Productivity declined.">
+				
+				
+			
+			
+				
+					<meta name="twitter:url" content="www.fritterati.com/">
+				
+				
+			
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	<meta name="rating" content="General">
+	
+	<meta name="robots" content="NOODP,NOYDIR" />
+	
+	<!-- pagination -->
+	
+	
+	
+	<!-- css -->
+	<link rel="stylesheet" href="/www/css/normalize.css?v=20150917091405" />
+	<link rel="stylesheet" href="/www/css/prettify.css?v=20150917091405" />
+	
+		<link rel="stylesheet" href="/www.base/css/sitewrapper.css?v=20150917091405" />
+		
+		<link rel="stylesheet" href="/www.base/css/homepage.css?v=20150917091405" />
+		
+		<link rel="stylesheet" href="/www.base/css/print.css?v=20150917091405" />
+	
+	
+		<link rel="stylesheet" href="/www.base.frit/css/sitewrapper.css?v=20150917091405" />
+		
+		<link rel="stylesheet" href="/www.base.frit/css/homepage.css?v=20150917091405" />
+		
+	
+	<link rel="stylesheet" href="/www/css/webfonts/ss-social.css?v=20150917091405" />
+	<link rel="stylesheet" href="/www/css/webfonts/ss-standard.css?v=20150917091405" />
+	<!--[if lte IE 8]>  
+		<link href="/www/css/webfonts/ss-ie8.css" rel="stylesheet" />
+	<![endif]--> 
+	
+		
+
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+	
+	
+		<script type="text/javascript" src="http://fonts.staticworld.net/ufk2obs.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	
+	<!--  fav and touch icons -->
+	<link rel="shortcut icon" type="image/x-icon" href="http://idge.staticworld.net/frit/favicon.ico"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://idge.staticworld.net/frit/fritterati_icon_144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://idge.staticworld.net/frit/fritterati_icon_114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://idge.staticworld.net/frit/fritterati_icon_72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://idge.staticworld.net/frit/fritterati_icon_57x57.png" />
+	<link rel="apple-touch-icon" href="http://idge.staticworld.net/frit/fritterati_icon_300x300.png" />
+
+	<!-- js -->
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+	<script src="/www.idge/js/jquery/jquery-1.10.2.min.js"></script>
+	<!-- google_dfp needs jquery defined first -->
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/www/js/ads/gpt_includes.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+	// Set up ad related variables
+	try {
+		IDG.GPT.unitName = "/8456/IDG.US_E_Fritterati.com";
+		IDG.GPT.yieldbotEnabled = "false";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+
+	
+	try {
+		IDG.GPT.unitName = IDG.GPT.unitName + "/" + "homepage_door";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	// global variables
+	var global_ShowSuper = false;
+	var global_ShowHero = true;
+	
+	//XFP global targeting, more targeting thm_pre
+	var url = window.location.href;
+	if(url.indexOf("?")>1){
+		url=url.split('?')[0];
+	}
+	
+
+	try {
+		IDG.GPT.addTarget("URL", encodeURIComponent(url));
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	try {IDG.GPT.addTarget("zone", 'index-home');}	catch (exception) {console.log ("google_dfp can't use IDG.GPT "+ exception);}
+	
+	
+	
+	
+	try {
+		if (null != IDG.GPT.getQsVal("env")) {		
+			IDG.GPT.addTarget("env", IDG.GPT.getQsVal("env").replace(/\W/g, "") );
+		}
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+	
+	
+	
+		
+
+	try {
+		IDG.GPT.addTarget("page_type", '');
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+
+	
+	
+	
+	
+	
+	
+</script>
+
+
+<script type="text/javascript" src="/www/js/ads/proximic.js?v=20150917091405"></script>  
+<script type="text/javascript">
+	 var currentUrl = encodeURIComponent(window.location.href);
+	 (function (u) {
+		var f = "scr";
+		var e = (u ? ("url=" + u) : "");
+		document.write("<"+f+"ipt type='text/javascript' src='http://t.zqtk.net/c.js?m=1&s=idg_js&"+e.replace(/\'/g, "")+"'></"+f+"ipt>");
+	  })((typeof (currentUrl) === "undefined") ? "" : currentUrl);
+</script>
+
+
+
+<script type="text/javascript">
+	
+	
+	
+	
+</script>
+  
+<script src="/www.base/js/thm_pre.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+try {
+	IDG.GPT.setIDGExtraTargetings();
+	IDG.GPT.setAllGoogleTagTargetings();
+	IDG.GPT.dfpAdManager.init();
+	IDG.GPT.defineAllGoogleTagSlots();
+	IDG.GPT.initGoogleTagService();
+}
+catch (exception) {
+	console.log ("google_dfp can't use IDG.GPT "+ exception);
+}
+</script>
+
+
+	
+	<script src="/www/js/swfobject.js?v=20150917091405"></script>
+	
+
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="/www/js/modernizr/modernizr-2.6.2.min.js?v=20150917091405"></script>
+	<script src="/www/js/respond.min.js?v=20150917091405"></script>
+		
+		
+	<script type="text/javascript">
+		var g_arrModules = new Array();
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?GTM-WX9NJ9"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WX9NJ9');</script>
+	<!-- End Google Tag Manager -->
+
+	
+</head>
+
+
+<body id="homepage" class="home fritterati">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="page-wrapper">
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TOP LEADERBOARD -->
+
+	<div id="banner">
+		<div class="ad">
+	  		
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="topleaderboard" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("topleaderboard", "true");
+						$('#topleaderboard').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+  
+	    </div>
+	</div>
+
+<!-- END TOP LEADERBOARD -->
+
+
+	<div class="page-wrapper">
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <header>
+ 
+ 
+	<section class="main">
+		<div class="wrapper">		
+
+			<div class="nav_default" id="nav" style="display: block;">
+				<div class="nav">
+					<button><i class="ss-icon ss-rows"></i></button>
+					
+					<span class="hm-btn"><a href="/"><img src="http://idge.staticworld.net/frit/f-sticky-nav.svg" alt="Home" /></a></span>
+					
+					
+					
+						
+					
+					<div class="time-frit"><span class="frit">TIME FRITTERED:</span> <span class="time">00:00</span></div>
+				</div>
+			</div>
+			<script src="/www.base.frit/js/frit-time.js"></script>
+			<script>FRIT.FritTime.startClock( $(".time-frit").find("span.time") );</script>
+
+			
+			<nav class="main" itemscope itemtype="http://schema.org/Organization">
+			<link itemprop="url" href="http://www.fritterati.com"> 
+		    	<div class="main-nav">
+		        	<div class="close-btn"><i class="ss-icon ss-delete"></i></div>
+		            <div class="nav-logo">
+		                <a href="/"><img src="http://idge.staticworld.net/frit/frit-logo4-1.svg" alt="" /></a>
+		            </div>
+		            <div class="search">
+		            	<!-- <input type="text" name="query" id="banner-search-term" value="" class="box" placeholder="looking for somethin'?" /> <a id="search-btn" href="#search"><i class="ss-icon">Search</i></a> -->
+		            	<form class="search-form" name="searchForm" id="search-form" action="/search">
+							<input type="text" name="query" id="search-term" value="looking for somethin'?" class="box" /><button type="submit" id="search-submit" class="search-button" value=""><a id="search-btn" href="#search"><i class="ss-icon">Search</i></a></button>
+							<!-- <form name="myForm">
+    							<input name="Name" value="Enter Your Name" /> -->
+				            <input type="submit" id="search-submit" value="" />
+				            
+				            <input type="hidden" name="contentType" value="article" />
+				        </form>
+		            </div>
+		            <div class="navlink">
+		            	<a href="/"><span>HOME</span></a>
+		            </div>
+		            <ul>		                
+		                
+							
+		        			<li><a href="/category/dead-sexy/">Dead Sexy</a></li>
+						
+							
+		        			<li><a href="/category/do-i-amuse-you/">Do I Amuse You?</a></li>
+						
+							
+		        			<li><a href="/category/fails/">Fails</a></li>
+						
+							
+		        			<li><a href="/category/future-shock/">Future Shock</a></li>
+						
+							
+		        			<li><a href="/category/i-cant-unsee-this/">I Can&#039;t Unsee This</a></li>
+						
+							
+		        			<li><a href="/category/scandalicious/">Scandalicious</a></li>
+						
+							
+		        			<li><a href="/category/they-are-out-to-get-you/">They Are Out to Get You!</a></li>
+						
+							
+		        			<li><a href="/category/video/">Video</a></li>
+						
+		                
+		            </ul>
+		            
+		            <div class="navlink">
+		            	<a href="/about/about.html"><span>ABOUT</span></a>
+		            </div>
+		        </div>
+		        
+		        <div class="follow-us"><span>follow us</span>  
+		        	<a class="fb" href="https://www.facebook.com/fritterati" rel="nofollow" target="_blank" itemprop="sameAs"><i class="ss-icon ss-social-circle ss-facebook" onclick="brandFollowTrack('Facebook')"></i></a> 
+		        	<a class="twit" href="https://twitter.com/Fritterati" rel="nofollow" target="_blank" itemprop="sameAs"><i class="ss-icon ss-social-circle ss-twitter" onclick="brandFollowTrack('Twitter')"></i></a>
+		        	<a class="goog" href="https://plus.google.com/111258529753254072593" rel="publisher" target="_blank" itemprop="sameAs"><i class="ss-icon ss-social-circle ss-googleplus" onclick="brandFollowTrack('Google+')"></i></a>
+		        </div>
+		    </nav>
+
+			<div class="masthead">
+
+	             <a href="/"><h1 class="ir logo">fritterati</h1></a>	
+	            	<img class="print-only" src="http://idge.staticworld.net/frit/fritterati-logo-print.png">	
+	            
+	        </div><!-- end .masthead -->	
+	        <div class="shade gradient"></div>
+	   
+	   </div>     
+	</section><!-- end .main -->
+
+
+</header><!-- end header -->
+
+		
+			
+			
+			<section role="main">
+
+				
+				
+				
+				
+
+				<section class="bodee" >
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+		<div class="fullwidth hero">
+			<div>
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="fluid-image">
+					
+						
+						
+							<a  href="/article/2969692/donald-trump-chokes-out-rick-perry.html"><img  class="large970.idgeImage  imgId100606716 " src="http://core3.staticworld.net/images/article/2015/08/5634567317_b4d5b61ff8_b-100606716-large970.idge.jpg" alt="empty pockets" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    							<a href="https://www.flickr.com/photos/danmoyle/5634567317/in/photolist-9zUCyn-ie1tir-83wv67-wHzEq7-ocuvc2-fz" target="_blank">Dan Moyle via Flickr</a>
+		    						
+		    						
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+
+			</div>
+		</div>
+		
+		<div class="homepage-wrapper" data-sticky_parent>
+			<div class="item-stream" data-sticky_column>
+				<div data-articleid="2969692" class="homepage-stream-item first">
+				 	<div class="eyebrow">No money or hope for the Texas dope</div>
+					<div class="title"><a  href="/article/2969692/donald-trump-chokes-out-rick-perry.html">Donald Trump chokes out Rick Perry</a></div>
+					<p class="desc">The biggest critic of Donald Trump in the vast GOP field of presidential contenders has run out of money to pay his staffers and can't raise any more. Rick Perry is toast.</p>
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2969692/donald-trump-chokes-out-rick-perry.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2969692%2Fdonald-trump-chokes-out-rick-perry.html&via=Fritterati&text=Donald Trump chokes out Rick Perry" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20Donald%20Trump%20chokes%20out%20Rick%20Perry&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0ADonald%20Trump%20chokes%20out%20Rick%20Perry%0AFritterati%0A%0AThe%20biggest%20critic%20of%20Donald%20Trump%20in%20the%20vast%20GOP%20field%20of%20presidential%20contenders%20has%20run%20out%20of%20money%20to%20pay%20his%20staffers%20and%20can%27t%20raise%20any%20more.%20Rick%20Perry%20is%20toast.%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2969692%2Fdonald-trump-chokes-out-rick-perry.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+				</div>
+			
+	
+	
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2960748" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2960748/the-incredible-unstealable-bike.html"><img  class="primary.idgeImage  imgId100605794 " src="http://core2.staticworld.net/images/article/2015/08/yerka-100605794-primary.idge.png" alt="yerka" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    						Yerka screen capture
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">Yerka designed to thwart bicycle thieves</div>
+			<div class="title"><a  href="/article/2960748/the-incredible-unstealable-bike.html">The incredible unstealable bike</a></div>
+			<p class="desc">How can you make it impossible for anyone to steal a bicycle? Three young entrepreneurs in Chile think they've found the answer. </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2960748/the-incredible-unstealable-bike.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2960748%2Fthe-incredible-unstealable-bike.html&via=Fritterati&text=The incredible unstealable bike" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20The%20incredible%20unstealable%20bike&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0AThe%20incredible%20unstealable%20bike%0AFritterati%0A%0AHow%20can%20you%20make%20it%20impossible%20for%20anyone%20to%20steal%20a%20bicycle%3F%20Three%20young%20entrepreneurs%20in%20Chile%20think%20they%27ve%20found%20the%20answer.%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2960748%2Fthe-incredible-unstealable-bike.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2957261" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2957261/india-fought-the-porn-and-the-porn-won.html"><img  class="primary.idgeImage  imgId100602184 " src="http://core1.staticworld.net/images/article/2015/08/16756691691_5db9f380d0_k-100602184-primary.idge.jpg" alt="cave" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				<p>India's government caves on porn ban.</p>
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    							<a href="https://www.flickr.com/photos/davebloggs007/16756691691/in/photolist-rwJqDr-4aB7fQ-iBJYMb-rwQrXv-fwv" target="_blank">davebloggs007 via Flickr</a>
+		    						
+		    						
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">The porn-loving people have spoken</div>
+			<div class="title"><a  href="/article/2957261/india-fought-the-porn-and-the-porn-won.html">India fought the porn, and the porn won</a></div>
+			<p class="desc">The Indian government's attempt to block Internet pornography went about as well as you might have expected.   </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2957261/india-fought-the-porn-and-the-porn-won.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2957261%2Findia-fought-the-porn-and-the-porn-won.html&via=Fritterati&text=India fought the porn, and the porn won" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20India%20fought%20the%20porn%2C%20and%20the%20porn%20won&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0AIndia%20fought%20the%20porn%2C%20and%20the%20porn%20won%0AFritterati%0A%0AThe%20Indian%20government%27s%20attempt%20to%20block%20Internet%20pornography%20went%20about%20as%20well%20as%20you%20might%20have%20expected.%20%20%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2957261%2Findia-fought-the-porn-and-the-porn-won.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-frit">
+
+	<div class="heading">TODAY'S TOP TIME SUCKS</div>
+	
+	<ul>
+
+	
+		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+	
+	</ul>
+
+</div>
+
+	<div class="homepage-ad">
+		
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ad">
+
+
+	
+		<div class="lazyload_ad">
+			<code type="text/javascript">
+			<!--
+				IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;
+				document.write('<div id="' + IDG.GPT.getIMUSlotName() + '">'); 
+				IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), IDG.GPT.slots["topimu"], false);
+				document.write('</div>');
+				$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+			</code>
+		</div>
+	
+	
+	
+
+
+
+</div>
+
+	</div>
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2957243" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2957243/coming-soon-prescription-pills-made-with-a-3d-printer.html"><img  class="primary.idgeImage  imgId100600896 " src="http://core4.staticworld.net/images/article/2015/08/8737799911_9eac2c9d15_k-100600896-primary.idge.jpg" alt="3D printer" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    							<a href="https://www.flickr.com/photos/creative_tools/8737799911/in/photolist-ej8vuB-ej8shc-ej8uHF-gZYkgr-ej8" target="_blank">Creative Tools via Flickr</a>
+		    						
+		    						
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">FDA approves 3D-manufactured seizure medication</div>
+			<div class="title"><a  href="/article/2957243/coming-soon-prescription-pills-made-with-a-3d-printer.html">Coming soon: Prescription pills made with a 3D printer</a></div>
+			<p class="desc">And you thought 3D printers were only good for making toys, wine bottle openers, and handguns. Soon the prescription pill you're taking also might be manufactured by a 3D printer.   </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2957243/coming-soon-prescription-pills-made-with-a-3d-printer.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2957243%2Fcoming-soon-prescription-pills-made-with-a-3d-printer.html&via=Fritterati&text=Coming soon: Prescription pills made with a 3D printer" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20Coming%20soon%3A%20Prescription%20pills%20made%20with%20a%203D%20printer&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0AComing%20soon%3A%20Prescription%20pills%20made%20with%20a%203D%20printer%0AFritterati%0A%0AAnd%20you%20thought%203D%20printers%20were%20only%20good%20for%20making%20toys%2C%20wine%20bottle%20openers%2C%20and%20handguns.%20Soon%20the%20prescription%20pill%20you%27re%20taking%20also%20might%20be%20manufactured%20by%20a%203D%20printer.%20%20%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2957243%2Fcoming-soon-prescription-pills-made-with-a-3d-printer.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2956774" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2956774/when-violent-gay-bashing-goes-wrong.html"><img  class="primary.idgeImage  imgId100600564 " src="http://core1.staticworld.net/images/article/2015/08/734124559_563ecd801d_b-100600564-primary.idge.jpg" alt="boxing gloves" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    							<a href="https://www.flickr.com/photos/kwdesigns/734124559/in/photolist-27SzDZ-qmSW4-a9EMUN-aevEZU-dsb1SD-2Lg" target="_blank">Kristen Wall via Flickr</a>
+		    						
+		    						
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">Or right in this case</div>
+			<div class="title"><a  href="/article/2956774/when-violent-gay-bashing-goes-wrong.html">When violent gay-bashing goes wrong</a></div>
+			<p class="desc">A guy who attacked a gay man in a New York City bodega got more than he bargained for when the victim's husband "tossed him in the street like the coward loser he is."    </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2956774/when-violent-gay-bashing-goes-wrong.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2956774%2Fwhen-violent-gay-bashing-goes-wrong.html&via=Fritterati&text=When violent gay-bashing goes wrong" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20When%20violent%20gay-bashing%20goes%20wrong&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0AWhen%20violent%20gay-bashing%20goes%20wrong%0AFritterati%0A%0AA%20guy%20who%20attacked%20a%20gay%20man%20in%20a%20New%20York%20City%20bodega%20got%20more%20than%20he%20bargained%20for%20when%20the%20victim%27s%20husband%20%22tossed%20him%20in%20the%20street%20like%20the%20coward%20loser%20he%20is.%22%20%20%20%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2956774%2Fwhen-violent-gay-bashing-goes-wrong.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2956440" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2956440/even-when-it-comes-to-office-temperatures-men-get-special-treatment.html"><img  class="primary.idgeImage  imgId100600208 " src="http://core3.staticworld.net/images/article/2015/08/2167082174_062807a18a_b-100600208-primary.idge.jpg" alt="cold woman" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    							<a href="https://www.flickr.com/photos/liberato/2167082174/in/photolist-4iuS2L-7vNL8L-6tkt4B-rrnmcH-naVYnM-8W" target="_blank">liber via Flickr</a>
+		    						
+		    						
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">Baby it's cold inside</div>
+			<div class="title"><a  href="/article/2956440/even-when-it-comes-to-office-temperatures-men-get-special-treatment.html">Even when it comes to office temperatures, men get special treatment!</a></div>
+			<p class="desc">Your complaints about cold workspaces are valid, ladies: A new study shows that when it comes to setting office temperature levels, it's a man's world.      </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2956440/even-when-it-comes-to-office-temperatures-men-get-special-treatment.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2956440%2Feven-when-it-comes-to-office-temperatures-men-get-special-treatment.html&via=Fritterati&text=Even when it comes to office temperatures, men get special treatment!" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20Even%20when%20it%20comes%20to%20office%20temperatures%2C%20men%20get%20special%20treatment%21&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0AEven%20when%20it%20comes%20to%20office%20temperatures%2C%20men%20get%20special%20treatment%21%0AFritterati%0A%0AYour%20complaints%20about%20cold%20workspaces%20are%20valid%2C%20ladies%3A%20A%20new%20study%20shows%20that%20when%20it%20comes%20to%20setting%20office%20temperature%20levels%2C%20it%27s%20a%20man%27s%20world.%20%20%20%20%20%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2956440%2Feven-when-it-comes-to-office-temperatures-men-get-special-treatment.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-frit">
+
+	<div class="heading">TODAY'S TOP TIME SUCKS</div>
+	
+	<ul>
+
+	
+		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+	
+	</ul>
+
+</div>
+
+	<div class="homepage-ad">
+		
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ad">
+
+
+	
+		<div class="lazyload_ad">
+			<code type="text/javascript">
+			<!--
+				IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;
+				document.write('<div id="' + IDG.GPT.getIMUSlotName() + '">'); 
+				IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), IDG.GPT.slots["topimu"], false);
+				document.write('</div>');
+				$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+			</code>
+		</div>
+	
+	
+	
+
+
+
+</div>
+
+	</div>
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2955488" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2955488/india-cracks-down-on-internet-porn.html"><img  class="primary.idgeImage  imgId100599943 " src="http://core0.staticworld.net/images/article/2015/08/2466310898_e92a83be40_b-100599943-primary.idge.jpg" alt="Taj Mahal" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    							<a href="https://www.flickr.com/photos/particlem/2466310898/in/photolist-4KWuiG-5Bu19-6R9gaw-9H6wGL-9H6yNm-bp" target="_blank">particlem via Flickr</a>
+		    						
+		    						
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">World Happiness Report ranking likely to plunge</div>
+			<div class="title"><a  href="/article/2955488/india-cracks-down-on-internet-porn.html">India cracks down on Internet porn </a></div>
+			<p class="desc">Believing its citizens are watching far too much porn online, the government of India has ordered Internet companies to block more than 850 sites.      </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2955488/india-cracks-down-on-internet-porn.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2955488%2Findia-cracks-down-on-internet-porn.html&via=Fritterati&text=India cracks down on Internet porn " target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20India%20cracks%20down%20on%20Internet%20porn&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0AIndia%20cracks%20down%20on%20Internet%20porn%20%0AFritterati%0A%0ABelieving%20its%20citizens%20are%20watching%20far%20too%20much%20porn%20online%2C%20the%20government%20of%20India%20has%20ordered%20Internet%20companies%20to%20block%20more%20than%20850%20sites.%20%20%20%20%20%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2955488%2Findia-cracks-down-on-internet-porn.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2952733" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2952733/take-that-ice-cream-cone-out-of-your-pocket-or-youre-under-arrest.html"><img  class="primary.idgeImage  imgId100598280 " src="http://core2.staticworld.net/images/article/2015/07/atomic-bomb-100598280-primary.idge.png" alt="atomic bomb" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    						Top Ten Media screen shot
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">That atomic bomb also is problematic</div>
+			<div class="title"><a  href="/article/2952733/take-that-ice-cream-cone-out-of-your-pocket-or-youre-under-arrest.html">Take that ice cream cone out of your pocket or you're under arrest</a></div>
+			<p class="desc">There are a lot of dumb laws still on the books in various states. Top Media has compiled the top 10 weird things that are illegal somewhere in America.       </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2952733/take-that-ice-cream-cone-out-of-your-pocket-or-youre-under-arrest.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2952733%2Ftake-that-ice-cream-cone-out-of-your-pocket-or-youre-under-arrest.html&via=Fritterati&text=Take that ice cream cone out of your pocket or you're under arrest" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20Take%20that%20ice%20cream%20cone%20out%20of%20your%20pocket%20or%20you%27re%20under%20arrest&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0ATake%20that%20ice%20cream%20cone%20out%20of%20your%20pocket%20or%20you%27re%20under%20arrest%0AFritterati%0A%0AThere%20are%20a%20lot%20of%20dumb%20laws%20still%20on%20the%20books%20in%20various%20states.%20Top%20Media%20has%20compiled%20the%20top%2010%20weird%20things%20that%20are%20illegal%20somewhere%20in%20America.%20%20%20%20%20%20%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2952733%2Ftake-that-ice-cream-cone-out-of-your-pocket-or-youre-under-arrest.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+
+	
+	
+	
+		<div data-articleid="2952096" class="homepage-stream-item">
+	    	
+				
+					
+					
+					
+					
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+				
+				<figure class="well-img">
+					
+						
+						
+							<a  href="/article/2952096/buffalo-mans-plot-to-frame-drug-dealer-with-stolen-hearse-was-ill-advised-in-retrospect.html"><img  class="primary.idgeImage  imgId100597997 " src="http://core0.staticworld.net/images/article/2015/07/15323824000_7a2f6a76bc_k-100597997-primary.idge.jpg" alt="hearse" /></a>
+						
+					
+					
+					
+						<figcaption>
+		    				<p>Guy's stolen hearse scheme was DOA.</p>
+		    				
+		    					<span>Credit:
+		    					
+		    						
+		    							<a href="https://www.flickr.com/photos/49000266@N05/15323824000/in/photolist-pm7B15-otQoZv-otPGFe-8VCRKJ-cK9u" target="_blank">Sarah Gath via Flickr</a>
+		    						
+		    						
+		    					
+		    					</span>
+		    				
+		    			</figcaption>
+					
+				</figure>
+				
+		
+		
+	
+	
+			
+			<div class="eyebrow">Would have benefited from peer review</div>
+			<div class="title"><a  href="/article/2952096/buffalo-mans-plot-to-frame-drug-dealer-with-stolen-hearse-was-ill-advised-in-retrospect.html">Buffalo man's plot to frame drug dealer with stolen hearse was ill-advised in retrospect</a></div>
+			<p class="desc">Sometimes the best-laid plans of men go awry. But the worst-laid plans almost always go awry, especially when they involve a stolen hearse, a drug debt, and some suspect reasoning.         </p>
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+	
+
+
+
+
+
+<div class="sharing">
+	<ul class="links">
+		<li class="fb">
+			<a title="Share on facebook" href="https://www.facebook.com/sharer.php?u=http://www.fritterati.com/article/2952096/buffalo-mans-plot-to-frame-drug-dealer-with-stolen-hearse-was-ill-advised-in-retrospect.html" target="_blank"><i class="ss-icon ss-social-circle ss-facebook"></i></a>
+		</li>
+		<li class="twit">
+			<a title="Share on twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.fritterati.com%2Farticle%2F2952096%2Fbuffalo-mans-plot-to-frame-drug-dealer-with-stolen-hearse-was-ill-advised-in-retrospect.html&via=Fritterati&text=Buffalo man's plot to frame drug dealer with stolen hearse was ill-advised in" target="_blank"><i class="ss-icon ss-social-circle ss-twitter"></i></a>
+		</li>
+		<li class="mail">
+			<a title="Share on email" href="mailto:?subject=A%20%27friend%27%20shared%20this%20time%20suck%20from%20Fritterati%3A%20Buffalo%20man%27s%20plot%20to%20frame%20drug%20dealer%20with%20stolen%20hearse%20was%20ill-advised%20in%20retrospect&amp;body=You%27re%20working%20too%20hard.%20Nip%20your%20productivity%20in%20the%20bud%20with%20this%20%27article%27%20shared%20from%20Fritterati.com.%0A%0ABuffalo%20man%27s%20plot%20to%20frame%20drug%20dealer%20with%20stolen%20hearse%20was%20ill-advised%20in%20retrospect%0AFritterati%0A%0ASometimes%20the%20best-laid%20plans%20of%20men%20go%20awry.%20But%20the%20worst-laid%20plans%20almost%20always%20go%20awry%2C%20especially%20when%20they%20involve%20a%20stolen%20hearse%2C%20a%20drug%20debt%2C%20and%20some%20suspect%20reasoning.%20%20%20%20%20%20%20%20%20%0A%0ARead%20the%20complete%20story%20here%3A%0Ahttp%3A%2F%2Fwww.fritterati.com%2Farticle%2F2952096%2Fbuffalo-mans-plot-to-frame-drug-dealer-with-stolen-hearse-was-ill-advised-in-retrospect.html"><i class="ss-icon ss-social-circle ss-mail"></i></a>
+		</li>
+	</ul>
+</div>
+
+			
+		</div>
+	
+
+
+
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-frit">
+
+	<div class="heading">TODAY'S TOP TIME SUCKS</div>
+	
+	<ul>
+
+	
+		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+	
+	</ul>
+
+</div>
+
+	<div class="homepage-ad">
+		
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ad">
+
+
+	
+		<div class="lazyload_ad">
+			<code type="text/javascript">
+			<!--
+				IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;
+				document.write('<div id="' + IDG.GPT.getIMUSlotName() + '">'); 
+				IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), IDG.GPT.slots["topimu"], false);
+				document.write('</div>');
+				$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+			</code>
+		</div>
+	
+	
+	
+
+
+
+</div>
+
+	</div>
+
+
+
+
+
+
+	
+
+	</div><!--  THIS CLOSES THE ITEM STREAM DIV -->
+
+	<div class="right-rail home" data-sticky_column>
+		
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ad">
+
+
+	
+	
+		<script type="text/javascript">
+			IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;
+			var slotName = IDG.GPT.getIMUSlotName();
+			IDG.GPT.defineGoogleTagSlot(slotName, IDG.GPT.slots["topimu"], true);
+			var adString = "<div id='" + slotName + "'></div><script>$('#" + slotName + "').responsiveAd({screenSize:'971 1115', scriptTags: []});<\/script>";
+			var adDivString = "<div class='apart ad'>" + adString + "</div>";
+			$(".right-rail").append(adDivString);
+		</script>
+	
+	
+
+
+
+</div>
+
+	</div>
+	
+</div><!-- END .homepage-wrapper -->
+
+<script src="/www/js/infinite-scroll.js"></script>
+<script>
+$(function() {
+	var STREAM_CSS = ".item-stream";	// Selector for article stream container
+	var FETCH_SIZE = 3;					// How many articles to fetch when end of page is reached
+
+	var adCount = 0;
+	// Initialize infinite-scroll
+	IDG.InfiniteScroll.initialize({
+		"callback" : function() {
+			$.get("/napi/tile?def=most.popular")
+			.done(function(data) {
+				$(STREAM_CSS).append(data);
+				// Insert ads on mobile after each infinite-scroll fetch
+				if (IDG.IS_MOBILE) {
+					var adDivId = 'homepage-ad-' + adCount++;
+					$.get(
+						"/napi/tile", {
+							"def": "dynamic.ad.lazy.option",
+							"lazyLoad" : false,
+							"jquerySelector" : '#' + adDivId
+						})
+					.done(function(data) {
+						$(STREAM_CSS).append('<div id="' + adDivId + '" class="homepage-ad">' + data + '</div>');
+					});
+				}
+			});
+		},
+		"container" : STREAM_CSS,
+		"ajax" : {
+			"tile"  : "scrollItemList",
+			"idKey" : "includedIds",
+			"data" : {
+				"includeArticles" : true,
+				"pageType" : "homepage"
+			}
+		},
+		"excludeIds" :	$(".homepage-stream-item").map(function() { return parseInt($(this).attr("data-articleid")) }).get(),
+		"fetchSize" : FETCH_SIZE
+	});
+});
+</script>
+
+	
+	
+
+
+						
+					
+				</section>
+
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <section class="copyright">
+        <div class="footer-wrapper">
+        	<p>Copyright &copy; 2015 <strong>Computerworld, Inc.</strong> All rights reserved</p>
+		</div><!-- /.wrapper -->
+    </section>
+</footer>
+
+<script src="/www/js/jquery/jquery-ui.js?v=20150917091405"></script>
+<script src="/www/js/jquery/jquery.dfp.min.js?v=20150917091405"></script>
+<script src="/www.base.frit/js/jquery/jquery.sticky-kit.js?v=20150917091405"></script>
+
+
+
+
+		
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+				<!-- Begin welcome ad overlay - gpt-overlay position  -->
+				<div id="superadunit" class="hidden">
+					<div class="ad">
+						<a href="javascript:unhide('superadunit');" id="superstitial-text">This ad will close in 20 seconds. Continue to site &raquo;</a>
+						<div id="gpt-overlay" class="">
+							<script type="text/javascript">
+								IDG.GPT.addDisplayedAd("gpt-overlay", "true");
+								googletag.cmd.push(function() { googletag.display('gpt-overlay'); });
+							</script>
+						</div>
+					</div>
+				</div>		
+				<!--  End welcome ad overlay - gpt-overlay position -->
+			
+			
+			
+			
+		
+	
+ 	
+ 
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="catfish" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("catfish", "true");
+						$('#catfish').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+				<!--  Begin gpt-skin -->
+				<div id="gpt-skin" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("gpt-skin", "true");
+						googletag.cmd.push(function() { googletag.display('gpt-skin'); });
+					</script>
+				</div>
+				<!--  End gpt-skin -->	
+			
+			
+			
+		
+	
+ 	
+ 
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="mobilewelcomead" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("mobilewelcomead", "true");
+						$('#mobilewelcomead').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+
+
+<script src="/www/js/autocomplete.js?v=20150917091405"></script>
+
+
+<script src="/www/js/jquery/jquery.lazyload.min.js?v=20150917091405"></script>
+<script src="/www.base/js/global.js?v=20150917091405"></script>
+<script src="/www/js/webfonts/ss-social.js?v=20150917091405"></script>
+<script src="/www/js/webfonts/ss-standard.js?v=20150917091405"></script>
+
+
+<script src="/www/js/analytics/brandAnalytics.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-58301734-1']);
+_gaq.push(['_setDomainName', 'fritterati.com']);
+
+if(""=="11"){
+	 _gaq.push(['_trackPageview',''+'/slideshow/'+ '1']);
+} else{
+ _gaq.push(['_trackPageview']);
+}
+(function() { 
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s); }
+)();
+
+function trackGoogleAnalytics(articleId, slideNumber,articleUri) {
+	_gaq.push(['_setAccount', 'UA-58301734-1']);
+	_gaq.push(['_setDomainName', 'fritterati.com']);
+	//_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageview', articleUri +'/slideshow/' + slideNumber]);
+	
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+	
+<script type="text/javascript">
+	var _sf_async_config={};
+
+	_sf_async_config.uid = 29363;
+
+	_sf_async_config.path = "/";
+	_sf_async_config.title = "Welcome to Fritterati. Productivity declined.";
+	_sf_async_config.domain = "fritterati.com";
+	if(window.location.href.indexOf("video")&&true) {
+		_sf_async_config.playerdomain= _sf_async_config.domain.replace("www.","");
+	}
+	
+	_sf_async_config.useCanonical = true;
+	
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement("script");
+	    e.setAttribute("language", "javascript");
+	    e.setAttribute("type", "text/javascript");
+	    e.setAttribute("src", (("https:" == document.location.protocol) ? 
+	      "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + 
+	      ((window.location.href.indexOf("video")) ? "js/chartbeat_video.js" : "js/chartbeat.js"));
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != "function") ?
+	 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript" src="/www/js/jquery/jquery.cookie.js"></script>
+<!-- CryptoJS -->
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script type="text/javascript" src="/www/js/analytics/idg_bk_coreapi.js?v=20150917091405"></script>
+	
+<script type="text/javascript">
+var blueKaiId=21853;
+var blueKaiPort=10;
+var brandCode = "frit";
+var regUrl="http://regdev.idge.int/api/"
+var daysToRefresh=30;
+var bk_debug_log=false;
+
+
+
+	 regUrl="http://reg.idgenterprise.com/api/";
+
+
+
+	daysToRefresh=30;
+
+
+	
+
+
+	
+
+if ( typeof(s) != 'undefined' ) {
+	bk_addPageCtx("pageType", (typeof(s.pageType)!='undefined')?s.pageType:'');
+}
+
+
+
+bk_addPageCtx("cmpy", "[]");
+
+
+bk_addPageCtx('tid', '');
+
+	
+	
+
+// Add the list name and email address hash params to bluekai tracking
+// If the user came from a newsletter clickthru, also set the isnl pagectx
+params = getUrlParams('phint');
+if(Object.keys(params).length > 0)
+	{
+	bk_addPageCtx("idg_eid", params['idg_eid']);
+	bk_addPageCtx("newt", params['newt']);
+	bk_addPageCtx("isnl", "1");	
+	}
+
+	try{
+		IDG.bkCoreApi.start();
+	}
+	catch(e){
+		//alert("Triggering catch")
+		bk_doJSTag(blueKaiId ,blueKaiPort);
+		if (window.console && window.console.log){
+			window.console.log("Error Occured While Processing Profile Siubmission")
+		}
+	}
+
+</script>
+
+
+
+<!-- End BlueKai Tag -->
+
+
+
+<script type="text/javascript" src="/www/js/ads/jquery.lazyload-ad.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+// -- Load Lazy Advertisement placement as deferred
+try {
+	$("div.lazyload_ad").lazyLoadAd({
+	        threshold    : 500,         // You can set threshold on how close to the edge ad should come before it is loaded. Default is 0 (when it is visible).
+	        forceLoad    : false,       // Ad is loaded even if not visible. Default is false.
+	        onLoad       : false,       // Callback function on call ad loading
+	        onComplete   : false,       // Callback function when load is loaded
+	        timeout      : 1500,        // Timeout ad load
+	        debug        : false,       // For debug use : draw colors border depends on load status
+	        xray         : false        // For debug use : display a complete page view with ad placements
+	}) ;
+}
+catch (exception) {
+	console.log("Error with lazyLoadAd: "+exception);
+}
+</script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {	
+	// this is for the height of the main navigation	
+	$(".wrapper nav.main").css('min-height',$(window).height() + 256);
+ }); 
+
+$(function () {
+    var menu = $('#nav');
+ 	pos = menu.offset();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > pos.top + menu.height() && menu.hasClass('nav_default')) {
+            menu.fadeOut('fast', function () {
+                $(this).removeClass('nav_default').addClass('nav_fixed').fadeIn('fast');
+                $('.wrapper').removeClass('default');
+                $('.wrapper').addClass('fixed');
+            });
+        } else if ($(this).scrollTop() <= pos.top && menu.hasClass('nav_fixed')) {
+            menu.fadeOut('fast', function () {
+                $(this).removeClass('nav_fixed').addClass('nav_default').fadeIn('fast');
+                $('.wrapper').addClass('default');
+                $('.wrapper').removeClass('fixed');
+            });
+        }
+    });
+});
+
+
+/* This is to place an overlay on Top Time Sucks images on hover. */
+$('.top-frit ul li figure a img').after('<span class="item-overlay"> </span>');
+
+
+// click the hamburger nav button
+$('.wrapper .nav button').click(function(e){
+    e.stopPropagation();
+    $('.wrapper').toggleClass('nav-open');
+});
+
+ $('.close-btn').click(function(e){
+	 $('.wrapper').removeClass('nav-open');
+});
+
+// this repositions the gpt-overlay and mobile welcome ad so that it's not covered by the header
+$("div#superadunit").prependTo("div#page-wrapper");
+//$("div#mobilewelcomead").prependTo("div#page-wrapper");
+
+
+//this is to affix sticky ad on homepage and index pages (category, search, author)
+var current_width = $(window).width();
+//tablet or greater
+if(current_width > 767){
+	$(".right-rail.home > .ad").stick_in_parent({
+		parent: '.homepage-wrapper',
+		offset_top: 50,
+		bottoming: false
+	});
+	
+	$(".right-rail.index-pg > .ad").stick_in_parent({
+		parent: '.bodee',
+		offset_top: 50,
+		bottoming: false
+	});
+	
+	// removing ads after top frits module on tablets and desktop
+	$( ".homepage-ad" ).remove();
+}
+if(current_width < 768) {
+	$( ".right-rail.home" ).remove();
+	$( "body.author section[role='main'] .bodee .right-rail.index-pg, .category section[role='main'] .bodee .right-rail.index-pg" ).remove();
+}
+
+$(document).ready(function() {
+	// search input field
+	var nameElement = document.forms.searchForm.query;
+	
+	function nameFocus( e ) {
+	  var element = e.target || window.event.srcElement;
+	  if ( element.value == "looking for somethin'?" )
+	    element.value = "";
+	}
+	
+	function nameBlur(e) {
+	  var element = e.target || window.event.srcElement;
+	  if ( element.value === "" )
+	    element.value = "looking for somethin'?";
+	}
+	
+	if ( nameElement.addEventListener ) {
+	  nameElement.addEventListener("focus", nameFocus, false);
+	  nameElement.addEventListener("blur", nameBlur, false);
+	} else if ( nameElement.attachEvent ) {
+	  nameElement.attachEvent("onfocus", nameFocus);
+	  nameElement.attachEvent("onblur", nameBlur);
+	}
+});
+</script>
+
+
+
+	<script>
+	//check to see if there's a fireplace loaded - if so, constrain the carousel width
+	var setInt = setInterval(checkFireplace, 200);
+	var setIntCount = 0;
+	function checkFireplace() {
+		//limit checking time to 6 seconds max
+		if (setIntCount < 30) {
+			if ($('body div').data('studioassetid')) {
+				$('body').addClass('has-fireplace');	
+				clearInterval(setInt);
+			}
+			
+			setIntCount++;
+		}
+		else {
+			clearInterval(setInt);	
+		}
+	}
+	</script>
+
+
+
+
+
+			</section><!-- /role=main -->
+
+	</div><!-- /.page-wrapper -->
+</div><!-- /#page-wrapper -->
+
+</body>
+</html>

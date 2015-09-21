@@ -1,0 +1,619 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link rel="stylesheet" title="default stylesheet" media="screen" type="text/css" href="http://cdn4.explainthatstuff.com/ets2.css">
+<link rel="canonical" href="http://www.explainthatstuff.com/how-ocr-works.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>How does OCR document scanning work? - Explain that Stuff</title>
+  <meta name="keywords" content="OCR, optical character recognition, handwriting, pattern, feature, scanning">
+  <meta name="description" content="An easy-to-understand introduction to OCR. Explains simply how scanned documents are turned into machine-readable form by pattern recognition and feature detection.">
+<link rel="shortcut icon" href="http://cdn4.explainthatstuff.com/favicon.ico">
+
+<!-- Begin Cookie Consent plugin. Original version by Silktide (http://silktide.com/cookieconsent), slightly modified by
+explainthatstuff.com on July 29, 2015), released under GNU General Public License Version (http://www.gnu.org/licenses/gpl.txt) as published by the Free Software Foundation.
+-->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to improve your experience of our site and to serve relevant, personalized advertising.","dismiss":"Got it!","learnMore":"More info","link":"http://www.explainthatstuff.com/privacy.html","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="http://cdn4.explainthatstuff.com/cookieconsent3.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body itemscope itemtype="http://schema.org/Article"><div class="container"><a name="pagetop"></a>
+
+
+
+
+
+
+<div class="header"><IMG class="headlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif"></div>
+
+<div class="searchtop">
+<!-- SiteSearch Google top search start -->
+<form action="http://www.explainthatstuff.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1030585152417294:7662706493" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="40" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<!-- SiteSearch Google top search end -->
+</div>
+
+<!-- Top ad removed -->
+
+<!-- Ad placement: computing -->
+
+
+
+<div class="crumb">
+You are here:
+<a href="/">Home page</a> &gt;
+<a href="articles_computers.html">Computers</A> &gt;
+Optical character recognition (OCR)
+</div>
+
+
+
+<div class="nav">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+
+<div class="adrightsm">Advertisement
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="1317849019"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+        
+<div class="main2">
+<p><img itemprop="image" src="http://cdn4.explainthatstuff.com/ocr-sample2.jpg" class="ileftno" height="250" width="370" ALT="A closeup of printed text on a page."></P>
+<h1 itemprop="headline name">Optical character recognition (OCR)</H1>
+
+<div class="sharetop"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhow-ocr-works.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+<p>by <a href="chris-woodford.html">Chris Woodford</a>. <span class="italic">Last updated: October 2, 2014.</span></p>
+<meta itemprop="alternativeHeadline" content="How does OCR work?">
+<meta itemprop="description" content="Explains how optical character recognition (OCR) systems can turn the scanned image of a page into accurate, editable text.">
+<meta itemprop="datePublished" content="2010-12-03">
+<meta itemprop="dateModified" content="2014-10-02">
+
+
+<p itemprop="articleBody"><span class="dropcap">D</span>o you ever struggle to read a friend's handwriting? Count yourself lucky,
+then, that you're not working for the US Postal Service, which has to
+decode and deliver something like 30 million handwritten envelopes
+every single day! With so much of our lives computerized, it's
+vitally important that machines and humans can understand one another
+and pass information back and forth. Mostly <a href="howcomputerswork.html">computers</a> have things
+their way&mdash;we have to "talk" to them through relatively crude devices such as <a href="computerkeyboards.html">keyboards</A>
+and <a href="computermouse.html">mice</a> so they can figure out what we want them to do. But when
+it comes to processing more human kinds of information, like an
+old-fashioned printed book or a letter scribbled with a fountain pen,
+computers have to work much harder. That's where <span class="bold">optical character
+recognition (OCR)</span> comes in. It's a type of
+software (program) that can automatically analyze printed text and turn it into
+a form that a computer can process more easily. OCR is at the heart
+of everything from handwriting analysis programs on <a href="cellphones.html">cellphones</a> to
+the gigantic mail-sorting machines that ensure all those millions
+of letters reach their destinations. How exactly does it work? Let's
+take a closer look!</P>
+
+<p><span class="credit">Photo: Recognizing characters: To you and me, it's the word "an", but to a computer this is just a meaningless pattern of black and white. And notice how the fibers in the paper are introducing some confusion into the image. If the ink were slightly more faded, the gray and white pattern of fibers would start to interfere and make the letters even harder to recognize.</span></p>
+
+<h2>What is OCR?</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/blue-eye-iris.jpg" class="irightno" height="250" width="300" ALT="Close-up of the iris in a blue eye."></p>
+
+<P>As you read these words on your computer screen, your eyes and brain are
+carrying out optical character recognition without you even noticing!
+Your eyes are recognizing the patterns of light and dark that make up
+the <span class="bold">characters</span> (letters, numbers, and things like punctuation
+marks) printed on the screen and your brain is using those to figure
+out what I'm trying to say (sometimes by reading individual
+characters but mostly by scanning entire words and whole groups of
+words at once).</P>
+
+<P>Computers can do this too, but it's really hard work for them. The first
+problem is that a computer has no eyes, so if you want it to read
+something like the page of an old book, you have to present it with
+an image of that page generated with an optical
+scanner or a <a href="digitalcameras.html">digital camera</A>. The page you create this way is a
+graphic file (often in the form of a JPG) and, as far as a computer's
+concerned, there's no difference between it and a <a href="how-film-cameras-work.html">photograph</A> of the
+Taj Mahal or any other graphic: it's a completely meaningless pattern
+of pixels (the colored dots or squares that make up any
+<a href="computer-graphics.html">computer graphic</a> image). In other words, the computer has a <span class="italic">picture</span> of
+the page rather than the text itself&mdash;it can't read the words on the
+page like we can, just like that. OCR is the process of turning a
+picture of text into text itself&mdash;in other words, producing something
+like a TXT or DOC file from a scanned JPG of a printed or handwritten
+page.</P>
+
+<p><span class="credit">Photo: When it comes to optical character recognition, our eyes and brains are far superior to
+any computer.</span></p>
+
+<H3>What's the advantage of OCR?</H3>
+
+<P>Once a printed page is in this <span class="bold">machine-readable</span> text form, you can do
+all kinds of things you couldn't do before. You can search through it
+by keyword (handy if there's a huge amount of it), edit it with a
+word processor, incorporate it into a <a href="howthewebworks.html">Web</A> page, compress it into a
+ZIP file and store it in much less space, send it by email&mdash;and all
+kinds of other neat things. Machine-readable text can also be decoded
+by screen readers, tools that use speech synthesizers (computerized
+voices, like the one <a href="http://en.wikipedia.org/wiki/Stephen_Hawking" target="_blank">Stephen Hawking</A> uses) to read out the words on a screen so
+blind and visually impaired people can understand them. (Back in the
+1970s, one of the first major uses of OCR was in a <a href="photocopier.html">photocopier</A>-like
+device called the Kurzweil Reading Machine, which could read printed
+books out loud to blind people.)</P>
+
+<h2>How does OCR work?</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/letter-a-typography.png" class="irightno" height="250" width="250" ALT="Examples of the capital letter A printed in various different sizes and fonts."></P>
+
+<P>Let's suppose life was really simple and there was only one letter in the
+alphabet: A. Even then, you can probably see that OCR would be quite
+a tricky problem&mdash;because every single person writes the letter A in
+a slightly different way. Even with printed text, there's an issue,
+because books and other documents are printed in many different
+typefaces (fonts) and the letter A can be printed in many subtly
+different forms.</P>
+
+<P>Broadly speaking, there are two different ways to
+solve this problem, either by recognizing characters in their entirety
+(pattern recognition) or by detecting the individual lines and
+strokes characters are made from (feature detection) and identifying
+them that way. Let's look at these in turn.</P>
+
+<p><span class="credit">Photo: There's a fair bit of variation between these different versions of a capital letter A,
+printed in different computer fonts, but there's also a basic similarity: you can see that almost all of them are made from two angled lines that meet in the middle at the top, with a horizontal line between.</span></p>
+
+
+<H3>Pattern recognition</H3>
+
+<p><img src="http://cdn4.explainthatstuff.com/ocr-a-font-sample.png" class="ileftno" height="184" width="286" ALT="Examples of text and numbers printed in 1960s OCR-A optical character recognition font."></P>
+
+<P>If everyone wrote the letter A exactly the same way, getting a computer
+to recognize it would be easy. You'd just compare your scanned image
+with a stored version of the letter A and, if the two matched, that
+would be that. Kind of like Cinderella: "If the slipper fits..."</P>
+<P>
+So how do you get everyone to write the same way? Back in the 1960s,
+a special font called <span class="bold">OCR-A</span> was developed that could be used on
+things like bank checks and so on. Every letter was exactly the same
+width (so this was an example of what's called a monospace font) and
+the strokes were carefully designed so each letter could easily be
+distinguished from all the others. Check-printers were designed so
+they all used that font, and OCR equipment was designed to recognize
+it too. By standardizing on one simple font, OCR became a relatively
+easy problem to solve. The only trouble is, most of what the world
+prints isn't written in OCR-A&mdash;and no-one uses that font for their
+handwriting! So the next step was to teach OCR programs to recognize
+letters written in a number of very common fonts (ones like Times,
+Helvetica, Courier, and so on). That meant they could recognize quite
+a lot of printed text, but there was still no guarantee they could
+recognize any font you might send their way.</P>
+
+<p><span class="credit">Photo: OCR-A font: Designed to be read by computers as well as people. You might not recognize the style of text, but the numbers probably do look familiar to you from checks and computer printouts. Note that
+similar-looking characters (like the lowercase "l" in Explain and the number "1" at the bottom) have been designed so computers can easily tell them apart.</span></p>
+
+
+<H3>Feature detection</H3>
+
+<p><img src="http://cdn4.explainthatstuff.com/ocr-feature-detection.png" class="irightno" height="80" width="300" ALT="How the letter A is built from three separate features."></P>
+
+<P>Also known as feature extraction or intelligent character recognition
+(ICR), this is a much more sophisticated way of spotting characters.
+Suppose you're an OCR computer program presented with lots of
+different letters written in lots of different fonts; how do you pick
+out all the letter As if they all look slightly different? You could
+use a rule like this: If you see two angled lines that meet in a
+point at the top, in the center, and there's a horizontal line
+between them about halfway down, that's a letter A. Apply that rule
+and you'll recognize most capital letter As, no matter what font
+they're written in. Instead of recognizing the complete pattern of an
+A, you're detecting the individual component features (angled lines,
+crossed lines, or whatever) from which the character is made. Most
+modern <span class="bold">omnifont</span> OCR programs (ones that can recognize printed text
+in any font) work by feature detection rather than pattern
+recognition. Some use <a href="introduction-to-neural-networks.html">neural networks</a> (computer programs
+that automatically extract patterns in a brain-like way).
+</P>
+
+<p><span class="credit">Photo: Feature detection: You can be pretty confident you're looking at a capital letter A if you can identify these three component parts joined together in the correct way.</span></p>
+
+<h2>How does handwriting recognition work?</h2>
+
+<P>Recognizing the characters that make up neatly <a href="laserprinters.html">laser-printed</A> computer text is
+relatively easy  compared to decoding someone's scribbled
+handwriting. That's the kind of simple-but-tricky, everyday problem
+where human brains beat clever computers hands-down: we can all make
+a rough stab at guessing the message hidden in even the worst human
+writing. How? We use a combination of automatic pattern recognition,
+feature extraction, and&mdash;absolutely <span class="italic">crucially</span>&mdash;knowledge about the writer and
+the <span class="italic">meaning</span> of what's being written ("This letter, from my friend Harriet, is
+about a classical concert we went to together, so the word she's
+written here is more likely to be 'trombone' than 'tramline'.")
+</P>
+
+<p><img src="http://cdn4.explainthatstuff.com/ocr-handwriting-samples.jpg" class="ileftno" height="300" width="225" ALT="The words 'what does this say?' written in three different samples of handwriting to illustrate the difficulty of handwriting recognition with OCR."></P>
+
+<p><span class="credit">Photo: Handwriting recognition: Cursive handwriting (with letters joined up and flowing together) is very much harder for a computer to recognize than computer-printed type, because it's difficult to know where one letter ends and another begins. Many people write so hastily that they don't bother to form their letters fully, making recognition by pattern or feature extremely hard. Another problem is that handwriting is an expression of individuality, so people may go out of their way to make their writing different from the norm. When it comes to reading words like this, we rely heavily on the meaning of what's written, our knowledge of the writer, and the words that we've already read&mdash;something computers can't manage so easily.</span></p>
+
+<h3>Making it easy</h3>
+
+<P>Where computers do have to recognize handwriting, the problem is often
+simplified for them. For example, mail-sorting computers generally
+only have to recognize the zipcode (postcode) on an envelope, not the
+entire address. So they just have to identify a relatively small
+amount of text made only from basic letters and numbers. People are
+encouraged to write the codes legibly (leaving spaces between
+characters, using all uppercase letters) and, sometimes, envelopes
+are preprinted with little squares for you to write the characters in to
+help you keep them separate.</P>
+
+<P>Forms designed to be processed by OCR sometimes have separate boxes for people to write each letter in or
+faint guidelines known as <span class="bold">comb fields</span>, which encourage people to keep letters separate and
+write legibly. (Generally the comb fields are printed in a special
+color, such as pink, called a <span class="bold">dropout color</span>, which can be easily separated from the
+text people actually write, usually in black or blue ink.)</P>
+
+<P>Tablet computers and cellphones that have handwriting recognition often use feature extraction to recognize
+letters as you write them. If you're writing a letter A, for example,
+the <a href="touchscreens.html">touchscreen</a> can sense you writing first one angled line, then the
+other, and then the horizontal line joining them. In other words, the
+computer gets a headstart in recognizing the features because you're
+forming them separately, one after another, and that makes feature extraction much
+easier than having to pick out the features from handwriting scribbled
+on paper.</P>
+</div>
+
+<div class="box">
+<h2>What does OCR involve in practice?</h2>
+
+<P>Most people don't have to use OCR on an industrial scale: not many of us
+will need to scan even a hundred documents a day, never mind a
+million. We're more likely to want to OCR the occasional printed
+article and turn it into editable form, or scan an out-of-copyright
+book and republish it as a Web page.</P>
+
+<p><img src="http://cdn4.explainthatstuff.com/ocr-kooka-example.png" class="irightno" height="271" width="350" ALT="Screenshot showing the Linux Kooka scanning program being used to OCR a sample of text."></P>
+<p><span class="credit">Photo: What OCR looks like in practice: you load an image of a scanned page (the words in the background are a scanned bitmap), run your OCR program to generate a text file, and then step through the "recognized" text manually correcting errors. Here, in a neat twist of history, I'm using the <a href="linux.html">Linux</a> Kooka scanning program to OCR the patent of Gustav Tauschek's original OCR system from 1928/1929 (described below).</span></p>
+
+
+<P>In practice, this is what everyday OCR actually involves:</P>
+<OL>
+<LI><span class="bold">Printout</span>: First, you need to get the best possible printout of your existing document.
+Sometimes you're just stuck with an old <a href="typewriter.html">typewritten</a> script, but you
+may be able to improve the print quality by photocopying (to
+increase the contrast between the print and the page). The quality
+of the original printout makes a huge difference to the accuracy of
+the OCR process. Dirty marks, folds, <a href="coffee.html">coffee</a> stains, ink blots, and
+any other stray marks will all reduce the likelihood of correct
+letter and word recognition.</LI>
+<LI><span class="bold">Scanning</span>: You run the printout through your optical scanner. Sheet-feed scanners
+are better for OCR than flatbed scanners because you can scan pages one
+after another. Most modern OCR programs will scan each page,
+recognize the text on it, and then scan the next page automatically.
+If you're using a flatbed scanner, you'll have to insert the pages
+one at a time by hand. If you've got a reasonably good digital
+camera, you may be able to create images of your pages by taking
+photos. You'll probably need to use a macro (close-up) focus setting to get
+really sharp letters that are clear enough for accurate OCR.</LI>
+<LI><span class="bold">Two-color</span>: The first stage in OCR involves generating a black-and-white
+(two-color/one-bit) version of the color or grayscale scanned page,
+similar to what you'd see coming out of a <a href="faxmachines.html">fax machine</a>. OCR is
+essentially a binary process: it recognizes things that are either
+there or not. If the original scanned image is perfect, any black it
+contains will be part of a character that needs to be recognized
+while any white will be part of the background. Reducing the image
+to black and white is therefore the first stage in figuring out the
+text that needs processing&mdash;although it can also introduce errors. If you
+have a color scan of a newspaper with a large brown coffee stain
+over the words, it's easy to tell the text from the stain; but if
+you reduce the scan to a black-and-white image, the stain will turn
+to black and white too and may confuse the OCR process.</LI>
+<LI><span class="bold">OCR</span>: All OCR programs are slightly different, but generally they
+process the image of each page by recognizing the text character by character,
+word by word, and line by line. In the mid-1990s, OCR programs were so slow that
+you could literally watch them "reading" through and processing the
+text while you waited; computers are far faster now and OCR is 
+pretty much instantaneous.</LI>
+<LI><span class="bold">Basic error correction</span>: Some programs give you the opportunity to review and correct each page in
+turn: they instantly process the entire page and then use a built-in
+spellchecker to highlight any apparently misspelled words that may
+indicate a misrecognition, so you can automatically correct the
+mistake. You can usually switch off this feature if you want to, if
+you have many pages to scan and you don't want to check them all as
+you're going along. Sophisticated OCR programs have extra error
+checking features to help you spot mistakes. For example, some use
+what's called <span class="bold">near-neighbor analysis</span> to find words that are likely
+to occur nearby, so text incorrectly recognized as "the
+barking bog" might be automatically changed to "the barking dog"
+(because "barking" and "dog" are two words that very often
+run together).</LI>
+<LI><span class="bold">Layout analysis</span>: Good OCR programs automatically detect complex page layouts, such as
+multiple columns of text, tables, images, and so on. Images are automatically turned
+into graphics, tables are (with luck) turned into tables, and
+columns are split up correctly (so the text from the first line of
+the first column isn't automatically joined to the text from the
+first line of the second column).</LI>
+<LI><span class="bold">Proofreading</span>: Even the best OCR programs aren't perfect, especially when they're
+working from very old documents or poor quality printed text. That's
+why the final stage in OCR should always be a good, old-fashioned
+human proofread!</LI>
+</OL>
+
+
+</div>
+
+<div class="main2">
+<h2>Who invented OCR?</h2>
+
+<P>Most people think getting machines to read human text is a relatively
+recent innovation, but it's older than you might suppose. Here's a
+whistle-stop tour through OCR history:</P>
+<UL>
+<LI>1928/9: <a href="http://en.wikipedia.org/wiki/Gustav_Tauschek" target="_blank">Gustav Tauschek</A> of Vienna, Austria
+patents a basic OCR "reading machine." Paul Handel of General Electric files a patent for a similar system in the United States in April 1931.
+Both are based on the idea of using light-detecting <a href="how-photoelectric-cells-work.html">photocells</A> to recognize patterns
+on paper or card.</LI>
+<LI>1949: L.E. Flory and W.S. Pike of RCA Laboratories develop a photocell-based machine that can read text to blind people at a
+rate of 60 words per minute. (Read all about it in the <a href="http://books.google.com/books?id=pCQDAAAAMBAJ&amp;lpg=PA125&amp;ots=3cnACr-VKH&amp;dq=1949%20rca%20scanner%20blind&amp;pg=PA125#v=onepage&amp;q&amp;f=false" target="_blank">February 1949 issue of Popular Science</A>.)</LI>
+<LI>1950: <a href="http://en.wikipedia.org/wiki/David_H._Shepard" target="_blank">David H. Shepard</A> develops machines that can turn printed information into machine-readable form for the US military and later
+founds a pioneering OCR company called Intelligent Machines
+Research (IMR). Shepherd also develops a machine-readable font called Farrington B (also called OCR-7B and 7B-OCR), now widely used to print the embossed numbers on credit cards.</LI>
+<LI>1960: <a href="http://en.wikipedia.org/wiki/Lawrence_Roberts_(scientist)" target="_blank">Lawrence (Larry) Roberts</a>, a computer graphics researcher working at MIT, develops early text recognition using specially simplified fonts such as OCR-A. He later becomes one of the
+founding fathers of the <a href="internet.html">Internet</A>.</LI>
+<LI>1950s/1960s: Reader's Digest and RCA work together to develop some of the first commercial OCR systems.</LI>
+<LI>1960s: Postal services around the world begin to use OCR technology for mail-sorting. They include the US Postal Service, Britain's General Post Office (GPO, now called Royal Mail), Canada Post, and the
+German Deutsche Post. Helped by companies such as Lockheed Martin, postal services remain at the forefront of OCR research to this day.</LI>
+<LI>1974: <a href="http://www.kurzweilai.net/" target="_blank">Raymond Kurzweil</A> develops the Kurzweil Reading Machine (KRM) that combines a flatbed scanner and speech synthesizer in a machine that
+can read printed pages aloud to blind people. Kurzweil's OCR software is acquired by Xerox and marketed under the names ScanSoft and (later) Nuance Communications.</LI>
+<LI>1993: The <a href="http://en.wikipedia.org/wiki/MessagePad" target="_blank">Apple Newton MessagePad (PDA)</a> is one of the first handheld computers to feature handwriting recognition on a touch-sensitive screen. During the 1990s,
+handwriting recognition becomes an increasingly popular feature on cellphones, PDAs (notably the pioneering
+<a href="http://en.wikipedia.org/wiki/Palm_(PDA)" target="_blank">Palm</A> and
+<a href="http://en.wikipedia.org/wiki/Palm_Pilot" target="_blank">PalmPilot</A>), and other handhelds.</LI>
+<LI>2000: Researchers at Carnegie Mellon University flip the problem of developing a good OCR
+system on its head&mdash;and develop a spam-busting system called CAPTCHA (see caption below).</LI>
+</UL>
+
+<P><img src="http://cdn4.explainthatstuff.com/example-recaptcha.png" class="irightno" height="292" width="367" ALT="Example of a RECAPTCHA mailhide."></P>
+
+<p><span class="credit">Photo: reCAPTCHA kills two birds with one stone: We know from OCR research that computers find it hard to recognize badly printed words that humans can read relatively easily. That's why CAPTCHA puzzles like this are used to stop spammers from bombarding email systems, message boards, and other websites. This one's produced by Google as part of their <a href="http://www.google.com/recaptcha" target="_blank">reCAPTCHA</A> system. It has an added benefit: when you type in the garbled words, you're helping Google to recognize part of the scanned text from an old book that it wants to convert to machine-readable form. In effect, you're doing a little bit of OCR on Google's behalf!</span></p>
+
+<div class="sharebot"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhow-ocr-works.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+<h2>Find out more</h2>
+
+<h3>On this website</h3>
+<p>You might like these other articles on our site covering related topics:</p>
+<UL>
+<li><a href="barcodescanners.html">Barcodes and barcode scanners</a></li>
+<li><a href="webcams.html#ccds">CCDs (charge-coupled devices)</a></li>
+<li><a href="digitalcameras.html">Digital cameras</a></li>
+<li><a href="fingerprintscanners.html">Fingerprint scanners</a></li>
+<li><a href="how-iris-scans-work.html">Iris scanners</a></li>
+<li><a href="introduction-to-neural-networks.html">Neural networks</a></li>
+</UL>
+
+<h3>Books</h3>
+<UL>
+<LI><a href="http://books.google.com/books?id=OX4O0isMuwEC" target="_blank">Character Recognition Systems: A Guide for Students and Practitioners</A> by Mohamed Cheriet, Nawwaf Kharma, Cheng-Lin Liu. John Wiley &amp; Sons, 2007. Covers the history of OCR, before going into detail about feature extraction, statistical methods, neural networks, and various case studies.</LI>
+<LI><a href="http://books.google.com/books?id=u5ofWoiONPAC" target="_blank">Optical Character Recognition: An Illustrated Guide to the Frontier</A> by Stephen V. Rice et al. Kluwer Academic, 1999. Slightly dated now, but still a useful and comprehensive guide to how OCR actually works, with a great deal of background about processing recognition errors in various ways.</LI>
+</UL>
+
+<h3>Patents</h3>
+
+<P>If you like technical details, you'll find OCR patents worth a look. Here a few representative examples to start you off; you'll find many more on Google Patents (you can use the search operator "intitle:OCR" to find hundreds of relevant patents).</P>
+<UL>
+<LI><a href="http://www.google.com/patents/US20140181960" target="_blank">Methods and apparatuses for controlling access to computer systems and for annotating media files</A> by Luis Von Ahn et al, Carnegie Mellon University, published June 26, 2014. A detailed technical description of how CAPTCHAs work.</LI>
+<LI><a href="https://www.google.com/patents/US6199042" target="_blank">Reading system</A> by Raymond Kurzweil, published December 23, 1999. One of Ray Kurzweil's later OCR patents describing a computerized reading machine for the blind that scans a printed page, turns it into a text file, and then reads the text out loud.</LI>
+<LI><a href="https://www.google.com/patents/US4206442" target="_blank">Letter segmenting apparatus for OCR comprising multi-level segmentor operable when binary segmenting fails</A> by Toshio Miyazaki et al, NEC, published June 3, 1980. A detailed description of how an OCR system can identify individual letters in a written sample.</LI>
+<LI><a href="https://www.google.com/patents/CA1062810A" target="_blank">Regional context maximum likelihood ocr error correction apparatus</A> by Walter S. Rosenbaum et al, published September 18, 1979. A method of correcting OCR errors using a stored dictionary. It's hilariously ironic that Google's scan of this patent document contains so many OCR errors.</LI>
+</UL>
+
+</div>
+
+
+<div class="main2">
+<h2>If you liked this article...</h2>
+<P>You might like my new book, <a href="mybooks.php">Atoms Under the Floorboards: The Surprising Science Hidden in Your Home</a>, published worldwide by Bloomsbury.</P>
+</div>
+
+<!-- Desktop bottom ad -->
+<div class="bottomsquare"><span class="slinks2">Sponsored links</span>
+<P>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="9721739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</P>
+</div>
+
+
+
+<div class="cc"><P><span class="highlight">Please do NOT copy our articles onto blogs and other websites</span></P>
+<p>Text copyright &copy; Chris Woodford 2010, 2014. All rights reserved. <a href="copyright-and-legal-notices.html">Full copyright notice and terms of use</A>.</p>
+
+
+</div>
+
+<div class="sharesites"><h2>Follow us</h2>
+<ul class="nobull">
+<LI class="inline2"><a href="followus.html" title="Follow us on Facebook"><IMG class="sprite shr4" ALT="Follow us on Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a rel="publisher" href="https://plus.google.com/115402323314399894520" target="_blank" title="Follow us on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="rss.xml" target="_blank" title="Subscribe to our RSS feed"><IMG class="sprite shr10" ALT="RSS"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.flickr.com/photos/explainthatstuff" target="_blank" title="Find our photos on Flickr"><IMG class="sprite shr11" ALT="Flickr"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.pinterest.com/explainthatstuf/" title="Follow us on Pinterest" target="_blank"><IMG class="sprite shr12" ALT="Follow us on Pinterest" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+</ul>
+</div>
+
+<div class="sharesites"><h2>Rate this page</h2>
+<p>Please <a href="feedback.php">rate or give feedback on this page</A> and I will make a donation to WaterAid.</P>
+</div>
+
+
+<div class="sharesites">
+<h2>Share this page</h2>
+<p>Press CTRL + D to bookmark this page for later or tell your friends about it with:</p>
+
+<ul class="nobull">
+<LI class="inline2"><a title="Share this on Facebook"
+ href="http://www.facebook.com/sharer.php?u=http://www.explainthatstuff.com/how-ocr-works.html"><IMG class="sprite shr4" ALT="Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a
+ title="Post this page to Delicious"
+ href="http://del.icio.us/post?url=http://www.explainthatstuff.com/how-ocr-works.html&amp;title=How%20OCR%20works"><IMG class="sprite shr1" ALT="Delicious" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Digg"
+ href="http://digg.com/submit?url=http://www.explainthatstuff.com/how-ocr-works.html&amp;title=How%20OCR%20works"><IMG class="sprite shr2" ALT="Digg" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Reddit"
+ href="http://reddit.com/submit?url=http://www.explainthatstuff.com/how-ocr-works.html&amp;title=How%20OCR%20works"><IMG class="sprite shr3" ALT="Reddit" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this page on StumbleUpon"
+ href="http://www.stumbleupon.com/submit?url=http://www.explainthatstuff.com/how-ocr-works.html&amp;title=How%20OCR%20works"><IMG class="sprite shr5" ALT="StumbleUpon" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Add this to your Google Bookmarks"
+ href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.explainthatstuff.com/how-ocr-works.html&amp;title=How%20OCR%20works"><IMG class="sprite shr6" ALT="Google Bookmarks" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="http://www.twitter.com/home?status=How+OCR+works+http://www.explainthatstuff.com/how-ocr-works.html" title="Tweet this"><IMG class="sprite shr7" ALT="Twitter" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Email this page to a friend"
+ href="mailto:?subject=How%20OCR%20works&amp;body=Take%20a%20look%20at%20this%20page:%20http://www.explainthatstuff.com/how-ocr-works.html"><IMG class="sprite shr8" ALT="Email" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="https://plus.google.com/101536672158385330677?rel=author" title="Connect on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+</UL>
+
+
+<h2>Cite this page</h2>
+
+<!---Citation-->
+<div class="citation">
+<P>
+Woodford, Chris. (2010) OCR (optical character recognition). Retrieved from http://www.explainthatstuff.com/how-ocr-works.html. [Accessed (Insert date here)]
+</P>
+</div>
+
+<!--<h2>Link to this page</h2>
+
+<P>If you'd like to link to this page, thank you! Here's some code you can cut and paste:</P>
+
+<div class="citation">
+<P>
+&lt;a href="http://www.explainthatstuff.com/how-ocr-works.html"&gt;How OCR works&lt;/a&gt;
+</P>
+</div>
+-->
+
+</div>
+
+
+
+
+
+
+<!-- advinfo2 -->
+
+<!-- bottom search position -->
+
+
+
+
+
+
+<div class="alsoon"><a name="navigation"></a>
+<IMG class="footlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif">
+<h2>More to explore on our website...</h2>
+<ul class="nobull">
+<LI class="inline"><a href="articles_communications.html">Communications</A></LI>
+<LI class="inline"><a href="articles_computers.html">Computers</A></LI>
+<LI class="inline"><a href="articles_electricity.html">Electricity &amp; electronics</A></LI>
+<LI class="inline"><a href="articles_energy.html">Energy</A></LI>
+<LI class="inline"><a href="articles_engineering.html">Engineering</A></LI>
+<LI class="inline2"><a href="articles_environment.html">Environment</A></LI><BR>
+<LI class="inline"><a href="articles_gadgets.html">Gadgets</A></LI>
+<LI class="inline"><a href="articles_homelife.html">Home life</A></LI>
+<LI class="inline"><a href="articles_materials.html">Materials</A></LI>
+<LI class="inline"><a href="articles_science.html">Science</A></LI>
+<LI class="inline"><a href="articles_tools.html">Tools &amp; instruments</A></LI>
+<LI class="inline2"><a href="articles_transportation.html">Transportation</A></LI>
+</UL>
+</div>
+
+<div class="footer">
+<ul class="nobull">
+<li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li></ul>
+</div>
+
+<div class="totop">&uarr; <a href="#pagetop">Back to top</a></div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(d, t) {
+var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = 'https://apis.google.com/js/plusone.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+  })();
+</script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
+
+
+</body>
+</html>

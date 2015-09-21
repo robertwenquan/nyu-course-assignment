@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head> <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Dr. Leslie S. Smith">
+   <title>Professor Leslie S. Smith: Home Page</title>
+   
+   <link rel="blog" href="lestheprof.wordpress.com">
+   
+</head>
+
+<body>
+
+<TABLE CELLPADDING=0 WIDTH="100%"
+       SUMMARY="Layout of Department and University logos">
+  <TR>
+      <TD ALIGN=CENTER>
+        <A HREF="http://www.cs.stir.ac.uk/">
+          <IMG SRC="http://www.cs.stir.ac.uk/~lss/img/CSM-transparent.gif"
+               BORDER=0 WIDTH=164 HEIGHT=56
+               ALT="Division of Computing Science and Mathematics"></A>
+      </TD>
+      <TD ALIGN=CENTER>
+        <A HREF="http://www.stir.ac.uk/">
+          <IMG SRC="http://www.cs.stir.ac.uk/~lss/img/UoS-transparent.gif"
+               BORDER=0 WIDTH=283 HEIGHT=95
+               ALT="University of Stirling"></A>
+      </TD>
+  </TR>
+</TABLE>
+<HR SIZE=1>
+
+
+<h1> Professor Leslie S. Smith: Home Page </h1>
+
+<a href="http://www.cs.stir.ac.uk"><img src="LSS1.gif" alt="picture of Leslie Smith's business card: phone number  +44 1786 467435, Fax +44 1786 464551, email address lss at cs.stir.ac.uk" height=200 > </a>
+<img src="lss_sicily_2009_sq.jpg" alt="picture of Leslie Smith in Sicily in 2009" height=200 >
+
+
+
+<h2><a href="research.html">Research Home Page</a></h2>
+
+<p> I recently stood down (on 30 November 2013) as Head of this Division, and am now plain Professor, and getting back more deeply into research (and many thanks to the University for a semester's research leave, now over).
+</p>
+<p>I am Research Co-ordinator for the Division of Computing Science and Mathematics, and a member of the <a href="http://www.cs.stir.ac.uk/research/groups/cogcomp/">Cognitive Computation (CogComp) Research Group</a> here. My own primary interests are in early auditory processing, spike-based computing and the interconnection of real (cultured) neurons and electronics. I am  co-ordinator of the <a href="http://www.neuroinformatics.org.uk">UK Neuroinformatics Node</a> which is the UK Node of the <a href="http://www.incf.org">INCF</a>  and chair of the <a href="http://www.cs.stir.ac.uk/gc5/">UKCRC Grand Challenge GC-5 <i>Architecture of the Brain and Mind</i></a>. 
+</p>
+<p> Jointly with <a href="http://www.ini.uzh.ch/~shih/">Shih-Chii Liu</a>, I am holding a special session of the <a href="http://www.ijcnn.org">IJCNN 2015</a> conference in Killarney, Eire (Ireland), 12-17 July 2015, on <a href="http://www.cs.stir.ac.uk/~lss/IJCNN2015SessionProposal.html">Sound and speech interpretation in real environments</a>.
+</p>
+<h2>Teaching Home page</h2>
+
+<p>In Autumn semester, 2013-4, I taught on  <ul>
+		<li><a href="http://www.cs.stir.ac.uk/courses/CSC9A1">CSC9A1</a>, 1st semester Computing, entitled Introduction to Computing Science
+		</li>
+		
+</ul>
+</p> 
+<p>I have previously taught on many courses, and set up and organised the Digital media (DGM901) course, which runs in the Spring Semester, but has now been taken over by Communications, Media and Culture.
+</p>
+	
+
+<p> I am also involved with <a href="http://www.cs.stir.ac.uk/entrants/"> recruitment of students</a> for our courses.
+</p>
+
+<h2>Personal </h2>
+<p> Yes, I am a person with other interests too. I have a wife and family, and play jazz/blues/folk piano, though I'm not currently a member of any specific band.</p>
+
+
+
+<div style="font-size: smaller; text-align: center">
+<hr style="width:25%">
+<!-- IMG SRC="http://www.cs.stir.ac.uk/~sbj/images/rainbow-banner.gif" 
+     width="80%" height=2 alt="rainbow rule">
+<br -->
+<i>
+<!--x#exec cmd="/home/sbj/www/ssi/lastupdate.pl +u $script_filename"-->
+Last updated: Tuesday, 09-Dec-2014 11:49:54 GMT
+</i>
+</div>
+
+<p>
+<address style="font-size: smaller; text-align: center">
+If you have any difficulties accessing this page, or you have any
+queries/suggestions arising from this page, please email: <br>
+ Prof Leslie S Smith (lss<i>(nospam_please)</i>@cs.stir.ac.uk)
+</address>
+
+<p style="text-align:center">
+ <a href="http://www.cs.stir.ac.uk/">
+ <img src="http://www.cs.stir.ac.uk/~lss/img/deptlogo.gif"
+      width=565 height=53 style="border:0" alt="computing logos"></a>
+
+</body>
+</html>

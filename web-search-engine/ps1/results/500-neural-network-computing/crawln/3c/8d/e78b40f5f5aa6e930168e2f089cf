@@ -1,0 +1,877 @@
+<!doctype html>
+
+<!--[if IE 7]><html data-ytrk-page="LIST" class="no-js  lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html data-ytrk-page="LIST" class="no-js  lt-ie10 lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html data-ytrk-page="LIST" class="no-js  lt-ie10 ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html data-ytrk-page="LIST" class="no-js " lang="en"><!--<![endif]-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ">
+
+    <!--[if lte IE 9 ]>
+    <script type="text/javascript" src="/resources/js/polyfills.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init mendel">
+        Mendel = {};
+        $UI = {};
+        (function() {
+            var html = document.getElementsByTagName('html')[0];
+            html.className = html.className.replace( 'no-js', '');
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="This list features 6 common infections." /><meta name="keywords" content="human disease, infectious disease, medicine, health, britannica, lists, encyclopedia, Encyclopedia Britannica" /><meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@britannica" />
+
+<meta property="og:type"  content="website"/>
+<meta property="og:title" content="6 Common Infections We Wish Never Existed"/>
+<meta property="og:description" content="Six afflictions that many of us have come to know all too well."/>
+<meta property="og:site_name" content="Encyclopedia Britannica" />
+<meta property="og:url" content="http://www.britannica.com/list/6-common-infections"/>
+<meta property="og:image" content="http://media-1.web.britannica.com/eb-media/43/166543-118-78FBBF52.jpg" />
+<meta property="og:image:type" content="image/jpg" />
+<script type="text/javascript" data-type="init opengraph">
+Mendel.openGraph = {
+    type: 'website',
+    title: '6 Common Infections We Wish Never Existed',
+    description: 'Six afflictions that many of us have come to know all too well.',
+    siteName: 'Encyclopedia Britannica',
+    url: 'http://www.britannica.com/list/6-common-infections',
+    image: 'http://media-1.web.britannica.com/eb-media/43/166543-118-78FBBF52.jpg',
+    imageType: 'image/jpg'
+    
+};
+</script>
+
+<title>6 Common Infections | Britannica.com</title>
+
+    <link href="//fonts.googleapis.com/css?family=Coustard|Asap:400,700|Open+Sans:400,700,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/resources/css/libs/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/min-mendel.css?v=2.36.13" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <script type="text/javascript" data-type="init mendel config">
+
+Mendel.config = {
+	page: 'List',
+	testVersion: 'D',
+	server: 'http://www.britannica.com',
+	mediaServer: "http://media.web.britannica.com",
+	currentUrl: 'http://www.britannica.com/list/6-common-infections',
+	sharedUrl: 'http://www.britannica.com/list/6-common-infections',
+	userType: 'ANONYMOUS',
+	userInfo: { statId: '-1'
+	           ,userId: ''
+	           ,currency: 'USD'
+	           ,country: 'CA'
+	           ,bcomId: '159430142936735382'
+	           ,mvst: {
+  "QUIZ_INTRO" : "INTRO_4",
+  "GIST_STRIP_POSITION" : "BOTTOM",
+  "RR_BRITANNICA_STORIES" : "ORIGINAL",
+  "RR_STORY_BRITANNICA_STORIES" : "3_STORIES",
+  "HEADER_UPSELL_IMAGE" : "http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg",
+  "HEADER_UPSELL" : "HU_1",
+  "US_SUBSCRIPTION_URL_PREFIX" : "https://safe1.britannica.com/registrations2/signup.do?partnerCode=",
+  "SMALL_ADDTNL_RESOURCES" : "NO"
+}
+	           ,provider: 'NONE'
+	           ,preferences: {}
+	},
+	isLoggedInAsUser: false,
+	hasAds: true,
+	hasVideoAds: true,
+	
+	adapTvId: 'nj232',
+	adapTvZid: 'Eb_autoplay-free',
+	
+	logGoogleGPT: false,
+	isMobile: false,
+	isTablet: false,
+	isPhone: false,
+	analytics: [
+	   
+	   { type: 'google', id: 'UA-6636134-11', logClickAction: true, logPageLoad: true, logFakePageLoad: true },
+	   { type: 'eb', logClickAction: false, logPageLoad: false, logFakePageLoad: true }
+	   
+	],
+	logAnalytics: false,
+	includeGigya: true,
+	gigyaProviders: 'facebook,twitter,googleplus,linkedin,yahoo'
+	
+	,mendelCookie: {
+  "pagesViewed" : 1,
+  "topicPagesViewed" : 0,
+  "articlePageUrl" : null,
+  "mwQuizGroupNumber" : null,
+  "mwQuizGroupExcept" : null,
+  "vistedTopics" : null,
+  "currentReadingList" : null,
+  "galleryReferrer" : null
+},listId: 3750
+        ,listTitle: '6 Common Infections We Wish Never Existed'
+        ,listTeaser: 'Six afflictions that many of us have come to know all too well.'
+};
+
+</script><script type="text/javascript" data-type="init Quantcast top">
+		    var _qevents = _qevents || [];
+		    (function() {
+		        var elem = document.createElement('script');
+		        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+		        elem.async = true;
+		        elem.type = "text/javascript";
+		        var scpt = document.getElementsByTagName('script')[0];
+		        scpt.parentNode.insertBefore(elem, scpt);
+		    })();
+		</script>
+	<script type="text/javascript" data-type="load GPT">
+         (function() {
+           var src = '//www.googletagservices.com/tag/js/gpt.js';
+           document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+	    <script src="http://js.indexww.com/ht/bri2.js"></script>
+	    <script type="text/javascript" data-type="load openX">
+         (function() {
+            var src = '//ox-d.merriamwebster.servedbyopenx.com/w/1.0/jstag?nc=34444486-EB';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+    <script type="text/javascript" data-type="init GPT slots">
+    var googletagSlots = [];
+    googletag.cmd.push(function() {
+        
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_D/LIST', [300,250],'div-gpt-ad-7f52f035-f14d-4e52-af7a-59ba490a5773')
+                             .setTargeting('POS',['SLOT4'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_D/LIST', [300,250],'div-gpt-ad-26e43aa9-b97a-4de4-b55e-886f80276ab6')
+                             .setTargeting('POS',['BOT2'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_D/LIST', [300,250],'div-gpt-ad-c5418550-c33a-431d-8e7d-6ff8c997db69')
+                             .setTargeting('POS',['SLOT3'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_D/LIST', [300,250],'div-gpt-ad-f6313fca-d001-44c1-82c2-834943bdcc9e')
+                             .setTargeting('POS',['TOP'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_D/LIST', [300,250],'div-gpt-ad-7664c42f-1beb-41a6-85c1-2d01afb85162')
+                             .setTargeting('POS',['BOT'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_D/LIST', [300,250],'div-gpt-ad-6f1e3c7e-9265-457a-89b2-bb8dc90ef970')
+                             .setTargeting('POS',['PRE'])
+                             .addService(googletag.pubads())
+                    );
+                googletag.pubads().setTargeting('dc_ref',['http://www.britannica.com/list/6-common-infections']);googletag.pubads().setTargeting('PAGE',[1]);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+  });
+</script><script type="text/javascript" src="http://tags.crwdcntrl.net/c/6931/cc.js?ns=_cc6931" id="LOTCC_6931"></script>
+    <script type="text/javascript" language="javascript" data-type="lotame init">_cc6931.bcp();</script>
+<!--[if lte IE 8]>
+    <script type="text/javascript" data-type="ie8 html5 tags">
+        ( function() {
+            var tags = [ 'header', 'footer', 'aside', 'nav', 'section', 'article', 'figure', 'figcaption', 'time' ];
+            for ( var i = 0; i < tags.length; document.createElement( tags[i++] ) );
+        })();
+    </script>
+    <![endif]-->
+
+</head>
+
+<body ng-app class="list-page user-ANONYMOUS md-desktop font-sans no-toolbar no-toc leg-d">
+
+    <div class="md-page-wrapper">
+
+        <header class="font-sans-ui">
+
+    <div class="header-content">
+
+        <div class="header-title">
+
+            <h4>
+	            <a class="logo-homepage" href="/"><img src="/resources/images/header/eb-logo-header.png" alt="Encyclopedia Britannica" /></a>
+                <a class="header-thistle" href="/"></a>
+            </h4>
+
+            <div class="header-login ">
+
+                <div class="grid">
+                    <div class="grid-xs-66">
+                        <div class="header-nav text-left">
+    <ul>
+        <li><a data-ytrk="25" href="http://store.britannica.com" target="_blank">Shop</a></li>
+        <li><a data-ytrk="27" href="http://info.eb.com" target="_blank">School and Library Subscribers</a></li>
+        </ul>
+</div>
+
+
+</div>
+                    <div class="grid-xs-auto text-right">
+
+                        <ul class="header-login-links">
+                            <li>
+                                        <a data-ytrk="262" href="#" class="md-header-join-link">JOIN</a>
+                                    </li>
+                                    <li>
+                                        <a data-ytrk="17" href="#" class="login-link" >LOGIN</a>
+                                    </li>
+                                <li >
+                                    <a data-ytrk="/19" class="md-upsell-link" href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPSUBLIST_MDL_D" rel="nofollow">
+                                        Activate Your Free Trial!</a>
+                                </li>
+                            </ul>
+
+                        <div class="header-login-upsell">
+                                <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPSUBLIST_MDL_D" rel="nofollow"><img src="http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg"/></a>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<div id="header-global-nav" data-position-fixed="0">
+
+    <div class="header-global-nav-content grid">
+
+        <a data-ytrk="/655" class="header-global-nav-home" href="/"><img src="/resources/images/header/homepage-small-thistle-v2.png" alt="home" /></a>
+
+        <ul id="header-global-nav-buttons" data-title="navigation" class="grid">
+            <li class="grid-fit"><a data-ytrk="/439" href="/popular-topics/browse" >Popular Topics</a></li>
+            <li class="grid-fit"><a data-ytrk="/440" href="/quiz/browse" >quizzes</a></li>
+            <li class="grid-fit"><a data-ytrk="/441" href="/gallery/browse" >galleries</a></li>
+            <li class="grid-fit"><a data-ytrk="/442" href="/list/browse"  class="selected">lists</a></li>
+            </ul>
+
+        <div class="search-form grid-xs-auto">
+            <form method="get" action="/search" id="searchCriteria" class="">
+    <div class="search-box">
+        <input name="query" type="text" id="header-query" placeholder="Search Britannica..." class="query font-sans"  maxlength="200" />
+        <button data-ytrk="21" type="submit" class="search-submit" value=""><i class="fa fa-search"></i></button>
+    </div>
+</form>
+</div>
+
+        </div>
+
+    </div>
+
+<div class="container">
+                <div class="md-page-h1-wrapper">
+                    <h1>6 Common Infections We Wish Never Existed</h1><div class="md-horizontal-social-toolbar2 no-text">
+
+<span class="md-horizontal-social-toolbar2-contributor">Written by: <a href="/bps/user-profile/6713/kara-rogers" data-ytrk="/212">Kara Rogers</a></span>
+<ul class="md-toolbar ">
+
+	<li class="comments" title="Comments" data-ytrk="587">
+        <a href="#_comments">
+            <span class="fa-stack"><i class="fa fa-comment fa-stack-2x"></i><strong class="comments-text fa-stack-1x fa-inverse"></strong></span>
+            </a>
+    </li>
+	<li class="share" title="Share" data-ytrk="113">
+        <span class="fa-stack"><i class="fa fa-share-alt fa-stack-2x"></i></span>
+        </li>
+	<li class="t-email" title="Email" data-ytrk="112">
+        <span class="fa-stack"><i class="fa fa-envelope fa-stack-2x"></i></span>
+        </li>
+	<li class="t-cite" title="Cite" data-ytrk="117">
+        <span class="fa-stack"><i class="fa fa-square-o fa-stack-2x"></i><i class="fa fa-quote-right fa-stack-1x"></i></span>
+        </li>
+	</ul>
+
+</div></div>
+            </div>
+        <div id="content" class="md-content ">
+
+            <div class="md-content-wrapper  md-list-content">
+                <div class="md-reading-list-arrows">
+
+            	<a data-ytrk="/194" href="/list/9-bizarre-myths-about-pregnancy" class="prev-story" data-position-fixed="0" data-unfix=".md-list-reactions">
+                        <i class="arrow fa fa-chevron-left" title="Previous"></i>
+                        <div class="description">
+                            <div class="item">
+                                <div class="label">Previous List</div>
+                                9 Bizarre Myths About Pregnancy<hr />
+                                <small>That’s one for each month!</small>
+                            </div>
+                        </div>
+                    </a>
+                <a data-ytrk="/192" href="/list/7-drugs-that-changed-the-world" class="next-story" data-position-fixed="0" data-unfix=".md-list-reactions">
+                        <div class="description">
+                            <div class="item">
+                                <div class="label">Next List</div>
+                                7 Drugs that Changed the World<hr />
+                                <small>Only a small number of substances can be said to have fundamentally revolutionized medicine.</small>
+                            </div>
+                        </div>
+                        <i class="arrow fa fa-chevron-right" title="Next"></i>
+                    </a>
+                </div>
+        <div class="md-list-description font-sans-ui">
+                <div class="md-list-img-wrapper">
+                    <img src="http://media-1.web.britannica.com/eb-media/43/166543-004-A0048B15.jpg" alt="sneezing; sneeze reflex [credit: &#x00a9; iStockphoto/Thinkstock]" title="sneezing; sneeze reflex [credit: &#x00a9; iStockphoto/Thinkstock]" />
+                    <div class="caption">sneezing; sneeze reflex<span>credit: &#x00a9; iStockphoto/Thinkstock</span></div>
+                 </div>
+                We all miss a day of school or work here and there thanks to a cold or a sore throat. But those maladies have nothing against the ones presented in this list—six afflictions that many of us have come to know all too well. And if by some miracle of hygiene you’ve somehow managed to escape the awfulness of these unpleasant and disturbingly common infections, then brace yourself, because your luck is likely to run out.</div>
+
+	        <hr class="thin"/>
+        <h2><span class="numeral">6</span>An Awkward Silence</h2>
+
+		    <div class="md-list-item font-sans-ui">
+	             <div class="md-list-img-wrapper">
+	                     <img src="http://media-2.web.britannica.com/eb-media/44/166544-004-77455450.jpg" alt="chlamydia; sexually transmitted disease [credit: Laboratory of Dr. Lance Liotta/National Cancer Institute]" title="chlamydia; sexually transmitted disease [credit: Laboratory of Dr. Lance Liotta/National Cancer Institute]" />
+	                     <div class="caption">chlamydia; sexually transmitted disease<span>credit: Laboratory of Dr. Lance Liotta/National Cancer Institute</span></div>
+	                  </div>
+	             Chlamydia is a classic silent disease. Most people who contract it are asymptomatic or experience only subtle (subclinical) symptoms. Those individuals, the “silent” carriers, are spared the various unpleasantries of Chlamydia bacterial infection, which range from purulent urethral discharge in men to pelvic inflammatory disease and ectopic pregnancy in women. But those individuals are a serious public health threat. Each year, about 92 million new cases of chlamydia occur globally. That leaves large numbers of carriers and their sexual partners unaware of the pathogen lurking between them, guaranteeing more than a few moments of awkward silence when their condition is finally discovered, by which time long-term health consequences may have already set in.</div>
+
+		    <hr class="thin"/>
+            <h2><span class="numeral">5</span>Dermatophytes Feeding on My Keratin</h2>
+
+		    <div class="md-list-item font-sans-ui">
+	             <div class="md-list-img-wrapper">
+	                     <img src="http://media-1.web.britannica.com/eb-media/86/148186-004-A9C95E43.jpg" alt="ringworm [credit: Dr. Lucille K. Georg/Centers for Disease Control and Prevention (DC) (Image ID: 2938)]" title="ringworm [credit: Dr. Lucille K. Georg/Centers for Disease Control and Prevention (DC) (Image ID: 2938)]" />
+	                     <div class="caption">ringworm<span>credit: Dr. Lucille K. Georg/Centers for Disease Control and Prevention (DC) (Image ID: 2938)</span></div>
+	                  </div>
+	             From head to toe, every inch of skin on the human body is susceptible to invasion by dermatophytes, fungi that thrive on keratin, the major structural protein in our outer skin layers. In general, dermatophytes thrive in moist environments, with the scalp, the groin, and the toes being especially popular places of residence. Invasions in those parts of the human anatomy are responsible for scalp ringworm (tinea capitis), jock itch (tinea cruris), and athlete’s foot (tinea pedis), respectively. Dermatophytes can be transmitted from one person to another or from pets to people, and they can survive on towels, hairbrushes, clothes, and other objects.</div>
+
+		    <div class="md-list-ad-container">
+			        </div>
+		    <hr class="thin"/>
+            <h2><span class="numeral">4</span>A Sensation of Sand in the Eye</h2>
+
+		    <div class="md-list-item font-sans-ui">
+	             <div class="md-list-img-wrapper">
+	                     <img src="http://media-3.web.britannica.com/eb-media/56/130156-004-40104508.jpg" alt="conjunctivitis [credit: P33tr]" title="conjunctivitis [credit: P33tr]" />
+	                     <div class="caption">conjunctivitis<span>credit: P33tr</span></div>
+	                  </div>
+	             That gritty, grating feeling of bits of sand rubbing against the eyeballs is a common symptom of conjunctivitis, popularly known as pinkeye. It may be caused by allergens or other irritants, or by bacteria or viruses, with the latter two being responsible for the infectious form of the disease. Infectious conjunctivitis is exceedingly contagious. Even just sharing a towel or a swimming pool with a pinkeye victim is sufficient for transmission of viral conjunctivitis.</div>
+
+		    <hr class="thin"/>
+            <h2><span class="numeral">3</span>O(h)-titis, a Blight in the Ear</h2>
+
+		    <div class="md-list-item font-sans-ui">
+	             <div class="md-list-img-wrapper">
+	                     <img src="http://media-1.web.britannica.com/eb-media/45/148245-004-5A89500D.jpg" alt="otitis media [credit: B. Welleschik]" title="otitis media [credit: B. Welleschik]" />
+	                     <div class="caption">otitis media<span>credit: B. Welleschik</span></div>
+	                  </div>
+	             The sight of yellowish-green fluid seeping out of the ear is alarming, and in many cases, it is a symptom of one of the more common afflictions of childhood—otitis media, more commonly known as a middle ear infection. Drainage from the ears is an “ick” factor that compounds the awfulness of the fever and earache typically brought on by a middle ear infection. The condition may be caused by viruses or bacteria and it comes in various forms, though acute otitis media is the most common. About two-thirds of children have had an acute ear infection by age one and by age seven more than one-third have had an astonishing six or more episodes.</div>
+
+		    <div class="md-list-ad-container">
+			        <span class="font-sans-ui">Advertisement - Continue reading below</span>
+				        
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-c5418550-c33a-431d-8e7d-6ff8c997db69" data-slot="SLOT3" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-c5418550-c33a-431d-8e7d-6ff8c997db69'); });</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-7f52f035-f14d-4e52-af7a-59ba490a5773" data-slot="SLOT4" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-7f52f035-f14d-4e52-af7a-59ba490a5773'); });</script>
+	</div>
+	
+
+
+</div>
+		    <hr class="thin"/>
+            <h2><span class="numeral">2</span>Bleeding Gums</h2>
+
+		    <div class="md-list-item font-sans-ui">
+	             <div class="md-list-img-wrapper">
+	                     <img src="http://media-1.web.britannica.com/eb-media/13/144313-004-8AB6B8C7.jpg" alt="Gingivitis [credit: iStockphoto/Thinkstock]" title="Gingivitis [credit: iStockphoto/Thinkstock]" />
+	                     <div class="caption">Gingivitis<span>credit: iStockphoto/Thinkstock</span></div>
+	                  </div>
+	             As I write, bacteria are working their way into your gums, if they aren’t there already, multiplying and contributing to the buildup of the yellowish film of plaque on your teeth. The consequence of this invasion is gingivitis, or inflammation of the gums, a condition that affects at least 70 to 90 percent of adolescents worldwide. In adults, continued poor oral hygiene may cause gingivitis to progress to periodontitis and the eventual loss of teeth. Some people are predisposed to this condition. And if that isn’t enough to give you tooth nightmares, consider that poor oral health is associated with cardiovascular disease.</div>
+
+		    <hr class="thin"/>
+            <h2><span class="numeral">1</span>Viral Gastroenteritis to Spite Us</h2>
+
+		    <div class="md-list-item font-sans-ui">
+	             <div class="md-list-img-wrapper">
+	                     <img src="http://media-3.web.britannica.com/eb-media/16/123216-004-5F4BDE8D.jpg" alt="gastroenteritis [credit: Graham Colm]" title="gastroenteritis [credit: Graham Colm]" />
+	                     <div class="caption">gastroenteritis<span>credit: Graham Colm</span></div>
+	                  </div>
+	             Stomach flu, "winter vomiting," "traveler’s diarrhea"—affectionate names for what is known clinically as viral gastroenteritis, an acute infectious illness of the tract by which food normally enters the human body, is broken down, and exits without event, more or less. During an episode of gastroenteritis, unfortunately, there isn’t so much entering as exiting. Various highly contagious viruses are to blame, but rotavirus is one of the most frequent causes. In infants and children worldwide, it is the most common cause of severe diarrhea, according to the World Health Organization. The U.S. Centers for Disease Control estimates that prior to the introduction of a rotavirus vaccine in 2006, every child in the country had been infected by age five. Viral gastroenteritis is transmitted primarily via the fecal-oral route, which includes eating sewage-contaminated shellfish.</div>
+
+		    <div class="md-list-reactions">
+            <h3>Your Reaction?</h3>
+            <br />
+            <div id="gigya-reactions-bar"></div>
+        </div>
+
+        <div class="md-next-previous">
+                <div class="grid grid-gutter-right">
+                    <div class="grid-xs-50">
+                            <a data-ytrk="/198" class="flex center-vertical grid" href="/list/9-bizarre-myths-about-pregnancy">
+                                <i class="fa fa-2x fa-chevron-left"></i>
+                                <div class="grid-xs-auto list-text">9 Bizarre Myths About Pregnancy</div>
+                            </a>
+                        </div>
+                    <div class="grid-xs-50 text-right">
+                            <a data-ytrk="/193" class="flex center-vertical grid" href="/list/7-drugs-that-changed-the-world">
+                                <div class="grid-xs-auto list-text">7 Drugs that Changed the World</div>
+                                <i class="fa fa-2x fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        <div class="md-list-more">
+		    <h4>MORE Health &amp; Medicine LISTS</h4>
+		    <ul class="grid grid-gutter-right ui-text-overlay">
+			    <li class="grid-sm-33">
+					    <a data-ytrk="/667" href="/list/7-drugs-that-changed-the-world">
+						    <img src="http://media-1.web.britannica.com/eb-media/53/143753-118-7EEEEC09.jpg" />
+						    <div class="description flex">
+                                <div class="align-end">
+                                        7 Drugs that Changed the World</div>
+                            </div>
+					    </a>
+				    </li>
+			    <li class="grid-sm-33">
+					    <a data-ytrk="/667" href="/list/7-scary-surgical-instruments">
+						    <img src="http://media-3.web.britannica.com/eb-media/30/172930-118-198E8472.jpg" />
+						    <div class="description flex">
+                                <div class="align-end">
+                                        7 Scary Surgical Instruments, Then and Now</div>
+                            </div>
+					    </a>
+				    </li>
+			    <li class="grid-sm-33">
+					    <a data-ytrk="/667" href="/list/9-fun-facts-about-sleep">
+						    <img src="http://media-2.web.britannica.com/eb-media/74/172174-118-B61B75F9.jpg" />
+						    <div class="description flex">
+                                <div class="align-end">
+                                        9 Fun Facts About Sleep</div>
+                            </div>
+					    </a>
+				    </li>
+			    </ul>
+            <div class="text-right">
+                <a data-ytrk="/721" href="/list/browse?c=15">View All</a>
+            </div>
+	    </div>
+
+	    <h5 id="_comments">Comments</h5>
+		    <div id="gigya-list-comments"></div></div>
+
+            <aside class="md-sidebar "><div class="md-social-toolbar-circle vertical visible-lg" data-position-fixed="40">
+    <i data-ytrk="690" class="fa fa-fw fa-facebook" data-provider="facebook"></i>
+    <i data-ytrk="691" class="fa fa-fw fa-twitter" data-provider="twitter"></i>
+    <i data-ytrk="692" class="fa fa-fw fa-google-plus" data-provider="googleplus"></i>
+    <i data-ytrk="693" class="fa fa-fw fa-linkedin"  data-provider="linkedin"></i>
+</div>
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-6f1e3c7e-9265-457a-89b2-bb8dc90ef970" data-slot="PRE" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-6f1e3c7e-9265-457a-89b2-bb8dc90ef970'); });</script>
+	</div>
+	
+
+
+<div class="google-ad-iframe">
+        <div class="sliding-box-300x50">
+            <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOK_300x50_A" class="sidebar-in-house-upsell"><img src="http://safe.britannica.com/safeimages/EBOK_300x200A.jpg"/></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-f6313fca-d001-44c1-82c2-834943bdcc9e" data-slot="TOP" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-f6313fca-d001-44c1-82c2-834943bdcc9e'); });</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-7664c42f-1beb-41a6-85c1-2d01afb85162" data-slot="BOT" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-7664c42f-1beb-41a6-85c1-2d01afb85162'); });</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md-sidebar-box font-sans sidebar-quiz-box">
+
+    <div class="md-sidebar-box-title"><span>FEATURED QUIZZES</span></div>
+
+    <div class="md-sidebar-box-content md-sidebar-box-content-list">
+
+	    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="font-sans-ui">
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/vocabulary-quiz">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-2.web.britannica.com/eb-media/94/178194-118-7A636614.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Vocabulary Quiz</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/true-or-false">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-2.web.britannica.com/eb-media/95/178195-118-019518C4.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">True or False</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//438" href="/quiz/name-that-thing">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-2.web.britannica.com/eb-media/96/178196-118-49DC431A.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Name That Thing</span>
+            </a>
+        </li>
+    
+</ul>
+
+	    
+	    <div class="text-right md-more-link">
+            
+	            
+		            <a data-ytrk="/85" href="/quiz/browse" class="md-sidebar-list-all">See More Quizzes<i class="fa fa-chevron-right"></i></a>
+                
+				
+            
+        </div>
+	    
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="md-sidebar-box font-sans sidebar-quiz-box">
+
+    <div class="md-sidebar-box-title"><span>MORE QUIZZES</span></div>
+
+    <div class="md-sidebar-box-content md-sidebar-box-content-list">
+
+	    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="font-sans-ui">
+    
+        <li>
+            <a data-ytrk="//135" href="/quiz/human-health-fact-or-fiction">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-3.web.britannica.com/eb-media/53/166853-118-69C46D79.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Human Health: Fact or Fiction?</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//135" href="/quiz/human-health">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-3.web.britannica.com/eb-media/20/167120-118-908FC5EF.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Human Health</span>
+            </a>
+        </li>
+    
+        <li>
+            <a data-ytrk="//135" href="/quiz/apples-and-doctors-fact-or-fiction">
+                <span class="md-sidebar-list-image-wrapper">
+	            
+                    
+                    <img src="http://media-2.web.britannica.com/eb-media/06/166706-118-C5842617.jpg" />
+                
+                </span>
+                <span class="md-sidebar-list-item-title">Apples and Doctors: Fact or Fiction?</span>
+            </a>
+        </li>
+    
+</ul>
+
+	    
+	    <div class="text-right md-more-link">
+            
+	            
+		            <a data-ytrk="/85" href="/quiz/browse" class="md-sidebar-list-all">See More Quizzes<i class="fa fa-chevron-right"></i></a>
+                
+				
+            
+        </div>
+	    
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-26e43aa9-b97a-4de4-b55e-886f80276ab6" data-slot="BOT2" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-26e43aa9-b97a-4de4-b55e-886f80276ab6'); });</script>
+	</div></aside>
+            <div class="md-page-wrapper-bottom hide-on-edit"></div>
+
+        </div>
+
+        </div>
+
+    <footer id="md-footer" class="footer-wrapper hide-on-edit">
+
+    <div class="footer-bck">
+        <ul class="md-footer-slim">
+            <li><a data-ytrk="59" href="http://corporate.britannica.com" target="_blank">About Us</a></li>
+            <li><a data-ytrk="129" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">About Our Ads</a></li>
+            <li><a data-ytrk="37" href="http://corporate.britannica.com/contact/consumer/" target="_blank" rel="nofollow">Contact Us</a></li>
+            <li><a data-ytrk="60" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">Privacy Policy</a></li>
+            <li><a data-ytrk="61" href="http://corporate.britannica.com/termsofuse.html" target="_blank" rel="nofollow">Terms of Use</a></li>
+        </ul>
+        &copy;2015 Encyclop&aelig;dia Britannica, Inc.
+    </div>
+
+</footer><div id="md-citations" class="md-overlay-citations ui-hidden" title="Citations">
+
+    <dl>
+        <dt>MLA style:</dt>
+        <dd>"6 Common Infections We Wish Never Existed".&nbsp;<em>Encyclop&aelig;dia Britannica. Encyclop&aelig;dia Britannica Online.</em><br/>Encyclop&aelig;dia Britannica Inc., 2015. Web. 20 Sep. 2015<br/>&lt;<span class="citation-url">http://www.britannica.com/list/6-common-infections</span>&gt;.</dd>
+        <dt>APA style:</dt>
+        <dd>6 Common Infections We Wish Never Existed.&nbsp;(2015). In <em>Encyclop&aelig;dia Britannica</em>. Retrieved from <span class="citation-url">http://www.britannica.com/list/6-common-infections</span></dd>
+        <dt>Harvard style:</dt>
+        <dd>6 Common Infections We Wish Never Existed.&nbsp;2015. <em>Encyclop&aelig;dia Britannica Online</em>. Retrieved 20 September, 2015, from <span class="citation-url">http://www.britannica.com/list/6-common-infections</span></dd>
+        <dt>Chicago Manual of Style:</dt>
+        <dd><em>Encyclop&aelig;dia Britannica Online</em>, s. v. "6 Common Infections We Wish Never Existed", accessed September 20, 2015, <span class="citation-url">http://www.britannica.com/list/6-common-infections</span>.</dd>
+    </dl>
+
+    <p class="md-citations-warning">
+        While every effort has been made to follow citation style rules, there may be some discrepancies.<br/>
+        Please refer to the appropriate style manual or other sources if you have any questions.
+    </p>
+
+</div>
+<form method="POST" id="md-email-dialog" class="ui-hidden">
+    <label for="md-email-dialog-form-to">To</label><input class="span6" type="text" name="to" data-validation="email" required="true" id="md-email-dialog-form-to" />
+    <label for="md-email-dialog-form-from">From</label><input class="span6" type="text" name="from" data-validation="email" required="true" id="md-email-dialog-form-from" />
+    <label for="md-email-dialog-form-subject">Subject</label><input class="span6" type="text" name="subject" id="md-email-dialog-form-subject"  />
+    <label for="md-email-dialog-form-comments">Comments</label><textarea class="span6" name="comments" id="md-email-dialog-form-comments" maxlength="900" ></textarea>
+    <div class="md-email-dialog-form-msg">(Please limit to 900 characters)</div>
+    <input type="hidden" name="url" id="md-email-dialog-url" />
+    <input type="hidden" name="title" id="md-email-dialog-title" />
+    <input type="submit" value="Send"/><button>Cancel</button>
+</form><form method="POST" id="md-email-dialog" class="ui-hidden">
+    <label for="md-email-dialog-form-to">To</label><input class="span6" type="text" name="to" data-validation="email" required="true" id="md-email-dialog-form-to" />
+    <label for="md-email-dialog-form-from">From</label><input class="span6" type="text" name="from" data-validation="email" required="true" id="md-email-dialog-form-from" />
+    <label for="md-email-dialog-form-subject">Subject</label><input class="span6" type="text" name="subject" id="md-email-dialog-form-subject"  />
+    <label for="md-email-dialog-form-comments">Comments</label><textarea class="span6" name="comments" id="md-email-dialog-form-comments" maxlength="900" ></textarea>
+    <div class="md-email-dialog-form-msg">(Please limit to 900 characters)</div>
+    <input type="hidden" name="url" id="md-email-dialog-url" />
+    <input type="hidden" name="title" id="md-email-dialog-title" />
+    <input type="submit" value="Send"/><button>Cancel</button>
+</form><div id="loginbox-dialog" class="ui-hidden">
+    <div id="loginbox-dialog-iframe-container"></div>
+    <div class="loginbox-continue-container">
+        <p>Or click <strong>Continue</strong> to submit anonymously:</p>
+        <div class="btn loginbox-btn" id="loginbox-continue">Continue</div>
+    </div>
+</div><!--[if lt IE 9]>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-1.11.3.min.js"><\/script>');</script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-2.1.4.min.js"><\/script>');</script>
+<!--<![endif]--><script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_QkFp1fFi8gwTK97KWaFi_v2eOF3cwcvUA9vC26R9gFKQjRikRuijZ1eOnERznNEN">
+            {
+                siteName: 'britannica.com (Production - Consumer)',
+                enabledProviders: 'facebook,twitter,googleplus,linkedin,yahoo',
+                connectWithoutLoginBehavior: "alwaysLogin"
+            }
+        </script>
+        <script type="text/javascript" src="http://cdn.gigya.com/js/gigyaGAIntegration.js"></script>
+    <script src="/resources/js/min-mendel.js?v=2.36.13"></script>
+
+    <script type="text/javascript" src="/resources/files/jwplayer6/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key='Pe2g3JQXoO64YRACwMhuLjL1bdEO24JIXiW6kA=';</script><script type="text/javascript" data-type="init page">
+        $( function() {
+            Mendel.Page.init();
+            if ($.isDefined(Mendel.ListPage)) { Mendel.ListPage.init(); }
+        });
+
+    </script>
+
+    <!--[if lt IE 8 ]>
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    	<script type="text/javascript">window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init Quantcast bottom">
+		    _qevents.push( { qacct:"p-fePJXh17dNmkk"} );
+		</script>
+		<noscript>
+			<div style="display: none;">
+		        <img src="http://pixel.quantserve.com/pixel/p-fePJXh17dNmkk.gif" height="1" width="1" alt="Quantcast"/>
+			</div>
+		</noscript>
+	<script type="text/javascript" data-type="load analytics">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+<script type="text/javascript" data-type="init crazyeggs">
+        function CE_READY() {
+            CE2.set( 1, 'ANONYMOUS' );
+            CE2.set( 2, 'D' );
+            CE2.set( 3, 'LIST' );
+            
+        }
+    </script>
+    <script type="text/javascript" data-type="load crazyeggs">
+        setTimeout(function(){
+            var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/3876.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)
+        }, 1);
+    </script>
+<script src="http://www.britannica.com/webstats/mendelstats.js?v=1"></script>
+    <script type="text/javascript" data-type="eb stats">
+        
+        var EBStat={accountId:-1,host:'www.britannica.com',domain:'www.britannica.com'};
+        try{writeStat(null,{accountId:-1,hostnameOverride:'www.britannica.com',domain:'www.britannica.com', json:''});}
+        catch(err){}
+    </script>
+<script type="text/javascript" src="/resources/js/libs/jquery.scrolldepth.min.js"></script>
+	<script type="text/javascript" data-type="init scrollDepth">
+		$( function() { jQuery.scrollDepth(); } );
+		</script>
+</body>
+</html>

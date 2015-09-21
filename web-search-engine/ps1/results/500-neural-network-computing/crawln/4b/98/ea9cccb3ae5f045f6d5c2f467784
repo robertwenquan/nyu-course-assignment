@@ -1,0 +1,440 @@
+
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Careers | IDG.com</title>
+    <meta name="description" content="Discover career opportunities at IDG and IDC.">
+    <meta name="author" content="Boston Interactive">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+    <link rel="stylesheet" href="/www/home.nsf/style.css">
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+    <script src="/lib/js/libs/modernizr-2.0.6.min.js"></script>
+<!-- Common scripts  -->
+<script language="JavaScript" type="text/javascript" src="/www/home.nsf/swfobject.js"></script>
+<script language="JavaScript" type="text/javascript" src="/www/home.nsf/idgcom.js"></script>
+</head>
+<!-- select appropriate layout class for page type - home, thin, or leave blank for normal -->
+<body class="layout-content-wide">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="container">
+        <header class=clearfix>
+            <a href="/www/home.nsf" title="Home" class="logo">
+                <img src="/lib/graphics/logo_idg.png" alt="IDG - International Data Group" title="Home" />
+            </a>
+            <ul class="utility clearfix">
+<li><a title="News & Press" href="/www/home.nsf/BySection/Press">News & Press</a></li><li><a title="IDC" href="http://www.idc.com/" target="_blank">IDC</a></li><li><a title="Contact Us" href="/www/home.nsf/BySection/Contact_Us">Contact Us</a>
+            </ul>
+            <fieldset class="search">
+                <input id="SearchValue" type="search" placeholder="Search&hellip;" class="s" autofocus />
+                <input type="submit" value="Search" onClick="runSearch();return false;" />
+            </fieldset>
+            <nav class=clearfix>
+                <ul class=clearfix>
+<!-- Main Navigation -->
+                    <li class="">
+                        <a href="/www/home.nsf/BySection/Global_Brands" title="Global Brands">Global Brands</a>
+<ul>
+<li><a href="/www/home.nsf/BySection/Major_Brands">Major Brands</a></li>
+<li><a href="/www/home.nsf/BySection/Digital%20Media">Digital Media</a></li>
+<li><a href="/www/home.nsf/BySection/Print">Print</a></li>
+<li><a href="/www/home.nsf/BySection/Events">Events</a></li>
+<li><a title="IDG Audience" href="/www/home.nsf/BySection/IDG_Audience">IDG Audience</a></li>
+<li><a title="IDG's Global Reach" href="/www/home.nsf/Global_Reach">IDG's Global Reach</a></li>
+
+</ul>
+                    </li>
+                    <li class="">
+                        <a href="/www/home.nsf/BySection/Marketing_Services" title="Marketing Services">Marketing Services</a>
+<ul>
+<li><a href="/www/home.nsf/BySection/Lead_Generation">Lead Generation</a></li>
+<li><a href="/www/home.nsf/BySection/Multimedia_Marketing">Multimedia Marketing</a></li>
+<li><a href="/www/home.nsf/BySection/Consulting">Consulting</a></li>
+<li><a title="IDG Knowledge Hub" href="http://idgknowledgehub.com/" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');">IDG Knowledge Hub</a></li>
+
+</ul>
+                    </li>
+                    <li class="">
+                        <a href="/www/home.nsf/BySection/IDC_Research" title="IDC Research">IDC Research</a>
+
+                    </li>
+                    <li class="">
+                        <a href="/www/home.nsf/BySection/Press" title="Press">Press</a>
+<ul>
+<li><a title="Newsroom" href="/www/home.nsf/BySection/Newsroom">Newsroom</a></li>
+<li><a title="IDG Thought Leaders" href="/www/home.nsf/docs/idg_thought_leaders">IDG Thought Leaders</a></li>
+<li><a title="IDG News Service" href="/www/home.nsf/BySection/IDG_News_Service">IDG News Service</a></li>
+
+</ul>                
+                    </li> 
+                    <li class="">
+                        <a href="/www/home.nsf/BySection/Company" title="Company">Company</a>
+<ul>
+<li><a href="/www/home.nsf/docs/about_idg">About IDG</a></li>
+<li><a href="/www/home.nsf/BySection/Leadership">Leadership</a></li>
+<li><a href="/www/home.nsf/docs/history">History</a></li>
+<li><a href="http://www.idg-ventures.com/" target="_blank">IDG Ventures</a></li>
+<li><a title="International Licensing" href="/www/home.nsf/docs/licensing">International Licensing</a></li>
+<li><a title="Global Media Kit" href="/www/home.nsf/docs/idg_company_overview">Global Media Kit</a></li>
+<li><a title="Contact Us" href="/www/home.nsf/BySection/Contact_Us">Contact Us</a></li>
+
+</ul>
+                    </li> 
+                    <li class="current">
+                        <a href="/www/home.nsf/BySection/Careers" title="Careers">Careers</a>
+<ul>
+<li><a href="/www/home.nsf/docs/working_here">Working Here</a></li>
+<li><a href="/www/home.nsf/docs/professional_development">Professional Development</a></li>
+<li><a href="/www/home.nsf/docs/corporate_values">Corporate Values</a></li>
+<li><a title="Meet Our Employees" href="/www/home.nsf/BySection/Meet_Our_Employees">Meet Our Employees</a></li>
+
+</ul>
+                    </li> 
+                </ul>
+            </nav>
+        </header>
+<div id="main" role="main" class=clearfix>
+
+            <aside class="nav">
+                <h1>
+                    <a title="Careers" href="/www/home.nsf/BySection/Careers">Careers</a>
+                </h1>
+                <nav>
+<ul>
+<li><a href="/www/home.nsf/docs/working_here">Working Here</a><!-- showsubs false - parent: -->
+<li><a href="/www/home.nsf/docs/professional_development">Professional Development</a></li>
+<!-- showsubs false - parent: Working Here-->
+<li><a href="/www/home.nsf/docs/corporate_values">Corporate Values</a></li>
+<!-- showsubs false - parent: Working Here-->
+<li><a title="Meet Our Employees" href="/www/home.nsf/BySection/Meet_Our_Employees">Meet Our Employees</a></li>
+<!-- showsubs false - parent: Working Here-->
+</ul>
+                </nav>
+            </aside>
+<div class="content clearfix">
+
+
+               <nav class=breadcrumb>
+                    <ul class=clearfix>
+                        <li class=home>
+                            <a href="/www/home.nsf/home?readform" title="Home">Home</a>
+                        </li>
+                        <li>Careers</li>
+                    
+<!-- Careers -->
+
+
+</ul>
+                </nav>
+<!-- view  or document display  -->
+
+                <article>
+                    <h1>Careers</h1>
+<div class="call-to-action">
+<a href="http://www.idg.com/www/home.nsf/docs/culture" ><img  style="padding:top:20px;"  class="callout-center " title="Careers" src="http://divzweszgzypc.cloudfront.net/lib/graphics/Careers2013.jpg"></a><p><strong>Welcome to Careers at IDG and IDC.</strong>  We recently implemented a new recruitment system.  If you created a profile and uploaded your resume to our careers site prior to February 4th, 2015 you will need to create a new profile and upload your resume to apply for a job.  We appreciate your time and thank you for your interest!</p>
+</div>  <!-- call-to-action" -->
+                    <div class="columns clearfix">
+                        <div class="column">
+<h2>Careers at IDG (U.S.)</h2><p>There has never been a more exciting time to work in IT media, events or research and to be here at IDG.</p><p><a href="https://re22.ultipro.com/INT1039/JobBoard/ListJobs.aspx?__VT=ExtCan" class="button" title="Search IDG Jobs" target="_blank">Search Jobs</a><br/><br/></p><h4>Outside of the U.S.</h4><p>For Careers outside of the US, pleasecontact the IDG office for your country</p><br><a  class="read-more"  href="/www/home.nsf/docs/worldwide_offices" >Contact International Offices...</a>
+                        </div>
+                        <div class="column">
+<h2>Careers at IDC</h2><p>As the world's leading provider of technology intelligence, industry analysis, market data, and strategic and tactical guidance, we can't afford to wait for things to happen. That's why our people are the industry's sharpest and most forward thinking.</p><p>For Careers both within the U.S. andoutside the U.S.</p><a href="http://www.idc.com/about/careers.jsp" class="button" title="Careers at IDC" target="_blank">Search Jobs</a> 
+<!-- the below computed text used on Audience Insight landing page -->
+                        </div>
+<!-- the below computed text used with 3col billboard layout -->
+                        <div class="column">
+<h2>Meet Our Employees</h2><a href="http://www.idg.com/www/home.nsf/BySection/Meet_Our_Employees" ><img  style="padding:top:20px;"  class="callout-center " title="emloyees" src="http://www.idg.com/www/assets.nsf/media/employee_collage_3.jpg/$File/employee_collage_3.jpg"></a>                        
+                        </div>
+                    </div>
+<!-- comments, if enabled -->
+
+<!-- the below closing article tag needs to be hidden for content pages  -->
+</article> <!--maincol-inner  Section-->
+<!-- Display right col here, if applicable -->
+
+<p class="small">IDG and IDC participate in E-Verify.  We will provide the Social Security Administration (SSA) and, if necessary, the Department of Homeland Security (DHS), with information from each new employee's I-9 to confirm work authorization.</p>
+</div> <!--maincol-->
+</div> <!--bd-->
+
+        <footer>
+            <div class="colophon clearfix">
+                <p>
+                    <img src="/lib/graphics/logo_idg_small.png" alt="IDG logo" title=IDG />
+                    Copyright &copy; 2015 International Data Group. All rights reserved.
+                </p>
+                <p class="social">
+	    <a href="http://www.linkedin.com/company/3731" class="sprite-social linkedinsmall" title="LinkedIn">LinkedIn</a>
+                    <a href="http://twitter.com/idgworld" class="sprite-social twitter" title="Twitter">Twitter</a>
+                    <a href="http://www.facebook.com/idgworld" class="sprite-social facebook" title="Facebook">Facebook</a>
+                    Connect with IDG:
+                </p>
+                <ul class="utility clearfix">
+                <li><a title="News & Press" href="/www/home.nsf/BySection/Press">News & Press</a></li><li><a title="IDC" href="http://www.idc.com/" target="_blank">IDC</a></li><li><a title="Contact Us" href="/www/home.nsf/BySection/Contact_Us">Contact Us</a>
+                </ul>
+            </div>
+            <nav class="columns clearfix">
+                <div class="column column-a">
+                    <h3 class=clearfix>
+                        <a href="/www/home.nsf/BySection/Global_Brands" title="Global Brands">Global Brands</a>
+                    </h3>
+                    <ul class=clearfix>
+<li><a href="/www/home.nsf/BySection/Major_Brands">Major Brands</a><!-- showsubs true - parent: -->
+<ul>
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=ChannelWorld">ChannelWorld</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a title="CIO/CFOworld/CSO" href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=CIO">CIO/CFOworld/CSO</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=Computerworld">Computerworld</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=Games">GamePro</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=IDC">IDC</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a title="IDG Connect" href="http://www.idgconnect.com/" target="_blank">IDG Connect</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="http://www.idgtechnetwork.com" target="_blank">IDG TechNetwork</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=InfoWorld~TechWorld~TecChannel">InfoWorld/Techworld</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=Macworld">Macworld</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=Network_World">Network World</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=PC_World">PCWorld</a></li>
+<!-- showsubs true - parent: Major Brands-->
+<li><a title="TechHive" href="/www/idgproducts.nsf/display?readform&type=view&view=brandindex11&category=TechHive#Online">TechHive</a></li>
+</ul><!-- showsubs true - parent: Major Brands-->
+<!-- showsubs true - parent: Major Brands-->
+<li><a href="/www/home.nsf/BySection/Digital%20Media">Digital Media</a><!-- showsubs true - parent: Major Brands-->
+<ul>
+<li><a href="/www/idgproducts.nsf/display?readform&type=view&view=typeindex11&category=website">Online</a></li>
+<!-- showsubs true - parent: Digital Media-->
+<li><a href="/www/home.nsf/bysection/mobile">Mobile</a></li>
+<!-- showsubs true - parent: Digital Media-->
+<li><a href="/www/home.nsf/BySection/Video">Video</a></li>
+</ul><!-- showsubs true - parent: Digital Media-->
+<!-- showsubs true - parent: Digital Media-->
+<li><a href="/www/home.nsf/BySection/Print">Print</a><!-- showsubs true - parent: Digital Media-->
+<ul>
+<li><a title="Publications" href="/www/idgproducts.nsf/display?readform&type=view&view=typeindex11&category=publication">Publications</a></li>
+</ul><!-- showsubs true - parent: Digital Media-->
+<!-- showsubs true - parent: Print-->
+<li><a href="/www/home.nsf/BySection/Events">Events</a><!-- showsubs true - parent: Print-->
+<ul>
+<li><a title="Our Events" href="/www/idgproducts.nsf/display?readform&type=view&view=typeindex11&category=event">Our Events</a></li>
+<!-- showsubs true - parent: Events-->
+<li><a title="Event Photo Gallery" href="/www/home.nsf/docs/event_photo_gallery">Event Photo Gallery</a></li>
+</ul><!-- showsubs true - parent: Events-->
+<!-- showsubs true - parent: Events-->
+<li><a title="IDG Audience" href="/www/home.nsf/BySection/IDG_Audience">IDG Audience</a><!-- showsubs true - parent: Events-->
+<ul>
+<li><a title="Channel" href="/www/idgproducts.nsf/display?readform&type=view&view=audienceindex11&category=Channel&count=1000">Channel</a></li>
+<!-- showsubs true - parent: IDG Audience-->
+<li><a title="C-level Executives" href="/www/idgproducts.nsf/display?readform&type=view&view=audienceindex11&category=C-level_Executives&count=1000">C-level Executives</a></li>
+<!-- showsubs true - parent: IDG Audience-->
+<li><a title="Consumer Technology" href="/www/idgproducts.nsf/display?readform&type=view&view=audienceindex11&category=Consumer_Technology&count=1000">Consumer Technology</a></li>
+<!-- showsubs true - parent: IDG Audience-->
+<li><a title="Enterprise Technology" href="/www/idgproducts.nsf/display?readform&type=view&view=audienceindex11&category=Enterprise_Technology&count=1000">Enterprise Technology</a></li>
+<!-- showsubs true - parent: IDG Audience-->
+<li><a title="Gaming" href="/www/idgproducts.nsf/display?readform&type=view&view=audienceindex11&category=Gaming&count=1000">Gaming</a></li>
+</ul><!-- showsubs true - parent: IDG Audience-->
+<!-- showsubs true - parent: IDG Audience-->
+<li><a title="IDG's Global Reach" href="/www/home.nsf/Global_Reach">IDG's Global Reach</a></li>
+<!-- showsubs true - parent: IDG Audience-->
+
+                   </ul>
+ 
+                </div>
+                <div class="column column-b">
+                    <h3 class=clearfix>
+                        <a href="/www/home.nsf/BySection/Marketing_Services" title="Marketing Services">Marketing Services</a>
+                    </h3>
+                    <ul>
+<li><a href="/www/home.nsf/BySection/Lead_Generation">Lead Generation</a><!-- showsubs true - parent: -->
+<ul>
+<li><a title="IDG Connect" href="http://www.idgconnect.com/" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');return false;">IDG Connect</a></li>
+<!-- showsubs true - parent: Lead Generation-->
+<li><a title="IDG Enterprise LeadAccel" href="http://www.idgenterprise.com/lead-services" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');return false;">IDG Enterprise LeadAccel</a></li>
+<!-- showsubs true - parent: Lead Generation-->
+<li><a title="IDG List and Brokerage Services" href="http://www.idglist.com" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');return false;">IDG List and Brokerage Services</a></li>
+<!-- showsubs true - parent: Lead Generation-->
+<li><a title="IDG Direct" href="http://www.idgdirect.com/" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');">IDG Direct</a></li>
+</ul><!-- showsubs true - parent: Lead Generation-->
+<!-- showsubs true - parent: Lead Generation-->
+<li><a href="/www/home.nsf/BySection/Multimedia_Marketing">Multimedia Marketing</a><!-- showsubs true - parent: Lead Generation-->
+<ul>
+<li><a title="Social Media Marketing" href="http://idgknowledgehub.com/amplify/" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');">Social Media Marketing</a></li>
+<!-- showsubs true - parent: Multimedia Marketing-->
+<li><a title="Mobile Marketing" href="http://idgknowledgehub.com/mobileidg/" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');">Mobile Marketing</a></li>
+</ul><!-- showsubs true - parent: Multimedia Marketing-->
+<!-- showsubs true - parent: Multimedia Marketing-->
+<li><a href="/www/home.nsf/BySection/Consulting">Consulting</a><!-- showsubs true - parent: Multimedia Marketing-->
+<ul>
+<li><a href="http://www.idgglobalsolutions.com" target="_blank">IDG Global Solutions</a></li>
+<!-- showsubs true - parent: Consulting-->
+<li><a href="http://www.idgresearch.com/" target="_blank">IDG Research Services</a></li>
+</ul><!-- showsubs true - parent: Consulting-->
+<!-- showsubs true - parent: Consulting-->
+<li><a title="IDG Knowledge Hub" href="http://idgknowledgehub.com/" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');">IDG Knowledge Hub</a></li>
+<!-- showsubs true - parent: Consulting-->
+
+                    </ul>
+                    <h3 class=clearfix>
+                        <a href="/www/home.nsf/BySection/IDC_Research" title="IDC Research">IDC Research</a>
+                    </h3>
+                </div>
+                <div class="column column-c">
+                    <h3 class=clearfix>
+                        <a href="/www/home.nsf/BySection/Press" title="Press">Press</a>
+                    </h3>
+                    <ul>
+<li><a title="Newsroom" href="/www/home.nsf/BySection/Newsroom">Newsroom</a><!-- showsubs true - parent: -->
+<ul>
+<li><a title="IDG in the News" href="/www/media.nsf/display?readform&type=view&view=11mrbydate&category=all">IDG in the News</a></li>
+<!-- showsubs true - parent: Newsroom-->
+<li><a title="Press Releases" href="/www/pr.nsf/display?readform&type=view&view=11prbydate&category=all">Press Releases</a></li>
+<!-- showsubs true - parent: Newsroom-->
+<li><a title="US PR Contacts" href="/www/home.nsf/docs/us_pr_contacts">US PR Contacts</a></li>
+<!-- showsubs true - parent: Newsroom-->
+<li><a title="International PR Contacts" href="/www/home.nsf/docs/international_pr_contacts">International PR Contacts</a></li>
+<!-- showsubs true - parent: Newsroom-->
+<li><a title="IDC Media Center" href="http://www.idc.com/about/press.jsp" target="_blank" onClick="recordOutboundLink(this, 'outgoing', '');">IDC Media Center</a></li>
+</ul><!-- showsubs true - parent: Newsroom-->
+<!-- showsubs true - parent: Newsroom-->
+<li><a title="IDG Thought Leaders" href="/www/home.nsf/docs/idg_thought_leaders">IDG Thought Leaders</a></li>
+<!-- showsubs true - parent: Newsroom-->
+<li><a title="IDG News Service" href="/www/home.nsf/BySection/IDG_News_Service">IDG News Service</a><!-- showsubs true - parent: Newsroom-->
+<ul>
+<li><a title="Beats" href="/www/home.nsf/docs/beats">Beats</a></li>
+<!-- showsubs true - parent: IDG News Service-->
+<li><a title="Bureaus" href="/www/home.nsf/docs/bureaus">Bureaus</a></li>
+<!-- showsubs true - parent: IDG News Service-->
+<li><a title="World Tech Update" href="/www/home.nsf/docs/world_tech_update">World Tech Update</a></li>
+</ul><!-- showsubs true - parent: IDG News Service-->
+<!-- showsubs true - parent: IDG News Service-->
+
+                    </ul>
+                </div>
+                <div class="column column-d">
+                    <h3 class=clearfix>
+                        <a href="/www/home.nsf/BySection/Company" title="Company">Company</a>
+                    </h3>
+                    <ul>
+<li><a href="/www/home.nsf/docs/about_idg">About IDG</a></li>
+<!-- showsubs true - parent: -->
+<li><a href="/www/home.nsf/BySection/Leadership">Leadership</a><!-- showsubs true - parent: -->
+<ul>
+<li><a title="Ted Bloom" href="/www/home.nsf/docs/ted_bloom_biography">Ted Bloom</a></li>
+<!-- showsubs true - parent: Leadership-->
+<li><a title="Michael Friedenberg" href="/www/home.nsf/docs/michael_friedenberg_biography">Michael Friedenberg</a></li>
+<!-- showsubs true - parent: Leadership-->
+<li><a title="Kirk Campbell" href="/www/home.nsf/docs/kirk_campbell_biography">Kirk Campbell</a></li>
+</ul><!-- showsubs true - parent: Leadership-->
+<!-- showsubs true - parent: Leadership-->
+<li><a href="/www/home.nsf/docs/history">History</a><!-- showsubs true - parent: Leadership-->
+<ul>
+<li><a title="Remembering Pat McGovern" href="/www/home.nsf/docs/remembering_pat_mcgovern">Remembering Pat McGovern</a></li>
+<!-- showsubs true - parent: History-->
+<li><a title="McGovern Institute" href="/www/home.nsf/docs/mcgovern_institute_for_brain_research">McGovern Institute</a></li>
+</ul><!-- showsubs true - parent: History-->
+<!-- showsubs true - parent: History-->
+<li><a href="http://www.idg-ventures.com/" target="_blank">IDG Ventures</a></li>
+<!-- showsubs true - parent: History-->
+<li><a title="International Licensing" href="/www/home.nsf/docs/licensing">International Licensing</a></li>
+<!-- showsubs true - parent: History-->
+<li><a title="Global Media Kit" href="/www/home.nsf/docs/idg_company_overview">Global Media Kit</a></li>
+<!-- showsubs true - parent: History-->
+<li><a title="Contact Us" href="/www/home.nsf/BySection/Contact_Us">Contact Us</a><!-- showsubs true - parent: History-->
+<ul>
+<li><a title="Contact Sales" href="/www/home.nsf/docs/contact_sales">Contact Sales</a></li>
+<!-- showsubs true - parent: Contact Us-->
+<li><a title="Worldwide Offices" href="/www/home.nsf/docs/worldwide_offices">Worldwide Offices</a></li>
+<!-- showsubs true - parent: Contact Us-->
+<li><a title="US PR Contacts" href="/www/home.nsf/docs/us_pr_contacts">US PR Contacts</a></li>
+<!-- showsubs true - parent: Contact Us-->
+<li><a title="International PR Contacts" href="/www/home.nsf/docs/international_pr_contacts">International PR Contacts</a></li>
+<!-- showsubs true - parent: Contact Us-->
+<li><a title=" Privacy Policy" href="/www/home.nsf/docs/idg_privacy_policy"> Privacy Policy</a></li>
+</ul><!-- showsubs true - parent: Contact Us-->
+<!-- showsubs true - parent: Contact Us-->
+
+                    </ul>
+                </div>
+                <div class="column column-e">
+                    <h3 class=clearfix>
+                        <a href="/www/home.nsf/BySection/Careers" title="Careers">Careers</a>
+                    </h3>
+                    <ul>
+   <li><a href="/www/home.nsf/docs/working_here">Working Here</a><!-- showsubs true - parent: -->
+<ul>
+<li><a title="Culture" href="/www/home.nsf/docs/culture">Culture</a></li>
+</ul><!-- showsubs true - parent: -->
+<!-- showsubs true - parent: Working Here-->
+<li><a href="/www/home.nsf/docs/professional_development">Professional Development</a></li>
+<!-- showsubs true - parent: Working Here-->
+<li><a href="/www/home.nsf/docs/corporate_values">Corporate Values</a></li>
+<!-- showsubs true - parent: Working Here-->
+<li><a title="Meet Our Employees" href="/www/home.nsf/BySection/Meet_Our_Employees">Meet Our Employees</a></li>
+<!-- showsubs true - parent: Working Here-->
+
+                    </ul>
+<br/>
+                    <h3 class=clearfix>
+                        <a href="#" title="More">More...</a>
+                    </h3>
+                    <ul>
+   		<li><a href="/www/home.nsf/docs/bandwidth_world" title = "Bandwidth World" >Bandwidth World</a></li>
+   		<li><a href="/www/home.nsf/docs/mac_central" title = "Mac Central" >Mac Central</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+</div> <!-- document -->
+<!-- JavaScript at the bottom for fast page loading -->
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/lib/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<!-- scripts concatenated and minified via ant build script-->
+<script src="/lib/js/plugins.js"></script>
+<script src="/lib/js/script.js"></script>
+<!-- end scripts-->
+<!-- Google analytics: Change UA-XXXXX-X to be your site's ID -->
+<script>
+window._gaq = [['_setAccount','UA-79134-4'],['_trackPageview'],['_trackPageLoadTime']];
+Modernizr.load({
+  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+});
+</script>
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-79134-4");
+    pageTracker._trackEvent(category, action);
+    setTimeout('window.open("' + link.href + '")', 100)
+  }catch(err){}
+}
+</script>
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<!-- misc diagnostics -->
+<!--  sitesection:  Careers  subsection:  sitesubsection: Company  menusection: Careers title: Careers-->
+</body>
+</html>

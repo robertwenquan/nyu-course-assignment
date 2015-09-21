@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" dir="ltr" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js gt-ie8" dir="ltr" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" >
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+			<title>Why &ldquo;Store Everything&rdquo; Isn&rsquo;t a Strategy for Information Governance</title>
+			<meta name="viewport" content="width=device-width,initial-scale=1" >
+			<meta name="description" content="Learn how to manage growth in unstructured data due to increasing mobility, social media and analytics while avoiding the challenges of storing everything." >
+			<meta name="robots" content="noodp" >
+			<link rel="canonical" href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/Why-Store-Everything-Isnt-a-Strategy-for-Information-Governance" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="http://fast.fonts.net/jsapi/124d48dd-e515-4302-8bfb-1d5c1e3da916.js"></script><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/normalize.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/icomoon.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery.jscrollpane.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery-ui-1.10.3.custom.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.slide.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/mediaelementplayer.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/v8-legacy.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main.css?v=6.31"><!--[if IE 9]>
+<link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main_2.css?v=6.31"><![endif]-->
+<script src="http://cdn.optimizely.com/js/148927072.js"></script><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive.min.js?v=6.31"></script><script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/writeCapture.js"></script> <script type="text/javascript" src="http://cdn.ttgtmedia.com/rms/ux/javascript/jquery.writeCapture.js"></script> <script> (function() { var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'); s.type='text/javascript'; s.async=true; s.src='http://s.dpmsrv.com/dpm_b4c96d80854dd27e76d8cc9e21960eebda52e962.min.js'; h.appendChild(s); })(); </script> <script type="text/javascript"> var ord=Math.random()*10000000000000000; document.write('<scr' + 'ipt type="text/javascript" src="http://ad.doubleclick.net/N3618/adj/mcrst/;mcrst=symcveritas1x1io123875li1146447;sz=1x1;ord=' + ord + '?"></scr' + 'ipt>'); </script> <noscript><a href="http://ad.doubleclick.net/N3618/jump/mcrst/;mcrst=symcveritas1x1io123875li1146447;sz=1x1;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/N3618/ad/mcrst/;mcrst=symcveritas1x1io123875li1146447;sz=1x1;ord=123456789?" border="0" alt="" /></a></noscript><link rel="stylesheet" href=""><link rel="stylesheet" href=""><link rel="stylesheet" href=""><link rel="stylesheet" href="http://cdn.ttgtmedia.com/microsites/symcveritasinfogovernance/css/style-responsive.css"><script src="http://cdn.ttgtmedia.com/microsites/symcveritasinfogovernance/javascript/handlebars.js"></script><script src="http://cdn.ttgtmedia.com/microsites/symcveritasinfogovernance/javascript/script-responsive.js"></script><script>
+TT("page", {"parentTopicName":"Topics","parentTopicId":"4500247472","regHost":"http://users.techtarget.com","gaSiteAcct":"UA-19047342-10","lang":"en","ga":true,"timestamp":"2015-09-20 23:45:55","adId":"4500247503","siteName":"symcveritasinfogovernance","topicName":"Information Governance in an Era of Information Hypergrowth","pubDate":"20150603","siteType":"microsite/native","uaid":"UA-19047342-10","topical":true,"gaPageTrackUrl":"/page/etpk_Topics-4500247472/ptpk_Information Governance in an Era of Information Hypergrowth-4500247475/true/MICROSITE ARTICLE/content/cid_4500247503/date_20150603/mem_0/clst_0/rtpk_0/idx_0","parentSite":"searchCompliance","pageIndex":0,"topicIds":["4500247475"],"siteId":195,"atHost":"http://go.techtarget.com","appCode":"0","topicId":"4500247475","homeAdId":"4500246783","zone":"MICROSITE ARTICLE"});
+</script>
+
+<!-- Begin Chartbeat -->
+		<script>var _sf_startpt=(new Date()).getTime();</script><!-- End Chartbeat -->
+	
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwcDVVZACwIDU1lS"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144×144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114×114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72×72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144×144" href="/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114×114" href="/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72×72" href="/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+	</head>
+<body id="article" class="searchcompliance_native">
+	<!-- Begin Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PWWZSH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWWZSH');</script><!-- End Google Tag Manager -->
+	<div id="site-container" class="site-container">
+		<div><div><!-- PinnedNavBarController, generated at 23:45:55 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<!-- AdsController, generated at 23:45:55 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div class="ad-wrapper header-leaderboard ad-mobile">
+	<!-- AdsController, generated at 23:45:55 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+</div>
+
+<header class="header">
+	<button class="nav-toggle"><i class="icon" data-icon="9"></i></button>
+	<a href="http://searchcompliance.techtarget.com" class="header-logo mobile-link">
+		<span class="header-logo-mobile">SearchCompliance</span>
+	</a>
+	<a href="http://www.techtarget.com/network" class="header-logo desktop-link">
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-desktop replace_2x">
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-small replace_2x">
+	</a> 
+
+	<button class="header-search-toggle"><i class="icon" data-icon="g"></i></button>
+	<form action="http://searchcompliance.techtarget.com/search/query" method="get" class="header-search">
+		<label for="header-search-input" class="visuallyhidden">Search the TechTarget Network</label>
+		<input class="header-search-input" id="header-search-input" type="text" name="q" placeholder="Search the TechTarget Network">
+	</form>
+
+	<nav class="nav">
+		<a href="http://users.techtarget.com/registration/searchCompliance/LoginRegister.page" class="nav-join-pro"><span>Sign-up now. Start my free, unlimited access.</span></a>
+		<div class="ad-wrapper nav-pro-callout">
+			<!-- AdsController, generated at 23:45:55 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+</div>
+
+		<div class="nav-user">
+		<a href="http://users.techtarget.com/registration/searchCompliance/LoginRegister.page" class="nav-user-login"><span class="nav-user-action">Login</span></a>
+		</div>
+		<script>TT(["context","lib/jquery"],function(c,$){var u=c.getUser();if(u.loggedIn){$('div.nav-user').children("a:first")
+			.before('<span class="nav-user-name">'+u.displayName+'</span>')
+			.attr("href", "http://users.techtarget.com/registration/searchCompliance/Logout.page?fromURL=" + window.location.href).children("span.nav-user-action:first").text('Logout');
+			$('.nav-join-pro').removeAttr('href');$('a.nav-join-pro span').hide();}else{$('div.nav-user').children("a:first").attr("href", "http://users.techtarget.com/registration/searchCompliance/LoginRegister.page?fromURL="+window.location.href);
+			$('a.nav-join-pro').attr("href", "http://users.techtarget.com/registration/searchCompliance/LoginRegister.page?fromURL="+window.location.href);}});
+		</script>
+		
+		<ul class="nav-list">
+			<li class="nav-list-item nav-list-item-searchsites">
+				<div class="nav-list-item-header searchcompliance">
+					<a href="http://searchcompliance.techtarget.com">
+						<span class="nav-list-item-header-title">
+							<span class="logo-search">Search</span><span class="logo-1">Compliance</span></span>
+					</a>
+					<i class="icon icon-arrow-down" data-icon="5"></i>
+				</div>
+				<div class="nav-list-sublist nav-list-item-dropdown">
+					<ul class="nav-list-item-jscroll">
+						<li class="nav-list-sublist-item"><a href="http://searchcio.techtarget.com">SearchCIO</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchhealthit.techtarget.com">SearchHealthIT</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchcloudcomputing.techtarget.com">SearchCloudComputing</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchdatacenter.techtarget.com">SearchDataCenter</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchdatamanagement.techtarget.com">SearchDataManagement</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchsecurity.techtarget.com">SearchSecurity</a></li>
+						</ul>
+				</div>
+			</li>
+			<li class="nav-list-item nav-list-item-topics">
+				<div class="nav-list-item-header">
+					<span class="nav-list-item-header-type">Topic</span>
+					<span class="nav-list-item-header-title">
+						<a>All</a>
+					</span>
+					<i class="icon icon-arrow-down" data-icon="5"></i>
+					<i class="icon icon-navigation-detail" data-icon="A"></i>
+				</div>
+				<div class="nav-list-item-dropdown infotype">
+					<div class="nav-list-item-jscroll">
+						<div class="nav-list-parent-topics">
+							<div class="nav-list-sublist-header nav-list-sublist-header-gray">Please select a category</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item" id="parent-topic-c20ad95c177c9210VgnVCM1000000d01c80aRCRD">
+										Regulatory compliance needs</li>
+								<li class="nav-list-sublist-item" id="parent-topic-ee8dd95c177c9210VgnVCM1000000d01c80aRCRD">
+										Compliance software and solutions</li>
+								<li class="nav-list-sublist-item" id="parent-topic-a883d95c177c9210VgnVCM1000000d01c80aRCRD">
+										Managing compliance</li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-c20ad95c177c9210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Regulatory compliance needs</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/E-discovery-and-compliance">
+									E-discovery and compliance</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Financial-services-compliance-requirements">
+									Financial services</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/HIPAA-and-other-healthcare-compliance-requirements">
+									HIPAA</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Industry-specific-requirements-for-compliance">
+									Industry-specific compliance</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/PCI-compliance">
+									PCI</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/SOX-and-other-public-company-compliance-requirements">
+									SOX</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Vulnerability-assessment-for-compliance">
+									Vulnerability assessments</a></li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-ee8dd95c177c9210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Compliance software and solutions</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Compliance-framework-software">
+									Framework software</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Compliance-policy-management-software">
+									Policy management software</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Compliance-reporting-software">
+									Reporting software</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Compliance-services">
+									Compliance services</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Content-management-software-and-compliance">
+									Content management software</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Data-retention-and-compliance-software">
+									Data retention tools</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Disaster-recovery-and-compliance">
+									DR</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Document-management-software-and-compliance">
+									Document management software</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Encryption-software-solutions">
+									Encryption solutions</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Financial-and-accounting-software-for-compliance">
+									Financial and accounting software</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/ID-and-access-management-for-compliance">
+									ID and access management</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Log-management-software-solutions">
+									Log management software</a></li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-a883d95c177c9210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Managing compliance</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Automating-compliance-processes">
+									Automating compliance</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Business-continuity-management-and-compliance">
+									BC</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Business-records-management">
+									Business records management</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Enterprise-cloud-compliance">
+									Enterprise cloud compliance</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Information-technology-governance">
+									Information technology governance</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Managing-compliance-teams">
+									Compliance teams</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Managing-governance-and-compliance">
+									Governance and compliance</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Regulatory-compliance-audits">
+									Audits</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Regulatory-compliance-reporting">
+									Reporting</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Regulatory-compliance-training">
+									Training</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/resources/Risk-management-and-compliance">
+									Risk management</a></li>
+								</ul>
+						</div>
+						<div class="nav-list-child-topics" id="child-topic-957b0907bf682210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Topics Archive</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								</ul>
+						</div>
+						</div>				
+				</div>
+			</li>
+			<li class="nav-list-item nav-list-item-sections">
+					<div class="nav-list-item-header">
+						<span class="nav-list-item-header-type">Section</span>
+						<span class="nav-list-item-header-title">
+									<a>All</a>
+								</span>
+							<i class="icon icon-arrow-down" data-icon="5"></i>
+						<i class="icon icon-navigation-arrow" data-icon="B"></i>
+					</div>				
+					<div class="nav-list-sublist nav-list-item-dropdown">
+						<ul class="nav-list-item-jscroll">
+						<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/info/news">News</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/info/getstarted">Get Started</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/info/evaluate">Evaluate</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/info/manage">Manage</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchcompliance.techtarget.com/info/problemsolve">Problem Solve</a></li>
+						<li class="nav-list-sublist-item sponsored"><a href="http://searchcompliance.techtarget.com/sponsored_communities">Sponsored Communities</a></li>
+						</ul>
+					</div>
+				</li>
+		</ul>
+		<ul class="nav-social">
+			<li class="nav-social-item" title="Follow searchCompliance on Google+" id="navBarGooglePlus"><a href="https://plus.google.com/u/0/109901166976249060902" target="_blank"><i class="icon" data-icon="s"></i></a></li><li class="nav-social-item" title="Like searchCompliance on Facebook" id="navBarFacebook"><a href="http://www.facebook.com/searchcompliance" target="_blank"><i class="icon" data-icon="u"></i></a></li><li class="nav-social-item" title="Follow @itcompliance on Twitter" id="navBarTwitter"><a href="https://twitter.com/itcompliance" target="_blank"><i class="icon" data-icon="c"></i></a></li><li class="nav-social-item" title="Follow searchCompliance on LinkedIn" id="navBarLinkedIn"><a href="http://www.linkedin.com/company/3071765?trk=tyah" target="_blank"><i class="icon" data-icon="o"></i></a></li></ul>
+	 </nav>
+</header>
+
+<div class="ad-wrapper header-leaderboard ad-desktop">
+	<!-- AdsController, generated at 23:45:55 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+</div>
+</div><div><!-- SponsoredContentHeaderController, generated at 11:06:59 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div class="micrositeSponsoredContentHeader">
+	<ul class="micrositeSponsoredContent">
+    	<li class="micrositeSponsoredType"><span>Sponsored Content</span></li>
+    	<li class="micrositeWhatIsThis"><a href="#">What Is This?</a><i data-icon="5" class="icon icon-arrow-down"></i></li>
+    	<li class="micrositeSponsorLogo">
+	      		<p>Sponsored by</p><img src="http://cdn.ttgtmedia.com/microsites/symcveritasinfogovernance/images/sponsorLogo.png">
+	    	</li>
+    	<li class="micrositeWhatIsThis-dropDownPanel">
+      		<p>Sponsored content is a special advertising section provided by IT vendors. It features educational content and interactive media aligned to the topics of this web site.</p>
+    	</li>
+  	</ul>
+</div></div>
+</div><div id="main-content" class="main-content">
+			<article id="content-columns" class="content-columns">
+				<div>
+</div><div id="content-left" class="content-left">
+					<div><div class="microsite-full-bar">
+	<div class="microsite-left-bar">
+		<div><!-- SocialMediaShareBarController, generated at 19:17:20 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<div id="rail-share-bar">
+		<ul id="social-icons-desktop" class="share-bar-desktop" style="position: relative;">
+			<li class="share-bar-item-desktop share-bar-title">Share this item with your network:</li>
+			<li class="share-bar-item-desktop socialMedia-facebook" title="Share on Facebook" data-socialsite="facebook">
+					<a href="#" target="_blank"><i class="icon" data-icon="u"></i></a>
+					<span class="count"></span>
+				</li>
+			<li class="share-bar-item-desktop socialMedia-twitter" title="Share on Twitter" data-socialsite="twitter" data-account="" data-related="">
+					<a href="#" target="_blank"><i class="icon" data-icon="c"></i></a>
+					<span class="count"></span>
+				</li>
+			<li class="share-bar-item-desktop socialMedia-google" title="Share on Google+" data-socialsite="google">
+					<a href="#" target="_blank"><i class="icon" data-icon="s"></i></a>
+					<span class="count"></span>
+				</li>
+			<li class="share-bar-item-desktop socialMedia-linkedin" title="Share on LinkedIn" data-socialsite="linkedin">
+					<a href="#" target="_blank"><i class="icon" data-icon="o"></i></a>
+					<span class="count"></span>
+				</li>
+			<li class="share-bar-item-desktop contentTools-print" title="Print This Page">
+					<a href="#" target="_blank"><i class="icon" data-icon="i"></i></a>
+				</li>
+			<li class="share-bar-item-desktop contentTools-email" title="Email a Friend">
+				<a href="#" target="_blank"><i class="icon" data-icon="n"></i></a>
+			</li>
+		</ul>
+	</div>
+</div><div><!-- RecentMicrositeArticlesController, generated at 15:59:02 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<nav class="micrositeArticleBar micrositeDesktopArticleBar">
+		<div class="micrositeArticleBarHeader">
+			<i data-icon="1" class="icon"></i>
+			Articles</div>
+		<ul class="micrositeArticleBarList">
+			<li class="micrositeArticleBarItem">Why “Store Everything” Isn’t a Strategy for Information Governance</li>
+			<li class="micrositeArticleBarItem"><a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/The-Challenge-of-Information-FragmentationWhere-Is-That-Data">The Challenge of Information Fragmentation—Where Is That Data?</a></li>
+				</ul>
+	</nav>
+</div><div><!-- InThisSeriesController, generated at 11:07:00 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<nav class="micrositeDesktopSeriesBar">
+		<div class="micrositeSeriesBarHeader">
+			<i data-icon="1" class="icon"></i>
+			In This Series</div>
+		<ul class="micrositeSeriesBarList">
+			<li class="micrositeSeriesBarItem"><a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance">Home</a></li>
+			<li class="micrositeSeriesBarItem"><a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/resources/Assuming-Control-to-Sustain-an-Information-Governance-Strategy">Assuming Control to Sustain an Information Governance Strategy</a></li>
+			<li class="micrositeSeriesBarItem"><a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/resources/Information-Governance-in-an-Era-of-Information-Hypergrowth">Information Governance in an Era of Information Hypergrowth</a></li>
+			<li class="micrositeSeriesBarItem"><a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/resources/Taking-Action-in-an-Enterprise-Wide-Information-Governance-Framework">Taking Action in an Enterprise-Wide Information Governance Framework</a></li>
+			<li class="micrositeSeriesBarItem"><a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/resources/The-Vital-Role-of-Visibility-in-an-Information-Governance-Strategy">The Vital Role of Visibility in an Information Governance Strategy</a></li>
+			<li class="micrositeSeriesBarItem see-more"><a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance">See More</a></li>
+		</ul>
+	</nav>
+</div><div class="micrositeRightRail">
+			<div><!-- SponsoredNewsController, generated at 15:59:02 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+</div><div><!-- VendorResourcesController, generated at 15:59:02 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<aside class="micrositeResourcesBar micrositeDesktopResourcesBar">
+		<div class="micrositeResourcesBarHeader">Vendor Resources</div>
+		<ul class="micrositeResourcesBarList">
+			<li class="micrositeResourcesBarItem">
+					<a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/document/1433203060_69" target="_blank">Gartner: Building an Information Governance Organization</a>
+					<span>Symantec | Veritas</span>
+				</li>
+			<li class="micrositeResourcesBarItem">
+					<a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/document/1433203060_39" target="_blank">When Is Your Storage Problem Not a Storage Problem?</a>
+					<span>Symantec | Veritas</span>
+				</li>
+			<li class="micrositeResourcesBarItem">
+					<a href="http://searchcompliance.techtarget.com/VeritasInfoGovernance/document/1433203060_899" target="_blank">Gartner Market Guide for File Analysis Software</a>
+					<span>Symantec | Veritas</span>
+				</li>
+			</ul>
+	</aside>
+</div></div>
+	</div>
+</div></div></div>
+				<div id="content-center" class="content-center">
+					<div><div><!-- ContentItemController, generated at 15:59:02 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+
+
+
+
+
+<ul class="actions-bar">
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<li class="actions-bar-item actions-bar-chapters"><i class="icon" data-icon="1"></i></li>
+	
+	
+		<li class="actions-bar-item actions-bar-resources"><i class="icon" data-icon="2"></i></li>
+	
+	
+		<li class="actions-bar-item actions-bar-share"><i class="icon" data-icon="f"></i>
+			<ul class="share-bar-mobile">
+				
+					<li class="share-bar-item-mobile socialMedia-facebook" title="Share on Facebook" data-socialsite="facebook">
+						<a href="#"><i class="icon" data-icon="u"></i></a><span class="count"></span>
+					</li>
+				
+				
+					<li class="share-bar-item-mobile socialMedia-twitter" title="Share on Twitter" data-socialsite="twitter" data-account="" data-related="">
+						<a href="#"><i class="icon" data-icon="c"></i></a><span class="count"></span>
+					</li>
+				
+				
+					<li class="share-bar-item-mobile socialMedia-google" title="Share on Google+" data-socialsite="google">
+						<a href="#"><i class="icon" data-icon="s"></i></a><span class="count"></span>
+					</li>
+				
+				
+				
+					<li class="share-bar-item-mobile socialMedia-linkedin" title="Share on LinkedIn" data-socialsite="linkedin">
+						<a href="#"><i class="icon" data-icon="o"></i></a><span class="count"></span>
+					</li>	
+				
+				<li class="share-bar-item-mobile contentTools-email" title="Email a Friend">
+					<a href="#"><i class="icon" data-icon="n"></i></a>
+				</li>
+			</ul>
+		</li>
+	
+</ul><section class="micrositeArticlePage">
+	<h2>Why “Store Everything” Isn’t a Strategy for Information Governance</h2>
+	
+
+
+
+
+
+
+	
+
+<div id="micrositeInfoText"> 
+ <div class="micrositeSupportingMaterial"> 
+  <div class="adContainer">
+   <script type="text/javascript">
+var ord=Math.random()*10000000000000000;
+var adString="http://" + "ad.doubleclick.net/N3618/adj/mcrst/;mcrst=symcveritas300x250topic1io123875li1146447;ord=" + ord + "?";
+</script> 
+   <div class="adContainer">
+    <noscript> 
+     <a href="http://ad.doubleclick.net/N3618/jump/mcrst/;mcrst=symcveritas300x250topic1io123875li1146447;sz=300x250;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/N3618/ad/mcrst/;mcrst=symcveritas300x250topic1io123875li1146447;sz=300x250;ord=123456789?" border="0" alt="" /></a> 
+    </noscript>
+   </div> 
+   <script type="text/javascript">
+$(document).ready(function() {
+$(".adContainer").writeCapture().html("<scr"+"ipt type='text/javascript' src='"+adString+"'></scr"+"ipt>");
+});
+</script>
+  </div> 
+ </div> 
+ <p>A tidal wave of information growth is adding complexity, cost and risk for most organizations. Multiple analyst firms indicate that data is growing by more than 40% annually—and will likely continue doing so for the foreseeable future. In fact, one estimate indicates that 90% of the world’s data has been generated in just the past two years. Now, many analysts are wondering about the implications of this, including Ase Dragland of Sintef. “Internet-based companies are awash with data that can be grouped and utilized,” he noted. “Is this a good thing?”<sup>1</sup></p> 
+ <p>For years, organizations felt they could keep up with runaway data growth because of the sustained, dependable erosion of storage hardware costs. The dramatic reduction in the cost per gigabyte over more than three decades is undeniable: Hard drive storage cost $437,500 per gigabyte in 1980, but that figure fell to just $11 by 2000. And that’s not all: The average cost per gigabyte of hard drive storage fell to a miniscule 3 cents by 2014—a 67% drop over the same figure just four years earlier.<sup>2</sup></p> 
+ <p>Plummeting storage hardware prices, however, only tell part of the story. The huge growth in unstructured data, driven by trends such as mobility, social media and analytics has resulted in rising costs and complexity in data management. Backing up, archiving and restoring data in the event of an unexpected service interruption certainly puts more pressure on organizations to ensure data availability, especially in light of stricter compliance guidelines and more demanding data retention policies.</p> 
+ <p>But for a variety of reasons, storing everything simply doesn’t work.</p> 
+ <p>Why not? There are a number of significant risks to not having a well-thought-out strategy for information management that goes beyond simply storing everything. These include:</p> 
+ <ul> 
+  <li><b>Financial risk:</b> The cost of storing and managing data goes up each year, as organizations juggle huge data storage increases with the need to sift through it for analytics and other use cases.</li> 
+  <li><b>Legal risk:</b> Delays in producing information required in legal discovery can result in fines or other penalties. Even worse, failure to actually locate the data can mean the difference between winning and losing legal action.</li> 
+  <li><b>Security risk:</b> Not knowing what data is stored where can result in serious security vulnerabilities, including being completely unaware of potential breaches.</li> 
+  <li><b>Productivity risk:</b> Having too much information—or at least not having it well organized and easily accessible—can sap employees’ productivity. All too often, it is forcing them (and others, such as IT professionals) to spend needless time looking for information that could be hidden in any number of databases, devices, repositories or applications.</li> 
+  <li><b>Reputational risk:</b> All of the above-mentioned risks can cascade into a flood of mistakes, false steps, security holes and financial costs that may aggregate and result in negative publicity for the organization.</li> 
+ </ul> 
+ <div id="player" class="section"> 
+  <div id="playlist_player" class="player-block">
+   <!--Start of Brightcove Player 
+                  -->
+   <script src="//admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript" language="JavaScript"></script>
+   <object id="myexperience1667618165001" class="BrightcoveExperience"><param name="bgcolor" value="#FFFFFF"></param> <param name="width" value="612"></param> <param name="height" value="350"></param> <param name="playerID" value="4270574843001"></param> <param name="playerKey" value="AQ~~,AAAAAGL7FTI~,KqbVcw7NDYrPgmXKjgdeD9VzgQUQYr2i"></param> <param name="isVid" value="true"></param> <param name="isUI" value="true"></param> <param name="@videoPlayer" value="4273669582001"></param> <param name="dynamicStreaming" value="true"></param> <param name="includeAPI" value="true"></param> <param name="templateLoadHandler" value="BCLS.onTemplateLoad"></param> <param name="templateReadyHandler" value="BCLS.onTemplateReady"></param> </object> 
+   <script type="text/javascript">brightcove.createExperiences();</script> 
+   <!--End of Brightcove Player 
+                  -->
+  </div> 
+ </div> 
+ <p>Solving this problem is essential, and it is made even more challenging by the simple fact that 69% of stored information has no business, regulatory or legal value.<sup>3</sup> Just because you have the ability to store all that data doesn’t mean you actually should take that approach. Organizations need an overarching information governance policy that establishes priorities, identifies risks, analyzes data relevance and balances all issues against corporate policies, compliance guidelines and financial budgets.</p> 
+ <p>One possible solution is adopting an information governance platform that maps to essential business processes, allowing knowledge workers and IT organizations to make smarter decisions on what information to keep online, what to retain offline for as-needed access and what to discard completely. By treating different data uniquely, organizations can more easily and reliable ascertain the true business value of data.</p> 
+ <p>Veritas’ Information Governance Suite offers organizations an efficient and strategic approach to managing fast-growing data volumes so information is available when and where it is needed, without requiring more capital expenditures for storage hardware or needing armies of storage administrators. The Veritas solution integrates best-of-breed products for storage management, backup, file classification and analysis, archiving and e-discovery into an enterprise-wide solution that provides real-time insight throughout the information governance lifecycle.</p> 
+ <p><sup>1</sup>“Big Data, For Better or Worse,” Sintef, May 2013<br /> <sup>2</sup>“Average Cost of Hard Drive Storage,” Statistic Brain Research Institute, November 2014<br /> <sup>3</sup>“You Can’t Keep All Your Data Forever,” Forbes.com, July 2012</p> 
+</div></section></div>
+</div></div>
+				<div id="content-right" class="content-right"></div>
+			</article>
+		</div>
+		<div><div><!-- NetworkCoverageController, generated at 18:59:15 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<section class="latest-wrapper">
+		<nav class="latest-nav-wrapper">
+			<h2>Latest TechTarget <span class="latest-title">resources</span></h2>
+			<ul class="latest-nav">
+				<li>
+						<a href="#" class="latest-nav-item selected" data-item="1">
+							CIO<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="2">
+							Health IT<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="3">
+							Cloud Computing<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="4">
+							Data Center<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="5">
+							Data Management<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="6">
+							Security<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				</ul>
+		</nav>
+		<span class="latest-nav-mask before-mask"></span>
+		<span class="latest-nav-mask after-mask"></span>
+		<div class="latest-body">
+			<div class="latest-content" data-item="1">
+					<h2 class="searchcio">
+						<a href="http://searchcio.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">CIO</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcio.techtarget.com/news/4500253810/30000-jobs-cut-in-HP-Enterprise-quest-for-relevance">30,000 jobs cut in HP Enterprise quest for relevance</a></h3>
+										<p>HP slashes 30,000 more jobs as part of its upcoming official split into two companies. What will lean mean for HP? Also in ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcio.techtarget.com/tip/Dont-toss-data-center-best-practices-when-managing-cloud-services">Don't toss data center best practices when managing cloud services</a></h3>
+										<p>Cloud computing is different -- but it's not that different. Gartner analyst Mindy Cancila says you already do some of the most ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcio.techtarget.com/tip/Track-the-cost-of-cloud-based-services-and-dont-fear-your-next-bill">Track the cost of cloud-based services -- and don't fear your next bill</a></h3>
+										<p>Companies that don't monitor the cost of cloud-based services could be in for a nasty surprise, warns Gartner analyst Mindy ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="2">
+					<h2 class="searchhealthit">
+						<a href="http://searchhealthit.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Health</span><span class="logo-2">IT</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchhealthit.techtarget.com/feature/Healthcare-kiosk-showcased-by-Dell-Bay-State-Hospital">Healthcare kiosk showcased by Dell, Bay State Hospital</a></h3>
+										<p>A HealthSpot and Dell automated healthcare kiosk that's on display at Baystate Health's IT incubator enables self-service ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchhealthit.techtarget.com/feature/For-many-small-practices-ICD-10-readiness-is-out-of-reach">For many small practices, ICD-10 readiness is out of reach</a></h3>
+										<p>Many small physician practices aren't ready for ICD-10 yet, and, in some cases, it's because their vendors don't have ICD-10-...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchhealthit.techtarget.com/news/4500253617/For-Salesforce-new-Health-Cloud-system-faces-hurdles">For Salesforce, new Health Cloud system faces hurdles</a></h3>
+										<p>CRM vendor Salesforce introduces its first health IT product, Health Cloud, which aims to integrate electronic health records and...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="3">
+					<h2 class="searchcloudcomputing">
+						<a href="http://searchcloudcomputing.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Cloud</span><span class="logo-2">Computing</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcloudcomputing.techtarget.com/tip/Container-orchestration-tools-strategies-for-success">Container orchestration tools, strategies for success</a></h3>
+										<p>As more and more IT pros start to adopt container technology, orchestration tools like Docker Swarm will play a key role.</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcloudcomputing.techtarget.com/news/4500253747/HP-Helion-throws-forward-PaaS-to-hybrid-clouds">HP Helion throws forward PaaS to hybrid clouds</a></h3>
+										<p>HP unwraps new cloud, development and converged platforms to bolster its hybrid cloud strategy, and move up the cloud stack in ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchcloudcomputing.techtarget.com/tip/Embrace-these-cloud-service-level-agreement-best-practices">Embrace these cloud service-level agreement best practices</a></h3>
+										<p>SLAs help users know what to expect from their cloud provider. But they also present a number of headaches for the enterprise, ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="4">
+					<h2 class="searchdatacenter">
+						<a href="http://searchdatacenter.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Center</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchdatacenter.techtarget.com/feature/Memristor-technology-brings-about-an-analog-revolution">Memristor technology brings about an analog revolution</a></h3>
+										<p>Are we ready for memristor-based artificially intelligent infrastructure in the enterprise data center?</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchdatacenter.techtarget.com/feature/Who-controls-big-data-implementation">Who controls big data implementation?</a></h3>
+										<p>In the rush to capitalize on big data, enterprises can pitch a battle against their own IT departments. In these conflicts, no ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchdatacenter.techtarget.com/feature/Enterprises-have-options-for-big-data-infrastructure">Enterprises have options for big data infrastructure</a></h3>
+										<p>Many in the IT industry remain wary of big data's effect on infrastructure. Here's why.</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="5">
+					<h2 class="searchdatamanagement">
+						<a href="http://searchdatamanagement.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Data</span><span class="logo-2">Management</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchdatamanagement.techtarget.com/opinion/NoSQL-technology-still-prepping-for-wide-enterprise-entry">NoSQL technology still prepping for wide enterprise entry</a></h3>
+										<p>NoSQL database technology is built for processing speed and data flexibility. But it needs a fuller feature set and more skilled ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchdatamanagement.techtarget.com/news/4500253280/Alteryx-software-targets-Amazon-big-data">Alteryx software targets Amazon big data</a></h3>
+										<p>The latest Alteryx analytics engine gets enterprises close to Amazon big data, with nods to spreadsheet aficionados and R ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchdatamanagement.techtarget.com/feature/Evaluating-SQL-on-Hadoop-tools-Start-with-the-use-case">Evaluating SQL-on-Hadoop tools? Start with the use case</a></h3>
+										<p>In a Q&A, Clarity Solution Group CTO Tripp Smith says to base SQL-on-Hadoop software decisions on actual workloads. Some Hadoop ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="6">
+					<h2 class="searchsecurity">
+						<a href="http://searchsecurity.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Security</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchsecurity.techtarget.com/news/4500253831/Google-wants-sites-to-disable-SSLv3-to-boost-Web-security">Google wants sites to disable SSLv3 to boost Web security</a></h3>
+										<p>Google is trying to drag Web security into 2008 by asking sites to disable SSLv3 and RC4, and setting a minimum transfer security...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchsecurity.techtarget.com/news/4500253817/Cisco-router-malware-in-the-wild-more-widespread-than-first-believed">Cisco router malware in the wild more widespread than first believed</a></h3>
+										<p>News roundup: Additional research shows a Cisco router implant affects more devices than originally reported. Plus: Let's ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchsecurity.techtarget.com/news/4500253813/DHS-audit-details-cyber-mission-failures-and-future-efforts">DHS audit details cyber mission failures and future efforts</a></h3>
+										<p>An internal audit of the U.S. Department of Homeland Security has been completed, detailing areas where its cyber mission has ...</p>
+									</li>
+								</ul>
+				</div>
+			</div>
+	</section>
+</div><div><!-- FooterLinksController, generated at 18:59:15 Sun Sep 20, 2015, by vappma22.techtarget.com -->
+<footer>
+	<div class="content-left">
+		<!-- Plug in TechTarget Logo inside the anchor tag here. -->
+		<div class="column column-logo">
+			<a href="#"></a>
+		</div>
+	</div>
+	<div class="content-center">
+		<ul class="column">
+			<li class="footer-item footer-item-col-1 footer-item-row-1"><a href="http://searchcompliance.techtarget.com/about">About Us</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-2"><a href="http://searchcompliance.techtarget.com/about/contact">Contact Us</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-3"><a href="http://www.techtarget.com/html/privacy_policy.html">Privacy Policy</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-4"><a href="http://searchcompliance.techtarget.com/videos">Videos</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-5"><a href="http://searchcompliance.techtarget.com/photostories">Photo Stories</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-6"><a href="http://searchcompliance.techtarget.com/guides">Guides</a></li>
+			</ul>
+		<ul class="column">
+			<li class="footer-item footer-item-col-2 footer-item-row-1"><a href="http://searchcompliance.techtarget.com/about/advertising">Advertisers</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-2"><a href="http://searchcompliance.techtarget.com/about/partners">Business Partners</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-3"><a href="http://www.techtarget.com/mediakit">Media Kit</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-4"><a href="http://www.techtarget.com">Corporate Site</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-5"><a href="http://searchcompliance.techtarget.com/experts">Experts</a></li>
+			</ul>
+		<ul class="column column-mobile-hidden">
+			<li class="footer-item footer-item-col-3 footer-item-row-1"><a href="http://reprints.ygsgroup.com/m/techtarget">Reprints</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-2"><a href="http://searchcompliance.techtarget.com/archive">Archive</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-3"><a href="http://searchcompliance.techtarget.com/sitemap">Site Map</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-4"><a href="http://searchcompliance.techtarget.com/events">Events</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-5"><a href="http://searchcompliance.techtarget.com/eproducts">E-Products</a></li>
+			</ul>
+	</div>
+	<div class="content-right">
+		<div class="column column-legal">
+			<p class="footer-legal">All Rights Reserved, <span>
+			<a href="http://searchcompliance.techtarget.com/about/copyright">Copyright 2015 - 2015</a>, TechTarget</span>
+			
+			</p>
+			
+		</div>
+	</div>
+</footer></div>
+</div><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive-ui.min.js?v=6.31"></script><!-- Begin Chartbeat -->
+		<script>
+    var _sf_async_config={};
+    _sf_async_config.uid = 41935;
+    _sf_async_config.domain = 'techtargetnetwork.com';
+    _sf_async_config.sections = ',  - Information Governance in an Era of Information Hypergrowth';
+    _sf_async_config.authors = 'NO AUTHOR, MICROSITE ARTICLE,  - MICROSITE ARTICLE';
+    _sf_async_config.useCanonical = true;
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src',
+           (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') + 'js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script><!-- End Chartbeat -->
+	<!-- Begin GoogleTagManagerLegacy -->
+		<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CV3PD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CV3PD');
+</script><!-- End GoogleTagManagerLegacy -->
+	<!-- Begin DataPoint Media -->
+		<script>
+(function() {
+var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),sc = 'https:' == document.location.protocol ? 'https://' : 'http://';
+s.type='text/javascript';
+s.async=true;
+s.src=sc+'s.dpmsrv.com/dpm_b4c96d80854dd27e76d8cc9e21960eebda52e962.min.js';
+h.appendChild(s);
+})();
+</script><!-- End DataPoint Media -->
+	<!-- Begin CrazyEgg -->
+		<script>setTimeout(function(){
+var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/7034.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;
+a.type="text/javascript";
+b.parentNode.insertBefore(a,b)
+}, 1);</script><!-- End CrazyEgg -->
+	<!-- Begin GoogleRemarketing -->
+		<script>
+var google_conversion_id = 1070110249;
+var google_conversion_label = "RRsgCOW4tgMQqayi_gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1070110249/?value=0&label=RRsgCOW4tgMQqayi_gM&guid=ON&script=0">
+</div>
+</noscript>
+<script>
+var google_conversion_id = 1072226410;
+var google_conversion_label = "x3P_CIql1gMQ6sCj_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1072226410/?value=0&label=x3P_CIql1gMQ6sCj_wM&guid=ON&script=0">
+</div>
+</noscript><!-- End GoogleRemarketing -->
+	</div>
+	<div id="mobile-sidebars" class="mobile-sidebars">
+		</div>
+	<div id="image-overlay" class="image-overlay">
+		<div class="image-overlay-img"></div>
+		<div class="image-overlay-close">Close</div>
+	</div>
+	
+<!--
+Component Load Times
+====================
+DefaultPageController=14 ms
+PinnedNavBarController=58 ms
+AdsController=0 ms
+
+Total time=72 ms
+Request Serving Server: vappma22.techtarget.com
+-->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"313780","applicationTime":140,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1068cf12f6","transactionName":"ZQMAYxdYXUBSAkFbClxJLFgXVFJfWhtQVjBAD00d","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script></body>
+</html>

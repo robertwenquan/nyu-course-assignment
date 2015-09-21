@@ -1,0 +1,994 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+  <meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="IT, business issues, news, analysis, best practices, white papers, components, personal electronics, distribution, entertainment, environment, government, hardware systems, industry verticals, internet, IT management, legal, peripherals, services, software, storage, security, networking, open source, green IT, virtualization, telecommunications, wireless, mobile, windows" />
+<meta name="description" content="IT News delivers today's top technology stories and breaking IT news." />
+
+
+
+  <title>IT News</title>	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="" />
+<meta property="og:type" content="news" />
+<meta property="og:image" content="http://www.itnews.com/sites/all/themes/itnews/images/logo_itnews_facebook.gif" />
+<meta property="og:site_name" content="itnews" />
+<meta property="fb:app_id" content="126624300743851" />
+<meta property="og:url" content="http://www.itnews.com/frontpage" />
+<script type="text/javascript" src="/sites/all/modules/custom/doubleclick_ads/idg_ads.js?2531"></script>
+<script type="text/javascript">
+  IDG.ads.networkID = "/8456/IDG.ITNews_Enterprise";
+  IDG.ads.targets["site"] = "idge.itnews.home";
+  IDG.ads.targets["zone"] = "";
+</script>
+
+<script type="text/javascript" src="/sites/all/modules/custom/demandbase/demandbase.js?132"></script>
+<script type="text/javascript" src="http://api.demandbase.com/api/v2/ip.json?token=cdc932c67e5362d1568c0ad48e2368e8bf878130&callback=OPG.Demandbase.dbase_parse"></script>
+<script type="text/javascript">
+  IDG.ads.setAllTargetings();
+  IDG.ads.defineAllSlots();
+  IDG.ads.enable();
+</script>
+
+<style type="text/css" media="all">
+div.panel-flexible div.panel-row-1 div.panel-col-1 { width: 99%;  }
+div.panel-flexible div.panel-row-2 div.panel-col-1 { width: 99%;  }
+div.panel-flexible div.panel-row-3 div.panel-col-1 { width: 49.5%;  }
+div.panel-flexible div.panel-row-3 div.panel-col-2 { width: 49.5%;  }
+</style>
+
+<link rel="shortcut icon" href="/sites/all/themes/itnews/images/favicon.ico" type="image/x-icon" />
+<link rel="canonical" href="http://www.itnews.com/" />  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/views/css/views.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/cck/theme/content-module.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/date/date.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/date/date_popup/themes/datepicker.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/date/date_popup/themes/timeentry.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/google_cse/google_cse.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/logintoboggan/logintoboggan.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/cck/modules/fieldgroup/fieldgroup.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/panels/css/panels.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/panels/layouts/flexible/flexible.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/thirdparty/nodequeue/nodequeue.css?b" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/custom/nodequeue_popup/cluetip/jquery.cluetip.css?b" />
+<link type="text/css" rel="stylesheet" media="screen,projection" href="/sites/all/themes/blueprint/blueprint/blueprint/screen.css?b" />
+<link type="text/css" rel="stylesheet" media="screen,projection" href="/sites/all/themes/blueprint/css/blueprint.css?b" />
+<link type="text/css" rel="stylesheet" media="screen,projection" href="/sites/all/themes/itnews/css/style.css?b" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/blueprint/blueprint/blueprint/print.css?b" />
+  <script type="text/javascript" src="/misc/jquery.js?b"></script>
+<script type="text/javascript" src="/misc/drupal.js?b"></script>
+<script type="text/javascript" src="/sites/all/modules/thirdparty/panels/js/panels.js?b"></script>
+<script type="text/javascript" src="/sites/all/modules/thirdparty/nodequeue/nodequeue.js?b"></script>
+<script type="text/javascript" src="/sites/all/modules/custom/nodequeue_popup/cluetip/jquery.cluetip.js?b"></script>
+<script type="text/javascript" src="/sites/all/themes/blueprint/scripts/general.js?b"></script>
+<script type="text/javascript" src="/sites/all/themes/itnews/scripts/jquery.hoverIntent.minified.js?b"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+  <!--[if lte IE 7]>
+    <link rel="stylesheet" href="/sites/all/themes/itnews/blueprint/blueprint/ie.css" type="text/css" media="screen, projection">
+  	<link href="/sites/all/themes/itnews/css/ie.css" rel="stylesheet"  type="text/css"  media="screen, projection" />
+  <![endif]-->  
+  <!--[if lte IE 6]>
+  	<link href="/sites/all/themes/itnews/css/ie6.css" rel="stylesheet"  type="text/css"  media="screen, projection" />
+  <![endif]-->  
+<script type="text/javascript" src="/sites/all/themes/itnews/scripts/jquery.hoverIntent.minified.js"></script>
+
+<!--Google analytics-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-300704-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--/Google analytics-->
+
+<!--mobify redirect-->
+<script type="text/javascript" src="http://m.itnews.com/mobify/redirect.js" /></script>
+<script type="text/javascript">var _mref_rewrite=true; try{_mobify("http://m.itnews.com/");} catch(err) {};</script>
+<!--/mobify redirect-->
+
+</head>
+
+<body id="host_itnews" class="front not-logged-in page-frontpage no-sidebars col-1 ">
+
+<div class="container">
+
+	<div id="leaderboard">	<div id="block-doubleclick_ads-topleaderboard" class="block block-doubleclick_ads region-odd odd region-count-1 count-75">
+
+
+  <div class="content">
+
+
+<!-- begin Top Leaderboard ad --> 
+<div id="leaderboard_left_overlay"></div><center>
+<div id="topleaderboard"><script type="text/javascript">
+  googletag.cmd.push(function() {
+    googletag.display("topleaderboard");
+  });
+</script>
+</div></center>
+<!-- end Top Leaderboard ad -->
+
+
+</div>
+  
+</div>
+<div id="block-doubleclick_ads-dogear" class="block block-doubleclick_ads region-even even region-count-2 count-76">
+
+
+  <div class="content">
+
+
+<!-- begin DogEar ad ad --> 
+<div id="dogear"><script type="text/javascript">
+  googletag.cmd.push(function() {
+    googletag.display("dogear");
+  });
+</script>
+</div><!-- end DogEar ad ad -->
+
+
+</div>
+  
+</div>
+ </div>
+  	<div id="header">
+	
+			<div id="logo">
+      			<a title="IT News" href="/"></a>
+    		</div>
+    			<div id="block-block-10" class="block block-block region-odd even region-count-1 count-78">
+
+
+  <div class="content"><div id="searchbox">
+	<div id="search_left"></div>
+	<div id="search_middle">
+		<div id="search_news_txt"></div>
+		<form id="google-cse-searchbox-form" method="get" accept-charset="UTF-8" action="/search/google">
+			<div>
+				<input id="edit-cx" type="hidden" value="014839440456418836424:3kszj40ksjy" name="cx"/>
+				<input id="edit-cof" type="hidden" value="FORID:9" name="cof"/>
+				<div id="edit-query-wrapper" class="form-item">
+				<input id="edit-query" class="form-text" type="text" title="Enter the terms you wish to search for." value="" size="15" name="query" maxlength="128" style=""/>
+				</div>
+				<input id="edit-sa" class="form-submit" type="submit" value="" name="op"/>
+				<input id="form-014839440456418836424" type="hidden" value="form-014839440456418836424" name="form_build_id"/>
+				<input id="edit-google-cse-searchbox-form" type="hidden" value="google_cse_searchbox_form" name="form_id"/>
+			</div>
+		</form>
+	</div>
+	<div id="search_right"></div>
+</div>
+<style>
+.tech_briefcase {
+  display: none !important;
+}
+</style></div>
+  
+</div>
+  </div>
+
+	<div id="nav_wrap">
+		<div id="nav_shadow_left"></div>
+		<div id="nav_shadow_right"></div>	
+		<div id="nav">
+      <div id="block-menu-menu-nav-head" class="block block-menu region-odd even region-count-5 count-6">
+        <div class="content">
+        	
+        <script type="text/javascript" language="javascript">
+    function showMoreTopics () {
+        this.className = "active";
+        
+        $("#more_topics").animate({
+            opacity: 1,
+            height: "toggle"
+        }, 700);
+    }
+    
+    function hideMoreTopics () {
+        this.className = "";
+    
+        $("#more_topics").animate({
+            opacity: 0,
+            height: "toggle"
+        }, 200);
+    }
+	
+	function makeActive () {
+        this.className += " active";
+    }
+    
+    function makeUnactive () {
+        this.className = "";
+    }
+    
+    $(document).ready(function(){	
+    
+       /*initialize more topics menu*/	
+	        var moreTopicsConfig = {    
+	            sensitivity: 1, // number = sensitivity threshold (must be 1 or higher)    
+	            interval: 0, // number = milliseconds for onMouseOver polling interval    
+	            over: showMoreTopics, // function = onMouseOver callback (REQUIRED)    
+	            timeout: 500, // number = milliseconds delay before onMouseOut    
+	            out: hideMoreTopics // function = onMouseOut callback (REQUIRED)
+			};
+			
+			var hoverConfig = {    
+	            sensitivity: 1, // number = sensitivity threshold (must be 1 or higher)    
+	            interval: 0, // number = milliseconds for onMouseOver polling interval    
+	            over: makeActive, // function = onMouseOver callback (REQUIRED)    
+	            timeout: 0, // number = milliseconds delay before onMouseOut    
+	            out: makeUnactive // function = onMouseOut callback (REQUIRED)
+			};
+			
+			
+		/*initialize navigation hover states*/
+        $("#newsbytopic").hoverIntent(moreTopicsConfig);
+        /*end more topics menu*/
+		
+		/*set up other calls for hover states*/
+		$("#nav_home").hoverIntent(hoverConfig);
+		$("#nav_wps").hoverIntent(hoverConfig);
+		$("#nav_rss").hoverIntent(hoverConfig);
+		$("#nav_nlsignup").hoverIntent(hoverConfig);
+    
+    });/*end document ready*/
+    
+    </script>
+
+
+    	<ul class="menu">
+        	<li class"leaf" id="nav_block_1"></li>
+        	<li class="leaf first active-trail" id="nav_home"><a href="/frontpage" title="" class="active">Home</a></li>
+			<li class="leaf" id="newsbytopic">News by Topic
+            <!-- IE needs the opacity set inline on the div, or else it slides down completely opaque the first time. -->
+                <div id="more_topics" style="filter: alpha(opacity=0);">
+								<ul class=generated_topics>
+<li><a href="/business-issues">Business Issues</a></li>
+<li><a href="/components">Components</a></li>
+<li><a href="/distribution">Distribution</a></li>
+<li><a href="/entertainment">Entertainment</a></li>
+<li><a href="/environment">Environment</a></li>
+<li><a href="/government">Government</a></li>
+<li><a href="/hardware-systems-0">Hardware Systems</a></li>
+</ul>
+<ul class=generated_topics>
+<li><a href="/industry-verticals">Industry Verticals</a></li>
+<li><a href="/internet">Internet</a></li>
+<li><a href="/it-management">IT Management</a></li>
+<li><a href="/legal">Legal</a></li>
+<li><a href="/networking">Networking</a></li>
+<li><a href="/peripherals">Peripherals</a></li>
+<li><a href="/consumer-electronics">Personal Electronics</a></li>
+</ul>
+<ul class=generated_topics>
+<li><a href="/security">Security</a></li>
+<li><a href="/services">Services</a></li>
+<li><a href="/software">Software</a></li>
+<li><a href="/storage">Storage</a></li>
+<li><a href="/telecommunication">Telecommunication</a></li>
+<li><a href="/virtualization">Virtualization</a></li>
+</ul>
+                    <div class="clear"></div>
+                </div>
+            </li>
+			<li class="leaf" id="nav_wps"><a href="http://ITwhitepapers.com" title="">Whitepapers</a></li>
+            <li class="leaf" id="nav_rss"><a href="/feed">RSS</a> <div id="rss_img"><img src="/sites/all/themes/itnews/images/nav_rss_icon.gif" /></div></li>
+			<li class="leaf last" id="nav_nlsignup"><a href="/newsletter?email=&source=itnnla_topnav&op=">Newsletters</a></li>
+
+      <li class="chicklets"><a href="http://www.facebook.com/pages/ITNewscom/209586422432654"><img src="/sites/all/themes/itnews/images/facebook-chicklet.png" alt="find us on Facebook" /></a></li>
+		</ul>        </div><!--/.content-->
+      </div><!--/#block-menu-menu-nav-head-->
+		</div><!--/#nav-->
+	</div>
+
+  
+    
+	<div id="main_content_wrap">
+		<div id="main_mid_shadow"></div>
+		<div id="main_mid_right_shadow"></div>
+		<div id="main_content"> 
+			<div id="frontpage_content">
+			  			  <div class="panel-flexible clear-block"   style="width:inherit;" >
+<div class="panel-flexible-sidebars">
+<div class="panel-row panel-row-1 clear-block">
+<div class="panel-col panel-col-1 panel-col-only" >
+<div class="inside"><div class="panel-pane" id="newest_stories">
+<div id="right_sidebar"><div id="block-multiblock-1" class="block block-multiblock region-odd odd region-count-1 count-73">
+
+
+  <div class="content">
+
+
+<!-- begin Top IMU ad --> 
+<div id="topimu"><script type="text/javascript">
+  googletag.cmd.push(function() {
+    googletag.display("topimu");
+  });
+</script>
+</div><!-- end Top IMU ad -->
+
+
+</div>
+  
+</div>
+<div id="block-multiblock-2" class="block block-multiblock region-even even region-count-2 count-74">
+
+
+  <div class="content"><div id="whitepaper" style="margin-bottom:20px;">
+<script type="text/javascript" src="http://jsc.madisonlogic.com/jsc?pub=76&pgr=65&src=962&layrf=6086&num=3"></script>
+</div></div>
+  
+</div>
+</div><div id="content_well"><a href="/news"><h2 class="title">FEATURED NEWS</h2></a>
+<div class="content"><div class="view view-nodequeue-1 view-id-nodequeue_1 view-display-id-block view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/security/96116/nasty-url-bug-brings-google-chrome-screeching-halt" title="Nasty URL bug brings Google Chrome to a screeching halt">Nasty URL bug brings Google Chrome to a screeching halt</a></h3>
+    
+	<div id ="date"> Sep 20, 2015 03:10 am | <a href="http://www.pcworld.com">PC World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Visiting--or merely mousing over a link that contains a specific string of characters--is enough to cause the current release of Chrome 45 to crash. </p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/storage/96115/comparing-iclouds-new-lower-prices-competition" title="Comparing iCloud&#039;s new lower prices to the competition">Comparing iCloud&#039;s new lower prices to the competition</a></h3>
+    
+	<div id ="date"> Sep 19, 2015 09:08 pm | Macworld </div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Cheaper iCloud storage prices just went into effect, making the service more competitive with Dropbox, Amazon Cloud Drive, Microsoft OneDrive, and Google Drive.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/mobile/96114/verizon-becomes-first-us-carrier-offer-international-roaming-cuba" title="Verizon becomes first US carrier to offer international roaming in Cuba">Verizon becomes first US carrier to offer international roaming in Cuba</a></h3>
+    
+	<div id ="date"> Sep 18, 2015 07:44 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/windows/96113/microsoft-designed-windows-10-pull-users-windows-store-and-it-might-be-working" title="Microsoft designed Windows 10 to pull users into Windows Store, and it might be working">Microsoft designed Windows 10 to pull users into Windows Store, and it might be working</a></h3>
+    
+	<div id ="date"> Sep 18, 2015 06:30 am | <a href="http://www.pcworld.com">PC World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>The Windows Store needs more users, so the company's built app discovery into the very fabric of Windows 10. It seems to be working.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/automotive/96111/volkswagen-said-use-software-fudge-emissions-tests" title="Volkswagen said to use software to fudge emissions tests">Volkswagen said to use software to fudge emissions tests</a></h3>
+    
+	<div id ="date"> Sep 18, 2015 04:47 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Volkswagen is being investigated by the U.S. Environmental Protection Agency and the California Air Resources Board for allegedly using software to mislead emissions tests.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-6 views-row-even views-row-last">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/windows/96112/windows-10-preview-build-10547-deploys-insiders-start-menu-tweaks-and-more" title="Windows 10 preview build 10547 deploys to Insiders, with Start menu tweaks and more">Windows 10 preview build 10547 deploys to Insiders, with Start menu tweaks and more</a></h3>
+    
+	<div id ="date"> Sep 18, 2015 04:45 am | <a href="http://www.pcworld.com">PC World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Microsoft's 'Windows as a service' evolution continues with build 10547, where you'll find the usual array of improvements--and rough edges.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div>
+<div class="more-link more-news"><a href="/news">More news</a></div>
+</div></div></div>
+</div>
+</div>
+<div class="panel-row panel-row-2 clear-block">
+<div class="panel-col panel-col-1 panel-col-only" >
+<div class="inside"><div id="topics_list_box">
+			<div id="topics_list_left">
+		    </div>
+		    <div id="topics_list_right">
+		    </div>
+		    <div id="topics_list_middle"><ul class=generated_topics>
+<li><a href="/business-issues">Business Issues</a></li>
+<li><a href="/components">Components</a></li>
+<li><a href="/distribution">Distribution</a></li>
+<li><a href="/entertainment">Entertainment</a></li>
+<li><a href="/environment">Environment</a></li>
+</ul>
+<ul class=generated_topics>
+<li><a href="/government">Government</a></li>
+<li><a href="/hardware-systems-0">Hardware Systems</a></li>
+<li><a href="/industry-verticals">Industry Verticals</a></li>
+<li><a href="/internet">Internet</a></li>
+<li><a href="/it-management">IT Management</a></li>
+</ul>
+<ul class=generated_topics>
+<li><a href="/legal">Legal</a></li>
+<li><a href="/networking">Networking</a></li>
+<li><a href="/peripherals">Peripherals</a></li>
+<li><a href="/consumer-electronics">Personal Electronics</a></li>
+<li><a href="/security">Security</a></li>
+</ul>
+<ul class=generated_topics>
+<li><a href="/services">Services</a></li>
+<li><a href="/software">Software</a></li>
+<li><a href="/storage">Storage</a></li>
+<li><a href="/telecommunication">Telecommunication</a></li>
+<li><a href="/virtualization">Virtualization</a></li>
+</ul>
+</div>
+		</div></div>
+</div>
+</div>
+<div class="panel-row panel-row-3 clear-block">
+<div class="panel-col panel-col-1 panel-col-first"  style = "float:left;">
+<div class="inside"><div class="panel-pane" id="topic_block">
+<div id="topic_header"><h2 class="title"><a href="/consumer-electronics">Personal Electronics</a></h2>
+<a href="/taxonomy/term/517/feed"><div id="feed"></div></a>
+<div class="clear"></div></div><div id="content"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-block_1 view-dom-id-2">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/personal-electronics/95903/wrap-intel-drone-investment-faster-flight-wifi-ifa-preview" title="The Wrap: Intel drone investment, faster in-flight WiFi, IFA preview">The Wrap: Intel drone investment, faster in-flight WiFi, IFA preview</a></h3>
+    
+	<div id ="date"> Aug 27, 2015 05:44 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/personal-electronics/95817/toshiba-rolls-out-activity-trackers-seniors" title="Toshiba rolls out activity trackers for seniors">Toshiba rolls out activity trackers for seniors</a></h3>
+    
+	<div id ="date"> Aug 17, 2015 02:07 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Toshiba is rolling out two activity trackers that can help caregivers monitor seniors remotely.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/personal-electronics/95787/simple-matters-ditto-review-minimalist-wearable-too-simple-its-own-good" title="Simple Matters Ditto review: This minimalist wearable is too simple for its own good">Simple Matters Ditto review: This minimalist wearable is too simple for its own good</a></h3>
+    
+	<div id ="date"> Aug 14, 2015 08:25 am | <a href="http://www.pcworld.com">PC World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Ditto has the dubious distinction of being the first tech product that I've ever lost as an adult.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/personal-electronics/95769/chinas-tianjin-latest-disaster-zone-attract-drones" title="China&#039;s Tianjin is latest disaster zone to attract drones">China&#039;s Tianjin is latest disaster zone to attract drones</a></h3>
+    
+	<div id ="date"> Aug 13, 2015 05:32 pm | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>The port city of Tianjin in China looked like a war zone on Thursday following a series of huge blasts the night before that left dozens dead and hundreds injured.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/internet-based-applications-and-services/95770/apple-intel-cite-gains-hiring-women-and-minorities" title="Apple, Intel cite gains in hiring women and minorities">Apple, Intel cite gains in hiring women and minorities</a></h3>
+    
+	<div id ="date"> Aug 13, 2015 05:04 pm | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Apple and Intel are both making progress in their efforts to hire more women and minorities, according to figures released by the companies this week.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> <a href="/consumer-electronics"><div class="more-link"></div></a>
+<div class="clear"></div></div></div><div class="panel-separator"></div><div class="panel-pane" id="topic_block">
+<div id="topic_header"><h2 class="title"><a href="/internet">Internet</a></h2>
+<a href="/taxonomy/term/579/feed"><div id="feed"></div></a>
+<div class="clear"></div></div><div id="content"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-block_1 view-dom-id-3">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/internet/96084/ipv6-will-get-big-boost-ios-9-facebook-says" title="IPv6 will get a big boost from iOS 9, Facebook says">IPv6 will get a big boost from iOS 9, Facebook says</a></h3>
+    
+	<div id ="date"> Sep 14, 2015 08:55 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/internet/96081/orange-collecte-puts-mobile-twist-crowdfunding" title="Orange Collecte puts mobile twist on crowdfunding">Orange Collecte puts mobile twist on crowdfunding</a></h3>
+    
+	<div id ="date"> Sep 14, 2015 05:45 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Orange Collecte, launched last week in the Ivory Coast, is putting a mobile twist on the crowdfunding concept.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/internet/96006/french-isps-petition-court-overturn-secret-foreign-surveillance-decree" title="French ISPs petition court to overturn secret foreign surveillance decree">French ISPs petition court to overturn secret foreign surveillance decree</a></h3>
+    
+	<div id ="date"> Sep 04, 2015 01:11 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Two French ISPs have asked France's highest court to overturn a secret government decree defining how French security services can scoop up foreign Internet traffic. They claim the decree is unconstitutional.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/internet/95958/lte-making-full-court-press-internet-things" title="LTE is making a full-court press for the Internet of Things">LTE is making a full-court press for the Internet of Things</a></h3>
+    
+	<div id ="date"> Sep 01, 2015 10:39 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>LTE network and device vendors are rolling out and demonstrating versions of the technology designed for small, low-power devices that don't need LTE's top speeds.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/internet/95945/wikipedia-blocks-381-user-accounts-dishonest-editing" title="Wikipedia blocks 381 user accounts for dishonest editing">Wikipedia blocks 381 user accounts for dishonest editing</a></h3>
+    
+	<div id ="date"> Aug 31, 2015 05:52 pm | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Editors of the English version of Wikipedia have blocked 381 user accounts for editing articles on the online encyclopedia despite being secretly paid to do so by various interests.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> <a href="/internet"><div class="more-link"></div></a>
+<div class="clear"></div></div></div><div class="panel-separator"></div><div class="panel-pane" id="topic_block">
+<div id="topic_header"><h2 class="title"><a href="/security">Security</a></h2>
+<a href="/taxonomy/term/649/feed"><div id="feed"></div></a>
+<div class="clear"></div></div><div id="content"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-block_1 view-dom-id-4">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/security/96116/nasty-url-bug-brings-google-chrome-screeching-halt" title="Nasty URL bug brings Google Chrome to a screeching halt">Nasty URL bug brings Google Chrome to a screeching halt</a></h3>
+    
+	<div id ="date"> Sep 20, 2015 03:10 am | <a href="http://www.pcworld.com">PC World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Visiting--or merely mousing over a link that contains a specific string of characters--is enough to cause the current release of Chrome 45 to crash. </p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/security/96109/under-ddos-attack-look-something-worse" title="Under DDoS attack? Look for something worse">Under DDoS attack? Look for something worse</a></h3>
+    
+	<div id ="date"> Sep 17, 2015 06:37 am | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>When businesses are hit by noticeable DDoS attacks, three-quarters of the time those attacks are accompanied by another security incident, according to Kaspersky Lab.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/security/96107/malware-enables-cheating-online-poker" title="Malware enables cheating at online poker">Malware enables cheating at online poker</a></h3>
+    
+	<div id ="date"> Sep 17, 2015 06:06 am | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Online poker malware lets players cheat by getting a peek at cards held by opponents whose machines have been infected.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/security/96102/obama-advisors-encryption-backdoors-would-hurt-cybersecurity-net-infrastructure-vendo" title="Obama advisors: Encryption backdoors would hurt cybersecurity, net infrastructure vendors">Obama advisors: Encryption backdoors would hurt cybersecurity, net infrastructure vendors</a></h3>
+    
+	<div id ="date"> Sep 16, 2015 07:36 am | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Making encryption backdoors available to law enforcement would be bad for cybersecurity in general and hurt vendors that make encryption gear, a presidential advisory group says.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/security/96097/synful-knock-router-exploit-isnt-going-away-soon" title="SYNful Knock router exploit isn&#039;t going away soon">SYNful Knock router exploit isn&#039;t going away soon</a></h3>
+    
+	<div id ="date"> Sep 15, 2015 10:52 pm | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>The SYNful Knock compromise of routers can implant software that creates backdoors to let attackers return over and over, a sophisticated endeavor that demonstrates the ingenuity of its creators, according to a member of the team that discovered the attack in the wild.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> <a href="/security"><div class="more-link"></div></a>
+<div class="clear"></div></div></div></div>
+</div>
+<div class="panel-col panel-col-2 panel-col-last"  style = "float:right;">
+<div class="inside"><div class="panel-pane" id="topic_block">
+<div id="topic_header"><h2 class="title"><a href="/hardware-systems-0">Hardware Systems</a></h2>
+<a href="/taxonomy/term/546/feed"><div id="feed"></div></a>
+<div class="clear"></div></div><div id="content"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-block_1 view-dom-id-5">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/hardware-systems/95738/sony-vaio-owners-have-few-weeks-or-longer-wait-their-windows-10-upgrade" title="Sony Vaio owners have a few weeks or longer to wait for their Windows 10 upgrade">Sony Vaio owners have a few weeks or longer to wait for their Windows 10 upgrade</a></h3>
+    
+	<div id ="date"> Aug 13, 2015 08:37 am | <a href="http://www.pcworld.com">PC World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Every time Sony thinks it's out! Microsoft pulls it back in. The storied electronics maker got out of the PC business in 2014, but it will still support some of its more recent Vaio models in making the move to Windows 10. Eventually.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/business-issues/95720/microsofts-surface-hub-collaboration-tool-delayed-until-2016" title="Microsoft&#039;s Surface Hub collaboration tool delayed until 2016">Microsoft&#039;s Surface Hub collaboration tool delayed until 2016</a></h3>
+    
+	<div id ="date"> Aug 12, 2015 02:16 pm | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>People who pre-ordered the Surface Hub from Microsoft were notified Wednesday that their mega-display and conference room collaboration tool won't arrive until 2016, at least four months after Microsoft originally planned.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/hardware-systems/95421/googles-project-tango-coming-12-more-countries" title="Google&#039;s Project Tango coming to 12 more countries">Google&#039;s Project Tango coming to 12 more countries</a></h3>
+    
+	<div id ="date"> Aug 04, 2015 03:00 pm | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Google's Project Tango tablet development kit is going on sale this month in 12 additional countries.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/hardware-systems/95337/upload-your-tech-news-briefing-monday-aug-3" title="The Upload: Your tech news briefing for Monday, Aug. 3">The Upload: Your tech news briefing for Monday, Aug. 3</a></h3>
+    
+	<div id ="date"> Aug 03, 2015 05:03 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Robot hitchiker attacked, abandoned... Nokia sells Here mapping business to German car makers... Spy-spotting software comes to Wall St... and more tech news</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/hardware-systems/95313/new-google-glass-businesses-will-reportedly-attach-other-eyewear" title="New Google Glass for businesses will reportedly attach to other eyewear">New Google Glass for businesses will reportedly attach to other eyewear</a></h3>
+    
+	<div id ="date"> Jul 31, 2015 09:32 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>The next edition of Google Glass will target enterprises and feature an attachable design, a news report suggests, shedding new light on rumors that have been circulating over the past several months.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> <a href="/hardware-systems-0"><div class="more-link"></div></a>
+<div class="clear"></div></div></div><div class="panel-separator"></div><div class="panel-pane" id="topic_block">
+<div id="topic_header"><h2 class="title"><a href="/networking">Networking</a></h2>
+<a href="/taxonomy/term/616/feed"><div id="feed"></div></a>
+<div class="clear"></div></div><div id="content"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-block_1 view-dom-id-6">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/networking/95982/future-wearables-network-could-be-you" title="For future wearables, the network could be you">For future wearables, the network could be you</a></h3>
+    
+	<div id ="date"> Sep 02, 2015 10:45 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>UC San Diego researchers have developed a magnetic-field network to link wearable devices through the user's body.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/networking/95949/ericssons-next-gen-lte-targets-faster-mobile-networks-and-iot" title="Ericsson&#039;s next-gen LTE targets faster mobile networks and IoT">Ericsson&#039;s next-gen LTE targets faster mobile networks and IoT</a></h3>
+    
+	<div id ="date"> Sep 01, 2015 12:59 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>LTE with faster upload speeds, using unlicensed spectrum to speed up downloads and customized for the Internet of Things, are some of the things Ericsson is working on for next year.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/networking/95936/cool-costly-google-onhub-review-roundup" title="Cool but costly: Google OnHub review roundup">Cool but costly: Google OnHub review roundup</a></h3>
+    
+	<div id ="date"> Aug 31, 2015 03:22 am | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>The initial round of reviews for OnHub, Google's fancified entry into the home router market, are out, and the consensus is that it's a neat gadget, but possibly not worth the $200 you'll fork over to get it.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/networking/95934/whos-really-charge-cisco" title="Who&#039;s really in charge at Cisco?">Who&#039;s really in charge at Cisco?</a></h3>
+    
+	<div id ="date"> Aug 31, 2015 12:58 am | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Key innovators continue to report to Chambers, not new CEO Robbins</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/node/95837" title="iPhone 7 Rumor Rollup: Think fast, think pink and think small">iPhone 7 Rumor Rollup: Think fast, think pink and think small</a></h3>
+    
+	<div id ="date"> Aug 22, 2015 04:36 am | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Time's a-ticking, and we're getting closer and closer to what is almost certainly the launch of the iPhone 6S and 6S Plus, though not the iPhone 7. The latest leaks, reported by Chinese website Daliulian, say that the new models to be revealed on September 9 will be available in a metallic pink finish for the first time. Reese Witherspoon's character from Legally Blond ought to be thrilled.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> <a href="/networking"><div class="more-link"></div></a>
+<div class="clear"></div></div></div><div class="panel-separator"></div><div class="panel-pane" id="topic_block">
+<div id="topic_header"><h2 class="title"><a href="/virtualization">Virtualization</a></h2>
+<a href="/taxonomy/term/780/feed"><div id="feed"></div></a>
+<div class="clear"></div></div><div id="content"><div class="view view-taxonomy-term view-id-taxonomy_term view-display-id-block_1 view-dom-id-7">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/virtualization/95978/microsoft-bulks-azure-virtual-machines" title="Microsoft bulks up Azure virtual machines">Microsoft bulks up Azure virtual machines</a></h3>
+    
+	<div id ="date"> Sep 02, 2015 02:08 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>The new Microsoft Azure GS-series virtual machines are made for demanding database-driven workloads.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/virtualization/95955/vmware-pitches-network-virtualization-better-security" title="VMware pitches network virtualization for better security">VMware pitches network virtualization for better security</a></h3>
+    
+	<div id ="date"> Sep 01, 2015 07:23 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>While the idea of network virtualization has been around a while, it has not been adopted in the enterprise as quickly as virtualization for servers. Now, VMware, one of the biggest proponents of virtualizing the entire data center, is touting one tangible benefit to the virtual network: better security.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/virtualization/95940/vmware-touts-new-technologies-managing-containers-and-live-migration-virtual-ma" title="VMware touts new technologies for managing containers and live migration of virtual machines">VMware touts new technologies for managing containers and live migration of virtual machines</a></h3>
+    
+	<div id ="date"> Aug 31, 2015 07:06 am | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>At the VMworld conference in San Francisco, VMware demonstrated how to move a live virtual machine across two different data centers, and showed off its new container management software.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/virtualization/95935/vmware-ceo-gelsinger-still-committed-emc-federation" title="VMware CEO Gelsinger still committed to EMC Federation">VMware CEO Gelsinger still committed to EMC Federation</a></h3>
+    
+	<div id ="date"> Aug 31, 2015 02:30 am | <a href="http://www.networkworld.com">Network World </a></div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>Will the EMC Federation break up, as a flurry of recent reports have suggested? VMware CEO Pat Gelsinger, for one, believes one of the most prominent alliances of companies in the technology industry is still the best management structure.</p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    <div class="articleTeaser">   
+	<h3 id="title"><a href="/virtualization/95929/vmware-rounds-out-data-center-virtualization-stack" title="VMware rounds out data center virtualization stack">VMware rounds out data center virtualization stack</a></h3>
+    
+	<div id ="date"> Aug 30, 2015 10:20 pm | IDG News Service</div>
+	
+	<div id="articleContent">
+		<!-- google_ad_section_start --><p>VMware has updated its stack of data center virtualization software with capabilities that allow an organization to run an entire data center operation and related cloud services as a single unified entity. </p>
+<!-- google_ad_section_end -->	</div>
+</div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> <a href="/virtualization"><div class="more-link"></div></a>
+<div class="clear"></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+			  <div style="clear:both;"></div>
+			  <div id="block-adsense_managed-2" class="block block-adsense_managed region-odd odd region-count-1 count-81">
+
+
+  <div class="content"><div class='adsense adsense_managed'>
+<script type="text/javascript"><!--
+google_ad_client = "pub-7643913824060699";
+/* 728x90 */
+google_ad_slot = "1128139248";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div></div>
+  
+</div>
+<div id="block-block-15" class="block block-block region-even even region-count-2 count-82">
+
+
+  <div class="content"><!-- begin collective media tag -->
+      <script language="JavaScript" type="text/javascript">
+       var _companysize = OPG.Demandbase.getDbaseVar('company_size');
+       var _forbes2000 = OPG.Demandbase.getDbaseVar('forbes_2000');
+       var _compsz = "cu";
+       var _g2000 = "gn";
+
+       if(typeof _companysize != 'undefined'){
+       switch(_companysize) {
+       		case "small": 
+       			_compsz="cs";
+       			break;
+       		case "mid-market": 
+       			_compsz="cm";
+       			break;
+       		case "enterprise": 
+       			_compsz="ce";
+       			break;
+       	}
+       }
+
+       if(typeof _forbes2000 != 'undefined' && _forbes2000 == "yes") _g2000 = "gy";
+
+       document.write('<div style="display:none;"><img src="http://a.collective-media.net/datapair?net=idgt&segs='+_g2000+','+_compsz+'&op=add" width="0" height="0"></div>');
+       </script>
+     <!-- end collective media tag --></div>
+  
+</div>
+<div id="block-doubleclick_ads-catfish" class="block block-doubleclick_ads region-odd odd region-count-3 count-83">
+
+
+  <div class="content">
+
+
+<!-- begin Catfish ad --> 
+<div id="catfish"><script type="text/javascript">
+  googletag.cmd.push(function() {
+    googletag.display("catfish");
+  });
+</script>
+</div><!-- end Catfish ad -->
+
+
+</div>
+  
+</div>
+			</div>
+		</div>
+	</div>
+
+  		<div id="footer_wrap">
+			<div id="footer_shadow_left"></div>
+			<div id="footer">
+		        <div id="footer_logo"></div>
+		        <div id="footer_text">
+		            <div id="footer_links_middle">
+		                <a href="/contact">Contact Us</a>  |  <a href="/about">About Us</a>  |  <a href="http://careers.idg.com/" target="_blank">Careers @ IDG</a>  |   <a href="/newsletter?source=itnnla_footer">Newsletters</a>  |  <a href="/privacy">Privacy Policy</a>  |  <a href="/advertise">Advertise</a>  |  <a href="http://ITwhitepapers.com">ITwhitepapers</a> |  <a href="/about-adchoices" class="adchoices_sm">AdChoices</a>
+		            </div>
+		            <div id="footer_right">
+		                Copyright &copy; 2015 <a href="http://www.itnews.com">ITNews</a>
+		            </div>
+		         </div>
+		     </div>
+		</div>
+                          
+  	
+
+<!-- Begin Category Pixels -->
+      <script type="text/javascript"></script>
+<!-- End Category Pixels -->
+
+<script type="text/javascript" src="/sites/all/modules/thirdparty/adsense/contrib/adsense_click/adsense_click.js"></script><script type="text/javascript" src="/sites/all/modules/thirdparty/google_cse/google_cse.js?b"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "googleCSE": { "language": "en" } });
+//--><!]]>
+</script>
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-203426h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-203426h&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+</div>
+<!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript">
+
+//CMS-Specific
+var meta_keywords = $("meta[name=keywords]").attr("content");
+bk_addPageCtx("cmscatnms", meta_keywords);
+bk_addPageCtx("cmpy", "[]");
+bk_doJSTag(14423, 10);
+
+</script>
+<!-- End BlueKai Tag -->
+</body>
+
+</html>

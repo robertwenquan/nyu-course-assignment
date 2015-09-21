@@ -1,0 +1,1457 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+
+
+<html>
+
+
+
+<head>
+
+<title>Neural Networks</title>
+
+</head>
+
+
+
+<body background="report.chalk.jpg">
+
+<div align=center><center>
+
+<table width=70%>
+
+<tr><td><p align=center><font size=6><strong><img src="report.shield.gif" align=bottom width=105 height=113> </strong></font></p>
+
+</td><td valign=top><p align=center>&#160; </p>
+
+<p align=center><font size=6><strong>NEURAL NETWORKS</strong></font> <br>
+
+by Christos Stergiou and Dimitrios Siganos <br>
+
+<br>
+
+</p>
+
+</td></tr>
+
+</table>
+
+</center></div>
+
+<p>&#160; </p>
+
+<h2>Abstract</h2>
+
+<p>This report is an introduction to Artificial Neural Networks. The various types of neural networks are explained and demonstrated, applications of 
+
+neural networks like ANNs in medicine are described, and a detailed historical background is provided. The connection between the artificial and the 
+
+real thing is also investigated and explained. Finally, the mathematical models involved are presented and demonstrated. </p>
+
+<h2><a name="Contents">Contents</a>:</h2>
+
+<dl>
+
+<dt><strong>1. </strong><a href="#Introduction to neural networks"><strong>Introduction to Neural Networks</strong></a></dt>
+
+<dd><strong>1.1 </strong><a href="#What is a Neural Network"><strong>What is a neural network? </strong></a></dd>
+
+<dd><strong>1.2 </strong><a href="#Historical background"><strong>Historical background</strong></a></dd>
+
+<dd><strong>1.3 </strong><a href="#Why use neural networks"><strong>Why use neural networks? </strong></a></dd>
+
+<dd><strong>1.4 </strong><a href="#Neural networks versus conventional computers"><strong>Neural networks versus conventional computers - a comparison</strong></a><strong> </strong></dd>
+
+<dt>&#160;</dt>
+
+<dt><strong>2. </strong><a href="#Human and Artificial Neurones - investigating the similarities"><strong>Human and Artificial Neurones - investigating the similarities</strong></a></dt>
+
+<dd><strong>2.1 </strong><a href="#How the Human Brain Learns"><strong>How the Human Brain Learns?</strong></a></dd>
+
+<dd><strong>2.2 </strong><a href="# From Human Neurones to Artificial Neurones"><strong>From Human Neurones to Artificial Neurones</strong></a></dd>
+
+<dt><strong>&#160;</strong></dt>
+
+<dt><strong>3. </strong><a href="#An engineering approach"><strong>An Engineering approach</strong></a><strong> </strong></dt>
+
+<dd><strong>3.1 </strong><a href="#A simple neuron"><strong>A simple neuron - description of a simple neuron</strong></a><strong> </strong></dd>
+
+<dd><strong>3.2 </strong><a href="# Firing rules"><strong>Firing rules - How neurones make decisions</strong></a></dd>
+
+<dd><strong>3.3 </strong><a href="#Pattern Recognition - an example"><strong>Pattern recognition - an example</strong></a></dd>
+
+<dd><strong>3.4 </strong><a href="#A more complicated neuron"><strong>A more complicated neuron </strong></a></dd>
+
+</dl>
+
+<dl>
+
+<dt><strong>4. </strong><a href="#Architecture of neural networks"><strong>Architecture of neural networks</strong></a><strong> </strong></dt>
+
+<dd><strong>4.1 </strong><a href="#Feed-forward networks"><strong>Feed-forward (associative) networks </strong></a></dd>
+
+<dd><strong>4.2 </strong><a href="#Feedback networks"><strong>Feedback (autoassociative) networks</strong></a></dd>
+
+<dd><strong>4.3 </strong><a href="#Network layers"><strong>Network layers</strong></a></dd>
+
+<dd><strong>4.4 </strong><a href="#Perceptrons"><strong>Perceptrons</strong></a><strong> </strong></dd>
+
+</dl>
+
+<dl>
+
+<dt><strong>5. </strong><a href="#The Learning Process"><strong>The Learning Process</strong></a></dt>
+
+<dd><strong>&#160;5.1 </strong><a href="#Transfer Function"><strong>Transfer Function</strong></a></dd>
+
+<dd><strong>5.2 </strong><a href="#An Example to illustrate the above teaching procedure"><strong>An Example to illustrate the above teaching procedure</strong></a></dd>
+
+<dd><strong>5.3 </strong><a href="#The Back-Propagation Algorithm"><strong>The Back-Propagation Algorithm</strong></a></dd>
+
+</dl>
+
+<dl>
+
+<dt><strong>6. </strong><a href="#Applications of neural networks"><strong>Applications of neural networks</strong></a><strong> </strong></dt>
+
+<dd><strong>6.1 </strong><a href="#Neural Networks in Practice "><strong>Neural networks in practice</strong></a></dd>
+
+<dd><strong>6.2 </strong><a href="#Neural networks in medicine"><strong>Neural networks in medicine </strong></a></dd>
+
+<dd><dl>
+
+<dd><strong>6.2.1 </strong><a href="#Modelling and Diagnosing the Cardiovascular System"><strong>Modelling and Diagnosing the Cardiovascular System </strong></a></dd>
+
+</dl>
+
+</dd>
+
+<dd><dl>
+
+<dd><strong>6.2.2 </strong><a href="#Electronic noses"><strong>Electronic noses - detection and reconstruction of odours by ANNs</strong></a><strong> </strong></dd>
+
+</dl>
+
+</dd>
+
+<dd><dl>
+
+<dd><strong>6.2.3 </strong><a href="#Instant Physician"><strong>Instant Physician - a commercial neural net diagnostic program</strong></a><strong> </strong></dd>
+
+<dt><strong>6.3 </strong><a href="#Neural Networks in business"><strong>Neural networks in business</strong></a></dt>
+
+<dd><strong>6.3.1 </strong><a href="#Marketing"><strong>Marketing</strong></a></dd>
+
+<dd><strong>6.3.2 </strong><a href="#Credit Evaluation"><strong>Credit evaluation</strong></a></dd>
+
+</dl>
+
+</dd>
+
+</dl>
+
+<dl>
+
+<dt><strong>7. </strong><a href="#Conclusion"><strong>Conclusion</strong></a><strong> </strong></dt>
+
+<dt>&#160;</dt>
+
+<dt><a href="#References"><strong>References</strong></a></dt>
+
+<dt>&#160;</dt>
+
+<dt><a href="#Appendix A - Historical background in detail"><strong>Appendix A - Historical background in detail</strong></a></dt>
+
+<dt><a href="#Appendix B - The back-propagation Algorithm - a mathematical approach"><strong>Appendix B - The back propogation algorithm - mathematical approach</strong></a></dt>
+
+<dt><a href="#Appendix C - References used throughout the review"><strong>Appendix C - References used throughout the review</strong></a></dt>
+
+</dl>
+
+<p align=center><img src="report.notebook.gif" align=bottom width=1024 height=26></p>
+
+<h2>1. <a name="Introduction to neural networks">Introduction to neural networks</a></h2>
+
+<h3>1.1 <a name="What is a Neural Network">What is a Neural Network</a>?</h3>
+
+<p>An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, 
+
+process information. The key element of this paradigm is the novel structure of the information processing system. It is composed of a large number of 
+
+highly interconnected processing elements (neurones) working in unison to solve specific problems. ANNs, like people, learn by example. An ANN is 
+
+configured for a specific application, such as pattern recognition or data classification, through a learning process. Learning in biological systems 
+
+involves adjustments to the synaptic connections that exist between the neurones. This is true of ANNs as well. </p>
+
+<h3>1.2 <a name="Historical background">Historical background</a></h3>
+
+<p>Neural network simulations appear to be a recent development. However, this field was established before the advent of computers, and has survived 
+
+at least one major setback and several eras. </p>
+
+<p>Many importand advances have been boosted by the use of inexpensive computer emulations. Following an initial period of enthusiasm, the field 
+
+survived a period of frustration and disrepute. During this period when funding and professional support was minimal, important advances were made 
+
+by relatively few reserchers. These pioneers were able to develop convincing technology which surpassed the limitations identified by Minsky and 
+
+Papert. Minsky and Papert, published a book (in 1969) in which they summed up a general feeling of frustration (against neural networks) among 
+
+researchers, and was thus accepted by most without further analysis. Currently, the neural network field enjoys a resurgence of interest and a 
+
+corresponding increase in funding. </p>
+
+<p>For a more detailed description of the history click <a href="#Appendix A - Historical background in detail">here</a> </p>
+
+<p>The first artificial neuron was produced in 1943 by the neurophysiologist Warren McCulloch and the logician Walter Pits. But the technology available 
+
+at that time did not allow them to do too much. </p>
+
+<h3>1.3 <a name="Why use neural networks">Why use neural networks</a>?</h3>
+
+<p>Neural networks, with their remarkable ability to derive meaning from complicated or imprecise data, can be used to extract patterns and detect 
+
+trends that are too complex to be noticed by either humans or other computer techniques. A trained neural network can be thought of as an &quot;expert&quot; 
+
+in the category of information it has been given to analyse. This expert can then be used to provide projections given new situations of interest and 
+
+answer &quot;what if&quot; questions.<br>
+
+Other advantages include: </p>
+
+<ol TYPE="1">
+
+<li>Adaptive learning: An ability to learn how to do tasks based on the data given for training or initial experience. </li>
+
+<li>Self-Organisation: An ANN can create its own organisation or representation of the information it receives during learning time. </li>
+
+<li>Real Time Operation: ANN computations may be carried out in parallel, and special hardware devices are being designed and manufactured 
+
+which take advantage of this capability. </li>
+
+<li>Fault Tolerance via Redundant Information Coding: Partial destruction of a network leads to the corresponding degradation of performance. 
+
+However, some network capabilities may be retained even with major network damage. </li>
+
+</ol>
+
+<h3>1.4 <a name="Neural networks versus conventional computers">Neural networks versus conventional computers</a></h3>
+
+<p>Neural networks take a different approach to problem solving than that of conventional computers. Conventional computers use an algorithmic 
+
+approach i.e. the computer follows a set of instructions in order to solve a problem. Unless the specific steps that the computer needs to follow are 
+
+known the computer cannot solve the problem. That restricts the problem solving capability of conventional computers to problems that we already 
+
+understand and know how to solve. But computers would be so much more useful if they could do things that we don't exactly know how to do. </p>
+
+<p>Neural networks process information in a similar way the human brain does. The network is composed of a large number of highly interconnected 
+
+processing elements(neurones) working in parallel to solve a specific problem. Neural networks learn by example. They cannot be programmed to 
+
+perform a specific task. The examples must be selected carefully otherwise useful time is wasted or even worse the network might be functioning 
+
+incorrectly. The disadvantage is that because the network finds out how to solve the problem by itself, its operation can be unpredictable.</p>
+
+<p>On the other hand, conventional computers use a cognitive approach to problem solving; the way the problem is to solved must be known and stated 
+
+in small unambiguous instructions. These instructions are then converted to a high level language program and then into machine code that the 
+
+computer can understand. These machines are totally predictable; if anything goes wrong is due to a software or hardware fault.</p>
+
+<p>Neural networks and conventional algorithmic computers are not in competition but complement each other. There are tasks are more suited to an 
+
+algorithmic approach like arithmetic operations and tasks that are more suited to neural networks. Even more, a large number of tasks, require 
+
+systems that use a combination of the two approaches (normally a conventional computer is used to supervise the neural network) in order to perform 
+
+at maximum efficiency. </p>
+
+<p align=center><i>Neural networks do not perform miracles. But if used sensibly they can produce some amazing results. </i></p>
+
+<p align=left><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<p align=center>&#160;<img src="report.eye_bar.gif" align=bottom width=560 height=11></p>
+
+<p align=left>&#160; </p>
+
+<h2>2. <a name="Human and Artificial Neurones - investigating the similarities">Human and Artificial Neurones - investigating the similarities</a></h2>
+
+<h3>2.1 <a name="How the Human Brain Learns">How the Human Brain Learns</a>?</h3>
+
+<p>Much is still unknown about how the brain trains itself to process information, so theories abound. In the human brain, a typical neuron collects signals 
+
+from others through a host of fine structures called <em>dendrites</em>. The neuron sends out spikes of electrical activity through a long, thin stand known as an 
+
+<em>axon</em>, which splits into thousands of branches. At the end of each branch, a structure called a <em>synapse</em> converts the activity from the axon into 
+
+electrical effects that inhibit or excite activity from the axon into electrical effects that inhibit or excite activity in the connected neurones. When a 
+
+neuron receives excitatory input that is sufficiently large compared with its inhibitory input, it sends a spike of electrical activity down its axon. Learning 
+
+occurs by changing the effectiveness of the synapses so that the influence of one neuron on another changes.</p>
+
+<p>&#160;</p>
+
+<table width=100%>
+
+<tr><td><p align=center>&#160; </p>
+
+<p align=center><img src="report.neuron.jpg" align=bottom border=2 hspace=1 vspace=1 width=399 height=205> </p>
+
+<p align=center>Components of a neuron </p>
+
+</td><td><p align=center>&#160; </p>
+
+<p align=center><img src="report.synapse.jpg" align=bottom border=2 hspace=1 vspace=1 width=401 height=198> </p>
+
+<p align=center>The synapse </p>
+
+</td></tr>
+
+</table>
+
+<p>&#160; </p>
+
+<h3>2.2<a name=" From Human Neurones to Artificial Neurones"> From Human Neurones to Artificial Neurones</a></h3>
+
+<p>We conduct these neural networks by first trying to deduce the essential features of neurones and their interconnections. We then typically program a 
+
+computer to simulate these features. However because our knowledge of neurones is incomplete and our computing power is limited, our models are 
+
+necessarily gross idealisations of real networks of neurones.</p>
+
+<p align=center><img src="report.artn.jpg" align=bottom border=2 hspace=1 vspace=1 width=400 height=190></p>
+
+<p align=center>The neuron model</p>
+
+<p align=left><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<h2 align=center><img src="report.eye_bar.gif" align=bottom width=560 height=11></h2>
+
+<h2 align=left>3. <a name="An engineering approach">An engineering approach</a></h2>
+
+<h3>3.1 <a name="A simple neuron">A simple neuron</a></h3>
+
+<p>An artificial neuron is a device with many inputs and one output. The neuron has two modes of operation; the training mode and the using mode. In the 
+
+training mode, the neuron can be trained to fire (or not), for particular input patterns. In the using mode, when a taught input pattern is detected at the 
+
+input, its associated output becomes the current output. If the input pattern does not belong in the taught list of input patterns, the firing rule is used to 
+
+determine whether to fire or not.</p>
+
+<p align=center><img src="report.simple_neuron.jpg" align=bottom border=2 width=448 height=183></p>
+
+<p align=center>A simple neuron</p>
+
+<h3>3.2<a name=" Firing rules"> Firing rules</a></h3>
+
+<p><font size=3>The firing rule is an important concept in neural networks and accounts for their high flexibility. A firing rule determines how one calculates whether a 
+
+neuron should fire for any input pattern. It relates to all the input patterns, not only the ones on which the node was trained. </font></p>
+
+<p><font size=3>A simple firing rule can be implemented by using Hamming distance technique. The rule goes as follows: </font></p>
+
+<blockquote>
+
+<p><font size=3>Take a collection of training patterns for a node, some of which cause it to fire (the 1-taught set of patterns) and others which prevent 
+
+it from doing so (the 0-taught set). Then the patterns not in the collection cause the node to fire if, on comparison , they have more 
+
+input elements in common with the 'nearest' pattern in the 1-taught set than with the 'nearest' pattern in the 0-taught set. If there is a tie, 
+
+then the pattern remains in the undefined state. </font></p>
+
+</blockquote>
+
+<p><font size=3>For example, a 3-input neuron is taught to output 1 when the input (X1,X2 and X3) is 111 or 101 and to output 0 when the input is 000 or 001. 
+
+Then, before applying the firing rule, the truth table is; </font></p>
+
+<div align=center><center>
+
+<table border=2>
+
+<tr><td align=center width=10%><font size=3>X1: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X2: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X3: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td></tr>
+
+<tr><td align=center width=10%><font size=3>OUT: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+</table>
+
+</center></div>
+
+<p><font size=3>As an example of the way the firing rule is applied, take the pattern 010. It differs from 000 in 1 element, from 001 in 2 elements, from 101 in 3 
+
+elements and from 111 in 2 elements. Therefore, the 'nearest' pattern is 000 which belongs in the 0-taught set. Thus the firing rule requires that the 
+
+neuron should not fire when the input is 001. On the other hand, 011 is equally distant from two taught patterns that have different outputs and thus the 
+
+output stays undefined (0/1). </font></p>
+
+<p><font size=3>By applying the firing in every column the following truth table is obtained; </font></p>
+
+<div align=center><center>
+
+<table border=2>
+
+<tr><td align=center width=10%><font size=3>X1: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X2: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X3: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td></tr>
+
+<tr><td align=center width=10%><font size=3>OUT: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+</table>
+
+</center></div>
+
+<p><font size=3>The difference between the two truth tables is called the <em>generalisation of the neuron.</em> Therefore the firing rule gives the neuron a sense of similarity 
+
+and enables it to respond 'sensibly' to patterns not seen during training. </font></p>
+
+<p>&#160;</p>
+
+<h3>3.3 <a name="Pattern Recognition - an example">Pattern Recognition - an example</a></h3>
+
+<p><font size=3>An important application of neural networks is pattern recognition. Pattern recognition can be implemented by using a feed-forward (figure 1) neural 
+
+network that has been trained accordingly. During training, the network is trained to associate outputs with input patterns. When the network is used, 
+
+it identifies the input pattern and tries to output the associated output pattern. The power of neural networks comes to life when a pattern that has no 
+
+output associated with it, is given as an input. In this case, the network gives the output that corresponds to a taught input pattern that is least different 
+
+from the given pattern. </font></p>
+
+<p align=center><font size=3><img src="report.photo1.jpg" align=bottom border=2 width=400 height=208> <br>
+
+Figure 1. </font></p>
+
+<p><font size=3>For example:<br>
+
+The network of figure 1 is trained to recognise the patterns T and H. The associated patterns are all black and all white respectively as shown below. </font></p>
+
+<p align=center><font size=3><img src="report.test4.jpg" align=middle hspace=1 vspace=5 width=567 height=97> </font></p>
+
+<p align=center><font size=3>If we represent black squares with 0 and white squares with 1 then the truth tables for the 3 neurones after generalisation are; </font></p>
+
+<div align=center><center>
+
+<table border=2>
+
+<tr><td align=center width=10%><font size=3>X11: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X12: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X13: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td></tr>
+
+<tr><td align=center width=10%><font size=3>OUT: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+</table>
+
+</center></div>
+
+<p align=center><font size=3><strong>Top neuron</strong> </font></p>
+
+<div align=center><center>
+
+<table border=2>
+
+<tr><td align=center width=10%><font size=3>X21: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X22: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X23: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td></tr>
+
+<tr><td align=center width=10%><font size=3>OUT: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0/1 </font></td><td align=center width=10%><font size=3>0 </font></td></tr>
+
+</table>
+
+</center></div>
+
+<p align=center><font size=3><strong>Middle neuron</strong> </font></p>
+
+<div align=center><center>
+
+<table border=2>
+
+<tr><td align=center width=10%><font size=3>X21: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X22: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%><font size=3>X23: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td></tr>
+
+<tr><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td><td align=center width=10%></td></tr>
+
+<tr><td align=center width=10%><font size=3>OUT: </font></td><td align=center width=10%></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>0 </font></td><td align=center width=10%><font size=3>1 </font></td><td align=center width=10%><font size=3>0 </font></td></tr>
+
+</table>
+
+</center></div>
+
+<p align=center><font size=3><strong>Bottom neuron </strong></font></p>
+
+<p align=left>&#160;From the tables it can be seen the following associasions can be extracted:</p>
+
+<p align=center><img src="report.example1.jpg" align=bottom width=260 height=107></p>
+
+<p align=center>In this case, it is obvious that the output should be all blacks since the input pattern is almost the same as the 'T' pattern.</p>
+
+<p align=center><img src="report.example2.jpg" align=bottom width=260 height=107></p>
+
+<p align=center>Here also, it is obvious that the output should be all whites since the input pattern is almost the same as the 'H' pattern.</p>
+
+<p align=center><img src="report.example3.jpg" align=bottom width=308 height=107></p>
+
+<p align=left>Here, the top row is 2 errors away from the a T and 3 from an H. So the top output is black. The middle row is 1 error away from both T and H so 
+
+the output is random. The bottom row is 1 error away from T and 2 away from H. Therefore the output is black. The total output of the network is 
+
+still in favour of the T shape.</p>
+
+<p align=left>&#160;</p>
+
+<h3>3.4 <a name="A more complicated neuron">A more complicated neuron</a></h3>
+
+<p>The previous neuron doesn't do anything that conventional conventional computers don't do already. A more sophisticated neuron (figure 2) is the 
+
+McCulloch and Pitts model (MCP). The difference from the previous model is that the inputs are 'weighted', the effect that each input has at decision 
+
+making is dependent on the weight of the particular input. The weight of an input is a number which when multiplied with the input gives the weighted 
+
+input. These weighted inputs are then added together and if they exceed a pre-set threshold value, the neuron fires. In any other case the neuron does 
+
+not fire. </p>
+
+<p align=center><img src="report.mcp_neuron.jpg" align=bottom border=2 width=448 height=183></p>
+
+<p align=center>Figure 2. An MCP neuron</p>
+
+<p>In mathematical terms, the neuron fires if and only if; </p>
+
+<p align=center>X<font size=2>1</font><font size=3>W</font><font size=2>1</font><font size=3> + X</font><font size=2>2</font><font size=3>W</font><font size=2>2</font><font size=3> + X</font><font size=2>3</font><font size=3>W</font><font size=2>3</font><font size=3> + ... &gt; T </font></p>
+
+<p><font size=3>The addition of input weights and of the threshold makes this neuron a very flexible and powerful one. The MCP neuron has the ability to adapt to a 
+
+particular situation by changing its weights and/or threshold. Various algorithms exist that cause the neuron to 'adapt'; the most used ones are the Delta 
+
+rule and the back error propagation. The former is used in feed-forward networks and the latter in feedback networks. </font></p>
+
+<p><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<p align=center><font size=3><img src="report.eye_bar.gif" align=bottom width=560 height=11></font></p>
+
+<h2 align=left>4 <a name="Architecture of neural networks">Architecture of neural networks</a></h2>
+
+<h3 align=left>4.1 <a name="Feed-forward networks">Feed-forward networks</a></h3>
+
+<p align=left>Feed-forward ANNs (figure 1) allow signals to travel one way only; from input to output. There is no feedback (loops) i.e. the output of any layer 
+
+does not affect that same layer. Feed-forward ANNs tend to be straight forward networks that associate inputs with outputs. They are extensively 
+
+used in pattern recognition. This type of organisation is also referred to as bottom-up or top-down. </p>
+
+<h3 align=left>4.2 <a name="Feedback networks">Feedback networks</a></h3>
+
+<p align=left>Feedback networks (figure 1) can have signals travelling in both directions by introducing loops in the network. Feedback networks are very powerful 
+
+and can get extremely complicated. Feedback networks are dynamic; their 'state' is changing continuously until they reach an equilibrium point. They 
+
+remain at the equilibrium point until the input changes and a new equilibrium needs to be found. Feedback architectures are also referred to as 
+
+interactive or recurrent, although the latter term is often used to denote feedback connections in single-layer organisations. </p>
+
+<table width=100%>
+
+<tr><td><img src="report.multil.jpg" align=bottom border=2 hspace=1 vspace=1 width=400 height=220><p align=center>Figure 4.1 An example of a simple feedforward network </p>
+
+</td><td><img src="report.neural2.jpg" align=bottom border=2 width=450 height=375><p align=center>Figure 4.2 An example of a complicated network </p>
+
+</td></tr>
+
+</table>
+
+<h3>4.3 <a name="Network layers">Network layers</a></h3>
+
+<p>The commonest type of artificial neural network consists of three groups, or layers, of units: a layer of &quot;<strong>input</strong>&quot; units is connected to a layer of &quot;<strong>hidden</strong>&quot; 
+
+units, which is connected to a layer of <strong>&quot;output</strong>&quot; units. (see Figure 4.1)</p>
+
+<blockquote>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> The activity of the input units represents the raw information that is fed into the network.</p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> The activity of each hidden unit is determined by the activities of the input units and the weights on the connections between the 
+
+input and the hidden units.</p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> The behaviour of the output units depends on the activity of the hidden units and the weights between the hidden and output units.</p>
+
+</blockquote>
+
+<p>This simple type of network is interesting because the hidden units are free to construct their own representations of the input. The weights between 
+
+the input and hidden units determine when each hidden unit is active, and so by modifying these weights, a hidden unit can choose what it represents.</p>
+
+<p align=left>We also distinguish single-layer and multi-layer architectures. The single-layer organisation, in which all units are connected to one another, constitutes 
+
+the most general case and is of more potential computational power than hierarchically structured multi-layer organisations. In multi-layer networks, 
+
+units are often numbered by layer, instead of following a global numbering.</p>
+
+<h3>4.4 <a name="Perceptrons">Perceptrons</a></h3>
+
+<p>The most influential work on neural nets in the 60's went under the heading of 'perceptrons' a term coined by Frank Rosenblatt. The perceptron 
+
+(figure 4.4) turns out to be an MCP model ( neuron with weighted inputs ) with some additional, fixed, pre--processing. Units labelled A1, A2, Aj , 
+
+Ap are called association units and their task is to extract specific, localised featured from the input images. Perceptrons mimic the basic idea behind 
+
+the mammalian visual system. They were mainly used in pattern recognition even though their capabilities extended a lot more. </p>
+
+<p align=center><img src="report.perceptron.jpg" align=bottom border=2 width=400 height=255></p>
+
+<p align=center>Figure 4.4</p>
+
+<p>In 1969 Minsky and Papert wrote a book in which they described the limitations of single layer Perceptrons. The impact that the book had was 
+
+tremendous and caused a lot of neural network researchers to loose their interest. The book was very well written and showed mathematically that 
+
+<i>single layer</i> perceptrons could not do some basic pattern recognition operations like determining the parity of a shape or determining whether a shape 
+
+is connected or not. What they did not realised, until the 80's, is that given the appropriate training, multilevel perceptrons can do these operations. </p>
+
+<p><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<h2 align=center><img src="report.eye_bar.gif" align=bottom width=560 height=11></h2>
+
+<h2>5. <a name="The Learning Process">The Learning Process</a></h2>
+
+<p align=left>The memorisation of patterns and the subsequent response of the network can be categorised into two general paradigms:</p>
+
+<blockquote>
+
+<p align=left><img src="report.bullet.gif" align=bottom width=13 height=13> <strong>associative mapping</strong> in which the network learns to produce a particular pattern on the set of input units whenever another 
+
+particular pattern is applied on the set of input units. The associtive mapping can generally be broken down into two mechanisms: <br>
+
+</p>
+
+</blockquote>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><img src="report.greenbal.gif" align=bottom width=14 height=14><em> auto-association</em>: an input pattern is associated with itself and the states of input and output units coincide. This is 
+
+used to provide pattern completition, ie to produce a pattern whenever a portion of it or a distorted pattern is 
+
+presented. In the second case, the network actually stores pairs of patterns building an association between two sets 
+
+of patterns. </p>
+
+<p align=left><br>
+
+<img src="report.greenbal.gif" align=bottom width=14 height=14> <em>hetero-association</em>: is related to two recall mechanisms: </p>
+
+<blockquote>
+
+<p align=left><img src="report.bluedot.gif" align=bottom width=14 height=14> <em>nearest-neighbour</em> recall, where the output pattern produced corresponds to the input pattern 
+
+stored, which is closest to the pattern presented, and </p>
+
+<p align=left><br>
+
+<img src="report.bluedot.gif" align=bottom width=14 height=14> <em>interpolative</em> recall, where the output pattern is a similarity dependent interpolation of the patterns 
+
+stored corresponding to the pattern presented. Yet another paradigm, which is a variant associative 
+
+mapping is classification, ie when there is a fixed set of categories into which the input patterns are to 
+
+be classified. </p>
+
+<p align=left>&#160;</p>
+
+</blockquote>
+
+</blockquote>
+
+</blockquote>
+
+<blockquote>
+
+<p align=left><img src="report.bullet.gif" align=bottom width=13 height=13><strong> regularity detection</strong> in which units learn to respond to particular properties of the input patterns. Whereas in asssociative mapping 
+
+the network stores the relationships among patterns, in regularity detection the response of each unit has a particular 'meaning'. This 
+
+type of learning mechanism is essential for feature discovery and knowledge representation. </p>
+
+</blockquote>
+
+<p align=left>&#160;Every neural network posseses knowledge which is contained in the values of the connections weights. Modifying the knowledge stored in the 
+
+network as a function of experience implies a learning rule for changing the values of the weights.</p>
+
+<p align=center><img src="report.graphic1.jpg" align=middle border=2 hspace=1 vspace=1 width=400 height=200></p>
+
+<p align=left>&#160;</p>
+
+<p align=left>Information is stored in the weight matrix W of a neural network. Learning is the determination of the weights. Following the way learning is 
+
+performed, we can distinguish two major categories of neural networks:</p>
+
+<blockquote>
+
+<p align=left><img src="report.bullet.gif" align=bottom width=13 height=13> <strong>fixed networks</strong> in which the weights cannot be changed, ie dW/dt=0. In such networks, the weights are fixed a priori according to 
+
+the problem to solve.</p>
+
+</blockquote>
+
+<blockquote>
+
+<p align=left><img src="report.bullet.gif" align=bottom width=13 height=13> <strong>adaptive networks</strong> which are able to change their weights, ie dW/dt not= 0.</p>
+
+<p align=left>&#160;</p>
+
+</blockquote>
+
+<p align=left>All learning methods used for adaptive neural networks can be classified into two major categories:</p>
+
+<blockquote>
+
+<p align=left><strong><img src="report.bullet.gif" align=bottom width=13 height=13> Supervised learning</strong> which incorporates an external teacher, so that each output unit is told what its desired response to input 
+
+signals ought to be. During the learning process global information may be required. Paradigms of supervised learning include 
+
+error-correction learning, reinforcement learning and stochastic learning.<br>
+
+An important issue conserning supervised learning is the problem of error convergence, ie the minimisation of error between the 
+
+desired and computed unit values. The aim is to determine a set of weights which minimises the error. One well-known method, which 
+
+is common to many learning paradigms is the least mean square (LMS) convergence.</p>
+
+</blockquote>
+
+<blockquote>
+
+<p align=left><strong><img src="report.bullet.gif" align=bottom width=13 height=13> Unsupervised learning</strong> uses no external teacher and is based upon only local information. It is also referred to as 
+
+self-organisation, in the sense that it self-organises data presented to the network and detects their emergent collective properties. 
+
+Paradigms of unsupervised learning are Hebbian lerning and competitive learning.<br>
+
+Ano2.2 From Human Neurones to Artificial Neuronesther aspect of learning concerns the distinction or not of a seperate phase, 
+
+during which the network is trained, and a subsequent operation phase. We say that a neural network learns off-line if the learning 
+
+phase and the operation phase are distinct. A neural network learns on-line if it learns and operates at the same time. Usually, 
+
+supervised learning is performed off-line, whereas usupervised learning is performed on-line.</p>
+
+</blockquote>
+
+<h4 align=left>&#160;5.1 <a name="Transfer Function">Transfer Function</a></h4>
+
+<p>The behaviour of an ANN (Artificial Neural Network) depends on both the weights and the input-output function (transfer function) that is specified 
+
+for the units. This function typically falls into one of three categories: </p>
+
+<blockquote>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> linear (or ramp)</p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> threshold</p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> sigmoid</p>
+
+</blockquote>
+
+<p>For <strong>linear units</strong>, the output activity is proportional to the total weighted output. </p>
+
+<p>For <strong>threshold units</strong>, the output is set at one of two levels, depending on whether the total input is greater than or less than some threshold value.</p>
+
+<p>For <strong>sigmoid units</strong>, the output varies continuously but not linearly as the input changes. Sigmoid units bear a greater resemblance to real neurones than 
+
+do linear or threshold units, but all three must be considered rough approximations.</p>
+
+<p>To make a neural network that performs some specific task, we must choose how the units are connected to one another (see figure 4.1), and we 
+
+must set the weights on the connections appropriately. The connections determine whether it is possible for one unit to influence another. The weights 
+
+specify the strength of the influence.</p>
+
+<p>We can teach a three-layer network to perform a particular task by using the following procedure:</p>
+
+<ol>
+
+<li>We present the network with training examples, which consist of a pattern of activities for the input units together with the desired pattern of 
+
+activities for the output units.</li>
+
+<li>We determine how closely the actual output of the network matches the desired output. </li>
+
+<li>We change the weight of each connection so that the network produces a better approximation of the desired output.</li>
+
+</ol>
+
+<h4>5.2 <a name="An Example to illustrate the above teaching procedure">An Example to illustrate the above teaching procedure</a>:</h4>
+
+<p>Assume that we want a network to recognise hand-written digits. We might use an array of, say, 256 sensors, each recording the presence or 
+
+absence of ink in a small area of a single digit. The network would therefore need 256 input units (one for each sensor), 10 output units (one for each 
+
+kind of digit) and a number of hidden units.</p>
+
+<p>For each kind of digit recorded by the sensors, the network should produce high activity in the appropriate output unit and low activity in the other 
+
+output units.</p>
+
+<p>To train the network, we present an image of a digit and compare the actual activity of the 10 output units with the desired activity. We then calculate 
+
+the error, which is defined as the square of the difference between the actual and the desired activities. Next we change the weight of each connection 
+
+so as to reduce the error.We repeat this training process for many different images of each different images of each kind of digit until the network 
+
+classifies every image correctly.</p>
+
+<p>To implement this procedure we need to calculate the error derivative for the weight (EW) in order to change the weight by an amount that is 
+
+proportional to the rate at which the error changes as the weight is changed. One way to calculate the EW is to perturb a weight slightly and observe 
+
+how the error changes. But that method is inefficient because it requires a separate perturbation for each of the many weights.</p>
+
+<p>Another way to calculate the EW is to use the Back-propagation algorithm which is described below, and has become nowadays one of the most 
+
+important tools for training neural networks. It was developed independently by two teams, one (Fogelman-Soulie, Gallinari and Le Cun) in France, 
+
+the other (Rumelhart, Hinton and Williams) in U.S.</p>
+
+<h4 align=left>5.3 <a name="The Back-Propagation Algorithm">The Back-Propagation Algorithm</a></h4>
+
+<p>In order to train a neural network to perform some task, we must adjust the weights of each unit in such a way that the error between the desired 
+
+output and the actual output is reduced. This process requires that the neural network compute the error derivative of the weights (<strong>EW</strong>). In other 
+
+words, it must calculate how the error changes as each weight is increased or decreased slightly. The back propagation algorithm is the most widely 
+
+used method for determining the <strong>EW</strong>.</p>
+
+<p>The back-propagation algorithm is easiest to understand if all the units in the network are linear. The algorithm computes each <strong>EW</strong> by first computing 
+
+the <strong>EA</strong>, the rate at which the error changes as the activity level of a unit is changed. For output units, the <strong>EA</strong> is simply the difference between the 
+
+actual and the desired output. To compute the<strong> EA</strong> for a hidden unit in the layer just before the output layer, we first identify all the weights between 
+
+that hidden unit and the output units to which it is connected. We then multiply those weights by the <strong>EA</strong>s of those output units and add the products. 
+
+This sum equals the <strong>EA</strong> for the chosen hidden unit. After calculating all the <strong>EA</strong>s in the hidden layer just before the output layer, we can compute in like 
+
+fashion the <strong>EA</strong>s for other layers, moving from layer to layer in a direction opposite to the way activities propagate through the network. This is what 
+
+gives back propagation its name. Once the <strong>EA</strong> has been computed for a unit, it is straight forward to compute the<strong> EW</strong> for each incoming connection 
+
+of the unit. The<strong> EW</strong> is the product of the EA and the activity through the incoming connection.</p>
+
+<p>Note that for non-linear units, (see Appendix C) the back-propagation algorithm includes an extra step. Before back-propagating, the <strong>EA</strong> must be 
+
+converted into the <strong>EI</strong>, the rate at which the error changes as the total input received by a unit is changed. </p>
+
+<p><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<p align=center><img src="report.eye_bar.gif" align=bottom width=560 height=11></p>
+
+<h2>6. <a name="Applications of neural networks">Applications of neural networks</a></h2>
+
+<h3 align=left>6.1 <a name="Neural Networks in Practice ">Neural Networks in Practice </a></h3>
+
+<p>Given this description of neural networks and how they work, what real world applications are they suited for? Neural networks have broad 
+
+applicability to real world business problems. In fact, they have already been successfully applied in many industries. </p>
+
+<p>Since neural networks are best at identifying patterns or trends in data, they are well suited for prediction or forecasting needs including: </p>
+
+<blockquote>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> sales forecasting </p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> industrial process control </p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> customer research </p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> data validation </p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> risk management </p>
+
+<p><img src="report.bullet.gif" align=bottom width=13 height=13> target marketing </p>
+
+</blockquote>
+
+<p>But to give you some more specific examples; ANN are also used in the following specific paradigms: recognition of speakers in communications; 
+
+diagnosis of hepatitis; recovery of telecommunications from faulty software; interpretation of multimeaning Chinese words; undersea mine detection; 
+
+texture analysis; three-dimensional object recognition; hand-written word recognition; and facial recognition. </p>
+
+<p>&#160;</p>
+
+<h3>6.2 <a name="Neural networks in medicine">Neural networks in medicine</a></h3>
+
+<p><font size=3>Artificial Neural Networks (ANN) are currently a 'hot' research area in medicine and it is believed that they will receive extensive application to 
+
+biomedical systems in the next few years. At the moment, the research is mostly on modelling parts of the human body and recognising diseases from 
+
+various scans (e.g. cardiograms, CAT scans, ultrasonic scans, etc.). </font></p>
+
+<p><font size=3>Neural networks are ideal in recognising diseases using scans since there is no need to provide a specific algorithm on how to identify the disease. 
+
+Neural networks learn by example so the details of how to recognise the disease are not needed. What is needed is a set of examples that are 
+
+representative of all the variations of the disease. The quantity of examples is not as important as the 'quantity'. The examples need to be selected very 
+
+carefully if the system is to perform reliably and efficiently. </font></p>
+
+<h4>6.2.1 <a name="Modelling and Diagnosing the Cardiovascular System">Modelling and Diagnosing the Cardiovascular System</a></h4>
+
+<p><font size=3>Neural Networks are used experimentally to model the human cardiovascular system. Diagnosis can be achieved by building a model of the 
+
+cardiovascular system of an individual and comparing it with the real time physiological measurements taken from the patient. If this routine is carried 
+
+out regularly, potential harmful medical conditions can be detected at an early stage and thus make the process of combating the disease much easier. </font></p>
+
+<p><font size=3>A model of an individual's cardiovascular system must mimic the relationship among physiological variables (i.e., heart rate, systolic and diastolic 
+
+blood pressures, and breathing rate) at different physical activity levels. If a model is adapted to an individual, then it becomes a model of the physical 
+
+condition of that individual. The simulator will have to be able to adapt to the features of any individual without the supervision of an expert. This calls 
+
+for a neural network. </font></p>
+
+<p><font size=3>Another reason that justifies the use of ANN technology, is the ability of ANNs to provide sensor fusion which is the combining of values from several 
+
+different sensors. Sensor fusion enables the ANNs to learn complex relationships among the individual sensor values, which would otherwise be lost if 
+
+the values were individually analysed. In medical modelling and diagnosis, this implies that even though each sensor in a set may be sensitive only to a 
+
+specific physiological variable, ANNs are capable of detecting complex medical conditions by fusing the data from the individual biomedical sensors. </font></p>
+
+<h4><font size=3>6.2.2 </font><a name="Electronic noses"><font size=3>Electronic noses</font></a></h4>
+
+<p><font size=3>ANNs are used experimentally to implement electronic noses. Electronic noses have several potential applications in telemedicine. Telemedicine is the 
+
+practice of medicine over long distances via a communication link. The electronic nose would identify odours in the remote surgical environment. 
+
+These identified odours would then be electronically transmitted to another site where an door generation system would recreate them. Because the 
+
+sense of smell can be an important sense to the surgeon, telesmell would enhance telepresent surgery. <br>
+
+<i>For more information on telemedicine and telepresent surgery click </i></font><a href="http://www-students.doc.ic.ac.uk/~cbp/article2.html"><font size=3><i>here</i></font></a><font size=3><i>.</i> </font></p>
+
+<h4><font size=3>6.2.3 </font><a name="Instant Physician"><font size=3>Instant Physician</font></a></h4>
+
+<p><font size=3>An application developed in the mid-1980s called the &quot;instant physician&quot; trained an autoassociative memory neural network to store a large number of 
+
+medical records, each of which includes information on symptoms, diagnosis, and treatment for a particular case. After training, the net can be 
+
+presented with input consisting of a set of symptoms; it will then find the full stored pattern that represents the &quot;best&quot; diagnosis and treatment. </font></p>
+
+<p>&#160;</p>
+
+<h3>6.3 <a name="Neural Networks in business">Neural Networks in business</a></h3>
+
+<p><font size=3>Business is a diverted field with several general areas of specialisation such as accounting or financial analysis. Almost any neural network application 
+
+would fit into one business area or financial analysis. <br>
+
+There is some potential for using neural networks for business purposes, including resource allocation and scheduling. There is also a strong potential 
+
+for using neural networks for database mining, that is, searching for patterns implicit within the explicitly stored information in databases. Most of the 
+
+funded work in this area is classified as proprietary. Thus, it is not possible to report on the full extent of the work going on. Most work is applying 
+
+neural networks, such as the Hopfield-Tank network for optimization and scheduling. </font></p>
+
+<h4><font size=3>6.3.1 </font><a name="Marketing"><font size=3>Marketing</font></a></h4>
+
+<p><font size=3>There is a marketing application which has been integrated with a neural network system. The Airline Marketing Tactician (a trademark abbreviated 
+
+as AMT) is a computer system made of various intelligent technologies including expert systems. A feedforward neural network is integrated with the 
+
+AMT and was trained using back-propagation to assist the marketing control of airline seat allocations. The adaptive neural approach was amenable 
+
+to rule expression. Additionaly, the application's environment changed rapidly and constantly, which required a continuously adaptive solution. The 
+
+system is used to monitor and recommend booking advice for each departure. Such information has a direct impact on the profitability of an airline 
+
+and can provide a technological advantage for users of the system. [Hutchison &amp; Stephens, 1987]</font></p>
+
+<p><font size=3>While it is significant that neural networks have been applied to this problem, it is also important to see that this intelligent technology can be integrated 
+
+with expert systems and other approaches to make a functional system. Neural networks were used to discover the influence of undefined interactions 
+
+by the various variables. While these interactions were not defined, they were used by the neural system to develop useful conclusions. It is also 
+
+noteworthy to see that neural networks can influence the bottom line.</font></p>
+
+<h4><font size=3>6.3.2 </font><a name="Credit Evaluation"><font size=3>Credit Evaluation</font></a></h4>
+
+<p><font size=3>The HNC company, founded by Robert Hecht-Nielsen, has developed several neural network applications. One of them is the Credit Scoring system 
+
+which increase the profitability of the existing model up to 27%. The HNC neural systems were also applied to mortgage screening. A neural network 
+
+automated mortgage insurance underwritting system was developed by the Nestor Company. This system was trained with 5048 applications of 
+
+which 2597 were certified. The data related to property and borrower qualifications. In a conservative mode the system agreed on the underwritters 
+
+on 97% of the cases. In the liberal model the system agreed 84% of the cases. This is system run on an Apollo DN3000 and used 250K memory 
+
+while processing a case file in approximately 1 sec.</font></p>
+
+<p><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<p align=center><font size=3><img src="report.eye_bar.gif" align=bottom width=560 height=11></font></p>
+
+<h2>7. <a name="Conclusion">Conclusion</a></h2>
+
+<p><font size=3>The computing world has a lot to gain fron neural networks. Their ability to learn by example makes them very flexible and powerful. Furthermore 
+
+there is no need to devise an algorithm in order to perform a specific task; i.e. there is no need to understand the internal mechanisms of that task. 
+
+They are also very well suited for real time systems because of their fast responseand computational times which are due to their parallel architecture. </font></p>
+
+<p><font size=3>Neural networks also contribute to other areas of research such as neurology and psychology. They are regularly used to model parts of living 
+
+organisms and to investigate the internal mechanisms of the brain.</font></p>
+
+<p><font size=3>Perhaps the most exciting aspect of neural networks is the possibility that some day 'consious' networks might be produced. There is a number of 
+
+scientists arguing that conciousness is a 'mechanical' property and that 'consious' neural networks are a realistic possibility.</font></p>
+
+<p><font size=3>Finally, I would like to state that even though neural networks have a huge potential we will only get the best of them when they are intergrated with 
+
+computing, AI, fuzzy logic and related subjects.</font></p>
+
+<p>&#160;<a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<h2 align=center><img src="report.eye_bar.gif" align=bottom width=560 height=11></h2>
+
+<h2><a name="References">References</a>:</h2>
+
+<ol>
+
+<li>An introduction to neural computing. Aleksander, I. and Morton, H. 2nd edition<br>
+
+</li>
+
+<li>Neural Networks at Pacific Northwest National Laboratory<br>
+
+<a href="http://www.emsl.pnl.gov:2080/docs/cie/neural/neural.homepage.html">http://www.emsl.pnl.gov:2080/docs/cie/neural/neural.homepage.html</a> <br>
+
+</li>
+
+<li>Industrial Applications of Neural Networks (research reports Esprit, I.F.Croall, J.P.Mason) <br>
+
+</li>
+
+<li>A Novel Approach to Modelling and Diagnosing the Cardiovascular System<br>
+
+<a href="http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.wcnn95.abs.html">http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.wcnn95.abs.html</a> <br>
+
+</li>
+
+<li>Artificial Neural Networks in Medicine<br>
+
+<a href="http://www.emsl.pnl.gov:2080/docs/cie/techbrief/NN.techbrief.html">http://www.emsl.pnl.gov:2080/docs/cie/techbrief/NN.techbrief.ht</a> <br>
+
+</li>
+
+<li>Neural Networks by Eric Davalo and Patrick Naim <br>
+
+</li>
+
+<li>Learning internal representations by error propagation by Rumelhart, Hinton and Williams (1986). <br>
+
+</li>
+
+<li>Klimasauskas, CC. (1989). The 1989 Neuro Computing Bibliography. Hammerstrom, D. (1986). A Connectionist/Neural Network 
+
+Bibliography. <br>
+
+</li>
+
+<li>DARPA Neural Network Study (October, 1987-February, 1989). MIT Lincoln Lab. Neural Networks, Eric Davalo and Patrick Naim <br>
+
+</li>
+
+<li>Assimov, I (1984, 1950), Robot, Ballatine, New York. <br>
+
+</li>
+
+<li>Electronic Noses for Telemedicine<br>
+
+<a href="http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.ccc95.abs.html">http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.ccc95.abs.html</a><br>
+
+</li>
+
+<li>Pattern Recognition of Pathology Images<br>
+
+<a href="http://kopernik-eth.npac.syr.edu:1200/Task4/pattern.html">http://kopernik-eth.npac.syr.edu:1200/Task4/pattern.html</a> </li>
+
+</ol>
+
+<p>&nbsp;</p>
+
+<p><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<p align=center>&#160;<img src="report.notebook.gif" align=bottom width=1024 height=26></p>
+
+<h2><a name="Appendix A - Historical background in detail">Appendix A - Historical background in detail</a></h2>
+
+<p>The history of neural networks that was described above can be divided into several periods:<br>
+
+</p>
+
+<ol TYPE="1">
+
+<li><strong>First Attempts:</strong> There were some initial simulations using formal logic. McCulloch and Pitts (1943) developed models of neural networks 
+
+based on their understanding of neurology. These models made several assumptions about how neurons worked. Their networks were based 
+
+on simple neurons which were considered to be binary devices with fixed thresholds. The results of their model were simple logic functions such 
+
+as &quot;a or b&quot; and &quot;a and b&quot;. Another attempt was by using computer simulations. Two groups (Farley and Clark, 1954; Rochester, Holland, 
+
+Haibit and Duda, 1956). The first group (IBM reserchers) maintained closed contact with neuroscientists at McGill University. So whenever 
+
+their models did not work, they consulted the neuroscientists. This interaction established a multidiscilinary trend which continues to the present 
+
+day. <br>
+
+</li>
+
+<li><strong>Promising &amp; Emerging Technology:</strong> Not only was neroscience influential in the development of neural networks, but psychologists and 
+
+engineers also contributed to the progress of neural network simulations. Rosenblatt (1958) stirred considerable interest and activity in the field 
+
+when he designed and developed the Perceptron. The Perceptron had three layers with the middle layer known as the association layer.This 
+
+system could learn to connect or associate a given input to a random output unit.<br>
+
+Another system was the ADALINE (ADAptive LInear Element) which was developed in 1960 by Widrow and Hoff (of Stanford University). 
+
+The ADALINE was an analogue electronic device made from simple components. The method used for learning was different to that of the 
+
+Perceptron, it employed the Least-Mean-Squares (LMS) learning rule. <br>
+
+</li>
+
+<li><strong>Period of Frustration &amp; Disrepute:</strong> In 1969 Minsky and Papert wrote a book in which they generalised the limitations of single layer 
+
+Perceptrons to multilayered systems. In the book they said: &quot;...our intuitive judgment that the extension (to multilayer systems) is sterile&quot;. The 
+
+significant result of their book was to eliminate funding for research with neural network simulations. The conclusions supported the 
+
+disenhantment of reserchers in the field. As a result, considerable prejudice against this field was activated. <br>
+
+</li>
+
+<li><strong>Innovation:</strong> Although public interest and available funding were minimal, several researchers continued working to develop neuromorphically 
+
+based computaional methods for problems such as pattern recognition. <br>
+
+During this period several paradigms were generated which modern work continues to enhance.Grossberg's (Steve Grossberg and Gail 
+
+Carpenter in 1988) influence founded a school of thought which explores resonating algorithms. They developed the ART (Adaptive 
+
+Resonance Theory) networks based on biologically plausible models. Anderson and Kohonen developed associative techniques independent 
+
+of each other. Klopf (A. Henry Klopf) in 1972, developed a basis for learning in artificial neurons based on a biological principle for neuronal 
+
+learning called heterostasis. <br>
+
+Werbos (Paul Werbos 1974) developed and used the back-propagation learning method, however several years passed before this approach 
+
+was popularized. Back-propagation nets are probably the most well known and widely applied of the neural networks today. In essence, the 
+
+back-propagation net. is a Perceptron with multiple layers, a different thershold function in the artificial neuron, and a more robust and capable 
+
+learning rule.<br>
+
+Amari (A. Shun-Ichi 1967) was involved with theoretical developments: he published a paper which established a mathematical theory for a 
+
+learning basis (error-correction method) dealing with adaptive patern classification. While Fukushima (F. Kunihiko) developed a step wise 
+
+trained multilayered neural network for interpretation of handwritten characters. The original network was published in 1975 and was called the 
+
+Cognitron. <br>
+
+</li>
+
+<li><strong>Re-Emergence:</strong> Progress during the late 1970s and early 1980s was important to the re-emergence on interest in the neural network field. 
+
+Several factors influenced this movement. For example, comprehensive books and conferences provided a forum for people in diverse fields 
+
+with specialized technical languages, and the response to conferences and publications was quite positive. The news media picked up on the 
+
+increased activity and tutorials helped disseminate the technology. Academic programs appeared and courses were inroduced at most major 
+
+Universities (in US and Europe). Attention is now focused on funding levels throughout Europe, Japan and the US and as this funding becomes 
+
+available, several new commercial with applications in industry and finacial institutions are emerging. <br>
+
+</li>
+
+<li><strong>Today: </strong>Significant progress has been made in the field of neural networks-enough to attract a great deal of attention and fund further research. 
+
+Advancement beyond current commercial applications appears to be possible, and research is advancing the field on many fronts. Neurally 
+
+based chips are emerging and applications to complex problems developing. Clearly, today is a period of transition for neural network 
+
+technology. </li>
+
+</ol>
+
+<p>&#160; <a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<h2><a name="Appendix B - The back-propagation Algorithm - a mathematical approach">Appendix B - The back-propagation Algorithm - a mathematical approach</a></h2>
+
+<p>Units are connected to one another. Connections correspond to the edges of the underlying directed graph. There is a real number associated with 
+
+each connection, which is called the weight of the connection. We denote by W<font size=1>ij </font><font size=3>the weight of the connection from unit u</font><font size=1>i</font><font size=3> to unit u</font><font size=1>j</font><font size=3>. It is then 
+
+convenient to represent the pattern of connectivity in the network by a weight matrix W whose elements are the weights W</font><font size=1>ij</font><font size=3>. Two types of connection 
+
+are usually distinguished: excitatory and inhibitory. A positive weight represents an excitatory connection whereas a negative weight represents an 
+
+inhibitory connection. The pattern of connectivity characterises the architecture of the network.</font></p>
+
+<p align=center><font size=3><img src="report.neural1.jpg" align=bottom border=2 width=500 height=374></font></p>
+
+<p align=left><font size=3>A unit in the output layer determines its activity by following a two step procedure. </font></p>
+
+<p align=left><font size=3><img src="report.bluedot.gif" align=bottom width=14 height=14> First, it computes the total weighted input x</font><font size=1>j</font><font size=3>, using the formula: </font></p>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><img src="report.equ1.jpg" align=bottom width=87 height=36></p>
+
+</blockquote>
+
+</blockquote>
+
+<blockquote>
+
+<p align=left><font size=3>where y</font><font size=1>i</font><font size=3> is the activity level of the jth unit in the previous layer and W</font><font size=1>ij</font><font size=3> is the weight of the connection between the ith and the jth unit.</font></p>
+
+</blockquote>
+
+<p align=left><font size=3><img src="report.bluedot.gif" align=bottom width=14 height=14> Next, the unit calculates the activity y</font><font size=1>j</font><font size=3> using some function of the total weighted input. Typically we use the sigmoid function:</font></p>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><font size=3><img src="report.equ2.jpg" align=bottom width=83 height=41></font></p>
+
+</blockquote>
+
+</blockquote>
+
+<p align=left><font size=3>Once the activities of all output units have been determined, the network computes the error E, which is defined by the expression:</font></p>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><img src="report.equ3.jpg" align=bottom width=121 height=44></p>
+
+</blockquote>
+
+<p align=left>where y<font size=1>j</font><font size=3> is the activity level of the jth unit in the top layer and d</font><font size=1>j</font><font size=3> is the desired output of the jth unit.</font></p>
+
+</blockquote>
+
+<p align=left>&#160;</p>
+
+<p align=left><font size=3>The back-propagation algorithm consists of four steps:</font></p>
+
+<p align=left><font size=3>1. Compute how fast the error changes as the activity of an output unit is changed. This error derivative (EA) is the difference between the actual and 
+
+the desired activity.</font></p>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><font size=3><img src="report.equ4.jpg" align=bottom width=131 height=47></font></p>
+
+</blockquote>
+
+</blockquote>
+
+<p align=left><font size=3>2. Compute how fast the error changes as the total input received by an output unit is changed. This quantity (EI) is the answer from step 1 multiplied 
+
+by the rate at which the output of a unit changes as its total input is changed.</font></p>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><font size=3><img src="report.equ5.jpg" align=bottom width=257 height=49></font></p>
+
+</blockquote>
+
+</blockquote>
+
+<p align=left><font size=3>3. Compute how fast the error changes as a weight on the connection into an output unit is changed. This quantity (EW) is the answer from step 2 
+
+multiplied by the activity level of the unit from which the connection emanates.</font></p>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><font size=3><img src="report.equ6.jpg" align=bottom width=213 height=49></font></p>
+
+</blockquote>
+
+</blockquote>
+
+<p align=left><font size=3>4. Compute how fast the error changes as the activity of a unit in the previous layer is changed. This crucial step allows back propagation to be 
+
+applied to multilayer networks. When the activity of a unit in the previous layer changes, it affects the activites of all the output units to which it is 
+
+connected. So to compute the overall effect on the error, we add together all these seperate effects on output units. But each effect is simple to 
+
+calculate. It is the answer in step 2 multiplied by the weight on the connection to that output unit.</font></p>
+
+<blockquote>
+
+<blockquote>
+
+<p align=left><font size=3><img src="report.equ7.jpg" align=bottom width=248 height=49></font></p>
+
+</blockquote>
+
+</blockquote>
+
+<p align=left><font size=3>By using steps 2 and 4, we can convert the EAs of one layer of units into EAs for the previous layer. This procedure can be repeated to get the EAs 
+
+for as many previous layers as desired. Once we know the EA of a unit, we can use steps 2 and 3 to compute the EWs on its incoming connections.</font></p>
+
+<p>&#160;<a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+<h2><a name="Appendix C - References used throughout the review">Appendix C - References used throughout the review</a></h2>
+
+<ol>
+
+<li>An introduction to neural computing. Aleksander, I. and Morton, H. 2nd edition<br>
+
+</li>
+
+<li><font size=3>Neural Networks at Pacific Northwest National Laboratory<br>
+
+</font><a href="http://www.emsl.pnl.gov:2080/docs/cie/neural/neural.homepage.html"><font size=3>http://www.emsl.pnl.gov:2080/docs/cie/neural/neural.homepage.html</font></a><font size=3> <br>
+
+</font></li>
+
+<li><font size=3>Artificial Neural Networks in Medicine<br>
+
+</font><a href="http://www.emsl.pnl.gov:2080/docs/cie/techbrief/NN.techbrief.html"><font size=3>http://www.emsl.pnl.gov:2080/docs/cie/techbrief/NN.techbrief.ht</font></a><font size=3><br>
+
+</font></li>
+
+<li>Industrial Applications of Neural Networks (research reports Esprit, I.F.Croall, J.P.Mason) </li>
+
+<li><font size=3>A Novel Approach to Modelling and Diagnosing the Cardiovascular System<br>
+
+</font><a href="http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.wcnn95.abs.html"><font size=3>http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.wcnn95.abs.html</font></a><font size=3> <br>
+
+</font></li>
+
+<li><font size=3>Electronic Noses for Telemedicine<br>
+
+</font><a href="http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.ccc95.abs.html"><font size=3>http://www.emsl.pnl.gov:2080/docs/cie/neural/papers2/keller.ccc95.abs.html<br>
+
+</font></a></li>
+
+<li>An Introduction to Computing with Neural Nets (Richard P. Lipmann, IEEE ASSP Magazine, April 1987) <font size=3><br>
+
+</font></li>
+
+<li><font size=3>Pattern Recognition of Pathology Images<br>
+
+</font><a href="http://kopernik-eth.npac.syr.edu:1200/Task4/pattern.html"><font size=3>http://kopernik-eth.npac.syr.edu:1200/Task4/pattern.html</font></a><font size=3><br>
+
+</font></li>
+
+<li>Developments in autonomous vehicle navigation. Stefan Neuber, Jos Nijhuis, Lambert Spaanenburg. Institut fur Mikroelektronik Stuttgart, 
+
+Allmandring 30A, 7000 Stuttgart-80 <br>
+
+</li>
+
+<li>Klimasauskas, CC. (1989). The 1989 Neuro Computing Bibliography. Hammerstrom, D. (1986). A Connectionist/Neural Network 
+
+Bibliography. <br>
+
+</li>
+
+<li>DARPA Neural Network Study (October, 1987-February, 1989). MIT Lincoln Lab. <br>
+
+</li>
+
+<li>Neural Networks, Eric Davalo and Patrick Naim. <br>
+
+</li>
+
+<li>Assimov, I (1984, 1950), Robot, Ballatine, New York. <br>
+
+</li>
+
+<li>Learning internal representations by error propagation by Rumelhart, Hinton and Williams (1986). <br>
+
+</li>
+
+<li>Alkon, D.L 1989, Memory Storage and Neural Systems, Scientific American, July, 42-50 <br>
+
+</li>
+
+<li>Minsky and Papert (1969) Perceptrons, An introduction to computational geometry, MIT press, expanded edition. <br>
+
+</li>
+
+<li>Neural computers, NATO ASI series, Editors: Rolf Eckmiller Christoph v. d. Malsburg</li>
+
+</ol>
+
+<p><a href="#Contents"><img src="report.redball.gif" align=bottom border=0 width=14 height=14> <font color="#FF0000"><strong>Back to Contents</strong></font></a></p>
+
+</body>
+
+
+
+</html>
+
+</body>
+
+</html>

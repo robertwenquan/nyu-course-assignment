@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Computerworld Media Kit - Home</title>
+<meta name='description' content='Computerworld Media Kit' />
+<meta name='keywords' content='computerworld' />
+<meta property='og:site_name' content='Computerworld Media Kit' />
+<meta property='og:title' content='Computerworld Media Kit' />
+<meta property='og:description' content='Computerworld Media Kit' />
+<meta property='og:image' content='http://computerworldmediakit.com/uploads/2/7/3/3/2733744/1203411.png?480' />
+<meta property='og:image' content='http://computerworldmediakit.com/uploads/2/7/3/3/2733744/4550526.png?288' />
+<meta property='og:url' content='http://computerworldmediakit.com/' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+<link rel="stylesheet" href="//assets.dragndropbuilder.com/css/sites.css?buildTime=1407791093" type="text/css" /><link rel='stylesheet' type='text/css' href='http://www.dragndropbuilder.com/editor/libraries/fancybox/fancybox.css?1407791093' />
+<link rel='stylesheet' type='text/css' href='/files/main_style.css?1430414511' title='wsite-theme-css' />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements div.paragraph, .wsite-elements p, .wsite-elements .product-block .product-title, .wsite-elements .product-description, .wsite-elements .wsite-form-field label, .wsite-elements .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:15px !important;line-height:20px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements h2, .wsite-elements .product-long .product-title, .wsite-elements .product-large .product-title, .wsite-elements .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:24px !important;font-weight:700 !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#8d2424 !important;}
+#wsite-title {}
+</style>
+<style type='text/css'>
+.wsite-header {
+	background-image: url(/uploads/2/7/3/3/2733744/header_images/1416512136.jpg) !important;
+	background-position: 0 0 !important;
+}
+</style>
+<script><!--
+var STATIC_BASE = 'http://www.dragndropbuilder.com/';
+var STYLE_PREFIX = 'wsite';
+//-->
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src='//assets.dragndropbuilder.com/js/site/main.js?buildTime=1407791093'></script>
+<script type='text/javascript'><!--
+(function(jQuery){
+function initFlyouts(){initPublishedFlyoutMenus([{"id":"23469980","title":"Home","url":"index.html","target":""},{"id":"935814363538198276","title":"Audience","url":"audience.html","target":""},{"id":"616689630493573405","title":"New Media Landscape","url":"new-media-landscape.html","target":""},{"id":"927912080581086854","title":"Digital","url":"digital.html","target":""},{"id":"332849989457578504","title":"Events","url":"events.html","target":""},{"id":"640325846456979480","title":"Marketing Services","url":"marketing-services.html","target":""},{"id":"532882725166623043","title":"Direct Marketing","url":"direct-marketing.html","target":""},{"id":"655263829451616911","title":"Research","url":"research.html","target":""},{"id":"163203482600319189","title":"Contacts","url":"contacts.html","target":""},{"id":"315271911499765367","title":"News","url":"news.html","target":""}],'23469980',"<li class='wsite-nav-more'><a href='#'>more...<\/a><\/li>",'active',false)}
+if (jQuery) {
+if (jQuery.browser.msie && !window.flyoutMenusRefreshable) window.onload = initFlyouts;
+else jQuery(initFlyouts);
+}else{
+if (Prototype.Browser.IE) window.onload = initFlyouts;
+else document.observe('dom:loaded', initFlyouts);
+}
+})(window._W && _W.jQuery)
+//-->
+</script>
+</head>
+<body class='short-header-page  wsite-theme-light wsite-page-index'>
+<div id="nav-wrap">
+        <div class="container">
+        	<ul class='wsite-menu-default'><li id='active'><a href='/index.html'>Home</a></li><li id='pg935814363538198276'><a href='/audience.html'>Audience</a></li><li id='pg616689630493573405'><a href='/new-media-landscape.html'>New Media Landscape</a></li><li id='pg927912080581086854'><a href='/digital.html'>Digital</a></li><li id='pg332849989457578504'><a href='/events.html'>Events</a></li><li id='pg640325846456979480'><a href='/marketing-services.html'>Marketing Services</a></li><li id='pg532882725166623043'><a href='/direct-marketing.html'>Direct Marketing</a></li><li id='pg655263829451616911'><a href='/research.html'>Research</a></li><li id='pg163203482600319189'><a href='/contacts.html'>Contacts</a></li><li id='pg315271911499765367'><a href='/news.html'>News</a></li></ul>
+        </div><!-- end container -->
+    </div><!-- end nav-wrap -->
+
+		<div id="header-wrap">
+			<div class="container">
+				<table id="header">
+					<tr>
+						<td id="logo"><span class='wsite-logo'><span class='wsite-title-placeholder'>&nbsp;</span><span style="display:none">Computerworld Media Kit</span></span></td>
+						<td id="header-right">
+							<table>
+								<tr>
+									<td class="phone-number"><span class='wsite-text'>FOLLOW US</span></td>
+									<td class="social"><div style="text-align:left;"><div style="height:0px;overflow:hidden"></div>
+<span class="wsite-social wsite-social-default"><a class='first-child wsite-social-item wsite-social-facebook' href='https://www.facebook.com/Computerworld' target='_blank'><span class='wsite-social-item-inner'></span></a><a class='wsite-social-item wsite-social-twitter' href='https://twitter.com/computerworld' target='_blank'><span class='wsite-social-item-inner'></span></a><a class='last-child wsite-social-item wsite-social-linkedin' href='https://www.linkedin.com/company/163187?trk=tyah&trkInfo=tarId%3A1417449696644%2Ctas%3Acomputerworld%2Cidx%3A2-1-4' target='_blank'><span class='wsite-social-item-inner'></span></a></span>
+<div style="height:0px;overflow:hidden"></div></div></td>
+									<td class="search"></td>
+								</tr>
+							</table>
+							<div class="clear"></div>
+						</td>
+					</tr>
+				</table>
+			</div><!-- end container -->
+		</div><!-- end header-wrap --> 
+
+    <div id="banner-wrap">
+        <div class="container">
+            <div id="banner">
+            
+                <div class="wsite-header"></div>
+                
+                <div style="clear:both;"></div>
+            </div><!-- end banner -->
+        </div><!-- end container -->
+    </div><!-- end banner-wrap -->
+
+    <div id="main-wrap">
+        <div class="container">
+   			<div id='wsite-content' class='wsite-elements wsite-not-footer'>
+<div><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -5px'>
+<table class='wsite-multicol-table'>
+<tbody class='wsite-multicol-tbody'>
+<tr class='wsite-multicol-tr'>
+<td class='wsite-multicol-col' style='width:64.152892561983%;padding:0 5px'>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:0;padding-bottom:0;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="/uploads/2/7/3/3/2733744/1203411.png?480" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph">Technology no longer just supports the business, it&rsquo;s at the very center of business innovation and strategy. This focus on creating business advantage unites the spectrum of decision makers and key influencers across disciplines.&nbsp;<br /><br />Their common goal: understand and utilize technology to drive revenue and invigorate&nbsp;the customer and employee experience. <br /> As the largest enterprise media brand covering the entire breadth of technology, Computerworld is the voice of business technology, ensuring the entire ecosystem of tech influencers and stakeholders can create and execute on business-changing strategies.&nbsp;<br /><span></span><br /><span></span></div>
+
+</td>
+<td class='wsite-multicol-col' style='width:35.847107438017%;padding:0 5px'>
+
+<div><div class="wsite-multicol"><div class='wsite-multicol-table-wrap' style='margin:0 -5px'>
+<table class='wsite-multicol-table'>
+<tbody class='wsite-multicol-tbody'>
+<tr class='wsite-multicol-tr'>
+<td class='wsite-multicol-col' style='width:13.04347826087%;padding:0 5px'></td>
+<td class='wsite-multicol-col' style='width:86.95652173913%;padding:0 5px'>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:0;padding-bottom:5px;margin-left:0;margin-right:0;text-align:left">
+<a href='/news.html'>
+<img src="/uploads/2/7/3/3/2733744/4550526.png?288" alt="The Latest..." style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph"><a title="" href="http://www.computerworldmediakit.com/news.html" target="_blank"><strong><font size="3">CIO, Computerworld &amp; CIO Executive Council Launch AGENDA Conference to Address Key Issues Facing IT and Business Leaders</font></strong><br /><span></span></a></div>
+
+<div class="paragraph"><em>AGENDA15 to highlight the business impact and opportunities of digital transformation&nbsp; </em><br /><span></span><br /><span></span>    Framingham, Mass. &ndash; September 8, 2014 &ndash; IDG Enterprise&mdash;the leading enterprise technology media company comprising Computerworld, InfoWorld, Network World, CIO, DEMO, CSO, ITworld and CITEworld&mdash;and the CIO Executive Council are excited to announce the launch of the AGENDAconference.com, providing strategy, ideas and action for the key issues facing IT and business leaders. AGENDA15&mdash;taking place March 30 &ndash; April 1, 2015 in Amelia Island, FL&mdash;will focus on the urgent need to use digital transformation to drive business (<a href="http://bit.ly/1ufETsP" title="">Click to Tweet</a>).<br /><span></span><span style=""></span></div>
+
+<div class="paragraph"><a style="COLOR: rgb(153,6,6)" title="" href="http://www.computerworldmediakit.com/news.html"><span style="FONT-STYLE: italic; FONT-WEIGHT: bold">More...</span></a></div>
+
+</td>
+</tr>
+</tbody>
+</table>
+</div></div></div>
+
+</td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+
+        </div><!-- end container -->
+    </div><!-- end main-wrap -->
+
+    <div id="footer-wrap">
+        <div class="container">
+       		<div class='wsite-elements wsite-footer'>
+<div class="paragraph">Download the complete Media Kit&nbsp;&nbsp;<a href="http://marketing.computerworld.com/CW_Media_Kit_2015.pdf" target="_blank">here</a>.    | Visit <a href="http://www.computerworld.com" target="_blank" title="">Computerworld.com</a>.  |  <a title="" href="http://www.computerworld.com/s/pages/about_policies" target="_blank">Privacy Policy</a> <br /><span>An IDG Enterprise Brand&nbsp;</span></div></div>
+        </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48343885-8', 'computerworldmediakit.com');
+ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script></body>
+</html>

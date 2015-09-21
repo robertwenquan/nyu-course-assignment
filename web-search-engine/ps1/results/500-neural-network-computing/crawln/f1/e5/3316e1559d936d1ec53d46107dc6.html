@@ -1,0 +1,606 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link rel="stylesheet" title="default stylesheet" media="screen" type="text/css" href="http://cdn4.explainthatstuff.com/ets2.css">
+  <link rel="canonical" href="http://www.explainthatstuff.com/howcomputerswork.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>How do computers work? A simple introduction</title>
+  <meta name="keywords" content="computer, processor, laptop, storage, memory, input, output">
+  <meta name="description"
+ content="An easy-to-understand introduction to how computers work by inputting, storing, processing, and outputting information.">
+<link rel="shortcut icon" href="http://cdn4.explainthatstuff.com/favicon.ico">
+
+<!-- Begin Cookie Consent plugin. Original version by Silktide (http://silktide.com/cookieconsent), slightly modified by
+explainthatstuff.com on July 29, 2015), released under GNU General Public License Version (http://www.gnu.org/licenses/gpl.txt) as published by the Free Software Foundation.
+-->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to improve your experience of our site and to serve relevant, personalized advertising.","dismiss":"Got it!","learnMore":"More info","link":"http://www.explainthatstuff.com/privacy.html","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="http://cdn4.explainthatstuff.com/cookieconsent3.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body itemscope itemtype="http://schema.org/Article"><div class="container"><a name="pagetop"></a>
+
+
+
+
+
+
+
+
+
+
+
+<div class="header"><IMG class="headlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif"></div>
+
+<div class="searchtop">
+<!-- SiteSearch Google top search start -->
+<form action="http://www.explainthatstuff.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1030585152417294:7662706493" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="40" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<!-- SiteSearch Google top search end -->
+</div>
+
+
+
+
+<!-- Ad placement: computing -->
+
+
+
+<div class="crumb">
+You are here:
+<a href="/">Home page</a> &gt;
+<a href="articles_computers.html">Computers</A> &gt;
+Computers
+</div>
+<!-- old nav bar -->
+
+
+
+<div class="nav">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+
+
+<div class="adrightsm">Advertisement
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="1317849019"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+
+
+
+<div class="main2">
+<P><img itemprop="image" src="http://cdn4.explainthatstuff.com/ibm-blue-gene-supercomputer.jpg" class="ileftno" width=300 height=199 alt="Photo of IBM Blue Gene supercomputer at Argonne National Laboratory."></P>
+
+
+<h1 itemprop="headline name">Computers</h1>
+
+<div class="sharetop"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhowcomputerswork.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+<p>by <a href="chris-woodford.html">Chris Woodford</a>. <span class="italic">Last updated: November 7, 2014. </span></p>
+<meta itemprop="alternativeHeadline" content="How do computers work?">
+<meta itemprop="description" content="From input and output to applications and operating systems, this is a simple explanation of the basic concepts of computing.">
+<meta itemprop="datePublished" content="2007-05-11">
+<meta itemprop="dateModified" content="2014-11-07">
+
+
+<p itemprop="articleBody"><span class="dropcap">I</span>t was probably the worst prediction in
+history. Back in the 1940s, Thomas Watson, boss of the giant IBM Corporation, reputedly forecast
+that the world would need no more than "about five computers." Six decades later and
+the global population of computers has now risen to something like one billion machines!</p>
+
+<p>To be fair to Watson, computers have changed enormously in that time. In the 1940s, they were giant
+scientific and military behemoths commissioned by the government at a
+cost of millions of dollars apiece; today, most computers are not even
+recognizable as such: they are embedded in everything from <a
+ href="microwaveovens.html">microwave ovens</a> to <a
+ href="cellphones.html">cellphones</a> and <a href="radio.html">digital
+radios</a>. What makes computers flexible enough to work in all these
+different appliances? How come they are so phenomenally useful? And how
+exactly do they work? Let's take a closer look!</p>
+
+<p><span class="credit">Photo: The IBM Blue Gene/P <a href="how-supercomputers-work.html">supercomputer</a> at
+Argonne National Laboratory is one of the world's most powerful
+computers&mdash;but really it's just a super-scaled up version of the computer
+sitting right next to you. Picture courtesy of Argonne National Laboratory published on
+<a target="_blank" href="http://www.flickr.com/photos/argonne/3323018571/">Flickr</a> in 2009
+under a <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en_GB" target="_blank">Creative Commons Licence</A>.
+</span></p>
+
+<h2>What is a computer?</h2>
+<P><img src="http://cdn4.explainthatstuff.com/microchip-on-finger.jpg" class="ileftno" width=300 height=225 ALT="Microchip on a fingertip"></P>
+<p>
+A computer is an <a href="electronics.html">electronic</A> machine that processes information&mdash;in other
+words, an <span class="bold">information processor</span>: it takes in
+raw information (or <span class="bold">data</span>) at one end, stores it until it's
+ready to work on it, chews and crunches it for a bit, then spits out the results at the other end.
+All these processes have a name. Taking in information is called <span
+ class="bold">input</span>, storing information is better known as <span class="bold">memory</span> (or storage),
+chewing information is also known as <span class="bold">processing</span>, and
+spitting out results is called <span class="bold">output</span>.</P>
+
+<P><span class="credit">Photo: Computers that used to take up a huge room now fit comfortably on your finger!.</span></P>
+
+
+<p>Imagine if a computer were a person. Suppose you have a friend who's
+really good at math. She is so good that everyone she knows posts their math problems to
+her.&nbsp; Each morning, she goes to her letterbox and finds a pile of
+new math problems waiting for her attention. She piles them up on her
+desk until she
+gets around to looking at them. Each afternoon, she takes a letter off
+the top of the pile, studies the problem, works out the
+solution, and scribbles the answer on the back. She puts
+this in an envelope addressed to the person who sent her the original
+problem and sticks it in her out tray, ready to post. Then she moves to
+the next letter in the pile. You can see that your friend is working
+just like a computer. Her letterbox is her input; the pile on her desk
+is her memory; her brain is the processor that works out the solutions
+to the problems; and the out tray on her desk is her output.</p>
+<p>Once you understand that computers are about input, memory, processing, and output, all the junk on your desk makes a lot more sense:</P>
+<P><img src="http://cdn4.explainthatstuff.com/how-computer-works.png" width=400 height=260 class="iright" ALT="How computers work: Simple line artwork explaining the structure of a computer system, showing how a computer links input, output, storage/memory, and processing"></P>
+
+<UL>
+<LI><B>Input</B>: Your <A href="computerkeyboards.html">keyboard</A> and <a href="computermouse.html">mouse</a>, for
+example, are just input units&mdash;ways of getting information into your
+computer that it can process. If you use a <a href="microphones.html">microphone</A> and <a
+ href="voicerecognition.html">voice recognition</a> software, that's
+another form of input.</LI>
+<LI><B>Memory/storage</B>: Your computer probably stores all your documents
+and files on a <a href="harddrive.html">hard-drive</a>: a huge
+magnetic <a href="how-computer-memory-works.html">memory</a>. But smaller, computer-based devices like
+<a href="digitalcameras.html">digital cameras</A> and cellphones use other kinds of storage such as <a
+ href="flashmemory.html">flash memory</a> cards.</LI>
+<LI><B>Processing</B>: Your computer's processor (sometimes
+known as the <span class="bold">central processing unit</span>) is a
+microchip buried deep inside. It works amazingly hard and gets
+incredibly hot in the process. That's why your computer has a little
+fan blowing away&mdash;to stop its brain from overheating!</LI>
+<LI><B>Output</B>: Your computer probably has an <a href="lcdtv.html">LCD</a> screen
+capable of displaying high-resolution (very detailed) <a href="computer-graphics.html">graphics</a>,
+and probably also stereo <a href="loudspeakers.html">loudspeakers</a>. You may have an
+<a href="inkjetprinters.html">inkjet printer</a> on your desk too to make
+a more permanent form of output.</LI>
+</UL>
+<P><span class="credit">Artwork: A computer works by combining input, storage, processing, and output. All the main parts of a computer system are involved in one of these four processes.</span></P>
+
+
+<h2>What is a computer program?</h2>
+
+<p>
+As you can read in our long article on <a
+ href="historyofcomputers.html">computer history</a>, the first
+computers were gigantic <a href="calculators.html">calculating machines</A> and all they ever really
+did was "crunch numbers": solve lengthy, difficult, or tedious
+mathematical problems. Today, computers work on a much wider variety of
+problems&mdash;but they are all still, essentially, calculations. Everything
+a computer does, from helping you to edit a photograph you've taken
+with a digital camera to displaying
+a web page, involves manipulating numbers in one way or another.</p>
+
+<p><img src="http://cdn4.explainthatstuff.com/lcd-calculator.display.jpg" class="ileftno" height="225" width="300" ALT="LCD calculator screen"></p>
+
+
+<p>
+Suppose you're looking at a digital photo you just taken in a paint or
+photo-editing program and you decide you want a mirror image of it (in
+other words, flip it
+from left to right). You probably know that the photo is made up of
+millions of individual pixels (colored squares) arranged in a grid
+pattern. The computer stores each pixel as a number, so taking a
+digital
+photo is really like an instant, orderly exercise in painting by
+numbers! To flip a digital photo, the computer simply reverses the
+sequence of numbers so they run from right to left instead of left to
+right. Or suppose you want to make the photograph brighter. All you
+have
+to do is slide the little "brightness" icon. The computer then works
+through all the pixels, increasing the brightness value for each one
+by, say, 10 percent to make the entire image brighter. So, once again,
+the problem boils down to numbers and calculations.</p>
+
+<p>
+What makes a computer different from a <a href="calculators.html">calculator</A> is that it can work
+all by itself. You just give it your instructions (called a <span
+ class="bold">program</span>)
+and off it goes, performing a long and complex series of operations all
+by itself. Back in the 1970s and 1980s, if you wanted a home computer
+to do almost anything at all, you had to write your own little program
+to do it. For example, before you could write a letter on a computer,
+you had to write a program that would read the letters you typed on the
+keyboard, store them in the memory, and display them on the screen.
+Writing the program usually took more time than doing whatever it
+was that you had originally wanted to do (writing the letter). Pretty
+soon, people started selling programs like word processors to save you
+the need to write programs yourself.</p>
+<p>
+Today, most computer users buy, download, or share programs like
+Microsoft Word and Excel. Hardly anyone writes programs any more. Most
+people see their computers as tools that help them do jobs, rather than
+complex electronic machines they have to pre-program&mdash;and that's just as
+well, because most of us have better things to do than computer
+programming.</p>
+
+<P><span class="credit">Photo: Calculators and computers are very similar, because both work by processing numbers. However, a calculator simply figures out the results of calculations; and that's all it ever does. A computer stores complex sets of instructions called programs and uses them to do much more interesting things.</span></P>
+
+<h2>What's the difference between hardware and software?</h2>
+<p>
+The beauty of a computer is that it can run a word-processing program one
+minute&mdash;and then a photo-editing program five seconds later. In other
+words, although we
+don't really think of it this way, the computer can be reprogrammed as
+many times as you like. This is why programs are also called <span
+ class="bold">software</span>.
+They're "soft" in the sense that they are not fixed: they can be
+changed easily. By contrast, a computer's <span class="bold">hardware</span>&mdash;the
+bits and
+pieces from which it is made (and the <span class="bold">peripherals</span>,
+like the mouse and printer, you plug into it)&mdash;is pretty much fixed when you buy
+it off the shelf. The hardware is what makes your computer powerful;
+the ability to run different software is what makes it flexible. That
+computers can do so many different jobs is what makes them so useful<span
+ class="bold"></span>&mdash;and that's why millions of us can no longer live
+without them!
+</P>
+
+<h2>What is an operating system?</h2>
+<P>
+Suppose you're back in the late 1970s, before off-the-shelf computer programs have really been invented.
+You want to program your computer to work as a word processor so you can bash out your first novel&mdash;which is relatively easy but will take
+you a few days of work. A few weeks later, you tire of writing things and decide to reprogram your machine
+so it'll play chess. Later still, you decide to program it to store your photo collection. Every one of
+these programs does different things, but they also do quite a lot of similar things too. For example,
+they all need to be able to read the keys pressed down on the keyboard, store things in memory and retrieve them, and
+display characters (or pictures) on the screen. If you were writing lots of different programs, you'd find yourself
+writing the same bits of programming to do these same basic operations every time. That's a bit
+of a programming chore, so why not simply collect together all the bits of program that do these basic
+functions and reuse them each time?</P>
+
+<P><img src="http://cdn4.explainthatstuff.com/computer-architecture.jpg" class="ileft" width=282 height=322 ALT="A typical computer architecture linking the hardware to the applications via the BIOS and the operating system."></P>
+
+<P>That's the basic idea behind an <span class="bold">operating system</span>: it's the core software in a computer that (essentially) controls the basic chores of input, output, storage, and processing.
+You can think of an operating system as the "foundations" of the software in a computer that other programs (called <span class="bold">applications</span>) are built on top of. So a word processor and a chess game are two different applications that both rely on the operating system to carry out their basic input, output, and so on. The operating system relies on an even more fundamental piece of programming called the <span class="bold">BIOS (Basic Input Output System)</span>, which is the link between the operating system software and the hardware. Unlike the operating system, which is the same from one computer to another, the BIOS does vary from machine to machine according to the precise hardware configuration and is usually written by the hardware manufacturer.
+The BIOS is not, strictly speaking, <span class="italic">software</span>: it's a program semi-permanently stored into
+one of the computer's main chips, so it's known as <span class="bold">firmware</span>
+(it is usually designed so it can be updated occasionally, however).</P>
+
+<P>
+<span class="credit">Photo: Typical computer architecture: You can think of a computer as a series of layers, with the hardware at
+the bottom, the BIOS connecting the hardware to the operating system, and the applications you actually use (such as word processors,
+Web browsers, and so on) running on top of that. Each of these layers is relatively independent so, for example, the same Windows operating system might run on laptops running a different BIOS, while a computer running Windows (or another operating system) can run any number of different applications.</span>
+</P>
+
+
+<P>
+Operating systems have another big benefit. Back in the 1970s (and early 1980s), virtually all computers were maddeningly different. They all ran in their own, idiosyncratic ways with fairly unique hardware (different processor chips, memory addresses, screen sizes and all the rest). Programs written for one machine (such as an Apple) usually wouldn't run on any other machine (such as an IBM) without quite extensive conversion. That was a big problem for programmers because it meant they had to rewrite all their programs each time they wanted to run them on different machines. How did operating systems help? If you have a standard operating system and you tweak it so it will work on any machine, all you have to do is write applications that work on the operating system. Then any application will work on any machine. The operating system that definitively made this breakthrough was, of course, Microsoft Windows, written by Bill Gates. (It's important to note that there were earlier operating systems too. You can read more of that story in our article on the <a href="historyofcomputers.html">history of computers</A>.)</P>
+
+
+</div>
+
+<div class="box">
+<h2>Computers for everyone?</h2>
+<p><img src="http://cdn4.explainthatstuff.com/laptop-handside.jpg" class="irightno" height="244" width="300" ALT="Green OLPC laptop"></p>
+
+<p>What should we do about the <span class="bold">digital divide</span>&mdash;the gap between people who use computers
+and those who don't? Most people have chosen just to ignore it, but US computer pioneer Nicholas Negroponte and his
+team have taken a much more practical approach. Over the last few
+years, they've worked to create a trimmed-down, low-cost laptop
+suitable for people who live in developing countries where <a href="electricity.html">electricity</a>
+and <a href="telephone.html">telephone</A> access are harder to find. Their project is known as OLPC: One Laptop Per Child.</p>
+
+<p><span class="credit">Photo: courtesy of <a target="_blank" href="http://www.laptop.org/">One Laptop Per Child</a>, licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by/2.5/">Creative Commons License</a>.</span>
+</p>
+
+<h3>What's different about the OLPC?</h3>
+
+<p>In essence, OLPC is no different from any other laptop: it's a
+machine with input, output, memory storage, and a processor&mdash;the key components of
+any computer. But in OLPC, these parts have been designed especially
+for developing countries. </p>
+
+<p>Here are some of the key features:</p>
+<ul>
+<li>Low cost: OLPC is designed to cost just $100&mdash;much less than a
+traditional laptop.</li>
+<li>Inexpensive <a href="lcdtv.html">LCD</A> screen: The hi-tech screen is designed to work
+outdoors in bright sunlight, but costs only $35 to make&mdash;a fraction of
+the cost of a normal LCD flat panel display.</li>
+<li>Trimmed down operating system: The operating system is like the
+conductor of an orchestra: the part of a computer that makes all the
+other parts (from the processor chip to the buttons on the mouse) work
+in harmony. OLPC uses <a href="linux.html">Linux</a> (an efficient and
+low-cost operating system
+developed by thousands of volunteers) instead of the more expensive
+Windows system.</li>
+<li>Wireless <a href="howbroadbandworks.html">broadband</a>: In some
+parts of Africa, fewer than one
+person in a hundred has access to a wired, landline telephone, so
+dialup Internet access via telephone would be no use for OLPC users.
+Each machine's wireless chip will allow it to create an ad-hoc 
+<a href="howcomputernetworkswork.html">network</A>
+with other machines nearby&mdash;so OLPC users will be able to talk to
+one another and exchange information effortlessly.</li>
+<li><a href="flashmemory.html">Flash memory</a>: Instead of an
+expensive and relatively unreliable
+<a href="harddrive.html">hard drive</a>, OLPC uses a huge lump of
+flash memory&mdash;like the memory used
+in <a href="usb.html">USB</A> flash memory sticks and <a href="digitalcameras.html">digital
+camera</a> memory cards.</li>
+<li>Own power: Home electricity supplies are scarce in many
+developing countries, so OLPC has a hand <a href="cranks-and-cams.html">crank</a> and built-in
+<a href="generators.html">generator</A>.
+One minute of cranking generates up to 10 minutes of power.</li>
+</ul>
+
+<h3>Is OLPC a good idea?</h3>
+
+<p>Anything that closes the digital divide, helping poorer children
+gain access to education and opportunity, must be a good thing.
+However, some critics have questioned whether projects like this are
+really meeting the most immediate needs of people in developing
+countries. According to the World Health Organization, around 1.1
+billion people (18 percent of the world's population) have no access to
+safe drinking <a href="water.html">water</A>, while 2.7 billion (a staggering 42 percent of the
+world's population) lack basic sanitation. During the 1990s, around 2
+billion people were affected by major natural disasters such as floods
+and droughts. Every single day, 5000 children die because of dirty
+water&mdash;that's more people dying <span class="italic">each day</span> than were killed in the
+9/11 terrorist attacks.</p>
+
+<p>With basic problems on this scale, it could be argued that providing
+access to computers and the Internet is not a high priority for most of
+the world's poorer people. Then again, education is one of the most
+important weapons in the fight against poverty. Perhaps computers could
+provide young people with the knowledge they need to help themselves, their
+families, and communities escape a life sentence of hardship?</p>
+
+<P>You can find out more about the OLPC project from the <a href="http://www.laptop.org/" target="_blank">One Laptop Per Child</a>
+website; if you're interested in the broader issue of extending access to computers, the <a href="http://www.digitaldivide.net/" target="_blank">Digital Divide Network</a> is a good place to start
+(although the content of that site is now archived).</P>
+</div>
+
+<div class="main2">
+
+<div class="sharebot"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?app_id=214994648542122&amp;href=http%3A%2F%2Fwww.explainthatstuff.com%2Fhowcomputerswork.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+<h2>Find out more</h2>
+
+<h3>On this website</h3>
+<UL>
+<LI><a href="articles_computers.html">Computers</A> (a list of all our computing articles)</LI>
+<li><a href="how-computer-memory-works.html">Computer memory (RAM, ROM, etc)</a></li>
+<LI><a href="buyingacomputer.html">Buying a new computer</A></LI>
+<LI><a href="historyofcomputers.html">History of computers</A></LI>
+<li><a href="integratedcircuits.html">Integrated circuits</a></li>
+<li><a href="internet.html">Internet</a></li>
+<li><a href="how-supercomputers-work.html">Supercomputers</a></li>
+</UL>
+
+<h3>Books</h3>
+
+<h4>How computers work</h4>
+<UL>
+<LI><a href="http://books.google.com/books?id=Dns_AQAAIAAJ" target="_blank">How Computers Work</A> by Ron White and Timothy Downs. QUE, 2007. A good introduction with plenty of text supported by good photos and illustrations.</LI>
+<LI><a href="http://books.google.com/books?id=Cr2tQwAACAAJ" target="_blank">Computer Manual: The Step-by-step guide to upgrading, repairing and maintaining a PC</A> by Kyle MacRae. Haynes, 2010. This is a more technical guide for people who like to tinker with their machines, but it's also good for getting an insight into how a computer works under the covers.</LI>
+</UL>
+
+
+<h4>History of modern computers</h4>
+<UL>
+<LI><a href="http://books.google.com/books?id=eWUwIwAACAAJ" target="_blank">Accidental Empires : How the Boys of Silicon
+Valley Make Their Millions, Battle Foreign Competition, and Still Can't Get a Date</A> by Robert X. Cringely. New York: HarperBusiness, 1996. How the personal computer revolution happened in the 1970s and 1980s.</LI>
+<LI><a href="http://books.google.com/books?id=PJvuAAAAMAAJ" target="_blank">Hackers: Heroes of the Computer Revolution</A> by Steven Levy. New York: Penguin, 2001. The human, all-too-human stories behind the computer revolution: the key people who put computers in your home.</LI>
+</UL>
+</div>
+
+
+
+
+<div class="main2">
+<h2>If you liked this article...</h2>
+<P>You might like my new book, <a href="mybooks.php">Atoms Under the Floorboards: The Surprising Science Hidden in Your Home</a>, published worldwide by Bloomsbury.</P>
+</div>
+
+<!-- Desktop bottom ad -->
+<div class="bottomsquare"><span class="slinks2">Sponsored links</span>
+<P>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="9721739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</P>
+</div>
+
+
+
+
+
+
+<div class="cc"><P><span class="highlight">Please do NOT copy our articles onto blogs and other websites</span></P>
+<p>Text copyright &copy; Chris Woodford 2007, 2011. All rights reserved. <a href="copyright-and-legal-notices.html">Full copyright notice and terms of use</A>.</p>
+
+</div>
+
+<div class="sharesites"><h2>Follow us</h2>
+<ul class="nobull">
+<LI class="inline2"><a href="followus.html" title="Follow us on Facebook"><IMG class="sprite shr4" ALT="Follow us on Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a rel="publisher" href="https://plus.google.com/115402323314399894520" target="_blank" title="Follow us on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="rss.xml" target="_blank" title="Subscribe to our RSS feed"><IMG class="sprite shr10" ALT="RSS"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.flickr.com/photos/explainthatstuff" target="_blank" title="Find our photos on Flickr"><IMG class="sprite shr11" ALT="Flickr"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.pinterest.com/explainthatstuf/" title="Follow us on Pinterest" target="_blank"><IMG class="sprite shr12" ALT="Follow us on Pinterest" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+</ul>
+</div>
+
+<div class="sharesites"><h2>Rate this page</h2>
+<p>Please <a href="feedback.php">rate or give feedback on this page</A> and I will make a donation to WaterAid.</P></div>
+
+
+
+
+<div class="sharesites">
+<h2>Share this page</h2> 
+<p>Press CTRL + D to bookmark this page for later or tell your friends about it with:</p>
+
+<ul class="nobull">
+<LI class="inline2"><a title="Share this on Facebook" href="http://www.facebook.com/sharer.php?u=http://www.explainthatstuff.com/howcomputerswork.html"><IMG class="sprite shr4" ALT="Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2">
+<a title="Post this story to Delicious" href="http://del.icio.us/post?url=http://www.explainthatstuff.com/howcomputerswork.html&amp;title=How%20computers%20work"><IMG class="sprite shr1" ALT="Delicious" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Digg" href="http://digg.com/submit?url=http://www.explainthatstuff.com/howcomputerswork.html&amp;title=How%20computers%20work"><IMG class="sprite shr2" ALT="Digg" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Reddit" href="http://reddit.com/submit?url=http://www.explainthatstuff.com/howcomputerswork.html&amp;title=How%20computers%20work"><IMG class="sprite shr3" ALT="Reddit" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on StumbleUpon" href="http://www.stumbleupon.com/submit?url=http://www.explainthatstuff.com/howcomputerswork.html&amp;title=How%20computers%20work"><IMG class="sprite shr5" ALT="StumbleUpon" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Add this to your Google Bookmarks"
+ href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.explainthatstuff.com/howcomputerswork.html&amp;title=How%20computers%20work"><IMG class="sprite shr6" ALT="Google Bookmarks" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="http://www.twitter.com/home?status=How+computers+work+http://www.explainthatstuff.com/howcomputerswork.html" title="Tweet this"><IMG class="sprite shr7" ALT="Twitter" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Email this page to a friend"
+ href="mailto:?subject=How%20computers%20work&amp;body=Take%20a%20look%20at%20this%20page:%20http://www.explainthatstuff.com/howcomputerswork.html"><IMG class="sprite shr8" ALT="Email" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="https://plus.google.com/101536672158385330677?rel=author" title="Connect on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+</UL>
+
+
+<h2>Cite this page</h2>
+
+<!---Citation-->
+<div class="citation">
+<P>
+Woodford, Chris. (2007) Computers. Retrieved from http://www.explainthatstuff.com/howcomputerswork.html. [Accessed (Insert date here)]
+</P>
+</div>
+
+
+<!--<h2>Link to this page</h2>
+
+<P>If you'd like to link to this page, thank you! Here's some code you can cut and paste:</P>
+
+<div class="citation">
+<P>
+&lt;a href="http://www.explainthatstuff.com/howcomputerswork.html"&gt;How computers work&lt;/a&gt;
+</P>
+</div>  -->
+
+</div>
+
+
+
+
+
+
+
+<!-- advinfo2 -->
+
+<!-- bottom search position -->
+
+
+
+
+
+
+
+
+<div class="alsoon"><a name="navigation"></a>
+<IMG class="footlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif">
+<h2>More to explore on our website...</h2>
+<ul class="nobull">
+<LI class="inline"><a href="articles_communications.html">Communications</A></LI>
+<LI class="inline"><a href="articles_computers.html">Computers</A></LI>
+<LI class="inline"><a href="articles_electricity.html">Electricity &amp; electronics</A></LI>
+<LI class="inline"><a href="articles_energy.html">Energy</A></LI>
+<LI class="inline"><a href="articles_engineering.html">Engineering</A></LI>
+<LI class="inline2"><a href="articles_environment.html">Environment</A></LI><BR>
+<LI class="inline"><a href="articles_gadgets.html">Gadgets</A></LI>
+<LI class="inline"><a href="articles_homelife.html">Home life</A></LI>
+<LI class="inline"><a href="articles_materials.html">Materials</A></LI>
+<LI class="inline"><a href="articles_science.html">Science</A></LI>
+<LI class="inline"><a href="articles_tools.html">Tools &amp; instruments</A></LI>
+<LI class="inline2"><a href="articles_transportation.html">Transportation</A></LI>
+</UL>
+</div>
+
+<div class="footer">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li></ul>
+</div>
+
+<div class="totop">&uarr; <a href="#pagetop">Back to top</a></div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(d, t) {
+var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = 'https://apis.google.com/js/plusone.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+  })();
+</script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
+
+
+</body>
+</html>

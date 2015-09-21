@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Institute of Neuromorphic Engineering</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <link href="/static/css/style.css" rel="stylesheet">
+            <link href="/static/css/header.css" rel="stylesheet">
+            <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+            <link href="/static/css/bootstrap-theme.min.css" rel="stylesheet">
+        
+<link rel="stylesheet" type="text/css" href="/static/css/logo.css"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/sponsors.css"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/flexslider.css"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/categories.css"></script>
+<link rel="stylesheet" type="text/css" href="/static/css/boxes.css"></script>
+
+        
+        
+	<link rel="icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    </head>
+    <body style="padding-top:8px">
+        
+        <div class="container">
+            <div class="forumdev-header">
+                
+
+
+<div class="logo">
+
+    
+
+     
+         
+        <a href="/" title="">
+            <img src="/media/images/logo/ine_logo_cHFWz8B.png" style="height:63px;">
+        </a>
+            
+                 
+            
+        
+    
+
+</div>   
+                        <!-- <img src="/static/images/ine_logo.png" alt=""> -->
+                
+
+
+<div class="sponsors">
+    
+         
+            <a class="" href="http://www.umd.edu"><img src="/media/images/sponsor/umdglobe2_VuqwMsk.gif" style="height:50px;"></a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+         
+            <a class="" href="http://www.ini.uzh.ch"><img src="/media/images/sponsor/ini_logo.png" style="height:50px;"></a>
+        
+    
+         
+            <a class="" href="http://nsf.giv"><img src="/media/images/sponsor/nsf_logo_transparent.png" style="height:50px;"></a>
+        
+    
+</div>
+                <!--<div class="sponsors">-->
+                <!--</div>-->
+            </div>
+            <div class="clear"></div>
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="/static/images/home.png"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        
+
+
+
+
+<li class="">
+    
+    <a href="/about-us/"><span>About us</span></a>
+    
+</li>
+
+
+
+
+
+<li class="">
+    
+    <a href="/activities/"><span>Activities</span></a>
+    
+</li>
+
+
+
+
+
+<li class="">
+    
+    <a href="/journals/"><span>Journals</span></a>
+    
+</li>
+
+
+
+
+
+<li class="">
+    
+    <a href="/support/"><span>Support</span></a>
+    
+</li>
+
+
+
+
+                    </ul>
+                </div>
+                <div class="login">
+                   
+                    <a href="/auth/login.html">Log in</a>
+                  
+                </div>
+            </div>
+            
+<div>
+  
+
+
+
+
+
+
+<div class="clear"></div>
+<div class="sliders">
+    
+      <div class="flexslider">
+        <ul class="slides">
+          
+          <li>
+            <img src="/media/images/slider/about_UYVT5cS_LpWaqMW.png" />
+            <p class="flex-caption">What is a neuromorphic cognitive system and what is neuromorphic cognition?</p>
+          </li>
+          
+          <li>
+            <img src="/media/images/slider/NeuroChip_5CQfhiL_EOCe9YO.jpg" />
+            <p class="flex-caption">Neuromorphic processors: event-based VLSI models of cortical circuits for brain-inspired computation.</p>
+          </li>
+          
+          <li>
+            <img src="/media/images/slider/cc2014_13v72wW_1uYZPbu.png" />
+            <p class="flex-caption">CapoCaccia 2014 Workshop was a great success!</p>
+          </li>
+          
+          <li>
+            <img src="/media/images/slider/ine_collab_fZuprnb_dzpk7bC.png" />
+            <p class="flex-caption">The INE collaborates with people all over the world.</p>
+          </li>
+          
+          <li>
+            <img src="/media/images/slider/exploration_DLqfXnN_XuNbFra.jpg" />
+            <p class="flex-caption">INE constatnly explores ways to implement neuromorphic chips.</p>
+          </li>
+          
+        </ul>
+      </div>
+    
+</div>
+<div class="multicolumn2 clearfix">
+
+  	
+<div class="column" style="width: 50%; float: left;">
+
+    	
+
+
+
+<div class="categories">
+    
+    
+    
+     
+        <div class="image-portada">
+          <a href="/activities/" title="Activities">
+            <img alt="Activities" src="/media/images/cat/telluride-parade_kIT4PHH.jpg">
+          </a>
+            <div class="wrapper-portada1">
+                <p>
+                    <span>
+                            <a href="/activities/" title="Activities">
+                              Activities
+                            </a>
+                        workshops, events, and more
+                    </span>
+                </p>
+            </div>
+            
+            <ul class="subitems">
+                    
+                        
+                <li>
+                    <div class="subitem-box">
+                      <a href="https://capocaccia.ethz.ch/" title="CapoCaccia">
+                        <img alt="CapoCaccia" src="/media/images/scat/capocaccia-workgropup.jpg">
+                        <div class="subitem-text">
+                              CapoCaccia
+                        </div>
+                      </a>
+
+                    </div>
+                </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                <li>
+                    <div class="subitem-box">
+                      <a href="http://www.neuromorphs.net/" title="Telluride ">
+                        <img alt="Telluride " src="/media/images/scat/telluride-setup-matt_gLkvI0j.jpg">
+                        <div class="subitem-text">
+                              Telluride 
+                        </div>
+                      </a>
+
+                    </div>
+                </li>
+                        
+                    
+                        
+                    
+                        
+                <li>
+                    <div class="subitem-box">
+                      <a href="http://journal.frontiersin.org/journal/neuroscience/section/neuromorphic-engineering" title="Frontiers">
+                        <img alt="Frontiers" src="/media/images/scat/fne.png">
+                        <div class="subitem-text">
+                              Frontiers
+                        </div>
+                      </a>
+
+                    </div>
+                </li>
+                        
+                    
+            </ul>
+            
+        </div>
+    
+    
+</div>   
+
+</div>
+
+  	
+<div class="column" style="width: 50%; float: left;">
+
+    	
+
+
+
+<div class="categories">
+    
+     
+        <div class="image-portada">
+          <a href="#" title="Social media">
+            <img alt="Social media" src="/media/images/cat/map_GtDafKm.png">
+          </a>
+            <div class="wrapper-portada1">
+                <p>
+                    <span>
+                            <a href="#" title="Social media">
+                              Social media
+                            </a>
+                        connecting neuromorphs
+                    </span>
+                </p>
+            </div>
+            
+            <ul class="subitems">
+                    
+                        
+                    
+                        
+                <li>
+                    <div class="subitem-box">
+                      <a href="https://plus.google.com/communities/106429639703340584547" title="Google+">
+                        <img alt="Google+" src="/media/images/scat/google_O1nFdow.png">
+                        <div class="subitem-text">
+                              Google+
+                        </div>
+                      </a>
+
+                    </div>
+                </li>
+                        
+                    
+                        
+                <li>
+                    <div class="subitem-box">
+                      <a href="http://community.frontiersin.org/" title="Loop">
+                        <img alt="Loop" src="/media/images/scat/loop.png">
+                        <div class="subitem-text">
+                              Loop
+                        </div>
+                      </a>
+
+                    </div>
+                </li>
+                        
+                    
+                        
+                    
+                        
+                <li>
+                    <div class="subitem-box">
+                      <a href="" title="Instagram">
+                        <img alt="Instagram" src="/media/images/scat/instragram.png">
+                        <div class="subitem-text">
+                              Instagram
+                        </div>
+                      </a>
+
+                    </div>
+                </li>
+                        
+                    
+                        
+                    
+            </ul>
+            
+        </div>
+    
+    
+    
+    
+</div>   
+
+</div>
+
+</div>
+<div class="multicolumn2 clearfix">
+
+  	
+<div class="column" style="width: 50%; float: left;">
+
+    	
+<a class="twitter-timeline" 
+	href="https://twitter.com/mberchten/lists/neuromoprhic"
+	data-widget-id="620722914741067777"
+	data-theme="light"
+	
+	height="350"
+	data-chrome="transparent"
+	
+	data-link-color="##337ab"
+	
+	
+	
+	data-aria-polite="polite"
+	>
+	Neuromorphic List
+</a>
+
+
+
+</div>
+
+  	
+<div class="column" style="width: 50%; float: left;">
+
+</div>
+
+</div>
+
+
+
+
+  <!--<br class="boxclear" />-->
+
+<div class="boxes">
+  <ul class="medialist">
+    
+    <li>
+      <div class="wrapper-media">
+        <img alt="Blog" src="/media/images/box/logoine-bg.png">
+        <a href="http://www.ine-news.org/" target="_blank" title="Blog">Blog</a>
+      </div>
+    </li>
+    
+    <li>
+      <div class="wrapper-media">
+        <img alt="Support" src="/media/images/box/support_Y5pk06Q.png">
+        <a href="/support/" target="_blank" title="Support">Support</a>
+      </div>
+    </li>
+    
+    <li>
+      <div class="wrapper-media">
+        <img alt="Journals" src="/media/images/box/journals.jpg">
+        <a href="/journals/" target="_blank" title="Journals">Journals</a>
+      </div>
+    </li>
+    
+  </ul>
+</div>   
+
+
+</div>
+
+            <footer>
+                <hr/>
+                <p><a href="https://www.iniforum.ch/">iniForum GmbH</a> <span style="line-height: 20.7999992370605px;">©</span> 2015 | <a href="/impressum/">terms and conditions</a> | <a href="/data-protection/">data protection</a></p>
+
+            </footer>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        
+            <script src="/static/js/bootstrap.min.js"></script>
+        
+
+<script type="text/javascript" src="/static/js/flexslider.js"></script>
+<script type="text/javascript" src="/static/js/jquery.flexslider-min.js"></script>
+
+
+<script type="text/javascript" src="/static/js/categories.js"></script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script type="text/javascript" src="/static/js/boxes.js"></script>
+
+
+    </body>
+</html>
+

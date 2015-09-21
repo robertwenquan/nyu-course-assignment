@@ -1,0 +1,792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta property="og:title" content="DEMO: New Tech Solving Big Problems - Home" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.demo.com/ehome/index.php?eventid=29414&" />
+            <meta property="og:image" content="https://www.demo.com/file_uploads/3e26f6c8ddd9e479e251450c8c2e6ce1_WhiteBar.jpg" />
+        <title>DEMO: New Tech Solving Big Problems - Home</title>
+<!-- eHome General Settings > Custom head HTML -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /><meta name="google-site-verification" content="n79tgeT0K2YavSJcu8Cu37lbCVDKh-i0blEj2232nUY" /><!-- eHome > Edit page > Page Head HTML -->
+<link rel="stylesheet" type="text/css" href="/docs/562/front.css" /><meta name="description" content="The DEMO Brand website provides information about launch, pitch, attend and sponsorship opportunities for DEMO events around the world." />
+<meta name="keywords" content="DEMO, DEMO Mobile, DEMO Conference, DEMO China, DEMO Brazil, DEMO Africa, Erick Schonfeld, Startup, entrepreneur" />
+<script language="javascript" type="text/javascript" src="/include/scripts/scripts.js"></script>
+<script language="javascript" type="text/javascript" src="/ehome/include/scripts.js"></script>
+<!--[if IE 7]>
+<style type="text/css">
+.ehsm ul ul ul {margin-left:-1px;}
+.ehsm ul ul ul.left {margin-left:1px;}
+.ehtm li { white-space:nowrap; };
+</style>
+<![endif]-->
+<style type="text/css">
+/* clearing eReg styles */
+@import url(//fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://client.clevelanddesign.com/CD/IDG/DEMO2014/live/css/temp.css);/* clearing eHome styles */
+@media print { .no-print { display: none } }</style>
+<link href="/docs/562/global.css" rel="stylesheet" type="text/css" /><link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css" /><style type="text/css" media="print">
+.eh_outer_div { overflow:visible; }
+</style>
+<script type="text/javascript" src="/include/scripts/prototype.js"></script>
+<script type="text/javascript" src="/include/scripts/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="/include/scripts/lightbox-web.js?v=1"></script>
+<link rel="stylesheet" href="/ehome/include/lightbox.css" type="text/css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/themes/global/fonts.css"></head>
+<body>
+<input type="hidden" id="module" value="ehome" /><input type="hidden" id="eventid" value="29414" /><table id="outer_table" width="1200" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff"><tr><td align="left"><div id="demo-header" class="snippet s1719"><a id="backtop" name="backtop"></a>
+	<div id="logo"><a href="/ehome/29414"><img width="140" height="41" src="/file_uploads/82cdcafb972118cbc5a6e2b0b15148bc_demo-logo.svg" onerror="this.src='/file_uploads/5f723ea82828e16b7ddd79abf599279f_demo-logo.png'"></a>
+	</div>
+	<ul id="top-nav">
+		<li id="google-search"><a id="search-btn" href="/ehome/29414/search-results">Search</a><div id="cse-search-form"></div></li>
+		<li id="mobile-menu"><a href="#mm">Menu</a></li>
+		<li id="share-menu"><a href="#share">Share</a><div id="addThis" class="addthis_toolbox addthis_default_style addthis_32x32_style"><a class="addthis_button_twitter"></a><a class="addthis_button_facebook"></a><a class="addthis_button_linkedin"></a><a class="addthis_button_email"></a><a class="addthis_button_google_plusone_share"></a><a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a></div></li>
+		<li><a href="/ehome/29414/about/">About</a></li>
+		<li><a href="/ehome/29414/events/sponsors">Sponsor</a></li>
+		<li id="top-blog"><a href="http://thedemoblog.com/"><span class="m-hide">DEMO </span>Blog</a></li>
+		<li><a href="/ehome/29414/contact/">Contact<span class="m-hide"> Us</span></a></li>
+	</ul>
+	<div id="mission">
+		<div id="tagline">New Tech Solving Big Problems</div>
+		<div id="next-event"><a id="ne-name" href="/ehome/126295/home"><strong><span class="m-hide">DEMO </span>Traction Enterprise</strong>&nbsp;<span id="ne-date"> 9.16.15</span><span id="ne-place"> | Boston, MA &gt;</span></a></div>
+	</div>
+</div> <!-- Global DEMO header/menu --></td></tr><tr bgcolor="#2c476a" class="tabmenu"><td style="height:20px;"><div class="ehtm">
+<ul >
+<li><a href="/ehome/DEMO/home/?&"  class="sel_top">Home</a></li>
+<li><a href="https://www.eiseverywhere.com/ehome/126295/home"  class="link-traction">Traction</a></li>
+<li><a href="http://www.demo.com/ehome/DEMO/events"  >Events<b> (PROXY)</b></a></li>
+<li><a href="http://www.demo.com/ehome/DEMO/launch"  >Launch<b> (PROXY)</b></a></li>
+<li><a href="https://www.eiseverywhere.com/ehome/DEMO/events/why-attend"  >Attend<b> (PROXY)</b></a></li>
+<li><a href="https://www.eiseverywhere.com/ehome/demotrboston15/agenda/"  >Agenda<b> (PROXY)</b></a></li>
+<li><a href="http://www.demo.com/ehome/DEMO/alumni"  >Alumni</a></li>
+<li><a href="http://www.youtube.com/democonf" target="_blank" >Videos<b> (PROXY)</b></a></li>
+<li><a href="http://www.demo.com/ehome/DEMO/news"  >News<b> (PROXY)</b></a></li>
+</ul>
+</div></td></tr><tr bgcolor="#a8b7c6" class="languages"><td class="header" align="right">
+&nbsp;</td>
+</tr><tr><td id="inner_content" valign="top" style="padding:0px;"><div class="eh_outer_div" style="width:1200px;"><div id="main_section" style="width:1200px;float:left;margin-bottom:0px;"><div id="content_565702"><div style="width:100%;overflow:hidden"><div id="top" class="section bleed">
+	<div class="slideshow">
+		<div class="slides">
+			<div id="intro" class="slide text active">
+				<div id="s2843" class="snippet"><div id="s2843" class="snippet">
+	<h1>DEMO Traction Enterprise</h1>
+	<h2>September 16, 2015  <br /><span class="m-hide">| </span>Boston, MA</h2>
+	<p>Confirmed <a href="/ehome/demotrboston15/speakers/">speakers &amp; judges</a> include:</p>
+	<div class="confirmed-speakers">
+  	<div class="spkr"><a href="/ehome/demotrboston15/speakers/">
+  	    <img src="/file_uploads/26c8031cc011e700bf4e812d0840fe0f_demo-speakers-2015-2.png" alt="Bijan Sabet" />
+  	    <p>Bijan Sabet<br /><strong>Spark Capital</strong></p>
+  	  </a></div>
+  	<div class="spkr"><a href="/ehome/demotrboston15/speakers/">
+  	    <img src="/file_uploads/904a4297e032fc138fd15bf7ed0b07bf_demo-speakers-2015-3.png" alt="Doug Cutting" />
+  	    <p>Doug Cutting<br /><strong>Cloudera</strong></p>
+  	  </a></div>
+    <div class="spkr"><a href="/ehome/demotrboston15/speakers/">
+  	    <img src="/file_uploads/698a8f17575aaa44e37d16b62a40bc05_demo-speakers-2015-1.png" alt="Jeremy Allaire" />
+  	    <p>Jeremy Allaire<br /><strong>Circle</strong></p>
+  	  </a></div>
+  	<div class="spkr"><a href="/ehome/demotrboston15/speakers/">
+  	    <img src="/file_uploads/49861494e384eb57bfe0a4a4e40ed70e_demo-speakers-2015-4.png" alt="Atif Rafiq" />
+  	    <p>Atif Rafiq<br /><strong>McDonald's Corporation</strong></p>
+  	  </a></div>
+  	<div class="spkr"><a href="/ehome/demotrboston15/speakers/">
+  	    <img src="/file_uploads/0505cc78be8b6f718ff72339d22738f8_demo-speakers-2015-5.png" alt="Steve Papa" />
+  	    <p>Steve Papa<br /><strong>Parallel Wireless, Endeca</strong></p>
+  	  </a></div>
+  	<div class="spkr"><a href="/ehome/demotrboston15/speakers/">
+  	    <img src="/file_uploads/12e1eb97ad360fdaa5afd3962c124ee3_demo-speakers-2015-6.png" alt="Anand Sanwal" />
+  	    <p>Anand Sanwal<br /><strong>CB Insights</strong></p>
+  	  </a></div>
+  	<div class="spkr"><a href="/ehome/demotrboston15/speakers/">
+  	    <img src="/file_uploads/cb2392ccaa38efc0d29a229b3d607c61_demo-speakers-2015-7.png" alt="Crawford  Del Prete" />
+  	    <p>Crawford  Del Prete<br /><strong>IDC</strong></p>
+  	  </a>
+  	  <div class="more-btn"><a href="/ehome/demotrboston15/speakers/">More</a></div></div>
+	</div>
+</div></div>
+				<div id="s1779" class="snippet set cta"><a class="button snippet agenda" href="/ehome/demotrboston15/agenda/">BROWSE AGENDA<i class="fa fa-tasks"></i></a>
+<a class="button snippet class" href="/ehome/DEMO/alumni">TRACTION <span class="m-hide">ENTERPRISE </span>BOSTON 2015<i class="fa fa-group"></i></a>
+<a class="button snippet live" href="http://www.cio.com/category/demo/">WATCH IT LIVE<i class="fa fa-video-camera"></i></a></div>
+			</div>
+			<div class="slide photo tl" style="background-image: url(/file_uploads/1ccd436894c3bc7e24c27bd2d1c5de16_slide-2-Steve-Wozniak.jpg)"></div>
+			<div class="slide photo tm" style="background-image: url(/file_uploads/b23999e68330f78e53164369ba423d5d_slide-1-Peter-Thiel.jpg)">
+				<cite><strong>Founder School with Peter Thiel, Entrepreneur &amp; Venture Capitalist</strong> - How to Build the Future</cite>
+			</div>
+			<div class="slide photo tl" style="background-image: url(/file_uploads/95b0f3b3e3062143b7bab092e0a0b5fe_slide-3-Matt-Rogers.jpg)">
+				<cite><strong>Conversation with Matt Rogers, Founder &amp; Engineer, Nest Labs</strong> - Designing for the Internet of Things</cite>
+			</div>
+			<div class="slide photo mm" style="background-image: url(/file_uploads/964c1582ed6e00f1c2539a6ff117944d_Meerkat.jpg)">
+				<cite><strong>Meerkat Co-founder &amp; CEO Ben Rubin</strong> - Killer DEMO: Meerkat And The Launch Of The Mobile Live Streaming Era</cite>
+			</div>
+			<div class="slide photo br" style="background-image: url(/file_uploads/eef630cca7300e59b712c7eee21c2859_Michelle-Zatlyn.jpg)">
+				<cite><strong>Michelle Zatlyn, CloudFlare Co-founder & Head of User Experience</strong> - Cloud Traction Session</cite>
+			</div>
+			<div class="slide photo bl" style="background-image: url(/file_uploads/2808b999a04987184a493dc04a4f44a4_Jared-Fleisler.jpg)">
+				<cite><strong>Matrix Partners General Partner Jared Fliesler</strong> - How We Grew Square to $10B in Payments - What it Means for You</cite>
+			</div>
+		</div>
+	</div>
+	<div id="slide-overlay" class="hidden">
+		<div id="s1725-1" class="snippet"><div id="s1725" class="snippet">
+	<h1>DEMO Traction Enterprise</h1>
+	<h2>September 16, 2015  <br /><span class="m-hide">| </span>Boston, MA</h2>
+	<p>For over <a href='http://www.demo.com/ehome/29414/about'>24 years</a> DEMO has introduced some of the most <a href='http://www.demo.com/ehome/29414/events/who-attends/'>game-changing products</a> the world has ever seen. Now we have a launch of our own: <a href='https://www.eiseverywhere.com/ehome/107497/home'>DEMO Traction</a>.</p>
+</div></div>
+		<div id="s1779-1" class="snippet set cta"><a class="button snippet agenda" href="/ehome/demotrboston15/agenda/">BROWSE AGENDA<i class="fa fa-tasks"></i></a>
+<a class="button snippet class" href="/ehome/DEMO/alumni">TRACTION <span class="m-hide">ENTERPRISE </span>BOSTON 2015<i class="fa fa-group"></i></a>
+<a class="button snippet live" href="http://www.cio.com/category/demo/">WATCH IT LIVE<i class="fa fa-video-camera"></i></a></div>
+	</div>
+	<div class="ui">
+		<div class="ellipses"></div>
+		<a class="nav left" href="#back">Back</a>
+		<a class="nav right" href="#next">Next</a>
+	</div>
+</div></div></div><div id="content_565703"><table width="100%" cellspacing="0" cellpadding="2"><tr><td class="header" style="padding-bottom:10px;">    Up Next</td></tr></table><div style="width:100%;overflow:hidden"><div id="up-next" class="section divided two" style="background-image: url(/file_uploads/90a904c73642844f8d63686813c1edb7_bg-map-boston-sm.jpg);">
+	<div class="subsection left">
+		<h1 style="box-decoration-break: clone;">DEMO Traction Enterprise</h1>
+		<h2><a href="/ehome/126295/home">September 16, 2015 | Boston</a></h2>
+		<h3>Westin Boston Waterfront</h3>
+	</div>
+	<div class="subsection right">
+		<h4 class="button">Recent DEMO Sponsors:</h4>
+		<div id="top-sponsors" class="set clearfix">
+			<a href="http://www.demo.com/ehome/DEMO/events/sponsors"><img src="/file_uploads/9fa23eac9fc929f93d94e91e4663a3db_ScreenShot2015-05-07at10.15.35AM.png" alt="" height="75" width="150"></a>
+			<a href="http://www.demo.com/ehome/DEMO/events/sponsors"><img src="/file_uploads/3ced490ccdff9cc0396a01487220e5fb_ScreenShot2015-05-07at10.13.56AM.png" alt="" height="75" width="150"></a>
+			<a href="http://www.demo.com/ehome/DEMO/events/sponsors"><img src="/file_uploads/5a4b51e5884470fcf75a795a46f8466a_ScreenShot2015-05-07at10.16.10AM.png" alt="" height="75" width="150"></a>
+			<a href="http://www.demo.com/ehome/DEMO/events/sponsors" class="rem">View more &gt;</a>
+		</div>
+		<div class="set">
+			<a class="button" href="/ehome/126295/home">Event Info</a>
+			<a class="button" href="http://www.demo.com/DTR15Boston">Attend</a>
+			<a class="button empty"></a>
+			<a class="button" href="/ehome/DEMO/events/">Other DEMO Events</a>
+		</div>
+	</div>
+</div></div></div><div id="content_565704"><table width="100%" cellspacing="0" cellpadding="2"><tr><td class="header" style="padding-bottom:10px;">What’s in it for you</td></tr></table><div style="width:100%;overflow:hidden"><div id="whats-in-it" class="section bleed">
+	<div id="pages" class="subsection slideshow">
+		<div id="page-slider" class="slides">
+			<div id="p1" class="page slide active" data-title="About" style="background-image: url(/file_uploads/b9e8b81b84f9f1f9c06ef67ce6a46752_whats-in-it-video.jpg)">
+				
+				<a title="Click here to watch the DEMO sizzle reel" class="v-watch" href="http://youtu.be/qwA6UrtrQk0?list=UUI11W4ZZ4k-w0zYWw7sZfIw"><img src="/docs/562/play-icon.svg" onerror="this.src='/file_uploads/81b0b82aa8b1197190838aa768e8681e_watch-video-icon.png'"><strong>Experience DEMO</strong><span>Watch what DEMO is all about &gt;</span></a>
+				
+				<cite>DEMO Launch and DEMO Traction events attracts insightful media, critical venture capitalists, respected technology business development professionals, connected corporate IT professionals, and the most-promising new technology companies in the world. Join the <strong>15,000 people</strong> have attended DEMO over the past <strong>25 years</strong>. <a href="/ehome/29414/about/" class="keep">Learn More &gt;</a></cite>
+				
+				<div id="yt-embed">
+					<iframe width="1200" height="675" src="" frameborder="0" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+			<div id="p2" class="page slide" data-title="Launch" style="background-image: url(/file_uploads/6f0e5875f76fe82309e7db0b70ac6824_w-launch-culture-sphere.jpg)">
+				<cite>It&rsquo;s time to launch your product. But where? Choosing the right platform to unveil your product is critical. DEMO sets itself apart from all other launch options. DEMO&rsquo;s <a href="/ehome/DEMO/launch/testimonials/">track record of success</a>, <a href="/ehome/DEMO/launch/scholarships/">scholarship opportunities</a>, turnkey services and exposure to <strong>the entire tech ecosystem</strong> of VCs, investors, IT buyers and the global tech press make DEMO the premier launch option. <a href="/ehome/DEMO/launch/" class="keep">Learn More &gt;</a></cite>
+			</div>
+			<div id="p3" class="page slide" data-title="Grow" style="background-image: url(/file_uploads/6c3d3149a326beed85577d6ea68ad0e5_w-why-demo.jpg)">
+				<cite><strong>DEMO Traction events focus obsessively on growth</strong>, bringing together the most promising growth startups with prospective customers, investors and strategic partners.<a href="/ehome/107497/home" class="keep">More &gt;</a></cite>
+			</div>
+			<div id="p4" class="page slide" data-title="Attend" style="background-image: url(/file_uploads/aa1b38ba9905509fb6069263fe57630a_w-why-attend.jpg)">
+				<cite>There&rsquo;s something for everyone at DEMO&mdash;from VC&rsquo;s and angel investors to corporate business development execs to CIOs and marketers. Whether you&rsquo;re looking to invest in innovation or tap into new trends, DEMO puts you face-to-face with the people driving the future of innovation. <a href="/ehome/29414/events/why-attend/" class="keep">Learn More &gt;</a></cite>
+			</div>
+			<div id="p5" class="page slide" data-title="Success Stories" style="background-image: url(/file_uploads/395cf3074b226d78a1749960fb758c57_w-success-winners-2.jpg)">
+				<cite>With <strong>more than 20,000 technologies reviewed</strong> and over <strong>1800 companies selected</strong> to launch on the DEMO stage over the past 24 years, DEMO has continually searched the globe to find innovation where it lives. The DEMO Team has logged millions of miles to uncover technology &ldquo;diamonds in the rough&rdquo; before anyone else. <a href="/ehome/DEMO/launch/success-stories/">And the results have been astounding</a>.</cite>
+			</div>
+		</div>
+	</div>
+	<div id="tabs" class="subsection">
+		<a id="demo" href="/ehome/29414/about/" alt="About"><img src="/file_uploads/3159638897d84bfd6a6e545f4bcffa98_tab-icon-clock.svg" onerror="this.src='/file_uploads/5926a625902346454fd93b4e85cb647e_tab-icon-clock.png'"></a>
+		<a id="launch" href="/ehome/DEMO/launch/" alt="Launch"><img src="/file_uploads/eb32c336698d69c75c0adb9259c38714_tab-icon-rocket.svg" onerror="this.src='/file_uploads/8ffe552c3b0fccd858f34d0b08474bb6_tab-icon-rocket.png'"></a>
+		<a id="grow" href="/ehome/107497/home" alt="Grow"><img src="/docs/562/tab-icon-grow.svg" onerror="this.src='/file_uploads/1d29216b6ce76919e551b96913bd3848_tab-icon-grow.png'"></a>
+		<a id="attend" href="/ehome/29414/events/why-attend/" alt="Attend"><img src="/file_uploads/dff26ddeddf3a06266826f9ef8255c78_tab-icon-people.svg" onerror="this.src='/file_uploads/4a0f4199b94d4c4857dd61c87fb8f5ff_tab-icon-people.png'"></a>
+		<a id="stories" href="/ehome/DEMO/launch/success-stories/" alt="Success Stories"><img src="/file_uploads/349c455ec26492ad8d0788e1ef5a73c6_tab-icon-chat.svg" onerror="this.src='/file_uploads/6afcb744c0d521fcabc2b33c4e452a4a_tab-icon-chat.png'"></a>
+	</div>
+	<div class="ui">
+		<a class="nav left" href="#back">Back</a>
+		<a class="nav right" href="#next">Next</a>
+	</div>
+</div></div></div><div id="content_565705"><table width="100%" cellspacing="0" cellpadding="2"><tr><td class="header" style="padding-bottom:10px;">Latest DEMO news</td></tr></table><div style="width:100%;overflow:hidden"><div id="demo-news" class="section divided two fat">
+	<div id="connect" class="subsection right m-hide">
+		<h2>Get Connected with DEMO Online</h2>
+		<div id="s1724" class="snippet"><div class="set socials">
+	<a href="https://twitter.com/demo" class="social" alt="Twitter">Twitter</a>
+	<a href="https://www.facebook.com/DEMOconference" class="social" alt="Facebook">Facebook</a>
+	<a href="http://www.linkedin.com/groups?home=&gid=111&trk=anet_ug_hm" class="social" alt="LinkedIn">LinkedIn</a>
+	<a href="http://www.youtube.com/democonf" class="social" alt="YouTube">YouTube</a>
+	<a href="http://www.flickr.com/photos/democonference/sets/" class="social" alt="Flickr">Flickr</a>
+	<a href="javascript:alert('Coming Soon!');" class="social" alt="Flipboard">Flipboard</a>
+</div> <!-- SOCIAL ICONS --></div>
+	</div>
+	<div id="news" class="subsection left">
+		<h2>DEMO Updates &amp; Highlights</h2>
+		<div id="s1728" class="snippet"><div><a href="http://www.cio.com/"><strong style="font-size: 14pt;">WATCH ALL SESSIONS AT DEMO TRACTION LIVE</strong></a></div>
+<div style="font-weight: normal;"><br />
+</div>
+<div style="font-weight: normal;">DEMO Traction Strategic Partner: CMO Council</div>
+<div style="font-weight: normal;"><a href="http://www.cmocouncil.org/press-detail.php?id=5055">CMO Council to Explore Martech Innovation at DEMO Traction</a></div>
+<div style="font-weight: normal;"><br />
+</div>
+<h2 style="font-weight: normal; margin-bottom: 0px !important;">Traction Partner</h2>
+<div style="font-weight: normal;"><a target="_blank" href="https://cmocouncil.org/events.php" style="border-bottom: 0 !important;"><img src="https://www.eiseverywhere.com/file_uploads/656f15b98573c4ad9a608bdba21748d6_cmo-council-logo.png?u=1438266378" alt="CMO Council" style="max-width: 50%; width: auto; height: auto; margin-left: -3%;" /></a></div> <!-- NEWS BLOCK --></div>
+	</div>
+	<div id="tweets" class="subsection right m-hide">
+		<h2>Join the Conversation on Twitter</h2>
+		<div id="s1729" class="snippet"><a height="320" class="twitter-timeline" href="https://twitter.com/DEMO" data-chrome="transparent noscrollbar" data-widget-id="428259904726392832" data-link-color="#0073ae" data-border-color="#def3f5">Tweets by @DEMO</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> <!-- TWITTER FEED --></div>
+	</div>
+	<div id="blog" class="subsection left">
+		<h2>DEMO Alumni in the News</h2>
+		<div id="rss-feed">
+		<iframe src="//www.meltwaternews.com/magenta/xml/html/29/43/v2_438947.html" id="mw-rss" scrolling="no" frameborder="0" allowtransparency="true" class="meltwater" style="border: none; width: 100% !important; border-radius: 0.6em; overflow: hidden; max-width: 100%; min-width: 180px;"></iframe>
+		</div>
+		<p>&nbsp;</p>
+		<a class="button" href="http://thedemoblog.com/">View the DEMO Blog<i class="fa fa-rss"></i></a>
+	</div>
+	<div id="flickr" class="subsection right showtime">
+		<h2 style="color: #f13592; display: inline-block; margin-right: 0.5em;">Flickr Photostream</h2>
+		<div id="s1810" class="snippet photostream" style="width: 100%">
+	<object id="flickr-flash" data="http://www.flickr.com/apps/slideshow/show.swf?v=124984" type="application/x-shockwave-flash" style="min-height: 320px;" width="100%">
+		<a href="http://www.flickr.com/photos/democonference/sets/72157647155393743/">Visit our Flickr Photostream</a>
+	    <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Fdemoconference%2Fsets%2F72157647155393743%2Fshow%2F&amp;page_show_back_url=%2Fphotos%2Fdemoconference%2Fsets%2F72157647155393743%2F&amp;set_id=72157647155393743&amp;jump_to=">
+	    <param name="movie" value="//www.flickr.com/apps/slideshow/show.swf?v=124984">
+	    <param name="allowFullScreen" value="true"><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=124984" allowfullscreen="true" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Fdemoconference%2Fsets%2F72157647155393743%2Fshow%2F&amp;page_show_back_url=%2Fphotos%2Fdemoconference%2Fsets%2F72157647155393743%2F&amp;set_id=72157647155393743&amp;jump_to=" width="100%">
+     </object>
+</div> <!-- Flickr Photostream Player w/Fallback --></div>
+<div id="traction" class="subsection left">
+		<a href="http://www.cio.com/category/demo/"><img border="0" src="/file_uploads/830a150c77b70dc8aff9130aadec45f1_Traction_Logo.png" alt="TractionWatch" /></a>
+		<p><strong>Traction Watch</strong> is a new column focused obsessively on growth, and is a companion to the <a href="https://www.eiseverywhere.com/ehome/107497/home">DEMO Traction</a> conference series, which brings together high-growth startups with high-potential customers. Companies can <a href="https://www.eiseverywhere.com/ehome/demotractionspring/for-startups/">apply here</a> to showcase, or those similarly obsessed can <a href="https://www.eventbrite.com/e/demo-traction-april-2015-registration-14318046663">register here</a> to attend.</p>
+	</div>
+</div></div></div><div id="content_565706"><table width="100%" cellspacing="0" cellpadding="2"><tr><td class="header" style="padding-bottom:10px;">Testimonials</td></tr></table><div style="width:100%;overflow:hidden"><div id="what-they-say" class="section full-width bleed">
+	<div class="slideshow">
+		<div class="slides">
+			<div class="slide photo active" style="background-image: url(/file_uploads/cbfcae3b7e973055d526c14bbf0b917e_blurred-w-1.jpg)">
+				<div class="mask tm" style="background-image: url(/file_uploads/f938972728f3d4c391cd2e4fd0e80a41_sharp-w-1.jpg)"></div>
+				<blockquote>Our company greatly benefited by launching at DEMO; it was the perfect venue to showcase our first product to a discriminating audience of tech influencers. It made it easy for us to <strong>meet one-on-one with press and analysts</strong> in ways that aren't possible in the outside.</blockquote>
+				<cite><strong>Patrick Rafter</strong> VP, SnoopWall <img src="/file_uploads/a21ca18c34129eb815d2a1d1be9d705d_snoop-wall.jpg" alt="SnoopWall" /></cite>
+			</div>
+			<div class="slide photo" style="background-image: url(/file_uploads/722848f7f7ea38ec95dccacf98a511c8_blurred-w-2.jpg)">
+				<div class="mask mm" style="background-image: url(/file_uploads/d1c4b32d6c43608a07b78510646da277_sharp-w-2.jpg)"></div>
+				<blockquote>Demo is one of the best events I have attended in Silicon Valley for <strong>high volume, fast paced speed networking</strong> with a curated star-tup community over an intense, but fun 3 days.</blockquote>
+				<cite><strong>DEMO Fall 2012</strong> Attendee <img class="default" src="/file_uploads/5f723ea82828e16b7ddd79abf599279f_demo-logo.png" alt="DEMO Attendee" /></cite>
+			</div>
+			<div class="slide photo" style="background-image: url(/file_uploads/619ef4bb065267b92f6dc391400ccbbb_blurred-w-3.jpg)">
+				<div class="mask mm" style="background-image: url(/file_uploads/33bca8ba8b2da1532c7c1583a894d059_sharp-w-3.jpg)"></div>
+				<blockquote><strong>DEMO is like jet fuel for your product.</strong> It launches your company and your concept into the spotlight, faster than you could imagine if you tried to have your own launch event.</blockquote>
+				<cite><strong>Guy Paddock</strong> CEO <img src="/file_uploads/cf27b5245c304b81d55fffb41f7c8010_redbottle-horizontal.png" alt="Red Bottle Design" /></cite>
+			</div>
+			<div class="slide photo" style="background-image: url(/file_uploads/e203da739b387fbedb55c3c903470a30_blurred-guy-paddock.jpg)">
+				<div class="mask tm" style="background-image: url(/file_uploads/3f22068c2c298bd150d8001151b63fcf_sharp-demo-spring-2012-attendee.jpg)"></div>
+				<blockquote>If you want a clear view of the future of Information Technology and Innovation, <strong>DEMO is the place to get it.</strong> The information is critical to making the right decisions that have the greatest impact over the longest amount of time in any modern enterprise.</blockquote>
+				<cite><strong>DEMO Spring 2012</strong> Attendee <img class="default" src="/file_uploads/5f723ea82828e16b7ddd79abf599279f_demo-logo.png" alt="DEMO Attendee" /></cite>
+			</div>
+			<div class="slide photo" style="background-image: url(/file_uploads/92b34c5d8bca0d0a3385a121e3bc576f_blurred-w-5.jpg)">
+				<div class="mask tr" style="background-image: url(/file_uploads/deae37b08597df0d06d699062998891b_sharp-w-5.jpg)"></div>
+				<blockquote>For us DEMO Fall made, and is making the launch of our company a significant event, and <strong>far more than we could have ever achieved on our own.</strong> It has already had a huge impact on our profile.</blockquote>
+				<cite><strong>Dan Somers</strong> CEO <img src="/file_uploads/098e772c6e3393dceffebfb4fb589501_WA_Logo3D.png" alt="Warwick Analytics" /></cite>
+			</div>
+			<div class="slide photo" style="background-image: url(/file_uploads/2f28af35113924a178c4218e4d89d058_blurred-w-6.jpg)">
+				<div class="mask br" style="background-image: url(/file_uploads/ffeb2ebf6f912d7d0c3dfb22b2c992e0_sharp-w-6.jpg)"></div>
+				<blockquote>DEMO, the conference that keeps an eye on <strong>the pulse of disruption</strong> and ideas in the industry.</blockquote>
+				<cite><strong>DEMO Mobile 2013</strong> Attendee <img class="default" src="/file_uploads/5f723ea82828e16b7ddd79abf599279f_demo-logo.png" alt="DEMO Attendee" /></cite>
+			</div>			
+		</div>
+	</div>
+	<div class="ui">
+		<div class="ellipses"></div>
+		<a class="nav left" href="#back">Back</a>
+		<a class="nav right" href="#next">Next</a>
+	</div>
+</div></div></div><div id="content_565707"><table width="100%" cellspacing="0" cellpadding="2"><tr><td class="header" style="padding-bottom:10px;">Who attends DEMO</td></tr></table><div style="width:100%;overflow:hidden"><div id="who-attends" class="section">
+<div class="subsection" id="launched">
+<h2><em class="fa fa-rocket"></em><a href="/ehome/29414/launch/success-stories">Launched</a> at DEMO<strong style="font-weight: bold">:</strong></h2>
+<div class="slider">
+<!-- SNIPPET -->
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td><img src="/file_uploads/321b025670c4e09d6ec48401a289cb21_waze.jpg" border="0" alt="waze" />
+            </td>
+            <td><img src="/file_uploads/7735edd707e67c588e2db7898c7e880d_evernote.png" border="0" alt="evernote" />
+            </td>
+            <td><img src="/file_uploads/ced54aee792637f9c3e6249d43e88234_jawbone.jpg" border="0" alt="jawbone" />
+            </td>
+            <td><img src="/file_uploads/1595d71b3b1581816ef72f329482623a_salesforce.jpg" border="0" alt="salesforce" />
+            </td>
+            <td><img src="/file_uploads/2853412944f7e078469f2e0f81ce091c_webex.jpg" border="0" alt="webex" />
+            </td>
+            <td><img src="/file_uploads/c30bf884e40fb9ac28244cc54d00ba96_vmware-logo.jpg" border="0" alt="vmware" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- SNIPPET -->
+</div>
+<div class="ui"><a class="nav left" href="#back">Back</a><a class="nav right" href="#next">Next</a></div>
+</div>
+<div class="subsection" id="acquisitions">
+<h2><em class="fa fa-crosshairs"></em>Unprecedented <a href="/ehome/29414/launch/success-stories">acquisitions</a><strong style="font-weight: bold">:</strong></h2>
+<div class="slider">
+<!-- SNIPPET -->
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td><img src="/file_uploads/4a3343b350947bdd14c5120c6d5cf32d_microsoft-danger.jpg" border="0" alt="Danger (Microsoft)" />
+            </td>
+            <td><img src="/file_uploads/42c1363ec41c9aa6063e0de96908ee22_sap_business_objects.jpg" border="0" alt="Business Objects (SAP)" />
+            </td>
+            <td><img src="/file_uploads/49d8c464efb9f45211dad26efb95a1ed_HPAutonomy.jpg" border="0" alt="Autonomy (HP)" />
+            </td>
+            <td><img src="/file_uploads/e6c4517f6950c80737e86260c3e62835_grandcentral_logo.jpg" border="0" alt="GrandCentral (Google)" />
+            </td>
+            <td><img src="/file_uploads/de0d0c37df9e6d93c8729895f898d5e4_half-ebay.png" border="0" alt="Half.com (eBay)" />
+            </td>
+            <td><img src="/file_uploads/f7ef38a2f0e39155a56789021ae9ed82_HP_Fortify_Partnership_Logo.png" border="0" alt="Fortify (HP)" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- SNIPPET -->
+</div>
+<div class="ui"><a class="nav left" href="#back">Back</a><a class="nav right" href="#next">Next</a></div>
+</div>
+<div class="subsection" id="press">
+<h2><em class="fa fa-camera"></em><strong style="font-weight: bold">Leading </strong>media and <a href="http://demonews.mwnewsroom.com/">press coverage</a><strong style="font-weight: bold">:</strong></h2>
+<div class="slider">
+<!-- SNIPPET -->
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td><img src="/file_uploads/39f744789e0e3431984092dd4559c811_cnbc-logo.png" border="0" alt="CNBC" />
+            </td>
+            <td><img src="/file_uploads/4718a0d47b46142804f45081fc5b77e6_Forbes-logo.jpg" border="0" alt="Forbes" />
+            </td>
+            <td><img src="/file_uploads/c6cf116b5c9957ad99aa754ed17f70d9_readwriteLogo.png" border="0" alt="ReadWrite" />
+            </td>
+            <td><img src="/file_uploads/3dbfff1f23783830ee1abfd4d23c1dec_tc-techcrunch.png" border="0" alt="" /><br />
+            </td>
+            <td><img src="/file_uploads/a4d6ca8c390c8617f7dfeac83121bf14_Fortune-logo-300x200.jpg" border="0" alt="Fortune" />
+            </td>
+            <td><img src="/file_uploads/c5a6a84d8ca28e1b0fc704a7e1ad552d_WSJ-Logo.jpg" border="0" alt="Wall Street Journal" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- SNIPPET -->
+</div>
+<div class="ui"><a class="nav left" href="#back">Back</a><a class="nav right" href="#next">Next</a></div>
+</div>
+<div class="subsection" id="partners">
+<h2><em class="fa fa-star-o"></em><a href="/ehome/29414/events/sponsors">Event sponsors</a><strong style="font-weight: bold">:</strong></h2>
+<div class="slider">
+<!-- SNIPPET -->
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td><img src="/file_uploads/4c105fc57ffc8b82cb3497b82a003092_Primary-Data.jpg" border="0" alt="" /><br />
+            </td>
+            <td><img src="/file_uploads/407324191a561ccc204b340a42b5815e_mckinsey.png" border="0" alt="" /><br />
+            </td>
+            <td><img src="/file_uploads/0962d269b3409f087c4e16417eb1b027_Dell.png" border="0" alt="" /><br />
+            </td>
+            <td><img src="/file_uploads/07ffc56a6713d91c6869ebc76746ccc4_social-radius.png" border="0" alt="" /><br />
+            </td>
+            <td><img src="/file_uploads/1c5eb159a9442f5e795766bab0019efa_SAP.png" border="0" alt="" /><br />
+            </td>
+            <td><img src="/file_uploads/53ce90cfb2d97b6e5a460b567a6915bc_Gateway-Logo-2014.jpg" border="0" alt="" /><br />
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- SNIPPET -->
+</div>
+<div class="ui"><a class="nav left" href="#back">Back</a><a class="nav right" href="#next">Next</a></div>
+</div>
+<div class="subsection" id="council">
+<h2><em class="fa fa-users"></em><strong style="font-weight: bold">In partnership with the </strong><a href="http://council.cio.com/programs/emerging-technology-2/">DEMO CIO Council</a><strong style="font-weight: bold">:</strong></h2>
+<div class="slider">
+<!-- SNIPPET -->
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/c8133f181f0bdf676bd0482af473db63_NealSilverman_Demo_IDG2-120x148.jpg" alt="Neal Silverman" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Neal Silverman</strong></p>
+                        <p>SVP &amp; GM, DEMO</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/9cc81f7a9a9a4cc26ae8e54f22e2f202_erick.png" alt="Erick Schonfeld" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Erick Schonfeld</strong></p>
+                        <p>Executive Producer, DEMO</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/02b58bb9a9cfffb550f0ff028d0f76f6_Alex-Rosen.jpg" alt="Alex Rosen" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Alex Rosen</strong></p>
+                        <p>Managing Director, IDG Ventures</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/c4b374c27799c5d374850c4428914882_Tim-Arthur2.jpg" alt="Tim Arthur" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Tim Arthur</strong></p>
+                        <p>CIO, Alltech, Inc.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/2f23c6a6de94bd855f498cea3ee87f7d_Butcher-Matt2-120x148.jpg" alt="Matt Butcher" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Matt Butcher</strong></p>
+                        <p>CIO, Karl Storz</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/65078ab9114ecaa72172ce6399c7ca82_Fetter_Victor_200x2001-120x148.jpg" alt="Victor Fetter" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Victor Fetter</strong></p>
+                        <p>CIO, LPL Financial Services</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/3b4a25f9dc7f204459795f21d6a66c64_RonGuerrier_48321_39905_low1-120x148.jpg" alt="Ron Guerrier" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Ron Guerrier</strong></p>
+                        <p>CIO, Toyota Financial Services</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/9b2f01fbc9faa63c0103b8dd70f8ed31_Vishwa-Hassan-120x148.jpg" alt="Vishwa Hassan" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Vishwa Hassan</strong></p>
+                        <p>Global Head - IT Research and Technology Development, Intel</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/a223a29ea480b3fc6fd89e9731784c83_steven-john-1-304xx1905-2858-42-01-120x148.jpg" alt="Steven John" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Steven John</strong></p>
+                        <p>CIO, AmeriPride Services Inc.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/a1cce2813260fe8f9036b46796a4ddfb_Loura-Ralph-120x148.jpeg" alt="Ralph Loura" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Ralph Loura</strong></p>
+                        <p>CIO, Enterprise Group, HP</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/4675d3432d0a30087fc596d36017c4ab_Swieringa-John2-120x148.jpg" alt="John Swieringa" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">John Swieringa</strong></p>
+                        <p>CIO, Dish Network</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/a7e6e92d8c73156b2aee49a303124b32_j_kelly_mcGowan-120x148.jpg" alt="Kelly McGowan" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Kelly McGowan</strong></p>
+                        <p>CIO, American Securities</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/7856320df09d83b2c2bd9843b60ef819_leadership_McKenzie_Diana_2012-120x148.jpg" alt="Diana McKenzie" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Diana McKenzie</strong></p>
+                        <p>CIO, Amgen</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/8d24cacd7bbeea7ca45e82143794abf2_Rousso-Doug-120x148.jpg" alt="Doug Rousso" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Doug Rousso</strong></p>
+                        <p>SVP &amp; CTO, CBS Corporation</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/e3926d690e3fac88fc29ffd439f85085_SHURTS_WAYNE__13_Fall.jpg" alt="Wayne Shurts" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Wayne Shurts</strong></p>
+                        <p>CTO, Sysco Foods</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/bcaf4b29465a9da9fd72e5dc75f20d58_Thomstatter-Jason.jpg" alt="Jason Thomstatter" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Jason Thomstatter</strong></p>
+                        <p>Global Systems Director, Mars Symbiosciences</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="namecard">
+                <tbody>
+                    <tr>
+                        <td>
+                        <div class="mask"><img src="/file_uploads/958fac5312cfc247cf3ca2beff9d4a96_Yochem_Angela_hi-res-120x148.jpg" alt="Angela Yochem" /></div>
+                        </td>
+                        <td>
+                        <p><strong style="font-weight: bold">Angela Yochem</strong></p>
+                        <p>CIO, BDP</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- SNIPPET -->
+</div>
+<div class="ui"><a class="nav left" href="#back">Back</a><a class="nav right" href="#next">Next</a></div>
+</div>
+</div></div></div><div id="content_565708"><table width="100%" cellspacing="0" cellpadding="2"><tr><td class="header" style="padding-bottom:10px;">Winners &amp; Alumni</td></tr></table><div style="width:100%;overflow:hidden"><div id="winners-alumni" class="section">
+	<div class="subsection" id="winners">
+		<h2>Fall 2014 DEMOgod&trade; winners</h2>
+		<p class="m-hide">The DEMO Gods Awards program is a celebration of entrepreneurship and innovation. They are a way to recognize the challenge of communicating the power and value of emerging technologies on stage in a short 4-minute pitch. <a href="/ehome/DEMO/alumni/demo-gods">Learn more</a></p>
+		<ul class="columns">
+			<li><a href="http://ctt.marketwire.com/?release=1160754&id=5026168&type=1&url=http%3a%2f%2fwww.goslb.com%2f">Student Loans</a></li>
+			<li><a href="http://ctt.marketwire.com/?release=1160754&id=5026174&type=1&url=http%3a%2f%2fwww.energycurb.com%2f">Curb</a></li>
+			<li><a href="http://ctt.marketwire.com/?release=1160754&id=5026177&type=1&url=http%3a%2f%2fwww.pathsense.com%2f">PathSense</a></li>
+			<li><a href="http://ctt.marketwire.com/?release=1160754&id=5026183&type=1&url=http%3a%2f%2fwww.celect.net%2f">Celect</a></li>
+			<li><a href="http://ctt.marketwire.com/?release=1160754&id=5026189&type=1&url=http%3a%2f%2fwww.ghostery.com%2f">Ghostery</a></li>
+			<li><a href="/ehome/DEMO/alumni/demo-gods">More <span class="m-hide">DEMOgod </span>winners</a></li>
+		</ul>
+	</div>
+	<div class="subsection" id="alumni">
+		<h2>DEMO alumni</h2>
+		<p>DEMO posts alumni profiles with details about the company, its market segment, competitors, and what DEMO felt was unique about the product being launched.</p>
+		<div class="set">
+			<a class="button" href="/ehome/DEMO/alumni">Latest Alumni</a>
+			<a class="button" href="http://www.youtube.com/playlist?list=PLSvp36USr5ihOZmW5p9EX45-YF5WdLbdi" target="_blank">Watch their launch videos<i class="fa fa-film"></i></a>
+		</div>
+	</div>
+</div></div></div><div id="content_565710"><div style="width:100%;overflow:hidden"><div id="the-end" class="section">
+	<h1>Become a part of DEMO:</h1>
+	<div class="set cta big">
+		<a class="button snippet agenda" href="/ehome/demotrboston15/agenda/">BROWSE AGENDA<i class="fa fa-tasks"></i></a>
+<a class="button snippet class" href="/ehome/DEMO/alumni">TRACTION <span class="m-hide">ENTERPRISE </span>BOSTON 2015<i class="fa fa-group"></i></a>
+<a class="button snippet live" href="http://www.cio.com/category/demo/">WATCH IT LIVE<i class="fa fa-video-camera"></i></a> <!-- ACTIVE CTA -->
+	</div>
+	<h2>Stay connected:</h2>
+	<div class="set socials">
+	<a href="https://twitter.com/demo" class="social" alt="Twitter">Twitter</a>
+	<a href="https://www.facebook.com/DEMOconference" class="social" alt="Facebook">Facebook</a>
+	<a href="http://www.linkedin.com/groups?home=&gid=111&trk=anet_ug_hm" class="social" alt="LinkedIn">LinkedIn</a>
+	<a href="http://www.youtube.com/democonf" class="social" alt="YouTube">YouTube</a>
+	<a href="http://www.flickr.com/photos/democonference/sets/" class="social" alt="Flickr">Flickr</a>
+	<a href="javascript:alert('Coming Soon!');" class="social" alt="Flipboard">Flipboard</a>
+</div> <!-- SOCIAL ICONS -->
+</div></div></div></div><div id="footer_section" style="width:1200px;float:left;margin-bottom:0px;"><div id="content_565700"><div style="width:100%;overflow:hidden"><div id="demo-footer" class="snippet s1721">
+	<div id="idg-network">
+		<div id="idg-logo">
+			<a href="http://www.idgenterprise.com" target="_blank"><img src="/file_uploads/33ad6c8e03f8c3c13335cd368ad52b85_idg-logo.svg" onerror="this.src='/file_uploads/6c1da8399f72a0eb1cd1c84f698d7978_idg-logo.png'"></a>
+		</div>
+		<div id="links">
+			<a href="http://www.cfoworld.com/" target="_blank">CFOworld</a>
+			<a href="http://www.cio.com/" target="_blank">CIO</a>
+			<a href="http://www.computerworld.com/" target="_blank">Computerworld</a>
+			<a href="http://www.csoonline.com/" target="_blank">CSO</a>
+			<a href="http://www.gamepro.com/" target="_blank">GamePro</a>
+			<a href="http://www.games.net/" target="_blank">Games.net</a>
+			<a href="http://www.idc.com/" target="_blank">IDC</a>
+			<a href="http://www.idgconnect.com/" target="_blank">IDG Connect</a>
+			<a href="http://idgknowledgehub.com/" target="_blank">IDG Knowledge Hub</a>
+			<a href="http://www.idgtechnetwork.com/" target="_blank">IDG TechNetwork</a>
+			<a href="http://www.idg-ventures.com/" target="_blank">IDG Ventures</a>
+			<a href="http://www.infoworld.com/" target="_blank">InfoWorld</a>
+			<a href="http://www.itwhitepapers.com/" target="_blank">ITwhitepapers</a>
+			<a href="http://www.itworld.com/" target="_blank">ITworld</a>
+			<a href="http://www.javaworld.com/" target="_blank">JavaWorld.com</a>
+			<a href="http://www.linuxworld.com/" target="_blank">LinuxWorld.com</a>
+			<a href="http://www.macworld.com/" target="_blank">Macworld</a>
+			<a href="http://www.networkworld.com/" target="_blank">Network World</a>
+			<a href="http://www.pcworld.com/" target="_blank">PC World</a>
+		</div>
+	</div>
+	<div id="coda">
+		<a href="#backtop" class="button backtop">Back to top</a>
+		<div id="copyright"><strong>&copy; 2015 DEMO. All Rights Reserved.</strong></div>
+		<div id="tac">Design by <a href="http://www.clevelanddesign.com/" target="_blank">Cleveland</a> &nbsp;|&nbsp; <a href="/ehome/29414/terms">Terms &amp; Conditions</a></div>
+	</div>
+</div> <!-- Global DEMO footer snippet -->
+<div id="s1731" class="snippet">
+	<script type="text/javascript" src="/file_uploads/17f3f276752394773184f425f887d689_jquery-min.js"></script>
+	<script type="text/javascript" src="/docs/562/demo.js"></script>
+	<script type="text/javascript" src="//www.google.com/jsapi"></script>
+	<script type="text/javascript" src="/file_uploads/6d7c2d058da3703b9575dcd095cb85de_google-search.js"></script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52cdb48d58641a2c"></script>
+</div> <!-- Global DEMO scripts snippet -->
+<script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-11713536-2");pageTracker._setDomainName(".demo.com");pageTracker._trackPageview();} catch(err) {}</script> <!-- Global DEMO GA tracking (Main Site Only) --></div></div><div id="content_565701"><div style="width:100%;overflow:hidden"><div id="s1751" class="snippet">
+	<script type="text/javascript" src="/docs/562/rss.js"></script>
+	<script type="text/javascript" src="/file_uploads/0ccea62cf226fb233e3750dcd2ab9371_jquery.flipSnap.dev.js"></script>
+	<script type="text/javascript" src="/docs/562/front.js"></script>
+</div> <!-- Homepage DEMO scripts snippet --></div></div></div></div></td>
+</tr>
+
+<script type="text/javascript">
+//Add iframe param to youtube src in order to work in all browsers
+var iframes = document.getElementsByTagName('iframe');
+for (var i = 0; i < iframes.length; i++) {
+    if (iframes[i].src.substr(0,22) == "http://www.youtube.com") {
+        iframes[i].src += iframes[i].src.indexOf('?') == -1 ? '?' : '&';
+        iframes[i].src += 'enablejsapi=1';
+    }
+}
+
+</script>
+
+</table>
+<div id="overlay" style="display:none;position:absolute;top:0px;left:0px;z-index:1000000;width:100%;height:100%;background-color:#000000;filter:alpha(opacity=75);-moz-opacity:.75;opacity:.75;"></div>
+
+<div id="home_od" style="display:none;position:absolute;top:0px;left:0px;z-index:1000001;background-color:#FFFFFF;border-1px solid #CCCCCC;">
+<table cellspacing="0" cellpadding="0" height="100%" width="100%">
+<tr bgcolor="#a8b7c6">
+<td height="25">
+<img src="/images/spacer.gif" height="25" width="1" align="left" />
+<span id="title" style="position:absolute;top:4px;left:10px;font-weight:bold;color:#000000;"></span>
+<img src="/images/close.png" border="0" onclick="close_overlay();" style="position:absolute;top:4px;right:4px;cursor:pointer;" />
+</td>
+</tr>
+<tr>
+<td height="100%" align="center" valign="top">
+<div id="home_id" style="overflow:scroll;">
+<img id="image" src="/images/spinner.gif" border="0" />
+<iframe src="/ereg/popups/sessiondetails.php" name="url" id="url" frameborder="0" style="display:none;"></iframe>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
+
+
+

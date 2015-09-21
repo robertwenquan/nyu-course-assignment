@@ -1,0 +1,543 @@
+<!doctype html>
+
+<!--[if IE 7]><html data-ytrk-page="TOPIC GISTED 2_22" class="no-js  lt-ie10 lt-ie9 lt-ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html data-ytrk-page="TOPIC GISTED 2_22" class="no-js  lt-ie10 lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html data-ytrk-page="TOPIC GISTED 2_22" class="no-js  lt-ie10 ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html data-ytrk-page="TOPIC GISTED 2_22" class="no-js " lang="en"><!--<![endif]-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ">
+
+    <!--[if lte IE 9 ]>
+    <script type="text/javascript" src="/resources/js/polyfills.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init mendel">
+        Mendel = {};
+        $UI = {};
+        (function() {
+            var html = document.getElementsByTagName('html')[0];
+            html.className = html.className.replace( 'no-js', '');
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="The coordinated use of many computers disbursed over a wide area to do complex tasks. Distributed computing is a method that researchers use to solve highly complicated problems..." /><meta name="keywords" content="distributed computing, encyclopedia, encyclopaedia, britannica, article" /><link rel="canonical" href="http://www.britannica.com/technology/distributed-computing" /><meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@britannica" />
+
+<meta property="og:type"  content="article"/>
+<meta property="og:title" content="distributed computing"/>
+<meta property="og:description" content="The coordinated use of many computers disbursed over a wide area to do complex tasks. Distributed computing is a method that researchers use to solve highly complicated problems..."/>
+<meta property="og:site_name" content="Encyclopedia Britannica" />
+<meta property="og:url" content="http://www.britannica.com/technology/distributed-computing"/>
+<meta property="og:image" content="http://www.britannica.com/resources/images/shared/facebook-logo.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="90" /><meta property="og:image:height" content="90" /><script type="text/javascript" data-type="init opengraph">
+Mendel.openGraph = {
+    type: 'article',
+    title: 'distributed computing',
+    description: 'The coordinated use of many computers disbursed over a wide area to do complex tasks. Distributed computing is a method that researchers use to solve highly complicated problems...',
+    siteName: 'Encyclopedia Britannica',
+    url: 'http://www.britannica.com/technology/distributed-computing',
+    image: 'http://www.britannica.com/resources/images/shared/facebook-logo.png',
+    imageType: 'image/png'
+    
+    ,imageWidth: 90
+    ,imageHeight: 90
+};
+</script>
+
+<title>distributed computing | Britannica.com</title>
+
+    <link href="//fonts.googleapis.com/css?family=Coustard|Asap:400,700|Open+Sans:400,700,800" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/resources/css/libs/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/min-mendel.css?v=2.36.13" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <script type="text/javascript" data-type="init mendel config">
+
+Mendel.config = {
+	page: 'Topic',
+	testVersion: 'B',
+	server: 'http://www.britannica.com',
+	mediaServer: "http://media.web.britannica.com",
+	currentUrl: 'http://www.britannica.com/technology/distributed-computing',
+	sharedUrl: 'http://www.britannica.com/technology/distributed-computing',
+	userType: 'ANONYMOUS',
+	userInfo: { statId: '-1'
+	           ,userId: ''
+	           ,currency: 'USD'
+	           ,country: 'CA'
+	           ,bcomId: '6584286667153279332'
+	           ,mvst: {
+  "QUIZ_INTRO" : "INTRO_2",
+  "GIST_STRIP_POSITION" : "BOTTOM",
+  "RR_BRITANNICA_STORIES" : "3_STORIES",
+  "RR_STORY_BRITANNICA_STORIES" : "3_STORIES",
+  "HEADER_UPSELL_IMAGE" : "http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg",
+  "HEADER_UPSELL" : "HU_1",
+  "US_SUBSCRIPTION_URL_PREFIX" : "https://safe1.britannica.com/registrations/signup.do?partnerCode=",
+  "SMALL_ADDTNL_RESOURCES" : "NO"
+}
+	           ,provider: 'NONE'
+	           ,preferences: {}
+	},
+	isLoggedInAsUser: false,
+	hasAds: true,
+	hasVideoAds: true,
+	
+	adapTvId: 'nj232',
+	adapTvZid: 'Eb_autoplay-free',
+	
+	logGoogleGPT: false,
+	isMobile: false,
+	isTablet: false,
+	isPhone: false,
+	analytics: [
+	   
+	   { type: 'google', id: 'UA-6636134-11', logClickAction: true, logPageLoad: true, logFakePageLoad: true },
+	   { type: 'eb', logClickAction: false, logPageLoad: false, logFakePageLoad: true }
+	   
+	],
+	logAnalytics: false,
+	includeGigya: true,
+	gigyaProviders: 'facebook,twitter,googleplus,linkedin,yahoo'
+	
+	,mendelCookie: {
+  "pagesViewed" : 1,
+  "topicPagesViewed" : 1,
+  "articlePageUrl" : "http://www.britannica.com/technology/distributed-computing",
+  "mwQuizGroupNumber" : null,
+  "mwQuizGroupExcept" : null,
+  "vistedTopics" : [ 1494997 ],
+  "currentReadingList" : null,
+  "galleryReferrer" : null
+},topicUrl: '/technology/distributed-computing'
+        ,topicContentType: 'ARTICLE'
+        ,freeTopicReason: 'NOT_FREE'
+        ,channel: 'SCIENCE_AND_TECHNOLOGY'
+        ,topicId: 1494997
+        ,topicTitle: 'distributed computing'
+	    ,topicAkw: 'social sciences,sports recreation,science technology,tourism'
+        ,isIndexEntry: false
+        ,template: 'GISTED'
+        ,hasToc: false
+};
+
+</script><script type="text/javascript" data-type="init Quantcast top">
+		    var _qevents = _qevents || [];
+		    (function() {
+		        var elem = document.createElement('script');
+		        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+		        elem.async = true;
+		        elem.type = "text/javascript";
+		        var scpt = document.getElementsByTagName('script')[0];
+		        scpt.parentNode.insertBefore(elem, scpt);
+		    })();
+		</script>
+	<script type="text/javascript" data-type="load GPT">
+         (function() {
+           var src = '//www.googletagservices.com/tag/js/gpt.js';
+           document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+	    <script src="http://js.indexww.com/ht/bri2.js"></script>
+	    <script type="text/javascript" data-type="load openX">
+         (function() {
+            var src = '//ox-d.merriamwebster.servedbyopenx.com/w/1.0/jstag?nc=34444486-EB';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        </script>
+    <script type="text/javascript" data-type="init GPT slots">
+    var googletagSlots = [];
+    googletag.cmd.push(function() {
+        
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_B/ARTICLES_GIST_NEW', [300,250],'div-gpt-ad-e83b5b7b-b193-47f5-a45e-2cd505b6d380')
+                             .setTargeting('POS',['TOP'])
+                             .addService(googletag.pubads())
+                    );
+                
+                    googletagSlots.push(
+                        googletag.defineSlot('/34444486/EB_B/ARTICLES_GIST_NEW', [300,250],'div-gpt-ad-9b95bfd6-0d6c-4dce-94a6-cb2c3ad84a8e')
+                             .setTargeting('POS',['PRE'])
+                             .addService(googletag.pubads())
+                    );
+                googletag.pubads().setTargeting('dc_ref',['http://www.britannica.com/technology/distributed-computing']);googletag.pubads().setTargeting('ARTICLE',['1494997']);googletag.pubads().setTargeting('CAT',['social sciences,sports recreation,science technology,tourism']);googletag.pubads().setTargeting('PAGE',[1]);
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableAsyncRendering();
+        googletag.enableServices();
+  });
+</script><script type="text/javascript" src="http://tags.crwdcntrl.net/c/6931/cc.js?ns=_cc6931" id="LOTCC_6931"></script>
+    <script type="text/javascript" language="javascript" data-type="lotame init">_cc6931.bcp();</script>
+<script type="text/javascript" src="/resources/js/libs/mbox.js" ></script><!--[if lte IE 8]>
+    <script type="text/javascript" data-type="ie8 html5 tags">
+        ( function() {
+            var tags = [ 'header', 'footer', 'aside', 'nav', 'section', 'article', 'figure', 'figcaption', 'time' ];
+            for ( var i = 0; i < tags.length; document.createElement( tags[i++] ) );
+        })();
+    </script>
+    <![endif]-->
+
+</head>
+
+<body ng-app class="topicPage topic-page-gisted2 user-ANONYMOUS md-desktop font-sans no-toolbar no-toc leg-b">
+
+    <div class="md-page-wrapper">
+
+        <header class="font-sans-ui">
+
+    <div class="header-content">
+
+        <div class="header-title">
+
+            <h4>
+	            <a class="logo-homepage" href="/"><img src="/resources/images/header/eb-logo-header.png" alt="Encyclopedia Britannica" /></a>
+                <a class="header-thistle" href="/"></a>
+            </h4>
+
+            <div class="header-login ">
+
+                <div class="grid">
+                    <div class="grid-xs-66">
+                        <div class="header-nav text-left">
+    <ul>
+        <li><a data-ytrk="25" href="http://store.britannica.com" target="_blank">Shop</a></li>
+        <li><a data-ytrk="27" href="http://info.eb.com" target="_blank">School and Library Subscribers</a></li>
+        </ul>
+</div>
+
+
+</div>
+                    <div class="grid-xs-auto text-right">
+
+                        <ul class="header-login-links">
+                            <li>
+                                        <a data-ytrk="262" href="#" class="md-header-join-link">JOIN</a>
+                                    </li>
+                                    <li>
+                                        <a data-ytrk="17" href="#" class="login-link" >LOGIN</a>
+                                    </li>
+                                <li >
+                                    <a data-ytrk="/19" class="md-upsell-link" href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPGISTSUB_LP_MDL_B" rel="nofollow">
+                                        Activate Your Free Trial!</a>
+                                </li>
+                            </ul>
+
+                        <div class="header-login-upsell">
+                                <a href="https://safe1.britannica.com/registrations/signup.do?partnerCode=EBOPGISTSUB_LP_MDL_B" rel="nofollow"><img src="http://safe.britannica.com/safeimages/header_upsell_apr2015.jpg"/></a>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<div id="header-global-nav" data-position-fixed="0">
+
+    <div class="header-global-nav-content grid">
+
+        <a data-ytrk="/655" class="header-global-nav-home" href="/"><img src="/resources/images/header/homepage-small-thistle-v2.png" alt="home" /></a>
+
+        <ul id="header-global-nav-buttons" data-title="navigation" class="grid">
+            <li class="grid-fit"><a data-ytrk="/439" href="/popular-topics/browse" >Popular Topics</a></li>
+            <li class="grid-fit"><a data-ytrk="/440" href="/quiz/browse" >quizzes</a></li>
+            <li class="grid-fit"><a data-ytrk="/441" href="/gallery/browse" >galleries</a></li>
+            <li class="grid-fit"><a data-ytrk="/442" href="/list/browse" >lists</a></li>
+            </ul>
+
+        <div class="search-form grid-xs-auto">
+            <form method="get" action="/search" id="searchCriteria" class="">
+    <div class="search-box">
+        <input name="query" type="text" id="header-query" placeholder="Search Britannica..." class="query font-sans"  maxlength="200" />
+        <button data-ytrk="21" type="submit" class="search-submit" value=""><i class="fa fa-search"></i></button>
+    </div>
+</form>
+</div>
+
+        </div>
+
+    </div>
+
+<div class="container">
+                <div class="md-page-h1-wrapper">
+                    <h1><span>Distributed computing</span></h1><span class="md-locked-article show-alt hide-on-edit show-alt-below" title="To continue reading, activate your no-risk free trial"></span>
+        <div class="subheading">
+            <span>Written by: <a href="/bps/user-profile/4419/the-editors-of-encyclopaedia-britannica" data-ytrk="/212">The Editors of Encyclop&aelig;dia Britannica</a></span>
+            </div>
+	    <ul class="md-topic-title-links">
+
+	</ul></div>
+            </div>
+        <div id="content" class="md-content ">
+
+            <div id="edit-toolbar-placeholder"></div><div class="md-content-wrapper  topic-content">
+                <article class="font-sans-ui content-body" vocab="http://schema.org" resource="http://semantic.britannica.com/accepted_headword/core/1494997/distributed-computing" typeof="Article">
+            <meta property="url" href="/technology/distributed-computing" />
+            <meta property="name" content="distributed computing" />
+            <p><section id="toc1494997main" class="eb-topic-section" data-level="intro"><p><b><span class="srTitle">Distributed computing</span></b><b>,</b>&nbsp;<a href="/technology/distributed-computing/images-videos/Students-and-nonscientists-can-become-citizen-scientists-by-participating-in/173757" class="bps-assembly-container media-overlay-link" data-id="173757" data-type="video" data-ytrk="77"><span class="md-assembly-content"><img alt="distributed computing: citizen scientists and distributed computing [Credit: Science in Seconds (www.scienceinseconds.com) (A Britannica Publishing Partner)]" src="http://media-1.web.britannica.com/eb-media/04/163004-049-A82E226F.jpg" width="426" height="240"><i class="fa fa-play-circle-o fa-3x"></i><span class="md-assembly-thumb-caption"><span class="md-assembly-thumb-title">distributed computing: citizen scientists and distributed computing</span><span class="md-assembly-thumb-credit">Science in Seconds (www.scienceinseconds.com) (A Britannica Publishing Partner)</span></span></span></a>the coordinated use of many <a data-ytrk="/548" href="/technology/computer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130429/computer">computers</span></a> disbursed over a wide area to do complex tasks.</p><!--[END-1ST-PARA]--><p>Distributed computing is a method that researchers use to solve highly complicated problems without having to use an expensive <a data-ytrk="/548" href="/technology/supercomputer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/574200/supercomputer">supercomputer</span></a>. Much like <a data-ytrk="/548" href="/technology/multiprocessing"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/397249/multiprocessing">multiprocessing</span></a>, which uses two or more processors in one <a data-ytrk="/548" href="/technology/computer"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/130429/computer">computer</span></a> to carry out a task, distributed computing uses a large number of computers to split up the computational load. With distributed computing, <a name="ref1061891" id="ref1061891"></a><a data-ytrk="/548" href="/technology/client"><span property="about" href="http://semantic.britannica.com/accepted_headword/core/121476/client">client</span></a> programs are first installed onto each computer. The client programs then download files containing portions of the problem to be processed and analyzed. As each file is analyzed, the clients <span class="md-gist-nb-words">... (100 of 230 words)</span><div class="md-gist-upsell"></div></p></section></p><div id="md-media-strip-load">
+            <div id="md-media-strip" class="md-media-strip font-sans-ui">
+
+        <ul id="md-media-strip-tabs" class="ui-tabs md-media-strip-tabs nav nav-tabs font-sans">
+
+            <li id="md-media-strip-tab-VIDEO" class="has-carousel"><a data-ytrk="88" href="#md-media-strip-tab-VIDEO-content">Videos</a></li>
+                    </ul>
+
+            <div class="ui-tabs-content">
+
+            <div id="md-media-strip-tab-IMAGE-content" class="md-media-strip-media-content" rel="/ajax/topic/1494997/images/CA"></div>
+            <div id="md-media-strip-tab-VIDEO-content"  class="md-media-strip-media-content" rel="/ajax/topic/1494997/videos"></div>
+            <div id="md-media-strip-tab-AUDIO-content"  class="md-media-strip-media-content" rel="/ajax/topic/1494997/audios"></div>
+            <div id="md-media-strip-tab-INTERACTIVE-content"  class="md-media-strip-media-content" rel="/ajax/topic/1494997/interactives"></div>
+            </div>
+    </div>
+
+</div>
+        </article>
+
+        <div id="md-media-strip-loaded" class="wait"></div>
+        <div class="md-mbox-container">
+    <div id="mendelgist-mbox" class="mboxDefault"></div>
+    <script type="text/javascript">mboxCreate('mendelgistUS','gist_size=100','topic_category=social sciences,sports recreation,science technology,tourism','testVersion=B');</script>
+</div></div>
+
+            <aside class="md-sidebar "><div class="hide-on-edit">
+
+	        
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-9b95bfd6-0d6c-4dce-94a6-cb2c3ad84a8e" data-slot="PRE" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-9b95bfd6-0d6c-4dce-94a6-cb2c3ad84a8e'); });</script>
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div id="div-gpt-ad-e83b5b7b-b193-47f5-a45e-2cd505b6d380" data-slot="TOP" class="google-ad-iframe ui-hide-on-modal ">
+	    <script type="text/javascript" data-type="display gpt">googletag.cmd.push(function() { googletag.display('div-gpt-ad-e83b5b7b-b193-47f5-a45e-2cd505b6d380'); });</script>
+	</div>
+	
+
+
+</div></aside>
+            <div class="md-page-wrapper-bottom hide-on-edit"></div>
+
+        </div>
+
+        </div>
+
+    <footer id="md-footer" class="footer-wrapper hide-on-edit">
+
+    <div class="footer-bck">
+        <ul class="md-footer-slim">
+            <li><a data-ytrk="59" href="http://corporate.britannica.com" target="_blank">About Us</a></li>
+            <li><a data-ytrk="129" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">About Our Ads</a></li>
+            <li><a data-ytrk="37" href="http://corporate.britannica.com/contact/consumer/" target="_blank" rel="nofollow">Contact Us</a></li>
+            <li><a data-ytrk="60" href="http://corporate.britannica.com/privacy.html" target="_blank" rel="nofollow">Privacy Policy</a></li>
+            <li><a data-ytrk="61" href="http://corporate.britannica.com/termsofuse.html" target="_blank" rel="nofollow">Terms of Use</a></li>
+        </ul>
+        &copy;2015 Encyclop&aelig;dia Britannica, Inc.
+    </div>
+
+</footer><form method="POST" id="md-email-dialog" class="ui-hidden">
+    <label for="md-email-dialog-form-to">To</label><input class="span6" type="text" name="to" data-validation="email" required="true" id="md-email-dialog-form-to" />
+    <label for="md-email-dialog-form-from">From</label><input class="span6" type="text" name="from" data-validation="email" required="true" id="md-email-dialog-form-from" />
+    <label for="md-email-dialog-form-subject">Subject</label><input class="span6" type="text" name="subject" id="md-email-dialog-form-subject"  />
+    <label for="md-email-dialog-form-comments">Comments</label><textarea class="span6" name="comments" id="md-email-dialog-form-comments" maxlength="900" ></textarea>
+    <div class="md-email-dialog-form-msg">(Please limit to 900 characters)</div>
+    <input type="hidden" name="url" id="md-email-dialog-url" />
+    <input type="hidden" name="title" id="md-email-dialog-title" />
+    <input type="submit" value="Send"/><button>Cancel</button>
+</form><div id="md-media-overlay" class="ui-hidden">
+
+    <a href="#" data-ytrk="607" class="md-media-overlay-close fa-stack" title="Close">
+        <i class="fa fa-stack-2x fa-circle-o"></i>
+        <i class="fa fa-stack-1x fa-times"></i>
+    </a>
+
+	<div class="md-media-overlay-title">
+        <div class="subtitle">MEDIA FOR:</div>
+        <div class="maintitle">distributed computing</div>
+    </div>
+
+    <div class="md-media-overlay-content-container">
+
+		<div class="md-media-wrapper">
+			<a data-ytrk="94" href="#" class="md-media-overlay-arrow md-media-overlay-previous"><i class="fa fa-4x fa-angle-left"></i></a>
+            <a data-ytrk="94" href="#" class="md-media-overlay-arrow md-media-overlay-next"><i class="fa fa-4x fa-angle-right"></i></a>
+			<div id="md-media-container">
+				<span></span>
+                <a rel="nofollow" title="See Full Size" id="md-media-overlay-zoom" target="_blank" href="#" data-ytrk="95" class="ui-hidden"><i class="fa fa-search-plus"></i></a>
+			</div>
+		</div>
+
+		<div id="md-media-overlay-caption" class="font-sans-ui">
+			<div id="md-media-overlay-count"></div>
+			<div id="md-media-overlay-caption-title"></div>
+			<div id="md-media-overlay-caption-text" class="fancy-scrollbar white"></div>
+			<div id="md-media-overlay-credit"></div>
+			<div id="md-media-overlay-license"></div>
+		</div>
+
+        <div class="md-media-overlay-toolbar">
+            <a id="md-media-overlay-toolbar-print" data-ytrk="96" href="#" target="_blank" title="Print" rel="nofollow"><i class="fa fa-fw fa-print"></i></a>
+            <span id="md-media-overlay-toolbar-citations" data-ytrk="605" title="Citation"><i class="fa fa-fw fa-quote-right"></i></span>
+            <span id="md-media-overlay-toolbar-email" data-ytrk="604" title="Email"><i class="fa fa-fw fa-envelope"></i></span>
+        </div>
+
+		<div id="md-media-overlay-citations" class="md-media-overlay-box ui-hidden font-sans-ui">
+		    <div class="md-media-overlay-citations-menu">
+			    <div id="md-media-overlay-citations-close" class="md-media-overlay-box-close"><i class="fa fa-stack-1x fa-times"></i></div>
+			    <em>Citation</em>
+                <ul class="md-media-overlay-citations-select">
+                    <li data-value="mla">MLA</li>
+                    <li data-value="apa">APA</li>
+                    <li data-value="harvard">Harvard</li>
+                    <li data-value="chicago">Chicago</li>
+                </ul>
+		    </div>
+			<div id="md-media-overlay-citations-text"></div>
+		</div>
+
+		<div id="md-media-overlay-email" class="md-media-overlay-box ui-hidden font-sans-ui">
+			<em>Email</em>
+			<div id="md-media-overlay-email-close" class="md-media-overlay-box-close"><i class="fa fa-stack-1x fa-times"></i></div>
+			<form id="md-media-overlay-email-form">
+                <input type="hidden" name="assembly_id" />
+                <input type="hidden" name="page_id" />
+				<label for="md-media-overlay-email-to">To:</label>
+				<input type="text" id="md-media-overlay-email-to" name="to" placeholder="Enter an email address" required="true" data-validation="email" />
+				<label for="md-media-overlay-email-from">From:</label>
+				<input type="text" id="md-media-overlay-email-from" name="from" placeholder="Enter an email address" required="true" data-validation="email" />
+				<label for="md-media-overlay-email-comment">Comment:</label>
+				<textarea id="md-media-overlay-email-comment" name="comment" placeholder="Add a comment"></textarea>
+				<input type="submit" value="SEND" />
+			</form>
+		</div>
+
+		<div id="md-media-overlay-submit-email" class="md-media-overlay-box ui-hidden font-sans-ui">
+			<div class="md-media-overlay-submit-email-ok ui-hidden">You have successfully emailed this.</div>
+			<div class="md-media-overlay-submit-email-error">Error when sending the email. Try again later.</div>
+			<input type="button" value="OK" class="btn btn-primary" />
+		</div>
+
+	</div>
+
+	<div class="md-vertical-media-strip ui-hidden"></div>
+
+	<div id="md-media-overlay-ad">
+	        <iframe id="media-overlay-ad-iframe" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" width="160" height="600"></iframe>
+	    </div>
+	</div><form method="POST" id="md-email-dialog" class="ui-hidden">
+    <label for="md-email-dialog-form-to">To</label><input class="span6" type="text" name="to" data-validation="email" required="true" id="md-email-dialog-form-to" />
+    <label for="md-email-dialog-form-from">From</label><input class="span6" type="text" name="from" data-validation="email" required="true" id="md-email-dialog-form-from" />
+    <label for="md-email-dialog-form-subject">Subject</label><input class="span6" type="text" name="subject" id="md-email-dialog-form-subject"  />
+    <label for="md-email-dialog-form-comments">Comments</label><textarea class="span6" name="comments" id="md-email-dialog-form-comments" maxlength="900" ></textarea>
+    <div class="md-email-dialog-form-msg">(Please limit to 900 characters)</div>
+    <input type="hidden" name="url" id="md-email-dialog-url" />
+    <input type="hidden" name="title" id="md-email-dialog-title" />
+    <input type="submit" value="Send"/><button>Cancel</button>
+</form><div id="loginbox-dialog" class="ui-hidden">
+    <div id="loginbox-dialog-iframe-container"></div>
+    <div class="loginbox-continue-container">
+        <p>Or click <strong>Continue</strong> to submit anonymously:</p>
+        <div class="btn loginbox-btn" id="loginbox-continue">Continue</div>
+    </div>
+</div><!--[if lt IE 9]>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-1.11.3.min.js"><\/script>');</script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="/resources/js/libs/jquery-2.1.4.min.js"><\/script>');</script>
+<!--<![endif]--><script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_QkFp1fFi8gwTK97KWaFi_v2eOF3cwcvUA9vC26R9gFKQjRikRuijZ1eOnERznNEN">
+            {
+                siteName: 'britannica.com (Production - Consumer)',
+                enabledProviders: 'facebook,twitter,googleplus,linkedin,yahoo',
+                connectWithoutLoginBehavior: "alwaysLogin"
+            }
+        </script>
+        <script type="text/javascript" src="http://cdn.gigya.com/js/gigyaGAIntegration.js"></script>
+    <script src="/resources/js/min-mendel.js?v=2.36.13"></script>
+
+    <script type="text/javascript" src="/resources/files/jwplayer6/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key='Pe2g3JQXoO64YRACwMhuLjL1bdEO24JIXiW6kA=';</script><script type="text/javascript" data-type="init page">
+        $( function() {
+            Mendel.Page.init();
+            if ($.isDefined(Mendel.TopicPage)) { Mendel.TopicPage.init(); }
+        });
+
+    </script>
+
+    <!--[if lt IE 8 ]>
+    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    	<script type="text/javascript">window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+    <script type="text/javascript" data-type="init Quantcast bottom">
+		    _qevents.push( { qacct:"p-fePJXh17dNmkk"} );
+		</script>
+		<noscript>
+			<div style="display: none;">
+		        <img src="http://pixel.quantserve.com/pixel/p-fePJXh17dNmkk.gif" height="1" width="1" alt="Quantcast"/>
+			</div>
+		</noscript>
+	<script type="text/javascript" data-type="load analytics">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    </script>
+<script type="text/javascript" data-type="init crazyeggs">
+        function CE_READY() {
+            CE2.set( 1, 'ANONYMOUS' );
+            CE2.set( 2, 'B' );
+            CE2.set( 3, 'TOPIC GISTED 2_22' );
+            
+        }
+    </script>
+    <script type="text/javascript" data-type="load crazyeggs">
+        setTimeout(function(){
+            var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/3876.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)
+        }, 1);
+    </script>
+<script src="http://www.britannica.com/webstats/mendelstats.js?v=1"></script>
+    <script type="text/javascript" data-type="eb stats">
+        
+        var EBStat={accountId:-1,host:'www.britannica.com',domain:'www.britannica.com'};
+        try{writeStat(null,{accountId:-1,hostnameOverride:'www.britannica.com',domain:'www.britannica.com', json:''});}
+        catch(err){}
+    </script>
+<script type="text/javascript" src="/resources/js/libs/jquery.scrolldepth.min.js"></script>
+	<script type="text/javascript" data-type="init scrollDepth">
+		$( function() { jQuery.scrollDepth(); } );
+		</script>
+</body>
+</html>

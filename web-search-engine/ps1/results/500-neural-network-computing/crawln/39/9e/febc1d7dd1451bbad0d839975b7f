@@ -1,0 +1,238 @@
+<title>Home</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<script type="text/javascript">
+
+  function resizeIframe(iframe) {
+    var newheight;
+    var newwidth;
+
+    if(document.getElementById){
+        newwidth=iframe.contentWindow.document.body.scrollWidth;
+        newheight=iframe.contentWindow.document.body.scrollHeight;
+    }
+
+    iframe.height= (newheight) + "px";
+    iframe.width= (newwidth) + "px";
+  }
+</script>
+
+
+<link href="/web.css" rel="stylesheet" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+   <td width="1%" align="left" class="bgred" valign="top">
+      <div align="center">
+      &nbsp;<br>
+      <a href="http://www.wisc.edu">
+
+      <img src="/images/uw-sm-red.png" width="125" height="46" border="0"> </a>
+       </div>
+
+	<ul class="sidebar">
+	<li><a href="/">CHTC Home</a></li>
+	
+	<li>About
+		<ul>
+		<li><a href="/approach.shtml">Our Approach</a></li>
+<!--comment		<li><a href="/resources.shtml">Our Resources</a></li>   -->
+		<li><a href="/projects.shtml">Our Customers</a></li>
+		<li><a href="/people.shtml">Our Staff</a></li>
+		<li><a href="/jobs.shtml">Our Open Positions</a></li>
+		</ul>
+	</li>
+	
+	<li>How To's
+		<ul>
+		<li><a href="/get-started.shtml">Get Started</a></li>
+		<li><a href="/get-help.shtml">Get Help</a></li>
+                <li><a href="/use-submit-node.shtml">Use Our HTC Submit Node</a></li>
+		<li><a href="/helloworld.shtml">Run Your First HTC Jobs</a></li>
+		<li><a href="/howto_overview.shtml">HTC for MatLab, Python or R</a></li>
+		<li><a href="/HPCuseguide.shtml">Use the HPC Cluster</a></li>
+        <li><a href="/guides.shtml">All User Guides</a></li>
+		<li><a href="/cite-chtc.shtml">Cite CHTC Resources</a></li>
+		</ul>
+	</li>
+
+	<li><a href="/user-news.shtml">User News</a></li>
+
+	<li>Other Resources
+		<ul>
+		<li><a href="http://monitor.chtc.wisc.edu/uw_condor_usage/usage1.shtml">Pool Usage Reports</a></li>
+<!--comment		<li><a href="/opmetrics.shtml">Operational Metrics</a></li>  -->
+		<li><a href="/user-meeting/">User Meetings</a></li>
+		<li><a href="/news.shtml">News</a></li>
+		<li><a href="http://research.cs.wisc.edu/htcondor/">HTCondor Project</a></li>
+		<li><a href="http://www.neos-server.org/">NEOS Optimization Service</a></li>
+		<li><a href="http://www.batlab.org/">Build &amp; Test Lab</a></li>
+		<li><a href="http://vdt.cs.wisc.edu/">Virtual Data Toolkit</a></li>
+		<li><a href="http://www.opensciencegrid.org/">Open Science Grid</a></li>
+		<li><a href="http://discovery.wisc.edu/">WID (Wisconsin Institutes for Discovery)</a></li>
+		</ul>
+	</li>
+	</ul>
+
+	</td>
+
+<td width="97%" valign="top"> 
+
+
+	<TABLE SUMMARY="Navigation layout" BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+<TR ALIGN="left"> 
+  <TD WIDTH="100%" height="400" Align="left" VALIGN="top"> 
+    <A  name="body"></a> 
+	<div id = "main">
+
+<!-- Top of Page Body -->
+<table BORDER="0" WIDTH="100%">
+<!-- <h1 align=left valign=center>The Center for High Throughput Computing</h1> -->
+<div id="osg_power"> <span style="height: 20px">Powered by:</span><br /><a href="http://opensciencegrid.org"><img alt="Open Science Grid" src="/images/Open_Science_Grid_Consortium(Logo).jpg" width="123" height="70" /></a></div>
+
+<div id="hours"> <span style="height: 20px">
+<a href="http://chtc.cs.wisc.edu/get-help.shtml" style="color:white;">
+<b>Office Hours!</b>
+<br>
+Tues/Thurs, 3-4:30pm<br>
+Wed, 9:30-11:30am</br>
+Click for details
+</a></span></div>
+
+<div style="margin-top:1em;"><a href="http://chtc.cs.wisc.edu/"><img alt="Center for High Throughput Computing" src="/images/CHTC-logo.png" width="500" height="90"></a></div>
+
+
+
+<br>
+<P>
+The Center for High Throughput Computing (CHTC) offers a variety of large-scale computing 
+resources and services for UW-affiliated researchers and their collaborators, including classically-defined high-throughput computing (HTC) <i>and</i> 
+high-performance computing (HPC) resources. CHTC services and hardware are funded by the National Institute of Health (NIH),
+the Department of Energy (DOE), the National Science Foundation (NSF), and various grants from the University itself.  
+<p class="bigpara">
+CHTC resources are provided to <em>all</em> UW-Madison researchers, <em>free of charge</em>.
+Even external collaborators with an on-campus sponsor may be given access to resources.
+</p>
+
+<table style = "width: 300px; float:right; margin-left: 20px;" class="gtable">
+<tr><th>CHTC Quick Facts</th><th>Jul'10-Jun'11</th><th>Jul'12-Jun'13</th><th>Jul'13-Jun'14</th></tr>
+<tr><td>Million Hours Served</td><td>70</td><td>97</td><td>121</td></tr>
+<tr><td>Research Projects</td><td>106</td><td>126</td><td>126</td></tr>
+<tr><td>Departments</td><td>52</td><td>52</td><td>56</td></tr>
+<tr><td>Off-Campus</td><td>13</td><td>15</td><td>8</td></tr>
+</table>
+
+<p>
+<a href="http://research.cs.wisc.edu/htcondor/htc.html">High throughput computing (HTC)</a>
+is the shared utilization of autonomous computational resources toward a common goal,
+where all the elements are optimized for maximizing computational 
+throughput 
+(<a href="http://en.wikipedia.org/wiki/High-throughput_computing">Wikipedia entry</a>).
+View a <a href="includes/chtc_footage.wmv">Windows Media movie</a> interview with Miron Livny and other
+collaborators on the benefits of high throughput computing, or a <a href="includes/chtc.mov">Quicktime movie</a>
+that highlights several applications of HTC on the UW-Madison campus.
+You can also <a href="includes/chtc.mp3">listen</a> to an interview with Miron Livny and Brooklin Gore
+on the impact of High Throughput Computing to campus researchers, an excerpt from the
+<a href="http://itunes.apple.com/itunes-u/wid-challenge-transdisciplinary/id531782587?mt=2">Wisconsin Institutes for
+Discovery: Challenge of Transdisciplinary Science</a> pod cast series.
+
+<p>
+<!-- Learn more in our
+<a href='includes/CHTC-Engagement-Report-2011-2012.pdf'>2011-2012 Engagement Report</a>
+ (<a href='includes/CHTC-Engagement-Report-2010-2011.pdf'>2010-2011 Report</a>). -->
+
+</br></br></br>
+<b>As part of its many services to UW-Madison and beyond, the CHTC is home to or supports the following projects:</b>
+
+<div id = "tile-wrapper">
+
+	<a href = "http://research.cs.wisc.edu/htcondor/" class = "tile" id = "condor-tile">
+		<h2>HTCondor project</h2>
+
+		<img src = "images/condor.png">
+
+		<p>
+		The HTCondor project provides the globally-used HTCondor software that powers the CHTC's <i>HTC resources</i>. HTCondor enables the CHTC to
+		maximize job throughput for many simultaneous users, each with different needs. It supports
+		complex workflows, the ability to take checkpoints and then resume jobs, and it enables access
+		to additional computing resources across the globe, like the Open Science Grid.
+		</p>
+
+	</a>
+
+	<a href = "http://www.batlab.org/" class = "tile" id = "batlab-tile">
+		<h2>UW Build and Test Lab</h2>
+
+		<img src = "images/batlab.png">
+
+		<p>
+		The UW Build and Test Lab (BaTLab) is a multi-platform facility that promotes continuous building 
+		and testing of software, and is available to the public. HTCondor is built in the BaTLab, toward our goal
+		of deploying error-free, high quality software for the CHTC.
+		</p>
+
+	</a>
+
+	<a href = "http://www.opensciencegrid.org" class = "tile" id = "osg-tile">
+		<h2>Open Science Grid</h2>
+
+		<img src = "images/osg.png">
+
+		<p>
+		The Open Science Grid (OSG) is a high-throughput computing infrastructure that supports science across the country. 
+		It is an expanding alliance of more than 100 universities, national laboratories, 
+		scientific collaborations, and software developers, all combining their computational resources with one 
+		another for maximal throughput of large-scale computational work. 
+		CHTC users have automatica and FREE access to OSG's considerable computing and storage resources.
+		</p>
+
+	</a>
+
+	<a href = "http://www.neos-server.org" class = "tile" id = "neos-tile">
+		<h2>NEOS Online Optimization Service</h2>
+
+		<img src = "images/neos.png">
+
+		<p>
+		NEOS Online Optimization Service is a publicly-available, high-throughput computing infrastructure that provides solvers for a variety of
+		optimization problems. It also provides background information on the field of optimization,
+		in general, as well as case studies that provide an understanding
+		of optimization problems and approaches to solving them.
+		</p>
+
+	</a>
+
+</div>
+
+<a href="projects.shtml">Learn more</a>
+about how the CHTC has helped advance a diverse body of research on campus.
+</p>
+
+
+
+<div id = "copyright">
+     <p align = "center"> 
+	  
+     For all user support, questions, and comments:
+     <strong><a href="chtc@cs.wisc.edu?subject=CHTC%20web%20site">chtc@cs.wisc.edu</a></strong>
+
+</p>
+</div>
+
+</div>
+
+  </td>
+  </tr>
+
+</TABLE>
+</td>
+</table>
+
+</body>
+</html>
+

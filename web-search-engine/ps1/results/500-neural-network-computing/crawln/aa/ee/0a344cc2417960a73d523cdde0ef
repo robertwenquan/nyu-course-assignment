@@ -1,0 +1,6827 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie10 lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js lt-ie10" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+	
+
+
+
+
+
+
+
+
+
+
+<head>
+	
+	<!-- metas -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />		
+	<title>Wireless Networking | Computerworld</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+		
+				
+		
+		
+		
+	
+	
+    
+	<link rel="canonical" href="http://www.computerworld.com/category/wireless-networking" />
+	
+	
+
+	
+	<meta name="description" content="Wireless Networking news, analysis, research, how-to, opinion, and video." />
+	
+	
+
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://www.computerworld.com/category/wireless-networking/index.rss" />
+	
+	
+		
+		
+			<meta property="og:title" content="Wireless Networking">
+		
+	
+	
+	
+	
+	
+		
+		
+			<meta property="og:image" content="http://idge.staticworld.net/ctw/computerworld-logo300x300.png" />
+			<meta itemprop="image" content="http://idge.staticworld.net/ctw/computerworld-logo300x300.png">
+			<meta itemprop="thumbnailURl" content="http://idge.staticworld.net/ctw/computerworld-logo300x300.png" />
+			<link rel="image_src" href="http://idge.staticworld.net/ctw/computerworld-logo300x300.png" />
+			<meta name="twitter:image" content="http://idge.staticworld.net/ctw/computerworld-logo300x300.png" />
+		
+	
+	
+		
+		
+			<meta property="og:type" content="website" />
+		
+		
+	<meta property="og:site_name" content="Computerworld" />
+	<meta property="fb:app_id" content="123026274413041" />
+	
+		
+		
+			<meta name="twitter:url" content="http://www.computerworld.com/category/wireless-networking/">
+			<meta property="og:url" content="http://www.computerworld.com/category/wireless-networking/">
+			
+			
+			
+		
+	
+
+	
+
+	
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@computerworld">
+	
+		<meta property="og:description" content="Wireless Networking news, analysis, research, how-to, opinion, and video.">
+		<meta name="twitter:description" content="Wireless Networking news, analysis, research, how-to, opinion, and video.">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<meta name="rating" content="General">
+	
+	<meta name="robots" content="NOODP,NOYDIR" />
+	
+	<!-- pagination -->
+	
+	
+	
+	<!-- css -->
+	<link rel="stylesheet" href="/www.idge/css/normalize.css?v=20150917091405" />
+	<link rel="stylesheet" href="/www.idge/css/prettify.css?v=20150917091405" />
+	
+	
+		<link rel="stylesheet" href="/www.idge/css/sitewrapper.css?v=20150917091405" />
+		
+			
+			
+			
+				<link rel="stylesheet" href="/www.idge/css/category.css?v=20150917091405" />			
+			
+				
+		
+		<link rel="stylesheet" href="/www.idge/css/print.css?v=20150917091405" />
+		
+	
+	
+		<link rel="stylesheet" href="/www.idge.ctw/css/sitewrapper.css?v=20150917091405" />
+		
+		<link rel="stylesheet" href="/www.idge.ctw/css/category.css?v=20150917091405" />
+		
+	
+	
+	<link rel="stylesheet" href="/www.idge/css/webfonts/ss-social.css?v=20150917091405" />
+	<link rel="stylesheet" href="/www.idge/css/webfonts/ss-standard.css?v=20150917091405" />
+	<!--[if lte IE 8]>  
+		<link href="/www.idge/css/webfonts/ss-ie8.css" rel="stylesheet" />
+	<![endif]--> 
+	
+		
+	
+		<script type="text/javascript" src="http://fonts.staticworld.net/cav2eef.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	<link rel="stylesheet" href="/www.idge/css/search-style.css?v=20150917091405">
+	
+	<!--  fav and touch icons -->
+	<link rel="shortcut icon" type="image/x-icon" href="http://idge.staticworld.net/ctw/favicon.ico"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://idge.staticworld.net/ctw/computerworld-logo144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://idge.staticworld.net/ctw/computerworld-logo114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://idge.staticworld.net/ctw/computerworld-logo72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://idge.staticworld.net/ctw/computerworld-logo57x57.png" />
+	<link rel="apple-touch-icon" href="http://idge.staticworld.net/ctw/computerworld-logo300x300.png" />
+
+	<!-- js -->
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script>
+	<script src="/www.idge/js/jquery/jquery-1.10.2.min.js"></script>
+	<!-- google_dfp needs jquery defined first -->
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/www/js/ads/gpt_includes.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+	// Set up ad related variables
+	try {
+		IDG.GPT.unitName = "/8456/IDG.US_E_Computerworld.com";
+		IDG.GPT.yieldbotEnabled = "false";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+
+	
+	try {
+		IDG.GPT.unitName = IDG.GPT.unitName + "/" + "wireless-networking_door";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	// global variables
+	var global_ShowSuper = true;
+	var global_ShowHero = false;
+	
+	//XFP global targeting, more targeting thm_pre
+	var url = window.location.href;
+	if(url.indexOf("?")>1){
+		url=url.split('?')[0];
+	}
+	
+
+	try {
+		IDG.GPT.addTarget("URL", encodeURIComponent(url));
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	try {IDG.GPT.addTarget("zone", 'index-category-topic/wireless-networking');}	catch (exception) {console.log ("google_dfp can't use IDG.GPT "+ exception);}
+	
+	
+	try {IDG.GPT.addTarget("categoryIds", [3388]);}	catch (exception) {console.log ("google_dfp can't use IDG.GPT "+ exception);}
+	try{IDG.GPT.addTarget("categorySlugs", ['wireless-networking']);}	catch (exception) {console.log ("google_dfp can't use IDG.GPT "+ exception);}
+	try {
+		if (null != IDG.GPT.getQsVal("env")) {		
+			IDG.GPT.addTarget("env", IDG.GPT.getQsVal("env").replace(/\W/g, "") );
+		}
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+	
+	
+	
+		
+
+	try {
+		IDG.GPT.addTarget("page_type", '');
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+
+	
+	
+	
+	
+	
+	
+</script>
+
+
+<script type="text/javascript" src="/www/js/ads/proximic.js?v=20150917091405"></script>  
+<script type="text/javascript">
+	 var currentUrl = encodeURIComponent(window.location.href);
+	 (function (u) {
+		var f = "scr";
+		var e = (u ? ("url=" + u) : "");
+		document.write("<"+f+"ipt type='text/javascript' src='http://t.zqtk.net/c.js?m=1&s=idg_js&"+e.replace(/\'/g, "")+"'></"+f+"ipt>");
+	  })((typeof (currentUrl) === "undefined") ? "" : currentUrl);
+</script>
+
+
+
+<script type="text/javascript">
+	
+	
+	
+	
+</script>
+  
+<script src="/www.idge/js/thm_pre.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+try {
+	IDG.GPT.setIDGExtraTargetings();
+	IDG.GPT.setAllGoogleTagTargetings();
+	IDG.GPT.dfpAdManager.init();
+	IDG.GPT.defineAllGoogleTagSlots();
+	IDG.GPT.initGoogleTagService();
+}
+catch (exception) {
+	console.log ("google_dfp can't use IDG.GPT "+ exception);
+}
+</script>
+
+
+	
+	<script src="/www/js/swfobject.js?v=20150917091405"></script>
+	
+	
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="/www.idge/js/mule/modernizr.js?v=20150917091405"></script>
+	<script src="/www.idge/js/mule/respond.min.js?v=20150917091405"></script>
+	
+
+
+
+
+
+
+
+
+
+
+<!-- Begin Eloqua Tracking -->
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqCfg.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqImg.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqFCS.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqScr.js"></script>
+<script type="text/javascript" src="/www/js/analytics/eloqua/elqIDG.js"></script>
+
+
+
+	
+	
+		
+		
+		
+	
+	
+
+<script type="text/javascript">
+	IDG = window.IDG || {};
+	IDG.PageInfo = IDG.PageInfo || {};
+	IDG.PageInfo = function() {
+		return {
+			eloqua_type: "category", 
+			eloqua_topic: ""
+		};
+	}();
+	var elqCustomerGUID = "";
+	if (this.GetElqCustomerGUID && typeof GetElqCustomerGUID === "function") {
+	        elqCustomerGUID = GetElqCustomerGUID();
+	}
+	IDG.Eloqua.invoke_flash();
+</script>
+<!-- End Eloqua Tracking -->
+	
+	
+		
+	<script type="text/javascript">
+		var g_arrModules = new Array();
+	</script>
+
+
+
+
+
+	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+			
+		
+		
+			
+		
+		
+		
+			
+			
+			
+			
+			
+			
+				
+				
+			
+			
+						
+			
+			
+		
+	
+	
+		
+		<meta name="parsely-title" content="Wireless Networking | Computerworld" />
+		<meta name="parsely-link" content="http://www.computerworld.com/category/wireless-networking/" />
+		<meta name="parsely-type" content="Index page" />
+		<meta name="parsely-image-url" content="" />
+		<meta name="parsely-pub-date" content="" />
+		<meta name="parsely-section" content="" />
+		<meta name="parsely-author" content="" />
+		<meta name="parsely-tags" content="Wireless Networking" />		
+
+
+
+	
+	
+	<script src="http://a.postrelease.com/serve/load.js?async=true"></script>
+	
+	
+	
+	
+	<script>
+	dataLayer = [{
+			   'primaryCategory': '',
+			   'articleType': '',
+			   'articleId': ''
+	}];
+	</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?GTM-WBVXW9"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WBVXW9');</script>
+	<!-- End Google Tag Manager -->
+
+	
+</head>
+
+
+
+	<body id="wireless-networking_index" class="category c3388 computerworld">
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN PAGE HEADER -->
+<header id="banner" >
+	
+    <div class="ad">
+  		
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="topleaderboard" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("topleaderboard", "true");
+						$('#topleaderboard').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+  
+    </div>
+	
+    <div class="main-header">
+    	
+    	<script>
+    	if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){
+			$('.main-header').insertBefore($('#banner .ad'));
+    	}
+		</script>
+		
+	    <section class="topics">
+	        <nav id="scrollable">
+				
+					
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #987 blox4.raw_link_list  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	<ul>
+		<li class="header">Trending<span class="colon">:</span></li>
+		
+			
+				<li><a href="/article/2984621/search/windows-10-fails-to-significantly-boost-bing-usage.html">Windows 10 fails to significantly boost Bing usage</a></li>
+			
+		
+			
+				<li><a href="/article/2982306/security/technology-that-predicts-your-next-security-fail.html">Technology that predicts your next security fail</a></li>
+			
+		
+			
+				<li><a href="/resources">Resources/White Papers</a></li>
+			
+		
+	</ul>
+
+		
+	
+
+
+	        </nav>
+	        <div class="fading-gradient"></div>
+	    </section>
+	    <section class="main">
+	        <div class="wrapper">
+	            <div class="masthead">
+	                
+	                <button><i class="ss-icon ss-rows"></i></button>
+	                
+	                <a href="/"><span class="ir logo">computerworld</span></a>
+	            	
+	            	<!--
+	            	<img class="print-only" src="/www.idge.ctw/images/computerworld-logo-print.png">
+	            	-->
+	            	
+	            	<img class="print-only" src="http://idge.staticworld.net/ctw/computerworld-logo-print.png">
+	            	
+	            </div>
+	            <div id="reading-tools-wrapper">
+
+	                
+	                
+	                <div class="reading">
+	                    <div id="reading-selector">
+	                        <div class="label">Popular Now<span class="colon">:</span> <i class="ss-icon ss-dropdown tick"></i></div>
+	                        
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+	
+	
+</ul>
+	                    </div>
+	                </div>
+	                
+	                <nav class="tools">
+	                    
+	                    <ul class="social">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<li><a href="https://twitter.com/computerworld" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Twitter')"><i class="ss-icon ss-social-circle ss-twitter"></i></a></li>
+
+
+
+	<li><a href="https://www.linkedin.com/company/computerworld" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('LinkedIn')"><i class="ss-icon ss-social-circle brand ss-linkedin"></i></a></li>
+
+
+
+	<li><a href="https://www.facebook.com/Computerworld" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Facebook')"><i class="ss-icon ss-social-circle brand ss-facebook"></i></a></li>				
+
+
+
+	<li><a href="https://plus.google.com/+computerworld/posts" itemprop="sameAs" rel="publisher" target="_blank" onclick="brandFollowTrack('Google+')"><i class="ss-icon ss-social-circle brand ss-googleplus"></i></a></li>                	
+
+
+
+
+
+
+
+	<li><a href="/about/rss/" target="_blank"><i class="ss-icon ss-social-circle ss-rss"></i></a></li>
+
+
+
+	                    </ul>
+	                    
+	                    <ul class="user">
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	                        
+	                        	<li><a href="#search" id="search-btn"><i class="ss-icon">Search</i></a></li>
+	                        
+	                    </ul>
+	                </nav>
+	            </div>
+	        </div>
+	    </section>
+	    <section class="tools-expand  ">
+	        
+	        
+	        
+	        
+	        	
+	        	
+			        <form class="search" id="search-form" action="/search">
+			            <label for="search-box">Search for</label>
+						<input type="text" name="query" id="banner-search-term" value="" />
+			            <input type="submit" id="banner-search-submit" value="Go" />
+			            <input type="hidden" name="contentType" value="article,resource" />
+			            <div class="search-suggest">Suggestions for you</div>
+			        </form>
+			    
+			
+	        <div class="user">
+	            <form>
+	                <label for="login-email">Insider email</label> <input id="login-email" type="text" />
+	            </form>
+	        </div>
+	        
+	    </section>
+	    
+	    
+	    
+		
+	    <nav class="main">
+	    	<ul class="primary">
+				
+					
+	        		<li><a href="/category/cloud-computing/" class="hasChildren">Cloud Computing<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/cloud-computing/">All Cloud Computing</a></li>
+		            			
+		            				<li><a href="/category/cloud-security/">Cloud Security</a></li>
+		            			
+		            				<li><a href="/category/cloud-storage/">Cloud Storage</a></li>
+		            			
+		            				<li><a href="/category/hybrid-cloud/">Hybrid Cloud</a></li>
+		            			
+		            				<li><a href="/category/private-cloud/">Private Cloud</a></li>
+		            			
+		            				<li><a href="/category/public-cloud/">Public Cloud</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/computer-hardware/" class="hasChildren">Computer Hardware<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/computer-hardware/">All Computer Hardware</a></li>
+		            			
+		            				<li><a href="/category/apple-mac/">Apple Mac</a></li>
+		            			
+		            				<li><a href="/category/chromebooks/">Chromebooks</a></li>
+		            			
+		            				<li><a href="/category/computer-peripherals/">Computer Peripherals</a></li>
+		            			
+		            				<li><a href="/category/computer-processors/">Computer Processors</a></li>
+		            			
+		            				<li><a href="/category/network-servers/">Network Servers</a></li>
+		            			
+		            				<li><a href="/category/solid-state-drives/">Solid State Drives</a></li>
+		            			
+		            				<li><a href="/category/windows-pcs/">Windows PCs</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/consumerization-of-it/" class="hasChildren">Consumerization of IT<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/consumerization-of-it/">All Consumerization of IT</a></li>
+		            			
+		            				<li><a href="/category/byod/">Bring Your Own Device (BYOD)</a></li>
+		            			
+		            				<li><a href="/category/gamification/">Gamification</a></li>
+		            			
+		            				<li><a href="/category/location-based-services/">Location-Based Services</a></li>
+		            			
+		            				<li><a href="/category/personal-technology/">Personal Technology</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/data-center/" class="hasChildren">Data Center<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/data-center/">All Data Center</a></li>
+		            			
+		            				<li><a href="/category/data-storage-solutions/">Data Storage</a></li>
+		            			
+		            				<li><a href="/category/disaster-recovery/">Disaster Recovery</a></li>
+		            			
+		            				<li><a href="/category/high-performance-computing/">High-Performance Computing (HPC)</a></li>
+		            			
+		            				<li><a href="/category/infrastructure-management/">Infrastructure Management</a></li>
+		            			
+		            				<li><a href="/category/sustainable-it/">Sustainable IT</a></li>
+		            			
+		            				<li><a href="/category/virtualization/">Virtualization</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/emerging-technology/" class="hasChildren">Emerging Technology<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/emerging-technology/">All Emerging Technology</a></li>
+		            			
+		            				<li><a href="/category/3d-printing/">3D Printing</a></li>
+		            			
+		            				<li><a href="/category/environment/">Environment</a></li>
+		            			
+		            				<li><a href="/category/internet-of-things/">Internet of Things</a></li>
+		            			
+		            				<li><a href="/category/nanotechnology/">Nanotechnology</a></li>
+		            			
+		            				<li><a href="/category/robotics/">Robotics</a></li>
+		            			
+		            				<li><a href="/category/space-technology/">Space Technology</a></li>
+		            			
+		            				<li><a href="/category/telematics/">Telematics</a></li>
+		            			
+		            				<li><a href="/category/wearables/">Wearables</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/enterprise-applications/" class="hasChildren">Enterprise Applications<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/enterprise-applications/">All Enterprise Applications</a></li>
+		            			
+		            				<li><a href="/category/application-development/">Application Development</a></li>
+		            			
+		            				<li><a href="/category/big-data/">Big Data</a></li>
+		            			
+		            				<li><a href="/category/business-intelligence/">Business Intelligence (BI)</a></li>
+		            			
+		            				<li><a href="/category/business-process-management/">Business Process Management (BPM)</a></li>
+		            			
+		            				<li><a href="/category/crm/">CRM</a></li>
+		            			
+		            				<li><a href="/category/collaboration/">Collaboration</a></li>
+		            			
+		            				<li><a href="/category/content-document-management/">Content/Document Management</a></li>
+		            			
+		            				<li><a href="/category/data-analytics/">Data Analytics</a></li>
+		            			
+		            				<li><a href="/category/database-administration/">Database Administration</a></li>
+		            			
+		            				<li><a href="/category/desktop-apps/">Desktop Apps</a></li>
+		            			
+		            				<li><a href="/category/enterprise-architecture/">Enterprise Architecture</a></li>
+		            			
+		            				<li><a href="/category/enterprise-resource-planning/">Enterprise Resource Planning (ERP)</a></li>
+		            			
+		            				<li><a href="/category/open-source-tools/">Open Source</a></li>
+		            			
+		            				<li><a href="/category/social-business/">Social Business</a></li>
+		            			
+		            				<li><a href="/category/software-integration/">Software Integration</a></li>
+		            			
+		            				<li><a href="/category/software-as-a-service/">Software as a Service (SaaS)</a></li>
+		            			
+		            				<li><a href="/category/unified-communications/">Unified Communications (UC)</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/it-management/" class="hasChildren">IT Management<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/it-management/">All IT Management</a></li>
+		            			
+		            				<li><a href="/category/innovation/">Digital Transformation</a></li>
+		            			
+		            				<li><a href="/category/it-careers/">IT Careers</a></li>
+		            			
+		            				<li><a href="/category/it-industry/">IT Industry</a></li>
+		            			
+		            				<li><a href="/category/it-outsourcing/">IT Outsourcing</a></li>
+		            			
+		            				<li><a href="/category/it-personnel/">IT Personnel</a></li>
+		            			
+		            				<li><a href="/category/it-project-management/">IT Project Management</a></li>
+		            			
+		            				<li><a href="/category/it-skills-training/">Skills and Training</a></li>
+		            			
+		            				<li><a href="/category/technology-law-regulation/">Technology Law &amp; Regulation</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/internet/" class="hasChildren">Internet<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/internet/">All Internet</a></li>
+		            			
+		            				<li><a href="/category/e-commerce/">Commerce</a></li>
+		            			
+		            				<li><a href="/category/search/">Search</a></li>
+		            			
+		            				<li><a href="/category/social-media/">Social Media</a></li>
+		            			
+		            				<li><a href="/category/web-apps/">Web Apps</a></li>
+		            			
+		            				<li><a href="/category/web-browsers/">Web Browsers</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/mobile-wireless/" class="hasChildren">Mobile &amp; Wireless<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/mobile-wireless/">All Mobile &amp; Wireless</a></li>
+		            			
+		            				<li><a href="/category/android/">Android</a></li>
+		            			
+		            				<li><a href="/category/apple-ios/">Apple iOS</a></li>
+		            			
+		            				<li><a href="/category/blackberry/">BlackBerry</a></li>
+		            			
+		            				<li><a href="/category/mobile-apps/">Mobile Apps</a></li>
+		            			
+		            				<li><a href="/category/mobile-device-management/">Mobile Management</a></li>
+		            			
+		            				<li><a href="/category/mobile-payments/">Mobile Payments</a></li>
+		            			
+		            				<li><a href="/category/mobile-security/">Mobile Security</a></li>
+		            			
+		            				<li><a href="/category/smartphones/">Smartphones</a></li>
+		            			
+		            				<li><a href="/category/tablets/">Tablets</a></li>
+		            			
+		            				<li><a href="/category/windows-phone-os/">Windows Phone</a></li>
+		            			
+		            				<li><a href="/category/wireless-carriers/">Wireless Carriers</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/networking/" class="hasChildren">Networking<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/networking/">All Networking</a></li>
+		            			
+		            				<li><a href="/category/broadband/">Broadband</a></li>
+		            			
+		            				<li><a href="/category/network-hardware-solutions/">Network Hardware</a></li>
+		            			
+		            				<li><a href="/category/network-security/">Network Security</a></li>
+		            			
+		            				<li><a href="/category/network-software/">Network Software</a></li>
+		            			
+		            				<li><a href="/category/wireless-networking/">Wireless Networking</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/operating-systems/" class="hasChildren">Operating Systems<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/operating-systems/">All Operating Systems</a></li>
+		            			
+		            				<li><a href="/category/chrome-os/">Chrome OS</a></li>
+		            			
+		            				<li><a href="/category/linux/">Linux</a></li>
+		            			
+		            				<li><a href="/category/mac-os-x/">Mac OS X</a></li>
+		            			
+		            				<li><a href="/category/microsoft-windows/">Microsoft Windows</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/security/" class="hasChildren">Security<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/security/">All Security</a></li>
+		            			
+		            				<li><a href="/category/application-security/">Application Security</a></li>
+		            			
+		            				<li><a href="/category/cyberattacks/">Cyberattacks</a></li>
+		            			
+		            				<li><a href="/category/cybercrime-hacking/">Cybercrime &amp; Hacking</a></li>
+		            			
+		            				<li><a href="/category/data-privacy/">Data Privacy</a></li>
+		            			
+		            				<li><a href="/category/data-security/">Data Security</a></li>
+		            			
+		            				<li><a href="/category/encryption/">Encryption</a></li>
+		            			
+		            				<li><a href="/category/endpoint-security/">Endpoint Security</a></li>
+		            			
+		            				<li><a href="/category/malware-vulnerabilities/">Malware &amp; Vulnerabilities</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+					
+	        		<li><a href="/category/vertical-it/" class="hasChildren">Vertical IT<span class="ss-icon ss-navigateright"></span></a>
+	            		
+		            		<ul>
+		                		<li><a href="/category/vertical-it/">All Vertical IT</a></li>
+		            			
+		            				<li><a href="/category/financial-it/">Financial IT</a></li>
+		            			
+		            				<li><a href="/category/government-it/">Government IT</a></li>
+		            			
+		            				<li><a href="/category/healthcare-it/">Healthcare IT</a></li>
+		            			
+		            				<li><a href="/category/retail-it/">Retail IT</a></li>
+		            			
+		            				<li><a href="/category/small-enterprise-it/">Small Enterprise IT</a></li>
+		            			
+		            		</ul>
+		            	
+	        		</li>
+				
+			</ul>
+	
+	    	<ul class="secondary">
+           		
+           		
+
+
+
+
+
+
+
+
+
+
+<li><a href="/about/sitemap.html">All Topics</a></li>
+<li><a href="/news/">News</a></li>
+<li><a href="/feature/">Features</a></li>
+<li><a href="/reviews/">Reviews</a></li>
+<li><a href="/blogs/">Blogs</a></li>
+<li><a href="/opinion/">Opinions</a></li>
+<li><a href="/insider/">Insider</a></li>
+<li><a href="/blog/shark-tank/">Shark Tank</a></li>
+<li><a href="/slideshows/">Slideshows</a></li>
+<li><a href="/video/">Video</a></li>
+<li><a href="/tag/computerworlddigitalmagazine/">Digital Magazine</a></li>
+<li><a href="/newsletters/signup.html">Newsletters</a></li>
+<li><a target="_blank" href="http://events.computerworld.com/ehome/index.php?eventid=8862">Computerworld Events</a></li>
+<li><a href="http://itjobs.computerworld.com">IT Job Search</a></li>
+<li><a href="/resources/">Resources/White Papers</a></li>
+           		
+	    	</ul>
+		</nav>
+		
+	</div>
+</header>
+<!-- END PAGE HEADER -->
+
+
+		<div id="page-wrapper" class="page-wrapper">
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+			
+			<section role="main">
+
+				
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+			<div class="ticker-ad ad">
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="ticker" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("ticker", "true");
+						$('#ticker').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+			</div>
+		
+	
+	
+
+
+
+<!-- Events Header -->
+
+ 
+ 
+	
+	
+	
+	
+		
+	
+	
+
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+<!-- //end Events Header -->
+
+
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+
+
+	
+		
+	
+		
+	
+		<header>
+		  
+			
+			
+				<h1>Wireless Networking</h1>
+			
+		  
+			<h2>Wireless Networking news, analysis, research, how-to, opinion, and video.</h2></header>
+		
+
+
+
+				<section class="bodee">
+
+					
+						
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<div class="main-col">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+		
+		
+		
+		
+	
+	
+
+
+ 	
+ 	
+ 				
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start Load-More list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+
+
+
+
+
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+		<div class="index-promo first   with-image  article">
+			
+				<div class="promo-img">
+					
+					<a  href="/article/2981621/wireless-networking/underappreciated-and-underrated-voice-over-lte-is-here.html"><img  class="lazy carousel.idgeImage  imgId100591251 " data-original="http://core4.staticworld.net/images/article/2015/06/clients-100591251-carousel.idge.jpg" alt="LTE unlicensed " itemprop="image" /></a>
+    			</div><!-- /.promo-img -->
+    		
+    		<div class="promo-headline">
+				<div class="eyebrow">
+ 					
+ 					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/emerging-technology-in-the-enterprise">Emerging Technology in the Enterprise</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Erika-Morphy/"><span itemprop="name">Erika Morphy</span></a></span><br /><a href="/contributor-network/signup.html"><span class="contributor-nw"><i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network</span></a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+        		<h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+    	
+    		<a  href="/article/2981621/wireless-networking/underappreciated-and-underrated-voice-over-lte-is-here.html">Underappreciated and underrated, voice over LTE is here </a>
+    	
+	
+</h3>
+        		
+    		</div><!-- /.promo-headline -->
+		</div><!-- /.index-promo -->
+		
+	
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+		<div class="index-promo  with-image  article">
+			
+				<div class="promo-img">
+					
+					<a  href="/article/2980854/wireless-carriers/att-to-sell-wi-fi-hotspots-from-zte-for-vehicles.html"><img  class="lazy carousel.idgeImage  imgId100577405 " data-original="http://core0.staticworld.net/images/article/2015/04/5939267605_ce2799a0c9_o-100577405-carousel.idge.jpg" alt="Wi-Fi sign" itemprop="image" /></a>
+    			</div><!-- /.promo-img -->
+    		
+    		<div class="promo-headline">
+				<div class="eyebrow">
+ 					
+ 					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+        		<h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+    	
+    		<a  href="/article/2980854/wireless-carriers/att-to-sell-wi-fi-hotspots-from-zte-for-vehicles.html">AT&T to sell Wi-Fi hotspots from ZTE for vehicles</a>
+    	
+	
+</h3>
+        		
+    		</div><!-- /.promo-headline -->
+		</div><!-- /.index-promo -->
+		
+			<hr class="rule" style="clear:both;">
+		
+	
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well media">
+			
+	  		  <figure class="well-img">
+	  		  		<a  href="/video/57266/ditch-the-cables-with-wattup-wire-free-charging"><i class="ss-play"></i></a>
+	    		    <a  href="/video/57266/ditch-the-cables-with-wattup-wire-free-charging"><img  class="lazy posterImage  imgId100611362 " data-original="http://core0.staticworld.net/images/article/2015/08/wtu_083115_wirefreecharging2-100611362-poster.png" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="video">video</span> 
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/video/57266/ditch-the-cables-with-wattup-wire-free-charging"><i class="icon-play-btn-white"></i>Ditch the cables with WattUp wire-free charging</a></h3>
+				<h4>Energous' WattUp wire-free system powers devices up to 15 feet away from a router.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well media">
+			
+	  		  <figure class="well-img">
+	  		  		<a  href="/video/57325/in-flight-wifi-speeds-up"><i class="ss-play"></i></a>
+	    		    <a  href="/video/57325/in-flight-wifi-speeds-up"><img  class="lazy posterImage  imgId100610939 " data-original="http://core5.staticworld.net/images/article/2015/08/wtu-082815-gogo-100610939-poster.png" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="video">video</span> 
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/video/57325/in-flight-wifi-speeds-up"><i class="icon-play-btn-white"></i>In-flight WiFi speeds up</a></h3>
+				<h4>Gogo’s 2Ku service received approval from the Federal Aviation Administration this week, clearing the way for it to be installed on commercial airplanes later this year. </h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2976988/mobile-wireless/the-wrap-intel-drone-investment-faster-in-flight-wifi-ifa-preview.html"><img  class="lazy carousel.idgeImage  imgId100610668 " data-original="http://core3.staticworld.net/images/article/2015/08/wtu-082715-wrap-100610668-carousel.idge.png" alt="wtu 082715 wrap" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2976988/mobile-wireless/the-wrap-intel-drone-investment-faster-in-flight-wifi-ifa-preview.html">The Wrap: Intel drone investment, faster in-flight WiFi, IFA preview </a></h3>
+				<h4>
+
+	
+
+
+ 
+
+
+Intel has invested millions of dollars in a Chinese drone maker as it hopes to catch up to Google and Amazon. 
+In-flight WiFi will speed up now that the U.S. Federal Aviation Administration has cleared in-flight Internet...</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2976881/wireless-networking/80211ac-gains-ground-in-enterprise-wlans.html"><img  class="lazy carousel.idgeImage  imgId100610545 " data-original="http://core5.staticworld.net/images/article/2015/08/aruba_320-100610545-carousel.idge.jpg" alt="aruba 320" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2976881/wireless-networking/80211ac-gains-ground-in-enterprise-wlans.html">802.11ac gains ground in enterprise WLANs</a></h3>
+				<h4>Wireless networks based on the 802.11ac standard are taking over in the enterprise, resulting in faster connections for users with compatible devices.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2975843/broadband/gogo-gets-thumbs-up-for-speedy-in-flight-broadband-in-the-us.html"><img  class="lazy smallImage  imgId100439299 " data-original="http://core1.staticworld.net/images/article/2014/09/gogo-aix-hamburg-2014-266-web-100439299-small.jpg" alt="gogo aix hamburg 2014 266 web" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2975843/broadband/gogo-gets-thumbs-up-for-speedy-in-flight-broadband-in-the-us.html">Gogo gets thumbs up for speedy in-flight broadband in the U.S.</a></h3>
+				<h4>In-flight broadband provider Gogo's 2Ku technology has been approved by the FAA, opening the door for data speeds up to 70M bps.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2975859/mobile-apps/wi-fi-challenges-bluetooth-for-the-beacon-market.html"><img  class="lazy carousel.idgeImage  imgId100564972 licensed-unviewable " data-original="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="wifi " itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/tower-of-mobile">Tower of Mobile</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Ira-Brodsky/"><span itemprop="name">Ira Brodsky</span></a></span><br /><a href="/contributor-network/signup.html"><span class="contributor-nw"><i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network</span></a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2975859/mobile-apps/wi-fi-challenges-bluetooth-for-the-beacon-market.html">Wi-Fi challenges Bluetooth for the beacon market</a></h3>
+				<h4>The Wi-Fi Alliance recently unveiled Wi-Fi Aware as an alternative to Bluetooth Smart for beacons. Is Wi-Fi Aware sufficiently different and compelling to entice developers?</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/defensive-computing">Defensive Computing</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Michael-Horowitz/"><span itemprop="name">Michael Horowitz</span></a></span>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2974662/network-security/wi-fi-at-def-con-dealing-with-the-worlds-most-dangerous-network.html">Wi-Fi at DEF CON - dealing with the worlds most dangerous network</a></h3>
+				<h4>Wi-Fi can be done securely, even at a hacker conference like DEF CON. Just avoid open networks and Android.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2972816/wireless-networking/google-launches-stylish-199-wi-fi-router-meant-to-be-shown-off.html"><img  class="lazy carousel.idgeImage  imgId100608465 " data-original="http://core1.staticworld.net/images/article/2015/08/google-onhub-primary-100608465-carousel.idge.png" alt="google onhub primary" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2972816/wireless-networking/google-launches-stylish-199-wi-fi-router-meant-to-be-shown-off.html">Google launches stylish $199 Wi-Fi router meant to be shown off</a></h3>
+				<h4>Google is giving the ugly Wi-Fi router a makeover, with its own device that the company claims is easier to use.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2972778/wireless-networking/wi-fi-provider-kicked-users-off-their-own-hotspots-at-conventions.html"><img  class="lazy carousel.idgeImage  imgId100608469 " data-original="http://core3.staticworld.net/images/article/2015/08/ces2014-show-floor-100608469-carousel.idge.jpg" alt="ces2013 show floor" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2972778/wireless-networking/wi-fi-provider-kicked-users-off-their-own-hotspots-at-conventions.html">Wi-Fi provider kicked users off their own hotspots at conventions</a></h3>
+				<h4>Smart City, a provider of Internet services at convention centers and hotels, will pay the Federal Communications Commission $750,000 for kicking users off their personal hotspots to try and force them to use its Wi-Fi service.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2970867/wireless-networking/how-new-white-space-rules-could-lead-to-an-urban-super-wi-fi.html"><img  class="lazy carousel.idgeImage  imgId100607638 " data-original="http://core5.staticworld.net/images/article/2015/08/warp-100607638-carousel.idge.jpg" alt="warp" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/emerging-technology-in-the-enterprise">Emerging Technology in the Enterprise</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Erika-Morphy/"><span itemprop="name">Erika Morphy</span></a></span><br /><a href="/contributor-network/signup.html"><span class="contributor-nw"><i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network</span></a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2970867/wireless-networking/how-new-white-space-rules-could-lead-to-an-urban-super-wi-fi.html">How new &#039;white space&#039; rules could lead to an urban super-Wi-Fi </a></h3>
+				<h4>The underutilized UHF band is perfect for wireless data and can carry for miles, not blocked by walls or trees.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2969792/wireless-carriers/what-to-expect-from-5g-wireless.html"><img  class="lazy carousel.idgeImage  imgId100594118 " data-original="http://core5.staticworld.net/images/article/2015/06/5g_wirelesss_internet_technology_mobile_phone_thinkstock-100594118-carousel.idge.jpg" alt="5G wirelesss technology" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/tower-of-mobile">Tower of Mobile</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Ira-Brodsky/"><span itemprop="name">Ira Brodsky</span></a></span><br /><a href="/contributor-network/signup.html"><span class="contributor-nw"><i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network</span></a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2969792/wireless-carriers/what-to-expect-from-5g-wireless.html">What to expect from 5G wireless</a></h3>
+				<h4>5G wireless will be a series of enhancements implemented over the next several years. It will connect everything as well as everyone, fueling new applications and the shared economy.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2968366/wireless-networking/ipass-has-tech-in-beta-to-solve-wi-fis-most-irritating-problem.html"><img  class="lazy carousel.idgeImage  imgId100589139 " data-original="http://core1.staticworld.net/images/article/2015/06/wifi-stumbler-analyzers-under-100-1-100589139-carousel.idge.jpg" alt="wifi stumbler analyzers under 100 1" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/emerging-technology-in-the-enterprise">Emerging Technology in the Enterprise</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Erika-Morphy/"><span itemprop="name">Erika Morphy</span></a></span><br /><a href="/contributor-network/signup.html"><span class="contributor-nw"><i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network</span></a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2968366/wireless-networking/ipass-has-tech-in-beta-to-solve-wi-fis-most-irritating-problem.html">iPass has tech in beta to solve Wi-Fi&#039;s most irritating problem </a></h3>
+				<h4>Trying to connect to a Wi-Fi spot can be an exercise in frustration depending on the device, the hotspot provider and even where you are standing. iPass has technology in beta right now that may solve that problem. </h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/defensive-computing">Defensive Computing</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Michael-Horowitz/"><span itemprop="name">Michael Horowitz</span></a></span>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2962320/wireless-networking/a-look-at-the-security-of-wi-fi-on-a-plane.html">A look at the security of Wi-Fi on a plane</a></h3>
+				<h4>On a recent plane trip, I looked into the architecture of the Wi-Fi networks onboard, and couldn't find any security. 
+</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2954625/wireless-networking/review-2-tri-band-routers-push-wireless-network-speeds.html"><img  class="lazy carousel.idgeImage  imgId100599270 " data-original="http://core3.staticworld.net/images/article/2015/07/d-link_ac3200_and_linksys_ea9200-100599270-carousel.idge.jpg" alt="D-Link AC3200 and Linksys EA9200" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="insider"></span><a href="/reviews" itemprop="genre">Review</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2954625/wireless-networking/review-2-tri-band-routers-push-wireless-network-speeds.html">Review: 2 tri-band routers push wireless network speeds </a></h3>
+				<h4>Two new tri-band Wi-Fi routers from D-Link and Linksys bring real-world half-a-gigabit speeds to your 802.11ac network.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/shark-tank">Shark Tank</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Sharky/"><span itemprop="name">Sharky</span></a></span>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2953146/wireless-networking/when-policy-meets-practice-you-know-who-wins.html">When policy meets practice, you know who wins</a></h3>
+				<h4>This company's support techs install new Wi-Fi access points throughout the business -- with not quite the results management was expecting.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2952394/wearables/is-your-wearable-device-losing-its-charge-too-soon-of-course-it-is-scientists-are-here-to-help.html"><img  class="lazy carousel.idgeImage  imgId100598062 " data-original="http://core5.staticworld.net/images/article/2015/07/nasawearablewifi-100598062-carousel.idge.jpg" alt="nasawearablewifi" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/blog/emerging-technology-in-the-enterprise">Emerging Technology in the Enterprise</a><span class="sup-credit">By <a rel="author" itemprop="url" href="/author/Erika-Morphy/"><span itemprop="name">Erika Morphy</span></a></span><br /><a href="/contributor-network/signup.html"><span class="contributor-nw"><i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network</span></a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2952394/wearables/is-your-wearable-device-losing-its-charge-too-soon-of-course-it-is-scientists-are-here-to-help.html"> Is your wearable losing its charge too soon? Of course it is. Scientists are here to help.</a></h3>
+				<h4>Got a wearable? Then you've got a slow battery. But maybe not for long. Read on. </h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2951841/gadgets/new-york-city-eases-limits-on-ubers-growth.html"><img  class="lazy carousel.idgeImage  imgId100566343 " data-original="http://core2.staticworld.net/images/article/2015/02/uber-app-iphone-100566343-carousel.idge.jpg" alt="uber app iphone" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2951841/gadgets/new-york-city-eases-limits-on-ubers-growth.html">New York eases limits on Uber&#039;s growth</a></h3>
+				<h4>It's probably safe to say goodbye to "de Blasio" mode in Uber's app in New York.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+		
+	
+
+
+
+	
+	
+		<div class="river-well article">
+			
+	  		  <figure class="well-img">
+	  		  		
+	    		    <a  href="/article/2949754/network-hardware-solutions/t-mobile-to-pay-175m-fine-for-911-outages.html"><img  class="lazy carousel.idgeImage  imgId100570254 " data-original="http://core2.staticworld.net/images/article/2015/02/rtr4ran1-100570254-carousel.idge.jpg" alt="FCC logo" itemprop="image" /></a>
+	 		   </figure>
+  		 	 
+   		 	<div class="post-cont">
+				<div class="eyebrow">
+					
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/news" itemprop="genre">News</a>
+
+					
+
+
+
+
+
+
+
+
+
+
+
+					
+				</div>
+				<h3>
+				<a  href="/article/2949754/network-hardware-solutions/t-mobile-to-pay-175m-fine-for-911-outages.html">T-Mobile to pay $17.5M fine for 911 outages</a></h3>
+				<h4>T-Mobile USA will pay a $17.5 million fine in a settlement with the U.S. Federal Communications Commission for two 911 emergency dialing outages on the company's mobile network last year.</h4>
+    		</div><!-- /.post-cont -->
+		</div><!-- /.river-well -->
+	
+
+
+
+
+
+
+
+				
+				
+			
+		
+	
+
+
+
+	
+	<a href="?start=20" id="load-more-index" class="load-btn">Load More</a>
+
+<!-- End Load More list -->
+			
+
+<script type="text/javascript" src="/www.idge/js/load_more.js"></script>
+<script type="text/javascript">
+	IDGE.LoadMore.init("load-more-index", ".main-col .article, .main-col .mediaresource", {
+		def : "loadMoreList",
+		pageType : "index",
+		
+		
+		
+		catId: 3388,
+		
+		
+		days: -730,
+		
+		
+		
+		
+		pageSize: 20,
+		ignoreExcludedIds: true,
+		brandContentOnly: false,
+		includeBlogTypeIds: "1,3",
+		includeVideo: true,
+		liveOnly: true,
+		injectAnswers: true,
+		sortOrder: "date"
+	});
+</script> 
+
+
+		</div><!-- /.main-col -->
+	
+	
+
+
+
+
+	
+		
+		
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+<div class="right-rail">
+	<div class="side" id="side" role="secondary">
+	
+		
+	
+		<!--  TOP IMU -->
+		<div id="iab1">
+		    
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ 	
+ 		
+		<div class="lazyload_ad">
+		<code type="text/javascript">
+			<!--
+			document.write('<div id="topimu" class="">');
+			IDG.GPT.addDisplayedAd("topimu", "true");
+			IDG.GPT.addLazyloadedAd("topimu", "true");
+			document.write('</div>');
+			$('#topimu').responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+		</code>
+		</div>
+ 	
+  
+		</div>
+		<!-- /TOP IMU -->
+		
+				
+	
+		
+		
+		
+		
+			<!--  EPO MODULE -->
+			
+				
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+	
+		
+			
+			
+		
+	
+	
+	
+	
+
+
+<div class="promo apart epo-promo" data-placement-id="">
+	<div class="hed">Recommended for You
+		
+	</div>
+	<ul>
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="with-image">
+	
+		<a  href="/article/2980854/wireless-carriers/att-to-sell-wi-fi-hotspots-from-zte-for-vehicles.html"><img  class="lazy carousel.idgeImage  imgId100577405 " data-original="http://core0.staticworld.net/images/article/2015/04/5939267605_ce2799a0c9_o-100577405-carousel.idge.jpg" alt="Wi-Fi sign" itemprop="image" /></a>
+	
+	<div class="item">
+		
+				
+		<div class="title"><a  href="/article/2980854/wireless-carriers/att-to-sell-wi-fi-hotspots-from-zte-for-vehicles.html">AT&amp;T to sell Wi-Fi hotspots from ZTE for vehicles</a></div>
+	</div>
+</li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="with-image">
+	
+		<a  href="/article/2976988/mobile-wireless/the-wrap-intel-drone-investment-faster-in-flight-wifi-ifa-preview.html"><img  class="lazy carousel.idgeImage  imgId100610668 " data-original="http://core3.staticworld.net/images/article/2015/08/wtu-082715-wrap-100610668-carousel.idge.png" alt="wtu 082715 wrap" itemprop="image" /></a>
+	
+	<div class="item">
+		
+				
+		<div class="title"><a  href="/article/2976988/mobile-wireless/the-wrap-intel-drone-investment-faster-in-flight-wifi-ifa-preview.html">The Wrap: Intel drone investment, faster in-flight WiFi, IFA preview </a></div>
+	</div>
+</li>
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="with-image">
+	
+		<a  href="/article/2976881/wireless-networking/80211ac-gains-ground-in-enterprise-wlans.html"><img  class="lazy carousel.idgeImage  imgId100610545 " data-original="http://core5.staticworld.net/images/article/2015/08/aruba_320-100610545-carousel.idge.jpg" alt="aruba 320" itemprop="image" /></a>
+	
+	<div class="item">
+		
+				
+		<div class="title"><a  href="/article/2976881/wireless-networking/80211ac-gains-ground-in-enterprise-wlans.html">802.11ac gains ground in enterprise WLANs</a></div>
+	</div>
+</li>
+				
+				
+			
+		
+	
+
+
+		
+	</ul>
+</div>
+		<!--  /EPO MODULE -->
+		
+		
+		
+		<!--  RESOURCES MODULE -->
+		
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+	
+		
+			
+		
+		
+	
+
+
+
+
+
+             
+<div class="promo apart resources" data-placement-id="resourcesModule">
+    <div class="hed">
+    
+    <a href="/resources" onclick='oClickTrack("Browse Landing:Right:Module Resources")'>Popular Resources</a>
+    
+    
+    </div>
+    
+    
+    	
+    	
+    		
+    			
+    		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<ul>
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="with-image" data-vr-contentbox="">
+	
+		
+		
+		
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+		
+
+
+
+ 
+
+	
+	
+		
+		
+			
+			<figure class="well-img">
+				  <div class="sized-img-teaser">
+					
+					  
+					    
+					    <a href="http://resources.computerworld.com/ccd/assets/84305/detail"><img  class="lazy smallImage  imgId100579515 " data-original="http://core4.staticworld.net/images/idge/imported/imageapi/2015/04/15/20/ast-0143612_80211ac-wireless-the-easy-way-mkt14f015-100579515-small.png" /></a>
+					  
+					  
+					
+				  </div>
+				</figure>
+			
+		
+	
+
+
+	
+		<div class="item-eyebrow">White Paper</div>
+	
+	<div class="title">
+		
+			
+			
+				<a  href="http://resources.computerworld.com/ccd/assets/84305/detail">802.11ac: Wireless The Easy Way</a>
+			
+		
+	</div>
+</li>
+				
+				
+			
+		
+	</ul>
+
+
+	
+		<div class="more">
+			<a href="/resources" onclick='oClickTrack("Browse Landing:Right:Module Resources")'>See All</a>
+		</div>
+	
+	<form action="/resources/search" method="get">
+		<input type="text" name="query" placeholder="Search Resources">
+		<!--  add additional dto options here -->
+		<input type="hidden" name="rid" value="2"/>
+		<input type="hidden" name="chld" value="true"/>
+		<button class="btn" type="submit">Go</button>
+	</form>
+
+</div>
+
+
+
+		<!--  / RESOURCES MODULE -->
+		
+		<!--  BOTTOM IMU -->
+	 	
+	  			
+	  	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<div class="lazyload_ad">
+			<code type="text/javascript">
+			<!--
+				IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;
+				document.write('<div id="' + IDG.GPT.getIMUSlotName() + '">'); 
+				IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), IDG.GPT.slots["topimu"], false);
+				document.write('</div>');
+				$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+			</code>
+		</div>
+	
+	
+	
+
+
+
+		<!--  /BOTTOM IMU -->
+		
+		<!--  MOST POPULAR MODULE CIOB-314 -->
+		
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="promo apart most-popular" data-placement-id="browseIndex">
+
+
+
+
+   
+    <div class="hed">What Readers Like</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<ul>
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+							
+						
+						
+						
+						
+						
+							
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	
+		<li no-image>
+			
+			<div class="item">
+					
+				
+				
+				<div class="title"><a  href="/article/2974662/network-security/wi-fi-at-def-con-dealing-with-the-worlds-most-dangerous-network.html">Wi-Fi at DEF CON - dealing with the worlds most dangerous network</a></div>
+			</div>
+		</li>
+	
+	
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+							
+						
+						
+						
+						
+						
+							
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	
+		<li class="with-image">
+			
+				<a  href="/article/2970867/wireless-networking/how-new-white-space-rules-could-lead-to-an-urban-super-wi-fi.html"><img  class="lazy carousel.idgeImage  imgId100607638 " data-original="http://core5.staticworld.net/images/article/2015/08/warp-100607638-carousel.idge.jpg" alt="warp" itemprop="image" /></a>
+			
+			<div class="item">
+				
+				<a class="cn" href="/contributor-network/signup.html">
+<span class="contributor-nw">
+	<i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network
+</span>
+</a>
+					
+				
+				
+				<div class="title"><a  href="/article/2970867/wireless-networking/how-new-white-space-rules-could-lead-to-an-urban-super-wi-fi.html">How new &#039;white space&#039; rules could lead to an urban super-Wi-Fi </a></div>
+			</div>
+		</li>
+	
+	
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+							
+						
+						
+						
+						
+						
+							
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	
+		<li class="with-image">
+			
+				<a  href="/article/2969792/wireless-carriers/what-to-expect-from-5g-wireless.html"><img  class="lazy carousel.idgeImage  imgId100594118 " data-original="http://core5.staticworld.net/images/article/2015/06/5g_wirelesss_internet_technology_mobile_phone_thinkstock-100594118-carousel.idge.jpg" alt="5G wirelesss technology" itemprop="image" /></a>
+			
+			<div class="item">
+				
+				<a class="cn" href="/contributor-network/signup.html">
+<span class="contributor-nw">
+	<i class="ss-icon ss-connection"></i> <span class="company">IDG</span> Contributor Network
+</span>
+</a>
+					
+				
+				
+				<div class="title"><a  href="/article/2969792/wireless-carriers/what-to-expect-from-5g-wireless.html">What to expect from 5G wireless</a></div>
+			</div>
+		</li>
+	
+	
+
+				
+				
+			
+		
+	</ul>
+
+
+
+
+</div>
+
+
+		<!--  /MOST POPULAR MODULE -->
+	
+		<!--  TOP TIPS MODULE -->
+		
+	</div>
+</div>
+		
+		
+	
+
+
+							
+
+
+
+
+
+
+
+
+
+
+						
+					
+				
+				</section><!-- /.bodee -->
+
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+	
+		<section id="resources-sponsored-links">
+	
+	
+ 	<section class="sponsored-links">
+ 	  <div class="head">Sponsored Links</div>
+	 	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<ul class="first">
+		
+			
+			
+				
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						 	
+						
+						
+						
+						
+						
+							
+											
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+	
+
+
+
+
+<li>
+	<a rel="nofollow" target="_blank" href="http://pubads.g.doubleclick.net/gampad/clk?id=465119216&iu=/8456/IDG.US_E_ComputerWorld.com" onclick="moduleTrack('Sponsored Links','resources-sponsored-links component')">
+		Register for a free trial and you could be test-driving Kaseya in minutes.
+	</a>
+</li>
+				
+				
+			
+		
+	</ul>
+
+
+ 	</section>
+</section>
+	
+	
+
+
+				
+
+			</section><!-- /role=main -->
+
+		</div><!-- /#page-wrapper -->
+
+		
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <section class="brand" itemscope itemtype="http://schema.org/Organization">
+   	
+   		<link itemprop="url" href="http://www.computerworld.com"> 
+        <a href="/"><span class="logo">Computerworld</span></a>
+		<span class="tagline"> The Voice of Business Technology</span>
+        
+        <span class="follow">
+			<label>Follow us</label>
+            	<ul>
+            		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<li><a href="https://twitter.com/computerworld" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Twitter')"><i class="ss-icon ss-social-circle ss-twitter"></i></a></li>
+
+
+
+	<li><a href="https://www.linkedin.com/company/computerworld" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('LinkedIn')"><i class="ss-icon ss-social-circle brand ss-linkedin"></i></a></li>
+
+
+
+	<li><a href="https://www.facebook.com/Computerworld" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack('Facebook')"><i class="ss-icon ss-social-circle brand ss-facebook"></i></a></li>				
+
+
+
+	<li><a href="https://plus.google.com/+computerworld/posts" itemprop="sameAs" rel="publisher" target="_blank" onclick="brandFollowTrack('Google+')"><i class="ss-icon ss-social-circle brand ss-googleplus"></i></a></li>                	
+
+
+
+
+
+
+
+	<li><a href="/about/rss/" target="_blank"><i class="ss-icon ss-social-circle ss-rss"></i></a></li>
+
+
+
+            	</ul>
+        </span>
+        
+    </section>
+    	
+    <section class="topics">
+    	
+			
+		        
+		        <nav id="ft1">
+		            <ul>
+						
+							
+							
+		    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+				<li><a href="/category/cloud-computing/">Cloud Computing</a>
+					
+				</li>
+			
+				<li><a href="/category/computer-hardware/">Computer Hardware</a>
+					
+				</li>
+			
+				<li><a href="/category/consumerization-of-it/">Consumerization of IT</a>
+					
+				</li>
+			
+				<li><a href="/category/data-center/">Data Center</a>
+					
+				</li>
+			
+				<li><a href="/category/emerging-technology/">Emerging Technology</a>
+					
+				</li>
+			
+				<li><a href="/category/enterprise-applications/">Enterprise Applications</a>
+					
+				</li>
+			
+				<li><a href="/category/it-management/">IT Management</a>
+					
+				</li>
+			
+				<li><a href="/category/internet/">Internet</a>
+					
+				</li>
+			
+				<li><a href="/category/mobile-wireless/">Mobile &amp; Wireless</a>
+					
+				</li>
+			
+				<li class="selected"><a href="/category/networking/" class="active">Networking</a>
+					
+				</li>
+			
+				<li><a href="/category/operating-systems/">Operating Systems</a>
+					
+				</li>
+			
+				<li><a href="/category/security/">Security</a>
+					
+				</li>
+			
+				<li><a href="/category/vertical-it/">Vertical IT</a>
+					
+				</li>
+			
+		
+	
+	
+	
+
+		            </ul>
+		        </nav>
+		        
+	        
+        
+        
+        <nav id="ft2">
+            <ul>
+           		
+           		
+
+
+
+
+
+
+
+
+
+
+<li><a href="/about/sitemap.html">All Topics</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/feature">Features</a></li>
+<li><a href="/reviews">Reviews</a></li>
+<li><a href="/blogs">Blogs</a></li>
+<li><a href="/opinion">Opinions</a></li>
+<li><a href="/insider">Insider</a></li>
+<li><a href="/blog/shark-tank">Shark Tank</a></li>
+<li><a href="/slideshows">Slideshows</a></li>
+<li><a href="/video">Video</a></li>
+<li><a href="/newsletters/signup.html">Newsletters</a></li>
+<li><a target="_blank" href="http://events.computerworld.com/ehome/index.php?eventid=8862">Events</a></li>
+<li><a href="/resources">Resources/White Papers</a></li>
+           		
+            </ul>
+        </nav>
+        
+        
+			
+		
+    </section>
+    
+    
+    <section class="about">
+		<div class="wrapper"> 
+        	<nav class="tertiary" id="ft3">
+            	<ul>
+            		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="/about/about.html"  >About Us</a>
+
+<li><a href="/about/contactus.html"  >Contact</a>
+
+<li><a href="/about/privacy.html"  >Privacy Policies</a>
+
+<li><a href="http://www.computerworld.com/article/2879003/download-computerworlds-editorial-calendar"  >Editorial Calendar</a>
+
+<li><a href="http://www.computerworldmediakit.com/index.html"  >Advertising</a>
+
+<li><a href="http://careers.idg.com/" target="_blank" >Careers at IDG</a>
+
+<li><a href="/about/sitemap.html"  >Site Map</a>
+
+<li><a href="/about/adchoices.html"  >Ad Choices</a>
+
+
+
+
+            	</ul>
+        	</nav>
+		</div>
+	</section>
+	
+    <section class="copyright">
+        <div class="wrapper">
+        	<p><a href="/about/copyright.html">Copyright</a> &copy; 1994 - 2015 Computerworld, Inc. All rights reserved.</p>
+			<div class="network">
+				<div id="network-selector">
+                <div class="label">Explore the IDG Network <i class="ss-icon tick">descend</i></div>
+                	<ul>
+						<li><a href="http://www.cfoworld.com/" target="_blank">CFOworld</a></li>
+						<li><a href="http://www.cio.com" target="_blank">CIO</a></li>
+						<li><a href="http://www.computerworld.com" target="_blank">Computerworld</a></li>
+						<li><a href="http://www.csoonline.com" target="_blank">CSO</a></li>
+						<li><a href="http://www.demo.com" target="_blank">DEMO</a></li>
+						<li><a href="http://www.fritterati.com" target="_blank">Fritterati</a></li>					
+						<li><a href="http://www.greenbot.com" target="_blank">Greenbot</a></li>
+						<li><a href="http://www.idc.com" target="_blank">IDC</a></li>
+						<li><a href="http://www.idg.com" target="_blank">IDG</a></li>
+						<li><a href="http://www.idganswers.com/" target="_blank">IDG Answers</a></li>                	                						
+						<li><a href="http://www.idgconnect.com" target="_blank">IDG Connect</a></li>
+						<li><a href="http://www.idgknowledgehub.com" target="_blank">IDG Knowledge Hub</a></li>
+						<li><a href="http://www.idgtechnetwork.com" target="_blank">IDG TechNetwork</a></li>
+						<li><a href="http://www.idg.tv" target="_blank">IDG.TV</a></li>
+						<li><a href="http://www.idgventures.com" target="_blank">IDG Ventures</a></li>
+						<li><a href="http://www.infoworld.com" target="_blank">InfoWorld</a></li>
+						<li><a href="http://www.itnews.com" target="_blank">IT News</a></li>
+						<li><a href="http://www.itwhitepapers.com" target="_blank">ITwhitepapers</a></li>
+						<li><a href="http://www.itworld.com" target="_blank">ITworld</a></li>
+						<li><a href="http://www.javaworld.com" target="_blank">JavaWorld</a></li>
+						<li><a href="http://www.linuxworld.com" target="_blank">LinuxWorld</a></li>
+						<li><a href="http://www.macworld.com" target="_blank">Macworld</a></li>
+						<li><a href="http://www.networkworld.com" target="_blank">Network World</a></li>
+						<li><a href="http://www.pcworld.com" target="_blank">PC World</a></li>
+						<li><a href="http://www.techhive.com" target="_blank">TechHive</a></li>
+                	</ul>
+				</div><!-- /#network-selector -->
+			</div><!-- /.network -->
+		</div><!-- /.wrapper -->
+    </section>
+</footer>
+
+<script src="/www/js/jquery/jquery-ui.js?v=20150917091405"></script>
+<script src="/www/js/jquery/jquery.dfp.min.js?v=20150917091405"></script>
+
+<script src="/www.idge/js/FTScroller_plugins.js?v=20150917091405"></script>
+<script src="/www.idge/js/mule/shortstack_nav.js?v=20150917091405"></script>
+<script src="/www.idge/js/jquery/jt-scrollable.min.js?v=20150917091405"></script>
+<script src="/www/js/jquery/jquery.timeago.js?v=20150917091405"></script>
+<script>
+$(document).ready(function(){
+	$(".timeago").timeago();
+});
+</script>
+
+
+
+
+		
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+				<!-- Begin welcome ad overlay - gpt-overlay position  -->
+				<div id="superadunit" class="hidden">
+					<div class="ad">
+						<a href="javascript:unhide('superadunit');" id="superstitial-text">This ad will close in 20 seconds. Continue to site &raquo;</a>
+						<div id="gpt-overlay" class="">
+							<script type="text/javascript">
+								IDG.GPT.addDisplayedAd("gpt-overlay", "true");
+								googletag.cmd.push(function() { googletag.display('gpt-overlay'); });
+							</script>
+						</div>
+					</div>
+				</div>		
+				<!--  End welcome ad overlay - gpt-overlay position -->
+			
+			
+			
+			
+		
+	
+ 	
+ 
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="catfish" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("catfish", "true");
+						$('#catfish').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+				<!--  Begin gpt-skin -->
+				<div id="gpt-skin" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("gpt-skin", "true");
+						googletag.cmd.push(function() { googletag.display('gpt-skin'); });
+					</script>
+				</div>
+				<!--  End gpt-skin -->	
+			
+			
+			
+		
+	
+ 	
+ 
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+			
+			
+			
+				<div id="mobilewelcomead" class="">
+					<script type="text/javascript">
+						IDG.GPT.addDisplayedAd("mobilewelcomead", "true");
+						$('#mobilewelcomead').responsiveAd({screenSize:'971 1115', scriptTags: []});
+					</script>
+				</div>				
+			
+		
+	
+ 	
+ 
+
+
+<script src="/www/js/analytics/tracking.js?v=20150917091405"></script>
+<script src="/www/js/autocomplete.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var listItems = $('#scrollable ul li');
+	var listWidth = 0;
+	for (var i=0;i < listItems.length; i++) {
+		listWidth = listWidth + $(listItems[i]).outerWidth();
+	}
+
+	$('#scrollable ul').width(listWidth+100); //adding an extra 100px of buffer	
+});
+
+//we need to disable this for IE10 for now - link clicks don't work!
+var trackPointerEvents = window.navigator.msPointerEnabled;
+
+if (!trackPointerEvents) {
+	//set up the FT Scroller for the topics
+	var scroller = new FTScroller(document.getElementById('scrollable'), {
+		scrollingY: false,
+		bouncing: false,
+		updateOnWindowResize: true,
+		scrollbars: false
+	});	
+}
+</script>
+
+
+
+<script src="/www/js/jquery/jquery.lazyload.min.js?v=20150917091405"></script>
+<script src="/www.idge/js/global.js?v=20150917091405"></script>
+
+<script src="/www/js/webfonts/ss-social.js?v=20150917091405"></script>
+<script src="/www/js/webfonts/ss-standard.js?v=20150917091405"></script>
+<script src="/www/js/analytics/brandAnalytics.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-300704-1']);
+_gaq.push(['_setDomainName', 'computerworld.com']);
+
+if(""=="11"){
+	 _gaq.push(['_trackPageview',''+'/slideshow/'+ '1']);
+} else{
+ _gaq.push(['_trackPageview']);
+}
+(function() { 
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s); }
+)();
+
+function trackGoogleAnalytics(articleId, slideNumber,articleUri) {
+	_gaq.push(['_setAccount', 'UA-300704-1']);
+	_gaq.push(['_setDomainName', 'computerworld.com']);
+	//_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageview', articleUri +'/slideshow/' + slideNumber]);
+	
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+	
+<script type="text/javascript">
+	var _sf_async_config={};
+
+	_sf_async_config.uid = 29363;
+
+	_sf_async_config.path = "/category/wireless-networking/";
+	_sf_async_config.title = "Wireless Networking | Computerworld";
+	_sf_async_config.domain = "computerworld.com";
+	if(window.location.href.indexOf("video")&&true) {
+		_sf_async_config.playerdomain= _sf_async_config.domain.replace("www.","");
+	}
+	
+	_sf_async_config.useCanonical = true;
+	
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement("script");
+	    e.setAttribute("language", "javascript");
+	    e.setAttribute("type", "text/javascript");
+	    e.setAttribute("src", (("https:" == document.location.protocol) ? 
+	      "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + 
+	      ((window.location.href.indexOf("video")) ? "js/chartbeat_video.js" : "js/chartbeat.js"));
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != "function") ?
+	 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript" src="/www/js/jquery/jquery.cookie.js"></script>
+<!-- CryptoJS -->
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script type="text/javascript" src="/www/js/analytics/idg_bk_coreapi.js?v=20150917091405"></script>
+	
+<script type="text/javascript">
+var blueKaiId=14339;
+var blueKaiPort=10;
+var brandCode = "ctw";
+var regUrl="http://regdev.idge.int/api/"
+var daysToRefresh=30;
+var bk_debug_log=false;
+
+
+
+	 regUrl="http://reg.idgenterprise.com/api/";
+
+
+
+	daysToRefresh=30;
+
+
+	
+
+
+	
+
+if ( typeof(s) != 'undefined' ) {
+	bk_addPageCtx("pageType", (typeof(s.pageType)!='undefined')?s.pageType:'');
+}
+
+
+//CMS-Specific
+bk_addPageCtx("cmscatids", "[3388]");
+
+
+bk_addPageCtx("cmpy", "[]");
+
+
+bk_addPageCtx('tid', '');
+
+	
+	
+
+// Add the list name and email address hash params to bluekai tracking
+// If the user came from a newsletter clickthru, also set the isnl pagectx
+params = getUrlParams('phint');
+if(Object.keys(params).length > 0)
+	{
+	bk_addPageCtx("idg_eid", params['idg_eid']);
+	bk_addPageCtx("newt", params['newt']);
+	bk_addPageCtx("isnl", "1");	
+	}
+
+	try{
+		IDG.bkCoreApi.start();
+	}
+	catch(e){
+		//alert("Triggering catch")
+		bk_doJSTag(blueKaiId ,blueKaiPort);
+		if (window.console && window.console.log){
+			window.console.log("Error Occured While Processing Profile Siubmission")
+		}
+	}
+
+</script>
+
+
+
+<!-- End BlueKai Tag -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN Krux Control Tag for Computerworld -->
+<script class="kxct" data-id="Hx-x6U34" data-timing="async" data-version="1.9" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+    var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);    
+    k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+      (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=Hx-x6U34";
+    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  })();
+</script>
+<!-- END Krux Controltag -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- START Nielsen Online SiteCensus? V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+    (function () {
+        var d = new Image(1, 1);
+        d.onerror = d.onload = function () {
+            d.onerror = d.onload = null;
+        };
+        d.src = ["http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-203426h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join();
+    })();
+</script>
+
+
+<!-- END Nielsen Online SiteCensus? V6.0 -->
+
+<script type="text/javascript" src="/www/js/ads/jquery.lazyload-ad.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+// -- Load Lazy Advertisement placement as deferred
+$("div.lazyload_ad").lazyLoadAd({
+        threshold    : 500,         // You can set threshold on how close to the edge ad should come before it is loaded. Default is 0 (when it is visible).
+        forceLoad    : false,       // Ad is loaded even if not visible. Default is false.
+        onLoad       : false,       // Callback function on call ad loading
+        onComplete   : false,       // Callback function when load is loaded
+        timeout      : 1500,        // Timeout ad load
+        debug        : false,       // For debug use : draw colors border depends on load status
+        xray         : false        // For debug use : display a complete page view with ad placements
+}) ;
+</script>
+
+
+
+	<script>
+	//check to see if there's a fireplace loaded - if so, constrain the carousel width
+	var setInt = setInterval(checkFireplace, 200);
+	var setIntCount = 0;
+	function checkFireplace() {
+		//limit checking time to 10 seconds max
+		if (setIntCount < 50) {
+			if ($('body div').data('studioassetid')) {
+				$('body').addClass('has-fireplace');	
+				clearInterval(setInt);
+			}
+			
+			setIntCount++;
+		}
+		else {
+			clearInterval(setInt);	
+		}
+	}
+	</script>
+
+
+<script type='text/javascript'>
+g_arrModules[''] = true;
+g_arrModules['Browse Landing:Right:Epo'] = true;
+g_arrModules['Browse Landing:Right:Module Resources'] = true;
+g_arrModules['Browse Landing:Right:Most Popular Articles'] = true;
+
+		$('#resources-sponsored-links').addClass('show');
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+	var omniture_account="computerworldcom";
+	
+	var omniture_trackingServer = "idgenterprise.d1.sc.omtrdc.net";
+	
+	g_sOmnitureReportSuite = "computerworldcom";
+	
+
+$(document).ready(function(){
+	
+	if(!!$('.sharing-tools').length || !!$('#ss-share').length || (!!$('#sharer').length && !!!$('#sharer.sidecar').length)){
+		Socialite.load();
+		Socialite.setup({
+			twitter: {
+				lang      : 'en',
+		        onclick   : function(e) {socialTrack("Article","Twitter","Click");},
+		        ontweet   : function(e) {
+		        	socialTrack("Article","Twitter","Tweet");
+		        	$thm.logPlEvent({"b":"ctw","e":"twshare","t":"article","id":""});
+			    },
+		        onretweet : function(e) {socialTrack("Article","Twitter","Retweet");},
+		        onfavorite: function(e) {socialTrack("Article","Twitter","Favorite");},
+		        onfollow  : function(e) {socialTrack("Article","Twitter","Follow");followTrack();}
+		    },
+		    facebook: {
+		    	lang	: 'en_US',
+		    	appId	: '196366870381968',
+		    	onlike	: function(url){
+		    		socialTrack("Article","Facebook","Like");
+		    		$thm.logPlEvent({"b":"ctw","e":"fblike","t":"article","id":""});
+		    	},
+		    	onunlike: function(url){socialTrack("Article","Facebook","Unlike");},
+		    	xfbml	: true,
+		    	version	:  'v2.1'
+		    },
+		    googleplus: {
+		        lang	: 'en-US',
+		        callback: function(el, e) {
+		        	socialTrack("Article","Googleplus","Click");
+		        	$thm.logPlEvent({"b":"ctw","e":"googplus","t":"article","id":""});
+		        }
+		    }
+		});
+		
+		//$('.sharing-tools').show();
+		$('#ss-share').show();
+		
+	}
+	
+	$('a.pinterest-pinit').click(function(e){
+		socialTrack('Article','Pinterest','share');
+	});
+	$('li.redditShare').click(function(e) {
+		socialTrack('Article','Reddit','share');
+	});
+	
+	$('li.stumbleUponShare').click(function(e) {
+		socialTrack('Article','StumbleUpon','share');
+	});
+
+	$('.banner-tw').click(function(e){
+		brandFollowTrack("twitter");
+		
+	});
+	$('.banner-fb').click(function(e){
+		brandFollowTrack("facebook");
+	});
+	$('.mediaresource #download-asset').click(function(e){
+		Analytics.logAssetDownload($(this).data('id'));
+	});
+
+	if (typeof(FB)!='undefined') {
+		FB.Event.subscribe('edge.create', function(response){
+			s = s_gi(g_sOmnitureReportSuite);
+			s.linkTrackEvents = s.events = "event36";
+			s.prop48="facebook share";
+			s.linkTrackVars = "prop48,events";
+			s.tl(true, 'o', 'Social Media share');
+		});
+	}
+
+	if (typeof(digMag) != 'undefined'){
+		if(typeof(digLogin) != 'undefined'){
+			DigAnalytics.logSignIn(digLogin);
+		}
+	}
+
+
+});
+
+var Analytics = new Object();
+Analytics.logArticleComment = function(){
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackVars="prop25,eVar25,events";
+	s.linkTrackEvents="event19";
+	s.events="event19";
+	s.prop25 = 'Article Comment';
+	s.tl(this,'o','Article Comments');
+};
+Analytics.logSocialSignin = function(provider){
+	s = s_gi(g_sOmnitureReportSuite);
+
+	s.linkTrackEvents = s.events = "event32";
+	s.prop19=provider;
+	s.linkTrackVars = "prop19,events";
+	s.tl(true, 'o', provider);
+};
+Analytics.logInternalSignin = function(){
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackEvents = s.events = "event32";
+	s.prop19="Internal Login";
+	s.linkTrackVars = "prop19,events";
+	s.tl(true, 'o', 'Login');
+};
+Analytics.logAssetDownload = function(assetname){ 
+	s = s_gi(g_sOmnitureReportSuite); 
+	s.linkTrackVars="prop52,eVar37,events"; 
+	s.linkTrackEvents="event49"; 
+	s.pagename = 'filetype:'+s.pagename;
+	s.events="event49"; 
+	s.prop52 = 'asset:'+assetname;
+	eVar37= s.prop52;
+	s.tl(this,'o','Asset Download'); 
+} 
+
+/**
+ * Trigger Omniture and Google Analytics tracking code
+ * loc - Home, Footer, Header, Article
+ * network - Facebook, Twitter, LinkedIn, Googleplus 
+ * socialAction - Like, Unlike, Share, Follow, Tweet, Retweet, Favorite, Click
+ */
+function socialTrack(loc,network,socialAction) {
+	//Omniture
+	var trackString = network + ":" + loc + ":" + socialAction;
+	console.log("socialTrack() "+trackString);
+	s.prop48 = trackString;
+	s.eVar27 = "D=c48";
+	s.event36 = trackString;
+	s.linkTrackEvents=s.events="event36";
+	s.linkTrackVars = "prop48,eVar27,events";
+	s.tl(true, 'o', 'Social media');
+}
+
+function linkedInTrack() {
+	socialTrack("Article","LinkedIn","Share");
+};
+
+function followTrack() {
+	console.log("followTrack()");
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackEvents = s.events = "event37";
+	s.prop49="social media";
+	s.linkTrackVars = "prop49,events";
+	s.tl(true, 'o', 'Social media follow');
+}
+function brandFollowTrack(network){
+	console.log("brandFollowTrack()");
+	s = s_gi(g_sOmnitureReportSuite);
+	s.eVar16="followed on:"+network;
+	s.linkTrackEvents = s.events = "event37";
+	s.prop49="social media";
+	s.linkTrackVars = "prop49,eVar16,events";
+	s.tl(true, 'o', 'Social media brand follow');
+    if (typeof IDG.Eloqua != "undefined") {
+        IDG.Eloqua.invoke_flash("social-" + network);
+	}
+}
+function sharingTrack(type, pixelLogString) {
+	s = s_gi(g_sOmnitureReportSuite);
+	s.eVar16="Sharing on: " + type;
+	s.linkTrackEvents = s.events = "event37";
+	s.prop49="social media sharing";
+	s.linkTrackVars = "prop49,eVar16,events";
+	s.tl(true, 'o', 'Social Media Sharing');
+    if (typeof IDG.Eloqua != "undefined") {
+        IDG.Eloqua.invoke_flash("social-" + type);
+	}
+    // Record Social Event in pixel logger
+    if (pixelLogString !== undefined) {
+    	$thm.logPlEvent({"b":"ctw","e":pixelLogString,"t":"article","id":""});
+    }   
+}
+function moduleTrack(moduleName,loc) {
+	console.log("moduleTrack()");
+	s = s_gi(g_sOmnitureReportSuite);
+	s.eVar42=moduleName;
+	s.eVar44=loc;
+	s.linkTrackEvents=s.events='event31';
+	s.list3=s.prop42+","+s.eVar42;
+	s.tl(true, 'o', 'Module click');
+}
+function trackSlideshow(articleId, slideTitle, slideNumber) {
+	s = s_gi(g_sOmnitureReportSuite);
+	s.prop15="page number:" + slideNumber;
+	s.eVar15="D=c15";
+	s.tl(true, 'o', 'Track Slideshow: articleId:' + articleId + ' title:' + slideTitle + " Slide No.:" + slideNumber);
+}
+function oClickTrack(key) {
+	// test for empty key and don't log if empty
+	if (typeof(key) != 'undefined' && key.length > 0){
+		s = s_gi(g_sOmnitureReportSuite);
+
+		s.linkTrackVars="eVar42,events";
+	    s.events="event49";
+	    s.linkTrackEvents="event49";
+	
+		s.eVar42 = key;
+		s.list3=s.prop42+","+s.eVar42;
+		s.tl(true,'o','module click');
+	}
+};
+</script>
+<!-- SiteCatalyst code version: H.26.2.
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+
+<script language="JavaScript" type="text/javascript" src="/www.idge/js/analytics/s_code.js?v=20150917091405"></script>
+<script language="JavaScript" type="text/javascript" id="omniVars"><!--
+g_sOmnitureReportSuite = typeof g_sOmnitureReportSuite != 'undefined' && g_sOmnitureReportSuite ? g_sOmnitureReportSuite : "computerworldcom"; 
+
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+//BEGIN OMNITURE VARS 
+s.pageName="Computerworld:category index: topic:Wireless Networking:Wireless Networking | Computerworld";
+
+s.pageType="";
+if (typeof omnitureChannel != 'undefined'){
+s.channel=omnitureChannel;
+}
+s.prop1="source:computerworld";s.eVar1="D=c1";
+s.prop2="content type:category index";s.eVar2="D=c2";
+s.prop3="display type:category index: topic";s.eVar3="D=c3";
+s.prop4="";s.eVar4="D=c4";
+
+s.prop6="";
+s.prop7="";s.eVar7="D=c7";
+s.prop9="category:wireless networking";s.eVar9="D=c9";
+s.prop11="";s.eVar11="D=c11";
+s.prop12="";s.eVar12="D=c12";
+s.prop13="";s.eVar13="D=c13";
+s.prop14="";s.eVar14="D=c14";
+s.prop15="";s.eVar15="D=c15";
+s.prop17="uri:/category/wireless-networking/";s.eVar17="D=c17";
+s.prop18="";s.eVar18="D=c18";
+s.prop24=getLoginStatusForOmniture();s.eVar24="D=c24";
+s.prop28=getTrackingToken('tk') ? "tokens:"+getTrackingToken('tk') : "";s.eVar28="D=c28";
+
+s.prop37="rpn:ctw:category index:computerworld:category index: topic:wireless networking:wireless networking | computerworld";
+
+s.eVar37="D=c37";
+s.prop39="";s.eVar39="D=c39";
+s.prop40="";
+s.prop41=IDG.GPT.getDisplayedAds(',') + ',' + IDG.GPT.getOtherAds(',');
+s.prop42=IDG.GPT.getModules(',');s.eVar42="D=c42";
+
+
+s.prop53="3388";s.eVar53="D=c53";
+s.prop54="wireless networking";s.eVar30="D=c54";
+s.eVar33=s.prop55="3388";s.eVar33="D=c55";
+s.prop56="";s.eVar40="D=c56";
+s.prop61="";s.eVar10="D=c61";
+s.prop74="network";s.eVar58="D=c74";
+s.prop75="wireless";s.eVar60="D=c75";
+s.prop58="network:wireless";s.eVar59="D=c58";
+//module tracking
+var sModules = '';
+for(var i in g_arrModules){
+	if(g_arrModules[i] && i != ''){
+		sModules += i+',';
+	}
+}
+sModules = sModules.replace(/,$/,'');
+s.prop42 = sModules;
+s.eVar42="D=c42";
+//now set events
+s.events="";
+
+
+s.list3=s.prop42+","+s.eVar42;
+//force all values to lower case for reporting consistency
+for(var p in s){
+	if(s[p] && p.match(/^(prop|ceVar)\d+$/)){
+		//console.log(p+": "+s[p]);
+		s[p] = s[p].toLowerCase();
+		//console.log(p+": "+s[p]);
+	}
+}
+//END OMNITURE VARS 
+
+/* Conversion Variables */
+s.campaign=getTrackingToken('tk') ? "tokens:"+getTrackingToken('tk') : "";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://idgenterprise.d1.sc.omtrdc.net/b/ss/computerworldcom/1/H.25--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.26.2. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div id="loginModal"></div>
+		<div id="logoffModal"></div>
+
+		
+
+    	
+			
+
+
+
+
+
+
+
+
+
+
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <span id="parsely-cfg" data-parsely-site="computerworld.com"></span>
+</div>
+<script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+      if (e) return;
+      e = d.createElement(s); e.id = i; e.async = true;
+      e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+						
+	</body>
+</html>

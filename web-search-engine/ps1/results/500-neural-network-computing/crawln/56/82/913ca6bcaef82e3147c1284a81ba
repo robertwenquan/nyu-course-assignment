@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+<link rel="shortcut icon" href="https://scout.wisc.edu/sites/all/themes/scout_site/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/rss+xml" title="News Updates" href="https://scout.wisc.edu/news/rss" />
+<link href="sites/all/themes/scout_site/images/apple-touch-icon.png" rel="apple-touch-icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Internet Scout</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="https://scout.wisc.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://scout.wisc.edu/sites/default/files/css/css_-TNq6F6EH1K3WcBMUMQP90OkyCq0Lyv1YnyoEj3kxiU.css" media="screen" />
+<style media="print">#sb-container{position:relative;}#sb-overlay{display:none;}#sb-wrapper{position:relative;top:0;left:0;}#sb-loading{display:none;}
+</style>
+<link type="text/css" rel="stylesheet" href="https://scout.wisc.edu/sites/default/files/css/css_R2STiNKOHwdGW8h1wr3H3AvQuDZZ0DwZK3tvNiZxsZU.css" media="all" />
+<style>body.node-type-scout-report-template textarea{font-family:monospace !important;}
+</style>
+<link type="text/css" rel="stylesheet" href="https://scout.wisc.edu/sites/default/files/css/css_EEuaVDbDrk1o_LbA4I212CvT5P49qZSFIy3xfkWAZ2I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://scout.wisc.edu/sites/default/files/css/css_LFUUMGzZki-IMdS3HBJtV7ZDzAs5cB6fEqXtbs8prag.css" media="all" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://scout.wisc.edu/sites/all/themes/scout_site/css/ie7.css?nuf9im" media="all" />
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://scout.wisc.edu/sites/all/themes/scout_site/css/ie8.css?nuf9im" media="all" />
+<![endif]-->
+  <script src="https://scout.wisc.edu/sites/default/files/js/js_UWQINlriydSoeSiGQxToOUdv493zEa7dpsXC1OtYlZU.js"></script>
+<script src="https://scout.wisc.edu/sites/default/files/js/js_Vz1pUd_Ebbv25wjYZjxDnJxPHpDY1Zq1eYjuhL0Nc7k.js"></script>
+<script src="https://scout.wisc.edu/sites/default/files/js/js_COMsmDyrY9mzVU28X2uGvF4Ba3vd5eTo5xEO7dvCUZM.js"></script>
+<script src="https://scout.wisc.edu/sites/default/files/js/js_xFcuW947gcH_OYb_4ZVgMCZXIKGbOqiNBb3B1TpyEqs.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-856016-3"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="https://scout.wisc.edu/sites/default/files/js/js_a_XWH2S1EQaU85ypMDyQGiUfzPFez1IOZKxHnhGkv3E.js"></script>
+<script src="https://scout.wisc.edu/sites/default/files/js/js_p99DJ369fomKAGjNaQdz5avSx-684ejSQZo_PHjOAgw.js"></script>
+<script>
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+        </script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"scout_site","theme_token":"IqLFd-5y19dU8TW-GVns1lklumFiCgj5_BXHm0botOM","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/jquery.cookie.js":1,"sites\/all\/libraries\/shadowbox\/shadowbox.js":1,"sites\/all\/modules\/shadowbox\/shadowbox_auto.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"misc\/form.js":1,"sites\/all\/modules\/comment_notify\/comment_notify.js":1,"sites\/all\/libraries\/cufon\/cufon-yui.js":1,"sites\/all\/libraries\/cufon-fonts\/Myriad_Pro_300.font.js":1,"sites\/all\/modules\/cufon\/js\/cufon-drupal.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"misc\/collapse.js":1,"sites\/all\/themes\/scout_site\/js\/script.js":1,"2":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/shadowbox\/shadowbox.css":1,"1":1,"sites\/all\/modules\/comment_notify\/comment_notify.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"0":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/5f14160314418483362d7efd5defabd8.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/themes\/zen\/system.menus.css":1,"sites\/all\/themes\/scout_site\/css\/normalize.css":1,"sites\/all\/themes\/scout_site\/system\/system.theme.css":1,"sites\/all\/themes\/scout_site\/system\/system.messages.css":1,"sites\/all\/themes\/scout_site\/css\/theme.css":1,"sites\/all\/themes\/scout_site\/css\/scout-contentstructure.css":1,"sites\/all\/themes\/scout_site\/css\/scout-text.css":1,"sites\/all\/themes\/scout_site\/css\/ie7.css":1,"sites\/all\/themes\/scout_site\/css\/ie8.css":1}},"cufonSelectors":[{"selector":"h1.title, h1#page-title.title, .pane-title, .block-title, h2.title.comment-form","options":{"enabled":1,"fontFamily":"Myriad Pro"}}],"shadowbox":{"animate":0,"animateFade":1,"animSequence":"wh","auto_enable_all_images":1,"auto_gallery":1,"autoplayMovies":true,"continuous":0,"counterLimit":"10","counterType":"default","displayCounter":1,"displayNav":1,"enableKeys":1,"fadeDuration":"0.25","handleOversize":"resize","handleUnsupported":"link","initialHeight":160,"initialWidth":320,"language":"en","modal":false,"overlayColor":"#000","overlayOpacity":"0.45","resizeDuration":"0.25","showMovieControls":1,"slideshowDelay":"0","viewportPadding":20,"useSizzle":0},"nice_menus_options":{"delay":"800","speed":"normal"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"urlIsAjaxTrusted":{"\/":true}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html front not-logged-in no-sidebars page-home page-panels" >
+      <p id="skip-link">
+      <a href="#content" class="element-invisible element-focusable">Skip to content</a>
+    </p>
+      
+<div id="page">
+
+  <header id="header" role="banner">
+
+          <a href="/" title="Home" rel="home" id="logo"><img src="https://scout.wisc.edu/sites/all/themes/scout_site/logo.png" alt="Home" /></a>
+    
+      <div class="region region-header-menu">
+    <div id="block-search-form" class="block block-search first last odd" role="search">
+
+      
+  <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." onblur="if (this.value == &#039;&#039;) {this.value = &#039;Search&#039;; this.className = this.className.replace(/\bsearchfocus\b/, &#039;&#039;);}" onfocus="if (this.value == &#039;Search&#039;) {this.value = &#039;&#039;; this.className += &#039; searchfocus&#039;;}" type="text" id="edit-search-block-form--2" name="search_block_form" value="Search" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="image" id="edit-submit" name="submit" src="/sites/all/themes/scout_site/images/search_icon.jpg" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-hLII6aELQOk2gjt2gNs696rLSzwR2qjYG9zGRCKNYOU" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>
+</div>
+  </div>
+
+    
+  </header>
+
+  <div id="main">
+
+    <div id="navigation" class="clearfix">
+        <div class="region region-navigation">
+    <div id="block-nice-menus-1" class="block block-nice-menus first odd">
+
+      
+  <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1"><li class="menu__item menu__item menu-1511 menu-path-home active-trail first odd "><a href="/index.html" class="menu__link menu__link active">Home</a></li>
+<li class="menu__item menu__item menu-1599 menuparent  menu-path-projects  even "><a href="/projects" class="menu__link menu__link">Projects</a><ul><li class="menu__item menu__item menu-492  menu-path-node-44 first odd "><a href="/cwis" class="menu__link menu__link">CWIS</a></li>
+<li class="menu__item menu__item menu-1705  menu-path-node-113  even "><a href="/amser" class="menu__link menu__link">AMSER</a></li>
+<li class="menu__item menu__item menu-1704  menu-path-node-114  odd "><a href="/ate-central" class="menu__link menu__link">ATE Central</a></li>
+<li class="menu__item menu__item menu-1600 menu-path-past-projects  even last"><a href="/past-projects" class="menu__link menu__link">Past Projects</a></li>
+</ul></li>
+<li class="menu__item menu__item menu-1689 menuparent  menu-path-publications  odd "><a href="/publications" class="menu__link menu__link">Publications</a><ul><li class="menu__item menu__item menu-516  menu-path-node-50 first odd "><a href="/report" class="menu__link menu__link">The Scout Report</a></li>
+<li class="menu__item menu__item menu-521 menu-path-samserorg-srm  even "><a href="https://amser.org/srm" title="" class="menu__link menu__link">AMSER Science Reader Monthly</a></li>
+<li class="menu__item menu__item menu-522 menu-path-satecentralnet-connection  odd "><a href="https://atecentral.net/connection" title="" class="menu__link menu__link">ATE Central Connection</a></li>
+<li class="menu__item menu__item menu-1690 menu-path-past-publications  even last"><a href="/past-publications" class="menu__link menu__link">Past Publications</a></li>
+</ul></li>
+<li class="menu__item menu__item menu-1706 menuparent  menu-path-sscoutwiscedu-archives-  even "><a href="https://scout.wisc.edu/archives/" title="" class="menu__link menu__link">Archives</a><ul><li class="menu__item menu__item menu-1767 menu-path-sscoutwiscedu-archives-indexphppbrowseresources first odd "><a href="https://scout.wisc.edu/archives/index.php?P=BrowseResources" title="" class="menu__link menu__link">Browse Archives</a></li>
+<li class="menu__item menu__item menu-1768 menu-path-sscoutwiscedu-archives-indexphppadvanced  even last"><a href="https://scout.wisc.edu/archives/index.php?P=Advanced" title="" class="menu__link menu__link">Search Archives</a></li>
+</ul></li>
+<li class="menu__item menu__item menu-441 menuparent  menu-path-node-20  odd last"><a href="/about" class="menu__link menu__link">About</a><ul><li class="menu__item menu__item menu-1476 menu-path-news first odd "><a href="/news" class="menu__link menu__link">News Updates</a></li>
+<li class="menu__item menu__item menu-1475 menu-path-events  even "><a href="/events" class="menu__link menu__link">Upcoming Events</a></li>
+<li class="menu__item menu__item menu-1583 menu-path-staff-bios  odd "><a href="/staff-bios" class="menu__link menu__link">Staff Bios</a></li>
+<li class="menu__item menu__item menu-442 menu-path-node-21  even "><a href="/copyright-permissions" class="menu__link menu__link">Copyright Permissions</a></li>
+<li class="menu__item menu__item menu-443 menu-path-node-22  odd "><a href="/privacy-policy" class="menu__link menu__link">Privacy Policy</a></li>
+<li class="menu__item menu__item menu-474 menu-path-node-37  even last"><a href="/contact-us" class="menu__link menu__link">Contact Us</a></li>
+</ul></li>
+</ul>
+
+</div>
+<div id="block-nice-menus-2" class="block block-nice-menus even">
+
+      
+  <ul class="nice-menu nice-menu-down nice-menu-menu-main-menu-small-screen" id="nice-menu-2"><li class="menu__item menu-2676 menuparent  menu-path-nolink active-trail first odd last nolink"><span>Navigation</span><ul><li class="menu__item menu__item menu-2629 menu-path-home active-trail first odd "><a href="/index.html" class="menu__link menu__link active">Home</a></li>
+<li class="menu__item menu__item menu-2630 menuparent  menu-path-projects  even "><a href="/projects" class="menu__link menu__link">Projects</a><ul><li class="menu__item menu__item menu-2631  menu-path-node-44 first odd "><a href="/cwis" class="menu__link menu__link">CWIS</a></li>
+<li class="menu__item menu__item menu-2642  menu-path-node-113  even "><a href="/amser" class="menu__link menu__link">AMSER</a></li>
+<li class="menu__item menu__item menu-2644  menu-path-node-114  odd "><a href="/ate-central" class="menu__link menu__link">ATE Central</a></li>
+<li class="menu__item menu__item menu-2647 menu-path-past-projects  even last"><a href="/past-projects" class="menu__link menu__link">Past Projects</a></li>
+</ul></li>
+<li class="menu__item menu__item menu-2648 menuparent  menu-path-publications  odd "><a href="/publications" class="menu__link menu__link">Publications</a><ul><li class="menu__item menu__item menu-2649  menu-path-node-50 first odd "><a href="/report" class="menu__link menu__link">The Scout Report</a></li>
+<li class="menu__item menu__item menu-2660 menu-path-samserorg-srm  even "><a href="https://amser.org/srm" title="" class="menu__link menu__link">AMSER Science Reader Monthly</a></li>
+<li class="menu__item menu__item menu-2661 menu-path-satecentralnet-connection  odd "><a href="https://atecentral.net/connection" title="" class="menu__link menu__link">ATE Central Connection</a></li>
+<li class="menu__item menu__item menu-2662 menu-path-past-publications  even last"><a href="/past-publications" class="menu__link menu__link">Past Publications</a></li>
+</ul></li>
+<li class="menu__item menu__item menu-2663 menuparent  menu-path-sscoutwiscedu-archives-  even "><a href="https://scout.wisc.edu/archives/" title="" class="menu__link menu__link">Archives</a><ul><li class="menu__item menu__item menu-2664 menu-path-sscoutwiscedu-archives-indexphppbrowseresources first odd "><a href="https://scout.wisc.edu/archives/index.php?P=BrowseResources" title="" class="menu__link menu__link">Browse Archives</a></li>
+<li class="menu__item menu__item menu-2665 menu-path-sscoutwiscedu-archives-indexphppadvanced  even last"><a href="https://scout.wisc.edu/archives/index.php?P=Advanced" title="" class="menu__link menu__link">Search Archives</a></li>
+</ul></li>
+<li class="menu__item menu__item menu-2666 menuparent  menu-path-node-20  odd last"><a href="/about" class="menu__link menu__link">About</a><ul><li class="menu__item menu__item menu-2668 menu-path-news first odd "><a href="/news" class="menu__link menu__link">News Updates</a></li>
+<li class="menu__item menu__item menu-2669 menu-path-events  even "><a href="/events" class="menu__link menu__link">Upcoming Events</a></li>
+<li class="menu__item menu__item menu-2671 menu-path-staff-bios  odd "><a href="/staff-bios" class="menu__link menu__link">Staff Bios</a></li>
+<li class="menu__item menu__item menu-2672 menu-path-node-21  even "><a href="/copyright-permissions" class="menu__link menu__link">Copyright Permissions</a></li>
+<li class="menu__item menu__item menu-2673 menu-path-node-22  odd "><a href="/privacy-policy" class="menu__link menu__link">Privacy Policy</a></li>
+<li class="menu__item menu__item menu-2675 menu-path-node-37  even last"><a href="/contact-us" class="menu__link menu__link">Contact Us</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+</div>
+<div id="block-menu-menu-login-menu" class="block block-menu last odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf menu__item is-leaf first leaf"><a href="/user/register" title="" class="menu__link menu__link">Sign Up</a></li>
+<li class="menu__item is-leaf leaf nolink"><span>or</span></li>
+<li class="menu__item is-leaf menu__item is-leaf last leaf"><a href="/user" title="" class="menu__link menu__link">Log In</a></li>
+</ul>
+</div>
+  </div>
+    </div><!-- /#navigation -->
+
+    <div id="content" class="column" role="main">
+                  <a id="main-content"></a>
+                                                
+
+
+<div class="panel-flexible panels-flexible-1 clearfix" >
+<div class="panel-flexible-inside panels-flexible-1-inside">
+<div class="panels-flexible-row panels-flexible-row-1-main-row panels-flexible-row-first clearfix">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-1-main-row-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-1-top panels-flexible-region-first panels-flexible-region-last scout-front-topregion">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-1-top-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-block-8" >
+  
+      
+  
+  <script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+ var image_path = "sites/all/themes/scout_site/images/"; var url_base = ""; 
+//--><!]]>
+</script><script type="text/javascript" src="https://scout.wisc.edu/sites/all/themes/scout_site/js/scout-highlights.js"></script><div class="scout-highlights">
+<!-- background-image must be used because border-radius can't be applied to
+       images in Opera --><p>	<a class="scout-background" href="https://scout.wisc.edu/index.html" style="background-image: url('sites/all/themes/scout_site/images/Scout-Site---Carousel---Internet-Scout---1.jpg');"><br />
+		 </a></p>
+<!-- the HTML comments are used because whitespace-collapse: discard isn't
+       supported in many browsers, if any --><ul class="scout-list scout-element"><li>
+			<a class="scout-selected" data-highlight="scout" href="https://scout.wisc.edu/index.html"> </a></li>
+<li>
+			<a data-highlight="cwis" href="https://scout.wisc.edu/cwis"> </a></li>
+<li>
+			<a data-highlight="scout_report" href="https://scout.wisc.edu/scout-report"> </a></li>
+<li>
+			<a data-highlight="ate_central" href="https://scout.wisc.edu/ate-central"> </a></li>
+<li>
+			<a data-highlight="scout_archives" href="https://scout.wisc.edu/archives"> </a></li>
+<li>
+			<a data-highlight="amser" href="https://scout.wisc.edu/amser"> </a></li>
+</ul></div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-1-1 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-1-1-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-1-middle_left panels-flexible-region-first scout-front-middleleftregion">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-1-middle_left-inside panels-flexible-region-inside-first">
+<div class="panel-pane pane-block pane-scout-blocks-random-featured-item" >
+  
+        <h2 class="pane-title">Featured</h2>
+    
+  
+  
+  <div class="scout_blocks-featured_cwis_resource">
+        <div class="scout_blocks-title"><a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1400545">Teaching Teamwork: Electronics Instruction in a Collaborative Environment</a></div>
+    <div class="scout_blocks-body"><p>This Advanced Technological Education project conducted by the Concord Consortium and Tide Water Community College will help to teach students of electronics how to work effectively in teams, both face-to-face and remotely online. The ability to work together online is uniquely relevant to a 21st century workplace that spans continents and crosses oceans. Employers repeatedly cite collaboration and communication as critically important skills for new entrants to the STEM workforce, yet schools and colleges continue to have difficulty evaluating student work other than by individual test-taking ability. The project is addressing the critical mismatch between the value of teamwork, especially online teamwork, in a modern STEM workplace, and the difficulty of teaching students to collaborate while also evaluating them individually. In a time of chronic unemployment and under-employment, strong demand exists for trained electronics technicians who are able to work effectively in teams. This project addresses the problem of collaboration skills highly-valued in the workforce being difficult to measure in educational environments in which performance and grades are assigned individually.</p>
+
+<p>Supported by simulation technology created by an earlier NSF award, this project will advance the field by gathering and analyzing time-series data from teams of students working in a shared online workspace on realistic tasks representative of those found in the STEM work environment. The project is based on existing software that creates realistic simulations of electronic components and circuit boards that are linked together over the Internet and used to build and troubleshoot a resulting distributed circuit. The project will monitor students' actions as they work together, analyze the data produced, and report on the performance of each individual student, as well as that of the team as a whole. Analysis is based on using hidden Markov models to describe sequential interactions of the data from teams captured in both computer-generated logs and classroom observations. The data comprise actions, such as the modification of a circuit, measurements made with simulated test equipment, and written or oral communications. Patterns of actions are found that serve as markers for effective collaboration. This approach reduces the need for continuous supervision by an instructor and enables instructors to recognize and reward talent, work ethic, and collaborative and cognitive skills. Team members need not be co-located and work may be done by team members in an asynchronous fashion, mimicking conditions frequently encountered in the modern work environment.</p>
+
+<p>This project will yield information regarding effective methods to assess both individual and team effectiveness for students participating in online collaborative laboratories. The information learned can apply to the teaching and assessment of collaborative problem-solving skills generally and are not restricted to the field of electronics. It is anticipated that evaluation of the project results will find application in the teaching and assessing of teamwork in a variety of other domains.</p></div>
+          <div class="scout_blocks-tagline">For more applied <abbr title="Science, Technology, Engineering, and Mathematics">STEM</abbr> education resources from <abbr title="National Science Foundation">NSF</abbr>'s Advanced Technological Education program, please visit <a href="https://atecentral.net/">ATE Central</a>.</div>
+        <div class="scout_blocks-read_more"><a href="https://atecentral.net/r29543/teaching_teamwork_electronics_instruction_in_a_collaborative_environment">Read More</a></div>
+  </div>
+
+  <div class="scout_blocks-featured_cwis_resource">
+          <div class="scout_blocks-screenshot"><img src="https://amser.org/ImageStorage/Previews/Preview--00000043.png" alt="Screenshot" /></div>
+        <div class="scout_blocks-title"><a href="http://www.getbodysmart.com/">Get Body Smart</a></div>
+    <div class="scout_blocks-body">Since the days of Andreas Vesalius, humans have been fascinated with describing and accurately depicting various parts of the body in all of their intimate detail. In recent years, a number of enterprising souls have placed materials online that deal with both human anatomy and physiology. Scott Sheffield is one such individual, and he has drawn on his many years of university teaching to create this fine set of instructional diagrams, drawings, and related items. First-time visitors to the site can look over sections that address the skeletal system, the muscular system, and so on. Within each of these sections visitors can view detailed illustrations of various parts of the anatomy, such as the pectoralis major and the biceps brachii. Additionally, each section contains a quiz and a helpful tutorial. While the site may be most helpful for students of the human form (such as nurses, medical technicians, doctors, and aspiring sculptors), just about anyone will find something of interest here.</div>
+          <div class="scout_blocks-tagline">For more high-quality <abbr title="Science, Technology, Engineering, and Mathematics">STEM</abbr> resources, please visit <a href="https://amser.org/"><abbr title="Applied Math and Science Education Repository">AMSER</abbr></a>, the Applied Math and Science Education Repository.</div>
+        <div class="scout_blocks-read_more"><a href="https://amser.org/r3796/get_body_smart">Read More</a></div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-block-6" >
+  
+        <h2 class="pane-title">Connect</h2>
+    
+  
+  <p><a class="social-media-icon" href="http://www.facebook.com/InternetScout"><img src="https://scout.wisc.edu/sites/default/files/graphics/facebook.png" /></a> <a class="social-media-icon" href="https://twitter.com/#!/IntScout"><img src="https://scout.wisc.edu/sites/default/files/graphics/twitter.png" /></a> </p>
+<!--<a class="social-media-icon" href="https://scout.wisc.edu/"><img src="https://scout.wisc.edu/sites/default/files/graphics/linkedin.png" /></a>-->
+<div class="more-link"><a href="https://scout.wisc.edu/contact-us">Contact Us</a></div>
+
+  
+  </div>
+  </div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-1-middle_right panels-flexible-region-last scout-front-middlerightregion">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-1-middle_right-inside panels-flexible-region-inside-last">
+<div class="panel-pane pane-views pane-events" >
+  
+        <h2 class="pane-title">Events</h2>
+    
+  
+  <div class="view view-events view-id-events view-display-id-upcoming_events_block view-dom-id-e234dc400c9bfa79a9d42932ce141c6f">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last contextual-links-region">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="http://www.aacc.nche.edu/Resources/aaccprograms/ate/conf2015/Pages/default.aspx">ATE PI Meeting</a></span>  </div>  
+  <div class="views-field views-field-field-long-date-range">        <div class="field-content"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-10-21T00:00:00-05:00">Wednesday, October 21st, 2015 (All day)</span></div>  </div>  
+  <div class="views-field views-field-body">        <span class="field-content"><p>The American Association of Community Colleges, with NSF support, will hold the 22nd annual ATE Principal Investigators Conference, bringing together approximately 850 people to focus on the critical issues related to advanced technological education.</p></span>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/events">
+    More Events  </a>
+</div>
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-views pane-news" >
+  
+        <h2 class="pane-title">Updates</h2>
+    
+  
+  <div class="view view-news view-id-news view-display-id-latest_news_block view-dom-id-62d7134234aff4e7ab9ae33ad3d35dfc">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first contextual-links-region">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/4647">CWIS 3.2.0 Released</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">Friday, June 12, 2015</span>  </div>  
+  <div class="views-field views-field-body">        <span class="field-content"><p>CWIS version 3.2.0 has been released, and is now available for download! This release contains a lot of new functionality and improvements in performance and SEO (Search Engine Optimization).</p></span>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even contextual-links-region">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/4598">CWIS 3.1.1 Released</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">Tuesday, December 2, 2014</span>  </div>  
+  <div class="views-field views-field-body">        <span class="field-content">
+	CWIS version 3.1.1 has been released, and is now available for download on the Scout site. This is primarily a bug fix release, but it does introduce experimental support for SASS (SCSS), which can make CSS for custom interfaces much easier to write and maintain.</span>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last contextual-links-region">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/4567">CWIS 3.1.0 Released</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">Monday, September 8, 2014</span>  </div>  
+  <div class="views-field views-field-body">        <span class="field-content">
+	CWIS version 3.1.0 has been released, and is now available for download! This is a major release with a lot of new functionality, including a Metrics Reporter plugin, a revised permission system, and a new Resource Exporter plugin. 
+
+	 </span>  </div>  
+  <div class="views-field views-field-contextual-links">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/news">
+    More Updates  </a>
+</div>
+  
+  
+      <div class="feed-icon">
+      <a href="https://scout.wisc.edu/news/rss" class="feed-icon" title="Subscribe to News Updates"><img typeof="foaf:Image" src="https://scout.wisc.edu/misc/feed.png" width="16" height="16" alt="Subscribe to News Updates" /></a>    </div>
+  
+</div>
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+          </div><!-- /#content -->
+
+    
+    
+  </div><!-- /#main -->
+
+    <footer id="footer" class="region region-footer">
+    <div id="block-block-2" class="block block-block first odd">
+
+      
+  <p>© 1994-2015 Internet Scout Research Group. <a href="https://scout.wisc.edu/copyright-permissions">Reproduction Information</a></p>
+
+</div>
+<div id="block-block-3" class="block block-block last even">
+
+      
+  <p><a href="http://www.mellon.org/" id="sponsor-logo-mellon"><img src="https://scout.wisc.edu/sites/default/files/graphics/mellon_logo.png" /></a> <a href="http://www.nsf.gov/" id="sponsor-logo-nsf"><img src="https://scout.wisc.edu/sites/default/files/graphics/nsf_logo.png" /></a> <a href="http://www.wisc.edu/" id="sponsor-logo-uw"><img src="https://scout.wisc.edu/sites/default/files/graphics/uw_logo.png" /></a></p>
+
+</div>
+  </footer>
+
+</div><!-- /#page -->
+  <script>Cufon.now();</script>
+</body>
+</html>

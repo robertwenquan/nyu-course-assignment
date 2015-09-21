@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" dir="ltr" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js gt-ie8" dir="ltr" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" >
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+			<title>Enterprise mobile security news, help and research - SearchMobileComputing</title>
+			<meta name="viewport" content="width=device-width,initial-scale=1" >
+			<meta name="description" content="Improve enterprise mobility security by choosing the right mobile security software and tools to meet the needs of users and IT." >
+			<meta name="robots" content="noodp" >
+			<link rel="canonical" href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Device-Security" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="http://fast.fonts.net/jsapi/124d48dd-e515-4302-8bfb-1d5c1e3da916.js"></script><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/normalize.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/icomoon.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery.jscrollpane.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/jquery-ui-1.10.3.custom.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/responsive-carousel.slide.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/libs/mediaelementplayer.min.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/v8-legacy.css"><link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main.css?v=6.31"><!--[if IE 9]>
+<link rel="stylesheet" href="http://cdn.ttgtmedia.com/rms/ux/responsive/css/main_2.css?v=6.31"><![endif]-->
+<script src="http://cdn.optimizely.com/js/148927072.js"></script><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive.min.js?v=6.31"></script><script>
+TT("page", {"clusterName":"MDevSec","regHost":"http://users.techtarget.com","adScheme":"2","gaSiteAcct":"UA-19046353-2","lang":"en","ga":true,"timestamp":"2015-09-20 23:46:03","adId":"299683","siteName":"searchMobileComputing","topicName":"Enterprise mobile security","adAbbr":"smcg","siteType":"editorial","gaPageTrackUrl":"/page/etpk_Enterprise mobility management software and strategy-299659/ptpk_0/false/TOPICS/channel/cid_299683/date_null/mem_0/clst_MDevSec-2240025582/rtpk_Mobile Security-1175254/idx_0","siteId":40,"atHost":"http://go.techtarget.com","isChannel":true,"topicId":"299683","clusterId":"2240025582","homeAdId":"2240013018","zone":"TOPICS"});
+</script>
+
+<!-- Begin Chartbeat -->
+		<script>var _sf_startpt=(new Date()).getTime();</script><!-- End Chartbeat -->
+	
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwcDVVZACwIDU1lS"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" sizes="144×144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114×114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72×72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144×144" href="/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114×114" href="/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72×72" href="/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+	</head>
+<body id="topicLeaf">
+	<div id="site-container" class="site-container">
+		<div><div><!-- PinnedNavBarController, generated at 23:46:03 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<!-- AdsController, generated at 23:46:03 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="interstitial" class="ad ad-ist"><script>GPT.display('interstitial')</script></div><div class="ad-wrapper header-leaderboard ad-mobile">
+	<!-- AdsController, generated at 23:46:03 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="mobile-lb" class="ad ad-mb"><script>GPT.display('mobile-lb')</script></div></div>
+
+<header class="header">
+	<button class="nav-toggle"><i class="icon" data-icon="9"></i></button>
+	<a href="http://searchmobilecomputing.techtarget.com" class="header-logo mobile-link">
+		<span class="header-logo-mobile">SearchMobileComputing</span>
+	</a>
+	<a href="http://www.techtarget.com/network" class="header-logo desktop-link">
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-desktop replace_2x">
+		<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/nav_logo.png" alt="TechTarget" class="header-logo-small replace_2x">
+	</a> 
+
+	<button class="header-search-toggle"><i class="icon" data-icon="g"></i></button>
+	<form action="http://www.techtarget.com/search/query" method="get" class="header-search">
+		<label for="header-search-input" class="visuallyhidden">Search the TechTarget Network</label>
+		<input class="header-search-input" id="header-search-input" type="text" name="q" placeholder="Search the TechTarget Network">
+	</form>
+
+	<nav class="nav">
+		<a href="http://users.techtarget.com/registration/searchMobileComputing/LoginRegister.page" class="nav-join-pro"><span>Sign-up now. Start my free, unlimited access.</span></a>
+		<div class="ad-wrapper nav-pro-callout">
+			<!-- AdsController, generated at 23:46:03 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="promo-1" class="ad ad-pr"><script>GPT.display('promo-1')</script></div></div>
+
+		<div class="nav-user">
+		<a href="http://users.techtarget.com/registration/searchMobileComputing/LoginRegister.page" class="nav-user-login"><span class="nav-user-action">Login</span></a>
+		</div>
+		<script>TT(["context","lib/jquery"],function(c,$){var u=c.getUser();if(u.loggedIn){$('div.nav-user').children("a:first")
+			.before('<span class="nav-user-name">'+u.displayName+'</span>')
+			.attr("href", "http://users.techtarget.com/registration/searchMobileComputing/Logout.page?fromURL=" + window.location.href).children("span.nav-user-action:first").text('Logout');
+			$('.nav-join-pro').removeAttr('href');$('a.nav-join-pro span').hide();}else{$('div.nav-user').children("a:first").attr("href", "http://users.techtarget.com/registration/searchMobileComputing/LoginRegister.page?fromURL="+window.location.href);
+			$('a.nav-join-pro').attr("href", "http://users.techtarget.com/registration/searchMobileComputing/LoginRegister.page?fromURL="+window.location.href);}});
+		</script>
+		
+		<ul class="nav-list">
+			<li class="nav-list-item nav-list-item-searchsites">
+				<div class="nav-list-item-header searchmobilecomputing">
+					<a href="http://searchmobilecomputing.techtarget.com">
+						<span class="nav-list-item-header-title">
+							<span class="logo-search">Search</span><span class="logo-1">Mobile</span><span class="logo-2">Computing</span></span>
+					</a>
+					<i class="icon icon-arrow-down" data-icon="5"></i>
+				</div>
+				<div class="nav-list-sublist nav-list-item-dropdown">
+					<ul class="nav-list-item-jscroll">
+						<li class="nav-list-sublist-item"><a href="http://searchnetworking.techtarget.com">SearchNetworking</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchtelecom.techtarget.com">SearchTelecom</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchunifiedcommunications.techtarget.com">SearchUnifiedCommunications</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchsecurity.techtarget.com">SearchSecurity</a></li>
+						</ul>
+				</div>
+			</li>
+			<li class="nav-list-item nav-list-item-topics">
+				<div class="nav-list-item-header">
+					<span class="nav-list-item-header-type">Topic</span>
+					<span class="nav-list-item-header-title">
+					<a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Device-Security">
+						Mobile security</a>
+					</span>
+					<i class="icon icon-arrow-down" data-icon="5"></i>
+					<i class="icon icon-navigation-detail" data-icon="A"></i>
+				</div>
+				<div class="nav-list-item-dropdown">
+					<div class="nav-list-item-jscroll">
+						<div class="nav-list-child-topics" id="child-topic-f57a407094e26210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Enterprise mobility management</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Application-modernization-and-mobile-app">
+									App delivery and modernization</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Management-Tools">
+									EMM tools</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Policies">
+									Strategy and policy</a></li>
+								</ul>
+							</div>
+						<div class="nav-list-child-topics" id="child-topic-f57a407094e26210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Enterprise mobility management</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Application-modernization-and-mobile-app">
+									App delivery and modernization</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Management-Tools">
+									EMM tools</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Device-Security">
+									Mobile security</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Policies">
+									Strategy and policy</a></li>
+								</ul>
+							</div>
+						<div class="nav-list-child-topics" id="child-topic-964f407094e26210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Applications and infrastructure</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Business-Applications">
+									Enterprise mobile app strategy</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Synchronization">
+									Data and infrastructure</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-enterprise-application-development">
+									Application development</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Managing-Wireless-Networks">
+									Networking</a></li>
+								</ul>
+							</div>
+						<div class="nav-list-child-topics" id="child-topic-8b0c407094e26210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Mobile Device Platforms and Technologies</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/iPhone">
+									Apple iOS</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/BlackBerry">
+									BlackBerry</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Google-Android-operating-system-and-devices">
+									Google Android</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Microsoft-Windows-Mobile">
+									Microsoft Windows</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Wearable-devices-and-emerging-technology">
+									Wearables and emerging tech</a></li>
+								</ul>
+							</div>
+						<div class="nav-list-child-topics" id="child-topic-74fc803545819210VgnVCM1000000d01c80aRCRD">
+							<div class="nav-list-sublist-header nav-list-sublist-header-topics">
+								<span class="nav-list-sublist-header-topics-title">
+									Topics Archive</span>
+								<span class="view-all">View All<i class="icon" data-icon="6"></i></span>
+							</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/80211">
+									802.11</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/J2ME">
+									J2ME</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Linux">
+									Linux</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Managing-Mobile-Users">
+									Managing Mobile Users</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Access">
+									Mobile Access</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-and-Wireless-Services-and-Protocols">
+									Mobile and Wireless Services and Protocols</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Deployments">
+									Mobile Deployments</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Devices">
+									Mobile Devices</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-E-mail-and-Calendaring">
+									Mobile E-mail and Calendaring</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Security">
+									Mobile Security</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Unified-Communications">
+									Mobile Unified Communications</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-VoIP">
+									Mobile VoIP</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Open-Source-Mobile-Platforms">
+									Open Source Mobile Platforms</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/PocketPC">
+									PocketPC</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Short-Range-Technologies">
+									Short-Range Technologies</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Supply-Chain-Management">
+									Supply Chain Management</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Symbian">
+									Symbian</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Unified-Messaging">
+									Unified Messaging</a></li>
+								<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/resources/Wireless-Networking">
+									Wireless Networking</a></li>
+								</ul>
+							</div>
+						<div class="nav-list-parent-topics">
+							<div class="nav-list-sublist-header nav-list-sublist-header-gray">Please select a category</div>
+							<ul class="nav-list-sublist">
+								<li class="nav-list-sublist-item" id="parent-topic-f57a407094e26210VgnVCM1000000d01c80aRCRD">
+										Enterprise mobility management</li>
+								<li class="nav-list-sublist-item" id="parent-topic-964f407094e26210VgnVCM1000000d01c80aRCRD">
+										Applications and infrastructure</li>
+								<li class="nav-list-sublist-item" id="parent-topic-8b0c407094e26210VgnVCM1000000d01c80aRCRD">
+										Mobile Device Platforms and Technologies</li>
+								</ul>
+						</div>
+						</div>
+				</div>
+				<li class="nav-list-item nav-list-item-sections">
+					<div class="nav-list-item-header">
+						<span class="nav-list-item-header-type">Section</span>
+						<span class="nav-list-item-header-title">
+									<a>All</a>
+								</span>
+							<i class="icon icon-arrow-down" data-icon="5"></i>
+						<i class="icon icon-navigation-arrow" data-icon="B"></i>
+					</div>				
+					<div class="nav-list-sublist nav-list-item-dropdown">
+						<ul class="nav-list-item-jscroll">
+						<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/info/news">News</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/info/getstarted">Get Started</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/info/evaluate">Evaluate</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/info/manage">Manage</a></li>
+						<li class="nav-list-sublist-item"><a href="http://searchmobilecomputing.techtarget.com/info/problemsolve">Problem Solve</a></li>
+						<li class="nav-list-sublist-item sponsored"><a href="http://searchmobilecomputing.techtarget.com/sponsored_communities">Sponsored Communities</a></li>
+						</ul>
+					</div>
+				</li>
+		</ul>
+		<ul class="nav-social">
+			<li class="nav-social-item" title="Follow searchMobileComputing on Google+" id="navBarGooglePlus"><a href="https://plus.google.com/u/0/101817818634388313262" target="_blank"><i class="icon" data-icon="s"></i></a></li><li class="nav-social-item" title="Like searchMobileComputing on Facebook" id="navBarFacebook"><a href="http://www.facebook.com/searchmobilecomputing" target="_blank"><i class="icon" data-icon="u"></i></a></li><li class="nav-social-item" title="Follow @mobilecomptt on Twitter" id="navBarTwitter"><a href="https://twitter.com/mobilecomptt" target="_blank"><i class="icon" data-icon="c"></i></a></li><li class="nav-social-item" title="Follow searchMobileComputing on LinkedIn" id="navBarLinkedIn"><a href="http://www.linkedin.com/company/3069049?trk=tyah" target="_blank"><i class="icon" data-icon="o"></i></a></li></ul>
+	 </nav>
+</header>
+
+<div class="ad-wrapper header-leaderboard ad-desktop">
+	<!-- AdsController, generated at 23:46:03 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="leaderboard" class="ad ad-lb"><script>GPT.display('leaderboard')</script></div></div>
+</div>
+</div><div id="main-content" class="main-content">
+			<article id="content-columns" class="content-columns">
+				<div><div><!-- ContentItemController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/gradient_bar.jpg" class="top-gradient-bar">
+<header class="topic-header">
+	<h1 class="topic-title">Enterprise mobile security</h1>
+	<div class="ad-wrapper page-header-ad ad-desktop-duo">
+		<!-- AdsController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="mu-top" class="ad ad-mu"><script>GPT.display('mu-top')</script></div><!-- AdsController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="halfpage-top" class="ad ad-hp"><script>GPT.display('halfpage-top')</script></div></div>
+	<h2 class="topic-subtitle">
+			Mobile security is the protection of smartphones, tablets, laptops and other portable computing devices, and the networks they connect to, from threats and vulnerabilities associated with wireless computing. Mobile security is also known as wireless security..<a href="http://whatis.techtarget.com/definition/mobile-security" class="definition-link">
+				See complete definition.<i class="icon" data-icon="q"></i>
+			</a>
+		</h2>
+	</header></div><div><!-- NewAndNotableController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div class="new-notable">
+		<h3 class="new-notable-title">
+				New &amp; Notable</h3>
+		<ul class="new-notable-items">
+			<li class="new-notable-item">
+				<a href="http://searchmobilecomputing.techtarget.com/tip/Three-mobile-security-threats-IT-should-know">
+										<img src="http://cdn.ttgtmedia.com/visuals/searchMobileComputing/mobile_security/mobilecomputing_article_015_topicdesktop_375X125.jpg"
+										data-credit="Brian Jackson - Fotolia">
+									</a>
+								<h4>
+						<i class="icon" data-icon="2"></i><a href="http://searchmobilecomputing.techtarget.com/tip/Three-mobile-security-threats-IT-should-know">Three mobile security threats IT should know</a>
+					</h4>
+				</li>
+			<li class="new-notable-item">
+				<a href="http://searchmobilecomputing.techtarget.com/news/4500253549/FinalCode-secures-docs-with-file-encryption-software">
+										<img src="http://cdn.ttgtmedia.com/visuals/searchSecurity/information_security_management/security_article_023_topicdesktop_375X125.jpg"
+										data-credit="alphaspirit - Fotolia">
+									</a>
+								<h4>
+						<i class="icon" data-icon="2"></i><a href="http://searchmobilecomputing.techtarget.com/news/4500253549/FinalCode-secures-docs-with-file-encryption-software">FinalCode secures docs with file encryption software</a>
+					</h4>
+				</li>
+			</ul>
+	</div>
+</div><div><!-- RefineryController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<section class="refinery-wrapper">
+
+<div class="refinery-content closed">
+
+		<header class="refinery-header">
+			<h2>Mobile security</h2>
+				<div class="refinery-topics-wrapper">
+					<h3>RELATED TOPICS</h3>
+					<ul class="refinery-topics">
+						<li><a href="http://searchmobilecomputing.techtarget.com/resources/Application-modernization-and-mobile-app">App delivery and modernization</a></li>
+	 						<li><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Management-Tools">EMM tools</a></li>
+	 						<li><a href="http://searchmobilecomputing.techtarget.com/resources/Mobile-Policies">Strategy and policy</a></li>
+	 						</ul>
+				</div>
+			</header>
+	
+		<div class="refinery-body">
+		
+			<div class="refinery-articles-wrapper">
+					<h3>Looking for something else?</h3>
+					<ul class="refinery-articles">
+						<li><i class="icon" data-icon="2"></i>
+							<a href="http://searchmobilecomputing.techtarget.com/tip/Three-mobile-security-threats-IT-should-know">Three mobile security threats IT should know</a></li>
+						<li><i class="icon" data-icon="2"></i>
+							<a href="http://searchmobilecomputing.techtarget.com/news/4500253549/FinalCode-secures-docs-with-file-encryption-software">FinalCode secures docs with file encryption software</a></li>
+						<li><i class="icon" data-icon="2"></i>
+							<a href="http://searchmobilecomputing.techtarget.com/feature/Cloud-services-increase-risk-of-mobile-data-loss">Cloud services increase risk of mobile data loss</a></li>
+						</ul>
+				</div>
+			</div>
+		<div id="refineryShowMore" class="refinery-collapse-toggle">
+			<div class="refinery-collapse-toggle-inner show-more">+ Show More</div>
+		</div>
+	</div>
+</section>
+</div>
+</div><div id="content-left" class="content-left">
+					<div><div class="locking-full-bar">
+	<div class="locking-left-bar">
+		<div><!-- ChaptersBarController, generated at 18:56:50 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<nav class="chapters-bar desktop-chapters-bar">
+	<div class="chapters-bar-header">
+		<i class="icon" data-icon="1"></i>Sections</div>
+	<ul class="chapters-bar-list"></ul>
+</nav></div><div><!-- AskAQuestionController, generated at 23:46:03 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<aside class="qa-sidebar">
+		<div class="qa-sidebar-title" id="askAQuestionRail">Ask a Question<span>&amp; Find an Answer</span></div>
+			<p>Get answers from your peers on your most technical challenges</p>
+				<a class="button teal-button" href="http://itknowledgeexchange.techtarget.com/itanswers/ask_question/">Ask Your Question</a>
+					<div class="ad">
+						<p>Powered By:</p>
+						<a href="http://itknowledgeexchange.techtarget.com"><img src="http://cdn.ttgtmedia.com/rms/ux/responsive/img/temp/qa-sidebar-ad.jpg"></a>
+					</div>
+	</aside>
+</div></div>
+	<aside class="resources-bar desktop-resources-bar">
+		<div><!-- VendorResourcesController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div class="resources-bar-header"><i class="icon" data-icon="l"></i>Vendor Resources</div>
+		<ul class="resources-bar-list" id="vendorResourcesSplash">
+			<li class="resources-bar-item">
+					<a href="http://searchmobilecomputing.bitpipe.com/detail/RES/1441734121_69.html">Become a Technology Partner with Citrix and Expand Your Business Reach</a>
+					<span>&ndash;Webcast</span>
+					<i class="icon" data-icon="a"></i>
+				</li>
+			<li class="resources-bar-item">
+					<a href="http://searchmobilecomputing.bitpipe.com/detail/RES/1441938484_774.html">Enterprise Mobility Best Practices: MDM, Containerization or Both?</a>
+					<span>&ndash;White Paper</span>
+					<i class="icon" data-icon="8"></i>
+				</li>
+			<li class="resources-bar-item">
+					<a href="http://searchmobilecomputing.bitpipe.com/detail/RES/1441938484_326.html">Transforming Data Center Security for Business Mobility with Smart Networking</a>
+					<span>&ndash;White Paper</span>
+					<i class="icon" data-icon="8"></i>
+				</li>
+			</ul>
+</div></aside>
+</div></div></div>
+				<div id="content-center" class="content-center">
+					<div><div><!-- TagAndTopicController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div class="float-mask"></div>
+
+
+
+
+
+<ul class="actions-bar">
+	
+	
+	
+	
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<li class="actions-bar-item actions-bar-chapters"><i class="icon" data-icon="1"></i></li>
+	
+	
+		<li class="actions-bar-item actions-bar-resources"><i class="icon" data-icon="2"></i></li>
+	
+	
+</ul><section class="section news topic-section" data-menu-title="News">
+		<h2 class="topic-section-title">Enterprise mobile security<span class="section-sub-head">&nbsp;News</span></h2>
+			<ul class="topic-news-items">
+			<li class="topic-news-item item-1">
+					<span class="news-mobile-date">September 15, 2015</span>
+					<span class="news-desktop-date">
+						<span class="news-date">15</span>
+						Sep'15</span>
+					<h3 class="topic-news-title"><a href="http://searchmobilecomputing.techtarget.com/news/4500253549/FinalCode-secures-docs-with-file-encryption-software">FinalCode secures docs with file encryption software</a></h3>
+					<p class="topic-news-description">FinalCode's software allows IT to keep tabs on all their corporate docs.</p>
+				</li>
+			<li class="topic-news-item item-2">
+					<span class="news-mobile-date">September 09, 2015</span>
+					<span class="news-desktop-date">
+						<span class="news-date">09</span>
+						Sep'15</span>
+					<h3 class="topic-news-title"><a href="http://searchmobilecomputing.techtarget.com/opinion/Why-the-IoT-trend-wont-revolutionize-IT">Why the IoT trend won't revolutionize IT</a></h3>
+					<p class="topic-news-description">The IoT trend faces numerous obstacles, even as it promises to affect the way we do everything from eat to work to drive.</p>
+				</li>
+			<li class="topic-news-item item-3">
+					<span class="news-mobile-date">August 13, 2015</span>
+					<span class="news-desktop-date">
+						<span class="news-date">13</span>
+						Aug'15</span>
+					<h3 class="topic-news-title"><a href="http://searchsecurity.techtarget.com/video/Addressing-wearables-security-the-next-wave-of-BYOD-concerns">Addressing wearables security, the next wave of BYOD concerns</a></h3>
+					<p class="topic-news-description">Wearables are the next wave of BYO devices infiltrating the enterprise. Domingo Guerra, president and co-founder of Appthority, talked to SearchSecurity at RSA Conference 2015 about how to address the onslaught.</p>
+				</li>
+			<li class="topic-news-item item-4">
+					<span class="news-mobile-date">May 29, 2015</span>
+					<span class="news-desktop-date">
+						<span class="news-date">29</span>
+						May'15</span>
+					<h3 class="topic-news-title"><a href="http://searchsecurity.techtarget.com/news/4500247192/Smartphone-security-threats-plague-Android-and-iPhone-alike">Smartphone security threats plague Android and iPhone alike</a></h3>
+					<p class="topic-news-description">As the global smartphone market slows, it's becoming readily apparent that the rise of smartphone security threats isn't slowing -- and no OS is safe.</p>
+				</li>
+			</ul>
+		<a href="http://searchmobilecomputing.techtarget.com/info/news/Mobile-Device-Security" class="topic-viewall-btn button teal-button">
+			View All News</a>
+	</section>
+<div class="ad-wrapper ad-inline">
+	<!-- AdsController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="mu-1" class="ad ad-mu"><script>GPT.display('mu-1')</script></div></div>
+
+<section class="section evaluate topic-section" data-menu-title="Get Started">
+		<h2 class="topic-section-title">Enterprise mobile security<span class="section-sub-head">&nbsp;Get Started</span></h2>
+		<p>Bring yourself up to speed with our introductory content</p>
+		<ul class="topic-items">
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchsecurity.techtarget.com/answer/Wearables-security-Do-enterprises-need-a-separate-WYOD-policy">Wearables security: Do enterprises need a separate WYOD policy?</a></h3>
+					<p class="topic-item-description">Wearable technology is infiltrating the enterprise, much like BYOD has. Expert Michael Cobb discusses the security concerns of wearables and outlines how to create a WYOD policy.&nbsp;<a href="http://searchsecurity.techtarget.com/answer/Wearables-security-Do-enterprises-need-a-separate-WYOD-policy">Continue Reading</a></p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://whatis.techtarget.com/definition/secure-container">secure container</a></h3>
+					<p class="topic-item-description">A secure container, in a mobile computing context, is an isolated, authenticated and encrypted area of an employee's device that keeps sensitive corporate information separate from the owner's personal data and apps.&nbsp;<a href="http://whatis.techtarget.com/definition/secure-container">Continue Reading</a></p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchmobilecomputing.techtarget.com/feature/Learn-the-fundamentals-of-Android-app-security">Learn the fundamentals of Android app security</a></h3>
+					<p class="topic-item-description">Android is one of the most widely used mobile operating systems, but its openness and diversity create application security challenges. Learn what IT can do to fight back.&nbsp;<a href="http://searchmobilecomputing.techtarget.com/feature/Learn-the-fundamentals-of-Android-app-security">Continue Reading</a></p>
+				</li>
+			</ul>
+		<a href="http://searchmobilecomputing.techtarget.com/info/getstarted/Mobile-Device-Security" class="topic-viewall-btn button teal-button">View All Get Started</a>
+	</section>
+<section class="section evaluate topic-section" data-menu-title="Evaluate">
+		<h2 class="topic-section-title"><span class="section-sub-head">Evaluate </span>Enterprise mobile security Vendors & Products</h2>
+		<p>Weigh the pros and cons of technologies, products and projects you are considering.</p>
+		<ul class="topic-items">
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchmobilecomputing.techtarget.com/opinion/Do-you-really-need-dual-persona-mobile-devices">Do you really need dual persona mobile devices?</a></h3>
+					<p class="topic-item-description">Dual persona can help IT separate work from play on mobile devices, but not all users will benefit from this isolation.&nbsp;<a href="http://searchmobilecomputing.techtarget.com/opinion/Do-you-really-need-dual-persona-mobile-devices">Continue Reading</a></p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchsecurity.techtarget.com/answer/How-can-mobile-certificate-security-risks-be-reduced">How can mobile certificate security risks be reduced?</a></h3>
+					<p class="topic-item-description">According to recent research, mobile certificate usage is riddled with security issues. Expert Michael Cobb explains how to best control and secure mobile certificates in the enterprise.&nbsp;<a href="http://searchsecurity.techtarget.com/answer/How-can-mobile-certificate-security-risks-be-reduced">Continue Reading</a></p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchmobilecomputing.techtarget.com/quiz/How-much-do-you-know-about-Android-data-security">How much do you know about Android data security?</a></h3>
+					<p class="topic-item-description">Android is a popular mobile OS among consumers, but its well-known security gaps make many businesses pause. Test your knowledge of Android's data security.&nbsp;<a href="http://searchmobilecomputing.techtarget.com/quiz/How-much-do-you-know-about-Android-data-security">Continue Reading</a></p>
+				</li>
+			</ul>
+		<!-- ITCentralStationController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<h2 class="topic-section-title itcs-title"><i class="icon" data-icon="m"></i><span class="section-sub-head">Product Reviews</span></h2>
+<span class="itcs-subhead">Powered by IT Central Station</span>
+
+<ul class="topic-items itcs-items">
+	<li class="topic-item">
+			<h3 class="topic-item-title"><a href="http://www.itcentralstation.com/product_reviews/dell-credant-review-30235-by-ross-cohen?aid=TechTargetRef&tid=category2010_topic1175254_sitesearchMobileComputing_widget4" rel="nofollow">In the enterprise market for disk encryption Credant is worth looking at.</a></h3>
+			<span class="itcs-powered-by">Powered by IT Central Station</span>
+			<p class="topic-item-description">
+				Valuable Features:
+
+
+
+
+
+Flexibility of file encryption without the support burden of Full Disk Encryption (FDE)
+
+
+
+
+
+ • Improvements to My...<a href="http://www.itcentralstation.com/product_reviews/dell-credant-review-30235-by-ross-cohen?aid=TechTargetRef&tid=category2010_topic1175254_sitesearchMobileComputing_widget4" rel="nofollow">Continue Reading</a>
+			</p>
+			<div class="itcs-rating">
+				<span>Rating:</span>
+				<i class="icon on" data-icon="K">
+		</i>
+<i class="icon on" data-icon="K">
+		</i>
+<i class="icon on" data-icon="K">
+		</i>
+<i class="icon on" data-icon="K">
+		</i>
+<i class="icon " data-icon="K">
+		</i>
+</div>
+		</li>
+	<li class="topic-item">
+			<h3 class="topic-item-title"><a href="http://www.itcentralstation.com/product_reviews/microsoft-bitlocker-review-30092-by-aimee-white?aid=TechTargetRef&tid=category2010_topic1175254_sitesearchMobileComputing_widget4" rel="nofollow">Bitlocker - security that loves your drives</a></h3>
+			<span class="itcs-powered-by">Powered by IT Central Station</span>
+			<p class="topic-item-description">
+				 Understanding your responsibilities for disaster recovery at a departmental level can be difficult; we deal with the IT department as a whole. We...<a href="http://www.itcentralstation.com/product_reviews/microsoft-bitlocker-review-30092-by-aimee-white?aid=TechTargetRef&tid=category2010_topic1175254_sitesearchMobileComputing_widget4" rel="nofollow">Continue Reading</a>
+			</p>
+			<div class="itcs-rating">
+				<span>Rating:</span>
+				<i class="icon on" data-icon="K">
+		</i>
+<i class="icon on" data-icon="K">
+		</i>
+<i class="icon on" data-icon="K">
+		</i>
+<i class="icon on" data-icon="K">
+		</i>
+<i class="icon on" data-icon="K">
+		</i>
+</div>
+		</li>
+	<li class="topic-item">
+			<h3 class="topic-item-title"><a href="http://www.itcentralstation.com/product_reviews/winmagic-securedoc-review-29196-by-jonathan-merrill?aid=TechTargetRef&tid=category2010_topic1175254_sitesearchMobileComputing_widget4" rel="nofollow">How We Chose SED + WinMagic's SecureDoc For Full Disk Encryption</a></h3>
+			<span class="itcs-powered-by">Powered by IT Central Station</span>
+			<p class="topic-item-description">
+				 What if your organization’s leadership directed you to deploy an enterprise encryption solution in 120 days?  Could you do it?    I received that...<a href="http://www.itcentralstation.com/product_reviews/winmagic-securedoc-review-29196-by-jonathan-merrill?aid=TechTargetRef&tid=category2010_topic1175254_sitesearchMobileComputing_widget4" rel="nofollow">Continue Reading</a>
+			</p>
+			<div class="itcs-rating">
+				<span>Rating:</span>
+				<i class="icon " data-icon="K">
+		</i>
+<i class="icon " data-icon="K">
+		</i>
+<i class="icon " data-icon="K">
+		</i>
+<i class="icon " data-icon="K">
+		</i>
+<i class="icon " data-icon="K">
+		</i>
+</div>
+		</li>
+	</ul>
+<a href="http://searchmobilecomputing.techtarget.com/info/evaluate/Mobile-Device-Security" class="topic-viewall-btn button teal-button">View All Evaluate</a>
+	</section>
+<div class="ad-wrapper ad-inline ad-mobile">
+	<!-- AdsController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="mobile-2" class="ad ad-mb"><script>GPT.display('mobile-2')</script></div></div>
+
+<section class="section evaluate topic-section" data-menu-title="Manage">
+		<h2 class="topic-section-title"><span class="section-sub-head">Manage</span>&nbsp;Enterprise mobile security</h2>
+		<p>Learn to apply best practices and optimize your operations.</p>
+		<ul class="topic-items">
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchmobilecomputing.techtarget.com/tip/Three-mobile-security-threats-IT-should-know">Three mobile security threats IT should know</a></h3>
+					<p class="topic-item-description">When it comes to mobile security threats, IT has more to deal with than just risky, malicious apps.&nbsp;<a href="http://searchmobilecomputing.techtarget.com/tip/Three-mobile-security-threats-IT-should-know">Continue Reading</a>
+					</p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchmobilecomputing.techtarget.com/feature/Cloud-services-increase-risk-of-mobile-data-loss">Cloud services increase risk of mobile data loss</a></h3>
+					<p class="topic-item-description">Many users access cloud services from their mobile devices, only increasing the risk that corporate data leaks through services such as Dropbox or Google Drive.&nbsp;<a href="http://searchmobilecomputing.techtarget.com/feature/Cloud-services-increase-risk-of-mobile-data-loss">Continue Reading</a>
+					</p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchmobilecomputing.techtarget.com/tip/Three-ways-AirWatch-secures-mobile-Office365-applications">Three ways AirWatch secures mobile Office365 applications</a></h3>
+					<p class="topic-item-description">With AirWatch by VMware, IT can manage Office365 applications on users’ mobile devices – all the while making sure those apps are secure.&nbsp;<a href="http://searchmobilecomputing.techtarget.com/tip/Three-ways-AirWatch-secures-mobile-Office365-applications">Continue Reading</a>
+					</p>
+				</li>
+			</ul>
+		<a href="http://searchmobilecomputing.techtarget.com/info/manage/Mobile-Device-Security" class="topic-viewall-btn button teal-button">View All Manage</a>
+	</section>
+<section class="section troubleshoot topic-section" data-menu-title="Problem Solve">
+		<h2 class="topic-section-title">
+			<span class="section-sub-head">Problem Solve</span> Enterprise mobile security Issues</h2>
+		<p>We’ve gathered up expert advice and tips from professionals like you so that the answers you need are always available.</p>
+		<form class="topic-form" action="http://www.techtarget.com/search/query" method="get">
+			<label class="visuallyhidden" for="search-answers">search for answers</label>
+			<input class="topic-form-textfield" type="text" name="q" placeholder="search for answers" id="search-answers">
+			<input type="hidden" name="infoType" value="/InfoTypes/Problem solve" />
+			<input class="topic-form-btn" type="submit" value="g">
+		</form>
+		<ul class="topic-items">
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchsecurity.techtarget.com/tip/Creating-an-end-of-life-policy-for-mobile-products-in-the-enterprise">Creating an end-of-life policy for mobile products in the enterprise</a></h3>
+					<p class="topic-item-description">When mobile vendors stop maintaining security on their devices, enterprise data is at risk. Expert Michael Cobb discusses how to assess mobile product end of life and how to create end-of-life policies and controls to maintain BYOD safety.&nbsp;<a href="http://searchsecurity.techtarget.com/tip/Creating-an-end-of-life-policy-for-mobile-products-in-the-enterprise">Continue Reading</a>
+					</p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchsecurity.techtarget.com/answer/Android-browser-security-How-can-AOSP-browser-flaws-be-fixed">Android browser security: How can AOSP browser flaws be fixed?</a></h3>
+					<p class="topic-item-description">While Google fixed the issue on its Android OS, many browsers still fall victim to a known same-origin bypass AOSP browser flaw. Expert Michael Cobb discusses how to avoid the risk.&nbsp;<a href="http://searchsecurity.techtarget.com/answer/Android-browser-security-How-can-AOSP-browser-flaws-be-fixed">Continue Reading</a>
+					</p>
+				</li>
+			<li class="topic-item">
+					<h3 class="topic-item-title"><a href="http://searchsecurity.techtarget.com/answer/Can-a-smartphone-gyroscope-be-an-eavesdropping-tool">Can a smartphone gyroscope be an eavesdropping tool?</a></h3>
+					<p class="topic-item-description">Smartphones with gyroscopes can be exploited to serve as an eavesdropping tool. Expert Nick Lewis explains how to mitigate smartphone gyroscope risk.&nbsp;<a href="http://searchsecurity.techtarget.com/answer/Can-a-smartphone-gyroscope-be-an-eavesdropping-tool">Continue Reading</a>
+					</p>
+				</li>
+			</ul>
+		<a href="http://searchmobilecomputing.techtarget.com/info/problemsolve/Mobile-Device-Security" class="topic-viewall-btn button teal-button">View All Problem Solve</a>
+	</section>
+</div><div><!-- RelatedTermsController, generated at 19:39:29 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<section class="section related-terms" data-menu-title="Define">
+		<div class="related-terms-inner">
+			<h4>
+				Related Definitions</h4>
+			<div class="related-terms-all-wrapper">
+					<ul class="related-terms-all-list">
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Active-Directory-Federation-Services-AD-Federation-Services">Active Directory Federation Services (AD Federation Services)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/bluesnarfing">bluesnarfing</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/cell-phone-jammer">cell phone jammer</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Cisco-Identity-Services-Engine-ISE">Cisco Identity Services Engine (ISE)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/contextual-computing">contextual computing</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/disappearing-e-mail">disappearing e-mail</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/drive-by-spamming">drive-by spamming</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/FeliCa">FeliCa</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/identity-as-a-Service-IDaaS">identity as a Service (IDaaS)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Lookout-Mobile-Security">Lookout Mobile Security</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Microsoft-System-Center-Mobile-Device-Manager-MSCMDM">Microsoft System Center Mobile Device Manager (MSCMDM)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Mobile-Active-Defense-MAD">Mobile Active Defense (MAD)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/mobile-desktop-virtualization">mobile desktop virtualization</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/mobile-information-management-MIM">mobile information management (MIM)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/mobile-phone-virus">mobile phone virus</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/mobile-VPN">mobile VPN (mobile virtual private network)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/no-swipe-credit-card">no-swipe credit card</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/podslurping">podslurping (slurping)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Quiz-Mobile-Device-Security-Who-else-can-hear-me-now">Quiz: Mobile Device Security -- Who else can hear me now?</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/RPC-over-HTTP">RPC over HTTP</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Samsung-for-Enterprise-SAFE">Samsung for Enterprise (SAFE)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/screaming-cell-phone">screaming cell phone</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/SMiShing">SMiShing (SMS phishing)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/SMS-spam">SMS spam (cell phone spam or short messaging service spam)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Snapchat">Snapchat</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Stratellite">Stratellite</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/unlocked-cell-phone">unlocked cell phone</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/war-driving">war driving (access point mapping)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/warchalking">warchalking (war chalking)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Wi-Fi-Protected-Access">Wi-Fi Protected Access (WPA)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/Wireless-Transport-Layer-Security">Wireless Transport Layer Security (WTLS)</a></li>
+						<li><a href="http://searchmobilecomputing.techtarget.com/definition/workstation">workstation</a></li>
+						</ul>
+					<div class="related-terms-show-more">
+						<div class="related-terms-show-more-inner show-more">
+							+ Show More</div>
+					</div>
+				</div>
+			<dl class="related-terms-list">
+				<dt>
+						<a href="http://searchmobilecomputing.techtarget.com/definition/Active-Directory-Federation-Services-AD-Federation-Services">Active Directory Federation Services (AD Federation Services)</a>
+					</dt>
+					<dd>Active Directory Federation Services (AD Federation Services) is a feature of the Windows Server operating system that extends ...<a href="http://searchmobilecomputing.techtarget.com/definition/Active-Directory-Federation-Services-AD-Federation-Services" class="definition-link"> 
+							See&nbsp;complete&nbsp;definition<i class="icon" data-icon="q"></i>
+						</a>
+					</dd>
+				<dt>
+						<a href="http://searchmobilecomputing.techtarget.com/definition/bluesnarfing">bluesnarfing</a>
+					</dt>
+					<dd>Bluesnarfing is the theft of information from a wireless device through a Bluetooth connection.<a href="http://searchmobilecomputing.techtarget.com/definition/bluesnarfing" class="definition-link"> 
+							See&nbsp;complete&nbsp;definition<i class="icon" data-icon="q"></i>
+						</a>
+					</dd>
+				<dt>
+						<a href="http://searchmobilecomputing.techtarget.com/definition/cell-phone-jammer">cell phone jammer</a>
+					</dt>
+					<dd>A cell phone jammer is a device that blocks transmission or reception of signals, usually by creating some form of interference ...<a href="http://searchmobilecomputing.techtarget.com/definition/cell-phone-jammer" class="definition-link"> 
+							See&nbsp;complete&nbsp;definition<i class="icon" data-icon="q"></i>
+						</a>
+					</dd>
+				</dl>
+		</div>
+	</section>
+</div>
+</div></div>
+				<div id="content-right" class="content-right"></div>
+			</article>
+		</div>
+		<div><div><!-- GoogleAdSenseController, generated at 18:56:43 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div class="ad-wrapper body-pro-callout">
+		<div class="body-pro-callout-inner">
+			<!-- AdsController, generated at 18:56:43 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<div id="promo-2" class="ad ad-pr"><script>GPT.display('promo-2')</script></div></div>
+	</div>
+<section class="main-content ads-by-google">
+		<h2><a href="https://www.google.com/adsense/support/bin/request.py?contact=abg_afc">-ADS BY GOOGLE</a></h2>
+		<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Search Sites Responsive AFC -->
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-6050985421795229"
+			data-ad-slot="8728364240"
+			data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</section>
+</div><div><!-- NetworkCoverageController, generated at 18:56:43 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<section class="latest-wrapper">
+		<nav class="latest-nav-wrapper">
+			<h2>Latest TechTarget <span class="latest-title">resources</span></h2>
+			<ul class="latest-nav">
+				<li>
+						<a href="#" class="latest-nav-item selected" data-item="1">
+							Networking<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="2">
+							Telecom<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="3">
+							Unified Communications<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				<li>
+						<a href="#" class="latest-nav-item" data-item="4">
+							Security<i class="icon mobile-icon" data-icon="5"></i> 
+							<i class="icon desktop-icon" data-icon="A"></i> 
+						</a>
+					</li>
+				</ul>
+		</nav>
+		<span class="latest-nav-mask before-mask"></span>
+		<span class="latest-nav-mask after-mask"></span>
+		<div class="latest-body">
+			<div class="latest-content" data-item="1">
+					<h2 class="searchnetworking">
+						<a href="http://searchnetworking.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Networking</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchnetworking.techtarget.com/tip/IPv6-filtering-threatens-impact-of-new-protocol">IPv6 filtering threatens impact of new protocol</a></h3>
+										<p>IPv6 extension headers give the protocol additional versatility, but widespread IPv6 filtering is threating the new protocol's ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchnetworking.techtarget.com/news/4500253767/Arista-25-GbE-switches-feed-hungry-hyperscale-data-centers">Arista 25 GbE switches feed hungry hyperscale data centers</a></h3>
+										<p>Arista introduces a portfolio of 25/50/100 GbE switches to meet the increasing demand for more throughput in hyperscale data ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchnetworking.techtarget.com/tip/Time-to-get-your-cloud-network-architecture-ready">Time to get your cloud network architecture ready</a></h3>
+										<p>Enterprises need to ensure their cloud network architecture is ready for the future. Here are some concepts network managers ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="2">
+					<h2 class="searchtelecom">
+						<a href="http://searchtelecom.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Telecom</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchtelecom.techtarget.com/tip/Virtual-routers-find-evolving-carrier-network-uses">Virtual routers find evolving carrier network uses</a></h3>
+										<p>Virtual routers work well in some parts of carrier networks, but not everywhere. Now, mobile, cloud and SDN offer evolving uses ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchtelecom.techtarget.com/news/4500251620/Google-Fiber-targets-San-Antonio-for-fiber-optic-cable-rollout">Google Fiber targets San Antonio for fiber optic cable rollout</a></h3>
+										<p>Google Fiber plans to lay 4,000 miles of fiber optic cable in the San Antonio area; FCC voted to revise IP transition rules.</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchtelecom.techtarget.com/tip/Mobile-video-content-delivery-key-to-next-gen-metro-networks">Mobile, video content delivery key to next-gen metro networks</a></h3>
+										<p>SDN and NFV applications could be the answer to make mobile and video content delivery in the metro network more agile for ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="3">
+					<h2 class="searchunifiedcommunications">
+						<a href="http://searchunifiedcommunications.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Unified</span><span class="logo-2">Communications</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchunifiedcommunications.techtarget.com/news/4500253774/Verizon-CenturyLink-top-SIP-trunking-provider-ranking">Verizon, CenturyLink top SIP trunking provider ranking</a></h3>
+										<p>Verizon and CenturyLink take the top two spots in an IHS Infonetics SIP trunking provider ranking of the top 10 providers in ...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchunifiedcommunications.techtarget.com/news/4500253633/Companies-look-for-email-alternatives">Companies look for email alternatives</a></h3>
+										<p>More companies are seeking email alternatives to curb an overabundance of information.</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchunifiedcommunications.techtarget.com/news/4500253542/UC-briefs-StrongLoop-acquisition-buoys-IBM-app-development">UC briefs: StrongLoop acquisition buoys IBM app development</a></h3>
+										<p>In UC news this week, IBM acquires StrongLoop to support IBM app development in the enterprise, while NetFortris announces four ...</p>
+									</li>
+								</ul>
+				</div>
+			<div class="latest-content" data-item="4">
+					<h2 class="searchsecurity">
+						<a href="http://searchsecurity.techtarget.com">
+							<span class="logo-search">Search</span><span class="logo-1">Security</span></a>
+					</h2>
+					<ul>
+						<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchsecurity.techtarget.com/news/4500253831/Google-wants-sites-to-disable-SSLv3-to-boost-Web-security">Google wants sites to disable SSLv3 to boost Web security</a></h3>
+										<p>Google is trying to drag Web security into 2008 by asking sites to disable SSLv3 and RC4, and setting a minimum transfer security...</p>
+									</li>
+								<li>
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchsecurity.techtarget.com/news/4500253817/Cisco-router-malware-in-the-wild-more-widespread-than-first-believed">Cisco router malware in the wild more widespread than first believed</a></h3>
+										<p>News roundup: Additional research shows a Cisco router implant affects more devices than originally reported. Plus: Let's ...</p>
+									</li>
+								<li class="hide-for-small">
+										<i class="icon" data-icon="2"></i>
+										<h3><a href="http://searchsecurity.techtarget.com/news/4500253813/DHS-audit-details-cyber-mission-failures-and-future-efforts">DHS audit details cyber mission failures and future efforts</a></h3>
+										<p>An internal audit of the U.S. Department of Homeland Security has been completed, detailing areas where its cyber mission has ...</p>
+									</li>
+								</ul>
+				</div>
+			</div>
+	</section>
+</div><div><!-- FooterLinksController, generated at 18:53:43 Sun Sep 20, 2015, by vappma24.techtarget.com -->
+<footer>
+	<div class="content-left">
+		<!-- Plug in TechTarget Logo inside the anchor tag here. -->
+		<div class="column column-logo">
+			<a href="#"></a>
+		</div>
+	</div>
+	<div class="content-center">
+		<ul class="column">
+			<li class="footer-item footer-item-col-1 footer-item-row-1"><a href="http://searchmobilecomputing.techtarget.com/about">About Us</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-2"><a href="http://searchmobilecomputing.techtarget.com/about/contact">Contact Us</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-3"><a href="http://www.techtarget.com/html/privacy_policy.html">Privacy Policy</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-4"><a href="http://searchmobilecomputing.techtarget.com/videos">Videos</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-5"><a href="http://searchmobilecomputing.techtarget.com/photostories">Photo Stories</a></li>
+			<li class="footer-item footer-item-col-1 footer-item-row-6"><a href="http://searchmobilecomputing.techtarget.com/guides">Guides</a></li>
+			</ul>
+		<ul class="column">
+			<li class="footer-item footer-item-col-2 footer-item-row-1"><a href="http://searchmobilecomputing.techtarget.com/about/advertising">Advertisers</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-2"><a href="http://searchmobilecomputing.techtarget.com/about/partners">Business Partners</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-3"><a href="http://www.techtarget.com/mediakit">Media Kit</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-4"><a href="http://www.techtarget.com">Corporate Site</a></li>
+			<li class="footer-item footer-item-col-2 footer-item-row-5"><a href="http://searchmobilecomputing.techtarget.com/experts">Experts</a></li>
+			</ul>
+		<ul class="column column-mobile-hidden">
+			<li class="footer-item footer-item-col-3 footer-item-row-1"><a href="http://reprints.ygsgroup.com/m/techtarget">Reprints</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-2"><a href="http://searchmobilecomputing.techtarget.com/archive">Archive</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-3"><a href="http://searchmobilecomputing.techtarget.com/sitemap">Site Map</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-4"><a href="http://searchmobilecomputing.techtarget.com/events">Events</a></li>
+			<li class="footer-item footer-item-col-3 footer-item-row-5"><a href="http://searchmobilecomputing.techtarget.com/eproducts">E-Products</a></li>
+			</ul>
+	</div>
+	<div class="content-right">
+		<div class="column column-legal">
+			<p class="footer-legal">All Rights Reserved, <span>
+			<a href="http://searchmobilecomputing.techtarget.com/about/copyright">Copyright 2003 - 2015</a>, TechTarget</span>
+			
+			</p>
+			
+		</div>
+	</div>
+</footer></div>
+</div><script src="http://cdn.ttgtmedia.com/rms/ux/responsive/js/responsive-ui.min.js?v=6.31"></script><!-- Begin Chartbeat -->
+		<script>
+    var _sf_async_config={};
+    _sf_async_config.uid = 41935;
+    _sf_async_config.domain = 'techtargetnetwork.com';
+    _sf_async_config.sections = 'smcg, smcg - NO TOPIC';
+    _sf_async_config.authors = 'NO AUTHOR, TOPICS, smcg - TOPICS';
+    _sf_async_config.useCanonical = true;
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src',
+           (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') + 'js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script><!-- End Chartbeat -->
+	<!-- Begin GoogleTagManagerLegacy -->
+		<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CV3PD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CV3PD');
+</script><!-- End GoogleTagManagerLegacy -->
+	<!-- Begin DataPoint Media -->
+		<script>
+(function() {
+var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),sc = 'https:' == document.location.protocol ? 'https://' : 'http://';
+s.type='text/javascript';
+s.async=true;
+s.src=sc+'s.dpmsrv.com/dpm_b4c96d80854dd27e76d8cc9e21960eebda52e962.min.js';
+h.appendChild(s);
+})();
+</script><!-- End DataPoint Media -->
+	<!-- Begin CrazyEgg -->
+		<script>setTimeout(function(){
+var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0012/7034.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;
+a.type="text/javascript";
+b.parentNode.insertBefore(a,b)
+}, 1);</script><!-- End CrazyEgg -->
+	<!-- Begin GoogleRemarketing -->
+		<script>
+var google_conversion_id = 1070110249;
+var google_conversion_label = "RRsgCOW4tgMQqayi_gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1070110249/?value=0&label=RRsgCOW4tgMQqayi_gM&guid=ON&script=0">
+</div>
+</noscript>
+<script>
+var google_conversion_id = 1072226410;
+var google_conversion_label = "x3P_CIql1gMQ6sCj_wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1072226410/?value=0&label=x3P_CIql1gMQ6sCj_wM&guid=ON&script=0">
+</div>
+</noscript><!-- End GoogleRemarketing -->
+	</div>
+	<div id="mobile-sidebars" class="mobile-sidebars">
+		</div>
+	<div id="image-overlay" class="image-overlay">
+		<div class="image-overlay-img"></div>
+		<div class="image-overlay-close">Close</div>
+	</div>
+	
+<!--
+Component Load Times
+====================
+DefaultPageController=16 ms
+PinnedNavBarController=45 ms
+AdsController=0 ms
+AskAQuestionController=0 ms
+
+Total time=61 ms
+Request Serving Server: vappma24.techtarget.com
+-->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"313780","applicationTime":220,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1068cf12f6","transactionName":"ZQMAYxdYXUBSAkFbClxJLFgXVFJfWhtQVjBAD00dSktWQFwUR1EAQUlI","agent":"js-agent.newrelic.com\/nr-686.min.js","errorBeacon":"bam.nr-data.net"}</script></body>
+</html>

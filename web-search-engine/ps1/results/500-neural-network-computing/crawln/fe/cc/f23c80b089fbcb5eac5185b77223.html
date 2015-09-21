@@ -1,0 +1,466 @@
+<html>
+<head>
+<Title>A Neural Network Demonstration</Title>
+</head>
+<body>
+<img src="../images/fadeline.gif" alt="">
+<img src="../images/nn_header.gif" alt="">
+<img src="../images/fadeline.gif" alt="">
+<a name="index"></a>
+
+
+<h1>A Neural Network Approach For Interpolating Species Density Patterns From
+Remotely Sensed & GIS data: An Example Using The Desert Tortoise</h1> 
+
+<img src="../images/fadeline.gif" alt="">
+<a href="author.html"><img src="../images/idea.gif">About The Authors</a>
+<img src="../images/fadeline.gif" alt="">
+
+<h2>Abstract</h2>
+
+A backpropagational neural network simulator provides field ecologists
+with a statistically-based approach for correlating field measurements
+with remotely sensed digital imagery, digital elevation models,
+landscape thematic maps and other raster Geographic Information System
+(GIS) map coverages.  Once trained, the neural network is applied to
+each raster grid cell of the digital landscape to yield a
+two-dimensional map showing the interpolation of the field data to
+every grid cell.  The result is a digital image which is shown to yield
+a rich spatial data set based on ecological field measurements.  The
+example demonstrated in this document correlates field transect data of
+desert tortoise surveys with 21 digital GIS map layers of environmental
+and remote sensed spectral attributes.
+
+<hr>
+
+<h2>Study Problem</h2>
+
+Landscape ecologists are utilizing
+<a href="/GrouseModel/Grouse.html">spatially explicit models</a> to design,
+develop, and test concepts of ecosystem and landscape dynamics.  One
+approach is to devide a heterogeneous landscape into a systematic
+pattern of grid cells.  Each cell is treated as a homogeneous system
+and is simulated with a single ecosystem model.  The model is applied
+simultaneously to each cell.  Cells are characterized by their
+individual internal states and the states of their immediated
+neighbours.  Such models must be initialized by providing the status of
+every one of the system's state variables on a landscape scale.  The
+problem is that spatially explicit ecological parameters (e.g.
+distribution of populations and communities) are typically unavailable
+for full landscape coverages.  The challenge that this demonstration
+addresses concerns how to efficiently convert transect data sampled
+from habitat patches to full-coverage landscape data.
+
+<p><a name="tort_scat">
+This study was conducted to support the initialization of a dynamic
+spatial ecological model of the <a href="/TortModel/tortoise.html">desert 
+tortoise</a>.  This model requires
+initialization with tortoise densities for each grid cell in the
+model.  A back-propagation neural network was used to associate
+tortoise survey field data with available digital raster GIS map layers
+representing environmental and habitat attributes.  This demonstration
+presents the basics of a neural network technique only. A forthcoming
+academic publication will more fully evaluate this work in the context
+of the two conventional interpolation approaches, such as linear
+regression and thin-plate splines.
+
+<hr>
+<h2>Approach</h2>
+
+According to Rumelhart et al.  (1986) a neural network generally consists of the 
+following components: 
+<ul plain>
+<li>a set of processing units,  
+<li>the state of activation of a processing unit,  
+<li>the function used to compute output of a processing unit,  
+<li>the pattern of connectivity among processing units,  
+<li>the rule of activation propagation,  
+<li>the activation function, and  
+<li>the rule of learning employed.
+</ul>
+
+The network topology and the form of the rules and functions are all 
+learning variables in a neural network learning system, leading to a wide variety of network types.  
+Some of the well known types of neural networks are: Competitive Learning (Grossberg 1976;  
+Zipser 1985), the Boltzmann Machine  (Hinton 1984), the Hopfield Network  (Hopfield, 1982), 
+the Kohonen network (Kohonen 1988), the Adaptive Resonance Theory (ART)  (Grossberg 
+1987), and back propagation neural networks  (Rumelhart 1986). Although there are many 
+other variations of neural networks, the back propagation network and its variants, as a subset of 
+multilayer feed forward networks, are currently the most widely used networks in applications.
+
+<p>Back propagation neural networks are loosely based on the neuronal
+structure of the brain and provide a powerful statistical approach for
+exploring solutions of non-linear systems (Rumelhart 1986).  This study
+employs a back propagational neural network which was used to correlate
+input information with matched output values. The solution space is the
+set of all combinations of coefficients for the equations that are
+being used for modeling a system of interest.
+
+<p>A neural network starts with a set equation associated with a randomly chosen group of coefficients and 
+rules for adjusting those coefficients during "training". The solution space is explored using a 
+gradient descent method which converges on the global minimum; the set of equation coefficients which 
+provides the absolute best solution (mapping of inputs to outputs) using the pre-determined 
+equations.
+
+<p>Neural Networks are analogous to Monte Carlo simulations and genetic algorithms, and are used to explore a system 
+or set of data for the purpose of finding a solution that has predictive capabilities.  Back 
+propagation neural networks are utilized when a set of inputs are known to match corresponding 
+outputs, but the nature of the relationship is unknown.  A network attempts to find a mathematical 
+relationship between the defined inputs and outputs as it is repetitively presented with the data 
+through a supervised "training" process.
+
+<p>Supervised training is analogous to the learning behavior of a child's mind as it is presented with samples of 
+items from different categories along with the correct interpretation of each sample; for example, learning to recognize dogs and cats from examples of each.
+And, like the learning child, the 
+trained network does not yield logical "reasons" for differentiating.  They are simply 'known' to be different. A neural network can yield a set of coefficients (weights), but 
+provides no logical descriptions, cause-effect relationships, or expert system rules.
+<p>
+
+The neural network software package, "BP" (for backpropagation, written by James Westervelt, USACERL) was utilized by this project. BP was originally intended for use in association with the GIS system <a href="http://www.cecer.army.mil/grass/GRASS.main.h
+tml">GRASS</a>,  which is a full-feature public domain GIS system written by the Army Corps of Engineers. GRASS was used in this research to manipulate and display all spatial data.  The two-way link between the neural network software and the GIS is a cr
+itical component to this work, and the authors expect 'bp' and programs like it to become included as analytical tools built into future GIS and image analysis systems.
+
+<hr>
+<h2>Network Design Parameters</h2>
+Employing a backpropagational neural network requires an understanding
+of a number of network design options.  A general background of neural
+networks is given <a href="intro.html">elsewhere</a> in this document,
+however a brief discussion of some key network parameters is given
+below. Be advised that there are no definate rules for choosing the
+settings of these parameters a priori.  Since the solution space
+associated with each problem is not known, an number of different
+network runs must be undertaken before the user can determine with
+relative confidence a suitable combination.
+<p>
+
+<ul>
+<h4><img src="../images/redball.gif">  Number of Input Nodes:</h4>
+These are the independent variables which must be adjusted to fall into
+a range of 0 to 1. The number of nodes is fixed by the number of
+inputs.  Inputs must not be nominal scale, but can be binary, ordinal
+or better.  Such inputs can be accommodated by providing a separate
+input node for each category which is associated with a binary (0 or 1)
+input.
+<p>
+
+<h4><img src="../images/redball.gif"> Number of Output Nodes:</h4>
+For the purposes of this research there was always a single output -
+also adjusted to fall within the range of 0-1.
+
+<h4><img src="../images/redball.gif"> Number of middle or
+hidden layers: </h4>The hidden layers allow a number of potentially
+different combinations of inputs that might results in high (or low)
+outputs.  Each successive hidden layer represents the possibility of
+recognizing the importance of combinations of combinations.
+
+<h4><img src="../images/redball.gif"> Number of Hidden
+Layers:</h4>The more nodes there are the greater the number of
+different input combinations that the network is able to
+recognize.
+
+<h4><img src="../images/redball.gif"> Number of Nodes Per Hidden
+Layer:</h4>Generally all nodes of any one layer are connected to
+all nodes of the previous and the following layers.  This can be
+modified at the discretion of the user however.
+
+<h4><img src="../images/redball.gif"> Initial Connection Weights:</h4>
+The weights on the input links are initialized to some random potential
+solution.  Because the training of the network depends on the initial
+starting solution, it can be important to train the network several
+times using different starting points.  Some users may have reason to
+start the training with some particular set of link weights.  It is
+possible, for example to find a particularly promising starting point
+using a genetic algorithm approach to weight initialization.
+
+<h4><img src="../images/redball.gif"> Initial Node Biases:</h4>Node
+bias values impart a significance of the input combinations feeding
+into that node.  In general node biases are allowed to be modified
+during training, but can be set to particular values at network
+initialization time.  Modification of the node biases can be also
+allowed or disallowed.
+
+<h4><img src="../images/redball.gif"> Learning Rate:</h4>At each
+training step the network computes the direction in which each bias and
+link value can be changed to calculate a more correct output.  The rate
+of improvement at that solution state is also known.  A learning rate
+is user-designated in order to determine how much the link weights and
+node biases can be modified based on the change direction and change
+rate.  The higher the learning rate (max. of 1.0) the faster the
+network is trained.  However, the network has a better chance of being
+trained to a local minimum solution.  A local minimum is a point at
+which the network stabilizes on a solution which is not the most
+optimal global solution.
+
+<h4><img src="../images/redball.gif"> Momentum Rate:</h4>To help
+avoid settling into a local minimum, a momentum rate allows the network
+to potentially skip through local minima.  A history of change rate and
+direction are maintained and used, in part, to push the solution past
+local minima.  A momentum rate set at the maximum of 1.0 may result in
+training which is highly unstable and thus may not achieve even a local
+minima, or the network may take an inordinate amount of training time.
+If set at a low of 0.0, momentum is not considered and the network is
+more likely to settle into a local minimum.  A process of "simulated
+annealing" is performed if the momentum rate starts high and is slowly
+shifted to 0 over a training session.
+
+Like other
+statistical and mathematical solutions, back propagation networks can
+be over- parameterized.  This leads to the ability of the statistics to
+find parameters which can accurately compute the desired output at the
+expense of the systems ability to interpolate and compute appropriate
+output for different inputs.  To ensure that a back propagation neural
+network is not over parameterized, the training data must be split into
+a training and a testing set.  It is the performance of the trained
+network on the data reserved for testing that is the most important
+measure of training success.
+
+<hr>
+<h2>The Study Area</h2>
+Field data for this application were collected at Fort Irwin,
+California, a 2600 sqare km installations located in the central Mojave
+Desert.  Fort Irwin is the United States Army's National Training
+Center (NTC), where armour (tanks) and mechanized infantry (armoured
+personnel carriers) training occurs on landscape scales (Bolger 1986,
+Halberstadt 1989).  The Mojave Desert is in the Basin and Range
+geologic province which is characterized by rugged block faulted
+mountain ranges separated by alluvium-filled basins.  the eroding
+mountains produce broad talus slopes, rocky alluvial fans, and gently
+rolling gravelly and sandy bajadas (ancient coalesced alluvial fans).
+the lowest part of basins form playas (dry lake beds).  The sandy and
+gravelly bajadas of the Mojave are the preferred habitat of the desert
+tortoise.  Additional information on the biodiversity, physiography,
+and training mission at Fort Irwin is summarized in Krzysik (1994b).
+
+<p>
+<hr>
+<h2>Field Methods</h2>
+The distribution and density patterns of the desert tortoise at Fort
+Irwin were estimated in 1989 by Krzysik and Woodman (1991).  The
+sampling design for this assessment consisted of surveying for adjusted
+tortoise sign (burrows and scats) within 10 yard (9.1m) wide strip
+transects.  Each transect was 1.5mi (2.4 km0 long, and represented an
+equilateral triangle 0.5 mi (0.8 km) on a side.  Transects were
+systematically distributed throughout the installation and its
+boundaries at a density of approximately one per square mile (2.5 sq
+km).  Surveys were not conducted in obvious areas of unsuitable
+habitat, which included: developed areas, mountainous terrain, and
+playas.  Only minimal sampling efforts were necessary in the most
+severely impacted training areas.  These areas were characterized by
+less than 0.5 percent perennial vegetation cover and evidence of soil
+compaction.
+<p>
+Live tortoises found on transects are not included as "sign", since
+tortoise surface activity is strongly dependent on weather, season, and
+diurnal activity patterns.  The use of only burrows and scats
+eliminates environmental and temporal bias among surveyed transects.
+Total sign counts are estimated by multiplying the adjusted sign count
+by a surveyor specific calibration coefficient.  The calculation
+represents the estimated tortoise density on 0.25 sq mi (0.64 sq km)
+patches of landscape.  Calibration coefficients are obtained by each
+surveyor independently conducting identical sign count surveys on at
+least three BLM biologists.  Of course, only BLM plots with recent
+survey data are used as calibration plots.  Thorough details of the
+field methods used can be found in Krzysik & Woodman (1991) or Krzysik
+(1994a).  A summary of the ecology and biology of the desert tortoise
+can be found in Krzysik (1994a).  A summary of the ecology and biology
+of the desert tortoise can be found in Krzysik (1994a). A map of the
+transect locations is shown below:
+<p>
+<a href="../images/tony.transects.gif"><img
+src="/images/tony.transects.sm.gif"> The 391 Tortoise Transect
+Sites</a>, 1989 (showing corresponding adjusted tortoise sign in
+blue numbers)
+
+<hr>
+<h2>Digital Geographic Information System (GIS) Map Layers</h2>
+
+A number of <a href="http://www.cecer.army.mil/grass">GRASS</a>
+GIS maps were prepared for Fort Irwin.  These included Landsat
+Thematic Mapper (TM) satellite imagery, digital elevation models
+(DEM), shade relief map, and installation roads.  These databases were
+used to construct 21 environmental and habitat attribute GIS map
+layers.  The maps were projected as Universal Transverse Mercator
+(UTM), and had an original ground resolution of 30 meters.  The
+resolution was resampled upwards using the GRASS routine 'r.neighbors'
+to a resolution of 600 to be closer in relation to the resolution of
+the field sampled data.  This procedure generated maps of average
+values and variability from the original maps based on a cell
+neighborhood of 20 x 20 cells (600m x 600m).  Average values given to
+the resulting maps therefore represented the average value of a
+parameter over 600m.  Similarly, the variability indices represented
+information such as class diversity and patchiness over each 600m
+cell.  <p> Other maps included a solar insolation map which was modeled
+using the GRASS program 'shade.rel.sh' simulating a sun position
+directly south at an elevation of 70 degrees above the horizon.  Also,
+a surrogate for actual land use paterns and intensity was created by
+applying a gradient buffering operations to a raster map of Ft. Irwin's
+main and secondary roads.  The result was a continuous surface of
+'human disturbance' with the highest values at the roads and the lowest
+values at points furthest from the roads. <p> Remote sensing for
+vegetation biomass in arid and desert regions is very difficult to
+model accurately due to low vegetation densities, and also because
+vegetation is photosynthetically active for only a very small period of
+the year - if at all.  As a coarse indicator for green biomass, a
+Normalized Difference Vegetation Index (NDVI) was used as a measure of
+vegetation cover at Ft. Irwin.
+ NDVI is a normalized ratio of the amount of light absorbed in the red
+ wavelenth to the amount reflected in the infrared wavelengths, and is
+ expressed as: <p> NDVI = (red - near infrared)/(red +
+near infrared)
+
+<p>NDVI is a measure of plant photosyntetic activity (Tucker & Sellers 1986), and has been correlated with vegetation biomass (Huete & Jackson 1987), seasonal crop production (Bartholome 1988), continental scale vegetation cover classification (Tucker et al.
+ 1985), and spatial and temporal dynamics of tsetse fly populations (Rogers & Randolph 1991, 1993). 
+
+<p>
+The DEM used was a standard 
+3 arc second (100m resolution) product transferred from the <a href="http://info.er.usgs.gov/">US Geologic Survey</a>
+data site.
+<p>
+The 21 digital physiographic and imagery data layers were correlated with the field collected desert tortoise survey data and are listed below:<p>
+<ul><ul><h5> 
+<li>Number:	Map Name:		Description:
+<li>1	DEM.avg.ind		Average elevation 
+<li>2	DEM.shade.avg.ind	Average shade
+<li>3	DEM.shade.var.ind 	Shade variability
+<li>4	DEM.slope.avg.ind	Average slope
+<li>5	DEM.slope.var.ind 	Slope variability
+<li>6	DEM.var.ind		Elevation variability
+<li>7	tm91.ndvi.avg.ind	Normalized vegetative index average
+<li>8	tm91.ndvi.var.ind	Normalized vegetative index average
+<li>9	tmtor.1.av		Thematic mapper band 1 average value
+<li>10	tmtor.1.div		Thematic mapper band 1 diversity value
+<li>11	tmtor.2.av		Thematic mapper band 2 average value
+<li>12	tmtor.2.div		Thematic mapper band 2 diversity value
+<li>13	tmtor.3.av		Thematic mapper band 3 average value
+<li>14	tmtor.3.div		Thematic mapper band 3 diversity value
+<li>15	tmtor.4.av		Thematic mapper band 4 average value
+<li>16	tmtor.4.div		Thematic mapper band 4 diversity value
+<li>17	tmtor.5.av		Thematic mapper band 5 average value
+<li>18	tmtor.5.div		Thematic mapper band 5 diversity value
+<li>19	tmtor.7.av		Thematic mapper band 7 average value
+<li>20	tmtor.7.div		Thematic mapper band 7 diversity value
+<li>21	roads.buffer		Average distance from the nearest road
+</h5></ul></ul><p>
+</h4>
+  
+<h5><a href="../images/tortoise.input.big.gif"><img src="/images/tortoise.input.small.gif"> GIS Neural Network Input Maps</a></h5>
+<p>
+<hr>
+<h2>Preparation of Network Training Inputs</h2>
+<p><h4>
+The raw GRASS map data were normalized within the range of 0.0-1.0 and
+sampled for the individual on-ground transect locations.  These results
+were collected into a single ASCII table where each row represented a
+single transect site, and each column was the normalized independent
+variable for a different input map parameter.
+</h4>
+<p>
+<hr>
+
+<h2>Preparation of Network Training Output</h2>
+<p>
+<h4>
+
+The purpose of this exercise was to generate an output, as a function
+of the twenty-one different inputs, which matched the results measured
+in the field.  Initially, networks were trained using tortoise density
+field data normalized to the range of 0.0 to 1.0. These networks
+consistently trained poorly regardless of the network configuration.
+This was primarily due to the large number of zero density measurements
+which heavily skewed the frequency distribution of the tortoise data.
+Conversion of the raw data with the following equation resulted in a
+more useful distribution:
+<p> 
+<ul><ul><h5> adj = In(raw / low + 3) / 4</ul></ul>
+</h5>
+<p>
+
+This procedure increased the relative importance of data points in
+relatively data poor areas of the sample space.  The resulting values
+were used for both a back propagation neural network analysis as well
+as a multiple regression approach for comparative purposes.  Outputs of
+both models were later appropriately readjusted with the inverse
+equation:
+<p>
+<ul><ul><h5> raw = (e**adjx4 - 3) x low</ul></ul></h5>
+<p>
+<hr> <h2>Training The Network</h2>
+<h4> The back propagation neural
+network software program, bp, written by Westervelt and based on the
+back-propagation procedure described in Rumelhart (Rumelhart 1986), was
+utilized for this study.  This package allows for the generation of
+networks with arbitrary layers, nodes per layer, link connections
+between layers, and other fundamental network design components.
+Generally, it is preferred that the user conduct several experimental
+runs with the neural network to learn which combinations of parameters
+are adequate to produce meaningful results.  The network is working to
+solve an unknown solution space through exploration of that space.
+Each network training session begins by searching random starting
+points, and then proceeds with respect to the user identified
+parameters.  Although the user may decide to retain identical network
+structures and parameters in consecutive runs, the network may train to
+slightly different solutions, on the basis of different set of random
+weights being automatically chosen at the network initialization time.
+Different initial conditions may start the network on a path towards a
+different local minimum solution.
+<p> To judge the effectiveness of
+the network training session it is important to retain a percentage
+(typically 10-30%) of the training data for testing and verification
+purposes.  As the network trains, it reports its average output error
+for the training data and can be configured to evaluate its
+effectiveness against a separate set of test data.  For this exercise,
+10% of the 391 tortoise density transects were retained for testing
+purposes; 90% were used to train the solution.  For a more thorough
+test, a jackknife approach was also used.  For each of the 391
+different transects, a network was trained using the other 390
+transects.  After a predetermined amount of training the retained
+transect was tested against the trained network.
+</h4>
+<p>
+<hr>
+<h2>Results</h2>
+<h4> The trained network can be used to  generate a
+map by applying it to all cell locations across the entire map.  With
+the available software, this involved reformatting the raster map
+images into a single input file which was fed through the trained
+network.  This output was then converted into a digital image in the
+GRASS GIS format as shown here.
+</h4>
+
+
+<h5><a href="../images/tortoise.density.gif"><img
+src="/images/tortoise.density.small.gif"> Neural Network Predicted
+Tortoise Density Distribution</a></h5>
+
+<h6>Darker red areas indicate higher tortoise values.  Grey areas show a lack of tortoises.</h6>
+<p>
+<hr>
+<h2>A Continuing Research Project</h2>
+<h4>Further explorations into this technique will include the
+evaluation of the neural network predicted outputs with the predicted
+outputs from a number of conventional approaches, including; linear
+regression, inverse distance weighting and thin-plate-splines.  Funding
+has also been obtained to conduct a similar desert tortoise survey and
+distribution/habitat modeling at Twentynine Palms Marine Air Ground
+Combat Center (MCAGCC) starting in the spring of 1995. In addition to
+prividing new baseline data, this new study will allow us to conduct
+field testing of the results to evaluate and improve our classification
+accuracy.  Currently, it appears that neural networks are a very
+promising avenue for spatial analysis and ecological modeling, and we
+are quite enthusiastic about potential applications.  If you have any
+further questions or comments about our work, please email Kevin Seel
+at seel@fsa.ca
+<p>
+<hr>
+<p>
+<h4><img src="../images/nn.button"><a
+href="references.html"> A Partial List Of References</a>
+<p></ul>
+<img src="../images/fadeline.gif"><ul> <p> <a href="intro.html"><img
+src="../images/back.gif"></a>
+<p>
+<p>
+<h4><a href="http://ice.gis.uiuc.edu/index.html"><img
+src="../images/HOME.gif"></a>
+</body>
+</html>

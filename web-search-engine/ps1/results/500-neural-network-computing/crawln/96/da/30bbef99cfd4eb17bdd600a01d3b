@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="application-name" content="NetID Login Service">
+<meta name="author" content="University of Wisconsin - Madison">
+<meta name="viewport" content="width=width-device, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="/idp/img/favicon.ico">
+
+<title>University of Wisconsin-Madison Login</title>
+
+<!-- UW UI Toolkit CSS -->
+<link href="/idp/css/netid-login-v2015.001.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+			<script src="/idp/js/html5shiv-v3.7.0.js"></script>
+			<script src="/idp/js/respond-v1.4.2.min.js"></script>
+		<![endif]-->
+
+</head>
+<body>
+	<div class="nav" role="navigation">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<span class="navbar-brand"> <span class="hidden-xs">University of Wisconsin-Madison Login</span> <span class="visible-xs">UW-Madison
+						Login</span>
+				</span>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+	</div>
+	<div class="container">
+		<div class="row"><div class="col-sm-6 main-context">
+	<div class="well">
+		<p class="heading">Login </p>
+
+		<form autocomplete="off" enctype="application/x-www-form-urlencoded" action="/idp/Authn/UserPassword" method="post" name="query" id="loginForm">
+	        <!--Authentication Failure -->
+	        <div class="row">
+					<div class="form-group col-sm-12">
+	
+						<div class="row">
+							<div class="col-xs-4">
+								<label class="control-label" for="j_username">NetID</label>
+							</div>
+							<div class="col-xs-8 text-right">
+								<a href="/redirect/netid-recovery">Forgot NetID</a>
+							</div>
+						</div>
+					
+					<input type="text" class="form-control" name="j_username" id="j_username" placeholder="Ex: bbadger" maxlength="50" required
+							tabindex="1" aria-required="true">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-sm-12">
+		
+						<div class="row">
+							<div class="col-xs-4">
+								<label class="control-label" for="j_password">Password</label>
+							</div>
+							<div class="col-xs-8 text-right">
+								<a href="/redirect/password-recovery">Forgot password</a>
+							</div>
+						</div>
+						<input type="password" value="" maxlength="36" class="form-control" name="j_password" id="j_password" required tabindex="2"
+							aria-required="true">
+		
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2">
+						<button type="submit" class="btn btn-primary" aria-disabled="false" tabindex="3">Log in</button>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+</div>
+<div class="col-sm-6 help-context">
+				<div class="well">
+					<p class="heading">Need help?</p>
+					<ul>
+						<li><a href="/redirect/mynetid-activate">Activate your NetID</a></li>
+						<li><a href="/redirect/mynetid-modify">Modify your account</a></li>
+						<li><a href="/redirect/help-strong-password">Create a strong password</a></li>
+						<li><a href="/redirect/help-login">Common login questions</a></li>
+						<li><a href="/redirect/helpdesk">Contact the Help Desk</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="text-center">&copy; 2015 Board of Regents of the University of Wisconsin System</div>
+	</footer>
+
+	<!--
+	<script src="/idp/js/jquery.min.js"></script>
+	<script src="/idp/js/uw-ui-toolkit.min.js"></script>
+	 -->
+	 
+	<script src="/idp/js/netid-login-v2015.001.min.js"></script>
+
+	<script language="Javascript">
+        <!--
+        if (top.location != self.location) {
+            top.location = self.location.href
+        }
+        
+        function setFocus() {
+            var f = null;
+            if (document.getElementById) {
+                f = document.getElementById("loginForm");
+            } else if (window.loginForm) {
+                f = window.loginform;
+            }
+            if (f) {
+                if (f.j_username.value == null || f.j_username.value == "") {
+                    f.j_username.focus();
+                } else {
+                    f.j_password.focus();
+                } 
+            }
+        }
+        
+        window.onload = function(){
+        	setFocus();
+        };
+        
+        //-->
+    </script>
+</body>
+</html>

@@ -1,0 +1,2200 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<!--[if lt IE 7]>  <html class="ie6 lte9 lte8 lte7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en"><![endif]-->
+<!--[if IE 7]>     <html class="ie7 lte9 lte8 lte7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en"><![endif]-->
+<!--[if IE 8]>     <html class="ie8 lte9 lte8" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en"><![endif]-->
+<!--[if IE 9]>     <html class="ie9 lte9" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en"><![endif]-->
+<!--[if gt IE 9]>  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en"><![endif]-->
+<!--[if !IE]><!-->  <html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en"><!--<![endif]-->
+
+  
+
+  <head>
+    <title>
+  
+    Engineering Jobs by ComputerWorld
+  
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Find 860,685 job opportunities on ComputerWorld. Search by job title, company, location and more. Connect with employers hiring now." />
+    <meta name="keywords" content="jobs, job search engine, find jobs, careers, employment, job listings, Simply Hired, simple, hire" />
+    
+    
+    
+    
+      
+    
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="//itjobs.computerworld.com/favicon.ico?deploy-serp-20150914-h" />
+    <link rel="apple-touch-icon" href="http://itjobs.computerworld.com/apple-touch-icon.png?deploy-serp-20150914-h" />
+    
+  <link rel="alternate" type="application/rss+xml" title="Jobs" href="http://itjobs.computerworld.com/a/job-feed/rss/ws-10" />
+
+    
+      
+        <link rel="canonical" href="http://itjobs.computerworld.com/a/jobs/list" />
+      
+    
+    
+      
+    
+    
+  
+
+    
+  
+      
+      
+      <link rel="next" href="http://itjobs.computerworld.com/a/jobs/list/pn-2">
+      
+  
+
+
+    
+    
+  
+
+<link href="/static/base/css/serp2.deploy-serp-20150914-h.min.css" rel="stylesheet" type="text/css" />
+<link href="/static/base/css/skin.deploy-serp-20150914-h.min.css" rel="stylesheet" type="text/css" />
+
+
+
+  
+
+<link rel="shortcut icon" type="image/x-icon" href="http://www.computerworld.com/favicon.ico">
+
+<style>
+body {
+    color: #000000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.job .description {
+    color: #000000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+ }
+
+.sh_partner_header_container {
+    
+      color: #000000;
+    
+	width:940px;
+	margin:0 auto;
+ }
+
+.sh_partner_header_container.header-full-width {
+	width:100%;
+}
+
+.job .company,
+.job .location,
+.job .source .ago {
+    font-size:12px;
+ }
+
+.column-center .pagination_placeholder.partner_font_size_large {
+    font-size: 16px;
+}
+.column-center .pagination_placeholder.partner_font_size_medium {
+    font-size: 14px;
+}
+.column-center .pagination_placeholder.partner_font_size_small {
+    font-size: 12px;
+}
+
+
+.theme-base  .column-center .title.partner_font_size_large {
+    font-size: 18px;
+}
+.theme-base  .column-center .title.partner_font_size_medium {
+    font-size: 16px;
+}
+.theme-base  .column-center .title.partner_font_size_small {
+    font-size: 14px;
+}
+
+.description.partner_font_size_large {
+    font-size: 16px;
+}
+.description.partner_font_size_medium {
+    font-size: 14px;
+}
+.description.partner_font_size_small {
+    font-size: 12px;
+}
+
+.theme-base .job .company_location.partner_font_size_large .location {
+    font-size: 14px;
+}
+.theme-base .job .company_location.partner_font_size_medium .location {
+    font-size: 12px;
+}
+.theme-base .job  .company_location.partner_font_size_small .location {
+    font-size: 10px;
+}
+
+.theme-base .company_location.partner_font_size_large .company {
+    font-size: 14px;
+}
+.theme-base  .company_location.partner_font_size_medium .company {
+    font-size: 12px;
+}
+.theme-base .company_location.partner_font_size_small .company {
+    font-size: 10px;
+}
+
+.theme-base .job .source .ago.partner_font_size_large {
+    font-size: 14px;
+}
+.theme-base .job .source .ago.partner_font_size_medium {
+    font-size: 12px;
+}
+.theme-base .job .source .ago.partner_font_size_small {
+    font-size: 10px;
+}
+
+
+div.job_postx.span8 {
+    width: 940px;
+}
+
+
+div.job_post.span8 {
+    width: 620px;
+}
+
+
+
+.sh_partner_header h1 {
+    color:;
+    display: inline-block;
+    font-size: 32px;
+    padding: 1em 0;
+}
+
+.sh_partner_header_container {
+  
+    background-color: transparent;
+  
+    text-align: center;
+ }
+
+.skin div.column-left {
+    background-color: ;
+ }
+
+.footer_powered_by {
+  margin: 1em auto;
+  text-align:right;
+}
+
+.sh_footer {
+  margin: 1em auto 0;
+  text-align:center;
+}
+#search_results #partner_ad_size_regular *{
+    overflow:hidden;
+    height: 250px;
+}
+
+#search_results #partner_ad_size_large *{
+    overflow:hidden;
+    height: 600px;
+}
+
+
+
+
+
+#error .error h1 {
+    line-height: 1em;
+    padding: 1em 0;
+}
+</style>
+
+  
+
+    
+
+    
+<script type="text/javascript">window.google_analytics_uacct='UA-1039096-6';</script>
+
+        <!-- Begin comScore Tag -->
+
+    <script>
+      var _comscore = _comscore || [];
+      _comscore.push({ c1: "2", c2: "6034750" });
+      (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+      })();
+    </script>
+
+    <!-- End comScore Tag -->
+
+    
+    
+      <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'index': 'indexed',
+        'lang': 'en',
+        'loggedIn': 'False' === 'True' ? 'loggedIn' : 'loggedOut',
+        'pageTitle': document.title,
+        'sh_session_id': '1442807095',
+        'sh_user_id': '57381394755ff7d374a0750.39084229'
+      });
+      </script>
+    
+ </head>
+
+  
+
+  <body id="results" class=
+  "sh theme-base jobs theme1"
+>
+  
+  
+   
+      
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TXVWWW"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TXVWWW');</script>
+        <!-- End Google Tag Manager -->
+      
+    
+  
+  
+    <div id="wrap" class="container">
+    
+
+    
+    
+      
+<div class="sh_partner_header">
+  <div class="header_wrapper row-fluid">
+    <div class="sh_partner_header_container header-full-width">
+      
+        <style>
+.sh.theme-base .sh_header_search .skin-search-promo .btn-large, .sh .job .new {background-color:#A31E22;
+background-image: none;}
+
+
+.footer_powered_by {
+text-align:left;
+width: 940px;
+}
+.footer_powered_by  a {
+display: block;
+text-align: right;
+width: 620px;
+}
+</style>
+
+<script type="text/javascript">
+
+var googletag = googletag || {};
+
+googletag.cmd = googletag.cmd || [];
+
+(function() {
+
+var gads = document.createElement("script");
+
+gads.async = true;
+
+gads.type = "text/javascript";
+
+var useSSL = "https:" == document.location.protocol;
+
+gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+
+var node =document.getElementsByTagName("script")[0];
+
+node.parentNode.insertBefore(gads, node);
+
+})();
+
+</script>
+
+<script type="text/javascript">
+
+var gfp_networkId = "/8456/IDG.US_E_Computerworld.com";
+
+googletag.cmd.push(function() {
+
+googletag.defineSlot(gfp_networkId, [[950,98],[728,90]], "topleaderboard").addService(googletag.pubads()).setTargeting("pos", "topleaderboard");
+
+googletag.defineSlot(gfp_networkId, [[300,1050],[300,600],[300,250]], "topimu").addService(googletag.pubads()).setTargeting("pos", "atf1");
+
+googletag.pubads().setTargeting("site","idge.ctw.itjobs");
+
+googletag.pubads().setTargeting("kw","simplyhired");
+
+googletag.pubads().enableSingleRequest();
+
+googletag.enableServices();
+
+});
+
+</script>
+<iframe width="100%" scrolling="no" height="207px" frameborder="0" src="http://www.computerworld.com/static/header" style="display:block; padding-bottom:10px;"></iframe>
+      
+      <div class="divclear"></div>
+    </div>
+    <div class="divclear"></div>
+  </div>
+</div>
+
+    
+    
+
+
+
+
+<div class="sh_header_search container">
+  <div class="header_wrapper row-fluid">
+    <div class="job_post  span8 well well-small" style="margin-bottom:0px;">
+      <div class="pull-right">
+        <a href="http://www.simplyhired.com/?aff_id=81512" class="evtc" data-event="header_logo"
+           >
+          <img src="/static/images/jobs-by-sh-bug.png?deploy-serp-20150914-h" alt="Find Jobs and Careers - SimplyHired.com Job Search" border="0" />
+        </a>
+      </div>
+      <h1>Search for Jobs</h1>
+      
+  <form id="search"
+        action="//itjobs.computerworld.com/a/jobs/search"
+        method="get" class="search_form evtc_submit"
+        data-event="header_search_form">
+    
+<div class="row-fluid">
+    <div class="span5" style="margin-left:0px;">
+        <label class="search_keywords_label">Keywords</label>
+          <input type="text" name="q" class="id_f_keywords search_keywords input-block-level"
+                 value=""
+                 placeholder="job title, skills or company"
+                 autocomplete="off" />
+    </div>
+    <div class="span4">
+        <label class="search_location_label">Location</label>
+          <input type="text" name="l" class="id_f_location search_location input-block-level"
+                 value=""
+                 placeholder="city, state or zip"
+                 autocomplete="off" />
+    </div>
+    <div class="span3"><button type="submit" class="btn btn-large btn-sh2 input-block-level">Search Jobs</button></div>
+    <!-- <div class="span1"><a href="//itjobs.computerworld.com/a/jobs/advanced-search" data-event="header_advanced_search" class="advanced-search-link">Advanced Search</a></div> -->
+</div>
+  </form>
+
+      <div class="divclear"></div>
+    </div>
+    
+      <div class="span4 well well-small skin-search-promo">
+        <h3>Find the right candidate today!</h3>
+        <div class="search-promo-cta">
+          <a href="https://computerworld.simply-partner.com/simplypost/post-job/" class="btn btn-large btn-theme" target="_blank">Post a Job</a>
+          <span class="price">Only $295 for <br />60 days</span>
+        </div>
+        
+      </div>
+      <div class="divclear"></div>
+    
+  </div>
+</div>
+
+  
+
+    <div id="content" class= >
+      
+    
+
+
+
+<div id="search_results" class="search_results container">
+  <div class="row-fluid">
+    <div id="column_center" class="column-center span8">
+      
+        
+
+
+
+<div id="search_title">
+  <h1>1 - 10 of 860,685
+  <span class="text-highlight">jobs</h1>
+</div>
+
+<!-- Jobs 1 - 10 -->
+
+      
+      
+        
+
+
+<div class="well well-small inline-filters">
+
+    <p class="filter-label"><i class="icon-filter"></i> Refine:</p>
+
+    <div class="btn-group">
+        <button class="btn dropdown-toggle" type="button" id="sort_by_dropdown" data-toggle="dropdown">
+            Sort by
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="sort_by_dropdown">
+            
+            <li class="disabled">
+                <a>Relevance</a>
+            </li>
+            
+            
+            <li>
+                <a 
+                   href="//itjobs.computerworld.com/a/jobs/list/ws-10/sb-dd">Date</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    
+    
+    <div id="fdb" class="btn-group filter expanded">
+        <button class="btn dropdown-toggle" type="button" id="fdb_button" data-toggle="dropdown">
+            Date Posted
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="fdb_button">
+          
+            
+
+              
+                <li role="presentation">
+                    <a rel="noindex, nofollow" class="evtc filter_link" data-event="filter_apply" data-type="Date Posted" data-name="Last 24 hours" href="/a/jobs/list/ws-10/fdb-1">
+                        Last 24 hours
+                    </a>
+                    
+                </li>
+
+              
+            
+          
+            
+
+              
+                <li role="presentation">
+                    <a rel="noindex, nofollow" class="evtc filter_link" data-event="filter_apply" data-type="Date Posted" data-name="Last 7 days" href="/a/jobs/list/ws-10/fdb-7">
+                        Last 7 days
+                    </a>
+                    
+                </li>
+
+              
+            
+          
+            
+
+              
+                <li role="presentation">
+                    <a rel="noindex, nofollow" class="evtc filter_link" data-event="filter_apply" data-type="Date Posted" data-name="Last 14 days" href="/a/jobs/list/ws-10/fdb-14">
+                        Last 14 days
+                    </a>
+                    
+                </li>
+
+              
+            
+          
+            
+
+              
+                <li role="presentation">
+                    <a rel="noindex, nofollow" class="evtc filter_link" data-event="filter_apply" data-type="Date Posted" data-name="Last 30 days" href="/a/jobs/list/ws-10/fdb-30">
+                        Last 30 days
+                    </a>
+                    
+                </li>
+
+              
+            
+          
+        </ul>
+    </div>
+    
+
+    <div class="more_filters_container expanded btn-group" style="display: none;">
+        <button class="btn dropdown-toggle" type="button" id="more_filters_button" data-toggle="dropdown">
+            
+              More Filters
+            
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu more_filters_list" role="menu" aria-labelledby="more_filters_button">
+          
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Title</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Project Manager" href="/a/jobs/list/ws-10/fft-project+manager"  title="Project Manager">
+                        Project Manager
+                        <span class="count">8,892</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Software Engineer" href="/a/jobs/list/ws-10/fft-software+engineer"  title="Software Engineer">
+                        Software Engineer
+                        <span class="count">5,848</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Java Developer" href="/a/jobs/list/ws-10/fft-java+developer"  title="Java Developer">
+                        Java Developer
+                        <span class="count">4,324</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Senior Software Engineer" href="/a/jobs/list/ws-10/fft-senior+software+engineer"  title="Senior Software Engineer">
+                        Senior Software Engineer
+                        <span class="count">3,390</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Network Engineer" href="/a/jobs/list/ws-10/fft-network+engineer"  title="Network Engineer">
+                        Network Engineer
+                        <span class="count">3,049</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name=".net Developer" href="/a/jobs/list/ws-10/fft-.net+developer"  title=".net Developer">
+                        .net Developer
+                        <span class="count">3,033</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Systems Engineer" href="/a/jobs/list/ws-10/fft-systems+engineer"  title="Systems Engineer">
+                        Systems Engineer
+                        <span class="count">2,876</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Software Development Engineer" href="/a/jobs/list/ws-10/fft-software+development+engineer"  title="Software Development Engineer">
+                        Software Development Engineer
+                        <span class="count">2,747</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Software Developer" href="/a/jobs/list/ws-10/fft-software+developer"  title="Software Developer">
+                        Software Developer
+                        <span class="count">2,508</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Title" data-name="Computer Technician" href="/a/jobs/list/ws-10/fft-computer+technician"  title="Computer Technician">
+                        Computer Technician
+                        <span class="count">2,416</span>
+                    </a>
+                </li>
+                
+              
+            
+        </ul>
+    </li>
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Company</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="Deloitte" href="/a/jobs/list/ws-10/fcn-deloitte"  title="Deloitte">
+                        Deloitte
+                        <span class="count">14,485</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="United Software Group" href="/a/jobs/list/ws-10/fcn-united+software+group"  title="United Software Group">
+                        United Software Group
+                        <span class="count">12,887</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="Tech Contingency" href="/a/jobs/list/ws-10/fcn-tech+contingency"  title="Tech Contingency">
+                        Tech Contingency
+                        <span class="count">7,981</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="Accenture" href="/a/jobs/list/ws-10/fcn-accenture"  title="Accenture">
+                        Accenture
+                        <span class="count">7,885</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="U.S. Navy Reserve" href="/a/jobs/list/ws-10/fcn-u.s.+navy+reserve"  title="U.S. Navy Reserve">
+                        U.S. Navy Reserve
+                        <span class="count">7,360</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="Amazon" href="/a/jobs/list/ws-10/fcn-amazon"  title="Amazon">
+                        Amazon
+                        <span class="count">6,991</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="Lockheed Martin" href="/a/jobs/list/ws-10/fcn-lockheed+martin"  title="Lockheed Martin">
+                        Lockheed Martin
+                        <span class="count">6,721</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="Cybercoders" href="/a/jobs/list/ws-10/fcn-cybercoders"  title="Cybercoders">
+                        Cybercoders
+                        <span class="count">6,352</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Company" data-name="Compnova" href="/a/jobs/list/ws-10/fcn-compnova"  title="Compnova">
+                        Compnova
+                        <span class="count">6,282</span>
+                    </a>
+                </li>
+                
+              
+            
+        </ul>
+    </li>
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Job Type</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Full time" href="/a/jobs/list/ws-10/fjt-full-time" >
+                        Full time
+                        <span class="count">851,842</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Permanent" href="/a/jobs/list/ws-10/fjt-permanent" >
+                        Permanent
+                        <span class="count">819,441</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Contract" href="/a/jobs/list/ws-10/fjt-contract" >
+                        Contract
+                        <span class="count">24,174</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Part time" href="/a/jobs/list/ws-10/fjt-part-time" >
+                        Part time
+                        <span class="count">15,338</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Internship" href="/a/jobs/list/ws-10/fjt-internship" >
+                        Internship
+                        <span class="count">9,368</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Temporary" href="/a/jobs/list/ws-10/fjt-temporary" >
+                        Temporary
+                        <span class="count">6,826</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Seasonal" href="/a/jobs/list/ws-10/fjt-seasonal" >
+                        Seasonal
+                        <span class="count">817</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Type" data-name="Telecommute" href="/a/jobs/list/ws-10/fjt-telecommute" >
+                        Telecommute
+                        <span class="count">1</span>
+                    </a>
+                </li>
+                
+              
+            
+        </ul>
+    </li>
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Education</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="Some High School" href="/a/jobs/list/ws-10/fed-1" >
+                        Some High School
+                        <span class="count">32</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="High School" href="/a/jobs/list/ws-10/fed-2" >
+                        High School
+                        <span class="count">36,371</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="Some College" href="/a/jobs/list/ws-10/fed-5" >
+                        Some College
+                        <span class="count">479</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="Associate&#39;s Degree" href="/a/jobs/list/ws-10/fed-6" >
+                        Associate&#39;s Degree
+                        <span class="count">25,731</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="Bachelor&#39;s Degree" href="/a/jobs/list/ws-10/fed-7" >
+                        Bachelor&#39;s Degree
+                        <span class="count">720,675</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="Master&#39;s Degree" href="/a/jobs/list/ws-10/fed-8" >
+                        Master&#39;s Degree
+                        <span class="count">31,632</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="Doctorate" href="/a/jobs/list/ws-10/fed-9" >
+                        Doctorate
+                        <span class="count">5,620</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Education" data-name="Professional" href="/a/jobs/list/ws-10/fed-10" >
+                        Professional
+                        <span class="count">38,321</span>
+                    </a>
+                </li>
+                
+              
+            
+        </ul>
+    </li>
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Experience</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Experience" data-name="0 - 2 years" href="/a/jobs/list/ws-10/fex-2" >
+                        0 - 2 years
+                        <span class="count">56,052</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Experience" data-name="2 - 5 years" href="/a/jobs/list/ws-10/fex-3" >
+                        2 - 5 years
+                        <span class="count">175,039</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Experience" data-name="5 - 7 years" href="/a/jobs/list/ws-10/fex-4" >
+                        5 - 7 years
+                        <span class="count">115,488</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Experience" data-name="7 - 10 years" href="/a/jobs/list/ws-10/fex-5" >
+                        7 - 10 years
+                        <span class="count">70,928</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Experience" data-name="10 - 15 years" href="/a/jobs/list/ws-10/fex-6" >
+                        10 - 15 years
+                        <span class="count">35,328</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Experience" data-name="15+ years" href="/a/jobs/list/ws-10/fex-7" >
+                        15+ years
+                        <span class="count">3,570</span>
+                    </a>
+                </li>
+                
+              
+            
+        </ul>
+    </li>
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Special Filters</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Veteran Friendly" href="/a/jobs/list/ws-10/frl-vetfriendly"  title="Veteran Friendly">
+                        Veteran Friendly
+                        <span class="count">148,654</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Fortune 500" href="/a/jobs/list/ws-10/frl-fortune500companies"  title="Fortune 500">
+                        Fortune 500
+                        <span class="count">100,857</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Fortune Most Admired Companies" href="/a/jobs/list/ws-10/frl-fortunemostadmired"  title="Fortune Most Admired Companies">
+                        Fortune Most Admired Companies
+                        <span class="count">95,624</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Mom Friendly" href="/a/jobs/list/ws-10/frl-workingmother100"  title="Mom Friendly">
+                        Mom Friendly
+                        <span class="count">59,725</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="GLBT Friendly" href="/a/jobs/list/ws-10/frl-glbt"  title="GLBT Friendly">
+                        GLBT Friendly
+                        <span class="count">47,345</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Diversity Friendly" href="/a/jobs/list/ws-10/frl-diversity50"  title="Diversity Friendly">
+                        Diversity Friendly
+                        <span class="count">41,662</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Fortune Best Companies to Work For" href="/a/jobs/list/ws-10/frl-fortune100best"  title="Fortune Best Companies to Work For">
+                        Fortune Best Companies to Work For
+                        <span class="count">40,320</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Socially Responsible" href="/a/jobs/list/ws-10/frl-sociallyresponsible"  title="Socially Responsible">
+                        Socially Responsible
+                        <span class="count">34,136</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="New Graduate" href="/a/jobs/list/ws-10/frl-newgrad"  title="New Graduate">
+                        New Graduate
+                        <span class="count">33,490</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Special Filters" data-name="Green" href="/a/jobs/list/ws-10/frl-green"  title="Green">
+                        Green
+                        <span class="count">14,068</span>
+                    </a>
+                </li>
+                
+              
+            
+        </ul>
+    </li>
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Job Boards</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Boards" data-name="Exclude Job Boards" href="/a/jobs/list/ws-10/fsr-primary" >
+                        Exclude Job Boards
+                        <span class="count">498,810</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Job Boards" data-name="Job Boards Only" href="/a/jobs/list/ws-10/fsr-job_board" >
+                        Job Boards Only
+                        <span class="count">361,875</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+            
+        </ul>
+    </li>
+
+    <li class="dropdown-submenu">
+        <a tabindex="-1" class="filter_submenu_button">Recruiters</a>
+        <ul class="dropdown-menu" role="menu">
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Recruiters" data-name="Exclude Recruiters" href="/a/jobs/list/ws-10/fem-employer" >
+                        Exclude Recruiters
+                        <span class="count">786,699</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a rel="nofollow" class="evtv" data-event="filter_apply" data-type="Recruiters" data-name="Recruiters Only" href="/a/jobs/list/ws-10/fem-recruiter" >
+                        Recruiters Only
+                        <span class="count">73,986</span>
+                    </a>
+                </li>
+                
+              
+            
+              
+            
+        </ul>
+    </li>
+
+
+        </ul>
+    </div>
+
+</div>
+
+      
+      
+        
+
+
+
+      
+      <div id="c_messaging" class="messaging" style="display:none;"></div>
+
+      <div class="column_center_inner">
+        
+
+<div class="pull-right">
+  Sponsored
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+<div class="results">
+  <ul id="jobs" class="jobs unstyled">
+    
+      <li id="r:72266.60081:0" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-72266.60081/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','0', this, {joi:'81512', joc:'15-1199.09', jri:'72266'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">IT Vendor Management Consultant Capacity Management</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">Educational Testing Service</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">Princeton, NJ</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">ETS (Educational Testing Service), with headquarters in Princeton, NJ, is a global not for profit organization whose mission is to advance quality and equity in education. With...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">9 days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:46787.57903:1" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-46787.57903/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','1', this, {joi:'81512', joc:'15-1142.00', jri:'46787'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Windows Systems Administrator</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">University at Buffalo</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">New York, NY</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Windows Systems Administrator The University of Buffalo is seeking a qualified Windows systems administrator. The ideal candidate will have 5 years of experience supporting...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">17 days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:46787.57905:2" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-46787.57905/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','2', this, {joi:'81512', joc:'15-1142.00', jri:'46787'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">UNIX Systems Administrator</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">University at Buffalo</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">New York, NY</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">UNIX Systems Administrator The University of Buffalo is seeking a qualified UNIX/Linux systems administrator. The ideal candidate will have 5 years of experience supporting...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">18 days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:58432.59039:3" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-58432.59039/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','3', this, {joi:'81512', joc:'13-1111.00', jri:'58432'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Senior Business Analyst</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">Square Melons</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">Houston, TX</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Square Melons, Inc. seeks Senior Business Analysts to act as liaisons between the development team and the client to meet client deliverables. Position requires a Bachelor's...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">20 days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:71350.58744:4" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-71350.58744/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','4', this, {joi:'81512', joc:'11-3021.00', jri:'71350'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Director of Information Technology</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">City of Franklin, Wi</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">Franklin, WI</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Director of Information Technology, City of Franklin, Wisconsin (35,520). Growing, full-service city of vibrant neighborhoods and top-performing schools, Franklin is located 10...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">20 days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:48049.58648:5" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-48049.58648/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','5', this, {joi:'81512', joc:'15-1142.00', jri:'48049'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Network and Computer Systems Administrator</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">SYSTRAN Software</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">San Diego, CA</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Job duties: Monitor database performance, troubleshoot &amp; performance tuning; Migrate and administer client/server applications; Develop scripting for database; Maintain system...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">23 days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:55906.56194:6" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-55906.56194/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','6', this, {joi:'81512', joc:'15-1199.08', jri:'55906'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Siebel Analyst</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">Iquadra Information Services</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">Atlanta, GA</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Siebel Analyst Location: Atlanta, GA Duration: Full Time Job Responsibilities: Bachelor’s Degree in Computers Science or Engineering plus 5 years of experience required Experience...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">30+ days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:55906.56192:7" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-55906.56192/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','7', this, {joi:'81512', joc:'15-1199.01', jri:'55906'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Software Functional QA</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">Iquadra Information Services</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">Atlanta, GA</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Software Functional QA Location: Atlanta, GA Duration: Full Time Job Responsibilities: Master’s degree in Computers Science or related plus 2 years of experience. Experience in...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">30+ days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:69509.55870:8" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-69509.55870/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','8', this, {joi:'81512', joc:'15-1199.09', jri:'69509'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Deputy Director, NSA/CSS Commercial Solutions Center (NCSC)</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">National Security Agency (nsa)</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">Fort Meade, MD</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Responsibilities The Deputy Director, NSA/CSS Commercial Solutions Center (NCSC) is responsible for managing a highly technical workforce that works collaboratively with industry,...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">30+ days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+      <li id="r:69372.55732:9" class="result">
+
+        <div class="job" itemscope itemtype="http://schema.org/JobPosting">
+          <h2>
+            <a rel="nofollow" class="title partner_font_size_medium" href="/a/job-details/view/jobkey-69372.55732/rid-spejjdeookpwybpbmxljzqhurituafsm?rfr=partner" onmousedown="SH.jobs.track('1','9', this, {joi:'81512', joc:'15-1122.00', jri:'69372'})" onclick="return SH?SH.jobs.view(this, event):true"
+               
+                 target="_blank"
+                itemprop="title">Computer Security Coordinator</a>
+          </h2>
+          
+
+          <div class='company_location partner_font_size_medium' itemprop="hiringOrganization" itemtype="http://schema.org/Organization">
+            
+              
+              <h4 class="company" itemprop="name">Recruit Tek</h4><span class="s"> - </span>
+            
+            <span class="location" itemprop="jobLocation">Waterford, OH</span>
+            
+              
+            
+          </div>
+
+          <p class="description partner_font_size_medium" itemprop="description">Plan, coordinate, and implement SAP security measures to safeguard information in computer files against accidental or unauthorized, destruction, or disclosure. Implement GRC 5.2...</p>
+
+          <div class="source">
+            
+              <span class="partner-exclusive">PREMIER</span>
+            
+            <span class="ago partner_font_size_medium">30+ days ago</span>
+            
+              from ComputerWorld
+            
+          </div>
+
+          <div class="tools_container">
+            <div class="tools">
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div><!--job-->
+
+      </li><!--result-->
+    
+    <div style="clear:both"></div>
+  </ul>
+
+  
+</div><!--results-->
+
+        
+          
+
+
+
+
+
+
+
+        
+        <div class="pagination_placeholder">
+          
+
+
+  <div class="pagination pagination-large pagination-centered">
+    <ul class="pages">
+      <!--previous-->
+      
+        <li class="disabled"><a href="#">&laquo;</a></li>
+      
+
+      
+
+      <!--current-->
+      <li class="active"><a href="#">1</a></li>
+
+      <!-- following page links -->
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="2" href="//itjobs.computerworld.com/a/jobs/list/pn-2">2</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="3" href="//itjobs.computerworld.com/a/jobs/list/pn-3">3</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="4" href="//itjobs.computerworld.com/a/jobs/list/pn-4">4</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="5" href="//itjobs.computerworld.com/a/jobs/list/pn-5">5</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="6" href="//itjobs.computerworld.com/a/jobs/list/pn-6">6</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="7" href="//itjobs.computerworld.com/a/jobs/list/pn-7">7</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="8" href="//itjobs.computerworld.com/a/jobs/list/pn-8">8</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="9" href="//itjobs.computerworld.com/a/jobs/list/pn-9">9</a></li>
+      
+        <li><a rel="noindex, nofollow" class="page evtc" data-event="pagination_page" data-page-number="10" href="//itjobs.computerworld.com/a/jobs/list/pn-10">10</a></li>
+      
+
+      
+        <li><a class="next evtc" data-event="pagination_next" rel="noindex, nofollow" href="//itjobs.computerworld.com/a/jobs/list/pn-2">&raquo;</a></li>
+      
+    </ul><!--pages-->
+  </div><!--pagination-->
+
+
+
+        </div>
+      </div>
+
+      
+
+
+<div class="bottom_search_form row-fluid" style="padding-top:20px;">
+  
+  <form 
+        action="//itjobs.computerworld.com/a/jobs/search"
+        method="get" class="search_form evtc_submit"
+        data-event="footer_search_form">
+    
+<div class="row-fluid">
+    <div class="span5" style="margin-left:0px;">
+        <label class="search_keywords_label">Keywords</label>
+          <input type="text" name="q" class="id_f_keywords search_keywords input-block-level"
+                 value=""
+                 placeholder="job title, skills or company"
+                 autocomplete="off" />
+    </div>
+    <div class="span4">
+        <label class="search_location_label">Location</label>
+          <input type="text" name="l" class="id_f_location search_location input-block-level"
+                 value=""
+                 placeholder="city, state or zip"
+                 autocomplete="off" />
+    </div>
+    <div class="span3"><button type="submit" class="btn btn-large btn-sh2 input-block-level">Search Jobs</button></div>
+    <!-- <div class="span1"><a href="//itjobs.computerworld.com/a/jobs/advanced-search" data-event="header_advanced_search" class="advanced-search-link">Advanced Search</a></div> -->
+</div>
+  </form>
+
+<div class="divclear"></div>
+</div>
+
+
+      
+    </div><!-- column_center -->
+
+    <div class="span4 rightrail">
+
+      
+        <div id='partner_ad_size_regular'>
+<div id="topimu">
+
+<script type="text/javascript">
+
+googletag.cmd.push(function() {
+
+googletag.display("topimu");
+
+});
+
+</script>
+
+</div></div>
+      
+      
+        
+
+<script src="//www.google.com/jsapi"></script>
+<script type="text/javascript" charset="utf-8">google.load('ads.search','2');</script>
+
+        
+
+<div id="c_google_ads"><div id="google_ads_rail" class="ads" style="height:0;"></div></div>
+
+      
+    </div><!-- column_left -->
+  </div><!-- /container -->
+</div><!-- search_results -->
+
+  
+    </div><!--content-->
+
+    
+  
+
+      
+<div id='survey' class='survey'>
+  <span class='evti icon-survey-close-button js-icon-survey-close-button' data-event='serp_survey_dismiss'></span>
+  <span class='icon-survey-sh-icon'></span>
+  <div id='survey_text' class='survey-text'>
+    <div id='survey_question'>
+      Were you satisfied with these results?
+      <span id='survey_yes' class='evti action-link' data-event='serp_survey_yes'>Yes</span>
+      |
+      <span id='survey_no' class='evti action-link' data-event='serp_survey_no'>No</span>
+    </div>
+    <div id='survey_thanks' class='survey-thanks'>
+      Thank you for your feedback!
+    </div>
+  </div>
+</div>
+
+
+
+    
+    
+
+
+<div class="sh_partner_footer container">
+  <div class="footer_wrapper">
+    <div class="sh_partner_attribution row-fluid">
+      <div class="span8 column-center">
+        <div class="footer_powered_by">
+          <a href="http://www.simplyhired.com/?aff_id=81512" class="evtc" rel="nofollow" data-event="header_logo"
+             >
+            <img src="/static/images/jobs-by-sh-bug.png?deploy-serp-20150914-h" alt="Find Jobs and Careers - SimplyHired.com Job Search" border="0" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
+        
+          
+            <div class="custom_footer">
+              <iframe width="100%" scrolling="no" height="403px" frameborder="0" src="http://www.computerworld.com/static/footer" style="display:block"></iframe>
+            </div><!-- custom_footer -->
+          
+        
+      </div>
+    </div>
+    <div class="divclear"></div>
+  </div>
+  <div class="divclear"></div>
+</div>
+
+  
+  </div><!--container-->
+  
+
+    
+
+    
+    <div class="email_alert_tooltip_content" style="display:none;">
+	<p class="heading">Let Simply Hired do the work!</p>
+  <ul>
+    <li><span>New jobs delivered daily</span></li>
+    <li><span>Only the jobs you want to see</span></li>
+    <li><span>Unsubscribe anytime</span></li>
+  </ul>
+</div>
+
+    <div class="email_alert_dialog_content_placeholder"></div>
+
+    
+    
+
+
+  <div id="c_alerts_offer" class="alerts-offer" style="display:none;">
+    <div class="alerts-logo"></div>
+    <form action="#" method="post">
+      <div class="message">
+        Yes, email me job leads like this one.
+      </div>
+
+      <div class="envelope">
+        <div class="display">
+          
+          <p class="keywords"> Jobs</p>
+          <p class="location">
+            
+          </p>
+          <a class="edit">edit</a>
+        </div>
+
+        <div class="modify">
+          <div>
+            <input class="keywords" type="text" name="q" value="" placeholder="Enter keywords:  job title, skills or company" autocomplete="off" />
+          </div>
+          <div>
+            
+            <input class="location" type="text" name="l" value="" placeholder="Enter a location:  city, state or zip" autocomplete="off" />
+            
+          </div>
+          <a class="save">save</a>
+        </div>
+      </div>
+
+      <div class="create">
+        <input class="email" type="text" name="email" value="" maxlength="80" placeholder="Your email address" autocomplete="off" />
+        <input class="icon-go-btn" type="submit" value="" />
+      </div>
+
+      <div>
+        <a class="continue" href="#" target="_blank">
+          <b>Continue</b> without free email updates
+        </a>
+      </div>
+    </form>
+  </div><!--alerts-offer-->
+
+
+<div id="create_alert" class="create-alert" style="display:none;">
+
+    <div class="heading">
+      Create a Job Email Alert
+    </div>
+    <label for="f_create_alert_email" class="text">
+      Get new jobs for this search delivered to your inbox!<br />
+      Create a free job alert by entering your email address:
+    </label>
+
+    <form action="#" method="post">
+      <input id="f_create_alert_email" class="text" type="text" name="email" value="Enter email address..." maxlength="255" /> <input class="button" type="submit" value="Save" />
+    </form>
+
+    <p class="privacy">
+      You can unsubscribe anytime.  We respect your privacy.
+    </p>
+
+  </div><!--create_alert-->
+
+
+    
+
+
+
+<div id="save_search_dialog" class="save_search_dialog">
+  <span class="icon-close js-icon-close"></span>
+
+  <p class="dialog_heading">
+    <span class="icon-save-this-search"></span>
+    <span class="before_save">
+      Saving your search...
+    </span>
+    <span class="after_save" style="display:none;">
+      Your search has been saved.
+    </span>
+  </p>
+
+  <div class="dialog_content">
+    <p class="dialog_main_msg before_save">
+      <span>
+        Your current search will be saved as:
+      </span>
+    </p>
+
+    <form class="dialog_form before_save" action="#" method="post">
+      <input id="f_save_search_name" class="save_search_name" type="text" name="name" value="Jobs" maxlength="100" />
+      <button id="save_search_submit" class="save_search_btn">Save</button>
+    </form>
+
+    <div class="after_save" style="display:none;">
+      <button id="save_search_ok" class="save_search_btn save-search-ok">OK</button>
+    </div>
+  </div>
+</div><!--save_search_dialog-->
+
+
+    
+
+
+<div id='signin_dialog' class='signin_dialog' style='display:none'>
+  <span class="icon-close dialog_close"></span>
+  <div class="dialog_icon"></div>
+
+  <div class="dialog_main_msg">
+    Please sign in or create an account.
+  </div>
+
+  <div class="dialog_content">
+    <a class="dialog_signin_link dialog_link" href="/account/signin">Sign In</a>
+    <span>or</span>
+    <a class="dialog_signup_link dialog_link" href="/account/signup">Create a Free Account</a>
+  </div>
+</div>
+
+  
+
+    
+    
+<script type="text/javascript">var sh_search_data={"soc":"15-1132.00","skw":"","src":"","spd":"81512","utg":"none"};</script>
+
+
+  
+
+    
+
+    
+     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+     <script type="text/javascript">
+       if(typeof jQuery === 'undefined') {document.write('<script type="text/javascript" src="/static/js/jquery-1.7.1.min.js?deploy-serp-20150914-h"><\/script>');}
+     </script>
+    
+
+    
+
+    
+    
+
+<script type="text/javascript">
+  var sh_deploy_tag = 'deploy-serp-20150914-h';
+  
+  var sh_privacy_banner_max = 2
+
+  // Make sure SH namespace is defined.
+  var SH = SH || {};
+
+  // Set application variable for GA Event Tracking
+  SH.application = 'SERP';
+
+  // Flag to tell if this is a partner SERP or not.
+  var sh_has_skin = true;
+
+  
+  var sh_evt_cookie_override = true;
+  var sh_legacy_document_pathname = '/a/jobs/list/';
+  var sh_lsab = false;
+
+</script>
+
+
+
+  <script type="text/javascript" src="/jobs/jsi18n/?deploy-serp-20150914-h"></script>
+  <script type="text/javascript" src="/static/jobs/js/serp.deploy-serp-20150914-h.min.js" charset="utf-8"></script>
+
+
+
+    
+      <script type="text/javascript">
+        $(function() {
+          // Disable the email interstitial in this skin.
+          if (SH.jobs) {
+            SH.jobs.alertEnabled = false;
+          }
+        });
+      </script>
+    
+  
+
+
+    
+
+    
+  <script src="//www.google.com/adsense/search/ads.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8">
+    if (typeof google != 'undefined') {
+      var adsense_page_options = {"numRepeated": 1, "adPage": 1, "siteLinks": false, "sellerRatings": false, "oe": "utf8", "pubId": "pub-3419554187306566", "clicktrackUrl": "http://www.google-analytics.com/__utm.gif?utmcs=-&utmhid=100194372&utmac=UA-1039096-6&utmwv=4.9.2&utmr=None&utmn=983072562&utmhn=www.simplyhired.com&utmp=%2Foutbound%2Fadsense%2Frfr-%2Fse-%2Fcp-%2Fgr-%2Fad-&utmdt=&utmsr=None&utms=None&utmsc=None&utmul=&utmfl=None&utmje=None&utmcc=__utma%3D1.1463303700145214523.1214318271.1442807096.77.1442807096.77.15%3B%2B__utmz%3D1.1442807096.77.1.1.utmcsr%3D%28direct%29%7Cutmccn%3D%28direct%29%7Cutmcmd%3D%28none%29%3B", "hl": "en", "linkTarget": "_blank", "query": "", "ie": "utf8", "channel": "TrackingMan-SH-US-partner+4224759396"};
+  
+      adsense_page_options.adLoadedCallback = function(c,d){if(d){var p=document.getElementById(c).parentNode;
+          p.className='google_ads'+(!!p.className?' '+p.className:'');p.firstChild.style.display='block';}};
+  
+      var ad_units = [{"container": "google_ads_rail", "colorBackground": "#FFFFFF", "colorDomainLink": "#669900", "fontSizeTitle": 12, "lines": 3, "attributionText": "Ads", "colorTitleLink": "#06c", "number": 4, "linkTarget": "_blank", "fontSizeDescription": 12, "colorText": "#000000"}];
+
+      var ads_block = '';
+      for (var i=0; i<ad_units.length; i++){ads_block += 'ad_units[' + i + ']'; if (i < ad_units.length - 1) { ads_block += ','; }}
+      eval("new google.ads.search.Ads(adsense_page_options, " + ads_block + ")");
+    }
+  </script>
+
+
+
+    
+
+    
+    
+
+        <!-- Begin comScore Tag -->
+
+    <noscript>
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=6034750&cv=2.0&cj=1" />
+    </noscript>
+
+    <!-- End comScore Tag -->
+
+  
+
+    
+      
+
+<script type="text/javascript">
+  var sh_pageTracker=null;
+  var sh_pageAccount='UA-1039096-6';
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', sh_pageAccount]);
+</script>
+
+      
+<noscript><img src="http://pixel.quantserve.com/pixel/p-32oLU8PZtWAwo.gif" style="display:none;" height="1" width="1" alt="" /></noscript>
+
+    
+
+
+    
+
+    
+  
+
+
+    
+    <div id="request_id" style="display: none;">spejjdeookpwybpbmxljzqhurituafsm</div>
+
+    
+    <script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.simplyhired.com",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.simplyhired.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5347 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	
+
+
+
+
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8" />
+	<title>TechHive - News, reviews and tips about smart homes, home security, and home entertainment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	
+    
+    
+	<link rel="canonical" href="http://www.techhive.com" />
+
+	<meta name="description" content="Get the latest news and analysis on smart-home technology. We cover everything from lighting controls to home security; home entertainment to smart appliances and more. " />
+	
+	
+	
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://www.techhive.com/index.rss" />
+
+	
+		<script type="text/javascript" src="http://fonts.staticworld.net/azu1qsr.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	
+	<meta property="twitter:account_id" content="499275959" />
+	
+		
+	<meta property="og:type" content="website">	
+	<meta property="og:url" content="http://www.techhive.com">
+    <meta property="og:site_name" content="TechHive">   
+    
+    
+    <meta property="og:image" content="http://csmb.staticworld.net/images/furniture/techhive/NoPrimaryImage.png">
+    
+    
+    
+    
+    	<meta property="og:title" content="TechHive - News, reviews and tips about smart homes, home security, and home entertainment"> 
+    
+    
+    
+    	<meta property="og:description" content="Get the latest news and analysis on smart-home technology. We cover everything from lighting controls to home security; home entertainment to smart appliances and more. ">
+    
+	
+	         
+
+	<!-- this must be first -->
+	<link href="/www.idgcsmb/css/colorbox.css" rel="stylesheet" />
+	<link href="/www.idgcsmb/css/equalizer.css" rel="stylesheet" />
+	<link href="/www.idgcsmb/css/global-layout.css?v=20150917091405" rel="stylesheet" />
+	<link href="/www.idgcsmb.th/css/global-layout.css?v=20150917091405" rel="stylesheet" />
+	<link href="/www.idgcsmb/css/global-colors.css?v=20150917091405" rel="stylesheet" />
+	<link href="/www.idgcsmb.th/css/global-colors.css?v=20150917091405" rel="stylesheet" />
+	<link href="/www.idgcsmb/css/global-typography.css?v=20150917091405" rel="stylesheet" />
+	<link href="/www.idgcsmb.th/css/global-typography.css?v=20150917091405" rel="stylesheet" />
+	<link href="/www.idgcsmb/css/video.player.css?v=20150917091405" rel="stylesheet" media="all" />
+	<link href="/www.idgcsmb/css/search-style.css?v=20150917091405" rel="stylesheet" >		
+	<link href="http://csmb-origin.staticworld.net/css/now.css" rel="stylesheet" /> 
+	
+	
+	  
+	<!-- this must be last -->
+	<link href="/www.idgcsmb/css/helpers.css?v=20150917091405" rel="stylesheet" />
+	
+	<!--  fav and touch icons -->
+	<link rel="shortcut icon" href="/www.idgcsmb.th/favicon.ico"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://csmb.staticworld.net/images/furniture/techhive/th-apple-touch-icon-precomposed-144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="129x129" href="http://csmb.staticworld.net/images/furniture/techhive/th-apple-touch-icon-precomposed-129.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://csmb.staticworld.net/images/furniture/techhive/th-apple-touch-icon-precomposed-114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://csmb.staticworld.net/images/furniture/techhive/th-apple-touch-icon-precomposed-72.png" />
+	<link rel="apple-touch-icon" href="http://csmb.staticworld.net/images/furniture/techhive/th-apple-touch-icon-precomposed.png" />
+
+	
+	<script src="/www/js/jquery/jquery-1.8.1.min.js"></script>
+
+    
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/www/js/ads/gpt_includes.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+	// Set up ad related variables
+	try {
+		IDG.GPT.unitName = "/8456/IDG.US_CSMB_TechHive.com";
+		IDG.GPT.yieldbotEnabled = "false";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+
+	
+	try {
+		IDG.GPT.unitName = IDG.GPT.unitName + "/" + "homepage_door";
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	// global variables
+	var global_ShowSuper = false;
+	var global_ShowHero = true;
+	
+	//XFP global targeting, more targeting thm_pre
+	var url = window.location.href;
+	if(url.indexOf("?")>1){
+		url=url.split('?')[0];
+	}
+	
+
+	try {
+		IDG.GPT.addTarget("URL", encodeURIComponent(url));
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}
+	try {IDG.GPT.addTarget("zone", 'index-home');}	catch (exception) {console.log ("google_dfp can't use IDG.GPT "+ exception);}
+	
+	
+	
+	
+	try {
+		if (null != IDG.GPT.getQsVal("env")) {		
+			IDG.GPT.addTarget("env", IDG.GPT.getQsVal("env").replace(/\W/g, "") );
+		}
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+	
+	
+	
+		
+
+	try {
+		IDG.GPT.addTarget("page_type", '');
+	}
+	catch (exception) {
+		console.log ("google_dfp can't use IDG.GPT "+ exception);
+	}	
+
+	
+	
+	
+	
+	
+	
+</script>
+
+
+<script type="text/javascript" src="/www/js/ads/proximic.js?v=20150917091405"></script>  
+<script type="text/javascript">
+	 var currentUrl = encodeURIComponent(window.location.href);
+	 (function (u) {
+		var f = "scr";
+		var e = (u ? ("url=" + u) : "");
+		document.write("<"+f+"ipt type='text/javascript' src='http://t.zqtk.net/c.js?m=1&s=idg_js&"+e.replace(/\'/g, "")+"'></"+f+"ipt>");
+	  })((typeof (currentUrl) === "undefined") ? "" : currentUrl);
+</script>
+
+
+
+<script type="text/javascript">
+	
+	
+	
+	
+</script>
+  
+<script src="/www.idgcsmb/js/thm_pre.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+try {
+	IDG.GPT.setIDGExtraTargetings();
+	IDG.GPT.setAllGoogleTagTargetings();
+	IDG.GPT.dfpAdManager.init();
+	IDG.GPT.defineAllGoogleTagSlots();
+	IDG.GPT.initGoogleTagService();
+}
+catch (exception) {
+	console.log ("google_dfp can't use IDG.GPT "+ exception);
+}
+</script>
+
+
+	
+	
+		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="/www.idgcsmb/js/modernizr/modernizr-2.0.6.js"></script>
+	
+	<script src="/www.idgcsmb/js/swfobject.js"></script>
+
+	
+
+	
+		
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-30870572-1']);
+_gaq.push(['_setDomainName', 'techhive.com']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+	
+	
+	
+	
+	
+		<script class="kxct" data-id="IKHgZMDE" data-timing="async" data-version="1.9" type="text/javascript">
+			<!-- BEGIN Krux Control Tag for "TechHive" -->
+<!-- Source: /controltag?confid=IKHgZMDE&site=TechHive&edit=1 -->
+
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+    var k=document.createElement('script');k.type='text/javascript';k.async=true;
+    var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+    k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+      (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=IKHgZMDE";
+    var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  }());
+<!-- END Krux Controltag -->
+		</script>
+	 
+	
+		
+
+
+
+
+
+
+
+
+
+
+<!-- START Nielsen Online SiteCensus? V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+
+    (function () {
+
+        var d = new Image(1, 1);
+        d.onerror = d.onload = function () {
+
+            d.onerror = d.onload = null;
+
+        };
+        d.src = ["http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-203426h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join();
+
+    })();
+</script>
+<noscript>
+
+    <div>
+
+        <img src="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-203426h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+        width="1" height="1" alt="" />
+
+    </div>
+
+</noscript>
+<!-- END Nielsen Online SiteCensus? V6.0 -->
+	
+	<script type="text/javascript">
+		g_arrModules = new Array();
+		g_arrAds = new Array();
+	</script>
+	
+	
+	<script type="text/javascript">
+	var _sf_async_config={};
+	_sf_async_config.uid = 29363;
+	
+	
+	
+		_sf_async_config.useCanonical = true;
+	
+	
+	
+		
+			
+		
+			
+		
+		
+		
+		
+	
+	_sf_async_config.domain = "techhive.com";
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement("script");
+	    e.setAttribute("language", "javascript");
+	    e.setAttribute("type", "text/javascript");
+	    e.setAttribute("src",
+	       (("https:" == document.location.protocol) ?
+	         "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" :
+	         "http://static.chartbeat.com/") +
+	       "js/chartbeat.js");
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != "function") ?
+	     loadChartbeat : function() { try {
+		    	 oldonload(); 
+		    	 loadChartbeat(); 
+		     }
+		     catch (exception) {
+		    	 console.log("Error loading chartBeat: " + exception);
+		     }
+	     };
+	})();
+	</script>	
+	
+	
+	
+	<link href="/www.idgcsmb/webfonts/ss-social.css" rel="stylesheet" />
+	<link href="/www.idgcsmb/webfonts/ss-standard.css" rel="stylesheet" />
+	<!--[if lte IE 8]>  
+		<link href="/www.idgcsmb/webfonts/ss-ie8.css" rel="stylesheet" />
+	<![endif]-->
+	
+	
+	
+	
+	<!-- Add1/20/2015 IDGMPM-8088 -->
+	
+
+		
+
+	
+	
+		
+			<meta name="twitter:card" content="summary">
+			<meta name="twitter:site" content="@TechHive">
+			
+				
+				
+					<meta name="twitter:image" content="http://csmb.staticworld.net/images/playthislogo.jpg">
+				
+						
+			
+				
+				
+					<meta name="twitter:description" content="Get the latest news and analysis on smart-home technology. We cover everything from lighting controls to home security; home entertainment to smart appliances and more. ">
+				
+				
+			
+			
+				
+				
+					<meta name="twitter:title" content="TechHive - News, reviews and tips about smart homes, home security, and home entertainment">
+				
+				
+			
+			
+				
+					<meta name="twitter:url" content="www.techhive.com/">
+				
+				
+			
+		
+		
+		
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+
+			
+		
+		
+		
+			
+				
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+	
+		<meta name="parsely-title" content="TechHive - News, reviews and tips about smart homes, home security, and home entertainment" />
+		<meta name="parsely-link" content="http://www.techhive.com/" />
+		<meta name="parsely-type" content="Homepage" />
+		<meta name="parsely-image-url" content="http://csmb.staticworld.net/images/furniture/techhive/NoPrimaryImage.png" />
+		<meta name="parsely-pub-date" content="" />
+		<meta name="parsely-section" content="" />
+		<meta name="parsely-author" content="" />
+		<meta name="parsely-tags" content="" />			
+
+
+
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"url": "http://www.techhive.com/ ",
+		"potentialAction": {
+		"@type": "SearchAction",
+		"target": "http://www.techhive.com/search?query={search_term}",
+		"query-input": "required name=search_term"
+		}
+	}
+</script>
+	
+	
+	<script src="http://a.postrelease.com/serve/load.js?async=true"></script>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?GTM-NZGV5J"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NZGV5J');</script>
+	<!-- End Google Tag Manager -->
+
+</head>
+
+	<body id="homepage" class="home techhive">
+		 
+		
+			<div id="skinAdTarget"></div>
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+<div id="fb-root"></div>
+<script>
+$(document).ready(function() {
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=2452591947";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+});
+</script>
+
+
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+		<div id="page-wrapper" class="page-wrapper">
+
+			
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	<div id="page-top">
+		<div class="page-top-inner" itemscope itemtype="http://schema.org/Organization">
+		<link itemprop="url" href="http://www.techhive.com"> 
+		
+			<header id="banner">
+				<a id="mobile-offscreen-toggle" class="ss-standard ss-rows" href="javascript://"></a>
+				
+				<div id="logo">
+					<a href="/" class="ir banner-logo" id="logoImage">Home</a>
+				</div>
+				
+				<div id="mobile-search-toggle" class="ss-standard ss-search"></div>
+				<a href="javascript://" onclick="NarfUser.showLogin()">
+					<div id="mobile-user-link" class="ss-standard ss-user"></div>
+				</a>
+			</header>
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<ul id="th-nav">
+			<li class="newsNav"><a href="/news/" id="newsNav">News</a></li>
+			<li class="reviewsNav"><a href="/reviews/" id="reviewsNav">Reviews</a></li>
+			<li class="videoNav"><a href="/video/" id="videoNav">Video</a></li>
+			
+				
+				
+					<li class="th-category-nav"><a href="/category/connected-home/">Connected Home<span class="ss-navigatedown right"></span></a>
+					
+						<ul class="th-sub-nav">
+			            	
+							
+
+		            		
+							
+								<li><a href="/category/smart-appliance/">Appliances</a></li>
+								<li><a href="/tag/gardengarage/">Garden &amp; Garage</a></li>
+								<li><a href="/tag/health/">Health</a></li>		            		
+								<li><a href="/category/home-control/">Home Control</a></li>
+								<li><a href="/category/home-networking/">Home Networking</a></li>				
+								<li><a href="/category/home-security/">Home Security</a></li>
+								<li><a href="/category/hubs-controllers/">Hubs &amp; Controllers</a></li>
+								<li><a href="/tag/internetofthings/">Internet of Things</a></li>
+								<li><a href="/tag/kitchen/">Kitchen</a></li>	            		
+								<li><a href="/category/lighting/">Lighting</a></li>
+								<li><a href="/category/security-camera/">Security Cameras</a></li>
+								<li><a href="/category/thermostats/">Thermostats</a></li>
+			            			            		
+		            		
+		            		
+		            		
+						</ul><!-- /.th-sub-nav -->
+					
+					</li><!-- /.th-category-nav -->
+				
+			
+				
+				
+					<li class="th-category-nav"><a href="/category/entertainment/">Entertainment<span class="ss-navigatedown right"></span></a>
+					
+						<ul class="th-sub-nav">
+			            	
+							
+
+		            		
+									            		
+		            		
+		            		
+		            		
+								<li><a href="/tag/cordcutting/">Cord Cutting</a></li>						
+								<li><a href="/category/home-audio/">Home audio</a></li>
+								<li><a href="/category/smart-tv/">Smart TVs</a></li>
+								<li><a href="/category/streaming-hardware/">Streaming Hardware</a></li>
+								<li><a href="/category/streaming-media/">Streaming Media</a></li>
+								<li><a href="/category/streaming-services/">Streaming services</a></li>		            		
+							
+						</ul><!-- /.th-sub-nav -->
+					
+					</li><!-- /.th-category-nav -->
+				
+			
+				
+				
+			
+				
+				
+			
+			<li class="th-category-nav"><a href="/resources/" id="resourcesNav">Resources</a>
+		</ul><!-- /.th-nav -->
+
+
+
+
+
+				
+
+			<div id="th-social">
+				<div class="social-hover" style="display:none;">
+                	<div class="pointer">&#9650;</div>
+                    <ul>
+                        <li class="firstSocialButton">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.facebook.com/techhivemedia" class="socialite facebook-like" data-href="http://www.facebook.com/techhivemedia" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" rel="nofollow" target="_blank" data-font="arial"></a>
+						</li>						
+						<li>
+							<a href="https://twitter.com/TechHive" class="socialite twitter-follow" data-text="Follow @TechHive" data-url="https://twitter.com/TechHive" data-show-count="false" data-via="TechHive" rel="nofollow" target="_blank"></a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/share?url=https://plus.google.com/110270579945928533321" class="socialite googleplus-one" data-height="20" data-href="https://plus.google.com/110270579945928533321" rel="nofollow" data-annotation="bubble" target="_blank"></a>
+						</li>
+					</ul>
+				</div>
+                  
+				<a href="http://www.facebook.com/techhivemedia" class="network-fb ss-icon ss-social banner-social banner-fb" alt="Facebook" itemprop="sameAs">
+					&#xF610;
+				</a>
+				<a href="https://twitter.com/TechHive" class="network-tw ss-icon ss-social banner-social banner-tw" alt="Twitter" itemprop="sameAs">
+					&#xF611;
+				</a>
+				<a href="https://plus.google.com/110270579945928533321" class="network-google ss-icon ss-social banner-social banner-google" alt="Google+" itemprop="sameAs">
+					&#xF613;
+				</a>
+				
+			</div><!-- /#th-social -->
+				
+			<div id="th-search">
+				<form id="search-form" action="/search">
+					<input type="search" name="query" id="banner-search-term" class="inactive" value="">
+					<input type="submit" name="submit" id="banner-search-submit" value="search" />
+					<a id="magGlassClick" class="ss-icon ss-standard" type="submit">&#x1F50E;</a>
+				</form>
+			</div>
+				
+				
+			<div id="saved-comparisons"></div>				
+				
+				
+		</div> 
+	</div> 
+
+
+
+
+
+
+<!-- Events Header -->	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+		
+
+
+<div id="homepageLeaderboardWrapper">
+	<div id="homepageLeaderboardInner">
+		
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+			<div id="gpt-leaderboard" class=""></div>
+    		<script type="text/javascript">
+	    		try {
+	    			IDG.GPT.addDisplayedAd("gpt-leaderboard", "true");
+	    			$('#gpt-leaderboard').responsiveAd({screenSize:'971 1115', scriptTags: []});
+	    		}
+				catch (exception) {
+					console.log("Error with IDG.GPT: " + exception);
+				}
+    		</script>
+    	
+	
+ 
+	 
+	</div>
+</div>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.home-hero{height:324px;}
+.home-hero-split .home-hero-one .home-hero-image { background:url(http://images.techhive.com/images/article/2015/09/appletv-100615101-hero-2up.jpg) 0 0 no-repeat;background-size:100%; }
+.home-hero-split .home-hero-two .home-hero-image { background:url(http://images.techhive.com/images/article/2015/09/amazon-news-hero-100615169-hero-2up.jpg) 0 0 no-repeat;background-size:100%; }
+.home-hero-one, .home-hero-two { position:relative; }
+
+.home-hero-split .home-hero-text h2{ margin-top:0; margin-bottom:0.2;}
+
+.home-hero-split .home-hero-one .home-hero-text{left:14px;top:119px;
+	width:433px; position:absolute;}
+
+.home-hero-split .home-hero-two .home-hero-text{left:83px;top:89px;
+	width:312px; position:absolute;}
+
+.home-hero-text.lightTheme { background: url(http://csmb.staticworld.net/images/furniture/techhive/white-background70.png) 0 0 repeat;padding:5px 15px 6px; }
+.home-hero-text.darkTheme { background: url(http://csmb.staticworld.net/images/furniture/techhive/black-background70.png) 0 0 repeat;padding:5px 15px 6px; }
+	
+	
+.home-hero-split .home-hero-one .home-hero-text a h2{color:#000000;font-size:35px}
+.home-hero-split .home-hero-two .home-hero-text a h2{color:#F8A520;font-size:33px}
+.home-hero-split .home-hero-one .home-hero-text a h2, .home-hero-split .home-hero-two .home-hero-text a h2{ line-height:1.2}
+.home-hero-split .home-hero-one .home-hero-text a h2:hover, .home-hero-split .home-hero-two .home-hero-text a h2:hover{ opacity:.8; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+
+
+.home-hero-split .home-hero-one .home-hero-text p{color:#000000;}
+.home-hero-split .home-hero-two .home-hero-text p{color:#FFFFFF;}
+
+@media only screen and (min-width:581px) and (max-width:768px) {	
+	.home-hero-image img { display:block; width:100%; }	
+  	.home-hero { background:#f7f7f7; height:auto; display:block; position:relative; width:100%; overflow:hidden; }  	
+  	.home-hero-split .home-hero-one { float:left; height: auto; width: 50%; }
+  	.home-hero-split .home-hero-two{ float:left; height: auto; width: 50%; }
+	.home-hero-split .home-hero-one .home-hero-image, .home-hero-split .home-hero-two .home-hero-image  { background:none; height:auto; max-height:194px; width:100%; display:block; clear:both; overflow:hidden; position:relative; }
+	.home-hero-split .home-hero-one .home-hero-text, .home-hero-split .home-hero-two .home-hero-text{left:0px; width:100%; background-color:#494949; padding:5px 15px 6px; top:0; bottom:0; margin-top:0; display:block; clear:both; position:relative; overflow:hidden; text-align:left;  }
+	.home-hero-split .home-hero-one .home-hero-text a h2, .home-hero-split .home-hero-two .home-hero-text a h2{color:#fff;font-size:20px; text-align:left; line-height:1;}
+	.home-hero-split .home-hero-one .home-hero-text p, .home-hero-split .home-hero-two .home-hero-text p{ display:none; }	
+	.home-hero-split .home-hero-text h2{ line-height:1.25;}
+}
+@media only screen and (min-width:601px) and (max-width:768px) {	
+	.home-hero-split .home-hero-one .home-hero-image, .home-hero-split .home-hero-two .home-hero-image  { max-height:250px;}
+
+}
+
+@media only screen and (min-width:1px) and (max-width:580px) {
+	.home-hero-two{ display:none;}	
+	.home-hero-image img { display:block; width:100%; }	
+  	.home-hero { background:#f7f7f7; height:auto; display:block; position:relative; width:100%; }  	
+  	.home-hero-split .home-hero-one, .home-hero-split .home-hero-two { float:none; height: auto; width: 100%; }
+	.home-hero-split .home-hero-one .home-hero-image, .home-hero-split .home-hero-two .home-hero-image { background:none; height:auto; width:100%; display:block; clear:both; overflow:hidden; position:relative; }
+	.home-hero-split .home-hero-one .home-hero-text, .home-hero-split .home-hero-two .home-hero-text{left:0px; width:100%; background-color:#494949; padding:5px 15px 6px; top:0; bottom:0; margin-top:0; display:block; clear:both; position:relative; overflow:hidden; text-align:left;  }
+	.home-hero-split .home-hero-one .home-hero-text  a h2, .home-hero-split .home-hero-two .home-hero-text  a h2{color:#fff;font-size:22px; text-align:left;}	
+	.home-hero-split .home-hero-text h2{ line-height:1.30;}
+	.home-hero-inner{position:relative;}
+	.dots{
+	position:absolute;
+	top:20px;
+	right:20px;
+	font-size:10px;
+	opacity:.8;
+	background: url(http://csmb.staticworld.net/images/furniture/techhive/black-background70.png) 0 0 repeat;
+	border-radius:7px;
+	padding:6px 4px 4px 8px;
+	}
+	.dots .ss-record{
+	display:inline;
+	margin-right:5px;
+	color:#333;
+	}
+	.dots .ss-record:before{
+	font-size:10px;
+	}	
+	.dots .ss-record.dotone{
+	color:#fff;
+	}
+}
+
+@media only screen and (min-width:769px) {
+	.home-hero-image img { display:none; }
+}
+
+
+</style>
+
+<div class="home-hero home-hero-split">
+	<div class="home-hero-inner">
+		<div class="home-hero-one">
+			<a href="/article/2984592/streaming-hardware/apple-tv-and-voice-control-what-siri-does-that-other-set-tops-dont.html"><div class="home-hero-image"><img src="http://images.techhive.com/images/article/2015/09/appletv-100615101-large.jpg" /></div></a>
+			<div class="home-hero-text lightTheme">
+				<a href="/article/2984592/streaming-hardware/apple-tv-and-voice-control-what-siri-does-that-other-set-tops-dont.html"><h2>Apple TV and voice control: What Siri does that other set-top boxes don’t</h2></a>
+				<p></p>
+			</div>
+		</div>
+		<div class="home-hero-two">
+			<a href="/article/2984635/entertainment/amazon-launches-6-major-new-devices-including-a-4k-fire-tv-and-a-50-fire-tablet.html"><div class="home-hero-image"><img src="http://images.techhive.com/images/article/2015/09/amazon-news-hero-100615169-large.jpg" /></div></a>
+			<div class="home-hero-text darkTheme">
+				<a href="/article/2984635/entertainment/amazon-launches-6-major-new-devices-including-a-4k-fire-tv-and-a-50-fire-tablet.html"><h2>Amazon to deliver a 4K Fire TV, a $50 tablet, and more </h2></a>
+				<p></p>
+			</div>
+		</div>
+	</div><!--/home-hero-inner-->
+</div><!--/home-hero-->
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.home-features-wrap .iPadOverlay{
+	background:url(http://csmb.staticworld.net/images/furniture/techhive/iPadScrollPrompt.png) 50% 50% no-repeat;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:5000;
+	display:none;
+}
+
+@media only screen and (min-width:768px) and (max-width:768px) {
+.home-features-wrap .iPadOverlay{ width:420px; }
+}
+@media only screen and (min-width:1024px) and (max-width:1024px) {
+	.home-features-wrap .iPadOverlay{ width:630px; }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi){
+.home-features-wrap .iPadOverlay{ background-size:200px 75px; }
+}
+</style>
+
+
+
+
+
+<div class="home-features-wrap">
+	<div class="home-features clearfix">
+		<div class="features-fade left"></div>
+		<a class="prev browse left"></a>
+			<div class="home-features-inner">
+				<div class="iPadOverlay"></div>
+				<div class="items">
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2984337/smart-appliance/irobots-new-roomba-980-vacuum-features-room-mapping-technology-and-wi-fi.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100614865 " src="http://core4.staticworld.net/images/article/2015/09/roomba-980_front-100614865-medium.jpg" alt="Roomba 980 front" /></div>
+												<p>iRobot’s new Roomba 980 features room-mapping tech and Wi-Fi</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2984017/home-audio/the-top-5-sexiest-bluetooth-headphones-for-less-than-300.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100614561 " src="http://core2.staticworld.net/images/article/2015/09/headphonegroup-100614561-medium.jpg" alt="Sexy Bluetooth headphones" /></div>
+												<p>The top 5 sexiest Bluetooth headphones for less than $300</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2978857/smart-tv/quantum-dots-explained-how-this-nanotechnology-could-give-oled-tvs-a-run-for-the-money.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100614020 " src="http://core3.staticworld.net/images/article/2015/09/js9500_001_front_silver_2-1-100614020-medium.jpg" alt="js9500 001 front silver 2 1" /></div>
+												<p>How Quantum dots could give OLED TVs a run for the money</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2983694/streaming-services/primed-for-pigskin-how-to-watch-nfl-football-anywhere-and-on-any-device.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="galleryImage  imgId100605398 " src="http://core0.staticworld.net/images/article/2015/08/080715-rob-gronkowski-spike-100605398-gallery.jpg" alt="080715 football nfl rob gronkowski spike" /></div>
+												<p>Primed for pigskin: How to watch NFL games anywhere and on any device</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2982324/streaming-hardware/new-apple-tv-siri-and-the-app-store-are-the-stars-of-apples-new-set-top-box.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100613282 " src="http://core0.staticworld.net/images/article/2015/09/appletvnew-100613282-medium.jpg" alt="appletvnew" /></div>
+												<p>Siri and the App Store are the stars of Apple's new set-top box</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2982096/streaming-services/the-sad-story-of-amazon-video-on-chromecast-and-android-tv.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100613582 " src="http://core0.staticworld.net/images/article/2015/09/amazon-chromecast-primary-100613582-medium.jpg" alt="amazon chromecast primary" /></div>
+												<p>The sad story of Amazon Video on Chromecast and Android TV</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2984836/streaming-services/the-british-are-coming-the-bbc-to-launch-a-streaming-service-in-the-us.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100615510 " src="http://core0.staticworld.net/images/article/2015/09/bbc-america-logo-100615510-medium.jpg" alt="BBC America logo" /></div>
+												<p>The British are coming! The BBC to launch a streaming service in the U.S.</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2984872/streaming-hardware/second-gen-chromecast-tipped-with-faster-wi-fi-spotify-support-and-more.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100535002 " src="http://core1.staticworld.net/images/article/2014/12/google-hits-misses-chromecast-100535002-medium.jpg" alt="google hits misses chromecast" /></div>
+												<p>Second-gen Chromecast tipped with faster Wi-Fi, Spotify support, and more</p>
+											</div>
+									</a>
+							</div>
+						
+					
+						
+							
+							<div class="home-feature">
+									<a href="/article/2984592/streaming-hardware/apple-tv-and-voice-control-what-siri-does-that-other-set-tops-dont.html">										
+										<div class="feature-inner">	
+											<div class="imageContainer295x197">
+											
+											<img  class="mediumImage  imgId100615101 " src="http://core4.staticworld.net/images/article/2015/09/appletv-100615101-medium.jpg" alt="appletv" /></div>
+												<p>Apple TV and voice control: What Siri does that other set-tops don’t</p>
+											</div>
+									</a>
+							</div>
+						
+					
+				</div><!--/items-->
+			</div><!--inner//scrollable-->
+		<div class="features-fade right"></div>
+		<a class="next browse right" style="z-index:10;"></a>
+	
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+			<div id="gpt-showcase" class="home-features-ad"></div>
+    		<script type="text/javascript">
+	    		try {
+	    			IDG.GPT.addDisplayedAd("gpt-showcase", "true");
+	    			$('#gpt-showcase').responsiveAd({screenSize:'971 1115', scriptTags: []});
+	    		}
+				catch (exception) {
+					console.log("Error with IDG.GPT: " + exception);
+				}
+    		</script>
+    	
+	
+ 
+	
+	
+	</div><!--slider-->
+</div>
+
+
+
+			<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+			<div class="container" id="main-content">
+
+				
+					
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/www/css/homepage-video.css?v=20150917091405" rel="stylesheet" />
+
+
+	<link href="/www.idgcsmb.th/css/homepage-video.css?v=20150917091405" rel="stylesheet" />
+
+
+
+
+<div class="video-module playlist-module" id="homepageVideoModule">
+	<div class="module-header">
+		<div class="logo">
+			<span class="logo-img">TechHive</span>
+			<span class="video-text"><a href="/video/">Video</a></span>			
+		</div>
+		<div class="more-videos"><a href="/video/">Watch More Videos <i class="icon-play-btn-white"></i></a></div>
+	</div> <!-- end .module-header -->
+	
+	<div class="video-pane">
+		<div class="lead-video-info">
+			
+			
+			
+			
+			
+			
+			<div class="video-eyebrow">IFA 2015</div>
+			
+			
+				
+			<div class="video-title">HDR delivers a better picture to TVs</div>
+		</div>		
+		<!--  .wrap-video needed to constrain the video width on mobile wide, when video pane is constrained to max 360px high -->
+		<div class="wrap-video">
+			<div class="video-wrapper">
+				<!--  video player -->
+				
+					
+					
+					
+					
+					
+					
+					
+					
+												
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<video title="HDR delivers a better picture to TVs" id="homepageVideoPlayer"
+		data-account="2576146831001"
+		data-player="dd3d3e15-5df1-4b35-a596-a06105c1921a"
+		data-embed="default" data-video-id="ref:57431" data-setup="{}"
+		class="video-js"  width="626"
+		height="352" controls></video>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			</div> <!--  end .video-wrapper -->
+		</div> <!--  end .wrap-video -->
+	</div> <!--  end .video-pane -->
+	
+	<div class="video-listing-wrap">
+		<div class="video-listing-scroll">	
+			<div class="video-listing">
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="57431" data-title="HDR delivers a better picture to TVs" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D57431%26video-channel%3Dhardware-accessories%26video-campaign%3D%26video-series%3Difa-2015%26video-category%3Difa%2Csmart-tv%26video-tag%3Difa">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/09/better-picture-with-hdr-100612763-poster.png" />
+			<span class="duration">2:19</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">IFA 2015</div>
+	
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">HDR delivers a better picture to TVs</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="57554" data-title="Sights of IFA 2015" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D57554%26video-channel%3Dhardware-accessories%26video-campaign%3D%26video-series%3D%26video-category%3Dconsumer-electronics%2Cifa%2Csmartphones%2Cconnected-home%2Csmart-tv%26video-tag%3Difa">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/09/150905-ifa-sights-100612755-poster.jpg" />
+			<span class="duration">2:00</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Hardware & Accessories</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">Sights of IFA 2015</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="56143" data-title="Review: Stir's Kinetic Desk M1 urges you to stand up for your health" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D56143%26video-channel%3Dhardware-accessories%26video-campaign%3D%26video-series%3D%26video-category%3Dfurniture%2Cfitness-hardware%26video-tag%3Dfittech">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/08/v1.00_00_07_14.still001-100600480-poster.jpg" />
+			<span class="duration">2:45</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Hardware & Accessories</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">Review: Stir's Kinetic Desk M1 urges you to stand up for your health</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="56183" data-title="Best Dorm Room Gadgets" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D56183%26video-channel%3Dhardware-accessories%26video-campaign%3D%26video-series%3Dback-to-school%26video-category%3Dhardware%26video-tag%3Dbacktoschool">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/08/v2.00_02_30_03.still003-100602382-poster.jpg" />
+			<span class="duration">2:47</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Back To School</div>
+	
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">Best Dorm Room Gadgets</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="55925" data-title="The Ring Video Doorbell helps keep robbers always guessing" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D55925%26video-channel%3Dsmart-home%26video-campaign%3D%26video-series%3D%26video-category%3Dconnected-home%26video-tag%3D">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/07/v1.00_00_30_05.still001-100599721-poster.jpg" />
+			<span class="duration">2:31</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Smart Home</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">The Ring Video Doorbell helps keep robbers always guessing</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="52903" data-title="PicoBrew Zymatic: Meet the smart appliance that makes beer brewing easy" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D52903%26video-channel%3D%26video-campaign%3D%26video-series%3D%26video-category%3Dconsumer-electronics%2Chome-tech%26video-tag%3D">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/05/pcw_052615_picobrewzymatic-100587233-poster.jpg" />
+			
+		</div>
+	</div>
+	
+	
+	
+	
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">PicoBrew Zymatic: Meet the smart appliance that makes beer brewing easy</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="49030" data-title="SoftKinetic 3D camera brings new level of interaction to VR​" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D49030%26video-channel%3Dgaming%26video-campaign%3D%26video-series%3D%26video-category%3Dsoftware-games%26video-tag%3D">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/03/softkinetic-100571984-poster.jpg" />
+			<span class="duration">1:02</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Gaming</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">SoftKinetic 3D camera brings new level of interaction to VR​</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="58003" data-title="How to get started with Apple News in iOS 9" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D58003%26video-channel%3Dmobile%26video-campaign%3D%26video-series%3D%26video-category%3Dmobile%2Cios%2Csoftware-news%26video-tag%3D">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/09/mho_003_how-to-get-started-with-apple-news-100615104-poster.png" />
+			<span class="duration">1:42</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Mobile</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">How to get started with Apple News in iOS 9</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="57784" data-title="Hands-on with the new Apple gear" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D57784%26video-channel%3Dmobile%26video-campaign%3D%26video-series%3D%26video-category%3Dapple-phone%2Cstreaming-hardware%26video-tag%3Diphone-6s%2Ciphone-6s-plus%2Cipadpro%2Cappletv%2Capple-9-9-event">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/09/template-c100.00_01_12_17.still001-100613942-poster.jpg" />
+			<span class="duration">2:13</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Mobile</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">Hands-on with the new Apple gear</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="57664" data-title="Apple iPad Pro, drone bill vetoed, NASA 4K channel - The Wrap" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D57664%26video-channel%3Dmobile%26video-campaign%3D%26video-series%3D%26video-category%3Dtablets%2Cscience%26video-tag%3D">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/09/wtu-091015-nasa4k-100613819-poster.png" />
+			<span class="duration">2:56</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Mobile</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">Apple iPad Pro, drone bill vetoed, NASA 4K channel - The Wrap</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="57605" data-title="Xerox PARC's self-destructing chip explodes on demand" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D57605%26video-channel%3Dhardware-accessories%26video-campaign%3D%26video-series%3D%26video-category%3Dgovernment%26video-tag%3D">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/09/150910-darpa-parc-chip-1-100613612-poster.jpg" />
+			<span class="duration">0:43</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">Hardware & Accessories</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">Xerox PARC's self-destructing chip explodes on demand</div>
+</div>
+
+			
+				
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-item load-video" data-id="57743" data-title="DARPA presents its networked radiation detector" data-ima-url="http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D57743%26video-channel%3Dit-insights%26video-campaign%3D%26video-series%3D%26video-category%3Dgovernment%26video-tag%3D">
+	<div class="poster-wrapper">
+		<div class="poster-container">
+			<img class="video-poster" src="http://images.techhive.com/images/article/2015/09/150910-darpa-radiation-detector-2-100613570-poster.jpg" />
+			<span class="duration">4:48</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="video-eyebrow">IT Insights</div>
+	
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="video-title">DARPA presents its networked radiation detector</div>
+</div>
+
+			
+			</div>
+		</div>
+	</div>
+	
+</div> <!--  end .video-module -->
+
+
+
+
+	
+	
+			
+	
+
+<div id="main" role="main">
+	<div id="home-main-primary">
+		<h2>Latest Stories</h2>
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3030 s7">
+		
+		<a  href="/article/2984836/streaming-services/the-british-are-coming-the-bbc-to-launch-a-streaming-service-in-the-us.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100615510 " src="http://core0.staticworld.net/images/article/2015/09/bbc-america-logo-100615510-medium.jpg" alt="BBC America logo" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-18T10:05-0700" content="2015-09-18T10:05-0700">Sep 18, 2015 10:05 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Pulkit-Chandna/"><span itemprop="name">Pulkit Chandna</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984836/streaming-services/the-british-are-coming-the-bbc-to-launch-a-streaming-service-in-the-us.html">
+				The British are coming! The BBC to launch a streaming service in the U.S.
+				</a>
+			</p>
+			<p class="crawl-summary">
+				The British broadcaster looks to cash in on the cord-cutting craze that’s sweeping the United States.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3941 s7">
+		
+		<a  href="/article/2984872/streaming-hardware/second-gen-chromecast-tipped-with-faster-wi-fi-spotify-support-and-more.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100535002 " src="http://core1.staticworld.net/images/article/2014/12/google-hits-misses-chromecast-100535002-medium.jpg" alt="google hits misses chromecast" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-18T06:54-0700" content="2015-09-18T06:54-0700">Sep 18, 2015 6:54 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Ian-Paul/"><span itemprop="name">Ian Paul</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984872/streaming-hardware/second-gen-chromecast-tipped-with-faster-wi-fi-spotify-support-and-more.html">
+				Second-gen Chromecast tipped with faster Wi-Fi, Spotify support, and more
+				</a>
+			</p>
+			<p class="crawl-summary">
+				Two new Nexus phones are on tap for later in September and it looks like a new Chromecast is too.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3941 s7">
+		
+		<a  href="/article/2984592/streaming-hardware/apple-tv-and-voice-control-what-siri-does-that-other-set-tops-dont.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														 bugblog
+													">
+			
+			<img  class="mediumImage  imgId100615101 " src="http://core4.staticworld.net/images/article/2015/09/appletv-100615101-medium.jpg" alt="appletv" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+				<span  class="eyebrow bug bug-auto  blog blog1361"><a class="blogbug" href='/column/cord-cutter-confidential'>Cord-Cutter Confidential</a></span> 
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-18T03:00-0700" content="2015-09-18T03:00-0700">Sep 18, 2015 3:00 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Jared-Newman/"><span itemprop="name">Jared Newman</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984592/streaming-hardware/apple-tv-and-voice-control-what-siri-does-that-other-set-tops-dont.html">
+				Apple TV and voice control: What Siri does that other set-tops don’t
+				</a>
+			</p>
+			<p class="crawl-summary">
+				The mere presence of Siri voice search in the new Apple TV is unremarkable. It’s the execution that matters.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3387 s23">
+		
+		<a  href="/article/2692492/apps/10-handy-android-apps-for-watching-free-tv.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														 bugblog
+													">
+			
+			<img  class="mediumImage  imgId100476710 " src="http://core1.staticworld.net/images/article/2014/10/10-free-tv-apps-primary-100476710-medium.jpg" alt="10 free tv apps" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+				 
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-17T16:22-0700" content="2015-09-17T16:22-0700">Sep 17, 2015 4:22 PM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Ben-Patterson/"><span itemprop="name">Ben Patterson</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2692492/apps/10-handy-android-apps-for-watching-free-tv.html">
+				Watch TV for free with these 10 Android apps
+				</a>
+			</p>
+			<p class="crawl-summary">
+				Cutting the cord? These apps will stream hundreds of network or cable TV shows for free, no pay-TV subscription required.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c2123 s7">
+		
+		<a  href="/article/2984755/smart-tv/sony-doubles-down-on-hdr-technology.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100615362 " src="http://core1.staticworld.net/images/article/2015/09/65x850c_dr_4k-logo-100615362-medium.jpg" alt="4K HDR" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-17T14:29-0700" content="2015-09-17T14:29-0700">Sep 17, 2015 2:29 PM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Pulkit-Chandna/"><span itemprop="name">Pulkit Chandna</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984755/smart-tv/sony-doubles-down-on-hdr-technology.html">
+				Sony doubles down on HDR technology
+				</a>
+			</p>
+			<p class="crawl-summary">
+				The company hopes to woo buyers by adding HDR support to almost all of its 2015 4K TV lineup and throwing in a bunch of remastered blockbusters.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			    
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+			<div id="gpt-crawl" class=""></div>
+    		<script type="text/javascript">
+	    		try {
+	    			IDG.GPT.addDisplayedAd("gpt-crawl", "true");
+	    			$('#gpt-crawl').responsiveAd({screenSize:'971 1115', scriptTags: []});
+	    		}
+				catch (exception) {
+					console.log("Error with IDG.GPT: " + exception);
+				}
+    		</script>
+    	
+	
+ 
+	 
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3084 s2">
+		
+		<a  href="/article/2984589/software-games/xbox-one-preview-users-can-opt-into-windows-10-based-new-xbox-one-experience.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100600350 " src="http://core3.staticworld.net/images/article/2015/08/xboneui-100600350-medium.jpg" alt="xboneui" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-17T07:09-0700" content="2015-09-17T07:09-0700">Sep 17, 2015 7:09 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Jared-Newman/"><span itemprop="name">Jared Newman</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984589/software-games/xbox-one-preview-users-can-opt-into-windows-10-based-new-xbox-one-experience.html">
+				Xbox One Preview users can opt into Windows 10-based 'New Xbox One Experience'
+				</a>
+			</p>
+			<p class="crawl-summary">
+				Microsoft starts publicly testing its new console interface, though you’ll have to jump through some hoops to get it.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c2215 s7">
+		
+		<a  href="/article/2984635/entertainment/amazon-launches-6-major-new-devices-including-a-4k-fire-tv-and-a-50-fire-tablet.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100615169 " src="http://core5.staticworld.net/images/article/2015/09/amazon-news-hero-100615169-medium.jpg" alt="Amazon fall product launch" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-17T06:00-0700" content="2015-09-17T06:00-0700">Sep 17, 2015 6:00 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Michael-Brown/"><span itemprop="name">Michael Brown</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984635/entertainment/amazon-launches-6-major-new-devices-including-a-4k-fire-tv-and-a-50-fire-tablet.html">
+				Amazon launches 6 major new devices, including a 4K Fire TV and a $50 Fire tablet 
+				</a>
+			</p>
+			<p class="crawl-summary">
+				New and existing Fire TVs now work with Amazon’s cloud-based voice service, Alexa
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3940 s7">
+		
+		<a  href="/article/2984337/smart-appliance/irobots-new-roomba-980-vacuum-features-room-mapping-technology-and-wi-fi.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100614865 " src="http://core4.staticworld.net/images/article/2015/09/roomba-980_front-100614865-medium.jpg" alt="Roomba 980 front" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-16T13:30-0700" content="2015-09-16T13:30-0700">Sep 16, 2015 1:30 PM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Michael-Brown/"><span itemprop="name">Michael Brown</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984337/smart-appliance/irobots-new-roomba-980-vacuum-features-room-mapping-technology-and-wi-fi.html">
+				iRobot’s new Roomba 980 vacuum features room-mapping technology and Wi-Fi
+				</a>
+			</p>
+			<p class="crawl-summary">
+				The Roomba 980 will clean floors more methodically than previous Roomba models, using sensors to navigate around furniture and clutter.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3932 s7">
+		
+		<a  href="/article/2984223/connected-home/comcasts-xfinity-home-connected-home-platform-adds-support-for-more-third-party-hardware.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100615007 " src="http://core2.staticworld.net/images/article/2015/09/netgear-arlo-100615007-medium.jpg" alt="Netgear Arlo" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-16T13:22-0700" content="2015-09-16T13:22-0700">Sep 16, 2015 1:22 PM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Pulkit-Chandna/"><span itemprop="name">Pulkit Chandna</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984223/connected-home/comcasts-xfinity-home-connected-home-platform-adds-support-for-more-third-party-hardware.html">
+				Comcast’s Xfinity Home connected-home platform adds support for more third-party hardware
+				</a>
+			</p>
+			<p class="crawl-summary">
+				A product that started life as a home-security offering is morphing into smart-home solution.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3117 s2">
+		
+		<a  href="/article/2984442/mp3-players/zune-services-are-finally-truly-going-away-as-microsofts-groove-gets-sonos-support.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100614939 " src="http://core0.staticworld.net/images/article/2015/09/211653-slide10-zune_original-100614939-medium.jpg" alt="211653 slide10 zune original" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-16T08:49-0700" content="2015-09-16T08:49-0700">Sep 16, 2015 8:49 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Jared-Newman/"><span itemprop="name">Jared Newman</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984442/mp3-players/zune-services-are-finally-truly-going-away-as-microsofts-groove-gets-sonos-support.html">
+				Zune services are finally, truly going away as Microsoft’s Groove gets Sonos support
+				</a>
+			</p>
+			<p class="crawl-summary">
+				To be honest, Microsoft deserves some credit for keeping Zune services going this long.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c2123 s13">
+		
+		<a  href="/article/2984420/tv/sharp-will-sell-the-worlds-first-8k-tv-from-next-month.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100605647 " src="http://core2.staticworld.net/images/idgnsImport/2015/08/id-2967995-02-_njb7185-100605647-medium.jpg" alt="NHK 8K" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-16T06:52-0700" content="2015-09-16T06:52-0700">Sep 16, 2015 6:52 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Martyn-Williams/"><span itemprop="name">Martyn Williams</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984420/tv/sharp-will-sell-the-worlds-first-8k-tv-from-next-month.html">
+				The world's first 8K TV is going on sale next month for a staggering amount of money
+				</a>
+			</p>
+			<p class="crawl-summary">
+				Sharp will be the first to begin limited sales of 8K televisions next month.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3030 s7">
+		
+		<a  href="/article/2984232/streaming-services/epix-gets-offline-viewing-support-leading-the-way-for-traditional-tv-channels.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100614645 " src="http://core1.staticworld.net/images/article/2015/09/epixandroid-100614645-medium.jpg" alt="epixandroid" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-15T08:52-0700" content="2015-09-15T08:52-0700">Sep 15, 2015 8:52 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Jared-Newman/"><span itemprop="name">Jared Newman</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984232/streaming-services/epix-gets-offline-viewing-support-leading-the-way-for-traditional-tv-channels.html">
+				Epix gets offline viewing support, leading the way for traditional TV channels
+				</a>
+			</p>
+			<p class="crawl-summary">
+				Epix adds offline viewing so you can watch Interstellar on your next flight.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3084 s2">
+		
+		<a  href="/article/2984075/software-games/sonys-project-morpheus-rechristened-playstation-vr-in-step-closer-to-official-release.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="mediumImage  imgId100604434 " src="http://core0.staticworld.net/images/idgnsImport/2015/08/id-2965312-00017.morpheus2-100604434-medium.jpg" alt="Morpheus at GDC 2014 (1)" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-15T06:58-0700" content="2015-09-15T06:58-0700">Sep 15, 2015 6:58 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Hayden-Dingman/"><span itemprop="name">Hayden Dingman</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984075/software-games/sonys-project-morpheus-rechristened-playstation-vr-in-step-closer-to-official-release.html">
+				Sony's Project Morpheus rechristened PlayStation VR in step closer to official release
+				</a>
+			</p>
+			<p class="crawl-summary">
+				What was once an interesting PS4 tech demo now seems like it's headed for an actual release sometime in the near-ish future.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c2164 s7">
+		
+		<a  href="/article/2984017/home-audio/the-top-5-sexiest-bluetooth-headphones-for-less-than-300.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														 bugblog
+													">
+			
+			<img  class="mediumImage  imgId100614561 " src="http://core2.staticworld.net/images/article/2015/09/headphonegroup-100614561-medium.jpg" alt="Sexy Bluetooth headphones" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+				 
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-15T03:00-0700" content="2015-09-15T03:00-0700">Sep 15, 2015 3:00 AM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Sarah-Jacobsson-Purewal/"><span itemprop="name">Sarah Jacobsson Purewal</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984017/home-audio/the-top-5-sexiest-bluetooth-headphones-for-less-than-300.html">
+				The top 5 sexiest Bluetooth headphones for less than $300
+				</a>
+			</p>
+			<p class="crawl-summary">
+				These wireless headphones look as fabulous as they sound.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+			
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+	
+	
+	
+
+
+
+
+
+
+	<div class="excerpt c3030 s7">
+		
+		<a  href="/article/2984112/streaming-services/chicago-s-netflix-tax-challenged-in-court.html">
+		<div class="excerpt-img imageContainer200x126
+														
+														
+													">
+			
+			<img  class="originalImage  imgId100614067 " src="http://core2.staticworld.net/images/article/2015/09/lawsuit-judge-law-court-decision-sued-money-100614067-orig.jpg" alt="lawsuit judge law court decision sued money" />
+		</div>
+		</a>
+		
+		<div class="excerpt-text">
+
+			<p class="post-meta">
+			
+			
+			
+				
+				
+					<span class="timeago" title="2015-09-14T20:22-0700" content="2015-09-14T20:22-0700">Sep 14, 2015 8:22 PM</span> <span class="post-byline">
+						
+						
+				        	
+				        	<span class="byline"><span> | </span>
+					        	By <a rel="author" itemprop="url" href="/author/Pulkit-Chandna/"><span itemprop="name">Pulkit Chandna</span></a>
+							</span>
+				        	
+				        	
+				        	
+			        			        		
+					</span>
+				
+			
+			</p>
+			
+			<p class="crawl-headline">							
+				<a  href="/article/2984112/streaming-services/chicago-s-netflix-tax-challenged-in-court.html">
+				Chicago’s ‘Netflix’ tax challenged in court
+				</a>
+			</p>
+			<p class="crawl-summary">
+				A recently filed lawsuit questions the legality of the city’s amusement tax on streaming services and online gaming platforms.
+			</p>
+				
+
+		</div>
+	</div>
+
+
+		
+		<p class="listing-footer">
+			<a href="/browse?start=15">&laquo; older stories</a>
+		</p>
+	</div>
+</div><!--/#main-->
+						
+
+
+
+
+
+
+
+
+
+
+<div id="side" role="secondary">
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+	<div class="side-module gb-promo">
+		<a href="http://www.greenbot.com/" onclick='oClickTrack("Home Page:Right:Greenbot Promo")'>
+			<div class="gb-promo-header">
+				<img src="http://csmb.staticworld.net/images/modules/greenbot_promo_banner_103x60-cleaned.png" alt="Greenbot" />
+				<strong>Top Android stories</strong></br> from our new site, Greenbot
+			</div>
+		</a>
+		
+			
+			
+			
+			
+			
+		 	
+		 	
+		 	
+		 	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt c3145">
+		<div class="promo-img ">
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984828/android/google-plans-a-press-event-for-september-29th-hints-at-android-marshmallow-release.html"><img  class="smallImage  imgId100591603 " src="http://core0.staticworld.net/images/article/2015/06/android-m-lock-screen-100591603-small.jpeg" alt="android m lock screen" /></a>
+		</div>
+	<div class="promo-text">
+			
+		<div class="promo-headline">	
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984828/android/google-plans-a-press-event-for-september-29th-hints-at-android-marshmallow-release.html">Google plans a press event for September 29th, hints at...</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.promo-headline a, .promo-img a').click(function(e){
+		oClickTrack("Home Page:Right:Greenbot Promo:Article List");
+	});
+});
+</script>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt c3137">
+		<div class="promo-img ">
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984868/android-apps/google-play-music-gmail-android-apps-both-land-helpful-updates.html"><img  class="smallImage  imgId100596631 " src="http://core2.staticworld.net/images/article/2015/07/google-play-music-android-100596631-small.png" alt="google play music android" /></a>
+		</div>
+	<div class="promo-text">
+			
+		<div class="promo-headline">	
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984868/android-apps/google-play-music-gmail-android-apps-both-land-helpful-updates.html">Google Play Music, Gmail Android apps both land helpful...</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.promo-headline a, .promo-img a').click(function(e){
+		oClickTrack("Home Page:Right:Greenbot Promo:Article List");
+	});
+});
+</script>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt c3137">
+		<div class="promo-img ">
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984679/android-apps/five-to-try-android-pay-starts-rolling-out-and-spotify-amps-up-your-runs.html"><img  class="smallImage  imgId100615520 " src="http://core0.staticworld.net/images/article/2015/09/fivetotry-sept18-lead-100615520-small.jpg" alt="fivetotry sept18 lead" /></a>
+		</div>
+	<div class="promo-text">
+			
+		<div class="promo-headline">	
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984679/android-apps/five-to-try-android-pay-starts-rolling-out-and-spotify-amps-up-your-runs.html">Five to Try: Android Pay starts rolling out, and Spotify...</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.promo-headline a, .promo-img a').click(function(e){
+		oClickTrack("Home Page:Right:Greenbot Promo:Article List");
+	});
+});
+</script>
+
+				
+				
+			
+		
+			
+			
+				
+					
+						
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="excerpt c3145">
+		<div class="promo-img ">
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984796/android/android-device-updates-the-original-verizon-moto-x-is-finally-getting-lollipop.html"/>
+		</div>
+	<div class="promo-text">
+			
+		<div class="promo-headline">	
+			<a  id="gbpromo" href="http://www.greenbot.com/article/2984796/android/android-device-updates-the-original-verizon-moto-x-is-finally-getting-lollipop.html">Android device updates: The original Verizon Moto X is...</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.promo-headline a, .promo-img a').click(function(e){
+		oClickTrack("Home Page:Right:Greenbot Promo:Article List");
+	});
+});
+</script>
+
+				
+				
+			
+		
+	
+	
+	
+
+
+	</div>
+
+
+
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+			<div id="gpt-showcasemobile" class="side-promo side-module side-ad mobile-only"></div>
+    		<script type="text/javascript">
+	    		try {
+	    			IDG.GPT.addDisplayedAd("gpt-showcasemobile", "true");
+	    			$('#gpt-showcasemobile').responsiveAd({screenSize:'971 1115', scriptTags: []});
+	    		}
+				catch (exception) {
+					console.log("Error with IDG.GPT: " + exception);
+				}
+    		</script>
+    	
+	
+ 
+	
+
+
+
+	
+
+
+
+	  	
+		
+			
+			
+			
+				
+			
+						
+			
+			
+			
+		
+		
+
+
+	
+	
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #183 blox4.html  -->
+			
+		
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPedithomepagepromoprimary blxM183  blox4_html  blxC1603"><div class="home-split"> <a href="http://www.techhive.com/premiumcontent/superguide#tk.TH-hpm-SG"><img src="http://csmb.staticworld.net/images/modules/th/07072014-TH-SG.png"></a> </div>   </div>
+		
+	
+
+		
+	
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #312 blox4.html  -->
+			
+		
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPbizdevhomepageprimary blxM312  blox4_html  blxC8830"><div class="home-split"> <a href="http://www.techhive.com/column/cord-cutter-confidential/"><img src="http://csmb.staticworld.net/images/modules/pcw/03032015-th-cordcutter.jpg"></a> </div>         </div>
+		
+	
+
+		
+	
+
+
+
+	
+	
+
+	
+	
+	
+	
+	<section id="brand-post-module">
+
+	<div id="sponsored-content" class="brandposts">BrandPosts <span><a href="#" class="learn-more">Learn More</a></span>
+	<div id="learn-more-popup" style="display:none;">
+	    	<p>BrandPosts are written and edited by members of our sponsor community. BrandPosts create an opportunity for an individual sponsor to provide insight and commentary from their point-of-view directly to TechHive's audience. The TechHive editorial team does not participate in the writing or editing of BrandPosts.</p>
+	    	<div class="popup-close-btn"><a id="learn-more-close" href="#">CLOSE</a></div>
+    	</div>
+	
+	</div> 
+		
+	<div id="branded-post">
+		
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+			 
+			
+			
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	</div>
+	
+	</section>
+		
+
+	
+
+    
+    	
+    	
+    	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TODO: remove -- the formatting of the price is something that might change -->
+
+    
+    
+    
+    	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+	
+		
+
+	
+
+ 
+
+	 
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #180 blox4.html  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPedithomepagepromosecondary blxM180  blox4_html  blxC229"><div class="home-split"> <a href="http://www.pcworld.com/magazines#tk.PW_DAP_HPMR"><img src="http://csmb.staticworld.net/images/modules/pcw/PCW_10142014_HPM-L.png"></a> </div>     </div>
+		
+	
+
+		
+	
+
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #186 blox4.html  -->
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPbizdevhomepagesecondary blxM186  blox4_html  blxC235"><div class="home-split"> <a href="http://www.pcworld.com/magazines#tk.PW_DAP_HPMR"><img src="http://csmb.staticworld.net/images/modules/pcw/PCW_10142014_HPM-R.png"></a> </div>    </div>
+		
+	
+
+		
+	
+
+
+	
+
+	
+			
+			
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+    
+    
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+			<div id="gpt-custom-promo" class="side-promo side-module side-ad"></div>
+    		<script type="text/javascript">
+	    		try {
+	    			IDG.GPT.addDisplayedAd("gpt-custom-promo", "true");
+	    			$('#gpt-custom-promo').responsiveAd({screenSize:'971 1115', scriptTags: []});
+	    		}
+				catch (exception) {
+					console.log("Error with IDG.GPT: " + exception);
+				}
+    		</script>
+    	
+	
+ 
+	 
+
+
+</div>
+
+
+
+						
+
+
+
+
+
+
+
+
+
+
+<div id="bottom-promo"> 
+	
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		<div class="lazyload_ad">
+		<code type="text/javascript">
+			<!--
+			document.write('<div id="gpt-leaderboard-2" class="">');
+			IDG.GPT.addDisplayedAd("gpt-leaderboard-2", "true");
+			IDG.GPT.addLazyloadedAd("gpt-leaderboard-2", "true");
+			document.write('</div>');
+			$('#gpt-leaderboard-2').responsiveAd({screenSize:'971 1115', scriptTags: []});
+			//-->
+		</code>
+		</div>
+		
+		
+	
+ 
+	 
+</div>
+
+
+					
+				
+
+
+		   	</div>
+
+			
+
+
+
+
+
+
+
+
+
+
+
+<div id="panel-loader"></div>
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<div id="tso-wrapper"><div id="tso" style="display:none"></div></div>
+
+<script type="text/javascript">
+function renderTSO(ads) {
+	$thm.debug("renderTSO:"+ads.length);
+	if (ads && ads.length > 0) {
+		var selectedAds = selectTSOAds(ads,6);
+		if (null != selectedAds && selectedAds.length > 0) {
+			var html = "<h3>Today's Special Offers</h3>";
+			html += "<ul>";
+			for (var i=0; i<selectedAds.length;i++) {
+				html += "<li>";
+				html += "<a href='"+selectedAds[i].url+"' onclick='oClickTrack(\"Article Detail:Funnel:TSO\")'>"+selectedAds[i].title+"</a>";
+				html += "<span>"+selectedAds[i].body+"</span>";
+				if (null != selectedAds[i].pixel && selectedAds[i].pixel.length > 0) {
+					html += "<img src='"+selectedAds[i].pixel+"' style='height:0;width:0;'/>";
+				}
+				html += "</li>";
+			}
+			html += "</ul>";
+			$("#tso").html(html).show();
+		}
+	}
+}
+function selectTSOAds(ads,max) {
+	if (ads.length <= max) {
+		return ads;
+	} else {
+		var uniq = {};
+		var found = 0;
+		var selectedAds = [];
+		while (found < max) {
+			var ad = ads[Math.floor(Math.random()*ads.length)];
+			if (uniq[ad.id] != null) {
+				continue;
+			} else {
+				uniq[ad.id] = true;
+				found++;
+				selectedAds.push(ad);
+			}
+		}
+		return selectedAds;
+	}
+	return null;
+}
+</script>
+
+
+
+
+
+
+		</div>
+	
+		
+
+
+
+
+
+
+
+
+
+
+<div id="network"></div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer" class="clearfix">
+    <div class="container clearfix">
+    	<div class="footer-col">
+    		<a href="#" id="footer-logo" class="ir">TechHive</a>
+    		<p>TechHive helps you find your tech sweet spot. We steer you to products you'll love and show you how to get the most out of them.</p>
+    		<ul>
+    			<li><a href="http://www.idgcsmb.com">About Us</a></li>
+    			<li><a href="http://idgcsmb.com/community-standards">Community Standards</a></li>
+				<li><a href="http://www.idgcsmb.com/contact">Contact Us</a></li>
+				<li><a href="/premiumcontent/">Magazines, eBooks &amp; Apps</a></li>
+				<li><a href="/newsletters/index">Newsletters</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href="/about/RSS.html">RSS</a></li>
+				<li><a href="http://www.idgcsmb.com/techhive-online-privacy-policy/">Privacy Policy</a></li>
+				<li><a href="http://idgcsmb.com/terms-of-service-agreement">Terms of Service Agreement</a></li>
+				<li><a href="http://idgcsmb.com/about-adchoices-techhive/"><img class="footerIcon" alt="Ad Choices" src="http://zapp0.staticworld.net/images/shared/icons/ad_choices_icon.png"> Ad Choices</a></li>
+				
+				
+			</ul>
+    	</div>
+    	<div class="footer-col">
+    		<h2>TechHive CATEGORIES</h2>
+    		<ul>
+    			
+				<li><a href="/category/connected-home/">Connected Home</a></li>
+				<li><a href="/tag/cordcutting/">Cord Cutting</a></li>
+				<li><a href="/category/home-audio/">Home Audio</a></li>
+				<li><a href="/category/home-networking/">Home Networking</a></li>
+				<li><a href="/category/home-security/">Home Security</a></li>
+				<li><a href="/category/hubs-controllers/">Hubs &amp; Controllers</a></li>
+			</ul>
+			<ul class="right">
+				
+				<li><a href="/tag/internetofthings/">Internet of Things</a></li>
+				<li><a href="/category/lighting/">Lighting</a></li>
+				<li><a href="/category/smart-appliance/">Smart Appliances</a></li>
+				<li><a href="/category/streaming-media/">Streaming Media</a></li>
+				<li><a href="/category/thermostats/">Thermostats</a></li>
+			</ul>
+
+
+
+			<h3>IDG Network Sites</h3>
+			<ul>
+				<li><a href="http://www.idgcsmb.com/advertisewithus/">Advertise</a></li>
+				<li><a href="http://careers.idg.com/">Careers at IDG</a></li>
+				<li><a href="http://www.idgcreativelab.com/">Creative Lab</a></li>
+				<li><a href="http://idg.com/www/home.nsf/home?readform">IDG</a></li>
+				<li><a href="http://www.idgcsmb.com/contact/permissions/">Permissions</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href="http://www.idgcsmb.com/">IDG Consumer &amp; SMB</a></li>
+				<li><a href="http://idgknowledgehub.com/">Knowledge Hub</a></li>
+				<li><a href="http://www.pcworld.com/">PCWorld</a></li>
+				<li><a href="http://www.macworld.com/">Macworld</a></li>
+			</ul>
+    	</div>
+    	<div class="footer-col">
+    		<div id="footer-social">
+    			Follow us <a href="https://twitter.com/TechHive" class="twitterSocial" onClick="socialTrack('Footer','Twitter','Follow')"></a><a href="http://www.facebook.com/techhivemedia" class="facebookSocial" onClick="socialTrack('Footer','Facebook','Follow')"></a><a href="https://plus.google.com/110270579945928533321" class="googleplusSocial" onClick="socialTrack('Footer','GooglePlus','Follow')" rel="publisher"></a><a href="http://www.linkedin.com/today/techhive.com" class="linkedinSocial" onClick="socialTrack('Footer','LinkedIn','Follow')"></a>
+    		</div>
+    		
+    		
+		    <p>Visit other IDG sites:</p>
+    		
+    		<div id="idgInfo" class="styled-select">		
+		            <select onchange="location = this.options[this.selectedIndex].value;" id="jumpMenu" name="jumpMenu" d30tagged="1" style="visibility: visible;">
+		                <option target="_blank" value="">Select One</option>
+		                <option target="_blank" value="http://www.cio.com">CIO</option>
+		                <option target="_blank" value="http://www.computerworld.com">Computerworld</option>
+		                <option target="_blank" value="http://www.csoonline.com">CSO</option>
+		                <option target="_blank" value="http://www.demo.com/">DEMO</option>
+		                <option target="_blank" value="http://www.fritterati.com">Fritterati</option>
+		                <option target="_blank" value="http://www.greenbot.com">Greenbot</option>
+		                <option target="_blank" value="http://www.idganswers.com/">IDG Answers</option>		                		                
+		                <option target="_blank" value="http://www.idgconnect.com">IDG Connect</option>
+		                <option target="_blank" value="http://www.idgtechnetwork.com">IDG TechNetwork</option>
+		                <option target="_blank" value="http://www.idg.tv">IDG.tv</option>
+		                <option target="_blank" value="http://www.infoworld.com">InfoWorld</option>
+		                <option target="_blank" value="http://www.itworld.com">ITworld</option>
+		                <option target="_blank" value="http://www.itnews.com">IT News</option>
+		                <option target="_blank" value="http://www.javaworld.com">JavaWorld</option>
+		                <option target="_blank" value="http://www.networkworld.com">Network World</option>
+		                <option target="_blank" value="http://www.thestandard.com">The Industry Standard</option>
+		            </select>
+		    </div>
+		    
+		        <p><small>&copy; 1998-2015, IDG Consumer &amp; SMB</small></p>
+    	</div>
+    </div>
+</footer>
+ 
+
+
+		
+				
+		
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+			<div id="gpt-infunnel" class=""></div>
+    		<script type="text/javascript">
+	    		try {
+	    			IDG.GPT.addDisplayedAd("gpt-infunnel", "true");
+	    			$('#gpt-infunnel').responsiveAd({screenSize:'971 1115', scriptTags: []});
+	    		}
+				catch (exception) {
+					console.log("Error with IDG.GPT: " + exception);
+				}
+    		</script>
+    	
+	
+ 
+	
+		
+		
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
+
+<script src="/www.idgcsmb/js/mule/breakpoints.js"></script>
+<script src="/www.idgcsmb/js/mule/socialite.min.js"></script>
+<script src="/www.idgcsmb/js/mule/ios-orientationchange-fix.js"></script>
+<script src="/www/js/video/embedder.js"></script>
+
+<script src="/www.idgcsmb/js/thm_post.js?v=20150917091405"></script>
+<script src="/www.idgcsmb/js/jquery/plug-ins/jquery.md5.js"></script>
+<script src="/www.idgcsmb/js/jquery/plug-ins/jquery.details.min.js"></script>
+<script src="/www.idgcsmb/js/jquery/plug-ins/jquery.colorbox-min.js"></script>
+
+
+<script src="http://cdn.gigya.com/js/socialize.js?apiKey=2_E5g3qkf9pVjWvrIVsdCDez6f4J1JQYLS5MiU5vVWlQI87T3QqObjAvf55NW8U8lc"></script>
+
+<script src="/www.idgcsmb/js/autocomplete.js"></script>
+
+<script src="/www/js/jquery/jquery.timeago.js?v=20150917091405"></script>
+
+<script>
+$(document).ready(function(){
+	$(".timeago").timeago();
+});
+</script>
+
+<script type="text/javascript" src="http://wms.assoc-amazon.com/20070822/US/js/auto-tagger.js?tag=httpwwwidgcsm-20&locale=US&overwrite=1"> </script>
+
+
+
+
+
+
+
+<script type='text/javascript' src="http://players.brightcove.net/2576146831001/dd3d3e15-5df1-4b35-a596-a06105c1921a_default/index.min.js"></script><script type='text/javascript' src="/www/js/video/player.js?v=20150917091405"></script><script type='text/javascript'>
+
+if ($(window).width() < 581){
+$("html.touch .home-hero-inner").append( "<div class='dots'><div class='ss-record dotone'></div><div class='ss-record dottwo'></div></div>" );
+
+$("html.touch .home-hero-one").on("touchstart", function(e) {
+ var touchStart = touchEnd = e.originalEvent.touches[0].pageX;
+ var touchExceeded = false;
+
+ $(this).on("touchmove", function(e) {
+  touchEnd = e.originalEvent.touches[0].pageX;
+
+  if(touchExceeded || touchStart - touchEnd > 50 || touchEnd - touchStart > 50) {
+   e.preventDefault();
+   touchExceeded = true;
+	$(".home-hero-two").css({ 'display':'block'});	    
+	$(".home-hero-one").css({ 'display':'none'});
+	$(".dottwo").css({ 'color':'#ffffff'});  
+	$(".dotone").css({ 'color':'#333333'});  
+  }
+ });
+
+ $(this).on("touchend", function(e) {
+  $(this).off("touchmove touchend");
+ });
+});
+
+
+$("html.touch .home-hero-two").on("touchstart", function(e) {
+ var touchStart = touchEnd = e.originalEvent.touches[0].pageX;
+ var touchExceeded = false;
+ $(this).on("touchmove", function(e) {
+  touchEnd = e.originalEvent.touches[0].pageX;
+
+  if(touchExceeded || touchStart - touchEnd > 50 || touchEnd - touchStart > 50) {
+   e.preventDefault();
+
+   touchExceeded = true;
+
+	$(".home-hero-one").css({ 'display':'block'});	    
+	$(".home-hero-two").css({ 'display':'none'});
+	$(".dotone").css({ 'color':'#ffffff'});  
+	$(".dottwo").css({ 'color':'#333333'});  
+
+  }
+ });
+
+ $(this).on("touchend", function(e) {
+  $(this).off("touchmove touchend");
+ });
+});
+
+}
+
+
+$(window).load(function(){
+	IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+	if (IS_IPAD) {
+		$('.iPadOverlay').fadeIn('fast').delay(4200).fadeOut('fast');
+	}
+
+	/*$("#gpt-showcase div").each(
+	function() {
+			var h = ($(this).parent().innerHeight() - $(this).outerHeight()) / 2;
+			$(this).css("margin-top", h);
+		});
+	});*/
+});
+
+
+	PARSELY = {
+	        enableHeartbeats: true,
+	        secondsBetweenHeartbeats: 15,
+	        onHeartbeat: function(engagedSeconds) {
+	            console.log("The user was engaged for " + engagedSeconds + " seconds.");
+	        },
+
+	};
+IDG.video.initPlayer('homepageVideoPlayer');
+
+
+if (typeof IDG.video.players['homepageVideoPlayer'].vjs.ima3 !== 'undefined') {
+	IDG.video.players['homepageVideoPlayer'].vjs.ima3({
+		serverUrl:"http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/8456/IDG.US_CSMB_TechHive.com/homepage_door&ciu_szs=300x250,728x90&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=http%3A%2F%2Fwww.techhive.com&correlator=[timestamp]&cust_params=video-id%3D57431%26video-channel%3Dhardware-accessories%26video-campaign%3D%26video-series%3Difa-2015%26video-category%3Difa%2Csmart-tv%26video-tag%3Difa",
+		prerollTimeout:5000, 
+		loadingSpinner:true
+	});
+}
+
+IDG.video.players['homepageVideoPlayer'].vjs.ready(function() {
+	
+	
+	$thm.logPlEvent({"b":"th","e":"view","t":"media","id":"57431"});
+
+	var thisPlayer = IDG.video.players['homepageVideoPlayer'];		
+	
+	
+	
+	
+				
+	
+		
+			thisPlayer.playlistIds = new Array(57431, 57554, 56143, 56183, 55925, 52903, 49030, 58003, 57784, 57664, 57605, 57743);
+			thisPlayer.playlistPos = 0;
+		
+		
+		this.addClass('hide-controls');			
+		this.addClass('player-not-started');
+		
+					
+		$('#homepageVideoPlayer .vjs-big-play-button').append($('#homepageVideoModule .lead-video-info'));
+		
+		
+		this.on('ended', function() {
+			if (typeof thisPlayer.playlistIds !== 'undefined') {
+				thisPlayer.advance();
+			}
+		});
+	
+	
+
+				
+	
+	
+	this.on("play", function() {
+				
+		$thm.logPlEvent({"b":"th","e":"play","t":"media","id":"57431"});
+		if (window.PARSELY) {
+            PARSELY.videoPlaying = true;
+            //console.log("PARSELY.videoPlaying = true");
+        }
+        
+        
+					
+		
+			thisPlayer.vjs.removeClass('hide-controls'); 
+			thisPlayer.vjs.removeClass('player-not-started');
+			
+				
+				$('#homepageVideoPlayer .vjs-poster').remove();
+				$('#homepageVideoPlayer .vjs-big-play-button .lead-video-info').remove();
+				thisPlayer.vjs.removeClass('show-helper-text');
+				
+				//this visually selects the initially loaded video in the playlist if the user initiates the play action from the player itself
+				if ($('.load-video.selected').length == 0) {
+					var currentVideoId = thisPlayer.playlistIds[thisPlayer.playlistPos];
+					var currentVideoItem = $('.load-video[data-id=\''+currentVideoId+'\']');
+					$(currentVideoItem).addClass('selected');
+				}
+											
+		
+	});
+	this.on("pause", function() { 
+		if (window.PARSELY) {
+            PARSELY.videoPlaying = false;
+            //console.log("PARSELY.videoPlaying = false");
+        }
+	});	
+	
+	var adCountDown;
+	this.on("adstart", function() {
+		IDG.GPT.backfillCompanionIfEmpty('gpt-skin', $('#skinAdTarget'));
+		if (IDG.video.players['homepageVideoPlayer'].vjs.ima3.adsManager) {
+			var $thisVideo = $(this.el());
+			var $thisVideoParent = $thisVideo.parent();
+			var $thisVideoItemText = $thisVideoParent.find('.item-text');
+			var $thisVideoOverlay = $thisVideoParent.find('.over');
+			$thisVideo.removeClass('not-loaded');
+			$thisVideoItemText.remove();
+			$thisVideoOverlay.remove();		
+			$('#homepageVideoPlayer').append('<div id="homepageVideoPlayerCountdown" class="preroll-countdown hidden">Your video begins in <span class="countdown">' + Math.round(IDG.video.players['homepageVideoPlayer'].vjs.ima3.adsManager.getRemainingTime()) + ' seconds.</span></div>');
+			adCountDown = setInterval(function() {
+			  var timeRemaining = IDG.video.players['homepageVideoPlayer'].vjs.ima3.adsManager.getRemainingTime();
+			  var timeRemainingRounded = Math.round(timeRemaining);			 
+			  if (Math.round(timeRemaining) > 0 && $("#homepageVideoPlayerCountdown").hasClass('hidden')) {
+			  		$("#homepageVideoPlayerCountdown").removeClass('hidden')
+			  } 
+			  var timeUnit;
+			  if (timeRemainingRounded == 1) {
+				  timeUnit = 'second';
+			  }
+			  else {
+				  timeUnit = 'seconds';
+			  }
+			  	$("#homepageVideoPlayerCountdown .countdown").html(Math.round(timeRemaining) + ' ' + timeUnit + '.');
+			  }, 1000);
+		}	
+	});
+	this.on("adserror", function() { 
+		IDG.GPT.backfillCompanionIfEmpty('gpt-skin', $('#skinAdTarget')); 
+	});
+	this.on("adend", function(){
+		if (adCountDown) {
+			clearInterval(adCountDown);
+		}
+		$("#homepageVideoPlayerCountdown").remove();
+	});
+	
+	
+	
+	
+});
+	
+
+$(document).ready(function() {	
+	$('.load-video').click(function() {
+		$('#homepageVideoPlayer .vjs-big-play-button .lead-video-info').remove();
+		var thisPlayer = IDG.video.players['homepageVideoPlayer'];
+		var videoId = $(this).attr('data-id');
+		//don't swap out the playing video if it's already the currently-playing video 
+		if (!$(this).hasClass('selected')) {
+			thisPlayer.clearAds();
+			var thisEl = $(this);
+			thisPlayer.swap(videoId, function(error){
+				if (error == null) {
+					if ($(thisEl).find('.sponsored-video').length == 0) {
+						thisPlayer.setPreroll($(thisEl).attr('data-ima-url'));
+					}
+					setNowPlaying(thisPlayer);
+					thisPlayer.vjs.play();
+				}
+				else {
+					thisPlayer.advance();
+				}
+			});
+			
+			//set helper text to show if you're loading this on mobile
+			thisPlayer.vjs.addClass('show-helper-text'); 
+			
+			//move the page back up to the top of the video player - this is especially important on horizontal mobile devices
+			//we don't want to do this on autoadvance, only if someone taps/clicks on a new video (otherwise we'd put it in setNowPlaying)
+			
+			if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)) {
+				//scroll to top of video module on larger devices
+				var videoTop = $('.video-module').offset().top;
+			}
+			else {
+				//scroll to top of player itself on smaller devices
+				var videoTop = $('.video-pane').offset().top;
+			}
+			$('html,body').animate({scrollTop: videoTop}, 1000);
+			}
+	   });
+});
+
+function setNowPlaying(thisPlayer) {
+	$('.load-video').removeClass('selected');
+	var currentVideoId = thisPlayer.playlistIds[thisPlayer.playlistPos];
+	var currentVideoItem = $('.load-video[data-id=\''+currentVideoId+'\']');
+	$(currentVideoItem).addClass('selected');
+	
+	//scroll to the video - nice to have if the selected video is below the scroll pane
+	
+	var maxScroll = $('.video-listing').height() - $('.video-listing-scroll').height();
+	var scrollTo = $('.video-listing-scroll').scrollTop() + $(currentVideoItem).position().top;
+	
+	if (scrollTo > maxScroll) {
+		$('.video-listing-scroll').animate({scrollTop: maxScroll}, 1000);
+	}
+	else {
+		$('.video-listing-scroll').animate({scrollTop: scrollTo}, 1000);
+	}
+}
+
+g_arrModules['Home Page:Right:Greenbot Promo'] = true;
+g_arrModules['Home Page:Right:Greenbot Promo:Article List'] = true;
+g_arrModules['Home Page:Right:Edit Homepage Promo Primary'] = true;
+g_arrModules['TH_HPMdw_G214_SG'] = true;
+g_arrModules['Home Page:Right:Bizdev Homepage Primary'] = true;
+g_arrModules['TH_HPMdw_G214_SG'] = true;
+g_arrModules['Home Page:Right:Text Ads'] = true;
+g_arrModules[''] = true;
+g_arrModules[''] = true;
+
+      $(document).ready(function() {
+        $(".learn-more, #learn-more-close").click(function() {
+          $("#learn-more-popup").toggle();
+          return false;
+        });
+      });
+
+g_arrModules['Article Detail:Funnel:TSO'] = true;
+
+	$.ajax('/ads/tso',{
+		dataType: 'json',
+		success: function(data){
+			renderTSO(data.tsoLinks);
+		},
+		error: function(jqXHR,error,thrown){
+			$thm.debug("TSO AJAX Status: "+error+": "+thrown,true);
+		}
+	});
+
+
+	$('details').details();
+
+</script>
+
+		<script type="text/javascript">a=top;f=self;if(a!=f){a.location=f.location;}</script>
+
+		
+			
+
+
+
+
+
+
+
+
+
+
+<iframe id="adsb" src="/ads/adData?t=TechHive+-+News%2C+reviews+and+tips+about+smart+homes%2C+home+security%2C+and+home+entertainment&amp;bc=index-home" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0" style="display:none;visibility:hidden;"></iframe>
+
+
+
+	
+	
+	    
+	    
+    	
+    	
+	    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		<!-- blx4 #243 blox4.html  -->
+			
+		
+			
+		
+		
+			
+				
+					
+					
+					
+						
+							
+					
+						
+					
+					
+					
+					
+					
+				
+				
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div id="" class="blx blxPadopstechnetpixel blxM243  blox4_html  blxC524"><script language="JavaScript" type="text/javascript">
+if (typeof ord=='undefined'){ord=Math.random()*10000000000000000;}
+document.write('<img src="http://ad.doubleclick.net/activity;dc_pixel_url=idgt.csmb;dc_seg=137551;ord=' + ord + '?" width="0" height="0" border="0" alt="">');
+</script>
+<noscript>
+<img src="http://ad.doubleclick.net/activity;dc_pixel_url=idgt.csmb;dc_seg=137551;ord=123456789?" width="0" height="0" border="0" alt="">
+</noscript> </div>
+		
+	
+
+		
+	
+
+
+
+
+		
+		
+		    
+	    	
+		   	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<!-- viglink TH ROS --> <script type="text/javascript"> var vglnk = { api_url: '//api.viglink.com/api', key: '4c477212ae07ce0d8cfedf19dfac7d5d' }; (function(d, t) { var s = d.createElement(t); s.type = 'text/javascript'; s.async = true; s.src = ('https:' == document.location.protocol ? vglnk.api_url : '//cdn.viglink.com/api') + '/vglnk.js'; var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r); window.vglnk = vglnk; }(document, 'script')); </script>
+		
+		
+	
+
+
+
+<!-- Begin BlueKai Tag-->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="http://tags.bkrtx.com/js/bk-coretag.js"></script>
+<script type="text/javascript" src="/www/js/jquery/jquery.cookie.js"></script>
+<!-- CryptoJS -->
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+<script type="text/javascript" src="/www/js/analytics/idg_bk_coreapi.js?v=20150917091405"></script>
+
+<script type="text/javascript">
+
+var blueKaiId=13981;
+var blueKaiPort=10;
+var brandCode = "th";
+var regUrl="http://regdev.idge.int/api/"
+var daysToRefresh=30;
+var bk_debug_log=false;
+
+
+regUrl="http://reg.idgenterprise.com/api/";
+
+
+
+daysToRefresh=30;
+
+
+	
+
+
+
+
+if(typeof(s) !== 'undefined')
+{
+
+ bk_addPageCtx("p2", (typeof(s.prop2)!='undefined')?s.prop2:'');
+ bk_addPageCtx("p9", (typeof(s.prop9)!='undefined')?s.prop9:'');
+ bk_addPageCtx("p18", (typeof(s.prop18)!='undefined')?s.prop18:'');
+ bk_addPageCtx("p54", (typeof(s.prop54)!='undefined')?s.prop54:'');
+ bk_addPageCtx("p56", (typeof(s.prop56)!='undefined')?s.prop56:'');
+ bk_addPageCtx("p59", (typeof(s.prop59)!='undefined')?s.prop59:'');
+ bk_addPageCtx("p60", (typeof(s.prop60)!='undefined')?s.prop60:'');
+
+}
+
+
+
+bk_addPageCtx("cmpy", "[]");
+
+bk_addPageCtx('tid', '');
+
+	
+
+try{
+	IDG.bkCoreApi.start();
+}
+catch(e){
+	//alert("Triggering catch")
+	bk_doJSTag(blueKaiId ,blueKaiPort);
+	if (window.console && window.console.log){
+		window.console.log("Error Occured While Processing Profile Siubmission")
+	}
+}
+
+
+
+//bk_doJSTag(13981, 10);
+
+</script>
+<!-- End BlueKai Tag -->
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+__reach_config = {
+	pid: "517187104240cfa21e0000eb",
+	title: "TechHive - News, reviews and tips about smart homes, home security, and home entertainment",
+	url: "http://www.techhive.com/",
+	
+	
+	landing_url: ""
+};
+(function()
+{ var s = document.createElement('script'); s.async = true; s.type = 'text/javascript'; s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s); }
+)();
+</script>
+
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a.pinterest-pinit').click(function(e){
+		socialTrack('Article','Pinterest','share');
+	});
+	$('li.redditShare').click(function(e) {
+		socialTrack('Article','Reddit','share');
+	});
+	$('a.shoppingExit').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event4";
+		s.prop26 = 'Merchant Exit';
+		s.linkTrackVars = "eVar30,prop26,prop54,events";
+		s.tl(true, 'o', 'Merchant Exit Link');
+	});
+
+	$('a.bingexit').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event6";
+		s.prop35="text ad exit";
+		s.linkTrackVars = "eVar35,prop35,events";
+		s.tl(true, 'o', 'Text Ad Exit');
+	});
+	$('a.itclick').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event5";
+		s.prop36="itunes exit";
+		s.linkTrackVars = "eVar36,prop36,events";
+		s.tl(true, 'o', 'iTunes Exit');
+	});
+	$('a.signinclick').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event32";
+		s.prop19="Internal Login";
+		s.linkTrackVars = "prop19,events";
+		s.tl(true, 'o', 'Login');
+	});
+	$('a.regclick').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event7,event18,prop20,prop22";
+		s.prop20="new registered user";
+		s.prop22="Internal Reg";
+		s.linkTrackVars = "events";
+		s.tl(true, 'o', 'Register');
+	});
+	$('.banner-tw').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event37";
+		s.prop49="twitter follow";
+		s.linkTrackVars = "prop49,events";
+		s.tl(true, 'o', 'Social Media Follow');
+		
+	});
+	$('.banner-fb').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event37";
+		s.prop49="facebook follow";
+		s.linkTrackVars = "prop49,events";
+		s.tl(true, 'o', 'Social Media Follow');
+		
+	});
+
+	$('a.item-link-container').click(function(e){
+		s = s_gi(g_sOmnitureReportSuite);
+		s.linkTrackEvents = s.events = "event45";
+		s.prop16=$(this).attr("href");
+		s.evar45=s.prop16;
+		s.linkTrackVars = "eVar32,prop16,events";
+		s.tl(true, 'o', 'Outbrain Click');
+	
+
+	});
+
+	if (typeof(FB)!='undefined') {
+		FB.Event.subscribe('edge.create', function(response){
+			s = s_gi(g_sOmnitureReportSuite);
+			s.linkTrackEvents = s.events = "event36";
+			s.prop48="facebook share";
+			s.linkTrackVars = "prop48,events";
+			s.tl(true, 'o', 'Social Media share');
+		});
+	}
+
+	if (typeof(digMag) != 'undefined'){
+		if(typeof(digLogin) != 'undefined'){
+			DigAnalytics.logSignIn(digLogin);
+		}
+	}
+
+
+});
+
+var Analytics = new Object();
+Analytics.logArticleComment = function(){
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackVars="prop25,eVar25,events"; 
+	s.linkTrackEvents="event19";
+	s.events="event19";
+	s.prop25 = 'Article Comment';
+	s.tl(this,'o','Article Comments');
+};
+Analytics.logSocialSignin = function(provider){
+	s = s_gi(g_sOmnitureReportSuite);
+
+	s.linkTrackEvents = s.events = "event32";
+	s.prop19=provider;
+	s.linkTrackVars = "prop19,events";
+	s.tl(true, 'o', provider);
+};
+Analytics.logInternalSignin = function(){
+	s = s_gi(g_sOmnitureReportSuite);
+	s.linkTrackEvents = s.events = "event32";
+	s.prop19="Internal Login";
+	s.linkTrackVars = "prop19,events";
+	s.tl(true, 'o', 'Login');
+};
+
+function sharingTrack(type, pixelLogString) {
+	s = s_gi(g_sOmnitureReportSuite);
+	s.eVar16="Sharing on: " + type;
+	s.linkTrackEvents = s.events = "event37";
+	s.prop49="social media sharing";
+	s.linkTrackVars = "prop49,eVar16,events";
+	s.tl(true, 'o', 'Social Media Sharing');
+    if (typeof IDG.Eloqua != "undefined") {
+        IDG.Eloqua.invoke_flash("social-" + type);
+	}
+    // Record Social Event in pixel logger
+    if (pixelLogString !== undefined) {
+    	$thm.logPlEvent({"b":"th","e":pixelLogString,"t":"article","id":""});
+    }   
+}
+
+function oClickTrack(key){
+	
+	// test for empty key and don't log if empty
+	if (typeof(key) != 'undefined' && key.length > 0){
+		s = s_gi(g_sOmnitureReportSuite);
+
+		s.linkTrackVars="eVar42,events";
+	    s.events="event49";
+	    s.linkTrackEvents="event49";
+	
+		s.eVar42 = key;
+		s.tl(true,'o','module click');
+	}
+};
+</script>
+<!-- SiteCatalyst code version: H.25.
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/www.idgcsmb.th/js/analytics/omniture/pcwmw-techhive/s_code.js"></script>
+<script language="JavaScript" type="text/javascript" id="omniVars"><!--
+g_sOmnitureReportSuite = "pcwmw-techhive"; 
+
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+//BEGIN OMNITURE VARS 
+s.pageName="home page:TechHive - News, reviews and tips about smart homes, home security, and home entertainment";
+s.pageType="";
+if (typeof omnitureChannel != 'undefined'){
+s.channel=omnitureChannel;
+}
+s.prop1="";s.eVar1="D=c1";
+s.prop2="";s.eVar2="D=c2";
+s.prop3="display type:home page";s.eVar3="D=c3";
+s.prop4="";s.eVar4="D=c4";
+s.prop6="";
+s.prop7="";s.eVar7="D=c7";
+s.prop9="";s.eVar9="D=c9";
+s.prop11="";s.eVar11="D=c11";
+s.prop12="";s.eVar12="D=c12";
+s.prop13="";s.eVar13="D=c13";
+s.prop14="";s.eVar14="D=c14";
+s.prop15="";s.eVar15="D=c15";
+s.prop17="uri:/";s.eVar17="D=c17";
+s.prop18="";s.eVar18="D=c18";
+s.prop24=getLoginStatusForOmniture();s.eVar24="D=c24";
+s.prop28=getTrackingToken('tk') ? "tokens:"+getTrackingToken('tk') : "";s.eVar28="D=c28";
+s.prop61="";s.eVar10="D=c61";
+s.prop37="rpn:th::home page:techhive - news, reviews and tips about smart homes, home security, and home entertainment";s.eVar37="D=c37";
+s.prop53="";s.eVar53="D=c53";
+s.prop54="";s.eVar30="D=c54";
+s.eVar33=s.prop55="";s.eVar33="D=c55";
+s.prop39="";s.eVar39="D=c39";
+s.prop56="";s.eVar40="D=c56";
+try {
+	s.prop41=IDG.GPT.getDisplayedAds(',') + ',' + IDG.GPT.getOtherAds(',');
+}
+catch (exception) {
+	console.log("Error with IDG.GPT " + exception);
+}
+
+//module tracking
+sModules = '';
+for(var i in g_arrModules){
+	if(g_arrModules[i] && i != ''){
+		sModules += i+',';
+	}
+}
+sModules = sModules.replace(/,$/,'');
+s.prop42 = sModules;
+s.eVar42="D=c42";
+s.list3=s.prop42+","+s.eVar42;
+
+//now set events
+s.events="";
+
+
+
+//force all values to lower case for reporting consistency
+for(var p in s){
+	if(s[p] && p.match(/^(prop|ceVar)\d+$/)){
+		//console.log(p+": "+s[p]);
+		s[p] = s[p].toLowerCase();
+		//console.log(p+": "+s[p]);
+	}
+}
+//END OMNITURE VARS 
+
+
+/* Conversion Variables */
+s.campaign=getTrackingToken('tk') ? "tokens:"+getTrackingToken('tk') : "";
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://pcworldcommunication.d2.sc.omtrdc.net/b/ss/pcwmw-techhive/1/H.25--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.25. -->
+
+
+	
+		<div id="loginModal"></div>
+		<div id="logoffModal"></div>
+		<div id="abuseModal"></div>
+
+		
+			<!-- rev: 20150917091405  -->
+		
+		
+		
+		
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<div id="gpt-skin" class=""></div>
+    			<script type="text/javascript">
+	    			try {
+	    				IDG.GPT.addDisplayedAd("gpt-skin", "true");
+	    				googletag.cmd.push(function() { googletag.display('gpt-skin'); });
+	    			}
+	    			catch (exception) {
+	    				console.log("Error with IDG.GPT: " + exception);
+	    			}
+    			</script>
+		
+		
+		
+	
+ 
+			
+		
+    	
+			
+
+
+
+
+
+
+
+
+
+
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <span id="parsely-cfg" data-parsely-site="techhive.com"></span>
+</div>
+<script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+      if (e) return;
+      e = d.createElement(s); e.id = i; e.async = true;
+      e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+				
+	</body>
+</html>

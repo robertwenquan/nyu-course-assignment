@@ -1,0 +1,420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link rel="stylesheet" title="default stylesheet" media="screen" type="text/css" href="http://cdn4.explainthatstuff.com/ets2.css">
+<link rel="canonical" href="http://www.explainthatstuff.com/introduction-to-neural-networks.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>How neural networks work - A simple introduction</title>
+  <meta name="keywords" content="neural network, connectionist, PDP, parallel distributed processing">
+  <meta name="description" content="An easy-to-understand introduction to neural networks: how can a computer learn to recognize patterns and make decisions like a human brain?">
+<link rel="shortcut icon" href="http://cdn4.explainthatstuff.com/favicon.ico">
+
+<!-- Begin Cookie Consent plugin. Original version by Silktide (http://silktide.com/cookieconsent), slightly modified by
+explainthatstuff.com on July 29, 2015), released under GNU General Public License Version (http://www.gnu.org/licenses/gpl.txt) as published by the Free Software Foundation.
+-->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to improve your experience of our site and to serve relevant, personalized advertising.","dismiss":"Got it!","learnMore":"More info","link":"http://www.explainthatstuff.com/privacy.html","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="http://cdn4.explainthatstuff.com/cookieconsent3.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body itemscope itemtype="http://schema.org/Article"><div class="container"><a name="pagetop"></a>
+
+
+
+
+
+
+<div class="header"><IMG class="headlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif"></div>
+
+<div class="searchtop">
+<!-- SiteSearch Google top search start -->
+<form action="http://www.explainthatstuff.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1030585152417294:7662706493" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="40" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<!-- SiteSearch Google top search end -->
+</div>
+
+<!-- Top ad removed -->
+
+<!-- Ad placement: computing -->
+
+
+<div class="crumb">
+You are here:
+<a href="/">Home page</a> &gt;
+<a href="articles_computers.html">Computers</A> &gt;
+Neural networks
+</div>
+
+
+
+<div class="nav">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+
+<div class="adrightsm">Advertisement
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="1317849019"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+        
+<div class="main2">
+<p><img itemprop="image" src="http://cdn4.explainthatstuff.com/neural-network.jpg" class="ileftno" height="250" width="220" ALT="General illustration of a neural network: a brain scan photo overlaid with dots to represent connected neural units."></p>
+
+<h1 itemprop="headline name">Neural networks</h1>
+
+<!-- google_ad_section_start(weight=ignore) -->
+
+
+<div class="sharetop"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.explainthatstuff.com%2Fintroduction-to-neural-networks.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+<p>by <a href="chris-woodford.html">Chris Woodford</a>. <span class="italic">Last updated: November 19, 2014.</span></p>
+<meta itemprop="alternativeHeadline" content="How do neural networks work?">
+<meta itemprop="description" content="What is a computerized neural network, and how does it process information in a similar way to the human brain?">
+<meta itemprop="datePublished" content="2011-03-05">
+<meta itemprop="dateModified" content="2014-11-19">
+
+
+<p itemprop="articleBody"><span class="dropcap">W</span>hich is better&mdash;computer or brain? Ask most people if they want a brain like a <a href="howcomputerswork.html">computer</A> and they'd probably jump at the chance. But look at the kind of work scientists have been doing over the last couple of decades and you'll find many of them have been trying hard to make their computers more like brains! How? With the help of <span class="bold">neural networks</span>&mdash;computer programs assembled from hundreds, thousands, or millions of artificial brain cells that learn and behave in a remarkably similar way to human brains. What exactly are neural networks? How do they work? Let's take a closer look!</P>
+
+<p><span class="credit">Photo: Computers and brains have much in common, but they're essentially very different. What happens if you combine the best of both worlds&mdash;the power of a computer and the amazing flexibility of a brain? You get a superbly useful neural network. Photo of a brain scan courtesy of National Institute on Drug Abuse and <a href="http://www.nih.gov/index.html" target="_blank">National Institutes of Health (NIH)</a> with overlaid neural network by explainthatstuff.com.</span></p>
+
+<h2>How brains differ from computers</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/neuron-axon-dendrites.gif" class="iright" height="350" width="350" ALT="Artwork illustrating the basic structure of a neuron, including the cell body, the dendrites, and the axon."></p>
+
+<P>You often hear people comparing the human brain and the <a href="electronics.html">electronic</A> computer and, on the face of it, they do have things in common. A typical brain contains something like 100 billion miniscule cells called <span class="bold">neurons</span> (no-one knows exactly how many there are and estimates go from about 50 billion to as many as 500 billion). Each neuron is made up of a <span class="bold">cell body</span> (the central mass of the cell) with a number of connections coming off it: numerous <span class="bold">dendrites</span> (the cell's inputs&mdash;carrying information toward the cell body) and a single <span class="bold">axon</span> (the cell's output&mdash;carrying information away). Neurons are so tiny that you could pack about 100 of their cell bodies into a single millimeter. (It's also worth noting, briefly in passing, that neurons make up only 10 percent of all the cells in the brain; the rest are <a href="http://en.wikipedia.org/wiki/Glial_cell" target="_blank">glial cells</A>, also called neuroglia, that support and protect the neurons and feed them with energy that allows them to work and grow.) Inside a <a href="howcomputerswork.html">computer</a>, the equivalent to a brain cell is a
+<a href="nanotechnologyforkids.html">nanoscopically</a> tiny switching device called a <a href="howtransistorswork.html">transistor</A>. The latest, cutting-edge microprocessors (single-chip computers) contain over 2 billion transistors; even a basic microprocessor has about 50 million transistors, all packed onto an <a href="integratedcircuits.html">integrated circuit</A> just 25mm square (smaller than a postage stamp)!</P>
+
+<p><span class="credit">Artwork: A neuron: the basic structure of a brain cell, showing the central cell body, the dendrites (leading into the cell body), and the axon (leading away from it). Courtesy of National Institute on Drug Abuse and <a href="http://www.nih.gov/index.html" target="_blank">National Institutes of Health (NIH)</a>.</span></p>
+
+<P>
+That's where the comparison between computers and brains begins and ends, because the two things are completely different. It's not just that computers are cold metal boxes stuffed full of binary numbers, while brains are warm, living, things packed with thoughts, feelings, and memories. The real difference is that computers and brains "think" in completely different ways. The transistors in a computer are wired in relatively simple, <span class="italic">serial</span> chains (each one is connected to maybe two or three others in basic arrangements known as <a href="logicgates.html">logic gates</a>), whereas the neurons in a brain are densely interconnected in complex, <span class="italic">parallel</span> ways (each one is connected to perhaps 10,000 of its neighbors).</P>
+
+
+<p><img src="http://cdn4.explainthatstuff.com/integratedcircuitnasa.jpg" class="ileftno" height="288" width="327" ALT="Inside a typical microchip."></p>
+<P>
+This essential structural difference between computers (with maybe a few hundred million transistors connected in a relatively simple way) and brains (perhaps 10&ndash;100 times more brain cells connected in richer and more complex ways) is what makes them "think" so very differently. Computers are perfectly designed for storing vast amounts of meaningless (to them) information and rearranging it in any number of ways according to precise instructions (programs) we feed into them in advance. Brains, on the other hand, learn slowly, by a more roundabout method, often taking months or years to make complete sense of something really complex. But, unlike computers, they can spontaneously put information together in astounding new ways&mdash;that's where the human creativity of a Beethoven or a Shakespeare comes from&mdash;recognizing original patterns, forging connections, and seeing the things they've learned in a completely different light.</P>
+
+<P>
+Wouldn't it be great if computers were more like brains? That's where neural networks come in!
+</P>
+
+<p><span class="credit">Photo: Electronic brain? Not quite. Inside, a typical computer chip (the central square in this artwork) is made from thousands, millions, or perhaps even a couple of billion tiny <a href="electronics.html">electronic</a> switches called transistors, but there are far fewer of them than there are cells in the human brain. Photo by courtesy of <a href="http://grcimagenet.grc.nasa.gov/" target="_blank">NASA Glenn Research Center (NASA-GRC)</A>.</span></p>
+
+<!-- google_ad_section_end -->
+
+<h2>What is a neural network?</h2>
+
+<P>The basic idea behind a neural network is to <span class="italic">simulate</span> (copy in a simplified but reasonably faithful way) lots of densely interconnected brain cells inside a computer so you can get it to learn things, recognize patterns, and make decisions in a humanlike way. The amazing thing about a neural network is that you don't have to program it to learn explicitly: it learns all by itself, just like a brain!</P>
+
+<P>
+But it isn't a brain. It's important to note that neural networks are (generally) software simulations: they're made by programming very ordinary computers, working in a very traditional fashion with their ordinary transistors and serially connected logic gates, to behave as though they're built from billions of highly interconnected brain cells working in parallel. No-one has yet attempted to build a computer by wiring up transistors in a densely parallel structure exactly like the human brain. In other words, a neural network differs from a human brain in exactly the same way that a <a href="how-computer-models-work.html">computer model</a> of the weather differs from real clouds, snowflakes, or sunshine. Computer simulations are just collections of algebraic variables and mathematical equations linking them together (in other words, numbers stored in boxes whose values are constantly changing). They mean nothing whatsoever to the computers they run inside&mdash;only to the people who program them.</P>
+
+<h3>Real and artificial neural neworks</h3>
+<P>
+Before we go any further, it's also worth noting some jargon. Strictly speaking, neural networks produced this way are called <span class="bold">artificial neural networks</span> (or ANNs) to differentiate them from the real neural networks (collections of interconnected brain cells) we find inside our brains. You might also see neural networks referred to by names like connectionist machines (the field is also called connectionism), parallel distributed processors (PDP), thinking machines, and so on&mdash;but in this article we're going to use the term "neural network" throughout and always use it to mean "artificial neural network."</P>
+
+
+<h2>What does a neural network consist of?</h2>
+
+<p><img src="http://cdn4.explainthatstuff.com/neural-network-structure.png" class="iright" height="300" width="300" ALT="Artwork showing how a neural network is made up of input, hidden, and output units connected together."></p>
+
+<P>
+A typical neural network has anything from a few dozen to hundreds, thousands, or even millions of artificial neurons called
+<span class="bold">units</span> arranged in a series of layers, each of which connects to the layers on either side. Some of them, known as <span class="bold">input units</span>, are designed to receive various forms of information from the outside world that the network will attempt to learn about, recognize, or otherwise process. Other units sit on the opposite side of the network and signal how it responds to the information it's learned; those are known as <span class="bold">output units</span>. In between the input units and output units are one or more layers of <span class="bold">hidden units</span>, which, together, form the majority of the artificial brain. Most neural networks are <span class="bold">fully connected</span>, which means each hidden unit and each output unit is connected to every unit in the layers either side. The connections between one unit and another are represented by a number called a <span class="bold">weight</span>, which can be either positive (if one unit excites another) or negative (if one unit suppresses or inhibits another). The higher the weight, the more influence one unit has on another. (This corresponds to the way actual brain cells trigger one another across tiny gaps called synapses.)</P>
+
+<p><span class="credit">Photo: A fully connected neural network is made up of input units (red), hidden units (blue), and output units (yellow), with all the units connected to all the units in the layers either side. Inputs are fed in from the left, activate the hidden units in the middle, and make outputs feed out from the right. The strength (weight) of the connection between any two units is gradually adjusted as the network learns.</span></p>
+
+
+<h2>How does a neural network learn things?</h2>
+
+<P>Information flows through a neural network in two ways. When it's learning (being trained) or operating normally (after being trained), patterns of information are fed into the network via the input units, which trigger the layers of hidden units, and these in turn arrive at the output units. This common design is called a <span class="bold">feedforward network</span>. Not all units "fire" all the time. Each unit receives inputs from the units to its left, and the inputs are multiplied by the weights of the connections they travel along. Every unit adds up all the inputs it receives in this way and (in the simplest type of network) if the sum is more than a certain <span class="bold">threshold</span> value, the unit "fires" and triggers the units it's connected to (those on its right).</P>
+
+<p><img src="http://cdn4.explainthatstuff.com/bowling-alley.jpg" class="ileftno" height="214" width="300" ALT="A man launches a red ball down a ten-pin bowling alley toward skittles."></p>
+
+
+<P>
+For a neural network to learn, there has to be an element of feedback involved&mdash;just as children learn by being told what they're doing right or wrong. In fact, we all use feedback, all the time. Think back to when you first learned to play a game like ten-pin bowling. As you picked up the heavy ball and rolled it down the alley, your brain watched how quickly the ball moved and the line it followed, and noted how close you came to knocking down the skittles. Next time it was your turn, you remembered what you'd done wrong before, modified your movements accordingly, and hopefully threw the ball a bit better. So you used feedback to compare the outcome you wanted with what actually happened, figured out the difference between the two, and used that to change what you did next time ("I need to throw it harder," "I need to roll slightly more to the left," "I need to let go later," and so on). The bigger the difference between the intended and actual outcome, the more radically you would have altered your moves.
+</P>
+
+<p><span class="credit">Photo: Bowling: You learn how to do skillful things like this with the help of the neural network inside your brain. Every time you throw the ball wrong, you learn what corrections you need to make next time. Photo by Jon Dasbach courtesy of <a href="http://www.navy.mil/view_image.asp?id=87972" target="_blank">US Navy</A>.</span></p>
+
+
+<P>
+Neural networks learn things in exactly the same way, typically by a feedback process called <span class="bold">backpropagation</span> (sometimes abbreviated as "backprop"). This involves comparing the output a network produces with the output it was meant to produce, and using the <span class="italic">difference</span> between them to modify the weights of the connections between the units in the network, working from the output units through the hidden units to the input units&mdash;going backward, in other words. In time, backpropagation causes the network to learn, reducing the difference between actual and intended output to the point where the two exactly coincide, so the network figures things out exactly as it should.</P>
+
+
+<h2>How does it work in practice?</h2>
+
+<P>Once the network has been trained with enough learning examples, it reaches a point where you can present it with an entirely new set of inputs it's never seen before and see how it responds. For example, suppose you've been teaching a network by showing it lots of pictures of chairs and tables, represented in some appropriate way it can understand, and telling it whether each one is a chair or a table. After showing it, let's say, 25 different chairs and 25 different tables, you feed it a picture of some new design it's not encountered before&mdash;let's say a chaise longue&mdash;and see what happens. Depending on how you've trained it, it'll attempt to categorize the new example as either a chair or a table, generalizing on the basis of its past experience&mdash;just like a human. Hey presto, you've taught a computer how to recognize furniture!</P>
+
+<P>
+That doesn't mean to say a neural network can just "look" at pieces of furniture and instantly respond to them in meaningful ways; it's not behaving like a person. Consider the example we've just given: the network is not actually looking at pieces of furniture. The inputs to a network are essentially binary numbers: each input unit is either switched on or switched off. So if you had five input units, you could feed in information about five different characteristics of different chairs using binary (yes/no) answers. The questions might be 1) Does it have a back? 2) Does it have a top? 3) Does it have soft upholstery? 4) Can you sit on it comfortably for long periods of time? 5) Can you put lots of things on top of it? A typical chair would then present as Yes, No, Yes, Yes, No or 10110 in binary, while a typical table might be No, Yes, No, No, Yes or 01001. So, during the learning phase, the network is simply looking at lots of numbers like 10110 and 01001 and learning that some mean chair (which might be an output of 1) while others mean table (an output of 0).</P>
+
+<h2>What are neural networks used for?</h2>
+
+<P>
+On the basis of this example, you can probably see lots of different applications for neural networks that involve recognizing patterns and making simple decisions about them. In <a href="howplaneswork.html">airplanes</A>, you might use a neural network as a basic autopilot, with input units reading signals from the various cockpit instruments and output units modifying the plane's controls appropriately to keep it safely on course. Inside a factory, you could use a neural network for quality control. Let's say you're producing clothes washing <a href="detergents.html">detergent</a> in some giant, convoluted chemical process. You could measure the final detergent in various ways (its color, acidity, thickness, or whatever), feed those measurements into your neural network as inputs, and then have the network decide whether to accept or reject the batch. </P>
+
+<P>
+There are lots of applications for neural networks in security, too. Suppose you're running a bank with many thousands of credit-card transactions passing through your computer system every single minute. You need a quick automated way of identifying any transactions that might be fraudulent&mdash;and that's something for which a neural network is perfectly suited. Your inputs would be things like 1) Is the cardholder actually present? 2) Has a valid PIN number been used? 3) Have five or more transactions been presented with this card in the last 10 minutes? 4) Is the card being used in a different country from which it's registered? &mdash;and so on. 
+<!-- Text copyright &copy; Chris Woodford 2011. All rights reserved.  -->
+With enough clues, a neural network can flag up any transactions that look suspicious, allowing a human operator to investigate them more closely. In a very similar way, a bank could use a neural network to help it decide whether to give loans to people on the basis of their past credit history, current earnings, and employment record.</P>
+
+<p><img src="http://cdn4.explainthatstuff.com/handwriting-recognition-tablet-computer.jpg" class="irightno" height="225" width="300" ALT="Writing the words 'neural network' on a tablet computer."></p>
+
+<P>
+Many of the things we all do everyday involve recognizing patterns and using them to make decisions, so neural networks can help us out in zillions of different ways. They can help us forecast the stockmarket or the weather, operate <a href="radar.html">radar</A> scanning systems that automatically identify enemy aircraft or ships, and even help doctors to diagnose complex diseases on the basis of their symptoms. There might be neural networks ticking away inside your computer or your <a href="cellphones.html">cellphone</A> right this minute. If you use cellphone apps that <a href="how-ocr-works.html">recognize your handwriting</A> on a <a href="touchscreens.html">touchscreen</a>, they might be using a simple neural network to figure out which characters you're writing by looking out for distinct features in the marks you make with your fingers (and the order in which you make them). Some kinds of <a href="voicerecognition.html">voice recognition software</A> also use neural networks. And so do some of the email programs that automatically differentiate between genuine emails and <A href="how-to-block-spam.html">spam</A>.</P>
+
+<P>
+All in all, neural networks have made computer systems more useful by making them more human. So next time you think you might like your brain to be as reliable as a computer, think again&mdash;and be grateful you have such a superb neural network already installed in your head!</P>
+
+<p><span class="credit">Photo: Handwriting recognition on a touchscreen, tablet computer is one of many applications perfectly suited to a neural network. Each character (letter, number, or symbol) that you write is recognized on the basis of key features it contains (vertical lines, horizontal lines, angled lines, curves, and so on) and the order in which you draw them on the screen. Neural networks get better and better at recognizing over time.</span></p>
+
+
+
+<div class="sharebot"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.explainthatstuff.com%2Fintroduction-to-neural-networks.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+
+<h2>Find out more</h2>
+
+<h3>On this website</h3>
+<UL>
+<li><a href="how-computer-memory-works.html">Computer memory</a></li>
+<li><a href="internet-and-brain.html">Internet and brain</a></li>
+<li><a href="introduction-to-psychology.html">Psychology</a></li>
+</UL>
+
+
+<h3>Articles</h3>
+<ul>
+<li><a href="http://www.wired.com/2014/06/siri_ai/" target="_blank">Siri Will Soon Understand You a Whole Lot Better</a> by Robert McMillan, Wired, 30 June 2014. How neural networks are powering intelligent machine-learning applications, such as Apple's Siri and Skype's auto-translation.</li>
+<li><a href="http://news.bbc.co.uk/1/hi/sci/tech/7740484.stm" target="_blank">IBM plans 'brain-like' computers</a> by Jason Palmer, BBC News, 21 November 2008.</li>
+<li><a href="http://news.bbc.co.uk/1/hi/sci/tech/1542262.stm" target="_blank">Robot brains become more human</a> by Mark Ward, BBC News, 23 September 2001.</li>
+<li><a href="http://www.guardian.co.uk/technology/2004/sep/09/onlinesupplement.insideit" target="_blank">Mimicking fraudsters</a> by Ken Young, The Guardian, 9 September 2004: How banks are using neural networks and artificial intelligence software to fight fraud.</li>
+<li><a href="http://www.scientificamerican.com/article.cfm?id=can-neural-network-comput" target="_blank">Can neural network computers learn from experience...?</a> Scientific American, 21 October 1999: Researchers give their differing opinions.</li>
+</ul>
+
+
+<h3>Books</h3>
+<ul>
+<li>Gurney, Kevin. <a href="http://books.google.com/books?id=HOsvllRMMP8C" target="_blank">An introduction to neural networks</a>. London, England: UCL Press, 1997.</li>
+<li>Hassoun, Mohamad. <a href="http://books.google.com/books?id=Otk32Y3QkxQC" target="_blank">Fundamentals of artificial neural networks</a>. Boston, MA: MIT Press, 1994.</li>
+<li>Haykin, Simon. <a href="http://books.google.com/books?id=K7P36lKzI_QC" target="_blank">Neural Networks and Learning Machines</a>. Englewood Cliffs, NJ: Prentice Hall, 2009. </li>
+<li>Rojas, Ra&uacute;l. <a href="http://books.google.com/books?id=txsjjYzFJS4C" target="_blank">Neural Networks: A systematic Introduction</a>. Berlin: Springer Verlag, 1996. Also available in <a href="http://page.mi.fu-berlin.de/rojas/neural/" target="_blank">PDF form</A> from the author's website.</li>
+<li>Rumelhart, David E. and James L. McClelland. <a href="http://books.google.com/books?id=davmLgzusB8C" target="_blank">Parallel distributed processing: Explorations in the microstructure of cognition</a>. Boston, MA: MIT Press, 1987. The classic text that helped to reintroduce neural networks to a new generation of researchers.</li>
+</ul>
+
+
+</div>
+
+
+<div class="main2">
+<h2>If you liked this article...</h2>
+<P>You might like my new book, <a href="mybooks.php">Atoms Under the Floorboards: The Surprising Science Hidden in Your Home</a>, published worldwide by Bloomsbury.</P>
+</div>
+
+<!-- Desktop bottom ad -->
+<div class="bottomsquare"><span class="slinks2">Sponsored links</span>
+<P>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="9721739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</P>
+</div>
+
+
+
+<div class="cc"><P><span class="highlight">Please do NOT copy our articles onto blogs and other websites</span></P>
+<p>Text copyright &copy; Chris Woodford 2011. All rights reserved. <a href="copyright-and-legal-notices.html">Full copyright notice and terms of use</A>.</p>
+
+</div>
+
+
+<div class="sharesites"><h2>Follow us</h2>
+<ul class="nobull">
+<LI class="inline2"><a href="followus.html" title="Follow us on Facebook"><IMG class="sprite shr4" ALT="Follow us on Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a rel="publisher" href="https://plus.google.com/115402323314399894520" target="_blank" title="Follow us on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="rss.xml" target="_blank" title="Subscribe to our RSS feed"><IMG class="sprite shr10" ALT="RSS"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.flickr.com/photos/explainthatstuff" target="_blank" title="Find our photos on Flickr"><IMG class="sprite shr11" ALT="Flickr"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.pinterest.com/explainthatstuf/" title="Follow us on Pinterest" target="_blank"><IMG class="sprite shr12" ALT="Follow us on Pinterest" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+</ul>
+</div>
+
+<div class="sharesites"><h2>Rate this page</h2>
+<p>Please <a href="feedback.php">rate or give feedback on this page</A> and I will make a donation to WaterAid.</P>
+</div>
+
+
+<div class="sharesites">
+<h2>Share this page</h2>
+<p>Press CTRL + D to bookmark this page for later or tell your friends about it with:</p>
+
+<ul class="nobull">
+<LI class="inline2"><a title="Share this on Facebook"
+ href="http://www.facebook.com/sharer.php?u=http://www.explainthatstuff.com/introduction-to-neural-networks.html"><IMG class="sprite shr4" ALT="Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a
+ title="Post this page to Delicious"
+ href="http://del.icio.us/post?url=http://www.explainthatstuff.com/introduction-to-neural-networks.html&amp;title=Simple%20introduction%20to%20neural%20networks"><IMG class="sprite shr1" ALT="Delicious" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Digg"
+ href="http://digg.com/submit?url=http://www.explainthatstuff.com/introduction-to-neural-networks.html&amp;title=Simple%20introduction%20to%20neural%20networks"><IMG class="sprite shr2" ALT="Digg" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Reddit"
+ href="http://reddit.com/submit?url=http://www.explainthatstuff.com/introduction-to-neural-networks.html&amp;title=Simple%20introduction%20to%20neural%20networks"><IMG class="sprite shr3" ALT="Reddit" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this page on StumbleUpon"
+ href="http://www.stumbleupon.com/submit?url=http://www.explainthatstuff.com/introduction-to-neural-networks.html&amp;title=Simple%20introduction%20to%20neural%20networks"><IMG class="sprite shr5" ALT="StumbleUpon" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Add this to your Google Bookmarks"
+ href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.explainthatstuff.com/introduction-to-neural-networks.html&amp;title=Simple%20introduction%20to%20neural%20networks"><IMG class="sprite shr6" ALT="Google Bookmarks" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="http://www.twitter.com/home?status=A+simple+introduction+to+neural+networks+http://www.explainthatstuff.com/introduction-to-neural-networks.html" title="Tweet this"><IMG class="sprite shr7" ALT="Twitter" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Email this page to a friend"
+ href="mailto:?subject=Simple%20introduction%20to%20neural%20networks&amp;body=Take%20a%20look%20at%20this%20page:%20http://www.explainthatstuff.com/introduction-to-neural-networks.html"><IMG class="sprite shr8" ALT="Email" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="https://plus.google.com/101536672158385330677?rel=author" title="Connect on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+</UL>
+
+
+<h2>Cite this page</h2>
+
+<!---Citation-->
+<div class="citation">
+<P>
+Woodford, Chris. (2011) Neural networks. Retrieved from http://www.explainthatstuff.com/introduction-to-neural-networks.html. [Accessed (Insert date here)]
+</P>
+</div>
+
+<!--<h2>Link to this page</h2>
+
+<P>If you'd like to link to this page, thank you! Here's some code you can cut and paste:</P>
+
+<div class="citation">
+<P>
+&lt;a href="http://www.explainthatstuff.com/introduction-to-neural-networks.html"&gt;A simple introduction to neural networks&lt;/a&gt;
+</P>
+</div>-->
+
+
+</div>
+
+
+
+
+
+
+<!-- advinfo2 -->
+
+<!-- bottom search position -->
+
+
+
+
+
+<div class="alsoon"><a name="navigation"></a>
+<IMG class="footlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif">
+<h2>More to explore on our website...</h2>
+<ul class="nobull">
+<LI class="inline"><a href="articles_communications.html">Communications</A></LI>
+<LI class="inline"><a href="articles_computers.html">Computers</A></LI>
+<LI class="inline"><a href="articles_electricity.html">Electricity &amp; electronics</A></LI>
+<LI class="inline"><a href="articles_energy.html">Energy</A></LI>
+<LI class="inline"><a href="articles_engineering.html">Engineering</A></LI>
+<LI class="inline2"><a href="articles_environment.html">Environment</A></LI><BR>
+<LI class="inline"><a href="articles_gadgets.html">Gadgets</A></LI>
+<LI class="inline"><a href="articles_homelife.html">Home life</A></LI>
+<LI class="inline"><a href="articles_materials.html">Materials</A></LI>
+<LI class="inline"><a href="articles_science.html">Science</A></LI>
+<LI class="inline"><a href="articles_tools.html">Tools &amp; instruments</A></LI>
+<LI class="inline2"><a href="articles_transportation.html">Transportation</A></LI>
+</UL>
+</div>
+
+<div class="footer">
+<ul class="nobull">
+<li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li></ul>
+</div>
+
+<div class="totop">&uarr; <a href="#pagetop">Back to top</a></div>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(d, t) {
+var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = 'https://apis.google.com/js/plusone.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+  })();
+</script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
+
+
+</body>
+</html>

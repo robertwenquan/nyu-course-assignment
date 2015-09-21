@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Britannica Digital Learning —</title><meta name="robots" content="noodp,noydir" />
+<link rel="alternate" type="application/rss+xml" title="Britannica Digital Learning &raquo; Feed" href="http://info.eb.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Britannica Digital Learning &raquo; Comments Feed" href="http://info.eb.com/comments/feed/" />
+<link rel="canonical" href="http://info.eb.com/" />
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='http://info.eb.com/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=3.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='nivoslider-css'  href='http://info.eb.com/wp-content/plugins/nivo-slider/scripts/nivo-slider/nivo-slider.css?ver=3.8.5' type='text/css' media='all' />
+<link rel='stylesheet' id='backcountry-child-theme-css'  href='http://info.eb.com/wp-content/themes/backcountry/style.css?ver=2.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ubermenu-basic-css'  href='http://info.eb.com/wp-content/plugins/ubermenu/styles/basic.css?ver=2.0.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ubermenu-custom-css'  href='http://info.eb.com/wp-content/plugins/ubermenu/styles/custom.css?ver=2.0.1.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://info.eb.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://info.eb.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://info.eb.com/wp-includes/js/comment-reply.min.js?ver=3.8.5'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://info.eb.com/xmlrpc.php?rsd" />
+<link rel="Shortcut Icon" href="http://info.eb.com/wp-content/themes/backcountry/images/favicon.ico" type="image/x-icon" />
+<link rel="pingback" href="http://info.eb.com/xmlrpc.php" />
+<link href="/wp-includes/jflow.style.css" type="text/css" rel="stylesheet"/>
+<script src="/wp-includes/js/jquery.colorbox-min.js" type="text/javascript"></script>
+<link href="/wp-includes/css/colorbox.css" type="text/css" rel="stylesheet"/>
+<script src="/wp-includes/js/jflow.plus.min.js" type="text/javascript"></script>
+<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+		<![endif]-->
+
+<script type="text/javascript">
+
+	jQuery(document).ready(function(){
+
+	    jQuery("#myController").jFlow({
+
+			controller: ".jFlowControl", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#mySlides",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign			
+			effect: "flow", //this is the slide effect (rewind or flow)
+			width: "909px",  // this is the width for the content-slider
+			height: "302px",  // this is the height for the content-slider
+			duration: 600,  // time in milliseconds to transition one slide			
+			pause: 7000, //time between transitions
+			prev: ".jFlowPrev", // must be class, use . sign
+			next: ".jFlowNext", // must be class, use . sign
+			auto: true	
+
+    });
+				jQuery('a.gallery').colorbox();
+
+});
+
+</script>
+<script src="/wp-content/themes/backcountry/js/language-en.js"></script>
+<script src="/wp-content/themes/backcountry/js/nopcart.js"></script>
+
+<!-- Engage Web Tracking Code -->
+<!-- Please insert the following code between your HTML document head tags to maintain a common reference to a unique visitor across one or more external web tracked sites. -->
+<meta name="com.silverpop.brandeddomains" content="www.pages04.net" />
+
+<!-- Optionally uncomment the following code between your HTML document head tags if you use Engage Conversion Tracking (COT). -->
+<!--<meta name="com.silverpop.cothost" content="engage4.silverpop.com" />-->
+
+<script src="http://contentz.mkt941.com/lp/static/js/iMAWebCookie.js?1b01ddd-136555594e5-5fb2bd720d5cf67c7bdb5a02a7e699d8&h=www.pages04.net" type="text/javascript"></script>
+
+<!-- For external web sites running under SSL protocol (https://) please uncomment this block and comment out the non-secure (http://) implementation. -->
+<!--<script src="https://www.sc.pages04.net/lp/static/js/iMAWebCookie.js?1b01ddd-136555594e5-5fb2bd720d5cf67c7bdb5a02a7e699d8&h=www.pages04.net" type="text/javascript"></script>--><style type="text/css">#header { background: url(http://info.eb.com/wp-content/uploads/2014/05/info_header2.png) no-repeat !important; }</style>
+
+</head>
+<body class="home page page-id-2295 page-template page-template-home-feature-php custom-header header-image full-width-content" class="post->ID; echo get_post_meta($postid, 'class', true);?>">
+<div id="wrap">
+<div id="header"><div class="wrap"><div id="title-area"><p id="title"><a href="http://info.eb.com/">Britannica Digital Learning</a></p></div><div class="widget-area header-widget-area"><div id="nav_menu-2" class="widget widget_nav_menu"><div class="widget-wrap"></div></div>
+</div></div></div><div id="subnav"><div class="wrap"><div id="megaMenu" class="megaMenuContainer megaMenu-nojs megaFullWidth megaMenuHorizontal megaMenuOnHover wpmega-withjs wpmega-noconflict"><ul id="megaUber" class="megaMenu"><li id="menu-item-3696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ss-nav-menu-item-0 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-fullWidth mega-colgroup mega-colgroup-3 ss-nav-menu-mega-alignCenter ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">PreK-8</span></span>
+<ul class="sub-menu sub-menu-1">
+	<li id="menu-item-3678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Most Popular Titles</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-10014" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/britannica-escolar/"><span class="menu-description"> </span><span class="wpmega-link-title">Britannica Escolar</span></a></li>
+		<li id="menu-item-3784" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/britannica-school/"><span class="menu-description"> </span><span class="wpmega-link-title">Britannica School</span></a></li>
+		<li id="menu-item-3697" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3698" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/image-quest/"><span class="menu-description"> </span><span class="wpmega-link-title">ImageQuest</span></a></li>
+		<li id="menu-item-3699" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/pathways-science/"><span class="menu-description"> </span><span class="wpmega-link-title">Pathways: Science</span></a></li>
+		<li id="menu-item-3712" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/mathematics-in-context/"><span class="menu-description"></span><span class="wpmega-link-title">Math in Context</span></a></li>
+		<li id="menu-item-8769" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/spanish-reference-center/"><span class="menu-description"> </span><span class="wpmega-link-title">Spanish Reference Center</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3676" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Subjects</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3702" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/general-reference/"><span class="menu-description"></span><span class="wpmega-link-title">General Reference</span></a></li>
+		<li id="menu-item-3703" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/language-arts/"><span class="menu-description"></span><span class="wpmega-link-title">Language Arts</span></a></li>
+		<li id="menu-item-3704" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/math/"><span class="menu-description"></span><span class="wpmega-link-title">Math / STEM</span></a></li>
+		<li id="menu-item-3710" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/science/"><span class="menu-description"></span><span class="wpmega-link-title">Science / STEM</span></a></li>
+		<li id="menu-item-3705" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/social-studies/"><span class="menu-description"></span><span class="wpmega-link-title">Social Studies</span></a></li>
+		<li id="menu-item-3701" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/ell-foreign-language/"><span class="menu-description"></span><span class="wpmega-link-title">ELL &#038; Foreign Language</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3677" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Product Type</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3708" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/online/"><span class="menu-description"></span><span class="wpmega-link-title">Online</span></a></li>
+		<li id="menu-item-3707" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3706" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/books/"><span class="menu-description"></span><span class="wpmega-link-title">Books</span></a></li>
+		<li id="menu-item-3711" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/prek-8/britannica-kids-apps/"><span class="menu-description"></span><span class="wpmega-link-title">Apps</span></a></li>
+		<li id="menu-item-8151" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/21st-century-learning/white-papers/"><span class="menu-description"> </span><span class="wpmega-link-title">White Papers</span></a></li>
+		<li id="menu-item-3755" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/professional-development/"><span class="menu-description"> </span><span class="wpmega-link-title">Professional Development</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-3695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ss-nav-menu-item-1 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-fullWidth mega-colgroup mega-colgroup-3 ss-nav-menu-mega-alignCenter ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">High School</span></span>
+<ul class="sub-menu sub-menu-1">
+	<li id="menu-item-3679" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Most Popular Titles</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-10015" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/britannica-escolar/"><span class="menu-description"> </span><span class="wpmega-link-title">Britannica Escolar</span></a></li>
+		<li id="menu-item-3785" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/britannica-school/"><span class="menu-description"> </span><span class="wpmega-link-title">Britannica School</span></a></li>
+		<li id="menu-item-3774" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3775" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/image-quest/"><span class="menu-description"> </span><span class="wpmega-link-title">ImageQuest</span></a></li>
+		<li id="menu-item-3791" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/encyclopaedia-britannica-app/"><span class="menu-description"></span><span class="wpmega-link-title">Apps</span></a></li>
+		<li id="menu-item-3777" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/the-britannica-guide-to-the-worlds-most-influential-people/"><span class="menu-description"></span><span class="wpmega-link-title">The World&#8217;s Most Influential People</span></a></li>
+		<li id="menu-item-3776" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/the-solar-system/"><span class="menu-description"> </span><span class="wpmega-link-title">The Solar System</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3680" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Subjects</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3713" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/general-reference/"><span class="menu-description"></span><span class="wpmega-link-title">General Reference</span></a></li>
+		<li id="menu-item-3714" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/language-arts/"><span class="menu-description"></span><span class="wpmega-link-title">Language Arts</span></a></li>
+		<li id="menu-item-3715" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/math/"><span class="menu-description"></span><span class="wpmega-link-title">Math / STEM</span></a></li>
+		<li id="menu-item-3717" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/science/"><span class="menu-description"></span><span class="wpmega-link-title">Science / STEM</span></a></li>
+		<li id="menu-item-3718" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/social-studies/"><span class="menu-description"></span><span class="wpmega-link-title">Social Studies</span></a></li>
+		<li id="menu-item-3719" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/ell-foreign-language/"><span class="menu-description"></span><span class="wpmega-link-title">ELL &#038; Foreign Language</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Product Type</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3716" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/online/"><span class="menu-description"></span><span class="wpmega-link-title">Online</span></a></li>
+		<li id="menu-item-3751" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3720" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/high-school/books/"><span class="menu-description"></span><span class="wpmega-link-title">Books</span></a></li>
+		<li id="menu-item-3721" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/encyclopaedia-britannica-app/"><span class="menu-description"></span><span class="wpmega-link-title">Apps</span></a></li>
+		<li id="menu-item-8152" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/21st-century-learning/case-studies-and-lesson-plans/"><span class="menu-description"></span><span class="wpmega-link-title">Case Studies and Lessons</span></a></li>
+		<li id="menu-item-3754" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/professional-development/"><span class="menu-description"> </span><span class="wpmega-link-title">Professional Development</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-3694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ss-nav-menu-item-2 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-fullWidth mega-colgroup mega-colgroup-3 ss-nav-menu-mega-alignCenter ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Higher Ed</span></span>
+<ul class="sub-menu sub-menu-1">
+	<li id="menu-item-3682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Most Popular Titles</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3768" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/britannica-academic-edition/"><span class="menu-description"> </span><span class="wpmega-link-title">Britannica Academic</span></a></li>
+		<li id="menu-item-3769" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3770" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/image-quest/"><span class="menu-description"> </span><span class="wpmega-link-title">ImageQuest</span></a></li>
+		<li id="menu-item-3771" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/merriam-webster-unabridged/"><span class="menu-description"> </span><span class="wpmega-link-title">Merriam-Webster Unabridged</span></a></li>
+		<li id="menu-item-3773" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/the-britannica-guide-to-the-worlds-most-influential-people/"><span class="menu-description"></span><span class="wpmega-link-title">The World&#8217;s Most Influential People</span></a></li>
+		<li id="menu-item-3772" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/the-solar-system/"><span class="menu-description"> </span><span class="wpmega-link-title">The Solar System</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Subjects</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3722" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/general-reference/"><span class="menu-description"></span><span class="wpmega-link-title">General Reference</span></a></li>
+		<li id="menu-item-3723" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/language-arts/"><span class="menu-description"></span><span class="wpmega-link-title">Language Arts</span></a></li>
+		<li id="menu-item-3724" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/math/"><span class="menu-description"></span><span class="wpmega-link-title">Math</span></a></li>
+		<li id="menu-item-3725" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/science/"><span class="menu-description"></span><span class="wpmega-link-title">Science</span></a></li>
+		<li id="menu-item-3726" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/social-studies/"><span class="menu-description"></span><span class="wpmega-link-title">Social Studies</span></a></li>
+		<li id="menu-item-3727" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/foreign-language/"><span class="menu-description"></span><span class="wpmega-link-title">Foreign Language</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Product Type</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3728" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/online/"><span class="menu-description"></span><span class="wpmega-link-title">Online</span></a></li>
+		<li id="menu-item-3729" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3730" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/college-university/books/"><span class="menu-description"></span><span class="wpmega-link-title">Books</span></a></li>
+		<li id="menu-item-3731" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/encyclopaedia-britannica-app/"><span class="menu-description"></span><span class="wpmega-link-title">Apps</span></a></li>
+		<li id="menu-item-8153" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/educators-resources/newsletter/"><span class="menu-description"></span><span class="wpmega-link-title">Newsletter</span></a></li>
+		<li id="menu-item-3753" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/professional-development/"><span class="menu-description"> </span><span class="wpmega-link-title">Professional Development</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-3693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ss-nav-menu-item-3 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-fullWidth mega-colgroup mega-colgroup-3 ss-nav-menu-mega-alignCenter ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Public Library</span></span>
+<ul class="sub-menu sub-menu-1">
+	<li id="menu-item-3685" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Most Popular Titles</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-4080" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/britannica-public-library-edition/"><span class="menu-description"> </span><span class="wpmega-link-title">Britannica Library</span></a></li>
+		<li id="menu-item-3763" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3764" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/image-quest/"><span class="menu-description"> </span><span class="wpmega-link-title">ImageQuest</span></a></li>
+		<li id="menu-item-7142" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/merriam-webster-unabridged/"><span class="menu-description"> </span><span class="wpmega-link-title">Merriam-Webster Unabridged</span></a></li>
+		<li id="menu-item-8794" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/spanish-reference-center/"><span class="menu-description"> </span><span class="wpmega-link-title">Spanish Reference Center</span></a></li>
+		<li id="menu-item-3766" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/turning-points-in-history/"><span class="menu-description"> </span><span class="wpmega-link-title">Turning Points in History</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Subjects</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/general-reference/"><span class="menu-description"></span><span class="wpmega-link-title">General Reference</span></a></li>
+		<li id="menu-item-3745" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/language-arts/"><span class="menu-description"></span><span class="wpmega-link-title">Language Arts</span></a></li>
+		<li id="menu-item-3746" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/math/"><span class="menu-description"></span><span class="wpmega-link-title">Math</span></a></li>
+		<li id="menu-item-3747" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/science/"><span class="menu-description"></span><span class="wpmega-link-title">Science</span></a></li>
+		<li id="menu-item-3748" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/social-studies/"><span class="menu-description"></span><span class="wpmega-link-title">Social Studies</span></a></li>
+		<li id="menu-item-3743" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/ell-foreign-language/"><span class="menu-description"></span><span class="wpmega-link-title">ELL &#038; Foreign Language</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-3687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">Product Type</span></span>
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3742" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/online/"><span class="menu-description"></span><span class="wpmega-link-title">Online</span></a></li>
+		<li id="menu-item-3750" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/e-books/"><span class="menu-description"></span><span class="wpmega-link-title">E-Books</span></a></li>
+		<li id="menu-item-3741" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/books/"><span class="menu-description"></span><span class="wpmega-link-title">Books</span></a></li>
+		<li id="menu-item-3740" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/public-library-children-young-adult/apps/"><span class="menu-description"></span><span class="wpmega-link-title">Apps</span></a></li>
+		<li id="menu-item-8149" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/21st-century-learning/blog/"><span class="menu-description"></span><span class="wpmega-link-title">Blog for Educators</span></a></li>
+		<li id="menu-item-3752" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/professional-development/"><span class="menu-description"> </span><span class="wpmega-link-title">Professional Development</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-3761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ss-nav-menu-item-4 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-fullWidth mega-colgroup mega-colgroup-5 ss-nav-menu-mega-alignCenter ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">PD &#038; Support</span></span>
+<ul class="sub-menu sub-menu-1">
+	<li id="menu-item-4078" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3757" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/professional-development/"><span class="menu-description"> </span><span class="wpmega-link-title">Professional Development</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-4077" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3758" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/educators-resources/newsletter/"><span class="menu-description"></span><span class="wpmega-link-title">Newsletter</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-4076" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3759" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/educators-resources/logos-to-download/"><span class="menu-description"></span><span class="wpmega-link-title">Logos &#038; Search Boxes</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-4075" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-3760" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/educators-resources/events/"><span class="menu-description"></span><span class="wpmega-link-title">Events</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-8469" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-8470" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/professional-development/contracts/"><span class="menu-description"> </span><span class="wpmega-link-title">Contracts</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-6346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children ss-nav-menu-item-5 ss-nav-menu-item-depth-0 ss-nav-menu-mega ss-nav-menu-mega-fullWidth mega-colgroup mega-colgroup-4 ss-nav-menu-mega-alignCenter ss-nav-menu-nolink"><span class="um-anchoremulator" ><span class="wpmega-link-title">21st-Century Learning</span></span>
+<ul class="sub-menu sub-menu-1">
+	<li id="menu-item-7595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-7594" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/21st-century-learning/blog/"><span class="menu-description"></span><span class="wpmega-link-title">Blog for Educators</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-6588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-6585" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/21st-century-learning/case-studies-and-lesson-plans/"><span class="menu-description"></span><span class="wpmega-link-title">Case Studies and Lessons</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-6589" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-6584" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/21st-century-learning/real-world-examples/"><span class="menu-description"> </span><span class="wpmega-link-title">Real-World Examples</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-6590" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children ss-nav-menu-item-depth-1 ss-nav-menu-notext ss-nav-menu-nolink">
+	<ul class="sub-menu sub-menu-2">
+		<li id="menu-item-6586" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-depth-2"><a href="http://info.eb.com/products/21st-century-learning/white-papers/"><span class="menu-description"> </span><span class="wpmega-link-title">White Papers</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-6536" class="menu-item menu-item-type-post_type menu-item-object-page ss-nav-menu-item-6 ss-nav-menu-item-depth-0 ss-nav-menu-reg"><a href="http://info.eb.com/a-z-product-browse/"><span class="menu-description"> </span><span class="wpmega-link-title">A-Z Product Browse</span></a></li>
+<li id="menu-item-8483" class="menu-item menu-item-type-custom menu-item-object-custom ss-nav-menu-item-7 ss-nav-menu-item-depth-0 ss-nav-menu-reg ss-nav-menu-mega-floatRight"><a href="http://shop.eb.com"><span class="menu-description"></span><span class="wpmega-link-title">shop.eb.com</span></a></li>
+</ul></div></div></div><div id="inner"><div id="home-top"><div id="execphp-2" class="widget widget_execphp"><div class="widget-wrap">			<div class="execphpwidget"><div id="sliderContainer">
+    <div id="mySlides">
+        
+                
+                <div id="slide1" class="slide"> <img src="/wp-content/uploads/2013/11/BSchool_Home_Slider.jpg" alt="" />
+
+                    <div class="slideContent">  
+                        <div class="slide_text_left">      
+                            <h3 class="text_underneath">
+In The Classroom</h3>
+
+                            <p> Britannica School: On demand. On any device. Wherever learning takes us. </p>
+                        </div>                 
+                        <div style="clear:both;"></div>   
+                    </div>
+                </div>
+            
+                
+                <div id="slide1" class="slide"> <img src="/wp-content/uploads/2012/08/Home_Sliders_Best.jpg" alt="" />
+
+                    <div class="slideContent">  
+                        <div class="slide_text_left">      
+                            <h3 class="text_underneath">
+For All Ages</h3>
+
+                            <p> ImageQuest provides nearly 3 million rights-cleared images for students from preschool to grad school. </p>
+                        </div>                 
+                        <div style="clear:both;"></div>   
+                    </div>
+                </div>
+            
+                
+                <div id="slide1" class="slide"> <img src="/wp-content/uploads/2013/11/PW_Home_Slider.jpg" alt="" />
+
+                    <div class="slideContent">  
+                        <div class="slide_text_left">      
+                            <h3 class="text_underneath">
+Innovative And Interactive</h3>
+
+                            <p> Engage middle school students through close-reading & research, critical thinking, & expository writing. </p>
+                        </div>                 
+                        <div style="clear:both;"></div>   
+                    </div>
+                </div>
+                  
+
+    </div>
+
+    <div class="jFlowPrev"></div>
+    <div class="jFlowNext"></div>
+    <div style="clear: both;"></div>
+</div>
+
+<div id="myController"> 
+    <div id="end_left"></div>
+                    <span class="jFlowControl slide_control_in_the_classroom">
+            <h4 class="controller_title">In the Classroom</h4>
+            <img src="http://info.eb.com/wp-content/themes/genesis/images/in_the_classroom_icon.jpg" />
+        </span> 
+                    <span class="jFlowControl slide_control_for_all_ages">
+            <h4 class="controller_title">For All Ages</h4>
+            <img src="http://info.eb.com/wp-content/themes/genesis/images/for_all_ages_icon.jpg" />
+        </span> 
+                    <span class="jFlowControl slide_control_innovative_and_interactive">
+            <h4 class="controller_title">Innovative and Interactive</h4>
+            <img src="http://info.eb.com/wp-content/themes/genesis/images/innovative_and_interactive_icon.jpg" />
+        </span> 
+        <div id="end_right"></div>
+    <div style="clear: both;"></div>
+</div>
+
+<div style="clear:both;"></div></div>
+		</div></div>
+</div><!-- end #home-top --><div id="content-sidebar-wrap"><div id="content" class="hfeed">    
+    
+    
+
+    <div style="clear:both;"></div>
+    <div id="homepage-content" class="">
+
+        <div id="homepage-content-left">
+
+            <h2>What Educators Are Buzzing About</h2>
+            <div class="content-left">
+                <a href="/teachers"><img class="spotlight_post_image" src="http://info.eb.com/wp-content/uploads/2014/12/quality.jpg" /></a>
+                <p class="spotlight_post_title"><a href="/teachers">From Teachers For Teachers</a></p>
+                <p>Research shows that the #1 way that educators like to hear about new resources is through “Word of Mouth.”<br />
+<br />
+Hear what your colleagues have to say about <i>Britannica School</i>: <a href="/teachers">info.eb.com/teachers</a></p>  
+            </div>                              
+
+        </div><!-- #homepage-content-left -->            
+
+        <div id="homepage-content-right">
+
+            <h2>See It Now</h2>                                    
+            <div id="homepage-right-left" style="margin-right: 0px;">                     
+                <div class="content-right">
+                    <a href="/products/21st-century-learning/blog/"> 
+                        <img  class="news_post_image shadowback" 
+                              src ="/wp-content/uploads/2015/03/blog_D1.png"
+                              alt="The Britannica Blog"
+                              title="The Britannica Blog"
+                              /></a> 
+                              <p class="spotlight_post_title"><a href="/products/21st-century-learning/blog/">The Britannica Blog</a></p>
+                                                    
+                </div>                
+            </div>                
+            <div id="homepage-right-right">  
+                <div class="content-right">
+                    <a href="/products/21st-century-learning/case-studies-and-lesson-plans/"> 
+                        <img  class="news_post_image shadowback" 
+                              src ="/wp-content/uploads/2015/03/case1.png"
+                              alt="New! Case Studies"
+                              title="New! Case Studies"                              
+                              /></a> 
+                               <p class="spotlight_post_title"><a href="/products/21st-century-learning/case-studies-and-lesson-plans/">New! Case Studies</a></p>
+                                     
+                </div>                
+            </div>  
+      
+            </div>  
+            <div style="clear:both;"></div>              
+
+        </div><!-- #homepage_content_right --> 
+        <div style="clear:both;"></div>
+
+    </div><!-- #homepage_content --> 
+    <div style="clear:both;"></div>
+            <div id="home-bottom">
+            <div id="text-2" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><div class="home-bottom-left">
+<a href="http://shop.eb.com/search?q=career"><img class="alignleft size-full wp-image-8744" title="Career" src="/wp-content/uploads/2015/04/May_ad-2.jpg" alt="" width="198" height="117" /></a>
+<span class="home-bottom-title">Award-Winning, Curriculum-Correlated Products for All Ages</span>
+<p>The innovations coming from Britannica will change the way educators teach and the way students learn. With e-books that cover virtually every subject, new curriculum-correlated products, and resources on demand and on any device, Britannica helps educators transform learning to reach every student's true potential. </p>
+</div>
+
+<div class="home-bottom-right">
+<ul>
+<li><a href="https://www.facebook.com/britannicalearn" target="_blank"><img src="/wp-content/uploads/2013/05/Facebook.png" /></a></li>
+<li><a href="http://twitter.com/BritannicaLearn" target="_blank"><img src="/wp-content/uploads/2013/05/Twitter.png" /></a></li>
+<li><a href="http://pinterest.com/BritannicaLearn/" target="_blank"><img src="/wp-content/uploads/2013/05/Pinterest.png" /></a></li>
+</ul>
+</div></div>
+		</div></div>
+        </div>
+    </div></div></div><!-- end #inner --><div id="footer" class="footer"><div class="wrap"><div class="footer-text-left"><p><a href="/sitemap/">SITEMAP</a>  |  <a href="/about-us/">ABOUT US</a>  |  <a href="/contact-us/">CONTACT US</a>  |  <a href="/press/">PRESS</a> </p></div>
+<div class="creds">
+  <p>Other Britannica sites: <a href="http://edu.eb.com" target="_blank">Australia</a> | <a href="http://www.britannicaindia.com/" target="_blank">India</a> | <a href="http://britannica.co.uk/" target="_blank">United Kingdom</a> | <a href="http://corporate.eb.com" target="_blank">Corporate</a></p></div>
+<div class="copyright">
+<p>&#x000A9;&nbsp;2015 Encyclopædia Britannica  Inc, All Rights Reserved</p>
+</div></div></div></div><!-- end #wrap -->
+<!--  Google Analytics -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7958396-30']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><script type="text/javascript">
+<!--
+piCId = '1338';
+piAId = '84922';
+
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+-->
+</script><script type='text/javascript' src='http://info.eb.com/wp-content/plugins/ubermenu/js/hoverIntent.js?ver=3.8.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uberMenuSettings = {"speed":"300","trigger":"hoverIntent","orientation":"horizontal","transition":"slide","hoverInterval":"20","hoverTimeout":"400","removeConflicts":"on","autoAlign":"off","noconflict":"off","fullWidthSubs":"off","androidClick":"off","loadGoogleMaps":"off"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://info.eb.com/wp-content/plugins/ubermenu/js/ubermenu.min.js?ver=3.8.5'></script>
+<script type='text/javascript' src='http://info.eb.com/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.4'></script>
+<script type='text/javascript' src='http://info.eb.com/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=2.1.2'></script>
+<script type='text/javascript' src='http://info.eb.com/wp-content/themes/genesis/lib/js/menu/superfish.compat.min.js?ver=2.1.2'></script>
+</body>
+</html>

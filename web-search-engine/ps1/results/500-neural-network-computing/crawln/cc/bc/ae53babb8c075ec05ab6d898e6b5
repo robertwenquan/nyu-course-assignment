@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+  <meta id="viewport" name="viewport" content="width=980">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>University of Wisconsin–Madison</title>
+  <link rel="stylesheet" href="/css/home.min.css?12379" type="text/css" media="all" />
+    <!--[if IE 6.0]>
+    <link rel="stylesheet" href="/css/ie6.css" type="text/css" media="screen" />
+  <![endif]-->
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="/css/ie7.css" type="text/css" media="screen" />
+  <![endif]-->
+  <!--[if IE 8]>
+    <link rel="stylesheet" href="/css/ie8.css?1" type="text/css" media="screen" />
+  <![endif]-->
+  </head>
+  <body id="home">
+    <div id="uw-alert"></div>
+    <div id="outer-wrap">
+    <div id="inner-wrap">
+        <div id="header">
+
+    <img id="crest" src="/images/crest.png" alt="[logo] Crest of the University of Wisconsin–Madison" width="70" height="106" />
+<h1 id="siteTitle"><img src="/images/wordmarkTag1.gif" alt="Wisconsin: The University of Wisconsin–Madison" width="294" height="55" /></h1>
+     				<form id="search" method="get" action="/search/">
+					<div><label for="searchstring" class="label_hide">Search </label>
+					<input type="hidden" value="001601028090761970182:2g0iwqsnk2m" name="cx" />
+					<input type="hidden" value="FORID:10" name="cof" />
+					<input accesskey="4" type="text" id="searchstring" value="Enter topic or name" maxlength="255" name="q" />
+					<input type="submit" value="Go!" name="search_button" />
+					</div>
+				</form>
+        <script type="text/javascript" src="//www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>            <div class="skip"><a accesskey="S" href="#content">Skip to main content</a></div>
+       <div class="skip"><a accesskey="3" href="/navigation.php">View complete menus and submenus on a new page</a></div>
+     
+           <div id="tools">        
+        <ul><li id="email_calendar"><a accesskey="2" href="http://wiscmail.wisc.edu">Email/Calendar</a></li><li><a accesskey="3" href="http://my.wisc.edu">My UW</a></li><li><a href="https://learnuw.wisc.edu/">Learn@UW</a></li><li><a href="http://www.library.wisc.edu">Libraries</a></li><li><a href="http://map.wisc.edu">Map</a></li><li><a accesskey="5" href="/directories/">Directory</a></li><li><a href="http://www.supportuw.org?utm_source=wisc_edu&amp;utm_medium=online&amp;utm_content=header&amp;utm_campaign=campus ">Giving to UW</a></li><li id="last_tool"><a accesskey="6" href="/contact.php">Help</a></li></ul>
+      </div>
+     <div id='date_weather'>
+<a href="http://www.ssec.wisc.edu/localweather/" title="Current weather conditions: Partly Cloudy"><span>
+Sunday, September 20, 2015
+</span>
+<span id='temp'>
+54
+&#176;
+</span>
+<img alt="Partly Cloudy" src="http://www.wisc.edu/images/weather/i_nightCloudy.gif" />
+</a></div>
+
+     </div>
+           <div id="nav">
+        <ul id="horizontal_nav">
+          <li id="n_admissions" class="n1"><h2><a href="/admissions/" rel="admissions_sub">Admissions</a></h2>
+
+          <div class="submenu" id="admissions_sub">
+
+          <ul class="sub">
+            <li><h3><a href="https://www.admissions.wisc.edu/">Undergraduate</a></h3></li>
+            <li><a href="https://www.admissions.wisc.edu/apply/index.php">Apply</a></li>
+            <li><a href="https://www.admissions.wisc.edu/why/experience.php">Why Wisconsin?</a></li>
+            <li><a href="https://www.admissions.wisc.edu/apply/status.php">Check status</a></li>
+            <li><a href="https://www.admissions.wisc.edu/prepare/costs.php">Costs and aid</a></li>
+            <li><a href="https://www.admissions.wisc.edu/">Office of Admissions and Recruitment</a></li>
+          </ul><ul class="sub">
+            <li><h3><a href="http://www.grad.wisc.edu/education/admissions/index.html">Graduate</a></h3></li>
+            <li><a href="http://www.grad.wisc.edu/education/admissions/stepstoapply.html">Steps to apply</a></li>
+            <li><a href="http://www.grad.wisc.edu/education/mas/toc.html">Programs of study</a></li>
+            <li><a href="http://www.grad.wisc.edu/education/admissions/costs.html">Costs and funding</a></li>
+            <li><a href="http://www.grad.wisc.edu/education/admissions/index.html">More »</a></li>
+          </ul><ul class="sub">
+            <li><h3><a>Professional schools</a></h3></li>
+            <li><a href="http://www.law.wisc.edu/">Law</a></li>
+            <li><a href="http://www.med.wisc.edu/">Medicine and Public Health</a></li>
+            <li><a href="http://www.pharmacy.wisc.edu/">Pharmacy</a></li>
+            <li><a href="http://www.vetmed.wisc.edu">Veterinary Medicine</a></li>
+          </ul><h3 class="submenu_more"><a href="/admissions/">More Admissions »</a></h3></div>
+          </li><li id="n_academics" class="n1"><h2><a href="/academics/" rel="academics_sub">Academics</a></h2>
+
+          <div class="submenu" id="academics_sub">
+          <ul>
+            <li><h3><a>Academic units</a></h3></li>
+            <li><a href="http://continuingstudies.wisc.edu/outreach/conted.htm">Continuing education</a></li>
+            <li><a href="/academics/departments.php">Departments</a></li>
+            <li><a href="https://www.gradsch.wisc.edu/education/academic_programs/index.html">Graduate programs</a></li>
+            <li><a href="/academics/majors.php">Majors and certificates</a></li>
+            <li><a href="/academics/schools-and-colleges.php">Schools and colleges</a></li>
+          </ul>
+          <ul>
+            <li><h3><a>Courses</a></h3></li>
+            <li><a href="http://www.secfac.wisc.edu/academic-calendar.htm">Academic calendar</a></li>
+            <li><a href="http://www.wisc.edu/academics/catalogs.php">Academic catalogs</a></li>
+            <li><a href="http://public.my.wisc.edu/">Course guide</a></li>
+            <li><a href="http://registrar.wisc.edu/">Registrar</a></li>
+            <li><a href="http://registrar.wisc.edu/schedule_of_classes.htm">Schedule of classes</a></li>
+          </ul>
+          <ul>
+            <li><h3><a>Resources</a></h3></li>
+            <li><a href="http://advising.wisc.edu/">Academic advising</a></li>
+            <li><a href="http://www.doit.wisc.edu">Computing (DoIT)</a></li>
+            <li><a href="http://www.doit.wisc.edu/services/computer-labs-infolabs/">Computer labs</a></li>
+            <li><a href="http://www.library.wisc.edu/">Libraries</a></li>
+          </ul>
+          <h3 class="submenu_more"><a href="/academics/">More Academics »</a></h3>
+        </div>
+          </li><li id="n_student_life" class="n1"><h2><a href="/student-life/" rel="student_life_sub">Student Life</a></h2>
+
+          <div class="submenu" id="student_life_sub">
+          <ul>
+            <li><h3><a>Your life at <abbr>UW</abbr>–Madison</a></h3></li>
+            <li><a href="http://www.diversity.wisc.edu">Diversity</a></li>
+            <li><a href="http://www.finaid.wisc.edu/" title="Office of Student Financial Aid">Financial aid/scholarships</a></li>
+            <li><a href="http://www.uhs.wisc.edu/" title="University Health Services">Health</a></li>
+            <li><a href="/student-life/housing.php" title="Housing options">Housing</a></li>
+            <li><a href="http://www.safeu.wisc.edu/">Safety</a></li>
+          </ul><ul>
+            <li><h3><a href="/student-life/student-services.php">Student services</a></h3></li>
+            <li><a href="/student-life/student-services.php">A–Z index</a></li>
+            <li><a href="http://csportal.engr.wisc.edu/">Career services</a></li>
+            <li><a href="http://www.students.wisc.edu/">Division of Student Life</a></li>
+            <li><a href="http://www.asm.wisc.edu/">Student government (<abbr title="Associated Students of Madison">ASM</abbr>)</a></li>
+            <li><a href="http://www.union.wisc.edu">Wisconsin Union</a></li>
+          </ul><ul>
+            <li><h3><a href="/student-life/getting-involved.php">Getting involved</a></h3></li>
+            <li><a href="/student-life/getting-involved.php">Leadership</a></li>
+            <li><a href="/student-life/recreation.php">Recreation and sports</a></li>
+            <li><a href="http://cfli.wisc.edu/student_organizations.htm">Student organizations</a></li>
+            <li><a href="http://www.morgridge.wisc.edu/">Volunteerism and service</a></li>
+          </ul>
+          <h3 class="submenu_more"><a href="/student-life/">More Student Life »</a></h3>
+        </div>
+
+          </li><li id="n_research" class="n1"><h2><a href="/research/" rel="research_sub">Research</a></h2>
+
+          <div class="submenu" id="research_sub">
+          <ul>
+            <li><h3><a>Research on campus</a></h3></li>
+            <li><a href="/research/centers.php">Centers and programs</a></li>
+            <li><a href="/about/facts/">Facts and figures</a></li>
+            <li><a href="http://www.library.wisc.edu/">Libraries</a></li>
+            <li><a href="http://www.news.wisc.edu/research/">Research news</a></li>
+            <li><a href="http://www.provost.wisc.edu/undergradresearch/">Undergraduate research</a></li>
+          </ul><ul>
+            <li><h3><a>For researchers</a></h3></li>
+            <li><a href="http://www.rsp.wisc.edu/preaward/">Funding opportunities</a></li>
+            <li><a href="http://www.grad.wisc.edu/">Graduate School</a></li>
+            <li><a href="http://www.rsp.wisc.edu/">Grant administration</a></li>
+            <li><a href="http://research.wisc.edu">VC for Research and Graduate Education</a></li>
+          </ul>
+          <h3 class="submenu_more"><a href="/research/">More Research »</a></h3>
+        </div>
+
+          </li><li id="n_public_service" class="n1"><h2><a href="/public-service/" rel="public_service_sub">Public Service</a></h2>
+
+ 		    <div class="submenu" id="public_service_sub">
+          <ul>
+            <li><h3><a>Public impact</a></h3></li>
+            <li><a href="http://communityrelations.wisc.edu/">Community Relations</a></li>
+            <li><a href="http://continuingstudies.wisc.edu/outreach/conted.htm">Continuing education</a></li>
+            <li><a href="http://www.ocr.wisc.edu/">Corporate relations</a></li>
+            <li><a href="http://international.wisc.edu/global-wisconsin-idea/">International programs</a></li>
+            <li><a href="http://www.dcs.wisc.edu/outreach/youth.htm">K–12 programs</a></li>
+          </ul><ul>
+            <li><h3><a href="http://www.wisconsinidea.wisc.edu/">The Wisconsin Idea</a></h3></li>
+            <li><a href="http://www.wisconsinidea.wisc.edu/">What is it?</a></li>
+            <li><a href="http://wisconsinidea.wisc.edu/history-of-the-wisconsin-idea/">Its history</a></li>
+            <li><a href="http://wisconsinidea.wisc.edu/category/features/">Wisconsin Idea stories</a></li>
+            <li><a href="http://searchwisconsinidea.wisc.edu/">Wisconsin Idea database</a></li>
+          </ul><ul>
+            <li><h3><a>For students and staff</a></h3></li>
+            <li><a href="http://www.morgridge.wisc.edu">Morgridge Center for Public Service</a></li>
+            <li><a href="http://www.morgridge.wisc.edu/programs/bv/">Badger Volunteers</a></li>
+            <li><a href="http://www.morgridge.wisc.edu/faculty/">Faculty and staff opportunities</a></li>
+          </ul>
+          <h3 class="submenu_more"><a href="/public-service/">More Public Service »</a></h3>
+        </div>
+          </li><li id="n_international" class="n1"><h2><a href="/international/" rel="international_sub">International</a></h2>
+
+        <div class="submenu alt" id="international_sub">
+          <ul>
+            <li><h3><a>Learning</a></h3></li>
+            <li><a href="http://www.intl-institute.wisc.edu">Academic programs</a></li>
+            <li><a href="http://www.admissions.wisc.edu/international.php">Admissions</a></li>
+            <li><a href="http://languages.wisc.edu/">Language programs</a></li>
+            <li><a href="http://iss.wisc.edu/">Student services (<abbr title="International Student Services">ISS</abbr>)</a></li>
+            <li><a href="http://international.wisc.edu/students/">Study abroad</a></li>
+          </ul><ul>
+            <li><h3><a>Research</a></h3></li>
+            <li><a href="/international/centers.php">Centers and programs</a></li>
+            <li><a href="http://www.intl-institute.wisc.edu/funding/">Funding and fellowships</a></li>
+            <li><a href="http://www.internationalinstitute.wisc.edu/">International Institute</a></li>
+            <li><a href="http://www.languageinstitute.wisc.edu/">Language Institute</a></li>
+          </ul><ul>
+            <li><h3><a>Connections</a></h3></li>
+            <li><a href="http://www.international.wisc.edu/">The International Division</a></li>
+            <li><a href="http://www.international.wisc.edu/alumni/">International alumni</a></li>
+            <li><a href="http://wioc.wisc.edu/">K-12 programs</a></li>
+            <li><a href="http://www.ohr.wisc.edu/ifss/">Employee services (<abbr title="International Faculty and Staff Services">IFSS</abbr>)</a></li>
+          </ul>
+          <h3 class="submenu_more"><a href="/international/">More International »</a></h3>
+        </div>
+
+          </li><li id="n_visit" class="n1"><h2><a href="http://info.wisc.edu" rel="visiting_campus_sub" class="n1">Visiting Campus</a></h2>
+
+         <div class="submenu alt" id="visiting_campus_sub">
+          <ul>
+            <li><h3><a>Planning a visit</a></h3></li>
+            <li><a href="http://info.wisc.edu/plan-your-visit/map/">Campus map</a></li>
+            <li><a href="http://info.wisc.edu/campus-tours/">Campus tours</a></li>
+            <li><a href="http://go.wisc.edu/dining-locations">Campus dining options</a></li>
+            <li><a href="http://info.wisc.edu/plan-your-visit/parking/">Parking and transportation</a></li>
+            <li><a href="http://apps.uwhealth.org/locations/detail.jsp?locationId=170">UW Hospital</a></li>
+            <li><a href="http://info.wisc.edu/plan-your-visit/where-to-stay/">Where to stay</a></li>
+          </ul><ul>
+            <li><h3><a>Things to do</a></h3></li>
+            <li><a href="http://info.wisc.edu/destinations/">Activities and attractions</a></li>
+            <li><a href="http://www.arts.wisc.edu">Arts on campus</a></li>
+            <li><a href="http://uwbadgers.com/">Badger athletics</a></li>
+            <li><a href="http://www.today.wisc.edu">Events</a></li>
+            <li><a href="http://www.science.wisc.edu">Science</a></li>
+          </ul>
+          <h3 class="submenu_more"><a href="http://info.wisc.edu">Campus and Visitor Relations »</a></h3>
+        </div>
+
+          </li>
+        </ul>
+      </div>
+
+    <div id="content">
+      <div id="main">
+        <div id="feature_box"><h2 class="hide">Feature stories</h2>
+          <ul id="thumbnails">
+            <li><a href="http://news.wisc.edu/24022" class="feature_preview selected" rel="home_page_feature_1244"><img alt="" class="shadow" height="72" src="/content/features/thumbs/Grainger-gift-t.jpg" width="116" /><span class="complex_title">Grainger gift</span></a></li>
+<li><a href="http://onwisconsin.uwalumni.com/" class="feature_preview" rel="home_page_feature_1243"><img alt="" class="shadow" height="72" src="/content/features/thumbs/OnWisconsinCover-t.jpg" width="116" /><span class="complex_title">On Wisconsin</span></a></li>
+<li><a href="http://news.wisc.edu/24000" class="feature_preview" rel="home_page_feature_1242"><img alt="" class="shadow" height="72" src="/content/features/thumbs/GoBigRead_JustMercy-t.jpg" width="116" /><span class="complex_title">‘Just Mercy’</span></a></li>
+<li><a href="http://news.wisc.edu/naledi/" class="feature_preview" rel="home_page_feature_1241"><img alt="" class="shadow" height="72" src="/content/features/thumbs/Homo-naledi-hand-t.jpg" width="116" /><span class="complex_title">Homo naledi</span></a></li>
+<li><a href="https://chancellor.wisc.edu/blog/morgridge-match-exceeds-all-expectations/" class="feature_preview" rel="home_page_feature_1240"><img alt="" class="shadow" height="72" src="/content/features/thumbs/Morgridge-match-t.jpg" width="116" /><span class="complex_title">Morgridge match</span></a></li>
+          </ul><div id="feature_well">
+              <div class="home_page_feature" data-counter="0" id="home_page_feature_1244" style="display: block;">
+    
+          <a href="http://news.wisc.edu/24022" class=""><img alt="Grainger gift" height="392" src="/content/features/images/Grainger-gift-with-headline.jpg" width="583" /></a>    
+  </div>
+          </div>
+        </div>
+        <div id="tabs">
+          <ul class="nav nav-tabs clearfix">
+            <li class="active"><a href="#news_tab" data-toggle="tab">News</a></li>
+            <li><a href="#video_tab" data-toggle="tab">Video</a></li>
+            <li><a href="#events_tab" data-toggle="tab">Events</a></li>
+          </ul>
+          <div class="tab clearfix" id="news_tab">
+            <div id="news">
+              <h2><a href="http://www.news.wisc.edu">Campus News</a></h2>
+              <a class="rss" href="http://www.news.wisc.edu/rss/"><img src="/images/rss.gif" alt="Get rss feed." width="15" height="15" /></a>
+              <ul>
+                
+<li>
+  <a href="http://news.wisc.edu/24024">Experts help Green Bay establish new island chain to benefit shipping and wildlife</a>      Sept. 18  </li>
+<li>
+  <a href="http://news.wisc.edu/24023">UW experts: Census Bureau’s annual ‘poverty numbers’ provide good news</a>      Sept. 18  </li>
+                <li class="trailer"><a href="http://www.news.wisc.edu">More news</a></li>
+              </ul>
+            </div>
+            <div id="inthenews">
+              <h2><a href="http://www.news.wisc.edu/inthenews">UW In the News</a></h2>
+              <a class="rss" href="http://www.news.wisc.edu/inthenews.rss"><img src="/images/rss.gif" alt="Get rss feed." width="15" height="15" /></a><ul>
+                <li>
+  <a href="http://www.jsonline.com/news/education/uw-road-show-looks-to-shore-up-relations-in-wisconsin-b99576433z1-327565511.html">UW road show looks to shore up relations in Wisconsin</a>
+  <span class="news-outlet">Milwaukee Journal Sentinel</span>
+</li>
+<li>
+  <a href="http://www.technologyreview.com/news/540721/first-detailed-public-map-of-us-internet-backbone-could-make-it-stronger/">This Map of America’s Data Cables Could Help Make the Internet Fairer and More Secure</a>
+  <span class="news-outlet">MIT Technology Review</span>
+</li>
+                <li class="trailer"><a href="http://experts.news.wisc.edu/">Experts Guide</a></li>
+              </ul>
+            </div>            
+            <div id="athletics">
+              <h2><a href="http://www.uwbadgers.com">Badger Athletics</a></h2>
+              <a href="http://www.uwbadgers.com/sports/w-soccer/This-Week-in-W-Soccer.html"><img alt="Women's soccer to begin Big Ten play" height="120" src="/content/athletics/images/11327079.jpeg" width="219" /></a>
+<p><span class="date"><abbr title="September">Sept.</abbr> 17</span>: <a href="http://www.uwbadgers.com/sports/w-soccer/This-Week-in-W-Soccer.html">Women's soccer to begin Big Ten play</a></p>
+  
+  
+            </div>
+          </div>
+          <div class="tab clearfix" id="video_tab">
+            <h2>UW–Madison Videos</h2>
+            <div id="videos"><p><a href="http://youtube.com/uwmadison">View UW–Madison videos on YouTube</a></p></div>
+            <p class="ajax-loading">
+              <img alt="Data loading indicator" src="/images/ajax-loader.gif" /> Loading&#8230;
+            </p>
+            <div class="trailer"><a href="http://youtube.com/uwmadison">UW–Madison on YouTube</a></div>
+          </div>
+          <div class="tab clearfix" id="events_tab">
+            <div id="events">
+              <h2><a href="http://www.today.wisc.edu">Notable upcoming events</a></h2>
+              <a class="rss" href="http://www.today.wisc.edu"><img src="/images/rss.gif" alt="Get rss feed." width="15" height="15" /></a><ol>
+                                <li class="trailer"><a href="http://www.today.wisc.edu">Events calendar</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div id="social_connect" class="clearfix">
+          <div id="connect" class="twitter">
+            <div id="uwsocial">
+              <a href="http://social.wisc.edu">#uwmadison</a>
+            </div>
+            <h2><a href="http://social.wisc.edu">Connect With Us On Social Media</a></h2>
+            <ul id="social_media">
+              <li id="fb-li"><a href="http://www.facebook.com/UWMadison"><img alt="" width="20" height="20" src="/images/sm_facebook20.jpg" /><span class="hide">Facebook</span></a></li>
+              <li id="tw-li"><a href="http://twitter.com/UWMadison"><img alt="" src="/images/sm_twitter20.png" width="20" height="20" /><span class="hide">Twitter</span></a></li>
+              <li id="yt-li"><a href="http://www.youtube.com/uwmadison"><img alt="" width="20" height="20" src="/images/sm_youTube20.jpg" /><span class="hide">YouTube</span></a></li>
+              <li id="pi-li"><a href="http://pinterest.com/uwmadison/"><img alt="" width="20" height="20" src="images/sm_pinterest20.png" /><span class="hide">Pinterest</span></a></li>
+              <li id="it-li"><a href="http://instagram.com/uwmadison"><img alt="" width="20" height="20" src="/images/sm_instagram20.png" /><span class="hide">Instagram</span></a></li>
+            </ul>
+
+            <div id="twitagrams" class="clearfix">
+              <div id="tweets">
+                <h3><a href="http://twitter.com/uwmadison">@UWMadison on Twitter</a></h3>
+                <div class='tweet'>
+<div class='avatar'><img alt="Km 4ax6f normal" src="http://pbs.twimg.com/profile_images/601385491368452096/kM_4Ax6F_normal.jpg" /></div>
+<div class='tweet-content'>
+<div class='tweet-text'>We're here to help. <a href="http://twitter.com/search?q=%23TellUs">#TellUs</a> <a href="http://t.co/vayBp0Sdkd">http://t.co/vayBp0Sdkd</a></div>
+<div class='tweet-attribution'>
+<a href="https://twitter.com/UWMadisonPolice">@UWMadisonPolice</a>
+<a href="https://twitter.com/UWMadisonPolice/status/645787487709827072">SEP 20 9:31PM</a>
+</div>
+</div>
+</div>
+<div class='tweet'>
+<div class='avatar'><img alt="Doc0011 normal" src="http://pbs.twimg.com/profile_images/379497740/DOC0011_normal.jpg" /></div>
+<div class='tweet-content'>
+<div class='tweet-text'>Jill Soloway is a Chicagoan and a <a href="http://twitter.com/UWMadison">@UWMadison</a> grad <a href="http://twitter.com/search?q=%23jussayin">#jussayin</a></div>
+<div class='tweet-attribution'>
+<a href="https://twitter.com/demoncelery">@demoncelery</a>
+<a href="https://twitter.com/demoncelery/status/645771603956137984">SEP 20 8:28PM</a>
+</div>
+</div>
+</div>
+<div class='tweet'>
+<div class='avatar'><img alt="04609f4e8de17a7716324771b49d862b normal" src="http://pbs.twimg.com/profile_images/3583117557/04609f4e8de17a7716324771b49d862b_normal.jpeg" /></div>
+<div class='tweet-content'>
+<div class='tweet-text'>hey <a href="http://twitter.com/UWMadison">@UWMadison</a> - <a href="http://twitter.com/jillsoloway">@jillsoloway</a> just won an Emmy for <a href="http://twitter.com/transparent_tv">@transparent_tv</a> w/ a very powerful speech. kickass com arts alumni alert!</div>
+<div class='tweet-attribution'>
+<a href="https://twitter.com/NNNNNiamh">@NNNNNiamh</a>
+<a href="https://twitter.com/NNNNNiamh/status/645765126583414785">SEP 20 8:02PM</a>
+</div>
+</div>
+</div>
+<div class='tweet'>
+<div class='avatar'><img alt="Opbmcgzf normal" src="http://pbs.twimg.com/profile_images/642819477290139648/oPbMcgZF_normal.jpg" /></div>
+<div class='tweet-content'>
+<div class='tweet-text'><a href="http://twitter.com/UWMadison">@UWMadison</a> grads do it right 🙌🏼 <a href="https://t.co/VCabSjVxZL">https://t.co/VCabSjVxZL</a></div>
+<div class='tweet-attribution'>
+<a href="https://twitter.com/alyssasageee">@alyssasageee</a>
+<a href="https://twitter.com/alyssasageee/status/645763018710581248">SEP 20 7:54PM</a>
+</div>
+</div>
+</div>
+              </div>
+              <div id="instagrams">
+                <h3><a href="http://instagram.com/uwmadison">UW–Madison on Instagram</a></h3>
+                <div class='instagram'>
+<a href="https://instagram.com/p/73Iwgvj6UQ/"><img alt="11887170 499682503542072 508870228 n" src="https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11887170_499682503542072_508870228_n.jpg" />
+</a><span class='caption'>First half time show!  #Badgers</span>
+<span class='user'>daniwetter</span>
+</div>
+              </div>
+            </div>
+            <p id="moresocial"><a href="http://social.wisc.edu">See more social content »</a></p>
+          </div>
+        </div>
+      </div><div id="focus">
+
+            <h2 id="in_focus" class="type1_h">Featured Sites</h2>
+
+
+  <div class="infocus" id="fs_14">
+  
+    
+      <a href="http://www.wisc.edu/constitution/"><img alt="Constitution Day, Sept. 17Expand your knowledge of the U.S. Constitution" src="/content/sidebar/featured-sites/constitution-day.jpg" /></a>
+    
+  
+  <a href="http://www.wisc.edu/constitution/">Constitution Day</a>, Sept. 17<br />Expand your knowledge of the U.S. Constitution
+</div>
+<div class="infocus" id="fs_83">
+  
+    
+      <a href="http://theweekly.wisc.edu/september-16-2015/"><img alt="The WeeklyUW's student e-newsletter" src="/content/sidebar/featured-sites/fs_theWeekly.png" /></a>
+    
+  
+  <p><a href="http://theweekly.wisc.edu/september-16-2015/">The Weekly</a><br />UW's student e-newsletter</p>
+</div>
+
+
+
+
+
+	<h2 class="type1_h">In Focus</h2>
+	<ul class="sidebar-list">
+<li><a href="http://animalresearch.wisc.edu/">Animals in Research: A Lifesaver</a></li>
+<li><a href="http://www.chancellor.wisc.edu/">Chancellor Rebecca Blank</a></li>
+<li><a href="http://d2p.wisc.edu/">Discovery to Product (D2P)</a></li>
+<li><a href="http://www.diversityplan2013.wisc.edu">Diversity&nbsp;Framework</a></li>
+<li><a href="http://edinnovation.wisc.edu/">Educational Innovation</a></li>
+<li><a href="http://www.365transition.wisc.edu/">Email and Calendar Transition</a></li>
+<li><a href="http://www.gobigread.wisc.edu/">Go Big Read</a></li>
+<li><a href="http://hrdesign.wisc.edu/"><abbr title="Human Resources">HR</abbr> Design Project</a></li>
+<li><a href="/about/leadership/infocus.php">More &raquo;</a></li>
+</ul>
+
+
+             <h2 class="type1_h"><a href="/about/">About <abbr class="initialism" title="University of Wisconsin">UW</abbr>–Madison</a></h2>
+            <div id="about-uw">
+              <img src="images/about-photo/Terrace_sunset14_6676.png" alt="People sit along the recently renovated steps that hug the Lake Mendota shoreline and Memorial Union Terrace as the sun sets on a summer evening." width="195" height="130" title="People sit along the recently renovated steps that hug the Lake Mendota shoreline and Memorial Union Terrace as the sun sets on a summer evening." />
+              <ul class="sidebar-list">
+
+                <li><a href="/about/leadership/">Leadership</a></li>
+
+                <li><a href="http://jobs.wisc.edu">Employment</a></li>
+
+                <li><a href="http://www.diversity.wisc.edu">Diversity</a></li>
+
+                <li><a href="/about/facts/">Facts</a></li>
+
+              </ul>
+            </div>
+
+            <h2 id="askbucky" class="type1_h">Have a Question?</h2>
+            <p><a href="http://info.wisc.edu/ask-bucky/"><img src="/images/askBuckyIcon.png" alt="Ask Bucky!" width="66" height="45" style="border: 0;" /></a><a href="http://info.wisc.edu/ask-bucky/">Ask Bucky!</a></p>
+
+            <h3 class="seealso">See also:</h3>
+            <ul>
+              <li><a href="http://safeu.wisc.edu">Campus safety</a></li>
+              <li><a href="/accessibility/index.php">Accessibility resources</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        </div><!-- inner-wrap -->
+    <div id="footer_links">
+      <div id="footer_contact">
+        <h2><a href="/contact.php">Contact us »</a></h2>
+				<ul>
+					<li>608-263-2400</li>
+					<li><a href="/about/location.php">Madison, WI 53706</a></li>
+				</ul>
+      </div>
+
+			      <div id="footer_audiences">
+        <h2>Information for</h2>
+				<ul>
+					<li><a href="http://uwalumni.com">Alumni</a></li>
+					<li><a href="http://www.ocr.wisc.edu">Business and entrepreneurs</a></li>
+					<li><a href="/student-life/">Current students</a></li>
+					<li><a href="/facstaff/">Faculty and staff</a></li>
+					<li><a href="/admissions/">Future students</a></li>
+				</ul>
+      </div>
+
+      <div id="footer_about">
+        <!-- <h2><a href="/about/">&nbsp;</a></h2> -->
+				<ul>
+					<li><a href="http://continuingstudies.wisc.edu/outreach/teachers.htm">K-12 educators</a></li>
+					<li><a href="http://experts.news.wisc.edu/">Media</a></li>
+					<li><a href="http://continuingstudies.wisc.edu/">Nontraditional learners</a></li>
+					<li><a href="http://www.parent.wisc.edu">Parents</a></li>
+					<li><a href="http://info.wisc.edu">Visitors</a></li>
+				</ul>
+      </div><div id="footer_great_people">
+	      <h2><a href="http://www.uwgreatpeople.org/give?utm_source=wisc_edu&amp;utm_medium=online&amp;utm_content=footer_heading&amp;utm_campaign=Great+People"><span>Great People Scholarship</span></a></h2>
+	      <ul class="student_2">
+	        <li><a href="http://www.uwgreatpeople.org/give?utm_source=wisc_edu&amp;utm_medium=online&amp;utm_content=footer&amp;utm_campaign=Great+People">Make a gift &raquo;</a> <span class="subtext"><a href="http://www.uwgreatpeople.org/give?utm_source=wisc_edu&amp;utm_medium=online&amp;utm_content=footer&amp;utm_campaign=Great+People">to support students</a></span>
+	        </li>
+	        <li><a href="http://www.uwgreatpeople.org/?utm_source=wisc_edu&amp;utm_medium=online&amp;utm_content=footer&amp;utm_campaign=Great+People">Learn more &raquo;</a><span class="subtext"><a href="http://www.uwgreatpeople.org/?utm_source=wisc_edu&amp;utm_medium=online&amp;utm_content=footer&amp;utm_campaign=Great+People">at uwgreatpeople.org</a></span>
+	        </li>
+	      </ul>
+	    </div>
+    </div> 
+    <div id="footer">
+      <p>©2015 Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href="/about-this-site.php">About this site</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href="http://mobile.wisc.edu">Mobile UW</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a href="/privacy-statement.php">Privacy statement</a></p>
+    </div>
+  </div><!-- outer-wrap -->
+
+    <script>window.SiteConfig={"alerts_api":"http://alerts.wisc.edu/syndicated.jsonp"}</script><script type="text/javascript" src="/js/site-hp.min.js?12346"></script><script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0032/7875.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2389964-22']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

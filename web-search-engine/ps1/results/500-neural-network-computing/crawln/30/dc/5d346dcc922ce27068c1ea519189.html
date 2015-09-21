@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <link rel="stylesheet" title="default stylesheet" media="screen" type="text/css" href="http://cdn4.explainthatstuff.com/ets2.css">
+<link rel="canonical" href="http://www.explainthatstuff.com/logicgates.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <title>How do logic gates work? | AND, OR, NOT, XOR compared</title>
+  <meta name="keywords" content="calculator, computer, binary, logic gate, AND, NOR, NOT, OR">
+  <meta name="description" content="A simple explanation of how electronic logic gates work, including AND, OR, NOT, and NOR.">
+<link rel="shortcut icon" href="http://cdn4.explainthatstuff.com/favicon.ico">
+
+<!-- Begin Cookie Consent plugin. Original version by Silktide (http://silktide.com/cookieconsent), slightly modified by
+explainthatstuff.com on July 29, 2015), released under GNU General Public License Version (http://www.gnu.org/licenses/gpl.txt) as published by the Free Software Foundation.
+-->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies to improve your experience of our site and to serve relevant, personalized advertising.","dismiss":"Got it!","learnMore":"More info","link":"http://www.explainthatstuff.com/privacy.html","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="http://cdn4.explainthatstuff.com/cookieconsent3.latest.min.js"></script>
+<!-- End Cookie Consent plugin -->
+</head>
+
+<body itemscope itemtype="http://schema.org/Article"><div class="container"><a name="pagetop"></a>
+
+
+
+
+
+
+
+
+
+<div class="header"><IMG class="headlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif"></div>
+
+<div class="searchtop">
+<!-- SiteSearch Google top search start -->
+<form action="http://www.explainthatstuff.com/search.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1030585152417294:7662706493" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="40" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<!-- SiteSearch Google top search end -->
+</div>
+
+<!-- Top ad removed -->
+
+
+<!-- Ad placement: electricity and electronics -->
+
+
+
+<div class="crumb">
+You are here:
+<a href="/">Home page</a> &gt;
+<a href="articles_electricity.html">Electricity and electronics</A> &gt;
+Logic gates
+</div>
+
+
+<!-- old nav bar -->
+
+<div class="nav">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li>
+</ul>
+</div>
+
+<div class="adrightsm">Advertisement
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="1317849019"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+<div class="main2">
+<!-- -->
+
+<p><img itemprop="image" src="http://cdn4.explainthatstuff.com/gate.jpg" class="ileftno" height="225" width="300" ALT="A wooden gate in winter snow"></p>
+
+<h1 itemprop="headline name">Logic gates</h1>
+
+
+<!-- google_ad_section_start(weight=ignore) -->
+
+
+<div class="sharetop"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.explainthatstuff.com%2Flogicgates.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+<p>by <a href="chris-woodford.html">Chris Woodford</a>. <span class="italic">Last updated: October 2, 2013. </span></p>
+<meta itemprop="alternativeHeadline" content="How do logic gates work?">
+<meta itemprop="description" content="A simple explanation of AND, OR, NOT, and XOR gates and how they are used in digital electronic circuits such as calculator displays.">
+<meta itemprop="datePublished" content="2008-08-05">
+<meta itemprop="dateModified" content="2013-10-02">
+
+
+<p itemprop="articleBody"><span class="dropcap">Y</span>ou probably know that
+<a href="calculators.html">calculators</a> and <a
+ href="howcomputerswork.html">computers</a> store decimal (0-9) numbers
+as long strings of zeros and ones in a form called binary code.
+Each number is stored using microscopic <a href="electronics.html">electronic</a> switches called <a
+ href="howtransistorswork.html">transistors</a>.
+It's easy to store binary numbers simply by switching transistors on
+and off. Switching on a transistor stores a number one; switching it
+off
+stores a zero. So storing numbers is easy. But how can you add,
+subtract, multiply, and divide using nothing but 
+<a href="electricity.html">electric</A> currents?
+Calculators and computers do this using clever 
+<a href="electronics.html">electronic</A> circuits
+called <B>logic gates</B>. Let's take a closer look
+at what they are and how they work.
+</p>
+
+<!-- google_ad_section_start -->
+
+<p><span class="credit">Photo: A gate can keep you out or let you
+into a field. In the same way, a microscopic logic gate is a barrier in
+an electronic circuit that can let electricity through or stop it
+flowing altogether. Put lots of logic gates together and you make a
+machine that's capable of basic mathematical "reasoning."</span></p>
+
+<!-- google_ad_section_end -->
+
+
+<h2>Logic gates: circuits that compare</h2>
+<p>A logic gate might sound horribly complex, but it's
+simply an electric circuit with two inputs and an output. It
+receives two incoming electric currents, compares them, and sends on a
+new, outgoing electric current depending on what it finds. A logic gate
+is a bit like
+a doorman or bouncer who is allowed to let people into a nightclub only
+if they pass certain tests. There are quite a few different types of
+logic gate, the most common of which are called AND, OR, NOT, XOR
+(Exclusive
+Or), NAND (NOT AND), and NOR (NOT OR). Let's look
+at the three simpler ones, AND, OR, and NOT:</p>
+<h3>AND</h3>
+<p>Suppose you go to a nightclub where the doorman's job is to enforce
+a simple rule: "Everyone in your group must wear a tie to come in". You
+go along with
+a friend one night. If you're both wearing ties, you'll get in. If only
+one of you is wearing a tie, or if neither of you is, neither of you
+will get in. An AND logic gate works the same way with two electrical
+inputs. If both inputs are switched on (that is, carry a number 1), the
+output will be 1 as well. Otherwise the output will be 0. In
+electronics, we can represent an AND gate with this little symbol.
+Three ways in which the gate can work are shown below.</p>
+<p class="center"><img src="http://cdn4.explainthatstuff.com/andgate.gif" height="200" width="400" ALT="AND logic gate"></p>
+<h3>OR</h3>
+<p>You're not wearing a tie, so you go to another club further down the
+street. Here, the person on the door is enforcing a different
+rule: "A group of people can come in if any one of them is a member".
+If either you or your friend is a member, or if you both are members,
+you can both come in. If neither of you is a member, you're
+both left out in the cold. An OR logic gate works this way with two
+electrical
+inputs. If either input is switched on (that is, carries a number 1),
+the output will be 1 as well. Otherwise the output will be 0. In
+electronics, we represent an OR gate with a different symbol. Three
+ways in which it can work are shown beneath:</p>
+<p class="center"><img src="http://cdn4.explainthatstuff.com/orgate.gif" height="200" width="400" ALT="OR logic gate"></p>
+<h3>NOT</h3>
+<p>So far, you've failed to get into either of the clubs. But
+there's one last hope: you know a friend is having a party a few
+streets away. The only trouble is, there's a really argumentative and
+contrary person on the door. He talks to each person in turn as they
+approach him. If you're nice and polite, he shouts abuse at you and
+turns you away. But if you're rude to him, he likes that for some
+reason and lets you in. In other words, he does exactly the opposite of
+what you'd expect! In electronics, there's a logic gate that works in
+the same, contrary way and it's called a NOT gate or inverter. Unlike AND
+and OR gates, it has only one input and one output. The output is exactly the
+opposite of the input, so if the input is a 0, the output is a 1 and
+vice versa. Here's how we represent a NOT in electronics. Two ways it
+can work are shown beneath.</p>
+<p class="center"><img src="http://cdn4.explainthatstuff.com/notgate.gif" height="200" width="400" ALT="NOT logic gate"></p>
+<p>The other three common logic gates are variations on these three.
+XOR (Exclusive OR) is like an OR, but it switches off if both the
+inputs are switched on. NAND is just like AND, only the end result is
+swapped over (so where AND produces an output of 1, NAND produces an
+output of 0). NOR is like OR with the end result swapped over in the
+same way.</p>
+
+<P>This logical way of comparing numbers to make decisions that produce either a yes or no, 1 or 0, true or false is
+called <B>Boolean algebra</B> after its discoverer, English mathematician <B>George Boole</B> (1815&ndash;1864),
+who set out the idea in an 1854 book titled <a href="http://books.google.co.uk/books/about/An_Investigation_of_the_Laws_of_Thought.html?id=SWgLVT0otY8C" target="_blank">An Investigation of the Laws of Thought, on Which Are Founded the Mathematical Theories of Logic and Probabilities</a>.
+His objective was to show how complex human reasoning could be represented in a logical, mathematical form.</P>
+
+<h2>Controlling a calculator display with logic gates</h2>
+
+<p><a href="calculators.html">Calculators</a> can do all the things they need to do using different
+combinations of logic gates. It's logic gates that control how the
+display works in a calculator and more logic gates that figure out the
+results of calculations.</p>
+
+<p>For example, each segment of a calculator's display is switched on and off by a series of
+logic gates that are connected together. Consider just the bottom lower
+right segment (shown in the picture, right, in blue). We need to turn
+this segment on if we're showing the numbers 0
+(binary 00), 1 (01), 3 (11), 4 (100), 5 (101), 6 (110), 7 (111), 8
+(1000), and 9 (1001)&#8212;but not if we're showing the number 2 (10). We can
+make the segment switch on and off correctly for the numbers 1&ndash;10 by
+rigging up three OR gates and one NOT gate like this.
+</p>
+<p class="center">
+<img src="http://cdn4.explainthatstuff.com/segmentgates.gif" alt="How logic gates control the display segments" height="197" width="400"></p>
+<p>If we feed the patterns of binary numbers into the four inputs on
+the left, the segment will turn on and off correctly for each one. For
+example, feed in the number 7 as the four inputs 0111 and the gates
+will trigger like this, correctly switching on the segment:</p>
+<p class="center">
+<img src="http://cdn4.explainthatstuff.com/segmentgates2.gif" alt="How logic gates control the display segments" height="197" width="400"></p>
+<p>The other six segments of each digit are controlled by other
+combinations of logic gates.</p>
+<h2>Calculating with logic gates</h2>
+<p>It's possible to do any calculation you can think of by combining a
+different pattern of logic gates. The gates compare and combine two
+series of binary numbers, corresponding to the decimal numbers in your
+calculation, and produce a new series of binary numbers equal to the
+result. Addition is carried out by circuits called <B>half-adders</B>
+and <B>full adders</B> (which can carry on the
+results of a previous addition); <B>subtractors</B>
+work in a very similar way; <B>multipliers</B>
+use a collection of AND gates to multiply two numbers with a series of
+additions.</p>
+
+<div class="sharebot"><ul class="nobull">
+<li class="shr"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.explainthatstuff.com%2Flogicgates.html&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+<!-- plusone and tweet -->
+<!-- sharebuttons -->
+<li class="shr"><g:plusone size="medium"></g:plusone></li>
+<li class="shr"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></li> 
+</ul></div>
+
+
+<h2>Find out more</h2>
+
+<h3>On this website</h3>
+<UL>
+<li><a href="calculators.html">Calculators</a></li>
+<li><a href="electronics.html">Electronics</a></li>
+<li><a href="integratedcircuits.html">Integrated circuits</a></li>
+</UL>
+
+<h3>On other sites</h3>
+<UL>
+<LI><a href="http://online.sfsu.edu/~hl/zbyte.lg.html" target="_blank">How logic gates add 2+3</A>: How does a calculator add two binary numbers? This basic diagram shows you how four chips (made from AND, OR, and NOT gates) do the job.</LI>
+<LI><a href="http://en.wikipedia.org/wiki/Adder_(electronics)" target="_blank">Adder (electronics)</A>: This more detailed (and less clear) article from Wikipedia explains how different logic gates can be used to add numbers in circuits called half adders, full adders, and more complex variations such as ripple-carry adders.</LI>
+</UL>
+
+<h3>Books for younger readers</h3>
+<ul>
+<li><a href="http://books.google.co.uk/books?id=23TAAwAAQBAJ" target="_blank">Computer Coding for Kids</A> by Carol Vorderman.
+Dorling Kindersley, 2014. A fun overview of computer programming for young readers, including logic gates (covered on p186).</li>
+<li><a href="http://books.google.com/books?id=oIpk2M7hoisC" target="_blank">Eyewitness: Electronics</A> by Roger Bridgman.
+Dorling Kindersley, 2007. A simple introduction designed for ages 9&ndash;12.</li>
+<li><a href="http://books.google.com/books?id=HAkdt2CHCTIC" target="_blank">Electronic Circuits for the Evil Genius</A> by Dave Cutcher. McGraw-Hill, 2005. Although not exclusively for young readers, the Evil Genius format is sure to appeal to teenagers. This book is a good hands-on introduction to digital logic and the projects include a variety of logic gate circuits.</li>
+</ul>
+
+<h3>Books for older readers</h3>
+<ul>
+<li><a href="http://books.google.com/books?id=f2lTAAAAMAAJ" target="_blank">Ones and Zeroes: Understanding Boolean algebra, Digital Circuits, and the Logic of Sets</a> by John Gregg. IEEE, 1998. A good introduction that explains Boolean algebra in the context of modern digital electronics and computing. Includes practical exercises</li>
+<li><a href="http://books.google.com/books?id=VDIuSvrDVxwC" target="_blank">Boolean Algebra and Its Applications</a> by J. Eldon Whitesitt. Courier Dover, 1995. A reprinted book from 1961, this explains Boolean algebra with a mathematical approach based on sets, Venn diagrams, and so on. Unfortunately, it pre-dates modern computing so there's no coverage of what we now call digital logic.</li>
+<li><a href="http://books.google.com/books?id=1QZEawDm9uAC" target="_blank">Fundamentals of Digital Logic and Microcomputer Design</a> by Mohamed Rafiquzzaman. John Wiley &amp; Sons, 2005. Chapter 3 covers logic gates.</li>
+<li><a href="http://books.google.com/books?id=gjAfAQAAIAAJ" target="_blank">Digital Fundamentals</A> by Thomas L. Floyd. Prentice Hall, 2003. A clear introduction to digital circuits, including counters, logic gates, memory and storage, signal processing, and related topics.</li>
+<li><a href="http://books.google.com/books?id=X1m1tNcfWQYC" target="_blank">A Practical Introduction to Computer Architecture</A> by Daniel Page. Springer, 2009. A more comprehensive guide covering all aspects of computer internals. Quite a lot of math.</li>
+</ul>
+
+
+</div>
+
+
+
+<div class="main2">
+<h2>If you liked this article...</h2>
+<P>You might like my new book, <a href="mybooks.php">Atoms Under the Floorboards: The Surprising Science Hidden in Your Home</a>, published worldwide by Bloomsbury.</P>
+</div>
+
+<!-- Desktop bottom ad -->
+<div class="bottomsquare"><span class="slinks2">Sponsored links</span>
+<P>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1030585152417294"
+     data-ad-slot="9721739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</P>
+</div>
+
+<div class="cc"><P><span class="highlight">Please do NOT copy our articles onto blogs and other websites</span></P>
+<p>Text copyright &copy; Chris Woodford 2007, 2012. All rights reserved. <a href="copyright-and-legal-notices.html">Full copyright notice and terms of use</A>.</p>
+
+
+</div>
+
+<div class="sharesites"><h2>Follow us</h2>
+<ul class="nobull">
+<LI class="inline2"><a href="followus.html" title="Follow us on Facebook"><IMG class="sprite shr4" ALT="Follow us on Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a rel="publisher" href="https://plus.google.com/115402323314399894520" target="_blank" title="Follow us on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="rss.xml" target="_blank" title="Subscribe to our RSS feed"><IMG class="sprite shr10" ALT="RSS"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.flickr.com/photos/explainthatstuff" target="_blank" title="Find our photos on Flickr"><IMG class="sprite shr11" ALT="Flickr"  src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+<LI class="inline2"><a href="http://www.pinterest.com/explainthatstuf/" title="Follow us on Pinterest" target="_blank"><IMG class="sprite shr12" ALT="Follow us on Pinterest" src="http://cdn4.explainthatstuff.com/dot.gif"></A></li>
+</ul>
+</div>
+
+<div class="sharesites"><h2>Rate this page</h2>
+<p>Please <a href="feedback.php">rate or give feedback on this page</A> and I will make a donation to WaterAid.</P>
+</div>
+<div class="sharesites">
+<h2>Share this page</h2>
+<p>Press CTRL + D to bookmark this page for later or tell your friends about it with:</p>
+
+<ul class="nobull">
+<LI class="inline2"><a title="Post this story to Facebook"
+ href="http://www.facebook.com/sharer.php?u=http://www.explainthatstuff.com/logicgates.html"><IMG class="sprite shr4" ALT="Facebook" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a
+ title="Post this story to Delicious"
+ href="http://del.icio.us/post?url=http://www.explainthatstuff.com/logicgates.html&amp;title=Introduction%20to%20logic%20gates"><IMG class="sprite shr1" ALT="Delicious" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Digg"
+ href="http://digg.com/submit?url=http://www.explainthatstuff.com/logicgates.html&amp;title=Introduction%20to%20logic%20gates"><IMG class="sprite shr2" ALT="Digg" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Share this on Reddit"
+ href="http://reddit.com/submit?url=http://www.explainthatstuff.com/logicgates.html&amp;title=Introduction%20to%20logic%20gates"><IMG class="sprite shr3" ALT="Reddit" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Post this story to StumbleUpon"
+ href="http://www.stumbleupon.com/submit?url=http://www.explainthatstuff.com/logicgates.html&amp;title=Introduction%20to%20logic%20gates"><IMG class="sprite shr5" ALT="StumbleUpon" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a
+ title="Post this page to Google"
+ href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http://www.explainthatstuff.com/logicgates.html&amp;title=Introduction%20to%20logic%20gates"><IMG class="sprite shr6" ALT="Google Bookmarks" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="http://www.twitter.com/home?status=How+logic+gates+work+http://www.explainthatstuff.com/logicgates.html" title="Tweet this"><IMG class="sprite shr7" ALT="Twitter" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a title="Email this page to a friend"
+ href="mailto:?subject=Introduction%20to%20logic%20gates&amp;body=Take%20a%20look%20at%20this%20page:%20http://www.explainthatstuff.com/logicgates.html"><IMG class="sprite shr8" ALT="Email" src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+<LI class="inline2"><a href="https://plus.google.com/101536672158385330677?rel=author" title="Connect on Google+"><IMG class="sprite shr9" ALT="Google+"  src="http://cdn4.explainthatstuff.com/dot.gif"></a></LI>
+</UL>
+
+
+<h2>Cite this page</h2>
+
+<!---Citation-->
+<div class="citation">
+<P>
+Woodford, Chris. (2007) Logic gates. Retrieved from http://www.explainthatstuff.com/logicgates.html. [Accessed (Insert date here)]
+</P>
+</div>
+
+
+<!--<h2>Link to this page</h2>
+
+<P>If you'd like to link to this page, thank you! Here's some code you can cut and paste:</P>
+
+<div class="citation">
+<P>
+&lt;a href="http://www.explainthatstuff.com/logicgates.html"&gt;Introduction to logic gates&lt;/a&gt;
+</P>
+</div>-->
+
+
+</div>
+
+
+
+
+
+<!-- advinfo2 -->
+
+<!-- bottom search position -->
+
+
+
+
+
+
+
+
+<div class="alsoon"><a name="navigation"></a>
+<IMG class="footlogo" ALT="Explain that Stuff" src="http://cdn4.explainthatstuff.com/dot.gif">
+<h2>More to explore on our website...</h2>
+<ul class="nobull">
+<LI class="inline"><a href="articles_communications.html">Communications</A></LI>
+<LI class="inline"><a href="articles_computers.html">Computers</A></LI>
+<LI class="inline"><a href="articles_electricity.html">Electricity &amp; electronics</A></LI>
+<LI class="inline"><a href="articles_energy.html">Energy</A></LI>
+<LI class="inline"><a href="articles_engineering.html">Engineering</A></LI>
+<LI class="inline2"><a href="articles_environment.html">Environment</A></LI><BR>
+<LI class="inline"><a href="articles_gadgets.html">Gadgets</A></LI>
+<LI class="inline"><a href="articles_homelife.html">Home life</A></LI>
+<LI class="inline"><a href="articles_materials.html">Materials</A></LI>
+<LI class="inline"><a href="articles_science.html">Science</A></LI>
+<LI class="inline"><a href="articles_tools.html">Tools &amp; instruments</A></LI>
+<LI class="inline2"><a href="articles_transportation.html">Transportation</A></LI>
+</UL>
+</div>
+
+<div class="footer">
+<ul class="nobull"><li class="inline"><a href="/">Home</a></li>
+<li class="inline"><a href="azindex.html">A-Z index</a></li>
+<li class="inline"><a href="mybooks.php">Get the book</a></li>
+<li class="inline"><a href="followus.html">Follow us</a></li>
+<li class="inline"><a href="random.php">Random article</a></li>
+<li class="inline"><a href="timeline.html">Timeline</a></li>
+<li class="inline"><a href="teaching-guide.html">Teaching guide</a></li>
+<li class="inline"><a href="aboutus.html">About us</a></li>
+<li class="inline2"><a href="privacy.html">Privacy policy</a></li></ul>
+</div>
+
+<div class="totop">&uarr; <a href="#pagetop">Back to top</a></div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+(function(d, t) {
+var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+g.async = true;
+g.src = 'https://apis.google.com/js/plusone.js';
+s.parentNode.insertBefore(g, s);
+})(document, 'script');
+</script>
+
+<script type="text/javascript">
+  (function(){
+    var twitterWidgets = document.createElement('script');
+    twitterWidgets.type = 'text/javascript';
+    twitterWidgets.async = true;
+    twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+    document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+  })();
+</script>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
+
+
+</body>
+</html>
