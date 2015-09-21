@@ -156,6 +156,7 @@ class GenericPageCrawler(object):
         fake mode doesn't follow any of the above process 
         but simply inject 10-20 random URLs into the queue
     '''
+
     # fake single page crawl starts HERE
     if self.fake:
       def gen_random_url():
@@ -178,6 +179,9 @@ class GenericPageCrawler(object):
 
     # robots.txt check
     if vc.robots_disallow_check(self.page.url):
+      self.page.notes = 'not allowed de to robots.txt'
+      self.page.error = 1
+      self.log_queue.put(self.page)
       return
 
     # crawl start
@@ -188,8 +192,11 @@ class GenericPageCrawler(object):
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
     }
     try:
-      header = requests.head(self.page.url)
+      header = requests.head(self.page.url, timeout=0.5)
       if not header.headers.get('content-type'):
+        self.page.notes = 'no content-type found in header'
+        self.page.error = 1
+        self.log_queue.put(self.page)
         return
     except requests.exceptions.RequestException as e:
       self.page.notes = str(e)
@@ -203,12 +210,15 @@ class GenericPageCrawler(object):
 
     type = header.headers['content-type']
     if 'text/html' not in type:
+      self.page.notes = 'not text/html page'
+      self.page.error = 1
+      self.log_queue.put(self.page)
       return
 
     #send query and get content of the current page
 
     try:
-      response = requests.get(self.page.url, headers = headers)
+      response = requests.get(self.page.url, headers = headers, timeout=0.5)
     except requests.exceptions.RequestException as e:
       self.page.notes = str(e)
       self.page.error = 1
@@ -216,7 +226,6 @@ class GenericPageCrawler(object):
       self.page.time_duration = self.page.time_end - self.page.time_start
 
       self.log_queue.put(self.page)
-
       return
 
     data = response.text        # data is read out as unicode
