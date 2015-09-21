@@ -44,7 +44,17 @@ at most 3 words" if that is the case).
       $ pip install -r requirements.txt
 
   ii) Configuration
-      crawln.yml is the configuration file of the crawler
+      crawln.yml is the configuration file of the crawler.
+      There are definitions of where the crawl log, crawl pages to go
+      By default, all crawl logs and pages go to /tmp/
+
+      $ cat crawln.yml
+        # configurable items for crawln
+        crawl:
+          crawl_log   : '/tmp/crawl.log'
+          crawl_stats : '/tmp/crawl.stats'
+          crawl_pages : '/tmp/crawln'
+          crawl_errs  : '/tmp/error.log'
 
   iii) Run the program:
       $ python crawln.py [-n [NUM]] [keyword [keyword ...]]
@@ -124,4 +134,19 @@ at most 3 words" if that is the case).
 
     OK
 
-  
+ 4. How to Debug
+
+  There are a few tips to debug this crawler. 
+
+  i. check logs
+   crawl log has a lot of information. Crawl time, queue time could give you some hints
+   For example, a long crawl time for a specific page could give some hints about that url
+
+  2. run with fake mode
+   $ python crawln.py --fake
+
+  3. run with -v verbose mode for more information
+   $ python crawln.py -v
+   This is not implemented yet
+
+
