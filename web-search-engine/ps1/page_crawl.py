@@ -44,6 +44,8 @@ class Page(object):
     self.status_code = -1      # response status code
 
     self.update_fields()
+    self.notes = ''
+    self.error = -1
 
   def update_fields(self):
     ''' update linkhash and store based on url '''
@@ -189,17 +191,12 @@ class GenericPageCrawler(object):
       if not header.headers.get('content-type'):
         return
     except requests.exceptions.RequestException as e:
-      try:
-        fileto = self.conf['crawl']['crawl_errs']
-        dirname = os.path.dirname(fileto)
-        if not os.path.exists(dirname):
-          os.makedirs(dirname)
+      self.page.notes = str(e)
+      self.page.error = 1
+      self.page.time_end = time.time()
+      self.page.time_duration = self.page.time_end - self.page.time_start
 
-        with open(fileto, 'wb') as fpw:
-          fpw.write(url, e)
-
-      except Exception as e:
-        print('Error writing back %s: %s' % (self.page.url, str(e)))
+      self.log_queue.put(self.page)
 
       return
 
@@ -212,17 +209,12 @@ class GenericPageCrawler(object):
     try:
       response = requests.get(self.page.url, headers = headers)
     except requests.exceptions.RequestException as e:
-      try:
-        fileto = self.conf['crawl']['crawl_errs']
-        dirname = os.path.dirname(fileto)
-        if not os.path.exists(dirname):
-          os.makedirs(dirname)
+      self.page.notes = str(e)
+      self.page.error = 1
+      self.page.time_end = time.time()
+      self.page.time_duration = self.page.time_end - self.page.time_start
 
-        with open(fileto, 'wb') as fpw:
-          fpw.write(url, e)
-
-      except Exception as e:
-        print('Error writing back %s: %s' % (self.page.url, str(e)))
+      self.log_queue.put(self.page)
 
       return
 
