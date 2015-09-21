@@ -37,6 +37,8 @@ class CrawlStats(object):
     self.crawl_start_time = time.time()
     self.crawl_end_time = -1
 
+    self.crawl_in_progress = 0
+
     self.crawled_pages = 0
     self.crawled_bytes = 0
 
@@ -154,10 +156,11 @@ class Dispatcher(object):
       # initialize a generic crawler instance
       page = self.queue.de_queue()
       if page:
+        self.stats.crawl_in_progress += 1
         page.time_dequeue = time.time()
         worker.add_task(self.call_crawl_page, page)
 
-      if self.stats.crawled_pages == self.max_num_pages:
+      if self.stats.crawl_in_progress == self.max_num_pages:
         break
 
     worker.join()
@@ -221,6 +224,9 @@ class Dispatcher(object):
 
       if self.shutdown:
         break
+
+    # print finish statistics
+    print('crawl finished.')
 
   def run(self):
     ''' run the dispatcher '''
