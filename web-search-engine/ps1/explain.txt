@@ -42,6 +42,11 @@ basic requirements, if there are any.
   Validation check:
     1. 
 
-4. Multi-threading
+== Known Issue
 
-5. Fake test
+== Extra Features
+
+ * Multi-threading
+
+ * Fake test
+
