@@ -151,7 +151,7 @@ class Dispatcher(object):
   def run_page_crawler(self):
     ''' listen to crawler priority queue and crawl pages '''
 
-    worker = Worker(20)
+    worker = Worker(50)
     while True:
       # get one item from the queue
       # initialize a generic crawler instance
