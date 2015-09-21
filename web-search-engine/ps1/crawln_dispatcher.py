@@ -16,6 +16,7 @@ __author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>
 
 
 import os
+import sys
 import time
 import threading
 import Queue
@@ -74,9 +75,10 @@ class CrawlStats(object):
     self.crawled_succ_rate = int(self.crawled_succ) / float(self.crawled_pages)
 
     # write back statistics
-    self.write_crawl_stats()
+    with open(self.crawl_stats_file, 'w') as fdw:
+      self.write_crawl_stats(fdw)
 
-  def write_crawl_stats(self):
+  def write_crawl_stats(self, fdw):
     ''' write back crawl statistics
       - number of pages crawled
       - size of bytes crawled
@@ -88,15 +90,14 @@ class CrawlStats(object):
 
     duration = self.crawl_end_time - self.crawl_start_time
 
-    with open(self.crawl_stats_file, 'w') as fdw:
-      print('Crawl   start: ' + time.ctime(self.crawl_start_time), file=fdw)
-      print('Crawl    stop: ' + time.ctime(self.crawl_end_time), file=fdw)
-      print('Crawl    time: %.1f secs' % duration, file=fdw)
-      print('Crawled pages: %15d (%.1f pages / sec)' %
-            (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
-      print('Crawled bytes: %15d (%d bytes / sec)' %
-            (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
-      print('Crawled success rate: %.2f' % self.crawled_succ_rate, file=fdw)
+    print('Crawl   start: ' + time.ctime(self.crawl_start_time), file=fdw)
+    print('Crawl    stop: ' + time.ctime(self.crawl_end_time), file=fdw)
+    print('Crawl    time: %.1f secs' % duration, file=fdw)
+    print('Crawled pages: %15d (%.1f pages / sec)' %
+          (self.crawled_pages, self.crawled_page_per_sec), file=fdw)
+    print('Crawled bytes: %15d (%d bytes / sec)' %
+          (self.crawled_bytes, self.crawled_byte_per_sec), file=fdw)
+    print('Crawled success rate: %.2f' % self.crawled_succ_rate, file=fdw)
 
 
 class Dispatcher(object):
@@ -227,6 +228,8 @@ class Dispatcher(object):
 
     # print finish statistics
     print(time.ctime() + '\t' +  progress_report_current())
+    print('')
+    self.stats.write_crawl_stats(sys.stdout)
     print('crawl finished.')
 
   def run(self):
@@ -268,10 +271,12 @@ class Dispatcher(object):
     # wait for the workers to finish
     t_crawler.join()
     t_logger.join()
-    t_reporter.join()
 
     # finalize statistical metrics
     self.stats.finalize()
+
+    # close reporter
+    t_reporter.join()
 
     # close logger
     self.logger.close()
