@@ -192,6 +192,9 @@ class GenericPageCrawler(object):
       if not header.headers.get('content-type'):
         return
     except requests.exceptions.RequestException as e:
+      if header.status_code:
+        self.page.status_code = header.status_code
+
       self.page.notes = str(e)
       self.page.error = 1
       self.page.time_end = time.time()
@@ -210,6 +213,9 @@ class GenericPageCrawler(object):
     try:
       response = requests.get(self.page.url, headers = headers)
     except requests.exceptions.RequestException as e:
+      if header.status_code:
+        self.page.status_code = header.status_code
+
       self.page.notes = str(e)
       self.page.error = 1
       self.page.time_end = time.time()
