@@ -154,7 +154,6 @@ class GenericPageCrawler(object):
         but simply inject 10-20 random URLs into the queue
     '''
     # fake single page crawl starts HERE
-
     if self.fake:
       def gen_random_url():
         random_path = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(8))
@@ -174,6 +173,10 @@ class GenericPageCrawler(object):
       return
     # fake single page crawl ends HERE
 
+    # robots.txt check
+    if self.robots_disallow():
+      return
+
     # crawl start
     self.page.time_start = time.time()
 
@@ -186,6 +189,7 @@ class GenericPageCrawler(object):
       if not header.headers.get('content-type'):
         return
     except requests.exceptions.RequestException as e:
+      '''
       try:
         fileto = self.conf['crawl']['crawl_errs']
         dirname = os.path.dirname(fileto)
@@ -197,7 +201,7 @@ class GenericPageCrawler(object):
 
       except Exception as e:
         print('Error writing back %s: %s' % (self.page.url, str(e)))
-
+      '''
       return
 
     type = header.headers['content-type']
@@ -219,7 +223,7 @@ class GenericPageCrawler(object):
           fpw.write(url, e)
 
       except Exception as e:
-        print('Error writing back %s: %s' % (page.url, str(e)))
+        print('Error writing back %s: %s' % (self.page.url, str(e)))
 
       return
 
@@ -262,3 +266,34 @@ class GenericPageCrawler(object):
 
   def check_duplication(self, link):
     return self.cache.is_url_dup(link)
+
+  def robots_disallow(self):
+    link = self.page.url
+    robots = '/robots.txt'
+
+    robot_page = urljoin(link, robots)
+
+    try:
+      r = requests.get(robot_page)
+
+    except:
+      return False
+
+    agentname = ""
+    for a in r.text.split("\n"):
+      if 'user-agent' in a.lower():
+        agentname = a.split(":")[-1].split(" ")[-1]
+      else:
+        if agentname != "*":
+          continue
+        aa = a.split(":")
+        if aa[0].lower() == 'disallow':
+          path = aa[-1]
+          if path in self.page.url:
+            return True
+        if aa[0].lower() == 'allow':
+          path = aa[-1]
+          if path in self.page.url:
+            return False
+
+    return False
