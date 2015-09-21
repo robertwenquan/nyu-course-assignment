@@ -33,6 +33,7 @@ class Settings(object):
                         default=10)
     parser.add_argument('--fake', action='store_true', help='fake run, do not crawl')
     parser.add_argument('-i', '--interval', type=int, help='progress reporting interval')
+    parser.add_argument('-t', '--thread', type=int, help='number of concurrent page crawlers', default=50)
     parser.add_argument('-v', '--verbose', action='store_true', help='verbose output for debugging')
     parser.add_argument('keywords', metavar='keyword', type=str, nargs='*',
                         help='keyword to search', default=['nyu', 'poly'])
