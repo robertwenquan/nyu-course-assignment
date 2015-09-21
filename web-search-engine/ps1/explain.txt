@@ -45,6 +45,11 @@ basic requirements, if there are any.
     3. Filter URLs with non http or https protocol
     4. Give up pages that is disallowed by robot crawler
 
-4. Multi-threading
+== Known Issue
 
-5. Fake test
+== Extra Features
+
+ * Multi-threading
+
+ * Fake test
+

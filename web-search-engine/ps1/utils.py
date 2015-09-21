@@ -32,6 +32,10 @@ class TaskQueue(object):
 
   def en_queue(self, task):
     ''' put a task into the priority queue '''
+
+    # set enqueue time
+    task.time_enqueue = time.time()
+
     pri = self.normalize_priority(task.score)
     assert(pri >= 0 and pri <= 9)
 
@@ -41,11 +45,16 @@ class TaskQueue(object):
 
   def de_queue(self):
     ''' get a task from the queue based on priority '''
+
     for pri in range(9, -1, -1):
       if self.prio_task_cnt[pri] != 0:
         self.prio_task_cnt[pri] -= 1
         self.total_task_cnt -= 1
-        return self.prio_task_list[pri].pop(0)
+
+        page = self.prio_task_list[pri].pop(0)
+        page.time_dequeue = time.time()
+        page.queue_duration = page.time_dequeue - page.time_enqueue
+        return page
 
     return None
 
@@ -100,6 +109,7 @@ class Logger(object):
     log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size, 
                   'ref':page.ref, 'store':page.store, 'linkhash':page.linkhash,
                   'start':time.ctime(page.time_start), 'time':page.time_duration,
+                  'enqueue':time.ctime(page.time_enqueue), 'time_in_q':page.queue_duration,
                   'code':page.status_code
                 }
     log_json_str = json.dumps(log_entry)
