@@ -1,0 +1,1997 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="http://www.10best.com/favicon.ico?c=2015092023" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="fb:admins" content="510024565,12703336,1028121349,1492200200" />
+    <meta property="og:site_name" content="10Best" />
+    <link rel="apple-touch-icon-precomposed" href="http://img1.10bestmedia.com/static/img/10best-logo-iphone.png"/>
+    <title>San Francisco Chinese Food Restaurants: 10Best Restaurant Reviews</title>
+    <meta name="description" content="Find San Francisco Chinese food restaurants in San Francisco, CA. Read the 10Best San Francisco Chinese restaurant reviews and view users' Chinese restaurant ratings." />
+
+    <meta name="keywords" content="best San Francisco Chinese restaurants, top 10 San Francisco Chinese restaurants, Chinese restaurants in San Francisco, Chinese restaurants San Francisco, San Francisco Chinese dining, Chinese dining in San Francisco, top San Francisco Chinese restaurants, places to eat Chinese in San Francisco, San Francisco Chinese restaurant reviews, San Francisco cantonese, San Francisco dim sum, San Francisco szechuan, San Francisco hunan 10best, 10 best" />
+    <meta name="twitter:domain" content="10Best.com">
+    <meta name="twitter:site" content="@10best">
+<meta property="og:image" itemprop="thumbnailUrl" content="http://img2.10bestmedia.com/Images/Photos/63558/ton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg" />
+<link rel="image_src" href="http://img2.10bestmedia.com/Images/Photos/63558/ton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg"  />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:src" content="http://img2.10bestmedia.com/Images/Photos/63558/ton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg" />
+<meta property="article:author" content="http://www.facebook.com/profile.php?id=1618643246" />
+<meta property="twitter:creator" content="@tmolanphy" />
+<meta property="article:publisher" content="https://www.facebook.com/10best" />
+<meta property="og:title" content="San Francisco Chinese Food Restaurants: 10Best Restaurant Reviews" />
+<meta property="twitter:title" content="San Francisco Chinese Food Restaurants: 10Best Restaurant Reviews" />
+<meta property="og:description" content="Find San Francisco Chinese food restaurants in San Francisco, CA. Read the 10Best San Francisco Chinese restaurant reviews and view users' Chinese restaurant ratings." />
+<meta property="twitter:description" content="Find San Francisco Chinese food restaurants in San Francisco, CA. Read the 10Best San Francisco Chinese restaurant reviews and view users' Chinese restaurant ratings." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.10best.com/destinations/california/san-francisco/restaurants/chinese/" />
+
+    <link rel="stylesheet" href="http://css.10bestmedia.com/static/css/10best-20150820.css" />
+    <link rel="stylesheet" href="http://www.gannett-cdn.com/ads/scripts/10best/overlay-transition-ad.css" />
+    <script src="http://js.10bestmedia.com/static/js/vendor/modernizr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/smoothness/jquery-ui.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    <script src="http://js.10bestmedia.com/static/js/md5.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+    <script src="http://js.10bestmedia.com/static/js/10best-20150918-2.js"></script>
+    <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>
+    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <script src="http://js.10bestmedia.com/static/js/maps-20150122.js"></script>
+
+    <script type="text/javascript">
+
+    var gci_10b = {};
+    gci_10b.content_type="SubCategory Page";
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '213816218687991',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+
+$(document).ready(function(){
+
+        $(".slidingDiv").hide();
+        $(".show_hide").show();
+
+    $('.show_hide').click(function(){
+    $(".slidingDiv").slideToggle();
+    });
+
+});
+
+
+$(window).scroll(function(){
+    var scroll_top = $(this).scrollTop(); // get scroll position top
+    var height_element_parent =  $(".vert-social-sharing-bar").parent().outerHeight(); //get high parent element
+    var height_element = $(".vert-social-sharing-bar").height(); //get high of elemeneto
+    var position_fixed_max = height_element_parent - height_element; // get the maximum position of the elemen
+    var position_fixed = scroll_top < 30 ? 30 - scroll_top : position_fixed_max > scroll_top ? 0 : position_fixed_max - scroll_top ;
+    $(".vert-social-sharing-bar").css("top",position_fixed);
+});
+
+
+$(function() {
+    $(".th-slide").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev",
+		scroll: 1,
+		circular: false
+    });
+});
+
+
+$(document).ready(function(){
+
+	$(".scrollToTop").hide();
+
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+
+});
+
+</script>
+<script src="https://tags.tiqcdn.com/utag/gci/usatodaytravel/prod/utag.js?asof=__cache-bust__&c=1442807095" type="text/javascript"></script>
+
+
+</head>
+
+
+<body>
+
+
+<div class="off-canvas-wrap">
+<div class="inner-wrap">
+
+
+<!-- Top Nav -->
+<nav class="tab-bar show-for-medium-down">
+
+<section class="left-small">
+<a class="left-off-canvas-toggle menu-icon" onclick="trackClick(this, 'NAV_TOGGLE', '')"><span></span></a>
+</section>
+
+<section class="middle tab-bar-section">
+<h1 class="title"><a href="/" onclick="trackClick(this, 'NAV_LOGO', '')"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite usat-logo-wht" alt="10bestlogo" /></a></h1>
+</section>
+
+<section class="right-small">
+<a href="javascript:;" onclick="trackClick(this, 'NAV_MOBILE_SEARCH', '')" class="show_hide sprite mag-icon-white" style="display: block;"></a>
+</section>
+
+</nav>
+
+<aside class="left-off-canvas-menu" id="mobile-left-menu">
+	<ul class="off-canvas-list">
+        <li class="off-canvas-signin" id="mobile-login-link"><a href="javascript:;" onclick="trackClick(this, 'NAV_MOBILE_LOGIN', ''); renderLoginModal()" class="button">Sign In</a></li>
+        <li><a href="javascript:;" onclick="trackClick(this, 'NAV_MOBILE_LOCATE_ME', ''); locateMe()">Locate Me</a></li>
+        <li><a href="/" onclick="trackClick(this, 'NAV_MOBILE_HOME', '')">Home</a></li>
+        <li><a href="/destinations/" onclick="trackClick(this, 'NAV_MOBILE_DESTINATIONS', '')">Travel Destinations</a></li>
+        <li><a href="/interests/" onclick="trackClick(this, 'NAV_MOBILE_LIFESTYLE', '')">Lifestyle</a></li>
+        <li><a href="/awards/" onclick="trackClick(this, 'NAV_MOBILE_AWARDS', '')">Readers' Choice Awards</a></li>
+        <li><a href="http://10best.adventurelink.com/" target="_477252466" onclick="trackClick(this, 'NAV_MOBILE_ADVENTURELINK', '')">Weekly Deals</a></li>		
+        <li><a href="http://www.usatoday.com" onclick="trackClick(this, 'NAV_MOBILE_USA_TODAY', '')" target="_blank">USA TODAY</a></li>
+        <li class="mobile-login-required" style="display:none"><label>Account</label></li>
+        <li class="mobile-login-required" style="display:none"><a href="/my-profile/" onclick="trackClick(this, 'NAV_MOBILE_MY_PROFILE', '')" class="fw-400">Account Profile</a></li>
+        <li class="mobile-login-required" style="display:none"><a href="/change-password/" onclick="trackClick(this, 'NAV_MOBILE_CHANGE_PASSWORD', '')" class="fw-400">Change Password</a></li>
+        <li id="mobile-logout-link" style="display:none"><a href="javascript:;" onclick="trackClick(this, 'NAV_MOBILE_LOGOUT', ''); logout()" class="off-canvas-logout">Sign Out</a></li>
+        <li class="mobile-login-required" style="display:none"><label>My Lists</label></li>
+        <li class="mobile-login-required" style="display:none"><a href="javascript:;" onclick="trackClick(this, 'NAV_MOBILE_CREATE_NEW_LIST', ''); openModal('create-list-modal')">Create a New List</a></li>
+        <li><label>Most Popular Destinations</label></li>
+        <li><a href="/destinations/new-york/new-york/" class="fw-400" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_DESTINATION', '')">New York</a></li>
+        <li><a href="/destinations/illinois/chicago/" class="fw-400" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_DESTINATION', '')">Chicago</a></li>
+        <li><a href="/destinations/massachusetts/boston/" class="fw-400" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_DESTINATION', '')">Boston</a></li>
+        <li><a href="/destinations/georgia/atlanta/" class="fw-400" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_DESTINATION', '')">Atlanta</a></li>
+        <li><a href="/destinations/" onclick="trackClick(this, 'NAV_MOBILE_VIEW_ALL_DESTINATIONS', '')" class="fw-400">See all Destinations</a></li>
+        <li><label>Lifestyle Categories</label></li>
+        <li><a href="/interests/family-trips/" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_LIFESTYLE', '')" class="fw-400">Family</a></li>
+        <li><a href="/interests/foodie/" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_LIFESTYLE', '')" class="fw-400">Eat &amp; Drink</a></li>
+        <li><a href="/interests/beaches/" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_LIFESTYLE', '')" class="fw-400">Beaches</a></li>
+        <li><a href="/interests/romantic-places/" onclick="trackClick(this, 'NAV_MOBILE_FEATURED_LIFESTYLE', '')" class="fw-400">Romance</a></li>
+        <li><a href="/interests/" class="fw-400">See all Interests</a></li>
+      </ul>
+</aside>
+
+
+
+<div class="fixed">
+<nav class="top-bar show-for-large-up" data-topbar="" data-options="is_hover: true; custom_back_text: false">
+
+	<ul class="title-area">
+	<li class="name">
+	<h1><a href="/" onclick="trackClick(this, 'NAV_LOGO', '')"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite usat-logo-wht" alt="10bestlogo" /></a></h1>
+	</li>
+	<li class="toggle-topbar menu-icon"><a href="/" onclick="trackClick(this, 'NAV_LOGO', '')"><span></span></a></li>
+	</ul>
+
+	<section class="top-bar-section">
+
+ <ul class="right">
+<li class="has-dropdown usat-icon-nav">
+<a href="http://www.usatoday.com" target="_blank" onclick="trackClick(this, 'NAV_USA_TODAY', '')" class="sprite usat-icon"></a>
+         </li>
+</ul>
+
+        <ul class="right">
+		<li class="mag-icon-white-nav">
+		<a href="javascript:;" onclick="trackClick(this, 'NAV_DESKTOP_SEARCH', '')" class="show_hide sprite mag-icon-white"></a>
+		</li>
+		</ul>
+
+         <ul class="right">
+<li class="has-dropdown account-icon-nav not-click" id="myAccountHover">
+		 <a id="account-icon-link" href="javascript:;" class="sprite account-icon" onclick="trackClick(this, 'NAV_DESKTOP_LOGIN', ''); renderLoginModal()"></a>
+         </li>
+		 </ul>
+
+
+
+         <ul class="right wd-breakpoint">
+        <li><a href="javascript:;" onclick="trackClick(this, 'NAV_DESKTOP_LOCATE_ME', ''); locateMe()" id="locate-me-button">Locate Me</a></li>
+                 </ul>
+
+		<ul class="right">
+        		<li class="has-dropdown"><a data-dropdown="mega4" data-options="is_hover:true" href="http://10best.adventurelink.com/" target="_adventurelink" onclick="trackClick(this, 'NAV_DESKTOP_ADVENTURELINK', '');location.href='http://10best.adventurelink.com/'">Weekly Deals</a></li>
+                 </ul>
+
+
+         <ul class="right">
+		 <li class="has-dropdown">
+	  	 <a data-dropdown="mega3" data-options="is_hover:true" href="/awards/" onclick="trackClick(this, 'NAV_DESKTOP_AWARDS', ''); location.href='/awards/'">Readers' Choice Awards</a>
+		 </li>
+	   	 </ul>
+
+		<ul class="right">
+		<li class="has-dropdown">
+		<a data-dropdown="mega2" data-options="is_hover:true" href="/interests/" onclick="trackClick(this, 'NAV_DESKTOP_LIFESTYLE', ''); location.href='/interests/'">Lifestyle</a>
+		</li>
+		</ul>
+
+		<ul class="right">
+		<li class="has-dropdown active">
+		<a data-dropdown="mega1" data-options="is_hover:true" href="/destinations/" onclick="trackClick(this, 'NAV_DESKTOP_DESTINATIONS', ''); location.href='/destinations/'">Travel Destinations</a>
+		</li>
+		</ul>
+
+		<ul class="right">
+		<li>
+		<a href="/" onclick="trackClick(this, 'NAV_DESKTOP_HOME', '')">Home</a>
+		</li>
+		</ul>
+
+	</section>
+
+
+<section class="top-bar-mega">
+
+<div id="mega1" data-dropdown-content="" class="f-dropdown content override-drop row">
+
+	<div class="t3">Popular Travel Destinations</div>
+
+	<div class="large-2 columns">
+		<ul class="no-bullet no-back">
+		<li><a href="/destinations/texas/dallas/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Dallas</a></li>
+		<li><a href="/destinations/tennessee/nashville/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Nashville</a></li>
+		<li><a href="/destinations/florida/orlando/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Orlando</a></li>
+		<li><a href="/destinations/washington/seattle/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Seattle</a></li>
+		<li><a href="/destinations/south-carolina/charleston/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Charleston</a></li>
+		<li><a href="/destinations/netherlands/amsterdam/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Amsterdam</a></li>
+		</ul>
+	</div>
+
+    <div class="large-2 columns">
+		<ul class="no-bullet no-back">
+		<li><a href="/destinations/france/paris/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Paris</a></li>
+		<li><a href="/destinations/georgia/savannah/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Savannah</a></li>
+		<li><a href="/destinations/germany/berlin/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Berlin</a></li>
+		<li><a href="/destinations/texas/houston/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Houston</a></li>
+		<li><a href="/destinations/florida/miami/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">Miami</a></li>
+		<li><a href="/destinations/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION', '')">See All Destinations</a></li>
+		</ul>
+	</div>
+
+    <div class="large-2 columns">
+    <a href="/destinations/new-york/new-york/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')"><img src="http://img2.10bestmedia.com/Images/Photos/216115/3056953388-4512c89d0a-b_55_660x440_201404232350.jpg" nopin="nopin"></a>
+    <a href="/destinations/new-york/new-york/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')">New York</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/destinations/illinois/chicago/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')"><img src="http://img1.10bestmedia.com/Images/Photos/215952/Chicago-AttractionsCR-cloudgate-reflection_55_660x440_201404232343.jpg" nopin="nopin"></a>
+    <a href="/destinations/illinois/chicago/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')">Chicago</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/destinations/massachusetts/boston/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')"><img src="http://img2.10bestmedia.com/Images/Photos/216271/3756170885-acc55747b0-b_55_660x440_201404232355.jpg" nopin="nopin"></a>
+    <a href="/destinations/massachusetts/boston/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')">Boston</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/destinations/georgia/atlanta/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')"><img src="http://img2.10bestmedia.com/Images/Photos/216528/wocc-NightExteriorwithPath_55_660x440_201404240006.jpg" nopin="nopin"></a>
+    <a href="/destinations/georgia/atlanta/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DESTINATION_IMG', '')">Atlanta</a>
+    </div>
+
+</div>
+
+<div id="mega2" data-dropdown-content="" class="f-dropdown content override-drop row">
+
+	<div class="t3">Lifestyle</div>
+
+	<div class="large-2 columns">
+		<ul class="no-bullet no-back">
+		<li><a href="/interests/family-trips/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Family</a></li>
+		<li><a href="/interests/foodie/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Eat &amp; Drink</a></li>
+		<li><a href="/interests/beaches/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Beaches</a></li>
+		<li><a href="/interests/romantic-places/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Romance</a></li>
+		<li><a href="/interests/travel-now/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Where to Go When</a></li>
+		<li><a href="/interests/travel-features/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Features</a></li>
+		<li><a href="/interests/where-to-stay/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Hotels</a></li>
+		</ul>
+	</div>
+
+    <div class="large-2 columns">
+		<ul class="no-bullet no-back">
+		<li><a href="/interests/trip-pics/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Slideshows</a></li>
+		<li><a href="/interests/travel-gear-and-technology/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Gear &amp; Tech</a></li>
+		<li><a href="/interests/postcard-perfect/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Postcards</a></li>
+		<li><a href="/interests/sports-travel/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Sports &amp; Adventure</a></li>
+		<li><a href="/interests/travel-destinations/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Travel Destinations</a></li>
+		<li><a href="/interests/college-life/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">College Life</a></li>
+		<li><a href="/interests/quizzes/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE', '')">Quizzes</a></li>
+		</ul>
+	</div>
+
+    <div class="large-2 columns">
+    <a href="/interests/foodie/some-of-our-favorite-under-the-radar-wine-regions/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')"><img src="http://img1.10bestmedia.com/Images/Photos/316069/Keuak-Lake---photo-credit-Nicole-Young_55_660x440.jpg" nopin="nopin"></a>
+    <a href="/interests/foodie/some-of-our-favorite-under-the-radar-wine-regions/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')">Some Of Our Favorite Under-The-Radar Wine Regions</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/interests/trip-pics/photo-tour-the-st-lawrence-river-to-newfoundland-and-labrador/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')"><img src="http://img1.10bestmedia.com/Images/Photos/315223/edit-Qm-0746_55_660x440.jpg" nopin="nopin"></a>
+    <a href="/interests/trip-pics/photo-tour-the-st-lawrence-river-to-newfoundland-and-labrador/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')">Photo Tour: The St. Lawrence River to Newfoundland and Labrador</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/interests/travel-features/road-trip-10-must-see-spots-from-santa-fe-to-taos-new-mexico/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')"><img src="http://img2.10bestmedia.com/Images/Photos/319432/4529506110-7943bc89dc-o_55_660x440.jpg" nopin="nopin"></a>
+    <a href="/interests/travel-features/road-trip-10-must-see-spots-from-santa-fe-to-taos-new-mexico/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')">Road Trip: 10 Must-See Spots from Santa Fe to Taos, New Mexico</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/interests/sports-travel/swing-on-by-10-golf-courses-with-epic-views/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')"><img src="http://img1.10bestmedia.com/Images/Photos/318686/turnberry-9th-hole--copy_55_660x440.jpg" nopin="nopin"></a>
+    <a href="/interests/sports-travel/swing-on-by-10-golf-courses-with-epic-views/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_LIFESTYLE_IMG', '')">Swing On By: 10 Golf Courses with Epic Views</a>
+    </div>
+
+</div>
+
+<div id="mega3" data-dropdown-content="" class="f-dropdown content override-drop row">
+
+	<div class="t3">Readers' Choice Awards</div>
+
+	<div class="large-2 columns">
+		<ul class="no-bullet no-back">
+		<li><a href="/awards/travel/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD', '')">Travel</a></li>
+		</ul>
+	</div>
+
+    <div class="large-2 columns">
+		<ul class="no-bullet no-back">
+		</ul>
+	</div>
+
+    <div class="large-2 columns">
+    <a href="/awards/travel/best-theme-park-halloween-event/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')"><img src="http://img2.10bestmedia.com/Images/Photos/319424/Theme-Park_55_660x440.jpg" nopin="nopin" /></a>
+    <a href="/awards/travel/best-theme-park-halloween-event/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')">Best Theme Park Halloween Event</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/awards/travel/best-haunted-hotel/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')"><img src="http://img2.10bestmedia.com/Images/Photos/319420/Sagamore_55_660x440.jpg" nopin="nopin" /></a>
+    <a href="/awards/travel/best-haunted-hotel/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')">Best Haunted Hotel</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/awards/travel/best-ghost-tour/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')"><img src="http://img1.10bestmedia.com/Images/Photos/319413/ThinkstockPhotos-483233455_55_660x440.jpg" nopin="nopin" /></a>
+    <a href="/awards/travel/best-ghost-tour/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')">Best Ghost Tour</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/awards/travel/best-extreme-haunted-attraction/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')"><img src="http://img2.10bestmedia.com/Images/Photos/319409/Fright-Farm_55_660x440.jpg" nopin="nopin" /></a>
+    <a href="/awards/travel/best-extreme-haunted-attraction/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')">Best Extreme Haunted Attraction</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="/awards/travel/best-halloween-destination/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')"><img src="http://img1.10bestmedia.com/Images/Photos/319416/ThinkstockPhotos-482399975_55_660x440.jpg" nopin="nopin" /></a>
+    <a href="/awards/travel/best-halloween-destination/" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_AWARD_IMG', '')">Best Halloween Destination</a>
+    </div>
+
+</div>
+
+<div id="mega4" data-dropdown-content="" class="f-dropdown content override-drop row">
+
+        <div class="t3">Weekly Deals</div>
+
+        <div class="large-2 columns">
+                <ul class="no-bullet no-back">
+                <li><a href="http://10best.adventurelink.com/besttripsweekly" target="_adventurelink1669623723" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">Trips</a></li>
+                <li><a href="http://10best.adventurelink.com/beachgetaways" target="_adventurelink1074153402" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">Beach Getaways</a></li>
+                <li><a href="http://10best.adventurelink.com/familytrips" target="_adventurelink1516544018" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">Family Trips</a></li>
+                <li><a href="http://10best.adventurelink.com/fiftyplus" target="_adventurelink1132533080" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">50+ Trips</a></li>
+                </ul>
+        </div>
+
+    <div class="large-2 columns">
+                <ul class="no-bullet no-back">
+                <li><a href="http://10best.adventurelink.com/budget" target="_adventurelink1858431146" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">Budget Trips</a></li>
+                <li><a href="http://10best.adventurelink.com/foodietrips" target="_adventurelink315750013" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">Foodie Trips</a></li>
+                <li><a href="http://10best.adventurelink.com/festivals" target="_adventurelink538329347" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">Festivals</a></li>
+                <li><a href="http://10best.adventurelink.com/luxury" target="_adventurelink1049892215" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS', '')">Luxury Trips</a></li>
+                </ul>
+        </div>
+
+    <div class="large-2 columns">
+    <a href="http://10best.adventurelink.com/trip/143382" target="_adventurelink909743245" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')"><img src="http://res.cloudinary.com/adventurelink/image/fetch/w_330,h_220,c_fill/https://s3.amazonaws.com/al-photos/c76853f0-97c5-45e1-9270-e6542f2bff2a.jpg" nopin="nopin"></a>
+    <a href="http://10best.adventurelink.com/trip/143382" target="_adventurelink355703665" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')">Experience Romania's Halloween: Transylvania Unearthed</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="http://10best.adventurelink.com/trip/133596" target="_adventurelink1048177866" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')"><img src="http://res.cloudinary.com/adventurelink/image/fetch/w_330,h_220,c_fill/https://s3.amazonaws.com/al-photos/cf27789f-9976-44b8-920d-c0f6bbdf43c2.jpg" nopin="nopin"></a>
+    <a href="http://10best.adventurelink.com/trip/133596" target="_adventurelink549336400" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')">Explore the Spicy Side of Mexico</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="http://10best.adventurelink.com/trip/141815" target="_adventurelink156077239" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')"><img src="http://res.cloudinary.com/adventurelink/image/fetch/w_330,h_220,c_fill/https://s3.amazonaws.com/al-photos/a77c595b-8c23-432b-94b4-e35283f7623c.jpg" nopin="nopin"></a>
+    <a href="http://10best.adventurelink.com/trip/141815" target="_adventurelink692444486" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')">Morocco: Sahara Family Adventure</a>
+    </div>
+    <div class="large-2 columns">
+    <a href="http://10best.adventurelink.com/trip/128734" target="_adventurelink1523993622" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')"><img src="http://res.cloudinary.com/adventurelink/image/fetch/w_330,h_220,c_fill/https://s3.amazonaws.com/al-photos/09b266cd-2105-40b7-aa0f-b72eb032964c.jpg" nopin="nopin"></a>
+    <a href="http://10best.adventurelink.com/trip/128734" target="_adventurelink495321753" onclick="trackClick(this, 'NAV_DESKTOP_FEATURED_DEALS_IMG', '')">Uncover the Mysteries of Turkey</a>
+    </div>
+
+</div>
+
+
+</section>
+
+
+</nav>
+</div>
+
+
+<!-- Top bar fix when have subnav -->
+<div class="show-for-large-up topbar-fix-large"></div>
+<!-- End Top bar fix when have subnav -->
+
+<!-- End Top Nav -->
+
+
+<!-- Main SEARCH Large -->
+<section>
+<div class="search-cont slidingDiv floating-search">
+
+
+
+
+<div class="row">
+<div class="small-12 medium-12 large-12 columns"><header><h1>SEARCH:  by place + food, budget, style, hotel, attraction, etc</h1></header></div>
+</div>
+
+<div class="row">
+
+	<div class="small-12 medium-3 large-2  columns no-padd-right">
+		<select id="primary-search-filter" class="search-grad add-border">
+          <option value="">ALL</option>
+<option value="10Best Readers' Choice Awards">10Best Readers' Choice Awards</option>
+<option value="Destinations">Destinations</option>
+<option value="College Life">College Life</option>
+<option value="Quiz">Quiz</option>
+<option value="Restaurants">Restaurants</option>
+<option value="Attractions">Attractions</option>
+<option value="Nightlife">Nightlife</option>
+<option value="Hotels">Hotels</option>
+<option value="Shopping">Shopping</option>
+<option value="Categories">Categories</option>
+<option value="Lists">Lists</option>
+<option value="Articles">Articles</option>
+<option value="Slideshows">Slideshows</option>
+<option value="Postcards">Postcards</option>
+        </select>
+
+	</div>
+
+	<div class="small-12 medium-7 large-7 columns no-padd-left">
+		<input type="text" id="primary-search" class="main-search-form add-corners" placeholder="Search Destinations, Lists, Hotels and more." value="" />
+	</div>
+
+
+	<div class="medium-2 large-3 columns">
+	<a href="javascript:;" onclick="trackClick(this, 'NAV_SEARCH', ''); searchRedirect()" class="button radius expand">SEARCH</a>
+	</div>
+
+</div>
+
+</div>
+</section>
+<div class="show-for-small-only text-center t5 hide-for-print" style="font-size: 85%">Trusted Travel & Lifestyle Advice</div>
+<div class="print-only text-left t5 show-for-print">10BEST: Trusted Travel & Lifestyle Advice</div>
+
+ <!-- END SEARCH Large -->
+
+
+<!--  Begin Subnav -->    
+<div class="fixed fixed-subnav-m">
+<nav class="show-for-medium-up fixed-sn">
+<div class="row">
+<div class="large-12 columns">
+<dl class="sub-nav-icon nmb">
+<dt class="show-for-large-up">San Francisco:</dt>
+<dd><a href="/destinations/california/san-francisco/" onclick="trackClick(this, 'NAV_SUBNAV_CLICK', '')"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="destination-sprite ds-overview" alt="Overview" /></a><p class="small text-center">overview</p></dd><dd><a href="/destinations/california/san-francisco/attractions/" onclick="trackClick(this, 'NAV_SUBNAV_CLICK', '')"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="destination-sprite ds-see-and-do" alt="See &amp;amp; Do" /></a><p class="small text-center">see &amp; do</p></dd><dd><a href="/destinations/california/san-francisco/restaurants/" onclick="trackClick(this, 'NAV_SUBNAV_CLICK', '')"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="destination-sprite ds-eat-on" alt="Eat" /></a><p class="small text-center">eat</p></dd><dd><a href="/destinations/california/san-francisco/nightlife/" onclick="trackClick(this, 'NAV_SUBNAV_CLICK', '')"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="destination-sprite ds-party" alt="Party" /></a><p class="small text-center">party</p></dd><dd><a href="/destinations/california/san-francisco/hotels/" onclick="trackClick(this, 'NAV_SUBNAV_CLICK', '')"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="destination-sprite ds-stay" alt="Stay" /></a><p class="small text-center">stay</p></dd><dd><a href="/destinations/california/san-francisco/shopping/" onclick="trackClick(this, 'NAV_SUBNAV_CLICK', '')"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="destination-sprite ds-shop" alt="Shop" /></a><p class="small text-center">shop</p></dd><dd><a href="/destinations/california/san-francisco/neighborhoods/" onclick="trackClick(this, 'NAV_SUBNAV_CLICK', '')"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="destination-sprite ds-neighborhood" alt="Neighborhoods" /></a><p class="small text-center">neighborhoods</p></dd></dl> 
+</div>
+</div> 
+</nav>
+</div>
+<!--  END Subnav -->   
+
+<div class="show-for-large-up subnav-top-fix-icon">&nbsp;</div>
+
+<!--  Begin Subnav tablet/mobile-->
+
+<div class="row addmargins show-for-small-only">
+<div class="large-12 columns">
+<nav>
+<select class="sub-nav-small" onchange="window.location=this.value;trackClick(this, 'NAV_MOBILE_DROPDOWN', '')"><option value="/destinations/california/san-francisco/">Overview</option><option value="/destinations/california/san-francisco/attractions/">See &amp; Do</option><option value="/destinations/california/san-francisco/restaurants/">Eat</option><option value="/destinations/california/san-francisco/nightlife/">Party</option><option value="/destinations/california/san-francisco/hotels/">Stay</option><option value="/destinations/california/san-francisco/shopping/">Shop</option><option value="/destinations/california/san-francisco/neighborhoods/">Neighborhoods</option></select>
+</nav>
+</div>
+</div>
+<!--  END Subnav -->
+
+
+
+
+<!--  Begin Main Content and Vert Sharebar Track -->
+
+<main role="main">
+
+
+<!-- SHARE BAR -->
+
+<div class="vert-social-sharing-bar addtopmargin">
+<ul class="no-bullet">
+<li><a href="javascript:;" onclick="share('https://www.facebook.com/dialog/feed?app_id=213816218687991&link=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&picture=http%3A%2F%2Fimg2.10bestmedia.com%2FImages%2FPhotos%2F63558%2Fton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg&name=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews&caption=&description=Find+San+Francisco+Chinese+food+restaurants+in+San+Francisco%2C+CA.+Read+the+10Best+San+Francisco+Chinese+restaurant+reviews+and+view+users%27+Chinese+restaurant+ratings.&redirect_uri=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F', 'FACEBOOK', this, 'SHARE_FACEBOOK');"><div class="image-overlay3"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite facebook-sq" alt="facebook share" /></div></a></li>
+<li><a href="javascript:;" onclick="share('https://twitter.com/share?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&text=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews', 'TWITTER', this, 'SHARE_TWITTER');"><div class="image-overlay3"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite twitter-sq" alt="twitter share" /></div></a></li>
+<li><a href="javascript:;" onclick="share('https://plus.google.com/share?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F', 'GOOGLEPLUS', this, 'SHARE_GOOGLE');"><div class="image-overlay3"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite google-sq" alt="google plus share" /></div></a></li>
+<li><a href="javascript:;" onclick="share('http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&media=http%3A%2F%2Fimg2.10bestmedia.com%2FImages%2FPhotos%2F63558%2Fton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg', 'PINTEREST', this, 'SHARE_PINTEREST');"><div class="image-overlay3"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite pinterest-sq" alt="pinterest share" /></div></a></li>
+<li><a href="javascript:;" onclick="share('http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F', 'STUMBLEUPON', this, 'SHARE_STUMBLEUPON');"><div class="image-overlay3"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite stumble-upon-sq" alt="stumble upon share" /></div></a></li>
+<li><a href="javascript:;" onclick="share('http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&title=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews&summary=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews&source=10Best', 'LINKEDIN', this, 'SHARE_LINKEDIN');"><div class="image-overlay3"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite linkedin-sq" alt="linkedin share" /></div></a></li>
+</ul>
+
+</div>
+
+<!-- END SHARE BAR -->
+
+<!-- Begin Breadcrumbs -->  
+<nav>  
+<div class="row show-for-medium-up">
+<div class="large-12 columns">
+	<ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+    <li><a href="/destinations/california/san-francisco/">San Francisco Travel Guide</a></li>
+    <li><a href="/destinations/california/san-francisco/restaurants/">San Francisco Restaurants</a></li>
+    <li class="current"><a href="/destinations/california/san-francisco/restaurants/chinese/">Chinese</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Breadcrumbs -->    
+   
+
+    
+<!--  Begin Header -->    
+<section>    
+<div class="row">
+
+<div class="small-12 medium-12 large-12 columns">
+<h1>San Francisco's Best Chinese Restaurants: Taste the Far East While Far West</h1>
+</div>
+
+
+</div>
+<!--  End Header -->   
+
+
+
+
+
+<!--  Begin Main Content -->    
+
+
+<div class="row">
+<div class="small-12 medium-12 large-8 columns">
+
+<!-- OPEN IMAGE OVERLAY -->
+<div class="full-screen-fix show-for-large-up">
+<ul class="clearing-thumbs clearing-feature" data-clearing>
+
+
+<li class="clearing-featured-img"><a href="http://img1.10bestmedia.com/Images/Photos/175938/shangri-la-vegetarian_54_990x660_201406020053.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img1.10bestmedia.com/Images/Photos/175938/shangri-la-vegetarian_54_990x660_201406020053.jpg" class="cover-large-mask" data-caption="<h1>Shangri-La Chinese Vegetarian</h1>Vegetarian restaurants can be expensive in the city, but Shangri-La is a good option if you want excellent Chinese food at a reasonable price. Shangri-La has been around since 1978 and doesn't do vegetarian as a gimmick; everyone who works there believes in the benefits of a vegetarian lifestyle. In fact, they take the approach that food is the same as medicine and proudly proclaim that statistics show those who follow a vegetarian diet have longer, healthier lives. Shangri La uses only fresh garden vegetables, bean, nuts, tofu and whole grain products for their dishes, including the very popular Veggie Chicken Soup boiled in a nutritious broth of Wolfberry and Lotus Seeds.&lt;br /&gt;Photo courtesy of www.sanfranciscodays.com"></a></li>
+
+
+<li><a href="http://img2.10bestmedia.com/Images/Photos/63557/ton-kiang-mango-pudding-with-cream_54_990x660_201404182010.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img2.10bestmedia.com/Images/Photos/63557/ton-kiang-mango-pudding-with-cream_54_990x660_201404182010.jpg" class="cover-large-mask" data-caption="<h1>Ton Kiang</h1>Tourists, locals, and critics alike sing Ton Kiang's praises. Ton Kiang features a specific cuisine, &quot;Hakka&quot; cuisine, which makes it a very unique restaurant in terms of Chinese cuisines. The Hakka people traveled all over China and picked up all kinds of regional influences for their dishes. Hakka cuisine (regional fare influenced by Indian dishes) is the restaurant's signature, but you'll also find a variety of other styles. Begin with a fresh spring roll and chicken wonton soup or even beef and fish-ball soup. Main courses include crab in black bean sauce and plenty of tofu and vegetable dishes. Best of all, the dim sum is known as some of the area's best!&lt;br /&gt;Photo courtesy of Shockingly Tasty"></a></li>
+
+
+<li><a href="http://img1.10bestmedia.com/Images/Photos/175935/lucky-creation-restaurant-san-francisco-united-states-12788920567-tpfil02aw-16046_54_990x660_201405312318.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img1.10bestmedia.com/Images/Photos/175935/lucky-creation-restaurant-san-francisco-united-states-12788920567-tpfil02aw-16046_54_990x660_201405312318.jpg" class="cover-large-mask" data-caption="<h1>Lucky Creation Restaurant</h1>If you've been up and down the alleys of Chinatown, and the egg rolls and dim sum are all starting to taste the same, drop by Lucky Creation for a different take on Chinese. Their orange chicken alone will make you bite twice to believe it's really not chicken...! It's a fun place to take meat-eaters who dislike vegetables, too; their Fried Honeyed Walnuts &amp;amp; Taro Cake will make even the most ardent meat-eater happy. If you're looking for a special ambience, though, this is not exactly the place, as it's no better or worse than many other small Chinese restaurants in Chinatown.&lt;br /&gt;Photo courtesy of images.travelpod.com"></a></li>
+
+
+<li><a href="http://img2.10bestmedia.com/Images/Photos/182846/IMG-3682_54_990x660_201404231157.JPG" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img2.10bestmedia.com/Images/Photos/182846/IMG-3682_54_990x660_201404231157.JPG" class="cover-large-mask" data-caption="<h1>Nanking Road Bistro</h1>When you need a break from Chinatown but still want yummy Chinese food, head to Nanking Road Bistro. Don't let the empty seats fool you - they do a tremendous catering business, so the restaurant is almost a side-venture. The consistent quality of the sweet and sour soup symbolizes their dedication to fresh ingredients cooked just right.  The Sesame Chicken is also very popular, featuring a succulent white meat  deep-fried to perfection and lightly coated with a spicy sweet sauce. The thoughtful design of the restaurant, open and airy with long wooden banquettes along the walls,  invites people in and makes them want to stay."></a></li>
+
+
+<li><a href="http://img2.10bestmedia.com/Images/Photos/72931/hunan-homes-restaurant-exterior_54_990x660_201405311628.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img2.10bestmedia.com/Images/Photos/72931/hunan-homes-restaurant-exterior_54_990x660_201405311628.jpg" class="cover-large-mask" data-caption="<h1>Hunan Home's Restaurant</h1>Chinese food enthusiasts flock to Hunan Home's Restaurant for award-winning cuisine that's reputedly &quot;the best kept secret in Chinatown.&quot; The extensive menu features all the traditional items you expect to find, including classic Kung Pao chicken, Mongolian beef and eggplant with spicy garlic sauce. Diners particularly love the chicken with orange peel, prawns with honey walnuts, pot stickers and, of course, hot and sour soup. Attentive service rounds out an authentic and satisfying dining experience. Opened in 1983, Hunan Home's has remained  a favorite for travelers and locals alike. Owned and operated by the Yuan family, the restaurant has stayed remarkably consistent over the eyars.&lt;br /&gt;Photo courtesy of Gary Soup"></a></li>
+
+
+<li><a href="http://img2.10bestmedia.com/Images/Photos/234675/Chinese-food_54_990x660_201404241637.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img2.10bestmedia.com/Images/Photos/234675/Chinese-food_54_990x660_201404241637.jpg" class="cover-large-mask" data-caption="<h1>Mission Chinese Food</h1>Although locally respected restaurant critic Michael Bauer of the San Francisco Chronicle feels the service and quality of Mission Chinese has slipped, this restaurant started at such a great height, it could afford some slippage. Founder Danny Bowien was met with such critical and commercial success when he opened Mission Chinese in 2009 that he soon opened another restaurant in New York City. Some feel Mission Chinese has suffered from his absence, but his original dishes mixing traditional Chinese with California innovation still make this restaurant worth visiting. From the Sour Chili Chicken to the Stir-Fried Pork Jowl, you'll find Chinese-inspired dishes here that you can't find anywhere else. But get there early - the line forms quickly at this restaurant that's especially popular with Mission neighborhood locals.&lt;br /&gt;Photo courtesy of Wikimedia"></a></li>
+
+
+<li><a href="http://img1.10bestmedia.com/Images/Photos/232195/HK-Aberdeen-Promenade-Dried-fish-biz_54_990x660_201404241354.JPG" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img1.10bestmedia.com/Images/Photos/232195/HK-Aberdeen-Promenade-Dried-fish-biz_54_990x660_201404241354.JPG" class="cover-large-mask" data-caption="<h1>Great Eastern</h1>Great Eastern is so appreciated for its authenticity that you're likely to find a large clientele of native Chinese folks enjoying the cuisine. Seafood is always top-rated, as you'll see with lobster sashimi and prawns prepared a number of ways. Other dishes feature everything from duck and quail to abalone and pork. Dishes offer good value, and reservations are accepted for large groups. With its location on Jackson Street in the hear tof Chinatown, Great Eastern is a great spot for lunch or dinner (or both) as you wind your way through the large crowds and shops of this fascinating neighborhood.&lt;br /&gt;Photo courtesy of Wikimedia"></a></li>
+
+
+<li><a href="http://img1.10bestmedia.com/Images/Photos/263740/Chinese-food-4_54_990x660.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img1.10bestmedia.com/Images/Photos/263740/Chinese-food-4_54_990x660.jpg" class="cover-large-mask" data-caption="<h1>Dragon Well</h1>Dragon Well creates comfort through simplicity. Owners Gary and Christina Tan offer pure, unadulterated Chinese dishes that ably satisfy, including kung pao chicken and steamed butterfish. If you like consistent, family-run establishments, Dragon Well is a great choice. If you're looking for a prelude to the meal, consider vegetarian potstickers or sauteed pea shoots, both wonderful additions. Although you won't find extravagant decor at Dragon Well, you'll be thrilled by the great food. A real crowd-pleaser is the Tea-Smoked Duck, which is steamed then wok-smoked with Pu Erh tea and served with hand-made buns and hoisen sauce. Dragon Well also offers one of the most satisfying gluten-free menus in the city.&lt;br /&gt;Photo courtesy of Wikimedia"></a></li>
+
+
+<li><a href="http://img1.10bestmedia.com/Images/Photos/34999/yank-sing-san-francisco-ca-usa-restaurants-chinese-asian-chinese-1553279_54_990x660_201405311537.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img1.10bestmedia.com/Images/Photos/34999/yank-sing-san-francisco-ca-usa-restaurants-chinese-asian-chinese-1553279_54_990x660_201405311537.jpg" class="cover-large-mask" data-caption="<h1>Yank Sing</h1>On the hunt for top-notch Chinese food? Check out Yank Sing, one of the city's most popular spots for authentic Asian fare. Although the restaurant serves many popular dishes, they are especially known for their deem sum. Yank Sing has over 100 varieties of deem sum (with some 60 varieties served fresh everyday). Deem sum carts laden with enticing, freshly made offerings make their way to each dining room table, affording patrons such must-have options as spring rolls and pot stickers, barbecued meats, Peking duck and soft-shell crab. For those seeking quick noontime eats, the combination lunch is a terrific option."></a></li>
+
+
+<li><a href="http://img2.10bestmedia.com/Images/Photos/73484/san-tung-chinese-restaurant_54_990x660_201406011327.jpg" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><div class="full-screen"></div><img src="http://img2.10bestmedia.com/Images/Photos/73484/san-tung-chinese-restaurant_54_990x660_201406011327.jpg" class="cover-large-mask" data-caption="<h1>San Tung Chinese Restaurant</h1>A hidden gem of San Francisco's Sunset district, San Tung Chinese Restaurant boasts a menu that consistently impresses locals and visitors alike. The most popular item by far is the original dry-fried chicken wings, but other patron favorites include the shrimp and leek dumplings, hot and sour soup, string beans and black bean sauce noodles. In addition to these innovative creations, the menu features beloved Chinese dishes like chow mein, Mongolian beef and garlic chicken. Located near Ninth and Irving, the energetic heart of the Sunset District, a visit to San Tung can include some of the bars and other nightlife hotspots of this underappreciated but vital neighborhood.&lt;br /&gt;Photo courtesy of San Tung Chinese Restaurant"></a></li>
+
+</ul>
+</div>
+<!-- END IMAGE OVERLAY -->
+
+
+<!--  Begin Image Slider -->    
+
+<div class="slideshow-wrapper hide-for-print">
+<div class="preloader"></div>
+<ul style="background-color: #000" class="example-orbit" data-orbit data-options="animation:fade; pause_on_hover:true; animation_speed:500; navigation_arrows:true; bullets:false; timer: false;">
+
+
+<li data-orbit-slide="slide-1"><a href="/destinations/california/san-francisco/san-francisco/restaurants/shangri-la-chinese-vegetarian/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img1.10bestmedia.com/Images/Photos/175938/shangri-la-vegetarian_54_990x660_201406020053.jpg" alt="slide 1" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/san-francisco/restaurants/shangri-la-chinese-vegetarian/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>10. Shangri-La Chinese Vegetarian</h1></a>
+<footer class="hide-for-small-only"><a href="http://www.sanfranciscodays.com/photos/large/shangri-la-vegetarian.jpg" target="_2042430241" rel="nofollow">Photo courtesy of www.sanfranciscodays.com</a></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-2"><a href="/destinations/california/san-francisco/lincoln-park/restaurants/ton-kiang/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img2.10bestmedia.com/Images/Photos/63557/ton-kiang-mango-pudding-with-cream_54_990x660_201404182010.jpg" alt="slide 2" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/lincoln-park/restaurants/ton-kiang/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>9. Ton Kiang</h1></a>
+<footer class="hide-for-small-only"><a href="http://www.flickr.com/photos/49506223@N00/5322105574" target="_535009079" rel="nofollow">Photo courtesy of Shockingly Tasty</a></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-3"><a href="/destinations/california/san-francisco/chinatown/restaurants/lucky-creation-restaurant/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img1.10bestmedia.com/Images/Photos/175935/lucky-creation-restaurant-san-francisco-united-states-12788920567-tpfil02aw-16046_54_990x660_201405312318.jpg" alt="slide 3" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/chinatown/restaurants/lucky-creation-restaurant/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>8. Lucky Creation Restaurant</h1></a>
+<footer class="hide-for-small-only"><a href="http://images.travelpod.com/tripwow/photos/ta-009a-22c2-e79d/lucky-creation-restaurant-san-francisco-united-states+12788920567-tpfil02aw-16046.jpg" target="_530884784" rel="nofollow">Photo courtesy of images.travelpod.com</a></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-4"><a href="/destinations/california/san-francisco/sunset-district/restaurants/nanking-road-bistro/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img2.10bestmedia.com/Images/Photos/182846/IMG-3682_54_990x660_201404231157.JPG" alt="slide 4" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/sunset-district/restaurants/nanking-road-bistro/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>7. Nanking Road Bistro</h1></a>
+<footer class="hide-for-small-only"></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-5"><a href="/destinations/california/san-francisco/chinatown/restaurants/hunan-homes-restaurant-1/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img2.10bestmedia.com/Images/Photos/72931/hunan-homes-restaurant-exterior_54_990x660_201405311628.jpg" alt="slide 5" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/chinatown/restaurants/hunan-homes-restaurant-1/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>6. Hunan Home's Restaurant</h1></a>
+<footer class="hide-for-small-only"><a href="http://www.flickr.com/photos/87117631@N00/2349193524" target="_259345614" rel="nofollow">Photo courtesy of Gary Soup</a></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-6"><a href="/destinations/california/san-francisco/mission-district/restaurants/mission-chinese-food/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img2.10bestmedia.com/Images/Photos/234675/Chinese-food_54_990x660_201404241637.jpg" alt="slide 6" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/mission-district/restaurants/mission-chinese-food/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>5. Mission Chinese Food</h1></a>
+<footer class="hide-for-small-only"><a href="http://upload.wikimedia.org/wikipedia/commons/a/a0/Chinese_food.jpg" target="_1354865728" rel="nofollow">Photo courtesy of Wikimedia</a></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-7"><a href="/destinations/california/san-francisco/chinatown/restaurants/great-eastern/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img1.10bestmedia.com/Images/Photos/232195/HK-Aberdeen-Promenade-Dried-fish-biz_54_990x660_201404241354.JPG" alt="slide 7" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/chinatown/restaurants/great-eastern/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>4. Great Eastern</h1></a>
+<footer class="hide-for-small-only"><a href="http://upload.wikimedia.org/wikipedia/commons/8/8c/HK_Aberdeen_Promenade_Dried_fish_biz.JPG" target="_621420018" rel="nofollow">Photo courtesy of Wikimedia</a></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-8"><a href="/destinations/california/san-francisco/marina-district/restaurants/dragon-well/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img1.10bestmedia.com/Images/Photos/263740/Chinese-food-4_54_990x660.jpg" alt="slide 8" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/marina-district/restaurants/dragon-well/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>3. Dragon Well</h1></a>
+<footer class="hide-for-small-only"><a href="http://commons.wikimedia.org/wiki/Category:Food_products_of_China#mediaviewer/File:Chinese_food_4.jpg" target="_1072814553" rel="nofollow">Photo courtesy of Wikimedia</a></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-9"><a href="/destinations/california/san-francisco/embarcadero/restaurants/yank-sing/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img1.10bestmedia.com/Images/Photos/34999/yank-sing-san-francisco-ca-usa-restaurants-chinese-asian-chinese-1553279_54_990x660_201405311537.jpg" alt="slide 9" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/embarcadero/restaurants/yank-sing/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>2. Yank Sing</h1></a>
+<footer class="hide-for-small-only"></footer>
+</div>
+</article>
+</li>
+
+<li data-orbit-slide="slide-10"><a href="/destinations/california/san-francisco/sunset-district/restaurants/san-tung-chinese-restaurant/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_IMAGE', '')"><img src="http://img2.10bestmedia.com/Images/Photos/73484/san-tung-chinese-restaurant_54_990x660_201406011327.jpg" alt="slide 10" /></a>
+<article>
+<div class="orbit-caption">
+<div class="subheader-offwht hide-for-small-only">Chinese</div>
+<a href="/destinations/california/san-francisco/sunset-district/restaurants/san-tung-chinese-restaurant/" onclick="trackClick(this, 'SUBCAT_SLIDESHOW_CAPTION', '')"><h1>1. San Tung Chinese Restaurant</h1></a>
+<footer class="hide-for-small-only"><a href="http://santungrestaurant.com" target="_1862188899" rel="nofollow">Photo courtesy of San Tung Chinese Restaurant</a></footer>
+</div>
+</article>
+</li>
+
+</ul>
+</div>
+
+
+
+<!--  End Image Slider -->     
+
+<!--  THUMBS -->    
+
+
+<nav class="hide-for-print"> 
+<div class="row addmargins">
+<div class="small-2 medium-2 large-1 columns"> 
+<button class="prev secondary expand radius" style="height: 75px"><img src="http://img1.10bestmedia.com/static/img/arrow-left.svg" /></button>        
+</div>
+
+<div class="small-8 medium-8 large-10 columns"> 
+<div class="th-slide">
+    <ul>
+        <li data-orbit-link="slide-1" class="force-th-height"><img src="http://img1.10bestmedia.com/Images/Photos/175938/shangri-la-vegetarian_54_990x660_201406020053.jpg" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-2" class="force-th-height"><img src="http://img2.10bestmedia.com/Images/Photos/63557/ton-kiang-mango-pudding-with-cream_54_990x660_201404182010.jpg" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-3" class="force-th-height"><img src="http://img1.10bestmedia.com/Images/Photos/175935/lucky-creation-restaurant-san-francisco-united-states-12788920567-tpfil02aw-16046_54_990x660_201405312318.jpg" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-4" class="force-th-height"><img src="http://img2.10bestmedia.com/Images/Photos/182846/IMG-3682_54_990x660_201404231157.JPG" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-5" class="force-th-height"><img src="http://img2.10bestmedia.com/Images/Photos/72931/hunan-homes-restaurant-exterior_54_990x660_201405311628.jpg" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-6" class="force-th-height"><img src="http://img2.10bestmedia.com/Images/Photos/234675/Chinese-food_54_990x660_201404241637.jpg" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-7" class="force-th-height"><img src="http://img1.10bestmedia.com/Images/Photos/232195/HK-Aberdeen-Promenade-Dried-fish-biz_54_990x660_201404241354.JPG" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-8" class="force-th-height"><img src="http://img1.10bestmedia.com/Images/Photos/263740/Chinese-food-4_54_990x660.jpg" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-9" class="force-th-height"><img src="http://img1.10bestmedia.com/Images/Photos/34999/yank-sing-san-francisco-ca-usa-restaurants-chinese-asian-chinese-1553279_54_990x660_201405311537.jpg" class="th" width="100px" height="75px" /></li>
+        <li data-orbit-link="slide-10" class="force-th-height"><img src="http://img2.10bestmedia.com/Images/Photos/73484/san-tung-chinese-restaurant_54_990x660_201406011327.jpg" class="th" width="100px" height="75px" /></li>
+    </ul>  
+</div>
+</div>
+
+<div class="small-2 medium-2 large-1 columns"> 
+<button class="next secondary expand radius" style="height: 75px"><img src="http://img1.10bestmedia.com/static/img/arrow-right.svg" /></button>
+</div>
+
+
+</div>
+</nav>
+
+
+<!--  END THUMBS -->   
+<div class="panel add-margin-top">
+
+<div class="row">
+    <div class="small-4 medium-2 large-2 columns add-margin-bottom show-for-medium-up"><a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')"><img src="http://img2.10bestmedia.com/Images/Photos/201962/IMG-2942_57_300x300_201404231609.JPG" class="expert" /></a></div>
+    <div class="small-12 medium-10 large-5 columns">
+    <p rel="author">By <a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')">Tom Molanphy</a><br />San Francisco Local Expert</a></p>
+	</div>
+    <div class="small-12 medium-12 large-5 columns text-right add-margin-bottom show-for-large-up"><div class="addtolist-cont" id="save-to-list">
+<a href="javascript:;" onclick="renderSaveModal()"><span class="addtolist-label">Save to My Lists</span></a><a href="javascript:;" onclick="renderSaveModal()"><span class="addtolist">+</span></a>
+</div>
+
+</div>
+	</div>
+
+<p>Sometimes, the urge to have Chinese food strikes, and nothing will satisfy you until you get it. Whether it's the desire for a tangy sauce or the need for a crispy crunch, Chinese food is unique and often can't be resisted. Although there are many, many different cuisines in San Francisco, including the zesty Italian of North Beach and the sizzling Latino fare of the Mission, the history of Chinese cuisine is a long and prosperous one in San Francisco. Whether that's because of the relative proximity of San Francisco to China in comparison to the rest of the U.S. or the large local population of Chinese Americans, one thing's for sure: San Francisco has a fantastic selection of Chinese restaurants.</p>
+<p>When the urge to eat stand-out Chinese food grabs you, count on 10Best to point you in the direction of San Francisco's best Chinese restaurants. We understand the desire to have a great meal, and we work hard to bring you the top places to eat in San Francisco. We vet restaurants carefully for quality, and when we recommend popular eateries like <a href="../../destinations/california/san-francisco/marina-district/restaurants/dragon-well/">Dragon Well</a> or tell you that <a href="../../destinations/california/san-francisco/chinatown/restaurants/great-eastern/">Great Eastern</a> gets good reader feedback, you can believe it.</p>
+<p>From Chinatown to Richmond District, we'll make sure you get - and eat - what's best.</p>
+<p><span class="list-number-copy">10</span> <a href="/destinations/california/san-francisco/san-francisco/restaurants/shangri-la-chinese-vegetarian/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Shangri-La Chinese Vegetarian</span></a><br />Vegetarian restaurants can be expensive in the city, but Shangri-La is a good option if you want excellent Chinese food at a reasonable price. Shangri-La has been around since 1978 and doesn't do vegetarian as a gimmick; everyone who works there believes in the benefits of a vegetarian lifestyle. In fact, they take the approach that food is the same as medicine and proudly proclaim that statistics show those who follow a vegetarian diet have longer, healthier lives. Shangri La uses only fresh garden vegetables, bean, nuts, tofu and whole grain products for their dishes, including the very popular Veggie Chicken Soup boiled in a nutritious broth of Wolfberry and Lotus Seeds. ((415) 731-2548)</p><p><span class="list-number-copy">9</span> <a href="/destinations/california/san-francisco/lincoln-park/restaurants/ton-kiang/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Ton Kiang</span></a><br />Tourists, locals, and critics alike sing Ton Kiang's praises. Ton Kiang features a specific cuisine, "Hakka" cuisine, which makes it a very unique restaurant in terms of Chinese cuisines. The Hakka people traveled all over China and picked up all kinds of regional influences for their dishes. Hakka cuisine (regional fare influenced by Indian dishes) is the restaurant's signature, but you'll also find a variety of other styles. Begin with a fresh spring roll and chicken wonton soup or even beef and fish-ball soup. Main courses include crab in black bean sauce and plenty of tofu and vegetable dishes. Best of all, the dim sum is known as some of the area's best! (415-387-8273, 415-752-4440)</p><p><span class="list-number-copy">8</span> <a href="/destinations/california/san-francisco/chinatown/restaurants/lucky-creation-restaurant/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Lucky Creation Restaurant</span></a><br />If you've been up and down the alleys of Chinatown, and the egg rolls and dim sum are all starting to taste the same, drop by Lucky Creation for a different take on Chinese. Their orange chicken alone will make you bite twice to believe it's really not chicken...! It's a fun place to take meat-eaters who dislike vegetables, too; their Fried Honeyed Walnuts &amp; Taro Cake will make even the most ardent meat-eater happy. If you're looking for a special ambience, though, this is not exactly the place, as it's no better or worse than many other small Chinese restaurants in Chinatown. ((415) 989-0818)</p><p style="margin-bottom:0px"><span class="list-number-copy">7</span> <a href="/destinations/california/san-francisco/sunset-district/restaurants/nanking-road-bistro/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Nanking Road Bistro</span></a><br />When you need a break from Chinatown but still want yummy Chinese food, head to Nanking Road Bistro. Don't let the empty seats fool you - they do a tremendous catering business, so the restaurant is almost a side-venture. The consistent quality of the sweet and sour soup symbolizes their dedication to fresh ingredients cooked just right.  The Sesame Chicken is also very popular, featuring a succulent white meat  deep-fried to perfection and lightly coated with a spicy sweet sauce. The thoughtful design of the restaurant, open and airy with long wooden banquettes along the walls,  invites people in and makes them want to stay. ((415) 753-2900)<div class="row">
+   <div class="small-12 medium-4 large-4 columns">
+      <ul class="no-bullet">
+          <li><a href="http://redirect.singleapi.com/?trackingId=sp-l514706-t1-p10-rNZQW4LLLNFXGOLLSN5QWILLCNFZXI4TP" onclick="trackClick(this, 'SINGLEPLATFORM_FOODORDERING', '')" target="_123409"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sp-sprite sp-order-online" alt="Order Online"></a></li>
+      </ul>
+   </div>
+   <div class="small-12 medium-4 large-4 columns">
+      <ul class="no-bullet">
+          <li>&nbsp;</li>
+      </ul>
+   </div>
+   <div class="small-12 medium-4 large-4 columns">
+      <ul class="no-bullet">
+          <li>&nbsp;</li>
+      </ul>
+   </div>
+   <div class="small-12 medium-4 large-4 columns">
+      <ul class="no-bullet">
+          <li>&nbsp;</li>
+      </ul>
+   </div>
+</div>
+
+
+</p><p><span class="list-number-copy">6</span> <a href="/destinations/california/san-francisco/chinatown/restaurants/hunan-homes-restaurant-1/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Hunan Home's Restaurant</span></a><br />Chinese food enthusiasts flock to Hunan Home's Restaurant for award-winning cuisine that's reputedly "the best kept secret in Chinatown." The extensive menu features all the traditional items you expect to find, including classic Kung Pao chicken, Mongolian beef and eggplant with spicy garlic sauce. Diners particularly love the chicken with orange peel, prawns with honey walnuts, pot stickers and, of course, hot and sour soup. Attentive service rounds out an authentic and satisfying dining experience. Opened in 1983, Hunan Home's has remained  a favorite for travelers and locals alike. Owned and operated by the Yuan family, the restaurant has stayed remarkably consistent over the eyars. (415-982-2844)</p><p><span class="list-number-copy">5</span> <a href="/destinations/california/san-francisco/mission-district/restaurants/mission-chinese-food/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Mission Chinese Food</span></a><br />Although locally respected restaurant critic Michael Bauer of the San Francisco Chronicle feels the service and quality of Mission Chinese has slipped, this restaurant started at such a great height, it could afford some slippage. Founder Danny Bowien was met with such critical and commercial success when he opened Mission Chinese in 2009 that he soon opened another restaurant in New York City. Some feel Mission Chinese has suffered from his absence, but his original dishes mixing traditional Chinese with California innovation still make this restaurant worth visiting. From the Sour Chili Chicken to the Stir-Fried Pork Jowl, you'll find Chinese-inspired dishes here that you can't find anywhere else. But get there early - the line forms quickly at this restaurant that's especially popular with Mission neighborhood locals. (415-863-2800)</p><p><span class="list-number-copy">4</span> <a href="/destinations/california/san-francisco/chinatown/restaurants/great-eastern/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Great Eastern</span></a><br />Great Eastern is so appreciated for its authenticity that you're likely to find a large clientele of native Chinese folks enjoying the cuisine. Seafood is always top-rated, as you'll see with lobster sashimi and prawns prepared a number of ways. Other dishes feature everything from duck and quail to abalone and pork. Dishes offer good value, and reservations are accepted for large groups. With its location on Jackson Street in the hear tof Chinatown, Great Eastern is a great spot for lunch or dinner (or both) as you wind your way through the large crowds and shops of this fascinating neighborhood. (415-986-2500)</p><p><span class="list-number-copy">3</span> <a href="/destinations/california/san-francisco/marina-district/restaurants/dragon-well/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Dragon Well</span></a><br />Dragon Well creates comfort through simplicity. Owners Gary and Christina Tan offer pure, unadulterated Chinese dishes that ably satisfy, including kung pao chicken and steamed butterfish. If you like consistent, family-run establishments, Dragon Well is a great choice. If you're looking for a prelude to the meal, consider vegetarian potstickers or sauteed pea shoots, both wonderful additions. Although you won't find extravagant decor at Dragon Well, you'll be thrilled by the great food. A real crowd-pleaser is the Tea-Smoked Duck, which is steamed then wok-smoked with Pu Erh tea and served with hand-made buns and hoisen sauce. Dragon Well also offers one of the most satisfying gluten-free menus in the city. (415-474-6888)</p><p><span class="list-number-copy">2</span> <a href="/destinations/california/san-francisco/embarcadero/restaurants/yank-sing/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">Yank Sing</span></a><br />On the hunt for top-notch Chinese food? Check out Yank Sing, one of the city's most popular spots for authentic Asian fare. Although the restaurant serves many popular dishes, they are especially known for their deem sum. Yank Sing has over 100 varieties of deem sum (with some 60 varieties served fresh everyday). Deem sum carts laden with enticing, freshly made offerings make their way to each dining room table, affording patrons such must-have options as spring rolls and pot stickers, barbecued meats, Peking duck and soft-shell crab. For those seeking quick noontime eats, the combination lunch is a terrific option. (415-957-9300)</p><p><span class="list-number-copy">1</span> <a href="/destinations/california/san-francisco/sunset-district/restaurants/san-tung-chinese-restaurant/" onclick="trackClick(this, 'SUBCAT_POI_LIST', '')"><span class="t5" style="display: inline-block">San Tung Chinese Restaurant</span></a><br />A hidden gem of San Francisco's Sunset district, San Tung Chinese Restaurant boasts a menu that consistently impresses locals and visitors alike. The most popular item by far is the original dry-fried chicken wings, but other patron favorites include the shrimp and leek dumplings, hot and sour soup, string beans and black bean sauce noodles. In addition to these innovative creations, the menu features beloved Chinese dishes like chow mein, Mongolian beef and garlic chicken. Located near Ninth and Irving, the energetic heart of the Sunset District, a visit to San Tung can include some of the bars and other nightlife hotspots of this underappreciated but vital neighborhood. (415-242-0828)</p><hr class="dotted-line" />
+<div class="row">
+<div class="small-4 medium-2 large-2 columns"><a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')"><img src="http://img2.10bestmedia.com/Images/Photos/201962/IMG-2942_57_300x300_201404231609.JPG" class="expert" /></a></div>
+<div class="small-8 medium-10 large-10 columns">
+<p class="small" rel="author">About <a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')">Tom Molanphy</a></p>
+<p class="small">The only thing that Tom Molanphy loves more than the food, art, music, and culture of San Francisco is sharing it with others. San Francisco never gets old for Tom.
+Tom has lived in the San Francisco Bay area since 2000. He teaches writing, journalism and literature at the Academy of Art University in downtown San Francisco. His latest book, <em>Loud Memories Of A Quiet Life,</em> is available through Outpost19.</p>
+<p class="small"> Read more about Tom Molanphy <a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')">here.</a></p>
+<p class="small">Connect with Tom via: <a href="http://outpost19.com/LoudMemories/index.html" target="_">Blog</a> | <a href="http://www.facebook.com/profile.php?id=1618643246" target="_Array">Facebook</a> | <a href="https://twitter.com/#!/tmolanphy" target="_Array">Twitter</a> | <a href="https://plus.google.com/114838965991823736276/" target="_Array" rel="me">Google+</a> | <a href="http://www.pinterest.com/tmolanphy/" target="_Array">Pinterest</a></p>
+</div>
+</div>
+<hr class="dotted-line">
+<div class="row">
+<h2 style="font-family:'Open Sans', Arial, sans-serif;font-weight:bold;font-size:14px;margin-left:14px;">From Our Partners</h2>
+<style type="text/css">
+.zerglayoutcl { width:100% !important;}
+ .zergheadline {  text-align:left !important;}
+.zergentity { width:20% !important; margin-left:2% !important;margin-right:2% !important; }
+.zergentity img{ display:block !important;max-width:100% !important; height:auto !important; width: auto !important; }
+@media (max-width: 600px) {
+.zergentity { width:46% !important; margin-left:2% !important;margin-right:2% !important; }
+.zergentity:nth-of-type(3) { clear:both !important; } 
+}
+</style>
+<div id="zergnet-widget-20799"></div>
+
+<script language="javascript" type="text/javascript">
+  (function() {
+    var zergnet = document.createElement('script');
+    zergnet.type = 'text/javascript'; zergnet.async = true;
+    zergnet.src = 'http://www.zergnet.com/zerg.js?id=20799';
+    var znscr = document.getElementsByTagName('script')[0];
+    znscr.parentNode.insertBefore(zergnet, znscr);
+  })();
+</script>
+</div>
+
+</div>
+<!--  Begin Four Square -->    
+
+
+
+
+
+</div>
+
+<!--  End Four Square -->    
+
+
+
+
+
+<div class="small-12 medium-12 large-4 columns">
+
+
+<!--  AD -->    
+
+<div class="row hide-for-print">
+<div class="large-12 columns text-center add-margin-bottom">
+<aside><div class="ad-unit poster-ad-unit" id="ad-unit-1"></div></aside>
+</div>
+</div>
+
+<!--  End AD -->    
+
+<!--  AD -->    
+<div class="row">
+<div class="large-12 columns">
+<aside>
+
+<div class="panel">
+<h2 class="t5"><a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')">Tom Molanphy</a>: San Francisco Local Expert</a></h2>
+    <div class="row">
+	<div class="small-6 medium-4 large-4 columns"><a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')"><img src="http://img2.10bestmedia.com/Images/Photos/201962/IMG-2942_57_300x300_201404231609.JPG" class="expert" /></a></div>
+	<div class="small-6 medium-8 large-8 columns"><div class="label">TRAVEL TIP</div><p class="small">Tom says, Don't leave San Francisco without walking across the Golden Gate Bridge.</p></div>
+	</div>
+    <hr class="dotted-line sm-marg">
+    <p class="small"> Read more about Tom Molanphy <a href="/local-experts/tom-molanphy/" onclick="trackClick(this, 'SUBCAT_EXPERT_BIO', '')">here.</a></p>
+</div>
+
+</aside>
+</div>
+</div>
+<!--  End AD -->    
+
+<!--  RELATED MODULE - LARGE -->
+<section class="hide-for-print">
+<div class="row show-for-large-up">
+<div class="large-12 columns">
+        <dl class="tabs" data-tab>
+        <dd class="active"><a href="#panel2-1" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')">Lists</a></dd>
+        <dd><a href="#panel2-2" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')">Articles</a></dd>
+        </dl>
+
+        <div class="tabs-content">
+
+            <div class="content active" id="panel2-1">
+                        <h2 class="sidebar">RELATED 10BEST LISTS</h2>
+
+
+            <ul class="related">
+
+
+            <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/restaurants/berkeleys-best-breakfast/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/319773/sconehenge_59_330x220.jpg" mediumsrc="http://img2.10bestmedia.com/Images/Photos/319773/sconehenge_55_660x440.jpg" largesrc="http://img2.10bestmedia.com/Images/Photos/319773/sconehenge_55_660x440.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/restaurants/berkeleys-best-breakfast/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Berkeley's Best Breakfast</h1></a>
+            </div>
+            </div>
+            </article>
+            </li>
+
+            <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/restaurants/restaurants-near-the-cow-palace/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/73086/limon-rotisserie-restaurant-interior_59_330x220_201407182144.jpg" mediumsrc="http://img1.10bestmedia.com/Images/Photos/73086/limon-rotisserie-restaurant-interior_55_660x440_201404182211.jpg" largesrc="http://img1.10bestmedia.com/Images/Photos/73086/limon-rotisserie-restaurant-interior_55_660x440_201404182211.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/restaurants/restaurants-near-the-cow-palace/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Restaurants near The Cow Palace</h1></a>
+            </div>
+            </div>
+            </article>
+            </li>
+
+            <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/restaurants/restaurants-near-at-t-park/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/255994/oj_59_330x220_201407161824.jpg" mediumsrc="http://img1.10bestmedia.com/Images/Photos/255994/oj_55_660x440_201404251953.jpg" largesrc="http://img1.10bestmedia.com/Images/Photos/255994/oj_55_660x440_201404251953.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/restaurants/restaurants-near-at-t-park/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Restaurants near AT&T Park</h1></a>
+            </div>
+            </div>
+            </article>
+            </li>
+
+            <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/restaurants/nob-hills-best/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/72404/big-4-restaurant-interior_59_330x220_201407182132.jpg" mediumsrc="http://img2.10bestmedia.com/Images/Photos/72404/big-4-restaurant-interior_55_660x440_201405301803.jpg" largesrc="http://img2.10bestmedia.com/Images/Photos/72404/big-4-restaurant-interior_55_660x440_201405301803.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/restaurants/nob-hills-best/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Nob Hill's Best Restaurants</h1></a>
+            </div>
+            </div>
+            </article>
+            </li>
+
+            <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/restaurants/restaurants-with-gluten-free-menus/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/79961/the-plant-cafe-organic-the-plant-cafe-organic-3_59_330x220_201407182339.jpg" mediumsrc="http://img1.10bestmedia.com/Images/Photos/79961/the-plant-cafe-organic-the-plant-cafe-organic-3_55_660x440_201404211320.jpg" largesrc="http://img1.10bestmedia.com/Images/Photos/79961/the-plant-cafe-organic-the-plant-cafe-organic-3_55_660x440_201404211320.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/restaurants/restaurants-with-gluten-free-menus/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Restaurants with Gluten-Free Menus</h1></a>
+            </div>
+            </div>
+            </article>
+            </li>
+
+            <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/restaurants/gluten-free-baked-goods/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/240016/crave_59_330x220_201407170349.jpg" mediumsrc="http://img1.10bestmedia.com/Images/Photos/240016/crave_55_660x440_201404242236.jpg" largesrc="http://img1.10bestmedia.com/Images/Photos/240016/crave_55_660x440_201404242236.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/restaurants/gluten-free-baked-goods/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Gluten-Free Baked Goods</h1></a>
+            </div>
+            </div>
+            </article>
+            </li>
+
+            </ul>
+
+                </div>
+
+                        <div class="content" id="panel2-2">
+                        <h2 class="sidebar">RELATED ARTICLES</h2>
+
+
+                <ul class="related">
+
+                        <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/articles/san-franciscos-chef-mat-schuster-puts-spark-in-canela/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img1.10bestmedia.com/Images/Photos/243674/Paella-Small_59_330x220_201407170200.jpg" mediumsrc="http://img2.10bestmedia.com/Images/Photos/243674/Paella-Small_55_660x440_201404250304.jpg" largesrc="http://img2.10bestmedia.com/Images/Photos/243674/Paella-Small_55_660x440_201404250304.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/articles/san-franciscos-chef-mat-schuster-puts-spark-in-canela/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">San Francisco's Chef Mat Schuster Puts Spark in Canela</h1></a>
+            </div>
+            </div>
+            </article>
+                </li>
+
+                        <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/articles/dine-with-the-niners-at-bourbon-steak-pub/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img1.10bestmedia.com/Images/Photos/317528/IMG-7290_59_330x220.JPG" mediumsrc="http://img1.10bestmedia.com/Images/Photos/317528/IMG-7290_55_660x440.JPG" largesrc="http://img1.10bestmedia.com/Images/Photos/317528/IMG-7290_55_660x440.JPG" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/articles/dine-with-the-niners-at-bourbon-steak-pub/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Dine with the Niners at Bourbon Steak &amp; Pub</h1></a>
+            </div>
+            </div>
+            </article>
+                </li>
+
+                        <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/articles/gaspar-brasseries-french-flair-thrives-in-san-franciscos-financial-district/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img1.10bestmedia.com/Images/Photos/313979/GasparExt_59_330x220.jpg" mediumsrc="http://img2.10bestmedia.com/Images/Photos/313979/GasparExt_55_660x440.jpg" largesrc="http://img2.10bestmedia.com/Images/Photos/313979/GasparExt_55_660x440.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/articles/gaspar-brasseries-french-flair-thrives-in-san-franciscos-financial-district/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Gaspar Brasserie's French Flair Thrives in San Francisco's Financial District</h1></a>
+            </div>
+            </div>
+            </article>
+                </li>
+
+                        <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/articles/experience-the-flavors-of-e-o-kitchen-and-bar-of-san-francisco/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/310425/E-O_59_330x220.jpg" mediumsrc="http://img1.10bestmedia.com/Images/Photos/310425/E-O_55_660x440.jpg" largesrc="http://img1.10bestmedia.com/Images/Photos/310425/E-O_55_660x440.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/articles/experience-the-flavors-of-e-o-kitchen-and-bar-of-san-francisco/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Experience the Flavors of E&O Kitchen and Bar of San Francisco</h1></a>
+            </div>
+            </div>
+            </article>
+                </li>
+
+                        <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/articles/sams-grill-and-seafood-restaurant-survives-with-style/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img2.10bestmedia.com/Images/Photos/308071/Sams_59_330x220.jpg" mediumsrc="http://img1.10bestmedia.com/Images/Photos/308071/Sams_55_660x440.jpg" largesrc="http://img1.10bestmedia.com/Images/Photos/308071/Sams_55_660x440.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/articles/sams-grill-and-seafood-restaurant-survives-with-style/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Sam's Grill and Seafood Restaurant Survives with Style</h1></a>
+            </div>
+            </div>
+            </article>
+                </li>
+
+                        <li>
+            <article>
+            <div class="row">
+            <div class="small-4 medium-4 large-4 columns">
+            <a href="/destinations/california/san-francisco/articles/make-room-for-roam-san-franciscos-best-artisan-burger/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><div class="image-overlay3"><img class="responsive-img" smallsrc="http://img1.10bestmedia.com/Images/Photos/302641/paigegreen-ROAM1_59_330x220.jpg" mediumsrc="http://img2.10bestmedia.com/Images/Photos/302641/paigegreen-ROAM1_55_660x440.jpg" largesrc="http://img2.10bestmedia.com/Images/Photos/302641/paigegreen-ROAM1_55_660x440.jpg" /></div></a>
+            </div>
+            <div class="small-8 medium-8 large-8 columns" style="padding-left: 0em">
+            <a href="/destinations/california/san-francisco/articles/make-room-for-roam-san-franciscos-best-artisan-burger/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Make Room for Roam, San Francisco's Best Artisan Burger</h1></a>
+            </div>
+            </div>
+            </article>
+                </li>
+            </ul>
+
+                        </div>
+
+        </div>
+
+
+
+</div>
+</div>
+</section>
+<!--  END RELATED MODULE - LARGE -->
+
+
+</div>
+
+
+</div>
+</section>
+<!--  End Main Content -->    
+
+
+
+
+
+
+
+
+
+
+
+<!-- LIST 0f 10 -->
+<section itemscope itemtype="http://schema.org/ItemList">
+<meta itemprop="itemListOrder" content="Descending" />
+<meta itemprop="image" content="http://img2.10bestmedia.com/Images/Photos/63558/ton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg" />
+
+
+<div class="row hide-for-print">
+<div class="large-12 columns">
+<h2 class="t1">Maps and Directions</h2>
+</div>
+</div>
+
+<div class="row hide-for-print">
+<div class="large-12 columns add-margin-bottom">
+<div id="mapDiv" class="map"></div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/san-francisco/restaurants/shangri-la-chinese-vegetarian/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img2.10bestmedia.com/Images/Photos/175938/shangri-la-vegetarian_57_300x300_201404231147.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">10</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/san-francisco/restaurants/shangri-la-chinese-vegetarian/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Shangri-La Chinese Vegetarian <img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/san-francisco/restaurants/shangri-la-chinese-vegetarian/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/lincoln-park/restaurants/ton-kiang/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/63557/ton-kiang-mango-pudding-with-cream_57_300x300_201404182010.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">9</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/lincoln-park/restaurants/ton-kiang/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Ton Kiang <img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/lincoln-park/restaurants/ton-kiang/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+	<div class="cat">Dining Options: Family Friendly, Non-Smoking, Take Out</div>
+    <div class="cat">Neighborhood: Lincoln Park</div>
+	<div class="cat">COST: <span class="rate-blue">$$</span></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/chinatown/restaurants/lucky-creation-restaurant/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/175935/lucky-creation-restaurant-san-francisco-united-states-12788920567-tpfil02aw-16046_57_300x300_201404231147.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">8</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/chinatown/restaurants/lucky-creation-restaurant/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Lucky Creation Restaurant <img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/chinatown/restaurants/lucky-creation-restaurant/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+    <div class="cat">Neighborhood: <a href="/destinations/california/san-francisco/chinatown/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Chinatown</a></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/sunset-district/restaurants/nanking-road-bistro/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/182846/IMG-3682_57_300x300_201404231157.JPG"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">7</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/sunset-district/restaurants/nanking-road-bistro/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Nanking Road Bistro <img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/sunset-district/restaurants/nanking-road-bistro/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+	<div class="cat">Dining Options: Group Friendly</div>
+    <div class="cat">Neighborhood: <a href="/destinations/california/san-francisco/sunset-district/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Sunset District</a></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/chinatown/restaurants/hunan-homes-restaurant-1/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/72931/hunan-homes-restaurant-exterior_57_300x300_201404182208.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">6</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/chinatown/restaurants/hunan-homes-restaurant-1/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Hunan Home's Restaurant <img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/chinatown/restaurants/hunan-homes-restaurant-1/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+    <div class="cat">Neighborhood: <a href="/destinations/california/san-francisco/chinatown/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Chinatown</a></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/mission-district/restaurants/mission-chinese-food/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/234675/Chinese-food_57_300x300_201404241636.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">5</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/mission-district/restaurants/mission-chinese-food/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Mission Chinese Food <img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/mission-district/restaurants/mission-chinese-food/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+    <div class="cat">Neighborhood: <a href="/destinations/california/san-francisco/mission-district/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Mission District</a></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/chinatown/restaurants/great-eastern/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/232195/HK-Aberdeen-Promenade-Dried-fish-biz_57_300x300_201404241354.JPG"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">4</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/chinatown/restaurants/great-eastern/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Great Eastern <img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/chinatown/restaurants/great-eastern/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+	<div class="cat">Dining Options: Disabled Accessible, Family Friendly, Non-Smoking, Parties / Private Rooms, Take Out</div>
+    <div class="cat">Neighborhood: <a href="/destinations/california/san-francisco/chinatown/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Chinatown</a></div>
+	<div class="cat">COST: <span class="rate-blue">$$</span></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/marina-district/restaurants/dragon-well/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img2.10bestmedia.com/Images/Photos/263740/Chinese-food-4_57_300x300.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">3</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/marina-district/restaurants/dragon-well/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Dragon Well <img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/marina-district/restaurants/dragon-well/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+	<div class="cat">Dining Options: Disabled Accessible, Family Friendly, Group Friendly, Non-Smoking, Take Out</div>
+    <div class="cat">Neighborhood: Marina District</div>
+	<div class="cat">COST: <span class="rate-blue">$</span></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/embarcadero/restaurants/yank-sing/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/34999/yank-sing-san-francisco-ca-usa-restaurants-chinese-asian-chinese-1553279_57_300x300_201404181800.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">2</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/embarcadero/restaurants/yank-sing/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">Yank Sing <img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/embarcadero/restaurants/yank-sing/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+	<div class="cat">Dining Options: Catering, Take Out</div>
+    <div class="cat">Neighborhood: <a href="/destinations/california/san-francisco/embarcadero/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Embarcadero</a></div>
+	<div class="cat">COST: <span class="rate-blue">$$</span></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="small-12 medium-6 large-6 columns">
+
+
+
+<div class="panel imgnomarg-bottom">
+
+<div class="row">
+
+	<div class="small-12 medium-12 large-5 columns">
+	<a href="/destinations/california/san-francisco/sunset-district/restaurants/san-tung-chinese-restaurant/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')"><div class="image-overlay-list-sq"><img src="http://img1.10bestmedia.com/Images/Photos/73484/san-tung-chinese-restaurant_57_300x300_201404182218.jpg"></div></a>
+	<div class="image-tag-overlay-list">
+	<div class="tag-list">1</div>
+	</div>
+	</div>
+
+	<div class="small-12 medium-12 large-7 columns">
+	<a href="/destinations/california/san-francisco/sunset-district/restaurants/san-tung-chinese-restaurant/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')" class="t5" itemprop="itemListElement">San Tung Chinese Restaurant <img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite list-arrow" alt="10Best List Arrow" /></a>
+        <div class="cat"><a href="/destinations/california/san-francisco/sunset-district/restaurants/san-tung-chinese-restaurant/directions/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Map / Directions &raquo;</a></div>
+	<div class="cat">Cuisine: Asian, Chinese</div>
+	<div class="cat">Dining Options: Group Friendly, Parties / Private Rooms</div>
+    <div class="cat">Neighborhood: <a href="/destinations/california/san-francisco/sunset-district/" onclick="trackClick(this, 'SUBCAT_POI_TILES', '')">Sunset District</a></div>
+	</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '10best'; // required: replace example with your forum shortname
+        var disqus_identifier = 'http://www.10best.com/destinations/california/san-francisco/restaurants/chinese/';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
+</div>
+
+
+</section>
+<!-- LIST 0f 10 -->
+
+
+<!--  RELATED MODULE - LARGE -->    
+<section class="hide-for-print">
+<div class="row show-for-medium-down">
+<div class="large-12 columns">
+	<dl class="tabs" data-tab>
+	<dd class="active"><a href="#panel2-1" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')">Lists</a></dd>
+	<dd><a href="#panel2-2" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')">Articles</a></dd>
+	</dl>
+
+	<div class="tabs-content">
+			
+            <div class="content active" id="panel2-1">
+			<h1 class="sidebar">RELATED 10BEST LISTS</h1>
+            
+            
+            <ul class="related">
+
+
+            <li>
+            <article>
+        	<a href="/destinations/california/san-francisco/restaurants/berkeleys-best-breakfast/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Berkeley's Best Breakfast</h1></a>
+            </article>
+            </li>
+
+            <li>
+            <article>
+        	<a href="/destinations/california/san-francisco/restaurants/restaurants-near-the-cow-palace/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Restaurants near The Cow Palace</h1></a>
+            </article>
+            </li>
+
+            <li>
+            <article>
+        	<a href="/destinations/california/san-francisco/restaurants/restaurants-near-at-t-park/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Restaurants near AT&T Park</h1></a>
+            </article>
+            </li>
+
+            <li>
+            <article>
+        	<a href="/destinations/california/san-francisco/restaurants/nob-hills-best/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Nob Hill's Best Restaurants</h1></a>
+            </article>
+            </li>
+
+            <li>
+            <article>
+        	<a href="/destinations/california/san-francisco/restaurants/restaurants-with-gluten-free-menus/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Restaurants with Gluten-Free Menus</h1></a>
+            </article>
+            </li>
+
+            <li>
+            <article>
+        	<a href="/destinations/california/san-francisco/restaurants/gluten-free-baked-goods/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_LISTS', '')"><h1 class="t5">Gluten-Free Baked Goods</h1></a>
+            </article>
+            </li>
+            </ul>
+            
+	        </div>
+
+        
+			<div class="content" id="panel2-2">
+			<h1 class="sidebar">RELATED ARTICLES</h1>
+		
+        
+      		<ul class="related">
+
+
+
+			<li>        
+            <article>
+        	<a href="/destinations/california/san-francisco/articles/san-franciscos-chef-mat-schuster-puts-spark-in-canela/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">San Francisco's Chef Mat Schuster Puts Spark in Canela</h1></a>
+            </article>
+        	</li>
+
+
+			<li>        
+            <article>
+        	<a href="/destinations/california/san-francisco/articles/dine-with-the-niners-at-bourbon-steak-pub/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Dine with the Niners at Bourbon Steak &amp; Pub</h1></a>
+            </article>
+        	</li>
+
+
+			<li>        
+            <article>
+        	<a href="/destinations/california/san-francisco/articles/gaspar-brasseries-french-flair-thrives-in-san-franciscos-financial-district/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Gaspar Brasserie's French Flair Thrives in San Francisco's Financial District</h1></a>
+            </article>
+        	</li>
+
+
+			<li>        
+            <article>
+        	<a href="/destinations/california/san-francisco/articles/experience-the-flavors-of-e-o-kitchen-and-bar-of-san-francisco/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Experience the Flavors of E&O Kitchen and Bar of San Francisco</h1></a>
+            </article>
+        	</li>
+
+
+			<li>        
+            <article>
+        	<a href="/destinations/california/san-francisco/articles/sams-grill-and-seafood-restaurant-survives-with-style/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Sam's Grill and Seafood Restaurant Survives with Style</h1></a>
+            </article>
+        	</li>
+
+
+			<li>        
+            <article>
+        	<a href="/destinations/california/san-francisco/articles/make-room-for-roam-san-franciscos-best-artisan-burger/" onclick="trackClick(this, 'SUBCAT_RIGHT_RAIL_ARTICLES', '')"><h1 class="t5">Make Room for Roam, San Francisco's Best Artisan Burger</h1></a>
+            </article>
+        	</li>
+
+            </ul>
+            
+			</div>
+
+	</div>
+
+</div>
+</div>
+</section>
+<!--  END RELATED MODULE - LARGE -->  
+
+
+
+
+
+</main>  
+
+<input type="hidden" id="defaultLatitude" value="37.7540" />
+<input type="hidden" id="defaultLongitude" value="-122.4495" />
+<input type="hidden" id="defaultMetroID" value="38" />
+<input type="hidden" id="defaultCategoryID" value="1" />
+<input type="hidden" id="defaultSubCategoryID" value="155" />
+<input type="hidden" id="defaultMapType" value="LIST" />
+
+<input type="hidden" id="slideshowPrev" value="SUBCAT_SLIDESHOW_PREV" />
+<input type="hidden" id="slideshowNext" value="SUBCAT_SLIDESHOW_NEXT" />
+<input type="hidden" id="slideshowThumb" value="SUBCAT_SLIDESHOW_THUMB" />
+
+
+<!-- horizontal sharing bar for mobile -->
+
+<div class="show-for-medium-down fixed-social-share">
+
+<div class="row">
+
+<div class="small-4 medium-4 large-4 columns" style="padding-right: .2em">
+<a href="javascript:;" onclick="trackClick(this, 'MOBILE_LOCATE_ME', ''); locateMe()" class="button expand tiny radius mb-125 secondary">Locate<img src="http://img2.10bestmedia.com/static/img/locate-me-sm-icon.svg" class="share-icon-position" /></a>       
+</div>
+
+
+
+<div class="small-4 medium-4 large-4 columns" style="padding-left: 0em; padding-right: .2em">
+<a href="javascript:;" onclick="openModal('social-share-modal')" class="button expand tiny radius tert mb-125">Share<img src="http://img1.10bestmedia.com/static/img/share-icon.svg" class="share-icon-position" /></a>       
+</div>
+
+<div class="small-4 medium-4 large-4 columns" style="padding-left: 0em">
+<a href="javascript:;" onclick="renderSaveModal()" class="button expand tiny radius share mb-125">Save<img src="http://img2.10bestmedia.com/static/img/add-list-sm-icon.svg" class="share-icon-position" /></a>       
+</div>
+
+</div>
+        
+        
+</div>        
+<!-- END horizontal sharing bar for mobile -->  
+
+<!-- Start Footer -->
+
+<footer class="hide-for-print">
+<!--  Start 4 Across no padding/margins -->
+<section>
+<div class="row sticky-bottom">
+
+<div class="small-12 medium-3 large-3 columns nomargpadd">
+<article>
+<a href="/awards/travel/best-theme-park-halloween-event/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><img src="http://img1.10bestmedia.com/Images/Photos/319424/Theme-Park_55_660x440.jpg"></a>
+<a href="/awards/travel/best-theme-park-halloween-event/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><div class="image-cap-overlay-green">
+<div class="subheader-green">10Best Readers' Choice Award</div>
+<h1>Best Theme Park Halloween Event</h1>
+<time class="time" datetime="2015-9-14">September 14, 2015</time>
+</div></a>
+</article>
+</div>
+
+
+<div class="small-12 medium-3 large-3 columns nomargpadd">
+<article>
+<a href="/interests/foodie/some-of-our-favorite-under-the-radar-wine-regions/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><img src="http://img1.10bestmedia.com/Images/Photos/316069/Keuak-Lake---photo-credit-Nicole-Young_55_660x440.jpg"></a>
+<a href="/interests/foodie/some-of-our-favorite-under-the-radar-wine-regions/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><div class="image-cap-overlay-green">
+<div class="subheader-green">Featured Article</div>
+<h1>Some Of Our Favorite Under-The-Radar Wine Regions</h1>
+<time class="time" datetime="2015-9-16">September 16, 2015</time>
+</div></a>
+</article>
+</div>
+
+
+<div class="small-12 medium-3 large-3 columns nomargpadd">
+<article>
+<a href="/interests/trip-pics/photo-tour-the-st-lawrence-river-to-newfoundland-and-labrador/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><img src="http://img1.10bestmedia.com/Images/Photos/315223/edit-Qm-0746_55_660x440.jpg"></a>
+<a href="/interests/trip-pics/photo-tour-the-st-lawrence-river-to-newfoundland-and-labrador/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><div class="image-cap-overlay-green">
+<div class="subheader-green">Featured Slideshow</div>
+<h1>Photo Tour: The St. Lawrence River to Newfoundland and Labrador</h1>
+<time class="time" datetime="2015-9-15">September 15, 2015</time>
+</div></a>
+</article>
+</div>
+
+
+<div class="small-12 medium-3 large-3 columns nomargpadd">
+<article>
+<a href="/interests/sports-travel/swing-on-by-10-golf-courses-with-epic-views/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><img src="http://img2.10bestmedia.com/Images/Photos/318686/turnberry-9th-hole--copy_55_660x440.jpg"></a>
+<a href="/interests/sports-travel/swing-on-by-10-golf-courses-with-epic-views/" onclick="trackClick(this, 'PROMO_CONTENT_FOOTER', '')"><div class="image-cap-overlay-green">
+<div class="subheader-green">Featured Article</div>
+<h1>Swing On By: 10 Golf Courses with Epic Views</h1>
+<time class="time" datetime="2015-9-11">September 11, 2015</time>
+</div></a>
+</article>
+</div>
+
+
+</div>
+</section>
+<!--  End 4 Across no padding/margins -->
+
+
+
+<!-- Begin Subfooter -->
+<section id="footer-subscription-form">
+<div class="subfooter">
+<div class="row">
+<form>
+<div class="small-12 medium-12 large-3 columns text-center"><p class="sign-up">Sign up for our newsletter!</p></div>
+<div class="small-12 medium-12 large-7 columns text-center"><input type="text" id="footerEmail" class="radius" placeholder="Please enter a valid email"></div>
+<div class="small-12 medium-12 large-2 columns text-center"><a class="radius button expand" href="javascript:;" onclick="footerSubscribe()" id="footerSubscribeButton">SIGN UP</a></div>
+<div class="subscriptionErrors" id="footerEmailErrors"></div>
+</form>
+</div>
+</div>
+</section>
+<!-- END Subfooter -->
+
+<!-- FOOTER -->
+<section>
+<div class="main-footer">
+
+<div class="row show-for-medium-down">
+<div class="large-12 columns text-center">
+<a class="radius button tiny tert" href="#top" style="color: #FFF;">Back To Top</a>
+</div>
+</div>
+
+<div class="row">
+	<div class="small-12 medium-8 large-8 columns"><div class="footer-logo"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite grey-logo" alt="10best Logo" /></div></div>
+<div class="small-12 medium-4 large-4 show-for-large-up columns"><div class="social-header">Connect with us</div></div>
+</div>
+
+
+
+<div class="row">
+<div class="large-8 columns">
+	<div class="row">
+    <div class="medium-6 large-6 columns">
+    <ul class="no-bullet medium">
+    <li><a href="/local-experts/">10BEST Local Experts</a></li>
+    <li><a href="/about/">About 10BEST</a></li>
+    <li><a href="/newsletters/" rel="nofollow">Get the 10BEST Newsletter</a></li>
+    <li><a href="/sitemap/">Sitemap</a></li>
+    </ul>
+    </div>
+
+    <div class="medium-6 large-6 columns">
+    <ul class="no-bullet medium">
+    <li><a href="http://www.gannettreprints.com/10best/" rel="nofollow">Reprints & Permissions</a></li>
+    <li><a href="/rss/">10BEST RSS Feeds</a></li>
+    <li><a href="/customer-service/">Customer Service</a></li>
+    </ul>
+    </div>
+
+    </div>
+
+</div>
+<div class="large-4 columns">
+    <a href="https://www.facebook.com/10best" target="_blank"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite facebook-circle" alt="facebook" /></a>
+    <a href="http://instagram.com/10best/" target="_blank"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite instagram-circle" alt="instagram" /></a>
+    <a href="https://plus.google.com/+10best/" target="_blank"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite google-circle" alt="google" /></a>
+    <a href="http://www.linkedin.com/company/10best" target="_blank"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite linkedin-circle" alt="linkedin" /></a>
+    <a href="http://www.pinterest.com/10best/" target="_blank"><img src="http://img2.10bestmedia.com/static/img/transparent.gif" class="sprite pinterest-circle" alt="pinterest" /></a>
+    <a href="http://www.stumbleupon.com/stumbler/10best" target="_blank"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite stumble-upon-circle" alt="stumble upon" /></a>
+    <a href="https://twitter.com/#!/10best" target="_blank"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite twitter-circle" alt="twitter" /></a>
+    <a href="https://vine.co/u/1106686903400673280" target="_blank"><img src="http://img1.10bestmedia.com/static/img/transparent.gif" class="sprite vine-circle" alt="vine" /></a>
+    </div>
+</div>
+
+</div>
+</section>
+<!-- END FOOTER -->
+
+<!-- POST FOOTER -->
+<section>
+<div class="post-footer">
+<div class="row">
+<div class="large-12 columns text-center">
+<p><a href="/">Home</a> | <a href="/destinations/">Travel Destinations</a> | <a href="/interests/">Lifestyle</a> | <a href="/awards/">Readers' Choice Awards</a><br />
+A division of <a href="http://www.usatoday.com/">USA TODAY</a>  &middot;  Copyright &copy; 2015 <a href="/">www.10best.com.</a> All rights reserved.<br />
+Users of this site agree to the <a href="/legal/terms/">Terms of Service,</a> <a href="/legal/privacy/">Privacy Notice/Your California Privacy Rights,</a> and <a href="/legal/privacy/#ad-serving">Ad Choices</a></p>
+</div>
+</div>
+</div>
+</section>
+<!-- POST FOOTER -->
+</footer>
+
+
+<!-- MODALS --> 
+
+
+
+<div id="login-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center">LOGIN</h2>
+  <p class="small text-center">Build your own lists that you can easily reference or share stories with your friends. </p>
+  <div class="text-center"><a class="radius button expand facebook-login-btn facebook" href="javascript:;" onclick="facebookLogin()">Login with Facebook</a><br /><strong>OR</strong></div>
+  <label id="loginUsernameErrors">Username:
+  <input type="text" class="loginField" id="loginUsername" onfocus="hideError('loginUsernameErrors')" placeholder="username" />
+  </label>    
+  <label id="loginPasswordErrors">Password:
+  <input type="password" class="loginField" id="loginPassword" onfocus="hideError('loginPasswordErrors')" placeholder="password" />
+  </label>
+  <a class="radius button expand" href="javascript:;" id="loginButton" onclick="login()">Login</a>
+  <a class="close-reveal-modal">&#215;</a>
+  <p class="text-center small"><a href="javascript:;" data-reveal-id="forgot-modal">Forgot login/password?</a><br />Don't have an account? <a href="javascript:;" data-reveal-id="create-account-modal">Create Your Account!</a></p>
+</div>   
+
+<div id="forgot-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center">Forgot Password</h2>
+  <p class="text-center"><strong>Enter your username or email in the box below and click<br />"Remind Me".</strong></p>
+  <label id="resetErrors">Your Username or Email:
+  <input type="text" id="resetCredentials" onfocus="hideError('resetErrors')" placeholder="username or email" />
+  </label>    
+  <a class="radius button expand" href="javascript:;" id="resetButton" onclick="resetPassword()">Remind Me</a>
+  <a class="close-reveal-modal">&#215;</a>
+</div>  
+
+<div id="create-account-facebook-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center">Confirm Your Settings</h2>
+  <label id="facebookUsernameErrors">Username:
+  <input type="text" class="facebookField" id="facebookUsername" onfocus="hideError('facebookUsernameErrors')" placeholder="username" />
+  </label>
+  <label id="facebookEmailErrors">Email:
+  <input type="text" class="facebookField" id="facebookEmail" onfocus="hideError('facebookEmailErrors')" placeholder="your@email.com" />
+  </label>
+ <input type="hidden" id="facebookID" value="" />
+  <a class="radius button expand" id="facebookButton" href="javascript:;" onclick="registerFacebook()">Create Account</a>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+<div id="create-account-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center">Sign Up - It's FREE!</h2>
+  <div class="text-center"><a class="radius button expand facebook-login-btn facebook" href="javascript:;" onclick="facebookLogin()">Login with Facebook</a><br /><strong>OR</strong></div>
+  <label id="registerUsernameErrors">Username:
+  <input type="text" class="registerField" id="registerUsername" onfocus="hideError('registerUsernameErrors')" placeholder="username" />
+  </label>  
+  <label id="registerEmailErrors">Email:
+  <input type="text" class="registerField" id="registerEmail" onfocus="hideError('registerEmailErrors')" placeholder="your@email.com" />
+  </label>     
+  <label id="registerPasswordErrors">Password:
+  <input type="password" class="registerField" id="registerPassword" onfocus="hideError('registerPasswordErrors')" placeholder="password" />
+  </label>
+  <label id="registerPasswordConfirmErrors">Verify Password:
+  <input type="password" class="registerField" id="registerPasswordConfirm" onfocus="hideError('registerPasswordConfirmErrors')" placeholder="password" />
+  </label>
+  <a class="radius button expand" id="registerButton" href="javascript:;" onclick="register()">Create Account</a>
+  <a class="close-reveal-modal">&#215;</a>
+  <p class="text-center small"><a href="javascript:;" data-reveal-id="login-modal">Already have an account?</a></p>
+</div>  
+
+
+<div id="add-to-list-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center">Add this page to your list</h2>
+	<label id="userListIDErrors">Add to list:
+        <select id="userListID" onchange="DetermineNewListName()">
+        </select>
+     </label>
+
+  <label id="userListNameErrors" style="display:none">Name your list:
+  <input type="text" id="userListName" class="userListField" onfocus="hideError('userListNameErrors')" placeholder="for example - Dream Destinations" />
+  </label>     
+
+
+	<label>Add a description for this page:
+        <textarea id="userListDescription" placeholder=""></textarea>
+      </label>
+
+  <a class="radius button expand" href="javascript:;" id="userListButton" onclick="save()">Add to List</a>
+  <a class="close-reveal-modal">&#215;</a>
+</div>  
+
+<div id="create-list-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center">Create a New List</h2>
+  <label>Name your list:
+  <input type="text" placeholder="for example - Dream Destinations" />
+  </label>     
+
+  <a class="radius button expand" href="#">Save</a>
+  <a class="close-reveal-modal">&#215;</a>
+</div>  
+
+
+<div id="success-add-to-list-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center">Your Page has been added</h2>
+  <div class="text-center" id="save-confirm-img"><img src="" /></div>
+  <div class="t5 text-center" id="save-confirm-page-name"></div>
+  <p class="small text-center" id="save-confirm-list-name"></p>
+  <a class="radius button expand" href="/my-lists/">Go to Lists</a>
+  <a class="radius button expand tert" href="javascript:;" onclick="$('#success-add-to-list-modal').foundation('reveal', 'close');">Close Window</a>  
+  <a class="close-reveal-modal">&#215;</a>
+</div> 
+
+<div id="social-share-modal" class="reveal-modal medium" data-reveal>
+	<h2 class="login-modal text-center">Share</h2>
+	<div class="text-center"><a href="javascript:;" onclick="share('https://www.facebook.com/dialog/feed?app_id=213816218687991&link=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&picture=http%3A%2F%2Fimg2.10bestmedia.com%2FImages%2FPhotos%2F63558%2Fton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg&name=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews&caption=&description=Find+San+Francisco+Chinese+food+restaurants+in+San+Francisco%2C+CA.+Read+the+10Best+San+Francisco+Chinese+restaurant+reviews+and+view+users%27+Chinese+restaurant+ratings.&redirect_uri=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F', 'FACEBOOK', this, 'SHARE_FACEBOOK');" class="radius button tiny expand facebook-share-btn facebook">Facebook</a></div>	
+	<div class="text-center"><a href="javascript:;" onclick="share('https://twitter.com/share?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&text=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews', 'TWITTER', this, 'SHARE_TWITTER');" class="radius button tiny expand twitter-share-btn twitter">Twitter</a></div>
+	<div class="text-center"><a href="javascript:;" onclick="share('https://plus.google.com/share?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F', 'GOOGLEPLUS', this, 'SHARE_GOOGLE');" class="radius button tiny expand google-share-btn google">Google Plus</a></div>
+	<div class="text-center"><a href="javascript:;" onclick="share('http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&media=http%3A%2F%2Fimg2.10bestmedia.com%2FImages%2FPhotos%2F63558%2Fton-kiang-wah-tip-pot-sticker_54_990x660_201404182010.jpg', 'PINTEREST', this, 'SHARE_PINTEREST');" class="radius button tiny expand pinterest-share-btn pinterest">Pinterest</a></div>	
+	<div class="text-center"><a href="javascript:;" onclick="share('http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F', 'STUMBLEUPON', this, 'SHARE_STUMBLEUPON');" class="radius button tiny expand stumbleupon-share-btn stumbleupon">StumbleUpon</a></div>	
+	<div class="text-center"><a href="javascript:;" onclick="share('http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.10best.com%2Fdestinations%2Fcalifornia%2Fsan-francisco%2Frestaurants%2Fchinese%2F&title=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews&summary=San+Francisco+Chinese+Food+Restaurants%3A+10Best+Restaurant+Reviews&source=10Best', 'LINKEDIN', this, 'SHARE_LINKEDIN');" class="radius button tiny expand linkedin-share-btn linkedin">LinkedIn</a></div>	
+	<a class="close-reveal-modal">&#215;</a>
+</div>   
+
+<div id="shared-modal" class="reveal-modal small" data-reveal>
+  <h2 class="login-modal text-center" id="shared-modal-heading"></h2>
+  <p class="text-center"><strong id="shared-modal-text"></strong></p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+<!-- END MODALS -->
+
+
+<!-- END Footer -->
+
+<div class="partner-overlay"><div id="ad-unit-2" class="partner-placement partner-transition size-s"><a href="#" class="partner-close partner-overlay-close"></a><div id="ad-unit-2-slot"></div></div><div class="ui-film"></div></div>
+    <script src="http://js.10bestmedia.com/static/js/foundation-20140819.min.js"></script>
+    <script>
+      $(document).foundation();
+
+window.overlayConfig = {"el":".partner-placement.partner-transition","threshold":[2,5],"networkId":"7103","networkName":"10best","customTargeting":{"pageType":"list","topics":["san-francisco","california","usa","restaurants","chinese"],"contentId":"lm38s155"}};
+
+var parameters = {
+'pageType': 'list' ,
+'contentID': 'lm38s155' ,
+'topics':["san-francisco","california","usa","restaurants","chinese"],
+'ads':[{"partnerID":"7103","divID":"ad-unit-1","adType":"poster","section":"destinations"}]
+};
+renderAds(parameters);
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-30580-1']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  if (document.referrer.match(/google\.com/gi) && document.referrer.match(/cd/gi)) {
+     var myString = document.referrer;
+     var r        = myString.match(/cd=(.*?)&/);
+     var rank     = parseInt(r[1]);
+     var kw       = myString.match(/q=(.*?)&/);
+
+     if (kw[1].length > 0) {
+       var keyWord  = decodeURI(kw[1]);
+     } else {
+       keyWord = "(not provided)";
+     }
+
+     var p        = document.location.pathname;
+     _gaq.push(['_trackEvent', 'RankTracker', keyWord, p, rank, true]);
+  }
+
+ _gaq.push(['_setCustomVar',
+      1,                   // This custom var is set to slot #1.  Required parameter.
+      'Page_Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+      'SubCategory_Page',               // This value of the custom variable.  Required parameter.
+      2                    // Sets the scope to session-level
+   ]);
+
+
+ _gaq.push(['_setCustomVar',
+      2,                   // This custom var is set to slot #1.  Required parameter.
+      'Metro',     // The name acts as a kind of category for the user activity.  Required parameter.
+      'San_Francisco,_CA',               // This value of the custom variable.  Required parameter.
+      2                    // Sets the scope to session-level
+   ]);
+
+
+
+ _gaq.push(['_setCustomVar',
+      3,                   // This custom var is set to slot #1.  Required parameter.
+      'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+      'Restaurants',               // This value of the custom variable.  Required parameter.
+      2                    // Sets the scope to session-level
+   ]);
+
+
+
+ _gaq.push(['_setCustomVar',
+      4,                   // This custom var is set to slot #1.  Required parameter.
+      'SubCategory',     // The name acts as a kind of category for the user activity.  Required parameter.
+      'Chinese',               // This value of the custom variable.  Required parameter.
+      2                    // Sets the scope to session-level
+   ]);
+
+
+  _gaq.push(['_trackPageLoadTime']);
+  _gaq.push(['_trackPageview', "SubCategory_Page_|_/destinations/california/san-francisco/restaurants/chinese/"]);
+
+    </script>
+  <script src="http://www.gannett-cdn.com/static/js/libs/require/require.js" data-main="http://www.gannett-cdn.com/ads/scripts/10best/main-transition.js"></script>
+
+<a class="exit-off-canvas"></a>
+</div>
+</div>
+<!-- back to top -->
+<p class="scrollToTop">
+<a href="#top"><span></span></a>
+</p>
+<!--end  back to top -->
+
+<input type="hidden" id="apiKey" name="apiKey" value="AuniKDQlgHNXqygyDG4b4bDLzPEPKJvRTwUgvayPNsHX1I9prqZ01Hid91Hup3oV" /><input type="hidden" id="isLoggedIn" value="" />
+<input type="hidden" id="spawnSave" value="" />
+<input type="hidden" id="saveLabel" value="Other" />
+</body>
+</html>
+

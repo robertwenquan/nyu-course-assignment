@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>Forbes Welcome</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2.0">
+        <meta name="description" content="Forbes Welcome page -- Forbes is a global media company, focusing on business, investing, technology, entrepreneurship, leadership, and lifestyle.">
+        <meta name="keywords" content="business news, market analysis, company profiles, personal finance, management, entrepreneurship, investments, financial advice, economy, technology news">
+
+        <link rel="stylesheet" href="http://i.forbesimg.com/welcomead/styles/ed9ebe3d.main.css">
+
+        <script type="text/javascript">
+            fbs_settings = {
+                mobile: 'false',
+                preview: 'false',
+                test: 'false',
+                data: {}
+            };
+        </script>
+    </head>
+
+    <body>
+        <div class="scrim"></div>
+
+        <div class="canvas-wrapper">
+            <canvas class="circle" width="400" height="400"></canvas>
+        </div>
+
+        <div class="container">
+          <div class="navigation row full" id="navigation">
+            <h1><span class="lead">Continue In</span><span class="count">3</span></h1>
+          </div>
+
+          <!-- <div class="presentation-wrap"> -->
+              <div class="content row">
+                  <div id="template-target" class="template-output"></div>
+                  <img class="hidden circle-fallback" src="http://i.forbesimg.com/welcomead/images/ea5987a0.circle_fallback.png" height="500" width="500">
+              </div>
+              <div class="ads row">
+                <figure class="ad">
+                  <div id="welcome"></div>
+                  <div id="initial"></div>
+                </figure>
+              </div>
+          <!-- </div> -->
+
+        </div>
+        
+
+        <script src="http://i.forbesimg.com/welcomead/scripts/65c32041.vendor.js"></script>
+
+        <!--[if lte IE 9]>
+        <script src="http://i.forbesimg.com/welcomead/scripts/cb8f1668.legacy.js"></script>
+        <![endif]-->
+
+        <script src="http://i.forbesimg.com/welcomead/scripts/f5ba2561.main.js"></script>
+
+</body></html>

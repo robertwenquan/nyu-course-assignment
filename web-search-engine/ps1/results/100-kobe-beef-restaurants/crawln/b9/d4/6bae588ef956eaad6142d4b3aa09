@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>ç¥æ¸çã¹ãã¼ã­ããã¶ãèå·¥æ¿ åé»</title>
+<meta name="Description" content="ãã¶ãèå·¥æ¿ åé»ãæ°åã®é¦ã ç¥æ¸ãã¼ãã®ä¸çã¸èªãã¾ã" />
+<meta name="Keywords" content="åé»,ãã£ãã,wakkoqu,éæ¿ç¼ã,ç¥æ¸è,ç¥æ¸ãã¼ã,ä½é¦¬ç,é»ç,æä¸ç´,å³é¸," />
+<link rel="stylesheet" type="text/css" href="css/base.css" media="all" />
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/drop.js" type="text/javascript"></script>
+<script src="js/yuga.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="header" class="clearfix">
+<div class="left">
+<h1 class="hidden"><a href="index.html" title="ãã¶ãèå·¥æ¿ åé»">ãã¶ãèå·¥æ¿ åé»</a></h1>
+<p class="sub_title">æ°åã®é¦ããç¥æ¸ãã¼ãã®ä¸çã¸èªãã¾ã</p></div>
+
+<div class="right">
+<ul id="hNav" class="hidden">
+<li id="hNav01"><a href="policy.html" title="ãã©ã¤ãã·ã¼ããªã·ã¼">åé»ã®ãã©ã¤ãã·ã¼ããªã·ã¼</a></li>
+<li id="hNav02"><a href="inquiry.html" title="ãåãåãã">åé»ã®ãåãåãã</a></li>
+<li id="hNav03"><a href="#" title="æ¡ç¨æå ±">åé»ã®æ¡ç¨æå ±</a></li>
+</ul>
+<br class="clear" />
+</div>
+
+<div class="right-02">
+<div id="language">
+	<ul>
+		<li><a href="../index.html" id="japanese" title="japanese">japanese</a></li>
+		<li><a href="../chinese/index.html" id="chinese" title="chinese">Chinese</a></li>
+		<li><a href="../korean/index.html" id="korean" title="english">korean</a></li>
+	</ul>
+</div>
+</div>
+
+<br class="clear" />
+
+<!-- header end --></div>
+
+<hr>
+
+<div class="clearfix">
+<ul id="gNav" class="hidden">
+<li id="gNav01"><a href="ingredient.html" title="ãã ããã®ç´ æ">ãã ããã®ç´ æ</a></li>
+<li id="gNav02"><a href="food.html"title="ãã¼ãã¡ãã¥ã¼">ãã¼ãã¡ãã¥ã¼</a></li>
+<li id="gNav03"><a href="drink.html"title="ããªã³ã¯ã¡ãã¥ã¼">ããªã³ã¯ã¡ãã¥ã¼</a></li>
+<li id="gNav04"><a href="restaurant.html"title="åºèã®ãç´¹ä»">åºèã®ãç´¹ä»</a></li>
+<li id="gNav05"><a href="reservation.html"title="ãäºç´">ãäºç´</a></li>
+</ul>
+<!-- clearfix end --></div>
+
+<hr>
+
+<div class="clearfix">
+<div id="flash">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="900" height="350">
+<param name="movie" value="image/wakkoqu.swf">
+<param name="quality" value="high">
+<param name="wmode" value="transparent">
+<embed src="image/wakkoqu.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="900" height="350" wmode="opaque"></embed>
+</object>
+</div>
+<div id="bottom"></div>
+<!-- clearfix end --></div>
+
+
+
+<hr>
+
+<div class="clearfix">
+<div id="topcontent">
+
+<div class="left">
+<h2>ããããã¨ã¯ããããããè±ãã«ãããããã¨ãã¤ãããã¨ã§ãããã¨ä¿¡ãã¦ãã¾ãã</h2>
+<p>We choose our cattle with the skill of expert ranchers.
+We love music like talented musicians.
+We select tableware with the flair of designers.
+When you visit Wakkoqu, our staff will bring to life the true meaning of the above quotation from Brillat-Savarin.
+<br /><br /><br /><br /></p>
+
+<ul id="banner" class="hidden">
+<li id="banner01"><a href="ingredient.html" title="ãã ããã®ç´ æ">ãã ããã®ç´ æ å³é¸ããæé«ç´ä¸ç°çç¥æ¸èããå®¢æ§èªä¿¡ã®ç®ã§ãç¢ºèªããã ãã¾ãã</a></li>
+<li id="banner02"><a href="restaurant.html" title="åºèã®ãç´¹ä»">åºèã®ãç´¹ä» ä¼çµ±ã®è¡ãç¥æ¸ããçæ§ã«æé«ã®âæââå³âããå±ããã¾ã</a></li>
+</ul>
+
+<!-- left end --></div>
+
+
+<div class="right">
+<div id="news">
+<h2>What's New ææ°æå ±</h2>
+<ul>
+<li>2008å¹´9æ2æ¥<br>
+ã¦ã§ããµã¤ãããªãã¥ã¼ã¢ã«ãã¾ããã</li>
+</ul>
+<!-- right end --></div>
+
+<div id="info">
+<h2>Shop Info åºèã®ãæ¡å</h2>
+<p><img src="image/kitano_phone.gif" alt="åéæ¬åºã078-222-0678" border="0"></p>
+<p><img src="image/shin-kobe_phone.gif" alt="ã¯ã©ã¦ã³ãã©ã¶ç¥æ¸ã¢ããã¥ã¼åº 078-262-2838"></p>
+</div>
+
+<p><a href="http://www.gourmetkobe.com/shop_info/wakkoqu/" target="_blank"><img src="../image/btn_gourme.jpg" alt="Gourmet Kobe" /></a></p>
+<p><a href="http://ameblo.jp/wakkoqu/" target="_blank"><img src="image/01.jpg" alt="Kensuke Sakata Chef,s Blog" /></a></p>
+
+
+<!-- right end --></div>
+<!-- topcontent end --></div>
+<!-- clearfix end --></div>
+
+<br style="clear:both; display:block; width:100%; height:1px; overflow:hidden">
+
+<div id="footer" class="clearfix">
+<p id="copyright"><span>Copyright &reg; WAKKOQU. All rights Reserved since1993.</span></p>
+</div>
+
+<!-- wrapper end --></div>
+
+</body>
+</html>

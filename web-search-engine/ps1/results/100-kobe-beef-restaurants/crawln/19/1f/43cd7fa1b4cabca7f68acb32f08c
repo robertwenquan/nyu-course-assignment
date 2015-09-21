@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+      <title>Vox Media</title>
+      <meta name="og:title" content="Vox Media">
+
+    <meta property="og:image" content="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-xl-401a2441.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://voxmedia.com" />
+
+      <meta name="og:description" content="Vox Media is redefining the modern media company by empowering the smartest digital voices with the technology to create and distribute premium content, and connect with an audience of 170 million affluent and educated young adults worldwide.<br><br>Vox Media is eight distinct media brands: The Verge (Technology and Culture), Vox.com (News), SB Nation (Sports), Polygon (Gaming), Eater (Food and Nightlife), Racked (Shopping, Beauty and Fashion), Curbed (Real Estate and Home), and Re/code (Tech Business)." />
+      <meta name="description" content="Vox Media is redefining the modern media company by empowering the smartest digital voices with the technology to create and distribute premium content, and connect with an audience of 170 million affluent and educated young adults worldwide.<br><br>Vox Media is eight distinct media brands: The Verge (Technology and Culture), Vox.com (News), SB Nation (Sports), Polygon (Gaming), Eater (Food and Nightlife), Racked (Shopping, Beauty and Fashion), Curbed (Real Estate and Home), and Re/code (Tech Business)." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-s-22ff05b9.png" sizes="320x460" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-m-31504a34.png" sizes="640x920" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-l-f83d6302.png" sizes="768x1004" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    <link rel="apple-touch-startup-image" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/vox-app-xl-401a2441.png" sizes="1024x748" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+    <link rel="apple-touch-icon-precomposed" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/iphone-bookmark-60x60-ec0eedd6.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/ipad-72x72-0ef17332.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/iphone-retina-120x120-a155fc41.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/mobile/ipad-retina-144x144-676b0fa4.png" />
+    <link rel="shortcut icon" href="http://ea-cdn.voxmedia.com/production/voxmedia/images/favicon.ico">
+
+    <link href="http://ea-cdn.voxmedia.com/production/voxmedia/stylesheets/styles-bc9a3724.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.sbnation.com/voxmedia/public/stylesheets/symbolset/ss-standard.css" rel="stylesheet" />
+    <link href="http://assets.sbnation.com/voxmedia/public/stylesheets/ss-social/ss-social.css" rel="stylesheet" />
+    <link href="//cloud.typography.com/706184/773582/css/fonts.css" type="text/css" rel="stylesheet" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body class="index  home">
+    <script>
+  dataLayer = [{
+    'Network': 'voxmedia.com',
+    'Community': 'voxmedia.com'
+  }];
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KDNV3F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KDNV3F');</script>
+<!-- End Google Tag Manager -->
+    <header class="m-header standard-white">
+  <a class="m-header__hamburger" id="toggle-mobile-nav"></a>
+  <a title="Vox Media home" class="m-header__logo" href="/">Vox Media</a>
+  <nav class="m-header__nav" id="site-nav" role="navigation">
+    <ul>
+      <li><a href="/who-we-are/">Who We Are</a></li>
+      <li><a href="/vox-advertising/">Vox Advertising</a></li>
+      <li>
+        <span class="tab">Brands<span class="arrow"></span></span>
+        <ul class="sub-nav">
+          <li><a href="/brands/curbed/">Curbed</a></li>
+          <li><a href="/brands/eater/">Eater</a></li>
+          <li><a href="/brands/polygon/">Polygon</a></li>
+          <li><a href="/brands/racked/">Racked</a></li>
+          <li><a href="/brands/sbnation/">SB&nbsp;Nation</a></li>
+          <li><a href="/brands/theverge/">The&nbsp;Verge</a></li>
+          <li><a href="/brands/vox/">Vox</a></li>
+        </ul>
+      </li>
+      <li><a href="/careers/">Careers</a></li>
+      <li>
+        <span class="tab">Blogs<span class="arrow"></span></span>
+        <ul class="sub-nav">
+          <li><a href="http://product.voxmedia.com">Product</a></li>
+          <li><a href="http://blog.voxmedia.com">News</a></li>
+          <li><a href="http://marketing.voxmedia.com">Marketing</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="tab">Contact<span class="arrow"></span></span>
+        <ul class="sub-nav">
+          <li><a href="mailto:press@voxmedia.com">press@voxmedia.com</a></li>
+          <li><a href="mailto:advertising@voxmedia.com">advertising@voxmedia.com</a></li>
+          <li><a href="mailto:international.advertising@voxmedia.com">international.advertising@voxmedia.com</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+    
+  <div class="m-notice">
+    <div class="m-notice__message">
+      <span>Latest News:</span> Vox Media is now available on Apple News
+<a href="http://blog.voxmedia.com/post/129238563277/vox-media-now-available-on-apple-news" target="_blank">Read more.</a> 
+    </div>
+    <div class="m-notice__close ss-icon">delete</div>
+  </div>
+
+    
+<section class="m-cover" id="cover">
+  <script>
+  var covers = [
+  ];
+  coverUrl = covers[Math.round(Math.random() * Math.max(0, covers.length-1))];
+  document.getElementById('cover').setAttribute('style', 'background-image: url('+coverUrl+');');
+  </script>
+  <span class="m-cover__overlay"></span>
+  <div class="m-cover__logo-container container">
+    <img alt="Vox Media" src="https://cdn0.vox-cdn.com/uploads/chorus_asset/file/3914554/logos-home.01.1.0.png" />
+  </div>
+  <a class="ss-icon m-cover__down" href="#introduction">navigatedown</a>
+</section>
+
+<section class="m-sizzle" id="introduction">
+  <div class="container">
+    <h1 class="m-sizzle__header">Smart&nbsp;Media&nbsp;Brands. Smart&nbsp;Audiences.</h1>
+      <div class="video-container">
+        <iframe src="//player.vimeo.com/video/90608624?title=0&amp;byline=0&amp;portrait=0" width="920" height="518" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    <div class="m-sizzle__blurb">
+      <p>Vox Media is redefining the modern media company by empowering the smartest digital voices with the technology to create and distribute premium content, and connect with an audience of 170 million affluent and educated young adults worldwide.<br><br>Vox Media is eight distinct media brands: The Verge (Technology and Culture), Vox.com (News), SB Nation (Sports), Polygon (Gaming), Eater (Food and Nightlife), Racked (Shopping, Beauty and Fashion), Curbed (Real Estate and Home), and Re/code (Tech Business).</p>
+    </div>
+  </div>
+</section>
+
+<ul class="m-hero" id="hero"></ul>
+<script src="http://ea-cdn.voxmedia.com/production/voxmedia/javascripts/hero-a9b282cf.js" type="text/javascript"></script>
+
+<section class="m-contact">
+  <h2 class="m-contact__header">Contact Us</h2>
+  <ul class="m-contact__links">
+    <a href="mailto:press@voxmedia.com,fay.sliger@voxmedia.com">
+      <li>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+   y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+  <path d="M390.5,109.1V32.7H109.5v76.4H7.7v358.2h484.5V109.1H390.5z M467.7,441.8H34.1V134.5h101.8V58.2h230v76.4
+    h101.8V441.8z"/>
+  <path d="M250.5,109.1c-78.2,0-140.9,63.6-140.9,140.9c0,78.2,63.6,140.9,140.9,140.9s140-63.6,140.9-140.9
+    C391.4,171.8,327.7,109.1,250.5,109.1z M250.5,365.5C186.8,365.5,135,313.6,135,250s51.8-115.5,115.5-115.5
+    c62.7,0,114.5,51.8,115.5,115.5C365.9,313.6,314.1,365.5,250.5,365.5z"/>
+  <path d="M250.5,160.9c-49.1,0-89.1,40-89.1,89.1s40,89.1,89.1,89.1c49.1,0,89.1-40,89.1-89.1
+    S299.5,160.9,250.5,160.9z M250.5,313.6c-35.5,0-63.6-28.2-63.6-63.6c0-35.5,28.2-63.6,63.6-63.6c34.5,0,63.6,28.2,63.6,63.6
+    C314.1,285.5,285.9,313.6,250.5,313.6z"/>
+</g>
+</svg>
+        <header>Media &amp; Press Inquiries</header>
+        <footer>press@voxmedia.com, fay.sliger@voxmedia.com</footer>
+      </li>
+    </a>
+    <a href="mailto:advertising@voxmedia.com">
+      <li>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+   y="0px" viewBox="79.3 46 55 55" enable-background="new 79.3 46 55 55" xml:space="preserve">
+<path d="M128.3,58.6l-4.1,4l-3.7,1.4l-3.4-5.4l-34.9-4.9L82,59.6l-2.5,5.1L84.1,79l11.6,3.5l1.1,2.9l3.4,1l3.9,6.9
+  l3.9-1.6l-0.1-4l6.5-1.2l2.1-2.2l4.5,1.2l3.8,7.1l3.1-3.4l-2.4-8.1l3.2-5.3l1.3-7.5l3.5-2.3l0.6-6.8L128.3,58.6z M131.6,64.9
+  l-3.4,2.3l-1.4,8l-3.4,5.7l2.3,7.9l-0.5,0.5l-2.9-5.4l-6.5-1.7l-2.5,2.6l-7.5,1.4l0.1,4.3l-1,0.4l-3.4-6.1l-3.2-1l-1.1-2.9
+  l-11.5-3.5l-4-12.5l2.3-4.7l0.1-4.1l31.7,4.5l3.8,6l5.6-2.1l3.8-3.7l2.8,0.3L131.6,64.9z"/>
+</svg>
+        <header>National Ad Team</header>
+        <footer>advertising@voxmedia.com</footer>
+      </li>
+    </a>
+    <a href="mailto:international.advertising@voxmedia.com">
+      <li>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+   y="0px" viewBox="222.5 222.5 55 55" enable-background="new 222.5 222.5 55 55" xml:space="preserve">
+<path d="M250,225c-13.8,0-25,11.2-25,25c0,13.8,11.2,25,25,25s25-11.2,25-25C275,236.2,263.8,225,250,225z
+   M272.1,245.8l-1.8,0.3l-0.9-3.2l-5.2-3l-0.8-2.4l2.9-2.8C269.2,237.7,271.2,241.7,272.1,245.8z M239.4,232.3l2.5-2.5l6.4-1.5
+  l1.9,4.2l3.7,1.4l1,1.6l-5.7,3.4l-1,3.2l-1.1,0.9l-3.5-4.3l-3.5,5.2l4,4.8l-0.4,0.3l-5.6-3.9l-0.4-6.8L239.4,232.3z M227.5,250
+  c0-7.5,3.7-14.1,9.3-18.2l-1.5,6.2l0.4,8.3l7.7,5.3l-1.6,2.9l4.4,2.7l2,4.2l1.5,11.1C237.4,272.4,227.5,262.4,227.5,250z
+   M252.8,270.3h-0.9l-1.3-9.5l-2.5-5.4l-2.9-1.8l2.3-4l4.7-0.1l3.2,3l3.3,1.9l-4.8,10.2l-1.9,1.8L252.8,270.3z M255.8,271.7l-1.1-4.3
+  l1.3-1.1l6.1-12.9l-4.9-2.8l-3.9-3.7l-6.9,0.1l-2.9-3.5l0.5-0.8l2.9,3.5l3.7-2.8l0.9-3l7.1-4.2l-2.7-4.5l-3.5-1.4l-1.3-2.9
+  c5.3,0.1,10.1,2.1,13.8,5.4l-3.9,3.8l1.5,4.9l5.1,3l1.1,4.3l4-0.6c0,0.5,0.1,1.1,0.1,1.6C272.5,260.4,265.4,269.2,255.8,271.7z"/>
+</svg>
+        <header>International Ad Team</header>
+        <footer>international.advertising @voxmedia.com</footer>
+      </li>
+    </a>
+  </ul>
+</section>
+    <footer class="main">
+  <div class="extended">
+    <div class="left">
+      <img class="logo" width="300" height="61" alt="Vox Media" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/vox-media-white-52daad43.svg" />
+      <h1>Smart&nbsp;Media&nbsp;Brands. Smart&nbsp;Audiences.</h1>
+      
+
+      <ul class="vertical-links">
+        <li>
+<a href="/brands/sbnation/">            <img class="sbn" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-sbnation-ca4caf50.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/theverge/">            <img class="verge" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-theverge-21570e53.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/polygon/">            <img class="polygon" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-polygon-b667a046.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/curbed/">            <img class="curbed" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-curbed-3429eff3.png" />
+</a>        </li>
+        <li>
+<a href="/brands/eater/">            <img class="eater" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-eater-dd852059.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/racked/">            <img class="racked" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-racked-3ccd2062.svg" />
+</a>        </li>
+        <li>
+<a href="/brands/vox/">            <img class="vox" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-vox-ae55fe8e.svg" />
+</a>        </li>
+        <li>
+<a href="http://recode.net/">            <img class="recode" src="http://ea-cdn.voxmedia.com/production/voxmedia/images/site/footer-recode-17a0c29d.png" />
+</a>        </li>
+      </ul>
+    </div>
+
+    <div class="right">
+      <address>
+        <h1>DC Office</h1>
+        <p>1201 Connecticut Ave. NW <br>
+        Washington, DC 20036</p>
+      </address>
+
+      <address>
+        <h1>NY Office</h1>
+        <p>104 W 40th St <br>
+        New York, NY 10018</p>
+      </address>
+
+      <address>
+        <h1>Chicago Office</h1>
+        <p>10 West Hubbard Avenue <br>
+        Chicago, IL 60654</p>
+      </address>
+
+      <address>
+        <h1>San Francisco Office</h1>
+        <p>231 Sansome Street <br>
+        San Francisco, CA 94104</p>
+      </address>
+
+      <ul class="social">
+        <li><a class="ss-social" href="https://www.facebook.com/voxmediainc">facebook</a></li>
+        <li><a class="ss-social" href="https://twitter.com/voxmediainc">twitter</a></li>
+        <li><a class="ss-social" href="http://vimeo.com/voxstudios">vimeo</a></li>
+        <li><a class="ss-social" href="http://instagram.com/voxmedia">instagram</a></li>
+      </ul>
+
+      <ul class="policies">
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-of-use/">Terms of Use</a></li>
+        <li><a href="/security/">Security</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright-bar">
+    <div class="left">
+      <p>&copy; 2015. Vox Media, Inc. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="http://ea-cdn.voxmedia.com/production/voxmedia/javascripts/all-a8674ae9.js" type="text/javascript"></script>
+  </body>
+</html>
