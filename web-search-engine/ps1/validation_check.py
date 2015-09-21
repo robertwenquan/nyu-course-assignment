@@ -78,3 +78,32 @@ def check_blacklist(link):
     return True
 
   return False
+
+def robots_disallow_check(link):
+  robots = '/robots.txt'
+  robot_page = urljoin(link, robots)
+
+  try:
+    r = requests.get(robot_page)
+
+  except:
+    return False
+
+  agentname = ""
+  for a in r.text.split("\n"):
+    if 'user-agent' in a.lower():
+      agentname = a.split(":")[-1].split(" ")[-1]
+    else:
+      if agentname != "*":
+        continue
+      aa = a.split(":")
+      if aa[0].lower() == 'disallow':
+        path = aa[-1]
+        if path in self.page.url:
+          return True
+      if aa[0].lower() == 'allow':
+        path = aa[-1]
+        if path in self.page.url:
+          return False
+
+  return False
