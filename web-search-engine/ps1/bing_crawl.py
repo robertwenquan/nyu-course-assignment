@@ -42,7 +42,7 @@ class BingWebCrawler(object):
     # make google HTTP request
     bing_url= "http://www.bing.com/search?"
     try:
-      response = requests.get(bing_url, params=params, headers = headers)
+      response = requests.get(bing_url, params=params, headers=headers, timeout=0.5)
 
     except requests.exceptions.RequestException as e:
 

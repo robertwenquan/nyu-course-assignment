@@ -43,7 +43,7 @@ class GoogleWebCrawler(object):
     # make google HTTP request
     google_url = "http://www.google.com/search?"
     try:
-      response = requests.get(google_url, params=params, headers = headers)
+      response = requests.get(google_url, params=params, headers=headers, timeout=0.5)
 
     except requests.exceptions.RequestException as e:
       self.error = 1
