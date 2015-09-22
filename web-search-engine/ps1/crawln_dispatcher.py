@@ -209,14 +209,15 @@ class Dispatcher(object):
     def progress_report_current():
       crawl_total = self.max_num_pages
       crawled_pages = self.stats.crawled_pages
-      progress = '%d/%d pages crawled. [%d%%] finished' % (crawled_pages, crawl_total, (100*crawled_pages/crawl_total))
+      progress = '%d/%d pages crawled. [%d%%] finished' % \
+                  (crawled_pages, crawl_total, (100*crawled_pages/crawl_total))
       return progress
 
     # generate current progress report END
 
     try:
       interval = self.conf['report']['interval']
-    except:
+    except Exception:
       interval = 3
 
     while True:

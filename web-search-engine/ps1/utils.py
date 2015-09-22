@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
-
 """
 utility classes for local crawler mode
 
@@ -11,14 +9,14 @@ class DeDupeCache() to simulate a de-duplication hash table
 
 """
 
+__author__ = "Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>"
+
 import os
 import md5
 import json
 import Queue
 import threading
 import time
-
-from page_crawl import Page
 
 
 class TaskQueue(object):
@@ -31,7 +29,7 @@ class TaskQueue(object):
     self.prio_task_list = [[]] * 10
     self.total_task_cnt = 0
 
-  def normalize_priority(cls, score):
+  def normalize_priority(self, score):
     return int(score * 1000) % 10
 
   def en_queue(self, task):
@@ -41,7 +39,6 @@ class TaskQueue(object):
     task.time_enqueue = time.time()
 
     pri = self.normalize_priority(task.score)
-    assert(pri >= 0 and pri <= 9)
 
     self.prio_task_list[pri].append(task)
     self.prio_task_cnt[pri] += 1
@@ -75,7 +72,7 @@ class DeDupeCache(object):
     self.url_cache = {}
     self.url_count = 0
 
-  def md5sum(cls, url):
+  def md5sum(self, url):
     # dirty fix
     if isinstance(url, unicode):
       url = url.encode('utf-8')
@@ -107,20 +104,20 @@ class Logger(object):
       # os.mkdir(os.path.dirname(logfile))
       return
 
-    self.fd = open(logfile, 'a+')
+    self.fdlog = open(logfile, 'a+')
 
   def log(self, page):
-    log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size, 
-                  'ref':page.ref, 'store':page.store, 'linkhash':page.linkhash,
-                  'start':time.ctime(page.time_start), 'time':page.time_duration,
-                  'enqueue':time.ctime(page.time_enqueue), 'time_in_q':page.queue_duration,
-                  'code':page.status_code
+    log_entry = {'url':page.url, 'depth':page.depth, 'score':page.score, 'size':page.size,
+                 'ref':page.ref, 'store':page.store, 'linkhash':page.linkhash,
+                 'start':time.ctime(page.time_start), 'time':page.time_duration,
+                 'enqueue':time.ctime(page.time_enqueue), 'time_in_q':page.queue_duration,
+                 'code':page.status_code
                 }
     log_json_str = json.dumps(log_entry)
-    self.fd.write(log_json_str + '\n')
+    self.fdlog.write(log_json_str + '\n')
 
   def close(self):
-    self.fd.close()
+    self.fdlog.close()
 
 
 class Worker(object):
@@ -153,9 +150,9 @@ class Worker(object):
     # This makes it possible to block on a queue size, have threads fail, and still be able to add
     # more to the queue because this thread will spawn more new ones to take some stuff off the
     # queue.
-    self.t = threading.Thread(target=self._keep_alive, args=[self])
-    self.t.setDaemon(True)
-    self.t.start()
+    self.thr = threading.Thread(target=self._keep_alive, args=[self])
+    self.thr.setDaemon(True)
+    self.thr.start()
 
   def _retain_threads(self):
     ''' Make sure there at self.num_threads always. '''
@@ -196,10 +193,10 @@ class Worker(object):
 
     self.keep_alive = True
     self._retain_threads()
-    del self.t
-    self.t = threading.Thread(target=self._keep_alive, args=[self])
-    self.t.setDaemon(True)
-    self.t.start()
+    del self.thr
+    self.thr = threading.Thread(target=self._keep_alive, args=[self])
+    self.thr.setDaemon(True)
+    self.thr.start()
 
   def apply_async(self, func, args):  # to match multiprocessing.ThreadPool
     self.add_task(func, *args)
