@@ -65,8 +65,8 @@ basic requirements, if there are any.
 
 == Known Issue
 
- * Not supporting password protected page
  * Not fully supporting robots.txt
+ * Not handling supporting password protected page
  * Crawling is not fast enough
 
 == Extra Features
@@ -80,4 +80,7 @@ basic requirements, if there are any.
  * Fake crawl mode
   * add --fake mode for testing and debugging
   * This is quite useful without network connection
+
+== TODO in the future
+ * scale to AWS
 

@@ -20,3 +20,9 @@
  * Network connection during crawl
  * Unresolvable URL
 
+* How is the score calculated?
+ * inherited 1/3 score from its parent
+ * url term match
+ * title term match
+ * term frequency
+
