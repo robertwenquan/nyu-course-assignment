@@ -174,6 +174,7 @@ class GenericPageCrawler(object):
         page = Page(random_link, self.page.depth + 1, self.page.score, ref=self.page.url)
         self.queue.en_queue(page)
 
+      self.log_queue.put(self.page)
       return
     # fake single page crawl ends HERE
 
