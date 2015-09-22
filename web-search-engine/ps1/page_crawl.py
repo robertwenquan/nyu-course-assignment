@@ -52,8 +52,9 @@ class Page(object):
     ''' update linkhash and store based on url '''
     self.linkhash = self.md5sum(self.url)
     path = urlparse(self.url).path
-    if '.' in path:
-      self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:] + '.' + path.split('.')[-1])
+    basename = os.path.basename(path)
+    if '.' in basename:
+      self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:] + '.' + basename.split('.')[-1])
     else:
       self.store = os.path.join(self.linkhash[0:2], self.linkhash[2:4], self.linkhash[4:])
 
