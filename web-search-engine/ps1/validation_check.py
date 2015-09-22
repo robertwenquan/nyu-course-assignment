@@ -87,6 +87,9 @@ def robots_disallow_check(link):
   except:
     return False
 
+  if r.status_code == 404:
+    return False
+
   agentname = ""
   for a in r.text.split("\n"):
     if 'user-agent' in a.lower():
