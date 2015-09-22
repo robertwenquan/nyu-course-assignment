@@ -45,7 +45,7 @@ class GoogleWebCrawler(object):
     try:
       response = requests.get(google_url, params=params, headers=headers, timeout=0.5)
 
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
       self.error = 1
       return
 

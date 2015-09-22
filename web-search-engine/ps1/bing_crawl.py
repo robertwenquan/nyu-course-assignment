@@ -44,7 +44,7 @@ class BingWebCrawler(object):
     try:
       response = requests.get(bing_url, params=params, headers=headers, timeout=0.5)
 
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
 
       return
 
