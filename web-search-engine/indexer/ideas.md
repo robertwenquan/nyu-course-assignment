@@ -7,6 +7,7 @@
  * mrjob
 
 * Input
+ * chunked and gziped crawled pages
 
 * Output
  * Lexicon structure
