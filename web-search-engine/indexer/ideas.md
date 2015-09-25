@@ -32,3 +32,7 @@
   * pos
   * context
 
+* Output format
+ * ascii or binary
+ * a little bit compressed
+
