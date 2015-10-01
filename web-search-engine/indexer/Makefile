@@ -10,5 +10,5 @@ all:  rigen
 rigen:  rigen.c
 
 clean:  
-	rm -f rigen
+	rm -fr rigen rigen.dSYM &>/dev/null
 
