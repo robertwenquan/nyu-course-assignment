@@ -1,0 +1,17 @@
+#
+# configuration file for Reversed Index Generator
+#
+
+# configurable items for rigen
+parse:
+  threads     : 3
+  input       : './data'
+  output      : './parse-output'
+index:
+  threads     : 3
+  input       : './parse-output'
+  output      : './ri-index'
+aws:
+  AWS_KEY     : 'a'
+  AWS_SECRET  : 'b'
+
