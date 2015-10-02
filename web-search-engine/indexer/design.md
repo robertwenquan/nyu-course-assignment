@@ -6,18 +6,22 @@
 
 ### Language??
  * C on EC2
- * Go on EC2
  * Python with MRJob on EMR
 
 ### Phase Breakdown
  * Phase1: Generating Lexicons
-  * Input: A bunch of NZ or CommonCrawl dataset
+  * Input: A bunch of CommonCrawl dataset
+   * one month of crawl data with 343 files
+   * each with 100 MB gzipped
+   * 343 * 100 = 34 GB
   * Output: Parsed lexicons
 
   * Format: docID, WordID, Pos, Context
 
   * Steps
    * Uncompress page chunks
+    * each with around 250 MB ungzipped
+    * 34000 * 250 MB = 85 GB
    * Parse page and generate lexicons
 
  * Phase2: Sort each index file (each data file has one index file)
@@ -50,8 +54,8 @@
     * Hash words into barrals?
 
 === Modular Breakdown
- * Crawled Page Parser
- * Lexicon Parser
+ * CommonCrawl Page Parser
+ * Lexicon Generator
  * N-way merge sort
  * Index Writer
 
