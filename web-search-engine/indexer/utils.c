@@ -1,5 +1,8 @@
 
 /*
+ utility functions for the reversed index generator
+
+  - gzip uncompress
  */
 
 #include <stdio.h>
