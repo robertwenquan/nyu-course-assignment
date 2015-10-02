@@ -4,9 +4,11 @@
  * Map Reduce is NOT ALLOWED in this assignment !!!
  * High Speed considering IO Efficiency
 
-### Language??
- * C on EC2
- * Python with MRJob on EMR
+
+### Programming Language
+ * C with pthread
+ * Python with MRJob for phase1 (as a duplicated implementation)
+
 
 ### Phase Breakdown
  * Phase1: Generating Lexicons
@@ -52,6 +54,7 @@
     * First letter?
     * Alphabetical Range?
     * Hash words into barrals?
+
 
 === Modular Breakdown
  * CommonCrawl Page Parser
