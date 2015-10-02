@@ -5,11 +5,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lexicon.h"
+#include "rindex.h"
+#include "utils.h"
 
-extern int lexicon_generator();
-extern int lexicon_sorter();
-extern int index_builder();
-extern int index_merger();
 
 /*
  main function of the rigen (Reversed Index Generator)

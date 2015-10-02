@@ -4,14 +4,12 @@
 
 CC = gcc
 CFLAGS = -g -O2
-OBJS = rigen.o lexicon.o rindex.o
+OBJS = rigen.o lexicon.o rindex.o utils.o
 BINS = rigen lexicon_gen rindex_gen
 
-all:  rigen
+all:  $(BINS)
 
 rigen:  $(OBJS)
-
-test: lexicon_gen rindex_gen
 
 lexicon_gen:  lexicon.c
 	$(CC) -D__TEST__ -o $@ $<
