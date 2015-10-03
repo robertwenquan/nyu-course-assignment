@@ -1,5 +1,5 @@
-#ifndef _rigen_rindex_h
-#define _rigen_rindex_h
+#ifndef _iigen_iindex_h
+#define _iigen_iindex_h
 
 #include <stdio.h>
 

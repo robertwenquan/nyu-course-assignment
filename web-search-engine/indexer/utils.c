@@ -1,6 +1,6 @@
 
 /*
- utility functions for the reversed index generator
+ utility functions for the inverted index generator
 
   - gzip uncompress
  */

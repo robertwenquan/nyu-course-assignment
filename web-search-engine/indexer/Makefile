@@ -1,22 +1,22 @@
 #
-# Makefile for rigen
+# Makefile for iigen
 #
 
 CC = gcc
 CFLAGS = -g -O2
-OBJS = rigen.o lexicon.o rindex.o utils.o
-BINS = rigen lexicon_gen rindex_gen
+OBJS = iigen.o lexicon.o iindex.o utils.o
+BINS = iigen lexicon_gen iindex_gen
 
 all:  $(BINS)
 
-rigen:  $(OBJS)
+iigen:  $(OBJS)
 
 lexicon_gen:  lexicon.c
 	$(CC) -D__TEST__ -o $@ $<
 
-rindex_gen:  rindex.c
+iindex_gen:  iindex.c
 	$(CC) -D__TEST__ -o $@ $<
 
 clean:  
-	rm -fr $(BINS) $(OBJS) rigen.dSYM &>/dev/null
+	rm -fr $(BINS) $(OBJS) iigen.dSYM &>/dev/null
 

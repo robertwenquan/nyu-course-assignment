@@ -1,5 +1,5 @@
 
-#include "rindex.h"
+#include "iindex.h"
 
 int index_builder()
 {

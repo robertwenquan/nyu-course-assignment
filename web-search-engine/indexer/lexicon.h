@@ -1,5 +1,5 @@
-#ifndef _rigen_lexicon_h
-#define _rigen_lexicon_h
+#ifndef _iigen_lexicon_h
+#define _iigen_lexicon_h
 
 #include <stdio.h>
 

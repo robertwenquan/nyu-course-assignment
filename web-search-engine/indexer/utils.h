@@ -1,5 +1,5 @@
-#ifndef _rigen_utils_h
-#define _rigen_utils_h
+#ifndef _iigen_utils_h
+#define _iigen_utils_h
 
 #include <stdio.h>
 
