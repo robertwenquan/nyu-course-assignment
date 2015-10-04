@@ -59,7 +59,7 @@ WORD_TABLE_DATA = '/tmp/word_table.data'
 
 LEXICON_PATH = '/tmp'
 
-# test data path
+# test data path for phase1
 WET_DIR = './test_data/input'
 URL_TABLE_IDX = './test_data/phase1_output/url_table.idx'
 URL_TABLE_DATA = './test_data/phase1_output/url_table.data'
@@ -68,6 +68,7 @@ WORD_TABLE_IDX = './test_data/phase1_output/word_table.idx'
 WORD_TABLE_DATA = './test_data/phase1_output/word_table.data'
 
 LEXICON_PATH = './test_data/phase1_output'
+# test data path for phase1
 
 def get_wet_files():
   """ get a list of wet full path filenames """
