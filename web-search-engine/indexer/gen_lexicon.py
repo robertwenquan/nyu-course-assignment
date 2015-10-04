@@ -59,6 +59,15 @@ WORD_TABLE_DATA = '/tmp/word_table.data'
 
 LEXICON_PATH = '/tmp'
 
+# test data path
+WET_DIR = './test_data/input'
+URL_TABLE_IDX = './test_data/phase1_output/url_table.idx'
+URL_TABLE_DATA = './test_data/phase1_output/url_table.data'
+
+WORD_TABLE_IDX = './test_data/phase1_output/word_table.idx'
+WORD_TABLE_DATA = './test_data/phase1_output/word_table.data'
+
+LEXICON_PATH = './test_data/phase1_output'
 
 def get_wet_files():
   """ get a list of wet full path filenames """
@@ -129,6 +138,8 @@ class WordIndex(UrlIndex):
   """ class for word id and index """
 
   def __init__(self):
+    self.word_table = {}
+
     self.word_index_file = WORD_TABLE_IDX
     self.word_index_data = WORD_TABLE_DATA
     self.word_index_offset = 0
@@ -139,12 +150,27 @@ class WordIndex(UrlIndex):
     self.wordid_gen = wordid_generator()
 
   def get_word_id(self, word):
-    return self.wordid_gen.next()
+    """ get word_id based on word
+        return existing word_id if exists
+        otherwise generate new word_id
+    """
+    word_id = self.word_table.get(word)
+    if word_id:
+      return word_id, False
+    else:
+      word_id = self.wordid_gen.next()
+      self.word_table[word] = word_id
+      return word_id, True
 
   def add_entry(self, word):
     word_lens = len(word)
     offset = self.word_index_offset
     self.word_index_offset += (1 + word_lens + 1)
+
+    # get word_id
+    word_id, new_id = self.get_word_id(word)
+    if not new_id:
+      return word_id
 
     # write-back format: len(1B), word as string
     word_id_data = pack('B', word_lens)
@@ -152,7 +178,6 @@ class WordIndex(UrlIndex):
     self.fd_word_data.write(word + '\n')
 
     # write back index entry
-    word_id = self.get_word_id(word)
     word_id_index_data = pack('iiB', word_id, offset, word_lens)
     self.fd_word_idx.write(word_id_index_data)
 
@@ -169,6 +194,7 @@ def main():
   word_index = WordIndex()
 
   for wet_file in wet_files:
+    print wet_file
     wet_fd = warc.open(wet_file)
     doc_next_offset = 0
 
