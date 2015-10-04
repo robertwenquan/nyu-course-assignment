@@ -70,6 +70,7 @@ WORD_TABLE_DATA = './test_data/phase1_output/word_table.data'
 LEXICON_PATH = './test_data/phase1_output'
 # test data path for phase1
 
+
 def get_wet_files():
   """ get a list of wet full path filenames """
   glob_path = os.path.join(WET_DIR, '*.wet')
@@ -134,6 +135,7 @@ class UrlIndex(object):
 
   def write_url_index_entry(self, data):
     self.fd_url_idx.write(data)
+
 
 class WordIndex(UrlIndex):
   """ class for word id and index """
