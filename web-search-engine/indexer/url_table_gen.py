@@ -18,11 +18,13 @@ It has the following fields:
 import os
 import glob
 import warc
-import random
-from struct import *
+from struct import pack
 
 
 WET_DIR = '/tmp/cc201507/'
+URL_TABLE_IDX = '/tmp/url_table.idx'
+URL_TABLE_URLS = '/tmp/url_table.urls'
+
 
 def get_wet_files():
   """ get a list of wet full path filenames """
@@ -36,17 +38,20 @@ def docid_generator():
     docid += 1
     yield docid
 
+
 class UrlIndex(object):
+  """ class for handling URL table index """
 
   def __init__(self):
-    self.url_index_file = '/tmp/url_table.idx'
-    self.url_index_urls = '/tmp/url_table.urls'
+    self.url_index_file = URL_TABLE_IDX
+    self.url_index_urls = URL_TABLE_URLS
     self.url_index_offset = 0
 
     self.fd_urls = open(self.url_index_urls, 'wb')
     self.fd_url_idx = open(self.url_index_file, 'wb')
 
   def write_url_index(self, url):
+    """ write URLs index into file """
     url_lens = len(url)
     fileid = 99
     offset = self.url_index_offset
@@ -61,6 +66,7 @@ class UrlIndex(object):
 
   def write_url_index_entry(self, data):
     self.fd_url_idx.write(data)
+
 
 def main():
   """ main routine """
@@ -90,13 +96,18 @@ def main():
         content_offset = doc_header_length
         content_length = wet_record.header.content_length
 
-        print docid, (url_fileid, url_offset, url_lens), (doc_fileid, doc_offset, doc_length, content_offset, content_length)
+        print docid, (url_fileid, url_offset, url_lens), \
+          (doc_fileid, doc_offset, doc_length, content_offset, content_length)
 
-        # docid(4B), url_pos[fileid(2B), offset(4B), lens(2B)], doc_pos[fileid(2B), offset(4B), lens(4B), con_offset(2B), con_lens(4B)]
-        url_idx_data = pack('ihihhiihi', docid, url_fileid, url_offset, url_lens, doc_fileid, doc_offset, doc_length, content_offset, content_length)
+        # docid(4B), url_pos[fileid(2B), offset(4B), lens(2B)],
+        # doc_pos[fileid(2B), offset(4B), lens(4B), con_offset(2B), con_lens(4B)]
+        url_idx_data = pack('ihihhiihi', \
+                        docid, url_fileid, url_offset, url_lens, doc_fileid, \
+                        doc_offset, doc_length, content_offset, content_length)
         url_index.write_url_index_entry(url_idx_data)
 
         doc_next_offset = wet_record.payload.fileobj.tell() + wet_record.payload.length
+
 
 if __name__ == '__main__':
   main()
