@@ -96,7 +96,7 @@ def main():
         content_offset = doc_header_length
         content_length = wet_record.header.content_length
 
-        print docid, (url_fileid, url_offset, url_lens), \
+        print docid, url, (url_fileid, url_offset, url_lens), \
           (doc_fileid, doc_offset, doc_length, content_offset, content_length)
 
         # docid(4B), url_pos[fileid(2B), offset(4B), lens(2B)],
