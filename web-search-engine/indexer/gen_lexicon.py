@@ -44,6 +44,7 @@ Scan over the WET files and generate the first pass information
 """
 
 import os
+import re
 import glob
 import warc
 from struct import pack
@@ -83,7 +84,7 @@ def is_ascii(s):
 
 def split_with_offset(line, _len=len):
   """ split string to tokens with offset """
-  words = line.split()
+  words = re.split('[ ,.:!"|(){}\t\n]', line)
   index = line.index
   offsets = []
   append = offsets.append
@@ -205,7 +206,7 @@ def main():
         page_content = wet_record.payload.fileobj.read(content_length)
         wet_record.payload.fileobj.seek(saved_offset)
         for token, start, end in split_with_offset(page_content):
-          if is_ascii(token) and len(token) < 256:
+          if is_ascii(token) and len(token) > 0 and len(token) < 256:
             word_id = word_index.add_entry(token)
             lexicon_data = pack('iiih', word_id, docid, start, 2)
             lex_fd.write(lexicon_data)
