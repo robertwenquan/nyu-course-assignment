@@ -6,12 +6,22 @@ Scan over the WET files and generate the URL table
 URL table is the table with docid mapped to crawled URL
 It has the following fields:
 
- - docid (key)
- - url
- - wet filename
- - offset in the file
- - content start offset from the doc
- - content length
+ URL_TABLE_ENTRY(28B)
+ - docid(4B)
+ - loc of url(8B)
+  - url fileid(2B)
+  - url offset(4B)
+  - url length(2B)
+ - loc of doc(16B)
+  - wet fileid(2B)
+  - offset in the file(4B)
+  - length of the file including header(4B)
+  - content start offset from the doc(2B)
+  - content length(4B)
+
+ URL_ENTRY(VARIABLE LENGTH)
+ - length of url(2B)
+ - url(variable length)
 
 """
 
@@ -55,10 +65,10 @@ class UrlIndex(object):
     url_lens = len(url)
     fileid = 99
     offset = self.url_index_offset
-    self.url_index_offset += (4 + url_lens)
+    self.url_index_offset += (2 + url_lens)
 
-    # write-back format: len(4B), url as string
-    url_lens_data = pack('i', url_lens)
+    # write-back format: len(2B), url as string
+    url_lens_data = pack('h', url_lens)
     self.fd_urls.write(url_lens_data)
     self.fd_urls.write(url)
 
