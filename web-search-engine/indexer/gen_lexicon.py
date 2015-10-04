@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
 """
-Scan over the WET files and generate the URL table
+Scan over the WET files and generate the first pass information
+- URL table
+- WORD table
+- LEXICON per WET file
 
-URL table is the table with docid mapped to crawled URL
-It has the following fields:
 
  URL_TABLE_ENTRY(28B)
  - docid(4B)
@@ -22,6 +23,22 @@ It has the following fields:
  URL_ENTRY(VARIABLE LENGTH)
  - length of url(2B)
  - url(variable length)
+
+ LEXICON(14B)
+ - word id(4B)
+ - doc id(4B)
+ - offset to content(4B)
+ - context(2B)
+
+ WORD_TABLE_ENTRY(10B)
+ - word_id(4B)
+ - loc of word(6B)
+  - word offset(4B)
+  - word length(2B)
+
+ WORD_ENTRY(VARIABLE LENGTH)
+ - length of word
+ - word(variable length)
 
 """
 
