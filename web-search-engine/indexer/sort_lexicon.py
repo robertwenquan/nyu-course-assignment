@@ -50,9 +50,7 @@ class Lexicon(object):
     """ load lexicon, sort it, and write it back """
 
     self.load()
-    print self.lexicon_list
     self.sort()
-    print self.lexicon_list
     self.save()
 
   def load(self):
