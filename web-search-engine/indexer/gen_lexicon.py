@@ -205,7 +205,7 @@ def main():
         page_content = wet_record.payload.fileobj.read(content_length)
         wet_record.payload.fileobj.seek(saved_offset)
         for token, start, end in split_with_offset(page_content):
-          if is_ascii(token):
+          if is_ascii(token) and len(token) < 256:
             word_id = word_index.add_entry(token)
             lexicon_data = pack('iiih', word_id, docid, start, 2)
             lex_fd.write(lexicon_data)
