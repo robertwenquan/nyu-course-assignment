@@ -39,6 +39,7 @@ Scan over the WET files and generate the first pass information
  WORD_ENTRY(VARIABLE LENGTH)
  - length of word
  - word(variable length)
+ - '\n' (only for debugging purpose)
 
 """
 
@@ -50,7 +51,10 @@ from struct import pack
 
 WET_DIR = '/tmp/cc201507/'
 URL_TABLE_IDX = '/tmp/url_table.idx'
-URL_TABLE_URLS = '/tmp/url_table.urls'
+URL_TABLE_DATA = '/tmp/url_table.data'
+
+WORD_TABLE_IDX = '/tmp/word_table.idx'
+WORD_TABLE_DATA = '/tmp/word_table.data'
 
 LEXICON_PATH = '/tmp'
 
@@ -97,11 +101,11 @@ class UrlIndex(object):
 
   def __init__(self):
     self.url_index_file = URL_TABLE_IDX
-    self.url_index_urls = URL_TABLE_URLS
+    self.url_index_data = URL_TABLE_DATA
     self.url_index_offset = 0
 
-    self.fd_urls = open(self.url_index_urls, 'wb')
     self.fd_url_idx = open(self.url_index_file, 'wb')
+    self.fd_url_data = open(self.url_index_data, 'wb')
 
   def write_url_index(self, url):
     """ write URLs index into file """
@@ -112,13 +116,46 @@ class UrlIndex(object):
 
     # write-back format: len(2B), url as string
     url_lens_data = pack('h', url_lens)
-    self.fd_urls.write(url_lens_data)
-    self.fd_urls.write(url)
+    self.fd_url_data.write(url_lens_data)
+    self.fd_url_data.write(url)
 
     return (url_lens, fileid, offset)
 
   def write_url_index_entry(self, data):
     self.fd_url_idx.write(data)
+
+class WordIndex(UrlIndex):
+  """ class for word id and index """
+
+  def __init__(self):
+    self.word_index_file = WORD_TABLE_IDX
+    self.word_index_data = WORD_TABLE_DATA
+    self.word_index_offset = 0
+
+    self.fd_word_data = open(self.word_index_data, 'wb')
+    self.fd_word_idx = open(self.word_index_file, 'wb')
+
+    self.wordid_gen = wordid_generator()
+
+  def get_word_id(self, word):
+    return self.wordid_gen.next()
+
+  def add_entry(self, word):
+    word_lens = len(word)
+    offset = self.word_index_offset
+    self.word_index_offset += (2 + word_lens)
+
+    # write-back format: len(2B), word as string
+    word_lens_data = pack('h', word_lens)
+    self.fd_word_data.write(word_lens_data)
+    self.fd_word_data.write(word)
+
+    # write back index entry
+    word_id = self.get_word_id(word)
+    word_id_index_data = pack('ih', word_id, word_lens)
+    self.fd_word_idx.write(word_id_index_data)
+
+    return word_id
 
 
 def main():
@@ -126,9 +163,9 @@ def main():
 
   wet_files = get_wet_files()
   docid_gen = docid_generator()
-  wordid_gen = wordid_generator()
 
   url_index = UrlIndex()
+  word_index = WordIndex()
 
   for wet_file in wet_files:
     wet_fd = warc.open(wet_file)
@@ -169,7 +206,7 @@ def main():
         wet_record.payload.fileobj.seek(saved_offset)
         for token, start, end in split_with_offset(page_content):
           if is_ascii(token):
-            word_id = wordid_gen.next()
+            word_id = word_index.add_entry(token)
             lexicon_data = pack('iiih', word_id, docid, start, 2)
             lex_fd.write(lexicon_data)
 
