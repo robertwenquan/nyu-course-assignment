@@ -1,20 +1,24 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include"utils.h"
 typedef struct{
     FILE *f; 
     FILE *fcont;
-    char* buf; 
-    char* bufcont;
-    int start; 
-    int end;} buffer;
-typedef struct{int wordid; int place;} wordinfo;
+    GIT_T* buf; 
+    MIT_T* bufcont;
+    int tableTotal; 
+    int tableConsume;
+    int contTotal;
+    int contConsume;} buffer;
 
 void MergeCont();
 char* mergeFiles(char* inputlist, char* path, int numLevel);
 char* testmergeFiles(char* inputlist, char* path, int numLevel);
+void writeMin(int i);
+int sortCurr(int degree);
 buffer *ioBufs;
-
+GIT_T *topElem;
+int bufSize;
 /**************************************************************************/
 /* usage  ./merge maxdegree memsize finlist outfileprefix foutlist        */
 /*                                                                        */
@@ -70,22 +74,8 @@ int main(int argc, char* argv[]){
     fclose(fin);
   }
 
-  printf("%s is the ",inputlist);
+  printf("%s is the output list\n",inputlist);
   return 0;
-}
-
-char* testmergeFiles(char* inputlist, char* path, int numLevel){
-    FILE* fout;
-    
-    char filename[1024];
-    sprintf(filename, "%s%d", "output", numLevel);
-    fout = fopen(filename, "w");
-    int i;
-    for(i = 0; i < 3-numLevel; i++){
-      fprintf(fout, "%s\n", "abc");
-    }
-    fclose(fout);
-    return filename;
 }
 
 char* mergeFiles(char* inputlist, char* path, int numLevel){
@@ -97,8 +87,7 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
   char filename[1024];
   char outfile[1024];
   char outlist[1024];
-  wordinfo *heap;
-  heap = (wordinfo *)malloc((maxDegree+1)*sizeof(wordinfo));
+  char outcont[1024];
 
   char *bufSpace;
   bufSpace = (unsigned char *)malloc(memSize);
@@ -123,15 +112,22 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
        Prepared for next level merge */ 
     sprintf(outfile, "%s%d", outlist, numFile);
     ioBufs[degree].f = fopen(outfile, "w");
+    sprintf(outcont, "%s%s", outfile, ".cont");
+    ioBufs[degree].fcont = fopen(outcont, "w");
 
     bufSize = memSize / (degree*3);
 
-    for(i = 0; i < degree; i++){
+    for(i = 0; i <= degree; i++){
       ioBufs[i].buf = &(bufSpace[ i * bufSize * 2]);
       ioBufs[i].bufcont = &(bufSpace[ i * bufSize * 2 + bufSize / 2 ]);
+      ioBufs[i].tableTotal = 0;
+      ioBufs[i].tableConsume = 0;
+      ioBufs[i].contTotal = 0;
+      ioBufs[i].contConsume = 0;
     }
+    ioBufs[degree].bufcont = &(bufSpace[ degree * bufSize * 2 + bufSize * degree/ 4 ]);
 
-    mergeCont();
+    mergeCont(degree);
 
     for(i = 0; i <= degree; i++){
       fclose(ioBufs[i].f);
@@ -150,16 +146,67 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
   return outlist;
 }
 
-//wordinfo* getInfo(int i)
+void getNextWord(int i){
+  if(i == -1){
+    return;
+  }
+  buffer *b = &(ioBufs[i]);
 
-int mergeCont(){
-  //int degree;
-  //for(degree = 0; degree < maxDegree; degree++){
+  if(b->tableConsume == b->tableTotal){
+    b->tableTotal = fread(&(b->buf), (bufSize/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
+    b->tableConsume = 0;  
+  }
 
-  //}
-  //  for(i = 0; i < degree; i++)
-  //    heap[i+1] = getInfo(i);
+  if(b->tableTotal == 0){
+    topElem[i].word_id = -1;
+    return;
+  }
+
+  memcpy(&topElem[i], &(b->buf[b->tableConsume]), sizeof(GIT_T));
+  b->tableConsume += sizeof(GIT_T);
+
+  return;
+}
+
+int mergeCont(int degree){
+  GIT_T *lastRecord;
+  topElem = (GIT_T *)malloc(sizeof(GIT_T) * degree);
+
+  int i;
+  for(i = 0; i < degree - 1; i++){
+    getNextWord(i);
+  }
+ 
+  int min = 0;
+  while( min >= 0 ){
+    min = sortCurr(degree-1);
+    writeMin(min);
+    getNextWord(min);
+  } 
   return 0;
 }
 
+int sortCurr(int degree){
+  int minPos = -1;
+  int i;
+  for(i = 0; i < degree; i++){
+    if(topElem[i].word_id != -1){
+      if(minPos == -1){
+        minPos = i;
+      }else if(topElem[i].word_id < topElem[minPos].word_id){
+        minPos = i;
+      }
+    }
+  }
+  return minPos;
+}
 
+void writeMin(int i){
+  if(i == -1){
+    //flush everything to disk
+  }
+  buffer *b = &ioBufs[i];
+  //write b->fcont
+  //if topElem[i].word_id is different with topElem[degree], then write topElem[degree] to output file and update topElem[degree], if they are the same, update topElem[degree].n_docs
+  return;
+}
