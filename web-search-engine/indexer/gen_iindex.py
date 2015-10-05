@@ -115,6 +115,7 @@ class InvertedIndex(object):
         print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
         data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
         self.write_mit(data_mit)
+        count_in_git += 1
 
         docid_curr = docid
         offset_in_mit = self.fdw_iidx.tell()
@@ -127,7 +128,7 @@ class InvertedIndex(object):
 
         word_id_curr = word_id
         offset_in_git = self.fdw_mit.tell()
-        count_in_git = 1
+        count_in_git = 0
 
         # write the inverted index
         print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
@@ -145,12 +146,11 @@ class InvertedIndex(object):
         print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
         data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
         self.write_mit(data_mit)
+        count_in_git += 1
 
         docid_curr = docid
         offset_in_mit = self.fdw_iidx.tell()
         count_in_mit = 1
-
-        count_in_git += 1
 
         # write the inverted index
         print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
