@@ -53,6 +53,27 @@ class TestVerifyInvertedIndex(TestCase):
           print mit_file, unpack(mit_schema, data)
           cnt += 1
 
+  def test_check_iindex_table(self):
+    """ check inverted index table """
+
+    iidx_schema = 'i'
+    rec_size = calcsize(iidx_schema)
+
+    print 'Inverted Index...'
+    print '[offset]'
+
+    files = glob.glob(os.path.join(INVERTED_INDEX_PATH, '*.iidx'))
+    for iidx_file in files:
+      with open(iidx_file, 'rb') as fdr:
+        cnt = 0
+        while cnt < 10:
+          data = fdr.read(rec_size)
+          if data == '':
+            break
+          print iidx_file, unpack(iidx_schema, data)
+          cnt += 1
+
+
 if __name__ == '__main__':
   TestVerifyInvertedIndex.run()
 
