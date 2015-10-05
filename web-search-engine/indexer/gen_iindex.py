@@ -98,7 +98,7 @@ class InvertedIndex(object):
 
     for lexicon in self.iter_lexicon():
       word_id, docid, offset, ctx = lexicon
-      print word_id, docid, offset, ctx
+      #print word_id, docid, offset, ctx
 
       # word_id and docid initialization
       if word_id_curr == -1:
@@ -112,7 +112,7 @@ class InvertedIndex(object):
       if word_id != word_id_curr:
 
         # write back mit
-        print self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
+        print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
         data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
         self.write_mit(data_mit)
 
@@ -120,9 +120,8 @@ class InvertedIndex(object):
         offset_in_mit = self.fdw_iidx.tell()
         count_in_mit = 1
 
-        count_in_git += 1
-
         # write back git
+        print 'write GIT entry:', self.git_schema, word_id_curr, docid_curr, offset_in_git, count_in_git
         data_git = pack(self.git_schema, word_id_curr, offset_in_git, count_in_git)
         self.write_git(data_git)
 
@@ -131,6 +130,7 @@ class InvertedIndex(object):
         count_in_git = 1
 
         # write the inverted index
+        print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
         data_iidx = pack(self.iidx_schema, offset)
         self.write_iidx(data_iidx)
 
@@ -142,6 +142,7 @@ class InvertedIndex(object):
       # where offset is the start offset for this doc
       # and n_occur is number of occurrences of the word in this doc
       if docid != docid_curr:
+        print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
         data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
         self.write_mit(data_mit)
 
@@ -152,17 +153,30 @@ class InvertedIndex(object):
         count_in_git += 1
 
         # write the inverted index
+        print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
         data_iidx = pack(self.iidx_schema, offset)
         self.write_iidx(data_iidx)
 
         continue
       
       # write the inverted index
+      print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
       data_iidx = pack(self.iidx_schema, offset)
       self.write_iidx(data_iidx)
 
       count_in_mit += 1
-      
+
+    else:
+
+      print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
+      data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
+      self.write_mit(data_mit)
+
+      # write back git
+      print 'write GIT entry:', self.git_schema, word_id_curr, docid_curr, offset_in_git, count_in_git
+      data_git = pack(self.git_schema, word_id_curr, offset_in_git, count_in_git)
+      self.write_git(data_git)
+
 def get_lexicon_files():
   """ get a list of lexicon full path filenames """
   glob_path = os.path.join(SORTED_LEXICON_PATH, '*.lexicon')
