@@ -267,7 +267,7 @@ void write_min(int i, int degree) {
     //refill content of ith buffer if there's not enough left
     check_i_content(i);
 
-    memcpy((void *)(out->bufcont[out->contConsume]), (void *)(b->bufcont[b->contConsume]), sizeof(MIT_T));
+    memcpy((void *)(out->bufcont + out->contConsume), (void *)(b->bufcont + b->contConsume), sizeof(MIT_T));
     b->contConsume += sizeof(MIT_T);
     out->contConsume += sizeof(MIT_T);
     size--;
