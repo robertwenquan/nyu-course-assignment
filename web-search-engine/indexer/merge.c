@@ -34,14 +34,14 @@ void check_i_content(int i);
 
 BUF_T *ioBufs;
 GIT_T *topElem;
-int bufSize;
-int maxDegree;
-int memSize;
+int buf_size;
+int max_degree;
+int mem_size;
 
 int main(int argc, char* argv[]) {
 
-  maxDegree = atoi(argv[1]);
-  memSize = atoi(argv[2]);
+  max_degree = atoi(argv[1]);
+  mem_size = atoi(argv[2]);
 
   FILE *fin = NULL;
   char filename[1024] = {'\0'};
@@ -88,7 +88,7 @@ int main(int argc, char* argv[]) {
 }
 
 char* merge_files(char* inputlist, char* path, int numLevel) {
-/* Merge files listed in inputlist, every maxDegree files produce a new file
+/* Merge files listed in inputlist, every max_degree files produce a new file
    Then return the output list */ 
 
   FILE *fin, *fout;
@@ -96,7 +96,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   int degree;
   int i;
   int numFile = 0;
-  int bufSize;
+  int buf_size;
 
   char filename[1024];
   char outfile[1024];
@@ -104,8 +104,8 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   char outcont[1024];
 
   char *bufSpace;
-  bufSpace = (unsigned char *)malloc(memSize);
-  ioBufs = (BUF_T *)malloc((maxDegree + 1) * sizeof(BUF_T));
+  bufSpace = (unsigned char *)malloc(mem_size);
+  ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
 
   sprintf(outlist, "%s%d", path, numLevel);
   fin = fopen(inputlist, "r");
@@ -113,7 +113,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   while(!feof(fin)) {
     //Get source files from the list, assign each file to a BUFFER structure
 
-    for(degree = 0; degree < maxDegree; degree++) {
+    for(degree = 0; degree < max_degree; degree++) {
       fscanf(fin, "%s", filename);
       if (feof(fin))
         break;
@@ -136,20 +136,20 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
     ioBufs[degree].fcont = fopen(outcont, "w");
 
     //Give output file more buffer
-    bufSize = memSize / (degree*3);
+    buf_size = mem_size / (degree*3);
 
     for(i = 0; i <= degree; i++) {
-      ioBufs[i].buf = &(bufSpace[ i * bufSize * 2]);
-      ioBufs[i].bufcont = &(bufSpace[ i * bufSize * 2 + bufSize / 2 ]);
+      ioBufs[i].buf = &(bufSpace[ i * buf_size * 2]);
+      ioBufs[i].bufcont = &(bufSpace[ i * buf_size * 2 + buf_size / 2 ]);
       ioBufs[i].tableTotal = 0;
       ioBufs[i].tableConsume = 0;
       ioBufs[i].contTotal = 0;
       ioBufs[i].contConsume = 0;
     }
 
-    ioBufs[degree].bufcont = &(bufSpace[ degree * bufSize * 2 + bufSize * degree/ 4 ]);
-    ioBufs[degree].tableTotal = bufSize * degree/ 4 ;
-    ioBufs[degree].contTotal = degree * bufSize - bufSize * degree/ 4 ;
+    ioBufs[degree].bufcont = &(bufSpace[ degree * buf_size * 2 + buf_size * degree/ 4 ]);
+    ioBufs[degree].tableTotal = buf_size * degree/ 4 ;
+    ioBufs[degree].contTotal = degree * buf_size - buf_size * degree/ 4 ;
 
     //Merge the current "degree" files
     mergeCont(degree);
@@ -184,7 +184,7 @@ void getNextWord(int i) {
   BUF_T *b = &(ioBufs[i]);
 
   if ( b->tableTotal - b->tableConsume < sizeof(GIT_T)) {
-    b->tableTotal = fread(&(b->buf), (bufSize/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
+    b->tableTotal = fread(&(b->buf), (buf_size/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
     b->tableConsume = 0;  
   }
 
@@ -259,7 +259,7 @@ void write_min(int i, int degree) {
   while (size > 0) {
     if (out->contTotal - out->contConsume < sizeof(MIT_T)) {
       fwrite(&(out->bufcont), out->contConsume, 1, out->fcont);
-      out->contTotal = degree*bufSize - bufSize*degree/4 ;
+      out->contTotal = degree*buf_size - buf_size*degree/4 ;
       out->contConsume = 0;
       break;
     }
@@ -277,7 +277,7 @@ void write_min(int i, int degree) {
   if (topElem[i].word_id != topElem[degree].word_id) {
     if (out->tableTotal - out-> tableConsume < sizeof(GIT_T)) {
       fwrite(&(out->buf), out->tableConsume, 1, out->f);
-      out->tableTotal = bufSize * degree/ 4;
+      out->tableTotal = buf_size * degree/ 4;
       out->tableConsume = 0;
     }
 
@@ -298,12 +298,12 @@ void check_i_content(int i){
   BUF_T *b = &ioBufs[i];
 
   if (b->contTotal - b->contConsume < sizeof(MIT_T)) {
-    b->contTotal = fread(&(b->bufcont), (bufSize/sizeof(MIT_T)*sizeof(MIT_T)), 1, b->fcont);
+    b->contTotal = fread(&(b->bufcont), (buf_size/sizeof(MIT_T)*sizeof(MIT_T)), 1, b->fcont);
     b->contConsume= 0;
   }
 
   if (b->tableTotal - b->tableConsume < sizeof(GIT_T)) {
-    b->tableTotal = fread(&(b->buf), (bufSize/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
+    b->tableTotal = fread(&(b->buf), (buf_size/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
     b->tableConsume = 0;
   }
 
