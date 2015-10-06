@@ -26,12 +26,11 @@ typedef struct{
   int contConsume;
 } BUF_T;
 
-void MergeCont();
-char * mergeFiles(char* inputlist, char* path, int numLevel);
-char * testmergeFiles(char* inputlist, char* path, int numLevel);
-void writeMin(int i, int degree);
+char * merge_files(char* inputlist, char* path, int numLevel);
+//char * testmergeFiles(char* inputlist, char* path, int numLevel);
+void write_min(int i, int degree);
 int sortCurr(int degree);
-void checkIContent(int i);
+void check_i_content(int i);
 
 BUF_T *ioBufs;
 GIT_T *topElem;
@@ -71,7 +70,7 @@ int main(int argc, char* argv[]) {
   fclose(fin);
 
   while (inputsize - 1) {
-    strcpy(inputlist, mergeFiles(inputlist, argv[4], numLevel));
+    strcpy(inputlist, merge_files(inputlist, argv[4], numLevel));
     numLevel++;
     fin = fopen(inputlist, "r");
 
@@ -88,7 +87,7 @@ int main(int argc, char* argv[]) {
   return 0;
 }
 
-char* mergeFiles(char* inputlist, char* path, int numLevel) {
+char* merge_files(char* inputlist, char* path, int numLevel) {
 /* Merge files listed in inputlist, every maxDegree files produce a new file
    Then return the output list */ 
 
@@ -217,7 +216,7 @@ int mergeCont(int degree) {
   int min = 0;
   while(min >= 0) {
     min = sortCurr(degree-1);
-    writeMin(min, degree);
+    write_min(min, degree);
     getNextWord(min);
   } 
 
@@ -243,7 +242,7 @@ int sortCurr(int degree) {
   return minPos;
 }
 
-void writeMin(int i, int degree) {
+void write_min(int i, int degree) {
   //the ith buffer block is the current minimum word, write it's information to output file.
 
   BUF_T *b = &ioBufs[i];
@@ -266,7 +265,7 @@ void writeMin(int i, int degree) {
     }
 
     //refill content of ith buffer if there's not enough left
-    checkIContent(i);
+    check_i_content(i);
 
     memcpy((void *)(out->bufcont[out->contConsume]), (void *)(b->bufcont[b->contConsume]), sizeof(MIT_T));
     b->contConsume += sizeof(MIT_T);
@@ -294,7 +293,7 @@ void writeMin(int i, int degree) {
   return;
 }
 
-void checkIContent(int i){
+void check_i_content(int i){
   //Refill buffer of ioBufs[i]
   BUF_T *b = &ioBufs[i];
 
