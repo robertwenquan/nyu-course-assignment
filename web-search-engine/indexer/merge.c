@@ -24,7 +24,7 @@ typedef struct{
   int tableConsume;
   int contTotal;
   int contConsume;
-} buffer;
+} BUF_T;
 
 void MergeCont();
 char * mergeFiles(char* inputlist, char* path, int numLevel);
@@ -33,7 +33,7 @@ void writeMin(int i, int degree);
 int sortCurr(int degree);
 void checkIContent(int i);
 
-buffer *ioBufs;
+BUF_T *ioBufs;
 GIT_T *topElem;
 int bufSize;
 int maxDegree;
@@ -106,7 +106,7 @@ char* mergeFiles(char* inputlist, char* path, int numLevel) {
 
   char *bufSpace;
   bufSpace = (unsigned char *)malloc(memSize);
-  ioBufs = (buffer *)malloc((maxDegree + 1) * sizeof(buffer));
+  ioBufs = (BUF_T *)malloc((maxDegree + 1) * sizeof(BUF_T));
 
   sprintf(outlist, "%s%d", path, numLevel);
   fin = fopen(inputlist, "r");
@@ -182,7 +182,7 @@ void getNextWord(int i) {
     return;
   }
 
-  buffer *b = &(ioBufs[i]);
+  BUF_T *b = &(ioBufs[i]);
 
   if ( b->tableTotal - b->tableConsume < sizeof(GIT_T)) {
     b->tableTotal = fread(&(b->buf), (bufSize/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
@@ -246,8 +246,8 @@ int sortCurr(int degree) {
 void writeMin(int i, int degree) {
   //the ith buffer block is the current minimum word, write it's information to output file.
 
-  buffer *b = &ioBufs[i];
-  buffer *out = &ioBufs[degree];
+  BUF_T *b = &ioBufs[i];
+  BUF_T *out = &ioBufs[degree];
 
   //if i==-1, means every buffer is empty, write back everything.
   if (i == -1) {
@@ -268,7 +268,7 @@ void writeMin(int i, int degree) {
     //refill content of ith buffer if there's not enough left
     checkIContent(i);
 
-    memcpy(out->bufcont[out->contConsume], b->bufcont[b->contConsume], sizeof(MIT_T));
+    memcpy((void *)(out->bufcont[out->contConsume]), (void *)(b->bufcont[b->contConsume]), sizeof(MIT_T));
     b->contConsume += sizeof(MIT_T);
     out->contConsume += sizeof(MIT_T);
     size--;
@@ -296,7 +296,7 @@ void writeMin(int i, int degree) {
 
 void checkIContent(int i){
   //Refill buffer of ioBufs[i]
-  buffer *b = &ioBufs[i];
+  BUF_T *b = &ioBufs[i];
 
   if (b->contTotal - b->contConsume < sizeof(MIT_T)) {
     b->contTotal = fread(&(b->bufcont), (bufSize/sizeof(MIT_T)*sizeof(MIT_T)), 1, b->fcont);
