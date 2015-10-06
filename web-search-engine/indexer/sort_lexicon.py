@@ -20,15 +20,12 @@ from struct import pack, unpack, calcsize
 from operator import itemgetter
 
 
+BASE_DIR = './test_data'
+BASE_DIR = '/data/wse/100k'
+
 # test data path for phase1
-URL_TABLE_IDX = './test_data/phase1_output/url_table.idx'
-URL_TABLE_DATA = './test_data/phase1_output/url_table.data'
-
-WORD_TABLE_IDX = './test_data/phase1_output/word_table.idx'
-WORD_TABLE_DATA = './test_data/phase1_output/word_table.data'
-
-LEXICON_PATH = './test_data/phase1_output'
-SORTED_LEXICON_PATH = './test_data/phase2_output'
+LEXICON_PATH = os.path.join(BASE_DIR, 'phase1_output')
+SORTED_LEXICON_PATH = os.path.join(BASE_DIR, 'phase2_output')
 # test data path for phase1
 
 
@@ -98,6 +95,7 @@ def sort_lexicon(filename):
       INPUT: unsorted lexicon file (*.lexicon)
       OUTPUT: sorted lexicon file (*.lexicon.sorted)
   """
+  print 'processing %s' % filename
   lex = Lexicon(filename)
   lex.sort_lexicon()
 

@@ -39,9 +39,12 @@ import glob
 from struct import pack, unpack, calcsize
 
 
+BASE_DIR = './test_data'
+BASE_DIR = '/data/wse/100k'
+
 # test data path for phase2
-SORTED_LEXICON_PATH = './test_data/phase2_output'
-INVERTED_INDEX_PATH = './test_data/phase3_output'
+SORTED_LEXICON_PATH = os.path.join(BASE_DIR, 'phase2_output')
+INVERTED_INDEX_PATH = os.path.join(BASE_DIR, 'phase3_output')
 # test data path for phase2
 
 
