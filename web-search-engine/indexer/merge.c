@@ -91,19 +91,19 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
 /* Merge files listed in inputlist, every max_degree files produce a new file
    Then return the output list */ 
 
-  FILE *fin, *fout;
+  FILE *fin = NULL, *fout = NULL;
 
-  int degree;
-  int i;
+  int degree = 0;
+  int i = 0;
   int numFile = 0;
-  int buf_size;
+  int buf_size = 0;
 
-  char filename[1024];
-  char outfile[1024];
-  char outlist[1024];
-  char outcont[1024];
+  char filename[1024] = {'\0'};
+  char outfile[1024] = {'\0'};
+  char outlist[1024] = {'\0'};
+  char outcont[1024] = {'\0'};
 
-  char *bufSpace;
+  char *bufSpace = NULL;
   bufSpace = (unsigned char *)malloc(mem_size);
   ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
 
