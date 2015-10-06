@@ -29,7 +29,8 @@ typedef struct{
 char * merge_files(char* inputlist, char* path, int numLevel);
 //char * testmergeFiles(char* inputlist, char* path, int numLevel);
 void write_min(int i, int degree);
-int sortCurr(int degree);
+int sort_curr(int degree);
+int merge_cont(int degree);
 void check_i_content(int i);
 
 BUF_T *ioBufs;
@@ -152,7 +153,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
     ioBufs[degree].contTotal = degree * buf_size - buf_size * degree/ 4 ;
 
     //Merge the current "degree" files
-    mergeCont(degree);
+    merge_cont(degree);
 
     //close files
     for(i = 0; i <= degree; i++) {
@@ -199,7 +200,7 @@ void getNextWord(int i) {
   return;
 }
 
-int mergeCont(int degree) {
+int merge_cont(int degree) {
   //Get the minimum of the top element of each buffer
   //Write it into ioBufs[degree], which is the buffer of output file
   //Refill with the next element of this buffer block
@@ -214,7 +215,7 @@ int mergeCont(int degree) {
  
   int min = 0;
   while(min >= 0) {
-    min = sortCurr(degree-1);
+    min = sort_curr(degree-1);
     write_min(min, degree);
     getNextWord(min);
   } 
@@ -222,7 +223,7 @@ int mergeCont(int degree) {
   return 0;
 }
 
-int sortCurr(int degree) {
+int sort_curr(int degree) {
   //get the minimum word_id and return it's order in buffer
 
   int minPos = -1;
