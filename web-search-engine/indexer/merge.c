@@ -42,6 +42,7 @@ GIT_T *topElem;
 int buf_size;
 int max_degree;
 int mem_size;
+int out_offset;
 
 int main(int argc, char* argv[]) {
 
@@ -114,6 +115,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   fin = fopen(inputlist, "r");
  
   while (!feof(fin)) {
+    out_offset = 0;
     //Get source files from the list, assign each file to a BUFFER structure
 
     for (degree = 0; degree < max_degree; degree++) {
@@ -272,6 +274,7 @@ void write_min(int i, int degree) {
   //get the size of docs of that word, write to output buffer one by one.
   int size = topElem[i].n_docs;
   while (size > 0) {
+    out_offset += 1;
     //refill content of ith buffer
     if (b->mitTotal == b->mitConsume)
       check_ith_mit(i);
@@ -307,10 +310,12 @@ void write_min(int i, int degree) {
       out->gitTotal = buf_size * degree/ 4;
       out->gitConsume = 0;
     }
-    memcpy(&(out->bufgit[out->gitConsume]), &topElem[degree], sizeof(GIT_T));
+    if (topElem[i].n_docs != out_offset) {
+      memcpy(&(out->bufgit[out->gitConsume]), &topElem[degree], sizeof(GIT_T));
+    }
     out->gitConsume += 1;
     memcpy(&topElem[degree], &topElem[i], sizeof(GIT_T));
-    //update offset;
+    topElem[degree].offset = (out_offset - topElem[i].n_docs) * sizeof(GIT_T);
   }else{
     // if they are the same, update topElem[degree].n_docs*/
     topElem[degree].n_docs += topElem[i].n_docs;
