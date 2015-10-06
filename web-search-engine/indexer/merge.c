@@ -47,7 +47,6 @@ int main(int argc, char* argv[]) {
   FILE *fin = NULL;
   char filename[1024] = {'\0'};
 
-  int numFiles = 0;
   int numLevel = 0;
   int inputsize = 0;
 
