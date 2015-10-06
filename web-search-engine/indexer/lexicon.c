@@ -11,6 +11,14 @@ int lexicon_generator()
   return 0;
 }
 
+/*
+ * lexicon comparison function, used for qsort()
+ *
+ * compare key1: word_id
+ * compare key2: docid
+ * compare key3: offset
+ *
+ */
 static int lexicon_compare(const void *p1, const void *p2)
 {
   LEXICON_T *lex1 = (LEXICON_T *)p1;
@@ -25,6 +33,7 @@ static int lexicon_compare(const void *p1, const void *p2)
   unsigned int off1 = lex1->offset;
   unsigned int off2 = lex2->offset;
 
+  // compare word_id
   if (word_id1 > word_id2) {
     return 1;
   }
@@ -32,6 +41,7 @@ static int lexicon_compare(const void *p1, const void *p2)
     return -1;
   }
 
+  // if word_id equals, compare docid
   if (doc_id1 > doc_id2) {
     return 1;
   }
@@ -39,6 +49,8 @@ static int lexicon_compare(const void *p1, const void *p2)
     return -1;
   }
 
+  // when word_id and docid both equals
+  // compare offset
   if (off1 > off2) {
     return 1;
   }
@@ -49,6 +61,14 @@ static int lexicon_compare(const void *p1, const void *p2)
   return 0;
 }
 
+/*
+ * sort lexicon based on word_id, docid, and offset
+ *
+ * after sorting, the lexicons will be placed in word_id order
+ * for the lexicons with the same word_id, they will be placed
+ * in docid order, and then offset order
+ *
+ */
 int lexicon_sorter()
 {
   char *filename1 = "test_data/phase1_output/input1.warc.lexicon";
