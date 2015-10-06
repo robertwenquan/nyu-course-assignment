@@ -205,7 +205,6 @@ int mergeCont(int degree) {
   //Refill with the next element of this buffer block
   //Until all the buffer block is empty.
 
-  GIT_T *lastRecord;
   topElem = (GIT_T *)malloc(sizeof(GIT_T) * degree);
 
   int i = 0;
