@@ -18,8 +18,8 @@
 typedef struct{
   FILE *f; 
   FILE *fcont;
-  char* buf; 
-  char* bufcont;
+  unsigned char* buf;
+  unsigned char* bufcont;
   int tableTotal; 
   int tableConsume;
   int contTotal;
@@ -103,7 +103,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   char outlist[1024] = {'\0'};
   char outcont[1024] = {'\0'};
 
-  char *bufSpace = NULL;
+  unsigned char *bufSpace = NULL;
   bufSpace = (unsigned char *)malloc(mem_size);
   ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
 
