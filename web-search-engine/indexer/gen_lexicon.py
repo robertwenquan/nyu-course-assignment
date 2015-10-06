@@ -74,7 +74,8 @@ LEXICON_PATH = './test_data/phase1_output'
 def get_wet_files():
   """ get a list of wet full path filenames """
   glob_path = os.path.join(WET_DIR, '*.wet')
-  return glob.glob(glob_path)
+  file_list = glob.glob(glob_path)
+  return sorted(file_list)
 
 def docid_generator():
   """ generate docid from 1 and upwards """
