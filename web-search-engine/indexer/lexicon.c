@@ -108,6 +108,8 @@ int main(int argc, char *argv[])
 {
   lexicon_sorter();
   lexicon_generator();
+
+  return 0;
 }
 #endif
 
