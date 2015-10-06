@@ -106,8 +106,8 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   char outmit[1024] = {'\0'};
   char outgit[1024] = {'\0'};
 
-  unsigned char *bufSpace = NULL;
-  bufSpace = (unsigned char *)malloc(mem_size);
+  unsigned char *buf_space = NULL;
+  buf_space = (unsigned char *)malloc(mem_size);
   ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
 
   sprintf(outlist, "%s%d", path, numLevel);
@@ -121,9 +121,9 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
       if (feof(fin))
         break;
       ioBufs[degree].fgit = fopen(filename, "r");
-
-      //TODO: GET the name of MIT_T git
       fscanf(fin, "%s", filename);
+      if (feof(fin))
+        break;
       ioBufs[degree].fmit = fopen(filename, "r");
     }
 
@@ -143,14 +143,14 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
     buf_size = mem_size / (degree*3 * sizeof(GIT_T));
 
     for (i = 0; i <= degree; i++) {
-      ioBufs[i].bufgit = &(bufSpace[ i * sizeof(GIT_T)*buf_size * 2]);
-      ioBufs[i].bufmit= &(bufSpace[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size / 2 ]);
+      ioBufs[i].bufgit = &(buf_space[ i * sizeof(GIT_T)*buf_size * 2]);
+      ioBufs[i].bufmit = &(buf_space[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size / 2 ]);
       ioBufs[i].gitTotal = 0;
       ioBufs[i].gitConsume = 0;
       ioBufs[i].mitTotal = 0;
       ioBufs[i].mitConsume = 0;
     }
-    ioBufs[degree].bufmit= &(bufSpace[ degree * sizeof(GIT_T)* buf_size * 2 + sizeof(GIT_T)* buf_size * degree/ 4 ]);
+    ioBufs[degree].bufmit= &(buf_space[ degree * sizeof(GIT_T)* buf_size * 2 + sizeof(GIT_T)* buf_size * degree/ 4 ]);
     ioBufs[degree].gitTotal =  buf_size * degree/ 4 ;
     ioBufs[degree].mitTotal = degree * buf_size - buf_size * degree/ 4 ;
 
@@ -174,7 +174,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
 
   fclose(fin); 
   free(ioBufs);
-  free(bufSpace);
+  free(buf_space);
 
   return outlist;
 }
