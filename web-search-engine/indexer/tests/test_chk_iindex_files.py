@@ -46,11 +46,14 @@ class TestVerifyInvertedIndex(TestCase):
     for mit_file in files:
       with open(mit_file, 'rb') as fdr:
         cnt = 0
-        while cnt < 5:
+        while cnt < 10000:
           data = fdr.read(rec_size)
           if data == '':
             break
-          print mit_file, unpack(mit_schema, data)
+      
+          docid, offset, occur = unpack(mit_schema, data)
+          self.assertTrue(occur > 0)
+          print mit_file, docid, offset, occur
           cnt += 1
 
   def test_check_iindex_table(self):
