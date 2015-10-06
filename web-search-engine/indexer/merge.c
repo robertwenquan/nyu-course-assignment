@@ -318,7 +318,7 @@ void write_min(int i, int degree) {
   return;
 }
 
-void check_ith_mit(int i){
+void check_ith_mit(int i) {
   //Refill buffer of ioBufs[i]
   BUF_T *b = &ioBufs[i];
   
