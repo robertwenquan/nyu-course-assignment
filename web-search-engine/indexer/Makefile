@@ -18,5 +18,5 @@ iindex_gen:  iindex.c
 	$(CC) -D__TEST__ -o $@ $<
 
 clean:  
-	rm -fr $(BINS) $(OBJS) iigen.dSYM &>/dev/null
+	rm -fr $(BINS) $(OBJS) iigen.dSYM *.pyc tests/*.pyc &>/dev/null
 
