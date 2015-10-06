@@ -1,15 +1,15 @@
 #include<stdio.h>
 #include"../utils.h"
 
-int main(){
+int main(int argc, char* argv[]){
   FILE * f;
-  f = fopen("../test_data/phase3_output/input3.warc.mit", "r");
+  f = fopen(argv[1], "r");
   MIT_T *buffer;
   buffer = (MIT_T*)malloc(sizeof(MIT_T));
   int total = 0;
   int zero = 0;
   while(!feof(f)){
-    fgets(buffer, sizeof(MIT_T), f);
+    fread(buffer, sizeof(MIT_T),1, f);
     printf("%d\n", buffer[0].docid);
     printf("%d\n", buffer[0].offset);
     printf("%d\n", buffer[0].n_places);

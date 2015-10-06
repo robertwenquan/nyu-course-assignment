@@ -2,21 +2,21 @@
 #include<stdlib.h>
 #include"utils.h"
 typedef struct{
-    FILE *f; 
-    FILE *fcont;
-    char* buf; 
-    char* bufcont;
-    int tableTotal; 
-    int tableConsume;
-    int contTotal;
-    int contConsume;} buffer;
+    FILE *fgit; 
+    FILE *fmit;
+    GIT_T* bufgit; 
+    MIT_T* bufmit;
+    int gitTotal; 
+    int gitConsume;
+    int mitTotal;
+    int mitConsume;} buffer;
 
 void MergeCont();
 char* mergeFiles(char* inputlist, char* path, int numLevel);
 char* testmergeFiles(char* inputlist, char* path, int numLevel);
 void writeMin(int i, int degree);
 int sortCurr(int degree);
-void checkIContent(int i);
+void refillIthMit(int i);
 buffer *ioBufs;
 GIT_T *topElem;
 int bufSize;
@@ -57,14 +57,14 @@ int main(int argc, char* argv[]){
     return -1;
   }
 
-  for(inputsize = 0; !feof(fin) && inputsize<=1; inputsize++){
+  for(inputsize = 0; !feof(fin) && inputsize<=2; inputsize++){
     fgets(filename, 1024, fin);
     if(feof(fin))
       break;
   }
   fclose(fin);
 
-  while(inputsize-1){
+  while(inputsize-2){
     strcpy(inputlist, mergeFiles(inputlist, argv[4], numLevel));
     numLevel++;
     fin = fopen(inputlist, "r");
@@ -89,11 +89,11 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
   int degree;
   int i;
   int numFile = 0;
-  int bufSize;
   char filename[1024];
   char outfile[1024];
   char outlist[1024];
-  char outcont[1024];
+  char outmit[1024];
+  char outgit[1024];
 
   char *bufSpace;
   bufSpace = (unsigned char *)malloc(memSize);
@@ -108,10 +108,11 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
       fscanf(fin, "%s", filename);
       if(feof(fin))
         break;
-      ioBufs[degree].f = fopen(filename, "r");
+      ioBufs[degree].fgit = fopen(filename, "r");
 
-      //TODO: GET the name of MIT_T table
-      ioBufs[degree].fcont = fopen(filename, "r");
+      //TODO: GET the name of MIT_T git
+      fscanf(fin, "%s", filename);
+      ioBufs[degree].fmit = fopen(filename, "r");
     }
 
     if(degree == 0)
@@ -120,37 +121,39 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
        Result of each N files stored in file00, file01, file02...
        Prepared for next level merge */ 
     sprintf(outfile, "%s%d", outlist, numFile);
-    ioBufs[degree].f = fopen(outfile, "w");
-    sprintf(outcont, "%s%s", outfile, ".cont");
-    ioBufs[degree].fcont = fopen(outcont, "w");
+    sprintf(outgit, "%s%s", outfile, ".git");
+    ioBufs[degree].fgit = fopen(outgit, "a");
+    sprintf(outmit, "%s%s", outfile, ".mit");
+    ioBufs[degree].fmit= fopen(outmit, "a");
 
     //Give output file more buffer
-    bufSize = memSize / (degree*3);
+    bufSize = memSize / (degree*3 * sizeof(GIT_T));
 
     for(i = 0; i <= degree; i++){
-      ioBufs[i].buf = &(bufSpace[ i * bufSize * 2]);
-      ioBufs[i].bufcont = &(bufSpace[ i * bufSize * 2 + bufSize / 2 ]);
-      ioBufs[i].tableTotal = 0;
-      ioBufs[i].tableConsume = 0;
-      ioBufs[i].contTotal = 0;
-      ioBufs[i].contConsume = 0;
+      ioBufs[i].bufgit = &(bufSpace[ i * sizeof(GIT_T)*bufSize * 2]);
+      ioBufs[i].bufmit= &(bufSpace[ i * sizeof(GIT_T)*bufSize * 2 + sizeof(GIT_T)* bufSize / 2 ]);
+      ioBufs[i].gitTotal = 0;
+      ioBufs[i].gitConsume = 0;
+      ioBufs[i].mitTotal = 0;
+      ioBufs[i].mitConsume = 0;
     }
-    ioBufs[degree].bufcont = &(bufSpace[ degree * bufSize * 2 + bufSize * degree/ 4 ]);
-    ioBufs[degree].tableTotal = bufSize * degree/ 4 ;
-    ioBufs[degree].contTotal = degree * bufSize - bufSize * degree/ 4 ;
+    ioBufs[degree].bufmit= &(bufSpace[ degree * sizeof(GIT_T)* bufSize * 2 + sizeof(GIT_T)* bufSize * degree/ 4 ]);
+    ioBufs[degree].gitTotal =  bufSize * degree/ 4 ;
+    ioBufs[degree].mitTotal = degree * bufSize - bufSize * degree/ 4 ;
 
     //Merge the current "degree" files
     mergeCont(degree);
 
     //close files
     for(i = 0; i <= degree; i++){
-      fclose(ioBufs[i].f);
-      fclose(ioBufs[i].fcont);
+      fclose(ioBufs[i].fgit);
+      fclose(ioBufs[i].fmit);
     }
 
     //write the name of output file into outputlist
     fout = fopen(outlist, "a");
-    fprintf(fout, "%s\n", outfile);
+    fprintf(fout, "%s\n", outgit);
+    fprintf(fout, "%s\n", outmit);
     fclose(fout);
 
     numFile++;
@@ -167,18 +170,24 @@ void getNextWord(int i){
   }
   buffer *b = &(ioBufs[i]);
 
-  if( b->tableTotal - b->tableConsume < sizeof(GIT_T)){
-    b->tableTotal = fread(&(b->buf), (bufSize/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
-    b->tableConsume = 0;  
+  int j,k;
+  if( b->gitTotal == b->gitConsume){
+    for(j = 0; j < bufSize / 2; j++){
+      k = fread(&b->bufgit[j], sizeof(GIT_T), 1, b->fgit);
+      if(k == 0)
+        break;
+    }
+    b->gitTotal = j;
+    b->gitConsume = 0;  
   }
 
-  if(b->tableTotal == 0){
+  if(b->gitTotal == 0){
     topElem[i].word_id = -1;
     return;
   }
 
-  memcpy(&topElem[i], &(b->buf[b->tableConsume]), sizeof(GIT_T));
-  b->tableConsume += sizeof(GIT_T);
+  memcpy(&topElem[i], &(b->bufgit[b->gitConsume]), sizeof(GIT_T));
+  b->gitConsume += 1;
 
   return;
 }
@@ -189,20 +198,21 @@ int mergeCont(int degree){
   //Refill with the next element of this buffer block
   //Until all the buffer block is empty.
 
-  GIT_T *lastRecord;
   topElem = (GIT_T *)malloc(sizeof(GIT_T) * degree);
 
   int i;
-  for(i = 0; i < degree - 1; i++){
+  for(i = 0; i < degree ; i++){
     getNextWord(i);
   }
  
   int min = 0;
+
   while( min >= 0 ){
-    min = sortCurr(degree-1);
+    min = sortCurr(degree);
     writeMin(min, degree);
     getNextWord(min);
   } 
+  free(topElem);
   return 0;
 }
 
@@ -230,59 +240,61 @@ void writeMin(int i, int degree){
 
   //if i==-1, means every buffer is empty, write back everything.
   if(i == -1){
-    fwrite(&(out->buf), out->tableConsume, 1, out->f);
-    fwrite(&(out->bufcont), out->contConsume, 1, out->fcont);
+    fwrite(&(out->bufgit), sizeof(GIT_T)*out->gitConsume, 1, out->fgit);
+    fwrite(&(out->bufmit), sizeof(MIT_T)*out->mitConsume, 1, out->fmit);
   }
 
   //get the size of docs of that word, write to output buffer one by one.
   int size = topElem[i].n_docs;
   while(size > 0){
-    if(out->contTotal - out->contConsume < sizeof(MIT_T)){
-      fwrite(&(out->bufcont), out->contConsume, 1, out->fcont);
-      out->contTotal = degree * bufSize - bufSize * degree/ 4 ;
-      out->contConsume = 0;
-      break;
+    //refill content of ith buffer
+    if(b->mitTotal == b->mitConsume)
+      refillIthMit(i);
+    //If there is no enough space to write a record, flush to disk.
+    if(out->mitTotal == out->mitConsume ){
+      fwrite(&(out->bufmit), sizeof(MIT_T)*out->mitConsume, 1, out->fmit);
+      out->mitTotal = degree * bufSize - bufSize * degree/ 4 ;
+      out->mitConsume = 0;
     }
 
-    //refill content of ith buffer if there's not enough left
-    checkIContent(i);
-
-    memcpy(out->bufcont[out->contConsume], b->bufcont[b->contConsume], sizeof(MIT_T));
-    b->contConsume += sizeof(MIT_T);
-    out->contConsume += sizeof(MIT_T);
+    //copy MIT record to output buffer.
+    memcpy(&out->bufmit[out->mitConsume], &b->bufmit[b->mitConsume], sizeof(MIT_T));
+    b->mitConsume += 1; 
+    out->mitConsume += 1;
     size--;
   }
 
-  //if topElem[i].word_id is different with topElem[degree], then write topElem[degree] to output file and update topElem[degree], if they are the same, update topElem[degree].n_docs
+  /*if topElem[i].word_id is different with topElem[degree]
+    then write topElem[degree] to output file 
+    and update topElem[degree]*/
+
   if(topElem[i].word_id != topElem[degree].word_id){
-    if(out->tableTotal - out-> tableConsume < sizeof(GIT_T)){
-      fwrite(&(out->buf), out->tableConsume, 1, out->f);
-      out->tableTotal = bufSize * degree/ 4;
-      out->tableConsume = 0;
+    if(out->gitTotal == out->gitConsume){
+      fwrite(&(out->bufgit), sizeof(GIT_T)*out->gitConsume, 1, out->fgit);
+      out->gitTotal = bufSize * degree/ 4;
+      out->gitConsume = 0;
     }
-    memcpy(&(out->buf), &topElem[degree], sizeof(GIT_T));
-    out->tableConsume += sizeof(GIT_T);
+    memcpy(&(out->bufgit[out->gitConsume*sizeof(GIT_T)]), &topElem[degree], sizeof(GIT_T));
+    out->gitConsume += 1;
     memcpy(&topElem[degree], &topElem[i], sizeof(GIT_T));
     //update offset;
-
   }else{
+    // if they are the same, update topElem[degree].n_docs*/
     topElem[degree].n_docs += topElem[i].n_docs;
   }
-  b->tableConsume += sizeof(GIT_T);
   return;
 }
 
-void checkIContent(int i){
+void refillIthMit(int i){
   //Refill buffer of ioBufs[i]
   buffer *b = &ioBufs[i];
-  if(b->contTotal - b->contConsume < sizeof(MIT_T)){
-    b->contTotal = fread(&(b->bufcont), (bufSize/sizeof(MIT_T)*sizeof(MIT_T)), 1, b->fcont);
-    b->contConsume= 0;
+  
+  int j;
+  for(j = 0; j < bufSize * 2 - bufSize/2 ; j++){
+    fread(&b->bufmit[j], sizeof(MIT_T), 1, b->fmit);
   }
+  b->mitTotal = j;
+  b->mitConsume = 0;
 
-  if(b->tableTotal - b->tableConsume < sizeof(GIT_T)){
-    b->tableTotal = fread(&(b->buf), (bufSize/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->f);
-    b->tableConsume = 0;
-  }
   return;
 }
