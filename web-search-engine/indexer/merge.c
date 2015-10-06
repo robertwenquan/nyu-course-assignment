@@ -1,25 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"utils.h"
-typedef struct{
-    FILE *fgit; 
-    FILE *fmit;
-    GIT_T* bufgit; 
-    MIT_T* bufmit;
-    int gitTotal; 
-    int gitConsume;
-    int mitTotal;
-    int mitConsume;} buffer;
 
-void MergeCont();
-char* mergeFiles(char* inputlist, char* path, int numLevel);
-char* testmergeFiles(char* inputlist, char* path, int numLevel);
-void writeMin(int i, int degree);
-int sortCurr(int degree);
-void refillIthMit(int i);
-buffer *ioBufs;
-GIT_T *topElem;
-int bufSize;
 /**************************************************************************/
 /* usage  ./merge maxdegree memsize finlist outfileprefix foutlist        */
 /*                                                                        */
@@ -32,81 +14,113 @@ int bufSize;
 /*          ./merge 8 4096 finlist fout foutlist                          */
 /**************************************************************************/
 
-int maxDegree;
-int memSize;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utils.h"
 
-int main(int argc, char* argv[]){
-  maxDegree = atoi(argv[1]);
-  memSize = atoi(argv[2]);
+typedef struct{
+    FILE *fgit; 
+    FILE *fmit;
+    GIT_T* bufgit; 
+    MIT_T* bufmit;
+    int gitTotal; 
+    int gitConsume;
+    int mitTotal;
+    int mitConsume;} BUF_T;
 
-  FILE *fin;
-  char filename[1024];
+char * merge_files(char* inputlist, char* path, int numLevel);
+//char * testmergeFiles(char* inputlist, char* path, int numLevel);
+void write_min(int i, int degree);
+int sort_curr(int degree);
+int merge_cont(int degree);
+void check_i_content(int i);
+void get_next_word(int i);
 
-  int numFiles = 0;
+BUF_T *ioBufs;
+GIT_T *topElem;
+int buf_size;
+int max_degree;
+int mem_size;
+int buf_size;
+
+int main(int argc, char* argv[]) {
+
+  max_degree = atoi(argv[1]);
+  mem_size = atoi(argv[2]);
+
+  FILE *fin = NULL;
+  char filename[1024] = {'\0'};
+
   int numLevel = 0;
-  int inputsize;
+  int inputsize = 0;
 
-  char inputlist[1024];
+  char inputlist[1024] = {'\0'};
   strcpy(inputlist, argv[3]);
 
   fin = fopen(inputlist, "r");
-  if(fin == NULL)
+  if (fin == NULL)
     return -1;
-  if(feof(fin)){
+
+  if (feof(fin)) {
     fclose(fin);
     return -1;
   }
 
   for(inputsize = 0; !feof(fin) && inputsize<=2; inputsize++){
     fgets(filename, 1024, fin);
-    if(feof(fin))
+    if (feof(fin))
       break;
   }
   fclose(fin);
 
   while(inputsize-2){
-    strcpy(inputlist, mergeFiles(inputlist, argv[4], numLevel));
+    strcpy(inputlist, merge_files(inputlist, argv[4], numLevel));
     numLevel++;
     fin = fopen(inputlist, "r");
 
-    for(inputsize = 0; !feof(fin) && inputsize<=1; inputsize++){
+    for (inputsize = 0; !feof(fin) && inputsize<=1; inputsize++) {
       fgets(filename, 1024, fin);
-      if(feof(fin))
+      if (feof(fin))
         break;
     }
+
     fclose(fin);
   }
 
-  printf("%s is the output list\n",inputlist);
+  printf("%s is the output list\n", inputlist);
   return 0;
 }
 
-char* mergeFiles(char* inputlist, char* path, int numLevel){
-/* Merge files listed in inputlist, every maxDegree files produce a new file
+char* merge_files(char* inputlist, char* path, int numLevel) {
+/* Merge files listed in inputlist, every max_degree files produce a new file
    Then return the output list */ 
 
-  FILE *fin, *fout;
-  int degree;
-  int i;
-  int numFile = 0;
-  char filename[1024];
-  char outfile[1024];
-  char outlist[1024];
-  char outmit[1024];
-  char outgit[1024];
+  FILE *fin = NULL, *fout = NULL;
 
-  char *bufSpace;
-  bufSpace = (unsigned char *)malloc(memSize);
-  ioBufs = (buffer *)malloc((maxDegree + 1) * sizeof(buffer));
+  int degree = 0;
+  int i = 0;
+  int numFile = 0;
+  char filename[1024] = {'\0'};
+  char outfile[1024] = {'\0'};
+  char outlist[1024] = {'\0'};
+  char outmit[1024] = {'\0'};
+  char outgit[1024] = {'\0'};
+  int buf_size = 0;
+
+  unsigned char *bufSpace = NULL;
+  bufSpace = (unsigned char *)malloc(mem_size);
+  ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
 
   sprintf(outlist, "%s%d", path, numLevel);
   fin = fopen(inputlist, "r");
  
-  while(!feof(fin)){
+  while(!feof(fin)) {
     //Get source files from the list, assign each file to a BUFFER structure
-    for(degree = 0; degree < maxDegree; degree++){
+
+    for(degree = 0; degree < max_degree; degree++) {
       fscanf(fin, "%s", filename);
-      if(feof(fin))
+      if (feof(fin))
         break;
       ioBufs[degree].fgit = fopen(filename, "r");
 
@@ -117,6 +131,7 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
 
     if(degree == 0)
       break;
+
     /* Merge several viles into one file,
        Result of each N files stored in file00, file01, file02...
        Prepared for next level merge */ 
@@ -127,22 +142,22 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
     ioBufs[degree].fmit= fopen(outmit, "a");
 
     //Give output file more buffer
-    bufSize = memSize / (degree*3 * sizeof(GIT_T));
+    buf_size = mem_size / (degree*3 * sizeof(GIT_T));
 
     for(i = 0; i <= degree; i++){
-      ioBufs[i].bufgit = &(bufSpace[ i * sizeof(GIT_T)*bufSize * 2]);
-      ioBufs[i].bufmit= &(bufSpace[ i * sizeof(GIT_T)*bufSize * 2 + sizeof(GIT_T)* bufSize / 2 ]);
+      ioBufs[i].bufgit = &(bufSpace[ i * sizeof(GIT_T)*buf_size * 2]);
+      ioBufs[i].bufmit= &(bufSpace[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size / 2 ]);
       ioBufs[i].gitTotal = 0;
       ioBufs[i].gitConsume = 0;
       ioBufs[i].mitTotal = 0;
       ioBufs[i].mitConsume = 0;
     }
-    ioBufs[degree].bufmit= &(bufSpace[ degree * sizeof(GIT_T)* bufSize * 2 + sizeof(GIT_T)* bufSize * degree/ 4 ]);
-    ioBufs[degree].gitTotal =  bufSize * degree/ 4 ;
-    ioBufs[degree].mitTotal = degree * bufSize - bufSize * degree/ 4 ;
+    ioBufs[degree].bufmit= &(bufSpace[ degree * sizeof(GIT_T)* buf_size * 2 + sizeof(GIT_T)* buf_size * degree/ 4 ]);
+    ioBufs[degree].gitTotal =  buf_size * degree/ 4 ;
+    ioBufs[degree].mitTotal = degree * buf_size - buf_size * degree/ 4 ;
 
     //Merge the current "degree" files
-    mergeCont(degree);
+    merge_cont(degree);
 
     //close files
     for(i = 0; i <= degree; i++){
@@ -158,21 +173,23 @@ char* mergeFiles(char* inputlist, char* path, int numLevel){
 
     numFile++;
   }
+
   fclose(fin); 
   free(ioBufs);
   free(bufSpace);
+
   return outlist;
 }
 
-void getNextWord(int i){
-  if(i == -1){
+void get_next_word(int i) {
+  if(i == -1) {
     return;
   }
-  buffer *b = &(ioBufs[i]);
 
+  BUF_T *b = &(ioBufs[i]);
   int j,k;
   if( b->gitTotal == b->gitConsume){
-    for(j = 0; j < bufSize / 2; j++){
+    for(j = 0; j < buf_size / 2; j++){
       k = fread(&b->bufgit[j], sizeof(GIT_T), 1, b->fgit);
       if(k == 0)
         break;
@@ -181,6 +198,9 @@ void getNextWord(int i){
     b->gitConsume = 0;  
   }
 
+  printf("%d\n",i);
+
+  printf("%d\n",b->gitTotal);
   if(b->gitTotal == 0){
     topElem[i].word_id = -1;
     return;
@@ -192,7 +212,7 @@ void getNextWord(int i){
   return;
 }
 
-int mergeCont(int degree){
+int merge_cont(int degree) {
   //Get the minimum of the top element of each buffer
   //Write it into ioBufs[degree], which is the buffer of output file
   //Refill with the next element of this buffer block
@@ -202,41 +222,45 @@ int mergeCont(int degree){
 
   int i;
   for(i = 0; i < degree ; i++){
-    getNextWord(i);
+    get_next_word(i);
   }
  
   int min = 0;
 
   while( min >= 0 ){
-    min = sortCurr(degree);
-    writeMin(min, degree);
-    getNextWord(min);
+    min = sort_curr(degree);
+    write_min(min, degree);
+    get_next_word(min);
   } 
+
   free(topElem);
   return 0;
 }
 
-int sortCurr(int degree){
+int sort_curr(int degree) {
   //get the minimum word_id and return it's order in buffer
+
   int minPos = -1;
-  int i;
-  for(i = 0; i < degree; i++){
-    if(topElem[i].word_id != -1){
-      if(minPos == -1){
+
+  int i = 0;
+  for (i = 0; i < degree; i++) {
+    if (topElem[i].word_id != -1) {
+      if (minPos == -1) {
         minPos = i;
-      }else if(topElem[i].word_id < topElem[minPos].word_id){
+      } else if(topElem[i].word_id < topElem[minPos].word_id) {
         minPos = i;
       }
     }
   }
+
   return minPos;
 }
 
-void writeMin(int i, int degree){
+void write_min(int i, int degree) {
   //the ith buffer block is the current minimum word, write it's information to output file.
 
-  buffer *b = &ioBufs[i];
-  buffer *out = &ioBufs[degree];
+  BUF_T *b = &ioBufs[i];
+  BUF_T *out = &ioBufs[degree];
 
   //if i==-1, means every buffer is empty, write back everything.
   if(i == -1){
@@ -249,11 +273,11 @@ void writeMin(int i, int degree){
   while(size > 0){
     //refill content of ith buffer
     if(b->mitTotal == b->mitConsume)
-      refillIthMit(i);
+      check_i_content(i);
     //If there is no enough space to write a record, flush to disk.
     if(out->mitTotal == out->mitConsume ){
       fwrite(&(out->bufmit), sizeof(MIT_T)*out->mitConsume, 1, out->fmit);
-      out->mitTotal = degree * bufSize - bufSize * degree/ 4 ;
+      out->mitTotal = degree * buf_size - buf_size * degree/ 4 ;
       out->mitConsume = 0;
     }
 
@@ -271,7 +295,7 @@ void writeMin(int i, int degree){
   if(topElem[i].word_id != topElem[degree].word_id){
     if(out->gitTotal == out->gitConsume){
       fwrite(&(out->bufgit), sizeof(GIT_T)*out->gitConsume, 1, out->fgit);
-      out->gitTotal = bufSize * degree/ 4;
+      out->gitTotal = buf_size * degree/ 4;
       out->gitConsume = 0;
     }
     memcpy(&(out->bufgit[out->gitConsume*sizeof(GIT_T)]), &topElem[degree], sizeof(GIT_T));
@@ -285,16 +309,22 @@ void writeMin(int i, int degree){
   return;
 }
 
-void refillIthMit(int i){
+void check_i_content(int i){
   //Refill buffer of ioBufs[i]
-  buffer *b = &ioBufs[i];
+  BUF_T *b = &ioBufs[i];
   
   int j;
-  for(j = 0; j < bufSize * 2 - bufSize/2 ; j++){
+  for(j = 0; j < buf_size * 2 - buf_size/2 ; j++){
     fread(&b->bufmit[j], sizeof(MIT_T), 1, b->fmit);
   }
   b->mitTotal = j;
   b->mitConsume = 0;
 
+  if (b->gitTotal - b->gitConsume < sizeof(GIT_T)) {
+    b->gitTotal = fread(&(b->bufgit), (buf_size/sizeof(GIT_T)*sizeof(GIT_T)), 1, b->fgit);
+    b->gitConsume = 0;
+  }
+
   return;
 }
+

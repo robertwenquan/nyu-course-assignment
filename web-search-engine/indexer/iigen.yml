@@ -2,16 +2,32 @@
 # configuration file for Inverted Index Generator
 #
 
-# configurable items for rigen
+# global configuration
+global_index:
+  url_table   : 'test_data/table/url_table'
+  word_table  : 'test_data/table/word_table'
+
+# phase1: lexicon generation
 parse:
-  threads     : 3
-  input       : './data'
-  output      : './parse-output'
+  threads     : 4
+  input       : 'test_data/input'
+  output      : 'test_data/phase1_output'
+
+# phase2: lexicon sorting
+sort:
+  threads     : 4
+  input       : 'test_data/phase1_output'
+  output      : 'test_data/phase2_output'
+
+# phase3: inverted index generation from sorted lexicons
 index:
-  threads     : 3
-  input       : './parse-output'
-  output      : './ri-index'
-aws:
-  AWS_KEY     : 'a'
-  AWS_SECRET  : 'b'
+  threads     : 4
+  input       : 'test_data/phase2_output'
+  output      : 'test_data/phase3_output'
+
+# phase4: merging inverted index files
+merge:
+  threads     : 4
+  input       : 'test_data/phase3_output'
+  output      : 'test_data/final_index'
 
