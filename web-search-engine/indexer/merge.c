@@ -66,14 +66,14 @@ int main(int argc, char* argv[]) {
     return -1;
   }
 
-  for(inputsize = 0; !feof(fin) && inputsize<=2; inputsize++){
+  for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
     fgets(filename, 1024, fin);
     if (feof(fin))
       break;
   }
   fclose(fin);
 
-  while (inputsize-2){
+  while (inputsize-2) {
     strcpy(inputlist, merge_files(inputlist, argv[4], numLevel));
     numLevel++;
     fin = fopen(inputlist, "r");
@@ -116,7 +116,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   while (!feof(fin)) {
     //Get source files from the list, assign each file to a BUFFER structure
 
-    for(degree = 0; degree < max_degree; degree++) {
+    for (degree = 0; degree < max_degree; degree++) {
       fscanf(fin, "%s", filename);
       if (feof(fin))
         break;
@@ -142,7 +142,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
     //Give output file more buffer
     buf_size = mem_size / (degree*3 * sizeof(GIT_T));
 
-    for(i = 0; i <= degree; i++){
+    for (i = 0; i <= degree; i++) {
       ioBufs[i].bufgit = &(bufSpace[ i * sizeof(GIT_T)*buf_size * 2]);
       ioBufs[i].bufmit= &(bufSpace[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size / 2 ]);
       ioBufs[i].gitTotal = 0;
@@ -158,7 +158,7 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
     merge_cont(degree);
 
     //close files
-    for(i = 0; i <= degree; i++){
+    for (i = 0; i <= degree; i++) {
       fclose(ioBufs[i].fgit);
       fclose(ioBufs[i].fmit);
     }
@@ -186,8 +186,8 @@ void get_next_word(int i) {
 
   BUF_T *b = &(ioBufs[i]);
   int j,k;
-  if ( b->gitTotal == b->gitConsume){
-    for(j = 0; j < buf_size / 2; j++){
+  if ( b->gitTotal == b->gitConsume) {
+    for (j = 0; j < buf_size / 2; j++) {
       k = fread(&b->bufgit[j], sizeof(GIT_T), 1, b->fgit);
       if (k == 0)
         break;
@@ -196,7 +196,7 @@ void get_next_word(int i) {
     b->gitConsume = 0;  
   }
 
-  if (b->gitTotal == 0){
+  if (b->gitTotal == 0) {
     topElem[i].word_id = -1;
     return;
   }
@@ -216,13 +216,13 @@ int merge_cont(int degree) {
   topElem = (GIT_T *)malloc(sizeof(GIT_T) * degree);
 
   int i;
-  for(i = 0; i < degree ; i++){
+  for (i = 0; i < degree ; i++) {
     get_next_word(i);
   }
  
   int min = 0;
 
-  while (min >= 0){
+  while (min >= 0) {
     min = sort_curr(degree);
     write_min(min, degree);
     get_next_word(min);
@@ -261,24 +261,24 @@ void write_min(int i, int degree) {
   if (i == -1){
     //fwrite(&(out->bufgit), sizeof(GIT_T)*out->gitConsume, 1, out->fgit);
     int j;
-    for(j = 0; j < out->gitConsume; j++){
+    for (j = 0; j < out->gitConsume; j++) {
       fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
     }
-    for(j = 0; j < out->mitConsume; j++){
+    for (j = 0; j < out->mitConsume; j++) {
       fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
     }
   }
 
   //get the size of docs of that word, write to output buffer one by one.
   int size = topElem[i].n_docs;
-  while (size > 0){
+  while (size > 0) {
     //refill content of ith buffer
     if (b->mitTotal == b->mitConsume)
       check_ith_mit(i);
     //If there is no enough space to write a record, flush to disk.
-    if (out->mitTotal == out->mitConsume ){
+    if (out->mitTotal == out->mitConsume ) {
       int j;
-      for(j = 0; j < out->mitConsume; j++){
+      for (j = 0; j < out->mitConsume; j++) {
         fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
       }
 
@@ -298,10 +298,10 @@ void write_min(int i, int degree) {
     then write topElem[degree] to output file 
     and update topElem[degree]*/
 
-  if (topElem[i].word_id != topElem[degree].word_id){
-    if (out->gitTotal == out->gitConsume){
+  if (topElem[i].word_id != topElem[degree].word_id) {
+    if (out->gitTotal == out->gitConsume) {
       int j;
-      for(j = 0; j < out->gitConsume; j++){
+      for (j = 0; j < out->gitConsume; j++) {
         fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
       }
       out->gitTotal = buf_size * degree/ 4;
@@ -323,7 +323,7 @@ void check_ith_mit(int i){
   BUF_T *b = &ioBufs[i];
   
   int j;
-  for(j = 0; j < buf_size * 2 - buf_size/2 ; j++){
+  for (j = 0; j < buf_size * 2 - buf_size/2 ; j++) {
     fread(&b->bufmit[j], sizeof(MIT_T), 1, b->fmit);
   }
   b->mitTotal = j;
