@@ -39,8 +39,8 @@ import glob
 from struct import pack, unpack, calcsize
 
 
-BASE_DIR = './test_data'
 BASE_DIR = '/data/wse/100k'
+BASE_DIR = './test_data'
 
 # test data path for phase2
 SORTED_LEXICON_PATH = os.path.join(BASE_DIR, 'phase2_output')
@@ -176,6 +176,7 @@ class InvertedIndex(object):
       self.write_mit(data_mit)
 
       # write back git
+      count_in_git += 1
       print 'write GIT entry:', self.git_schema, word_id_curr, docid_curr, offset_in_git, count_in_git
       data_git = pack(self.git_schema, word_id_curr, offset_in_git, count_in_git)
       self.write_git(data_git)
