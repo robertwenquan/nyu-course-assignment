@@ -37,9 +37,7 @@ Scan over the WET files and generate the first pass information
   - word length(1B)
 
  WORD_ENTRY(VARIABLE LENGTH)
- - word length(1B)
  - word(variable length)
- - '\n' (only for debugging purpose)
 
 """
 
@@ -164,16 +162,14 @@ class WordIndex(UrlIndex):
   def add_entry(self, word):
     word_lens = len(word)
     offset = self.word_index_offset
-    self.word_index_offset += (1 + word_lens)
+    self.word_index_offset += word_lens
 
     # get word_id
     word_id, new_id = self.get_word_id(word)
     if not new_id:
       return word_id
 
-    # write-back format: len(1B), word as string
-    word_id_data = pack('B', word_lens)
-    self.fd_word_data.write(word_id_data)
+    # write-back format: word as string
     self.fd_word_data.write(word)
 
     # write back index entry
