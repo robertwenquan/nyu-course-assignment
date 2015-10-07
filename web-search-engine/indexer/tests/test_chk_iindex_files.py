@@ -9,7 +9,8 @@ import glob
 from struct import calcsize, unpack
 from unittest import TestCase
 
-INVERTED_INDEX_PATH = 'test_data/phase3_output'
+#INVERTED_INDEX_PATH = 'test_data/phase3_output'
+INVERTED_INDEX_PATH = ''
 
 class TestVerifyInvertedIndex(TestCase):
 
