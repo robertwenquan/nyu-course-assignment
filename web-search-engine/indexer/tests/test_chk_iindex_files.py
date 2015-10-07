@@ -13,7 +13,7 @@ INVERTED_INDEX_PATH = 'test_data/phase3_output'
 
 class TestVerifyInvertedIndex(TestCase):
 
-  def test_check_global_index_table(self):
+  def test_check1_global_index_table(self):
     """ check global index table """
 
     git_schema = 'iih'
@@ -33,7 +33,7 @@ class TestVerifyInvertedIndex(TestCase):
           print git_file, unpack(git_schema, data)
           cnt += 1
 
-  def test_check_middle_index_table(self):
+  def test_check2_middle_index_table(self):
     """ check middle index table """
 
     mit_schema = 'iih'
@@ -56,7 +56,7 @@ class TestVerifyInvertedIndex(TestCase):
           print mit_file, docid, offset, occur
           cnt += 1
 
-  def test_check_iindex_table(self):
+  def test_check3_iindex_table(self):
     """ check inverted index table """
 
     iidx_schema = 'i'
@@ -73,7 +73,7 @@ class TestVerifyInvertedIndex(TestCase):
           data = fdr.read(rec_size)
           if data == '':
             break
-          print iidx_file, unpack(iidx_schema, data)
+          print iidx_file, unpack(iidx_schema, data)[0]
           cnt += 1
 
 
