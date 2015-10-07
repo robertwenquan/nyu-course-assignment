@@ -6,6 +6,7 @@ list all the wordid - word mapping
 Sample usage:
 $ python utils/chk_word_table.py
 
+
 word id index entry format
 {
 [4 B] word id
@@ -19,10 +20,10 @@ word table entry format
 [N B] N as read from the above
 }
 
-Iterate until the end of the file
 """
 
 from struct import calcsize
+from struct import unpack
 import os
 import sys
 
@@ -39,32 +40,37 @@ WORD_TABLE_DATA = os.path.join(BASE_DIR, 'phase1_output/word_table.data')
 def main():
   """ main routine """
 
-  # not reading index table
-  #word_idx_schema = 'iiB'
+  word_idx_schema = 'iiB'
   
-  # record length in the word data table
+  # record length
+  idx_len = calcsize(word_idx_schema)
   rec_len = calcsize('B')
 
   try:
-    with open(WORD_TABLE_DATA) as fd_word_data:
-      while True:
-        data = fd_word_data.read(rec_len)
-        if data == '':
-          break
-  
-        word_len = ord(data)
-        word_str = fd_word_data.read(word_len)
-        print word_str
+    fd_word_idx = open(WORD_TABLE_IDX)
+    fd_word_data = open(WORD_TABLE_DATA)
+
+    # iterate word index table
+    # and fetch word string frmo the word data table
+    while True:
+      idx_data = fd_word_idx.read(idx_len)
+      if idx_data == '':
+        break
+
+      word_id, offset, word_lens = unpack(word_idx_schema, idx_data)
+
+      fd_word_data.seek(offset)
+      word_str = fd_word_data.read(word_lens)
+      print word_id, word_str
+
   except IOError:
     # to handle the piped output to head
     # like check_word_table.py | head
+    fd_word_idx.close()
     fd_word_data.close()
 
 
 if __name__ == '__main__':
-
-  if os.path.exists(sys.argv[1]):
-    WORD_TABLE_DATA = sys.argv[1]
 
   main()
 
