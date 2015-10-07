@@ -30,9 +30,9 @@ Scan over the WET files and generate the first pass information
  - offset to content(4B)
  - context(2B)
 
- WORD_TABLE_ENTRY(10B)
+ WORD_TABLE_ENTRY(9B)
  - word_id(4B)
- - loc of word(6B)
+ - loc of word(5B)
   - word offset(4B)
   - word length(1B)
 
