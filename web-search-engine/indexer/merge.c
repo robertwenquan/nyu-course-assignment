@@ -146,15 +146,15 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
 
     for (i = 0; i <= degree; i++) {
       ioBufs[i].bufgit = &(buf_space[ i * sizeof(GIT_T)*buf_size * 2]);
-      ioBufs[i].bufmit = &(buf_space[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size / 2 ]);
+      ioBufs[i].bufmit = &(buf_space[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size ]);
       ioBufs[i].gitTotal = 0;
       ioBufs[i].gitConsume = 0;
       ioBufs[i].mitTotal = 0;
       ioBufs[i].mitConsume = 0;
     }
-    ioBufs[degree].bufmit= &(buf_space[ degree * sizeof(GIT_T)* buf_size * 2 + sizeof(GIT_T)* buf_size * degree/ 4 ]);
-    ioBufs[degree].gitTotal =  buf_size * degree/ 4 ;
-    ioBufs[degree].mitTotal = degree * buf_size - buf_size * degree/ 4 ;
+    ioBufs[degree].bufmit= &(buf_space[ degree * sizeof(GIT_T)* buf_size * 2 + sizeof(GIT_T)* buf_size * degree/ 2 ]);
+    ioBufs[degree].gitTotal =  buf_size * degree/ 2 ;
+    ioBufs[degree].mitTotal = degree * buf_size - buf_size * degree/ 2 ;
 
     //Merge the current "degree" files
     merge_cont(degree);
@@ -261,6 +261,16 @@ void write_min(int i, int degree) {
 
   //if i==-1, means every buffer is empty, write back everything.
   if (i == -1){
+    if (out->gitTotal == out->gitConsume) {
+      int j;
+      for (j = 0; j < out->gitConsume; j++) {
+        fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
+      }
+      out->gitTotal = buf_size * degree/ 2;
+      out->gitConsume = 0;
+    }
+    memcpy(&(out->bufgit[out->gitConsume]), &topElem[degree], sizeof(GIT_T));
+    out->gitConsume += 1;
     //fwrite(&(out->bufgit), sizeof(GIT_T)*out->gitConsume, 1, out->fgit);
     int j;
     for (j = 0; j < out->gitConsume; j++) {
@@ -269,6 +279,7 @@ void write_min(int i, int degree) {
     for (j = 0; j < out->mitConsume; j++) {
       fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
     }
+    return;
   }
 
   //get the size of docs of that word, write to output buffer one by one.
@@ -285,8 +296,7 @@ void write_min(int i, int degree) {
         fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
       }
 
-      //printf("%d\n", out->bufmit[0].docid);
-      out->mitTotal = degree * buf_size - buf_size * degree/ 4 ;
+      out->mitTotal = degree * buf_size - buf_size * degree/ 2 ;
       out->mitConsume = 0;
     }
 
@@ -300,20 +310,19 @@ void write_min(int i, int degree) {
   /*if topElem[i].word_id is different with topElem[degree]
     then write topElem[degree] to output file 
     and update topElem[degree]*/
-
-  if (topElem[i].word_id != topElem[degree].word_id) {
+  if (topElem[i].word_id != topElem[degree].word_id ) {
     if (out->gitTotal == out->gitConsume) {
       int j;
       for (j = 0; j < out->gitConsume; j++) {
         fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
       }
-      out->gitTotal = buf_size * degree/ 4;
+      out->gitTotal = buf_size * degree/ 2;
       out->gitConsume = 0;
     }
     if (topElem[i].n_docs != out_offset) {
       memcpy(&(out->bufgit[out->gitConsume]), &topElem[degree], sizeof(GIT_T));
+      out->gitConsume += 1;
     }
-    out->gitConsume += 1;
     memcpy(&topElem[degree], &topElem[i], sizeof(GIT_T));
     topElem[degree].offset = (out_offset - topElem[i].n_docs) * sizeof(GIT_T);
   }else{
@@ -328,7 +337,7 @@ void check_ith_mit(int i) {
   BUF_T *b = &ioBufs[i];
   
   int j;
-  for (j = 0; j < buf_size * 2 - buf_size/2 ; j++) {
+  for (j = 0; j < buf_size ; j++) {
     fread(&b->bufmit[j], sizeof(MIT_T), 1, b->fmit);
   }
   b->mitTotal = j;
