@@ -164,7 +164,7 @@ class WordIndex(UrlIndex):
   def add_entry(self, word):
     word_lens = len(word)
     offset = self.word_index_offset
-    self.word_index_offset += (1 + word_lens + 1)
+    self.word_index_offset += (1 + word_lens)
 
     # get word_id
     word_id, new_id = self.get_word_id(word)
@@ -174,7 +174,7 @@ class WordIndex(UrlIndex):
     # write-back format: len(1B), word as string
     word_id_data = pack('B', word_lens)
     self.fd_word_data.write(word_id_data)
-    self.fd_word_data.write(word + '\n')
+    self.fd_word_data.write(word)
 
     # write back index entry
     word_id_index_data = pack('iiB', word_id, offset, word_lens)
