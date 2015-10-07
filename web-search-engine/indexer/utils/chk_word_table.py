@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 """
-list word table information
+list all the wordid - word mapping
 
 Sample usage:
-$ python utils/
+$ python utils/chk_word_table.py
 
 word id index entry format
 {
