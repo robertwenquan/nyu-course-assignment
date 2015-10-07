@@ -26,7 +26,7 @@ class TestVerifyInvertedIndex(TestCase):
     for git_file in files:
       with open(git_file, 'rb') as fdr:
         cnt = 0
-        while cnt < 5:
+        while True:
           data = fdr.read(rec_size)
           if data == '':
             break
@@ -46,7 +46,7 @@ class TestVerifyInvertedIndex(TestCase):
     for mit_file in files:
       with open(mit_file, 'rb') as fdr:
         cnt = 0
-        while cnt < 10000:
+        while True:
           data = fdr.read(rec_size)
           if data == '':
             break
@@ -69,7 +69,7 @@ class TestVerifyInvertedIndex(TestCase):
     for iidx_file in files:
       with open(iidx_file, 'rb') as fdr:
         cnt = 0
-        while cnt < 10:
+        while True:
           data = fdr.read(rec_size)
           if data == '':
             break
