@@ -58,8 +58,9 @@ int main(int argc, char* argv[]) {
   strcpy(inputlist, argv[3]);
 
   fin = fopen(inputlist, "r");
-  if (fin == NULL)
+  if (fin == NULL) {
     return -1;
+  }
 
   if (feof(fin)) {
     fclose(fin);
@@ -68,8 +69,9 @@ int main(int argc, char* argv[]) {
 
   for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
     fgets(filename, 1024, fin);
-    if (feof(fin))
+    if (feof(fin)) {
       break;
+    }
   }
   fclose(fin);
 
@@ -81,8 +83,9 @@ int main(int argc, char* argv[]) {
 
     for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
       fgets(filename, 1024, fin);
-      if (feof(fin))
+      if (feof(fin)) {
         break;
+      }
     }
 
     fclose(fin);
@@ -122,17 +125,20 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
       at most max_degree files each time.*/
     for (degree = 0; degree < max_degree; degree++) {
       fscanf(fin, "%s", filename);
-      if (feof(fin))
+      if (feof(fin)) {
         break;
+      }
       ioBufs[degree].fgit = fopen(filename, "r");
       fscanf(fin, "%s", filename);
-      if (feof(fin))
+      if (feof(fin)) {
         break;
+      }
       ioBufs[degree].fmit = fopen(filename, "r");
     }
 
-    if (degree == 0)
+    if (degree == 0) {
       break;
+    }
 
     /* Merge several viles into one file,
        Result of each N files stored in file00, file01, file02...
@@ -209,8 +215,9 @@ void get_next_word(int i) {
   if ( b->gitTotal == b->gitConsume) {
     for (j = 0; j < buf_size / 2; j++) {
       k = fread(&b->bufgit[j], sizeof(GIT_T), 1, b->fgit);
-      if (k == 0)
+      if (k == 0) {
         break;
+      }
     }
     b->gitTotal = j;
     b->gitConsume = 0;  
@@ -285,7 +292,7 @@ void write_min(int i, int degree) {
   BUF_T *out = &ioBufs[degree];
 
   // If i == -1, means every buffer is empty, write back everything.
-  if (i == -1){
+  if (i == -1) {
     // Write the last record in topElem[degree] to BUF_F buffer
     if (out->gitTotal == out->gitConsume) {
       int j;
@@ -315,8 +322,9 @@ void write_min(int i, int degree) {
     out_offset += 1;
 
     // Refill content of ith buffer
-    if (b->mitTotal == b->mitConsume)
+    if (b->mitTotal == b->mitConsume) {
       check_ith_mit(i);
+    }
 
     // If there is no enough space to write a record, flush to disk
     if (out->mitTotal == out->mitConsume ) {
