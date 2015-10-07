@@ -50,21 +50,11 @@ import warc
 from struct import pack
 
 
-WET_DIR = '/tmp/cc201507/'
-URL_TABLE_IDX = '/tmp/url_table.idx'
-URL_TABLE_DATA = '/tmp/url_table.data'
-
-WORD_TABLE_IDX = '/tmp/word_table.idx'
-WORD_TABLE_DATA = '/tmp/word_table.data'
-
-LEXICON_PATH = '/tmp'
-
-# test data path for phase1
+# test dataset with 30k docs
 BASE_DIR = './test_data'
-# test data path for phase1
 
-# bigger dataset
-BASE_DIR = '/data/wse/100k'
+# bigger dataset with 100k docs
+#BASE_DIR = '/data/wse/100k'
 
 WET_DIR = os.path.join(BASE_DIR, 'input')
 URL_TABLE_IDX = os.path.join(BASE_DIR, 'phase1_output/url_table.idx')
