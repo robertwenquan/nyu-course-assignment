@@ -6,8 +6,31 @@
 #include <unistd.h>
 #include <string.h>
 
+char** get_lexicon_files()
+{
+  // hard-coded input data
+  char **pp_flist = (char **)malloc(sizeof(char *) * 4);
+
+  char *lexicon_files[] = {"test_data/input/input1.warc.wet", \
+                           "test_data/input/input2.warc.wet", \
+                           "test_data/input/input3.warc.wet", \
+                           NULL \
+                          };
+
+  memcpy(pp_flist, lexicon_files, sizeof(char *) * 4);
+  return pp_flist;
+}
+
 int lexicon_generator()
 {
+  char **p = get_lexicon_files();
+  while (*p != NULL)
+  {
+    printf("%s\n", *p);
+    p++;
+  }
+
+  free(p);
   return 0;
 }
 
