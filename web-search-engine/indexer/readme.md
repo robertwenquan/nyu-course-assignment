@@ -1,5 +1,7 @@
 ## Inverted Index Generator
 
+Robert Wen <robert.wen@nyu.edu>  Caicai Chen <caicai.chen@nyu.edu>
+
 #### Introduction
 
 This project is the 2nd programming assignment of the Web Search Engine class for Fall 2015 Semester at Polytechnic School of Engineering, NYU.
