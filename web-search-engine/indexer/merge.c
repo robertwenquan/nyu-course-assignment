@@ -28,7 +28,7 @@ typedef struct{
     int mitTotal;
     int mitConsume;} BUF_T;
 
-char * merge_files(char* inputlist, char* path, int numLevel);
+char * merge_files(char* inputlist, char* outlist);
 void write_min(int i, int degree);
 int sort_curr(int degree);
 int merge_cont(int degree);
@@ -74,10 +74,12 @@ int main(int argc, char* argv[]) {
     }
   }
   fclose(fin);
+  char outlist[1024] = {'\0'};
 
   //If number of files in inputlist is 2 (1 git and 1 mit), stop.
   while (inputsize-2) {
-    strcpy(inputlist, merge_files(inputlist, argv[4], numLevel));
+    sprintf(outlist, "%s%d", argv[4], numLevel);
+    strcpy(inputlist, merge_files(inputlist, outlist));
     numLevel++;
     fin = fopen(inputlist, "r");
 
@@ -95,7 +97,7 @@ int main(int argc, char* argv[]) {
   return 0;
 }
 
-char* merge_files(char* inputlist, char* path, int numLevel) {
+char* merge_files(char* inputlist, char* outlist) {
 /* Merge files listed in inputlist, every max_degree files produce a new file
    Then return the output list */ 
 
@@ -106,7 +108,6 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   int numFile = 0;
   char filename[1024] = {'\0'};
   char outfile[1024] = {'\0'};
-  char outlist[1024] = {'\0'};
   char outmit[1024] = {'\0'};
   char outgit[1024] = {'\0'};
 
@@ -114,7 +115,6 @@ char* merge_files(char* inputlist, char* path, int numLevel) {
   buf_space = (unsigned char *)malloc(mem_size);
   ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
 
-  sprintf(outlist, "%s%d", path, numLevel);
   fin = fopen(inputlist, "r");
  
   while (!feof(fin)) {
