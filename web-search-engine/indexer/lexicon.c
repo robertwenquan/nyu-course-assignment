@@ -37,13 +37,15 @@ void process_lexicons_from_file(char *filename)
 int lexicon_generator()
 {
   char **p = get_lexicon_files();
+  char **p_save = p;
+
   while (*p != NULL)
   {
     process_lexicons_from_file(*p);
     p++;
   }
 
-  free(p);
+  free(p_save);
   return 0;
 }
 
@@ -109,6 +111,10 @@ int lexicon_sorter()
 {
   char *filename1 = "test_data/phase1_output/input1.warc.lexicon";
   char *filename2 = "test_data/bbb/input1.warc.lexicon";
+  /*
+  char *filename1 = "/data/wse/100k/phase1_output/CC-MAIN-20150728002301-00000-ip-10-236-191-2.ec2.internal.warc.lexicon";
+  char *filename2 = "/data/wse/100k/bbb.lexicon";
+  */
 
   int fd = open(filename1, O_RDWR);
   struct stat st;
