@@ -25,7 +25,7 @@ typedef struct {
   int mitConsume;
 } BUF_T;
 
-void print_help(char *argv[]);
+static void print_help(char *argv[]);
 char * merge_files(char* inputlist, char* outlist);
 void write_min(int i, int degree);
 int sort_curr(int degree);
@@ -102,7 +102,7 @@ int main(int argc, char* argv[]) {
   return 0;
 }
 
-void print_help(char *argv[]) {
+static void print_help(char *argv[]) {
   printf("Help.\n");
   printf(" %s <maxdegree> <memsize> <finlist> <outputfileprefix>\n", argv[0]);
   printf("\n");
