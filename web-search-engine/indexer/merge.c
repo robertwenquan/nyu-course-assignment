@@ -40,7 +40,20 @@ int max_degree;
 int mem_size;
 int out_offset;
 
+void print_help(char *argv[]) {
+  printf("Help.\n");
+  printf(" %s <maxdegree> <memsize> <finlist> <outputfileprefix>\n", argv[0]);
+  printf("\n");
+  printf("For example:\n");
+  printf(" %s 4 4096 finlist fout\n", argv[0]);
+}
+
 int main(int argc, char* argv[]) {
+
+  if (argc == 1) {
+    print_help(argv);
+    exit(1);
+  }
 
   max_degree = atoi(argv[1]);
   mem_size = atoi(argv[2]);
