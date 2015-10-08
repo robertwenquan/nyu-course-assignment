@@ -1,7 +1,3 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include"utils.h"
-
 /**************************************************************************/
 /* usage  ./merge maxdegree memsize finlist outfileprefix                 */
 /*                                                                        */
