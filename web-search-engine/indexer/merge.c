@@ -5,6 +5,7 @@
 /*        memsize        : size of available memory in bytes              */
 /*        finlist        : name of file containing a list of input files  */
 /*        outfileprefex  : directory to record intermediate files         */
+/*                                                                        */
 /* For example:                                                           */
 /*          ./merge 8 4096 finlist fout                                   */
 /**************************************************************************/
