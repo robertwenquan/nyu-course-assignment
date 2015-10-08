@@ -21,12 +21,25 @@ char** get_lexicon_files()
   return pp_flist;
 }
 
+void process_lexicons_from_file(char *filename)
+{
+  /*
+  if is_compressed_with_gzip(filename)
+  {
+    data
+  }
+
+  data = read_data(filename);
+   */
+  return;
+}
+
 int lexicon_generator()
 {
   char **p = get_lexicon_files();
   while (*p != NULL)
   {
-    printf("%s\n", *p);
+    process_lexicons_from_file(*p);
     p++;
   }
 
