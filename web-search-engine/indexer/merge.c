@@ -187,15 +187,15 @@ void buf_initiate(unsigned char *buf_space, int degree) {
 
   int i = 0;
   for (i = 0; i <= degree; i++) {
-    ioBufs[i].bufgit = &(buf_space[ i * sizeof(GIT_T)*buf_size * 2]);
-    ioBufs[i].bufmit = &(buf_space[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size ]);
+    ioBufs[i].bufgit = (GIT_T *) &(buf_space[ i * sizeof(GIT_T)*buf_size * 2]);
+    ioBufs[i].bufmit = (MIT_T *) &(buf_space[ i * sizeof(GIT_T)*buf_size * 2 + sizeof(GIT_T)* buf_size ]);
     ioBufs[i].gitTotal = 0;
     ioBufs[i].gitConsume = 0;
     ioBufs[i].mitTotal = 0;
     ioBufs[i].mitConsume = 0;
   }
 
-  ioBufs[degree].bufmit= &(buf_space[ degree * sizeof(GIT_T)* buf_size * 2 + sizeof(GIT_T)* buf_size * degree/ 2 ]);
+  ioBufs[degree].bufmit= (MIT_T *) &(buf_space[ degree * sizeof(GIT_T)* buf_size * 2 + sizeof(GIT_T)* buf_size * degree/ 2 ]);
   ioBufs[degree].gitTotal =  buf_size * degree/ 2 ;
   ioBufs[degree].mitTotal = degree * buf_size - buf_size * degree/ 2 ;
 
