@@ -8,10 +8,10 @@
  * 300 GB SSD
 
 ##### 30 dataset
-lexicon generation
-sorting(python)
-sorting(c)
-index generation
+lexicon generation  0m0.095s
+sorting(python)     0m0.043s
+sorting(c)          0m0.003s
+index generation    0m0.223s
 index merge
 
 ##### 100k dataset
