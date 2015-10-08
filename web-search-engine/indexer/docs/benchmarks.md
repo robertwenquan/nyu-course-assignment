@@ -15,9 +15,16 @@ index generation    0m0.223s
 index merge
 
 ##### 100k dataset
-lexicon generation  3m0.881s
-sorting(python)     5m24.454s
-sorting(c)          0m11.042s
-index generation   12m22.024s
+lexicon generation  3m0.881s     180.881s
+sorting(python)     5m24.454s    324.454s
+sorting(c)          0m11.042s     11.042s
+index generation   12m22.024s    742.024s
+index merging
+
+##### 1M dataset
+lexicon generation  
+sorting(python)     
+sorting(c)          
+index generation   
 index merging
 
