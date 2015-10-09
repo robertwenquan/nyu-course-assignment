@@ -11,11 +11,17 @@ all:  $(BINS)
 
 iigen:  $(OBJS)
 
-lexicon_gen:  lexicon.c
-	$(CC) -D__TEST__ -o $@ $<
+lexicon_gen:  lexicon_test.o warc_test.o
+	$(CC) -o $@ lexicon_test.o warc_test.o
+
+lexicon_test.o:  lexicon.c
+	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
+
+warc_test.o:  warc.c
+	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
 iindex_gen:  iindex.c
-	$(CC) -D__TEST__ -o $@ $<
+	$(CC) $(CFLAGS) -D__TEST__ -o $@ $<
 
 clean:  
 	rm -fr $(BINS) $(OBJS) iigen.dSYM *.pyc tests/*.pyc &>/dev/null
