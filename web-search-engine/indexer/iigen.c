@@ -8,6 +8,7 @@
 #include "lexicon.h"
 #include "iindex.h"
 #include "utils.h"
+#include "warc.h"
 
 
 /*
