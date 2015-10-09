@@ -44,6 +44,12 @@ int mem_size;
 int out_offset;
 
 int main(int argc, char* argv[]) {
+  if (argc != 5) {
+    printf("%s\n", "Usage: ./merge n(ways) memsize(byte) inputlistfile outputfile");
+    printf("%s\n", "For example: " );
+    printf("%s\n", "    ./merge 8 2048000000 finlist fout" );
+    return -1;
+  }
 
   max_degree = atoi(argv[1]);
   mem_size = atoi(argv[2]);
