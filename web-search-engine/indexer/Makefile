@@ -4,8 +4,9 @@
 
 CC = gcc
 CFLAGS = -g -O2 -Wall
-OBJS = iigen.o lexicon.o iindex.o utils.o warc.o
-BINS = iigen lexicon_gen iindex_gen
+
+OBJS = iigen.o lexicon.o iindex.o utils.o warc.o merge.o
+BINS = iigen lexicon_gen iindex_gen iindex_merge
 
 all:  $(BINS)
 

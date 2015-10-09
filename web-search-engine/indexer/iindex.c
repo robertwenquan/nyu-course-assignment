@@ -16,6 +16,7 @@ int index_merger()
 int main(int argc, char *argv[])
 {
   index_builder();
+  return 0;
 }
 #endif
 

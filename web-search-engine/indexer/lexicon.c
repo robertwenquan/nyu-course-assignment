@@ -120,13 +120,13 @@ int lexicon_sorter()
   struct stat st;
   fstat(fd, &st);
 
-  printf("file: %s, size: %llu, fd = %d\n", filename1, st.st_size, fd);
+  printf("file: %s, size: %zu, fd = %d\n", filename1, st.st_size, fd);
 
   int fd_out = open(filename2, O_RDWR | O_CREAT | O_TRUNC, 0755);
   printf("fd2 = %d\n", fd_out);
 
   void *src = mmap (0, st.st_size, PROT_READ, MAP_SHARED, fd, 0);
-  printf("src pointer %p, aligned at %d\n", src, ((int)src%4096));
+  printf("src pointer %p, aligned at %lu\n", src, ((unsigned long)(src)%4096));
 
   //void *dst = mmap (0, st.st_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd_out, 0);
   //printf("dst pointer %p, aligned at %d\n", dst, ((int)dst%4096));
@@ -136,7 +136,15 @@ int lexicon_sorter()
 
   qsort(data, st.st_size / sizeof(LEXICON_T), sizeof(LEXICON_T), lexicon_compare);
 
-  write(fd_out, data, st.st_size);
+  int bytes_write = 0;
+  while (bytes_write < st.st_size || bytes_write == -1) { 
+    int nbytes = write(fd_out, data, st.st_size);
+    bytes_write += nbytes;
+  }
+
+  if (bytes_write != -1) {
+    printf("failed to sort lexicons.\n");
+  }
 
   close(fd);
   close(fd_out);
