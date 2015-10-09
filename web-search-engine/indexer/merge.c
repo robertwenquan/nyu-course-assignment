@@ -48,7 +48,7 @@ int main(int argc, char* argv[]) {
     printf("%s\n", "Usage: ./merge n(ways) memsize(byte) inputlistfile outputfile");
     printf("%s\n", "For example: " );
     printf("%s\n", "    ./merge 8 2048000000 finlist fout" );
-    return -1;
+    return EXIT_FAILURE;
   }
 
   if (argc == 1) {
@@ -70,12 +70,12 @@ int main(int argc, char* argv[]) {
 
   fin = fopen(inputlist, "r");
   if (fin == NULL) {
-    return -1;
+    return EXIT_FAILURE;
   }
 
   if (feof(fin)) {
     fclose(fin);
-    return -1;
+    return EXIT_FAILURE;
   }
 
   for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
@@ -93,13 +93,13 @@ int main(int argc, char* argv[]) {
     sprintf(outlist, "%s%d", argv[4], numLevel);
     strcpy(inputlist, merge_files(inputlist, outlist));
     if (inputlist == NULL) {
-      return -1;
+      return EXIT_FAILURE;
     }
     numLevel++;
     fin = fopen(inputlist, "r");
     if (fin == NULL) {
       printf("%s doesn't exist\n", inputlist);
-      return -1;
+      return EXIT_FAILURE;
     }
 
     for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
@@ -113,7 +113,7 @@ int main(int argc, char* argv[]) {
   }
 
   printf("%s is the output list\n", inputlist);
-  return 0;
+  return EXIT_SUCCESS;
 }
 
 static void print_help(char *argv[]) {
