@@ -24,6 +24,9 @@ warc_test.o:  warc.c
 iindex_gen:  iindex.c
 	$(CC) $(CFLAGS) -D__TEST__ -o $@ $<
 
+iindex_merge:  merge.c
+	$(CC) $(CFLAGS) -D__TEST__ -o $@ $<
+
 clean:  
 	rm -fr $(BINS) $(OBJS) *.dSYM *.pyc tests/*.pyc *.o &>/dev/null
 
