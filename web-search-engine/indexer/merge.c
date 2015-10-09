@@ -1,7 +1,3 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include"utils.h"
-
 /**************************************************************************/
 /* usage  ./merge maxdegree memsize finlist outfileprefix                 */
 /*                                                                        */
@@ -9,6 +5,7 @@
 /*        memsize        : size of available memory in bytes              */
 /*        finlist        : name of file containing a list of input files  */
 /*        outfileprefex  : directory to record intermediate files         */
+/*                                                                        */
 /* For example:                                                           */
 /*          ./merge 8 4096 finlist fout                                   */
 /**************************************************************************/
@@ -18,16 +15,18 @@
 #include <string.h>
 #include "utils.h"
 
-typedef struct{
-    FILE *fgit; 
-    FILE *fmit;
-    GIT_T* bufgit; 
-    MIT_T* bufmit;
-    int gitTotal; 
-    int gitConsume;
-    int mitTotal;
-    int mitConsume;} BUF_T;
+typedef struct {
+  FILE *fgit; 
+  FILE *fmit;
+  GIT_T* bufgit; 
+  MIT_T* bufmit;
+  int gitTotal; 
+  int gitConsume;
+  int mitTotal;
+  int mitConsume;
+} BUF_T;
 
+static void print_help(char *argv[]);
 char * merge_files(char* inputlist, char* outlist);
 void write_min(int i, int degree);
 int sort_curr(int degree);
@@ -43,12 +42,18 @@ int max_degree;
 int mem_size;
 int out_offset;
 
+
 int main(int argc, char* argv[]) {
   if (argc != 5) {
     printf("%s\n", "Usage: ./merge n(ways) memsize(byte) inputlistfile outputfile");
     printf("%s\n", "For example: " );
     printf("%s\n", "    ./merge 8 2048000000 finlist fout" );
     return -1;
+  }
+
+  if (argc == 1) {
+    print_help(argv);
+    exit(1);
   }
 
   max_degree = atoi(argv[1]);
@@ -80,6 +85,7 @@ int main(int argc, char* argv[]) {
     }
   }
   fclose(fin);
+
   char outlist[1024] = {'\0'};
 
   //If number of files in inputlist is 2 (1 git and 1 mit), stop.
@@ -101,6 +107,14 @@ int main(int argc, char* argv[]) {
 
   printf("%s is the output list\n", inputlist);
   return 0;
+}
+
+static void print_help(char *argv[]) {
+  printf("Help.\n");
+  printf(" %s <maxdegree> <memsize> <finlist> <outputfileprefix>\n", argv[0]);
+  printf("\n");
+  printf("For example:\n");
+  printf(" %s 4 4096 finlist fout\n", argv[0]);
 }
 
 char* merge_files(char* inputlist, char* outlist) {
@@ -130,10 +144,12 @@ char* merge_files(char* inputlist, char* outlist) {
     /*Get source files from the list, assign each file to a BUFFER structure,
       at most max_degree files each time.*/
     for (degree = 0; degree < max_degree; degree++) {
+
       fscanf(fin, "%s", filename);
       if (feof(fin)) {
         break;
       }
+
       ioBufs[degree].fgit = fopen(filename, "r");
       fscanf(fin, "%s", filename);
       if (feof(fin)) {
@@ -308,6 +324,7 @@ void write_min(int i, int degree) {
       out->gitTotal = buf_size * degree/ 2;
       out->gitConsume = 0;
     }
+
     memcpy(&(out->bufgit[out->gitConsume]), &topElem[degree], sizeof(GIT_T));
     out->gitConsume += 1;
 
@@ -316,9 +333,11 @@ void write_min(int i, int degree) {
     for (j = 0; j < out->gitConsume; j++) {
       fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
     }
+
     for (j = 0; j < out->mitConsume; j++) {
       fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
     }
+
     return;
   }
 
@@ -354,37 +373,45 @@ void write_min(int i, int degree) {
     then write topElem[degree] to output file 
     and update topElem[degree]                              */
   if (topElem[i].word_id != topElem[degree].word_id ) {
+
     if (out->gitTotal == out->gitConsume) {
       int j;
       for (j = 0; j < out->gitConsume; j++) {
         fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
       }
+
       out->gitTotal = buf_size * degree/ 2;
       out->gitConsume = 0;
     }
+
     if (topElem[i].n_docs != out_offset) {
       memcpy(&(out->bufgit[out->gitConsume]), &topElem[degree], sizeof(GIT_T));
       out->gitConsume += 1;
     }
+
     memcpy(&topElem[degree], &topElem[i], sizeof(GIT_T));
     topElem[degree].offset = (out_offset - topElem[i].n_docs) * sizeof(GIT_T);
-  }else{
+  }else {
     // If they are the same, update topElem[degree].n_docs
     topElem[degree].n_docs += topElem[i].n_docs;
   }
+
   return;
 }
 
 void check_ith_mit(int i) {
   /* Refill buffer of ioBufs[i] when all of them are used */
+
   BUF_T *b = &ioBufs[i];
   
   int j;
   for (j = 0; j < buf_size ; j++) {
     fread(&b->bufmit[j], sizeof(MIT_T), 1, b->fmit);
   }
+
   b->mitTotal = j;
   b->mitConsume = 0;
+
   return;
 }
 

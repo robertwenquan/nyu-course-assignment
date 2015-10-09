@@ -20,8 +20,8 @@ from struct import pack, unpack, calcsize
 from operator import itemgetter
 
 
-BASE_DIR = './test_data'
 BASE_DIR = '/data/wse/100k'
+BASE_DIR = './test_data'
 
 # test data path for phase1
 LEXICON_PATH = os.path.join(BASE_DIR, 'phase1_output')
