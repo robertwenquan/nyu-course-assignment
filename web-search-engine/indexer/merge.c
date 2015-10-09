@@ -92,8 +92,15 @@ int main(int argc, char* argv[]) {
   while (inputsize-2) {
     sprintf(outlist, "%s%d", argv[4], numLevel);
     strcpy(inputlist, merge_files(inputlist, outlist));
+    if (inputlist == NULL) {
+      return -1;
+    }
     numLevel++;
     fin = fopen(inputlist, "r");
+    if (fin == NULL) {
+      printf("%s doesn't exist\n", inputlist);
+      return -1;
+    }
 
     for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
       fgets(filename, 1024, fin);
@@ -136,6 +143,10 @@ char* merge_files(char* inputlist, char* outlist) {
   ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
 
   fin = fopen(inputlist, "r");
+  if (fin == NULL) {
+    printf("%s doesn't exist\n", inputlist);
+    return NULL;
+  }
  
   while (!feof(fin)) {
     //Initiate for each pile of files.
@@ -151,11 +162,20 @@ char* merge_files(char* inputlist, char* outlist) {
       }
 
       ioBufs[degree].fgit = fopen(filename, "r");
+      if (ioBufs[degree].fgit == NULL) {
+        printf("%s doesn't exist\n", filename);
+        return NULL;
+      }
+
       fscanf(fin, "%s", filename);
       if (feof(fin)) {
         break;
       }
       ioBufs[degree].fmit = fopen(filename, "r");
+      if (ioBufs[degree].fmit == NULL) {
+        printf("%s doesn't exist\n", filename);
+        return NULL;
+      }
     }
 
     if (degree == 0) {
@@ -168,8 +188,16 @@ char* merge_files(char* inputlist, char* outlist) {
     sprintf(outfile, "%s%d", outlist, numFile);
     sprintf(outgit, "%s%s", outfile, ".git");
     ioBufs[degree].fgit = fopen(outgit, "a");
+    if (ioBufs[degree].fgit == NULL) {
+      printf("%s doesn't exist\n", outgit);
+      return NULL;
+    }
     sprintf(outmit, "%s%s", outfile, ".mit");
     ioBufs[degree].fmit= fopen(outmit, "a");
+    if (ioBufs[degree].fmit == NULL) {
+      printf("%s doesn't exist\n", outmit);
+      return NULL;
+    }
 
 
     //Initiate BUF_F for each file.
@@ -186,6 +214,10 @@ char* merge_files(char* inputlist, char* outlist) {
 
     //write the name of output file into outputlist
     fout = fopen(outlist, "a");
+    if (fout == NULL) {
+      printf("%s doesn't exist\n", outlist );
+      return NULL;
+    }
     fprintf(fout, "%s\n", outgit);
     fprintf(fout, "%s\n", outmit);
     fclose(fout);
