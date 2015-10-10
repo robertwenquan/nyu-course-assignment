@@ -7,6 +7,7 @@
 #include <unistd.h>
 
 // For logging
+// credit from https://github.com/drfeelngood/logger/
 #define LOG_DEBUG 0
 #define LOG_INFO  1
 #define LOG_WARN  2

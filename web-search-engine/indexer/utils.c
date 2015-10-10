@@ -1,8 +1,9 @@
 /*
  utility functions for the inverted index generator
 
-  - gzip uncompress
-  - url table
+  - gzip helper functions
+  - logging functions
+   * credit from https://github.com/drfeelngood/logger/
 
  */
 
