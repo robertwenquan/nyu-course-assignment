@@ -26,17 +26,17 @@ FILE * warc_open(char *filename) {
 
   char buf[32] = {'\0'};
   int nread = fread(buf, 20, 1, fp);
-  printf("xxbb %s\n", buf);
-  if (nread < 5) {
+  if (nread < 1) {
     fclose(fp);
     return NULL;
   }
 
   if (strstr(buf, "WARC/1.0") != buf) {
-    printf("not equal...\n");
     fclose(fp);
     return NULL;
   }
+
+  fseek(fp, 0, 0);
 
   printf("good...\n");
   return fp;
@@ -48,25 +48,19 @@ FILE * warc_open(char *filename) {
 WARC_REC_T * warc_get_next(FILE *warc_fp) {
   char buf[1024] = {'\0'};
 
-  printf("sbbb\n");
   if (warc_fp == NULL) {
     return NULL;
   }
 
   int off_start = 0;
-  while (strcmp(buf, "WARC/1.0\r\n") != 0 || feof(warc_fp) == 0) {
-    printf("xxxxx\n");
+  while (strcmp(buf, "WARC/1.0\r\n") != 0 && feof(warc_fp) == 0) {
+    off_start = ftell(warc_fp);
     fgets(buf, 1024, warc_fp);
-    printf("xxxxx\n");
-    printf("%s\n", buf);
   }
 
-  if (feof(warc_fp) == 0) {
+  if (feof(warc_fp) != 0) {
     return NULL;
   }
-
-  off_start = ftell(warc_fp);
-  printf("where: %d\n", off_start);
 
   WARC_REC_T * warc_rec = (WARC_REC_T *)malloc(sizeof(WARC_REC_T));
   memset(warc_rec, 0, sizeof(WARC_REC_T));
