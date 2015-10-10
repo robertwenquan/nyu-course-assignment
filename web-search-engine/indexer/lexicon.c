@@ -31,6 +31,17 @@ void process_lexicons_from_file(char *filename)
 
   data = read_data(filename);
    */
+
+  FILE * fp = warc_open(filename);
+  printf("file: %s, fp: %p\n", filename, fp);
+  while (1) {
+    WARC_REC_T *p_warc = warc_get_next(fp);
+    if (p_warc == NULL) {
+      break;
+    }
+    printf("offset: %d\n", p_warc->offset);
+  }
+
   return;
 }
 
