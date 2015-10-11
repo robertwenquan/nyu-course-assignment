@@ -3,7 +3,7 @@
 #
 
 CC = gcc
-CFLAGS = -g -O2 -Wall
+CFLAGS = -g -O2 -Wall -D__DEBUG__
 
 OBJS = iigen.o lexicon.o iindex.o utils.o warc.o merge.o
 BINS = iigen lexicon_gen iindex_gen iindex_merge
