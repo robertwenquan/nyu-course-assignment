@@ -172,25 +172,30 @@ char* merge_files(char* inputlist, char* outlist) {
     for (degree = 0; degree < max_degree; degree++) {
 
       ret = fscanf(fin, "%s", filename);
-      if (ret == -1) {
-        return NULL;
-      }
+
       if (feof(fin)) {
         break;
       }
 
+      if (ret == -1) {
+        return NULL;
+      }
+
       ioBufs[degree].fgit = fopen(filename, "r");
+
       if (ioBufs[degree].fgit == NULL) {
         printf("%s doesn't exist\n", filename);
         return NULL;
       }
 
       ret = fscanf(fin, "%s", filename);
-      if (ret == -1) {
-        return NULL;
-      }
+
       if (feof(fin)) {
         break;
+      }
+
+      if (ret == -1) {
+        return NULL;
       }
       ioBufs[degree].fmit = fopen(filename, "r");
       if (ioBufs[degree].fmit == NULL) {
