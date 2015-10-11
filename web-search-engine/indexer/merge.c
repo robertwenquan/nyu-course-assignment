@@ -68,6 +68,7 @@ int main(int argc, char* argv[]) {
   int numLevel = 0;
   int inputsize = 0;
 
+  char * ret = NULL;
   char inputlist[1024] = {'\0'};
   strcpy(inputlist, argv[3]);
 
@@ -82,7 +83,10 @@ int main(int argc, char* argv[]) {
   }
 
   for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
-    fgets(filename, 1024, fin);
+    ret = fgets(filename, 1024, fin);
+    if (ret == NULL) {
+      return EXIT_FAILURE;
+    }
     if (feof(fin)) {
       break;
     }
@@ -106,7 +110,10 @@ int main(int argc, char* argv[]) {
     }
 
     for (inputsize = 0; !feof(fin) && inputsize<=2; inputsize++) {
-      fgets(filename, 1024, fin);
+      ret = fgets(filename, 1024, fin);
+      if (ret == NULL) {
+        break;
+      }
       if (feof(fin)) {
         break;
       }
@@ -138,6 +145,7 @@ char* merge_files(char* inputlist, char* outlist) {
   int degree = 0;
   int i = 0;
   int numFile = 0;
+  int ret = 0;
   char filename[1024] = {'\0'};
   char outfile[1024] = {'\0'};
   char outmit[1024] = {'\0'};
@@ -161,7 +169,10 @@ char* merge_files(char* inputlist, char* outlist) {
       at most max_degree files each time.*/
     for (degree = 0; degree < max_degree; degree++) {
 
-      fscanf(fin, "%s", filename);
+      ret = fscanf(fin, "%s", filename);
+      if (ret == -1) {
+        return NULL;
+      }
       if (feof(fin)) {
         break;
       }
@@ -172,7 +183,10 @@ char* merge_files(char* inputlist, char* outlist) {
         return NULL;
       }
 
-      fscanf(fin, "%s", filename);
+      ret = fscanf(fin, "%s", filename);
+      if (ret == -1) {
+        return NULL;
+      }
       if (feof(fin)) {
         break;
       }
@@ -441,9 +455,12 @@ void check_ith_mit(int i) {
 
   BUF_T *b = &ioBufs[i];
   
-  int j;
+  int j, k;
   for (j = 0; j < buf_size ; j++) {
-    fread(&b->bufmit[j], sizeof(MIT_T), 1, b->fmit);
+    k = fread(&b->bufmit[j], sizeof(MIT_T), 1, b->fmit);
+    if (k == 0) {
+      break;
+    }
   }
 
   b->mitTotal = j;
