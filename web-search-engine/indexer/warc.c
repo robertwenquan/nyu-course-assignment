@@ -53,7 +53,7 @@ static void parse_kv_pair(char *buf, char *key, char *val, int buf_len, int key_
   return;
 }
 
-WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
+static WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
   fseek(fp, offset, SEEK_SET);
 
   // parse the header
@@ -123,7 +123,7 @@ WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
   return header;
 }
 
-WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
+static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
   char *buf = (char *) malloc(length);
   if (buf == NULL) {
     return NULL;
