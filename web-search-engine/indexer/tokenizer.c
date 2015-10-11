@@ -1,24 +1,18 @@
 /*
+ * code from
+ * https://github.com/alexandermtang/tokenizer/blob/master/tokenizer.c
+ *
+ * Changes:
+ *  - add #ifdef __TEST__ for main()
+ *  - add tokenizer.h
+ */
+
+# include "tokenizer.h"
+
+/*
  * Alexander Tang and Craig Perkins
  * tokenizer.c
  */
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-/*
- * Tokenizer type.  You need to fill in the type as part of your implementation.
- */
-
-struct TokenizerT_ {
-  char *delimiters;
-  char *tokenStream;
-  char **tokens;
-  int numTokens;
-  int numTokensDispensed;
-};
-
-typedef struct TokenizerT_ TokenizerT;
 
 // processes string, replaces "\n" with '\n' and '\0'
 char *preprocessString(char *str) {
@@ -188,6 +182,7 @@ char *TKGetNextToken(TokenizerT *tk) {
  * Each token should be printed on a separate line.
  */
 
+#ifdef __TEST__
 int main(int argc, char **argv) {
   if (argc < 3) {
     fprintf(stderr, "Too few => error\n");
@@ -220,3 +215,5 @@ int main(int argc, char **argv) {
   TKDestroy(tokenizer);
   return 0;
 }
+#endif
+
