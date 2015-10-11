@@ -1,6 +1,8 @@
 #ifndef _libwarc_h
 #define _libwarc_h
 
+#include <assert.h>
+
 typedef struct {
   unsigned int length;
   char warc_ver[8];
@@ -26,6 +28,7 @@ typedef struct {
 
 FILE * warc_open(char *filename);
 WARC_REC_T * warc_get_next(FILE *warc_fp);
+void destroy_warc_rec(WARC_REC_T *warc_rec);
 
 #endif
 

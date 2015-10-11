@@ -129,12 +129,23 @@ WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
     return NULL;
   }
 
+  #ifdef __DEBUG__
+  int offset_before_read = ftell(fp);
+  #endif
+
   int nremain = length;
+  char *buf_work = buf;
   while (nremain > 0 && feof(fp) == 0) {
     int nbytes = fread(buf, 1, nremain, fp);
+    printf("BBBB read %d bytes\n", nbytes);
     nremain -= nbytes;
-    buf += nbytes;
+    buf_work += nbytes;
   }
+
+  #ifdef __DEBUG__
+  int offset_after_read = ftell(fp);
+  assert(offset_after_read - offset_before_read == length);
+  #endif
 
   WARC_PAYLOAD_T *payload = (WARC_PAYLOAD_T *)malloc(sizeof(WARC_PAYLOAD_T));
   if (payload == NULL) {
@@ -201,7 +212,7 @@ void destroy_warc_rec(WARC_REC_T *warc_rec) {
     return;
   }
 
-  if (warc_rec->header) {
+  if (warc_rec->header != NULL) {
     WARC_HDR_T *header = warc_rec->header;
 
     if (header->data != NULL) {
@@ -211,7 +222,7 @@ void destroy_warc_rec(WARC_REC_T *warc_rec) {
     free(warc_rec->header);
   }
 
-  if (warc_rec->payload) {
+  if (warc_rec->payload != NULL) {
     WARC_PAYLOAD_T *payload = warc_rec->payload;
 
     if (payload->data != NULL) {
