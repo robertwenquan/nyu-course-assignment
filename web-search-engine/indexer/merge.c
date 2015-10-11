@@ -98,9 +98,11 @@ int main(int argc, char* argv[]) {
   //If number of files in inputlist is 2 (1 git and 1 mit), stop.
   while (inputsize-2) {
     sprintf(outlist, "%s%d", argv[4], numLevel);
-    strcpy(inputlist, merge_files(inputlist, outlist));
-    if (inputlist == NULL) {
+    ret = merge_files(inputlist, outlist);
+    if (ret == NULL) {
       return EXIT_FAILURE;
+    } else {
+      strcpy(inputlist, ret);
     }
     numLevel++;
     fin = fopen(inputlist, "r");
@@ -170,25 +172,30 @@ char* merge_files(char* inputlist, char* outlist) {
     for (degree = 0; degree < max_degree; degree++) {
 
       ret = fscanf(fin, "%s", filename);
-      if (ret == -1) {
-        return NULL;
-      }
+
       if (feof(fin)) {
         break;
       }
 
+      if (ret == -1) {
+        return NULL;
+      }
+
       ioBufs[degree].fgit = fopen(filename, "r");
+
       if (ioBufs[degree].fgit == NULL) {
         printf("%s doesn't exist\n", filename);
         return NULL;
       }
 
       ret = fscanf(fin, "%s", filename);
-      if (ret == -1) {
-        return NULL;
-      }
+
       if (feof(fin)) {
         break;
+      }
+
+      if (ret == -1) {
+        return NULL;
       }
       ioBufs[degree].fmit = fopen(filename, "r");
       if (ioBufs[degree].fmit == NULL) {
