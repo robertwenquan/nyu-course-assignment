@@ -13,10 +13,10 @@ WARC_REC_T * warc_get_next(FILE *warc_fp);
 void warc_close(FILE *warc_fp);
 
 /*
- open WARC file
- detect first line whether if it's WARC file format
- by reading the frist 20 bytes
- return the FILE pointer
+ * open WARC file
+ * detect first line whether if it's WARC file format
+ * by reading the frist 20 bytes
+ * return the FILE pointer
  */
 FILE * warc_open(char *filename) {
   FILE * fp = fopen(filename, "r");
@@ -42,6 +42,12 @@ FILE * warc_open(char *filename) {
   return fp;
 }
 
+/*
+ * parse WARC header line
+ * "WARC-Target-URI: http://100cameltoe.com/?id=voyman"
+ * split with ":" to key and value
+ * for value, remove the trailing "\r\n"
+ */
 static void parse_kv_pair(char *buf, char *key, char *val, int buf_len, int key_len, int val_len) {
 
   char *pkey = strtok(buf, ":");
@@ -49,11 +55,18 @@ static void parse_kv_pair(char *buf, char *key, char *val, int buf_len, int key_
 
   char *pval = buf + strlen(key) + 1;
   strncpy(val, pval, val_len);
+  // remove the trailing "\r\n"
   val[strlen(val) - 2] = '\0';
 
   return;
 }
 
+/*
+ * parse WARC header
+ * from "WARC/1.0" header line to the end of the heaader "\r\n"
+ *
+ * parsed meta data will be stored in WARC_HDR_T
+ */
 static WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
   fseek(fp, offset, SEEK_SET);
 
@@ -124,6 +137,10 @@ static WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
   return header;
 }
 
+/*
+ * parse WARC payload
+ * raw data and its length will be stored in WARC_PAYLOAD_T
+ */
 static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
   char *buf = (char *) malloc(length);
   if (buf == NULL) {
@@ -160,7 +177,8 @@ static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
 }
 
 /*
- get the pointer of the next WARC record
+ * get the pointer of the next WARC record
+ * together the parsed HEADER and PAYLOAD
  */
 WARC_REC_T * warc_get_next(FILE *warc_fp) {
   char buf[1024] = {'\0'};
@@ -235,7 +253,7 @@ void destroy_warc_rec(WARC_REC_T *warc_rec) {
 }
 
 /*
- close the WARC handler
+ * close the WARC handler
  */
 void warc_close(FILE *warc_fp) {
   if (warc_fp) {
