@@ -98,9 +98,11 @@ int main(int argc, char* argv[]) {
   //If number of files in inputlist is 2 (1 git and 1 mit), stop.
   while (inputsize-2) {
     sprintf(outlist, "%s%d", argv[4], numLevel);
-    strcpy(inputlist, merge_files(inputlist, outlist));
-    if (inputlist == NULL) {
+    ret = merge_files(inputlist, outlist);
+    if (ret == NULL) {
       return EXIT_FAILURE;
+    } else {
+      strcpy(inputlist, ret);
     }
     numLevel++;
     fin = fopen(inputlist, "r");
