@@ -38,7 +38,6 @@ FILE * warc_open(char *filename) {
 
   fseek(fp, 0, SEEK_SET);
 
-  printf("good...\n");
   return fp;
 }
 
@@ -149,10 +148,16 @@ static WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
  * raw data and its length will be stored in WARC_PAYLOAD_T
  */
 static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
-  char *buf = (char *) malloc(length);
+  // FIXME: the (length + 1) is not a good idea
+  // This is just a workaround for the bugged tokenizer
+  // because it works beyond the boundary of the given buffer
+  // and will cause unpredictable behavior
+  // Eventually the bug should be fixed in the tokenizer
+  char *buf = (char *) malloc(length + 1);
   if (buf == NULL) {
     return NULL;
   }
+  memset(buf, 0, length + 1);
 
   #ifdef __DEBUG__
   int offset_before_read = ftell(fp);
@@ -162,7 +167,6 @@ static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
   char *buf_work = buf;
   while (nremain > 0 && feof(fp) == 0) {
     int nbytes = fread(buf, 1, nremain, fp);
-    printf("BBBB read %d bytes\n", nbytes);
     nremain -= nbytes;
     buf_work += nbytes;
   }
