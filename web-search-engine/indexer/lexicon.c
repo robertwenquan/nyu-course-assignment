@@ -21,10 +21,56 @@ static char** get_lexicon_files()
   return pp_flist;
 }
 
+/*
+ * tokenize words from the page content
+ * with filtering strategy
+ * and generate lexicons
+ */
+static void tokenize_page_content(char *buffer, int size)
+{
+    TokenizerT *tokenizer = NULL;
+    tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\|;':\",.<>/?,.", buffer);
+
+    char *token = NULL;
+    while ( (token = TKGetNextToken(tokenizer)) ) {
+
+      // skip all non ascii words
+      size_t length = strlen(token);
+
+      int i;
+      short skip = 0;
+      for (i = 0; i < length; i++) {
+        char c = token[i];
+        if (!isascii(c)) {
+          skip = 1;
+          break;
+        }
+      }
+
+      if (skip == 1) {
+        continue;
+      }
+
+      // skip all single character or single digit
+      if (length == 1) {
+        continue;
+      }
+
+      printf("%s\n", token);
+    }
+
+    TKDestroy(tokenizer);
+
+    LEXICON_T lex;
+}
+
 static void process_lexicons_from_file(char *filename)
 {
   FILE * fp = warc_open(filename);
-  printf("file: %s, fp: %p\n", filename, fp);
+
+  unsigned int docid = get_doc_id();
+  printf("file: %s, fp: %p, docid: %u\n", filename, fp, docid);
+
   while (1) {
 
     // get the next WARC entry
@@ -50,29 +96,11 @@ static void process_lexicons_from_file(char *filename)
     #endif
 
     char *page_content = p_warc->payload->data;
+    int page_lens = p_warc->payload->length;
 
-    TokenizerT *tokenizer;
-    tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\|;':\",.<>/?,.", page_content);
+    // tokenize lexicons from page
+    tokenize_page_content(page_content, page_lens);
 
-    char *token = NULL;
-    while ( (token = TKGetNextToken(tokenizer)) ) {
-      size_t length = strlen(token);
-
-      int i;
-      for (i = 0; i < length; i++) {
-        char c = token[i];
-        if (isSpecialChar(c)) {
-          continue;
-        } else {
-          printf("%c", c);
-        }
-      }
-
-      printf("\n");
-    }
-
-    TKDestroy(tokenizer);
-    
     // dispose the WARC entry after consumption
     destroy_warc_rec(p_warc);
   }

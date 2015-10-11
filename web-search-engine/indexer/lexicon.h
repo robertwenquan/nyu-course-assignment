@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include "warc.h"
+#include "utils.h"
 #include "tokenizer.h"
 
 int lexicon_generator();
