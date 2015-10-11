@@ -49,6 +49,7 @@ static void parse_kv_pair(char *buf, char *key, char *val, int buf_len, int key_
 
   char *pval = buf + strlen(key) + 1;
   strncpy(val, pval, val_len);
+  val[strlen(val) - 2] = '\0';
 
   return;
 }
