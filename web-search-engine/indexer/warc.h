@@ -29,6 +29,7 @@ typedef struct {
 FILE * warc_open(char *filename);
 WARC_REC_T * warc_get_next(FILE *warc_fp);
 void destroy_warc_rec(WARC_REC_T *warc_rec);
+void warc_close(FILE *warc_fp);
 
 #endif
 
