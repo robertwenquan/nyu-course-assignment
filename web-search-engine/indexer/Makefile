@@ -12,8 +12,8 @@ all:  $(BINS)
 
 iigen:  $(OBJS)
 
-lexicon_gen:  lexicon_test.o warc_test.o tokenizer.o
-	$(CC) -o $@ lexicon_test.o warc_test.o tokenizer.o
+lexicon_gen:  lexicon_test.o warc_test.o tokenizer.o utils.o
+	$(CC) -o $@ lexicon_test.o warc_test.o tokenizer.o utils.o
 
 lexicon_test.o:  lexicon.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
@@ -22,6 +22,9 @@ warc_test.o:  warc.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
 tokenizer.o:  tokenizer.c
+	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
+
+utils.o:  utils.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
 iindex_gen:  iindex.c
