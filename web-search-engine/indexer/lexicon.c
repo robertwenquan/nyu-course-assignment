@@ -26,10 +26,17 @@ static void process_lexicons_from_file(char *filename)
   FILE * fp = warc_open(filename);
   printf("file: %s, fp: %p\n", filename, fp);
   while (1) {
+
     WARC_REC_T *p_warc = warc_get_next(fp);
     if (p_warc == NULL) {
       break;
     }
+
+    if (strcmp(p_warc->header->warc_type, "conversion") != 0 || \
+        strcmp(p_warc->header->content_type, "text/plain") != 0) {
+      continue;
+    }
+
     printf("offset: %d\n", p_warc->offset);
     printf("type: %s\n", p_warc->header->warc_type);
     printf("cont-type: %s\n", p_warc->header->content_type);
