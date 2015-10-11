@@ -15,7 +15,7 @@
  */
 
 // processes string, replaces "\n" with '\n' and '\0'
-char *preprocessString(char *str) {
+static char *preprocessString(char *str) {
   size_t length = strlen(str);
   int i;
   for (i = 0; i < length; i++) {
