@@ -322,7 +322,7 @@ int merge_cont(int degree) {
      Refill with the next element of this buffer block
      Until all the buffer block is empty. */
 
-  topElem = (GIT_T *)malloc(sizeof(GIT_T) * degree);
+  topElem = (GIT_T *)malloc(sizeof(GIT_T) * (degree + 1));
 
   // Initiate topElem[i] with the first record of each input file.
   int i;
