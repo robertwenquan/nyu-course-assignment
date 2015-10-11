@@ -5,6 +5,11 @@
  * Changes:
  *  - add #ifdef __TEST__ for main()
  *  - add tokenizer.h
+ *
+ * Known Issues:
+ *  - no buffer boundary with length limit
+ *    with random string or unicode string passed in, it will work beyond
+ *    the buffer boundary and destroy data after the buffer boundary
  */
 
 # include "tokenizer.h"
