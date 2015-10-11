@@ -34,14 +34,14 @@ static void tokenize_page_content(char *buffer, int size, unsigned int docid)
     char *token = NULL;
     while ( (token = TKGetNextToken(tokenizer)) ) {
 
-      // skip all non ascii words
+      // skip all non alpha num words
       size_t length = strlen(token);
 
       int i;
       short skip = 0;
       for (i = 0; i < length; i++) {
         char c = token[i];
-        if (!isascii(c)) {
+        if (!isalnum(c)) {
           skip = 1;
           break;
         }
@@ -56,7 +56,7 @@ static void tokenize_page_content(char *buffer, int size, unsigned int docid)
         continue;
       }
 
-      unsigned int wordid = get_word_id();
+      unsigned int wordid = get_word_id(token);
       printf("wordid: %d, docid: %d, %s\n", wordid, docid, token);
     }
 

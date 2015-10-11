@@ -99,7 +99,7 @@ void log_error(LOGGER_T *l, const char *fmt, ...)
 }
 
 /*
- * docid
+ * docid generator
  */
 unsigned int get_doc_id()
 {
@@ -109,11 +109,30 @@ unsigned int get_doc_id()
   return docid;
 }
 
-unsigned int get_word_id()
+/*
+ * query from word dictionary
+ * return wordid if exists
+ * return 0 otherwise
+ */
+static unsigned int query_word_for_id(char *word) {
+  return 0;
+}
+
+/*
+ * wordid generator
+ */
+unsigned int get_word_id(char *word)
 {
   static int wordid = 0;
 
-  wordid++;
+  int wordid_query = 0;
+  wordid_query = query_word_for_id(word);
+  if (wordid_query > 0) {
+    wordid = wordid_query;
+  } else {
+    wordid++;
+  }
+  
   return wordid;
 }
 
