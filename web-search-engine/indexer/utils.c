@@ -98,3 +98,14 @@ void log_error(LOGGER_T *l, const char *fmt, ...)
   va_end(ap);
 }
 
+/*
+ * docid
+ */
+unsigned int get_doc_id()
+{
+  static int docid = 0;
+
+  docid++;
+  return docid;
+}
+

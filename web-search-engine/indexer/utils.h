@@ -33,6 +33,10 @@ void log_warn(LOGGER_T *l, const char *fmt, ...);
 void log_error(LOGGER_T *l, const char *fmt, ...);
 // For logging
 
+// For docid
+unsigned int get_doc_id();
+// for docid
+
 // Global Index Table
 typedef struct __attribute__((__packed__)) {
   unsigned int word_id;
