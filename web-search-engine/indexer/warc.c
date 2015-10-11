@@ -152,6 +152,7 @@ static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
   if (buf == NULL) {
     return NULL;
   }
+  memset(buf, 0, length);
 
   #ifdef __DEBUG__
   int offset_before_read = ftell(fp);

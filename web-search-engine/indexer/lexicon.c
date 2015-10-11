@@ -27,21 +27,53 @@ static void process_lexicons_from_file(char *filename)
   printf("file: %s, fp: %p\n", filename, fp);
   while (1) {
 
+    // get the next WARC entry
     WARC_REC_T *p_warc = warc_get_next(fp);
     if (p_warc == NULL) {
       break;
     }
 
+    // skip the WARC records which is not "conversion" type
+    // the first record in WET file is always a meta entry which is not conversion
+    // or "text/plain" 
     if (strcmp(p_warc->header->warc_type, "conversion") != 0 || \
         strcmp(p_warc->header->content_type, "text/plain") != 0) {
       continue;
     }
 
-    printf("offset: %d\n", p_warc->offset);
-    printf("type: %s\n", p_warc->header->warc_type);
-    printf("cont-type: %s\n", p_warc->header->content_type);
-    printf("cont-lens: %d\n", p_warc->header->content_length);
+    // tokenize the WARC payload (page content)
+    // data is in p_warc->payload->data
+    // length is in p_warc->payload->length
+    //        or in p_warc->header->content_length
+    #ifdef __DEBUG__
+    assert(p_warc->payload->length == p_warc->header->content_length);
+    #endif
+
+    char *page_content = p_warc->payload->data;
+
+    TokenizerT *tokenizer;
+    tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\|;':\",.<>/?,.", page_content);
+
+    char *token = NULL;
+    while ( (token = TKGetNextToken(tokenizer)) ) {
+      size_t length = strlen(token);
+
+      int i;
+      for (i = 0; i < length; i++) {
+        char c = token[i];
+        if (isSpecialChar(c)) {
+          continue;
+        } else {
+          printf("%c", c);
+        }
+      }
+
+      printf("\n");
+    }
+
+    TKDestroy(tokenizer);
     
+    // dispose the WARC entry after consumption
     destroy_warc_rec(p_warc);
   }
   warc_close(fp);
