@@ -33,6 +33,20 @@ void log_warn(LOGGER_T *l, const char *fmt, ...);
 void log_error(LOGGER_T *l, const char *fmt, ...);
 // For logging
 
+// For docid
+unsigned int get_doc_id();
+// For docid
+
+// For wordid
+struct _wordid_hashtree_node_ {
+  char chr;
+  unsigned int wordid;
+  struct _wordid_hashtree_node_ *next[62];
+};
+
+unsigned int get_word_id(char *word);
+// For wordid
+
 // Global Index Table
 typedef struct __attribute__((__packed__)) {
   unsigned int word_id;

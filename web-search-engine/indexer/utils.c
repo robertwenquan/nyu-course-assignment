@@ -98,3 +98,41 @@ void log_error(LOGGER_T *l, const char *fmt, ...)
   va_end(ap);
 }
 
+/*
+ * docid generator
+ */
+unsigned int get_doc_id()
+{
+  static int docid = 0;
+
+  docid++;
+  return docid;
+}
+
+/*
+ * query from word dictionary
+ * return wordid if exists
+ * return 0 otherwise
+ */
+static unsigned int query_word_for_id(char *word) {
+  return 0;
+}
+
+/*
+ * wordid generator
+ */
+unsigned int get_word_id(char *word)
+{
+  static int wordid = 0;
+
+  int wordid_query = 0;
+  wordid_query = query_word_for_id(word);
+  if (wordid_query > 0) {
+    wordid = wordid_query;
+  } else {
+    wordid++;
+  }
+  
+  return wordid;
+}
+
