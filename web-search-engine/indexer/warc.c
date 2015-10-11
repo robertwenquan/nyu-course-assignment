@@ -38,7 +38,6 @@ FILE * warc_open(char *filename) {
 
   fseek(fp, 0, SEEK_SET);
 
-  printf("good...\n");
   return fp;
 }
 
@@ -162,7 +161,6 @@ static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
   char *buf_work = buf;
   while (nremain > 0 && feof(fp) == 0) {
     int nbytes = fread(buf, 1, nremain, fp);
-    printf("BBBB read %d bytes\n", nbytes);
     nremain -= nbytes;
     buf_work += nbytes;
   }
