@@ -148,11 +148,16 @@ static WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
  * raw data and its length will be stored in WARC_PAYLOAD_T
  */
 static WARC_PAYLOAD_T * parse_warc_payload (FILE* fp, int length) {
-  char *buf = (char *) malloc(length);
+  // FIXME: the (length + 1) is not a good idea
+  // This is just a workaround for the bugged tokenizer
+  // because it works beyond the boundary of the given buffer
+  // and will cause unpredictable behavior
+  // Eventually the bug should be fixed in the tokenizer
+  char *buf = (char *) malloc(length + 1);
   if (buf == NULL) {
     return NULL;
   }
-  memset(buf, 0, length);
+  memset(buf, 0, length + 1);
 
   #ifdef __DEBUG__
   int offset_before_read = ftell(fp);
