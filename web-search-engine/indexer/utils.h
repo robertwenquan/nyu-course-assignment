@@ -5,6 +5,8 @@
 #include <time.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
 
 // For logging
 // credit from https://github.com/drfeelngood/logger/
