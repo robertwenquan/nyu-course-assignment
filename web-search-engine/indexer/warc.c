@@ -54,9 +54,16 @@ static void parse_kv_pair(char *buf, char *key, char *val, int buf_len, int key_
   strncpy(key, pkey, key_len);
 
   char *pval = buf + strlen(key) + 1;
+  while (*pval == ' ' || *pval == '\t') {
+    pval++;
+  }
   strncpy(val, pval, val_len);
-  // remove the trailing "\r\n"
-  val[strlen(val) - 2] = '\0';
+
+  // remove the trailing "\r\n" or "\r" or "\n"
+  while (*val != '\r' && *val != '\n') {
+    val++;
+  }
+  *val = '\0';
 
   return;
 }
