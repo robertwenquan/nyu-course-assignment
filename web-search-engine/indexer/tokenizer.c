@@ -182,7 +182,7 @@ char *TKGetNextToken(TokenizerT *tk) {
  * Each token should be printed on a separate line.
  */
 
-#ifdef __TEST__
+#ifdef __TEST_TOKENIZER_
 int main(int argc, char **argv) {
   if (argc < 3) {
     fprintf(stderr, "Too few => error\n");
