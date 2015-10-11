@@ -17,6 +17,9 @@ The search engine will have all the basic components of a common text search eng
   * web search engines
   * food websites
   * supermarket websites
+  * restaurant homepages
+  * stock photos
+  * social media
   * wikipedia
   * misc
 
@@ -31,4 +34,3 @@ The search engine will have all the basic components of a common text search eng
 * Ranking
  * ranking based on similarity of concept
  * ranking based on visual similarity
-
