@@ -3,11 +3,12 @@
 
 typedef struct {
   unsigned int length;
-  unsigned char warc_ver[8];
-  unsigned char warc_type[16];
-  unsigned char content_type[32];
-  unsigned char *url;
-  unsigned char *data;
+  char warc_ver[8];
+  char warc_type[16];
+  char content_type[32];
+  unsigned int content_length;
+  char url[512];
+  char *data;
 } WARC_HDR_T;
 
 typedef struct {
@@ -18,8 +19,8 @@ typedef struct {
 typedef struct {
   unsigned int offset;
 
-  WARC_HDR_T header;
-  WARC_PAYLOAD_T payload;
+  WARC_HDR_T * header;
+  WARC_PAYLOAD_T * payload;
 } WARC_REC_T;
 
 
