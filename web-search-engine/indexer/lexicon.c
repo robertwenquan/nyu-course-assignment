@@ -40,7 +40,13 @@ void process_lexicons_from_file(char *filename)
       break;
     }
     printf("offset: %d\n", p_warc->offset);
+    printf("type: %s\n", p_warc->header->warc_type);
+    printf("cont-type: %s\n", p_warc->header->content_type);
+    printf("cont-lens: %d\n", p_warc->header->content_length);
+    
+    destroy_warc_rec(p_warc);
   }
+  warc_close(fp);
 
   return;
 }
