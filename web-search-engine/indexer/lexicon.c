@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 
-char** get_lexicon_files()
+static char** get_lexicon_files()
 {
   // hard-coded input data
   char **pp_flist = (char **)malloc(sizeof(char *) * 4);
@@ -21,17 +21,8 @@ char** get_lexicon_files()
   return pp_flist;
 }
 
-void process_lexicons_from_file(char *filename)
+static void process_lexicons_from_file(char *filename)
 {
-  /*
-  if is_compressed_with_gzip(filename)
-  {
-    data
-  }
-
-  data = read_data(filename);
-   */
-
   FILE * fp = warc_open(filename);
   printf("file: %s, fp: %p\n", filename, fp);
   while (1) {
