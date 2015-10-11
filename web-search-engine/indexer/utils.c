@@ -109,3 +109,11 @@ unsigned int get_doc_id()
   return docid;
 }
 
+unsigned int get_word_id()
+{
+  static int wordid = 0;
+
+  wordid++;
+  return wordid;
+}
+

@@ -26,7 +26,7 @@ static char** get_lexicon_files()
  * with filtering strategy
  * and generate lexicons
  */
-static void tokenize_page_content(char *buffer, int size)
+static void tokenize_page_content(char *buffer, int size, unsigned int docid)
 {
     TokenizerT *tokenizer = NULL;
     tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\|;':\",.<>/?,.", buffer);
@@ -56,7 +56,8 @@ static void tokenize_page_content(char *buffer, int size)
         continue;
       }
 
-      printf("%s\n", token);
+      unsigned int wordid = get_word_id();
+      printf("wordid: %d, docid: %d, %s\n", wordid, docid, token);
     }
 
     TKDestroy(tokenizer);
@@ -68,8 +69,7 @@ static void process_lexicons_from_file(char *filename)
 {
   FILE * fp = warc_open(filename);
 
-  unsigned int docid = get_doc_id();
-  printf("file: %s, fp: %p, docid: %u\n", filename, fp, docid);
+  printf("file: %s, fp: %p\n", filename, fp);
 
   while (1) {
 
@@ -97,9 +97,10 @@ static void process_lexicons_from_file(char *filename)
 
     char *page_content = p_warc->payload->data;
     int page_lens = p_warc->payload->length;
+    unsigned int docid = get_doc_id();
 
     // tokenize lexicons from page
-    tokenize_page_content(page_content, page_lens);
+    tokenize_page_content(page_content, page_lens, docid);
 
     // dispose the WARC entry after consumption
     destroy_warc_rec(p_warc);
