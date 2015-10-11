@@ -213,13 +213,13 @@ char* merge_files(char* inputlist, char* outlist) {
        Prepared for next level merge */ 
     sprintf(outfile, "%s%d", outlist, numFile);
     sprintf(outgit, "%s%s", outfile, ".git");
-    ioBufs[degree].fgit = fopen(outgit, "a");
+    ioBufs[degree].fgit = fopen(outgit, "w");
     if (ioBufs[degree].fgit == NULL) {
       printf("%s doesn't exist\n", outgit);
       return NULL;
     }
     sprintf(outmit, "%s%s", outfile, ".mit");
-    ioBufs[degree].fmit= fopen(outmit, "a");
+    ioBufs[degree].fmit= fopen(outmit, "w");
     if (ioBufs[degree].fmit == NULL) {
       printf("%s doesn't exist\n", outmit);
       return NULL;
