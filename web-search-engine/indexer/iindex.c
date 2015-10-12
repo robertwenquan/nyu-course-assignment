@@ -17,6 +17,7 @@ GIT_T * cur_git;
 MIT_T * cur_mit;
 IIDX_T * cur_iidx;
 LEXICON_T * cur_lex;
+FILE *f_git = NULL, *f_mit = NULL, *f_iidx = NULL, *f_lex = NULL;
 
 static void print_help(char * argv[]);
 int initiate_global();
@@ -71,9 +72,13 @@ int index_merger()
 #ifdef __TEST__
 int main(int argc, char * argv[])
 {
-  index_builder();
-
   int ret = 0;
+  int numFile = 0;
+  char inputlist[1024] = {'\0'};
+  char filename[1024] = {'\0'};
+  char outprefix[1024] = {'\0'};
+  FILE * fin;
+
   if (argc != 3) {
     print_help(argv);
     return EXIT_FAILURE;
@@ -84,6 +89,67 @@ int main(int argc, char * argv[])
     return EXIT_FAILURE;
   }
 
+  if (argc != 3) {
+    print_help(argv);
+    return EXIT_FAILURE;
+  }
+
+  ret = initiate_global();
+  if (ret == -1) {
+    return EXIT_FAILURE;
+  }
+
+  strcpy(inputlist, argv[1]);
+
+  fin = fopen(inputlist, "r");
+  if (fin == NULL) {
+    printf("Open file %s failed", inputlist);
+    return EXIT_FAILURE;
+  }
+
+  while (!feof(fin)) {
+    ret = fscanf(fin, "%s", filename);
+    if(feof(fin)){
+      break;
+    }
+    if (ret == -1) {
+      return EXIT_FAILURE;
+    }
+
+    f_lex = fopen(filename, "r");
+    if (f_lex == NULL) {
+      return EXIT_FAILURE;
+    }
+
+    sprintf(outprefix, "%s%d", argv[2], numFile);
+
+    sprintf(filename, "%s%s", outprefix, ".git");
+    f_git = fopen(filename, "w");
+    if (f_git == NULL) {
+      return EXIT_FAILURE;
+    }
+
+    sprintf(filename, "%s%s", outprefix, ".mit");
+    f_mit = fopen(filename, "w");
+    if (f_mit == NULL) {
+      return EXIT_FAILURE;
+    }
+
+    sprintf(filename, "%s%s", outprefix, ".iidx");
+    f_iidx = fopen(filename, "w");
+    if (f_iidx == NULL) {
+      return EXIT_FAILURE;
+    }
+
+    index_builder();
+
+    fclose(f_iidx);
+    fclose(f_mit);
+    fclose(f_git);
+    fclose(f_lex);
+
+    numFile++;
+  }
   return EXIT_SUCCESS;
 }
 #endif
