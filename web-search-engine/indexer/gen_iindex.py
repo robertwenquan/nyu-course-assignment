@@ -101,8 +101,13 @@ class InvertedIndex(object):
     offset_in_mit = offset_in_git = 0
 
     for lexicon in self.iter_lexicon():
+
       word_id, docid, offset, ctx = lexicon
       #print word_id, docid, offset, ctx
+
+      if count_in_mit >= 255 and word_id == word_id_curr:
+        print 'word %d HIGH count %d in doc %d' % (word_id, count_in_mit, docid)
+        continue
 
       # word_id and docid initialization
       if word_id_curr == -1:
@@ -116,7 +121,7 @@ class InvertedIndex(object):
       if word_id != word_id_curr:
 
         # write back mit
-        print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
+        #print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
         data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
         self.write_mit(data_mit)
         count_in_git += 1
@@ -135,7 +140,7 @@ class InvertedIndex(object):
         count_in_git = 0
 
         # write the inverted index
-        print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
+        #print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
         data_iidx = pack(self.iidx_schema, offset)
         self.write_iidx(data_iidx)
 
@@ -147,7 +152,7 @@ class InvertedIndex(object):
       # where offset is the start offset for this doc
       # and n_occur is number of occurrences of the word in this doc
       if docid != docid_curr:
-        print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
+        #print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
         data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
         self.write_mit(data_mit)
         count_in_git += 1
@@ -157,14 +162,14 @@ class InvertedIndex(object):
         count_in_mit = 1
 
         # write the inverted index
-        print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
+        #print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
         data_iidx = pack(self.iidx_schema, offset)
         self.write_iidx(data_iidx)
 
         continue
       
       # write the inverted index
-      print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
+      #print 'write INDEX entry:', self.iidx_schema, word_id_curr, docid_curr, offset
       data_iidx = pack(self.iidx_schema, offset)
       self.write_iidx(data_iidx)
 
@@ -172,7 +177,7 @@ class InvertedIndex(object):
 
     else:
 
-      print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
+      #print 'write MIT entry:', self.mit_schema, word_id_curr, docid_curr, offset_in_mit, count_in_mit
       data_mit = pack(self.mit_schema, docid_curr, offset_in_mit, count_in_mit)
       self.write_mit(data_mit)
 
