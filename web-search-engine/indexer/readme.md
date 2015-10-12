@@ -127,6 +127,7 @@ There are a few core data structures we use for the inverted index building.
   * After constructint Index:
    * One word occured once in .git file, followed with offset in .mit file, point to docs contain the word 
    * One doc for each word occured once in .mit file, followed with offset in .iidx file, point to places of this word occured in this doc
+  * Compress offset of word in each doc by only record difference with its previous one.
 
   * INPUT: sorted lexicon file
   * OUTPUT: inverted index(three files):
@@ -141,7 +142,7 @@ There are a few core data structures we use for the inverted index building.
 	:------:|:------:|:----:
 		1   |    1   |  1
 		1   |    1   |  3
-		1   |    1   |  5
+		1   |    1   |  4
 		1   |    2   |  1
 
    * .git:
@@ -163,8 +164,8 @@ There are a few core data structures we use for the inverted index building.
     word_id |  
 	  :------:|
 	    	1   |
-	    	3   |
-	    	5   |
+	    	2   |
+	    	1   |
 	    	1   |
 
 
