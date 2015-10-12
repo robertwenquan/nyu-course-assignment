@@ -102,14 +102,14 @@ This document describes the design of the inverted index builder.
 
  * Index Merging
   * INPUT: List of (.git, .mit) files need to be merged.
-  * OUTPUT: one (.git, .mit) file.
+  * OUTPUT: one pair of (.git, .mit) file.
 
   * Define how many ways to merge, like 8-way, merge at most 8 files each time.
   * Define how much memory space to use.
   * Rewrit .git file and keep one record of same word, add up n_docs, update offset in .mit.
   * Rewrit .mit file, let all docs with same word together.
-  * Keep .iidx the same, since these files are large so that it's time consuming to merge together.
-  
+  * Keep .iidx the same, since these files are large so that it's time consuming to merge together, and it's easy to maintain when updating index. 
+
  * Index bucketing
 
 
