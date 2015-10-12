@@ -11,8 +11,7 @@
 #include <glob.h>
 #include "utils.h"
 
-//char BASE_DIR[] = "/data/wse/1m/";
-char BASE_DIR[] = "test_data/";
+char BASE_DIR[] = "/data/wse/100k/";
 
 void * uncompress(char *filename)
 {
