@@ -21,6 +21,9 @@ FILE *f_git = NULL, *f_mit = NULL, *f_iidx = NULL, *f_lex = NULL;
 
 static void print_help(char * argv[]);
 int initiate_global();
+void update_git();
+void update_mit();
+void update_iidx();
 
 static void print_help(char *argv[]) {
   printf("Help.\n");
@@ -60,9 +63,55 @@ int initiate_global(){
 
 int index_builder()
 {
+  int ret = 0;
+  int mit_offset = 0;
+  int git_offset = 0;
+  int count_in_git = 0;
+  int count_in_mit = 0;
+  int offset_in_git = 0;
+  int offset_in_mit = 0;
+
+  while (!feof(f_lex)) {
+    ret = fread(cur_lex, sizeof(LEXICON_T), 1, f_lex);
+    if (ret == 0) {
+      // Write cur_mit, cur_git back;
+      break;
+    }
+
+    // SET OFFSET WHEN CREATE NEW GIT OR MIT, UPDATE COUNT WHEN WRITE BACK TO FILE
+    if (cur_lex->word_id != cur_git->word_id) {
+      //write cur_git to f_git, update with cur_lec
+      update_git();
+      //write cur_mit to f_mit, update with cur_lec
+      update_mit();
+      update_iidx();
+      break;
+    }
+
+    if (cur_lex->docid != cur_mit->docid) {
+      //update count_in_git
+      update_git();
+      //write cur_mit to f_mit, update with cur_lec 
+      update_mit();
+      update_iidx();
+      break;
+    }
+
+    //update count_in_mit
+    update_mit();
+    update_iidx();
+  }
   return 0;
 }
-
+void update_git(){
+  return;
+}
+void update_mit(){
+  return;
+}
+void update_iidx(){
+  return;
+}
 int index_merger()
 {
   return 0;
