@@ -2,6 +2,7 @@
 #define _iigen_lexicon_h
 
 #include <stdio.h>
+#include <ctype.h>
 #include "warc.h"
 #include "utils.h"
 #include "tokenizer.h"

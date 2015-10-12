@@ -86,8 +86,8 @@ static WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
   char url[512] = {'\0'};
 
   while (1) {
-    fgets(buf, 1024, fp);
-    if (strncmp(buf, "\r\n", 2) == 0) {
+    char *ptr = fgets(buf, 1024, fp);
+    if (ptr == NULL || strncmp(buf, "\r\n", 2) == 0) {
       break;
     }
 
@@ -202,7 +202,8 @@ WARC_REC_T * warc_get_next(FILE *warc_fp) {
   // find the WARC header
   while (strcmp(buf, "WARC/1.0\r\n") != 0 && feof(warc_fp) == 0) {
     off_start = ftell(warc_fp);
-    fgets(buf, 1024, warc_fp);
+    char *ptr = fgets(buf, 1024, warc_fp);
+    ptr += 1; // get rid of warning
   }
 
   if (feof(warc_fp) != 0) {
