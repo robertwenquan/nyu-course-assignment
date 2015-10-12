@@ -2,8 +2,14 @@
 # Makefile for iigen
 #
 
+UNAME := $(shell uname)
+
 CC = gcc
-CFLAGS = -g -O2 -Wall -D__DEBUG__
+ifeq ($(UNAME), Linux)
+CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__LINUX__
+else
+CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__MACOS__
+endif
 
 OBJS = iigen.o lexicon.o iindex.o utils.o warc.o merge.o tokenizer.o
 BINS = iigen lexicon_gen iindex_gen iindex_merge
