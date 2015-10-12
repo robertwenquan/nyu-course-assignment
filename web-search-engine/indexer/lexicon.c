@@ -165,7 +165,7 @@ int lexicon_generator()
     return 1;
   }
 
-  int nthreads = 4;
+  int nthreads = 1;
   pthread_t thr[nthreads];
   int thr_idx = 0;
 
