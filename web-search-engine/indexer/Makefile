@@ -21,6 +21,12 @@ iigen:  $(OBJS)
 lexicon_gen:  lexicon_test.o warc_test.o tokenizer.o utils.o
 	$(CC) -o $@ lexicon_test.o warc_test.o tokenizer.o utils.o
 
+iindex_gen:  iindex_test.o utils.o
+	$(CC) $(CFLAGS) -D__TEST__ -o $@ iindex_test.o utils.o
+
+iindex_merge:  merge.c
+	$(CC) $(CFLAGS) -D__TEST__ -o $@ $<
+
 lexicon_test.o:  lexicon.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
@@ -30,14 +36,11 @@ warc_test.o:  warc.c
 tokenizer.o:  tokenizer.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
-utils.o:  utils.c
+iindex_test.o:  iindex.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
-iindex_gen:  iindex.c
-	$(CC) $(CFLAGS) -D__TEST__ -o $@ $<
-
-iindex_merge:  merge.c
-	$(CC) $(CFLAGS) -D__TEST__ -o $@ $<
+utils.o:  utils.c
+	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
 clean:  
 	rm -fr $(BINS) $(OBJS) *.dSYM *.pyc tests/*.pyc *.o &>/dev/null
