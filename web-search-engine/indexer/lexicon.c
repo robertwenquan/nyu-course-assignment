@@ -31,7 +31,9 @@ static void tokenize_page_content(char *buffer, int size, unsigned int docid)
     TokenizerT *tokenizer = NULL;
     tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\|;':\",.<>/?,.", buffer);
 
+    char *pmatch = buffer;
     char *token = NULL;
+    unsigned int offset = 0;
     while ( (token = TKGetNextToken(tokenizer)) ) {
 
       // skip all non alpha num words
@@ -57,7 +59,14 @@ static void tokenize_page_content(char *buffer, int size, unsigned int docid)
       }
 
       unsigned int wordid = get_word_id(token);
-      printf("wordid: %d, docid: %d, %s\n", wordid, docid, token);
+      pmatch = strstr(pmatch, token);
+      offset = pmatch - buffer;
+
+      #ifdef __DEBUG__
+      assert(strncmp(token, pmatch, strlen(token)) == 0);
+      #endif
+
+      printf("wordid: %d, docid: %d, %s, start %p, offset %u\n", wordid, docid, token, buffer, offset);
     }
 
     TKDestroy(tokenizer);
