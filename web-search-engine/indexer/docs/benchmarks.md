@@ -3,9 +3,9 @@
 ##### Test configuration
 
 * Google Cloud Instance
- * 16 vcpu
- * 16 GB RAM
- * 300 GB SSD
+ * 32 vcpu
+ * 200 GB RAM
+ * 1 TB SSD backed storage
 
 ##### 30 dataset
 lexicon generation  0m0.095s
