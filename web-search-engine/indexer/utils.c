@@ -13,7 +13,7 @@
 #include "utils.h"
 
 //char BASE_DIR[] = "/data/wse/1m/";
-char BASE_DIR[] = "/dev/shm/100k/";
+char BASE_DIR[] = "test_data/";
 
 void * uncompress(char *filename)
 {
