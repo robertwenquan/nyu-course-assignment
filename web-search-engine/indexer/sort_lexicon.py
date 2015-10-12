@@ -22,6 +22,7 @@ from operator import itemgetter
 
 BASE_DIR = '/data/wse/100k'
 BASE_DIR = './test_data'
+BASE_DIR = '/data/wse/1m'
 
 # test data path for phase1
 LEXICON_PATH = os.path.join(BASE_DIR, 'phase1_output')
@@ -101,6 +102,14 @@ def sort_lexicon(filename):
 
 def main():
   """ main routine """
+
+  if not os.path.exists(SORTED_LEXICON_PATH):
+    try:
+      os.mkdir(SORTED_LEXICON_PATH)
+    except Exception:
+      print 'Error making %s, exiting.' % SORTED_LEXICON_PATH
+      return
+
   for lexicon in get_lexicon_files():
     sort_lexicon(lexicon)
 
