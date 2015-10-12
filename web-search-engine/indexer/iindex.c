@@ -21,21 +21,6 @@ LEXICON_T * cur_lex;
 static void print_help(char * argv[]);
 int initiate_global();
 
-int main(int argc, char * argv[]){
-  int ret = 0;
-  if (argc != 3) {
-    print_help(argv);
-    return EXIT_FAILURE;
-  }
-
-  ret = initiate_global();
-  if (ret == -1) {
-    return EXIT_FAILURE;
-  }
-
-  return EXIT_SUCCESS;
-}
-
 static void print_help(char *argv[]) {
   printf("Help.\n");
   printf(" %s <finlist> <outputfileprefix>\n", argv[0]);
@@ -84,10 +69,22 @@ int index_merger()
 
 
 #ifdef __TEST__
-int main(int argc, char *argv[])
+int main(int argc, char * argv[])
 {
   index_builder();
-  return 0;
+
+  int ret = 0;
+  if (argc != 3) {
+    print_help(argv);
+    return EXIT_FAILURE;
+  }
+
+  ret = initiate_global();
+  if (ret == -1) {
+    return EXIT_FAILURE;
+  }
+
+  return EXIT_SUCCESS;
 }
 #endif
 
