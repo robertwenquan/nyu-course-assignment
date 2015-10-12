@@ -36,7 +36,10 @@ lexicon generation   7m54.576s
 index generation       40.341s
 index merging         1m6.245s
 
-##### 5M dataset (all in C)
-lexicon generation   
-index generation     
-index merging        
+##### 4M dataset (all in C)
+lexicon generation  32m10.631s 
+index generation     3m8.080s 
+index merging        3m1.799s 
+
+##### 10M dataset (all in C)
+
