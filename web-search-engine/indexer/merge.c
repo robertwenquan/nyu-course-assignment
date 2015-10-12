@@ -213,13 +213,13 @@ char* merge_files(char* inputlist, char* outlist) {
        Prepared for next level merge */ 
     sprintf(outfile, "%s%d", outlist, numFile);
     sprintf(outgit, "%s%s", outfile, ".git");
-    ioBufs[degree].fgit = fopen(outgit, "a");
+    ioBufs[degree].fgit = fopen(outgit, "w");
     if (ioBufs[degree].fgit == NULL) {
       printf("%s doesn't exist\n", outgit);
       return NULL;
     }
     sprintf(outmit, "%s%s", outfile, ".mit");
-    ioBufs[degree].fmit= fopen(outmit, "a");
+    ioBufs[degree].fmit= fopen(outmit, "w");
     if (ioBufs[degree].fmit == NULL) {
       printf("%s doesn't exist\n", outmit);
       return NULL;
@@ -322,7 +322,7 @@ int merge_cont(int degree) {
      Refill with the next element of this buffer block
      Until all the buffer block is empty. */
 
-  topElem = (GIT_T *)malloc(sizeof(GIT_T) * degree);
+  topElem = (GIT_T *)malloc(sizeof(GIT_T) * (degree + 1));
 
   // Initiate topElem[i] with the first record of each input file.
   int i;
