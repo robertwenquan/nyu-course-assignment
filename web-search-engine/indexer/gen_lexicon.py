@@ -49,10 +49,11 @@ from struct import pack
 
 
 # test dataset with 30k docs
-BASE_DIR = './test_data'
+#BASE_DIR = './test_data'
 
 # bigger dataset with 100k docs
 #BASE_DIR = '/data/wse/100k'
+BASE_DIR = '/data/wse/1m'
 
 WET_DIR = os.path.join(BASE_DIR, 'input')
 URL_TABLE_IDX = os.path.join(BASE_DIR, 'phase1_output/url_table.idx')
@@ -62,7 +63,6 @@ WORD_TABLE_IDX = os.path.join(BASE_DIR, 'phase1_output/word_table.idx')
 WORD_TABLE_DATA = os.path.join(BASE_DIR, 'phase1_output/word_table.data')
 
 LEXICON_PATH = os.path.join(BASE_DIR, 'phase1_output')
-# bigger dataset
 
 def get_wet_files():
   """ get a list of wet full path filenames """
@@ -181,6 +181,13 @@ class WordIndex(UrlIndex):
 
 def main():
   """ main routine """
+
+  if not os.path.exists(LEXICON_PATH):
+    try:
+      os.mkdir(LEXICON_PATH)
+    except Exception:
+      print 'Error making %s, exiting.' % LEXICON_PATH
+      return
 
   wet_files = get_wet_files()
   docid_gen = docid_generator()
