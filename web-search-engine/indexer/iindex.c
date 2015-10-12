@@ -164,7 +164,8 @@ void update_mit(int docid, int offset){
 }
 
 void write_iidx(int offset){
-  cur_lex->offset = offset;
+  cur_iidx->offset = offset;
+  fwrite(cur_iidx, sizeof(LEXICON_T), 1, f_iidx);
   return;
 }
 
