@@ -136,27 +136,37 @@ There are a few core data structures we use for the inverted index building.
 
   * For example:
    * Sorted lexicon:
-    word_id  doc_id  offset
-       1        1       1
-       1        1       3
-       1        1       5
-       1        2       1
+
+	word_id | doc_id | offset
+	:------:|:------:|:----:
+		1   |    1   |  1
+		1   |    1   |  3
+		1   |    1   |  5
+		1   |    2   |  1
 
    * .git:
-    word_id  offset  n_docs
-       1        0       2
+
+   	word_id | offset | n_docs
+  	:------:|:------:|:----:
+	  	1   |    0   |  2
 
    * .mit:
-    doc_id   offset  n_places
-       1        0       3
-       2        3       1
+
+   	doc_id | offset | n_places
+	  :------:|:------:|:----:
+	  	1   |    0   |  3
+	  	2   |    3   |  1
+
 
    * .iidx:
-     offset
-       1
-       3
-       5
-       1
+
+    word_id |  
+	  :------:|
+	    	1   |
+	    	3   |
+	    	5   |
+	    	1   |
+
 
  * Index Merging
   * INPUT: List of (.git, .mit) files need to be merged.
