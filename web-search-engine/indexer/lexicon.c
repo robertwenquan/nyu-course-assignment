@@ -6,88 +6,9 @@
 #include <unistd.h>
 #include <string.h>
 #include <glob.h>
-#include <sys/stat.h>
-
-char BASE_DIR[] = "/data/wse/1m/";
 
 static int lexicon_compare(const void *p1, const void *p2);
 
-
-/*
- * get input file list to work on for lexicon generation
- *
- * input will be in ${BASE_DIR}/input/ *.wet
- * output will be in ${BASE_DIR}/output/ *.lexicon
- *
- * return value:
- *  an array of char * with full path filenames
- *    two filenames are in a group
- *    [input1, output1, input2, output2, input3, output3, ...]
- */
-static char ** get_lexicon_files()
-{
-  char input_dir[256] = {'\0'};
-  snprintf(input_dir, 256, "%s%s", BASE_DIR, "input/");
-  char output_dir[256] = {'\0'};
-  snprintf(output_dir, 256, "%s%s", BASE_DIR, "output/");
-
-  char input_globstr[256] = {'\0'};
-  snprintf(input_globstr, 256, "%s%s", input_dir, "*.wet");
-
-  glob_t results;
-  glob(input_globstr, 0, NULL, &results);
-  if (results.gl_pathc == 0) {
-    return NULL;
-  }
-
-  char **pp_flist = (char **)malloc(sizeof(char *) * results.gl_pathc*2+1);
-  char **pp_flist_saved = pp_flist;
-
-  char output_file[256] = {'\0'};
-  mkdir(output_dir, 0755);
-
-  int i = 0;
-  for (i = 0; i < results.gl_pathc; i++) {
-
-    // for input filename
-    *pp_flist = (char *)malloc(strlen(results.gl_pathv[i])+1);
-    memset(*pp_flist, 0, strlen(results.gl_pathv[i])+1);
-    strncpy(*pp_flist, results.gl_pathv[i], strlen(results.gl_pathv[i]));
-    pp_flist++;
-
-    // for output filename in pair
-    snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".lexicon");
-    *pp_flist = (char *)malloc(strlen(output_file)+1);
-    memset(*pp_flist, 0, strlen(output_file)+1);
-    strncpy(*pp_flist, output_file, strlen(output_file));
-    pp_flist++;
-  }
-  // for the last filename pointer, put NULL for terminator
-  *pp_flist = NULL;
-
-  globfree(&results);
-
-  return pp_flist_saved;
-}
-
-/*
- * free file list memory buffers
- */
-static void free_lexicon_files(char **pfiles)
-{
-  if (pfiles == NULL) {
-    return;
-  }
-
-  char **p_saved = pfiles;
-
-  while (*pfiles != NULL) {
-    free(*pfiles);
-    pfiles++;
-  }
-
-  free(p_saved);
-}
 
 /*
  * write back one lexicon to file
@@ -218,7 +139,7 @@ static void process_lexicons_from_file(char *infile, char *outfile)
 
 int lexicon_generator()
 {
-  char **p = get_lexicon_files();
+  char **p = get_inout_filelist(LEXICON_GENERATION);
   char **p_save = p;
 
   if (p == NULL) {
@@ -230,7 +151,7 @@ int lexicon_generator()
     p += 2;
   }
 
-  free_lexicon_files(p_save);
+  free_inout_filelist(p_save);
   return 0;
 }
 

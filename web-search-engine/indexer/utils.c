@@ -8,7 +8,11 @@
  */
 
 #include <stdio.h>
+#include <glob.h>
 #include "utils.h"
+
+//char BASE_DIR[] = "/data/wse/1m/";
+char BASE_DIR[] = "test_data/";
 
 void * uncompress(char *filename)
 {
@@ -176,5 +180,125 @@ static unsigned int query_word_for_id(char *word)
 unsigned int get_word_id(char *word)
 {
   return query_word_for_id(word);
+}
+
+/*
+ * get input file list to work on for lexicon generation
+ *
+ * input will be in ${BASE_DIR}/input/ *.wet
+ * output will be in ${BASE_DIR}/output/ *.lexicon
+ *
+ * return value:
+ *  an array of char * with full path filenames
+ *    two filenames are in a group
+ *    [input1, output1, input2, output2, input3, output3, ...]
+ */
+char ** get_inout_filelist(PHASE_T phase)
+{
+  // set input path
+  char input_dir[256] = {'\0'};
+  if (phase == LEXICON_GENERATION) {
+    snprintf(input_dir, 256, "%s%s", BASE_DIR, "input/");
+  } else {
+    snprintf(input_dir, 256, "%s%s", BASE_DIR, "output/");
+  }
+
+  // set output path
+  char output_dir[256] = {'\0'};
+  snprintf(output_dir, 256, "%s%s", BASE_DIR, "output/");
+
+  // set glob string based on phase
+  char input_globstr[256] = {'\0'};
+  if (phase == LEXICON_GENERATION) {
+    snprintf(input_globstr, 256, "%s%s", input_dir, "*.wet");
+  } else if (phase == IINDEX_GENERATION) {
+    snprintf(input_globstr, 256, "%s%s", input_dir, "*.lexicon");
+  } else if (phase == IINDEX_MERGING) {
+    snprintf(input_globstr, 256, "%s%s", input_dir, "*.git");
+  } else {
+    // bugged, never going here
+    abort();
+  }
+
+  glob_t results;
+  glob(input_globstr, 0, NULL, &results);
+  if (results.gl_pathc == 0) {
+    return NULL;
+  }
+
+  int times = 0;
+  if (phase == LEXICON_GENERATION) {
+    times = 2;
+  } else if (phase == IINDEX_GENERATION) {
+    times = 4;
+  }
+
+  char **pp_flist = (char **)malloc(sizeof(char *) * results.gl_pathc*times+1);
+  char **pp_flist_saved = pp_flist;
+
+  char output_file[256] = {'\0'};
+  mkdir(output_dir, 0755);
+
+  int i = 0;
+  for (i = 0; i < results.gl_pathc; i++) {
+
+    // for input filename
+    *pp_flist = (char *)malloc(strlen(results.gl_pathv[i])+1);
+    memset(*pp_flist, 0, strlen(results.gl_pathv[i])+1);
+    strncpy(*pp_flist, results.gl_pathv[i], strlen(results.gl_pathv[i]));
+    pp_flist++;
+
+    // for output filename in pair
+    if (phase == LEXICON_GENERATION) {
+      snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".lexicon");
+      *pp_flist = (char *)malloc(strlen(output_file)+1);
+      memset(*pp_flist, 0, strlen(output_file)+1);
+      strncpy(*pp_flist, output_file, strlen(output_file));
+      pp_flist++;
+    } else if (phase == IINDEX_GENERATION) {
+      snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".git");
+      *pp_flist = (char *)malloc(strlen(output_file)+1);
+      memset(*pp_flist, 0, strlen(output_file)+1);
+      strncpy(*pp_flist, output_file, strlen(output_file));
+      pp_flist++;
+
+      snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".mit");
+      *pp_flist = (char *)malloc(strlen(output_file)+1);
+      memset(*pp_flist, 0, strlen(output_file)+1);
+      strncpy(*pp_flist, output_file, strlen(output_file));
+      pp_flist++;
+
+      snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".iidx");
+      *pp_flist = (char *)malloc(strlen(output_file)+1);
+      memset(*pp_flist, 0, strlen(output_file)+1);
+      strncpy(*pp_flist, output_file, strlen(output_file));
+      pp_flist++;
+    }
+  }
+  // for the last filename pointer, put NULL for terminator
+  *pp_flist = NULL;
+
+  globfree(&results);
+
+  return pp_flist_saved;
+}
+
+/*
+ * free file list memory buffers
+ */
+void free_inout_filelist(char **pfiles)
+{
+  if (pfiles == NULL) {
+    return;
+  }
+
+  char **p_saved = pfiles;
+
+  while (*pfiles != NULL) {
+    free(*pfiles);
+    pfiles++;
+  }
+
+  free(p_saved);
 }
 
