@@ -8,7 +8,7 @@
 #include <glob.h>
 #include <sys/stat.h>
 
-char BASE_DIR[] = "test_data/";
+char BASE_DIR[] = "/data/wse/1m/";
 
 static int lexicon_compare(const void *p1, const void *p2);
 
@@ -105,7 +105,7 @@ static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
 static void tokenize_page_content(char *buffer, int size, unsigned int docid, FILE *fpo)
 {
     TokenizerT *tokenizer = NULL;
-    tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\\|;':\",.<>/?,.", buffer);
+    tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\\|;':\",.<>/?", buffer, size);
 
     char *pmatch = buffer;
     char *token = NULL;
@@ -207,7 +207,6 @@ static void process_lexicons_from_file(char *infile, char *outfile)
 
   struct stat st;
   fstat(fd, &st);
-  assert(st.st_size > 0);
 
   void *src = mmap (0, st.st_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
   assert(src != NULL);
