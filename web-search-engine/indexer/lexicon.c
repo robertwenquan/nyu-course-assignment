@@ -12,8 +12,8 @@ char BASE_DIR[] = "test_data/";
 /*
  * get input file list to work on for lexicon generation
  *
- * input will be in ${BASE_DIR}/input/*.wet
- * output will be in ${BASE_DIR}/output/*.lexicon
+ * input will be in ${BASE_DIR}/input/ *.wet
+ * output will be in ${BASE_DIR}/output/ *.lexicon
  *
  * return value:
  *  an array of char * with full path filenames
@@ -86,7 +86,7 @@ static void write_back_lexicon(LEXICON_T lex)
 static void tokenize_page_content(char *buffer, int size, unsigned int docid)
 {
     TokenizerT *tokenizer = NULL;
-    tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\|;':\",.<>/?,.", buffer);
+    tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\\|;':\",.<>/?,.", buffer);
 
     char *pmatch = buffer;
     char *token = NULL;
