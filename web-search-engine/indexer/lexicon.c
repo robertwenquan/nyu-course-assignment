@@ -15,7 +15,17 @@ static int lexicon_compare(const void *p1, const void *p2);
  */
 static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
 {
-  fwrite(&lex, sizeof(LEXICON_T), 1, fpo);
+  static char buffer[8*1024*1024] = {'\0'};
+  static unsigned int offset = 0;
+
+  if (offset + sizeof(LEXICON_T) >= 8*1024*1024) {
+    int ret = fwrite(buffer, offset, 1, fpo);
+    assert(ret == 1);
+    offset = 0;
+  }
+
+  memcpy(buffer + offset, &lex, sizeof(LEXICON_T));
+  offset += sizeof(LEXICON_T);
 }
 
 /*
@@ -118,7 +128,6 @@ static void process_lexicons_from_file(char *infile, char *outfile)
     // dispose the WARC entry after consumption
     destroy_warc_rec(p_warc);
   }
-  fflush(fpo);
   fclose(fpo);
   warc_close(fp);
 
