@@ -118,7 +118,7 @@ int gen_iindex()
       continue;
     }
 
-    if (count_in_mit > 32767) {
+    if (count_in_mit > 255) {
       continue;
     }
 
