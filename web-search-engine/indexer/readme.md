@@ -19,10 +19,8 @@ In this programming assignment, we have achieved to index 4 million docs from Co
  * IO efficient
   * use word id to compress the index
   * use relative offset to doc to compress the index
-  * use double relative offset to further compress the index
+  * use double relative offset to further compress the index, with 60% saving
   * use ?? to compress the offset further
-  * use compressed word id?
-  * use compressed doc id?
 
  * Flexible input format
   * support both .gz and uncompressed format
