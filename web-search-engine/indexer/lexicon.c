@@ -10,6 +10,9 @@
 
 char BASE_DIR[] = "test_data/";
 
+static int lexicon_compare(const void *p1, const void *p2);
+
+
 /*
  * get input file list to work on for lexicon generation
  *
@@ -194,7 +197,22 @@ static void process_lexicons_from_file(char *infile, char *outfile)
     // dispose the WARC entry after consumption
     destroy_warc_rec(p_warc);
   }
+  fflush(fpo);
+  fclose(fpo);
   warc_close(fp);
+
+  // sort the lexicon in place
+  int fd = open(outfile, O_RDWR);
+  assert(fd > 0);
+
+  struct stat st;
+  fstat(fd, &st);
+  assert(st.st_size > 0);
+
+  void *src = mmap (0, st.st_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
+  assert(src != NULL);
+  qsort(src, st.st_size / sizeof(LEXICON_T), sizeof(LEXICON_T), lexicon_compare);
+  close(fd);
 
   return;
 }
@@ -275,7 +293,7 @@ static int lexicon_compare(const void *p1, const void *p2)
  * in docid order, and then offset order
  *
  */
-int lexicon_sorter()
+static int lexicon_sorter()
 {
   char *filename1 = "test_data/phase1_output/input1.warc.lexicon";
   char *filename2 = "test_data/phase2_output/input1.warc.lexicon.2";
@@ -330,7 +348,6 @@ int lexicon_sorter()
 int main(int argc, char *argv[])
 {
   lexicon_generator();
-  lexicon_sorter();
 
   return 0;
 }

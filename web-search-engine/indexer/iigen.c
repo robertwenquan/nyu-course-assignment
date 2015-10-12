@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
 
     default:
       lexicon_generator();
-      lexicon_sorter();
       index_builder();
       index_merger();
       break;
