@@ -177,7 +177,7 @@ void update_mit(int docid, int offset){
 
 void write_iidx(int offset, FILE *fdw){
   cur_iidx->offset = offset;
-  fwrite(cur_iidx, sizeof(LEXICON_T), 1, fdw);
+  fwrite(cur_iidx, sizeof(IIDX_T), 1, fdw);
   return;
 }
 
