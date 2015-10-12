@@ -6,7 +6,7 @@ UNAME := $(shell uname)
 
 CC = gcc
 ifeq ($(UNAME), Linux)
-CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__LINUX__
+CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__LINUX__ -lpthread
 else
 CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__MACOS__
 endif
@@ -17,6 +17,7 @@ BINS = iigen lexicon_gen iindex_gen iindex_merge
 all:  $(BINS)
 
 iigen:  $(OBJS)
+	$(CC) -o $@ $(OBJS) -lpthread
 
 lexicon_gen:  lexicon_test.o warc_test.o tokenizer.o utils.o
 	$(CC) -o $@ lexicon_test.o warc_test.o tokenizer.o utils.o -lpthread
