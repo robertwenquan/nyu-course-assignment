@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
+#include <assert.h>
 
 // For logging
 // credit from https://github.com/drfeelngood/logger/
@@ -38,11 +39,11 @@ unsigned int get_doc_id();
 // For docid
 
 // For wordid
-struct _wordid_hashtree_node_ {
+typedef struct _wordid_hashtree_node_ {
   char chr;
   unsigned int wordid;
   struct _wordid_hashtree_node_ *next[62];
-};
+} WORDID_HASHTREE_NODE_T;
 
 unsigned int get_word_id(char *word);
 // For wordid
