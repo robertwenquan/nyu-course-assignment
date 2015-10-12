@@ -15,36 +15,49 @@ In this programming assignment, we have achieved to index 4 million docs from Co
  * High-throughput
   * indexed 4 million documents in 40 minutes
   * 27 docs/sec indexing throughput
+
  * IO efficient
   * use word id to compress the index
   * use relative offset to doc to compress the index
   * use double relative offset to further compress the index
   * use ?? to compress the offset further
- * flexible input format
+  * use compressed word id?
+  * use compressed doc id?
+
+ * Flexible input format
   * support both .gz and uncompressed format
- * incremental indexing
+
+ * Incremental indexing
   * with our multi-level index format, we can have minimal index data merging during incremental indexing
- * multi-phase indexing
+
+ * Multi-phase indexing
   * we can do one-step indexing for effiency
   * we can also do step-by-step indexing for debug and learning purpose
- * heavily tested
+
+ * Heavily tested
   * tested in 4 varied-sized common crawl datasets
   * crossed validation with C and Python implementation
-  * verified in Google Cloud and Amazon AWS
+  * verified on laptop and also on Google Cloud and Amazon AWS
 
 #### Architecture
 
  We implemente the indexer with multiple phases.
+
  * warc parsing
+
  * lexicon generation
+
  * lexicon sorting
+
  * index generation
+
  * index merging
+
  * index bucketing
 
 #### Task Breakdown
  
- This document is written in collaboration. For the code implementation, here is the breakdown for each phase: 
+This document is written in collaboration. For the code implementation, here is the breakdown for each phase: 
  * warc parsing (Robert Wen, for both Python and C implementation)
  * lexicon generation (Robert Wen, for both Python and C implementation)
  * lexicon sorting (Robert Wen, for both Python and C implementation)
@@ -54,7 +67,8 @@ In this programming assignment, we have achieved to index 4 million docs from Co
 
 #### Core Data Structure
 
- There are a few core data structures we use for the inverted index building.
+There are a few core data structures we use for the inverted index building.
+
  * URL Table
   * We use id to represent the url. In this document and the project, we use docid to represent the id of the url as each url associates with one doc, also known as a web page.
   * docid generation is straight-forard.
@@ -68,8 +82,11 @@ In this programming assignment, we have achieved to index 4 million docs from Co
    * DATA table
     * [word  ][word ][word with varied length]
   * in this way, once we have the word id, we can use O(1) time to fetch its offset in the data file, and use another O(1) time to fetch the actual character represenation of the word. The total retrival time is still O(1) considering there is no linear search through the list.
+
  * Lexicon
+
  * Multi-level Inverted Index
+
 
 #### Lexicon Building
 
@@ -235,6 +252,7 @@ py file:   895
    * release
 
 #### Known Issues
+
  * merge does not work with 8 GB memory buffer size
 
  * merge will fail unnicely when disk is full
@@ -242,7 +260,8 @@ py file:   895
  * intermediate files are not removed after final index merge
 
 #### TODO
- There are tons of features we can do for the indexer. Here are a few items we think of most importance and interest to us if we still have time to improve this indexer.
+
+There are tons of features we can do for the indexer. Here are a few items we think of most importance and interest to us if we still have time to improve this indexer.
 
  * More compression in index
 
