@@ -155,7 +155,18 @@ char* merge_files(char* inputlist, char* outlist) {
 
   unsigned char *buf_space = NULL;
   buf_space = (unsigned char *)malloc(mem_size);
+  if (buf_space == NULL) {
+    printf("Malloc %d byte failed", mem_size);
+    return NULL;
+  }
+  memset(buf_space, 0, mem_size);
+
   ioBufs = (BUF_T *)malloc((max_degree + 1) * sizeof(BUF_T));
+  if (ioBufs == NULL) {
+    printf("Malloc memory for ioBufs failed.\n");
+    return NULL;
+  }
+  memset(ioBufs, 0, (max_degree + 1) * sizeof(BUF_T));
 
   fin = fopen(inputlist, "r");
   if (fin == NULL) {
@@ -230,7 +241,10 @@ char* merge_files(char* inputlist, char* outlist) {
     buf_initiate(buf_space, degree);
 
     //Merge the current "degree" files
-    merge_cont(degree);
+    ret = merge_cont(degree);
+    if (ret == -1) {
+      return NULL;
+    }
 
     //close files
     for (i = 0; i <= degree; i++) {
@@ -323,6 +337,11 @@ int merge_cont(int degree) {
      Until all the buffer block is empty. */
 
   topElem = (GIT_T *)malloc(sizeof(GIT_T) * (degree + 1));
+  if (topElem == NULL) {
+    printf("Malloc memory for topElem failed.\n");
+    return -1;
+  }
+  memset(topElem, 0, sizeof(GIT_T) * (degree + 1));
 
   // Initiate topElem[i] with the first record of each input file.
   int i;
