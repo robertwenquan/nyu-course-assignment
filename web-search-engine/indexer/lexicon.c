@@ -205,64 +205,6 @@ static int lexicon_compare(const void *p1, const void *p2)
   return 0;
 }
 
-/*
- * sort lexicon based on word_id, docid, and offset
- *
- * after sorting, the lexicons will be placed in word_id order
- * for the lexicons with the same word_id, they will be placed
- * in docid order, and then offset order
- *
- */
-static int lexicon_sorter()
-{
-  char *filename1 = "test_data/phase1_output/input1.warc.lexicon";
-  char *filename2 = "test_data/phase2_output/input1.warc.lexicon.2";
-  /*
-  char *filename1 = "/data/wse/100k/phase1_output/CC-MAIN-20150728002301-00000-ip-10-236-191-2.ec2.internal.warc.lexicon";
-  char *filename2 = "/data/wse/100k/bbb.lexicon";
-  */
-
-  int fd = open(filename1, O_RDWR);
-  struct stat st;
-  fstat(fd, &st);
-
-  #ifdef __MACOS__
-  printf("file: %s, size: %lld, fd = %d\n", filename1, st.st_size, fd);
-  #endif
-  #ifdef __LINUX__
-  printf("file: %s, size: %zu, fd = %d\n", filename1, st.st_size, fd);
-  #endif
-
-  int fd_out = open(filename2, O_RDWR | O_CREAT | O_TRUNC, 0755);
-
-  void *src = mmap (0, st.st_size, PROT_READ, MAP_SHARED, fd, 0);
-  //printf("src pointer %p, aligned at %lu\n", src, ((unsigned long)(src)%4096));
-
-  //void *dst = mmap (0, st.st_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd_out, 0);
-  //printf("dst pointer %p, aligned at %d\n", dst, ((int)dst%4096));
-
-  void *data = (void *)malloc(st.st_size);
-  memcpy(data, src, st.st_size);
-
-  qsort(data, st.st_size / sizeof(LEXICON_T), sizeof(LEXICON_T), lexicon_compare);
-
-  int bytes_write = 0;
-  while (bytes_write < st.st_size && bytes_write != -1) { 
-    int nbytes = write(fd_out, data, st.st_size);
-    printf("write %d in %d\n", nbytes, bytes_write);
-    bytes_write += nbytes;
-  }
-
-  if (bytes_write == -1) {
-    printf("failed to sort lexicons.\n");
-  }
-
-  close(fd);
-  close(fd_out);
-
-  return 0;
-}
-
 
 #ifdef __TEST__
 int main(int argc, char *argv[])
