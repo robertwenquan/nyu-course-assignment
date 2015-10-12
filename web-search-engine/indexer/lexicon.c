@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <glob.h>
+#include <pthread.h>
+#include <unistd.h>
 
 static int lexicon_compare(const void *p1, const void *p2);
 
@@ -146,6 +148,14 @@ static void process_lexicons_from_file(char *infile, char *outfile)
   return;
 }
 
+void * thr_process_lexicons_from_file(void *argv)
+{
+  char **p = (char **)argv;
+  process_lexicons_from_file(*p, *(p+1));
+
+  return NULL;
+}
+
 int lexicon_generator()
 {
   char **p = get_inout_filelist(LEXICON_GENERATION);
@@ -155,8 +165,24 @@ int lexicon_generator()
     return 1;
   }
 
+  int nthreads = 4;
+  pthread_t thr[nthreads];
+  int thr_idx = 0;
+
   while (*p != NULL && *(p+1) != NULL) {
-    process_lexicons_from_file(*p, *(p+1));
+
+    memset(&thr[thr_idx], 0, sizeof(pthread_t));
+    pthread_create(&thr[thr_idx], NULL, thr_process_lexicons_from_file, p);
+    usleep(100000);
+    thr_idx++;
+
+    if (thr_idx == nthreads) {
+      int i=0;
+      for (i=0;i<nthreads;i++) {
+        pthread_join(thr[i], NULL);
+      }
+    }
+
     p += 2;
   }
 

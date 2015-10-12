@@ -19,7 +19,7 @@ all:  $(BINS)
 iigen:  $(OBJS)
 
 lexicon_gen:  lexicon_test.o warc_test.o tokenizer.o utils.o
-	$(CC) -o $@ lexicon_test.o warc_test.o tokenizer.o utils.o
+	$(CC) -o $@ lexicon_test.o warc_test.o tokenizer.o utils.o -lpthread
 
 iindex_gen:  iindex_test.o utils.o
 	$(CC) $(CFLAGS) -D__TEST__ -o $@ iindex_test.o utils.o
