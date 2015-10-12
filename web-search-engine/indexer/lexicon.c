@@ -151,7 +151,14 @@ static void process_lexicons_from_file(char *infile, char *outfile)
 void * thr_process_lexicons_from_file(void *argv)
 {
   char **p = (char **)argv;
-  process_lexicons_from_file(*p, *(p+1));
+
+  char infile[256] = {'\0'};
+  char outfile[256] = {'\0'};
+
+  strncpy(infile, *p, 256);
+  strncpy(outfile, *(p+1), 256);
+
+  process_lexicons_from_file(infile, outfile);
 
   return NULL;
 }
