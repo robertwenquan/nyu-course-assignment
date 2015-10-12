@@ -171,7 +171,27 @@ This document describes the design of the inverted index builder.
  - index merging        3m1.799s 
 
 #### Summary
- * What result have we achieved
+
+#### Technical Statistics
+ * Code deliverables 
+ ```bash
+$ utils/count_source.sh
+ h file:   180
+md file:   329
+py file:   895
+ c file:  1811
+--------------
+  totol:  3215
+ ``` 
+
+ * Github statistics
+  [here goes the picture]
+
+ * Issue open/closed
+  * We break down the development of this indexer to 3 milestones
+   * alpha
+   * beta
+   * release
 
 #### Known Issues
  * What we are still lacking
