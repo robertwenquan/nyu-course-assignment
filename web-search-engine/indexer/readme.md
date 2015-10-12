@@ -4,13 +4,33 @@ Robert Wen <robert.wen@nyu.edu>  Caicai Chen <caicai.chen@nyu.edu>
 
 #### Introduction
 
-This project is the 2nd programming assignment of the Web Search Engine class for Fall 2015 Semester at Tandon School of Engineering, NYU.
-
-The project is about building an inverted index generator based on web crawled data.
+This project is the 2nd programming assignment of the Web Search Engine class for Fall 2015 Semester at Tandon School of Engineering, NYU. It is about building an inverted index generator based on web crawled data. It is the collaboration effort of Robert Wen and Caicai Chen, with the consent of Professor Torsten.
 
 There are two set of web crawled data: NZ dataset and the CommonCrawl dataset. The NZ dataset is with a few million web pages crawled a few years ago for all the New Zealand websites. The CommonCrawl dataset is humongous. For the subset of July 2015 data it's a few dozen TB in crawled data. For this assignment, we select 0.25% of the July 2015 CommonCrawl data for inverted index generation. It is about 80 * 50000 = 4 million pages with about 80 * 150MB = 12GB compressed crawled data.
 
-This document describes the design of the inverted index builder.
+In this programming assignment, we have achieved to index 4 million docs from CommonCrawl in 40 minutes. This document describes the design and the implementation of the inverted index builder.
+
+#### Core features of the indexer
+
+ * High-throughput
+  * indexed 4 million documents in 40 minutes
+  * 27 docs/sec indexing throughput
+ * IO efficient
+  * use word id to compress the index
+  * use relative offset to doc to compress the index
+  * use double relative offset to further compress the index
+  * use ?? to compress the offset further
+ * flexible input format
+  * support both .gz and uncompressed format
+ * incremental indexing
+  * with our multi-level index format, we can have minimal index data merging during incremental indexing
+ * multi-phase indexing
+  * we can do one-step indexing for effiency
+  * we can also do step-by-step indexing for debug and learning purpose
+ * heavily tested
+  * tested in 4 varied-sized common crawl datasets
+  * crossed validation with C and Python implementation
+  * verified in Google Cloud and Amazon AWS
 
 #### Architecture
 
@@ -22,13 +42,34 @@ This document describes the design of the inverted index builder.
  * index merging
  * index bucketing
 
+#### Task Breakdown
+ 
+ This document is written in collaboration. For the code implementation, here is the breakdown for each phase: 
+ * warc parsing (Robert Wen, for both Python and C implementation)
+ * lexicon generation (Robert Wen, for both Python and C implementation)
+ * lexicon sorting (Robert Wen, for both Python and C implementation)
+ * index generation (Caicai Chen for C implementation, Robert Wen for Python implementation)
+ * index merging (Caicai Chen)
+ * index bucketing (Caicai Chen)
+
 #### Core Data Structure
 
  There are a few core data structures we use for the inverted index building.
- * Word Table
  * URL Table
+  * We use id to represent the url. In this document and the project, we use docid to represent the id of the url as each url associates with one doc, also known as a web page.
+  * docid generation is straight-forard.
+
+ * Word Table
+  * We also use word id in lexicon generation so the data in lexicons will be simplified. In order to use word id, we have to generate unique word id for each occurring word in the documents.
+  * word id is generated when a new word comes. In order to track this, we build a hash tree to track the occurrence of the new word. word id starts with 1. If it is a new word occurrence, a new word id will be generated incrementally and assigned to that word. Otherwise, the existing word id will be retrieved from the hash tree.
+  * in order to store the word id, we use the following posting format
+   * INDEX table
+    * [number 4B][offset 4B]
+   * DATA table
+    * [word  ][word ][word with varied length]
+  * in this way, once we have the word id, we can use O(1) time to fetch its offset in the data file, and use another O(1) time to fetch the actual character represenation of the word. The total retrival time is still O(1) considering there is no linear search through the list.
  * Lexicon
- * Inverted Index
+ * Multi-level Inverted Index
 
 #### Lexicon Building
 
@@ -193,10 +234,20 @@ py file:   895
    * release
 
 #### Known Issues
- * What we are still lacking
+ * merge does not work with 8 GB memory buffer size
+
+ * merge will fail unnicely when disk is full
+
+ * intermediate files are not removed after final index merge
 
 #### TODO
- * What we are going to do next?
+ There are tons of features we can do for the indexer. Here are a few items we think of most importance and interest to us if we still have time to improve this indexer.
+
+ * More compression in index
+
+ * Leverage large memory
+
+ * Leverage multi-core with paralleled processing
 
 #### References
 
