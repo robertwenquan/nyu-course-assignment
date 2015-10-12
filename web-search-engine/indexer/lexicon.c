@@ -53,7 +53,7 @@ static char ** get_lexicon_files()
     pp_flist++;
 
     // for output filename in pair
-    snprintf(output_file, 256, "%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir));
+    snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".lexicon");
     *pp_flist = (char *)malloc(strlen(output_file)+1);
     memset(*pp_flist, 0, strlen(output_file)+1);
     strncpy(*pp_flist, output_file, strlen(output_file));
