@@ -9,9 +9,11 @@
 
 #include <stdio.h>
 #include <glob.h>
+#include <pthread.h>
 #include "utils.h"
 
-char BASE_DIR[] = "/data/wse/100k/";
+//char BASE_DIR[] = "/data/wse/1m/";
+char BASE_DIR[] = "/dev/shm/100k/";
 
 void * uncompress(char *filename)
 {
@@ -107,8 +109,12 @@ void log_error(LOGGER_T *l, const char *fmt, ...)
 unsigned int get_doc_id()
 {
   static int docid = 0;
+  static pthread_mutex_t docid_lock;
 
+  pthread_mutex_lock(&docid_lock);
   docid++;
+  pthread_mutex_unlock(&docid_lock);
+
   return docid;
 }
 
@@ -138,6 +144,8 @@ static int char_to_index(char chr)
 static unsigned int query_word_for_id(char *word)
 {
   static int wordid = 0;
+  static pthread_mutex_t wordid_lock;
+
   int word_lens = strlen(word);
 
   WORDID_HASHTREE_NODE_T *work_node = &wordid_hash_root;
@@ -158,7 +166,10 @@ static unsigned int query_word_for_id(char *word)
 
       tree_node->chr = chr;
       tree_node->wordid = 0;
+
+      pthread_mutex_lock(&wordid_lock);
       work_node->next[node_idx] = tree_node;
+      pthread_mutex_unlock(&wordid_lock);
     }
 
     work_node = tree_node;
@@ -167,7 +178,9 @@ static unsigned int query_word_for_id(char *word)
   // at this point, work_node points to the last node
   if (work_node->wordid == 0) {
     wordid++;
+    pthread_mutex_lock(&wordid_lock);
     work_node->wordid = wordid;
+    pthread_mutex_unlock(&wordid_lock);
   }
 
   return work_node->wordid;

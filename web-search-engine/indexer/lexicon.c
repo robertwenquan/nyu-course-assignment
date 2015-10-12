@@ -175,6 +175,7 @@ int lexicon_generator()
   int nthreads = 1;
   pthread_t thr[nthreads];
   int thr_idx = 0;
+  int loopi = 0;
 
   while (*p != NULL && *(p+1) != NULL) {
 
@@ -184,13 +185,17 @@ int lexicon_generator()
     thr_idx++;
 
     if (thr_idx == nthreads) {
-      int i=0;
-      for (i=0;i<nthreads;i++) {
-        pthread_join(thr[i], NULL);
+      for (loopi=0;loopi<thr_idx;loopi++) {
+        pthread_join(thr[loopi], NULL);
       }
+      thr_idx = 0;
     }
 
     p += 2;
+  }
+
+  for (loopi=0;loopi<thr_idx;loopi++) {
+    pthread_join(thr[loopi], NULL);
   }
 
   free_inout_filelist(p_save);
