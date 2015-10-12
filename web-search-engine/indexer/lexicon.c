@@ -270,7 +270,12 @@ int lexicon_sorter()
   struct stat st;
   fstat(fd, &st);
 
+  #ifdef __MACOS__
+  printf("file: %s, size: %lld, fd = %d\n", filename1, st.st_size, fd);
+  #endif
+  #ifdef __LINUX__
   printf("file: %s, size: %zu, fd = %d\n", filename1, st.st_size, fd);
+  #endif
 
   int fd_out = open(filename2, O_RDWR | O_CREAT | O_TRUNC, 0755);
 
