@@ -8,6 +8,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <sys/stat.h>
+
 
 // For logging
 // credit from https://github.com/drfeelngood/logger/
@@ -47,6 +49,18 @@ typedef struct _wordid_hashtree_node_ {
 
 unsigned int get_word_id(char *word);
 // For wordid
+
+// For file list
+typedef enum {
+               LEXICON_GENERATION = 1,
+               LEXICON_SORTING,
+               IINDEX_GENERATION,
+               IINDEX_MERGING
+              } PHASE_T;
+
+char ** get_inout_filelist(PHASE_T phase);
+void free_inout_filelist(char **pfiles);
+// For file list
 
 // Global Index Table
 typedef struct __attribute__((__packed__)) {
