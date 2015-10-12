@@ -24,7 +24,7 @@ void write_git(int count_in_git, FILE *fdw);
 void update_git(int word_id, int offset);
 void write_mit(int count_in_mit, FILE *fdw);
 void update_mit(int docid, int offset);
-void write_iidx(int offset, FILE *fdw);
+void write_iidx(int offset, FILE *fdw, int cprs);
 
 static void print_help(char *argv[]) {
   printf("Help.\n");
@@ -100,7 +100,7 @@ int gen_iindex(char *lex_file, char *git_file, char *mit_file, char *iidx_file)
       count_in_git++;
       offset_in_git++;
 
-      write_iidx(cur_lex->offset, f_iidx);
+      write_iidx(cur_lex->offset, f_iidx, 0);
       count_in_mit++;
       offset_in_mit++;
  
@@ -117,7 +117,7 @@ int gen_iindex(char *lex_file, char *git_file, char *mit_file, char *iidx_file)
       count_in_git++;
       offset_in_git++;
 
-      write_iidx(cur_lex->offset, f_iidx);
+      write_iidx(cur_lex->offset, f_iidx, 0);
       count_in_mit++;
       offset_in_mit++;
 
@@ -129,7 +129,7 @@ int gen_iindex(char *lex_file, char *git_file, char *mit_file, char *iidx_file)
     }
 
     //update count_in_mit
-    write_iidx(cur_lex->offset, f_iidx);
+    write_iidx(cur_lex->offset, f_iidx, 1);
     count_in_mit++;
     offset_in_mit++;
   }
@@ -175,9 +175,15 @@ void update_mit(int docid, int offset){
   return;
 }
 
-void write_iidx(int offset, FILE *fdw){
-  cur_iidx->offset = offset;
-  fwrite(cur_iidx, sizeof(IIDX_T), 1, fdw);
+void write_iidx(int offset, FILE *fdw, int cprs){
+  if (cprs == 0) {
+    cur_iidx->offset = offset;
+    fwrite(cur_iidx, sizeof(IIDX_T), 1, fdw);
+  } else {
+    cur_iidx->offset = offset - cur_iidx->offset;
+    fwrite(cur_iidx, sizeof(IIDX_T), 1, fdw);
+    cur_iidx->offset = offset;
+  }
   return;
 }
 
