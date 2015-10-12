@@ -41,6 +41,7 @@ from struct import pack, unpack, calcsize
 
 BASE_DIR = '/data/wse/100k'
 BASE_DIR = './test_data'
+BASE_DIR = '/data/wse/1m'
 
 # test data path for phase2
 SORTED_LEXICON_PATH = os.path.join(BASE_DIR, 'phase2_output')
@@ -200,6 +201,13 @@ def process_lexicon(filename):
 
 def main():
   """ main routine """
+
+  if not os.path.exists(INVERTED_INDEX_PATH):
+    try:
+      os.mkdir(INVERTED_INDEX_PATH)
+    except Exception:
+      print 'Error making %s, exiting.' % INVERTED_INDEX_PATH
+      return
 
   for lexicon in get_lexicon_files():
     process_lexicon(lexicon)
