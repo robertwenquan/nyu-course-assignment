@@ -63,9 +63,52 @@ This document describes the design of the inverted index builder.
 #### Index Building
 
  * Initial Index Building
+  * Since sorted lexicon has the format for each record: [WORD_ID][DOC_ID][OFFSET]
+   * Same word occured several times
+   * Same doc with same word occured several times
+  * After constructint Index:
+   * One word occured once in .git file, followed with offset in .mit file, point to docs contain the word 
+   * One doc for each word occured once in .mit file, followed with offset in .iidx file, point to places of this word occured in this doc
+
+  * INPUT: sorted lexicon file
+  * OUTPUT: inverted index(three files):
+     * .git  : [WORD_ID][OFFSET][N_DOCS]
+     * .mit  : [DOC_ID][OFFSET][N_PLACES]
+     * .iidx : [OFFSET]
+
+  * For example:
+   * Sorted lexicon:
+    word_id  doc_id  offset
+       1        1       1
+       1        1       3
+       1        1       5
+       1        2       1
+   * .git:
+    word_id  offset  n_docs
+       1        0       2
+
+   * .mit:
+    doc_id   offset  n_places
+       1        0       3
+       2        3       1
+
+   * .iidx:
+     offset
+       1
+       3
+       5
+       1
 
  * Index Merging
+  * INPUT: List of (.git, .mit) files need to be merged.
+  * OUTPUT: one (.git, .mit) file.
 
+  * User can define how many ways to merge, like 8-way, merge at most 8 files each time.
+  * User can define how much memory space to use.
+  * We rewrited .git file and keep one record of same word, add up n_docs, update offset in .mit.
+  * We rewrited .mit file, let all docs with same word together.
+  * Keep .iidx the same, since these files are large so that it's time consuming to merge together.
+  
  * Index bucketing
 
 
