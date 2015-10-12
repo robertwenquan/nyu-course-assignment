@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <glob.h>
+#include <sys/stat.h>
 
 char BASE_DIR[] = "test_data/";
 
@@ -24,6 +25,8 @@ static char ** get_lexicon_files()
 {
   char input_dir[256] = {'\0'};
   snprintf(input_dir, 256, "%s%s", BASE_DIR, "input/");
+  char output_dir[256] = {'\0'};
+  snprintf(output_dir, 256, "%s%s", BASE_DIR, "output/");
 
   char input_globstr[256] = {'\0'};
   snprintf(input_globstr, 256, "%s%s", input_dir, "*.wet");
@@ -34,16 +37,29 @@ static char ** get_lexicon_files()
     return NULL;
   }
 
-  char **pp_flist = (char **)malloc(sizeof(char *) * results.gl_pathc+1);
+  char **pp_flist = (char **)malloc(sizeof(char *) * results.gl_pathc*2+1);
   char **pp_flist_saved = pp_flist;
+
+  char output_file[256] = {'\0'};
+  mkdir(output_dir, 0755);
 
   int i = 0;
   for (i = 0; i < results.gl_pathc; i++) {
-    *pp_flist = (char *)malloc(strlen(results.gl_pathv[i]));
-    memset(*pp_flist, 0, strlen(results.gl_pathv[i]));
+
+    // for input filename
+    *pp_flist = (char *)malloc(strlen(results.gl_pathv[i])+1);
+    memset(*pp_flist, 0, strlen(results.gl_pathv[i])+1);
     strncpy(*pp_flist, results.gl_pathv[i], strlen(results.gl_pathv[i]));
     pp_flist++;
+
+    // for output filename in pair
+    snprintf(output_file, 256, "%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir));
+    *pp_flist = (char *)malloc(strlen(output_file)+1);
+    memset(*pp_flist, 0, strlen(output_file)+1);
+    strncpy(*pp_flist, output_file, strlen(output_file));
+    pp_flist++;
   }
+  // for the last filename pointer, put NULL for terminator
   *pp_flist = NULL;
 
   globfree(&results);
@@ -73,9 +89,9 @@ static void free_lexicon_files(char **pfiles)
 /*
  * write back one lexicon to file
  */
-static void write_back_lexicon(LEXICON_T lex)
+static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
 {
-  return;
+  fwrite(&lex, sizeof(LEXICON_T), 1, fpo);
 }
 
 /*
@@ -83,7 +99,7 @@ static void write_back_lexicon(LEXICON_T lex)
  * with filtering strategy
  * and generate lexicons
  */
-static void tokenize_page_content(char *buffer, int size, unsigned int docid)
+static void tokenize_page_content(char *buffer, int size, unsigned int docid, FILE *fpo)
 {
     TokenizerT *tokenizer = NULL;
     tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\\|;':\",.<>/?,.", buffer);
@@ -130,17 +146,19 @@ static void tokenize_page_content(char *buffer, int size, unsigned int docid)
                       };
 
       //printf(">> wordid: %d, docid: %d, %s, start %p, offset %u\n", lex.word_id, lex.docid, token, buffer, lex.offset);
-      write_back_lexicon(lex);
+      write_back_lexicon(lex, fpo);
     }
 
     TKDestroy(tokenizer);
 }
 
-static void process_lexicons_from_file(char *filename)
+static void process_lexicons_from_file(char *infile, char *outfile)
 {
-  FILE * fp = warc_open(filename);
+  FILE * fp = warc_open(infile);
+  FILE * fpo = fopen(outfile, "wb");
 
-  printf("file: %s, fp: %p\n", filename, fp);
+  printf("infile: %s, fp: %p\n", infile, fp);
+  printf("outfile: %s, fp: %p\n", outfile, fpo);
 
   while (1) {
 
@@ -171,7 +189,7 @@ static void process_lexicons_from_file(char *filename)
     unsigned int docid = get_doc_id();
 
     // tokenize lexicons from page
-    tokenize_page_content(page_content, page_lens, docid);
+    tokenize_page_content(page_content, page_lens, docid, fpo);
 
     // dispose the WARC entry after consumption
     destroy_warc_rec(p_warc);
@@ -190,9 +208,9 @@ int lexicon_generator()
     return 1;
   }
 
-  while (*p != NULL) {
-    process_lexicons_from_file(*p);
-    p++;
+  while (*p != NULL && *(p+1) != NULL) {
+    process_lexicons_from_file(*p, *(p+1));
+    p += 2;
   }
 
   free_lexicon_files(p_save);
