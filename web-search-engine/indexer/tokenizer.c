@@ -5,6 +5,7 @@
  * Changes:
  *  - add #ifdef __TEST__ for main()
  *  - add tokenizer.h
+ *  - fix a logic bug in TKCreate()
  *
  * Known Issues:
  *  - no buffer boundary with length limit
@@ -69,9 +70,9 @@ int isSpecialChar(char c) {
  * You need to fill in this function as part of your implementation.
  */
 
-TokenizerT *TKCreate(char *separators, char *ts) {
+TokenizerT *TKCreate(char *separators, char *ts, int length) {
   size_t sepLength = strlen(separators) + 1; // +1 to include \0 at end of string
-  size_t tsLength  = strlen(ts) + 1;
+  size_t tsLength  = length + 1;
 
   TokenizerT *tokenizer  = (TokenizerT *)malloc(sizeof(TokenizerT));
   tokenizer->delimiters  = separators;
@@ -80,10 +81,10 @@ TokenizerT *TKCreate(char *separators, char *ts) {
   tokenizer->numTokensDispensed = 0;
 
   char *tempDelimiters  = (char *)calloc(sepLength, sizeof(char));
-  strcpy(tempDelimiters, separators);
+  strncpy(tempDelimiters, separators, sepLength);
 
   char *tokenizedString = (char *)calloc(tsLength, sizeof(char));
-  strcpy(tokenizedString, ts);
+  strncpy(tokenizedString, ts, tsLength);
 
   tempDelimiters  = preprocessString(tempDelimiters);
   tokenizedString = preprocessString(tokenizedString);
@@ -129,8 +130,11 @@ TokenizerT *TKCreate(char *separators, char *ts) {
       ptr++;
       i++;
     }
+    if (i >= tsLength + 1) {
+      break;
+    }
     if (tokenizedString[i] == '\0') {
-      (tokenizer->tokens)[j] = (char *)malloc((strlen(ptr) + 1) * sizeof(char));
+      (tokenizer->tokens)[j] = (char *)calloc((strlen(ptr) + 1), sizeof(char));
       strcpy((tokenizer->tokens)[j], ptr);
       ptr+=strlen(ptr);
       j++;

@@ -19,7 +19,7 @@ struct TokenizerT_ {
 
 typedef struct TokenizerT_ TokenizerT;
 
-TokenizerT *TKCreate(char *separators, char *ts);
+TokenizerT *TKCreate(char *separators, char *ts, int length);
 char *TKGetNextToken(TokenizerT *tk);
 void TKDestroy(TokenizerT *tk);
 int isSpecialChar(char c);
