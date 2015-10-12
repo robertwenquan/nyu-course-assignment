@@ -124,6 +124,7 @@ In this programming assignment, we have achieved to index 4 million docs from Co
        1        1       3
        1        1       5
        1        2       1
+
    * .git:
     word_id  offset  n_docs
        1        0       2
@@ -142,14 +143,14 @@ In this programming assignment, we have achieved to index 4 million docs from Co
 
  * Index Merging
   * INPUT: List of (.git, .mit) files need to be merged.
-  * OUTPUT: one (.git, .mit) file.
+  * OUTPUT: one pair of (.git, .mit) file.
 
-  * User can define how many ways to merge, like 8-way, merge at most 8 files each time.
-  * User can define how much memory space to use.
-  * We rewrited .git file and keep one record of same word, add up n_docs, update offset in .mit.
-  * We rewrited .mit file, let all docs with same word together.
-  * Keep .iidx the same, since these files are large so that it's time consuming to merge together.
-  
+  * Define how many ways to merge, like 8-way, merge at most 8 files each time.
+  * Define how much memory space to use.
+  * Rewrit .git file and keep one record of same word, add up n_docs, update offset in .mit.
+  * Rewrit .mit file, let all docs with same word together.
+  * Keep .iidx the same, since these files are large so that it's time consuming to merge together, and it's easy to maintain when updating index. 
+
  * Index bucketing
 
 
