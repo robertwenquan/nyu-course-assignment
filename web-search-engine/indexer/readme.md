@@ -88,16 +88,69 @@ This document describes the design of the inverted index builder.
 
 #### Benchmarks
 
+ Performance matter as it means how much data you can process for this assignment. Due to the time constraint, we only target 4 million docs to index for the assginment submission.
+
+ We have 4 datasets for benchmarking this indexer
+
+ * tiny (3 WET files with 30 docs)
+ * small (2 WET files with 100k docs)
+ * medium (20 WET files with 1 million docs)
+ * large (80 WET files with 4 million docs)
+
+ The way we measure the performance is simple. We use the time command under macos/Linux to measure the run time. The elapsed time is taken for this metrics.
+
+##### Tiny 30
+ The tiny dataset is stripped from part of the July 2015 Common Crawl dataset. It is mostly for development and functionality validation purpose. The dataset is not quite useful for performance measurement as it is too small and the whole process finishes so fast in less than one second. Here is a reference number for each phase.
+
+ - lexicon generation  0m0.095s
+ - lexicon sorting     0m0.043s
+ - index generation    0m0.223s
+ - index merge         0m0.006s
+
+ Due to the small amount of time running, there will be big variance in run time when some other processes are running on the same system. Hence it is not a good reference wordload for benchmarking.
+ 
+##### Small 100k
+ The small dataset with 100k docs are from 2 unstripped WET files in July 2015 Common Crawl dataset. Each WET file has approximately 50k docs so we have 100k in total. The input dataset is about 470 MB in size.
+
+ Here is the data we collected from our earlier implementation. For quick prototyping, we implemented the first three phases in Python due to the availability of WARC library and easy programming. The whole process takes about 20 minutes.
+
+ - lexicon generation  3m00.881s
+ - lexicon sorting     5m24.454s
+ - index generation   12m22.024s
+ - index merging          4.544s
+
+##### Medium 1m
+ The medium dataset with 1 million docs are from 20 unstripped WET files in July 2015 Common Crawl dataset. Each WET file has approximately 50k docs so we have 1 million in total. The input dataset is about 4.7 GB in size.
+
+ Here is the data we collected from our earlier implementation in Python as well. As we can see, the run time is almost linearly growing as the input grows 10 times. The whole process takes a little bit more than 2 hours to complete, which is also fine. But from this estimation it will take more than 20 hours for us to index 10 million documents. And it will take about 3 months to index 1 billion documents.
+
+ - lexicon generation  30m19.675s
+ - sorting(python)     57m27.198s
+ - index generation    35m50.940s
+ - index merging        1m28.378s
+
+ So we re-implemented all phases in C. In the current implenetation, we merged the lexicon generation and sorting in one phase and directly generate the sorted lexicon files. Then we have this performance data.
+ - lexicon generation   7m54.576s
+ - index generation       40.341s
+ - index merging         1m6.245s
+
+##### Large 4m
+ The large dataset with 4 million docs are from 80 unstripped WET files in July 2015 Common Crawl dataset. Each WET file has approximately 50k docs so we have 4 million in total. The input dataset is about 19 GB in size.
+
+ With the latest implementation, we have the following performance data
+
+ - lexicon generation  32m10.631s 
+ - index generation     3m8.080s 
+ - index merging        3m1.799s 
 
 #### Summary
-
  * What result have we achieved
 
+#### Known Issues
  * What we are still lacking
 
+#### TODO
  * What we are going to do next?
 
-
 #### References
-
 
