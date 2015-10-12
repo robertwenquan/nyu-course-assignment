@@ -109,13 +109,65 @@ unsigned int get_doc_id()
   return docid;
 }
 
+WORDID_HASHTREE_NODE_T wordid_hash_root;
+
+/*
+ * char to index for word id hash sub-tree query
+ */
+static int char_to_index(char chr)
+{
+  if (chr >= '0' && chr <= '9') {
+    return chr-48;
+  } else if (chr >= 'A' && chr <= 'Z') {
+    return chr-65+10;
+  } else if (chr >= 'a' && chr <= 'z') {
+    return chr-97+36;
+  } else {
+    return -1;
+  }
+}
+
 /*
  * query from word dictionary
  * return wordid if exists
  * return 0 otherwise
  */
-static unsigned int query_word_for_id(char *word) {
-  return 0;
+static unsigned int query_word_for_id(char *word)
+{
+  static int wordid = 0;
+  int word_lens = strlen(word);
+
+  WORDID_HASHTREE_NODE_T *work_node = &wordid_hash_root;
+
+  int idx = 0;
+  for (idx=0;idx<word_lens;idx++) {
+    char chr = word[idx];
+    int node_idx = char_to_index(chr);
+    assert(node_idx >= 0 && node_idx < 62);
+
+    WORDID_HASHTREE_NODE_T *tree_node = work_node->next[node_idx];
+    if (tree_node == NULL) {
+      tree_node = (WORDID_HASHTREE_NODE_T *)malloc(sizeof(WORDID_HASHTREE_NODE_T));
+      if (tree_node == NULL) {
+        return 0;
+      }
+      memset(tree_node, 0, sizeof(WORDID_HASHTREE_NODE_T));
+
+      tree_node->chr = chr;
+      tree_node->wordid = 0;
+      work_node->next[node_idx] = tree_node;
+    }
+
+    work_node = tree_node;
+  }
+
+  // at this point, work_node points to the last node
+  if (work_node->wordid == 0) {
+    wordid++;
+    work_node->wordid = wordid;
+  }
+
+  return work_node->wordid;
 }
 
 /*
@@ -123,16 +175,6 @@ static unsigned int query_word_for_id(char *word) {
  */
 unsigned int get_word_id(char *word)
 {
-  static int wordid = 0;
-
-  int wordid_query = 0;
-  wordid_query = query_word_for_id(word);
-  if (wordid_query > 0) {
-    wordid = wordid_query;
-  } else {
-    wordid++;
-  }
-  
-  return wordid;
+  return query_word_for_id(word);
 }
 
