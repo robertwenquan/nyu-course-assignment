@@ -17,7 +17,7 @@
 #include "merge.h"
 
 
-static char * merge_files(char* inputlist, char* outlist);
+static char ** merge_files(char** p, int numLevel);
 static void write_min(int i, int degree);
 static int sort_curr(int degree);
 static int merge_cont(int degree);
@@ -28,8 +28,8 @@ static void buf_initiate(unsigned char *buf_space, int degree);
 BUF_T *ioBufs;
 GIT_T *topElem;
 int buf_size;
-int max_degree;
-int mem_size;
+int max_degree = 8;
+int mem_size = 4096000;
 int out_offset;
 
 
@@ -129,30 +129,38 @@ static void print_help(char *argv[]) {
 #endif
 
 void merge_iindex(char **p) {
+  int numLevel = 0;
 
-  while (*p != NULL && *(p+1) != NULL && *(p+2) != NULL) {
-    //gen_iindex(*p, *(p+1), *(p+2), *(p+3));
-    printf("%s, %s, %s\n", *p, *(p+1), *(p+2));
-    p += 3;
+  while (*p != NULL && *(p+1) != NULL && *(p+2) != NULL && *(p+3) != NULL) {
+    p = merge_files(p, numLevel);
+    numLevel++;
   }
 
   return;
 }
 
-char* merge_files(char* inputlist, char* outlist) {
+char** merge_files(char **p, int numLevel) {
 /* Merge files listed in inputlist, every max_degree files produce a new file
    Then return the output list */ 
 
-  FILE *fin = NULL, *fout = NULL;
+  FILE *fin = NULL;
 
   int degree = 0;
   int i = 0;
   int numFile = 0;
   int ret = 0;
-  char filename[1024] = {'\0'};
+  int length = 0;
   char outfile[1024] = {'\0'};
   char outmit[1024] = {'\0'};
   char outgit[1024] = {'\0'};
+  char basename[1024] = {'\0'};
+
+  char **plist = (char **)malloc(sizeof(char *) * 200);
+  if (plist == NULL) {
+    return NULL;
+  }
+  memset(plist, 0, sizeof(char *) * 200);
+  char **phead = plist;
 
   unsigned char *buf_space = NULL;
   buf_space = (unsigned char *)malloc(mem_size);
@@ -169,51 +177,30 @@ char* merge_files(char* inputlist, char* outlist) {
   }
   memset(ioBufs, 0, (max_degree + 1) * sizeof(BUF_T));
 
-  fin = fopen(inputlist, "r");
-  if (fin == NULL) {
-    printf("%s doesn't exist\n", inputlist);
-    return NULL;
-  }
- 
-  while (!feof(fin)) {
+  sprintf(basename, "%s%d", *p, numLevel);
+
+  while (*p != NULL && *(p+1) != NULL && *(p+2) != NULL) {
     //Initiate for each pile of files.
     out_offset = 0;
 
     /*Get source files from the list, assign each file to a BUFFER structure,
       at most max_degree files each time.*/
     for (degree = 0; degree < max_degree; degree++) {
-
-      ret = fscanf(fin, "%s", filename);
-
-      if (feof(fin)) {
+      if (*p == NULL || *(p+1) == NULL || *(p+2) == NULL) {
         break;
       }
 
-      if (ret == -1) {
-        return NULL;
-      }
-
-      ioBufs[degree].fgit = fopen(filename, "r");
-
+      ioBufs[degree].fgit = fopen(*(p+1), "r");
       if (ioBufs[degree].fgit == NULL) {
-        printf("%s doesn't exist\n", filename);
         return NULL;
       }
 
-      ret = fscanf(fin, "%s", filename);
-
-      if (feof(fin)) {
-        break;
-      }
-
-      if (ret == -1) {
-        return NULL;
-      }
-      ioBufs[degree].fmit = fopen(filename, "r");
+      ioBufs[degree].fmit = fopen(*(p+2), "r");
       if (ioBufs[degree].fmit == NULL) {
-        printf("%s doesn't exist\n", filename);
         return NULL;
       }
+
+      p += 3;
     }
 
     if (degree == 0) {
@@ -223,20 +210,22 @@ char* merge_files(char* inputlist, char* outlist) {
     /* Merge several viles into one file,
        Result of each N files stored in file00, file01, file02...
        Prepared for next level merge */ 
-    sprintf(outfile, "%s%d", outlist, numFile);
+
+    sprintf(outfile, "%s%d", basename, numFile);
+
     sprintf(outgit, "%s%s", outfile, ".git");
     ioBufs[degree].fgit = fopen(outgit, "w");
     if (ioBufs[degree].fgit == NULL) {
       printf("%s doesn't exist\n", outgit);
       return NULL;
     }
+
     sprintf(outmit, "%s%s", outfile, ".mit");
     ioBufs[degree].fmit= fopen(outmit, "w");
     if (ioBufs[degree].fmit == NULL) {
       printf("%s doesn't exist\n", outmit);
       return NULL;
     }
-
 
     //Initiate BUF_F for each file.
     buf_initiate(buf_space, degree);
@@ -254,14 +243,20 @@ char* merge_files(char* inputlist, char* outlist) {
     }
 
     //write the name of output file into outputlist
-    fout = fopen(outlist, "a");
-    if (fout == NULL) {
-      printf("%s doesn't exist\n", outlist );
-      return NULL;
-    }
-    fprintf(fout, "%s\n", outgit);
-    fprintf(fout, "%s\n", outmit);
-    fclose(fout);
+    length = strlen(basename);
+    *plist = (char *)malloc(length);
+    memcpy(*plist, basename, length);
+    plist++;
+
+    length = strlen(outgit);
+    *plist = (char *)malloc(length);
+    memcpy(*plist, outgit, length);
+    plist++;
+
+    length = strlen(outmit);
+    *plist = (char *)malloc(length);
+    memcpy(*plist, outmit, length);
+    plist++;
 
     numFile++;
   }
@@ -270,7 +265,7 @@ char* merge_files(char* inputlist, char* outlist) {
   free(ioBufs);
   free(buf_space);
 
-  return outlist;
+  return phead;
 }
 
 static void buf_initiate(unsigned char *buf_space, int degree) {
