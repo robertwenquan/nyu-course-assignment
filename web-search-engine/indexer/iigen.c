@@ -16,9 +16,6 @@
 
 int main(int argc, char *argv[])
 {
-  // print welcome information of the indexer
-  printf("Let's build the Inverted Index in C!\n");
-
   /* argument parsing
       -h help
       -1 phase1: generate lexicons

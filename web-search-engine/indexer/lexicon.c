@@ -93,8 +93,7 @@ static void process_lexicons_from_file(char *infile, char *outfile)
   FILE * fp = warc_open(infile);
   FILE * fpo = fopen(outfile, "wb");
 
-  printf("infile: %s, fp: %p\n", infile, fp);
-  printf("outfile: %s, fp: %p\n", outfile, fpo);
+  printf("processing %s ...\n", infile);
 
   while (1) {
 
@@ -163,6 +162,9 @@ void * thr_process_lexicons_from_file(void *argv)
   return NULL;
 }
 
+int docid_start = 0;
+int docid_end = 0;
+
 int lexicon_generator()
 {
   char **p = get_inout_filelist(LEXICON_GENERATION);
@@ -171,6 +173,8 @@ int lexicon_generator()
   if (p == NULL) {
     return 1;
   }
+
+  printf("Building lexicons...\n");
 
   int nthreads = 1;
   pthread_t thr[nthreads];

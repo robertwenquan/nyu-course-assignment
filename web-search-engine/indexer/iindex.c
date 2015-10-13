@@ -184,6 +184,9 @@ int index_builder()
   int ret = 0;
   int numFile = 0;
 
+  printf("\n");
+  printf("Building inverted index...\n");
+
   ret = initiate_global();
   if (ret == -1) {
     return EXIT_FAILURE;
@@ -209,6 +212,9 @@ int index_builder()
 
 int index_merger()
 {
+  printf("\n");
+  printf("Merging inverted index...\n");
+
   return 0;
 }
 
@@ -216,7 +222,9 @@ int index_merger()
 #ifdef __TEST__
 int main(int argc, char * argv[])
 {
-  return index_builder();
+  index_builder();
+
+  return 0;
 }
 #endif
 
