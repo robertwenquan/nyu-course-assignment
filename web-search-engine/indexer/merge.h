@@ -15,7 +15,7 @@ typedef struct {
 } BUF_T;
 
 
-char * merge_files(char* inputlist, char* outlist);
+void merge_iindex(char **pfilelist);
 
 #endif
 

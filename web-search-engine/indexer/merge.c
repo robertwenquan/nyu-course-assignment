@@ -17,6 +17,7 @@
 #include "merge.h"
 
 
+static char * merge_files(char* inputlist, char* outlist);
 static void write_min(int i, int degree);
 static int sort_curr(int degree);
 static int merge_cont(int degree);
@@ -126,6 +127,17 @@ static void print_help(char *argv[]) {
 }
 
 #endif
+
+void merge_iindex(char **p) {
+
+  while (*p != NULL && *(p+1) != NULL && *(p+2) != NULL) {
+    //gen_iindex(*p, *(p+1), *(p+2), *(p+3));
+    printf("%s, %s, %s\n", *p, *(p+1), *(p+2));
+    p += 3;
+  }
+
+  return;
+}
 
 char* merge_files(char* inputlist, char* outlist) {
 /* Merge files listed in inputlist, every max_degree files produce a new file

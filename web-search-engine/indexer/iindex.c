@@ -12,6 +12,7 @@
 #include "iindex.h"
 #include "utils.h"
 #include "lexicon.h"
+#include "merge.h"
 
 GIT_T * cur_git;
 MIT_T * cur_mit;
@@ -215,6 +216,16 @@ int index_merger()
   printf("\n");
   printf("Merging inverted index...\n");
 
+  char **p = get_inout_filelist(IINDEX_MERGING);
+  char **p_save = p;
+
+  if (p == NULL) {
+    return 1;
+  }
+
+  merge_iindex(p); 
+
+  free_inout_filelist(p_save);
   return 0;
 }
 
