@@ -78,6 +78,13 @@ int main(int argc, char *argv[])
       break;
   }
 
+  time_t ts;
+  time(&ts);
+  struct tm * tm = localtime(&ts);
+  char timestr[32] = {'\0'};
+
+  snprintf(timestr, 32, "%d-%02d-%02d %02d:%02d:%02d", tm->tm_year+1900, tm->tm_mon+1, tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
+  printf("%s Job finished.\n", timestr);
   return 0;
 }
 

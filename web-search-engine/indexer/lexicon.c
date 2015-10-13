@@ -137,7 +137,10 @@ static void process_lexicons_from_file(char *infile, char *outfile)
     if (ts - time_saved > 3) {
       dps = (docid - docid_saved)/3;
       if (docid_saved != 0) {
-        printf("Processed %d docs, %d docs per sec.\n", docid, dps);
+        struct tm * tm = localtime(&ts);
+        char timestr[32] = {'\0'};
+        snprintf(timestr, 32, "%d-%02d-%02d %02d:%02d:%02d", tm->tm_year+1900, tm->tm_mon+1, tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
+        printf("%s Processed %d docs, %d docs per sec.\n", timestr, docid, dps);
       }
       time_saved = ts;
       docid_saved = docid;
@@ -191,7 +194,13 @@ int lexicon_generator()
     return 1;
   }
 
-  printf("Building lexicons...\n");
+  time_t ts;
+  time(&ts);
+  struct tm * tm = localtime(&ts);
+  char timestr[32] = {'\0'};
+  snprintf(timestr, 32, "%d-%02d-%02d %02d:%02d:%02d", tm->tm_year+1900, tm->tm_mon+1, tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
+
+  printf("%s Building lexicons...\n", timestr);
 
   int nthreads = 1;
   pthread_t thr[nthreads];
