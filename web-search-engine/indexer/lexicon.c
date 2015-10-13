@@ -17,6 +17,7 @@ static int lexicon_compare(const void *p1, const void *p2);
  */
 static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
 {
+  /*
   static char buffer[8*1024*1024] = {'\0'};
   static unsigned int offset = 0;
 
@@ -28,6 +29,8 @@ static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
 
   memcpy(buffer + offset, &lex, sizeof(LEXICON_T));
   offset += sizeof(LEXICON_T);
+  */
+  fwrite(&lex, sizeof(LEXICON_T), 1, fpo);
 }
 
 /*
