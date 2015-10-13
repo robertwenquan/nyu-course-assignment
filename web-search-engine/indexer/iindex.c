@@ -12,13 +12,13 @@
 #include "iindex.h"
 #include "utils.h"
 #include "lexicon.h"
+#include "merge.h"
 
 GIT_T * cur_git;
 MIT_T * cur_mit;
 IIDX_T * cur_iidx;
 LEXICON_T * cur_lex;
 
-static void print_help(char * argv[]);
 int initiate_global();
 void write_git(int count_in_git, FILE *fdw);
 void update_git(int word_id, int offset);
@@ -26,13 +26,6 @@ void write_mit(int count_in_mit, FILE *fdw);
 void update_mit(int docid, int offset);
 void write_iidx(int offset, FILE *fdw, int cprs);
 
-static void print_help(char *argv[]) {
-  printf("Help.\n");
-  printf(" %s <finlist> <outputfileprefix>\n", argv[0]);
-  printf("\n");
-  printf("For example:\n");
-  printf(" %s finlist ./phase3/fout\n", argv[0]);
-}
 
 int initiate_global(){
   cur_git = (GIT_T *)malloc(sizeof(GIT_T));
@@ -189,21 +182,11 @@ void write_iidx(int offset, FILE *fdw, int cprs){
 
 int index_builder()
 {
-  return 0;
-}
-
-int index_merger()
-{
-  return 0;
-}
-
-
-#ifdef __TEST__
-int main(int argc, char * argv[])
-{
   int ret = 0;
   int numFile = 0;
-  char outprefix[1024] = {'\0'};
+
+  printf("\n");
+  printf("Building inverted index...\n");
 
   ret = initiate_global();
   if (ret == -1) {
@@ -225,8 +208,34 @@ int main(int argc, char * argv[])
   }
 
   free_inout_filelist(p_save);
+  return 0;
+}
 
-  return EXIT_SUCCESS;
+int index_merger()
+{
+  printf("\n");
+  printf("Merging inverted index...\n");
+
+  char **p = get_inout_filelist(IINDEX_MERGING);
+  char **p_save = p;
+
+  if (p == NULL) {
+    return 1;
+  }
+
+  merge_iindex(p); 
+
+  free_inout_filelist(p_save);
+  return 0;
+}
+
+
+#ifdef __TEST__
+int main(int argc, char * argv[])
+{
+  index_builder();
+
+  return 0;
 }
 #endif
 

@@ -69,7 +69,7 @@ In this programming assignment, we have achieved to index 4 million docs from Co
 
  We implemente the indexer with multiple phases.
 
- [a graph goes here]
+ ![data flow](docs/images/iindex_framework.png "Data Flow")
 
  * warc parsing
   * INPUT: a list of WET files
@@ -304,7 +304,7 @@ py file:   895
  ``` 
 
  * Github statistics
-  [here goes the picture]
+  ![github](docs/images/github-stats-indexer.png "github")
 
  * Issue open/closed
   * We break down the development of this indexer to 3 milestones
