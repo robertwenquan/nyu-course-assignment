@@ -10,6 +10,14 @@ There are two set of web crawled data: NZ dataset and the CommonCrawl dataset. T
 
 In this programming assignment, we have achieved to index 4 million docs from CommonCrawl in 40 minutes. This document describes the design and the implementation of the inverted index builder.
 
+#### How to build and run
+
+* build
+![how to build](docs/images/how-to-build.png "how to build")
+
+* run
+![how to run](docs/images/how-to-run.png "how to run")
+
 #### Core features of the indexer
 
  * High-throughput
