@@ -22,6 +22,14 @@ In this programming assignment, we have achieved to index 4 million docs from Co
   * use double relative offset to further compress the index, with 60% saving
   * use ?? to compress the offset further
 
+ * Ease of Use
+  * Single binary launch with single parameter
+  ```bash
+  $ ./iigen --basedir=/data/wse/1m
+  ```
+  * input is assumed to be in a dir named "input" under that directory
+  * output will be placed in a dir named "output" under that directory
+
  * Flexible input format
   * support both .gz and uncompressed format
 
@@ -37,21 +45,61 @@ In this programming assignment, we have achieved to index 4 million docs from Co
   * crossed validation with C and Python implementation
   * verified on laptop and also on Google Cloud and Amazon AWS
 
+#### Terms
+
+  * file
+   * a WET file in WARC format, either gz compressed or uncompressed
+  * doc
+   * a crawled page saved in the WET file as a WARC record
+   * also known as a page as it is a web page
+   * there is a unique docid associated with a doc/page
+   * there is a url associated with this doc/page
+   * We refer doc in the futher part of the doc
+  * word
+   * there are many words in one doc
+   * word may be duplicated in one doc or across docs
+   * each unique word has an unique word id
+   * word id is tracked globally across all docs and files
+  * lexicon
+   * parsed from the doc for a word, with its assocated docid, wordid
+  * inverted index
+   * a type of index to query a word back to a page
+
 #### Architecture
 
  We implemente the indexer with multiple phases.
 
+ [a graph goes here]
+
  * warc parsing
+  * INPUT: a list of WET files
+  * OUTPUT: a list of parsed WARC records in those files
 
  * lexicon generation
+  * INPUT: a list of parsed WARC records
+  * OUTPUT: unsorted lexicon files, one WET file to one lexicon
 
  * lexicon sorting
+  * INPUT: unsorted lexicon files
+  * OUTPUT: sorted lexicon files, one lexicon to one lexicon
 
  * index generation
+  * INPUT: sorted lexicon files
+  * OUTPUT: one inverted index, with three files
+            1. global index table (GIT)
+            2. middle index table (MIT)
+            3. inverted index (IIDX)
 
  * index merging
+  * INPUT: a series of inverted index set(3 files)
+  * OUTPUT: merged inverted index set into buckets
+   * only GIT and MIT will be merged
+   * IIDX will remain
 
  * index bucketing
+  * This actually happens inside the merging
+  * GIT and MIT will be placed into buckets according to its procedding character
+  * IIDX will remain in its original place
 
 #### Task Breakdown
  
@@ -263,8 +311,10 @@ py file:   895
 #### Known Issues
 
  * merge does not work with 8 GB memory buffer size
+  * There should be some logic error in the code when handling buffer with 8GB. Due to the time constranit and the ability to work with 4GB buffer size, we decide to defer this resolution. The sacrifice is the under utilization of the system memory.
 
  * merge will fail unnicely when disk is full
+  * We happended to run into disk full issue. The code is not handlling this exception well.
 
  * intermediate files are not removed after final index merge
 
@@ -273,10 +323,28 @@ py file:   895
 There are tons of features we can do for the indexer. Here are a few items we think of most importance and interest to us if we still have time to improve this indexer.
 
  * More compression in index
+  * We can probably compress the docid
+  * We can probably compress the word id
+  * We can use more aggressive compression algorithm to compress the offset numbers
 
- * Leverage large memory
+ * Utilize large memory
+  * Fully utilize the system memory by loading as much data as possible for both read and write buffer
+  * For example, for the first phase, we can hold the full output in the memory
 
- * Leverage multi-core with paralleled processing
+ * Utilize multi-core with paralleled processing
+  * The avalability of multi cores in the laptop and the server instances on AWS are under-utilized with the single threaded indexing model
+  * For lexicon generation, each document could be processed separately in a thread, provided there is no IO bottleneck. In the real world, we could not parallel too many threads due to the IO bottleneck. The number of threads should be tuned to a best number with a given computing environment but it should not be one.
+  * For index generation, it could also be paralleled because the single index is not dependent with each other. 
+  * For index merging, with N way merge, it also could be paralleled and speed the whole process up.
+
+ * Distributed processing
+  * Due to the IO bottleneck on single computing instance and the fact of impossibilities of fully utilizing the computing power, distributed processing with lower computing power but high IO fit into the model pretty well. With hadoop like technology, we can launch multiple processes in more than one instances and have access to a single shared storage with high which has IO throughput. Then the whole process could be paralleled in a very smoooth way. The only dependency is a shared 
+
+ * Handle Larger dataset
+  * The maximum dataset we have tested is with 4 million docs. Although it may work with more docs, there must be structral defect and deficiency when handling a larger number of docs.
+  * For example, we need to bucket the word id when the word set grows to a certain amount, say 10 million
+  * For example, we need to bucket the doc id when the doc grows to a certain amount, say 10 million
+  * Otherwise, the global url table and word table will be very huge
 
 #### References
 
