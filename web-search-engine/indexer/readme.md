@@ -12,10 +12,10 @@ In this programming assignment, we have achieved to index 4 million docs from Co
 
 #### How to build and run
 
-* build
+* How to build the program
 ![how to build](docs/images/how-to-build.png "how to build")
 
-* run
+* How to run the program
 ![how to run](docs/images/how-to-run.png "how to run")
 
 #### Core features of the indexer
