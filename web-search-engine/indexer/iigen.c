@@ -10,6 +10,7 @@
 #include "utils.h"
 
 
+
 /*
  main function of the iigen (Inverted Index Generator)
  */
@@ -26,6 +27,32 @@ int main(int argc, char *argv[])
    */
 
   int phase = 0;
+  int verbose = 0;
+
+  char c = '0';
+  while ((c = getopt(argc, argv, "1234vb:")) != -1)
+  {
+    switch (c) {
+      case '1':
+        phase = 1;
+        break;
+      case '2':
+        phase = 2;
+        break;
+      case '3':
+        phase = 3;
+        break;
+      case '4':
+        phase = 4;
+        break;
+      case 'v':
+        verbose = 1;
+        break;
+      default:
+        printf("invalid argument. please check help...\n");
+        exit(1);
+    }
+  }
 
   switch(phase){
     case 1:
@@ -33,6 +60,7 @@ int main(int argc, char *argv[])
       break;
 
     case 2:
+      printf("[fake] sorting lexicons...\n");
       break;
 
     case 3:
