@@ -130,9 +130,23 @@ There are a few core data structures we use for the inverted index building.
   * in this way, once we have the word id, we can use O(1) time to fetch its offset in the data file, and use another O(1) time to fetch the actual character represenation of the word. The total retrival time is still O(1) considering there is no linear search through the list.
 
  * Lexicon
+  * FILE POSTING FORMAT:
+   * [WORD_ID][DOC_ID][OFFSET]
 
  * Multi-level Inverted Index
+  * Global Index Table
+   * FILE POSTING FORMAT:
+    * [WORD_ID][OFFSET1][N]
+  * Middle Index Table
+   * FILE POSTING FORMAT:
+    * [DOC_ID][OFFSET2][N]
+  * Offset Index Table
+   * FILE POSTING FORMAT:
+    * [OFFSET][OFFSET3][OFFSET]
 
+  * OFFSET1: the offset for this word in the Middle Index Table
+  * OFFSET2: the offset for this word/doc in the Offset Index Table
+  * OFFSET3: the offset for this word/doc with a specific occrrence in the wet file, relative to its doc content start
 
 #### Lexicon Building
 
@@ -142,7 +156,7 @@ There are a few core data structures we use for the inverted index building.
 
  * WARC Parsing
   * WARC is a standard protocol to store and archive web contents. We write our own parse to parse the WARC protocol from the uncompressed data.
-  * 
+  * We referenced the Python warc library to reimplemente the C parser, and parsed WARC record for further lexicon processing.
 
  * Lexicon Parsing
   * The payload of each WARC record is the page content.
@@ -153,16 +167,10 @@ There are a few core data structures we use for the inverted index building.
     * For processing efficiency. Lexicon parsing is much easier and faster.
    * Cons of the WET data
     * No context of the lexicons
-  * INPUT: raw WET file, either in plaintext format or .gz format
-  * OUTPUT: one lexicon file
-  * FILE POSTING FORMAT:
-   * [WORD_ID][DOC_ID][OFFSET]
 
  * Lexicon Sorting
-  * INPUT: unsorted lexicon file
-  * OUTPUT: softed lexicon file
-  * Verification
-
+  * We use qsort() in the memory to in-place sort the lexicons and write them back to disk.
+  * It is O(n.logn) time complexity and O(1) space complexity
 
 #### Index Building
 
@@ -225,8 +233,6 @@ There are a few core data structures we use for the inverted index building.
   * Rewrit .mit file, let all docs with same word together.
   * Keep .iidx the same, since these files are large so that it's time consuming to merge together, and it's easy to maintain when updating index. 
 
- * Index bucketing
-
 
 #### Benchmarks
 
@@ -285,8 +291,6 @@ There are a few core data structures we use for the inverted index building.
  - index generation     3m8.080s 
  - index merging        3m1.799s 
 
-#### Summary
-
 #### Technical Statistics
  * Code deliverables 
  ```bash
@@ -305,8 +309,11 @@ py file:   895
  * Issue open/closed
   * We break down the development of this indexer to 3 milestones
    * alpha
+    * 14 issue closed
    * beta
+    * 3 issue closed
    * release
+    * 14 issue closed
 
 #### Known Issues
 
@@ -317,6 +324,7 @@ py file:   895
   * We happended to run into disk full issue. The code is not handlling this exception well.
 
  * intermediate files are not removed after final index merge
+  * Although this is not hard to implemente, we leave all the files in all phases for debugging purpose. Finally those files could be removed after final phase to save space. Maybe we should add a debug switch to leave those files.
 
 #### TODO
 
@@ -347,4 +355,16 @@ There are tons of features we can do for the indexer. Here are a few items we th
   * Otherwise, the global url table and word table will be very huge
 
 #### References
+
+ * tokenizer
+  * https://github.com/alexandermtang/tokenizer/blob/master/tokenizer.c
+  * we used the above tokenizer from Github
+  * but we also found a memory corruption bug when porting it to Linux. I guesss it is developed on MacOS as we develop as we also do not run into that Segmentation Fault error on MacOS.
+  * A Pull Request will be made to the author of the code
+
+ * WARC parser
+  * https://github.com/internetarchive/warc
+  * we used this in the python implementation
+  * and refered this implementation to re-write our C based warc parser in warc.c and warc.h
+  * we anticipate to continue polish this a bit and open source as a warc C parsing library as this is not generally available on the net/github.
 
