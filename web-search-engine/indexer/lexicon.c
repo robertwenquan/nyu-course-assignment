@@ -94,6 +94,7 @@ static void process_lexicons_from_file(char *infile, char *outfile)
   FILE * fpo = fopen(outfile, "wb");
 
   printf("processing %s ...\n", infile);
+  assert(fp != NULL && fpo != NULL);
 
   while (1) {
 
