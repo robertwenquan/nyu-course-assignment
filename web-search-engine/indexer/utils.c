@@ -226,7 +226,7 @@ char ** get_inout_filelist(PHASE_T phase)
   } else if (phase == IINDEX_GENERATION) {
     snprintf(input_globstr, 256, "%s%s", input_dir, "*.lexicon");
   } else if (phase == IINDEX_MERGING) {
-    snprintf(input_globstr, 256, "%s%s", input_dir, "*.git");
+    snprintf(input_globstr, 256, "%s%s", input_dir, "*.lexicon");
   } else {
     // bugged, never going here
     abort();
@@ -243,6 +243,8 @@ char ** get_inout_filelist(PHASE_T phase)
     times = 2;
   } else if (phase == IINDEX_GENERATION) {
     times = 4;
+  } else if (phase == IINDEX_MERGING) {
+    times = 3;
   }
 
   char **pp_flist = (char **)malloc(sizeof(char *) * results.gl_pathc*times+1);
@@ -281,6 +283,18 @@ char ** get_inout_filelist(PHASE_T phase)
       pp_flist++;
 
       snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".iidx");
+      *pp_flist = (char *)malloc(strlen(output_file)+1);
+      memset(*pp_flist, 0, strlen(output_file)+1);
+      strncpy(*pp_flist, output_file, strlen(output_file));
+      pp_flist++;
+    } else if (phase == IINDEX_MERGING) {
+      snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".git");
+      *pp_flist = (char *)malloc(strlen(output_file)+1);
+      memset(*pp_flist, 0, strlen(output_file)+1);
+      strncpy(*pp_flist, output_file, strlen(output_file));
+      pp_flist++;
+
+      snprintf(output_file, 256, "%s%s%s", output_dir, results.gl_pathv[i] + strlen(input_dir), ".mit");
       *pp_flist = (char *)malloc(strlen(output_file)+1);
       memset(*pp_flist, 0, strlen(output_file)+1);
       strncpy(*pp_flist, output_file, strlen(output_file));
