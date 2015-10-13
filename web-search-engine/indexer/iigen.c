@@ -36,7 +36,6 @@ int main(int argc, char *argv[])
       break;
 
     case 2:
-      lexicon_sorter();
       break;
 
     case 3:

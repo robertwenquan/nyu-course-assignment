@@ -181,18 +181,6 @@ void write_iidx(int offset, FILE *fdw, int cprs){
 
 int index_builder()
 {
-  return 0;
-}
-
-int index_merger()
-{
-  return 0;
-}
-
-
-#ifdef __TEST__
-int main(int argc, char * argv[])
-{
   int ret = 0;
   int numFile = 0;
 
@@ -216,8 +204,19 @@ int main(int argc, char * argv[])
   }
 
   free_inout_filelist(p_save);
+  return 0;
+}
 
-  return EXIT_SUCCESS;
+int index_merger()
+{
+  return 0;
+}
+
+
+#ifdef __TEST__
+int main(int argc, char * argv[])
+{
+  return index_builder();
 }
 #endif
 
