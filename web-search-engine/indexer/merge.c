@@ -17,7 +17,7 @@
 #include "merge.h"
 
 
-static char ** merge_files(char** p, int numLevel);
+static char ** merge_files(char** p);
 static void write_min(int i, int degree);
 static int sort_curr(int degree);
 static int merge_cont(int degree);
@@ -88,7 +88,7 @@ int main(int argc, char* argv[]) {
   //If number of files in inputlist is 2 (1 git and 1 mit), stop.
   while (inputsize-2) {
     sprintf(outlist, "%s%d", argv[4], numLevel);
-    ret = merge_files(inputlist, outlist);
+    //ret = merge_files(inputlist, outlist);
     if (ret == NULL) {
       return EXIT_FAILURE;
     } else {
@@ -129,17 +129,15 @@ static void print_help(char *argv[]) {
 #endif
 
 void merge_iindex(char **p) {
-  int numLevel = 0;
 
   while (*p != NULL && *(p+1) != NULL && *(p+2) != NULL && *(p+3) != NULL) {
-    p = merge_files(p, numLevel);
-    numLevel++;
+    p = merge_files(p);
   }
 
   return;
 }
 
-char** merge_files(char **p, int numLevel) {
+char** merge_files(char **p) {
 /* Merge files listed in inputlist, every max_degree files produce a new file
    Then return the output list */ 
 
@@ -154,6 +152,7 @@ char** merge_files(char **p, int numLevel) {
   char outmit[1024] = {'\0'};
   char outgit[1024] = {'\0'};
   char basename[1024] = {'\0'};
+  char rmfile[1024] = {'\0'};
 
   char **plist = (char **)malloc(sizeof(char *) * 200);
   if (plist == NULL) {
@@ -161,6 +160,7 @@ char** merge_files(char **p, int numLevel) {
   }
   memset(plist, 0, sizeof(char *) * 200);
   char **phead = plist;
+  char **p_in = p;
 
   unsigned char *buf_space = NULL;
   buf_space = (unsigned char *)malloc(mem_size);
@@ -177,7 +177,7 @@ char** merge_files(char **p, int numLevel) {
   }
   memset(ioBufs, 0, (max_degree + 1) * sizeof(BUF_T));
 
-  sprintf(basename, "%s%d", *p, numLevel);
+  sprintf(basename, "%s%d", *p, 0);
 
   while (*p != NULL && *(p+1) != NULL && *(p+2) != NULL) {
     //Initiate for each pile of files.
@@ -265,6 +265,13 @@ char** merge_files(char **p, int numLevel) {
   free(ioBufs);
   free(buf_space);
 
+  while ( *p_in != NULL && *(p_in+1) != NULL && *(p_in+2) != NULL ){
+    sprintf(rmfile, "%s%s", "rm  ", *(p_in+1));
+    system(rmfile);
+    sprintf(rmfile, "%s%s", "rm  ", *(p_in+2));
+    system(rmfile);
+    p_in += 3;
+  }
   return phead;
 }
 
