@@ -14,26 +14,15 @@
 #include <stdlib.h>
 #include <string.h>
 #include "utils.h"
-
-typedef struct {
-  FILE *fgit; 
-  FILE *fmit;
-  GIT_T* bufgit; 
-  MIT_T* bufmit;
-  int gitTotal; 
-  int gitConsume;
-  int mitTotal;
-  int mitConsume;
-} BUF_T;
+#include "merge.h"
 
 
-char * merge_files(char* inputlist, char* outlist);
-void write_min(int i, int degree);
-int sort_curr(int degree);
-int merge_cont(int degree);
-void check_ith_mit(int i);
-void get_next_word(int i);
-void buf_initiate(unsigned char *buf_space, int degree);
+static void write_min(int i, int degree);
+static int sort_curr(int degree);
+static int merge_cont(int degree);
+static void check_ith_mit(int i);
+static void get_next_word(int i);
+static void buf_initiate(unsigned char *buf_space, int degree);
 
 BUF_T *ioBufs;
 GIT_T *topElem;
@@ -272,7 +261,7 @@ char* merge_files(char* inputlist, char* outlist) {
   return outlist;
 }
 
-void buf_initiate(unsigned char *buf_space, int degree) {
+static void buf_initiate(unsigned char *buf_space, int degree) {
   /* Initiate start of each file buffer.
      Divide buf_space to 3*degree part.
      Give output file more buffer.         */
@@ -296,7 +285,7 @@ void buf_initiate(unsigned char *buf_space, int degree) {
   return;
 }
 
-void get_next_word(int i) {
+static void get_next_word(int i) {
 /* Load next git record of ith file to topElem struct
    Prepared for next comparition. */
   if (i == -1) {
@@ -330,7 +319,7 @@ void get_next_word(int i) {
   return;
 }
 
-int merge_cont(int degree) {
+static int merge_cont(int degree) {
   /* Get the minimum of the top element of each buffer
      Write it into ioBufs[degree], which is the buffer of output file
      Refill with the next element of this buffer block
@@ -365,7 +354,7 @@ int merge_cont(int degree) {
   return 0;
 }
 
-int sort_curr(int degree) {
+static int sort_curr(int degree) {
   /* Get the minimum word_id and return it's order in buffer */
 
   int minPos = -1;
@@ -476,7 +465,7 @@ void write_min(int i, int degree) {
   return;
 }
 
-void check_ith_mit(int i) {
+static void check_ith_mit(int i) {
   /* Refill buffer of ioBufs[i] when all of them are used */
 
   BUF_T *b = &ioBufs[i];
