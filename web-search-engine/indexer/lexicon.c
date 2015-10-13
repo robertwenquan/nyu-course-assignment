@@ -131,12 +131,14 @@ static void process_lexicons_from_file(char *infile, char *outfile)
     int page_lens = p_warc->payload->length;
     unsigned int docid = get_doc_id();
 
-    float dps = 0;
+    int dps = 0;
     time_t ts;
     time(&ts);
-    if (ts - time_saved > 3 && docid_saved != 0) {
-      dps = (docid - docid_saved) / 3.0;
-      printf("Processed %d docs, %.2f per sec.\n", docid, dps);
+    if (ts - time_saved > 3) {
+      dps = (docid - docid_saved)/3;
+      if (docid_saved != 0) {
+        printf("Processed %d docs, %d docs per sec.\n", docid, dps);
+      }
       time_saved = ts;
       docid_saved = docid;
     }
