@@ -362,6 +362,64 @@ There are tons of features we can do for the indexer. Here are a few items we th
   * For example, we need to bucket the doc id when the doc grows to a certain amount, say 10 million
   * Otherwise, the global url table and word table will be very huge
 
+#### File list
+Here is the source file list for reference. Most of the file names are self explanatary.
+```bash
+$ tree .
+.
+├── Makefile
+├── checklist.md
+├── docs
+│   ├── benchmarks.md
+│   ├── design.md
+│   ├── dev.md
+│   ├── ideas.md
+│   └── images
+│       ├── github-stats-indexer.png
+│       ├── how-to-build.png
+│       ├── how-to-run.png
+│       └── iindex_framework.png
+├── finlist
+├── gen_iindex.py
+├── gen_lexicon.py
+├── iigen.c
+├── iigen.py
+├── iigen.yml
+├── iindex.c
+├── iindex.h
+├── lexicon.c
+├── lexicon.h
+├── merge.c
+├── merge.h
+├── readme.md
+├── requirements.txt
+├── sort_lexicon.py
+├── test_data
+│   ├── input
+│   │   ├── input1.warc.wet
+│   │   ├── input2.warc.wet
+│   │   └── input3.warc.wet
+│   └── output
+│       ├── input1.warc.wet.lexicon
+│       ├── input2.warc.wet.lexicon
+│       └── input3.warc.wet.lexicon
+├── tests
+│   ├── read.c
+│   ├── test_chk_iindex_files.py
+│   └── test_chk_sorted_lexicons.py
+├── tokenizer.c
+├── tokenizer.h
+├── utils
+│   ├── chk_lexicons.py
+│   ├── chk_word_table.py
+│   ├── count_source.sh
+│   ├── gen_list.sh
+│   └── search_keyword.py
+├── utils.c
+├── utils.h
+├── warc.c
+└── warc.h
+```
 #### References
 
  * tokenizer
