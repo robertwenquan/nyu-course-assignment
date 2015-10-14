@@ -19,7 +19,7 @@
 
 
 static char ** merge_files(char** p);
-static void write_min(int i, int degree);
+static int write_min(int i, int degree);
 static int sort_curr(int degree);
 static int merge_cont(int degree);
 static void check_ith_mit(int i);
@@ -244,6 +244,7 @@ static int merge_cont(int degree) {
      Write it into ioBufs[degree], which is the buffer of output file
      Refill with the next element of this buffer block
      Until all the buffer block is empty. */
+  int ret = 0;
 
   topElem = (GIT_T *)malloc(sizeof(GIT_T) * (degree + 1));
   if (topElem == NULL) {
@@ -265,7 +266,10 @@ static int merge_cont(int degree) {
     // Get the order of buffer with minimum word_id
     min = sort_curr(degree);
     // Copy minimum to output buffer
-    write_min(min, degree);
+    ret = write_min(min, degree);
+    if (ret != 0) {
+      return -1;
+    }
     // Update record of that buffer
     get_next_word(min);
   } 
@@ -293,11 +297,12 @@ static int sort_curr(int degree) {
   return minPos;
 }
 
-void write_min(int i, int degree) {
+static int write_min(int i, int degree) {
   /* The ith buffer block contains the current minimum word_id, write it's information to output file. */
 
   BUF_T *b = &ioBufs[i];
   BUF_T *out = &ioBufs[degree];
+  int ret = 0;
 
   // If i == -1, means every buffer is empty, write back everything.
   if (i == -1) {
@@ -305,7 +310,11 @@ void write_min(int i, int degree) {
     if (out->gitTotal == out->gitConsume) {
       int j;
       for (j = 0; j < out->gitConsume; j++) {
-        fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
+        ret = fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
+        if (ret == 0) {
+          printf("Write file failed");
+          return -1;
+        }
       }
       out->gitTotal = buf_size * degree/ 2;
       out->gitConsume = 0;
@@ -317,14 +326,22 @@ void write_min(int i, int degree) {
     // Flush everything to disk
     int j;
     for (j = 0; j < out->gitConsume; j++) {
-      fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
+      ret = fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
+      if (ret == 0) {
+        printf("Write file failed");
+        return -1;
+      }
     }
 
     for (j = 0; j < out->mitConsume; j++) {
-      fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
+      ret = fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
+      if (ret == 0) {
+        printf("Write file failed");
+        return -1;
+      }
     }
 
-    return;
+    return 0;
   }
 
   //get the size of docs of that word, write to output buffer one by one.
@@ -341,7 +358,11 @@ void write_min(int i, int degree) {
     if (out->mitTotal == out->mitConsume ) {
       int j;
       for (j = 0; j < out->mitConsume; j++) {
-        fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
+        ret = fwrite(&(out->bufmit[j]), sizeof(MIT_T), 1, out->fmit);
+        if (ret == 0) {
+          printf("Write file failed");
+          return -1;
+        }
       }
 
       out->mitTotal = degree * buf_size - buf_size * degree/ 2 ;
@@ -363,7 +384,11 @@ void write_min(int i, int degree) {
     if (out->gitTotal == out->gitConsume) {
       int j;
       for (j = 0; j < out->gitConsume; j++) {
-        fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
+        ret = fwrite(&(out->bufgit[j]), sizeof(GIT_T), 1, out->fgit);
+        if (ret == 0) {
+          printf("Write file failed");
+          return -1;
+        }
       }
 
       out->gitTotal = buf_size * degree/ 2;
@@ -382,7 +407,7 @@ void write_min(int i, int degree) {
     topElem[degree].n_docs += topElem[i].n_docs;
   }
 
-  return;
+  return 0;
 }
 
 static void check_ith_mit(int i) {
