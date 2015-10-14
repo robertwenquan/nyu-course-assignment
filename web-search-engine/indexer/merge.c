@@ -62,7 +62,6 @@ char** merge_files(char **p) {
   char outmit[1024] = {'\0'};
   char outgit[1024] = {'\0'};
   char basename[1024] = {'\0'};
-  char rmfile[1024] = {'\0'};
 
   char **plist = (char **)malloc(sizeof(char *) * 200);
   if (plist == NULL) {
@@ -176,10 +175,8 @@ char** merge_files(char **p) {
   free(buf_space);
 
   while ( *p_in != NULL && *(p_in+1) != NULL && *(p_in+2) != NULL ){
-    sprintf(rmfile, "%s%s", "rm  ", *(p_in+1));
-    system(rmfile);
-    sprintf(rmfile, "%s%s", "rm  ", *(p_in+2));
-    system(rmfile);
+    remove(*(p_in+1));
+    remove(*(p_in+2));
     p_in += 3;
   }
   return phead;
