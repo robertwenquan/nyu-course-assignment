@@ -191,7 +191,6 @@ int index_builder()
   char timestr[32] = {'\0'};
   snprintf(timestr, 32, "%d-%02d-%02d %02d:%02d:%02d", tm->tm_year+1900, tm->tm_mon+1, tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
 
-  printf("\n");
   printf("%s Building inverted index...\n", timestr);
 
   ret = initiate_global();
@@ -219,8 +218,6 @@ int index_builder()
 
 int index_merger()
 {
-  printf("\n");
-
   time_t ts;
   time(&ts);
   struct tm * tm = localtime(&ts);
