@@ -4,18 +4,69 @@ Robert Wen <robert.wen@nyu.edu>  Caicai Chen <caicai.chen@nyu.edu>
 
 #### Introduction
 
-This project is the 2nd programming assignment of the Web Search Engine class for Fall 2015 Semester at Tandon School of Engineering, NYU. It is about building an inverted index generator based on web crawled data. It is the collaboration effort of Robert Wen and Caicai Chen, with the consent of Professor Torsten.
+This project is the 2nd programming assignment of the Web Search Engine class for Fall 2015 Semester at Tandon School of Engineering, NYU. It is about building an inverted index generator based on web crawled data. It is the collaboration effort of Robert Wen and Caicai Chen, with the prior consent of Professor Torsten.
 
-There are two set of web crawled data: NZ dataset and the CommonCrawl dataset. The NZ dataset is with a few million web pages crawled a few years ago for all the New Zealand websites. The CommonCrawl dataset is humongous. For the subset of July 2015 data it's a few dozen TB in crawled data. For this assignment, we select 0.25% of the July 2015 CommonCrawl data for inverted index generation. It is about 80 * 50000 = 4 million pages with about 80 * 150MB = 12GB compressed crawled data.
+There are two sets of web crawled data: NZ dataset and the CommonCrawl dataset. The NZ dataset is with a few millions web pages crawled a few years ago for all the New Zealand domains. The CommonCrawl dataset is humongous about the "whole" web. For the subset of July 2015 data it is a few dozen TB in crawled data. For this assignment, we select 0.25% of the July 2015 CommonCrawl data for inverted index generation. It is about 80 * 50000 = 4 million pages with about 80 * 150MB = 12GB compressed crawled data.
 
 In this programming assignment, we have achieved to index 4 million docs from CommonCrawl in 40 minutes. This document describes the design and the implementation of the inverted index builder.
 
 #### How to build and run
 
-* How to build the program
+* Walk the directory
+
+When you untar the tarball, you will come to a directory like this. This is the root of the indexer.
+
+```bash
+$ tree -d .
+.
+├── docs
+│   └── images
+├── notebook
+├── test_data
+│   ├── input
+│   ├── output
+│   ├── phase1_output
+│   ├── phase2_output
+│   └── phase3_output
+├── tests
+└── utils
+```
+
+In this directory, there are a few *.c, *.h, *.py, etc. These are all the source code we have for this indexer. You can simply ignore the .py files. Because we have two language implementations, in Python and C. We use Python to prototype the indexer and validate the design. Also at the same time we generate the test data for each phase. And then re-implemente the whole design with C for efficiency. Then we use both implementations to cross validate the input and output with each other for robust. For the final indexer, no python code is used. But those Python code are still used as debug and testing purpose.
+
+```bash
+$ ls -l *.[chp]*
+-rw-r--r--  1 robert  staff   6546 Oct 12 09:52 gen_iindex.py
+-rw-r--r--  1 robert  staff   6577 Oct 12 03:16 gen_lexicon.py
+-rw-r--r--  1 robert  staff   1572 Oct 14 10:06 iigen.c
+-rw-r--r--  1 robert  staff    362 Oct  3 12:02 iigen.py
+-rw-r--r--  1 robert  staff   6018 Oct 14 10:08 iindex.c
+-rw-r--r--  1 robert  staff    119 Oct  7 10:28 iindex.h
+-rw-r--r--  1 robert  staff   6669 Oct 14 10:06 lexicon.c
+-rw-r--r--  1 robert  staff    457 Oct 12 03:32 lexicon.h
+-rw-r--r--  1 robert  staff  10854 Oct 14 10:06 merge.c
+-rw-r--r--  1 robert  staff    274 Oct 12 22:45 merge.h
+-rw-r--r--  1 robert  staff   2804 Oct 12 03:16 sort_lexicon.py
+-rw-r--r--  1 robert  staff   6372 Oct 12 09:52 tokenizer.c
+-rw-r--r--  1 robert  staff    525 Oct 12 09:52 tokenizer.h
+-rw-r--r--  1 robert  staff   8010 Oct 12 23:06 utils.c
+-rw-r--r--  1 robert  staff   1816 Oct 12 11:52 utils.h
+-rw-r--r--  1 robert  staff   6076 Oct 12 01:23 warc.c
+-rw-r--r--  1 robert  staff    588 Oct 11 09:39 warc.h
+```
+
+* How to build
+
+It is very straight-forward as described below. We have prepared the Makefile for you. It is tested on MacOS Yosemite and Ubuntu Linux 14.04. There is no guarantee that will work on other platform but it may work with miminum modification on any unix like systems.
+
 ![how to build](docs/images/how-to-build.png "how to build")
 
-* How to run the program
+* How to run
+
+It is as simple as one line, with or without argument. Without any argument, the index will ran against a tiny dataset with 3 sample WET files with 30 documents. The dataset is stored in the test_data/input directory. After the index run, the output will be in test_data/output directory.
+
+With argument --basedir, you can point the indexer to work on a larger dataset as you with. The data is assumed to sit under ${basedir}/input. And the output will be generated under ${basedir}/output
+
 ![how to run](docs/images/how-to-run.png "how to run")
 
 #### Core features of the indexer
