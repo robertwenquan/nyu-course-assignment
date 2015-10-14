@@ -38,6 +38,10 @@ void merge_iindex(char **p) {
 
   while (*p != NULL && *(p+1) != NULL && *(p+2) != NULL && *(p+3) != NULL) {
     p = merge_files(p);
+    if (p == NULL) {
+      printf("Merge Failed!\n");
+      return;
+    }
   }
 
   return;
