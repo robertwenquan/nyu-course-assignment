@@ -51,8 +51,6 @@ char** merge_files(char **p) {
 /* Merge files listed in inputlist, every max_degree files produce a new file
    Then return the output list */ 
 
-  FILE *fin = NULL;
-
   int degree = 0;
   int i = 0;
   int numFile = 0;
@@ -170,7 +168,6 @@ char** merge_files(char **p) {
     numFile++;
   }
 
-  fclose(fin); 
   free(ioBufs);
   free(buf_space);
 
