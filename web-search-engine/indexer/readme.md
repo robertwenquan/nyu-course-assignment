@@ -431,6 +431,6 @@ $ tree .
  * WARC parser
   * https://github.com/internetarchive/warc
   * we used this in the python implementation
-  * and refered this implementation to re-write our C based warc parser in warc.c and warc.h
+  * and referenced this implementation to re-write our C based warc parser in warc.c and warc.h
   * we anticipate to continue polish this a bit and open source as a warc C parsing library as this is not generally available on the net/github.
 
