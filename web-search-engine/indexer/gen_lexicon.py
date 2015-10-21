@@ -49,18 +49,18 @@ from struct import pack
 
 
 # test dataset with 30k docs
-#BASE_DIR = './test_data'
+BASE_DIR = './test_data'
 
 # bigger dataset with 100k docs
 #BASE_DIR = '/data/wse/100k'
-BASE_DIR = '/data/wse/1m'
+#BASE_DIR = '/data/wse/1m'
 
 WET_DIR = os.path.join(BASE_DIR, 'input')
-URL_TABLE_IDX = os.path.join(BASE_DIR, 'phase1_output/url_table.idx')
-URL_TABLE_DATA = os.path.join(BASE_DIR, 'phase1_output/url_table.data')
+URL_TABLE_IDX = os.path.join(BASE_DIR, 'output/url_table.idx')
+URL_TABLE_DATA = os.path.join(BASE_DIR, 'output/url_table.data')
 
-WORD_TABLE_IDX = os.path.join(BASE_DIR, 'phase1_output/word_table.idx')
-WORD_TABLE_DATA = os.path.join(BASE_DIR, 'phase1_output/word_table.data')
+WORD_TABLE_IDX = os.path.join(BASE_DIR, 'output/word_table.idx')
+WORD_TABLE_DATA = os.path.join(BASE_DIR, 'output/word_table.data')
 
 LEXICON_PATH = os.path.join(BASE_DIR, 'phase1_output')
 
