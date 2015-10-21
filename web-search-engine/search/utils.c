@@ -328,3 +328,26 @@ void free_inout_filelist(char **pfiles)
   free(p_saved);
 }
 
+/*
+ * print the git entry for debugging
+ */
+void print_git_entry(GIT_T *p_git) {
+  printf("===== GIT Entry =====\n");
+  printf(" %-8s: %9d\n", "word id", p_git->word_id);
+  printf(" %-8s: %9d\n", "offset", p_git->offset);
+  printf(" %-8s: %9d\n", "ndocs", p_git->n_docs);
+  printf("=====================\n");
+}
+
+
+/*
+ * print the mit entry for debugging
+ */
+void print_mit_entry(MIT_T *p_mit) {
+  printf("===== GIT Entry =====\n");
+  printf(" %-8s: %9d\n", "docid", p_mit->docid);
+  printf(" %-8s: %9d\n", "offset", p_mit->offset);
+  printf(" %-8s: %9d\n", "nplaces", p_mit->n_places);
+  printf("=====================\n");
+}
+
