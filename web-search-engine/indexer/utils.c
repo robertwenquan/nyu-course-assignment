@@ -310,6 +310,26 @@ char ** get_inout_filelist(PHASE_T phase)
 }
 
 /*
+ * open two FILE * pointers for word id generation
+ */
+void open_word_idx_fps(FILE *fp_idx, FILE *fp_word)
+{
+  char word_idx_filename[256] = {'\0'};
+  snprintf(word_idx_filename, 256, "%s%s", BASE_DIR, "input/");
+
+  return;
+}
+
+/*
+ *
+ */
+void open_url_idx_fps(FILE *fp_idx, FILE *fp_url)
+{
+  return;
+}
+
+
+/*
  * free file list memory buffers
  */
 void free_inout_filelist(char **pfiles)
