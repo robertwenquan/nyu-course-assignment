@@ -1,0 +1,24 @@
+#
+# Makefile for iigen
+#
+
+UNAME := $(shell uname)
+
+CC = gcc
+ifeq ($(UNAME), Linux)
+CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__LINUX__
+else
+CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__MACOS__
+endif
+
+OBJS = query.o word_search.o iindex_search.o utils.o
+BINS = search
+
+all:  $(BINS)
+
+search:  $(OBJS)
+	$(CC) -o $@ $(OBJS)
+
+clean:  
+	rm -fr $(BINS) $(OBJS) *.dSYM *.pyc tests/*.pyc *.o &>/dev/null
+
