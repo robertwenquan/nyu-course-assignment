@@ -11,18 +11,22 @@ GIT_T * query_git(int word_id)
   FILE * f_git;
   int v_check = 0;
 
-  f_git = fopen("../indexer/test_data/output/input1.warc.wet.lexicon00.git", "rb");
+  f_git = fopen("test_data/tiny30/output/input1.warc.wet.lexicon00.git", "rb");
   if (f_git == NULL) {
     return NULL;
   }
 
   GIT_T * ret = (GIT_T *)malloc(sizeof(GIT_T));
+  if (ret == NULL) {
+    return NULL;
+  }
 
   while (!feof(f_git)) {
     v_check = fread(ret, sizeof(GIT_T), 1, f_git);
 
     if (v_check == 0) {
       fclose(f_git);
+      free(ret);
       return NULL;
     }
 
@@ -33,11 +37,13 @@ GIT_T * query_git(int word_id)
 
     if (ret->word_id > word_id) {
       fclose(f_git);
+      free(ret);
       return NULL;
     }
   } 
 
   fclose(f_git);
+  free(ret);
   return NULL;
 }
 
