@@ -8,7 +8,13 @@ int nextGEQ(MIT_T ** l_docs, int k){
   /*
    * Return the next posting with doc_id >= k in l_docs
    */
-  return 0;
+  while (*l_docs != NULL) {
+    if ((*l_docs)->docid > k) {
+      return (*l_docs)->docid;
+    }
+    l_docs++;
+  }
+  return -1;
 }
 
 int * get_intersection(MIT_T *** list_word_mit) {
@@ -16,7 +22,7 @@ int * get_intersection(MIT_T *** list_word_mit) {
   return NULL;
 }
 
-float cal_BM25 (int doc_id) {
+float cal_BM25 (int docid) {
   return 0;
 }
 
