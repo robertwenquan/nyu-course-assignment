@@ -132,7 +132,7 @@ MIT_T ** query_mit(GIT_T *p_git)
       printf("Malloc p_return_mit failed\n");
       return NULL;
     }
-    fread(p_return_mit, sizeof(MIT_T), 1, fd_mit);
+    fread(*p_return_mit, sizeof(MIT_T), 1, fd_mit);
     p_return_mit++;
   }
 
