@@ -4,5 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int word_to_id(char *word);
+
 #endif
 
