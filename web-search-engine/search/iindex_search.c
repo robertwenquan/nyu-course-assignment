@@ -1,4 +1,32 @@
 #include "iindex_search.h"
+#include <fcntl.h>
+#include <string.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+
+/*
+ * standard comparison function of GIT entry
+ * for bsearch()
+ */
+int compare_git(const void *rec_a, const void *rec_b)
+{
+  GIT_T *p_git_a = (GIT_T *)rec_a;
+  GIT_T *p_git_b = (GIT_T *)rec_b;
+
+  if (p_git_a->word_id > p_git_b->word_id) {
+    return 1;
+  }
+  else if (p_git_a->word_id == p_git_b->word_id) {
+    return 0;
+  }
+  else {
+    return -1;
+  }
+}
+
+
 /*
  * query GIT entry based on the word_id
  * input: word id
@@ -8,43 +36,52 @@ GIT_T * query_git(int word_id)
 {
   // Open *.git file and find word_id using binary search
   //char **p = get_inout_filelist(IINDEX_MERGING);
-  FILE * f_git;
-  int v_check = 0;
+  int fd_git = -1;
+  GIT_T *p_return_git = NULL;
 
-  f_git = fopen("test_data/tiny30/output/input1.warc.wet.lexicon00.git", "rb");
-  if (f_git == NULL) {
+  char filename[256] = {'\0'};
+  bzero(filename, 256);
+  strncpy(filename, "test_data/tiny30/output/input1.warc.wet.lexicon00.git", 256);
+
+  fd_git = open(filename, O_RDONLY);
+  if (fd_git == -1) {
     return NULL;
   }
 
-  GIT_T * ret = (GIT_T *)malloc(sizeof(GIT_T));
-  if (ret == NULL) {
+  struct stat st;
+  fstat(fd_git, &st);
+
+  void *git_table = mmap(NULL, st.st_size, PROT_READ, MAP_PRIVATE, fd_git, 0);
+  if (git_table == MAP_FAILED) {
+    close(fd_git);
     return NULL;
   }
+  
+  printf("mapped git_table at %p\n", git_table);
+   
+  GIT_T git_search_key = { .word_id = word_id,
+                           .offset = 0,
+                           .n_docs = 0
+                         };
+  
+  GIT_T * p_git_hit = bsearch((void *)&git_search_key, git_table, \
+                              st.st_size/sizeof(GIT_T), sizeof(GIT_T), compare_git);
+  if (p_git_hit == NULL) {
+    p_return_git = NULL;
+    goto _QUERY_GIT_FAILURE;
+  }
 
-  while (!feof(f_git)) {
-    v_check = fread(ret, sizeof(GIT_T), 1, f_git);
+  printf("found the git entry at %p\n", p_git_hit);
 
-    if (v_check == 0) {
-      fclose(f_git);
-      free(ret);
-      return NULL;
-    }
+  p_return_git = (GIT_T *)malloc(sizeof(GIT_T));
+  if (p_return_git != NULL) {
+    memcpy(p_return_git, p_git_hit, sizeof(GIT_T));
+  }
 
-    if (ret->word_id == word_id) {
-      fclose(f_git);
-      return ret;
-    }
-
-    if (ret->word_id > word_id) {
-      fclose(f_git);
-      free(ret);
-      return NULL;
-    }
-  } 
-
-  fclose(f_git);
-  free(ret);
-  return NULL;
+_QUERY_GIT_FAILURE:
+  munmap(git_table, st.st_size);
+  close(fd_git);
+  return p_return_git;
 }
 
 
@@ -64,6 +101,7 @@ MIT_T * query_mit(GIT_T *p_git)
   return NULL;
 }
 
+
 /*
  * query inverted index based on the offset and length
  * input: MIT_T entry
@@ -75,3 +113,4 @@ void * query_iindex(MIT_T *p_mit)
   // Open corresponding .iidx file and return a list of offset
   return NULL;
 }
+
