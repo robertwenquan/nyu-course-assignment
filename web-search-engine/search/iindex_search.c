@@ -90,15 +90,49 @@ _QUERY_GIT_FAILURE:
  * input: GIT_T entry
  * output: MIT_T entry
  */
-MIT_T * query_mit(GIT_T *p_git)
+MIT_T ** query_mit(GIT_T *p_git)
 {
   // Open *.mit file, return a list of MIT_T entries
-  printf("JUST TEST");
   if (p_git == NULL) {
     return NULL;
   }
 
-  return NULL;
+  FILE *fd_mit = NULL;
+  MIT_T **p_return_mit = NULL;
+
+  char filename[256] = {'\0'};
+  bzero(filename, 256);
+  strncpy(filename, "test_data/tiny30/output/input1.warc.wet.lexicon00.mit", 256);
+
+  fd_mit = fopen(filename, "rb");
+  if (fd_mit == NULL) {
+    printf("Open file failed\n");
+    return NULL;
+  }
+
+  p_return_mit = (MIT_T **)malloc(sizeof(MIT_T *) * p_git->n_docs);
+
+  MIT_T **p_head = p_return_mit;
+
+  if (p_return_mit == NULL) {
+    printf("Malloc p_return_mit failed\n");
+    return NULL;
+  }
+
+  fseek(fd_mit, p_git->offset, SEEK_SET);
+
+  int i = 0;
+  for (i = 0; i < p_git->n_docs ; i++) {
+    *p_return_mit = (MIT_T *)malloc(sizeof(MIT_T));
+    if (p_return_mit == NULL) {
+      printf("Malloc p_return_mit failed\n");
+      return NULL;
+    }
+    fread(p_return_mit, sizeof(MIT_T), 1, fd_mit);
+    p_return_mit++;
+  }
+
+  return p_head;
 }
 
 
