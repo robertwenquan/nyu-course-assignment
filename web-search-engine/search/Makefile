@@ -11,7 +11,7 @@ else
 CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__MACOS__
 endif
 
-OBJS = query.o word_search.o iindex_search.o utils.o
+OBJS = query.o word_search.o iindex_search.o utils.o pagerank.o
 BINS = search
 
 all:  $(BINS)
