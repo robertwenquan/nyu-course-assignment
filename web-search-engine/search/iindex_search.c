@@ -26,6 +26,10 @@ int compare_git(const void *rec_a, const void *rec_b)
   }
 }
 
+/* compare_mit is literally the same as compare_git
+ * as GIT_T and MIT_T has the same structure in terms of comparison
+ */
+#define compare_mit compare_git
 
 /*
  * query GIT entry based on the word_id
