@@ -33,8 +33,8 @@ BASE_DIR = './test_data'
 WORD_TABLE_IDX = '/tmp/word_table.idx'
 WORD_TABLE_DATA = '/tmp/word_table.data'
 
-WORD_TABLE_IDX = os.path.join(BASE_DIR, 'phase1_output/word_table.idx')
-WORD_TABLE_DATA = os.path.join(BASE_DIR, 'phase1_output/word_table.data')
+WORD_TABLE_IDX = os.path.join(BASE_DIR, 'output/word_table.idx')
+WORD_TABLE_DATA = os.path.join(BASE_DIR, 'output/word_table.data')
 
 
 def main():
