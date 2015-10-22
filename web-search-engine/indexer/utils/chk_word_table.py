@@ -16,7 +16,6 @@ word id index entry format
 
 word table entry format
 {
-[1 B] length of the word
 [N B] N as read from the above
 }
 
