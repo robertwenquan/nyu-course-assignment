@@ -356,3 +356,10 @@ void print_iidx_entry(IIDX_T *p_iidx) {
   printf(" %-8s: %9d\n", "offset", p_iidx->offset);
   printf("=====================\n");
 }
+
+
+int get_doc_length(int docid)
+{
+  return 1800;
+}
+
