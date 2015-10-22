@@ -221,7 +221,7 @@ def main():
 
         # docid(4B), url_pos[fileid(2B), offset(4B), lens(2B)],
         # doc_pos[fileid(2B), offset(4B), lens(4B), con_offset(2B), con_lens(4B)]
-        url_idx_data = pack('ihihhiihi', \
+        url_idx_data = pack('=IHIHHIIHI', \
                         docid, url_fileid, url_offset, url_lens, doc_fileid, \
                         doc_offset, doc_length, content_offset, content_length)
         url_index.write_url_index_entry(url_idx_data)
