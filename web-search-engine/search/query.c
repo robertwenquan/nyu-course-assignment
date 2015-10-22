@@ -27,11 +27,16 @@ void query_word(char *word)
 
   /* 3. GIT entry to MIT entry */
   printf("query MIT entry...\n");
-  MIT_T *p_mit_entry = query_mit(p_git_entry);
+  MIT_T **p_mit_entry = query_mit(p_git_entry);
+
   if (p_mit_entry == NULL) {
     return;
   }
-  print_mit_entry(p_mit_entry);
+
+  while(*p_mit_entry != NULL){
+    print_mit_entry(*p_mit_entry);
+    p_mit_entry++;
+  }
 
   /* 4. MIT entry to IINDEX entry */
   printf("query IINDEX entry...\n");

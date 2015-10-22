@@ -114,12 +114,13 @@ MIT_T ** query_mit(GIT_T *p_git)
     return NULL;
   }
 
-  p_return_mit = (MIT_T **)malloc(sizeof(MIT_T *) * p_git->n_docs);
+  p_return_mit = (MIT_T **)calloc(p_git->n_docs + 1, sizeof(MIT_T *));
 
   MIT_T **p_head = p_return_mit;
 
   if (p_return_mit == NULL) {
     printf("Malloc p_return_mit failed\n");
+    fclose(fd_mit);
     return NULL;
   }
 
@@ -130,12 +131,14 @@ MIT_T ** query_mit(GIT_T *p_git)
     *p_return_mit = (MIT_T *)malloc(sizeof(MIT_T));
     if (p_return_mit == NULL) {
       printf("Malloc p_return_mit failed\n");
+      fclose(fd_mit);
       return NULL;
     }
     fread(*p_return_mit, sizeof(MIT_T), 1, fd_mit);
     p_return_mit++;
   }
 
+  fclose(fd_mit);
   return p_head;
 }
 
@@ -145,10 +148,37 @@ MIT_T ** query_mit(GIT_T *p_git)
  * input: MIT_T entry
  * output: inverted index list
  */
-void * query_iindex(MIT_T *p_mit)
+IIDX_T * query_iindex(MIT_T *p_mit)
 {
   printf("JUST TEST");
   // Open corresponding .iidx file and return a list of offset
-  return NULL;
+  char filename[256] = {'\0'};
+  bzero(filename, 256);
+  strncpy(filename, get_iidx_file(p_mit->docid), 256);
+
+  FILE * f_iidx;
+
+  IIDX_T * p_return_iidx = (IIDX_T *)calloc(p_mit->n_places, sizeof(IIDX_T));
+  if (p_return_iidx == NULL) {
+    return NULL;
+  }
+
+  f_iidx = fopen(filename, "r");
+
+  if (f_iidx == NULL) {
+    return NULL;
+  }
+
+  fseek(f_iidx, p_mit->offset, SEEK_SET);
+  fread(p_return_iidx ,sizeof(IIDX_T), p_mit->n_places, f_iidx);
+
+  fclose(f_iidx);
+  return p_return_iidx;
 }
 
+char * get_iidx_file(int docid)
+{
+  char * filename = (char *)calloc(1, 256);
+  strncpy(filename, "../indexer/test_data/output/input1.warc.wet.lexicon.iidx", 256);
+  return filename;
+}
