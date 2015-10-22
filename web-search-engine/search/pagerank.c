@@ -114,15 +114,6 @@ char * ranking_docs(int * docs) {
   return NULL;
 }
 
-int get_avg_doc_length()
-{
-  return 2000;
-}
-
-int total_num_docs(){
-  return 288;
-}
-
 double cal_idf_q(int N, MIT_T** l_mit)
 {
 //IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))  

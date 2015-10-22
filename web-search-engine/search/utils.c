@@ -363,3 +363,12 @@ int get_doc_length(int docid)
   return 1800;
 }
 
+int get_avg_doc_length()
+{
+  return 2000;
+}
+
+int total_num_docs(){
+  return 288;
+}
+
