@@ -108,7 +108,7 @@ static WARC_HDR_T * parse_warc_header (FILE * fp, int offset) {
       strncpy(content_lens, val, 32);
     }
     else if (strncmp(key, "WARC-Target-URI", 15) == 0) {
-      strncpy(url, val, 32);
+      strncpy(url, val, 512);
     }
   }
 
@@ -271,5 +271,19 @@ void warc_close(FILE *warc_fp) {
   if (warc_fp) {
     fclose(warc_fp);
   }
+}
+
+/*
+ * print WARC record for debugging
+ */
+void print_warc(WARC_REC_T *p_warc)
+{
+  printf("--------- WARC rec ---------\n");
+  printf("offset: %d\n", p_warc->offset);
+  printf("--header--------------------\n");
+  printf("url: %s\n", p_warc->header->url);
+  printf("length: %d\n", p_warc->header->content_length);
+  printf("--payload-------------------\n");
+  printf("length: %d\n", p_warc->payload->length);
 }
 
