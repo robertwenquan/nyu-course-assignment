@@ -3,11 +3,16 @@
 #### Development Environment
 * We use google cloud compute instance for development
  * IP: 104.196.1.253
- * 16 vCPU
- * 16 GB RAM
- * 400 GB SSD
- * 10 GB buffered write in 524 MB/s
- * 10 GB unbuffered read in 485 MB/s
+  * 16 vCPU
+  * 16 GB RAM
+  * 400 GB SSD
+  * 10 GB buffered write in 524 MB/s
+  * 10 GB unbuffered read in 485 MB/s
+
+ * IP: 23.236.58.54
+  * 32 vCPU
+  * 200 GB RAM
+  * 1TB SSD
 
 #### Dataset
 * dataset1 (30 docs in 3 wet files)
