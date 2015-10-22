@@ -58,6 +58,11 @@ int * get_intersection(MIT_T *** list_word_mit) {
 }
 
 float cal_BM25 (int docid) {
+  /*
+   * For each word, IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))
+   * Score(D,q) = IDF(q)*( f(q,D)*(k+1) / (f(q,D) + k*(1-b+b*|D|/avgdl)) )
+   * Score(D,Q) = sum Score(D,q)
+   */
   return 0;
 }
 
