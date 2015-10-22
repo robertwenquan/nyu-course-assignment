@@ -146,6 +146,20 @@ static unsigned int query_word_for_id(char *word)
   static int wordid = 0;
   static pthread_mutex_t wordid_lock;
 
+  static char filename_word_idx_table[256] = {'\0'};
+  static char filename_word_str_table[256] = {'\0'};
+  static FILE *fp_word_idx_table = NULL;
+  static FILE *fp_word_str_table = NULL;
+
+  if (fp_word_idx_table == NULL && fp_word_str_table == NULL) {
+    bzero(filename_word_idx_table, 256);
+    bzero(filename_word_str_table, 256);
+    snprintf(filename_word_idx_table, 256, "%s%s", BASE_DIR, "output/word_table.idx");
+    snprintf(filename_word_str_table, 256, "%s%s", BASE_DIR, "output/word_table.data");
+    fp_word_idx_table = fopen(filename_word_idx_table, "wb");
+    fp_word_str_table = fopen(filename_word_str_table, "wb");
+  }
+
   int word_lens = strlen(word);
 
   WORDID_HASHTREE_NODE_T *work_node = &wordid_hash_root;
@@ -168,6 +182,7 @@ static unsigned int query_word_for_id(char *word)
       tree_node->wordid = 0;
 
       pthread_mutex_lock(&wordid_lock);
+      // set the new node_idx
       work_node->next[node_idx] = tree_node;
       pthread_mutex_unlock(&wordid_lock);
     }
@@ -176,10 +191,21 @@ static unsigned int query_word_for_id(char *word)
   }
 
   // at this point, work_node points to the last node
+  // for any new node, the wordid is not assigned so it's 0
   if (work_node->wordid == 0) {
     wordid++;
+
     pthread_mutex_lock(&wordid_lock);
     work_node->wordid = wordid;
+
+    // write the new (wordid,word) mapping into index table
+    WORD_IDX_T wordid_idx_entry = {.word_id = wordid,
+                                   .offset = ftell(fp_word_str_table),
+                                   .length = word_lens
+                                  };
+    fwrite(&wordid_idx_entry, sizeof(WORD_IDX_T), 1, fp_word_idx_table);
+    fwrite(word, word_lens, 1, fp_word_str_table);
+
     pthread_mutex_unlock(&wordid_lock);
   }
 

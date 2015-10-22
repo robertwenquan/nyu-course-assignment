@@ -47,6 +47,12 @@ typedef struct _wordid_hashtree_node_ {
   struct _wordid_hashtree_node_ *next[62];
 } WORDID_HASHTREE_NODE_T;
 
+typedef struct __attribute__((__packed__)) {
+  unsigned int word_id;
+  unsigned int offset;
+  unsigned short length:8;
+} WORD_IDX_T;
+
 unsigned int get_word_id(char *word);
 // For wordid
 
