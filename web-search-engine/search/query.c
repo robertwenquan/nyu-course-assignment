@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "query.h"
 
-
 /*
  * query a single word
  */
@@ -28,18 +27,34 @@ void query_word(char *word)
   /* 3. GIT entry to MIT entry */
   printf("query MIT entry...\n");
   MIT_T **p_mit_entry = query_mit(p_git_entry);
-
   if (p_mit_entry == NULL) {
     return;
   }
-
+  MIT_T **p_save = p_mit_entry;
   while(*p_mit_entry != NULL){
     print_mit_entry(*p_mit_entry);
     p_mit_entry++;
   }
+  p_mit_entry = p_save;
 
   /* 4. MIT entry to IINDEX entry */
   printf("query IINDEX entry...\n");
+
+  IIDX_T * p_iidx_entry = (IIDX_T *) calloc (1024, sizeof(IIDX_T *));
+  int i = 0;
+  while(*p_mit_entry != NULL){
+    p_iidx_entry = query_iindex(*p_mit_entry);
+    if (p_iidx_entry == NULL) {
+      return;
+    }
+    i = 0;
+    while(p_iidx_entry[i].offset != 0 ){
+      print_iidx_entry(&p_iidx_entry[i]);
+      i++;
+    }
+
+    p_mit_entry++;
+  }
 
   /* 5. IINDEX entry to WARC info */
 

@@ -344,10 +344,15 @@ void print_git_entry(GIT_T *p_git) {
  * print the mit entry for debugging
  */
 void print_mit_entry(MIT_T *p_mit) {
-  printf("===== GIT Entry =====\n");
+  printf("===== MIT Entry =====\n");
   printf(" %-8s: %9d\n", "docid", p_mit->docid);
   printf(" %-8s: %9d\n", "offset", p_mit->offset);
   printf(" %-8s: %9d\n", "nplaces", p_mit->n_places);
   printf("=====================\n");
 }
 
+void print_iidx_entry(IIDX_T *p_iidx) {
+  printf("===== IIDX Entry =====\n");
+  printf(" %-8s: %9d\n", "offset", p_iidx->offset);
+  printf("=====================\n");
+}
