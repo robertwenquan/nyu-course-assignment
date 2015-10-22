@@ -151,13 +151,14 @@ MIT_T ** query_mit(GIT_T *p_git)
 IIDX_T * query_iindex(MIT_T *p_mit)
 {
   printf("JUST TEST");
-  // Open corresponding .iidx file and return a list of offset
+  // TODO: Open corresponding .iidx file by get_iidx_file
   char filename[256] = {'\0'};
   bzero(filename, 256);
   strncpy(filename, get_iidx_file(p_mit->docid), 256);
 
   FILE * f_iidx;
 
+  //TODO: If offset is compressed, should not read p_mit->n_places any more.
   IIDX_T * p_return_iidx = (IIDX_T *)calloc(p_mit->n_places, sizeof(IIDX_T));
   if (p_return_iidx == NULL) {
     return NULL;
