@@ -160,14 +160,14 @@ class WordIndex(UrlIndex):
       return word_id, True
 
   def add_entry(self, word):
-    word_lens = len(word)
-    offset = self.word_index_offset
-    self.word_index_offset += word_lens
-
     # get word_id
     word_id, new_id = self.get_word_id(word)
     if not new_id:
       return word_id
+
+    word_lens = len(word)
+    offset = self.word_index_offset
+    self.word_index_offset += word_lens
 
     # write-back format: word as string
     self.fd_word_data.write(word)
