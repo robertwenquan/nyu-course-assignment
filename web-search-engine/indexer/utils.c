@@ -106,13 +106,44 @@ void log_error(LOGGER_T *l, const char *fmt, ...)
 /*
  * docid generator
  */
-unsigned int get_doc_id()
+unsigned int get_doc_id(WARC_REC_T *p_warc)
 {
   static int docid = 0;
   static pthread_mutex_t docid_lock;
 
+  static char filename_url_idx_table[256] = {'\0'};
+  static char filename_url_str_table[256] = {'\0'};
+  static FILE *fp_url_idx_table = NULL;
+  static FILE *fp_url_str_table = NULL;
+
+  if (fp_url_idx_table == NULL && fp_url_str_table == NULL) {
+    bzero(filename_url_idx_table, 256);
+    bzero(filename_url_str_table, 256);
+    snprintf(filename_url_idx_table, 256, "%s%s", BASE_DIR, "output/url_table.idx");
+    snprintf(filename_url_str_table, 256, "%s%s", BASE_DIR, "output/url_table.data");
+    fp_url_idx_table = fopen(filename_url_idx_table, "wb");
+    fp_url_str_table = fopen(filename_url_str_table, "wb");
+  }
+
+  int url_lens = strlen(p_warc->header->url);
+
   pthread_mutex_lock(&docid_lock);
   docid++;
+
+  // write the new (wordid,word) mapping into index table
+  URL_IDX_T docid_idx_entry = {.docid = docid,
+                               .url_fileid = 0,
+                               .url_offset = ftell(fp_url_str_table),
+                               .url_length = url_lens,
+                               .doc_fileid = 0,
+                               .doc_offset = p_warc->offset,
+                               .doc_length = p_warc->header->length + p_warc->payload->length,
+                               .content_offset = p_warc->header->length,
+                               .content_length = p_warc->payload->length,
+                              };
+  fwrite(&docid_idx_entry, sizeof(URL_IDX_T), 1, fp_url_idx_table);
+  fwrite(p_warc->header->url, url_lens, 1, fp_url_str_table);
+
   pthread_mutex_unlock(&docid_lock);
 
   return docid;
