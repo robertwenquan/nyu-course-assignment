@@ -120,6 +120,7 @@ MIT_T ** query_mit(GIT_T *p_git)
 
   if (p_return_mit == NULL) {
     printf("Malloc p_return_mit failed\n");
+    fclose(fd_mit);
     return NULL;
   }
 
@@ -130,12 +131,14 @@ MIT_T ** query_mit(GIT_T *p_git)
     *p_return_mit = (MIT_T *)malloc(sizeof(MIT_T));
     if (p_return_mit == NULL) {
       printf("Malloc p_return_mit failed\n");
+      fclose(fd_mit);
       return NULL;
     }
     fread(*p_return_mit, sizeof(MIT_T), 1, fd_mit);
     p_return_mit++;
   }
 
+  fclose(fd_mit);
   return p_head;
 }
 
