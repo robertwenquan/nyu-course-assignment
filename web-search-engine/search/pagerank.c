@@ -69,7 +69,6 @@ double cal_BM25 (int docid, MIT_T *** list_word_mit)
    * Score(D,q) = IDF(q)*( f(q,D)*(k+1) / (f(q,D) + k*(1-b+b*|D|/avgdl)) )
    * Score(D,Q) = sum Score(D,q)
    */
-
   int N = total_num_docs();
   int D = get_doc_length(docid);
   int avgdl = get_avg_doc_length();
@@ -102,9 +101,6 @@ MIT_T * find_doc(MIT_T ** list_word_mit, int docid)
   if (*list_word_mit == NULL) {
     return NULL;
   }
-  return NULL;
-
-  //TODO
   while ((*list_word_mit)->docid != 0) {
     if ( (*list_word_mit)->docid == docid) {
       return *list_word_mit;
