@@ -21,7 +21,6 @@ Scan over the WET files and generate the first pass information
   - content length(4B)
 
  URL_ENTRY(VARIABLE LENGTH)
- - length of url(2B)
  - url(variable length)
 
  LEXICON(14B)
@@ -118,11 +117,9 @@ class UrlIndex(object):
     url_lens = len(url)
     fileid = 99
     offset = self.url_index_offset
-    self.url_index_offset += (2 + url_lens)
+    self.url_index_offset += url_lens
 
-    # write-back format: len(2B), url as string
-    url_lens_data = pack('h', url_lens)
-    self.fd_url_data.write(url_lens_data)
+    # write-back format: url as string
     self.fd_url_data.write(url)
 
     return (url_lens, fileid, offset)
