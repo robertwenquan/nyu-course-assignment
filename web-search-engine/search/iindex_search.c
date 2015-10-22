@@ -114,7 +114,7 @@ MIT_T ** query_mit(GIT_T *p_git)
     return NULL;
   }
 
-  p_return_mit = (MIT_T **)malloc(sizeof(MIT_T *) * p_git->n_docs);
+  p_return_mit = (MIT_T **)calloc(sizeof(MIT_T *) * (p_git->n_docs + 1));
 
   MIT_T **p_head = p_return_mit;
 
