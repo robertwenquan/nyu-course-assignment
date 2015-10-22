@@ -57,15 +57,86 @@ int * get_intersection(MIT_T *** list_word_mit) {
   return NULL;
 }
 
-float cal_BM25 (int docid) {
+int * list_docs(MIT_T *** list_word_mit)
+{
+  return NULL;
+}
+
+double cal_BM25 (int docid, MIT_T *** list_word_mit)
+{
   /*
    * For each word, IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))
    * Score(D,q) = IDF(q)*( f(q,D)*(k+1) / (f(q,D) + k*(1-b+b*|D|/avgdl)) )
    * Score(D,Q) = sum Score(D,q)
    */
-  return 0;
+
+  int N = total_num_docs();
+  int D = get_doc_length(docid);
+  int avgdl = get_avg_doc_length();
+
+  int k = 2;
+  double b = 0.75;
+
+  double score = 0.0;
+  double idf_q = 0;
+  int freq = 0;
+
+  MIT_T * cur = (MIT_T *)malloc(sizeof(MIT_T *));
+
+  while(*list_word_mit != NULL) {
+    cur = find_doc(*list_word_mit, docid);
+    if (cur == NULL) {
+      list_word_mit++;
+      continue;
+    }
+    idf_q = cal_idf_q(N, *list_word_mit);
+    freq = cur->n_places;
+    score += (double) (idf_q * ( freq * (k+1)/ (freq + k*(1-b+b * D/avgdl))));
+    list_word_mit++;
+  }
+  return score;
+}
+
+MIT_T * find_doc(MIT_T ** list_word_mit, int docid)
+{
+  if (*list_word_mit == NULL) {
+    return NULL;
+  }
+  return NULL;
+
+  //TODO
+  while ((*list_word_mit)->docid != 0) {
+    if ( (*list_word_mit)->docid == docid) {
+      return *list_word_mit;
+    }
+    list_word_mit ++;
+  }
+  return NULL;
 }
 
 char * ranking_docs(int * docs) {
   return NULL;
+}
+
+int get_doc_length(int docid)
+{
+  return 1800;
+}
+
+int get_avg_doc_length()
+{
+  return 2000;
+}
+
+int total_num_docs(){
+  return 288;
+}
+
+double cal_idf_q(int N, MIT_T** l_mit)
+{
+//IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))  
+  int n_q = sizeof(l_mit) / sizeof(MIT_T *)*sizeof(int) - 1;
+  double ret = log((N-n_q+0.5)/(n_q+0.5));
+  printf("idf: %f\n", ret);
+  return ret;
 }

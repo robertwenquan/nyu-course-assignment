@@ -37,6 +37,11 @@ void query_word(char *word)
   }
   p_mit_entry = p_save;
 
+
+  double tt = cal_BM25((**p_mit_entry).docid, p_mit_entry);
+  printf("BM25: %f\n", tt);
+
+
   /* 4. MIT entry to IINDEX entry */
   printf("query IINDEX entry...\n");
 
@@ -67,6 +72,21 @@ void query_word(char *word)
  */
 void query_words(char *queries[])
 {
+  /*
+   * 1. For each word, find all docs contain this word
+   *    Input: list of words
+   *    Output: MIT_T ***
+   *
+   * 2. Union docs for all words
+   *    Input: MIT_T ***
+   *    Output : int * list_docs
+   *
+   * 3. Cal BM25 of each doc
+   *    Input: doc, queries[]
+   *    Output: BM25
+   *
+   * 4. Return top 20 docs with context
+   */
   char *word = "cat";
   query_word(word);
 }
