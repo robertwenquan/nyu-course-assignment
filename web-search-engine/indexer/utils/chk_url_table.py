@@ -40,7 +40,7 @@ URL_TABLE_DATA = os.path.join(BASE_DIR, 'output/url_table.data')
 def main():
   """ main routine """
 
-  url_idx_schema = 'ihihhiihi'
+  url_idx_schema = '=IHIHHIIHI'
   
   # record length
   idx_len = calcsize(url_idx_schema)
