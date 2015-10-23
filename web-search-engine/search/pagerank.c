@@ -122,8 +122,15 @@ MIT_T * find_doc(MIT_T ** list_word_mit, int docid)
   return NULL;
 }
 
-char * ranking_docs(int * docs) {
-  return NULL;
+DOC_LIST * ranking_docs(MIT_T *** list_word_mit) {
+  DOC_LIST * head = get_intersection(list_word_mit);
+  DOC_LIST * cur = head;
+
+  while(cur != NULL) {
+    cal_BM25(cur->docid, list_word_mit, &cur->score);
+    cur = cur->next;
+  }  
+  return head;
 }
 
 double cal_idf_q(int N, MIT_T** l_mit)
