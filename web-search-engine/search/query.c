@@ -110,11 +110,6 @@ int main(int argc, char *argv[])
   printf("BM25: %f\n", ret);
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
-  if (head == NULL) {
-    printf("GET NOTHING\n");
-  } else{
-    printf("NOT NOTHING\n");
-  }
   return 0;
 }
 

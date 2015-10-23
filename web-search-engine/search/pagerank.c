@@ -24,7 +24,7 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
     return NULL;
   }
   DOC_LIST * doc_head = NULL; 
-  DOC_LIST * doc_tail= doc_head;
+  DOC_LIST * doc_tail = NULL;
   DOC_LIST * cur = NULL;
 
   int num_words  = sizeof(list_word_mit)/4;
@@ -60,6 +60,7 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
 
       if (doc_head == NULL) {
         doc_head = cur;
+        doc_tail = cur;
       } else {
         doc_tail->next = cur;
         doc_tail = cur;
