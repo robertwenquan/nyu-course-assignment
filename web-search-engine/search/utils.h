@@ -84,6 +84,8 @@ typedef struct __attribute__((__packed__)) {
 // Doc linked list
 typedef struct node{
   int docid;
+  double score;
+  char * url;
   struct node * next;
 } DOC_LIST;
 

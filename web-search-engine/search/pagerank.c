@@ -54,6 +54,8 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
       }
 
       cur->docid = k;
+      cur->score = 0.0;
+      cur->url = NULL;
       cur->next = NULL;
       cur = cur->next;
     }
