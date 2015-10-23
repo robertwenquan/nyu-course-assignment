@@ -11,7 +11,7 @@ else
 CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__MACOS__
 endif
 
-OBJS = iigen.o lexicon.o iindex.o utils.o warc.o merge.o tokenizer.o
+OBJS = iigen.o lexicon.o iindex.o utils.o warc.o merge.o tokenizer.o compress.o
 BINS = iigen
 
 all:  $(BINS)
@@ -32,6 +32,9 @@ iindex_test.o:  iindex.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
 utils.o:  utils.c
+	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
+
+compress.o:  compress.c
 	$(CC) -c $(CFLAGS) -D__TEST__ -o $@ $<
 
 clean:  
