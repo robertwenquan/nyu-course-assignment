@@ -94,13 +94,27 @@ void query_words(char *queries[])
 /* main routine */
 int main(int argc, char *argv[])
 {
-  MIT_T *** p_mit_lists = (MIT_T ***)calloc(1,sizeof(MIT_T***));
+  /*
+   * For each word, get MIT_T ** p_mit_entries
+   * Combine all MIT_T ** to get MIT_T *** p_mit_lists
+   * Pass MIT_T *** to ranking_docs get ranked docs
+   * For each doc, find mit entry for each word and return context
+   */
+  MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T***));
   *p_mit_lists = query_word("fake");
+  *(p_mit_lists+1)= query_word("fake");
+  *(p_mit_lists+2)= query_word("fake");
 
   double ret = 0.0;
   cal_BM25((**p_mit_lists)->docid, p_mit_lists, &ret);
   printf("BM25: %f\n", ret);
 
+  DOC_LIST * head = ranking_docs(p_mit_lists);
+  if (head == NULL) {
+    printf("GET NOTHING\n");
+  } else{
+    printf("NOT NOTHING\n");
+  }
   return 0;
 }
 

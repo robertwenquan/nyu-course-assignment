@@ -9,7 +9,7 @@ int nextGEQ(MIT_T ** l_docs, int k){
    * Return the next posting with doc_id >= k in l_docs
    */
   while (*l_docs != NULL) {
-    if ((*l_docs)->docid > k) {
+    if ((*l_docs)->docid >= k) {
       return (*l_docs)->docid;
     }
     l_docs++;
@@ -23,9 +23,9 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
   if (list_word_mit == NULL) {
     return NULL;
   }
-
-  DOC_LIST * doc_head = NULL;
-  DOC_LIST * cur = doc_head;
+  DOC_LIST * doc_head = NULL; 
+  DOC_LIST * doc_tail= doc_head;
+  DOC_LIST * cur = NULL;
 
   int num_words  = sizeof(list_word_mit)/4;
   int continuous = 0;
@@ -57,7 +57,14 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
       cur->score = 0.0;
       cur->url = NULL;
       cur->next = NULL;
-      cur = cur->next;
+
+      if (doc_head == NULL) {
+        doc_head = cur;
+      } else {
+        doc_tail->next = cur;
+        doc_tail = cur;
+      }
+      k++;
     }
 
     p_cur++;
@@ -65,7 +72,6 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
       p_cur = list_word_mit;
     }
   }
-
   return doc_head;
 }
 
@@ -94,7 +100,7 @@ void cal_BM25(int docid, MIT_T *** list_word_mit, double * ret)
   MIT_T * cur = (MIT_T *)malloc(sizeof(MIT_T *));
 
   while(*list_word_mit != NULL) {
-    cur = find_doc(*list_word_mit, docid);
+    cur = find_mit_entry(*list_word_mit, docid);
     if (cur == NULL) {
       list_word_mit++;
       continue;
@@ -108,7 +114,7 @@ void cal_BM25(int docid, MIT_T *** list_word_mit, double * ret)
   return;
 }
 
-MIT_T * find_doc(MIT_T ** list_word_mit, int docid)
+MIT_T * find_mit_entry(MIT_T ** list_word_mit, int docid)
 {
   if (*list_word_mit == NULL) {
     return NULL;
