@@ -122,14 +122,24 @@ MIT_T * find_doc(MIT_T ** list_word_mit, int docid)
   return NULL;
 }
 
-DOC_LIST * ranking_docs(MIT_T *** list_word_mit) {
+DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
+{
+  /* Input : A list of words' MIT_T entries
+   * Output: Intersection of docs with BM25 score
+   *  1. get_intersection() returns list of intersection docs
+   *  2. get_union? use hasing? (TODO)
+   *  3. give each docs BM25 score
+   *  4. sort docs according to BM25 (TODO)
+   *  5. return DOC_LIST
+   */
+
   DOC_LIST * head = get_intersection(list_word_mit);
   DOC_LIST * cur = head;
 
   while(cur != NULL) {
     cal_BM25(cur->docid, list_word_mit, &cur->score);
     cur = cur->next;
-  }  
+  } 
   return head;
 }
 
