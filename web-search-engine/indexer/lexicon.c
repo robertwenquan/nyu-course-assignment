@@ -129,7 +129,7 @@ static void process_lexicons_from_file(char *infile, char *outfile)
 
     char *page_content = p_warc->payload->data;
     int page_lens = p_warc->payload->length;
-    unsigned int docid = get_doc_id();
+    unsigned int docid = get_doc_id(p_warc);
 
     int dps = 0;
     time_t ts;

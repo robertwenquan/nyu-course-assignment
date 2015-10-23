@@ -16,7 +16,6 @@ word id index entry format
 
 word table entry format
 {
-[1 B] length of the word
 [N B] N as read from the above
 }
 
@@ -33,8 +32,8 @@ BASE_DIR = './test_data'
 WORD_TABLE_IDX = '/tmp/word_table.idx'
 WORD_TABLE_DATA = '/tmp/word_table.data'
 
-WORD_TABLE_IDX = os.path.join(BASE_DIR, 'phase1_output/word_table.idx')
-WORD_TABLE_DATA = os.path.join(BASE_DIR, 'phase1_output/word_table.data')
+WORD_TABLE_IDX = os.path.join(BASE_DIR, 'output/word_table.idx')
+WORD_TABLE_DATA = os.path.join(BASE_DIR, 'output/word_table.data')
 
 
 def main():
