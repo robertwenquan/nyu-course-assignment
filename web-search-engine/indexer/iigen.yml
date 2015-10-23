@@ -4,12 +4,15 @@
 
 # global configuration
 global:
-  url_table   : 'test_data/table/url_table'
-  url_bucket_size : 100000
-  word_table  : 'test_data/table/word_table'
-  word_bucket_size : 100000
 
-  lexicon_bucket_size : 100000
+  url_table   : 'test_data/table/url_table'
+  url_bucket_size : 10
+
+  word_table  : 'test_data/table/word_table'
+  word_bucket_size : 10
+
+lexicon:
+  bucket_size : 100
 
 # phase1: lexicon generation
 parse:
