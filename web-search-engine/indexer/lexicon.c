@@ -16,11 +16,45 @@ int docid_saved = 0;
 time_t time_saved = 0;
 
 
+static void get_lex_filename(unsigned long lex_id, int *fileid, char *lex_filename, int buflen)
+{
+  static char base_dir[] = "test_data";
+  static char path[] = "output";
+  static char name[] = "lex";
+
+  static int bucket_size = 1000;
+  *fileid = lex_id / bucket_size;
+
+  bzero(lex_filename, 256);
+  snprintf(lex_filename, 256, "%s/%s/%s%05d.%s", base_dir, path, name, *fileid, "lexicon");
+}
+
+
 /*
  * write back one lexicon to file
  */
-static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
+static void write_back_lexicon(LEXICON_T lex)
 {
+  static unsigned long lex_id = 0;
+  static int lex_file_id_inuse = -1;
+  static FILE *fp_lex_file = NULL;
+  static char lex_file_name[256] = {'\0'};
+
+  int lex_file_id = -1;
+  get_lex_filename(lex_id, &lex_file_id, lex_file_name, 256);
+
+  if (lex_file_id != lex_file_id_inuse) {
+    if (fp_lex_file != NULL) {
+      fclose(fp_lex_file);
+    }
+
+    printf("create lex filename %s starting lexid[%lu]\n", lex_file_name, lex_id);
+    fp_lex_file = fopen(lex_file_name, "wb");
+    assert(fp_lex_file != NULL);
+
+    lex_file_id_inuse = lex_file_id;
+  }
+
   /*
   static char buffer[8*1024*1024] = {'\0'};
   static unsigned int offset = 0;
@@ -34,7 +68,9 @@ static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
   memcpy(buffer + offset, &lex, sizeof(LEXICON_T));
   offset += sizeof(LEXICON_T);
   */
-  fwrite(&lex, sizeof(LEXICON_T), 1, fpo);
+  fwrite(&lex, sizeof(LEXICON_T), 1, fp_lex_file);
+
+  lex_id++;
 }
 
 /*
@@ -42,7 +78,7 @@ static void write_back_lexicon(LEXICON_T lex, FILE *fpo)
  * with filtering strategy
  * and generate lexicons
  */
-static void tokenize_page_content(char *buffer, int size, unsigned int docid, FILE *fpo)
+static void tokenize_page_content(char *buffer, int size, unsigned int docid)
 {
     TokenizerT *tokenizer = NULL;
     tokenizer = TKCreate(" \t\r\n`~!@#$%^&*()_+-=[]{}\\|;':\",.<>/?", buffer, size);
@@ -89,19 +125,17 @@ static void tokenize_page_content(char *buffer, int size, unsigned int docid, FI
                       };
 
       //printf(">> wordid: %d, docid: %d, %s, start %p, offset %u\n", lex.word_id, lex.docid, token, buffer, lex.offset);
-      write_back_lexicon(lex, fpo);
+      write_back_lexicon(lex);
     }
 
     TKDestroy(tokenizer);
 }
 
-static void process_lexicons_from_file(char *infile, char *outfile)
+static void process_lexicons_from_file(char *infile)
 {
   FILE * fp = warc_open(infile);
-  FILE * fpo = fopen(outfile, "wb");
 
   printf("processing %s ...\n", infile);
-  assert(fp != NULL && fpo != NULL);
 
   while (1) {
 
@@ -147,15 +181,16 @@ static void process_lexicons_from_file(char *infile, char *outfile)
     }
 
     // tokenize lexicons from page
-    tokenize_page_content(page_content, page_lens, docid, fpo);
+    tokenize_page_content(page_content, page_lens, docid);
 
     // dispose the WARC entry after consumption
     destroy_warc_rec(p_warc);
   }
-  fclose(fpo);
   warc_close(fp);
 
   // sort the lexicon in place
+  /*
+  comment out as we don't have output file for now
   int fd = open(outfile, O_RDWR);
   assert(fd > 0);
 
@@ -166,6 +201,7 @@ static void process_lexicons_from_file(char *infile, char *outfile)
   assert(src != NULL);
   qsort(src, st.st_size / sizeof(LEXICON_T), sizeof(LEXICON_T), lexicon_compare);
   close(fd);
+  */
 
   return;
 }
@@ -175,12 +211,10 @@ void * thr_process_lexicons_from_file(void *argv)
   char **p = (char **)argv;
 
   char infile[256] = {'\0'};
-  char outfile[256] = {'\0'};
 
   strncpy(infile, *p, 256);
-  strncpy(outfile, *(p+1), 256);
 
-  process_lexicons_from_file(infile, outfile);
+  process_lexicons_from_file(infile);
 
   return NULL;
 }
