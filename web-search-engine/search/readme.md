@@ -105,6 +105,14 @@ After the ranking, we will have a list of 20 pages, with approximate the followi
 
  8.1 doc meta data retrival
 
+ Here we need to retrive all the meat data regarding a document. This will answer the following questions:
+
+ - the url of this doc
+
+ But in order to get the above info, we need to figure out this first:
+ - which doc index the meta is stored in?
+ - from what offset can we find this info?
+
  8.2 word_id to word
 
 9. Result Formatting
