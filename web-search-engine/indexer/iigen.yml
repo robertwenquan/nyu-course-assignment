@@ -5,36 +5,24 @@
 # global configuration
 global:
 
-  url_table   : 'test_data/table/url_table'
+  base_dir    : 'test_data'
+
+  url_table   : 'output/url_table'
   url_bucket_size : 10
 
-  word_table  : 'test_data/table/word_table'
+  word_table  : 'output/word_table'
   word_bucket_size : 10
 
+  remove_tmp  : False
+
+# lexicon files will be placed under
+#  ${base_dir}/${path}/${name}${%05d}.lexicon
+#  each lexicon file will have ${bucket_size} number of lexicons
 lexicon:
+  path        : 'output'
+  name        : 'lex'
   bucket_size : 100
 
-# phase1: lexicon generation
-parse:
-  threads     : 4
-  input       : 'test_data/input'
-  output      : 'test_data/phase1_output'
-
-# phase2: lexicon sorting
-sort:
-  threads     : 4
-  input       : 'test_data/phase1_output'
-  output      : 'test_data/phase2_output'
-
-# phase3: inverted index generation from sorted lexicons
 index:
-  threads     : 4
-  input       : 'test_data/phase2_output'
-  output      : 'test_data/phase3_output'
-
-# phase4: merging inverted index files
-merge:
-  threads     : 4
-  input       : 'test_data/phase3_output'
-  output      : 'test_data/final_index'
+  path        : 'output'
 
