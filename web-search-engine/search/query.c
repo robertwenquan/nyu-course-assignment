@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
   *p_mit_lists = query_word("fake");
 
   double ret = 0.0;
-  ret = cal_BM25((***p_mit_lists).docid, p_mit_lists);
+  cal_BM25((**p_mit_lists)->docid, p_mit_lists, &ret);
   printf("BM25: %f\n", ret);
 
   return 0;

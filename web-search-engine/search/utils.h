@@ -81,6 +81,11 @@ typedef struct __attribute__((__packed__)) {
   unsigned int offset;
 } IIDX_T;
 
+// Doc linked list
+typedef struct node{
+  int docid;
+  struct node * next;
+} DOC_LIST;
 
 void print_git_entry(GIT_T *p_git);
 void print_mit_entry(MIT_T *p_mit);

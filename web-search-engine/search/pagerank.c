@@ -17,12 +17,15 @@ int nextGEQ(MIT_T ** l_docs, int k){
   return -1;
 }
 
-int * get_intersection(MIT_T *** list_word_mit) {
+DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
   // Once one MIT_T** reaches NULL, no intersection any more.
   // If read to the last MIT_T ***, return to head.
   if (list_word_mit == NULL) {
     return NULL;
   }
+
+  DOC_LIST * doc_head = NULL;
+  DOC_LIST * cur = doc_head;
 
   int num_words  = sizeof(list_word_mit)/4;
   int continuous = 0;
@@ -45,7 +48,14 @@ int * get_intersection(MIT_T *** list_word_mit) {
     }
 
     if (continuous == num_words) {
-      printf("Intersection: %d\n", k);
+      cur = (DOC_LIST *)malloc(sizeof(DOC_LIST));
+      if (cur == NULL) {
+        return NULL;
+      }
+
+      cur->docid = k;
+      cur->next = NULL;
+      cur = cur->next;
     }
 
     p_cur++;
@@ -54,7 +64,7 @@ int * get_intersection(MIT_T *** list_word_mit) {
     }
   }
 
-  return NULL;
+  return doc_head;
 }
 
 int * list_docs(MIT_T *** list_word_mit)
@@ -62,7 +72,7 @@ int * list_docs(MIT_T *** list_word_mit)
   return NULL;
 }
 
-double cal_BM25 (int docid, MIT_T *** list_word_mit)
+void cal_BM25(int docid, MIT_T *** list_word_mit, double * ret)
 {
   /*
    * For each word, IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))
@@ -76,7 +86,6 @@ double cal_BM25 (int docid, MIT_T *** list_word_mit)
   int k = 2;
   double b = 0.75;
 
-  double score = 0.0;
   double idf_q = 0;
   int freq = 0;
 
@@ -90,10 +99,11 @@ double cal_BM25 (int docid, MIT_T *** list_word_mit)
     }
     idf_q = cal_idf_q(N, *list_word_mit);
     freq = cur->n_places;
-    score += (double) (idf_q * ( freq * (k+1)/ (freq + k*(1-b+b * D/avgdl))));
+    *ret += (double) (idf_q * ( freq * (k+1)/ (freq + k*(1-b+b * D/avgdl))));
     list_word_mit++;
   }
-  return score;
+
+  return;
 }
 
 MIT_T * find_doc(MIT_T ** list_word_mit, int docid)
