@@ -37,6 +37,18 @@ void log_error(LOGGER_T *l, const char *fmt, ...);
 // For logging
 
 // For docid
+typedef struct __attribute__((__packed__)) {
+  unsigned int docid;
+  unsigned short url_fileid;
+  unsigned int url_offset;
+  unsigned short url_length;
+  unsigned short doc_fileid;
+  unsigned int doc_offset;
+  unsigned int doc_length;
+  unsigned short content_offset;
+  unsigned int content_length;
+} URL_IDX_T;
+
 unsigned int get_doc_id();
 // For docid
 
