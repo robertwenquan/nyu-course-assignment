@@ -29,18 +29,15 @@ import sys
 
 BASE_DIR = './test_data'
 
-WORD_TABLE_IDX = '/tmp/word_table.idx'
-WORD_TABLE_DATA = '/tmp/word_table.data'
-
-WORD_TABLE_IDX = os.path.join(BASE_DIR, 'output/word_table.idx')
-WORD_TABLE_DATA = os.path.join(BASE_DIR, 'output/word_table.data')
+WORD_TABLE_IDX = os.path.join(BASE_DIR, 'tiny30/output/word_table.idx')
+WORD_TABLE_DATA = os.path.join(BASE_DIR, 'tiny30/output/word_table.data')
 
 
 def main():
   """ main routine """
 
   word_idx_schema = 'iiB'
-  
+ 
   # record length
   idx_len = calcsize(word_idx_schema)
   rec_len = calcsize('B')
