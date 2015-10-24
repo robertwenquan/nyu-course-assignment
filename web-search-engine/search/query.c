@@ -136,13 +136,19 @@ int main(int argc, char *argv[])
   /*
    * For each word, get MIT_T ** p_mit_entries
    * Combine all MIT_T ** to get MIT_T *** p_mit_lists
-   * Pass MIT_T *** to ranking_docs get ranked docs
-   * For each doc, find mit entry for each word and return context
    */
+
+
+  // @Robert, How to get number of queried words here ?
   MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T**));
   *p_mit_lists = query_word("Volkswagen");
   *(p_mit_lists+1) = query_word("Volkswagen");
   *(p_mit_lists+2) = query_word("Volkswagen");
+
+  /*
+   * Pass MIT_T *** to ranking_docs get ranked docs
+   * DOC_LIST contains docid, with its score and query words offset
+   */
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
 
@@ -157,6 +163,10 @@ int main(int argc, char *argv[])
 
     cur++;
   }
+
+  /*
+   * Get context according to DOC_LIST and return
+   */
 
   return 0;
 }
