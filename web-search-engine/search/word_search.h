@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "utils.h"
 
 int word_to_id(char *word);
 

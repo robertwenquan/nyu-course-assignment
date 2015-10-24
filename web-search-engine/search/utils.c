@@ -118,12 +118,12 @@ unsigned int get_doc_id()
   return docid;
 }
 
-WORDID_HASHTREE_NODE_T wordid_hash_root;
+static WORDID_HASHTREE_NODE_T wordid_hash_root;
 
 /*
  * char to index for word id hash sub-tree query
  */
-static int char_to_index(char chr)
+int char_to_index(char chr)
 {
   if (chr >= '0' && chr <= '9') {
     return chr-48;
