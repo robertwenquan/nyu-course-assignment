@@ -137,8 +137,6 @@ static void load_word_idx_table()
 
 static unsigned int query_word_for_id(char *word)
 {
-  static pthread_mutex_t wordid_lock;
-
   int word_lens = strlen(word);
 
   WORDID_HASHTREE_NODE_T *work_node = &wordid_hash_root;
