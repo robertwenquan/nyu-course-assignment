@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
 
   DOC_LIST * cur = head;
   while(cur != NULL) {
-    if (cur->docid == 0 ){
+    if (cur->docid == -1 ){
       break;
     }
     printf("docid: %d\n", cur->docid);

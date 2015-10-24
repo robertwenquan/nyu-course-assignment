@@ -150,6 +150,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
   cur = head;
 
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
+  docs_list[count].docid = -1;
 
   int i = 0;
   int offsets_size = 0;
@@ -166,6 +167,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
 void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int size)
 {
   doc_list[place].offsets = (int *)calloc(size+1, sizeof(int));
+  doc_list[place].offsets[size] = -1;
 
   MIT_T * cur_mit = (MIT_T *)calloc(1, sizeof(MIT_T));
   IIDX_T * iidx_list = NULL;
