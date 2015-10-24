@@ -41,7 +41,7 @@ MIT_T **query_word(char *word)
   /* 4. MIT entry to IINDEX entry */
   printf("query IINDEX entry...\n");
 
-  IIDX_T * p_iidx_entry = (IIDX_T *) calloc (1024, sizeof(IIDX_T *));
+  IIDX_T * p_iidx_entry = NULL;
   int i = 0;
   while(*p_mit_entry != NULL){
     p_iidx_entry = query_iindex(*p_mit_entry);

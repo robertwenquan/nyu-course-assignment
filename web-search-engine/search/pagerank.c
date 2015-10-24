@@ -80,7 +80,7 @@ int * list_docs(MIT_T *** list_word_mit)
   return NULL;
 }
 
-void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit)
+void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit, int * count)
 {
   /*
    * For each word, IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))
@@ -96,7 +96,6 @@ void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit)
 
   double idf_q = 0;
   int freq = 0;
-  int count = 0;
 
   MIT_T * cur = (MIT_T *)malloc(sizeof(MIT_T *));
 
@@ -108,7 +107,7 @@ void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit)
     }
     idf_q = cal_idf_q(N, *list_word_mit);
     freq = cur->n_places;
-    count += freq;
+    *count += freq;
     cur_doc.score += (double) (idf_q * ( freq * (k+1)/ (freq + k*(1-b+b * D/avgdl))));
     list_word_mit++;
   }
@@ -153,14 +152,42 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
 
   int i = 0;
+  int offsets_size = 0;
+
   for(i =0; i < count; i++){
     docs_list[i].docid = cur->docid;
     cur = cur->next;
-    cal_BM25(docs_list[i], list_word_mit);
+    cal_BM25(docs_list[i], list_word_mit, &offsets_size);
+    refill_offsets(docs_list, i, list_word_mit, offsets_size);
   } 
   return docs_list;
 }
 
+void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int size)
+{
+  doc_list[place].offsets = (int *)calloc(size+1, sizeof(int));
+  MIT_T * cur_mit = (MIT_T *)calloc(1, sizeof(MIT_T));
+  IIDX_T * iidx_list = NULL;
+  int count = 0;
+  int i = 0;
+  while(*list_word_mit != NULL) {
+    cur_mit = find_mit_entry(*list_word_mit, doc_list[place].docid);
+    if (cur_mit == NULL) {
+      list_word_mit++;
+      continue;
+    }
+
+    iidx_list = query_iindex(cur_mit);
+    count = 0;
+    for(i = 0; i < cur_mit->n_places; i++, count++) {
+      doc_list[place].offsets[count] = iidx_list[i].offset;
+    }
+
+    list_word_mit++;
+  }
+
+  return;
+}
 double cal_idf_q(int N, MIT_T** l_mit)
 {
 //IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))  
