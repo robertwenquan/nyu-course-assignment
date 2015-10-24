@@ -93,7 +93,7 @@ void query_words(char *queries[])
 /*
  * parse search keywords from the command line
  */
-static parse_arguments(int argc, char *argv[], char ***keywords)
+static void parse_arguments(int argc, char *argv[], char ***keywords)
 {
   *keywords = (char **)malloc(sizeof(char **)*argc);
   bzero(*keywords, sizeof(char **)*argc);
