@@ -107,6 +107,17 @@ int main(int argc, char *argv[])
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
 
+  DOC_LIST * cur = head;
+  while(cur != NULL) {
+    if (cur->docid == -1 ){
+      break;
+    }
+    printf("docid: %d\n", cur->docid);
+    printf("score : %f\n", cur->score);
+    printf("offset : %d\n", cur->offsets[0]);
+
+    cur++;
+  }
   return 0;
 }
 

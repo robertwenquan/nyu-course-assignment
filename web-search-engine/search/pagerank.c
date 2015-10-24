@@ -80,7 +80,7 @@ int * list_docs(MIT_T *** list_word_mit)
   return NULL;
 }
 
-void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit, int * count)
+void cal_BM25(DOC_LIST * doc_list, int place,  MIT_T *** list_word_mit, int * count)
 {
   /*
    * For each word, IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))
@@ -88,7 +88,7 @@ void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit, int * count)
    * Score(D,Q) = sum Score(D,q)
    */
   int N = total_num_docs();
-  int D = get_doc_length(cur_doc.docid);
+  int D = get_doc_length(doc_list[place].docid);
   int avgdl = get_avg_doc_length();
 
   int k = 2;
@@ -100,7 +100,7 @@ void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit, int * count)
   MIT_T * cur = (MIT_T *)malloc(sizeof(MIT_T *));
 
   while(*list_word_mit != NULL) {
-    cur = find_mit_entry(*list_word_mit, cur_doc.docid);
+    cur = find_mit_entry(*list_word_mit, doc_list[place].docid);
     if (cur == NULL) {
       list_word_mit++;
       continue;
@@ -108,7 +108,7 @@ void cal_BM25(DOC_LIST cur_doc, MIT_T *** list_word_mit, int * count)
     idf_q = cal_idf_q(N, *list_word_mit);
     freq = cur->n_places;
     *count += freq;
-    cur_doc.score += (double) (idf_q * ( freq * (k+1)/ (freq + k*(1-b+b * D/avgdl))));
+    doc_list[place].score += (double) (idf_q * ( freq * (k+1)/ (freq + k*(1-b+b * D/avgdl))));
     list_word_mit++;
   }
 
@@ -150,6 +150,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
   cur = head;
 
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
+  docs_list[count].docid = -1;
 
   int i = 0;
   int offsets_size = 0;
@@ -157,7 +158,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
   for(i =0; i < count; i++){
     docs_list[i].docid = cur->docid;
     cur = cur->next;
-    cal_BM25(docs_list[i], list_word_mit, &offsets_size);
+    cal_BM25(docs_list, i, list_word_mit, &offsets_size);
     refill_offsets(docs_list, i, list_word_mit, offsets_size);
   } 
   return docs_list;
@@ -166,10 +167,14 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
 void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int size)
 {
   doc_list[place].offsets = (int *)calloc(size+1, sizeof(int));
+  doc_list[place].offsets[size] = -1;
+
   MIT_T * cur_mit = (MIT_T *)calloc(1, sizeof(MIT_T));
   IIDX_T * iidx_list = NULL;
+
   int count = 0;
   int i = 0;
+
   while(*list_word_mit != NULL) {
     cur_mit = find_mit_entry(*list_word_mit, doc_list[place].docid);
     if (cur_mit == NULL) {
