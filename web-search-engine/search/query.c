@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "query.h"
-
+#include "pagerank.h"
 /*
  * query a single word
  */
@@ -41,7 +41,7 @@ MIT_T **query_word(char *word)
   /* 4. MIT entry to IINDEX entry */
   printf("query IINDEX entry...\n");
 
-  IIDX_T * p_iidx_entry = (IIDX_T *) calloc (1024, sizeof(IIDX_T *));
+  IIDX_T * p_iidx_entry = NULL;
   int i = 0;
   while(*p_mit_entry != NULL){
     p_iidx_entry = query_iindex(*p_mit_entry);
@@ -100,10 +100,10 @@ int main(int argc, char *argv[])
    * Pass MIT_T *** to ranking_docs get ranked docs
    * For each doc, find mit entry for each word and return context
    */
-  MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T***));
-  *p_mit_lists = query_word("fake");
-  *(p_mit_lists+1)= query_word("fake");
-  *(p_mit_lists+2)= query_word("fake");
+  MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T**));
+  *p_mit_lists = query_word("Volkswagen");
+  *(p_mit_lists+1) = query_word("Volkswagen");
+  *(p_mit_lists+2) = query_word("Volkswagen");
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
 

@@ -103,7 +103,7 @@ typedef struct __attribute__((__packed__)) {
 typedef struct node{
   int docid;
   double score;
-  struct node * next;
+  int * offsets;
 } DOC_LIST;
 
 int char_to_index(char chr);
