@@ -86,11 +86,6 @@ DOCS * get_intersection(MIT_T *** list_word_mit) {
   return doc_head;
 }
 
-int * list_docs(MIT_T *** list_word_mit)
-{
-  return NULL;
-}
-
 void cal_BM25(DOC_LIST * doc_list, int place,  MIT_T *** list_word_mit, int * count)
 {
   /*
