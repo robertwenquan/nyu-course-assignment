@@ -105,10 +105,6 @@ int main(int argc, char *argv[])
   *(p_mit_lists+1)= query_word("Volkswagen");
   *(p_mit_lists+2)= query_word("Volkswagen");
 
-  double ret = 0.0;
-  cal_BM25((**p_mit_lists)->docid, p_mit_lists, &ret);
-  printf("BM25: %f\n", ret);
-
   DOC_LIST * head = ranking_docs(p_mit_lists);
 
   return 0;
