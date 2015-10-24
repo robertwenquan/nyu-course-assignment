@@ -178,7 +178,6 @@ void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int
     }
 
     iidx_list = query_iindex(cur_mit);
-    count = 0;
     for(i = 0; i < cur_mit->n_places; i++, count++) {
       doc_list[place].offsets[count] = iidx_list[i].offset;
     }
