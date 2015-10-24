@@ -101,9 +101,9 @@ int main(int argc, char *argv[])
    * For each doc, find mit entry for each word and return context
    */
   MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T***));
-  *p_mit_lists = query_word("Volkswagen");
-  *(p_mit_lists+1)= query_word("Volkswagen");
-  *(p_mit_lists+2)= query_word("Volkswagen");
+  *p_mit_lists = query_word("fake");
+  *(p_mit_lists+1)= query_word("fake");
+  *(p_mit_lists+2)= query_word("fake");
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
 
