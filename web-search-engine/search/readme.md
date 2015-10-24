@@ -131,7 +131,13 @@ Whatever frontend we have, either the Command Line Interface, or the Web GUI, we
 
 11. Output
 
+We use Python wrapper to post-process the raw JSON output and format customized output for CLI or GUI purpose.
+
 ### FAQ
+
+1. How fast can you query. 
+
+2. What is the size of the query data size?
 
 ### Benchmarks
 

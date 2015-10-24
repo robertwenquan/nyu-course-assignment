@@ -357,6 +357,8 @@ void print_iidx_entry(IIDX_T *p_iidx) {
   printf("=====================\n");
 }
 
+int stats_ndocs = 288;
+int stats_avg_doc_lens = 2000;
 
 int get_doc_length(int docid)
 {
@@ -365,10 +367,10 @@ int get_doc_length(int docid)
 
 int get_avg_doc_length()
 {
-  return 2000;
+  return stats_avg_doc_lens;
 }
 
 int total_num_docs(){
-  return 288;
+  return stats_ndocs;
 }
 
