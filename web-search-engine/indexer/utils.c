@@ -108,7 +108,7 @@ void log_error(LOGGER_T *l, const char *fmt, ...)
  */
 unsigned int get_doc_id(WARC_REC_T *p_warc)
 {
-  static int docid = 0;
+  static int docid = -1;
   static pthread_mutex_t docid_lock;
 
   static char filename_url_idx_table[256] = {'\0'};

@@ -16,14 +16,14 @@ int docid_saved = 0;
 time_t time_saved = 0;
 
 
-static void get_lex_filename(unsigned long lex_id, int *fileid, char *lex_filename, int buflen)
+static void get_lex_filename(unsigned long doc_id, int *fileid, char *lex_filename, int buflen)
 {
   static char base_dir[] = "test_data";
   static char path[] = "output";
   static char name[] = "lex";
 
-  static int bucket_size = 1000;
-  *fileid = lex_id / bucket_size;
+  static int bucket_size = 10;
+  *fileid = doc_id / bucket_size;
 
   bzero(lex_filename, 256);
   snprintf(lex_filename, 256, "%s/%s/%s%05d.%s", base_dir, path, name, *fileid, "lexicon");
@@ -35,20 +35,19 @@ static void get_lex_filename(unsigned long lex_id, int *fileid, char *lex_filena
  */
 static void write_back_lexicon(LEXICON_T lex)
 {
-  static unsigned long lex_id = 0;
   static int lex_file_id_inuse = -1;
   static FILE *fp_lex_file = NULL;
   static char lex_file_name[256] = {'\0'};
 
   int lex_file_id = -1;
-  get_lex_filename(lex_id, &lex_file_id, lex_file_name, 256);
+  get_lex_filename(lex.docid, &lex_file_id, lex_file_name, 256);
 
   if (lex_file_id != lex_file_id_inuse) {
     if (fp_lex_file != NULL) {
       fclose(fp_lex_file);
     }
 
-    printf("create lex filename %s starting lexid[%lu]\n", lex_file_name, lex_id);
+    printf("create lex filename %s starting docid[%d]\n", lex_file_name, lex.docid);
     fp_lex_file = fopen(lex_file_name, "wb");
     assert(fp_lex_file != NULL);
 
@@ -69,8 +68,6 @@ static void write_back_lexicon(LEXICON_T lex)
   offset += sizeof(LEXICON_T);
   */
   fwrite(&lex, sizeof(LEXICON_T), 1, fp_lex_file);
-
-  lex_id++;
 }
 
 /*
