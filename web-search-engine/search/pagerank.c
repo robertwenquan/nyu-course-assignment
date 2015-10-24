@@ -161,6 +161,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
     cal_BM25(docs_list, i, list_word_mit, &offsets_size);
     refill_offsets(docs_list, i, list_word_mit, offsets_size);
   } 
+
   return docs_list;
 }
 

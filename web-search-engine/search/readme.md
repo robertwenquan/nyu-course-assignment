@@ -98,7 +98,10 @@ We will have some information like below:
 
 7. Score intersection docs
 
-  Give intersection docs BM25 score, and find the MIT entries of the words corresponding to the doc
+  Give intersection docs BM25 score, and find the MIT entries of the words corresponding to the doc.
+  According to MIT entries, list all offsets of queried words in the document.
+
+  With the following form:
   {'docid': 33, 'score': 21.43, 'offset': [1,2,4,10,25,28]}
   {'docid': 52, 'score': 24.32, 'offset': [4,18,25,44]}
   ...
