@@ -153,7 +153,7 @@ IIDX_T * query_iindex(MIT_T *p_mit)
   // TODO: Open corresponding .iidx file by get_iidx_file
   char filename[256] = {'\0'};
   bzero(filename, 256);
-  strncpy(filename, get_iidx_file(p_mit->docid), 256);
+  strncpy(filename, get_iidx_filename(p_mit->docid), 256);
 
   FILE * f_iidx;
 
@@ -176,7 +176,7 @@ IIDX_T * query_iindex(MIT_T *p_mit)
   return p_return_iidx;
 }
 
-char * get_iidx_file(int docid)
+char * get_iidx_filename(int docid)
 {
   char * filename = (char *)calloc(1, 256);
   strncpy(filename, "../indexer/test_data/output/input1.warc.wet.lexicon.iidx", 256);
