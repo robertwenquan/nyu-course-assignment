@@ -161,6 +161,9 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
     cal_BM25(docs_list, i, list_word_mit, &offsets_size);
     refill_offsets(docs_list, i, list_word_mit, offsets_size);
   } 
+
+  sort_docs_list(docs_list);
+
   return docs_list;
 }
 
@@ -192,10 +195,31 @@ void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int
 
   return;
 }
+
 double cal_idf_q(int N, MIT_T** l_mit)
 {
 //IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))  
   int n_q = sizeof(l_mit) / sizeof(MIT_T *)*sizeof(int) - 1;
   double ret = log((N-n_q+0.5)/(n_q+0.5));
   return ret;
+}
+
+void sort_docs_list(DOC_LIST * doc_list)
+{
+  /* Input : unsorted DOC_LIST
+   * Output: sorted DOC_LIST
+   *
+   * DOC_LIST has the form:
+   * struct {
+   *    int docid;
+   *    double score;
+   *    int * offsets
+   * } DOC_LIST;
+   *
+   * The last block of DOC_LIST has docid = -1;
+   *
+   * In place sort it in decresing order of score.
+   */
+
+  return;
 }
