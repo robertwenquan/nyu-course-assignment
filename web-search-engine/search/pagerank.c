@@ -211,7 +211,11 @@ void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int
 double cal_idf_q(int N, MIT_T** l_mit)
 {
 //IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))  
-  int n_q = sizeof(l_mit) / sizeof(MIT_T *)*sizeof(int) - 1;
+  int n_q = 0;
+  while(l_mit[n_q] != NULL) {
+    n_q++;
+  }
+
   double ret = log((N-n_q+0.5)/(n_q+0.5));
   return ret;
 }
