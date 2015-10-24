@@ -2,9 +2,44 @@
 
 ### Overview
 
-This document is about the design and implementation of the search engine, built upon the index created with the second programming assignment.
+This document is about the design ,implementation and basic usage demo of the search engine, built upon the common crawl index created with the second programming assignment.
 
 This project is also a collaborative effort together with Robert Wen and Caicai Chen, from Tandon School of Engineering, with the prior consent of Professor Torsten.
+
+### Runtime demo
+
+##### How to build
+```bash
+$ make
+...
+```
+
+##### How to run
+```bash
+$ ./search new york city tour
+{'query': { 'words': ['new', 'york', 'city', 'tour'], 'npages': 20, 'time': 0.23 }, 
+ 'result': [
+            {'docid':234, 'url':'http://aaaa.aaaa.aaa/aaa/bb/cc/dd/ee', 'qrank':1, 'context':'xxxxxxxxx context'},
+            {'docid':234, 'url':'http://aaaa.aaaa.aaa/aaa/bb/cc/dd/ee', 'qrank':1, 'context':'xxxxxxxxx context'}
+           ]
+}
+
+$ ./search new york city tour | ./search_display_cli.py
+Querying ['new', 'york', 'city', 'tour'] from xxxx pages. 0.03s taken.
+
+http://aaaa.aaaa.aaa/aaa/bb/cc/dd/ee
+['new', 'york', 'city', 'tour'], qrank: 1
+context goes here, with keyword highlighted with yellow color.
+
+http://aaaa.aaaa.aaa/aaa/bb/cc/dd/ee
+['new', 'york', 'city', 'tour'], qrank: 1
+context goes here, with keyword highlighted with yellow color.
+
+...
+END OF SEARCH RESULT
+```
+
+Web Demo if we still have time?
 
 ### Architecture
 
@@ -141,9 +176,18 @@ We use Python wrapper to post-process the raw JSON output and format customized 
 
 ### Benchmarks
 
- * Search a bag of keywords
+ In order to measure the performance of the search engine, we tried various datasets. For development we use a super tiny dataset with only 30 documents. For quick testing we use a 100k docs dataset for quick verification. We also have another two bigger sets for performance and scalability verification with 1 million and 10 million documents.
 
- * Search keywords unions
+ * tiny30
+ With only 30 documents for development and quick testing purpose.
+
+ * small100k
+ For testing and verification purpose with larger dataset.
+
+ * mid1m
+
+ * large10m
+ The final dataset for assignment delivery and demo
 
 ### References
 
