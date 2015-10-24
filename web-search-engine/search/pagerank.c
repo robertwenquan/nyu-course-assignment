@@ -20,6 +20,14 @@ int nextGEQ(MIT_T ** l_docs, int k){
   return -1;
 }
 
+DOCS * get_union(MIT_T *** list_word_mit)
+{
+  /*
+   * If get_intersection couldn't return 20 pages, call this function.
+   * Since in common case, a document contains all query words has higher BM25
+   */
+  return NULL;
+}
 DOCS * get_intersection(MIT_T *** list_word_mit) {
   // Once one MIT_T** reaches NULL, no intersection any more.
   // If read to the last MIT_T ***, return to head.
@@ -150,6 +158,10 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
     count ++;
     cur = cur->next;
   }
+
+  if (count == 0) {
+    head = get_union(list_word_mit);
+  }
   cur = head;
 
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
@@ -202,7 +214,11 @@ void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int
 double cal_idf_q(int N, MIT_T** l_mit)
 {
 //IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))  
-  int n_q = sizeof(l_mit) / sizeof(MIT_T *)*sizeof(int) - 1;
+  int n_q = 0;
+  while(l_mit[n_q] != NULL) {
+    n_q++;
+  }
+
   double ret = log((N-n_q+0.5)/(n_q+0.5));
   return ret;
 }

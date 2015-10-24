@@ -13,6 +13,7 @@ typedef struct docs{
 } DOCS;
 
 int nextGEQ(MIT_T ** l_docs, int k);
+DOCS * get_union(MIT_T *** list_word_mit);
 DOCS * get_intersection(MIT_T *** list_word_mit);
 void cal_BM25(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int * count);
 DOC_LIST * ranking_docs(MIT_T *** list_word_mit);
