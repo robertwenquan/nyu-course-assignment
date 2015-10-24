@@ -90,8 +90,11 @@ We will have some information like below:
 
 6. Itersect or union the query results
 
-  Given all query words' MIT entry list, find intersection docs. have information like this:
-  {'docid': 278, 'docid':324, 'docid':199, 'docid':298}
+  Given all query words' MIT entry list, find intersection/union docs. 
+  Return a linked list of docids.
+
+  have information like this:
+  'docid': 278 -> 'docid':324 -> 'docid':199 -> 'docid':298 -> NULL
 
 7. Score intersection docs
 
