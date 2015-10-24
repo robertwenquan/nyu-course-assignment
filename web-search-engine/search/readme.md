@@ -90,7 +90,17 @@ We will have some information like below:
 
 6. Itersect or union the query results
 
-7. Ranking the pages
+  Given all query words' MIT entry list, find intersection docs. have information like this:
+  {'docid': 278, 'docid':324, 'docid':199, 'docid':298}
+
+7. Score intersection docs
+
+  Give intersection docs BM25 score, and find the MIT entries of the words corresponding to the doc
+  {'docid': 33, 'score': 21.43, 'offset': [1,2,4,10,25,28]}
+  {'docid': 52, 'score': 24.32, 'offset': [4,18,25,44]}
+  ...
+
+8. Ranking the pages
 
 We will rank the pages with xxx
 
@@ -101,9 +111,9 @@ After the ranking, we will have a list of 20 pages, with approximate the followi
 {'docid':482, 'offsets':[3,44,323,2342,34552], 'words':[34,342,33,22,425]}
 ```
 
-8. Page Retrieval
+9. Page Retrieval
 
- 8.1 doc meta data retrival
+ 9.1 doc meta data retrival
 
  Here we need to retrive all the meat data regarding a document. This will answer the following questions:
 
@@ -113,13 +123,13 @@ After the ranking, we will have a list of 20 pages, with approximate the followi
  - which doc index the meta is stored in?
  - from what offset can we find this info?
 
- 8.2 word_id to word
+ 9.2 word_id to word
 
-9. Result Formatting
+10. Result Formatting
 
 Whatever frontend we have, either the Command Line Interface, or the Web GUI, we encode the final output data with JSON for ease of processing.
 
-10. Output
+11. Output
 
 ### FAQ
 
