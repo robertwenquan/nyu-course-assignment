@@ -90,10 +90,49 @@ void query_words(char *queries[])
 }
 
 
+/*
+ * parse search keywords from the command line
+ */
+static parse_arguments(int argc, char *argv[], char ***keywords)
+{
+  *keywords = (char **)malloc(sizeof(char **)*argc);
+  bzero(*keywords, sizeof(char **)*argc);
+  assert(*keywords != NULL);
+
+  char **p_work = *keywords;
+  int idx = 0;
+  for (idx = 1;idx < argc;idx++) {
+    *p_work = (char *)malloc(strlen(argv[idx]) + 1);
+    bzero(*p_work, strlen(argv[idx]) + 1);
+    memcpy(*p_work, argv[idx], strlen(argv[idx]));
+    p_work++;
+  }
+  p_work = NULL;
+}
+
+/*
+ * print string list
+ * char *[] = {"xxx", "xxx", NULL}
+ * for debugging purpose
+ */
+void print_string_list(char *strlist[])
+{
+  char **p_work = (char **)strlist;
+  while (*p_work != NULL) {
+    printf("str check: %s\n", *p_work);
+    p_work++;
+  }
+}
 
 /* main routine */
 int main(int argc, char *argv[])
 {
+
+  /* parse the query keywords */
+  char **search_keywords = NULL;
+  parse_arguments(argc, argv, &search_keywords);
+  print_string_list(search_keywords);
+
   /*
    * For each word, get MIT_T ** p_mit_entries
    * Combine all MIT_T ** to get MIT_T *** p_mit_lists
