@@ -24,7 +24,7 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
     return NULL;
   }
   DOC_LIST * doc_head = NULL; 
-  DOC_LIST * doc_tail= doc_head;
+  DOC_LIST * doc_tail = NULL;
   DOC_LIST * cur = NULL;
 
   int num_words  = sizeof(list_word_mit)/4;
@@ -55,15 +55,16 @@ DOC_LIST * get_intersection(MIT_T *** list_word_mit) {
 
       cur->docid = k;
       cur->score = 0.0;
-      cur->url = NULL;
       cur->next = NULL;
 
       if (doc_head == NULL) {
         doc_head = cur;
+        doc_tail = cur;
       } else {
         doc_tail->next = cur;
         doc_tail = cur;
       }
+      continuous = 0;
       k++;
     }
 
@@ -154,6 +155,5 @@ double cal_idf_q(int N, MIT_T** l_mit)
 //IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))  
   int n_q = sizeof(l_mit) / sizeof(MIT_T *)*sizeof(int) - 1;
   double ret = log((N-n_q+0.5)/(n_q+0.5));
-  printf("idf: %f\n", ret);
   return ret;
 }
