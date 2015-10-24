@@ -19,4 +19,6 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit);
 double cal_idf_q(int N, MIT_T** l_mit);
 MIT_T * find_mit_entry(MIT_T ** list_word_mit, int docid);
 void refill_offsets(DOC_LIST * cur_doc, int place, MIT_T *** list_word_mit, int size);
+void sort_docs_list(DOC_LIST * doc_list);
+
 #endif
