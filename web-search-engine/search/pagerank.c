@@ -1,5 +1,8 @@
 #include "pagerank.h"
 
+static void sort_docs_list(DOC_LIST * doc_list, int lens);
+
+
 /* 
  * Given a list of words' MIT_T entries, return the union of docs that contain all of the word.
  */
@@ -162,7 +165,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
     refill_offsets(docs_list, i, list_word_mit, offsets_size);
   } 
 
-  sort_docs_list(docs_list);
+  sort_docs_list(docs_list, count);
 
   return docs_list;
 }
@@ -204,22 +207,49 @@ double cal_idf_q(int N, MIT_T** l_mit)
   return ret;
 }
 
-void sort_docs_list(DOC_LIST * doc_list)
+/*
+ * standard comparison function
+ * for document ranking sorting
+ * for qsort()
+ * in descending order
+ */
+static int compare_doc_ranking(const void *p1, const void *p2)
 {
-  /* Input : unsorted DOC_LIST
-   * Output: sorted DOC_LIST
-   *
-   * DOC_LIST has the form:
-   * struct {
-   *    int docid;
-   *    double score;
-   *    int * offsets
-   * } DOC_LIST;
-   *
-   * The last block of DOC_LIST has docid = -1;
-   *
-   * In place sort it in decresing order of score.
-   */
+  DOC_LIST *doc1 = (DOC_LIST *)p1;
+  DOC_LIST *doc2 = (DOC_LIST *)p2;
 
-  return;
+  #ifdef __DEBUG__
+  assert(doc1 != NULL && doc2 != NULL);
+  #endif
+
+  double score1 = doc1->score;
+  double score2 = doc2->score;
+
+  if (score1 > score2) {
+    return -1;
+  } else if (score1 < score2) {
+    return 1;
+  } else {
+    return 0;
+  }
 }
+
+/* Input : unsorted DOC_LIST
+ * Output: sorted DOC_LIST
+ *
+ * DOC_LIST has the form:
+ * struct {
+ *    int docid;
+ *    double score;
+ *    int * offsets
+ * } DOC_LIST;
+ *
+ * The last block of DOC_LIST has docid = -1;
+ *
+ * In place sort it in decresing order of score.
+ */
+static void sort_docs_list(DOC_LIST * doc_list, int lens)
+{
+  qsort(doc_list, lens, sizeof(DOC_LIST), compare_doc_ranking);
+}
+
