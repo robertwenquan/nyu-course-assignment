@@ -17,6 +17,14 @@ int nextGEQ(MIT_T ** l_docs, int k){
   return -1;
 }
 
+DOCS * get_union(MIT_T *** list_word_mit)
+{
+  /*
+   * If get_intersection couldn't return 20 pages, call this function.
+   * Since in common case, a document contains all query words has higher BM25
+   */
+  return NULL;
+}
 DOCS * get_intersection(MIT_T *** list_word_mit) {
   // Once one MIT_T** reaches NULL, no intersection any more.
   // If read to the last MIT_T ***, return to head.
@@ -146,6 +154,10 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
   while (cur != NULL) {
     count ++;
     cur = cur->next;
+  }
+
+  if (count == 0) {
+    head = get_union(list_word_mit);
   }
   cur = head;
 
