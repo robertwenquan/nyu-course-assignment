@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "query.h"
-
+#include "pagerank.h"
 /*
  * query a single word
  */
@@ -100,14 +100,10 @@ int main(int argc, char *argv[])
    * Pass MIT_T *** to ranking_docs get ranked docs
    * For each doc, find mit entry for each word and return context
    */
-  MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T***));
+  MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T**));
   *p_mit_lists = query_word("fake");
-  *(p_mit_lists+1)= query_word("fake");
-  *(p_mit_lists+2)= query_word("fake");
-
-  double ret = 0.0;
-  cal_BM25((**p_mit_lists)->docid, p_mit_lists, &ret);
-  printf("BM25: %f\n", ret);
+  *(p_mit_lists+1) = query_word("fake");
+  *(p_mit_lists+2) = query_word("fake");
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
 

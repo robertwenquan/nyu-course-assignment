@@ -97,7 +97,7 @@ typedef struct __attribute__((__packed__)) {
 typedef struct node{
   int docid;
   double score;
-  struct node * next;
+  int * offsets;
 } DOC_LIST;
 
 void print_git_entry(GIT_T *p_git);
