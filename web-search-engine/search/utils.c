@@ -14,6 +14,7 @@
 
 //char BASE_DIR[] = "/data/wse/100k/";
 char BASE_DIR[] = "../indexer/test_data/";
+int ndocs_per_lexicon_bucket = 1000;
 
 void * uncompress(char *filename)
 {
@@ -357,6 +358,18 @@ void print_iidx_entry(IIDX_T *p_iidx) {
   printf("=====================\n");
 }
 
+void print_doc_meta_entry(URL_IDX_T *p_doc_meta)
+{
+  printf("===== DOC META Entry =====\n");
+  printf(" %-12s: %9d\n", "docid", p_doc_meta->docid);
+  printf(" %-12s: %9d\n", "url offset", p_doc_meta->url_offset);
+  printf(" %-12s: %9d\n", "url length", p_doc_meta->url_length);
+  printf(" %-12s: %9d\n", "doc length", p_doc_meta->doc_length);
+  printf(" %-12s: %9d\n", "ctt offset", p_doc_meta->content_offset);
+  printf(" %-12s: %9d\n", "ctt length", p_doc_meta->content_length);
+  printf("==========================\n");
+}
+
 int stats_ndocs = 288;
 int stats_avg_doc_lens = 2000;
 
@@ -372,5 +385,15 @@ int get_avg_doc_length()
 
 int total_num_docs(){
   return stats_ndocs;
+}
+
+void get_iidx_filename_from_docid(int docid, char *filename)
+{
+  bzero(filename, 256);
+
+  int fileid = 0;
+  fileid = docid/ndocs_per_lexicon_bucket;
+
+  snprintf(filename, 256, "%s/%s/%s%05d.iidx", BASE_DIR, "output", "xxxx", fileid);
 }
 

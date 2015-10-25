@@ -124,6 +124,20 @@ void print_string_list(char *strlist[])
   }
 }
 
+/*
+ * print number list
+ * int * = {1, 2, 4, -1}
+ * for debugging purpose
+ */
+void print_number_list(int *nums)
+{
+  int *p_num = nums;
+  while (*p_num != -1) {
+    printf("num check: %d\n", *p_num);
+    p_num++;
+  }
+}
+
 /* main routine */
 int main(int argc, char *argv[])
 {
@@ -131,7 +145,18 @@ int main(int argc, char *argv[])
   /* parse the query keywords */
   char **search_keywords = NULL;
   parse_arguments(argc, argv, &search_keywords);
+  printf("Checking query keywords...\n");
   print_string_list(search_keywords);
+
+  /* convert words to word ids */
+  int *query_ids = NULL;
+  convert_words_to_ids(search_keywords, argc-1, &query_ids);
+  printf("Checking query word IDs...\n");
+  print_number_list(query_ids);
+
+  URL_IDX_T * p_doc_meta = get_doc_meta(*query_ids);
+  print_doc_meta_entry(p_doc_meta);
+  exit(3);
 
   /*
    * For each word, get MIT_T ** p_mit_entries
