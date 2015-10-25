@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
       break;
 
     case 2:
-      printf("[fake] sorting lexicons...\n");
+      lexicon_sorter();
       break;
 
     case 3:
@@ -73,6 +73,7 @@ int main(int argc, char *argv[])
 
     default:
       lexicon_generator();
+      lexicon_sorter();
       index_builder();
       index_merger();
       break;

@@ -280,6 +280,8 @@ char ** get_inout_filelist(PHASE_T phase)
   char input_globstr[256] = {'\0'};
   if (phase == LEXICON_GENERATION) {
     snprintf(input_globstr, 256, "%s%s", input_dir, "*.wet");
+  } else if (phase == LEXICON_SORTING) {
+    snprintf(input_globstr, 256, "%s%s", input_dir, "*.lexicon");
   } else if (phase == IINDEX_GENERATION) {
     snprintf(input_globstr, 256, "%s%s", input_dir, "*.lexicon");
   } else if (phase == IINDEX_MERGING) {
@@ -298,6 +300,8 @@ char ** get_inout_filelist(PHASE_T phase)
   int times = 0;
   if (phase == LEXICON_GENERATION) {
     times = 2;
+  } else if (phase == LEXICON_SORTING) {
+    times = 1;
   } else if (phase == IINDEX_GENERATION) {
     times = 4;
   } else if (phase == IINDEX_MERGING) {

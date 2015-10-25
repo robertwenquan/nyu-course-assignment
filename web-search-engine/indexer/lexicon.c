@@ -185,21 +185,6 @@ static void process_lexicons_from_file(char *infile)
   }
   warc_close(fp);
 
-  // sort the lexicon in place
-  /*
-  comment out as we don't have output file for now
-  int fd = open(outfile, O_RDWR);
-  assert(fd > 0);
-
-  struct stat st;
-  fstat(fd, &st);
-
-  void *src = mmap (0, st.st_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
-  assert(src != NULL);
-  qsort(src, st.st_size / sizeof(LEXICON_T), sizeof(LEXICON_T), lexicon_compare);
-  close(fd);
-  */
-
   return;
 }
 
@@ -314,10 +299,48 @@ static int lexicon_compare(const void *p1, const void *p2)
 }
 
 /*
+ * sort one lexicon file in place
+ */
+static void sort_one_lexicon(char *filename)
+{
+  int fd = open(filename, O_RDWR);
+  assert(fd > 0);
+
+  struct stat st;
+  fstat(fd, &st);
+
+  void *src = mmap (0, st.st_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0);
+  assert(src != NULL);
+  qsort(src, st.st_size / sizeof(LEXICON_T), sizeof(LEXICON_T), lexicon_compare);
+  close(fd);
+}
+
+/*
  * sorting all lexicons
  */
 int lexicon_sorter()
 {
+  char **p = get_inout_filelist(LEXICON_SORTING);
+  char **p_save = p;
+
+  if (p == NULL) {
+    return 1;
+  }
+
+  time_t ts;
+  time(&ts);
+  struct tm * tm = localtime(&ts);
+  char timestr[32] = {'\0'};
+  snprintf(timestr, 32, "%d-%02d-%02d %02d:%02d:%02d", tm->tm_year+1900, tm->tm_mon+1, tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
+
+  printf("%s Sorting lexicons...\n", timestr);
+
+  while (*p != NULL) {
+    sort_one_lexicon(*p);
+    p++;
+  }
+
+  free_inout_filelist(p_save);
   return 0;
 }
 

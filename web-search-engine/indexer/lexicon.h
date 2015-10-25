@@ -8,6 +8,7 @@
 #include "tokenizer.h"
 
 int lexicon_generator();
+int lexicon_sorter();
 
 // lexicon structure
 // the output format of phase1 and phase2
