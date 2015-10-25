@@ -313,11 +313,20 @@ static int lexicon_compare(const void *p1, const void *p2)
   return 0;
 }
 
+/*
+ * sorting all lexicons
+ */
+int lexicon_sorter()
+{
+  return 0;
+}
+
 
 #ifdef __TEST__
 int main(int argc, char *argv[])
 {
   lexicon_generator();
+  lexicon_sorter();
 
   return 0;
 }
