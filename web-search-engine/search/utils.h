@@ -121,6 +121,8 @@ int total_num_docs();
 extern int ndocs_per_lexicon_bucket;
 
 void get_iidx_filename_from_docid(int docid, char *filename);
+void get_git_filename(char *filename);
+void get_mit_filename(char *filename);
 
 #endif
 

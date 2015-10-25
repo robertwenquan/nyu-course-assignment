@@ -45,7 +45,7 @@ GIT_T * query_git(int word_id)
 
   char filename[256] = {'\0'};
   bzero(filename, 256);
-  strncpy(filename, "test_data/tiny30/output/input1.warc.wet.lexicon00.git", 256);
+  get_git_filename(filename);
 
   fd_git = open(filename, O_RDONLY);
   if (fd_git == -1) {
@@ -106,7 +106,7 @@ MIT_T ** query_mit(GIT_T *p_git)
 
   char filename[256] = {'\0'};
   bzero(filename, 256);
-  strncpy(filename, "test_data/tiny30/output/input1.warc.wet.lexicon00.mit", 256);
+  get_mit_filename(filename);
 
   fd_mit = fopen(filename, "rb");
   if (fd_mit == NULL) {

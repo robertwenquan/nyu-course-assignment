@@ -404,6 +404,18 @@ int total_num_docs(){
   return stats_ndocs;
 }
 
+void get_git_filename(char *filename)
+{
+  bzero(filename, 256);
+  snprintf(filename, 256, "%s", "test_data/tiny30/output/input1.warc.wet.lexicon00.git");
+}
+
+void get_mit_filename(char *filename)
+{
+  bzero(filename, 256);
+  snprintf(filename, 256, "%s", "test_data/tiny30/output/input1.warc.wet.lexicon00.mit");
+}
+
 void get_iidx_filename_from_docid(int docid, char *filename)
 {
   bzero(filename, 256);
