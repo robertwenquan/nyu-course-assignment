@@ -148,6 +148,77 @@ MIT_T ** query_mit(GIT_T *p_git)
  * input: MIT_T entry
  * output: inverted index list
  */
+
+IIDX_T * query_compressed_iindex(MIT_T * p_mit)
+{
+  /*
+  char filename[256] = {'\0'};
+  bzero(filename, 256);
+  strncpy(filename, get_iidx_filename(p_mit->docid), 256);
+    printf("total_num: %d", 000);
+
+  FILE * f_iidx;
+  if (p_return_iidx == NULL) {
+    return NULL;
+  }
+
+  f_iidx = fopen(filename, "r");
+  if (f_iidx == NULL) {
+    return NULL;
+  }
+
+  fseek(f_iidx, p_mit->offset, SEEK_SET);
+  fread(p_read ,sizeof(IIDX_T), p_mit->n_places, f_iidx);
+
+  */
+  // FOR TEST USE
+  p_mit->n_places = 8; 
+  IIDX_T * p_read = (IIDX_T *)calloc((p_mit->n_places+1), sizeof(IIDX_T));
+  IIDX_T * p_return_iidx = (IIDX_T *)calloc((p_mit->n_places+1), sizeof(IIDX_T));
+
+  p_read[0].offset = 536887297;
+  p_read[1].offset = 545259525;
+  p_read[2].offset = 1086374277;
+
+  int total_num = p_mit->n_places;
+  int i = 0;
+  int local_num = 0;
+  int i_write = 0;
+  int waste = 0;
+  int bit = 0;
+  int j = 0;
+
+  while (total_num > 0) {
+    local_num = p_read[i].offset >> 28;
+    printf("total_num: %d\n", total_num);
+    printf("local : %d\n", local_num);
+    printf("i: %d\n", i);
+    bit = 28/local_num;
+    waste = 28 - local_num * bit;
+
+    j = 0;
+
+    i_write += local_num;
+
+    while( j < local_num ){
+      p_return_iidx[i_write - j - 1].offset = p_read[i].offset % (int)(pow(2,bit));
+      p_read[i].offset /= (int)(pow(2,bit));
+      j++;
+    }
+
+    i++;
+    total_num -= local_num;
+  }
+
+  for(int k = 0; k < 8; k++) {
+    printf("offsets: %d\n", p_return_iidx[k]);
+  }
+
+  printf("OUTPUT SHOULD BE:\n 1 \n 1 \n 512 \n 5 \n 6 \n 3 \n 3 \n 5 \n");
+  //fclose(f_iidx);
+  return p_return_iidx;
+
+}
 IIDX_T * query_iindex(MIT_T *p_mit)
 {
   // TODO: Open corresponding .iidx file by get_iidx_file

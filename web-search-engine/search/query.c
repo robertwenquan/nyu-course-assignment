@@ -44,6 +44,7 @@ MIT_T **query_word(char *word)
   IIDX_T * p_iidx_entry = NULL;
   int i = 0;
   while(*p_mit_entry != NULL){
+    //p_iidx_entry = query_compressed_iindex(*p_mit_entry);
     p_iidx_entry = query_iindex(*p_mit_entry);
     if (p_iidx_entry == NULL) {
       return NULL;
@@ -163,7 +164,6 @@ int main(int argc, char *argv[])
 
     cur++;
   }
-
   /*
    * Get context according to DOC_LIST and return
    */
