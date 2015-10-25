@@ -43,7 +43,30 @@ Web Demo if we still have time?
 
 ### Architecture
 
-About the architecture. How do we design the search engine. How does the data come out of the index from the word to page content.
+ Since all inverted index built in assignment2 are associated with word id, instead of real word, so the first step of query is to convert query words into word id.
+ * convert_word_to_ids
+
+ After we get word id, we look into the first level of inverted index, which maps word_id to all docs contains this word.
+ * query_git
+ * query_mit
+
+ ror each query word, we can get a list of documents, find intersection/union of documents.
+ * get_intersection
+ * nexGEQ
+ * get_union
+
+ Now we have all documents related to query words, use BM25 to give them score.
+ * cal_idf
+ * cal_BM25
+
+ According to BM25 score, ranking all document and return first 20 results.
+ * sort_doc_list
+
+ Get offset of words in returned 20 documents
+ * query_iindex
+
+ Get page content about query words
+ * get_page_context
 
 ### Data Flow Illustration
 
@@ -193,11 +216,11 @@ We use Python wrapper to post-process the raw JSON output and format customized 
 
 4. How big the index was in compressed form?
 
-5. how many postings?
+5. How many postings?
 
-6. how long it takes to start up the query processor?
+6. How long it takes to start up the query processor?
 
-7.  how long per query on the queries we gave you?
+7. How long per query on the queries we gave you?
 
 ### Benchmarks
 
