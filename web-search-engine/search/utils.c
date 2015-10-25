@@ -16,6 +16,11 @@
 char BASE_DIR[] = "../indexer/test_data/";
 int ndocs_per_lexicon_bucket = 1000;
 
+char * get_basedir()
+{
+  return BASE_DIR;
+}
+
 void * uncompress(char *filename)
 {
   return NULL;

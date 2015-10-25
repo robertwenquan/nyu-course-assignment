@@ -95,8 +95,8 @@ static void load_word_idx_table()
   bzero(filename_fd_word_idx, 256);
   bzero(filename_fd_word_str, 256);
 
-  strncpy(filename_fd_word_idx, "test_data/tiny30/output/word_table.idx", 256);
-  strncpy(filename_fd_word_str, "test_data/tiny30/output/word_table.data", 256);
+  snprintf(filename_fd_word_idx, 256, "%s/tiny30/output/word_table.idx", get_basedir());
+  snprintf(filename_fd_word_str, 256, "%s/tiny30/output/word_table.data", get_basedir());
 
   fd_word_idx = open(filename_fd_word_idx, O_RDONLY);
   fd_word_str = open(filename_fd_word_str, O_RDONLY);

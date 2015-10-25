@@ -31,8 +31,8 @@ static void load_url_idx_table()
   bzero(filename_fd_url_idx, 256);
   bzero(filename_fd_url_str, 256);
 
-  strncpy(filename_fd_url_idx, "test_data/tiny30/output/url_table.idx", 256);
-  strncpy(filename_fd_url_str, "test_data/tiny30/output/url_table.data", 256);
+  snprintf(filename_fd_url_idx, 256, "%s/tiny30/output/url_table.idx", get_basedir());
+  snprintf(filename_fd_url_str, 256, "%s/tiny30/output/url_table.data", get_basedir());
 
   fd_url_idx = open(filename_fd_url_idx, O_RDONLY);
   fd_url_str = open(filename_fd_url_str, O_RDONLY);
