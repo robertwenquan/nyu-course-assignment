@@ -9,7 +9,7 @@ This project is also a collaborative effort together with Robert Wen and Caicai 
 ### Runtime demo
 
 ##### How to build
-When you untar the tarball, you will come to a directory like this. This is the root of the this project.
+When you untar the tarball, you will come to a directory like this. This is the root of search directory.
 
 ```bash
 $ tree -d .
@@ -20,8 +20,7 @@ $ tree -d .
 │       └── output
 └── utils
 ```
-The entire assignment is written in C:
-the entire assignment is written in C.
+The entire assignment is written in C.
 
 ```bash
 $ ls -l *.[chp]*
