@@ -6,6 +6,7 @@
 #include <sys/mman.h>
 #include <assert.h>
 #include <string.h>
+#include "utils.h"
 
 
 static int fd_url_idx = -1;
@@ -63,21 +64,39 @@ static void close_url_idx_table()
   return;
 }
 
+static int compare_docid(const void *pa, const void *pb)
+{
+  URL_IDX_T *p_doca = (URL_IDX_T *)pa;
+  URL_IDX_T *p_docb = (URL_IDX_T *)pb;
+
+  if (p_doca->docid > p_docb->docid) {
+    return 1;
+  } else if (p_doca->docid < p_docb->docid) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
 
 /*
  * query doc meta info from docid
  * input: docid
  * output: doc meta structure
  */
-int fetch_doc_meta(int docid)
+URL_IDX_T * get_doc_meta(int docid)
 {
   // initialize everything when necessary
   if (fd_url_idx == -1 && fd_url_str == -1) {
     load_url_idx_table();
   }
+  URL_IDX_T doc_key = {.docid = docid};
+  int ndocs = 30;
 
-  close_url_idx_table();
+  URL_IDX_T *p_doc_meta = bsearch(&doc_key, p_url_idx_mmap, sizeof(URL_IDX_T), ndocs, compare_docid);
 
-  return 0;
+  URL_IDX_T *p_doc_ret = (URL_IDX_T *)malloc(sizeof(URL_IDX_T));
+  memcpy(p_doc_ret, p_doc_meta, sizeof(URL_IDX_T));
+
+  return p_doc_ret;
 }
 

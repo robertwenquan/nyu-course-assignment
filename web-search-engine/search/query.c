@@ -1,20 +1,13 @@
 #include <stdio.h>
 #include "query.h"
 #include "pagerank.h"
-/*
- * query a single word
- */
-MIT_T **query_word(char *word)
-{
-  /* 1. word to word_id */
-  printf("query word_id for %s\n", word);
-  int word_id = -1;
-  word_id = word_to_id(word);
-  if (word_id < 0) {
-    return NULL;
-  }
 
-  printf("word id: %d\n", word_id);
+/*
+ * query a single word by word_id
+ */
+MIT_T **query_word(unsigned int word_id)
+{
+  printf("word id: %u\n", word_id);
 
   /* 2. word_id to GIT entry */
   printf("query GIT entry...\n");
@@ -59,21 +52,17 @@ MIT_T **query_word(char *word)
   }
 
   return p_save;
-
-  /* 5. IINDEX entry to WARC info */
-
-  /* 6. WARC info to page text */
 }
 
 
 /*
  * query a list of words based on some logical operation
  */
-void query_words(MIT_T *** p_mit_lists, char ** search_keywords)
+void query_words(MIT_T *** p_mit_lists, int *word_ids)
 {
   /*
    * 1. For each word, find all docs contain this word
-   *    Input: list of words
+   *    Input: list of word ids
    *    Output: MIT_T ***
    *
    * 2. Union docs for all words
@@ -87,15 +76,16 @@ void query_words(MIT_T *** p_mit_lists, char ** search_keywords)
    * 4. Return top 20 docs with context
    */
   MIT_T ** ret_mits = (MIT_T **)calloc(1, sizeof(MIT_T *));
-  while (*search_keywords != NULL) {
-    printf("keywords: %s\n\n", *search_keywords);
-    ret_mits = query_word(*search_keywords);
+  while (*word_ids != -1) {
+    int word_id = *word_ids;
+    printf("word id: %d\n\n", word_id);
+    ret_mits = query_word(word_id);
     if (ret_mits == NULL) {
       continue;
     }
     *p_mit_lists = ret_mits;
-    search_keywords++;
-    p_mit_lists ++;
+    word_ids++;
+    p_mit_lists++;
   }
   p_mit_lists = NULL;
 }
@@ -135,6 +125,20 @@ void print_string_list(char *strlist[])
   }
 }
 
+/*
+ * print number list
+ * int * = {1, 2, 4, -1}
+ * for debugging purpose
+ */
+void print_number_list(int *nums)
+{
+  int *p_num = nums;
+  while (*p_num != -1) {
+    printf("num check: %d\n", *p_num);
+    p_num++;
+  }
+}
+
 /* main routine */
 int main(int argc, char *argv[])
 {
@@ -142,14 +146,24 @@ int main(int argc, char *argv[])
   /* parse the query keywords */
   char **search_keywords = NULL;
   parse_arguments(argc, argv, &search_keywords);
+  printf("Checking query keywords...\n");
   print_string_list(search_keywords);
 
-  /* query keywords, get list of mit entries */
+  /* convert words to word ids */
+  int *query_ids = NULL;
+  convert_words_to_ids(search_keywords, argc-1, &query_ids);
+  printf("Checking query word IDs...\n");
+  print_number_list(query_ids);
 
+  URL_IDX_T * p_doc_meta = get_doc_meta(*query_ids);
+  printf("HRERERE \n\n");
+  print_doc_meta_entry(p_doc_meta);
+
+  /* query word ids, get list of mit entries */
   MIT_T *** p_mit_lists = (MIT_T ***)calloc(argc, sizeof(MIT_T**));
   assert(p_mit_lists != NULL);
 
-  query_words(p_mit_lists, search_keywords);
+  query_words(p_mit_lists, query_ids);
 
   /*
    * Pass MIT_T *** to ranking_docs get ranked docs

@@ -35,7 +35,7 @@ void get_word_str(WORD_IDX_T *p_word_idx, char *wordstr, int lens)
  * load one word into the hash tree
  * for word->id query
  */
-void load_word(int word_id, char *word)
+static void load_word(int word_id, char *word)
 {
   static int wordid = 0;
   static pthread_mutex_t wordid_lock;
@@ -148,11 +148,12 @@ static unsigned int query_word_for_id(char *word)
     assert(node_idx >= 0 && node_idx < 62);
 
     WORDID_HASHTREE_NODE_T *tree_node = work_node->next[node_idx];
-    assert(tree_node != NULL);
+    if (tree_node == NULL) {
+      return -1;
+    }
     work_node = tree_node;
   }
 
-  assert(work_node->wordid != 0);
   return work_node->wordid;
 }
 
@@ -178,5 +179,27 @@ int word_to_id(char *word)
   }
 
   return query_word_for_id(word);
+}
+
+/*
+ * convert word list to word_id list
+ * input: a list of words
+ *   {"new", "york", NULL}
+ * output:
+ *   {123, 234, -1}
+ */
+void convert_words_to_ids(char **search_keywords, int nwords, int **ids)
+{
+  *ids = (int *)malloc(sizeof(int) * (nwords+1));
+  assert(*ids != NULL);
+  
+  char **p_word = search_keywords;
+  int *p_int = *ids;
+  while (*p_word != NULL) {
+    *p_int = word_to_id(*p_word);
+    p_word++;
+    p_int++;
+  }
+  *p_int = -1;
 }
 
