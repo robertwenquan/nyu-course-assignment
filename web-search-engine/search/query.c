@@ -156,7 +156,10 @@ int main(int argc, char *argv[])
   print_number_list(query_ids);
 
   URL_IDX_T * p_doc_meta = get_doc_meta(*query_ids);
-  printf("HRERERE \n\n");
+
+  if (p_doc_meta == NULL) {
+    return EXIT_FAILURE;
+  }
   print_doc_meta_entry(p_doc_meta);
 
   /* query word ids, get list of mit entries */

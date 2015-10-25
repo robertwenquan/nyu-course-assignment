@@ -94,6 +94,9 @@ URL_IDX_T * get_doc_meta(int docid)
 
   URL_IDX_T *p_doc_meta = bsearch(&doc_key, p_url_idx_mmap, sizeof(URL_IDX_T), ndocs, compare_docid);
 
+  if (p_doc_meta == NULL) {
+    return NULL;
+  }
   URL_IDX_T *p_doc_ret = (URL_IDX_T *)malloc(sizeof(URL_IDX_T));
   memcpy(p_doc_ret, p_doc_meta, sizeof(URL_IDX_T));
 
