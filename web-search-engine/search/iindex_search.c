@@ -211,7 +211,7 @@ IIDX_T * query_compressed_iindex(MIT_T * p_mit)
   }
 
   for(int k = 0; k < 8; k++) {
-    printf("offsets: %d\n", p_return_iidx[k]);
+    printf("offsets: %d\n", p_return_iidx[k].offset);
   }
 
   printf("OUTPUT SHOULD BE:\n 1 \n 1 \n 512 \n 5 \n 6 \n 3 \n 3 \n 5 \n");

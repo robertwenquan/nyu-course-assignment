@@ -69,7 +69,7 @@ MIT_T **query_word(char *word)
 /*
  * query a list of words based on some logical operation
  */
-void query_words(char *queries[])
+void query_words(MIT_T *** p_mit_lists, char ** search_keywords)
 {
   /*
    * 1. For each word, find all docs contain this word
@@ -86,8 +86,18 @@ void query_words(char *queries[])
    *
    * 4. Return top 20 docs with context
    */
-  char *word = "cat";
-  query_word(word);
+  MIT_T ** ret_mits = (MIT_T **)calloc(1, sizeof(MIT_T *));
+  while (*search_keywords != NULL) {
+    printf("keywords: %s\n\n", *search_keywords);
+    ret_mits = query_word(*search_keywords);
+    if (ret_mits == NULL) {
+      continue;
+    }
+    *p_mit_lists = ret_mits;
+    search_keywords++;
+    p_mit_lists ++;
+  }
+  p_mit_lists = NULL;
 }
 
 
@@ -134,17 +144,12 @@ int main(int argc, char *argv[])
   parse_arguments(argc, argv, &search_keywords);
   print_string_list(search_keywords);
 
-  /*
-   * For each word, get MIT_T ** p_mit_entries
-   * Combine all MIT_T ** to get MIT_T *** p_mit_lists
-   */
+  /* query keywords, get list of mit entries */
 
+  MIT_T *** p_mit_lists = (MIT_T ***)calloc(argc, sizeof(MIT_T**));
+  assert(p_mit_lists != NULL);
 
-  // @Robert, How to get number of queried words here ?
-  MIT_T *** p_mit_lists = (MIT_T ***)calloc(3,sizeof(MIT_T**));
-  *p_mit_lists = query_word("Volkswagen");
-  *(p_mit_lists+1) = query_word("Volkswagen");
-  *(p_mit_lists+2) = query_word("Volkswagen");
+  query_words(p_mit_lists, search_keywords);
 
   /*
    * Pass MIT_T *** to ranking_docs get ranked docs
@@ -153,6 +158,7 @@ int main(int argc, char *argv[])
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
 
+  /* USED FOR TEST
   DOC_LIST * cur = head;
   while(cur != NULL) {
     if (cur->docid == -1 ){
@@ -164,6 +170,7 @@ int main(int argc, char *argv[])
 
     cur++;
   }
+  */
   /*
    * Get context according to DOC_LIST and return
    */
