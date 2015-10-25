@@ -9,7 +9,6 @@
 GIT_T * query_git(int word_id);
 MIT_T ** query_mit(GIT_T *p_git);
 IIDX_T * query_iindex(MIT_T *pmit);
-IIDX_T * query_compressed_iindex(MIT_T *pmit);
 char * get_iidx_filename(int docid);
 #endif
 

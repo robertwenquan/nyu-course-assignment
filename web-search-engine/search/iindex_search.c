@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
+static void decompress_iidx(IIDX_T * p_return_iidx, int len);
 
 /*
  * standard comparison function of GIT entry
@@ -149,38 +150,17 @@ MIT_T ** query_mit(GIT_T *p_git)
  * output: inverted index list
  */
 
-IIDX_T * query_compressed_iindex(MIT_T * p_mit)
+static void decompress_iidx(IIDX_T * p_return_iidx, int len)
 {
-  /*
-  char filename[256] = {'\0'};
-  bzero(filename, 256);
-  get_iidx_filename_from_docid(p_mit->docid, filename);
-    printf("total_num: %d", 000);
+  IIDX_T * p_read = (IIDX_T *)calloc(len+1, sizeof(IIDX_T));
 
-  FILE * f_iidx;
-  if (p_return_iidx == NULL) {
-    return NULL;
-  }
-
-  f_iidx = fopen(filename, "r");
-  if (f_iidx == NULL) {
-    return NULL;
-  }
-
-  fseek(f_iidx, p_mit->offset, SEEK_SET);
-  fread(p_read ,sizeof(IIDX_T), p_mit->n_places, f_iidx);
-
-  */
-  // FOR TEST USE
-  p_mit->n_places = 8; 
-  IIDX_T * p_read = (IIDX_T *)calloc((p_mit->n_places+1), sizeof(IIDX_T));
-  IIDX_T * p_return_iidx = (IIDX_T *)calloc((p_mit->n_places+1), sizeof(IIDX_T));
-
+  // p_read should be p_return_iidx
+  //memcpy( p_read, p_return_iidx, (len+1) * sizeof(IIDX_T));
   p_read[0].offset = 536887297;
   p_read[1].offset = 545259525;
   p_read[2].offset = 1086374277;
 
-  int total_num = p_mit->n_places;
+  int total_num = len;
   int i = 0;
   int local_num = 0;
   int i_write = 0;
@@ -190,9 +170,6 @@ IIDX_T * query_compressed_iindex(MIT_T * p_mit)
 
   while (total_num > 0) {
     local_num = p_read[i].offset >> 28;
-    printf("total_num: %d\n", total_num);
-    printf("local : %d\n", local_num);
-    printf("i: %d\n", i);
     bit = 28/local_num;
     waste = 28 - local_num * bit;
 
@@ -216,10 +193,9 @@ IIDX_T * query_compressed_iindex(MIT_T * p_mit)
   }
 
   printf("OUTPUT SHOULD BE:\n 1 \n 1 \n 512 \n 5 \n 6 \n 3 \n 3 \n 5 \n");
-  //fclose(f_iidx);
-  return p_return_iidx;
-
+  return;
 }
+
 IIDX_T * query_iindex(MIT_T *p_mit)
 {
   char filename[256] = {'\0'};
@@ -242,6 +218,7 @@ IIDX_T * query_iindex(MIT_T *p_mit)
   fseek(f_iidx, p_mit->offset, SEEK_SET);
   fread(p_return_iidx ,sizeof(IIDX_T), p_mit->n_places, f_iidx);
 
+  //decompress_iidx(p_return_iidx, p_mit->n_places);
   fclose(f_iidx);
 
   for (i = 1; i < p_mit->n_places; i++) {
