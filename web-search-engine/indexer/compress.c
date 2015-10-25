@@ -54,7 +54,7 @@ void compress_iidx()
     //fseek(f_mit, sizeof(MIT_T), SEEK_CUR);
     
     C_offset += delta_offset * sizeof(IIDX_T);
-    printf("C_OFFSET : %d", C_offset);
+    printf("C_OFFSET : %lu", C_offset);
 
     free(IIDX_new);
     free(IIDX_old);
