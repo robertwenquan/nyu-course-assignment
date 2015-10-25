@@ -183,11 +183,22 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
 
   DOCS * cur = head;
 
-  int count = 0;
-  while (cur != NULL) {
+  int count = 1;
+  while (cur->next != NULL) {
     count ++;
     cur = cur->next;
   }
+/* If not enough intersection docs get.
+   One more question, if no intersection, and get union with less than 10 docs, go to this part also, there will be duplicate
+  if (count < 10) {
+    cur->next = get_union(list_word_mit);
+  }
+
+  while(cur->next != NULL) {
+    count ++;
+    cur = cur->next;
+  }
+*/
   cur = head;
 
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
