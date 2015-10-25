@@ -2,7 +2,7 @@
 
 static void sort_docs_list(DOC_LIST * doc_list, int lens);
 static void docs_deduplicate(DOC_LIST * doc_list, int lens);
-
+static void update_doc_offsets(DOC_LIST * docs_list,int count);
 
 /* 
  * Given a list of words' MIT_T entries, return the union of docs that contain all of the word.
@@ -218,6 +218,8 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
 
   sort_docs_list(docs_list, count);
   docs_deduplicate(docs_list, count);
+  update_doc_offsets(docs_list,count);
+
   return docs_list;
 }
 
@@ -322,4 +324,27 @@ static void docs_deduplicate(DOC_LIST * doc_list, int lens)
       runner++;
   }
   doc_list[walker].docid = -1;
+}
+
+static void update_doc_offsets(DOC_LIST * docs_list,int count)
+{
+  int i = 0;
+  int j = 0;
+  int start = 0;
+  URL_IDX_T * doc_meta = (URL_IDX_T *)calloc(1, sizeof(URL_IDX_T));
+  for (i = 0; i < count ; i++) {
+    if (docs_list[i].docid == -1) {
+      free(doc_meta);
+      return;
+    }
+    doc_meta = get_doc_meta(docs_list[i].docid);
+    start = doc_meta->content_offset;
+
+    j = 0;
+    while (docs_list[i].offsets[j] != -1) {
+      docs_list[i].offsets[j] += start;
+      j++;
+    }
+  }
+  free(doc_meta);
 }

@@ -6,6 +6,7 @@
 #include <math.h>
 #include "utils.h"
 #include "iindex_search.h"
+#include "doc_search.h"
 
 typedef struct docs{
   int docid;

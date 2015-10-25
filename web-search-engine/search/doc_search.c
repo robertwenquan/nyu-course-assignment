@@ -103,3 +103,11 @@ URL_IDX_T * get_doc_meta(int docid)
   return p_doc_ret;
 }
 
+int get_doc_length(int docid)
+{
+  URL_IDX_T * doc_meta = get_doc_meta(docid);
+  if (doc_meta == NULL) {
+    return 1000;
+  }
+  return doc_meta->doc_length;
+}

@@ -6,6 +6,7 @@
 #include "utils.h"
 
 URL_IDX_T * get_doc_meta(int docid);
+int get_doc_length(int docid);
 
 #endif
 

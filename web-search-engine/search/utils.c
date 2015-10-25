@@ -395,16 +395,6 @@ void print_doc_meta_entry(URL_IDX_T *p_doc_meta)
 int stats_ndocs = 288;
 int stats_avg_doc_lens = 2000;
 
-int get_doc_length(int docid)
-{
-  return 1800;
-}
-
-int get_avg_doc_length()
-{
-  return stats_avg_doc_lens;
-}
-
 int total_num_docs(){
   return stats_ndocs;
 }
@@ -432,3 +422,7 @@ void get_iidx_filename_from_docid(int docid, char *filename)
   snprintf(filename, 256, "%s", "test_data/tiny30/output/input2.warc.wet.lexicon.iidx");
 }
 
+int get_avg_doc_length()
+{
+  return stats_avg_doc_lens;
+}

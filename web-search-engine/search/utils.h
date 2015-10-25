@@ -114,8 +114,6 @@ void print_iidx_entry(IIDX_T *p_iidx);
 void print_doc_list(DOC_LIST * head);
 void print_doc_meta_entry(URL_IDX_T *p_doc_meta);
 
-int get_doc_length(int docid);
-int get_avg_doc_length();
 int total_num_docs();
 
 extern int ndocs_per_lexicon_bucket;
@@ -123,6 +121,7 @@ extern int ndocs_per_lexicon_bucket;
 void get_iidx_filename_from_docid(int docid, char *filename);
 void get_git_filename(char *filename);
 void get_mit_filename(char *filename);
+int get_avg_doc_length();
 
 char * get_basedir();
 
