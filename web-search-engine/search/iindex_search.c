@@ -225,6 +225,7 @@ IIDX_T * query_iindex(MIT_T *p_mit)
   char filename[256] = {'\0'};
   bzero(filename, 256);
   get_iidx_filename_from_docid(p_mit->docid, filename);
+  int i = 0;
 
   FILE * f_iidx;
   IIDX_T * p_return_iidx = (IIDX_T *)calloc((p_mit->n_places+1), sizeof(IIDX_T));
@@ -242,5 +243,10 @@ IIDX_T * query_iindex(MIT_T *p_mit)
   fread(p_return_iidx ,sizeof(IIDX_T), p_mit->n_places, f_iidx);
 
   fclose(f_iidx);
+
+  for (i = 1; i < p_mit->n_places; i++) {
+    p_return_iidx[i].offset += p_return_iidx[i-1].offset;
+  }
+
   return p_return_iidx;
 }
