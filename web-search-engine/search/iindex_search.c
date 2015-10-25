@@ -154,7 +154,7 @@ IIDX_T * query_compressed_iindex(MIT_T * p_mit)
   /*
   char filename[256] = {'\0'};
   bzero(filename, 256);
-  strncpy(filename, get_iidx_filename(p_mit->docid), 256);
+  get_iidx_filename_from_docid(p_mit->docid, filename);
     printf("total_num: %d", 000);
 
   FILE * f_iidx;
@@ -221,13 +221,11 @@ IIDX_T * query_compressed_iindex(MIT_T * p_mit)
 }
 IIDX_T * query_iindex(MIT_T *p_mit)
 {
-  // TODO: Open corresponding .iidx file by get_iidx_file
   char filename[256] = {'\0'};
   bzero(filename, 256);
-  strncpy(filename, get_iidx_filename(p_mit->docid), 256);
+  get_iidx_filename_from_docid(p_mit->docid, filename);
 
   FILE * f_iidx;
-  //TODO: If offset is compressed, should not read p_mit->n_places any more.
   IIDX_T * p_return_iidx = (IIDX_T *)calloc((p_mit->n_places+1), sizeof(IIDX_T));
   if (p_return_iidx == NULL) {
     return NULL;
@@ -244,11 +242,4 @@ IIDX_T * query_iindex(MIT_T *p_mit)
 
   fclose(f_iidx);
   return p_return_iidx;
-}
-
-char * get_iidx_filename(int docid)
-{
-  char * filename = (char *)calloc(1, 256);
-  strncpy(filename, "test_data/tiny30/output/input1.warc.wet.lexicon.iidx", 256);
-  return filename;
 }
