@@ -156,6 +156,10 @@ int main(int argc, char *argv[])
    * DOC_LIST contains docid, with its score and query words offset
    */
 
+  if (p_mit_lists == NULL) {
+    return EXIT_FAILURE;
+  }
+
   DOC_LIST * head = ranking_docs(p_mit_lists);
 
   /* USED FOR TEST
