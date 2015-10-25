@@ -338,7 +338,11 @@ static void update_doc_offsets(DOC_LIST * docs_list,int count)
       return;
     }
     doc_meta = get_doc_meta(docs_list[i].docid);
-    start = doc_meta->content_offset;
+    if (doc_meta == NULL) {
+      start = 0;
+    } else {
+      start = doc_meta->content_offset;
+    }
 
     j = 0;
     while (docs_list[i].offsets[j] != -1) {
