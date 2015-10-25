@@ -100,5 +100,7 @@ typedef struct __attribute__((__packed__)) {
   unsigned int offset;
 } IIDX_T;
 
+char * get_basedir();
+
 #endif
 
