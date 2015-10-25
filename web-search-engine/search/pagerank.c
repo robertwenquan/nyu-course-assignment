@@ -73,6 +73,8 @@ DOCS * get_intersection(MIT_T *** list_word_mit) {
     p_cur++;
   }
 
+  p_cur = list_word_mit;
+
   while (1) {
     if (**p_cur == NULL) {
       break;
