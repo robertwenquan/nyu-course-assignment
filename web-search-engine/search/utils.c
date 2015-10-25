@@ -13,7 +13,7 @@
 #include "utils.h"
 
 //char BASE_DIR[] = "/data/wse/100k/";
-char BASE_DIR[] = "../indexer/test_data/";
+char BASE_DIR[] = "test_data";
 int ndocs_per_lexicon_bucket = 1000;
 
 char * get_basedir()
@@ -428,6 +428,7 @@ void get_iidx_filename_from_docid(int docid, char *filename)
   int fileid = 0;
   fileid = docid/ndocs_per_lexicon_bucket;
 
-  snprintf(filename, 256, "%s/%s/%s%05d.iidx", BASE_DIR, "output", "xxxx", fileid);
+  //snprintf(filename, 256, "%s/%s/%s%05d.iidx", BASE_DIR, "output", "xxxx", fileid);
+  snprintf(filename, 256, "%s", "test_data/tiny30/output/input2.warc.wet.lexicon.iidx");
 }
 
