@@ -126,7 +126,7 @@ MIT_T * find_mit_entry(MIT_T ** list_word_mit, int docid)
   if (*list_word_mit == NULL) {
     return NULL;
   }
-  while ((*list_word_mit)->docid != 0) {
+  while (*list_word_mit != NULL) {
     if ( (*list_word_mit)->docid == docid) {
       return *list_word_mit;
     }
