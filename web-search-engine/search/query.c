@@ -166,24 +166,8 @@ int main(int argc, char *argv[])
     return EXIT_FAILURE;
   }
 
-//  /* USED FOR TEST
-  DOC_LIST * cur = head;
-  while(cur != NULL) {
-    if (cur->docid == -1 ){
-      break;
-    }
-    printf("===== DOC LISTS=====\n");
-    printf(" %-8s: %9d\n", "doc_id", cur->docid);
-    printf(" %-8s: %9d\n", "score", cur->score);
-    printf(" %-8s: \n", "offsets");
-    while(*(cur->offsets) != -1) {
-      printf(" %-8s: %9d\n", " ", *(cur->offsets) );
-      (cur->offsets)++;
-    }
+  print_doc_list(head);
 
-    cur++;
-  }
-//  */
   /*
    * Get context according to DOC_LIST and return
    */

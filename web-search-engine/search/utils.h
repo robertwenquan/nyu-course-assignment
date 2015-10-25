@@ -111,7 +111,7 @@ int char_to_index(char chr);
 void print_git_entry(GIT_T *p_git);
 void print_mit_entry(MIT_T *p_mit);
 void print_iidx_entry(IIDX_T *p_iidx);
-
+void print_doc_list(DOC_LIST * head);
 int get_doc_length(int docid);
 int get_avg_doc_length();
 int total_num_docs();

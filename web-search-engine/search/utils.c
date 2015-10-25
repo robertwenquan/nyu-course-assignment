@@ -357,6 +357,22 @@ void print_iidx_entry(IIDX_T *p_iidx) {
   printf("=====================\n");
 }
 
+void print_doc_list(DOC_LIST * head) {
+  while(head != NULL) {
+    if (head->docid == -1 ){
+      break;
+    }
+    printf("===== DOC LISTS=====\n");
+    printf(" %-8s: %9d\n", "doc_id", head->docid);
+    printf(" %-8s: %9d\n", "score", head->score);
+    printf(" %-8s: \n", "offsets");
+    while(*(head->offsets) != -1) {
+      printf(" %-8s: %9d\n", " ", *(head->offsets) );
+      (head->offsets)++;
+    }
+    head++;
+  }
+}
 int stats_ndocs = 288;
 int stats_avg_doc_lens = 2000;
 
