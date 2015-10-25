@@ -162,6 +162,10 @@ int main(int argc, char *argv[])
 
   DOC_LIST * head = ranking_docs(p_mit_lists);
 
+  if (head == NULL) {
+    return EXIT_FAILURE;
+  }
+
   /* USED FOR TEST
   DOC_LIST * cur = head;
   while(cur != NULL) {

@@ -150,6 +150,14 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
    *  5. return DOC_LIST
    */
   DOCS * head = get_intersection(list_word_mit);
+  if (head == NULL) {
+    head = get_union(list_word_mit);
+  }
+
+  if (head == NULL) {
+    return NULL;
+  }
+
   DOCS * cur = head;
 
   int count = 0;
@@ -157,11 +165,6 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
     count ++;
     cur = cur->next;
   }
-
-  if (count == 0) {
-    head = get_union(list_word_mit);
-  }
-  cur = head;
 
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
   docs_list[count].docid = -1;
