@@ -38,11 +38,16 @@ DOCS * get_intersection(MIT_T *** list_word_mit) {
   DOCS * doc_tail = NULL;
   DOCS * cur = NULL;
 
-  int num_words  = sizeof(list_word_mit)/4;
   int continuous = 0;
   int k = 0;
   int ret = 0;
   MIT_T *** p_cur = list_word_mit;
+
+  int num_words = 0;
+  while (*p_cur != NULL) {
+    num_words++;
+    p_cur++;
+  }
 
   while (1) {
     if (**p_cur == NULL) {
@@ -63,7 +68,6 @@ DOCS * get_intersection(MIT_T *** list_word_mit) {
       if (cur == NULL) {
         return NULL;
       }
-
       cur->docid = k;
       cur->next = NULL;
 
