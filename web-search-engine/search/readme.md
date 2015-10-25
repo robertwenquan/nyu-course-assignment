@@ -9,6 +9,42 @@ This project is also a collaborative effort together with Robert Wen and Caicai 
 ### Runtime demo
 
 ##### How to build
+When you untar the tarball, you will come to a directory like this. This is the root of the this project.
+
+```bash
+$ tree -d .
+.
+├── test_data
+│   └── tiny30
+│       ├── input
+│       └── output
+└── utils
+```
+The entire assignment is written in C:
+the entire assignment is written in C.
+
+```bash
+$ ls -l *.[chp]*
+-rw-r--r--  1 robert  staff   2404 Oct 25 12:04 doc_search.c
+-rw-r--r--  1 robert  staff    150 Oct 25 11:41 doc_search.h
+-rw-r--r--  1 robert  staff   5097 Oct 25 13:34 iindex_search.c
+-rw-r--r--  1 robert  staff    275 Oct 25 13:34 iindex_search.h
+-rw-r--r--  1 robert  staff    566 Oct 25 11:41 page_search.c
+-rw-r--r--  1 robert  staff    253 Oct 25 11:41 page_search.h
+-rw-r--r--  1 robert  staff   6987 Oct 25 11:41 pagerank.c
+-rw-r--r--  1 robert  staff    671 Oct 24 18:00 pagerank.h
+-rw-r--r--  1 robert  staff   4140 Oct 25 12:19 query.c
+-rw-r--r--  1 robert  staff    172 Oct 25 11:41 query.h
+-rw-r--r--  1 robert  staff     25 Oct 25 11:41 testcases.c
+-rw-r--r--  1 robert  staff     40 Oct 25 11:41 testcases.h
+-rw-r--r--  1 robert  staff  10691 Oct 25 13:14 utils.c
+-rw-r--r--  1 robert  staff   2874 Oct 25 11:41 utils.h
+-rw-r--r--  1 robert  staff   4896 Oct 25 13:14 word_search.c
+-rw-r--r--  1 robert  staff    143 Oct 24 15:00 word_search.h
+```
+
+In each directory, we have prepared the Makefile for you. It is tested on MacOS Yosemite and Ubuntu Linux 14.04. There is no guarantee that will work on other platform but it may work with miminum modification on any unix like systems.
+
 ```bash
 $ make
 ...
