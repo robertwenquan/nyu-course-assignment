@@ -210,7 +210,8 @@ IIDX_T * query_compressed_iindex(MIT_T * p_mit)
     total_num -= local_num;
   }
 
-  for(int k = 0; k < 8; k++) {
+  int k = 0;
+  for(k = 0; k < 8; k++) {
     printf("offsets: %d\n", p_return_iidx[k].offset);
   }
 
