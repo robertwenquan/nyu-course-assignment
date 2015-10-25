@@ -39,6 +39,7 @@ int initiate_global(){
     return -1;
   }
   memset(cur_mit, 0, sizeof(GIT_T));
+  cur_mit->docid = -1;
 
   cur_iidx = (IIDX_T *)malloc(sizeof(IIDX_T));
   if (cur_iidx == NULL) {
@@ -153,7 +154,7 @@ void update_git(int word_id, int offset){
 }
 
 void write_mit(int count_in_mit, FILE *fdw){
-  if (count_in_mit == 0 || cur_mit->docid == 0) {
+  if (count_in_mit == 0 || cur_mit->docid == -1) {
     return;
   }
 
