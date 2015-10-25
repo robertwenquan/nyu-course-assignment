@@ -1,6 +1,7 @@
 #include "pagerank.h"
 
 static void sort_docs_list(DOC_LIST * doc_list, int lens);
+static void docs_deduplicate(DOC_LIST * doc_list, int lens);
 
 
 /* 
@@ -188,8 +189,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
     count ++;
     cur = cur->next;
   }
-/* If not enough intersection docs get.
-   One more question, if no intersection, and get union with less than 10 docs, go to this part also, there will be duplicate
+/* If not enough intersection docs get. */
   if (count < 10) {
     cur->next = get_union(list_word_mit);
   }
@@ -198,7 +198,6 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
     count ++;
     cur = cur->next;
   }
-*/
   cur = head;
 
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
@@ -216,7 +215,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
   } 
 
   sort_docs_list(docs_list, count);
-
+  docs_deduplicate(docs_list, count);
   return docs_list;
 }
 
@@ -306,3 +305,19 @@ static void sort_docs_list(DOC_LIST * doc_list, int lens)
   qsort(doc_list, lens, sizeof(DOC_LIST), compare_doc_ranking);
 }
 
+static void docs_deduplicate(DOC_LIST * doc_list, int lens)
+{
+  int pre_doc = -1;
+  int walker = 0;
+  int runner = 0;
+
+  while(runner < lens) {
+    if (doc_list[runner].docid != pre_doc) {
+      memcpy(&doc_list[walker], &doc_list[runner],sizeof(DOC_LIST));
+      pre_doc = doc_list[runner].docid;
+      walker++;
+    }
+      runner++;
+  }
+  doc_list[walker].docid = -1;
+}
