@@ -137,19 +137,28 @@ We will have some information like below:
   According to MIT entries, list all offsets of queried words in the document.
 
   With the following form:
-  {'docid': 33, 'score': 21.43, 'offset': [1,2,4,10,25,28]}
-  {'docid': 52, 'score': 24.32, 'offset': [4,18,25,44]}
+  {'docid': 33,   'score': 21.43, 'offset': [1, 2, 4, 10, 25, 28]}
+  {'docid': 52,   'score': 24.32, 'offset': [32, 1, 56, 3, 5, 124]}
+  {'docid': 125,  'score': 11.46, 'offset': [544, 1235, 32, 5, 23]}
+  {'docid': 534,  'score': 34.12, 'offset': [94, 3566, 2, 13, 45, 1345, 12]}
+  {'docid': 1363, 'score': 12.56, 'offset': [123, 15, 93, 356, 31]}
+  {'docid': 4,    'score': 4.31,  'offset': [12, 490, 455]}
   ...
 
 8. Ranking the pages
 
-We will rank the pages with xxx
+We will rank the pages using qsort, in descending order of BM25 score.
 
 After the ranking, we will have a list of 20 pages, with approximate the following information
 ```
-{'docid':322, 'offsets':[3,44,323,2342,34552], 'words':[34,342,33,22,425]}
-...
-{'docid':482, 'offsets':[3,44,323,2342,34552], 'words':[34,342,33,22,425]}
+  {'docid': 534,  'score': 34.12, 'offset': [94, 3566, 2, 13, 45, 1345, 12]}
+  {'docid': 52,   'score': 24.32, 'offset': [32, 1, 56, 3, 5, 124]}
+  {'docid': 33,   'score': 21.43, 'offset': [1, 2, 4, 10, 25, 28]}
+  {'docid': 1363, 'score': 12.56, 'offset': [123, 15, 93, 356, 31]}
+  {'docid': 125,  'score': 11.46, 'offset': [544, 1235, 32, 5, 23]}
+  {'docid': 4,    'score': 4.31,  'offset': [12, 490, 455]}
+  ...
+
 ```
 
 9. Page Retrieval
@@ -208,3 +217,15 @@ We use Python wrapper to post-process the raw JSON output and format customized 
 ### References
 
  * BM25
+   * For each word, IDF(q) = log ( (N-n(q)+0.5) / (n(q)+0.5))
+     * N : total number of document
+     * n(q) : number of documents contain word "q"
+
+   * Score(D,q) = IDF(q)*( f(q,D)*(k+1) / (f(q,D) + k*(1-b+b*|D|/avgdl)) )
+     * f(q,D) : frequency of word "q" in document "D"
+     * |D| : length of document "D"
+     * avgdl : average length of documents in total dataset
+     * In our program, we set k = 2 and b = 0.75
+
+   * Score(D,Q) = sum Score(D,q)
+     * Sum of each words' score
