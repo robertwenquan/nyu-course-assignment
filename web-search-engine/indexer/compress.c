@@ -141,53 +141,10 @@ void fresh_iidx(IIDX_T * IIDX_old, int num, int start, IIDX_T * IIDX_new, int ne
    * 3. Write back to f_iidx
    * 4. Update C_offset by 1
    */
-  int count = 0;
-  int bit = 0;
-  switch (num) {
-    case 14:
-    case 13:
-    case 12:
-    case 11:
-    case 10:
-      count = 7;
-      bit = 2;
-      break;
-    case 9:
-    case 8:
-      count = 6;
-      bit = 3;
-      break;
-    case 7:
-    case 6:
-      count = 5;
-      bit = 4;
-      break;
-    case 5:
-      count = 4;
-      bit = 5;
-      break;
-    case 4:
-      count = 3;
-      bit = 7;
-      break;
-    case 3:
-      count = 2;
-      bit = 9;
-      break;
-    case 2:
-      count = 1;
-      bit = 14;
-      break;
-    case 1:
-      count = 0;
-      bit = 28;
-      break;
-    default:
-      return;
-  }
+  int bit = 28/num;
 
   int ret = 0;
-  ret += count << 28;
+  ret += num << 28;
   int i = 0;
   for(i = 0; i < num; i++) {
     ret += IIDX_old[start+i].offset << ((num-i-1)*bit);
