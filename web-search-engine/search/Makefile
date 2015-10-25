@@ -17,7 +17,7 @@ BINS = search
 all:  $(BINS)
 
 search:  $(OBJS)
-	$(CC) -o $@ $(OBJS)
+	$(CC) -o $@ $(OBJS) -lm
 
 clean:  
 	rm -fr $(BINS) $(OBJS) *.dSYM *.pyc tests/*.pyc *.o &>/dev/null
