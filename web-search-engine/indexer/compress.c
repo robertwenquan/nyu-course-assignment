@@ -22,7 +22,7 @@ void compress_iidx()
   // Suppose get the list of iidx files and passed by a pointer
   C_offset = 0;
 
-  FILE * f_mit = fopen("test_data/output/lex00000.lexicon00.mit", "rw");
+  FILE * f_mit = fopen("test_data/output/lex00000.lexicon00.mit", "rw+");
   if (f_mit == NULL) {
     return;
   } 
@@ -37,6 +37,8 @@ void compress_iidx()
   while (!feof(f_mit)) {
     fread(cur_mit, sizeof(MIT_T), 1, f_mit);
 
+    printf("cur_mit: %d\n", cur_mit->offset);
+
     IIDX_old = (IIDX_T *) calloc (cur_mit->n_places + 1, sizeof(IIDX_T));
     IIDX_new = (IIDX_T *) calloc (cur_mit->n_places + 1, sizeof(IIDX_T));
 
@@ -49,9 +51,10 @@ void compress_iidx()
     cur_mit->offset = C_offset;
     fseek(f_mit, -sizeof(MIT_T), SEEK_CUR);
     fwrite(&cur_mit, sizeof(MIT_T), 1, f_mit);
-    fseek(f_mit, sizeof(MIT_T), SEEK_CUR);
+    //fseek(f_mit, sizeof(MIT_T), SEEK_CUR);
     
     C_offset += delta_offset * sizeof(IIDX_T);
+    printf("C_OFFSET : %d", C_offset);
 
     free(IIDX_new);
     free(IIDX_old);
@@ -72,8 +75,10 @@ void simple_9_compress(IIDX_T * IIDX_old, IIDX_T * IIDX_new, int n_places, int *
   int local_num = 0;
   int cur = 0;
   int new_place = 0;
+  int used = 0;
+  int i = 0;
 
-  for(int i = 0; i < n_places; i++){
+  for(i = 0; i < n_places; i++){
     cur = IIDX_old[i].offset;
     if (cur < 4) {
       local_num = 14;
@@ -95,9 +100,11 @@ void simple_9_compress(IIDX_T * IIDX_old, IIDX_T * IIDX_new, int n_places, int *
 
     if (local_num < count) {
       fresh_iidx(IIDX_old, count - 1, i+1-count, IIDX_new, new_place);
+      used += count-1;
       new_place++;
       i--;
       max_num = 14;
+      count = 0;
     } 
 
     if (local_num < max_num) {
@@ -106,18 +113,25 @@ void simple_9_compress(IIDX_T * IIDX_old, IIDX_T * IIDX_new, int n_places, int *
 
     if (count == max_num) {
       fresh_iidx(IIDX_old, count, i+1-count, IIDX_new, new_place);
+      used += count;
       new_place++;
       max_num = 14;
+      count = 0;
     }
 
     count ++;
   }
 
-  *delta_offset = new_place + 1 ;
+  if (used != n_places) {
+    fresh_iidx(IIDX_old, count-1, i+1-count, IIDX_new, new_place);
+    new_place++;
+  }
+
+  *delta_offset = new_place ;
   return;
 }
 
-void fresh_iidx(IIDX_T * IIDX_buf, int num, int start, IIDX_T * IIDX_new, int new_place)
+void fresh_iidx(IIDX_T * IIDX_old, int num, int start, IIDX_T * IIDX_new, int new_place)
 {
   //(int *) buffer = (int *)calloc(1, sizeof(int));
 
@@ -127,56 +141,13 @@ void fresh_iidx(IIDX_T * IIDX_buf, int num, int start, IIDX_T * IIDX_new, int ne
    * 3. Write back to f_iidx
    * 4. Update C_offset by 1
    */
-  int count = 0;
-  int bit = 0;
-  switch (num) {
-    case 14:
-    case 13:
-    case 12:
-    case 11:
-    case 10:
-      count = 7;
-      bit = 2;
-      break;
-    case 9:
-    case 8:
-      count = 6;
-      bit = 3;
-      break;
-    case 7:
-    case 6:
-      count = 5;
-      bit = 4;
-      break;
-    case 5:
-      count = 4;
-      bit = 5;
-      break;
-    case 4:
-      count = 3;
-      bit = 7;
-      break;
-    case 3:
-      count = 2;
-      bit = 8;
-      break;
-    case 2:
-      count = 1;
-      bit = 14;
-      break;
-    case 1:
-      count = 0;
-      bit = 28;
-      break;
-    default:
-      return;
-  }
+  int bit = 28/num;
 
   int ret = 0;
-  ret += count << 28;
+  ret += num << 28;
   int i = 0;
   for(i = 0; i < num; i++) {
-    ret += IIDX_new[start+i].offset << ((num-i-1)*bit);
+    ret += IIDX_old[start+i].offset << ((num-i-1)*bit);
   }
 
   IIDX_new[new_place].offset = ret;

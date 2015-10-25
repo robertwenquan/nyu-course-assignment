@@ -26,8 +26,31 @@ DOCS * get_union(MIT_T *** list_word_mit)
    * If get_intersection couldn't return 20 pages, call this function.
    * Since in common case, a document contains all query words has higher BM25
    */
-  return NULL;
+  DOCS * doc_head = NULL;
+  DOCS * doc_tail = NULL;
+  DOCS * cur = NULL;
+  MIT_T ** list_copy = NULL;
+
+  while (*list_word_mit != NULL) {
+    list_copy = *list_word_mit;
+    while (*list_copy != NULL) {
+      cur = (DOCS *)calloc(1, sizeof(DOCS));
+      cur->docid = (*list_copy)->docid;
+      if (doc_head == NULL) {
+        doc_head = cur;
+        doc_tail = doc_head;
+      } else {
+        doc_tail->next = cur;
+        doc_tail = cur;
+      }
+      list_copy++;
+    }
+    list_word_mit++;
+  }
+
+  return doc_head;
 }
+
 DOCS * get_intersection(MIT_T *** list_word_mit) {
   // Once one MIT_T** reaches NULL, no intersection any more.
   // If read to the last MIT_T ***, return to head.
@@ -38,11 +61,16 @@ DOCS * get_intersection(MIT_T *** list_word_mit) {
   DOCS * doc_tail = NULL;
   DOCS * cur = NULL;
 
-  int num_words  = sizeof(list_word_mit)/4;
   int continuous = 0;
   int k = 0;
   int ret = 0;
   MIT_T *** p_cur = list_word_mit;
+
+  int num_words = 0;
+  while (*p_cur != NULL) {
+    num_words++;
+    p_cur++;
+  }
 
   while (1) {
     if (**p_cur == NULL) {
@@ -63,7 +91,6 @@ DOCS * get_intersection(MIT_T *** list_word_mit) {
       if (cur == NULL) {
         return NULL;
       }
-
       cur->docid = k;
       cur->next = NULL;
 
@@ -84,11 +111,6 @@ DOCS * get_intersection(MIT_T *** list_word_mit) {
     }
   }
   return doc_head;
-}
-
-int * list_docs(MIT_T *** list_word_mit)
-{
-  return NULL;
 }
 
 void cal_BM25(DOC_LIST * doc_list, int place,  MIT_T *** list_word_mit, int * count)
@@ -131,7 +153,7 @@ MIT_T * find_mit_entry(MIT_T ** list_word_mit, int docid)
   if (*list_word_mit == NULL) {
     return NULL;
   }
-  while ((*list_word_mit)->docid != 0) {
+  while (*list_word_mit != NULL) {
     if ( (*list_word_mit)->docid == docid) {
       return *list_word_mit;
     }
@@ -151,17 +173,32 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
    *  5. return DOC_LIST
    */
   DOCS * head = get_intersection(list_word_mit);
+  if (head == NULL) {
+    head = get_union(list_word_mit);
+  }
+
+  if (head == NULL) {
+    return NULL;
+  }
+
   DOCS * cur = head;
 
-  int count = 0;
-  while (cur != NULL) {
+  int count = 1;
+  while (cur->next != NULL) {
     count ++;
     cur = cur->next;
   }
-
-  if (count == 0) {
-    head = get_union(list_word_mit);
+/* If not enough intersection docs get.
+   One more question, if no intersection, and get union with less than 10 docs, go to this part also, there will be duplicate
+  if (count < 10) {
+    cur->next = get_union(list_word_mit);
   }
+
+  while(cur->next != NULL) {
+    count ++;
+    cur = cur->next;
+  }
+*/
   cur = head;
 
   DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
@@ -207,7 +244,6 @@ void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int
 
     list_word_mit++;
   }
-
   return;
 }
 

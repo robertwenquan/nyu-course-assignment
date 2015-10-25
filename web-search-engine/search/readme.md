@@ -180,6 +180,16 @@ We use Python wrapper to post-process the raw JSON output and format customized 
 
 2. What is the size of the query data size?
 
+3. How long to index?
+
+4. How big the index was in compressed form?
+
+5. how many postings?
+
+6. how long it takes to start up the query processor?
+
+7.  how long per query on the queries we gave you?
+
 ### Benchmarks
 
  In order to measure the performance of the search engine, we tried various datasets. For development we use a super tiny dataset with only 30 documents. For quick testing we use a 100k docs dataset for quick verification. We also have another two bigger sets for performance and scalability verification with 1 million and 10 million documents.
