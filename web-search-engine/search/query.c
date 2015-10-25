@@ -145,6 +145,15 @@ int main(int argc, char *argv[])
 
   /* parse the query keywords */
   char **search_keywords = NULL;
+
+  // How to set default query words?
+  if (argc == 1) {
+    printf("Please enter your query words.\n");
+    printf("Usage:\n");
+    printf("    ./search *** *** ***\n");
+    return EXIT_FAILURE;
+  }
+
   parse_arguments(argc, argv, &search_keywords);
   printf("Checking query keywords...\n");
   print_string_list(search_keywords);
