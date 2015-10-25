@@ -43,7 +43,6 @@ void merge_iindex(char **p) {
       return;
     }
   }
-  compress_iidx();
   return;
 }
 
