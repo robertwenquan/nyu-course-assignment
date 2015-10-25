@@ -196,9 +196,12 @@ void convert_words_to_ids(char **search_keywords, int nwords, int **ids)
   char **p_word = search_keywords;
   int *p_int = *ids;
   while (*p_word != NULL) {
-    *p_int = word_to_id(*p_word);
+    int word_id = word_to_id(*p_word);
+    if (word_id != -1) {
+      *p_int = word_to_id(*p_word);
+      p_int++;
+    }
     p_word++;
-    p_int++;
   }
   *p_int = -1;
 }
