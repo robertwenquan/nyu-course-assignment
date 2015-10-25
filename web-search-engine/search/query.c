@@ -49,7 +49,7 @@ MIT_T **query_word(char *word)
       return NULL;
     }
     i = 0;
-    while(p_iidx_entry[i].offset != 0 ){
+    while(p_iidx_entry[i].offset != -1 ){
       print_iidx_entry(&p_iidx_entry[i]);
       i++;
     }

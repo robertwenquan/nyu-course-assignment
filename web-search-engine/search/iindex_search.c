@@ -161,7 +161,7 @@ IIDX_T * query_iindex(MIT_T *p_mit)
   if (p_return_iidx == NULL) {
     return NULL;
   }
-
+  p_return_iidx[p_mit->n_places].offset = -1;
   f_iidx = fopen(filename, "r");
 
   if (f_iidx == NULL) {
