@@ -69,7 +69,6 @@ static int compare_docid(const void *pa, const void *pb)
   URL_IDX_T *p_doca = (URL_IDX_T *)pa;
   URL_IDX_T *p_docb = (URL_IDX_T *)pb;
 
-  printf("id1 %u, id2 %u\n", p_doca->docid, p_docb->docid);
   if (p_doca->docid > p_docb->docid) {
     return 1;
   } else if (p_doca->docid < p_docb->docid) {
