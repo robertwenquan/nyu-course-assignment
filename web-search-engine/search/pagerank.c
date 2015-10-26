@@ -341,7 +341,7 @@ static void update_doc_offsets(DOC_LIST * docs_list,int count)
     if (doc_meta == NULL) {
       start = 0;
     } else {
-      start = doc_meta->content_offset;
+      start = doc_meta->content_offset + doc_meta->doc_offset;
     }
 
     j = 0;
