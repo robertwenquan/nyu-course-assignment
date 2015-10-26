@@ -42,7 +42,7 @@ $ ls -l *.[chp]*
 -rw-r--r--  1 robert  staff    143 Oct 24 15:00 word_search.h
 ```
 
-In each directory, we have prepared the Makefile for you. It is tested on MacOS Yosemite and Ubuntu Linux 14.04. There is no guarantee that will work on other platform but it may work with miminum modification on any unix like systems.
+In the directory, we have prepared the Makefile for you. It is tested on MacOS Yosemite and Ubuntu Linux 14.04. There is no guarantee that will work on other platform but it may work with miminum modification on any unix like systems.
 
 ```bash
 $ make
@@ -78,17 +78,36 @@ Web Demo if we still have time?
 
 ### Architecture
 
- Since all inverted index built in assignment2 are associated with word id, instead of real word, so the first step of query is to convert query words into word id.
+ Since all inverted index built in assignment2 are associated with word id instead of real word, so the first step of query is to convert query words into word ids.
  * convert_word_to_ids
+   Look into word_table, has the form:
+    ['new', 12]
+    ['york', 15]
+   Return word id
 
  After we get word id, we look into the first level of inverted index, which maps word_id to all docs contains this word.
  * query_git
+   Use binary search to get GIT entry of word:
+   { .word_id = 12,
+     .offset = 1290,
+     .n_docs = 2,
+    }
+    Pass this information to get MIT entries.
  * query_mit
+   According to offset given by GIT, find start of MIT entries.
+   Given n_docs, read n_docs MIT entry.
+   { .doc_id = 1,
+     .offset = 148,
+     .n_places = 2
+   }
 
- ror each query word, we can get a list of documents, find intersection/union of documents.
+ For each query word, we can get a list of documents, find intersection/union of documents.
  * get_intersection
+   Find documents contain all query words, by using nextGEQ.
  * nexGEQ
+   Find samllest doc id that is greater or equal to given docid.
  * get_union
+   If there is not enough intersection documents, get union of all docs.
 
  Now we have all documents related to query words, use BM25 to give them score.
  * cal_idf
