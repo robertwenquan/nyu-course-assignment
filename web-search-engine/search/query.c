@@ -80,7 +80,7 @@ void query_words(MIT_T *** p_mit_lists, int *word_ids)
 /*
  * parse search keywords from the command line
  */
-static void parse_arguments(int argc, char *argv[], char ***keywords)
+static int parse_arguments(int argc, char *argv[], char ***keywords)
 {
   // process getopt
   int option = 0;
@@ -116,6 +116,8 @@ static void parse_arguments(int argc, char *argv[], char ***keywords)
     p_work++;
   }
   p_work = NULL;
+
+  return optind;
 }
 
 /*
@@ -146,6 +148,43 @@ void print_number_list(int *nums)
   }
 }
 
+static process_query(char ** search_keywords, int nwords)
+{
+  /* convert words to word ids */
+  int *query_ids = NULL;
+  convert_words_to_ids(search_keywords, nwords, &query_ids);
+  if (verbose) {
+    printf("Checking query word IDs...\n");
+    print_number_list(query_ids);
+  }
+
+  /* query word ids, get list of mit entries */
+  MIT_T *** p_mit_lists = (MIT_T ***)calloc(nwords + 1, sizeof(MIT_T**));
+  assert(p_mit_lists != NULL);
+
+  query_words(p_mit_lists, query_ids);
+  /*
+   * Pass MIT_T *** to ranking_docs get ranked docs
+   * DOC_LIST contains docid, with its score and query words offset
+   */
+
+  if (*p_mit_lists == NULL) {
+    return EXIT_FAILURE;
+  }
+
+  DOC_LIST * head = ranking_docs(p_mit_lists);
+  if (head == NULL) {
+    return EXIT_FAILURE;
+  }
+
+  fetch_doc_list(head);
+}
+
+static char **tokenize_input(char *input_line)
+{
+  return NULL;
+}
+
 /* main routine */
 int main(int argc, char *argv[])
 {
@@ -163,45 +202,27 @@ int main(int argc, char *argv[])
     return EXIT_FAILURE;
   }
 
-  parse_arguments(argc, argv, &search_keywords);
+  int optind = parse_arguments(argc, argv, &search_keywords);
   if (verbose) {
     printf("Checking query keywords...\n");
     print_string_list(search_keywords);
   }
 
-  /* convert words to word ids */
-  int *query_ids = NULL;
-  convert_words_to_ids(search_keywords, argc-1, &query_ids);
-  if (verbose) {
-    printf("Checking query word IDs...\n");
-    print_number_list(query_ids);
+  process_query(search_keywords, argc-optind);
+  return 0;
+
+  /* read lines from STDIN and goes to loop */
+  char *line = NULL;
+  size_t size;
+  while (getline(&line, &size, stdin) != -1) {
+    if (verbose) {
+      printf("input: %s", line);
+    }
+    search_keywords = tokenize_input(line);
+    if (search_keywords != NULL) {
+      process_query(search_keywords, 3);
+    }
   }
-
-  /* query word ids, get list of mit entries */
-  MIT_T *** p_mit_lists = (MIT_T ***)calloc(argc, sizeof(MIT_T**));
-  assert(p_mit_lists != NULL);
-
-  query_words(p_mit_lists, query_ids);
-  /*
-   * Pass MIT_T *** to ranking_docs get ranked docs
-   * DOC_LIST contains docid, with its score and query words offset
-   */
-
-  if (*p_mit_lists == NULL) {
-    return EXIT_FAILURE;
-  }
-
-  DOC_LIST * head = ranking_docs(p_mit_lists);
-
-  if (head == NULL) {
-    return EXIT_FAILURE;
-  }
-
-  fetch_doc_list(head);
-
-  /*
-   * Get context according to DOC_LIST and return
-   */
 
   return 0;
 }
