@@ -169,12 +169,6 @@ int main(int argc, char *argv[])
     print_string_list(search_keywords);
   }
 
-  // test
-  char filename[256];
-  get_wet_filename_from_docid(5, filename);
-  get_wet_filename_from_docid(15, filename);
-  get_wet_filename_from_docid(27, filename);
-
   /* convert words to word ids */
   int *query_ids = NULL;
   convert_words_to_ids(search_keywords, argc-1, &query_ids);
