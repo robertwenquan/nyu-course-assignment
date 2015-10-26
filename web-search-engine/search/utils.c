@@ -443,6 +443,8 @@ void print_doc_list(DOC_LIST * head) {
     printf("===== DOC LISTS=====\n");
     printf(" %-8s: %9d\n", "doc_id", head->docid);
     printf(" %-8s: %9f\n", "score", head->score);
+    printf(" %-8s: %9d\n", "offset_start", head->offset_start);
+    printf(" %-8s: %9d\n", "offset_end", head->offset_end);
     printf(" %-8s: \n", "offsets");
     while(*(head->offsets) != -1) {
       printf(" %-8s: %9d\n", " ", *(head->offsets) );

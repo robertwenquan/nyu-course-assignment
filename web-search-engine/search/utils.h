@@ -104,6 +104,8 @@ typedef struct node{
   int docid;
   double score;
   int * offsets;
+  int offset_start;
+  int offset_end;
 } DOC_LIST;
 
 int char_to_index(char chr);
