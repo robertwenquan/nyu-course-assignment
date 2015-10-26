@@ -108,24 +108,35 @@ Web Demo if we still have time?
 ```
 
  For each query word, we can get a list of documents, find intersection/union of documents.
+
  * get_intersection
+
    Find documents contain all query words, by using nextGEQ.
+
  * nexGEQ
+
    Find samllest doc id that is greater or equal to given docid.
+
  * get_union
+
    If there is not enough intersection documents, get union of all docs.
 
  Now we have all documents related to query words, use BM25 to give them score.
+
  * cal_idf
+
  * cal_BM25
 
  According to BM25 score, ranking all document and return first 20 results.
+
  * sort_doc_list
 
  Get offset of words in returned 20 documents
+
  * query_iindex
 
  Get page content about query words
+
  * get_page_context
 
 ### Data Flow Illustration
