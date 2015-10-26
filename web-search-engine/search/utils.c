@@ -456,6 +456,7 @@ void print_doc_meta_entry(URL_IDX_T *p_doc_meta)
 {
   printf("===== DOC META Entry =====\n");
   printf(" %-12s: %9d\n", "docid", p_doc_meta->docid);
+  printf(" %-12s: %s\n", "url", "fake url");
   printf(" %-12s: %9d\n", "url offset", p_doc_meta->url_offset);
   printf(" %-12s: %9d\n", "url length", p_doc_meta->url_length);
   printf(" %-12s: %9d\n", "doc length", p_doc_meta->doc_length);
