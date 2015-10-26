@@ -3,16 +3,8 @@
  */
 
 #include "page_search.h"
+#include "utils.h"
 
-int get_abs_offset(int docid, int offset)
-{
-  return offset;
-}
-
-FILE *get_crawl_fp_from_docid(int docid)
-{
-  return NULL;
-}
 
 /*
  * the most basic query to a page content
@@ -21,13 +13,18 @@ FILE *get_crawl_fp_from_docid(int docid)
 PAGE_CONTEXT_T *get_page_context(int docid, int offset)
 {
   char crawl_filename[256] = {'\0'};
-  bzero(crawl_filename, 256);
 
-  FILE *fp_crawl = get_crawl_fp_from_docid(docid);
+  get_wet_filename_from_docid(docid, crawl_filename);
 
-  URL_IDX_T *p_doc_meta = get_doc_meta(docid);
-  
+  FILE *fp_crawl = fopen(crawl_filename, "r");
+
   fseek(fp_crawl, offset, SEEK_SET);
+
+  char buf[33] = {'\0'};
+  bzero(buf, 33);
+  fread(buf, 32, 1, fp_crawl);
+
+  fclose(fp_crawl);
 
   return NULL;
 }
