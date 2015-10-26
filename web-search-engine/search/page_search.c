@@ -49,7 +49,7 @@ void fetch_doc_list(DOC_LIST * head) {
 
     char page_context_buf[256] = {'\0'};
     bzero(page_context_buf, 256);
-    get_page_context(head->docid, *(head->offsets), *(head->offsets)+60, page_context_buf, 256);
+    get_page_context(head->docid, head->offset_start, head->offset_end, page_context_buf, 256);
 
     printf("%s\n", page_context_buf);
 
