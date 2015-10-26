@@ -78,7 +78,6 @@ void query_words(MIT_T *** p_mit_lists, int *word_ids)
   MIT_T ** ret_mits = (MIT_T **)calloc(1, sizeof(MIT_T *));
   while (*word_ids != -1) {
     int word_id = *word_ids;
-    printf("word id: %d\n\n", word_id);
     ret_mits = query_word(word_id);
     if (ret_mits == NULL) {
       continue;
@@ -166,12 +165,11 @@ int main(int argc, char *argv[])
 
   URL_IDX_T * p_doc_meta = get_doc_meta(*query_ids);
 
-/*
   if (p_doc_meta == NULL) {
     return EXIT_FAILURE;
   }
   print_doc_meta_entry(p_doc_meta);
-*/
+
   /* query word ids, get list of mit entries */
   MIT_T *** p_mit_lists = (MIT_T ***)calloc(argc, sizeof(MIT_T**));
   assert(p_mit_lists != NULL);
