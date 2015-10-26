@@ -20,6 +20,7 @@ int stats_ndocs = 0;
 int stats_avg_doc_lens = 0;
 
 static void load_index_stats();
+static void init_wet_filename_mapping();
 
 
 /*
@@ -66,6 +67,7 @@ void load_config()
   ndocs_per_lexicon_bucket = 10;
 
   load_index_stats();
+  init_wet_filename_mapping();
 }
 
 /*
@@ -516,5 +518,65 @@ void get_iidx_filename_from_docid(int docid, char *filename)
 int get_avg_doc_length()
 {
   return stats_avg_doc_lens;
+}
+
+typedef struct wet_file_mapping_t {
+  unsigned int min_docid;
+  unsigned int max_docid;
+  char wet_filename[256];
+} WET_MAPPING_T;
+
+WET_MAPPING_T *p_wet_mapping = NULL;
+
+static void init_wet_filename_mapping()
+{
+  printf("init wet file mapping\n");
+
+  int n_wet = 3;
+
+  assert(p_wet_mapping == NULL);
+  p_wet_mapping = (WET_MAPPING_T *)malloc(sizeof(WET_MAPPING_T) * 3);
+  assert(p_wet_mapping != NULL);
+
+  WET_MAPPING_T * p_work = p_wet_mapping;
+
+  bzero(p_work, sizeof(WET_MAPPING_T));
+  p_work->min_docid = 0;
+  p_work->max_docid = 12;
+  snprintf(p_work->wet_filename, 256, "%s/output/input1.warc.wet", get_basedir());
+
+  p_work++; 
+
+  bzero(p_work, sizeof(WET_MAPPING_T));
+  p_work->min_docid = 13;
+  p_work->max_docid = 17;
+  snprintf(p_work->wet_filename, 256, "%s/output/input2.warc.wet", get_basedir());
+
+  p_work++;
+
+  bzero(p_work, sizeof(WET_MAPPING_T));
+  p_work->min_docid = 18;
+  p_work->max_docid = 29;
+  snprintf(p_work->wet_filename, 256, "%s/output/input3.warc.wet", get_basedir());
+}
+
+void get_wet_filename_from_docid(int docid, char *filename)
+{
+  assert(p_wet_mapping != NULL);
+
+  WET_MAPPING_T *p_work = p_wet_mapping;
+
+  while (p_work->min_docid != 0 || p_work->max_docid != 0) {
+    if (docid >= p_work->min_docid && docid <= p_work->max_docid) {
+      bzero(filename, 256);
+      strncpy(filename, p_work->wet_filename, 256);
+      printf("wet file: %s\n", filename);
+      return;
+    }
+    p_work++;
+  }
+
+  // next come here.
+  abort();
 }
 
