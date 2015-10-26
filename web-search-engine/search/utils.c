@@ -458,6 +458,7 @@ void print_doc_meta_entry(URL_IDX_T *p_doc_meta)
 {
   printf("===== DOC META Entry =====\n");
   printf(" %-12s: %9d\n", "docid", p_doc_meta->docid);
+  printf(" %-12s: %s\n", "url", "fake url");
   printf(" %-12s: %9d\n", "url offset", p_doc_meta->url_offset);
   printf(" %-12s: %9d\n", "url length", p_doc_meta->url_length);
   printf(" %-12s: %9d\n", "doc length", p_doc_meta->doc_length);
@@ -545,21 +546,21 @@ static void init_wet_filename_mapping()
   bzero(p_work, sizeof(WET_MAPPING_T));
   p_work->min_docid = 0;
   p_work->max_docid = 12;
-  snprintf(p_work->wet_filename, 256, "%s/output/input1.warc.wet", get_basedir());
+  snprintf(p_work->wet_filename, 256, "%s/input/input1.warc.wet", get_basedir());
 
   p_work++; 
 
   bzero(p_work, sizeof(WET_MAPPING_T));
   p_work->min_docid = 13;
   p_work->max_docid = 17;
-  snprintf(p_work->wet_filename, 256, "%s/output/input2.warc.wet", get_basedir());
+  snprintf(p_work->wet_filename, 256, "%s/input/input2.warc.wet", get_basedir());
 
   p_work++;
 
   bzero(p_work, sizeof(WET_MAPPING_T));
   p_work->min_docid = 18;
   p_work->max_docid = 29;
-  snprintf(p_work->wet_filename, 256, "%s/output/input3.warc.wet", get_basedir());
+  snprintf(p_work->wet_filename, 256, "%s/input/input3.warc.wet", get_basedir());
 }
 
 void get_wet_filename_from_docid(int docid, char *filename)
