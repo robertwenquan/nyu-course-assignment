@@ -344,6 +344,19 @@ static void update_doc_offsets(DOC_LIST * docs_list,int count)
       start = doc_meta->content_offset + doc_meta->doc_offset;
     }
 
+    docs_list[i].offset_start = start;
+    docs_list[i].offset_end = start;
+    if (docs_list[i].offsets[0] != -1) {
+      if (docs_list[i].offsets[0] > 70) {
+        docs_list[i].offset_start = start + docs_list[i].offsets[0] - 70;
+      }
+      if (doc_meta->doc_length - docs_list[i].offsets[0] > 70) {
+        docs_list[i].offset_end = start + docs_list[i].offsets[0] + 70;
+      } else {
+        docs_list[i].offset_end = start + docs_list[i].offsets[0] + doc_meta->doc_length - 70;
+      }
+    }
+
     j = 0;
     while (docs_list[i].offsets[j] != -1) {
       docs_list[i].offsets[j] += start;
