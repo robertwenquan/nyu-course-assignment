@@ -77,7 +77,7 @@ static void load_word(int word_id, char *word)
     pthread_mutex_unlock(&wordid_lock);
   }
 
-  assert(work_node->wordid == word_id);
+  //assert(work_node->wordid == word_id);
 }
 
 /*
