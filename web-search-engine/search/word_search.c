@@ -110,11 +110,15 @@ static void load_word_idx_table()
 
   p_word_idx_mmap = mmap(NULL, st1.st_size, PROT_READ, MAP_PRIVATE, fd_word_idx, 0);
   assert(p_word_idx_mmap != NULL);
-  printf("mapped word index table at %p\n", p_word_idx_mmap);
+  if (verbose) {
+    printf("mapped word index table at %p\n", p_word_idx_mmap);
+  }
 
   p_word_str_mmap = mmap(NULL, st2.st_size, PROT_READ, MAP_PRIVATE, fd_word_str, 0);
   assert(p_word_str_mmap != NULL);
-  printf("mapped word data table at %p\n", p_word_str_mmap);
+  if (verbose) {
+    printf("mapped word data table at %p\n", p_word_str_mmap);
+  }
 
   int nwords = st1.st_size/sizeof(WORD_IDX_T);
   int idx = 0;

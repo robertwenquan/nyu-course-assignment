@@ -2,56 +2,46 @@
 #include "query.h"
 #include "pagerank.h"
 
-int verbose = 0;
-
 /*
  * query a single word by word_id
  */
 MIT_T **query_word(unsigned int word_id)
 {
-  printf("word id: %u\n", word_id);
+  if (verbose) {
+    printf("word id: %u\n", word_id);
+  }
 
   /* 2. word_id to GIT entry */
-  printf("query GIT entry...\n");
+  if (verbose) {
+    printf("query GIT entry...\n");
+  }
+
   GIT_T *p_git_entry = query_git(word_id);
   if (p_git_entry == NULL) {
     return NULL;
   }
-  print_git_entry(p_git_entry);
+  if (verbose) {
+    print_git_entry(p_git_entry);
+  }
 
   /* 3. GIT entry to MIT entry */
-  printf("query MIT entry...\n");
+  if (verbose == 1) {
+    printf("query MIT entry...\n");
+  }
+
   MIT_T **p_mit_entry = query_mit(p_git_entry);
   if (p_mit_entry == NULL) {
     return NULL;
   }
+
   MIT_T **p_save = p_mit_entry;
-  while(*p_mit_entry != NULL){
-    print_mit_entry(*p_mit_entry);
-    p_mit_entry++;
+  if (verbose) {
+    while(*p_mit_entry != NULL){
+      print_mit_entry(*p_mit_entry);
+      p_mit_entry++;
+    }
   }
   p_mit_entry = p_save;
-
-
-  /* 4. MIT entry to IINDEX entry */
-  printf("query IINDEX entry...\n");
-
-  IIDX_T * p_iidx_entry = NULL;
-  int i = 0;
-  while(*p_mit_entry != NULL){
-    //p_iidx_entry = query_compressed_iindex(*p_mit_entry);
-    p_iidx_entry = query_iindex(*p_mit_entry);
-    if (p_iidx_entry == NULL) {
-      return NULL;
-    }
-    i = 0;
-    while(p_iidx_entry[i].offset != -1 ){
-      print_iidx_entry(&p_iidx_entry[i]);
-      i++;
-    }
-
-    p_mit_entry++;
-  }
 
   return p_save;
 }
@@ -94,8 +84,6 @@ static void parse_arguments(int argc, char *argv[], char ***keywords)
 {
   // process getopt
   int option = 0;
-
-  printf("argc: %d\n", argc);
 
   while ((option = getopt(argc, argv,"vb:n:")) != -1) {
     switch (option) {
@@ -176,8 +164,10 @@ int main(int argc, char *argv[])
   }
 
   parse_arguments(argc, argv, &search_keywords);
-  printf("Checking query keywords...\n");
-  print_string_list(search_keywords);
+  if (verbose) {
+    printf("Checking query keywords...\n");
+    print_string_list(search_keywords);
+  }
 
   // test
   char filename[256];
@@ -188,8 +178,10 @@ int main(int argc, char *argv[])
   /* convert words to word ids */
   int *query_ids = NULL;
   convert_words_to_ids(search_keywords, argc-1, &query_ids);
-  printf("Checking query word IDs...\n");
-  print_number_list(query_ids);
+  if (verbose) {
+    printf("Checking query word IDs...\n");
+    print_number_list(query_ids);
+  }
 
   /* query word ids, get list of mit entries */
   MIT_T *** p_mit_lists = (MIT_T ***)calloc(argc, sizeof(MIT_T**));

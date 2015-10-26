@@ -62,7 +62,9 @@ GIT_T * query_git(int word_id)
     return NULL;
   }
   
-  printf("mapped git_table at %p\n", git_table);
+  if (verbose) {
+    printf("mapped git_table at %p\n", git_table);
+  }
    
   GIT_T git_search_key = { .word_id = word_id,
                            .offset = 0,
@@ -76,7 +78,9 @@ GIT_T * query_git(int word_id)
     goto _QUERY_GIT_FAILURE;
   }
 
-  printf("found the git entry at %p\n", p_git_hit);
+  if (verbose) {
+    printf("found the git entry at %p\n", p_git_hit);
+  }
 
   p_return_git = (GIT_T *)malloc(sizeof(GIT_T));
   if (p_return_git != NULL) {

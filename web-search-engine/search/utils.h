@@ -118,6 +118,7 @@ void print_doc_meta_entry(URL_IDX_T *p_doc_meta);
 
 int total_num_docs();
 
+extern int verbose;
 extern int ndocs_per_lexicon_bucket;
 extern char BASE_DIR[256];
 

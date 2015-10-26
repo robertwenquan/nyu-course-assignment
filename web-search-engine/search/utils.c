@@ -14,6 +14,7 @@
 #include "utils.h"
 
 
+int verbose = 0;
 char BASE_DIR[256] = {'\0'};
 int ndocs_per_lexicon_bucket = 0;
 int stats_ndocs = 0;
@@ -56,7 +57,9 @@ void load_config()
   bzero(config_filename, 256);
 
   snprintf(config_filename, 256, "search.yml");
-  printf("loading config file: %s\n", config_filename);
+  if (verbose) {
+    printf("loading config file: %s\n", config_filename);
+  }
 
   FILE *fh = fopen(config_filename, "r");
   fclose(fh);
@@ -82,7 +85,9 @@ static void load_index_stats()
   bzero(stats_filename, 256);
 
   snprintf(stats_filename, 256, "%s/output/index.stats", get_basedir());
-  printf("loading index stats file: %s\n", stats_filename);
+  if (verbose) {
+    printf("loading index stats file: %s\n", stats_filename);
+  }
 
   stats_ndocs = 30;
   stats_avg_doc_lens = 2000;
@@ -476,7 +481,9 @@ void get_git_filename(char *filename)
   char git_globstr[256] = {'\0'};
   bzero(git_globstr, 256);
   snprintf(git_globstr, 256, "%s/output/*.git", get_basedir());
-  printf("globstr: %s\n", git_globstr);
+  if (verbose) {
+    printf("globstr: %s\n", git_globstr);
+  }
 
   glob_t results;
   glob(git_globstr, 0, NULL, &results);
@@ -491,7 +498,9 @@ void get_mit_filename(char *filename)
   char mit_globstr[256] = {'\0'};
   bzero(mit_globstr, 256);
   snprintf(mit_globstr, 256, "%s/output/*.mit", get_basedir());
-  printf("globstr: %s\n", mit_globstr);
+  if (verbose) {
+    printf("globstr: %s\n", mit_globstr);
+  }
 
   glob_t results;
   glob(mit_globstr, 0, NULL, &results);
@@ -508,7 +517,9 @@ void get_iidx_filename_from_docid(int docid, char *filename)
   char iidx_globstr[256] = {'\0'};
   bzero(iidx_globstr, 256);
   snprintf(iidx_globstr, 256, "%s/output/lex%05d*.iidx", get_basedir(), fileid);
-  printf("globstr: %s\n", iidx_globstr);
+  if (verbose) {
+    printf("globstr: %s\n", iidx_globstr);
+  }
 
   glob_t results;
   glob(iidx_globstr, 0, NULL, &results);
@@ -533,7 +544,9 @@ WET_MAPPING_T *p_wet_mapping = NULL;
 
 static void init_wet_filename_mapping()
 {
-  printf("init wet file mapping\n");
+  if (verbose) {
+    printf("init wet file mapping\n");
+  }
 
   int n_wet = 3;
 
@@ -573,7 +586,9 @@ void get_wet_filename_from_docid(int docid, char *filename)
     if (docid >= p_work->min_docid && docid <= p_work->max_docid) {
       bzero(filename, 256);
       strncpy(filename, p_work->wet_filename, 256);
-      printf("wet file: %s\n", filename);
+      if (verbose) {
+        printf("wet file: %s\n", filename);
+      }
       return;
     }
     p_work++;

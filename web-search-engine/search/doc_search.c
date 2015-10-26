@@ -46,11 +46,15 @@ static void load_url_idx_table()
 
   p_url_idx_mmap = mmap(NULL, st1.st_size, PROT_READ, MAP_PRIVATE, fd_url_idx, 0);
   assert(p_url_idx_mmap != NULL);
-  printf("mapped url index table at %p with size %d\n", p_url_idx_mmap, st1.st_size);
+  if (verbose) {
+    printf("mapped url index table at %p with size %d\n", p_url_idx_mmap, st1.st_size);
+  }
 
   p_url_str_mmap = mmap(NULL, st2.st_size, PROT_READ, MAP_PRIVATE, fd_url_str, 0);
   assert(p_url_str_mmap != NULL);
-  printf("mapped url data table at %p with size %d\n", p_url_str_mmap, st2.st_size);
+  if (verbose) {
+    printf("mapped url data table at %p with size %d\n", p_url_str_mmap, st2.st_size);
+  }
 
   return;
 }
@@ -94,7 +98,9 @@ URL_IDX_T * get_doc_meta(unsigned int docid)
   URL_IDX_T doc_key = {.docid = docid};
   int ndocs = 30;
 
-  printf("search for docid: %u, %d\n", doc_key.docid, sizeof(URL_IDX_T));
+  if (verbose == 1) {
+    printf("search for docid: %u, %d\n", doc_key.docid, sizeof(URL_IDX_T));
+  }
   URL_IDX_T *p_doc_meta = bsearch(&doc_key, p_url_idx_mmap, ndocs, sizeof(URL_IDX_T), compare_docid);
 
   if (p_doc_meta == NULL) {
