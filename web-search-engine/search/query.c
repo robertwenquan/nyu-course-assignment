@@ -74,6 +74,7 @@ void query_words(MIT_T *** p_mit_lists, int *word_ids)
     int word_id = *word_ids;
     ret_mits = query_word(word_id);
     if (ret_mits == NULL) {
+      word_ids++;
       continue;
     }
     *p_mit_lists = ret_mits;
@@ -174,7 +175,7 @@ int main(int argc, char *argv[])
    * DOC_LIST contains docid, with its score and query words offset
    */
 
-  if (p_mit_lists == NULL) {
+  if (*p_mit_lists == NULL) {
     return EXIT_FAILURE;
   }
 
