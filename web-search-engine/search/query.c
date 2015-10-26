@@ -164,14 +164,6 @@ int main(int argc, char *argv[])
   printf("Checking query word IDs...\n");
   print_number_list(query_ids);
 
-  URL_IDX_T * p_doc_meta = get_doc_meta(*query_ids);
-
-/*
-  if (p_doc_meta == NULL) {
-    return EXIT_FAILURE;
-  }
-  print_doc_meta_entry(p_doc_meta);
-*/
   /* query word ids, get list of mit entries */
   MIT_T *** p_mit_lists = (MIT_T ***)calloc(argc, sizeof(MIT_T**));
   assert(p_mit_lists != NULL);

@@ -46,11 +46,11 @@ static void load_url_idx_table()
 
   p_url_idx_mmap = mmap(NULL, st1.st_size, PROT_READ, MAP_PRIVATE, fd_url_idx, 0);
   assert(p_url_idx_mmap != NULL);
-  printf("mapped url index table at %p\n", p_url_idx_mmap);
+  printf("mapped url index table at %p with size %d\n", p_url_idx_mmap, st1.st_size);
 
   p_url_str_mmap = mmap(NULL, st2.st_size, PROT_READ, MAP_PRIVATE, fd_url_str, 0);
   assert(p_url_str_mmap != NULL);
-  printf("mapped url data table at %p\n", p_url_str_mmap);
+  printf("mapped url data table at %p with size %d\n", p_url_str_mmap, st2.st_size);
 
   return;
 }
@@ -69,6 +69,7 @@ static int compare_docid(const void *pa, const void *pb)
   URL_IDX_T *p_doca = (URL_IDX_T *)pa;
   URL_IDX_T *p_docb = (URL_IDX_T *)pb;
 
+  printf("id1 %u, id2 %u\n", p_doca->docid, p_docb->docid);
   if (p_doca->docid > p_docb->docid) {
     return 1;
   } else if (p_doca->docid < p_docb->docid) {
@@ -83,18 +84,22 @@ static int compare_docid(const void *pa, const void *pb)
  * input: docid
  * output: doc meta structure
  */
-URL_IDX_T * get_doc_meta(int docid)
+URL_IDX_T * get_doc_meta(unsigned int docid)
 {
   // initialize everything when necessary
   if (fd_url_idx == -1 && fd_url_str == -1) {
     load_url_idx_table();
   }
+  assert(p_url_idx_mmap != NULL);
+
   URL_IDX_T doc_key = {.docid = docid};
   int ndocs = 30;
 
-  URL_IDX_T *p_doc_meta = bsearch(&doc_key, p_url_idx_mmap, sizeof(URL_IDX_T), ndocs, compare_docid);
+  printf("search for docid: %u, %d\n", doc_key.docid, sizeof(URL_IDX_T));
+  URL_IDX_T *p_doc_meta = bsearch(&doc_key, p_url_idx_mmap, ndocs, sizeof(URL_IDX_T), compare_docid);
 
   if (p_doc_meta == NULL) {
+    printf("not found for doc %u\n", docid);
     return NULL;
   }
   URL_IDX_T *p_doc_ret = (URL_IDX_T *)malloc(sizeof(URL_IDX_T));
