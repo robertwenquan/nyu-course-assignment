@@ -1,0 +1,11 @@
+#
+# configuration file of the search engine
+#
+
+# base_dir of the index data
+# index files are assumed to be under ${base_dir}/output
+base_dir: test_data/tiny30/
+
+# index
+ndoc_per_lexicon: 1000
+
