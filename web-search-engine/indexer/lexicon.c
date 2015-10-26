@@ -22,7 +22,7 @@ static void get_lex_filename(unsigned long doc_id, int *fileid, char *lex_filena
   static char path[] = "output";
   static char name[] = "lex";
 
-  static int bucket_size = 10;
+  static int bucket_size = 50000;
   *fileid = doc_id / bucket_size;
 
   bzero(lex_filename, 256);

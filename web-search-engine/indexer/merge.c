@@ -55,7 +55,6 @@ void merge_iindex(char **p) {
   bzero(filename,256);
 
   if (*(p+2) != NULL) {
-    printf("HERER\n");
     snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".mit");
     rename(*(p+2), filename);
   }
