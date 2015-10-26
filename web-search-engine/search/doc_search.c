@@ -113,6 +113,33 @@ URL_IDX_T * get_doc_meta(unsigned int docid)
   return p_doc_ret;
 }
 
+/*
+ * get doc url from doc id
+ */
+char * get_doc_url(unsigned int docid)
+{
+  URL_IDX_T * p_doc = get_doc_meta(docid);
+  if (p_doc == NULL) {
+    if (verbose) {
+      printf("doc not exist for docid: %d\n", docid);
+    }
+  }
+
+  int offset = p_doc->url_offset;
+  int length = p_doc->url_length;
+  if (verbose) {
+    printf("url offset: %d\n", offset);
+    printf("url length: %d\n", length);
+  }
+  void *p_start = p_url_str_mmap + offset;
+  char *p_url = (char *)malloc(length + 1);
+  assert(p_url != NULL);
+  bzero(p_url, length+1);
+
+  memcpy(p_url, p_start, length);
+  return p_url;
+}
+
 int get_doc_length(int docid)
 {
   URL_IDX_T * doc_meta = get_doc_meta(docid);

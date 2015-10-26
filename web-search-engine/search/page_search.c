@@ -42,11 +42,14 @@ void fetch_doc_list(DOC_LIST * head) {
     pagerank++;
 
     printf("===== SEARCH RESULT %d =====\n", pagerank);
-    printf("- %-8s: %9d\n", "docid", head->docid);
-    printf("- %-8s: %9f\n", "score", head->score);
-    printf("- %-8s: %9d\n", "offset", *(head->offsets));
-    printf("\n");
+    if (verbose) {
+      printf("- %-8s: %9d\n", "docid", head->docid);
+      printf("- %-8s: %9f\n", "score", head->score);
+      printf("- %-8s: %9d\n", "offset", *(head->offsets));
+      printf("\n");
+    }
 
+    printf("%s\n", get_doc_url(head->docid));
     char page_context_buf[256] = {'\0'};
     bzero(page_context_buf, 256);
     get_page_context(head->docid, head->offset_start, head->offset_end, page_context_buf, 256);

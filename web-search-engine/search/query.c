@@ -218,7 +218,7 @@ int main(int argc, char *argv[])
   parse_arguments(argc, argv);
 
   /* read lines from STDIN and goes to loop */
-  printf("Enter your query terms (Ctrl-C or Ctrl-D to exit): ");
+  printf("Enter your query terms (Ctrl-C to exit): ");
   char *line = NULL;
   size_t size;
   while (getline(&line, &size, stdin) != -1) {
@@ -235,7 +235,7 @@ int main(int argc, char *argv[])
     if (search_keywords != NULL) {
       process_query(search_keywords, nwords);
     }
-    printf("\nEnter your query terms (Ctrl-C or Ctrl-D to exit): ");
+    printf("\nEnter your query terms (Ctrl-C to exit): ");
   }
 
   return 0;
