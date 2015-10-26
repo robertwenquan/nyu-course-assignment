@@ -149,7 +149,9 @@ static unsigned int query_word_for_id(char *word)
   for (idx=0;idx<word_lens;idx++) {
     char chr = word[idx];
     int node_idx = char_to_index(chr);
-    assert(node_idx >= 0 && node_idx < 62);
+    if (node_idx < 0 || node_idx > 62) {
+      return -1;
+    }
 
     WORDID_HASHTREE_NODE_T *tree_node = work_node->next[node_idx];
     if (tree_node == NULL) {

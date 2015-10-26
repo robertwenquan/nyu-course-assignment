@@ -80,7 +80,7 @@ void query_words(MIT_T *** p_mit_lists, int *word_ids)
 /*
  * parse search keywords from the command line
  */
-static int parse_arguments(int argc, char *argv[], char ***keywords)
+static void parse_arguments(int argc, char *argv[])
 {
   // process getopt
   int option = 0;
@@ -102,22 +102,6 @@ static int parse_arguments(int argc, char *argv[], char ***keywords)
         exit(EXIT_FAILURE);
     }
   }
-
-  *keywords = (char **)malloc(sizeof(char **)*(argc-optind+1));
-  bzero(*keywords, sizeof(char **)*(argc-optind+1));
-  assert(*keywords != NULL);
-
-  char **p_work = *keywords;
-  int idx = 0;
-  for (idx = optind;idx < argc;idx++) {
-    *p_work = (char *)malloc(strlen(argv[idx]) + 1);
-    bzero(*p_work, strlen(argv[idx]) + 1);
-    memcpy(*p_work, argv[idx], strlen(argv[idx]));
-    p_work++;
-  }
-  p_work = NULL;
-
-  return optind;
 }
 
 /*
@@ -180,9 +164,46 @@ static process_query(char ** search_keywords, int nwords)
   fetch_doc_list(head);
 }
 
-static char **tokenize_input(char *input_line)
+static char **tokenize_input(char *input_line, int *nwords)
 {
-  return NULL;
+  char ** keywords = (char **)malloc(sizeof(char **)*(20));
+  bzero(keywords, sizeof(char **)*(20));
+  assert(keywords != NULL);
+  char **p_work = keywords;
+
+  char *p = NULL;
+  *nwords = 0;
+  for (p = strtok(input_line, " "); p != NULL; p = strtok(NULL, " ")) {
+    (*nwords)++;
+
+    char *pos;
+    if ((pos=strchr(p, '\n')) != NULL) {
+      *pos = '\0';
+    }
+
+    *p_work = (char *)malloc(strlen(p) + 1);
+    bzero(*p_work, strlen(p) + 1);
+    memcpy(*p_work, p, strlen(p));
+    p_work++;
+  }
+
+  //for (p = strtok(input_line, " "); p != NULL; p = strtok(NULL, " ")) {
+  //}
+
+/*
+
+  char **p_work = *keywords;
+  int idx = 0;
+  for (idx = optind;idx < argc;idx++) {
+    *p_work = (char *)malloc(strlen(argv[idx]) + 1);
+    bzero(*p_work, strlen(argv[idx]) + 1);
+    memcpy(*p_work, argv[idx], strlen(argv[idx]));
+    p_work++;
+  }
+  p_work = NULL;
+*/
+
+  return keywords;
 }
 
 /* main routine */
@@ -194,34 +215,27 @@ int main(int argc, char *argv[])
   /* parse the query keywords */
   char **search_keywords = NULL;
 
-  // How to set default query words?
-  if (argc == 1) {
-    printf("Please enter your query words.\n");
-    printf("Usage:\n");
-    printf("    ./search *** *** ***\n");
-    return EXIT_FAILURE;
-  }
-
-  int optind = parse_arguments(argc, argv, &search_keywords);
-  if (verbose) {
-    printf("Checking query keywords...\n");
-    print_string_list(search_keywords);
-  }
-
-  process_query(search_keywords, argc-optind);
-  return 0;
+  parse_arguments(argc, argv);
 
   /* read lines from STDIN and goes to loop */
+  printf("Enter your query terms (Ctrl-C or Ctrl-D to exit): ");
   char *line = NULL;
   size_t size;
   while (getline(&line, &size, stdin) != -1) {
     if (verbose) {
       printf("input: %s", line);
     }
-    search_keywords = tokenize_input(line);
-    if (search_keywords != NULL) {
-      process_query(search_keywords, 3);
+    int nwords = 0;
+    search_keywords = tokenize_input(line, &nwords);
+    if (verbose) {
+      printf("Checking query keywords...\n");
+      print_string_list(search_keywords);
     }
+
+    if (search_keywords != NULL) {
+      process_query(search_keywords, nwords);
+    }
+    printf("\nEnter your query terms (Ctrl-C or Ctrl-D to exit): ");
   }
 
   return 0;
