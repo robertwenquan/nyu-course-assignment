@@ -33,8 +33,8 @@ import sys
 
 BASE_DIR = './test_data'
 
-URL_TABLE_IDX = os.path.join(BASE_DIR, 'output/url_table.idx')
-URL_TABLE_DATA = os.path.join(BASE_DIR, 'output/url_table.data')
+URL_TABLE_IDX = os.path.join(BASE_DIR, 'tiny30/output/url_table.idx')
+URL_TABLE_DATA = os.path.join(BASE_DIR, 'tiny30/output/url_table.data')
 
 
 def main():
