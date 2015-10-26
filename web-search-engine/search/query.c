@@ -186,7 +186,7 @@ int main(int argc, char *argv[])
     return EXIT_FAILURE;
   }
 
-  print_doc_list(head);
+  fetch_doc_list(head);
 
   /*
    * Get context according to DOC_LIST and return

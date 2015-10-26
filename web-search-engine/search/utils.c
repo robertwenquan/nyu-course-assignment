@@ -543,21 +543,21 @@ static void init_wet_filename_mapping()
   bzero(p_work, sizeof(WET_MAPPING_T));
   p_work->min_docid = 0;
   p_work->max_docid = 12;
-  snprintf(p_work->wet_filename, 256, "%s/output/input1.warc.wet", get_basedir());
+  snprintf(p_work->wet_filename, 256, "%s/input/input1.warc.wet", get_basedir());
 
   p_work++; 
 
   bzero(p_work, sizeof(WET_MAPPING_T));
   p_work->min_docid = 13;
   p_work->max_docid = 17;
-  snprintf(p_work->wet_filename, 256, "%s/output/input2.warc.wet", get_basedir());
+  snprintf(p_work->wet_filename, 256, "%s/input/input2.warc.wet", get_basedir());
 
   p_work++;
 
   bzero(p_work, sizeof(WET_MAPPING_T));
   p_work->min_docid = 18;
   p_work->max_docid = 29;
-  snprintf(p_work->wet_filename, 256, "%s/output/input3.warc.wet", get_basedir());
+  snprintf(p_work->wet_filename, 256, "%s/input/input3.warc.wet", get_basedir());
 }
 
 void get_wet_filename_from_docid(int docid, char *filename)
