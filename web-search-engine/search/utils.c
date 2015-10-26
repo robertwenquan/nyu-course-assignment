@@ -9,6 +9,7 @@
 
 #include <stdio.h>
 #include <glob.h>
+#include <yaml.h>
 #include <pthread.h>
 #include "utils.h"
 
@@ -20,6 +21,28 @@ int stats_avg_doc_lens = 0;
 
 static void load_index_stats();
 
+
+/*
+ * load yaml file and return parser
+ */
+static yaml_parser_t * load_yaml(FILE *fh)
+{
+  yaml_parser_t * p_parser = (yaml_parser_t *)malloc(sizeof(yaml_parser_t));
+
+  /* Initialize parser */
+  if(!yaml_parser_initialize(p_parser))
+    fputs("Failed to initialize parser!\n", stderr);
+
+  /* Set input file */
+  yaml_parser_set_input_file(p_parser, fh);
+
+  return p_parser;
+}
+
+static void destroy_yaml(yaml_parser_t *p_parser)
+{
+  yaml_parser_delete(p_parser);
+}
 
 /*
  * load configuration for this searcher
@@ -34,10 +57,13 @@ void load_config()
   snprintf(config_filename, 256, "search.yml");
   printf("loading config file: %s\n", config_filename);
 
+  FILE *fh = fopen(config_filename, "r");
+  fclose(fh);
+
   bzero(BASE_DIR, 256);
   strncpy(BASE_DIR, "test_data/tiny30/", 256);
 
-  ndocs_per_lexicon_bucket = 1000;
+  ndocs_per_lexicon_bucket = 10;
 
   load_index_stats();
 }
