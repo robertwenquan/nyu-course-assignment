@@ -13,7 +13,7 @@
 #include "utils.h"
 
 //char BASE_DIR[] = "/data/wse/100k/";
-char BASE_DIR[] = "test_data";
+char BASE_DIR[] = "test_data/tiny30/";
 int ndocs_per_lexicon_bucket = 1000;
 
 char * get_basedir()
@@ -401,28 +401,53 @@ int total_num_docs(){
 
 void get_git_filename(char *filename)
 {
+  char git_globstr[256] = {'\0'};
+  bzero(git_globstr, 256);
+  snprintf(git_globstr, 256, "%s/output/*.git", get_basedir());
+  printf("globstr: %s\n", git_globstr);
+
+  glob_t results;
+  glob(git_globstr, 0, NULL, &results);
+  assert(results.gl_pathc == 1);
+
   bzero(filename, 256);
-  snprintf(filename, 256, "%s", "test_data/tiny30/output/input1.warc.wet.lexicon00.git");
+  snprintf(filename, 256, "%s", results.gl_pathv[0]);
 }
 
 void get_mit_filename(char *filename)
 {
+  char mit_globstr[256] = {'\0'};
+  bzero(mit_globstr, 256);
+  snprintf(mit_globstr, 256, "%s/output/*.mit", get_basedir());
+  printf("globstr: %s\n", mit_globstr);
+
+  glob_t results;
+  glob(mit_globstr, 0, NULL, &results);
+  assert(results.gl_pathc == 1);
+
   bzero(filename, 256);
-  snprintf(filename, 256, "%s", "test_data/tiny30/output/input1.warc.wet.lexicon00.mit");
+  snprintf(filename, 256, "%s", results.gl_pathv[0]);
 }
 
 void get_iidx_filename_from_docid(int docid, char *filename)
 {
+  int fileid = docid/ndocs_per_lexicon_bucket;
+
+  char iidx_globstr[256] = {'\0'};
+  bzero(iidx_globstr, 256);
+  snprintf(iidx_globstr, 256, "%s/output/lex%05d*.iidx", get_basedir(), fileid);
+  printf("globstr: %s\n", iidx_globstr);
+
+  glob_t results;
+  glob(iidx_globstr, 0, NULL, &results);
+  assert(results.gl_pathc == 1);
+
   bzero(filename, 256);
-
-  int fileid = 0;
-  fileid = docid/ndocs_per_lexicon_bucket;
-
-  //snprintf(filename, 256, "%s/%s/%s%05d.iidx", BASE_DIR, "output", "xxxx", fileid);
-  snprintf(filename, 256, "%s", "test_data/tiny30/output/input2.warc.wet.lexicon.iidx");
+  snprintf(filename, 256, "%s", results.gl_pathv[0]);
 }
 
 int get_avg_doc_length()
 {
   return stats_avg_doc_lens;
 }
+
