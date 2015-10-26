@@ -43,6 +43,23 @@ void merge_iindex(char **p) {
       return;
     }
   }
+
+  char filename[256] = {'\0'};
+  bzero(filename,256);
+
+  if (*(p+1) != NULL) {
+    snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".git");
+    rename(*(p+1), filename);
+  }
+
+  bzero(filename,256);
+
+  if (*(p+2) != NULL) {
+    printf("HERER\n");
+    snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".mit");
+    rename(*(p+2), filename);
+  }
+
   return;
 }
 
