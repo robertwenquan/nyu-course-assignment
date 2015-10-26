@@ -41,7 +41,7 @@ void fetch_doc_list(DOC_LIST * head) {
 
     pagerank++;
 
-    printf("===== SEARCH RESULT %d =====\n", pagerank);
+    printf("\n===== SEARCH RESULT %d =====\n", pagerank);
     if (verbose) {
       printf("- %-8s: %9d\n", "docid", head->docid);
       printf("- %-8s: %9f\n", "score", head->score);

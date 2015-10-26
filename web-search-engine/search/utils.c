@@ -9,9 +9,10 @@
 
 #include <stdio.h>
 #include <glob.h>
-#include <yaml.h>
+//#include <yaml.h>
 #include <pthread.h>
 #include "utils.h"
+#include "word_search.h"
 
 
 int verbose = 0;
@@ -27,15 +28,16 @@ static void init_wet_filename_mapping();
 /*
  * load yaml file and return parser
  */
+/*
 static yaml_parser_t * load_yaml(FILE *fh)
 {
   yaml_parser_t * p_parser = (yaml_parser_t *)malloc(sizeof(yaml_parser_t));
 
-  /* Initialize parser */
+  // Initialize parser //
   if(!yaml_parser_initialize(p_parser))
     fputs("Failed to initialize parser!\n", stderr);
 
-  /* Set input file */
+  // Set input file //
   yaml_parser_set_input_file(p_parser, fh);
 
   return p_parser;
@@ -45,6 +47,7 @@ static void destroy_yaml(yaml_parser_t *p_parser)
 {
   yaml_parser_delete(p_parser);
 }
+*/
 
 /*
  * load configuration for this searcher
@@ -71,6 +74,7 @@ void load_config()
 
   load_index_stats();
   init_wet_filename_mapping();
+  load_word_idx_table();
 }
 
 /*

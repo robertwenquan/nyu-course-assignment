@@ -83,7 +83,7 @@ static void load_word(int word_id, char *word)
 /*
  * load the word index table into memory
  */
-static void load_word_idx_table()
+void load_word_idx_table()
 {
   static char filename_fd_word_idx[256] = {'\0'};
   static char filename_fd_word_str[256] = {'\0'};

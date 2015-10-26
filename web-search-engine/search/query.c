@@ -134,6 +134,18 @@ void print_number_list(int *nums)
 
 static process_query(char ** search_keywords, int nwords)
 {
+
+  time_t ts;
+  time(&ts);
+  struct tm * tm = localtime(&ts);
+  char timestr[32] = {'\0'};
+  struct timeval tv1;
+  gettimeofday(&tv1, NULL);
+
+  snprintf(timestr, 32, "%d-%02d-%02d %02d:%02d:%02d", tm->tm_year+1900, tm->tm_mon+1, tm->tm_mday, tm->tm_hour, tm->tm_min, tm->tm_sec);
+  printf("%s started query...\n", timestr);
+
+
   /* convert words to word ids */
   int *query_ids = NULL;
   convert_words_to_ids(search_keywords, nwords, &query_ids);
@@ -162,6 +174,21 @@ static process_query(char ** search_keywords, int nwords)
   }
 
   fetch_doc_list(head);
+
+  // timer
+  struct timeval tv2;
+  gettimeofday(&tv2, NULL);
+
+  float diff = 0;
+  if (tv2.tv_usec - tv1.tv_usec < 0) {
+    diff = tv2.tv_usec - tv1.tv_usec + 1000000000;
+  }
+  else {
+    diff = tv2.tv_usec - tv1.tv_usec;
+  }
+  diff /= 1000.0;
+
+  printf("time spent in query: %.2f ms\n", diff);
 }
 
 static char **tokenize_input(char *input_line, int *nwords)

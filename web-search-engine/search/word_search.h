@@ -6,6 +6,7 @@
 #include "utils.h"
 
 int word_to_id(char *word);
+void load_word_idx_table();
 
 #endif
 
