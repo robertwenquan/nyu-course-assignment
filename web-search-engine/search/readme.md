@@ -81,25 +81,31 @@ Web Demo if we still have time?
  Since all inverted index built in assignment2 are associated with word id instead of real word, so the first step of query is to convert query words into word ids.
  * convert_word_to_ids
    Look into word_table, has the form:
+```
     ['new', 12]
     ['york', 15]
+```
    Return word id
 
  After we get word id, we look into the first level of inverted index, which maps word_id to all docs contains this word.
  * query_git
    Use binary search to get GIT entry of word:
+```
    { .word_id = 12,
      .offset = 1290,
      .n_docs = 2,
     }
+```
     Pass this information to get MIT entries.
  * query_mit
    According to offset given by GIT, find start of MIT entries.
    Given n_docs, read n_docs MIT entry.
+```
    { .doc_id = 1,
      .offset = 148,
      .n_places = 2
    }
+```
 
  For each query word, we can get a list of documents, find intersection/union of documents.
  * get_intersection

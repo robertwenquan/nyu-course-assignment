@@ -166,17 +166,17 @@ int main(int argc, char *argv[])
 
   URL_IDX_T * p_doc_meta = get_doc_meta(*query_ids);
 
+/*
   if (p_doc_meta == NULL) {
     return EXIT_FAILURE;
   }
   print_doc_meta_entry(p_doc_meta);
-
+*/
   /* query word ids, get list of mit entries */
   MIT_T *** p_mit_lists = (MIT_T ***)calloc(argc, sizeof(MIT_T**));
   assert(p_mit_lists != NULL);
 
   query_words(p_mit_lists, query_ids);
-
   /*
    * Pass MIT_T *** to ranking_docs get ranked docs
    * DOC_LIST contains docid, with its score and query words offset
