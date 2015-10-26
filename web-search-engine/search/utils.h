@@ -117,6 +117,7 @@ void print_doc_meta_entry(URL_IDX_T *p_doc_meta);
 int total_num_docs();
 
 extern int ndocs_per_lexicon_bucket;
+extern char BASE_DIR[256];
 
 void get_git_filename(char *filename);
 void get_mit_filename(char *filename);

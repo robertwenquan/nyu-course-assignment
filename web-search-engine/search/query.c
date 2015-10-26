@@ -2,6 +2,8 @@
 #include "query.h"
 #include "pagerank.h"
 
+int verbose = 0;
+
 /*
  * query a single word by word_id
  */
@@ -90,13 +92,36 @@ void query_words(MIT_T *** p_mit_lists, int *word_ids)
  */
 static void parse_arguments(int argc, char *argv[], char ***keywords)
 {
-  *keywords = (char **)malloc(sizeof(char **)*argc);
-  bzero(*keywords, sizeof(char **)*argc);
+  // process getopt
+  int option = 0;
+
+  printf("argc: %d\n", argc);
+
+  while ((option = getopt(argc, argv,"vb:n:")) != -1) {
+    switch (option) {
+      case 'v' :
+        verbose = 1;
+        break;
+      case 'b' :
+        bzero(BASE_DIR, 256);
+        strncpy(BASE_DIR, optarg, 255);
+        break;
+      case 'n':
+        ndocs_per_lexicon_bucket = atoi(optarg);
+        break;
+      default:
+        printf("arg error!\n");
+        exit(EXIT_FAILURE);
+    }
+  }
+
+  *keywords = (char **)malloc(sizeof(char **)*(argc-optind+1));
+  bzero(*keywords, sizeof(char **)*(argc-optind+1));
   assert(*keywords != NULL);
 
   char **p_work = *keywords;
   int idx = 0;
-  for (idx = 1;idx < argc;idx++) {
+  for (idx = optind;idx < argc;idx++) {
     *p_work = (char *)malloc(strlen(argv[idx]) + 1);
     bzero(*p_work, strlen(argv[idx]) + 1);
     memcpy(*p_work, argv[idx], strlen(argv[idx]));
