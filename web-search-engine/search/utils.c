@@ -12,9 +12,53 @@
 #include <pthread.h>
 #include "utils.h"
 
-//char BASE_DIR[] = "/data/wse/100k/";
-char BASE_DIR[] = "test_data/tiny30/";
-int ndocs_per_lexicon_bucket = 1000;
+
+char BASE_DIR[256] = {'\0'};
+int ndocs_per_lexicon_bucket = 0;
+int stats_ndocs = 0;
+int stats_avg_doc_lens = 0;
+
+static void load_index_stats();
+
+
+/*
+ * load configuration for this searcher
+ * config file is stored under
+ * search.yml
+ */
+void load_config()
+{
+  char config_filename[256] = {'\0'};
+  bzero(config_filename, 256);
+
+  snprintf(config_filename, 256, "search.yml");
+  printf("loading config file: %s\n", config_filename);
+
+  bzero(BASE_DIR, 256);
+  strncpy(BASE_DIR, "test_data/tiny30/", 256);
+
+  ndocs_per_lexicon_bucket = 1000;
+
+  load_index_stats();
+}
+
+/*
+ * load index statistics from the stats file
+ * the stats file is stored under
+ * ${base_dir}/output/index.stats
+ * in yaml format
+ */
+static void load_index_stats()
+{
+  char stats_filename[256] = {'\0'};
+  bzero(stats_filename, 256);
+
+  snprintf(stats_filename, 256, "%s/output/index.stats", get_basedir());
+  printf("loading index stats file: %s\n", stats_filename);
+
+  stats_ndocs = 30;
+  stats_avg_doc_lens = 2000;
+}
 
 char * get_basedir()
 {
@@ -391,9 +435,6 @@ void print_doc_meta_entry(URL_IDX_T *p_doc_meta)
   printf(" %-12s: %9d\n", "ctt length", p_doc_meta->content_length);
   printf("==========================\n");
 }
-
-int stats_ndocs = 288;
-int stats_avg_doc_lens = 2000;
 
 int total_num_docs(){
   return stats_ndocs;

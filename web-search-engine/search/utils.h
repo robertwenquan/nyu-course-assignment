@@ -125,5 +125,7 @@ int get_avg_doc_length();
 
 char * get_basedir();
 
+void load_config();
+
 #endif
 

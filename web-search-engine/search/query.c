@@ -136,6 +136,8 @@ void print_number_list(int *nums)
 /* main routine */
 int main(int argc, char *argv[])
 {
+  /* load config */
+  load_config();
 
   /* parse the query keywords */
   char **search_keywords = NULL;
