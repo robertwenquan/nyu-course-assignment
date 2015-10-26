@@ -68,12 +68,6 @@ void query_words(MIT_T *** p_mit_lists, int *word_ids)
    * 2. Union docs for all words
    *    Input: MIT_T ***
    *    Output : int * list_docs
-   *
-   * 3. Cal BM25 of each doc
-   *    Input: doc, queries[]
-   *    Output: BM25
-   *
-   * 4. Return top 20 docs with context
    */
   MIT_T ** ret_mits = (MIT_T **)calloc(1, sizeof(MIT_T *));
   while (*word_ids != -1) {
