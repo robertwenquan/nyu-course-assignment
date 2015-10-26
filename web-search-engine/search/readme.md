@@ -287,22 +287,6 @@ Whatever frontend we have, either the Command Line Interface, or the Web GUI, we
 
 We use Python wrapper to post-process the raw JSON output and format customized output for CLI or GUI purpose.
 
-### FAQ
-
-1. How fast can you query. 
-
-2. What is the size of the query data size?
-
-3. How long to index?
-
-4. How big the index was in compressed form?
-
-5. How many postings?
-
-6. How long it takes to start up the query processor?
-
-7. How long per query on the queries we gave you?
-
 ### Benchmarks
 
  In order to measure the performance of the search engine, we tried various datasets. For development we use a super tiny dataset with only 30 documents. For quick testing we use a 100k docs dataset for quick verification. We also have another two bigger sets for performance and scalability verification with 1 million and 10 million documents.
@@ -312,8 +296,6 @@ We use Python wrapper to post-process the raw JSON output and format customized 
 
  * small100k
  For testing and verification purpose with larger dataset.
-
- * mid1m
 
  * large10m
  The final dataset for assignment delivery and demo
@@ -333,3 +315,4 @@ We use Python wrapper to post-process the raw JSON output and format customized 
 
    * Score(D,Q) = sum Score(D,q)
      * Sum of each words' score
+
