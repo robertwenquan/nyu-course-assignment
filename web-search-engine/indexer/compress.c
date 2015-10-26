@@ -22,14 +22,23 @@ void compress_iidx()
   // Suppose get the list of iidx files and passed by a pointer
   C_offset = 0;
 
-  FILE * f_mit = fopen("test_data/output/lex00000.lexicon00.mit", "rw+");
+  FILE * f_mit = fopen("test_data/output/final.mit", "rb");
   if (f_mit == NULL) {
     return;
   } 
-  FILE * f_iidx = fopen("test_data/output/input1.warc.wet.lexicon.iidx", "wb+");
+  FILE * f_mit_new = fopen("test_data/output/final.mit.new", "wb");
+  if (f_mit_new == NULL) {
+    return;
+  } 
+  FILE * f_iidx = fopen("test_data/output/lex00000.lexicon", "rb");
   if (f_iidx == NULL) {
     return;
   } 
+  FILE * f_iidx_new = fopen("test_data/output/lex00000.lexicon.new", "wb");
+  if (f_iidx_new == NULL) {
+    return;
+  } 
+
   MIT_T * cur_mit = (MIT_T *)calloc(1, sizeof(MIT_T));
 
   int delta_offset = 0;
@@ -37,33 +46,37 @@ void compress_iidx()
   while (!feof(f_mit)) {
     fread(cur_mit, sizeof(MIT_T), 1, f_mit);
 
-    printf("cur_mit: %d\n", cur_mit->offset);
-
     IIDX_old = (IIDX_T *) calloc (cur_mit->n_places + 1, sizeof(IIDX_T));
     IIDX_new = (IIDX_T *) calloc (cur_mit->n_places + 1, sizeof(IIDX_T));
 
+    // Find start of offset according to cur_mit->offset
     fseek(f_iidx, cur_mit->offset, SEEK_SET);
-    fread(IIDX_old, sizeof(IIDX_T), cur_mit->n_places, f_iidx);
-    simple_9_compress(IIDX_old, IIDX_new, cur_mit->n_places, &delta_offset);
-    fseek(f_iidx, C_offset, SEEK_SET);
-    fwrite(IIDX_new, sizeof(IIDX_T), delta_offset, f_iidx);
 
+    // Read cur_mit->n_places IIDX_T entries
+    fread(IIDX_old, sizeof(IIDX_T), cur_mit->n_places, f_iidx);
+
+    // Compress offset
+    simple_9_compress(IIDX_old, IIDX_new, cur_mit->n_places, &delta_offset);
+
+    // Write compressed data to new file
+    fwrite(IIDX_new, sizeof(IIDX_T), delta_offset, f_iidx_new);
+
+    // Write updated offset of cur_mit->offset
     cur_mit->offset = C_offset;
-    fseek(f_mit, -sizeof(MIT_T), SEEK_CUR);
-    fwrite(&cur_mit, sizeof(MIT_T), 1, f_mit);
-    //fseek(f_mit, sizeof(MIT_T), SEEK_CUR);
-    
+    fwrite(cur_mit, sizeof(MIT_T), 1, f_mit_new);
+
+    // Update new global offset of iidx_new file
     C_offset += delta_offset * sizeof(IIDX_T);
-    printf("C_OFFSET : %lu", C_offset);
 
     free(IIDX_new);
     free(IIDX_old);
-
-    // TODO: Don't know why it can't stop
-    break;
   } 
   fclose(f_mit);
+  fclose(f_mit_new);
   fclose(f_iidx);
+  fclose(f_iidx_new);
+  rename("test_data/output/lex00000.lexicon.new", "test_data/output/lex00000.lexicon");
+  rename("test_data/output/final.mit.new", "test_data/output/final.mit");
   return;
 }
 
