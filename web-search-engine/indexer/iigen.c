@@ -55,6 +55,7 @@ int main(int argc, char *argv[])
         break;
       case 'n':
         bucket_size = atoi(optarg);
+        break;
       default:
         printf("invalid argument. please check help...\n");
         exit(1);
