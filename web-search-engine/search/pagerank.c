@@ -246,7 +246,8 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
 
 static bool check_duplicate(DOC_LIST * doc_list, int i, int docid)
 {
-  for (int j = 0; j < i; j++) {
+  int j = 0;
+  for (j = 0; j < i; j++) {
     if (doc_list[j].docid == docid) {
       return 1;
     }

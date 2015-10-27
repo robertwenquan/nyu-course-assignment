@@ -15,16 +15,25 @@ void compress_docid(){
   snprintf(filename_new, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".mit.new");
   FILE * f_mit_new = fopen(filename_new, "wb");
   if (f_mit_new == NULL) {
+    printf("Compress Doc ID failed");
     return;
   }
 
   bzero(filename, 256);
   snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".git");
   FILE * f_git = fopen(filename, "rb");
+  if (f_git == NULL) {
+    printf("Compress Doc ID failed");
+    return;
+  }
 
   bzero(filename, 256);
   snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".mit");
   FILE * f_mit = fopen(filename, "rb");
+  if (f_mit == NULL) {
+    printf("Compress Doc ID failed");
+    return;
+  }
 
   MIT_T * mit_buf = NULL;
   int n_docs = 0;

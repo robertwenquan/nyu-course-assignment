@@ -67,11 +67,6 @@ void load_config()
   FILE *fh = fopen(config_filename, "r");
   fclose(fh);
 
-  bzero(BASE_DIR, 256);
-  strncpy(BASE_DIR, "test_data/tiny30/", 256);
-
-  ndocs_per_lexicon_bucket = 10;
-
   load_index_stats();
   init_wet_filename_mapping();
   load_word_idx_table();

@@ -166,17 +166,20 @@ char** merge_files(char **p) {
 
     //write the name of output file into outputlist
     length = strlen(basename);
-    *plist = (char *)malloc(length);
+    *plist = (char *)malloc(length+1);
+    bzero(*plist, length+1);
     memcpy(*plist, basename, length);
     plist++;
 
     length = strlen(outgit);
-    *plist = (char *)malloc(length);
+    *plist = (char *)malloc(length+1);
+    bzero(*plist, length+1);
     memcpy(*plist, outgit, length);
     plist++;
 
     length = strlen(outmit);
-    *plist = (char *)malloc(length);
+    *plist = (char *)malloc(length+1);
+    bzero(*plist, length+1);
     memcpy(*plist, outmit, length);
     plist++;
 
