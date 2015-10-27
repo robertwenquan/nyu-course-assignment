@@ -12,12 +12,7 @@
 #include <pthread.h>
 #include "utils.h"
 
-<<<<<<< HEAD
 char BASE_DIR[256] = {'\0'};
-=======
-//char BASE_DIR[] = "/data/wse/100k/";
-char BASE_DIR[] = "test_data/";
->>>>>>> 6681abf48b60562282c75f47df4a838f2b58c466
 
 char * get_basedir()
 {
