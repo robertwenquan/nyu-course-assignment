@@ -414,3 +414,38 @@ void free_inout_filelist(char **pfiles)
   free(p_saved);
 }
 
+
+static FILE * fp_docid_range = NULL;
+/*
+ * open the docid range mapping to WET filename
+ * file pointer
+ */
+static void load_docid_range_fp()
+{
+  char docid_range_map_filename[256];
+  bzero(docid_range_map_filename, 256);
+
+  snprintf(docid_range_map_filename, 256, "%s/output/wet.mapping", get_basedir());
+
+  fp_docid_range = fopen(docid_range_map_filename, "w");
+}
+
+/*
+ * write back the WET filename, docid start and end range mapping
+ * this is used for page content fetch from docid->wet filename
+ */
+void docid_range_writeback(char *filename, unsigned int start, unsigned int end)
+{
+  char linebuf[512];
+  bzero(linebuf, 512);
+
+  snprintf(linebuf, 512, "%s,%u,%u\n", filename, start, end);
+
+  if (fp_docid_range == NULL) {
+    load_docid_range_fp();
+  }
+
+  int ret = fwrite(linebuf, strlen(linebuf), 1, fp_docid_range);
+  assert(ret == 1);
+}
+

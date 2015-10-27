@@ -131,6 +131,10 @@ static void tokenize_page_content(char *buffer, int size, unsigned int docid)
 static void process_lexicons_from_file(char *infile)
 {
   FILE * fp = warc_open(infile);
+  int docid_rec_flag = -1;
+  unsigned int docid_start = 0;
+  unsigned int docid_end = 0;
+  unsigned int docid = 0;
 
   printf("processing %s ...\n", infile);
 
@@ -160,7 +164,12 @@ static void process_lexicons_from_file(char *infile)
 
     char *page_content = p_warc->payload->data;
     int page_lens = p_warc->payload->length;
-    unsigned int docid = get_doc_id(p_warc);
+    docid = get_doc_id(p_warc);
+
+    if (docid_rec_flag == -1) {
+      docid_start = docid;
+      docid_rec_flag = 1;
+    }
 
     int dps = 0;
     time_t ts;
@@ -184,6 +193,11 @@ static void process_lexicons_from_file(char *infile)
     destroy_warc_rec(p_warc);
   }
   warc_close(fp);
+
+  docid_end = docid;
+
+  printf("%s doc id range(%u->%u)\n", infile, docid_start, docid_end);
+  docid_range_writeback(infile, docid_start, docid_end);
 
   return;
 }

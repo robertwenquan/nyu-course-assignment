@@ -101,6 +101,7 @@ typedef struct __attribute__((__packed__)) {
 } IIDX_T;
 
 char * get_basedir();
+void docid_range_writeback(char *filename, unsigned int start, unsigned int end);
 
 #endif
 
