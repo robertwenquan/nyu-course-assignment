@@ -49,10 +49,6 @@ def result(request):
   while not '"END OF RESULT"' in data.strip():
     data += clientsocket.recv(1024)
 
-  #item = json.loads(data)
-
-  #xx = json.dumps(item, sort_keys=True, indent=2, separators=(',', ': '))
-
   soup = BeautifulSoup(data)
 
   display_data = soup.prettify()
