@@ -236,13 +236,14 @@ static char **tokenize_input(char *input_line, int *nwords)
 /* main routine */
 int main(int argc, char *argv[])
 {
+  // argument parsing
+  parse_arguments(argc, argv);
+
   /* load config */
   load_config();
 
   /* parse the query keywords */
   char **search_keywords = NULL;
-
-  parse_arguments(argc, argv);
 
   /* read lines from STDIN and goes to loop */
   printf("Enter your query terms (Ctrl-C to exit): ");
