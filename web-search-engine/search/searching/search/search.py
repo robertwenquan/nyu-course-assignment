@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+import socket
+
 # Create your views here.
 def view(request):
   pagecontent = """
@@ -21,7 +23,7 @@ def view(request):
       <BR>
       <FORM action="/search" method="get">
         <DIV ALIGN="CENTER">
-        <input style="padding: 0px; margin: 0px; height:30px; width: 60%; outline: none; background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;" maxlength="256" name="q title="Search" type="text" value="">
+        <input style="padding: 0px; margin: 0px; height:30px; width: 60%; outline: none; background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;" maxlength="256" name="q" title="Search" type="text" value="">
         <br>
         <br>
         <input type="submit" style="padding: 0px; margin: 0px; height:60px; width: 100px" value="Submit">
@@ -34,5 +36,12 @@ def view(request):
   return HttpResponse(pagecontent)
 
 def result(request):
-  return HttpResponse('sdfsdfd')
+  query = request.GET.get('q', '')
+
+  clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  clientsocket.connect(('localhost', 1124))
+  clientsocket.send(query)
+  data = clientsocket.recv(100000)
+
+  return HttpResponse(data)
 
