@@ -21,4 +21,5 @@ search:  $(OBJS)
 
 clean:  
 	rm -fr $(BINS) $(OBJS) *.dSYM *.pyc tests/*.pyc *.o &>/dev/null
+	find . -name "*.pyc" -exec rm -f {} \; 2>/dev/null
 
