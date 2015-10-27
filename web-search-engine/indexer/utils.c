@@ -439,7 +439,15 @@ void docid_range_writeback(char *filename, unsigned int start, unsigned int end)
   char linebuf[512];
   bzero(linebuf, 512);
 
-  snprintf(linebuf, 512, "%s,%u,%u\n", filename, start, end);
+  char *p_file = filename;
+  if (strstr(filename, get_basedir()) != NULL) {
+    p_file += strlen(get_basedir());
+  }
+  if (*p_file == '/') {
+    p_file++;
+  }
+
+  snprintf(linebuf, 512, "%s,%u,%u\n", p_file, start, end);
 
   if (fp_docid_range == NULL) {
     load_docid_range_fp();
