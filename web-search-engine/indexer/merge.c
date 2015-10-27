@@ -58,7 +58,7 @@ void merge_iindex(char **p) {
     snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".mit");
     rename(*(p+2), filename);
   }
-
+  compress_docid();
   return;
 }
 
