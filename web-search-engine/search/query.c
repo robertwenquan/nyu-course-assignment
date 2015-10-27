@@ -180,7 +180,7 @@ static process_query(char ** search_keywords, int nwords)
 
   float diff = 0;
   if (tv2.tv_usec - tv1.tv_usec < 0) {
-    diff = tv2.tv_usec - tv1.tv_usec + 1000000000;
+    diff = tv2.tv_usec - tv1.tv_usec + (tv2.tv_sec - tv1.tv_sec)*1000000;
   }
   else {
     diff = tv2.tv_usec - tv1.tv_usec;
