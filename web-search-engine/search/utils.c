@@ -88,7 +88,7 @@ static void load_index_stats()
     printf("loading index stats file: %s\n", stats_filename);
   }
 
-  stats_ndocs = 30;
+  stats_ndocs = 1024162;
   stats_avg_doc_lens = 2000;
 }
 
