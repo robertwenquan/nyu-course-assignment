@@ -15,6 +15,7 @@ static int lexicon_compare(const void *p1, const void *p2);
 int docid_saved = 0;
 time_t time_saved = 0;
 
+int bucket_size = 0;
 
 static void get_lex_filename(unsigned long doc_id, int *fileid, char *lex_filename, int buflen)
 {
@@ -22,7 +23,6 @@ static void get_lex_filename(unsigned long doc_id, int *fileid, char *lex_filena
   static char path[] = "output";
   static char name[] = "lex";
 
-  static int bucket_size = 50000;
   *fileid = doc_id / bucket_size;
 
   bzero(lex_filename, 256);

@@ -103,5 +103,7 @@ typedef struct __attribute__((__packed__)) {
 char * get_basedir();
 void docid_range_writeback(char *filename, unsigned int start, unsigned int end);
 
+extern char BASE_DIR[256];
+
 #endif
 
