@@ -14,12 +14,20 @@ static void HandleClient(int sock) {
     Die("Failed to receive initial bytes from client");
   }
 
+  char **search_keywords = NULL;
+
   /* Send bytes and check for more incoming data in loop */
   while (received > 0) {
 
-    /* Send back received data */
-    if (send(sock, buffer, received, 0) != received) {
-      Die("Failed to send bytes to client");
+    int nwords = 0;
+    search_keywords = tokenize_input(buffer, &nwords);
+    if (verbose) {
+      printf("Checking query keywords from network...\n");
+      print_string_list(search_keywords);
+    }
+
+    if (search_keywords != NULL) {
+      process_query(search_keywords, nwords, sock);
     }
 
     /* Check for more data */
@@ -40,6 +48,8 @@ void start_server()
   if ((serversock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) {
     Die("Failed to create socket");
   }
+  setsockopt(serversock, SOL_SOCKET, SO_REUSEADDR, &(int){ 1 }, sizeof(int));
+
   /* Construct the server sockaddr_in structure */
   memset(&echoserver, 0, sizeof(echoserver));       /* Clear struct */
   echoserver.sin_family = AF_INET;                  /* Internet/IP */

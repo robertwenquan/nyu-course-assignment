@@ -8,6 +8,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <netinet/in.h>
+#include "query.h"
 
 void start_server();
 

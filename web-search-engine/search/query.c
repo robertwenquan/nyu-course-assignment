@@ -138,7 +138,7 @@ void print_number_list(int *nums)
   }
 }
 
-static process_query(char ** search_keywords, int nwords)
+void process_query(char ** search_keywords, int nwords, int fd)
 {
 
   time_t ts;
@@ -178,7 +178,8 @@ static process_query(char ** search_keywords, int nwords)
     return EXIT_FAILURE;
   }
 
-  fetch_doc_list(head);
+  printf("%d\n", fd);
+  fetch_doc_list(head, fd);
 
   // timer
   struct timeval tv2;
@@ -230,7 +231,7 @@ static int check_blacklist(char *word)
   return 0;
 }
 
-static char **tokenize_input(char *input_line, int *nwords)
+char **tokenize_input(char *input_line, int *nwords)
 {
   char ** keywords = (char **)malloc(sizeof(char **)*(20));
   bzero(keywords, sizeof(char **)*(20));
@@ -312,7 +313,7 @@ int main(int argc, char *argv[])
     }
 
     if (search_keywords != NULL) {
-      process_query(search_keywords, nwords);
+      process_query(search_keywords, nwords, STDOUT_FILENO);
     }
     printf("\nEnter your query terms (Ctrl-C to exit): ");
   }

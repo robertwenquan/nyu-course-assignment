@@ -9,4 +9,7 @@
 #include "doc_search.h"
 #include "page_search.h"
 
+char **tokenize_input(char *input_line, int *nwords);
+void process_query(char ** search_keywords, int nwords, int fd);
+
 #endif

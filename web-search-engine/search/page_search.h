@@ -13,5 +13,7 @@ typedef struct _page_struct_t_ {
   char context[256];
 } PAGE_CONTEXT_T;
 
+void fetch_doc_list(DOC_LIST * head, int fd);
+
 #endif
 
