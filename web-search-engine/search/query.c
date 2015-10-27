@@ -167,7 +167,6 @@ static process_query(char ** search_keywords, int nwords)
   if (*p_mit_lists == NULL) {
     return EXIT_FAILURE;
   }
-
   DOC_LIST * head = ranking_docs(p_mit_lists);
   if (head == NULL) {
     return EXIT_FAILURE;

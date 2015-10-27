@@ -217,6 +217,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
 
   for(i =0, j = 0; i < count; i++, j++){
     if (check_duplicate(docs_list, i, cur->docid)) {
+      cur = cur->next;
       j--;
       continue;
     }
