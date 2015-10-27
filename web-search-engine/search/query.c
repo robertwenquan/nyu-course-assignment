@@ -171,11 +171,11 @@ void process_query(char ** search_keywords, int nwords, int fd)
    */
 
   if (*p_mit_lists == NULL) {
-    return EXIT_FAILURE;
+    return;
   }
   DOC_LIST * head = ranking_docs(p_mit_lists);
   if (head == NULL) {
-    return EXIT_FAILURE;
+    return;
   }
 
   printf("%d\n", fd);
