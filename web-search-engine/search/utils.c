@@ -561,7 +561,9 @@ static void init_wet_filename_mapping()
   while ((nread = getline(&line, &len, fp_docid_range)) != -1) {
     nrec++;
   }
-  printf("%d wet file entries.\n", nrec);
+  if (verbose) {
+    printf("%d wet file entries.\n", nrec);
+  }
 
   assert(p_wet_mapping == NULL);
   p_wet_mapping = (WET_MAPPING_T *)malloc(sizeof(WET_MAPPING_T) * nrec);
@@ -570,18 +572,20 @@ static void init_wet_filename_mapping()
 
   fseek(fp_docid_range, 0, SEEK_SET);
   while ((nread = getline(&line, &len, fp_docid_range)) != -1) {
-    printf("line: %s", line);
+    if (verbose) {
+      printf("line: %s", line);
+    }
 
     bzero(p_work, sizeof(WET_MAPPING_T));
     char *p_filename = strtok(line, ",");
-    printf("filename: %s/%s\n", get_basedir(), p_filename);
     snprintf(p_work->wet_filename, 256, "%s/%s", get_basedir(), p_filename);
     char *p_start = strtok(NULL, ",");
     p_work->min_docid = atoi(p_start);
-    printf("min_docid: %d\n", p_work->min_docid);
     char *p_end = strtok(NULL, ",");
     p_work->max_docid = atoi(p_end);
-    printf("max_docid: %d\n", p_work->max_docid);
+    if (verbose) {
+      printf("filename: %s [%d-%d]\n", p_work->wet_filename, p_work->min_docid, p_work->max_docid);
+    }
 
     p_work++; 
   }

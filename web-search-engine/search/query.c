@@ -180,7 +180,7 @@ static process_query(char ** search_keywords, int nwords)
 
   float diff = 0;
   if (tv2.tv_usec - tv1.tv_usec < 0) {
-    diff = tv2.tv_usec - tv1.tv_usec + 1000000000;
+    diff = tv2.tv_usec - tv1.tv_usec + (tv2.tv_sec - tv1.tv_sec)*1000000;
   }
   else {
     diff = tv2.tv_usec - tv1.tv_usec;
@@ -188,6 +188,40 @@ static process_query(char ** search_keywords, int nwords)
   diff /= 1000.0;
 
   printf("time spent in query: %.2f ms\n", diff);
+}
+
+/*
+ * check against blacklist words
+ * return 1 if yes
+ * return 0 otherwise
+ */
+static int check_blacklist(char *word)
+{
+  static char * blacklist_words[] = {
+    "are",
+    "Are",
+    "is",
+    "Is",
+    "A",
+    "a",
+    "The",
+    "the",
+    "an",
+    "An",
+    "and",
+    "And",
+    NULL
+  };
+
+  char ** p_work = blacklist_words;
+  while (*p_work != NULL) {
+    if (strcmp(word, *p_work) == 0) {
+      return 1;
+    }
+    p_work++;
+  }
+
+  return 0;
 }
 
 static char **tokenize_input(char *input_line, int *nwords)
@@ -200,12 +234,19 @@ static char **tokenize_input(char *input_line, int *nwords)
   char *p = NULL;
   *nwords = 0;
   for (p = strtok(input_line, " "); p != NULL; p = strtok(NULL, " ")) {
-    (*nwords)++;
 
+    // strip the trailing '\n'
     char *pos;
     if ((pos=strchr(p, '\n')) != NULL) {
       *pos = '\0';
     }
+
+    // check against blacklist
+    if (check_blacklist(p) == 1) {
+      continue;
+    }
+
+    (*nwords)++;
 
     *p_work = (char *)malloc(strlen(p) + 1);
     bzero(*p_work, strlen(p) + 1);
