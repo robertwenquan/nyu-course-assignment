@@ -11,7 +11,7 @@ else
 CFLAGS = -g -O2 -Wall -D__DEBUG__ -D__MACOS__ -I /usr/local/Cellar/libyaml/0.1.6_1/include
 endif
 
-OBJS = query.o word_search.o doc_search.o iindex_search.o utils.o pagerank.o page_search.o
+OBJS = query.o word_search.o doc_search.o iindex_search.o utils.o pagerank.o page_search.o network.o
 BINS = search
 
 all:  $(BINS)
