@@ -579,8 +579,8 @@ static void init_wet_filename_mapping()
 
     bzero(p_work, sizeof(WET_MAPPING_T));
     char *p_filename = strtok(line, ",");
-    printf("filename: %s\n", p_filename);
-    snprintf(p_work->wet_filename, 256, "%s", p_filename);
+    printf("filename: %s/%s\n", get_basedir(), p_filename);
+    snprintf(p_work->wet_filename, 256, "%s/%s", get_basedir(), p_filename);
     char *p_start = strtok(NULL, ",");
     p_work->min_docid = atoi(p_start);
     printf("min_docid: %d\n", p_work->min_docid);
