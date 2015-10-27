@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "query.h"
 #include "pagerank.h"
+#include "network.h"
 
 /*
  * query a single word by word_id
@@ -284,6 +285,8 @@ int main(int argc, char *argv[])
 
   /* parse the query keywords */
   char **search_keywords = NULL;
+
+  //start_server();
 
   /* read lines from STDIN and goes to loop */
   printf("Enter your query terms (Ctrl-C to exit): ");
