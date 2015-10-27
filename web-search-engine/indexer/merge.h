@@ -2,7 +2,7 @@
 #define _iigen_merge_h
 
 #include <stdio.h>
-
+#include "compress.h"
 typedef struct {
   FILE *fgit; 
   FILE *fmit;

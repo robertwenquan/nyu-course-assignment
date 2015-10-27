@@ -7,6 +7,55 @@ long C_offset;
 
 void fake_main();
 
+void compress_docid(){
+  char filename[256] = {'\0'};
+  char filename_new[256] = {'\0'};
+
+  bzero(filename_new, 256);
+  snprintf(filename_new, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".mit.new");
+  FILE * f_mit_new = fopen(filename_new, "wb");
+  if (f_mit_new == NULL) {
+    return;
+  }
+
+  bzero(filename, 256);
+  snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".git");
+  FILE * f_git = fopen(filename, "rb");
+
+  bzero(filename, 256);
+  snprintf(filename, 256, "%s%s%s%s", get_basedir(), "output/", "final", ".mit");
+  FILE * f_mit = fopen(filename, "rb");
+
+  MIT_T * mit_buf = NULL;
+  int n_docs = 0;
+  GIT_T * git_buf = (GIT_T *)calloc(1, sizeof(GIT_T));
+  int i = 0;
+  int last = 0;
+  while (!feof(f_git)) {
+    last = 0;
+    fread(git_buf , sizeof(GIT_T), 1, f_git);
+    n_docs = git_buf->n_docs;
+    mit_buf = (MIT_T *)calloc(n_docs, sizeof(MIT_T));
+    fread(mit_buf, sizeof(MIT_T), n_docs, f_mit);
+
+    for (i = 0; i < n_docs; i++) {
+      mit_buf[i].docid -= last;
+      last += mit_buf[i].docid;
+    }
+
+    fwrite(mit_buf, sizeof(MIT_T), n_docs, f_mit_new);
+    free(mit_buf);
+  }
+
+  free(git_buf);
+  fclose(f_mit);
+  fclose(f_git);
+  fclose(f_mit_new);
+
+  remove(filename);
+  rename(filename_new, filename);
+  return;
+}
 void compress_iidx()
 {
   /*

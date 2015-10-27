@@ -552,32 +552,46 @@ static void init_wet_filename_mapping()
     printf("init wet file mapping\n");
   }
 
-  int n_wet = 3;
+  char docid_range_map_filename[256];
+  bzero(docid_range_map_filename, 256);
+
+  snprintf(docid_range_map_filename, 256, "%s/output/wet.mapping", get_basedir());
+
+  FILE *fp_docid_range = fopen(docid_range_map_filename, "r");
+
+  ssize_t nread;
+  size_t len = 0;
+  char * line = NULL;
+  int nrec = 0;
+  while ((nread = getline(&line, &len, fp_docid_range)) != -1) {
+    nrec++;
+  }
+  printf("%d wet file entries.\n", nrec);
 
   assert(p_wet_mapping == NULL);
-  p_wet_mapping = (WET_MAPPING_T *)malloc(sizeof(WET_MAPPING_T) * 3);
+  p_wet_mapping = (WET_MAPPING_T *)malloc(sizeof(WET_MAPPING_T) * nrec);
   assert(p_wet_mapping != NULL);
-
   WET_MAPPING_T * p_work = p_wet_mapping;
 
-  bzero(p_work, sizeof(WET_MAPPING_T));
-  p_work->min_docid = 0;
-  p_work->max_docid = 12;
-  snprintf(p_work->wet_filename, 256, "%s/input/input1.warc.wet", get_basedir());
+  fseek(fp_docid_range, 0, SEEK_SET);
+  while ((nread = getline(&line, &len, fp_docid_range)) != -1) {
+    printf("line: %s", line);
 
-  p_work++; 
+    bzero(p_work, sizeof(WET_MAPPING_T));
+    char *p_filename = strtok(line, ",");
+    printf("filename: %s/%s\n", get_basedir(), p_filename);
+    snprintf(p_work->wet_filename, 256, "%s/%s", get_basedir(), p_filename);
+    char *p_start = strtok(NULL, ",");
+    p_work->min_docid = atoi(p_start);
+    printf("min_docid: %d\n", p_work->min_docid);
+    char *p_end = strtok(NULL, ",");
+    p_work->max_docid = atoi(p_end);
+    printf("max_docid: %d\n", p_work->max_docid);
 
-  bzero(p_work, sizeof(WET_MAPPING_T));
-  p_work->min_docid = 13;
-  p_work->max_docid = 17;
-  snprintf(p_work->wet_filename, 256, "%s/input/input2.warc.wet", get_basedir());
+    p_work++; 
+  }
 
-  p_work++;
-
-  bzero(p_work, sizeof(WET_MAPPING_T));
-  p_work->min_docid = 18;
-  p_work->max_docid = 29;
-  snprintf(p_work->wet_filename, 256, "%s/input/input3.warc.wet", get_basedir());
+  fclose(fp_docid_range);
 }
 
 void get_wet_filename_from_docid(int docid, char *filename)
