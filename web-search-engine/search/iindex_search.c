@@ -132,6 +132,7 @@ MIT_T ** query_mit(GIT_T *p_git)
   fseek(fd_mit, p_git->offset, SEEK_SET);
 
   int i = 0;
+  int last = 0;
   for (i = 0; i < p_git->n_docs ; i++) {
     *p_return_mit = (MIT_T *)malloc(sizeof(MIT_T));
     if (p_return_mit == NULL) {
@@ -140,6 +141,8 @@ MIT_T ** query_mit(GIT_T *p_git)
       return NULL;
     }
     fread(*p_return_mit, sizeof(MIT_T), 1, fd_mit);
+    (**p_return_mit).docid += last;
+    last = (**p_return_mit).docid;
     p_return_mit++;
   }
 
