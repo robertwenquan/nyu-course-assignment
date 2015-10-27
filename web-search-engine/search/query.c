@@ -3,6 +3,8 @@
 #include "pagerank.h"
 #include "network.h"
 
+int web_mode = 0;
+
 /*
  * query a single word by word_id
  */
@@ -86,10 +88,13 @@ static void parse_arguments(int argc, char *argv[])
   // process getopt
   int option = 0;
 
-  while ((option = getopt(argc, argv,"vb:n:")) != -1) {
+  while ((option = getopt(argc, argv,"vwb:n:")) != -1) {
     switch (option) {
       case 'v' :
         verbose = 1;
+        break;
+      case 'w' :
+        web_mode = 1;
         break;
       case 'b' :
         bzero(BASE_DIR, 256);
@@ -286,7 +291,10 @@ int main(int argc, char *argv[])
   /* parse the query keywords */
   char **search_keywords = NULL;
 
-  //start_server();
+  /* enter web mode when -w is set */
+  if (web_mode == 1) {
+    start_server();
+  }
 
   /* read lines from STDIN and goes to loop */
   printf("Enter your query terms (Ctrl-C to exit): ");
