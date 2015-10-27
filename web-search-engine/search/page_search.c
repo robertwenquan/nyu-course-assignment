@@ -16,12 +16,17 @@ static void get_page_context(int docid, int offset_start, int offset_end, char *
 
   get_wet_filename_from_docid(docid, crawl_filename);
 
+  if (verbose) {
+    printf("open wet file %s at %d for %d bytes\n", crawl_filename, offset_start, offset_end);
+  }
+
   FILE *fp_crawl = fopen(crawl_filename, "r");
   fseek(fp_crawl, offset_start, SEEK_SET);
 
   int length = offset_end - offset_start + 1;
   int nread = fread(buf, length, 1, fp_crawl);
-  assert(nread == 1);
+
+  //assert(nread == 1);
 
   fclose(fp_crawl);
 }
@@ -44,9 +49,9 @@ void fetch_doc_list(DOC_LIST * head, int fd)
 
     printf("\n===== SEARCH RESULT %d =====\n", pagerank);
     if (verbose) {
-      printf("- %-8s: %9d\n", "doc url", get_doc_url(head->docid));
+      printf("- %-8s: %9s\n", "doc url", get_doc_url(head->docid));
       printf("- %-8s: %9d\n", "docid", head->docid);
-      printf("- %-8s: %9f\n", "score", head->score);
+      printf("- %-8s: %9.2f\n", "score", head->score);
       printf("- %-8s: %9d\n", "offset", *(head->offsets));
       printf("\n");
     }
