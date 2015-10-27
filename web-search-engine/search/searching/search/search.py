@@ -4,9 +4,12 @@ from BeautifulSoup import BeautifulSoup
 
 import json
 import socket
+import jinja2
 
-# Create your views here.
+
 def view(request):
+  """ the search engine query view """
+
   pagecontent = """
   <HTML>
     <HEAD>
@@ -37,8 +40,9 @@ def view(request):
   """
   return HttpResponse(pagecontent)
 
-def result(request):
-  query = request.GET.get('q', '')
+
+def get_response(query):
+  """ get server query response """
 
   clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
   clientsocket.setblocking(1)
@@ -49,9 +53,30 @@ def result(request):
   while not '"END OF RESULT"' in data.strip():
     data += clientsocket.recv(1024)
 
+  return data
+
+def result(request):
+  """ show the search result listing """
+
+  query = request.GET.get('q', '')
+
+  data = get_response(query)
+
+  templateLoader = jinja2.FileSystemLoader(searchpath="/")
+  templateEnv = jinja2.Environment(loader=templateLoader)
+
+  TEMPLATE_FILE = "/home/robert_wen/robert/nyu-course-assignment/web-search-engine/search/searching/search/template.jinja"
+  template = templateEnv.get_template(TEMPLATE_FILE)
+
+  templateVars = { "title" : "Search Results",
+                   "description" : "Search results for " + query,
+                   "items" : data
+                 }
+
+  #outputText = template.render(templateVars)
+
   soup = BeautifulSoup(data)
+  outputText = soup.prettify()
 
-  display_data = soup.prettify()
-
-  return HttpResponse(display_data)
+  return HttpResponse(outputText)
 
