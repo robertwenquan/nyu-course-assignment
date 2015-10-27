@@ -3,6 +3,8 @@
 static void sort_docs_list(DOC_LIST * doc_list, int lens);
 static void docs_deduplicate(DOC_LIST * doc_list, int lens);
 static void update_doc_offsets(DOC_LIST * docs_list,int count);
+static bool check_duplicate(DOC_LIST * doc_list, int i, int docid);
+static void remove_lowest_score(DOC_LIST * doc_list, int N);
 
 /* 
  * Given a list of words' MIT_T entries, return the union of docs that contain all of the word.
@@ -176,6 +178,7 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
    *  5. return DOC_LIST
    */
   DOCS * head = get_intersection(list_word_mit);
+  int top_N = 20;
   if (head == NULL) {
     head = get_union(list_word_mit);
   }
@@ -202,27 +205,68 @@ DOC_LIST * ranking_docs(MIT_T *** list_word_mit)
   }
   cur = head;
 
-  DOC_LIST * docs_list = (DOC_LIST * )calloc(count+1, sizeof(DOC_LIST));
-  docs_list[count].docid = -1;
+  DOC_LIST * docs_list = (DOC_LIST * )calloc(top_N + 2, sizeof(DOC_LIST));
+  docs_list[top_N+1].docid = -1;
 
+  // From 0 to count
   int i = 0;
+
+  // From 0 to top_N
+  int j = 0;
   int offsets_size = 0;
 
-  for(i =0; i < count; i++){
-    docs_list[i].docid = cur->docid;
+  for(i =0, j = 0; i < count; i++, j++){
+    if (check_duplicate(docs_list, i, cur->docid)) {
+      j--;
+      continue;
+    }
+    docs_list[j].docid = cur->docid;
     cur = cur->next;
-    cal_BM25(docs_list, i, list_word_mit, &offsets_size);
-    refill_offsets(docs_list, i, list_word_mit, offsets_size);
+    cal_BM25(docs_list, j, list_word_mit, &offsets_size);
+    refill_offsets(docs_list, j, list_word_mit, offsets_size);
+    if ( j == top_N ) {
+      remove_lowest_score(docs_list, top_N);
+      j--;
+    }
+
     offsets_size = 0;
   } 
 
+  count = j;
+
+  docs_list[count].docid = -1;
+
   sort_docs_list(docs_list, count);
-  docs_deduplicate(docs_list, count);
+
   update_doc_offsets(docs_list,count);
 
   return docs_list;
 }
 
+static bool check_duplicate(DOC_LIST * doc_list, int i, int docid)
+{
+  for (int j = 0; j < i; j++) {
+    if (doc_list[j].docid == docid) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
+static void remove_lowest_score(DOC_LIST * doc_list, int N)
+{
+  int i = 0;
+  for (i = 0; i < N; i++) {
+    if (doc_list[i].score < doc_list[N].score) {
+      break;
+    }
+  }
+
+  memcpy(&doc_list[i], &doc_list[N], sizeof(DOC_LIST));
+  doc_list[N].docid = -1;
+
+  return;
+}
 void refill_offsets(DOC_LIST * doc_list, int place, MIT_T *** list_word_mit, int size)
 {
   doc_list[place].offsets = (int *)calloc(size+1, sizeof(int));
