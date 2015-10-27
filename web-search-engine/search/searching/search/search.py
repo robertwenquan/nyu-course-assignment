@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from BeautifulSoup import BeautifulSoup
 
+import json
 import socket
 
 # Create your views here.
@@ -39,9 +41,21 @@ def result(request):
   query = request.GET.get('q', '')
 
   clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  clientsocket.setblocking(1)
   clientsocket.connect(('localhost', 1124))
   clientsocket.send(query)
-  data = clientsocket.recv(100000)
 
-  return HttpResponse(data)
+  data = clientsocket.recv(1024)
+  while not '"END OF RESULT"' in data.strip():
+    data += clientsocket.recv(1024)
+
+  #item = json.loads(data)
+
+  #xx = json.dumps(item, sort_keys=True, indent=2, separators=(',', ': '))
+
+  soup = BeautifulSoup(data)
+
+  display_data = soup.prettify()
+
+  return HttpResponse(display_data)
 
