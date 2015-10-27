@@ -1,4 +1,5 @@
 #include "network.h"
+#include "utils.h"
 
 #define MAXPENDING 5    /* Max connection requests */
 #define BUFFSIZE 32
@@ -12,17 +13,21 @@ static void HandleClient(int sock) {
   if ((received = recv(sock, buffer, BUFFSIZE, 0)) < 0) {
     Die("Failed to receive initial bytes from client");
   }
+
   /* Send bytes and check for more incoming data in loop */
   while (received > 0) {
+
     /* Send back received data */
     if (send(sock, buffer, received, 0) != received) {
       Die("Failed to send bytes to client");
     }
+
     /* Check for more data */
     if ((received = recv(sock, buffer, BUFFSIZE, 0)) < 0) {
       Die("Failed to receive additional bytes from client");
-              }
+    }
   }
+
   close(sock);
 }
 
