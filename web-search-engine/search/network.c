@@ -30,7 +30,7 @@ static void HandleClient(int sock) {
 
     if (search_keywords != NULL) {
       process_query(search_keywords, nwords, sock);
-      write(sock, "{\"type\":\"END OF RESULT\"}\n", 25);
+      write(sock, ", {\"type\":\"END OF RESULT\"}]\n", 28);
     }
 
     /* Check for more data */

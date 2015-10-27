@@ -39,6 +39,8 @@ void fetch_doc_list(DOC_LIST * head, int fd)
 
   int pagerank = 0;
 
+  write(fd, "[", 1);
+
   while(head != NULL) {
 
     if (head->docid == -1 ){
@@ -54,6 +56,10 @@ void fetch_doc_list(DOC_LIST * head, int fd)
       printf("- %-8s: %9.2f\n", "score", head->score);
       printf("- %-8s: %9d\n", "offset", *(head->offsets));
       printf("\n");
+    }
+
+    if (pagerank != 1) {
+      write(fd, ", \n", 3);
     }
 
     write(fd, "{\"id\":\"", 7);
@@ -80,7 +86,7 @@ void fetch_doc_list(DOC_LIST * head, int fd)
 
     write(fd, "\"context\":\"", 11);
     write(fd, page_context_buf, head->offset_end-head->offset_start+1);
-    write(fd, "\"}\n", 3);
+    write(fd, "\"}", 2);
 
     head++;
   }
