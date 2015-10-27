@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def view(request):
-  return HttpResponse('View results here.')
+  return HttpResponse('Hello Web Search Engine, search now.')
 
