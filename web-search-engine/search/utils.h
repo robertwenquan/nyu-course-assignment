@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
+
 
 
 // For logging
@@ -132,6 +135,7 @@ int get_avg_doc_length();
 char * get_basedir();
 
 void load_config();
+unsigned int get_ndocs();
 
 #endif
 

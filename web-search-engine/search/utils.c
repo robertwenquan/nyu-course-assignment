@@ -73,6 +73,27 @@ void load_config()
 }
 
 /*
+ * get total number of docs for this index
+ * sizeof(url_table.idx)/sizeof(URL_IDX_T)
+ */
+unsigned int get_ndocs()
+{
+  char filename_fd_url_idx[256] = {'\0'};
+  bzero(filename_fd_url_idx, 256);
+  snprintf(filename_fd_url_idx, 256, "%s/output/url_table.idx", get_basedir());
+  int fd_url_idx = open(filename_fd_url_idx, O_RDONLY);
+  assert(fd_url_idx != -1);
+
+  struct stat st1;
+  fstat(fd_url_idx, &st1);
+
+  close(fd_url_idx);
+
+  unsigned ndocs = st1.st_size/sizeof(URL_IDX_T);
+  return ndocs;
+}
+
+/*
  * load index statistics from the stats file
  * the stats file is stored under
  * ${base_dir}/output/index.stats
@@ -88,7 +109,7 @@ static void load_index_stats()
     printf("loading index stats file: %s\n", stats_filename);
   }
 
-  stats_ndocs = 102128;
+  stats_ndocs = get_ndocs();
   stats_avg_doc_lens = 2000;
 }
 
