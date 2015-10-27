@@ -96,7 +96,7 @@ URL_IDX_T * get_doc_meta(unsigned int docid)
   assert(p_url_idx_mmap != NULL);
 
   URL_IDX_T doc_key = {.docid = docid};
-  int ndocs = 30;
+  int ndocs = 102128;
 
   if (verbose == 1) {
     printf("search for docid: %u, %d\n", doc_key.docid, sizeof(URL_IDX_T));
