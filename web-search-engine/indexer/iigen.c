@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
   int verbose = 0;
 
   char c = '0';
-  while ((c = getopt(argc, argv, "1234vb:")) != -1)
+  while ((c = getopt(argc, argv, "1234vb:n:")) != -1)
   {
     switch (c) {
       case '1':
@@ -48,10 +48,27 @@ int main(int argc, char *argv[])
       case 'v':
         verbose = 1;
         break;
+      case 'b':
+        bzero(BASE_DIR, 256);
+        strncpy(BASE_DIR, optarg, 255);
+        printf("%s\n", BASE_DIR);
+        break;
+      case 'n':
+        bucket_size = atoi(optarg);
+        break;
       default:
         printf("invalid argument. please check help...\n");
         exit(1);
     }
+  }
+
+  if (*BASE_DIR == '\0') {
+    bzero(BASE_DIR, 256);
+    strncpy(BASE_DIR, "test_data/", 255);
+  }
+
+  if (bucket_size == 0) {
+    bucket_size = 10;
   }
 
   switch(phase){

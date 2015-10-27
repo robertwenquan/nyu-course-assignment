@@ -20,5 +20,7 @@ typedef struct __attribute__((__packed__)) {
   unsigned short context;
 } LEXICON_T;
 
+extern int bucket_size;
+
 #endif
 
