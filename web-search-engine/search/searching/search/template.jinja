@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+</head>
+
+<body>
+
+  {% for item in items %}
+    <div id="content">
+    <ul>
+      <li>{{ item }}</li>
+    </ul>
+    </div>
+  {% endfor %}
+
+</body>
+</html>
