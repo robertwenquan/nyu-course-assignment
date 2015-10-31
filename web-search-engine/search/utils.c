@@ -16,8 +16,8 @@
 
 
 int verbose = 0;
-char BASE_DIR[256] = "/data/wse/100k/";
-int ndocs_per_lexicon_bucket = 20000;
+char BASE_DIR[256] = "test_data/tiny30/";
+int ndocs_per_lexicon_bucket = 10;
 int stats_ndocs = 0;
 int stats_avg_doc_lens = 0;
 
