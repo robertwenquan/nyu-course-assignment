@@ -25,9 +25,10 @@ class DeduplicatePipeline(object):
         return item
 
     def close_spider(self,spider):
-        print self.url_seen
         for url in self.url_seen:
-          self.file.write("--data-urlencode" + " \"url=" + url+"\"")
+          line = "\'" + url+ "\' "
+          self.file.write(line)
+        self.file.close()
 
 class JsonWriterPipeline(object):
     def __init__(self):
@@ -37,3 +38,6 @@ class JsonWriterPipeline(object):
         line = json.dumps(dict(item)) + "\n"
         self.file.write(line)
         return item 
+
+    def close_spider(self,spider):
+        self.file.close()
