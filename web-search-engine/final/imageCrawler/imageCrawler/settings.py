@@ -15,6 +15,11 @@ SPIDER_MODULES = ['imageCrawler.spiders']
 NEWSPIDER_MODULE = 'imageCrawler.spiders'
 
 
+ITEM_PIPELINES = {
+    'imageCrawler.pipelines.DeduplicatePipeline' : 300,
+    'imageCrawler.pipelines.JsonWriterPipeline' : 800,
+}
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'imageCrawler (+http://www.yourdomain.com)'
 
