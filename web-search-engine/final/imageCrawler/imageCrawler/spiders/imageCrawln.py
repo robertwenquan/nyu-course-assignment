@@ -9,6 +9,7 @@ import imageCrawler.settings
 from imageCrawler.items import ImageItem
 
 class imageCrawlerSpider(scrapy.Spider):
+
   name = "imageCrawler"
   allowed_domains = ["google.com"]
   start_urls = (
@@ -22,3 +23,4 @@ class imageCrawlerSpider(scrapy.Spider):
     for url in url_list:
       item = ImageItem()
       item['image_url'] = url
+      yield item
