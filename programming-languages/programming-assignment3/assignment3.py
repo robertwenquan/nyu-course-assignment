@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import sys
 import string
 
 
@@ -62,8 +63,10 @@ def lower_bound(n):
   return F(i)
 
 
-f_in  = open('/proc/self/fd/0', 'r')
-f_out = open('/proc/self/fd/1', 'w')
+#f_in  = open(sys.stdin, 'r')
+f_in  = sys.stdin
+#f_out  = open(sys.stdout, 'w')
+f_out  = sys.stdout
 
 
 # TODO: handle EOF
