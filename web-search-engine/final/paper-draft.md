@@ -1,7 +1,8 @@
 # Self-learning target image crawler
 
-NYU Tandon School of Engineering, Department of Computer Science
-Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>
+Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>, Torsten
+Department of Computer Science, NYU Tandon School of Engineering
+2 Metrotech, Brooklyn, NY 11201, USA
 
 ### Abstract
 
@@ -18,6 +19,10 @@ We explore how to use deep-leaning and iterative trained model to increase the a
 The technology applies to both online image mining and offline image mining. But in this paper we only focus on the offline data processing as it is more clear to illustrate the whole process with steps. 
 
 ### 1. Introduction
+
+According to xxxx, there are xxx pictures taken in a day.
+
+Among all the possible means to mine the images on the web, 
 
 ### 2. System Components
 
@@ -83,7 +88,7 @@ Then the samples after each filter step could be also inspected in the similar m
 
 ### References
 
- * xxxx
+ * nn pictures taken per day
  * xxxx
  * xxxx
  * mscoco dataset reference
