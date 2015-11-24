@@ -30,6 +30,8 @@ There are a few existing means to clean the images, xx, xx, xx. We have applied 
 
 Then we extend with the tradidtional approaches to the deep learning and use pre-trained and post-trained models to refine the mined image data in multiple steps.
 
+We can see from the deep learning pre-trained model by Clarifai, the accuracy of the crawled 
+
 ### 2. Challenges in the image crawl
 
 We selected 25 common object and crawl them from various sources for images. Then human inspection is applied in order to measure the accuracy of the crawled data.
@@ -56,7 +58,7 @@ The google image search is performing almost perfect with the 100 cut, which is 
 
 However when we look into the 1000 cut, the accuracy from the google image crawl drops to some extent while the social media and other sources maintains. ????? maybe.
 
-### 2. System Components
+### 3. Our approach
 
 #### 2.1 The seed crawl
 
@@ -72,13 +74,15 @@ We also tried to extend the seed crawl outside of google image search to add mor
 
 For this approach, we do nothing but leave all the samples from the seed crawl. Those samples will be used for the model training.
 
-##### 2.2.2 Filter by tag
+##### 2.2.2 Filter by concept
 
-With the tagging serivce by Clarifai API, a bunch of tags will be predicted for each image sample. Instead of doing a hard tag matching, we use the wordnet data to map the search term into knowledge graph and logically compare the predicted concepts against the search concepts. If there is any obvious logical contradition, we will treat the crawled sample as negative and evict it from the sample pool. 
+With the tagging serivce by Clarifai API, a bunch of labels will be predicted for each image sample. Instead of doing a hard tag matching, we use the wordnet data to map the search term into knowledge graph and logically compare the predicted concepts against the search concepts. If there is any obvious logical contradition, we will treat the crawled sample as negative and evict it from the sample pool. For example we are crawling images for 'cat', if the labels returned from the API is ['cat', 'cute', 'animal'], it is very likely it is a cat image. But what if the predicted labels are only ['animal', 'fur', 'cute'] without 'cat'. From the concept level we know cat is animal so it is also likely it is a cat image. Likewise if the predicted labels are ['politics', 'one', 'business', 'office', 'decoration'], conceptually it is very unlikely the image is about cat. We have implemented a function call IS_CONCEPT_TRUE(predicted_labels, crawl_name, level='strict|loose'). With level='strict', only word match is applied, while by default with the level='loose' it will work with the concept map to determine whether the predicted labels cover the crawled concept or not. 
 
 The evict ratio and survival rate will be measured for this filtering strategy.
 
 ##### 2.2.3 Filter by clustering
+
+For some term which is ambiguous, like 'crane', it might be a machine crane or bird crane. When people search for it they may not realize the ambiguity.
 
 In addition to the predicted labels, feature embedding is also returned from Clarifai API. This is a high dimensional array for each image. With the KNN clustering, we could probably get a few clusters of images. We will leave the cluster with the top frequencies and throw all the others away.
 
@@ -128,4 +132,5 @@ Volunteers for inspecting the accuracy of the crawled data.
  * existing research on cleaning the images
  * mine meta data for the images on the web
  * mscoco dataset reference
+ * wordnet
 
