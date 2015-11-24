@@ -27,3 +27,11 @@ With the list of common object, like ['cup', 'cat', 'dog', 'meat'], we will craw
  
 Then we will measure the accuracy of each crawl for each object.
 
+#### Deliverable
+
+A list of words: 
+-----
+cat
+dog
+...
+-----
