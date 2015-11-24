@@ -7,7 +7,15 @@ Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>
 
 In the web search engine, it is built upon inverted index with text. (Write something about the text search engine and find some reference about it)
 
-Image search (image.google.com) is also built upon inverted index with image meta data. But the image meta data is not readility available. There are various known approaches to get meta data for the images(???? need some research). But all of them need human intervention classification. For payed labeled data the accuracy is usually good enough. But for community and social media generated data, which are the major contribution of the data in the world. (??? data how many images generated per year?) The noise is very high and searching. Finding larget amount of pictures with a topic is actually a big challenge. If you search through google image, you will see a hundred of pictures with pretty good relevance and quality. But if you keep scrolling down a little bit you will even see a bunch of outliers. If we go out to social media website like Flickr, Twitter, Tumblr, etc. 
+Image search (image.google.com) is also built upon inverted index with image meta data. (Reference about building image search engine). But the image meta data is not always readility available. There are various known approaches to get meta data for the images(???? need some research). But all of them need human intervened classification. For payed labeled data the accuracy is usually good enough. But for community and social media generated data, which are the major contribution of the data in the world. (??? data how many images generated per year?) The noise is very high in searching. Finding larget amount of pictures with a topic is actually a big challenge. If you search through google image, you will see a hundred of pictures with pretty good relevance and quality. But if you keep scrolling down a little bit you will even see a bunch of outliers. If we go out to social media website like Flickr, Twitter, Tumblr, etc. 
+
+In this paper, we explore the traditional web crawling approaches, measure the accuracy of various methods.
+
+Recent years, deep learning is heavily used in image classification. So we 
+
+We explore how to use deep-leaning and iterative trained model to increase the accuracy of the image mining on the web.
+
+The technology applies to both online image mining and offline image mining. But in this paper we only focus on the offline data processing as it is more clear to illustrate the whole process with steps. 
 
 ### 1. Introduction
 
@@ -60,6 +68,16 @@ Although we only target the accuracy rather than throughput or latency which usu
 For the test data, we leveraged the open data contributed by Microsoft COCO dataset. How to use it?
 
 ### Conclusion
+
+From the above research, we can see mining the texted based web pages for pictures is definitely not an effective way for images. Image websites have varied policies against crawling. Some big sites are friendly to crawling because they know it is impossible to ban. Some are strictcly agasint crawling and play tricks with crawlers. Despite of the difficulties in crawling, the accuracy in image meta data also varies according to a limited number of searches with common objects. With the deep neuro-net based image classification applied, we can see the accuracy in image mining from various sources could be improved up to a similar level. Then with iterative trained models, the accuracy has been able to brought up again to a higher level.
+
+### Demo
+
+We host a demo website for this paper. On the demo, all the data for the 25 chosen objects will be be able to view with picture samples from the initial crawl to the final filtering. For each view, a random selection of 100 images will be selected and displayed. There should be an obvious view that the accuracy of the images has been greatly improved.
+
+Also there is a way(possibly) to launch a focused crawl for a specified term, like 'cat' could be launched. Then the progress of the crawl could be monitored and checked.
+Upon finish of the crawl, a random sample of the crawled images will be displayed for visual inspection purpose. There should be a genreal view of the accuracy by visually looking into the samples.
+Then the samples after each filter step could be also inspected in the similar manner.
 
 ### Acknowledgements
 
