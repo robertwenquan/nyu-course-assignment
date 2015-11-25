@@ -131,6 +131,6 @@ Volunteers for inspecting the accuracy of the crawled data.
  * nn pictures taken per day
  * existing research on cleaning the images
  * mine meta data for the images on the web
- * mscoco dataset reference
- * wordnet
+ * Microsoft Common Object in Context <http://mscoco.org/dataset/>
+ * Princeton University "About WordNet." WordNet. Princeton University. 2010. <http://wordnet.princeton.edu>
 
