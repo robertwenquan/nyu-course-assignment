@@ -90,7 +90,7 @@ $ jq .annotations[].category_id annotations/instances_train2014.json | sort | un
 
 Then with manual filtering, we get the below list of 25 object names for research: 
 
-["car", "chair", "bottle", "umbrella", "boat", "bird", "truck", "banana", "kite", "motorcycle", "cow", "carrot", "knife", "bed", "hot dog", "keyboard", "refrigerator", "frisbee", "toothbrush", "fire hydrant", "scissors", "bear", "hair drier"]
+["car", "chair", "bottle", "umbrella", "boat", "bird", "truck", "bench", "sheep", "banana", "kite", "motorcycle", "cow", "carrot", "knife", "bed", "hot dog", "keyboard", "refrigerator", "frisbee", "toothbrush", "fire hydrant", "scissors", "bear", "hair drier"]
 
 ```
 
@@ -98,7 +98,30 @@ Then with manual filtering, we get the below list of 25 object names for researc
 
 A list of words: 
 -----
-cat
-dog
-...
+car
+chair
+bottle
+umbrella
+boat
+bird
+truck
+bench
+sheep
+banana
+kite
+motorcycle
+cow
+carrot
+knife
+bed
+hot dog
+keyboard
+refrigerator
+frisbee
+toothbrush
+fire hydrant
+scissors
+bear
+hair drier
 -----
+
