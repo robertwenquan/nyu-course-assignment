@@ -6,6 +6,12 @@ Department of Computer Science, NYU Tandon School of Engineering
 
 ### Abstract
 
+The objective of this research is to harvest a large amount of images for a specified category. Web crawling, text mining, convolutional neural-network based feature extraction and image classification are employed in order to get a satisfying accuracy of the crawled samples. First the image candidates are fetched with a seed crawl from major image search engine. Then a set of data cleansing tasks are employed against this seed dataset. After the data cleansing, a concept model will be trained with the seed data. Then an extended crawl will be kicked off with much more images 
+
+Keywords: Image Retrieval, Image Mining, Deep Learning, Computer Vision
+
+### 1. Introduction
+
 In the web search engine, it is built upon inverted index with text. (Write something about the text search engine and find some reference about it)
 
 Image search (image.google.com) is also built upon inverted index with image meta data. (Reference about building image search engine). But the image meta data is not always readility available. There are various known approaches to get meta data for the images(???? need some research). But all of them need human intervened classification. For payed labeled data the accuracy is usually good enough. But for community and social media generated data, which are the major contribution of the data in the world. (??? data how many images generated per year?) The noise is very high in searching. Finding larget amount of pictures with a topic is actually a big challenge. If you search through google image, you will see a hundred of pictures with pretty good relevance and quality. But if you keep scrolling down a little bit you will even see a bunch of outliers. If we go out to social media website like Flickr, Twitter, Tumblr, etc. 
@@ -18,8 +24,6 @@ We explore how to use deep-leaning and iterative trained model to increase the a
 
 The technology applies to both online image mining and offline image mining. But in this paper we only focus on the offline data processing as it is more clear to illustrate the whole process with steps. 
 
-### 1. Introduction
-
 According to xxxx, there are xxx pictures taken in a day.
 
 Problems on the Google Image Search, in the tail part of the search results the accuracy is low. Similar problems happen on any enterprise who works on images or anyone who needs a lot of images on a topic.
@@ -31,6 +35,16 @@ There are a few existing means to clean the images, xx, xx, xx. We have applied 
 Then we extend with the tradidtional approaches to the deep learning and use pre-trained and post-trained models to refine the mined image data in multiple steps.
 
 We can see from the deep learning pre-trained model by Clarifai, the accuracy of the crawled 
+
+In the earlier research against the image mining, color, shape, texture, etc are extracted for feature extractions.
+
+### Related Work
+
+Our work extend from [??]. For the feature extraction part, we use higher dimensional features extracted from Clarifai API, which has better abstraction over merely the color, texture, etc. We use more steps of filtering for the cleansing of the training data. Then we do not end with this trained model but start from this with additional samples and train more iterations based on the accumulative samples.
+
+### System Architecture
+
+### Proposed Solution
 
 ### 2. Challenges in the image crawl
 
@@ -84,13 +98,22 @@ The evict ratio and survival rate will be measured for this filtering strategy.
 
 For some term which is ambiguous, like 'crane', it might be a machine crane or bird crane. When people search for it they may not realize the ambiguity.
 
-In addition to the predicted labels, feature embedding is also returned from Clarifai API. This is a high dimensional array for each image. With the KNN clustering, we could probably get a few clusters of images. We will leave the cluster with the top frequencies and throw all the others away.
+In addition to the predicted labels, feature embedding is also returned from Clarifai API. This is a high dimensional array for each image. With the KNN unsupervised learning for clustering, we could probably get a few clusters of images. We will leave the cluster with the top frequencies and throw all the others away.
+
+Here goes an example of clustered images. 
+
+An example of cluster of images of one category.
+
+Another example of two clusters of images of 'crane'
+
+http://scikit-learn.org/stable/modules/neighbors.html
 
 The evict ratio and survival rate will be measured for this filtering strategy.
 
 ##### 2.2.4 Extend the seed crawl
 
-If it happens to have too few samples after the filter.
+If it happens to have too few samples after the filter. Impirically we set the threshold to 100. If we can get enough samples from the above steps we will terminate the seed crawl.
+Otherwise, the seed crawl will be extended to bing image search and then yahoo image search.
 
 #### 2.3 Training on the seed samples
 
@@ -133,4 +156,5 @@ Volunteers for inspecting the accuracy of the crawled data.
  * mine meta data for the images on the web
  * Microsoft Common Object in Context <http://mscoco.org/dataset/>
  * Princeton University "About WordNet." WordNet. Princeton University. 2010. <http://wordnet.princeton.edu>
+ * Junghoo Cho, Stanford University, Crawling for Images on the WWW
 
