@@ -130,7 +130,7 @@ MIT_T ** query_mit(GIT_T *p_git)
   }
 
   fseek(fd_mit, p_git->offset, SEEK_SET);
-
+printf("FILENAME OF %d is %s\n\n", p_git->word_id, filename);
   int i = 0;
   int last = 0;
   for (i = 0; i < p_git->n_docs ; i++) {
