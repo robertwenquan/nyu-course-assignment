@@ -12,7 +12,7 @@ import imageCrawler.settings
 from imageCrawler.items import ImageItem
 
 class imageCrawlerSpider(scrapy.Spider):
-  name = "imageCrawler"
+  name = "google_text"
 
   def __init__(self, keywords=None, *args, **kwargs):
     super(imageCrawlerSpider, self).__init__(*args, **kwargs)
