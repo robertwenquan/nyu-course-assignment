@@ -20,6 +20,12 @@ ITEM_PIPELINES = {
     'imageCrawler.pipelines.JsonWriterPipeline' : 800,
 }
 
+DOWNLOAD_HANDLERS = {
+  'phantomjs': 'imageCrawler.downloaders.PhantomJsDownloadHandler',
+}
+
+PHANTOMJS_BIN = '/usr/local/bin/phantomjs'
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'imageCrawler (+http://www.yourdomain.com)'
 
