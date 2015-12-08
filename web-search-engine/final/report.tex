@@ -1,32 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% LaTeX Example: Project Report
-%
-% Source: http://www.howtotex.com
-%
-% Feel free to distribute this example, but please keep the referral
-% to howtotex.com
-% Date: March 2011 
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% How to use writeLaTeX: 
-%
-% You edit the source code here on the left, and the preview on the
-% right shows you the result within a few seconds.
-%
-% Bookmark this page and share the URL with your co-authors. They can
-% edit at the same time!
-%
-% You can upload figures, bibliographies, custom classes and
-% styles using the files menu.
-%
-% If you're new to LaTeX, the wikibook is a great place to start:
-% http://en.wikibooks.org/wiki/LaTeX
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Edit the title below to update the display in My Documents
-%\title{Project Report}
-%
-%%% Preamble
 \documentclass[paper=a4, fontsize=11pt]{scrartcl}
 \usepackage[T1]{fontenc}
 \usepackage{fourier}
@@ -41,6 +12,9 @@
 %%% Custom sectioning
 \usepackage{sectsty}
 \allsectionsfont{\centering \normalfont\scshape}
+
+%Double column
+\usepackage{multicol} 
 
 
 %%% Custom headers/footers (fancyhdr package)
@@ -70,7 +44,7 @@
 		\normalfont \normalsize \textsc{Department of Computer Science, NYU Tandon School of Engineering} \\ [25pt]
 		\horrule{0.5pt} \\[0.4cm]
 		\huge Self-learning target image crawler \\
-		\horrule{2pt} \\[0.5cm]
+		\horrule{0.5pt} \\[0.5cm]
 }
 \author{
 		\normalfont 								\normalsize
@@ -85,39 +59,44 @@
 %%% Begin document
 \begin{document}
 \maketitle
+
+%\setlength{\parskip}{1em}
+\setlength{\textwidth}{17.06cm}
+\setlength{\columnsep}{0.75cm}
+\begin{multicols}{2}
+
+
 \section{Abstract}
-The objective of this research is to harvest a large amount of images for a specified category. Web crawling, text mining, convolutional neural-network based feature extraction and image classification are employed in order to get a satisfying accuracy of the crawled samples. First the image candidates are fetched with a seed crawl from major image search engine. Then a set of data cleansing tasks are employed against this seed dataset. After the data cleansing, a concept model will be trained with the seed data. Then an extended crawl will be kicked off with much more images.\\
+The objective of this research is to harvest a large amount of images for a specified category. Web crawling, text mining, convolutional neural-network based feature extraction and image classification are employed in order to get a satisfying accuracy of the crawled samples. First the image candidates are fetched with a seed crawl from major image search engine. Then a set of data cleansing tasks are employed against this seed dataset. After the data cleansing, a concept model will be trained with the seed data. Then an extended crawl will be kicked off with much more images.
 
-\noindent Keywords: Image Retrieval, Image Mining, Deep Learning, Computer Vision
-
-\newpage
+\noindent \textbf{Keywords: Image Retrieval, Image Mining, Deep Learning, Computer Vision}
 
 
 \section{Introduction}
 
-In the web search engine, it is built upon inverted index with text. (Write something about the text search engine and find some reference about it)\\
+In the web search engine, it is built upon inverted index with text. (Write something about the text search engine and find some reference about it)
 
-\noindent Image search (image.google.com) is also built upon inverted index with image meta data. (Reference about building image search engine). But the image meta data is not always readility available. There are various known approaches to get meta data for the images(???? need some research). But all of them need human intervened classification. For payed labeled data the accuracy is usually good enough. But for community and social media generated data, which are the major contribution of the data in the world. (??? data how many images generated per year?) The noise is very high in searching. Finding larget amount of pictures with a topic is actually a big challenge. If you search through google image, you will see a hundred of pictures with pretty good relevance and quality. But if you keep scrolling down a little bit you will even see a bunch of outliers. If we go out to social media website like Flickr, Twitter, Tumblr, etc. \\
+\noindent Image search (image.google.com) is also built upon inverted index with image meta data. (Reference about building image search engine). But the image meta data is not always readility available. There are various known approaches to get meta data for the images(???? need some research). But all of them need human intervened classification. For payed labeled data the accuracy is usually good enough. But for community and social media generated data, which are the major contribution of the data in the world. (??? data how many images generated per year?) The noise is very high in searching. Finding larget amount of pictures with a topic is actually a big challenge. If you search through google image, you will see a hundred of pictures with pretty good relevance and quality. But if you keep scrolling down a little bit you will even see a bunch of outliers. If we go out to social media website like Flickr, Twitter, Tumblr, etc. 
 
-\noindent In this paper, we explore the traditional web crawling approaches, measure the accuracy of various methods.\\
+\noindent In this paper, we explore the traditional web crawling approaches, measure the accuracy of various methods.
 
-\noindent Recent years, deep learning is heavily used in image classification. So we \\
+\noindent Recent years, deep learning is heavily used in image classification. So we 
 
-\noindent We explore how to use deep-leaning and iterative trained model to increase the accuracy of the image mining on the web.\\
+\noindent We explore how to use deep-leaning and iterative trained model to increase the accuracy of the image mining on the web.
 
-\noindent The technology applies to both online image mining and offline image mining. But in this paper we only focus on the offline data processing as it is more clear to illustrate the whole process with steps. \\
+\noindent The technology applies to both online image mining and offline image mining. But in this paper we only focus on the offline data processing as it is more clear to illustrate the whole process with steps. 
 
-\noindent According to xxxx, there are xxx pictures taken in a day.\\
+\noindent According to xxxx, there are xxx pictures taken in a day.
 
-\noindent Problems on the Google Image Search, in the tail part of the search results the accuracy is low. Similar problems happen on any enterprise who works on images or anyone who needs a lot of images on a topic.\\
+\noindent Problems on the Google Image Search, in the tail part of the search results the accuracy is low. Similar problems happen on any enterprise who works on images or anyone who needs a lot of images on a topic.
 
-\noindent Also according to ??? research, the images updated on Google Image Search is not reflecting the images emerging on the web. This is why we need to mine the web ourselves in order to get a large amount of images, either to build our own image database, or collecting image data for other purposes like machine model trainings, etc.\\
+\noindent Also according to ??? research, the images updated on Google Image Search is not reflecting the images emerging on the web. This is why we need to mine the web ourselves in order to get a large amount of images, either to build our own image database, or collecting image data for other purposes like machine model trainings, etc.
 
-\noindent There are a few existing means to clean the images, xx, xx, xx. We have applied all of them and get a rough idea of the improvement of each.\\
+\noindent There are a few existing means to clean the images, xx, xx, xx. We have applied all of them and get a rough idea of the improvement of each.
 
-\noindent Then we extend with the tradidtional approaches to the deep learning and use pre-trained and post-trained models to refine the mined image data in multiple steps.\\
+\noindent Then we extend with the tradidtional approaches to the deep learning and use pre-trained and post-trained models to refine the mined image data in multiple steps.
 
-\noindent We can see from the deep learning pre-trained model by Clarifai, the accuracy of the crawled \\
+\noindent We can see from the deep learning pre-trained model by Clarifai, the accuracy of the crawled 
 
 \noindent In the earlier research against the image mining, color, shape, texture, etc are extracted for feature extractions.
 
@@ -134,9 +113,9 @@ In the web search engine, it is built upon inverted index with text. (Write some
 
 \section{Challenges in the image crawl}
 
-We selected 25 common object and crawl them from various sources for images. Then human inspection is applied in order to measure the accuracy of the crawled data.\\
+We selected 25 common object and crawl them from various sources for images. Then human inspection is applied in order to measure the accuracy of the crawled data.
 
-\noindent There are many ways to mine the images on the web. Traditionally and naively we can crawl the whole web(???) and get all the images on the web. There are plenty of known methods to extract image meta data from this approach(???). We have applied ?? and ?? maybe ?? and measure the accuracy for it. There are readily available image search engine which should have applied far more advanced techniques to refine the crawled image data so we also measure this approach. Stock photo websites are also a good source to get a topic of images. Last but not least, the social media could not be ignored because this becomes the major source of images genreated on the web every minute.\\
+\noindent There are many ways to mine the images on the web. Traditionally and naively we can crawl the whole web(???) and get all the images on the web. There are plenty of known methods to extract image meta data from this approach(???). We have applied ?? and ?? maybe ?? and measure the accuracy for it. There are readily available image search engine which should have applied far more advanced techniques to refine the crawled image data so we also measure this approach. Stock photo websites are also a good source to get a topic of images. Last but not least, the social media could not be ignored because this becomes the major source of images genreated on the web every minute.
 
 \noindent Number of total samples are collected from each crawl sources so we know what magnitude of images we can collect from various sources. We only crawl and save the top 100/1000 images while we still fetch the number of available images for possible further fetches.
 
@@ -146,15 +125,15 @@ A list of 50 words is selected for this research from the MSCOCO (Microsoft Comm
 
 \subsection{crawl and measure accuracy}
 
-Naive web crawl, image search engine crawl, stock photo site crawl, and social media crawl have been applied to the list of words. Google and Bing are selected for both naive web crawl and image crawl. Shutterstock and xxx are selected for stock photo site crawl. And flickr and tumblr are selected for the social media crawl. For each crawl, we cut off the crawl with the top 100 candidate images. Human intervention is applied afterwards. As there are not too many images to check, we use human to check the accuracy for each category from each crawl source. For example, if 80 out of the images crawled from Google Image is with the same concept of the crawl term, the accuracy is 80\%.\\
+Naive web crawl, image search engine crawl, stock photo site crawl, and social media crawl have been applied to the list of words. Google and Bing are selected for both naive web crawl and image crawl. Shutterstock and xxx are selected for stock photo site crawl. And flickr and tumblr are selected for the social media crawl. For each crawl, we cut off the crawl with the top 100 candidate images. Human intervention is applied afterwards. As there are not too many images to check, we use human to check the accuracy for each category from each crawl source. For example, if 80 out of the images crawled from Google Image is with the same concept of the crawl term, the accuracy is 80\%.
 
 \noindent The same approach is conducted on each term and each source, but with 1000 images cut. This is to get a general idea of the scalability of the accuracy with larger number of samples collected from those sources.
 
 \subsection{observation}
 
-Obviously naive web crawl is not a good approach to follow for mining the images on the web because there are too many irrelevant images. Even with xx, xx and xx applied the accuracy is still way lower than the other sources. This does make sense because the other image focused search engine puts a lot of efforts to build the index of their images. But at the same time, we also observe the accuracy of the images from various sources are not as high as we expect in many cases.\\
+Obviously naive web crawl is not a good approach to follow for mining the images on the web because there are too many irrelevant images. Even with xx, xx and xx applied the accuracy is still way lower than the other sources. This does make sense because the other image focused search engine puts a lot of efforts to build the index of their images. But at the same time, we also observe the accuracy of the images from various sources are not as high as we expect in many cases.
 
-\noindent The google image search is performing almost perfect with the 100 cut, which is under expectation. The other sources are not so well especially from the social media.\\
+\noindent The google image search is performing almost perfect with the 100 cut, which is under expectation. The other sources are not so well especially from the social media.
 
 \noindent However when we look into the 1000 cut, the accuracy from the google image crawl drops to some extent while the social media and other sources maintains. ????? maybe.
 
@@ -229,6 +208,7 @@ Professor for the technical review
 Clarifai for providing unlimited free API access for the research.
 Volunteers for inspecting the accuracy of the crawled data.
 
+\end{multicols}
 \section{References}
 
 
