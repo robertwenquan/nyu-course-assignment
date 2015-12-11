@@ -20,11 +20,9 @@ class PhantomJsProcessProtocol(protocol.ProcessProtocol):
   def processEnded(self, status):
     """Create a Response object based on the output, and callback the deferred with it."""
     self.exitcode = status.value.exitCode
-    # TODO(madadam): handle failures.
     response_body = self.out
     response = Response(url=self.request.url, body=self.out)
     self.deferred.callback(response)
-
 
 # Note that this is a DownloadHandler, not a DownloadMiddleware.  Middleware's process_request
 # cannot return a Deferred, so it can't do asynchronous downloading.  The phantomjs process can
@@ -47,7 +45,9 @@ class PhantomJsDownloadHandler(object):
 
     protocol = PhantomJsProcessProtocol(request)
     args = [self.phantomjs_path, script, query, str(num)]
+    print args
 
     #pylint: disable=no-member
     transport = reactor.spawnProcess(protocol, self.phantomjs_path, args=args)
     return protocol.deferred
+
