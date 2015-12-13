@@ -10,6 +10,7 @@ import sys
 import json
 import logging
 from clarifai.client import ClarifaiApi
+from utils import Worker
 
 class imageTag(object):
 
@@ -44,8 +45,12 @@ class imageTag(object):
   def tag_images(self):
     """ get the labels and features of the images """
 
+    worker = Worker(50)
+
     for image in self.images:
-      self.tag_image(image)
+      worker.add_task(self.tag_image, image)
+
+    worker.join()
 
   def tag_image(self, image):
     """ tag and embed one image """
@@ -61,8 +66,9 @@ class imageTag(object):
       image['probs'] = result['results'][0]['result']['tag']['probs']
       image['embeds'] = result['results'][0]['result']['embed']
     except:
-      logger.error('failed to tag image %s' % imageurl)
+      logging.error('FAILED %s' % imageurl)
 
+    print 'FINSHED %s' % imageurl
     self.fio_w.write(json.dumps(image) + '\n')
 
   def run(self):
