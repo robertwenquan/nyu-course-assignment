@@ -1,14 +1,14 @@
 # Self-learning target image crawler
 
-Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>, Torsten
+Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>
 Department of Computer Science, NYU Tandon School of Engineering
 2 Metrotech, Brooklyn, NY 11201, USA
 
 ### Abstract
 
-The objective of this research is to harvest a large amount of images for a specified category. Web crawling, text mining, convolutional neural-network based feature extraction and image classification are employed in order to get a satisfying accuracy of the crawled samples. First the image candidates are fetched with a seed crawl from major image search engine. Then a set of data cleansing tasks are employed against this seed dataset. After the data cleansing, a concept model will be trained with the seed data. Then an extended crawl will be kicked off with much more images 
+The objective of this empirical research is to harvest a large amount of images for a specified category with good accuracy. Web crawling, text mining, deep convolutional neural-network based feature extraction and image classification are employed in order to get a large amount of image samples while maintaining the satisfaction on accuracy of the crawled samples. First the image candidates are fetched with a seed crawl from the major image search engine. Then a set of data cleansing tasks are employed against this seed dataset. After the data cleansing, a concept model will be trained with the seed data. Afterwards an extended crawl will be kicked off from multiple sources, especially from social media sources. When the multiple level of thresholds are reached, we retrained the model based on the collected samples and iterate until we get a satisfying number of samples. In order to measure the performance, we have also explored several known techniques to mine the images on the web, and compare the accuracy among various techniques.
 
-Keywords: Image Retrieval, Image Mining, Deep Learning, Computer Vision
+Keywords: Image Retrieval, Image Crawling, Web Crawling, Deep Learning, Computer Vision, Custom Training
 
 ### 1. Introduction
 
