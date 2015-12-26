@@ -1,18 +1,20 @@
 # Self-learning target image crawler
 
-Robert Wen <robert.wen@nyu.edu>, Caicai Chen <caicai.chen@nyu.edu>
+Robert Wen, Caicai Chen
+{robert.wen, caicai.chen}@nyu.edu
 Department of Computer Science, NYU Tandon School of Engineering
 2 Metrotech, Brooklyn, NY 11201, USA
 
 ### Abstract
 
-The objective of this empirical research is to harvest a large amount of images for a specified category with good accuracy. Web crawling, text mining, deep convolutional neural-network based feature extraction and image classification are employed in order to get a large amount of image samples while maintaining the satisfaction on accuracy of the crawled samples. First the image candidates are fetched with a seed crawl from the major image search engine. Then a set of data cleansing tasks are employed against this seed dataset. After the data cleansing, a concept model will be trained with the seed data. Afterwards an extended crawl will be kicked off from multiple sources, especially from social media sources. When the multiple level of thresholds are reached, we retrained the model based on the collected samples and iterate until we get a satisfying number of samples. In order to measure the performance, we have also explored several known techniques to mine the images on the web, and compare the accuracy among various techniques.
+The objective of this empirical research is to harvest a large amount of images for a specified category with good accuracy. Web crawling, text mining, deep convolutional neural-network based feature extraction and image classification are employed in order to get a large amount of image samples while maintaining the satisfaction on accuracy of the crawled samples. First the image candidates are fetched with a seed crawl from a major image search engine. Then a set of data cleansing tasks are employed against this seed dataset. After the data is cleaned, a concept model will be trained with the seed data. Afterwards an extended crawl will be kicked off from multiple sources. In order to get a large amount of candidates, two social media Tumblr and Flickr are used. When the multiple level of thresholds are reached, we retrained the model based on the collected samples and iterate until we get a satisfying number of samples. In order to measure the performance, we have also explored several known techniques to mine the images on the web, and compare the accuracy among various techniques.
 
 Keywords: Image Retrieval, Image Crawling, Web Crawling, Deep Learning, Computer Vision, Custom Training
 
 ### 1. Introduction
 
-In the web search engine, it is built upon inverted index with text. (Write something about the text search engine and find some reference about it)
+In the web search engine like google, it is built upon inverted index based on text. (Write something about the text search engine and find some reference about it). For the image search engine, we can follow the same way to build inverted index, with the assumption that we have the text based features of the images before indexing. Following this approach, image recognition became a popular field (?????) in the research and there are a lot of results coming from this research area. In the early years, the image recognition were mostly based on surrounding text, using the traditional data mining approach, leveraging the anchor text, title, and surrouuding text of the image appearing on the web. (????? more references???). Relevant rsearch had shown outstanding results but this approach is still heavily relied on the human crafted text along with the images posted on the web. As from the research(???), there are ??? images posted on the web every day, and ??? percentage of the images are from the social media websites like Facebook, Twitter, Tumblr, Flickr, etc. The major difference of the images from the social media sites compared to traditional websites is not just the quality of the images but also who to post them. The editors from specialized website are paid to providied relevant description and title of the image in the webpages. But the individuals are not, meaning most of the images posted on the web are not well labled or described. Hence the traditional approach does not fit into them very well as there is not much text information with the images. In the recent year the image recognition research shifted to deep neural network based maching learning approach because 
+
 
 Image search (image.google.com) is also built upon inverted index with image meta data. (Reference about building image search engine). But the image meta data is not always readility available. There are various known approaches to get meta data for the images(???? need some research). But all of them need human intervened classification. For payed labeled data the accuracy is usually good enough. But for community and social media generated data, which are the major contribution of the data in the world. (??? data how many images generated per year?) The noise is very high in searching. Finding larget amount of pictures with a topic is actually a big challenge. If you search through google image, you will see a hundred of pictures with pretty good relevance and quality. But if you keep scrolling down a little bit you will even see a bunch of outliers. If we go out to social media website like Flickr, Twitter, Tumblr, etc. 
 
@@ -41,8 +43,6 @@ In the earlier research against the image mining, color, shape, texture, etc are
 ### Related Work
 
 Our work extend from [??]. For the feature extraction part, we use higher dimensional features extracted from Clarifai API, which has better abstraction over merely the color, texture, etc. We use more steps of filtering for the cleansing of the training data. Then we do not end with this trained model but start from this with additional samples and train more iterations based on the accumulative samples.
-
-### System Architecture
 
 ### Proposed Solution
 
