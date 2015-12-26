@@ -27,28 +27,17 @@ class imageTag(object):
   def read_images(self):
     """ read in image samples """
 
-    lines = self.fio_r.readlines()
-    logging.debug('%d lines read' % len(lines))
+    worker = Worker(50)
 
-    items = []
-    for line in lines:
+    for line in self.fio_r:
       line = line.strip()
       try:
         item = json.loads(line)
       except:
         continue
-      items.append(item)
+      worker.add_task(self.tag_image, item)
 
-    self.images = items
     logging.debug('%d images have been read' % len(items))
-
-  def tag_images(self):
-    """ get the labels and features of the images """
-
-    worker = Worker(50)
-
-    for image in self.images:
-      worker.add_task(self.tag_image, image)
 
     worker.join()
 
@@ -75,8 +64,6 @@ class imageTag(object):
     """ run the tag service """
 
     self.read_images()
-
-    self.tag_images()
 
 #
 # main routine
