@@ -1,8 +1,6 @@
 import os
 
 from Crypto.Cipher import AES
-from Crypto import Random
-from Crypto.Util import Counter
 
 from binascii import b2a_hex, a2b_hex
 
