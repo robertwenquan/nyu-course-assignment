@@ -153,10 +153,10 @@ def main():
         encrypt_pwd = my_encryption(pwd, input_mode)
         curr_row = usr + ' ' + input_mode + ' ' + encrypt_pwd
         content.append(curr_row)
-        d = file_w.write(curr_row + '\n')
+        file_w.write(curr_row + '\n')
 
     except EOFError:
-      print 'End'
+      print 'END'
       file_w.close()
       break
 
