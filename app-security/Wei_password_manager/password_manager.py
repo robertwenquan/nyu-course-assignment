@@ -8,11 +8,10 @@ from Crypto.Util import Counter
 from binascii import b2a_hex, a2b_hex
 
 
-
-STORE_DATA='password_result.txt'
+STORE_DATA = 'password_result.txt'
+IV = 'SIXTEEN_BYTE_KEY'
 global KEY
 global cipher_CTR
-IV = 'SIXTEEN_BYTE_KEY'
 
 def my_encryption(plaintext, mode):
     encrypt_mode = AES.MODE_CBC
@@ -94,6 +93,7 @@ def check_mode_legal(input_mode):
 
 def ctr_secret():
     return 'countersecretttt'
+
 ctr_counter=ctr_secret()
 
 def get_master_key():
@@ -154,4 +154,8 @@ def main():
             file_w.close()
             break
 
-main()
+
+# main app entry 
+if __name__ == '__main__':
+  main()
+
