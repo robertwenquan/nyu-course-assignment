@@ -120,10 +120,12 @@ def main():
     
     print 'Program start, press CTRL+D to exit'
     print "Notice: the string of 'username' and 'password' should not contains space"
-    file_r = open(STORE_DATA, 'rb+')
-    content = [item.rstrip('\n') for item in file_r.readlines()]
-    #print content
-    file_r.close()
+    if os.path.exists(STORE_DATA):
+        file_r = open(STORE_DATA, 'rb+')
+        content = [item.rstrip('\n') for item in file_r.readlines()]
+        file_r.close()
+    else:
+        content = []
 
     file_w = open(STORE_DATA, 'ab+')
 
